@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bench — Dev Toolbox for macOS | Zentsu LLC</title>
+  <meta name="description" content="Bench is a native Mac developer toolbox: 18 utilities in one window. JSON, JWT, regex, hashes, UUIDs, and more. Offline, private, no subscription." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #f9f9f7;
+      --surface: #ffffff;
+      --border:  #e5e5e3;
+      --text:    #1a1a1a;
+      --muted:   #6b6b6b;
+      --accent:  #4a7c6f;
+      --accent-light: #eaf2f0;
+      --body-text: #333333;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Nav ── */
+    nav {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0 1.5rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+      height: 56px;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.875rem;
+      letter-spacing: 0.01em;
+      transition: color 0.15s;
+    }
+    nav a:hover, nav a.active { color: var(--accent); }
+    nav li:first-child { margin-right: auto; }
+    nav li:first-child a {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text);
+      letter-spacing: -0.01em;
+    }
+
+    /* ── Content ── */
+    main {
+      flex: 1;
+      padding: 3rem 1.5rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2.5rem 3rem;
+      margin-bottom: 2rem;
+    }
+    .hero-icon {
+      width: 128px;
+      height: 128px;
+      border-radius: 24px;
+      flex-shrink: 0;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+    .hero-text { flex: 1; min-width: 0; }
+    .page-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-light);
+      padding: 0.25rem 0.65rem;
+      border-radius: 5px;
+      margin-bottom: 0.75rem;
+    }
+    .hero h1 {
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.4rem;
+    }
+    .hero .subtitle {
+      font-size: 1.125rem;
+      color: var(--muted);
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    .hero .promo {
+      font-size: 0.9375rem;
+      color: var(--body-text);
+      line-height: 1.6;
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1.5rem;
+        gap: 1.25rem;
+      }
+      .hero-icon { width: 96px; height: 96px; border-radius: 20px; }
+    }
+
+    /* ── Buy row ── */
+    .buy-row {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+    }
+    .price {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .price .small {
+      display: block;
+      font-size: 0.8125rem;
+      font-weight: 400;
+      color: var(--muted);
+      margin-top: 0.125rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.25rem;
+      border-radius: 8px;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity 0.15s;
+      margin-left: auto;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #ffffff;
+    }
+    .btn-primary:hover { opacity: 0.9; }
+    .btn-disabled {
+      background: var(--border);
+      color: var(--muted);
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+    .btn-note {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    /* ── Section cards ── */
+    section.card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem 2.5rem;
+      margin-bottom: 2rem;
+    }
+    @media (max-width: 600px) {
+      section.card { padding: 1.5rem 1.25rem; }
+      .buy-row { padding: 1.25rem 1.25rem; }
+      .btn { margin-left: 0; }
+    }
+    section.card h2 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      letter-spacing: -0.01em;
+    }
+    section.card p {
+      font-size: 0.9375rem;
+      line-height: 1.7;
+      color: var(--body-text);
+      margin-bottom: 0.9rem;
+    }
+    section.card p:last-child { margin-bottom: 0; }
+
+    /* ── Tools grid ── */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.25rem;
+    }
+    .tool-group h3 {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .tool-group ul {
+      list-style: none;
+      padding: 0;
+    }
+    .tool-group li {
+      font-size: 0.9375rem;
+      color: var(--body-text);
+      padding: 0.2rem 0;
+    }
+
+    /* ── Screenshots ── */
+    .shots {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      padding-bottom: 0.75rem;
+      margin: 0 -0.5rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      scroll-snap-type: x mandatory;
+    }
+    .shots img {
+      flex: 0 0 auto;
+      width: min(680px, 85vw);
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      scroll-snap-align: start;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    /* ── Features ── */
+    .features {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+    .features li {
+      font-size: 0.9375rem;
+      color: var(--body-text);
+      padding-left: 1.25rem;
+      position: relative;
+      line-height: 1.55;
+    }
+    .features li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.55rem;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.8125rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:        #111113;
+        --surface:   #1c1c1e;
+        --border:    #2c2c2e;
+        --text:      #f0f0f0;
+        --muted:     #8e8e93;
+        --accent:    #5fa896;
+        --accent-light: #1e3330;
+        --body-text: #d1d1d6;
+      }
+      .hero-icon { box-shadow: 0 4px 16px rgba(0,0,0,0.4); }
+      .shots img { box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <main>
+    <div class="container">
+
+      <!-- Hero -->
+      <div class="hero">
+        <img src="assets/bench-icon.png" alt="Bench app icon" class="hero-icon" />
+        <div class="hero-text">
+          <span class="page-label">macOS app</span>
+          <h1>Bench — Dev Toolbox</h1>
+          <p class="subtitle">18 tools. Zero tabs.</p>
+          <p class="promo">Eighteen developer utilities in one native Mac window. Paste anything — Bench picks the right tool. Offline, private, no subscription. One-time purchase.</p>
+        </div>
+      </div>
+
+      <!-- Buy row -->
+      <div class="buy-row">
+        <div class="price">
+          $14.99
+          <span class="small">One-time purchase, no subscription</span>
+        </div>
+        <a class="btn btn-disabled" aria-disabled="true" href="https://apps.apple.com/us/app/id6763368925">Coming to the Mac App Store</a>
+      </div>
+
+      <!-- Description -->
+      <section class="card">
+        <h2>What it is</h2>
+        <p>Paste a token. Get the decoded JWT in a second. Drop in a messy JSON blob. Get it formatted, validated, copyable.</p>
+        <p>Bench is a single-window toolbox of the utilities developers reach for every day. No browser tabs. No network calls. No subscription.</p>
+      </section>
+
+      <!-- Tools list -->
+      <section class="card">
+        <h2>Included tools</h2>
+        <div class="tools-grid">
+          <div class="tool-group">
+            <h3>Encoders</h3>
+            <ul>
+              <li>Base64 encode / decode</li>
+              <li>URL encode / decode</li>
+            </ul>
+          </div>
+          <div class="tool-group">
+            <h3>Formatters</h3>
+            <ul>
+              <li>JSON formatter &amp; validator</li>
+              <li>Markdown preview</li>
+              <li>Diff viewer</li>
+            </ul>
+          </div>
+          <div class="tool-group">
+            <h3>Generators</h3>
+            <ul>
+              <li>UUID generator</li>
+              <li>Lorem ipsum</li>
+              <li>Timestamp / Unix time</li>
+            </ul>
+          </div>
+          <div class="tool-group">
+            <h3>Crypto</h3>
+            <ul>
+              <li>Hash generator (MD5, SHA-1, SHA-256, SHA-512)</li>
+              <li>JWT decoder</li>
+            </ul>
+          </div>
+          <div class="tool-group">
+            <h3>Converters</h3>
+            <ul>
+              <li>Color converter (hex, RGB, HSL, HSB)</li>
+              <li>Number base (bin / oct / dec / hex)</li>
+              <li>Text case (camel, snake, kebab, title, …)</li>
+              <li>Regex tester</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screenshots -->
+      <section class="card">
+        <h2>Screenshots</h2>
+        <div class="shots">
+          <img src="assets/bench-01-json.png" alt="JSON formatter" loading="lazy" />
+          <img src="assets/bench-02-jwt.png" alt="JWT decoder" loading="lazy" />
+          <img src="assets/bench-03-regex.png" alt="Regex explainer" loading="lazy" />
+          <img src="assets/bench-04-hash.png" alt="Hash generator" loading="lazy" />
+          <img src="assets/bench-05-uuid.png" alt="UUID generator" loading="lazy" />
+        </div>
+      </section>
+
+      <!-- Smart paste -->
+      <section class="card">
+        <h2>Smart paste</h2>
+        <p>Copy anything to the clipboard and Bench proposes the most likely tool — paste a JWT and JWT decoder is primed; paste JSON and the formatter is ready. Detection runs locally with a rule-based heuristic. No machine learning, no network, no telemetry.</p>
+      </section>
+
+      <!-- Features -->
+      <section class="card">
+        <h2>Native Mac, offline, private</h2>
+        <ul class="features">
+          <li>Built in SwiftUI for macOS 14 and later.</li>
+          <li>Universal binary; runs natively on Apple silicon and Intel.</li>
+          <li>No account, no login, no analytics, no third-party SDKs.</li>
+          <li>Works entirely offline — no data ever leaves your Mac.</li>
+          <li>Menu-bar popover and a full window; your choice.</li>
+          <li>One-time $14.99 unlock. No subscription. No feature paywalls added after you buy.</li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="mailto:tom@zentsu.app">tom@zentsu.app</a>
+    </div>
+    <p>&copy; 2026 Zentsu LLC</p>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>

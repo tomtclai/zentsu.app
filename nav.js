@@ -1,6 +1,7 @@
 (function () {
   var pages = [
     { href: 'index.html',   label: 'Zentsu LLC' },
+    { href: 'bench.html',   label: 'Bench' },
     { href: 'privacy.html', label: 'Privacy Policy' },
     { href: 'terms.html',   label: 'Terms of Use' },
   ];
