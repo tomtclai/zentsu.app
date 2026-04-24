@@ -232,25 +232,117 @@
       padding: 0.2rem 0;
     }
 
+    /* ── Flying tool pills ── */
+    .tool-pill {
+      display: inline-block;
+      padding: 0.25rem 0.65rem;
+      margin: 0.2rem 0.25rem 0.2rem 0;
+      background: var(--accent-light);
+      color: var(--body-text);
+      border-radius: 999px;
+      font-size: 0.875rem;
+      line-height: 1.4;
+      will-change: transform;
+      transform-origin: center;
+      animation: tool-pill-drift 12s ease-in-out infinite;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+    .tool-pill:nth-child(1) { animation-delay: 0s;    animation-duration: 11s; }
+    .tool-pill:nth-child(2) { animation-delay: -1.5s; animation-duration: 13s; }
+    .tool-pill:nth-child(3) { animation-delay: -3s;   animation-duration: 10s; }
+    .tool-pill:nth-child(4) { animation-delay: -4.5s; animation-duration: 14s; }
+    .tool-pill:nth-child(5) { animation-delay: -6s;   animation-duration: 12s; }
+    .tool-pill:hover {
+      animation-play-state: paused;
+      background: var(--accent);
+      color: #ffffff;
+      transform: translate(0, 0) rotate(0deg) scale(1.04);
+    }
+    @keyframes tool-pill-drift {
+      0%   { transform: translate(0, 0)       rotate(0deg); }
+      25%  { transform: translate(4px, -5px)  rotate(1.2deg); }
+      50%  { transform: translate(-3px, -7px) rotate(-1.5deg); }
+      75%  { transform: translate(-5px, 3px)  rotate(1deg); }
+      100% { transform: translate(0, 0)       rotate(0deg); }
+    }
+    /* Scroll-linked enhancement — supersedes the passive drift above
+       in browsers that support the View Progress Timeline (Chrome/Edge 115+,
+       Safari 26+). Firefox + older Safari fall back to tool-pill-drift. */
+    @supports (animation-timeline: view()) {
+      .tool-pill {
+        animation-name: tool-pill-scroll;
+        animation-timeline: view();
+        animation-range: entry 0% cover 80%;
+        animation-duration: auto;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-delay: 0s;
+      }
+      .tool-pill:nth-child(odd) {
+        animation-name: tool-pill-scroll-alt;
+        animation-range: entry 10% cover 90%;
+      }
+      .tool-pill:nth-child(3n) {
+        animation-range: entry 5% cover 70%;
+      }
+      .tool-pill:nth-child(5n) {
+        animation-range: entry 15% cover 85%;
+      }
+    }
+    @keyframes tool-pill-scroll {
+      0%   { transform: translateY(14px)  rotate(-4deg) scale(0.94); opacity: 0.35; }
+      35%  { transform: translateY(0)     rotate(0deg)  scale(1);    opacity: 1; }
+      70%  { transform: translateY(0)     rotate(0deg)  scale(1);    opacity: 1; }
+      100% { transform: translateY(-10px) rotate(3deg)  scale(0.96); opacity: 0.55; }
+    }
+    @keyframes tool-pill-scroll-alt {
+      0%   { transform: translateY(-14px) rotate(4deg)  scale(0.94); opacity: 0.35; }
+      35%  { transform: translateY(0)     rotate(0deg)  scale(1);    opacity: 1; }
+      70%  { transform: translateY(0)     rotate(0deg)  scale(1);    opacity: 1; }
+      100% { transform: translateY(10px)  rotate(-3deg) scale(0.96); opacity: 0.55; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .tool-pill {
+        animation: none;
+      }
+      .tool-pill:hover {
+        transform: none;
+      }
+    }
+
     /* ── Screenshots ── */
+    /* Full-bleed scroller: breaks out of the 900px .container so screenshots
+       run edge-to-edge and don't feel boxed in. */
+    .shots-section {
+      /* Negative horizontal margins cancel main's 1.5rem padding
+         so the scroller truly runs edge-to-edge of the viewport. */
+      margin: 3rem -1.5rem;
+    }
     .shots {
       display: flex;
-      gap: 1rem;
+      gap: 1.25rem;
       overflow-x: auto;
-      padding-bottom: 0.75rem;
-      margin: 0 -0.5rem;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
+      overflow-y: visible;
+      padding: 0.75rem clamp(1.5rem, 6vw, 4rem);
       scroll-snap-type: x mandatory;
+      scroll-padding-left: clamp(1.5rem, 6vw, 4rem);
+      -webkit-overflow-scrolling: touch;
     }
     .shots img {
       flex: 0 0 auto;
-      width: min(680px, 85vw);
+      width: min(780px, 85vw);
+      max-height: 70vh;
       height: auto;
+      object-fit: contain;
       border-radius: 10px;
       border: 1px solid var(--border);
       scroll-snap-align: start;
       box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    @media (max-width: 600px) {
+      .shots-section { margin: 2rem 0; }
+      .shots { padding: 0.5rem 1.25rem; gap: 1rem; }
+      .shots img { width: 85vw; max-height: none; }
     }
 
     /* ── Features ── */
@@ -326,24 +418,16 @@
           <span class="page-label">macOS app</span>
           <h1>Bench — Dev Toolbox</h1>
           <p class="subtitle">18 tools. Zero tabs.</p>
-          <p class="promo">Eighteen developer utilities in one native Mac window. Paste anything — Bench picks the right tool. Offline, private, no subscription. One-time purchase.</p>
+          <p class="promo">Eighteen developer utilities in one native Mac window. Paste anything — Bench picks the right tool. Offline, private, no subscription.</p>
         </div>
-      </div>
-
-      <!-- Buy row -->
-      <div class="buy-row">
-        <div class="price">
-          $14.99
-          <span class="small">One-time purchase, no subscription</span>
-        </div>
-        <a class="btn btn-disabled" aria-disabled="true" href="https://apps.apple.com/us/app/id6763368925">Coming to the Mac App Store</a>
       </div>
 
       <!-- Description -->
       <section class="card">
         <h2>What it is</h2>
         <p>Paste a token. Get the decoded JWT in a second. Drop in a messy JSON blob. Get it formatted, validated, copyable.</p>
-        <p>Bench is a single-window toolbox of the utilities developers reach for every day. No browser tabs. No network calls. No subscription.</p>
+        <p>Compress .mov files into instantly shareable .mp4s.</p>
+        <p>Bench is a single-window toolbox of the utilities developers reach for every day. No browser tabs. No network calls for any tool. No subscription.</p>
       </section>
 
       <!-- Tools list -->
@@ -353,56 +437,59 @@
           <div class="tool-group">
             <h3>Encoders</h3>
             <ul>
-              <li>Base64 encode / decode</li>
-              <li>URL encode / decode</li>
+              <li class="tool-pill">Base64 encode / decode</li>
+              <li class="tool-pill">URL encode / decode</li>
             </ul>
           </div>
           <div class="tool-group">
             <h3>Formatters</h3>
             <ul>
-              <li>JSON formatter &amp; validator</li>
-              <li>Markdown preview</li>
-              <li>Diff viewer</li>
+              <li class="tool-pill">JSON formatter &amp; validator</li>
+              <li class="tool-pill">Markdown preview</li>
+              <li class="tool-pill">Diff viewer</li>
             </ul>
           </div>
           <div class="tool-group">
             <h3>Generators</h3>
             <ul>
-              <li>UUID generator</li>
-              <li>Lorem ipsum</li>
-              <li>Timestamp / Unix time</li>
+              <li class="tool-pill">UUID generator</li>
+              <li class="tool-pill">Lorem ipsum</li>
+              <li class="tool-pill">Timestamp / Unix time</li>
             </ul>
           </div>
           <div class="tool-group">
             <h3>Crypto</h3>
             <ul>
-              <li>Hash generator (MD5, SHA-1, SHA-256, SHA-512)</li>
-              <li>JWT decoder</li>
+              <li class="tool-pill">Hash generator (MD5, SHA-1, SHA-256, SHA-512)</li>
+              <li class="tool-pill">JWT decoder</li>
             </ul>
           </div>
           <div class="tool-group">
             <h3>Converters</h3>
             <ul>
-              <li>Color converter (hex, RGB, HSL, HSB)</li>
-              <li>Number base (bin / oct / dec / hex)</li>
-              <li>Text case (camel, snake, kebab, title, …)</li>
-              <li>Regex tester</li>
+              <li class="tool-pill">Color converter (hex, RGB, HSL, HSB)</li>
+              <li class="tool-pill">Number base (bin / oct / dec / hex)</li>
+              <li class="tool-pill">Text case (camel, snake, kebab, title, …)</li>
+              <li class="tool-pill">Regex tester</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- Screenshots -->
-      <section class="card">
-        <h2>Screenshots</h2>
-        <div class="shots">
-          <img src="assets/bench-01-json.png" alt="JSON formatter" loading="lazy" />
-          <img src="assets/bench-02-jwt.png" alt="JWT decoder" loading="lazy" />
-          <img src="assets/bench-03-regex.png" alt="Regex explainer" loading="lazy" />
-          <img src="assets/bench-04-hash.png" alt="Hash generator" loading="lazy" />
-          <img src="assets/bench-05-uuid.png" alt="UUID generator" loading="lazy" />
-        </div>
-      </section>
+    </div><!-- /.container (break out for full-bleed screenshots) -->
+
+    <!-- Screenshots (full-bleed, outside the 900px container) -->
+    <section class="shots-section" aria-label="Screenshots">
+      <div class="shots">
+        <img src="assets/bench-01-json.png" alt="JSON formatter" loading="lazy" />
+        <img src="assets/bench-02-jwt.png" alt="JWT decoder" loading="lazy" />
+        <img src="assets/bench-03-regex.png" alt="Regex explainer" loading="lazy" />
+        <img src="assets/bench-04-hash.png" alt="Hash generator" loading="lazy" />
+        <img src="assets/bench-05-uuid.png" alt="UUID generator" loading="lazy" />
+      </div>
+    </section>
+
+    <div class="container"><!-- resume main container -->
 
       <!-- Smart paste -->
       <section class="card">
@@ -419,7 +506,6 @@
           <li>No account, no login, no analytics, no third-party SDKs.</li>
           <li>Works entirely offline — no data ever leaves your Mac.</li>
           <li>Menu-bar popover and a full window; your choice.</li>
-          <li>One-time $14.99 unlock. No subscription. No feature paywalls added after you buy.</li>
         </ul>
       </section>
 
