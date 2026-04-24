@@ -613,11 +613,23 @@
           <h1>The developer <span class="accent">workbench</span><br>for your Mac.</h1>
           <p class="lede">Eighteen small utilities I kept rebuilding as web pages. Now they're one native window. Paste something, Bench guesses the tool. Works offline. Pay once.</p>
           <div class="hero-cta">
-            <a class="btn btn-primary" href="#get">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17 8h-1V6a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v9a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-9a2 2 0 0 0-2-2Zm-7-2a2 2 0 0 1 4 0v2h-4Z" opacity=".0"/><path d="M12 3 4 7l8 4 8-4-8-4Zm-8 6v8l8 4V13L4 9Zm10 4v8l8-4V9l-8 4Z"/></svg>
-              View on the Mac App Store
-            </a>
-            <a class="btn btn-secondary" href="#tools">See all 18 tools →</a>
+            <a class="btn btn-primary" href="#tools">See all 18 tools →</a>
+            <!--
+              TODO: uncomment on App Store launch day.
+              When the app is live at https://apps.apple.com/us/app/id6763368925:
+                1. Uncomment the primary CTA below and restore it as the first button in this .hero-cta
+                2. Demote the existing "See all 18 tools →" link to class="btn btn-secondary" (it was secondary in the original two-button hero)
+                3. Replace href="#get" with the real ASC URL above (the section#get anchor target is also commented-out further down the page)
+                4. Verify the section renders correctly
+                5. Re-run the pre-push legal scan before committing
+
+              Original primary CTA preserved verbatim:
+              <a class="btn btn-primary" href="#get">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17 8h-1V6a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v9a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-9a2 2 0 0 0-2-2Zm-7-2a2 2 0 0 1 4 0v2h-4Z" opacity=".0"/><path d="M12 3 4 7l8 4 8-4-8-4Zm-8 6v8l8 4V13L4 9Zm10 4v8l8-4V9l-8 4Z"/></svg>
+                View on the Mac App Store
+              </a>
+              <a class="btn btn-secondary" href="#tools">See all 18 tools →</a>
+            -->
           </div>
           <div class="hero-meta">
             <span><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 12l6 6L20 6"/></svg>No subscription</span>
@@ -836,34 +848,54 @@
             <div class="value">One time</div>
             <div class="sub">No subscription, ever</div>
           </div>
-          <div class="cell">
-            <div class="label">Distribution</div>
-            <div class="value">Mac App Store</div>
-            <div class="sub">Sandboxed, notarised</div>
-          </div>
+          <!--
+            TODO: uncomment on App Store launch day.
+            When the app is live at https://apps.apple.com/us/app/id6763368925:
+              1. Uncomment the <div class="cell"> below to restore the Distribution / Mac App Store spec cell
+              2. No href changes needed in this block (it's a spec cell, no link)
+              3. Verify the spec grid still lays out correctly (it was the last cell in the original)
+              4. Re-run the pre-push legal scan before committing
+
+            Original markup preserved verbatim:
+            <div class="cell">
+              <div class="label">Distribution</div>
+              <div class="value">Mac App Store</div>
+              <div class="sub">Sandboxed, notarised</div>
+            </div>
+          -->
         </div>
       </div>
     </section>
 
-    <!-- ── BUY / CTA ── -->
-    <section class="buy" id="get">
-      <div class="buy-inner">
-        <div class="reveal">
-          <h2>Bench is on the Mac App Store.</h2>
-          <p>Download is free. Bench Pro is a one-time purchase. Every tool included today stays yours — no future rug-pull into a subscription.</p>
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="#">View on the Mac App Store</a>
-            <a class="btn btn-secondary" href="bench/support.html">Support</a>
+    <!--
+      TODO: uncomment on App Store launch day.
+      When the app is live at https://apps.apple.com/us/app/id6763368925:
+        1. Uncomment the entire <section class="buy" id="get"> block below
+        2. Change href="#" on the "View on the Mac App Store" button to the real ASC URL above
+        3. Verify the hero's href="#get" anchor (also in a commented block above) now resolves to this section once both are uncommented
+        4. Verify the section renders correctly
+        5. Re-run the pre-push legal scan before committing
+
+      Original section preserved verbatim:
+      <section class="buy" id="get">
+        <div class="buy-inner">
+          <div class="reveal">
+            <h2>Bench is on the Mac App Store.</h2>
+            <p>Free download. Bench Pro is a one‑time unlock; every tool included today stays unlocked.</p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#">View on the Mac App Store</a>
+              <a class="btn btn-secondary" href="bench/support.html">Support</a>
+            </div>
+          </div>
+          <div class="buy-facts reveal">
+            <div><b>→</b> Works entirely offline</div>
+            <div><b>→</b> No data leaves your Mac</div>
+            <div><b>→</b> No analytics, telemetry, or third‑party SDKs</div>
+            <div><b>→</b> One‑time purchase, no subscription</div>
           </div>
         </div>
-        <div class="buy-facts reveal">
-          <div><b>→</b> Works offline. Airplane mode is fine.</div>
-          <div><b>→</b> Nothing you paste leaves your Mac</div>
-          <div><b>→</b> Zero analytics, zero third-party SDKs</div>
-          <div><b>→</b> Pay once. I'm not going to bill you monthly.</div>
-        </div>
-      </div>
-    </section>
+      </section>
+    -->
 
   </main>
 
