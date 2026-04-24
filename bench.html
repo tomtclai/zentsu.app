@@ -3,45 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bench — Dev Toolbox for macOS | Zentsu LLC</title>
-  <meta name="description" content="Bench is a native Mac developer toolbox: 18 utilities in one window. JSON, JWT, regex, hashes, UUIDs, and more. Offline, private, no subscription." />
+  <title>Bench — Dev Toolbox for macOS</title>
+  <meta name="description" content="Eighteen developer utilities in one native Mac window. JSON, JWT, regex, hashes, UUIDs, MOV→MP4 and more. Offline, private, one-time purchase." />
+  <link rel="icon" href="assets/bench-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:      #f9f9f7;
-      --surface: #ffffff;
-      --border:  #e5e5e3;
-      --text:    #1a1a1a;
-      --muted:   #6b6b6b;
-      --accent:  #4a7c6f;
-      --accent-light: #eaf2f0;
-      --body-text: #333333;
+      --bg:          #f5f3ee;
+      --bg-alt:      #ecebe4;
+      --surface:     #ffffff;
+      --ink:         #14110f;
+      --ink-soft:    #2a2622;
+      --muted:       #6b655e;
+      --border:      #d8d4cb;
+      --border-soft: #e6e2d8;
+      --accent:      #4a7c6f;        /* keep site teal for harmony */
+      --accent-soft: #e6efec;
+      --spot:        #b84e1a;        /* copper — used once, on the CTA */
+      --spot-soft:   #f1e3d8;
     }
 
+    html { scroll-behavior: smooth; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       background: var(--bg);
-      color: var(--text);
+      color: var(--ink);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      line-height: 1.5;
     }
+    .mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
 
-    /* ── Nav ── */
+    /* ── Nav (match existing site chrome) ── */
     nav {
-      background: var(--surface);
+      background: var(--bg);
       border-bottom: 1px solid var(--border);
       padding: 0 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: saturate(140%) blur(8px);
+      -webkit-backdrop-filter: saturate(140%) blur(8px);
     }
     nav ul {
       list-style: none;
       display: flex;
       align-items: center;
       gap: 1.5rem;
-      max-width: 900px;
+      max-width: 1160px;
       margin: 0 auto;
-      height: 56px;
+      height: 60px;
     }
     nav a {
       text-decoration: none;
@@ -50,357 +68,534 @@
       letter-spacing: 0.01em;
       transition: color 0.15s;
     }
-    nav a:hover, nav a.active { color: var(--accent); }
+    nav a:hover, nav a.active { color: var(--ink); }
     nav li:first-child { margin-right: auto; }
     nav li:first-child a {
       font-weight: 700;
       font-size: 1rem;
-      color: var(--text);
+      color: var(--ink);
       letter-spacing: -0.01em;
     }
 
-    /* ── Content ── */
-    main {
-      flex: 1;
-      padding: 3rem 1.5rem;
-    }
-    .container {
-      max-width: 900px;
+    /* ── Layout ── */
+    main { flex: 1; }
+    .wrap {
+      max-width: 1160px;
       margin: 0 auto;
+      padding: 0 1.5rem;
     }
 
     /* ── Hero ── */
     .hero {
-      display: flex;
+      padding: 6rem 1.5rem 5rem;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      /* pegboard grid */
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 1px 1px, rgba(20,17,15,0.07) 1px, transparent 0);
+      background-size: 24px 24px;
+      mask-image: linear-gradient(180deg, transparent 0%, #000 20%, #000 70%, transparent 100%);
+      -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 20%, #000 70%, transparent 100%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      position: relative;
+      max-width: 1160px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 4rem;
       align-items: center;
-      gap: 2rem;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 2.5rem 3rem;
-      margin-bottom: 2rem;
     }
-    .hero-icon {
-      width: 128px;
-      height: 128px;
-      border-radius: 24px;
-      flex-shrink: 0;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-    }
-    .hero-text { flex: 1; min-width: 0; }
-    .page-label {
-      display: inline-block;
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
       font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
+      font-weight: 500;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--accent);
-      background: var(--accent-light);
-      padding: 0.25rem 0.65rem;
-      border-radius: 5px;
-      margin-bottom: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    .eyebrow .dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--accent);
     }
     .hero h1 {
-      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      font-size: clamp(2.75rem, 6.5vw, 5.25rem);
       font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.4rem;
+      letter-spacing: -0.035em;
+      line-height: 0.98;
+      color: var(--ink);
+      margin-bottom: 1.25rem;
     }
-    .hero .subtitle {
-      font-size: 1.125rem;
-      color: var(--muted);
+    .hero h1 .accent {
+      font-style: italic;
       font-weight: 500;
-      margin-bottom: 1rem;
+      color: var(--accent);
     }
-    .hero .promo {
-      font-size: 0.9375rem;
-      color: var(--body-text);
-      line-height: 1.6;
+    .hero .lede {
+      font-size: clamp(1.125rem, 1.6vw, 1.3125rem);
+      line-height: 1.45;
+      color: var(--ink-soft);
+      max-width: 34ch;
+      margin-bottom: 2.25rem;
     }
-
-    @media (max-width: 640px) {
-      .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 2rem 1.5rem;
-        gap: 1.25rem;
-      }
-      .hero-icon { width: 96px; height: 96px; border-radius: 20px; }
-    }
-
-    /* ── Buy row ── */
-    .buy-row {
+    .hero-cta {
       display: flex;
       align-items: center;
       gap: 1.25rem;
       flex-wrap: wrap;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.5rem 2rem;
-      margin-bottom: 2rem;
-    }
-    .price {
-      font-size: 1.125rem;
-      font-weight: 600;
-      color: var(--text);
-    }
-    .price .small {
-      display: block;
-      font-size: 0.8125rem;
-      font-weight: 400;
-      color: var(--muted);
-      margin-top: 0.125rem;
     }
     .btn {
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
-      padding: 0.65rem 1.25rem;
-      border-radius: 8px;
+      gap: 0.55rem;
+      padding: 0.85rem 1.35rem;
+      border-radius: 10px;
       font-size: 0.9375rem;
       font-weight: 600;
       text-decoration: none;
-      transition: opacity 0.15s;
-      margin-left: auto;
+      border: 1px solid transparent;
+      transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
     }
     .btn-primary {
-      background: var(--accent);
-      color: #ffffff;
+      background: var(--ink);
+      color: var(--bg);
     }
-    .btn-primary:hover { opacity: 0.9; }
-    .btn-disabled {
-      background: var(--border);
-      color: var(--muted);
-      cursor: not-allowed;
-      pointer-events: none;
+    .btn-primary:hover { transform: translateY(-1px); background: var(--spot); }
+    .btn-secondary {
+      background: transparent;
+      color: var(--ink);
+      border-color: var(--border);
     }
-    .btn-note {
+    .btn-secondary:hover { border-color: var(--ink); }
+    .btn svg { width: 16px; height: 16px; }
+
+    .hero-meta {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 2.5rem;
       font-size: 0.8125rem;
       color: var(--muted);
-      font-style: italic;
+    }
+    .hero-meta span { display: inline-flex; align-items: center; gap: 0.4rem; }
+    .hero-meta .tick {
+      width: 14px; height: 14px; color: var(--accent);
     }
 
-    /* ── Section cards ── */
-    section.card {
+    /* Icon side */
+    .hero-icon-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .hero-icon {
+      width: min(320px, 80%);
+      aspect-ratio: 1;
+      border-radius: 22%;
+      box-shadow:
+        0 1px 0 rgba(255,255,255,0.9) inset,
+        0 30px 60px -20px rgba(20,17,15,0.35),
+        0 10px 20px -10px rgba(20,17,15,0.2);
+      transform: rotate(-3deg);
+      transition: transform 0.4s cubic-bezier(.2,.8,.2,1);
+    }
+    .hero-icon:hover { transform: rotate(0deg) scale(1.02); }
+
+    /* Floating tool chips around icon */
+    .chip {
+      position: absolute;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 0.4rem 0.7rem;
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 2rem 2.5rem;
-      margin-bottom: 2rem;
+      border-radius: 999px;
+      color: var(--ink-soft);
+      box-shadow: 0 4px 12px -4px rgba(20,17,15,0.12);
+      white-space: nowrap;
     }
-    @media (max-width: 600px) {
-      section.card { padding: 1.5rem 1.25rem; }
-      .buy-row { padding: 1.25rem 1.25rem; }
-      .btn { margin-left: 0; }
-    }
-    section.card h2 {
-      font-size: 1.125rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      letter-spacing: -0.01em;
-    }
-    section.card p {
-      font-size: 0.9375rem;
-      line-height: 1.7;
-      color: var(--body-text);
-      margin-bottom: 0.9rem;
-    }
-    section.card p:last-child { margin-bottom: 0; }
+    .chip-1 { top: 8%;  left: -6%;  transform: rotate(-6deg); }
+    .chip-2 { top: 28%; right: -10%; transform: rotate(5deg); }
+    .chip-3 { bottom: 14%; left: -12%; transform: rotate(4deg); }
+    .chip-4 { bottom: 2%;  right: 2%;  transform: rotate(-3deg); }
 
-    /* ── Tools grid ── */
-    .tools-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 1.25rem;
+    @media (max-width: 860px) {
+      .hero { padding: 4rem 1.5rem 3.5rem; }
+      .hero-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .hero-icon-wrap { order: -1; }
+      .hero-icon { width: 180px; transform: rotate(-2deg); }
+      .chip-1 { top: 0; left: 10%; }
+      .chip-2 { top: 15%; right: 8%; }
+      .chip-3 { bottom: 15%; left: 5%; }
+      .chip-4 { bottom: 0; right: 10%; }
     }
-    .tool-group h3 {
+
+    /* ── Section scaffolding ── */
+    section.slab {
+      padding: 6rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    @media (max-width: 700px) { section.slab { padding: 4rem 0; } }
+
+    .slab-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+    .slab-head .num {
+      font-family: "JetBrains Mono", monospace;
       font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+    }
+    .slab-head h2 {
+      font-size: clamp(1.75rem, 3.5vw, 2.625rem);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.1;
+      max-width: 22ch;
+    }
+    .slab-head p.kicker {
+      font-size: 1rem;
+      color: var(--muted);
+      max-width: 36ch;
+      text-align: right;
+    }
+    @media (max-width: 700px) {
+      .slab-head p.kicker { text-align: left; }
+    }
+
+    /* ── Tool index ── */
+    .tool-cats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border-soft);
+      border: 1px solid var(--border-soft);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .tool-cat {
+      background: var(--bg);
+      padding: 1.75rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .tool-cat header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px dashed var(--border);
+    }
+    .tool-cat h3 {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
       font-weight: 600;
-      letter-spacing: 0.08em;
+      color: var(--accent);
+    }
+    .tool-cat .count {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+    .tool-cat ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+    }
+    .tool-cat li {
+      display: grid;
+      grid-template-columns: 1.75rem 1fr;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 0;
+      font-size: 0.9375rem;
+      color: var(--ink-soft);
+      border-bottom: 1px solid transparent;
+      transition: color 0.15s;
+    }
+    .tool-cat li:not(:last-child) { border-bottom-color: var(--border-soft); }
+    .tool-cat li:hover { color: var(--ink); }
+    .tool-cat li .n {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+    @media (max-width: 900px) { .tool-cats { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 580px) { .tool-cats { grid-template-columns: 1fr; } }
+
+    /* ── Feature split ── */
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+    .split-card h3 {
+      font-size: 1.375rem;
+      font-weight: 600;
+      letter-spacing: -0.015em;
+      margin-bottom: 0.75rem;
+    }
+    .split-card p {
+      color: var(--ink-soft);
+      line-height: 1.65;
+      margin-bottom: 1rem;
+    }
+    .split-card .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--accent);
+      background: var(--accent-soft);
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+    .manifest {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.8125rem;
+      background: var(--ink);
+      color: #e8e4dc;
+      border-radius: 12px;
+      padding: 1.5rem 1.5rem;
+      line-height: 1.85;
+      overflow-x: auto;
+    }
+    .manifest .k { color: #a8c5ba; }
+    .manifest .v { color: #f0d3b8; }
+    .manifest .c { color: #6b655e; }
+    @media (max-width: 780px) { .split { grid-template-columns: 1fr; gap: 2rem; } }
+
+    /* ── Screenshots full-bleed ── */
+    .shots-section { background: var(--bg-alt); padding: 5rem 0; border-bottom: 1px solid var(--border); }
+    .shots-head { max-width: 1160px; margin: 0 auto 2.5rem; padding: 0 1.5rem; }
+    .shots-head h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .shots-head .num {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      display: block;
       margin-bottom: 0.5rem;
-    }
-    .tool-group ul {
-      list-style: none;
-      padding: 0;
-    }
-    .tool-group li {
-      font-size: 0.9375rem;
-      color: var(--body-text);
-      padding: 0.2rem 0;
-    }
-
-    /* ── Flying tool pills ── */
-    .tool-pill {
-      display: inline-block;
-      padding: 0.25rem 0.65rem;
-      margin: 0.2rem 0.25rem 0.2rem 0;
-      background: var(--accent-light);
-      color: var(--body-text);
-      border-radius: 999px;
-      font-size: 0.875rem;
-      line-height: 1.4;
-      will-change: transform;
-      transform-origin: center;
-      animation: tool-pill-drift 12s ease-in-out infinite;
-      transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
-    }
-    .tool-pill:nth-child(1) { animation-delay: 0s;    animation-duration: 11s; }
-    .tool-pill:nth-child(2) { animation-delay: -1.5s; animation-duration: 13s; }
-    .tool-pill:nth-child(3) { animation-delay: -3s;   animation-duration: 10s; }
-    .tool-pill:nth-child(4) { animation-delay: -4.5s; animation-duration: 14s; }
-    .tool-pill:nth-child(5) { animation-delay: -6s;   animation-duration: 12s; }
-    .tool-pill:hover {
-      animation-play-state: paused;
-      background: var(--accent);
-      color: #ffffff;
-      transform: translate(0, 0) rotate(0deg) scale(1.04);
-    }
-    @keyframes tool-pill-drift {
-      0%   { transform: translate(0, 0)       rotate(0deg); }
-      25%  { transform: translate(4px, -5px)  rotate(1.2deg); }
-      50%  { transform: translate(-3px, -7px) rotate(-1.5deg); }
-      75%  { transform: translate(-5px, 3px)  rotate(1deg); }
-      100% { transform: translate(0, 0)       rotate(0deg); }
-    }
-    /* Scroll-linked enhancement — supersedes the passive drift above
-       in browsers that support the View Progress Timeline (Chrome/Edge 115+,
-       Safari 26+). Firefox + older Safari fall back to tool-pill-drift. */
-    @supports (animation-timeline: view()) {
-      .tool-pill {
-        animation-name: tool-pill-scroll;
-        animation-timeline: view();
-        animation-range: entry 0% cover 80%;
-        animation-duration: auto;
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        animation-delay: 0s;
-      }
-      .tool-pill:nth-child(odd) {
-        animation-name: tool-pill-scroll-alt;
-        animation-range: entry 10% cover 90%;
-      }
-      .tool-pill:nth-child(3n) {
-        animation-range: entry 5% cover 70%;
-      }
-      .tool-pill:nth-child(5n) {
-        animation-range: entry 15% cover 85%;
-      }
-    }
-    @keyframes tool-pill-scroll {
-      0%   { transform: translateY(14px)  rotate(-4deg) scale(0.94); opacity: 0.35; }
-      35%  { transform: translateY(0)     rotate(0deg)  scale(1);    opacity: 1; }
-      70%  { transform: translateY(0)     rotate(0deg)  scale(1);    opacity: 1; }
-      100% { transform: translateY(-10px) rotate(3deg)  scale(0.96); opacity: 0.55; }
-    }
-    @keyframes tool-pill-scroll-alt {
-      0%   { transform: translateY(-14px) rotate(4deg)  scale(0.94); opacity: 0.35; }
-      35%  { transform: translateY(0)     rotate(0deg)  scale(1);    opacity: 1; }
-      70%  { transform: translateY(0)     rotate(0deg)  scale(1);    opacity: 1; }
-      100% { transform: translateY(10px)  rotate(-3deg) scale(0.96); opacity: 0.55; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .tool-pill {
-        animation: none;
-      }
-      .tool-pill:hover {
-        transform: none;
-      }
-    }
-
-    /* ── Screenshots ── */
-    /* Full-bleed scroller: breaks out of the 900px .container so screenshots
-       run edge-to-edge and don't feel boxed in. */
-    .shots-section {
-      /* Negative horizontal margins cancel main's 1.5rem padding
-         so the scroller truly runs edge-to-edge of the viewport. */
-      margin: 3rem -1.5rem;
     }
     .shots {
       display: flex;
       gap: 1.25rem;
       overflow-x: auto;
       overflow-y: visible;
-      padding: 0.75rem clamp(1.5rem, 6vw, 4rem);
+      padding: 0.5rem clamp(1.5rem, 8vw, 5rem) 1.5rem;
       scroll-snap-type: x mandatory;
-      scroll-padding-left: clamp(1.5rem, 6vw, 4rem);
+      scroll-padding-left: clamp(1.5rem, 8vw, 5rem);
       -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
     }
-    .shots img {
+    .shot {
       flex: 0 0 auto;
-      width: min(780px, 85vw);
-      max-height: 70vh;
-      height: auto;
-      object-fit: contain;
-      border-radius: 10px;
-      border: 1px solid var(--border);
+      width: min(820px, 88vw);
       scroll-snap-align: start;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
     }
-    @media (max-width: 600px) {
-      .shots-section { margin: 2rem 0; }
-      .shots { padding: 0.5rem 1.25rem; gap: 1rem; }
-      .shots img { width: 85vw; max-height: none; }
+    .shot img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: 0 20px 40px -20px rgba(20,17,15,0.25), 0 6px 12px -8px rgba(20,17,15,0.15);
     }
-
-    /* ── Features ── */
-    .features {
-      list-style: none;
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    .shot .caption {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.75rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
       gap: 1rem;
     }
-    .features li {
-      font-size: 0.9375rem;
-      color: var(--body-text);
-      padding-left: 1.25rem;
-      position: relative;
-      line-height: 1.55;
+
+    /* ── Specs ── */
+    .specs {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border-top: 1px solid var(--border);
+      border-left: 1px solid var(--border);
     }
-    .features li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0.55rem;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--accent);
+    .specs .cell {
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 1.75rem 1.5rem;
+      background: var(--bg);
+    }
+    .specs .cell .label {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+    .specs .cell .value {
+      font-size: 1.125rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+    .specs .cell .sub {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      margin-top: 0.3rem;
+    }
+    @media (max-width: 900px) { .specs { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .specs { grid-template-columns: 1fr; } }
+
+    /* ── Buy block ── */
+    .buy {
+      background: var(--ink);
+      color: #f5f3ee;
+      padding: 5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .buy-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .buy h2 {
+      font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+    .buy p {
+      color: #c7c0b3;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      max-width: 42ch;
+    }
+    .buy .btn-primary {
+      background: var(--bg);
+      color: var(--ink);
+    }
+    .buy .btn-primary:hover { background: var(--spot); color: var(--bg); }
+    .buy .btn-secondary { color: #f5f3ee; border-color: rgba(245,243,238,0.3); }
+    .buy .btn-secondary:hover { border-color: #f5f3ee; }
+    .buy-facts {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.8125rem;
+      line-height: 2;
+      color: #c7c0b3;
+      border-left: 1px solid #3a332d;
+      padding-left: 2rem;
+    }
+    .buy-facts b { color: #f0d3b8; font-weight: 500; }
+    @media (max-width: 780px) {
+      .buy-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .buy-facts { border-left: none; border-top: 1px solid #3a332d; padding-left: 0; padding-top: 1.5rem; }
     }
 
     /* ── Footer ── */
     footer {
+      padding: 2.5rem 1.5rem;
       text-align: center;
-      padding: 1.5rem;
       font-size: 0.8125rem;
       color: var(--muted);
-      border-top: 1px solid var(--border);
     }
-    footer a { color: var(--muted); text-decoration: none; }
-    footer a:hover { color: var(--accent); }
     .footer-links {
       display: flex;
       justify-content: center;
-      gap: 1.25rem;
-      margin-bottom: 0.5rem;
+      gap: 1.5rem;
+      margin-bottom: 0.75rem;
+      flex-wrap: wrap;
+    }
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--ink); }
+
+    /* ── Reveal on scroll ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.in {
+      opacity: 1;
+      transform: none;
     }
 
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal, .reveal.in { opacity: 1; transform: none; transition: none; }
+      .hero-icon:hover { transform: rotate(-3deg); }
+      .btn:hover { transform: none; }
+    }
+
+    /* ── Dark mode ── */
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg:        #111113;
-        --surface:   #1c1c1e;
-        --border:    #2c2c2e;
-        --text:      #f0f0f0;
-        --muted:     #8e8e93;
-        --accent:    #5fa896;
-        --accent-light: #1e3330;
-        --body-text: #d1d1d6;
+        --bg:          #14110f;
+        --bg-alt:      #1b1815;
+        --surface:     #22201c;
+        --ink:         #f0ece3;
+        --ink-soft:    #d6d0c2;
+        --muted:       #8e877c;
+        --border:      #2e2a25;
+        --border-soft: #262320;
+        --accent:      #6fa796;
+        --accent-soft: #1f2e2a;
+        --spot:        #d9602a;
+        --spot-soft:   #3a2a20;
       }
-      .hero-icon { box-shadow: 0 4px 16px rgba(0,0,0,0.4); }
-      .shots img { box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+      .hero::before { background-image: radial-gradient(circle at 1px 1px, rgba(240,236,227,0.07) 1px, transparent 0); }
+      .hero-icon {
+        box-shadow:
+          0 30px 60px -20px rgba(0,0,0,0.6),
+          0 10px 20px -10px rgba(0,0,0,0.4);
+      }
+      .chip {
+        background: var(--surface);
+        border-color: var(--border);
+        color: var(--ink-soft);
+      }
+      .manifest { background: #0a0908; color: #d6d0c2; }
+      .manifest .k { color: #8fb8aa; }
+      .manifest .v { color: #e8b68a; }
+      .btn-primary { background: var(--ink); color: var(--bg); }
+      .btn-primary:hover { background: var(--spot); color: var(--bg); }
+      .buy { background: #0a0908; }
+      .buy .btn-primary { background: var(--ink); color: var(--bg); }
+      .shots-section { background: var(--bg-alt); }
     }
   </style>
 </head>
@@ -409,118 +604,298 @@
   <div id="nav-placeholder"></div>
 
   <main>
-    <div class="container">
 
-      <!-- Hero -->
-      <div class="hero">
-        <img src="assets/bench-icon.png" alt="Bench app icon" class="hero-icon" />
-        <div class="hero-text">
-          <span class="page-label">macOS app</span>
-          <h1>Bench — Dev Toolbox</h1>
-          <p class="subtitle">18 tools. Zero tabs.</p>
-          <p class="promo">Eighteen developer utilities in one native Mac window. Paste anything — Bench picks the right tool. Offline, private, no subscription.</p>
-        </div>
-      </div>
-
-      <!-- Description -->
-      <section class="card">
-        <h2>What it is</h2>
-        <p>Paste a token. Get the decoded JWT in a second. Drop in a messy JSON blob. Get it formatted, validated, copyable.</p>
-        <p>Compress .mov files into instantly shareable .mp4s.</p>
-        <p>Bench is a single-window toolbox of the utilities developers reach for every day. No browser tabs. No network calls for any tool. No subscription.</p>
-      </section>
-
-      <!-- Tools list -->
-      <section class="card">
-        <h2>Included tools</h2>
-        <div class="tools-grid">
-          <div class="tool-group">
-            <h3>Encoders</h3>
-            <ul>
-              <li class="tool-pill">Base64 encode / decode</li>
-              <li class="tool-pill">URL encode / decode</li>
-            </ul>
+    <!-- ── HERO ── -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="dot"></span><span class="mono">NATIVE · macOS 14+</span></div>
+          <h1>The developer <span class="accent">workbench</span><br>for your Mac.</h1>
+          <p class="lede">Eighteen small utilities I kept rebuilding as web pages. Now they're one native window. Paste something, Bench guesses the tool. Works offline. Pay once.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#get">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17 8h-1V6a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v9a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-9a2 2 0 0 0-2-2Zm-7-2a2 2 0 0 1 4 0v2h-4Z" opacity=".0"/><path d="M12 3 4 7l8 4 8-4-8-4Zm-8 6v8l8 4V13L4 9Zm10 4v8l8-4V9l-8 4Z"/></svg>
+              View on the Mac App Store
+            </a>
+            <a class="btn btn-secondary" href="#tools">See all 18 tools →</a>
           </div>
-          <div class="tool-group">
-            <h3>Formatters</h3>
-            <ul>
-              <li class="tool-pill">JSON formatter &amp; validator</li>
-              <li class="tool-pill">Markdown preview</li>
-              <li class="tool-pill">Diff viewer</li>
-            </ul>
-          </div>
-          <div class="tool-group">
-            <h3>Generators</h3>
-            <ul>
-              <li class="tool-pill">UUID generator</li>
-              <li class="tool-pill">Lorem ipsum</li>
-              <li class="tool-pill">Timestamp / Unix time</li>
-            </ul>
-          </div>
-          <div class="tool-group">
-            <h3>Crypto</h3>
-            <ul>
-              <li class="tool-pill">Hash generator (MD5, SHA-1, SHA-256, SHA-512)</li>
-              <li class="tool-pill">JWT decoder</li>
-            </ul>
-          </div>
-          <div class="tool-group">
-            <h3>Converters</h3>
-            <ul>
-              <li class="tool-pill">Color converter (hex, RGB, HSL, HSB)</li>
-              <li class="tool-pill">Number base (bin / oct / dec / hex)</li>
-              <li class="tool-pill">Text case (camel, snake, kebab, title, …)</li>
-              <li class="tool-pill">Regex tester</li>
-            </ul>
+          <div class="hero-meta">
+            <span><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 12l6 6L20 6"/></svg>No subscription</span>
+            <span><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 12l6 6L20 6"/></svg>No accounts</span>
+            <span><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 12l6 6L20 6"/></svg>No tracking</span>
           </div>
         </div>
-      </section>
-
-    </div><!-- /.container (break out for full-bleed screenshots) -->
-
-    <!-- Screenshots (full-bleed, outside the 900px container) -->
-    <section class="shots-section" aria-label="Screenshots">
-      <div class="shots">
-        <img src="assets/bench-01-json.png" alt="JSON formatter" loading="lazy" />
-        <img src="assets/bench-02-jwt.png" alt="JWT decoder" loading="lazy" />
-        <img src="assets/bench-03-regex.png" alt="Regex explainer" loading="lazy" />
-        <img src="assets/bench-04-hash.png" alt="Hash generator" loading="lazy" />
-        <img src="assets/bench-05-uuid.png" alt="UUID generator" loading="lazy" />
+        <div class="hero-icon-wrap">
+          <img src="assets/bench-icon.png" alt="Bench app icon" class="hero-icon" />
+          <span class="chip chip-1">{ } JSON</span>
+          <span class="chip chip-2">JWT.decode</span>
+          <span class="chip chip-3">/regex/g</span>
+          <span class="chip chip-4">sha256</span>
+        </div>
       </div>
     </section>
 
-    <div class="container"><!-- resume main container -->
+    <!-- ── TOOL INDEX ── -->
+    <section class="slab" id="tools">
+      <div class="wrap">
+        <div class="slab-head reveal">
+          <div>
+            <div class="num">01 — INDEX</div>
+            <h2>Eighteen tools. One window. Zero tabs.</h2>
+          </div>
+          <p class="kicker">The stuff you keep re‑Googling at 2am. One keystroke away, grouped the way you think about it.</p>
+        </div>
 
-      <!-- Smart paste -->
-      <section class="card">
-        <h2>Smart paste</h2>
-        <p>Copy anything to the clipboard and Bench proposes the most likely tool — paste a JWT and JWT decoder is primed; paste JSON and the formatter is ready. Detection runs locally with a rule-based heuristic. No machine learning, no network, no telemetry.</p>
-      </section>
+        <div class="tool-cats reveal">
 
-      <!-- Features -->
-      <section class="card">
-        <h2>Native Mac, offline, private</h2>
-        <ul class="features">
-          <li>Built in SwiftUI for macOS 14 and later.</li>
-          <li>Universal binary; runs natively on Apple silicon and Intel.</li>
-          <li>No account, no login, no analytics, no third-party SDKs.</li>
-          <li>Works entirely offline — no data ever leaves your Mac.</li>
-          <li>Menu-bar popover and a full window; your choice.</li>
-        </ul>
-      </section>
+          <div class="tool-cat">
+            <header>
+              <h3>Encoding</h3>
+              <span class="count">02</span>
+            </header>
+            <ul>
+              <li><span class="n mono">01</span><span>Base64</span></li>
+              <li><span class="n mono">02</span><span>URL Encode</span></li>
+            </ul>
+          </div>
 
-    </div>
+          <div class="tool-cat">
+            <header>
+              <h3>Formatting</h3>
+              <span class="count">04</span>
+            </header>
+            <ul>
+              <li><span class="n mono">03</span><span>JSON Formatter</span></li>
+              <li><span class="n mono">04</span><span>Markdown Preview</span></li>
+              <li><span class="n mono">05</span><span>Text Diff</span></li>
+              <li><span class="n mono">06</span><span>Image Diff</span></li>
+            </ul>
+          </div>
+
+          <div class="tool-cat">
+            <header>
+              <h3>Generators</h3>
+              <span class="count">03</span>
+            </header>
+            <ul>
+              <li><span class="n mono">07</span><span>UUID Generator</span></li>
+              <li><span class="n mono">08</span><span>Timestamp</span></li>
+              <li><span class="n mono">09</span><span>Placeholder text generator</span></li>
+            </ul>
+          </div>
+
+          <div class="tool-cat">
+            <header>
+              <h3>Crypto</h3>
+              <span class="count">02</span>
+            </header>
+            <ul>
+              <li><span class="n mono">10</span><span>Hash Generator <span class="mono" style="color:var(--muted); font-size:.78rem">MD5 · SHA‑1 · SHA‑256 · SHA‑512</span></span></li>
+              <li><span class="n mono">11</span><span>JWT Decoder</span></li>
+            </ul>
+          </div>
+
+          <div class="tool-cat">
+            <header>
+              <h3>Converters</h3>
+              <span class="count">05</span>
+            </header>
+            <ul>
+              <li><span class="n mono">12</span><span>Color Converter</span></li>
+              <li><span class="n mono">13</span><span>Text Case</span></li>
+              <li><span class="n mono">14</span><span>Number Base</span></li>
+              <li><span class="n mono">15</span><span>Regex Tester</span></li>
+              <li><span class="n mono">16</span><span>Regex Explainer</span></li>
+            </ul>
+          </div>
+
+          <div class="tool-cat">
+            <header>
+              <h3>Media</h3>
+              <span class="count">02</span>
+            </header>
+            <ul>
+              <li><span class="n mono">17</span><span>MOV → MP4</span></li>
+              <li><span class="n mono">18</span><span>MOV → GIF</span></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SMART PASTE + PRIVACY MANIFEST ── -->
+    <section class="slab">
+      <div class="wrap">
+        <div class="slab-head reveal">
+          <div>
+            <div class="num">02 — METHOD</div>
+            <h2>Smart where it counts. Quiet everywhere else.</h2>
+          </div>
+          <p class="kicker">A small rule-based check reads your clipboard and picks a tool. It runs on your Mac. Nothing is sent anywhere.</p>
+        </div>
+
+        <div class="split">
+          <div class="split-card reveal">
+            <span class="badge">Smart Paste</span>
+            <h3>Paste a JWT. The decoder's already open.</h3>
+            <p>Copy a chunk of JSON, switch to Bench, and the formatter is waiting. Copy a hex color, and the converter is open. Copy a JWT, and it's already decoded. Nothing to click.</p>
+            <p>The detection is regex and string checks — maybe 200 lines. It runs on your Mac, it has no network code compiled in, and if it doesn't recognise what you pasted it just gives up quietly and lets you pick.</p>
+          </div>
+          <div class="reveal">
+            <pre class="manifest" aria-label="Bench capability manifest">
+<span class="c"># bench.manifest — what Bench does, and doesn't</span>
+
+<span class="k">network.client</span>        : <span class="v">false</span>    <span class="c"># sandbox entitlement</span>
+<span class="k">analytics</span>             : <span class="v">none</span>
+<span class="k">telemetry</span>             : <span class="v">none</span>
+<span class="k">account.required</span>      : <span class="v">false</span>
+<span class="k">third_party.sdks</span>      : <span class="v">[]</span>
+<span class="k">detection.method</span>      : <span class="v">rule_based_heuristic</span>
+<span class="k">data.leaves_device</span>    : <span class="v">false</span>
+<span class="k">purchase.model</span>        : <span class="v">one_time</span>
+<span class="k">subscription</span>          : <span class="v">never</span></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SCREENSHOTS (full-bleed) ── -->
+    <section class="shots-section" aria-label="Screenshots">
+      <div class="shots-head reveal">
+        <span class="num">03 — THE TOOLS IN USE</span>
+        <h2>Native SwiftUI. Nothing in the way.</h2>
+      </div>
+      <div class="shots">
+        <div class="shot">
+          <img src="assets/bench-01-json.png" alt="JSON formatter with pasted payload and formatted output" loading="lazy" />
+          <div class="caption"><span>bench-01</span><span>JSON Formatter</span></div>
+        </div>
+        <div class="shot">
+          <img src="assets/bench-02-jwt.png" alt="JWT decoder with header, payload and signature panels" loading="lazy" />
+          <div class="caption"><span>bench-02</span><span>JWT Decoder</span></div>
+        </div>
+        <div class="shot">
+          <img src="assets/bench-03-regex.png" alt="Regex tester matching patterns" loading="lazy" />
+          <div class="caption"><span>bench-03</span><span>Regex Explainer</span></div>
+        </div>
+        <div class="shot">
+          <img src="assets/bench-04-hash.png" alt="Hash generator producing MD5, SHA-1, SHA-256 and SHA-512" loading="lazy" />
+          <div class="caption"><span>bench-04</span><span>Hash Generator</span></div>
+        </div>
+        <div class="shot">
+          <img src="assets/bench-05-uuid.png" alt="UUID generator with v4 identifiers" loading="lazy" />
+          <div class="caption"><span>bench-05</span><span>UUID Generator</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SPECS ── -->
+    <section class="slab" style="padding-bottom: 5rem;">
+      <div class="wrap">
+        <div class="slab-head reveal">
+          <div>
+            <div class="num">04 — BUILD</div>
+            <h2>Built to belong on a Mac.</h2>
+          </div>
+        </div>
+
+        <div class="specs reveal">
+          <div class="cell">
+            <div class="label">Platform</div>
+            <div class="value">macOS 14+</div>
+            <div class="sub">SwiftUI, native window</div>
+          </div>
+          <div class="cell">
+            <div class="label">Architecture</div>
+            <div class="value">Universal</div>
+            <div class="sub">Apple silicon &amp; Intel</div>
+          </div>
+          <div class="cell">
+            <div class="label">Tools</div>
+            <div class="value">18</div>
+            <div class="sub">Counted, not rounded</div>
+          </div>
+          <div class="cell">
+            <div class="label">Network use</div>
+            <div class="value">None, per tool</div>
+            <div class="sub">No URLSession in source</div>
+          </div>
+          <div class="cell">
+            <div class="label">Analytics</div>
+            <div class="value">Zero</div>
+            <div class="sub">No SDKs. No pings.</div>
+          </div>
+          <div class="cell">
+            <div class="label">Accounts</div>
+            <div class="value">Not required</div>
+            <div class="sub">Download, open, use.</div>
+          </div>
+          <div class="cell">
+            <div class="label">Purchase</div>
+            <div class="value">One time</div>
+            <div class="sub">No subscription, ever</div>
+          </div>
+          <div class="cell">
+            <div class="label">Distribution</div>
+            <div class="value">Mac App Store</div>
+            <div class="sub">Sandboxed, notarised</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BUY / CTA ── -->
+    <section class="buy" id="get">
+      <div class="buy-inner">
+        <div class="reveal">
+          <h2>Bench is on the Mac App Store.</h2>
+          <p>Download is free. Bench Pro is a one-time purchase. Every tool included today stays yours — no future rug-pull into a subscription.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#">View on the Mac App Store</a>
+            <a class="btn btn-secondary" href="bench/support.html">Support</a>
+          </div>
+        </div>
+        <div class="buy-facts reveal">
+          <div><b>→</b> Works offline. Airplane mode is fine.</div>
+          <div><b>→</b> Nothing you paste leaves your Mac</div>
+          <div><b>→</b> Zero analytics, zero third-party SDKs</div>
+          <div><b>→</b> Pay once. I'm not going to bill you monthly.</div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer>
     <div class="footer-links">
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
+      <a href="bench/support.html">Support</a>
       <a href="mailto:tom@zentsu.app">tom@zentsu.app</a>
     </div>
     <p>&copy; 2026 Zentsu LLC</p>
   </footer>
 
   <script src="nav.js"></script>
+  <script>
+    // Scroll reveal (respects prefers-reduced-motion via CSS)
+    (function () {
+      var items = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        items.forEach(function (el) { el.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('in');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      items.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
 </body>
 </html>
