@@ -4,8 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bench — Dev Toolbox for macOS</title>
-  <meta name="description" content="Eighteen developer utilities in one native Mac window. JSON, JWT, regex, hashes, UUIDs, MOV→MP4 and more. Offline, private, one-time purchase." />
-  <link rel="icon" href="assets/bench-icon.png" />
+  <meta name="description" content="A native Mac window full of small developer utilities. JSON, JWT, regex, hashes, UUIDs, MOV→MP4 and more. Offline, private, one-time purchase." />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/bench-icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/bench-icon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/bench-icon.png" />
+  <link rel="shortcut icon" href="assets/bench-icon.png" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Bench" />
+  <meta property="og:title" content="Bench — Dev Toolbox for macOS" />
+  <meta property="og:description" content="A native Mac window full of small developer utilities. JSON, JWT, regex, hashes, UUIDs, MOV→MP4 and more. Offline, private, one-time purchase." />
+  <meta property="og:image" content="assets/bench-icon.png" />
+  <meta property="og:url" content="https://zentsu.app/bench.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Bench — Dev Toolbox for macOS" />
+  <meta name="twitter:description" content="A native Mac window full of small developer utilities. Offline, private, one-time purchase." />
+  <meta name="twitter:image" content="assets/bench-icon.png" />
+  <meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#14110f" media="(prefers-color-scheme: dark)" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -21,9 +41,9 @@
       --muted:       #6b655e;
       --border:      #d8d4cb;
       --border-soft: #e6e2d8;
-      --accent:      #4a7c6f;        /* keep site teal for harmony */
+      --accent:      #4a7c6f;
       --accent-soft: #e6efec;
-      --spot:        #b84e1a;        /* copper — used once, on the CTA */
+      --spot:        #b84e1a;
       --spot-soft:   #f1e3d8;
     }
 
@@ -77,6 +97,34 @@
       letter-spacing: -0.01em;
     }
 
+    /* Sticky mini-CTA in nav (appended by JS) */
+    .nav-mini-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.85rem;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--bg);
+      background: var(--ink);
+      border-radius: 8px;
+      text-decoration: none !important;
+      letter-spacing: 0;
+      opacity: 0;
+      transform: translateY(-4px);
+      pointer-events: none;
+      transition: opacity 0.25s ease, transform 0.25s ease, background 0.15s ease;
+    }
+    .nav-mini-cta.show {
+      opacity: 1;
+      transform: none;
+      pointer-events: auto;
+    }
+    .nav-mini-cta:hover { background: var(--spot); color: var(--bg) !important; }
+    @media (max-width: 520px) {
+      .nav-mini-cta .nav-mini-long { display: none; }
+    }
+
     /* ── Layout ── */
     main { flex: 1; }
     .wrap {
@@ -112,21 +160,6 @@
       grid-template-columns: 1.3fr 1fr;
       gap: 4rem;
       align-items: center;
-    }
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.75rem;
-      font-weight: 500;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 1.5rem;
-    }
-    .eyebrow .dot {
-      width: 6px; height: 6px; border-radius: 50%;
-      background: var(--accent);
     }
     .hero h1 {
       font-size: clamp(2.75rem, 6.5vw, 5.25rem);
@@ -165,6 +198,8 @@
       text-decoration: none;
       border: 1px solid transparent;
       transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+      cursor: pointer;
+      font-family: inherit;
     }
     .btn-primary {
       background: var(--ink);
@@ -185,6 +220,7 @@
       margin-top: 2.5rem;
       font-size: 0.8125rem;
       color: var(--muted);
+      flex-wrap: wrap;
     }
     .hero-meta span { display: inline-flex; align-items: center; gap: 0.4rem; }
     .hero-meta .tick {
@@ -197,6 +233,7 @@
       align-items: center;
       justify-content: center;
       position: relative;
+      min-height: 360px;
     }
     .hero-icon {
       width: min(320px, 80%);
@@ -208,12 +245,43 @@
         0 10px 20px -10px rgba(20,17,15,0.2);
       transform: rotate(-3deg);
       transition: transform 0.4s cubic-bezier(.2,.8,.2,1);
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
     }
     .hero-icon:hover { transform: rotate(0deg) scale(1.02); }
 
-    /* Floating tool chips around icon */
+    /* Aura pulse when summoning */
+    .hero-icon-wrap::after {
+      content: "";
+      position: absolute;
+      left: 50%; top: 50%;
+      width: min(320px, 80%);
+      aspect-ratio: 1;
+      border-radius: 22%;
+      transform: translate(-50%, -50%) scale(0.9);
+      box-shadow: 0 0 0 0 rgba(74, 124, 111, 0);
+      pointer-events: none;
+      z-index: 1;
+      transition: box-shadow 0.6s ease, transform 0.6s ease;
+    }
+    .hero-icon-wrap.summoning::after {
+      box-shadow: 0 0 0 40px rgba(74, 124, 111, 0);
+      transform: translate(-50%, -50%) scale(1.15);
+      animation: aura-pulse 1.1s ease-out;
+    }
+    @keyframes aura-pulse {
+      0%   { box-shadow: 0 0 0 0 rgba(74, 124, 111, 0.45); transform: translate(-50%,-50%) scale(0.9); }
+      60%  { box-shadow: 0 0 0 50px rgba(74, 124, 111, 0); transform: translate(-50%,-50%) scale(1.15); }
+      100% { box-shadow: 0 0 0 0 rgba(74, 124, 111, 0); transform: translate(-50%,-50%) scale(1); }
+    }
+
+    /* Floating tool chips — JS owns the transform each frame (orbit spin).
+       CSS only handles enter / leave opacity fade + summon-flash tint. */
     .chip {
       position: absolute;
+      left: 50%;
+      top: 50%;
       font-family: "JetBrains Mono", monospace;
       font-size: 0.75rem;
       font-weight: 500;
@@ -224,21 +292,75 @@
       color: var(--ink-soft);
       box-shadow: 0 4px 12px -4px rgba(20,17,15,0.12);
       white-space: nowrap;
+      cursor: pointer;
+      user-select: none;
+      opacity: 0;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.6s ease, background 0.15s ease, border-color 0.15s ease, color 0.15s ease, box-shadow 0.3s ease;
+      z-index: 3;
+      will-change: transform, opacity;
     }
-    .chip-1 { top: 8%;  left: -6%;  transform: rotate(-6deg); }
-    .chip-2 { top: 28%; right: -10%; transform: rotate(5deg); }
-    .chip-3 { bottom: 14%; left: -12%; transform: rotate(4deg); }
-    .chip-4 { bottom: 2%;  right: 2%;  transform: rotate(-3deg); }
+    .chip.alive { opacity: 1; }
+    .chip.summoned {
+      box-shadow: 0 0 0 2px var(--accent-soft), 0 8px 20px -6px rgba(74,124,111,0.35);
+      border-color: var(--accent);
+    }
+    .chip:hover {
+      background: var(--ink);
+      border-color: var(--ink);
+      color: var(--bg);
+    }
+
+    /* Floating tooltip shown when hovering a chip.
+       Rendered at document.body level (fixed-positioned) so it can never be
+       clipped by the hero's overflow:hidden. JS positions it per hover. */
+    .chip-tip {
+      position: fixed;
+      left: 0;
+      top: 0;
+      max-width: 260px;
+      padding: 0.55rem 0.75rem;
+      background: var(--ink);
+      color: var(--bg);
+      border-radius: 8px;
+      font-size: 0.8125rem;
+      line-height: 1.4;
+      box-shadow: 0 10px 24px -10px rgba(20,17,15,0.35);
+      pointer-events: none;
+      opacity: 0;
+      transform: translate(0, 0) translateY(4px);
+      transition: opacity 0.18s ease, transform 0.18s ease;
+      z-index: 50;
+      white-space: normal;
+      text-align: left;
+    }
+    .chip-tip.visible {
+      opacity: 1;
+      transform: translate(0, 0) translateY(0);
+    }
+    .chip-tip .chip-tip-name {
+      display: block;
+      font-weight: 600;
+      font-size: 0.75rem;
+      letter-spacing: 0.02em;
+      font-family: "JetBrains Mono", monospace;
+      opacity: 0.7;
+      margin-bottom: 0.2rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      .chip-tip {
+        background: var(--surface);
+        color: var(--ink);
+        box-shadow: 0 10px 24px -10px rgba(0,0,0,0.5);
+      }
+    }
 
     @media (max-width: 860px) {
       .hero { padding: 4rem 1.5rem 3.5rem; }
       .hero-inner { grid-template-columns: 1fr; gap: 3rem; }
-      .hero-icon-wrap { order: -1; }
+      .hero-icon-wrap { order: -1; min-height: 260px; }
       .hero-icon { width: 180px; transform: rotate(-2deg); }
-      .chip-1 { top: 0; left: 10%; }
-      .chip-2 { top: 15%; right: 8%; }
-      .chip-3 { bottom: 15%; left: 5%; }
-      .chip-4 { bottom: 0; right: 10%; }
+      .chip { font-size: 0.7rem; padding: 0.3rem 0.55rem; }
     }
 
     /* ── Section scaffolding ── */
@@ -280,6 +402,39 @@
     }
 
     /* ── Tool index ── */
+    .tool-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.75rem;
+    }
+    .tool-filter {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 0.5rem 0.9rem;
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted);
+      cursor: pointer;
+      transition: color 0.15s, background 0.15s, border-color 0.15s;
+      font-family: "JetBrains Mono", monospace;
+    }
+    .tool-filter:hover { color: var(--ink); border-color: var(--ink-soft); }
+    .tool-filter.active {
+      background: var(--ink);
+      color: var(--bg);
+      border-color: var(--ink);
+    }
+    .tool-filter .fcount {
+      color: inherit;
+      opacity: 0.55;
+      margin-left: 0.4rem;
+    }
+
     .tool-cats {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -294,14 +449,26 @@
       padding: 1.75rem 1.5rem;
       display: flex;
       flex-direction: column;
+      transition: opacity 0.3s ease, filter 0.3s ease;
     }
+    .tool-cat.dim { opacity: 0.28; filter: saturate(0.6); }
     .tool-cat header {
       display: flex;
-      align-items: baseline;
+      align-items: center;
       justify-content: space-between;
       margin-bottom: 1rem;
       padding-bottom: 0.75rem;
       border-bottom: 1px dashed var(--border);
+    }
+    .tool-cat header .cat-title {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+    }
+    .tool-cat header .cat-icon {
+      width: 18px; height: 18px;
+      color: var(--accent);
+      flex-shrink: 0;
     }
     .tool-cat h3 {
       font-family: "JetBrains Mono", monospace;
@@ -323,14 +490,18 @@
     }
     .tool-cat li {
       display: grid;
-      grid-template-columns: 1.75rem 1fr;
+      grid-template-columns: 1.75rem 1fr auto;
       align-items: center;
       gap: 0.5rem;
-      padding: 0.55rem 0;
+      padding: 0.55rem 0.35rem;
+      margin: 0 -0.35rem;
       font-size: 0.9375rem;
       color: var(--ink-soft);
       border-bottom: 1px solid transparent;
-      transition: color 0.15s;
+      border-radius: 6px;
+      position: relative;
+      transition: color 0.15s, background 0.4s ease;
+      scroll-margin-top: 80px;
     }
     .tool-cat li:not(:last-child) { border-bottom-color: var(--border-soft); }
     .tool-cat li:hover { color: var(--ink); }
@@ -339,14 +510,209 @@
       font-size: 0.75rem;
       color: var(--muted);
     }
+    .tool-cat li .pop {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--spot);
+      background: var(--spot-soft);
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
+    }
+    .tool-cat li.flash {
+      background: var(--accent-soft);
+      animation: row-flash 1.6s ease-out;
+    }
+    @keyframes row-flash {
+      0%   { background: var(--accent-soft); box-shadow: inset 2px 0 0 var(--accent); }
+      100% { background: transparent; box-shadow: inset 2px 0 0 transparent; }
+    }
+
+    /* Per-tool hover tooltip (subtle benefit line) */
+    .tool-cat li[data-benefit]::after {
+      content: attr(data-benefit);
+      position: absolute;
+      left: 1.75rem;
+      bottom: 100%;
+      margin-bottom: 6px;
+      background: var(--ink);
+      color: var(--bg);
+      padding: 0.4rem 0.65rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-family: "Inter Tight", sans-serif;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-transform: none;
+      white-space: nowrap;
+      max-width: 280px;
+      white-space: normal;
+      width: max-content;
+      max-width: 260px;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(4px);
+      transition: opacity 0.18s, transform 0.18s;
+      z-index: 5;
+      box-shadow: 0 10px 24px -12px rgba(20,17,15,0.4);
+    }
+    .tool-cat li[data-benefit]:hover::after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     @media (max-width: 900px) { .tool-cats { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 580px) { .tool-cats { grid-template-columns: 1fr; } }
 
-    /* ── Feature split ── */
+    /* ── Smart Paste interactive demo ── */
+    .sp-demo {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 1.25rem;
+      align-items: stretch;
+    }
+    .sp-left {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .sp-left .sp-label {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.25rem;
+    }
+    .sp-clip-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.4rem;
+      width: 100%;
+      padding: 0.8rem 0.95rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      text-align: left;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 0.875rem;
+      color: var(--ink);
+      transition: border-color 0.15s, background 0.15s, transform 0.08s;
+    }
+    .sp-clip-btn:hover { border-color: var(--ink-soft); background: var(--surface); }
+    .sp-clip-btn:active { transform: translateY(1px); }
+    .sp-clip-btn.active {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+    }
+    .sp-clip-btn .sp-clip-label {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-weight: 500;
+    }
+    .sp-clip-btn .sp-clip-mono {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.72rem;
+      color: var(--muted);
+      width: 100%;
+      line-height: 1.4;
+      word-break: break-all;
+      opacity: 0.85;
+    }
+    .sp-clip-btn .sp-clip-icon {
+      width: 14px; height: 14px;
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+    .sp-clip-btn.active .sp-clip-icon { color: var(--accent); }
+    .sp-hint {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      margin-top: auto;
+      padding-top: 0.5rem;
+      line-height: 1.5;
+    }
+
+    .sp-right {
+      background: var(--ink);
+      border-radius: 14px;
+      overflow: hidden;
+      color: #e8e4dc;
+      display: flex;
+      flex-direction: column;
+      min-height: 320px;
+    }
+    .sp-chrome {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.75rem;
+      color: #8e877c;
+    }
+    .sp-chrome .dots {
+      display: flex; gap: 0.35rem;
+    }
+    .sp-chrome .dots span {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: #3a332d;
+    }
+    .sp-chrome .dots span:nth-child(1) { background: #e45a4a; }
+    .sp-chrome .dots span:nth-child(2) { background: #e8b25a; }
+    .sp-chrome .dots span:nth-child(3) { background: #6aa87f; }
+    .sp-chrome .sp-tool {
+      color: #f0d3b8;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .sp-chrome .sp-sep { opacity: 0.4; }
+    .sp-body {
+      padding: 1.1rem 1.25rem 1.25rem;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.8125rem;
+      line-height: 1.7;
+      flex: 1;
+      overflow: auto;
+    }
+    .sp-body .sp-k { color: #a8c5ba; }
+    .sp-body .sp-v { color: #f0d3b8; }
+    .sp-body .sp-c { color: #6b655e; }
+    .sp-body .sp-g { color: #8fb89d; }
+    .sp-body .sp-r { color: #e8b25a; }
+    .sp-body .sp-p { color: #e8e4dc; }
+    .sp-body .sp-swatch {
+      display: inline-block;
+      width: 1.4em; height: 1.4em;
+      border-radius: 4px;
+      vertical-align: -0.3em;
+      margin-right: 0.5em;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .sp-fade {
+      opacity: 0;
+      animation: sp-fade-in 0.35s ease forwards;
+    }
+    @keyframes sp-fade-in {
+      to { opacity: 1; }
+    }
+
+    /* ── Feature split (Smart Paste copy + manifest) ── */
     .split {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 3rem;
+      margin-top: 3rem;
     }
     .split-card h3 {
       font-size: 1.375rem;
@@ -386,7 +752,248 @@
     .manifest .k { color: #a8c5ba; }
     .manifest .v { color: #f0d3b8; }
     .manifest .c { color: #6b655e; }
-    @media (max-width: 780px) { .split { grid-template-columns: 1fr; gap: 2rem; } }
+    @media (max-width: 900px) {
+      .sp-demo { grid-template-columns: 1fr; }
+      .split { grid-template-columns: 1fr; gap: 2rem; }
+    }
+
+    /* ── Bench preview (static paste → detect → output demo) ── */
+    .bp-demo {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: 1.25rem;
+      padding: 0.25rem 0.5rem 1.5rem;
+      scroll-padding-left: 0.5rem;
+      scrollbar-width: thin;
+    }
+    .bp-col {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      flex: 0 0 min(420px, 42%);
+      scroll-snap-align: start;
+      min-width: 0;
+    }
+    .bp-step-label {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .bp-paste {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.9rem 1rem;
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.78rem;
+      line-height: 1.55;
+      color: var(--ink-soft);
+      word-break: break-all;
+      white-space: pre-wrap;
+      min-height: 6.75rem;
+      max-height: 11rem;
+      overflow: auto;
+    }
+    /* Blue detection-pill CTA */
+    .bp-pill {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      width: 100%;
+      min-height: 3.5rem;
+      padding: 0.55rem 1.1rem 0.55rem 1rem;
+      background: #4a8cff;
+      color: #ffffff;
+      border: none;
+      border-radius: 999px;
+      cursor: default;
+      font-family: inherit;
+      text-align: left;
+      box-shadow:
+        0 6px 18px -6px rgba(74, 140, 255, 0.55),
+        0 2px 4px rgba(0, 0, 0, 0.12);
+      transition: background 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
+    }
+    .bp-pill:hover {
+      background: #5e9aff;
+      transform: scale(1.02);
+      box-shadow:
+        0 10px 24px -8px rgba(74, 140, 255, 0.65),
+        0 3px 6px rgba(0, 0, 0, 0.14);
+    }
+    .bp-pill-glyph {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      height: auto;
+      flex-shrink: 0;
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1;
+    }
+    .bp-pill-glyph svg { width: 1.4rem; height: 1.4rem; stroke: currentColor; }
+    .bp-pill-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.05rem;
+      flex: 1;
+      min-width: 0;
+    }
+    .bp-pill-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.005em;
+      line-height: 1.15;
+    }
+    .bp-pill-sub {
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.82);
+      line-height: 1.2;
+    }
+    .bp-pill-enter {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 1rem;
+      line-height: 1;
+      opacity: 0.92;
+    }
+    /* Output cards (dark, rendered-by-Bench panel) */
+    .bp-out {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+    .bp-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .bp-card-label {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .bp-card-body {
+      background: #1f1f1f;
+      color: #e8e4dc;
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      overflow-x: auto;
+      white-space: pre;
+    }
+    /* JSON token colors — tuned for legibility in both light + dark page modes */
+    .bp-card-body .tok-key    { color: #6ad0d9; }
+    .bp-card-body .tok-str    { color: #ff8a7a; }
+    .bp-card-body .tok-num    { color: #b89cec; }
+    .bp-card-body .tok-punct  { color: #9aa0a6; }
+    .bp-card-body .tok-plain  { color: #e8e4dc; }
+
+    /* Color Converter swatch + field rows (third demo column) */
+    /* Override the .bp-card-body pre/line-height inheritance that was
+       injecting ghost whitespace lines between every <div class="bp-color-field">. */
+    .bp-card-body.bp-color-body {
+      white-space: normal;
+      line-height: 1.2;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .bp-color-swatch {
+      width: 100%;
+      height: 48px;
+      border-radius: 8px;
+      background: #ff8a3d;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .bp-color-field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+      margin-top: 0.35rem;
+    }
+    .bp-color-field .bp-card-label {
+      margin: 0;
+      padding: 0;
+      line-height: 1.1;
+    }
+    /* Inline modifier: label sits on same row as single-value output (HEX/SwiftUI/CSS) */
+    .bp-color-field.inline {
+      flex-direction: row;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .bp-color-field.inline .bp-card-label {
+      flex: 0 0 3.5rem;
+    }
+    .bp-color-field.inline .bp-color-line {
+      flex: 1 1 auto;
+      margin: 0;
+    }
+    /* Chip row: flex + nowrap so R/G/B and H/S/L never wrap at narrow widths */
+    .bp-color-field-row {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 0.4rem;
+    }
+    .bp-color-mini {
+      flex: 1 1 0;
+      min-width: 0;
+      padding: 0.35rem 0.5rem;
+      background: #1f1f1f;
+      border-radius: 6px;
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.72rem;
+      line-height: 1.2;
+      color: #e8e4dc;
+      text-align: left;
+      overflow: hidden;
+    }
+    .bp-color-mini .sub {
+      display: block;
+      font-size: 0.58rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 0.1rem;
+    }
+    .bp-color-line {
+      background: #1f1f1f;
+      color: #e8e4dc;
+      border-radius: 6px;
+      padding: 0.35rem 0.55rem;
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.72rem;
+      line-height: 1.35;
+      overflow-x: auto;
+      white-space: pre;
+    }
+
+    @media (max-width: 1099px) {
+      .bp-col { flex: 0 0 min(420px, 60%); }
+    }
+    @media (max-width: 699px) {
+      .bp-col { flex: 0 0 85%; }
+      .bp-card-body { font-size: 0.72rem; padding: 0.9rem 1rem; }
+      .bp-paste { font-size: 0.72rem; }
+      .bp-pill { padding: 0.5rem 0.9rem 0.5rem 0.85rem; min-height: 3.2rem; }
+      .bp-pill-title { font-size: 0.98rem; }
+      .bp-pill-sub { font-size: 0.72rem; }
+    }
 
     /* ── Screenshots full-bleed ── */
     .shots-section { background: var(--bg-alt); padding: 5rem 0; border-bottom: 1px solid var(--border); }
@@ -432,12 +1039,40 @@
       box-shadow: 0 20px 40px -20px rgba(20,17,15,0.25), 0 6px 12px -8px rgba(20,17,15,0.15);
     }
     .shot .caption {
-      font-family: "JetBrains Mono", monospace;
-      font-size: 0.75rem;
-      color: var(--muted);
       display: flex;
-      justify-content: space-between;
-      gap: 1rem;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .shot .caption .hook {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+    }
+    .shot .caption .meta {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.72rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+    }
+    .shots-dots {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    .shots-dots .dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--border);
+      transition: background 0.2s, transform 0.2s;
+      cursor: pointer;
+      border: none;
+      padding: 0;
+    }
+    .shots-dots .dot.active {
+      background: var(--ink);
+      transform: scale(1.25);
     }
 
     /* ── Specs ── */
@@ -476,54 +1111,60 @@
     @media (max-width: 900px) { .specs { grid-template-columns: repeat(2, 1fr); } }
     @media (max-width: 480px) { .specs { grid-template-columns: 1fr; } }
 
-    /* ── Buy block ── */
-    .buy {
-      background: var(--ink);
-      color: #f5f3ee;
-      padding: 5rem 0;
+    /* ── FAQ ── */
+    .faq-list {
+      border-top: 1px solid var(--border);
+    }
+    .faq-list details {
       border-bottom: 1px solid var(--border);
+      padding: 1.25rem 0.25rem;
     }
-    .buy-inner {
-      max-width: 1160px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 3rem;
-      align-items: center;
-    }
-    .buy h2 {
-      font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-      font-weight: 700;
-      letter-spacing: -0.025em;
-      line-height: 1.1;
-      margin-bottom: 1rem;
-    }
-    .buy p {
-      color: #c7c0b3;
-      line-height: 1.6;
-      margin-bottom: 1.5rem;
-      max-width: 42ch;
-    }
-    .buy .btn-primary {
-      background: var(--bg);
+    .faq-list summary {
+      font-size: 1.0625rem;
+      font-weight: 600;
       color: var(--ink);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      letter-spacing: -0.01em;
     }
-    .buy .btn-primary:hover { background: var(--spot); color: var(--bg); }
-    .buy .btn-secondary { color: #f5f3ee; border-color: rgba(245,243,238,0.3); }
-    .buy .btn-secondary:hover { border-color: #f5f3ee; }
-    .buy-facts {
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after {
+      content: "+";
       font-family: "JetBrains Mono", monospace;
-      font-size: 0.8125rem;
-      line-height: 2;
-      color: #c7c0b3;
-      border-left: 1px solid #3a332d;
-      padding-left: 2rem;
+      font-weight: 400;
+      font-size: 1.35rem;
+      color: var(--muted);
+      transition: transform 0.2s;
+      line-height: 1;
     }
-    .buy-facts b { color: #f0d3b8; font-weight: 500; }
-    @media (max-width: 780px) {
-      .buy-inner { grid-template-columns: 1fr; gap: 2rem; }
-      .buy-facts { border-left: none; border-top: 1px solid #3a332d; padding-left: 0; padding-top: 1.5rem; }
+    .faq-list details[open] summary::after {
+      content: "−";
+      color: var(--accent);
+    }
+    .faq-list details p {
+      margin-top: 0.8rem;
+      color: var(--ink-soft);
+      line-height: 1.65;
+      max-width: 68ch;
+    }
+
+    /* ── System requirements mini line ── */
+    .sys-req {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+      text-align: center;
+      margin-top: 2rem;
+      padding: 0 1.5rem;
+    }
+    .sys-req .dot-sep {
+      margin: 0 0.6rem;
+      opacity: 0.5;
     }
 
     /* ── Footer ── */
@@ -542,6 +1183,15 @@
     }
     footer a { color: var(--muted); text-decoration: none; }
     footer a:hover { color: var(--ink); }
+    .indie-line {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      margin-top: 0.4rem;
+    }
+    .indie-line .indie-name {
+      color: var(--ink-soft);
+      font-weight: 500;
+    }
 
     /* ── Reveal on scroll ── */
     .reveal {
@@ -559,6 +1209,10 @@
       .reveal, .reveal.in { opacity: 1; transform: none; transition: none; }
       .hero-icon:hover { transform: rotate(-3deg); }
       .btn:hover { transform: none; }
+      .chip { transition: none; }
+      .chip.alive { opacity: 1; }
+      .hero-icon-wrap.summoning::after { animation: none; box-shadow: none; transform: translate(-50%,-50%); }
+      .sp-fade { animation: none; opacity: 1; }
     }
 
     /* ── Dark mode ── */
@@ -588,14 +1242,23 @@
         border-color: var(--border);
         color: var(--ink-soft);
       }
+      .chip:hover {
+        background: var(--ink);
+        color: var(--bg);
+        border-color: var(--ink);
+      }
       .manifest { background: #0a0908; color: #d6d0c2; }
       .manifest .k { color: #8fb8aa; }
       .manifest .v { color: #e8b68a; }
       .btn-primary { background: var(--ink); color: var(--bg); }
       .btn-primary:hover { background: var(--spot); color: var(--bg); }
-      .buy { background: #0a0908; }
-      .buy .btn-primary { background: var(--ink); color: var(--bg); }
+      .nav-mini-cta { background: var(--ink); color: var(--bg); }
       .shots-section { background: var(--bg-alt); }
+      .sp-right { background: #0a0908; }
+      .sp-left { background: var(--surface); }
+      .sp-clip-btn { background: var(--bg); border-color: var(--border); color: var(--ink); }
+      .sp-clip-btn:hover { background: var(--surface); }
+      .sp-clip-btn.active { background: var(--accent-soft); border-color: var(--accent); }
     }
   </style>
 </head>
@@ -609,26 +1272,26 @@
     <section class="hero">
       <div class="hero-inner">
         <div class="hero-copy">
-          <div class="eyebrow"><span class="dot"></span><span class="mono">NATIVE · macOS 14+</span></div>
           <h1>The developer <span class="accent">workbench</span><br>for your Mac.</h1>
-          <p class="lede">Eighteen small utilities I kept rebuilding as web pages. Now they're one native window. Paste something, Bench guesses the tool. Works offline. Pay once.</p>
+          <p class="lede">Small utilities I kept rebuilding as web pages. Now they're one native window. Paste something, Bench guesses the tool. Works offline. Pay once.</p>
           <div class="hero-cta">
-            <a class="btn btn-primary" href="#tools">See all 18 tools →</a>
+            <a class="btn btn-primary" href="#tools" id="hero-primary-cta">See all tools →</a>
             <!--
               TODO: uncomment on App Store launch day.
               When the app is live at https://apps.apple.com/us/app/id6763368925:
                 1. Uncomment the primary CTA below and restore it as the first button in this .hero-cta
-                2. Demote the existing "See all 18 tools →" link to class="btn btn-secondary" (it was secondary in the original two-button hero)
+                2. Demote the existing "See all tools →" link to class="btn btn-secondary" (it was secondary in the original two-button hero)
                 3. Replace href="#get" with the real ASC URL above (the section#get anchor target is also commented-out further down the page)
-                4. Verify the section renders correctly
-                5. Re-run the pre-push legal scan before committing
+                4. Update the sticky nav mini-CTA href in JS (const NAV_CTA_HREF) from '#tools' to the real ASC URL
+                5. Verify the section renders correctly
+                6. Re-run the pre-push legal scan before committing
 
               Original primary CTA preserved verbatim:
               <a class="btn btn-primary" href="#get">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17 8h-1V6a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v9a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-9a2 2 0 0 0-2-2Zm-7-2a2 2 0 0 1 4 0v2h-4Z" opacity=".0"/><path d="M12 3 4 7l8 4 8-4-8-4Zm-8 6v8l8 4V13L4 9Zm10 4v8l8-4V9l-8 4Z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3 4 7l8 4 8-4-8-4Zm-8 6v8l8 4V13L4 9Zm10 4v8l8-4V9l-8 4Z"/></svg>
                 View on the Mac App Store
               </a>
-              <a class="btn btn-secondary" href="#tools">See all 18 tools →</a>
+              <a class="btn btn-secondary" href="#tools">See all tools →</a>
             -->
           </div>
           <div class="hero-meta">
@@ -637,12 +1300,9 @@
             <span><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 12l6 6L20 6"/></svg>No tracking</span>
           </div>
         </div>
-        <div class="hero-icon-wrap">
-          <img src="assets/bench-icon.png" alt="Bench app icon" class="hero-icon" />
-          <span class="chip chip-1">{ } JSON</span>
-          <span class="chip chip-2">JWT.decode</span>
-          <span class="chip chip-3">/regex/g</span>
-          <span class="chip chip-4">sha256</span>
+        <div class="hero-icon-wrap" id="hero-icon-wrap">
+          <img src="assets/bench-icon.png" alt="Bench app icon" class="hero-icon" id="hero-icon" />
+          <!-- Chips are injected and animated by JS. -->
         </div>
       </div>
     </section>
@@ -653,82 +1313,123 @@
         <div class="slab-head reveal">
           <div>
             <div class="num">01 — INDEX</div>
-            <h2>Eighteen tools. One window. Zero tabs.</h2>
+            <h2><span id="tool-count-label">Eighteen</span> tools. One window. Zero tabs.</h2>
           </div>
           <p class="kicker">The stuff you keep re‑Googling at 2am. One keystroke away, grouped the way you think about it.</p>
         </div>
 
-        <div class="tool-cats reveal">
+        <div class="tool-filters reveal" role="tablist" aria-label="Filter tools by category" id="tool-filters">
+          <!-- filter pills injected by JS so counts always match -->
+        </div>
 
-          <div class="tool-cat">
+        <div class="tool-cats reveal" id="tool-cats">
+
+          <div class="tool-cat" data-cat="Encoding">
             <header>
-              <h3>Encoding</h3>
-              <span class="count">02</span>
+              <div class="cat-title">
+                <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M8 4 L4 12 L8 20"/>
+                  <path d="M16 4 L20 12 L16 20"/>
+                </svg>
+                <h3>Encoding</h3>
+              </div>
+              <span class="count" data-count>00</span>
             </header>
             <ul>
-              <li><span class="n mono">01</span><span>Base64</span></li>
-              <li><span class="n mono">02</span><span>URL Encode</span></li>
+              <li data-tool="Base64" data-benefit="Paste a Base64 blob, get the text. Or the other way around."><span class="n mono"></span><span>Base64</span></li>
+              <li data-tool="URL Encode" data-benefit="Encode or decode a URL fragment. Spaces, emoji, the works."><span class="n mono"></span><span>URL Encode</span></li>
             </ul>
           </div>
 
-          <div class="tool-cat">
+          <div class="tool-cat" data-cat="Formatting">
             <header>
-              <h3>Formatting</h3>
-              <span class="count">04</span>
+              <div class="cat-title">
+                <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="4" y1="6"  x2="20" y2="6"/>
+                  <line x1="4" y1="12" x2="14" y2="12"/>
+                  <line x1="4" y1="18" x2="18" y2="18"/>
+                </svg>
+                <h3>Formatting</h3>
+              </div>
+              <span class="count" data-count>00</span>
             </header>
             <ul>
-              <li><span class="n mono">03</span><span>JSON Formatter</span></li>
-              <li><span class="n mono">04</span><span>Markdown Preview</span></li>
-              <li><span class="n mono">05</span><span>Text Diff</span></li>
-              <li><span class="n mono">06</span><span>Image Diff</span></li>
+              <li data-tool="JSON Formatter" data-popular data-benefit="Pretty-print minified JSON. Spot the missing comma before you ship it."><span class="n mono"></span><span>JSON Formatter</span></li>
+              <li data-tool="Markdown Preview" data-benefit="See what your README looks like before you push it."><span class="n mono"></span><span>Markdown Preview</span></li>
+              <li data-tool="Text Diff" data-benefit="Two chunks of text, side by side. You'll see exactly what changed."><span class="n mono"></span><span>Text Diff</span></li>
+              <li data-tool="Image Diff" data-benefit="Overlay two PNGs. The pixels that moved light up."><span class="n mono"></span><span>Image Diff</span></li>
             </ul>
           </div>
 
-          <div class="tool-cat">
+          <div class="tool-cat" data-cat="Generators">
             <header>
-              <h3>Generators</h3>
-              <span class="count">03</span>
+              <div class="cat-title">
+                <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="8"/>
+                  <path d="M12 4 V2 M12 22 V20 M4 12 H2 M22 12 H20"/>
+                </svg>
+                <h3>Generators</h3>
+              </div>
+              <span class="count" data-count>00</span>
             </header>
             <ul>
-              <li><span class="n mono">07</span><span>UUID Generator</span></li>
-              <li><span class="n mono">08</span><span>Timestamp</span></li>
-              <li><span class="n mono">09</span><span>Placeholder text generator</span></li>
+              <li data-tool="UUID Generator" data-benefit="Grab a v4 UUID. Or a hundred. Uppercase or lowercase, your call."><span class="n mono"></span><span>UUID Generator</span></li>
+              <li data-tool="Timestamp" data-benefit="Unix timestamp to human date, in any timezone."><span class="n mono"></span><span>Timestamp</span></li>
+              <li data-tool="Lorem Ipsum" data-benefit="Placeholder copy when the layout needs filling. No Latin required."><span class="n mono"></span><span>Lorem Ipsum</span></li>
             </ul>
           </div>
 
-          <div class="tool-cat">
+          <div class="tool-cat" data-cat="Crypto">
             <header>
-              <h3>Crypto</h3>
-              <span class="count">02</span>
+              <div class="cat-title">
+                <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="5" y="10" width="14" height="10" rx="2"/>
+                  <path d="M8 10 V7 a4 4 0 0 1 8 0 v3"/>
+                </svg>
+                <h3>Crypto</h3>
+              </div>
+              <span class="count" data-count>00</span>
             </header>
             <ul>
-              <li><span class="n mono">10</span><span>Hash Generator <span class="mono" style="color:var(--muted); font-size:.78rem">MD5 · SHA‑1 · SHA‑256 · SHA‑512</span></span></li>
-              <li><span class="n mono">11</span><span>JWT Decoder</span></li>
+              <li data-tool="Hash Generator" data-popular data-benefit="MD5, SHA-1, SHA-256, SHA-512. For the moment the README asks for a checksum."><span class="n mono"></span><span>Hash Generator <span class="mono" style="color:var(--muted); font-size:.78rem">MD5 · SHA‑1 · SHA‑256 · SHA‑512</span></span></li>
+              <li data-tool="JWT Decoder" data-popular data-benefit="Paste a JWT. Read the claims. Check what's actually in the header."><span class="n mono"></span><span>JWT Decoder</span></li>
             </ul>
           </div>
 
-          <div class="tool-cat">
+          <div class="tool-cat" data-cat="Converters">
             <header>
-              <h3>Converters</h3>
-              <span class="count">05</span>
+              <div class="cat-title">
+                <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 8 H18 L14 4"/>
+                  <path d="M20 16 H6 L10 20"/>
+                </svg>
+                <h3>Converters</h3>
+              </div>
+              <span class="count" data-count>00</span>
             </header>
             <ul>
-              <li><span class="n mono">12</span><span>Color Converter</span></li>
-              <li><span class="n mono">13</span><span>Text Case</span></li>
-              <li><span class="n mono">14</span><span>Number Base</span></li>
-              <li><span class="n mono">15</span><span>Regex Tester</span></li>
-              <li><span class="n mono">16</span><span>Regex Explainer</span></li>
+              <li data-tool="Color Converter" data-benefit="HEX, RGB, HSL, OKLCH. Paste one, get the others."><span class="n mono"></span><span>Color Converter</span></li>
+              <li data-tool="Text Case" data-benefit="camelCase, snake_case, Title Case, kebab-case. One paste, every variant."><span class="n mono"></span><span>Text Case</span></li>
+              <li data-tool="Number Base" data-benefit="Binary, octal, decimal, hex. Any direction you need."><span class="n mono"></span><span>Number Base</span></li>
+              <li data-tool="Regex Tester" data-popular data-benefit="Try a pattern against real input. Matches light up as you type."><span class="n mono"></span><span>Regex Tester</span></li>
+              <li data-tool="Regex Explainer" data-benefit="A regex, explained as a tree. Step through the NFA trace line by line."><span class="n mono"></span><span>Regex Explainer</span></li>
             </ul>
           </div>
 
-          <div class="tool-cat">
+          <div class="tool-cat" data-cat="Media">
             <header>
-              <h3>Media</h3>
-              <span class="count">02</span>
+              <div class="cat-title">
+                <svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="6" width="14" height="12" rx="2"/>
+                  <path d="M17 10 L22 7 V17 L17 14 Z"/>
+                </svg>
+                <h3>Media</h3>
+              </div>
+              <span class="count" data-count>00</span>
             </header>
             <ul>
-              <li><span class="n mono">17</span><span>MOV → MP4</span></li>
-              <li><span class="n mono">18</span><span>MOV → GIF</span></li>
+              <li data-tool="MOV → MP4" data-popular data-benefit="Turn a QuickTime screen recording into an MP4 that plays anywhere."><span class="n mono"></span><span>MOV → MP4</span></li>
+              <li data-tool="MOV → GIF" data-benefit="Short screen capture in, GIF out. Drop it straight in a PR."><span class="n mono"></span><span>MOV → GIF</span></li>
             </ul>
           </div>
 
@@ -747,12 +1448,158 @@
           <p class="kicker">A small rule-based check reads your clipboard and picks a tool. It runs on your Mac. Nothing is sent anywhere.</p>
         </div>
 
+        <!-- Static paste → detect → output demo (recreates the real app's output panels) -->
+        <div class="bp-demo reveal">
+
+          <!-- JWT demo column -->
+          <div class="bp-col">
+            <span class="bp-step-label">Paste →</span>
+            <div class="bp-paste" aria-label="Clipboard sample: a JWT">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik5ldmVyIGdvbm5hIGdpdmUgeW91IHVwIiwiaWF0IjoxNzYwMDAwMDAwfQ.fake_signature_for_demo_only</div>
+
+            <button type="button" class="bp-pill" aria-label="Detected: JWT Decoder, high confidence">
+              <span class="bp-pill-glyph" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="M10.85 12.15 21 2"/><path d="M18 5l3 3"/><path d="M15 8l3 3"/></svg>
+              </span>
+              <span class="bp-pill-text">
+                <span class="bp-pill-title">JWT Decoder</span>
+                <span class="bp-pill-sub">High confidence</span>
+              </span>
+              <span class="bp-pill-enter" aria-hidden="true">⏎</span>
+            </button>
+
+            <span class="bp-step-label">→ Bench renders</span>
+            <div class="bp-out">
+              <div class="bp-card">
+                <span class="bp-card-label">Header</span>
+                <div class="bp-card-body"><span class="tok-punct">{</span>
+  <span class="tok-key">"alg"</span><span class="tok-punct">:</span> <span class="tok-str">"HS256"</span><span class="tok-punct">,</span>
+  <span class="tok-key">"typ"</span><span class="tok-punct">:</span> <span class="tok-str">"JWT"</span>
+<span class="tok-punct">}</span></div>
+              </div>
+              <div class="bp-card">
+                <span class="bp-card-label">Payload</span>
+                <div class="bp-card-body"><span class="tok-punct">{</span>
+  <span class="tok-key">"iat"</span><span class="tok-punct">:</span> <span class="tok-num">1760000000</span><span class="tok-punct">,</span>
+  <span class="tok-key">"name"</span><span class="tok-punct">:</span> <span class="tok-str">"Never gonna give you up"</span><span class="tok-punct">,</span>
+  <span class="tok-key">"sub"</span><span class="tok-punct">:</span> <span class="tok-str">"1234567890"</span>
+<span class="tok-punct">}</span></div>
+              </div>
+              <div class="bp-card">
+                <span class="bp-card-label">Signature (raw)</span>
+                <div class="bp-card-body"><span class="tok-plain">fake_signature_for_demo_only</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- JSON demo column -->
+          <div class="bp-col">
+            <span class="bp-step-label">Paste →</span>
+            <div class="bp-paste" aria-label="Clipboard sample: minified JSON">{"order_id":"8f3b","items":[{"sku":"BNCH-001","qty":2,"price":19.99},{"sku":"BNCH-PRO","qty":1,"price":14.99}],"customer":{"id":9001,"tier":"pro"},"total":42.99}</div>
+
+            <button type="button" class="bp-pill" aria-label="Detected: JSON Formatter, high confidence">
+              <span class="bp-pill-glyph" aria-hidden="true">{&#8202;}</span>
+              <span class="bp-pill-text">
+                <span class="bp-pill-title">JSON Formatter</span>
+                <span class="bp-pill-sub">High confidence</span>
+              </span>
+              <span class="bp-pill-enter" aria-hidden="true">⏎</span>
+            </button>
+
+            <span class="bp-step-label">→ Bench renders</span>
+            <div class="bp-out">
+              <div class="bp-card">
+                <span class="bp-card-label">Output</span>
+                <div class="bp-card-body"><span class="tok-punct">{</span>
+  <span class="tok-key">"order_id"</span> <span class="tok-punct">:</span> <span class="tok-str">"8f3b"</span><span class="tok-punct">,</span>
+  <span class="tok-key">"items"</span> <span class="tok-punct">:</span> <span class="tok-punct">[</span>
+    <span class="tok-punct">{</span>
+      <span class="tok-key">"sku"</span> <span class="tok-punct">:</span> <span class="tok-str">"BNCH-001"</span><span class="tok-punct">,</span>
+      <span class="tok-key">"qty"</span> <span class="tok-punct">:</span> <span class="tok-num">2</span><span class="tok-punct">,</span>
+      <span class="tok-key">"price"</span> <span class="tok-punct">:</span> <span class="tok-num">19.989999999999998</span>
+    <span class="tok-punct">}</span><span class="tok-punct">,</span>
+    <span class="tok-punct">{</span>
+      <span class="tok-key">"sku"</span> <span class="tok-punct">:</span> <span class="tok-str">"BNCH-PRO"</span><span class="tok-punct">,</span>
+      <span class="tok-key">"qty"</span> <span class="tok-punct">:</span> <span class="tok-num">1</span><span class="tok-punct">,</span>
+      <span class="tok-key">"price"</span> <span class="tok-punct">:</span> <span class="tok-num">14.99</span>
+    <span class="tok-punct">}</span>
+  <span class="tok-punct">]</span><span class="tok-punct">,</span>
+  <span class="tok-key">"customer"</span> <span class="tok-punct">:</span> <span class="tok-punct">{</span>
+    <span class="tok-key">"id"</span> <span class="tok-punct">:</span> <span class="tok-num">9001</span><span class="tok-punct">,</span>
+    <span class="tok-key">"tier"</span> <span class="tok-punct">:</span> <span class="tok-str">"pro"</span>
+  <span class="tok-punct">}</span><span class="tok-punct">,</span>
+  <span class="tok-key">"total"</span> <span class="tok-punct">:</span> <span class="tok-num">42.990000000000002</span>
+<span class="tok-punct">}</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Color Converter demo column -->
+          <div class="bp-col">
+            <span class="bp-step-label">Paste →</span>
+            <div class="bp-paste" aria-label="Clipboard sample: a hex color">ff8a3d</div>
+
+            <button type="button" class="bp-pill" aria-label="Detected: Color Converter, high confidence">
+              <span class="bp-pill-glyph" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 0 0 20c1 0 2-.5 2-1.5S13 19 13 18s.5-2 2-2h3a4 4 0 0 0 4-4 10 10 0 0 0-10-10z"/><circle cx="7.5" cy="10.5" r="1.3"/><circle cx="10.5" cy="7" r="1.3"/><circle cx="14.5" cy="7" r="1.3"/><circle cx="17.5" cy="10.5" r="1.3"/></svg>
+              </span>
+              <span class="bp-pill-text">
+                <span class="bp-pill-title">Color Converter</span>
+                <span class="bp-pill-sub">High confidence</span>
+              </span>
+              <span class="bp-pill-enter" aria-hidden="true">⏎</span>
+            </button>
+
+            <span class="bp-step-label">→ Bench renders</span>
+            <div class="bp-out">
+              <div class="bp-card">
+                <div class="bp-card-body bp-color-body" style="padding: 0.85rem 1rem;">
+                  <div class="bp-color-swatch" aria-label="Color swatch: #ff8a3d"></div>
+
+                  <div class="bp-color-field inline">
+                    <span class="bp-card-label">Hex</span>
+                    <div class="bp-color-line">#FF8A3D</div>
+                  </div>
+
+                  <div class="bp-color-field">
+                    <span class="bp-card-label">RGB</span>
+                    <div class="bp-color-field-row">
+                      <div class="bp-color-mini"><span class="sub">R</span>255</div>
+                      <div class="bp-color-mini"><span class="sub">G</span>138</div>
+                      <div class="bp-color-mini"><span class="sub">B</span>61</div>
+                    </div>
+                  </div>
+
+                  <div class="bp-color-field">
+                    <span class="bp-card-label">HSL</span>
+                    <div class="bp-color-field-row">
+                      <div class="bp-color-mini"><span class="sub">H°</span>23</div>
+                      <div class="bp-color-mini"><span class="sub">S%</span>100</div>
+                      <div class="bp-color-mini"><span class="sub">L%</span>62</div>
+                    </div>
+                  </div>
+
+                  <div class="bp-color-field inline">
+                    <span class="bp-card-label">SwiftUI</span>
+                    <div class="bp-color-line">Color(red: 1.000, green: 0.541, blue: 0.239)</div>
+                  </div>
+
+                  <div class="bp-color-field inline">
+                    <span class="bp-card-label">CSS</span>
+                    <div class="bp-color-line">rgb(255, 138, 61)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
         <div class="split">
           <div class="split-card reveal">
             <span class="badge">Smart Paste</span>
             <h3>Paste a JWT. The decoder's already open.</h3>
             <p>Copy a chunk of JSON, switch to Bench, and the formatter is waiting. Copy a hex color, and the converter is open. Copy a JWT, and it's already decoded. Nothing to click.</p>
-            <p>The detection is regex and string checks — maybe 200 lines. It runs on your Mac, it has no network code compiled in, and if it doesn't recognise what you pasted it just gives up quietly and lets you pick.</p>
+            <p>The detection is regex and string checks — maybe 200 lines. It's a rule‑based heuristic that runs on your Mac, with no network code compiled in. If it doesn't recognise what you pasted it just gives up quietly and lets you pick.</p>
           </div>
           <div class="reveal">
             <pre class="manifest" aria-label="Bench capability manifest">
@@ -766,7 +1613,7 @@
 <span class="k">detection.method</span>      : <span class="v">rule_based_heuristic</span>
 <span class="k">data.leaves_device</span>    : <span class="v">false</span>
 <span class="k">purchase.model</span>        : <span class="v">one_time</span>
-<span class="k">subscription</span>          : <span class="v">never</span></pre>
+<span class="k">subscription</span>          : <span class="v">none</span></pre>
           </div>
         </div>
       </div>
@@ -778,28 +1625,44 @@
         <span class="num">03 — THE TOOLS IN USE</span>
         <h2>Native SwiftUI. Nothing in the way.</h2>
       </div>
-      <div class="shots">
+      <div class="shots" id="shots-scroller">
         <div class="shot">
           <img src="assets/bench-01-json.png" alt="JSON formatter with pasted payload and formatted output" loading="lazy" />
-          <div class="caption"><span>bench-01</span><span>JSON Formatter</span></div>
+          <div class="caption">
+            <span class="hook">Paste minified JSON, get it back indented.</span>
+            <span class="meta">bench-01 · JSON Formatter</span>
+          </div>
         </div>
         <div class="shot">
           <img src="assets/bench-02-jwt.png" alt="JWT decoder with header, payload and signature panels" loading="lazy" />
-          <div class="caption"><span>bench-02</span><span>JWT Decoder</span></div>
+          <div class="caption">
+            <span class="hook">Paste a JWT, get the claims.</span>
+            <span class="meta">bench-02 · JWT Decoder</span>
+          </div>
         </div>
         <div class="shot">
-          <img src="assets/bench-03-regex.png" alt="Regex tester matching patterns" loading="lazy" />
-          <div class="caption"><span>bench-03</span><span>Regex Explainer</span></div>
+          <img src="assets/bench-03-regex.png" alt="Regex explainer showing an AST tree and NFA trace" loading="lazy" />
+          <div class="caption">
+            <span class="hook">Read a regex as a tree, step the NFA.</span>
+            <span class="meta">bench-03 · Regex Explainer</span>
+          </div>
         </div>
         <div class="shot">
           <img src="assets/bench-04-hash.png" alt="Hash generator producing MD5, SHA-1, SHA-256 and SHA-512" loading="lazy" />
-          <div class="caption"><span>bench-04</span><span>Hash Generator</span></div>
+          <div class="caption">
+            <span class="hook">Paste text, pick an algorithm, copy the hash.</span>
+            <span class="meta">bench-04 · Hash Generator</span>
+          </div>
         </div>
         <div class="shot">
           <img src="assets/bench-05-uuid.png" alt="UUID generator with v4 identifiers" loading="lazy" />
-          <div class="caption"><span>bench-05</span><span>UUID Generator</span></div>
+          <div class="caption">
+            <span class="hook">Generate a UUID (or a hundred), copy, done.</span>
+            <span class="meta">bench-05 · UUID Generator</span>
+          </div>
         </div>
       </div>
+      <div class="shots-dots" id="shots-dots" role="tablist" aria-label="Jump to screenshot"></div>
     </section>
 
     <!-- ── SPECS ── -->
@@ -825,7 +1688,7 @@
           </div>
           <div class="cell">
             <div class="label">Tools</div>
-            <div class="value">18</div>
+            <div class="value" id="spec-tool-count">00</div>
             <div class="sub">Counted, not rounded</div>
           </div>
           <div class="cell">
@@ -846,7 +1709,7 @@
           <div class="cell">
             <div class="label">Purchase</div>
             <div class="value">One time</div>
-            <div class="sub">No subscription, ever</div>
+            <div class="sub">One-time purchase</div>
           </div>
           <!--
             TODO: uncomment on App Store launch day.
@@ -864,6 +1727,14 @@
             </div>
           -->
         </div>
+
+        <p class="sys-req reveal">
+          Requires macOS 14 or later
+          <span class="dot-sep">·</span>
+          Apple silicon or Intel
+          <span class="dot-sep">·</span>
+          Universal binary
+        </p>
       </div>
     </section>
 
@@ -873,8 +1744,7 @@
         1. Uncomment the entire <section class="buy" id="get"> block below
         2. Change href="#" on the "View on the Mac App Store" button to the real ASC URL above
         3. Verify the hero's href="#get" anchor (also in a commented block above) now resolves to this section once both are uncommented
-        4. Verify the section renders correctly
-        5. Re-run the pre-push legal scan before committing
+        4. Re-run the pre-push legal scan before committing
 
       Original section preserved verbatim:
       <section class="buy" id="get">
@@ -897,6 +1767,50 @@
       </section>
     -->
 
+    <!-- ── FAQ ── -->
+    <section class="slab" id="faq" style="padding-bottom: 5rem;">
+      <div class="wrap">
+        <div class="slab-head reveal">
+          <div>
+            <div class="num">05 — FAQ</div>
+            <h2>Questions you might ask before buying.</h2>
+          </div>
+          <p class="kicker">If yours isn't here, <a href="/cdn-cgi/l/email-protection#c6b5b3b6b6a9b4b286bca3a8b2b5b3e8a7b6b6" style="color:var(--accent)">email <span class="__cf_email__" data-cfemail="2754525757485553675d424953545209465757">[email&#160;protected]</span></a>. Every message is read by a human (Tom).</p>
+        </div>
+
+        <div class="faq-list reveal">
+          <details>
+            <summary>Does it work offline?</summary>
+            <p>Yes. Every tool runs entirely on your Mac. No tool in Bench makes network calls. The one exception will be Apple's purchase/restore flow once the app is live, which is handled by macOS itself and uses the network to talk to Apple — not to us.</p>
+          </details>
+          <details>
+            <summary>What's in Bench Pro?</summary>
+            <p>Bench Pro is a one‑time unlock that activates the full tool set. You pay once, it stays unlocked, and every tool in Bench today stays included. No subscription and no recurring charge.</p>
+          </details>
+          <details>
+            <summary>Does it sync between my Macs?</summary>
+            <p>No. Bench keeps everything local on the Mac you're using. There are no accounts, no servers to sign into, and nothing is sent anywhere for you to sync <em>against</em>. If you want your recent inputs on another Mac, copy and paste them.</p>
+          </details>
+          <details>
+            <summary>Is it a universal binary?</summary>
+            <p>Yes. Bench ships as a universal binary that runs natively on Apple silicon and Intel Macs. The minimum system requirement is macOS 14.</p>
+          </details>
+          <details>
+            <summary>What data does Bench collect?</summary>
+            <p>None. Bench has no analytics, no telemetry, no third‑party SDKs, and no account system. Smart Paste reads your clipboard locally to pick a tool; the detection is a rule‑based heuristic that runs on your device. Whatever you type, paste, or generate stays on your Mac.</p>
+          </details>
+          <details>
+            <summary>How do updates work?</summary>
+            <p>Once Bench ships, updates will arrive through Apple the same way as any Mac app you install from the store. You won't need to do anything special; macOS handles the install when an update is available.</p>
+          </details>
+          <details>
+            <summary>Can I get a refund?</summary>
+            <p>Once the app ships, purchases and refunds will be handled by Apple. You'll be able to request a refund from Apple directly via <a href="https://reportaproblem.apple.com" style="color:var(--accent)">reportaproblem.apple.com</a>. If something in the app isn't behaving, email <a href="/cdn-cgi/l/email-protection#2d5942406d574843595e58034c5d5d125e584f47484e59106f48434e45081f1d5e585d5d425f59" style="color:var(--accent)"><span class="__cf_email__" data-cfemail="f5819a98b58f909b818680db948585">[email&#160;protected]</span></a> first — there's a good chance it's a fixable bug.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer>
@@ -904,29 +1818,566 @@
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
       <a href="bench/support.html">Support</a>
-      <a href="mailto:tom@zentsu.app">tom@zentsu.app</a>
+      <a href="/cdn-cgi/l/email-protection#d1a2a4a1a1bea3a591abb4bfa5a2a4ffb0a1a1"><span class="__cf_email__" data-cfemail="a3d0d6d3d3ccd1d7e3d9c6cdd7d0d68dc2d3d3">[email&#160;protected]</span></a>
     </div>
+    <p class="indie-line">Made by one person in <span class="indie-name">&nbsp;</span></p>
     <p>&copy; 2026 Zentsu LLC</p>
   </footer>
 
-  <script src="nav.js"></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="nav.js"></script>
   <script>
-    // Scroll reveal (respects prefers-reduced-motion via CSS)
-    (function () {
-      var items = document.querySelectorAll('.reveal');
-      if (!('IntersectionObserver' in window)) {
-        items.forEach(function (el) { el.classList.add('in'); });
-        return;
-      }
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (e.isIntersecting) {
-            e.target.classList.add('in');
-            io.unobserve(e.target);
+    /* ───────────────────────────────────────────────────────────
+       Tool registry — single source of truth.
+       Adding a tool in the DOM is enough; this script rebuilds
+       numbers, counts, chip labels, and filter pills from it.
+       ─────────────────────────────────────────────────────────── */
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // When the App Store launches, swap this for the ASC URL.
+    const NAV_CTA_HREF = '#tools';
+    const NAV_CTA_LABEL_SHORT = 'Tools';
+    const NAV_CTA_LABEL_LONG = 'See all tools';
+
+    /* ── Collect tools from the DOM (only place they're authored) ── */
+    function collectTools() {
+      const out = [];
+      document.querySelectorAll('.tool-cat').forEach(cat => {
+        const category = cat.getAttribute('data-cat');
+        cat.querySelectorAll('li[data-tool]').forEach(li => {
+          out.push({
+            name: li.getAttribute('data-tool'),
+            category,
+            popular: li.hasAttribute('data-popular'),
+            el: li,
+          });
+        });
+      });
+      return out;
+    }
+
+    const TOOLS = collectTools();
+    const TOTAL = TOOLS.length;
+
+    /* ── Tool numbering + counts + tool-count words ── */
+    (function numberAndCount() {
+      TOOLS.forEach((t, i) => {
+        const n = String(i + 1).padStart(2, '0');
+        const nEl = t.el.querySelector('.n');
+        if (nEl) nEl.textContent = n;
+        if (t.popular) {
+          const pop = document.createElement('span');
+          pop.className = 'pop';
+          pop.textContent = 'Popular';
+          t.el.appendChild(pop);
+        }
+      });
+      document.querySelectorAll('.tool-cat').forEach(cat => {
+        const n = cat.querySelectorAll('li[data-tool]').length;
+        const countEl = cat.querySelector('[data-count]');
+        if (countEl) countEl.textContent = String(n).padStart(2, '0');
+      });
+      const specCount = document.getElementById('spec-tool-count');
+      if (specCount) specCount.textContent = String(TOTAL).padStart(2, '0');
+
+      const words = ['Zero','One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Eleven','Twelve','Thirteen','Fourteen','Fifteen','Sixteen','Seventeen','Eighteen','Nineteen','Twenty','Twenty‑one','Twenty‑two','Twenty‑three','Twenty‑four','Twenty‑five'];
+      const label = document.getElementById('tool-count-label');
+      if (label) label.textContent = words[TOTAL] || String(TOTAL);
+    })();
+
+    /* ── Filter pills ── */
+    (function buildFilters() {
+      const host = document.getElementById('tool-filters');
+      if (!host) return;
+      const byCat = {};
+      TOOLS.forEach(t => { byCat[t.category] = (byCat[t.category] || 0) + 1; });
+      const order = ['Encoding','Formatting','Generators','Crypto','Converters','Media'];
+      const frag = document.createDocumentFragment();
+
+      const mkPill = (label, count, value, active) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'tool-filter' + (active ? ' active' : '');
+        b.setAttribute('role', 'tab');
+        b.setAttribute('aria-selected', active ? 'true' : 'false');
+        b.dataset.filter = value;
+        b.innerHTML = label + '<span class="fcount">' + String(count).padStart(2,'0') + '</span>';
+        return b;
+      };
+
+      frag.appendChild(mkPill('All', TOTAL, 'all', true));
+      order.forEach(c => {
+        if (byCat[c]) frag.appendChild(mkPill(c, byCat[c], c, false));
+      });
+      host.appendChild(frag);
+
+      host.addEventListener('click', (e) => {
+        const btn = e.target.closest('.tool-filter');
+        if (!btn) return;
+        host.querySelectorAll('.tool-filter').forEach(el => {
+          el.classList.remove('active');
+          el.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.tool-cat').forEach(cat => {
+          if (filter === 'all' || cat.getAttribute('data-cat') === filter) {
+            cat.classList.remove('dim');
+          } else {
+            cat.classList.add('dim');
           }
         });
+      });
+    })();
+
+    /* ── Scroll reveal ── */
+    (function revealOnScroll() {
+      const items = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) || prefersReducedMotion) {
+        items.forEach(el => el.classList.add('in'));
+        return;
+      }
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
       }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-      items.forEach(function (el) { io.observe(el); });
+      items.forEach(el => io.observe(el));
+    })();
+
+    /* ── Sticky mini-CTA in nav ── */
+    (function navMiniCta() {
+      const nav = document.querySelector('nav ul');
+      if (!nav) return;
+      const li = document.createElement('li');
+      li.style.marginLeft = 'auto';
+      const a = document.createElement('a');
+      a.className = 'nav-mini-cta';
+      a.href = NAV_CTA_HREF;
+      a.innerHTML = '<span class="nav-mini-long">' + NAV_CTA_LABEL_LONG + '</span><span aria-hidden="true" style="opacity:.6;">→</span>';
+      // Shorter label on narrow screens (handled in CSS by .nav-mini-long hide)
+      const short = document.createElement('span');
+      short.textContent = NAV_CTA_LABEL_SHORT;
+      short.style.display = 'none';
+      li.appendChild(a);
+      nav.appendChild(li);
+
+      // Show once hero is mostly offscreen
+      const hero = document.querySelector('.hero');
+      if (!hero) return;
+      if (!('IntersectionObserver' in window)) { a.classList.add('show'); return; }
+      const io = new IntersectionObserver((entries) => {
+        const e = entries[0];
+        if (e.intersectionRatio < 0.18) a.classList.add('show');
+        else a.classList.remove('show');
+      }, { threshold: [0, 0.18, 0.5, 1] });
+      io.observe(hero);
+    })();
+
+    /* ───────────────────────────────────────────────────────────
+       Hero chip summoning system
+       - All TOOLS placed on an elliptical orbit around the icon
+       - Only ~10 visible at a time, cycling every ~3s
+       - Hovering the icon triggers a staggered summon animation
+       ─────────────────────────────────────────────────────────── */
+    (function chipSystem() {
+      const wrap = document.getElementById('hero-icon-wrap');
+      const icon = document.getElementById('hero-icon');
+      if (!wrap || !icon) return;
+
+      const VISIBLE = Math.min(10, TOOLS.length);
+
+      function chipLabel(name) {
+        const map = {
+          'Base64': 'Base64',
+          'URL Encode': '%20 URL',
+          'JSON Formatter': '{ } JSON',
+          'Markdown Preview': '# Markdown',
+          'Text Diff': '± Diff',
+          'Image Diff': '▣ Image Diff',
+          'UUID Generator': 'UUID v4',
+          'Timestamp': '⏱ timestamp',
+          'Lorem Ipsum': 'lorem…',
+          'Hash Generator': 'sha256',
+          'JWT Decoder': 'JWT.decode',
+          'Color Converter': '#ff8a3d',
+          'Text Case': 'camelCase',
+          'Number Base': '0x2A',
+          'Regex Tester': '/regex/g',
+          'Regex Explainer': '/(a|b)+/',
+          'MOV → MP4': 'MOV → MP4',
+          'MOV → GIF': 'MOV → GIF',
+        };
+        return map[name] || name;
+      }
+
+      const state = TOOLS.map((t, i) => {
+        const chip = document.createElement('span');
+        chip.className = 'chip';
+        chip.dataset.tool = t.name;
+        chip.textContent = chipLabel(t.name);
+        chip.addEventListener('click', () => scrollToTool(t.name));
+        wrap.appendChild(chip);
+        return {
+          tool: t,
+          el: chip,
+          visible: false,
+          // orbit params — assigned when the chip is given a slot
+          phase: 0,           // current angle along the orbit (radians)
+          tilt: 0,             // slight rotation for visual variety
+          summonK: 1,          // 0 = at icon, 1 = at full orbit radius (summon swells this to 1.15 then back to 1)
+          fadeK: 0,            // 0 = invisible, 1 = fully faded in
+        };
+      });
+
+      // Hover tooltip — one shared element, rendered at document.body so it
+      // never gets clipped by ancestor overflow. JS positions per-hover.
+      const tip = document.createElement('div');
+      tip.className = 'chip-tip';
+      tip.innerHTML = '<span class="chip-tip-name"></span><span class="chip-tip-body"></span>';
+      document.body.appendChild(tip);
+      const tipName = tip.querySelector('.chip-tip-name');
+      const tipBody = tip.querySelector('.chip-tip-body');
+
+      // Orbit pauses while any chip is hovered.
+      let hoveredChip = null;
+
+      function showTip(s) {
+        hoveredChip = s;
+        tipName.textContent = s.tool.name;
+        const benefit = s.tool.el && s.tool.el.getAttribute('data-benefit');
+        tipBody.textContent = benefit || '';
+        positionTip(s);
+        tip.classList.add('visible');
+      }
+      function hideTip() {
+        hoveredChip = null;
+        tip.classList.remove('visible');
+      }
+      function positionTip(s) {
+        // Measure the chip in viewport coords; place the tip below-center by default,
+        // but flip above / clamp to viewport edges if it would spill.
+        const chipRect = s.el.getBoundingClientRect();
+        const gap = 10;
+        const vw = window.innerWidth;
+        const vh = window.innerHeight;
+
+        // First render the tip offscreen to measure it
+        tip.style.left = '-9999px';
+        tip.style.top = '-9999px';
+        tip.classList.add('visible');
+        const tipRect = tip.getBoundingClientRect();
+        const tw = tipRect.width;
+        const th = tipRect.height;
+
+        // Default position: below the chip, horizontally centered on it.
+        let x = chipRect.left + chipRect.width / 2 - tw / 2;
+        let y = chipRect.bottom + gap;
+
+        // Flip above if it would clip the bottom
+        if (y + th > vh - 8) {
+          y = chipRect.top - gap - th;
+        }
+        // Clamp horizontally with 8px gutter
+        if (x < 8) x = 8;
+        if (x + tw > vw - 8) x = vw - 8 - tw;
+        // If after all that it's still off-screen vertically, clamp.
+        if (y < 8) y = 8;
+
+        tip.style.left = x.toFixed(1) + 'px';
+        tip.style.top = y.toFixed(1) + 'px';
+      }
+
+      state.forEach(s => {
+        s.el.addEventListener('mouseenter', () => showTip(s));
+        s.el.addEventListener('mouseleave', () => hideTip());
+        // Accessibility — keyboard focus also shows the tip.
+        s.el.setAttribute('tabindex', '0');
+        s.el.addEventListener('focus', () => showTip(s));
+        s.el.addEventListener('blur', () => hideTip());
+      });
+
+      function iconRadius() {
+        const r = icon.getBoundingClientRect();
+        return Math.max(r.width, r.height) / 2;
+      }
+
+      function orbitRadii() {
+        const r = iconRadius();
+        return { rx: r + 260, ry: r + 200 };
+      }
+
+      // Orbit speed — radians per ms. Slow and stately; planets, not blades.
+      const OMEGA = 0.00018;
+
+      // Take VISIBLE chips, space them evenly around the orbit
+      function assignSlots() {
+        const shuffled = [...state].sort(() => Math.random() - 0.5);
+        const chosen = shuffled.slice(0, VISIBLE);
+        const chosenSet = new Set(chosen);
+        chosen.forEach((s, i) => {
+          s.phase = (i / VISIBLE) * Math.PI * 2 + (Math.random() - 0.5) * 0.25;
+          s.tilt = (Math.random() * 16 - 8) * Math.PI / 180;
+          s.visible = true;
+        });
+        state.forEach(s => {
+          if (!chosenSet.has(s)) s.visible = false;
+        });
+      }
+
+      let last = performance.now();
+      let summonBurstStart = -Infinity;
+
+      function frame(now) {
+        const dt = now - last;
+        last = now;
+        const { rx, ry } = orbitRadii();
+
+        // Global summon burst — rises fast, settles ~1s
+        let burstK = 0;
+        const since = now - summonBurstStart;
+        if (since >= 0 && since < 1200) {
+          // 0 → 1 in 180ms, then ease back to steady 1
+          burstK = since < 180 ? (since / 180) : 1;
+        } else if (summonBurstStart !== -Infinity) {
+          burstK = 1;
+        }
+
+        state.forEach((s, i) => {
+          if (s.visible) {
+            // advance phase — but pause while any chip is hovered
+            if (!hoveredChip) {
+              s.phase += OMEGA * dt;
+            }
+            // ease summon radius
+            if (since >= 0 && since < 1200) {
+              // Each chip has its own stagger so they fan out.
+              const staggerStart = i * 40;
+              const t = Math.max(0, Math.min(1, (since - staggerStart) / 600));
+              // Shoot out past 1, settle back
+              s.summonK = t < 0.6
+                ? t / 0.6 * 1.12
+                : 1.12 - ((t - 0.6) / 0.4) * 0.12;
+              s.fadeK = Math.min(1, s.fadeK + dt / 400);
+            } else {
+              s.summonK += (1 - s.summonK) * Math.min(1, dt / 180);
+              s.fadeK = Math.min(1, s.fadeK + dt / 500);
+            }
+          } else {
+            s.fadeK = Math.max(0, s.fadeK - dt / 350);
+          }
+
+          const x = Math.cos(s.phase) * rx * s.summonK;
+          const y = Math.sin(s.phase) * ry * s.summonK;
+          const rot = s.tilt;
+          s.el.style.transform =
+            'translate(calc(-50% + ' + x.toFixed(1) + 'px), calc(-50% + ' + y.toFixed(1) + 'px)) rotate(' + rot.toFixed(3) + 'rad)';
+          if (s.fadeK > 0) s.el.classList.add('alive');
+          else s.el.classList.remove('alive');
+          s.el.style.opacity = s.fadeK.toFixed(3);
+        });
+
+        requestAnimationFrame(frame);
+      }
+
+      // Periodic swap: hide one, reveal another. The spin keeps going.
+      function cycleOne() {
+        const visibles = state.filter(s => s.visible);
+        const hiddens = state.filter(s => !s.visible);
+        if (!visibles.length || !hiddens.length) return;
+        const leaving = visibles[Math.floor(Math.random() * visibles.length)];
+        const entering = hiddens[Math.floor(Math.random() * hiddens.length)];
+        leaving.visible = false;
+        // entering chip takes the leaving slot's phase so orbit stays evenly spaced
+        entering.phase = leaving.phase;
+        entering.tilt = (Math.random() * 16 - 8) * Math.PI / 180;
+        entering.summonK = 0.4;  // pop in from closer to the icon
+        entering.visible = true;
+      }
+
+      // (No hover-to-resummon — chips just orbit steadily after the initial burst.)
+
+      if (prefersReducedMotion) {
+        // Static placement, no rAF, no cycling.
+        assignSlots();
+        const { rx, ry } = orbitRadii();
+        state.forEach(s => {
+          if (!s.visible) return;
+          const x = Math.cos(s.phase) * rx;
+          const y = Math.sin(s.phase) * ry;
+          s.el.style.transform = 'translate(calc(-50% + ' + x + 'px), calc(-50% + ' + y + 'px))';
+          s.el.classList.add('alive');
+          s.el.style.opacity = 1;
+        });
+      } else {
+        requestAnimationFrame(() => {
+          assignSlots();
+          // initial burst so chips fly out on load too
+          summonBurstStart = performance.now();
+          last = performance.now();
+          requestAnimationFrame(frame);
+          setInterval(cycleOne, 3200);
+        });
+      }
+    })();
+
+    /* ── Clickable hero chips → scroll & flash row ── */
+    function scrollToTool(name) {
+      const li = document.querySelector('.tool-cat li[data-tool="' + CSS.escape(name) + '"]');
+      if (!li) return;
+      // Ensure category isn't dimmed by a stale filter
+      const allBtn = document.querySelector('.tool-filter[data-filter="all"]');
+      if (allBtn && !allBtn.classList.contains('active')) allBtn.click();
+      const behavior = prefersReducedMotion ? 'auto' : 'smooth';
+      li.scrollIntoView({ behavior, block: 'center' });
+      li.classList.remove('flash');
+      void li.offsetWidth;
+      li.classList.add('flash');
+      setTimeout(() => li.classList.remove('flash'), 1700);
+    }
+
+    /* ───────────────────────────────────────────────────────────
+       Smart Paste interactive demo
+       ─────────────────────────────────────────────────────────── */
+    (function smartPasteDemo() {
+      const buttons = document.querySelectorAll('.sp-clip-btn');
+      const toolLabel = document.getElementById('sp-tool');
+      const body = document.getElementById('sp-body');
+      if (!buttons.length || !body) return;
+
+      const views = {
+        jwt: {
+          tool: 'JWT Decoder',
+          html: `
+<span class="sp-c"># detected → JWT (three base64url segments, dot-separated)</span>
+
+<span class="sp-k">HEADER</span>
+{
+  <span class="sp-k">"alg"</span>: <span class="sp-v">"HS256"</span>,
+  <span class="sp-k">"typ"</span>: <span class="sp-v">"JWT"</span>
+}
+
+<span class="sp-k">PAYLOAD</span>
+{
+  <span class="sp-k">"sub"</span>: <span class="sp-v">"1234567890"</span>,
+  <span class="sp-k">"name"</span>: <span class="sp-v">"Never gonna give you up"</span>,
+  <span class="sp-k">"iat"</span>: <span class="sp-v">1760000000</span>
+}
+
+<span class="sp-k">SIGNATURE</span>
+<span class="sp-p">signature_placeholder</span>`
+        },
+        json: {
+          tool: 'JSON Formatter',
+          html: `
+<span class="sp-c"># detected → JSON (parses cleanly, keys and values)</span>
+
+{
+  <span class="sp-k">"order_id"</span>: <span class="sp-v">"8f3b"</span>,
+  <span class="sp-k">"total"</span>: <span class="sp-v">42.99</span>,
+  <span class="sp-k">"items"</span>: [
+    {
+      <span class="sp-k">"sku"</span>: <span class="sp-v">"BNCH-001"</span>,
+      <span class="sp-k">"qty"</span>: <span class="sp-v">2</span>
+    },
+    {
+      <span class="sp-k">"sku"</span>: <span class="sp-v">"BNCH-PRO"</span>,
+      <span class="sp-k">"qty"</span>: <span class="sp-v">1</span>
+    }
+  ]
+}`
+        },
+        hex: {
+          tool: 'Color Converter',
+          html: `
+<span class="sp-c"># detected → color (# followed by 3/6/8 hex digits)</span>
+
+<span class="sp-k">HEX</span>    <span class="sp-swatch" style="background:#ff8a3d"></span><span class="sp-v">#ff8a3d</span>
+<span class="sp-k">RGB</span>    <span class="sp-v">rgb(255, 138, 61)</span>
+<span class="sp-k">HSL</span>    <span class="sp-v">hsl(20, 100%, 62%)</span>
+<span class="sp-k">OKLCH</span>  <span class="sp-v">oklch(0.74 0.17 44)</span>
+
+<span class="sp-c"># contrast vs #14110f</span>
+<span class="sp-g">AA ✓ / AAA ✓ for large text</span>`
+        },
+        regex: {
+          tool: 'Regex Tester',
+          html: `
+<span class="sp-c"># detected → regex literal (/.../, flags optional)</span>
+
+<span class="sp-k">PATTERN</span>  <span class="sp-v">/\\d{4}/</span>
+<span class="sp-k">FLAGS</span>    <span class="sp-v">—</span>
+
+<span class="sp-k">SAMPLE</span>
+Order <span class="sp-r">2847</span>, shipped <span class="sp-r">2026</span>-04-23 for <span class="sp-r">1998</span> USD.
+
+<span class="sp-k">MATCHES</span>  <span class="sp-v">3</span>
+<span class="sp-g">  1. 2847   @ 6-10</span>
+<span class="sp-g">  2. 2026   @ 21-25</span>
+<span class="sp-g">  3. 1998   @ 36-40</span>`
+        },
+      };
+
+      function show(key) {
+        const v = views[key];
+        if (!v) return;
+        toolLabel.textContent = v.tool;
+        body.innerHTML = '<div class="sp-fade">' + v.html.trim() + '</div>';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          show(btn.dataset.clip);
+        });
+      });
+    })();
+
+    /* ───────────────────────────────────────────────────────────
+       Screenshots scroller — progress dots + reduced-motion guard
+       ─────────────────────────────────────────────────────────── */
+    (function shotsDots() {
+      const scroller = document.getElementById('shots-scroller');
+      const dotsHost = document.getElementById('shots-dots');
+      if (!scroller || !dotsHost) return;
+      const shots = [...scroller.querySelectorAll('.shot')];
+      if (!shots.length) return;
+
+      shots.forEach((s, i) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'dot' + (i === 0 ? ' active' : '');
+        b.setAttribute('role', 'tab');
+        b.setAttribute('aria-label', 'Screenshot ' + (i + 1));
+        b.addEventListener('click', () => {
+          const behavior = prefersReducedMotion ? 'auto' : 'smooth';
+          s.scrollIntoView({ behavior, inline: 'start', block: 'nearest' });
+        });
+        dotsHost.appendChild(b);
+      });
+
+      let ticking = false;
+      scroller.addEventListener('scroll', () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const sl = scroller.scrollLeft;
+          let best = 0;
+          let bestDist = Infinity;
+          shots.forEach((s, i) => {
+            const d = Math.abs(s.offsetLeft - sl);
+            if (d < bestDist) { bestDist = d; best = i; }
+          });
+          dotsHost.querySelectorAll('.dot').forEach((d, i) => {
+            d.classList.toggle('active', i === best);
+          });
+          ticking = false;
+        });
+      });
+      // No auto-scroll is implemented; if one is added later, wrap it in:
+      //   if (!prefersReducedMotion) { ... }
     })();
   </script>
 </body>
