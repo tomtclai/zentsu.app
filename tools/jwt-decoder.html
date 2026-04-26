@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JWT Decoder for Mac — Bench by Zentsu LLC</title>
+    <meta
+      name="description"
+      content="Native Mac JWT decoder. Paste a token, read the header and claims instantly. Offline, no tracking, no upload — part of Bench, $19 one-time."
+    />
+    <link rel="canonical" href="https://zentsu.app/tools/jwt-decoder.html" />
+
+    <!-- Open Graph / social -->
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Bench" />
+    <meta property="og:title" content="JWT Decoder for Mac" />
+    <meta
+      property="og:description"
+      content="Native Mac JWT decoder. Paste a token, read the header and claims instantly. Offline, no tracking, no upload."
+    />
+    <meta property="og:url" content="https://zentsu.app/tools/jwt-decoder.html" />
+    <meta property="og:image" content="/assets/bench-icon.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/png" href="/assets/bench-icon.png" />
+    <link rel="stylesheet" href="/shared.css" />
+    <script src="/flags.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Bench — JWT Decoder",
+        "operatingSystem": "macOS 14+",
+        "applicationCategory": "DeveloperApplication",
+        "url": "https://zentsu.app/tools/jwt-decoder.html",
+        "publisher": { "@type": "Organization", "name": "Zentsu LLC" },
+        "offers": {
+          "@type": "Offer",
+          "price": "19.00",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+
+    <style>
+      main {
+        flex: 1;
+        padding: 3rem 1.5rem;
+      }
+      article h3 {
+        font-size: 0.9375rem;
+        font-weight: 600;
+        margin-top: 1.5rem;
+        margin-bottom: 0.4rem;
+        color: var(--text);
+      }
+      .lede {
+        font-size: 1.0625rem;
+        color: var(--body-text);
+        line-height: 1.65;
+        margin: 0.5rem 0 1.75rem;
+      }
+      .smart-paste {
+        background: var(--accent-light);
+        border-radius: 8px;
+        padding: 1rem 1.25rem;
+        margin: 1rem 0 0.5rem;
+      }
+      .smart-paste code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.8125rem;
+        background: rgba(0, 0, 0, 0.05);
+        padding: 0.1rem 0.35rem;
+        border-radius: 4px;
+        word-break: break-all;
+      }
+      .related {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+        margin-top: 1rem;
+      }
+      .related a {
+        display: block;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 0.85rem 1rem;
+        text-decoration: none;
+      }
+      .related a:hover {
+        border-color: var(--accent);
+      }
+      .related .name {
+        display: block;
+        font-weight: 600;
+        color: var(--text);
+        font-size: 0.9375rem;
+        margin-bottom: 0.25rem;
+      }
+      .related .hook {
+        font-size: 0.8125rem;
+        color: var(--muted);
+        line-height: 1.45;
+      }
+      @media (max-width: 700px) {
+        .related {
+          grid-template-columns: 1fr;
+        }
+      }
+      .cta-band {
+        background: var(--accent-light);
+        border: 1px solid var(--accent);
+        border-radius: 12px;
+        padding: 1.5rem 1.5rem;
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .cta-band p {
+        margin: 0;
+        font-size: 0.9375rem;
+        color: var(--text);
+      }
+      .cta-band a {
+        background: var(--text);
+        color: var(--bg);
+        padding: 0.65rem 1.15rem;
+        border-radius: 8px;
+        font-size: 0.9375rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .cta-band a:hover {
+        background: var(--accent);
+        color: #fff;
+      }
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 1.25rem;
+        margin-bottom: 0.5rem;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <script src="/nav.js"></script>
+
+    <main>
+      <article>
+        <span class="page-label">Bench Tool</span>
+        <h1>JWT Decoder for Mac</h1>
+        <p class="lede">
+          A native Mac JWT decoder. Paste a token, see the header and claims laid out instantly.
+          Nothing is uploaded — the token never leaves your machine.
+        </p>
+
+        <h2>What it does</h2>
+        <p>
+          Bench's JWT decoder splits a JSON Web Token into its three parts (header, payload, and
+          signature) and renders the decoded JSON of the first two with syntax highlighting.
+          Standard claims like <code>iat</code>, <code>exp</code>, and <code>nbf</code> are rendered
+          as human-readable timestamps so you can tell at a glance whether a token is still valid.
+          The signature is shown as raw base64url — we don't try to verify it for you, because
+          verifying meaningfully requires the shared secret or public key, and shipping a tool that
+          quietly says "valid" without one would be misleading.
+        </p>
+
+        <h2>Why use Bench's JWT decoder</h2>
+        <p>
+          Most JWT decoders on the web ask you to paste a token into a textbox on a remote server.
+          That's a bad idea for tokens that came out of production. Bench runs on your Mac — the
+          decoder is local code in a sandboxed app, with no network calls and no analytics, so
+          debugging a real auth header doesn't mean shipping a real auth header to a third party.
+          It's also a single keystroke away once you've launched the app, instead of a tab to find
+          again.
+        </p>
+        <ul>
+          <li><strong>Native Mac app.</strong> SwiftUI, single window, instant launch.</li>
+          <li><strong>Offline.</strong> No network calls. Tokens stay on your Mac.</li>
+          <li><strong>No tracking.</strong> No analytics, no telemetry, no third-party SDKs.</li>
+          <li>
+            <strong>One-time purchase.</strong> $19 once, year of updates included, $9 optional
+            renewal — no subscription.
+          </li>
+        </ul>
+
+        <h2>Paste a JWT. Bench picks the tool.</h2>
+        <div class="smart-paste">
+          <p>
+            Smart Detection reads your clipboard locally and routes you to the JWT decoder
+            automatically when it sees something like:
+          </p>
+          <p>
+            <code
+              >eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkV4YW1wbGUiLCJpYXQiOjE3NjAwMDAwMDB9.signature</code
+            >
+          </p>
+          <p style="margin-top: 0.5rem; font-size: 0.875rem; color: var(--muted)">
+            The detection runs entirely on your Mac as a rule-based heuristic — three base64url
+            segments separated by dots, with a JSON header that has an
+            <code>alg</code> field. Nothing is uploaded.
+          </p>
+        </div>
+
+        <h2>Related tools in Bench</h2>
+        <div class="related">
+          <a href="/tools/base64-encoder.html">
+            <span class="name">Base64 Encoder</span>
+            <span class="hook">Decode the segments yourself, encode arbitrary payloads.</span>
+          </a>
+          <a href="/tools/hash-generator.html">
+            <span class="name">Hash Generator</span>
+            <span class="hook"
+              >SHA-256 and friends — useful when you're checking signatures by hand.</span
+            >
+          </a>
+          <a href="/tools/timestamp-converter.html">
+            <span class="name">Timestamp Converter</span>
+            <span class="hook"
+              >Turn an <code>exp</code> claim into a human date in any timezone.</span
+            >
+          </a>
+        </div>
+
+        <div class="cta-band">
+          <p>
+            <strong>JWT Decoder</strong> ships inside Bench, alongside 17 other developer tools. $19
+            one-time, year of updates included.
+          </p>
+          <a href="/bench.html#pricing">Get Bench</a>
+        </div>
+
+        <hr />
+        <p style="font-size: 0.8125rem; color: var(--muted)">
+          Bench is published by Zentsu LLC. <a href="/bench.html">Back to Bench</a> ·
+          <a href="/bench/renewal-faq.html">Renewal FAQ</a> ·
+          <a href="/bench/support.html">Support</a>.
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="/bench.html">Bench</a>
+        <a href="/bench/support.html">Support</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+      </div>
+      <p>&copy; 2026 Zentsu LLC</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,269 @@
+<!doctype html>
+<!--
+  ─────────────────────────────────────────────────────────────────────────
+  TOOL LANDING PAGE TEMPLATE — /tools/[slug].html
+  ─────────────────────────────────────────────────────────────────────────
+
+  Purpose: one SEO-targeted landing page per Bench tool. Each page targets
+  long-tail "[tool] for Mac" / "[tool] online" queries and funnels into the
+  Mac App Store listing for Bench.
+
+  How to use:
+    1. Copy this file to /tools/<slug>.html (e.g. /tools/base64-encoder.html).
+    2. Search-and-replace every {{TOKEN}} placeholder below.
+    3. Pick 2–3 related tools for the cross-link block.
+    4. Pick a Smart Detection example payload that this tool handles.
+    5. Keep the page under ~600 words of body copy. Long pages don't help
+       here; tight, useful, scannable pages do.
+
+  ── Required tokens (search these before publishing) ──
+    {{TOOL_NAME}}                    e.g. JWT Decoder
+    {{TOOL_SLUG}}                    e.g. jwt-decoder
+    {{TOOL_NOUN}}                    short noun for sentences, e.g. "JWT decoder"
+    {{TOOL_VERB_TARGET}}             e.g. "decode JWTs"
+    {{H1}}                           e.g. JWT Decoder for Mac
+    {{META_DESCRIPTION}}             ≤155 char SEO description
+    {{HOOK_SENTENCE_1}}              one-sentence value prop
+    {{HOOK_SENTENCE_2}}              one-sentence reinforcement, native/offline angle
+    {{WHAT_IT_DOES_PARA}}            ~3 sentences explaining behavior
+    {{WHY_BENCH_PARA}}               ~3 sentences: offline / native / no-tracking / paste-and-go
+    {{SMART_DETECT_EXAMPLE}}         a sample payload Bench will route, e.g. a JWT string
+    {{SMART_DETECT_VERB}}            verb tying the example to this tool, e.g. "routes you to the JWT decoder"
+    {{RELATED_1_NAME}}, {{RELATED_1_SLUG}}, {{RELATED_1_HOOK}}
+    {{RELATED_2_NAME}}, {{RELATED_2_SLUG}}, {{RELATED_2_HOOK}}
+    {{RELATED_3_NAME}}, {{RELATED_3_SLUG}}, {{RELATED_3_HOOK}}
+
+  ── Style rules ──
+    • Anonymous studio voice — "we", never "I".
+    • Bench's Smart Detection is heuristic. Never say "AI" / "AI-powered" /
+      "intelligent" / "machine learning" / "ML".
+    • Don't name competitors (DevUtils, DevToys, Raycast as a competitor, etc.).
+    • Keep the price honest: $19 one-time, year of updates included, $9
+      optional renewal. Never imply subscription.
+  ─────────────────────────────────────────────────────────────────────────
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{H1}} — Bench by Zentsu LLC</title>
+    <meta name="description" content="{{META_DESCRIPTION}}" />
+    <link rel="canonical" href="https://zentsu.app/tools/{{TOOL_SLUG}}.html" />
+
+    <!-- Open Graph / social -->
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Bench" />
+    <meta property="og:title" content="{{H1}}" />
+    <meta property="og:description" content="{{META_DESCRIPTION}}" />
+    <meta property="og:url" content="https://zentsu.app/tools/{{TOOL_SLUG}}.html" />
+    <meta property="og:image" content="/assets/bench-icon.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/png" href="/assets/bench-icon.png" />
+    <link rel="stylesheet" href="/shared.css" />
+    <script src="/flags.js"></script>
+
+    <!-- JSON-LD: SoftwareApplication for the tool, scoped to Bench -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Bench — {{TOOL_NAME}}",
+        "operatingSystem": "macOS 14+",
+        "applicationCategory": "DeveloperApplication",
+        "url": "https://zentsu.app/tools/{{TOOL_SLUG}}.html",
+        "publisher": { "@type": "Organization", "name": "Zentsu LLC" },
+        "offers": {
+          "@type": "Offer",
+          "price": "19.00",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+
+    <style>
+      main {
+        flex: 1;
+        padding: 3rem 1.5rem;
+      }
+      article h3 {
+        font-size: 0.9375rem;
+        font-weight: 600;
+        margin-top: 1.5rem;
+        margin-bottom: 0.4rem;
+        color: var(--text);
+      }
+      .lede {
+        font-size: 1.0625rem;
+        color: var(--body-text);
+        line-height: 1.65;
+        margin: 0.5rem 0 1.75rem;
+      }
+      .smart-paste {
+        background: var(--accent-light);
+        border-radius: 8px;
+        padding: 1rem 1.25rem;
+        margin: 1rem 0 0.5rem;
+      }
+      .smart-paste code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.8125rem;
+        background: rgba(0, 0, 0, 0.05);
+        padding: 0.1rem 0.35rem;
+        border-radius: 4px;
+        word-break: break-all;
+      }
+      .related {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+        margin-top: 1rem;
+      }
+      .related a {
+        display: block;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 0.85rem 1rem;
+        text-decoration: none;
+      }
+      .related a:hover {
+        border-color: var(--accent);
+      }
+      .related .name {
+        display: block;
+        font-weight: 600;
+        color: var(--text);
+        font-size: 0.9375rem;
+        margin-bottom: 0.25rem;
+      }
+      .related .hook {
+        font-size: 0.8125rem;
+        color: var(--muted);
+        line-height: 1.45;
+      }
+      @media (max-width: 700px) {
+        .related {
+          grid-template-columns: 1fr;
+        }
+      }
+      .cta-band {
+        background: var(--accent-light);
+        border: 1px solid var(--accent);
+        border-radius: 12px;
+        padding: 1.5rem 1.5rem;
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .cta-band p {
+        margin: 0;
+        font-size: 0.9375rem;
+        color: var(--text);
+      }
+      .cta-band a {
+        background: var(--text);
+        color: var(--bg);
+        padding: 0.65rem 1.15rem;
+        border-radius: 8px;
+        font-size: 0.9375rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .cta-band a:hover {
+        background: var(--accent);
+        color: #fff;
+      }
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 1.25rem;
+        margin-bottom: 0.5rem;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <script src="/nav.js"></script>
+
+    <main>
+      <article>
+        <span class="page-label">Bench Tool</span>
+        <h1>{{H1}}</h1>
+        <p class="lede">{{HOOK_SENTENCE_1}} {{HOOK_SENTENCE_2}}</p>
+
+        <h2>What it does</h2>
+        <p>{{WHAT_IT_DOES_PARA}}</p>
+
+        <h2>Why use Bench's {{TOOL_NOUN}}</h2>
+        <p>{{WHY_BENCH_PARA}}</p>
+        <ul>
+          <li><strong>Native Mac app.</strong> SwiftUI, single window, instant launch.</li>
+          <li><strong>Offline.</strong> No network calls. Whatever you paste stays on your Mac.</li>
+          <li><strong>No tracking.</strong> No analytics, no telemetry, no third-party SDKs.</li>
+          <li>
+            <strong>One-time purchase.</strong> $19 once, year of updates included, $9 optional
+            renewal — no subscription.
+          </li>
+        </ul>
+
+        <h2>Paste it. Bench picks the tool.</h2>
+        <div class="smart-paste">
+          <p>
+            Smart Detection reads your clipboard locally and {{SMART_DETECT_VERB}} when it sees
+            something like:
+          </p>
+          <p><code>{{SMART_DETECT_EXAMPLE}}</code></p>
+          <p style="margin-top: 0.5rem; font-size: 0.875rem; color: var(--muted)">
+            The detection runs entirely on your Mac as a rule-based heuristic. Nothing is uploaded.
+          </p>
+        </div>
+
+        <h2>Related tools in Bench</h2>
+        <div class="related">
+          <a href="/tools/{{RELATED_1_SLUG}}.html">
+            <span class="name">{{RELATED_1_NAME}}</span>
+            <span class="hook">{{RELATED_1_HOOK}}</span>
+          </a>
+          <a href="/tools/{{RELATED_2_SLUG}}.html">
+            <span class="name">{{RELATED_2_NAME}}</span>
+            <span class="hook">{{RELATED_2_HOOK}}</span>
+          </a>
+          <a href="/tools/{{RELATED_3_SLUG}}.html">
+            <span class="name">{{RELATED_3_NAME}}</span>
+            <span class="hook">{{RELATED_3_HOOK}}</span>
+          </a>
+        </div>
+
+        <div class="cta-band">
+          <p>
+            <strong>{{TOOL_NAME}}</strong> ships inside Bench, alongside 17 other developer tools.
+            $19 one-time, year of updates included.
+          </p>
+          <a href="/bench.html#pricing">Get Bench</a>
+        </div>
+
+        <hr />
+        <p style="font-size: 0.8125rem; color: var(--muted)">
+          Bench is published by Zentsu LLC. <a href="/bench.html">Back to Bench</a> ·
+          <a href="/bench/renewal-faq.html">Renewal FAQ</a> ·
+          <a href="/bench/support.html">Support</a>.
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="/bench.html">Bench</a>
+        <a href="/bench/support.html">Support</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+      </div>
+      <p>&copy; 2026 Zentsu LLC</p>
+    </footer>
+  </body>
+</html>
