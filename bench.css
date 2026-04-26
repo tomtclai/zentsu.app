@@ -412,6 +412,15 @@ main {
   }
 }
 
+/* Below 860px the hero collapses to single column (icon above copy);
+   the orbit then overlaps the heading. Hide chips at the same breakpoint. */
+@media (max-width: 860px) {
+  .chip,
+  .chip-tip {
+    display: none !important;
+  }
+}
+
 /* ── Section scaffolding ── */
 section.slab {
   padding: 6rem 0;
