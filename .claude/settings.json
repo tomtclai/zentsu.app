@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "if": "Bash(git commit*)",
+            "command": "files=$(git diff --cached --name-only --diff-filter=ACM -- '*.html' '*.htm'); [ -z \"$files\" ] || (echo \"$files\" | xargs npx html-validate)",
+            "statusMessage": "html-validate on staged HTML"
+          }
+        ]
+      }
+    ]
+  }
+}

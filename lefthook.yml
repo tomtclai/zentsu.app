@@ -1,0 +1,14 @@
+pre-commit:
+  parallel: true
+  commands:
+    format:
+      glob: "*.{html,css,js,md,json}"
+      run: npx prettier --write {staged_files}
+      stage_fixed: true
+# html-validate runs as a Claude Code PreToolUse hook (.claude/settings.json)
+# instead of here, so manual git commits aren't gated on it.
+
+pre-push:
+  commands:
+    links:
+      run: npx linkinator . --recurse --skip "node_modules|_site|dist"

@@ -1,270 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bench Support — Zentsu LLC</title>
-  <meta name="description" content="Support for Bench, the native Mac developer toolbox by Zentsu LLC. Contact, FAQ, and help for macOS 14 and later." />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --bg:      #f9f9f7;
-      --surface: #ffffff;
-      --border:  #e5e5e3;
-      --text:    #1a1a1a;
-      --muted:   #6b6b6b;
-      --accent:  #4a7c6f;
-      --accent-light: #eaf2f0;
-      --body-text: #333333;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    /* ── Nav ── */
-    nav {
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      padding: 0 1.5rem;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      max-width: 900px;
-      margin: 0 auto;
-      height: 56px;
-    }
-    nav a {
-      text-decoration: none;
-      color: var(--muted);
-      font-size: 0.875rem;
-      letter-spacing: 0.01em;
-      transition: color 0.15s;
-    }
-    nav a:hover, nav a.active { color: var(--accent); }
-    nav li:first-child { margin-right: auto; }
-    nav li:first-child a {
-      font-weight: 700;
-      font-size: 1rem;
-      color: var(--text);
-      letter-spacing: -0.01em;
-    }
-
-    /* ── Content ── */
-    main {
-      flex: 1;
-      padding: 3rem 1.5rem;
-    }
-    article {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 2.5rem 3rem;
-      max-width: 760px;
-      margin: 0 auto;
-    }
-    @media (max-width: 600px) {
-      article { padding: 1.75rem 1.25rem; }
-    }
-
-    .page-label {
-      display: inline-block;
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--accent);
-      background: var(--accent-light);
-      padding: 0.25rem 0.65rem;
-      border-radius: 5px;
-      margin-bottom: 1rem;
-    }
-    h1 {
-      font-size: clamp(1.5rem, 4vw, 2rem);
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.4rem;
-    }
-    .effective {
-      font-size: 0.875rem;
-      color: var(--muted);
-      margin-bottom: 2.25rem;
-    }
-    h2 {
-      font-size: 1.0625rem;
-      font-weight: 600;
-      margin-top: 2rem;
-      margin-bottom: 0.6rem;
-      color: var(--text);
-    }
-    h3 {
-      font-size: 0.9375rem;
-      font-weight: 600;
-      margin-top: 1.25rem;
-      margin-bottom: 0.35rem;
-      color: var(--text);
-    }
-    p, ul, ol {
-      font-size: 0.9375rem;
-      line-height: 1.7;
-      color: var(--body-text);
-    }
-    ul, ol {
-      padding-left: 1.4rem;
-    }
-    li { margin-bottom: 0.35rem; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    hr {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 2rem 0;
-    }
-
-    /* ── Contact block ── */
-    .contact {
-      background: var(--accent-light);
-      border-radius: 8px;
-      padding: 1.1rem 1.25rem;
-      margin: 1.25rem 0 0.5rem;
-    }
-    .contact p { margin: 0; }
-    .contact .email {
-      font-size: 1.0625rem;
-      font-weight: 600;
-    }
-    .contact .note {
-      font-size: 0.875rem;
-      color: var(--muted);
-      margin-top: 0.25rem;
-    }
-
-    /* ── FAQ ── */
-    .faq h3 {
-      margin-top: 1.5rem;
-    }
-    .faq p {
-      margin-bottom: 0.5rem;
-    }
-
-    /* ── Footer ── */
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 0.8125rem;
-      color: var(--muted);
-      border-top: 1px solid var(--border);
-    }
-    footer a { color: var(--muted); text-decoration: none; }
-    footer a:hover { color: var(--accent); }
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 1.25rem;
-      margin-bottom: 0.5rem;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg:        #111113;
-        --surface:   #1c1c1e;
-        --border:    #2c2c2e;
-        --text:      #f0f0f0;
-        --muted:     #8e8e93;
-        --accent:    #5fa896;
-        --accent-light: #1e3330;
-        --body-text: #d1d1d6;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bench Support — Zentsu LLC</title>
+    <meta
+      name="description"
+      content="Support for Bench, the native Mac developer toolbox by Zentsu LLC. Contact, FAQ, and help for macOS 14 and later."
+    />
+    <link rel="stylesheet" href="/shared.css" />
+    <script src="/flags.js"></script>
+    <style>
+      /* ── Content (page-specific) ── */
+      main {
+        flex: 1;
+        padding: 3rem 1.5rem;
       }
-    }
-  </style>
-</head>
-<body>
+      article h3 {
+        font-size: 0.9375rem;
+        font-weight: 600;
+        margin-top: 1.25rem;
+        margin-bottom: 0.35rem;
+        color: var(--text);
+      }
 
-  <!--
+      /* ── Contact block ── */
+      .contact {
+        background: var(--accent-light);
+        border-radius: 8px;
+        padding: 1.1rem 1.25rem;
+        margin: 1.25rem 0 0.5rem;
+      }
+      .contact p {
+        margin: 0;
+      }
+      .contact .email {
+        font-size: 1.0625rem;
+        font-weight: 600;
+      }
+      .contact .note {
+        font-size: 0.875rem;
+        color: var(--muted);
+        margin-top: 0.25rem;
+      }
+
+      /* ── FAQ ── */
+      .faq h3 {
+        margin-top: 1.5rem;
+      }
+      .faq p {
+        margin-bottom: 0.5rem;
+      }
+
+      /* ── Footer (page-specific extras) ── */
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 1.25rem;
+        margin-bottom: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
     Static nav (absolute URLs) — this page lives under /bench/, so relative
     nav.js links would break. Keeping markup consistent with the shared nav.
   -->
-  <nav>
-    <ul>
-      <li><a href="/index.html">Zentsu LLC</a></li>
-      <li><a href="/bench.html">Bench</a></li>
-      <li><a href="/privacy.html">Privacy Policy</a></li>
-      <li><a href="/terms.html">Terms of Use</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <article>
-      <span class="page-label">Support</span>
-      <h1>Bench Support</h1>
-      <p class="effective">Bench — Dev Toolbox for macOS 14 or later · Zentsu LLC</p>
-
-      <p>This page is the support resource for <strong>Bench</strong>, a native Mac developer toolbox published by Zentsu LLC. If you run into a problem, have a question, or want to send feedback, you'll find everything you need below.</p>
-
-      <h2>Contact</h2>
-      <div class="contact">
-        <p class="email"><a href="mailto:tom@zentsu.app?subject=Bench%20support">tom@zentsu.app</a></p>
-        <p class="note">We aim to respond within 2 business days (typically sooner). Please include your macOS version and a short description of what you were doing when the issue happened.</p>
-      </div>
-
-      <h2>Frequently asked questions</h2>
-      <div class="faq">
-
-        <h3>What macOS versions does Bench support?</h3>
-        <p>Bench runs on macOS 14 (Sonoma) or later. It ships as a universal binary for both Apple silicon and Intel Macs.</p>
-
-        <h3>Does Bench collect any data?</h3>
-        <p>No. Bench has no analytics, no telemetry, no accounts, and no third-party SDKs. It does not make network calls during normal use. Everything you type or paste stays on your Mac.</p>
-
-        <h3>Is my clipboard data safe?</h3>
-        <p>Yes. Bench's smart-paste feature reads the clipboard locally and picks the most likely tool (for example, it recognises a JWT or a JSON blob). The detection is a rule-based heuristic that runs entirely on your device — it does not use AI or machine learning, and nothing is uploaded anywhere.</p>
-
-        <h3>How do I restore my purchase on a new Mac?</h3>
-        <p>Open Bench, go to <strong>Preferences → Upgrade</strong>, and click <strong>Restore Purchases</strong>. Make sure you're signed into the same Apple Account on the Mac App Store that you used to buy Bench. If the restore doesn't complete, email us and include your Apple Account's receipt or order ID.</p>
-
-        <h3>Bench won't launch, or is behaving unexpectedly — what should I try first?</h3>
-        <p>Quit Bench fully, then relaunch it. If the issue persists, restart your Mac and try again. If it still happens, email <a href="mailto:tom@zentsu.app?subject=Bench%20bug%20report">tom@zentsu.app</a> with:</p>
-        <ul>
-          <li>Your macOS version (Apple menu → About This Mac).</li>
-          <li>Whether your Mac has Apple silicon or Intel.</li>
-          <li>A short description of what you were doing and what you expected.</li>
-          <li>If possible, a screenshot.</li>
-        </ul>
-
-        <h3>How do I report a bug or request a feature?</h3>
-        <p>Email <a href="mailto:tom@zentsu.app?subject=Bench%20feedback">tom@zentsu.app</a>. Every message is read by a human (Tom). Feature requests are genuinely welcome — Bench is a focused app and the roadmap is shaped by what real users ask for.</p>
-
-      </div>
-
-      <h2>Privacy and terms</h2>
-      <p>Full details about how Bench handles data — and the terms under which it is provided — are in the documents below:</p>
+    <nav>
       <ul>
+        <li><a href="/index.html">Zentsu LLC</a></li>
+        <li><a href="/bench.html">Bench</a></li>
         <li><a href="/privacy.html">Privacy Policy</a></li>
         <li><a href="/terms.html">Terms of Use</a></li>
       </ul>
+    </nav>
 
-      <hr />
-      <p style="font-size:0.8125rem; color: var(--muted);">Published by Zentsu LLC. Developer contact: <a href="mailto:tom@zentsu.app">tom@zentsu.app</a>.</p>
-    </article>
-  </main>
+    <main>
+      <article>
+        <span class="page-label">Support</span>
+        <h1>Bench Support</h1>
+        <p class="effective">Bench — Dev Toolbox for macOS 14 or later · Zentsu LLC</p>
 
-  <footer>
-    <div class="footer-links">
-      <a href="/privacy.html">Privacy</a>
-      <a href="/terms.html">Terms</a>
-      <a href="mailto:tom@zentsu.app">tom@zentsu.app</a>
-    </div>
-    <p>&copy; 2026 Zentsu LLC</p>
-  </footer>
+        <p>
+          This page is the support resource for <strong>Bench</strong>, a native Mac developer
+          toolbox published by Zentsu LLC. If you run into a problem, have a question, or want to
+          send feedback, you'll find everything you need below.
+        </p>
 
-</body>
+        <h2>Contact</h2>
+        <div class="contact">
+          <p class="email">
+            <a href="mailto:tom@zentsu.app?subject=Bench%20support">tom@zentsu.app</a>
+          </p>
+          <p class="note">
+            We aim to respond within 2 business days (typically sooner). Please include your macOS
+            version and a short description of what you were doing when the issue happened.
+          </p>
+        </div>
+
+        <h2>Frequently asked questions</h2>
+        <div class="faq">
+          <h3>What macOS versions does Bench support?</h3>
+          <p>
+            Bench runs on macOS 14 (Sonoma) or later. It ships as a universal binary for both Apple
+            silicon and Intel Macs.
+          </p>
+
+          <h3>Does Bench collect any data?</h3>
+          <p>
+            No. Bench has no analytics, no telemetry, no accounts, and no third-party SDKs. It does
+            not make network calls during normal use. Everything you type or paste stays on your
+            Mac.
+          </p>
+
+          <h3>Is my clipboard data safe?</h3>
+          <p>
+            Yes. Bench's smart-paste feature reads the clipboard locally and picks the most likely
+            tool (for example, it recognises a JWT or a JSON blob). The detection is a rule-based
+            heuristic that runs entirely on your device — it does not use AI or machine learning,
+            and nothing is uploaded anywhere.
+          </p>
+
+          <h3>How do I restore my purchase on a new Mac?</h3>
+          <p>
+            Open Bench, go to <strong>Preferences → Upgrade</strong>, and click
+            <strong>Restore Purchases</strong>. Make sure you're signed into the same Apple Account
+            on the Mac App Store that you used to buy Bench. If the restore doesn't complete, email
+            us and include your Apple Account's receipt or order ID.
+          </p>
+
+          <h3>Bench won't launch, or is behaving unexpectedly — what should I try first?</h3>
+          <p>
+            Quit Bench fully, then relaunch it. If the issue persists, restart your Mac and try
+            again. If it still happens, email
+            <a href="mailto:tom@zentsu.app?subject=Bench%20bug%20report">tom@zentsu.app</a> with:
+          </p>
+          <ul>
+            <li>Your macOS version (Apple menu → About This Mac).</li>
+            <li>Whether your Mac has Apple silicon or Intel.</li>
+            <li>A short description of what you were doing and what you expected.</li>
+            <li>If possible, a screenshot.</li>
+          </ul>
+
+          <h3>How do I report a bug or request a feature?</h3>
+          <p>
+            Email <a href="mailto:tom@zentsu.app?subject=Bench%20feedback">tom@zentsu.app</a>. Every
+            message is read by a human (Tom). Feature requests are genuinely welcome — Bench is a
+            focused app and the roadmap is shaped by what real users ask for.
+          </p>
+        </div>
+
+        <h2>Privacy and terms</h2>
+        <p>
+          Full details about how Bench handles data — and the terms under which it is provided — are
+          in the documents below:
+        </p>
+        <ul>
+          <li><a href="/privacy.html">Privacy Policy</a></li>
+          <li><a href="/terms.html">Terms of Use</a></li>
+        </ul>
+
+        <hr />
+        <p style="font-size: 0.8125rem; color: var(--muted)">
+          Published by Zentsu LLC. Developer contact:
+          <a href="mailto:tom@zentsu.app">tom@zentsu.app</a>.
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="mailto:tom@zentsu.app">tom@zentsu.app</a>
+      </div>
+      <p>&copy; 2026 Zentsu LLC</p>
+    </footer>
+  </body>
 </html>

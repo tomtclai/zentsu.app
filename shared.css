@@ -1,0 +1,185 @@
+/* ──────────────────────────────────────────────────────────────────────────
+   shared.css — common chrome for the Zentsu marketing site
+   Used by: index.html, privacy.html, terms.html, bench/support.html, bench.html
+   bench.html overrides most of this with /bench.css (different design system),
+   but the box-sizing reset is genuinely shared with everyone.
+   ────────────────────────────────────────────────────────────────────────── */
+
+/* ── Reset (shared by all 5 pages) ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Variables (light) ── */
+:root {
+  --bg: #f9f9f7;
+  --surface: #ffffff;
+  --border: #e5e5e3;
+  --text: #1a1a1a;
+  --muted: #6b6b6b;
+  --accent: #4a7c6f;
+  --accent-light: #eaf2f0;
+  --body-text: #333333;
+}
+
+/* ── Base ── */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Nav ── */
+nav {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0 1.5rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 56px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.875rem;
+  letter-spacing: 0.01em;
+  transition: color 0.15s;
+}
+nav a:hover,
+nav a.active {
+  color: var(--accent);
+}
+nav li:first-child {
+  margin-right: auto;
+}
+nav li:first-child a {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+/* ── Legal/support article styles (shared by privacy, terms, support) ── */
+article {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2.5rem 3rem;
+  max-width: 760px;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  article {
+    padding: 1.75rem 1.25rem;
+  }
+}
+
+.page-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 0.25rem 0.65rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+article h1 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
+}
+article .effective {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-bottom: 2.25rem;
+}
+article h2 {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+  color: var(--text);
+}
+article p,
+article ul,
+article ol {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--body-text);
+}
+article ul,
+article ol {
+  padding-left: 1.4rem;
+}
+article li {
+  margin-bottom: 0.35rem;
+}
+article a {
+  color: var(--accent);
+  text-decoration: none;
+}
+article a:hover {
+  text-decoration: underline;
+}
+article hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+/* ── Footer (shared by index, privacy, terms, support) ── */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.8125rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+footer a {
+  color: var(--muted);
+  text-decoration: none;
+}
+footer a:hover {
+  color: var(--accent);
+}
+
+/* ── Dark mode ── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111113;
+    --surface: #1c1c1e;
+    --border: #2c2c2e;
+    --text: #f0f0f0;
+    --muted: #8e8e93;
+    --accent: #5fa896;
+    --accent-light: #1e3330;
+    --body-text: #d1d1d6;
+  }
+}
+
+/* Feature flags — see /flags.js. Hidden by default; revealed when corresponding flag is live.
+   !important is intentional: feature gates must beat any later layout rule (e.g. .btn { display: inline-flex }). */
+.feature-app-store {
+  display: none !important;
+}
+.flag-appStoreLive .feature-app-store {
+  display: revert !important;
+}

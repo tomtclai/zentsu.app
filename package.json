@@ -1,0 +1,27 @@
+{
+  "name": "zentsu.app",
+  "version": "1.0.0",
+  "main": "nav.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomtclai/zentsu.app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomtclai/zentsu.app/issues"
+  },
+  "homepage": "https://github.com/tomtclai/zentsu.app#readme",
+  "description": "",
+  "devDependencies": {
+    "html-validate": "^10.11.3",
+    "lefthook": "^2.1.6",
+    "linkinator": "^7.6.1",
+    "prettier": "^3.8.3",
+    "sharp": "^0.34.5"
+  }
+}

@@ -1,198 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Terms of Use — Zentsu LLC</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --bg:      #f9f9f7;
-      --surface: #ffffff;
-      --border:  #e5e5e3;
-      --text:    #1a1a1a;
-      --muted:   #6b6b6b;
-      --accent:  #4a7c6f;
-      --accent-light: #eaf2f0;
-      --body-text: #333333;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    /* ── Nav ── */
-    nav {
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      padding: 0 1.5rem;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      max-width: 900px;
-      margin: 0 auto;
-      height: 56px;
-    }
-    nav a {
-      text-decoration: none;
-      color: var(--muted);
-      font-size: 0.875rem;
-      letter-spacing: 0.01em;
-      transition: color 0.15s;
-    }
-    nav a:hover, nav a.active { color: var(--accent); }
-    nav li:first-child { margin-right: auto; }
-    nav li:first-child a {
-      font-weight: 700;
-      font-size: 1rem;
-      color: var(--text);
-      letter-spacing: -0.01em;
-    }
-
-    /* ── Content ── */
-    main {
-      flex: 1;
-      padding: 3rem 1.5rem;
-    }
-    article {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 2.5rem 3rem;
-      max-width: 760px;
-      margin: 0 auto;
-    }
-    @media (max-width: 600px) {
-      article { padding: 1.75rem 1.25rem; }
-    }
-
-    .page-label {
-      display: inline-block;
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--accent);
-      background: var(--accent-light);
-      padding: 0.25rem 0.65rem;
-      border-radius: 5px;
-      margin-bottom: 1rem;
-    }
-    h1 {
-      font-size: clamp(1.5rem, 4vw, 2rem);
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.4rem;
-    }
-    .effective {
-      font-size: 0.875rem;
-      color: var(--muted);
-      margin-bottom: 2.25rem;
-    }
-    h2 {
-      font-size: 1.0625rem;
-      font-weight: 600;
-      margin-top: 2rem;
-      margin-bottom: 0.6rem;
-      color: var(--text);
-    }
-    p, ul, ol {
-      font-size: 0.9375rem;
-      line-height: 1.7;
-      color: var(--body-text);
-    }
-    ul, ol {
-      padding-left: 1.4rem;
-    }
-    li { margin-bottom: 0.35rem; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .callout {
-      background: #fff8e6;
-      border-left: 3px solid #e0a830;
-      border-radius: 0 6px 6px 0;
-      padding: 0.9rem 1rem;
-      margin: 1.25rem 0;
-      font-size: 0.9375rem;
-      color: #5a4200;
-      line-height: 1.65;
-    }
-    hr {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 2rem 0;
-    }
-
-    /* ── Footer ── */
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 0.8125rem;
-      color: var(--muted);
-      border-top: 1px solid var(--border);
-    }
-    footer a { color: var(--muted); text-decoration: none; }
-    footer a:hover { color: var(--accent); }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg:        #111113;
-        --surface:   #1c1c1e;
-        --border:    #2c2c2e;
-        --text:      #f0f0f0;
-        --muted:     #8e8e93;
-        --accent:    #5fa896;
-        --accent-light: #1e3330;
-        --body-text: #d1d1d6;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Use — Zentsu LLC</title>
+    <link rel="stylesheet" href="/shared.css" />
+    <script src="/flags.js"></script>
+    <style>
+      /* ── Content (page-specific) ── */
+      main {
+        flex: 1;
+        padding: 3rem 1.5rem;
       }
-    }
-  </style>
-</head>
-<body>
+      .callout {
+        background: #fff8e6;
+        border-left: 3px solid #e0a830;
+        border-radius: 0 6px 6px 0;
+        padding: 0.9rem 1rem;
+        margin: 1.25rem 0;
+        font-size: 0.9375rem;
+        color: #5a4200;
+        line-height: 1.65;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
 
-  <div id="nav-placeholder"></div>
+    <main>
+      <article>
+        <span class="page-label">Legal</span>
+        <h1>Terms &amp; Conditions</h1>
+        <p class="effective">Effective date: April 11, 2026</p>
 
-  <main>
-    <article>
-      <span class="page-label">Legal</span>
-      <h1>Terms &amp; Conditions</h1>
-      <p class="effective">Effective date: April 11, 2026</p>
+        <p>
+          These terms and conditions apply to all mobile applications (hereby referred to as
+          "Applications") published by Zentsu LLC (hereby referred to as "Service Provider") as a
+          Commercial service.
+        </p>
+        <p>
+          Upon downloading or utilizing any of the Applications, you are automatically agreeing to
+          the following terms. It is strongly advised that you thoroughly read and understand these
+          terms prior to using the Applications.
+        </p>
+        <p>
+          Unauthorized copying or modification of any Application, any part of any Application, or
+          our trademarks is strictly prohibited. Any attempts to extract the source code of the
+          Applications, translate the Applications into other languages, or create derivative
+          versions are not permitted. All trademarks, copyrights, database rights, and other
+          intellectual property rights related to the Applications remain the property of the
+          Service Provider.
+        </p>
+        <p>
+          The Service Provider is dedicated to ensuring that the Applications are as beneficial and
+          efficient as possible. As such, they reserve the right to modify any Application or charge
+          for their services at any time and for any reason. The Service Provider assures you that
+          any charges for the Applications or their services will be clearly communicated to you.
+        </p>
+        <p>
+          The Applications store and process personal data that you have provided to the Service
+          Provider in order to provide the Service. It is your responsibility to maintain the
+          security of your phone and access to the Applications. The Service Provider strongly
+          advises against jailbreaking or rooting your phone, which involves removing software
+          restrictions and limitations imposed by the official operating system of your device. Such
+          actions could expose your phone to malware, viruses, malicious programs, compromise your
+          phone's security features, and may result in the Applications not functioning correctly or
+          at all.
+        </p>
+        <p>
+          Please be aware that the Service Provider does not assume responsibility for certain
+          aspects. Some functions of the Applications require an active internet connection, which
+          can be Wi-Fi or provided by your mobile network provider. The Service Provider cannot be
+          held responsible if an Application does not function at full capacity due to lack of
+          access to Wi-Fi or if you have exhausted your data allowance.
+        </p>
+        <p>
+          If you are using an application outside of a Wi-Fi area, please be aware that your mobile
+          network provider's agreement terms still apply. Consequently, you may incur charges from
+          your mobile provider for data usage during the connection to the application, or other
+          third-party charges. By using the applications, you accept responsibility for any such
+          charges, including roaming data charges if you use the applications outside of your home
+          territory (i.e., region or country) without disabling data roaming. If you are not the
+          bill payer for the device on which you are using the application, they assume that you
+          have obtained permission from the bill payer.
+        </p>
+        <p>
+          Similarly, the Service Provider cannot always assume responsibility for your usage of the
+          applications. For instance, it is your responsibility to ensure that your device remains
+          charged. If your device runs out of battery and you are unable to access the Service, the
+          Service Provider cannot be held responsible.
+        </p>
+        <p>
+          In terms of the Service Provider's responsibility for your use of the applications, it is
+          important to note that while they strive to ensure that they are updated and accurate at
+          all times, they do rely on third parties to provide information to them so that they can
+          make it available to you. The Service Provider accepts no liability for any loss, direct
+          or indirect, that you experience as a result of relying entirely on this functionality of
+          the applications.
+        </p>
+        <p>
+          The Service Provider may wish to update the applications at some point. The applications
+          are currently available as per the requirements for the operating system (and for any
+          additional systems they decide to extend the availability of the applications to) may
+          change, and you will need to download the updates if you want to continue using the
+          applications. The Service Provider does not guarantee that it will always update the
+          applications so that they are relevant to you and/or compatible with the particular
+          operating system version installed on your device. However, you agree to always accept
+          updates to the applications when offered to you. The Service Provider may also wish to
+          cease providing any application and may terminate its use at any time without providing
+          termination notice to you. Unless they inform you otherwise, upon any termination, (a) the
+          rights and licenses granted to you in these terms will end; (b) you must cease using the
+          application, and (if necessary) delete it from your device.
+        </p>
 
-      <p>These terms and conditions apply to all mobile applications (hereby referred to as "Applications") published by Zentsu LLC (hereby referred to as "Service Provider") as a Commercial service.</p>
-      <p>Upon downloading or utilizing any of the Applications, you are automatically agreeing to the following terms. It is strongly advised that you thoroughly read and understand these terms prior to using the Applications.</p>
-      <p>Unauthorized copying or modification of any Application, any part of any Application, or our trademarks is strictly prohibited. Any attempts to extract the source code of the Applications, translate the Applications into other languages, or create derivative versions are not permitted. All trademarks, copyrights, database rights, and other intellectual property rights related to the Applications remain the property of the Service Provider.</p>
-      <p>The Service Provider is dedicated to ensuring that the Applications are as beneficial and efficient as possible. As such, they reserve the right to modify any Application or charge for their services at any time and for any reason. The Service Provider assures you that any charges for the Applications or their services will be clearly communicated to you.</p>
-      <p>The Applications store and process personal data that you have provided to the Service Provider in order to provide the Service. It is your responsibility to maintain the security of your phone and access to the Applications. The Service Provider strongly advises against jailbreaking or rooting your phone, which involves removing software restrictions and limitations imposed by the official operating system of your device. Such actions could expose your phone to malware, viruses, malicious programs, compromise your phone's security features, and may result in the Applications not functioning correctly or at all.</p>
-      <p>Please be aware that the Service Provider does not assume responsibility for certain aspects. Some functions of the Applications require an active internet connection, which can be Wi-Fi or provided by your mobile network provider. The Service Provider cannot be held responsible if an Application does not function at full capacity due to lack of access to Wi-Fi or if you have exhausted your data allowance.</p>
-      <p>If you are using an application outside of a Wi-Fi area, please be aware that your mobile network provider's agreement terms still apply. Consequently, you may incur charges from your mobile provider for data usage during the connection to the application, or other third-party charges. By using the applications, you accept responsibility for any such charges, including roaming data charges if you use the applications outside of your home territory (i.e., region or country) without disabling data roaming. If you are not the bill payer for the device on which you are using the application, they assume that you have obtained permission from the bill payer.</p>
-      <p>Similarly, the Service Provider cannot always assume responsibility for your usage of the applications. For instance, it is your responsibility to ensure that your device remains charged. If your device runs out of battery and you are unable to access the Service, the Service Provider cannot be held responsible.</p>
-      <p>In terms of the Service Provider's responsibility for your use of the applications, it is important to note that while they strive to ensure that they are updated and accurate at all times, they do rely on third parties to provide information to them so that they can make it available to you. The Service Provider accepts no liability for any loss, direct or indirect, that you experience as a result of relying entirely on this functionality of the applications.</p>
-      <p>The Service Provider may wish to update the applications at some point. The applications are currently available as per the requirements for the operating system (and for any additional systems they decide to extend the availability of the applications to) may change, and you will need to download the updates if you want to continue using the applications. The Service Provider does not guarantee that it will always update the applications so that they are relevant to you and/or compatible with the particular operating system version installed on your device. However, you agree to always accept updates to the applications when offered to you. The Service Provider may also wish to cease providing any application and may terminate its use at any time without providing termination notice to you. Unless they inform you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must cease using the application, and (if necessary) delete it from your device.</p>
+        <h2>Changes to These Terms and Conditions</h2>
+        <p>
+          The Service Provider may periodically update their Terms and Conditions. Therefore, you
+          are advised to review this page regularly for any changes. The Service Provider will
+          notify you of any changes by posting the new Terms and Conditions on this page.
+        </p>
 
-      <h2>Changes to These Terms and Conditions</h2>
-      <p>The Service Provider may periodically update their Terms and Conditions. Therefore, you are advised to review this page regularly for any changes. The Service Provider will notify you of any changes by posting the new Terms and Conditions on this page.</p>
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or suggestions about the Terms and Conditions, please do not
+          hesitate to contact the Service Provider at
+          <a href="mailto:terms@zentsu.app">terms@zentsu.app</a>.
+        </p>
 
-      <h2>Contact Us</h2>
-      <p>If you have any questions or suggestions about the Terms and Conditions, please do not hesitate to contact the Service Provider at <a href="mailto:terms@zentsu.app">terms@zentsu.app</a>.</p>
+        <hr />
+        <p style="font-size: 0.8125rem; color: var(--muted)">
+          &copy; 2026 Zentsu LLC. All rights reserved.
+        </p>
+      </article>
+    </main>
 
-      <hr />
-      <p style="font-size:0.8125rem; color: var(--muted);">&copy; 2026 Zentsu LLC. All rights reserved.</p>
-    </article>
-  </main>
+    <footer>
+      <p>&copy; 2026 Zentsu LLC</p>
+    </footer>
 
-  <footer>
-    <p>&copy; 2026 Zentsu LLC</p>
-  </footer>
-
-  <script src="nav.js"></script>
-</body>
+    <script src="nav.js"></script>
+  </body>
 </html>
