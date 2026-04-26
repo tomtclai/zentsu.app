@@ -1,0 +1,7 @@
+exclude:
+  - package.json
+  - package-lock.json
+  - lefthook.yml
+  - scripts/
+  - node_modules/
+  - README.md
