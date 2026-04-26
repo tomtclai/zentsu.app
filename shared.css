@@ -36,20 +36,25 @@ body {
   flex-direction: column;
 }
 
-/* ── Nav ── */
+/* ── Nav (matches bench.html: sticky w/ backdrop blur) ── */
 nav {
-  background: var(--surface);
+  background: var(--bg);
   border-bottom: 1px solid var(--border);
   padding: 0 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: saturate(140%) blur(8px);
+  -webkit-backdrop-filter: saturate(140%) blur(8px);
 }
 nav ul {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  max-width: 900px;
+  max-width: 1160px;
   margin: 0 auto;
-  height: 56px;
+  height: 60px;
 }
 nav a {
   text-decoration: none;
@@ -60,7 +65,7 @@ nav a {
 }
 nav a:hover,
 nav a.active {
-  color: var(--accent);
+  color: var(--text);
 }
 nav li:first-child {
   margin-right: auto;

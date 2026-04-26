@@ -6,6 +6,7 @@
   --surface: #ffffff;
   --ink: #14110f;
   --ink-soft: #2a2622;
+  --text: #14110f; /* alias of --ink so shared.css nav rules match bench palette */
   --muted: #6b655e;
   --border: #d8d4cb;
   --border-soft: #e6e2d8;
@@ -40,45 +41,7 @@ body {
 }
 
 /* ── Nav (match existing site chrome) ── */
-nav {
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-  padding: 0 1.5rem;
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  backdrop-filter: saturate(140%) blur(8px);
-  -webkit-backdrop-filter: saturate(140%) blur(8px);
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  max-width: 1160px;
-  margin: 0 auto;
-  height: 60px;
-}
-nav a {
-  text-decoration: none;
-  color: var(--muted);
-  font-size: 0.875rem;
-  letter-spacing: 0.01em;
-  transition: color 0.15s;
-}
-nav a:hover,
-nav a.active {
-  color: var(--ink);
-}
-nav li:first-child {
-  margin-right: auto;
-}
-nav li:first-child a {
-  font-weight: 700;
-  font-size: 1rem;
-  color: var(--ink);
-  letter-spacing: -0.01em;
-}
+/* Nav rules live in /shared.css now (sticky + backdrop-blur, applied to all pages). */
 
 /* Sticky mini-CTA in nav (appended by JS) */
 .nav-mini-cta {
@@ -939,7 +902,7 @@ section.slab {
   line-height: 1.55;
   color: var(--ink-soft);
   word-break: break-all;
-  white-space: pre-wrap;
+  white-space: normal;
   min-height: 6.75rem;
   max-height: 11rem;
   overflow: auto;
@@ -1047,7 +1010,7 @@ section.slab {
   font-size: 0.8rem;
   line-height: 1.5;
   overflow-x: auto;
-  white-space: pre;
+  white-space: pre-line;
 }
 /* JSON token colors — tuned for legibility in both light + dark page modes */
 .bp-card-body .tok-key {
@@ -1455,6 +1418,7 @@ footer a:hover {
     --surface: #22201c;
     --ink: #f0ece3;
     --ink-soft: #d6d0c2;
+    --text: #f0ece3; /* alias of --ink for shared.css nav */
     --muted: #8e877c;
     --border: #2e2a25;
     --border-soft: #262320;
