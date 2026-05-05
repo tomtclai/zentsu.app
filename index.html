@@ -3,33 +3,170 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zentsu LLC</title>
+    <title>Zentsu LLC — Software for Apple platforms</title>
+    <meta
+      name="description"
+      content="Zentsu LLC is a software studio building small, focused native tools and apps for macOS, iOS, and iPadOS."
+    />
+
+    <!-- Open Graph / social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Zentsu LLC" />
+    <meta property="og:title" content="Zentsu LLC — Software for Apple platforms" />
+    <meta
+      property="og:description"
+      content="A software studio building small, focused native tools and apps for macOS, iOS, and iPadOS."
+    />
+    <meta property="og:url" content="https://zentsu.app/" />
+
     <link rel="stylesheet" href="/shared.css" />
     <script src="/flags.js"></script>
     <style>
-      /* ── Hero (page-specific) ── */
+      /* ── Page-specific layout ── */
       main {
         flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 4rem 1.5rem;
+        width: 100%;
       }
+      .wrap {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+      }
+
+      /* Hero */
       .hero {
-        text-align: center;
-        max-width: 520px;
+        padding: 5rem 0 3rem;
+        border-bottom: 1px solid var(--border);
       }
       .hero h1 {
-        font-size: clamp(1.75rem, 5vw, 2.5rem);
+        font-size: clamp(2rem, 5vw, 2.75rem);
         font-weight: 700;
         letter-spacing: -0.03em;
         color: var(--text);
         margin-bottom: 0.75rem;
       }
-      .hero p {
-        font-size: 1.0625rem;
+      .hero .lede {
+        font-size: 1.125rem;
+        color: var(--text);
+        line-height: 1.55;
+        margin-bottom: 1rem;
+      }
+      .hero p.detail {
+        font-size: 1rem;
         color: var(--muted);
+        line-height: 1.65;
+        max-width: 56ch;
+      }
+
+      /* Sections */
+      section.block {
+        padding: 3.5rem 0;
+        border-bottom: 1px solid var(--border);
+      }
+      section.block:last-of-type {
+        border-bottom: none;
+      }
+      .block h2 {
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 1.25rem;
+      }
+
+      /* Product card */
+      .product {
+        display: flex;
+        gap: 1.25rem;
+        align-items: flex-start;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1.5rem;
+      }
+      .product img.icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 14px;
+        flex-shrink: 0;
+      }
+      .product .body h3 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 0.25rem;
+        letter-spacing: -0.01em;
+      }
+      .product .status {
+        font-size: 0.8125rem;
+        color: var(--muted);
+        margin-bottom: 0.65rem;
+      }
+      .product .body p {
+        font-size: 0.9375rem;
+        color: var(--body-text);
         line-height: 1.6;
+        margin-bottom: 0.75rem;
+      }
+      .product a.more {
+        font-size: 0.9375rem;
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 500;
+      }
+      .product a.more:hover {
+        text-decoration: underline;
+      }
+      .more-products {
+        margin-top: 1rem;
+        font-size: 0.875rem;
+        color: var(--muted);
+      }
+
+      /* Principles list */
+      .principles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem 2rem;
+        list-style: none;
+      }
+      .principles li h3 {
+        font-size: 0.9375rem;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 0.3rem;
+      }
+      .principles li p {
+        font-size: 0.9375rem;
+        color: var(--body-text);
+        line-height: 1.6;
+      }
+      @media (max-width: 600px) {
+        .principles {
+          grid-template-columns: 1fr;
+        }
+        .product {
+          flex-direction: column;
+        }
+        .hero {
+          padding: 3.5rem 0 2.5rem;
+        }
+      }
+
+      /* Contact */
+      .contact p {
+        font-size: 0.9375rem;
+        color: var(--body-text);
+        line-height: 1.7;
+        margin-bottom: 0.5rem;
+      }
+      .contact a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      .contact a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -37,9 +174,92 @@
     <div id="nav-placeholder"></div>
 
     <main>
-      <div class="hero">
-        <h1>Zentsu</h1>
-      </div>
+      <section class="hero">
+        <div class="wrap">
+          <h1>Zentsu LLC</h1>
+          <p class="lede">We build small, focused software for Apple platforms.</p>
+          <p class="detail">
+            Zentsu is a software studio working on native tools and apps for macOS, iOS, and iPadOS.
+            We favor offline-first design, one-time purchases over subscriptions, and shipping
+            software that does a clear job without asking for an account.
+          </p>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="wrap">
+          <h2>Products</h2>
+          <article class="product">
+            <img
+              class="icon"
+              src="assets/bench-icon.png"
+              alt="Bench app icon"
+              width="64"
+              height="64"
+            />
+            <div class="body">
+              <h3>Bench</h3>
+              <p class="status">Native macOS · In private beta, Mac App Store submission pending</p>
+              <p>
+                A native macOS developer toolbox: JSON, JWT, regex, hashes, UUIDs, video conversion,
+                and more — in one offline window. No accounts, no telemetry, no subscription.
+              </p>
+              <a class="more" href="/bench.html">Learn more about Bench →</a>
+            </div>
+          </article>
+          <p class="more-products">More in development.</p>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="wrap">
+          <h2>How we build</h2>
+          <ul class="principles">
+            <li>
+              <h3>Native first</h3>
+              <p>
+                Mac and iOS apps written in Swift and SwiftUI — not cross-platform shells wrapped
+                around a web view.
+              </p>
+            </li>
+            <li>
+              <h3>Offline by default</h3>
+              <p>
+                Tools that work without an account, without telemetry, and without a server
+                round-trip. What you type stays on your device.
+              </p>
+            </li>
+            <li>
+              <h3>Pay once</h3>
+              <p>
+                One-time purchases over subscriptions, where the model fits. The version you bought
+                keeps working.
+              </p>
+            </li>
+            <li>
+              <h3>Quiet software</h3>
+              <p>
+                We ship and iterate. We don't market with hype, and we don't add features we can't
+                stand behind.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block contact">
+        <div class="wrap">
+          <h2>Contact</h2>
+          <p>
+            For press, partnerships, or general inquiries:
+            <a href="mailto:hello@zentsu.app">hello@zentsu.app</a>.
+          </p>
+          <p>
+            For help with a specific app, see that product's page —
+            <a href="/bench/support.html">Bench support</a> covers questions about Bench.
+          </p>
+        </div>
+      </section>
     </main>
 
     <footer>
