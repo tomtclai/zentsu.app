@@ -11,4 +11,4 @@ pre-commit:
 pre-push:
   commands:
     links:
-      run: npx linkinator . --recurse --skip "node_modules|_site|dist"
+      run: npx linkinator . --recurse --skip "node_modules|_site|dist|cdn-cgi"
