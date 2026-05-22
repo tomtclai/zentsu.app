@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Diff for Mac — Bench by Zentsu LLC</title>
+    <meta
+      name="description"
+      content="Native Mac text diff tool. Paste two text blocks, see exactly what changed side by side. Offline, no tracking — part of Bench, $19 one-time."
+    />
+    <link rel="canonical" href="https://zentsu.app/tools/text-diff.html" />
+
+    <!-- Open Graph / social -->
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Bench" />
+    <meta property="og:title" content="Text Diff for Mac" />
+    <meta
+      property="og:description"
+      content="Native Mac text diff tool. Paste two text blocks, see exactly what changed side by side. Offline, no tracking."
+    />
+    <meta property="og:url" content="https://zentsu.app/tools/text-diff.html" />
+    <meta property="og:image" content="https://zentsu.app/assets/bench-icon.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/png" href="/assets/bench-icon.png" />
+    <link rel="stylesheet" href="/shared.css" />
+    <script src="/flags.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Bench — Text Diff",
+        "operatingSystem": "macOS 14+",
+        "applicationCategory": "DeveloperApplication",
+        "url": "https://zentsu.app/tools/text-diff.html",
+        "publisher": { "@type": "Organization", "name": "Zentsu LLC" },
+        "offers": {
+          "@type": "Offer",
+          "price": "19.00",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Bench",
+            "item": "https://zentsu.app/bench.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Text Diff",
+            "item": "https://zentsu.app/tools/text-diff.html"
+          }
+        ]
+      }
+    </script>
+
+    <style>
+      main {
+        flex: 1;
+        padding: 3rem 1.5rem;
+      }
+      article h3 {
+        font-size: 0.9375rem;
+        font-weight: 600;
+        margin-top: 1.5rem;
+        margin-bottom: 0.4rem;
+        color: var(--text);
+      }
+      .lede {
+        font-size: 1.0625rem;
+        color: var(--body-text);
+        line-height: 1.65;
+        margin: 0.5rem 0 1.75rem;
+      }
+      .related {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+        margin-top: 1rem;
+      }
+      .related a {
+        display: block;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 0.85rem 1rem;
+        text-decoration: none;
+      }
+      .related a:hover {
+        border-color: var(--accent);
+      }
+      .related .name {
+        display: block;
+        font-weight: 600;
+        color: var(--text);
+        font-size: 0.9375rem;
+        margin-bottom: 0.25rem;
+      }
+      .related .hook {
+        font-size: 0.8125rem;
+        color: var(--muted);
+        line-height: 1.45;
+      }
+      @media (max-width: 700px) {
+        .related {
+          grid-template-columns: 1fr;
+        }
+      }
+      .cta-band {
+        background: var(--accent-light);
+        border: 1px solid var(--accent);
+        border-radius: 12px;
+        padding: 1.5rem 1.5rem;
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .cta-band p {
+        margin: 0;
+        font-size: 0.9375rem;
+        color: var(--text);
+      }
+      .cta-band a {
+        background: var(--text);
+        color: var(--bg);
+        padding: 0.65rem 1.15rem;
+        border-radius: 8px;
+        font-size: 0.9375rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .cta-band a:hover {
+        background: var(--accent);
+        color: #fff;
+      }
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 1.25rem;
+        margin-bottom: 0.5rem;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <script src="/nav.js"></script>
+
+    <main>
+      <article>
+        <span class="page-label">Bench Tool</span>
+        <h1>Text Diff for Mac</h1>
+        <p class="lede">
+          A native Mac text diff tool. Two chunks of text, side by side. You'll see exactly what
+          changed — added lines in green, removed lines in red, unchanged lines in context.
+        </p>
+
+        <h2>What it does</h2>
+        <p>
+          Bench's Text Diff tool takes two text inputs and produces a side-by-side line diff. It
+          highlights added, removed, and modified lines so you can quickly find what changed between
+          two versions of a config file, a log snippet, a JSON response, or any other text. The diff
+          runs locally using a standard longest-common-subsequence algorithm — no server involved,
+          no copy of your text sent anywhere.
+        </p>
+
+        <h2>Why use Bench's text diff tool</h2>
+        <p>
+          Web-based diff tools require you to paste both text blocks into a form on a remote server.
+          That's fine for public content, but config files, environment variable dumps, and API
+          response payloads frequently contain credentials or internal identifiers you'd rather not
+          share. Bench keeps both inputs local on your Mac, in a sandboxed app with no network
+          entitlement.
+        </p>
+        <ul>
+          <li><strong>Native Mac app.</strong> SwiftUI, single window, instant launch.</li>
+          <li><strong>Offline.</strong> No network calls. Whatever you paste stays on your Mac.</li>
+          <li><strong>No tracking.</strong> No analytics, no telemetry, no third-party SDKs.</li>
+          <li>
+            <strong>One-time purchase.</strong> $19 once, year of updates included, $9 optional
+            renewal — no subscription.
+          </li>
+        </ul>
+
+        <h2>How to open</h2>
+        <p>
+          Use Bench's sidebar or search to open Text Diff, then paste two text blocks into the
+          comparison panes.
+        </p>
+
+        <h2>Related tools in Bench</h2>
+        <div class="related">
+          <a href="/tools/image-diff.html">
+            <span class="name">Image Diff</span>
+            <span class="hook">Compare two PNGs pixel by pixel — see what moved.</span>
+          </a>
+          <a href="/tools/json-formatter.html">
+            <span class="name">JSON Formatter</span>
+            <span class="hook"
+              >Format both JSON blobs before diffing for a cleaner comparison.</span
+            >
+          </a>
+          <a href="/tools/markdown-preview.html">
+            <span class="name">Markdown Preview</span>
+            <span class="hook">Render Markdown to check what changed in a README.</span>
+          </a>
+        </div>
+
+        <div class="cta-band">
+          <p>
+            <strong>Text Diff</strong> ships inside Bench, alongside 17 other developer tools. $19
+            one-time, year of updates included.
+          </p>
+          <a href="/bench.html#pricing">Get Bench</a>
+        </div>
+
+        <hr />
+        <p style="font-size: 0.8125rem; color: var(--muted)">
+          Bench is published by Zentsu LLC. <a href="/bench.html">Back to Bench</a> ·
+          <a href="/bench/renewal-faq.html">Renewal FAQ</a> ·
+          <a href="/bench/support.html">Support</a>.
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="/bench.html">Bench</a>
+        <a href="/bench/support.html">Support</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+      </div>
+      <p>&copy; 2026 Zentsu LLC</p>
+    </footer>
+  </body>
+</html>

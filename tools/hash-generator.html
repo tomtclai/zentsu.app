@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hash Generator for Mac — Bench by Zentsu LLC</title>
+    <meta
+      name="description"
+      content="Native Mac hash generator. Compute MD5, SHA-1, SHA-256, and SHA-512 digests instantly. Offline, no tracking — part of Bench, $19 one-time."
+    />
+    <link rel="canonical" href="https://zentsu.app/tools/hash-generator.html" />
+
+    <!-- Open Graph / social -->
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Bench" />
+    <meta property="og:title" content="Hash Generator for Mac" />
+    <meta
+      property="og:description"
+      content="Native Mac hash generator. Compute MD5, SHA-1, SHA-256, and SHA-512 digests instantly. Offline, no tracking."
+    />
+    <meta property="og:url" content="https://zentsu.app/tools/hash-generator.html" />
+    <meta property="og:image" content="https://zentsu.app/assets/bench-icon.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/png" href="/assets/bench-icon.png" />
+    <link rel="stylesheet" href="/shared.css" />
+    <script src="/flags.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Bench — Hash Generator",
+        "operatingSystem": "macOS 14+",
+        "applicationCategory": "DeveloperApplication",
+        "url": "https://zentsu.app/tools/hash-generator.html",
+        "publisher": { "@type": "Organization", "name": "Zentsu LLC" },
+        "offers": {
+          "@type": "Offer",
+          "price": "19.00",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Bench",
+            "item": "https://zentsu.app/bench.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Hash Generator",
+            "item": "https://zentsu.app/tools/hash-generator.html"
+          }
+        ]
+      }
+    </script>
+
+    <style>
+      main {
+        flex: 1;
+        padding: 3rem 1.5rem;
+      }
+      article h3 {
+        font-size: 0.9375rem;
+        font-weight: 600;
+        margin-top: 1.5rem;
+        margin-bottom: 0.4rem;
+        color: var(--text);
+      }
+      .lede {
+        font-size: 1.0625rem;
+        color: var(--body-text);
+        line-height: 1.65;
+        margin: 0.5rem 0 1.75rem;
+      }
+      .smart-paste {
+        background: var(--accent-light);
+        border-radius: 8px;
+        padding: 1rem 1.25rem;
+        margin: 1rem 0 0.5rem;
+      }
+      .smart-paste code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.8125rem;
+        background: rgba(0, 0, 0, 0.05);
+        padding: 0.1rem 0.35rem;
+        border-radius: 4px;
+        word-break: break-all;
+      }
+      .related {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+        margin-top: 1rem;
+      }
+      .related a {
+        display: block;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 0.85rem 1rem;
+        text-decoration: none;
+      }
+      .related a:hover {
+        border-color: var(--accent);
+      }
+      .related .name {
+        display: block;
+        font-weight: 600;
+        color: var(--text);
+        font-size: 0.9375rem;
+        margin-bottom: 0.25rem;
+      }
+      .related .hook {
+        font-size: 0.8125rem;
+        color: var(--muted);
+        line-height: 1.45;
+      }
+      @media (max-width: 700px) {
+        .related {
+          grid-template-columns: 1fr;
+        }
+      }
+      .cta-band {
+        background: var(--accent-light);
+        border: 1px solid var(--accent);
+        border-radius: 12px;
+        padding: 1.5rem 1.5rem;
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .cta-band p {
+        margin: 0;
+        font-size: 0.9375rem;
+        color: var(--text);
+      }
+      .cta-band a {
+        background: var(--text);
+        color: var(--bg);
+        padding: 0.65rem 1.15rem;
+        border-radius: 8px;
+        font-size: 0.9375rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .cta-band a:hover {
+        background: var(--accent);
+        color: #fff;
+      }
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 1.25rem;
+        margin-bottom: 0.5rem;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <script src="/nav.js"></script>
+
+    <main>
+      <article>
+        <span class="page-label">Bench Tool</span>
+        <h1>Hash Generator for Mac</h1>
+        <p class="lede">
+          A native Mac hash generator. Paste text or a file path, get MD5, SHA-1, SHA-256, and
+          SHA-512 digests in one view. For the moment the README asks for a checksum.
+        </p>
+
+        <h2>What it does</h2>
+        <p>
+          Bench's hash generator computes MD5, SHA-1, SHA-256, and SHA-512 digests for any text
+          input. All four hashes appear at the same time so you don't need to re-run the tool when
+          you realize you need a different algorithm. The output updates as you type, and each hash
+          has a one-click copy button. It's useful for verifying download checksums, generating
+          content hashes for cache-busting, producing HMAC inputs, and spot-checking whether two
+          strings are identical without comparing them character by character.
+        </p>
+
+        <h2>Why use Bench's hash generator</h2>
+        <p>
+          Pasting a string into a web-based hash tool is fine for test data but becomes a habit
+          worth breaking when the string is a password, an API key, or private content you're
+          checking a digest of. Bench computes hashes locally using Apple's CryptoKit framework — no
+          network calls, no copy of your input leaves the sandbox.
+        </p>
+        <ul>
+          <li><strong>Native Mac app.</strong> SwiftUI, single window, instant launch.</li>
+          <li><strong>Offline.</strong> No network calls. Whatever you paste stays on your Mac.</li>
+          <li><strong>No tracking.</strong> No analytics, no telemetry, no third-party SDKs.</li>
+          <li>
+            <strong>One-time purchase.</strong> $19 once, year of updates included, $9 optional
+            renewal — no subscription.
+          </li>
+        </ul>
+
+        <h2>Paste it. Bench picks the tool.</h2>
+        <div class="smart-paste">
+          <p>
+            Smart Detection reads your clipboard locally and routes you to the hash generator when
+            it sees something like:
+          </p>
+          <p><code>d41d8cd98f00b204e9800998ecf8427e</code></p>
+          <p style="margin-top: 0.5rem; font-size: 0.875rem; color: var(--muted)">
+            The detection runs entirely on your Mac as a rule-based heuristic — it recognizes common
+            hash lengths and hex-character patterns for MD5, SHA-1, and SHA-256. Nothing is
+            uploaded.
+          </p>
+        </div>
+
+        <h2>Related tools in Bench</h2>
+        <div class="related">
+          <a href="/tools/jwt-decoder.html">
+            <span class="name">JWT Decoder</span>
+            <span class="hook"
+              >Check signatures by hand — SHA-256 is the most common JWT algorithm.</span
+            >
+          </a>
+          <a href="/tools/base64-encoder.html">
+            <span class="name">Base64 Encoder</span>
+            <span class="hook">Encode the hash output when a Base64 representation is needed.</span>
+          </a>
+          <a href="/tools/uuid-generator.html">
+            <span class="name">UUID Generator</span>
+            <span class="hook"
+              >Generate unique identifiers when a hash-based ID isn't the right fit.</span
+            >
+          </a>
+        </div>
+
+        <div class="cta-band">
+          <p>
+            <strong>Hash Generator</strong> ships inside Bench, alongside 17 other developer tools.
+            $19 one-time, year of updates included.
+          </p>
+          <a href="/bench.html#pricing">Get Bench</a>
+        </div>
+
+        <hr />
+        <p style="font-size: 0.8125rem; color: var(--muted)">
+          Bench is published by Zentsu LLC. <a href="/bench.html">Back to Bench</a> ·
+          <a href="/bench/renewal-faq.html">Renewal FAQ</a> ·
+          <a href="/bench/support.html">Support</a>.
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="/bench.html">Bench</a>
+        <a href="/bench/support.html">Support</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+      </div>
+      <p>&copy; 2026 Zentsu LLC</p>
+    </footer>
+  </body>
+</html>
