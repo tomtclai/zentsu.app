@@ -5,3 +5,15 @@ exclude:
   - scripts/
   - node_modules/
   - README.md
+  - tools/_template.html
+
+url: "https://zentsu.app"
+title: "Zentsu"
+description: "Native Mac developer tools by Zentsu LLC."
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+permalink: /blog/:year/:slug/
