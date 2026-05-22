@@ -56,7 +56,7 @@
     <meta property="og:title" content="{{H1}}" />
     <meta property="og:description" content="{{META_DESCRIPTION}}" />
     <meta property="og:url" content="https://zentsu.app/tools/{{TOOL_SLUG}}.html" />
-    <meta property="og:image" content="/assets/bench-icon.png" />
+    <meta property="og:image" content="https://zentsu.app/assets/bench-icon.png" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="icon" type="image/png" href="/assets/bench-icon.png" />
@@ -78,6 +78,27 @@
           "price": "19.00",
           "priceCurrency": "USD"
         }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Bench",
+            "item": "https://zentsu.app/bench.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "{{TOOL_NAME}}",
+            "item": "https://zentsu.app/tools/{{TOOL_SLUG}}.html"
+          }
+        ]
       }
     </script>
 
