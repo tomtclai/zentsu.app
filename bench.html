@@ -899,56 +899,29 @@
           </div>
 
           <!-- ── EMAIL CAPTURE ── -->
-          <div class="reveal" style="margin-top: 3rem">
-            <h3 style="font-size: 1.0625rem; font-weight: 600; margin-bottom: 0.5rem">
-              Get release notes
-            </h3>
-            <p style="font-size: 0.9375rem; color: var(--muted); margin-bottom: 0.75rem">
+          <div class="email-capture reveal">
+            <h3>Get release notes</h3>
+            <p class="email-caption">
               We send a short note when a new version ships. Nothing else.
             </p>
             <form
               action="https://buttondown.email/api/emails/embed-subscribe/zentsullc"
               method="post"
-              style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 0"
             >
               <label for="bd-email" class="sr-only">Email address</label>
-              <input
-                id="bd-email"
-                type="email"
-                name="email"
-                placeholder="your@email.com"
-                required
-                style="
-                  flex: 1;
-                  min-width: 180px;
-                  padding: 0.6rem 0.85rem;
-                  border: 1px solid var(--border);
-                  border-radius: 6px;
-                  font-size: 0.9375rem;
-                  background: var(--surface);
-                  color: var(--text);
-                "
-              />
-              <input type="hidden" name="tag" value="bench-launch" />
-              <button
-                type="submit"
-                style="
-                  padding: 0.6rem 1.1rem;
-                  background: var(--text);
-                  color: var(--bg);
-                  border: none;
-                  border-radius: 6px;
-                  font-size: 0.9375rem;
-                  font-weight: 600;
-                  cursor: pointer;
-                "
-              >
-                Get release notes
-              </button>
+              <div class="email-row">
+                <input
+                  id="bd-email"
+                  type="email"
+                  name="email"
+                  placeholder="your@email.com"
+                  required
+                />
+                <input type="hidden" name="tag" value="bench-launch" />
+                <button type="submit" class="btn-email">Get release notes</button>
+              </div>
             </form>
-            <p style="font-size: 0.8125rem; color: var(--muted); margin-top: 0.4rem">
-              No tracking. Unsubscribe anytime.
-            </p>
+            <p class="email-note">No tracking. Unsubscribe anytime.</p>
           </div>
         </div>
       </section>
