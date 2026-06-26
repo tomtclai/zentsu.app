@@ -6,7 +6,7 @@
     <title>Bench: Dev Toolbox for macOS</title>
     <meta
       name="description"
-      content="A native Mac window full of small developer utilities. JSON, JWT, regex, hashes, UUIDs, MOV→MP4 and more. Offline, private, one-time purchase."
+      content="A native Mac toolbox that recognizes whatever you copy — a JWT, a JSON blob, a hex color, a regex — and opens the right tool the moment you switch to it. Offline, no account, one-time purchase."
     />
 
     <!-- Favicons -->
@@ -21,7 +21,7 @@
     <meta property="og:title" content="Bench: Dev Toolbox for macOS" />
     <meta
       property="og:description"
-      content="A native Mac window full of small developer utilities. JSON, JWT, regex, hashes, UUIDs, MOV→MP4 and more. Offline, private, one-time purchase."
+      content="A native Mac toolbox that recognizes whatever you copy — a JWT, a JSON blob, a hex color, a regex — and opens the right tool the moment you switch to it. Offline, no account, one-time purchase."
     />
     <meta property="og:image" content="https://zentsu.app/assets/bench-icon.png" />
     <meta property="og:url" content="https://zentsu.app/bench.html" />
@@ -29,7 +29,7 @@
     <meta name="twitter:title" content="Bench: Dev Toolbox for macOS" />
     <meta
       name="twitter:description"
-      content="A native Mac window full of small developer utilities. Offline, private, one-time purchase."
+      content="A native Mac toolbox that recognizes whatever you copy and opens the right tool the moment you switch to it. Offline, no account, one-time purchase."
     />
     <meta name="twitter:image" content="https://zentsu.app/assets/bench-icon.png" />
     <meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)" />
@@ -53,10 +53,11 @@
       <section class="hero">
         <div class="hero-inner">
           <div class="hero-copy">
-            <h1>The developer <span class="accent">workbench</span><br />for your Mac.</h1>
+            <h1>It already knows<br />what you <span class="accent">copied</span>.</h1>
             <p class="lede">
-              Small utilities I kept rebuilding as web pages. Now they're one native window. Paste
-              something, Bench guesses the tool. Works offline. Pay once.
+              Bench is a native Mac toolbox that recognizes whatever you copy — a JWT, a tangled
+              JSON blob, a hex color, a regex — and opens the right tool the moment you switch to
+              it. Offline, no account.
             </p>
             <div class="hero-cta">
               <a class="btn btn-primary feature-app-store" href="">
@@ -126,11 +127,11 @@
           <div class="slab-head reveal">
             <div>
               <div class="num">01 · INDEX</div>
-              <h2><span id="tool-count-label">Seventeen</span> tools. One window. Zero tabs.</h2>
+              <h2>One window. Whatever you copied, already open.</h2>
             </div>
             <p class="kicker">
-              The stuff you keep re‑Googling at 2am. One keystroke away, grouped the way you think
-              about it.
+              The stuff you keep re‑Googling at 2am, grouped the way you think about it. Plus the
+              dozen‑plus everyday utilities you already reach for.
             </p>
           </div>
 
@@ -271,13 +272,6 @@
                   <span class="n mono"></span
                   ><span><a href="/tools/timestamp-converter.html">Timestamp</a></span>
                 </li>
-                <li
-                  data-tool="Lorem Ipsum"
-                  data-benefit="Placeholder copy when the layout needs filling. No Latin required."
-                >
-                  <span class="n mono"></span
-                  ><span><a href="/tools/lorem-ipsum.html">Lorem Ipsum</a></span>
-                </li>
               </ul>
             </div>
 
@@ -382,45 +376,6 @@
                 >
                   <span class="n mono"></span
                   ><span><a href="/tools/regex-tester.html">Regex Explainer</a></span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="tool-cat" data-cat="Media">
-              <header>
-                <div class="cat-title">
-                  <svg
-                    class="cat-icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <rect x="3" y="6" width="14" height="12" rx="2" />
-                    <path d="M17 10 L22 7 V17 L17 14 Z" />
-                  </svg>
-                  <h3>Media</h3>
-                </div>
-                <span class="count" data-count>00</span>
-              </header>
-              <ul>
-                <li
-                  data-tool="MOV → MP4"
-                  data-popular
-                  data-benefit="Turn a QuickTime screen recording into an MP4 that plays anywhere."
-                >
-                  <span class="n mono"></span
-                  ><span><a href="/tools/mov-to-mp4.html">MOV → MP4</a></span>
-                </li>
-                <li
-                  data-tool="MOV → GIF"
-                  data-benefit="Short screen capture in, GIF out. Drop it straight in a PR."
-                >
-                  <span class="n mono"></span
-                  ><span><a href="/tools/mov-to-gif.html">MOV → GIF</a></span>
                 </li>
               </ul>
             </div>
@@ -692,6 +647,24 @@
         <div class="shots" id="shots-scroller">
           <div class="shot">
             <picture>
+              <source type="image/avif" srcset="assets/bench-03-regex.avif" />
+              <source type="image/webp" srcset="assets/bench-03-regex.webp" />
+              <img
+                src="assets/bench-03-regex@1x.png"
+                srcset="assets/bench-03-regex@2x.png 2x"
+                alt="Regex tester and explainer: token-highlighted pattern, hover explanations, inline match highlights, and a step-by-step execution trace"
+                loading="lazy"
+              />
+            </picture>
+            <div class="caption">
+              <span class="hook"
+                >Read a regex as a tree, watch matches light up, step the trace.</span
+              >
+              <span class="meta">bench-03 · Regex Tester &amp; Explainer</span>
+            </div>
+          </div>
+          <div class="shot">
+            <picture>
               <source type="image/avif" srcset="assets/bench-01-json.avif" />
               <source type="image/webp" srcset="assets/bench-01-json.webp" />
               <img
@@ -720,22 +693,6 @@
             <div class="caption">
               <span class="hook">Paste a JWT, get the claims.</span>
               <span class="meta">bench-02 · JWT Decoder</span>
-            </div>
-          </div>
-          <div class="shot">
-            <picture>
-              <source type="image/avif" srcset="assets/bench-03-regex.avif" />
-              <source type="image/webp" srcset="assets/bench-03-regex.webp" />
-              <img
-                src="assets/bench-03-regex@1x.png"
-                srcset="assets/bench-03-regex@2x.png 2x"
-                alt="Regex explainer showing an AST tree and NFA trace"
-                loading="lazy"
-              />
-            </picture>
-            <div class="caption">
-              <span class="hook">Read a regex as a tree, step the NFA.</span>
-              <span class="meta">bench-03 · Regex Explainer</span>
             </div>
           </div>
           <div class="shot">
@@ -860,7 +817,7 @@
             <div class="price-card price-card--main">
               <div class="price-eyebrow">One‑time purchase</div>
               <div class="price-amount">
-                <span class="price-currency">$</span><span class="price-num">19</span>
+                <span class="price-currency">$</span><span class="price-num">14.99</span>
               </div>
               <div class="price-sub">USD · paid once</div>
               <ul class="price-list">
@@ -890,11 +847,10 @@
           </div>
 
           <div class="price-promo reveal">
-            <span class="price-promo-tag">Launch week</span>
+            <span class="price-promo-tag">Launch</span>
             <p>
-              While Bench is fresh on the Mac App Store, it's
-              <strong>$14.99</strong> for the first week. Same one‑time purchase, same
-              forever‑version, same optional renewal. After that it's $19.
+              Bench is <strong>$14.99</strong> on the Mac App Store — one‑time, with a year of
+              updates included. Same forever‑version, same optional renewal.
             </p>
           </div>
 
@@ -931,7 +887,7 @@
           <div class="reveal">
             <h2>Bench is on the Mac App Store.</h2>
             <p>
-              <strong>$19</strong>, one‑time purchase. A year of updates included. Your version
+              <strong>$14.99</strong>, one‑time purchase. A year of updates included. Your version
               works forever. Renewal for new updates is always optional.
             </p>
             <div class="hero-cta">
@@ -940,7 +896,7 @@
             </div>
           </div>
           <div class="buy-facts reveal">
-            <div><b>→</b> $19 one‑time, year of updates included</div>
+            <div><b>→</b> $14.99 one‑time, year of updates included</div>
             <div><b>→</b> Your version works forever, no time limit</div>
             <div><b>→</b> $9/yr renewal is optional, never auto‑charged</div>
             <div><b>→</b> Renewal price locked, won't rise with the list price</div>
@@ -977,7 +933,7 @@
             <details>
               <summary>How much is Bench, and what do I get?</summary>
               <p>
-                Bench is <strong>$19</strong>, one‑time. That unlocks every tool, including Smart
+                Bench is <strong>$14.99</strong>, one‑time. That unlocks every tool, including Smart
                 Detection, and includes one full year of updates. Your version keeps working
                 forever. There's no time limit on what you bought.
               </p>
