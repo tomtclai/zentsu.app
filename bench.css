@@ -890,6 +890,19 @@ section.slab {
 }
 
 /* ── Bench preview (static paste → detect → output demo) ── */
+.sd-lead {
+  margin: 0 0 2rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--surface);
+}
+.sd-lead img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .bp-demo {
   display: flex;
   overflow-x: auto;
