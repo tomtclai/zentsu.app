@@ -903,6 +903,58 @@ section.slab {
   height: auto;
 }
 
+/* ── Hero trust kicker + spec line ── */
+.hero-kicker {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.1rem;
+}
+.hero-specline {
+  margin-top: 1rem;
+  font-size: 0.8125rem;
+  color: var(--muted);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ── Feature trio (JSON / JWT / Image Diff) ── */
+.trio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.trio .tcard {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.5rem;
+  background: var(--surface);
+}
+.trio .tcard h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.6rem;
+}
+.trio .tcard p {
+  color: var(--ink-soft);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+.trio-note {
+  margin-top: 1.75rem;
+  color: var(--ink-soft);
+  line-height: 1.65;
+  max-width: 72ch;
+}
+@media (max-width: 900px) {
+  .trio {
+    grid-template-columns: 1fr;
+  }
+}
+
 .bp-demo {
   display: flex;
   overflow-x: auto;

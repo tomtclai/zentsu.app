@@ -53,20 +53,21 @@
       <section class="hero">
         <div class="hero-inner">
           <div class="hero-copy">
+            <p class="hero-kicker">Offline. Deterministic. No AI. Nothing leaves your Mac.</p>
             <h1>It already knows<br />what you <span class="accent">copied</span>.</h1>
             <p class="lede">
               Bench is a native Mac toolbox that recognizes whatever you copy — a JWT, a tangled
               JSON blob, a hex color, a regex — and opens the right tool the moment you switch to
-              it. Offline, no account.
+              it. Offline, no account, one‑time purchase.
             </p>
             <div class="hero-cta">
               <a class="btn btn-primary feature-app-store" href="">
                 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M12 3 4 7l8 4 8-4-8-4Zm-8 6v8l8 4V13L4 9Zm10 4v8l8-4V9l-8 4Z" />
                 </svg>
-                View on the Mac App Store
+                Download on the Mac App Store
               </a>
-              <a class="btn btn-primary" href="#tools" id="hero-primary-cta">See all tools →</a>
+              <a class="btn btn-primary" href="#how" id="hero-primary-cta">See how it works →</a>
             </div>
             <div class="hero-meta">
               <span
@@ -78,7 +79,7 @@
                   stroke-width="3"
                 >
                   <path d="M4 12l6 6L20 6" /></svg
-                >No subscriptions</span
+                >Offline</span
               >
               <span
                 ><svg
@@ -89,7 +90,7 @@
                   stroke-width="3"
                 >
                   <path d="M4 12l6 6L20 6" /></svg
-                >No accounts</span
+                >No account</span
               >
               <span
                 ><svg
@@ -100,11 +101,26 @@
                   stroke-width="3"
                 >
                   <path d="M4 12l6 6L20 6" /></svg
-                >No tracking</span
+                >No telemetry</span
+              >
+              <span
+                ><svg
+                  class="tick"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                >
+                  <path d="M4 12l6 6L20 6" /></svg
+                >Runs on-device</span
               >
             </div>
+            <p class="hero-specline">
+              macOS 14+ · Apple silicon &amp; Intel · native Swift 6 / SwiftUI
+            </p>
           </div>
           <div class="hero-icon-wrap" id="hero-icon-wrap">
+            <!-- TODO: replace with autoplay-muted MP4/WebM detect→route demo -->
             <picture>
               <source type="image/avif" srcset="assets/bench-icon.avif" />
               <source type="image/webp" srcset="assets/bench-icon.webp" />
@@ -384,7 +400,7 @@
       </section>
 
       <!-- ── SMART PASTE + PRIVACY MANIFEST ── -->
-      <section class="slab">
+      <section class="slab" id="how">
         <div class="wrap">
           <div class="slab-head reveal">
             <div>
@@ -649,10 +665,104 @@
         </div>
       </section>
 
+      <!-- ── REGEX (signature tool) ── -->
+      <section class="slab" id="regex">
+        <div class="wrap">
+          <div class="slab-head reveal">
+            <div>
+              <div class="num">03 · SIGNATURE</div>
+              <h2>Read a regex as a tree. Watch it match. Step the trace.</h2>
+            </div>
+            <p class="kicker">
+              Most regex tools stop at green highlights. Bench parses your pattern into a labeled
+              tree, so the explanation and the match come from the same hand‑built engine.
+            </p>
+          </div>
+
+          <div class="split">
+            <div class="split-card reveal">
+              <span class="badge">Regex Tester + Explainer</span>
+              <h3>The regex you inherited, made legible.</h3>
+              <p>
+                Bench parses your pattern into a labeled tree so you can see what each group,
+                quantifier, and class actually does. Matches highlight inline as you type, and you
+                can step through the execution trace one move at a time.
+              </p>
+              <p>
+                It runs on a hand‑built engine, so the explanation and the match come from the same
+                place — no black box, no round‑trip to a website. If you have ever inherited a regex
+                you were afraid to touch, this is the tool that makes it legible.
+              </p>
+            </div>
+            <div class="split-card reveal">
+              <span class="badge">How it reads</span>
+              <h3>Nothing hidden behind a match.</h3>
+              <p>
+                Hover any token for a plain‑English explanation of what it matches and why it's
+                there.
+              </p>
+              <p>
+                Step the NFA trace to see exactly why a match did — or didn't — happen, one move at
+                a time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SUPPORTING TOOLS (JSON / JWT / Image Diff) ── -->
+      <section class="slab" id="support">
+        <div class="wrap">
+          <div class="slab-head reveal">
+            <div>
+              <div class="num">04 · TOOLS</div>
+              <h2>The tools you already reach for, without the tab.</h2>
+            </div>
+            <p class="kicker">
+              JSON and JWT are the tools Bench recognises the moment you copy them. Image Diff is
+              the visual check that's awkward to do anywhere else.
+            </p>
+          </div>
+
+          <div class="trio reveal">
+            <div class="tcard">
+              <h3>JSON Formatter</h3>
+              <p>
+                Paste minified JSON, get it back indented and readable. Bench detects it the moment
+                you copy it, so the formatted output is waiting before you ask. Spot the missing
+                comma before you ship.
+              </p>
+            </div>
+            <div class="tcard">
+              <h3>JWT Decoder</h3>
+              <p>
+                Decode a token into its header, claims, and signature — locally. No pasting
+                credentials into a website you don't control. Copy a JWT, switch to Bench, read it.
+                Nothing leaves your Mac.
+              </p>
+            </div>
+            <div class="tcard">
+              <h3>Image Diff</h3>
+              <p>
+                Drop in two versions of a screenshot or asset and see exactly what changed — pixel
+                differences surfaced side by side. The visual check that's awkward to do anywhere
+                else.
+              </p>
+            </div>
+          </div>
+
+          <p class="trio-note reveal">
+            Plus a dozen more everyday utilities — Base64, URL and text‑case encoders, hashes,
+            timestamp, color, and number‑base converters, Markdown preview, and text diff — each
+            detected and routed the same way.
+          </p>
+        </div>
+      </section>
+
       <!-- ── SCREENSHOTS (full-bleed) ── -->
       <section class="shots-section" aria-label="Screenshots">
         <div class="shots-head reveal">
-          <span class="num">03 · THE TOOLS IN USE</span>
+          <span class="num">05 · THE TOOLS IN USE</span>
           <h2>Native SwiftUI. Nothing in the way.</h2>
         </div>
         <div class="shots" id="shots-scroller">
@@ -752,7 +862,7 @@
         <div class="wrap">
           <div class="slab-head reveal">
             <div>
-              <div class="num">04 · BUILD</div>
+              <div class="num">06 · BUILD</div>
               <h2>Built to belong on a Mac.</h2>
             </div>
           </div>
@@ -815,7 +925,7 @@
         <div class="wrap">
           <div class="slab-head reveal">
             <div>
-              <div class="num">05 · PRICING</div>
+              <div class="num">07 · PRICING</div>
               <h2>Pay once. Keep it forever.</h2>
             </div>
             <p class="kicker">
@@ -921,7 +1031,7 @@
         <div class="wrap">
           <div class="slab-head reveal">
             <div>
-              <div class="num">06 · FAQ</div>
+              <div class="num">08 · FAQ</div>
               <h2>Questions you might ask before buying.</h2>
             </div>
             <p class="kicker">
@@ -939,6 +1049,14 @@
                 Yes. Every tool runs entirely on your Mac. No tool in Bench makes network calls. The
                 one exception will be Apple's purchase/restore flow once the app is live, which is
                 handled by macOS itself and uses the network to talk to Apple, not to us.
+              </p>
+            </details>
+            <details>
+              <summary>Is the "smart" part AI?</summary>
+              <p>
+                No. It's rule‑based pattern matching — regex and string checks tuned per format. No
+                machine learning, no language model, no Apple Intelligence. That's why it's instant
+                and deterministic, and why nothing has to be sent anywhere to work it out.
               </p>
             </details>
             <details>
