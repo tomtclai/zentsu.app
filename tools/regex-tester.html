@@ -186,12 +186,12 @@
         <h2>What it does</h2>
         <p>
           The Regex Tester has two panes. The tester pane takes a pattern and a block of test text
-          and highlights every match in real time as you type — groups are highlighted separately
+          and highlights every match in real time as you type, with groups highlighted separately
           with distinct colors, and the match count and group captures are listed below. Flags
           (case-insensitive, multiline, dotAll) are toggleable without editing the pattern string.
           The AST explainer pane takes the same pattern and renders it as a parse tree: each
-          component of the regex — literal characters, quantifiers, character classes, groups,
-          anchors — is labeled in plain language, and you can step through the non-deterministic
+          component of the regex (literal characters, quantifiers, character classes, groups,
+          anchors) is labeled in plain language, and you can step through the non-deterministic
           finite automaton (NFA) trace line by line to see exactly how the engine evaluates your
           pattern against input. Both panes are part of the same tool; there is no separate tool for
           the explainer.
@@ -199,7 +199,7 @@
 
         <h2>Why use Bench's regex tester</h2>
         <p>
-          Browser-based regex tools are fast to reach but fragile as a workflow — closing the tab
+          Browser-based regex tools are fast to reach but fragile as a workflow. Closing the tab
           loses the pattern, and most don't offer structural explanations alongside live testing.
           Bench keeps the pattern and test text in a native window that survives across app
           switches. The AST explainer is the differentiating feature: rather than trial-and-error
@@ -214,7 +214,7 @@
           <li><strong>No tracking.</strong> No analytics, no telemetry, no third-party SDKs.</li>
           <li>
             <strong>One-time purchase.</strong> $14.99 once, year of updates included, $9 optional
-            renewal — no subscription.
+            renewal. No subscription.
           </li>
         </ul>
 
@@ -226,7 +226,7 @@
           </p>
           <p><code>^[\w.-]+@[\w.-]+\.[a-zA-Z]{2,}$</code></p>
           <p style="margin-top: 0.5rem; font-size: 0.875rem; color: var(--muted)">
-            The detection runs entirely on your Mac as a rule-based heuristic — it checks for regex
+            The detection runs entirely on your Mac as a rule-based heuristic. It checks for regex
             metacharacter patterns in the clipboard content. Nothing is uploaded.
           </p>
         </div>

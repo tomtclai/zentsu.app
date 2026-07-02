@@ -9,7 +9,7 @@ description: 'A technical walkthrough of JWT structure, claims, signature mechan
 If you have ever shipped an authenticated API, you have pasted a JWT
 into a debugger, watched it expand into three colored chunks, and moved
 on. That habit is fine until the day a token is rejected for reasons
-the colored chunks don't explain — or the day someone on the security
+the colored chunks don't explain, or the day someone on the security
 team asks why you pasted a production token into a website.
 
 We build dev tools at Zentsu, so we look at JWTs constantly. This is
@@ -27,58 +27,58 @@ A JWT is three Base64Url-encoded JSON-ish blobs joined by dots:
 
 That's it. There is no fourth segment. The "encryption" you may have
 heard about is JWE, a different and rarer spec; the standard JWT you
-get from your auth provider is a JWS — _signed_, not encrypted. Anyone
+get from your auth provider is a JWS: _signed_, not encrypted. Anyone
 who can read the bytes of the token can read the contents. That is the
 single most-mispronounced fact about JWTs in production code.
 
-## Segment 1 — the header
+## Segment 1: the header
 
 The header is a tiny JSON object describing how the rest of the token
 was produced. Two fields matter in practice:
 
-- `alg` — the signing algorithm. `HS256` (HMAC-SHA-256, symmetric
+- `alg`: the signing algorithm. `HS256` (HMAC-SHA-256, symmetric
   secret), `RS256` (RSA, asymmetric), `ES256` (ECDSA on P-256). If you
   ever see `alg: "none"` on a token your code is about to trust, stop
-  reading and go fix that — the "none" algorithm is the canonical JWT
+  reading and go fix that. The "none" algorithm is the canonical JWT
   vulnerability and has been since 2015.
-- `kid` — a key ID. When your IdP rotates signing keys, the verifier
+- `kid`: a key ID. When your IdP rotates signing keys, the verifier
   uses `kid` to pick the right public key from a JWKS endpoint. If you
   are hard-coding a single public key in your service, key rotation
   will eventually break you.
 
-There is no secret data here — it is metadata. The fields are
+There is no secret data here. It is metadata. The fields are
 _advisory_ unless your verification library specifically pins them.
 A token can claim `alg: "RS256"` and still be a forgery if the verifier
 doesn't refuse mismatched algorithms.
 
-## Segment 2 — the payload (claims)
+## Segment 2: the payload (claims)
 
 The payload is the part everyone actually cares about. It is also a
 JSON object, and the keys are called _claims_. The standard ones are
 short on purpose because every byte costs you in headers:
 
-- `iss` — issuer. Who minted this token. `https://auth.example.com`.
-- `sub` — subject. Who the token is _about_. Usually a user ID. This
+- `iss`: issuer. Who minted this token. `https://auth.example.com`.
+- `sub`: subject. Who the token is _about_. Usually a user ID. This
   is not a username; treat it as opaque.
-- `aud` — audience. Who the token is _for_. If your service is not in
+- `aud`: audience. Who the token is _for_. If your service is not in
   the audience list, you must reject the token even if the signature
   is valid.
-- `exp` — expiration time, as seconds since the Unix epoch. Past this,
+- `exp`: expiration time, as seconds since the Unix epoch. Past this,
   the token is dead.
-- `nbf` — "not before." Tokens with `nbf` in the future are not yet
+- `nbf`: "not before." Tokens with `nbf` in the future are not yet
   valid. Most issuers omit this; some compliance contexts require it.
-- `iat` — issued at. When the token was minted. Useful for sliding
+- `iat`: issued at. When the token was minted. Useful for sliding
   expiry and audit logs.
-- `jti` — JWT ID. A unique identifier for this specific token, used
+- `jti`: JWT ID. A unique identifier for this specific token, used
   for revocation lists and replay-detection.
 
 Anything else in the payload is custom. Roles, tenant IDs, feature
-flags — your team can put whatever it wants here. Just remember: it is
+flags. Your team can put whatever it wants here. Just remember: it is
 all readable by anyone with the token, and every byte is sent on every
 request. Custom claims are not a database; they are a lossy cache
 optimized for "I trust this enough to skip a lookup."
 
-## Segment 3 — the signature
+## Segment 3: the signature
 
 This is where most explanations get hand-wavy. The signature is _not_
 a password. It is not a secret you compare against another secret. It
@@ -120,12 +120,12 @@ When you paste it into an online JWT debugger, you have just sent a
 working credential to a third party's web server. The site's privacy
 policy may or may not say it's stored. The browser's history remembers.
 Shell history, if you `curl`'d it, remembers. Some IdPs issue twelve-
-hour lifetimes — twelve hours during which a copy of the credential
+hour lifetimes: twelve hours during which a copy of the credential
 lives somewhere you don't control.
 
 The fix is not "use a more reputable site." The fix is to never let
 production tokens leave the machine. Decode them locally, in a tool
-that processes bytes in-memory and forgets — a small offline utility,
+that processes bytes in-memory and forgets: a small offline utility,
 a CLI, anything that doesn't phone home.
 
 ## What to actually check, every time
@@ -142,8 +142,8 @@ walk this list before reaching for a debugger:
    honoring `kid`?
 
 Most production rejection bugs are one of those six. The rest are
-clock skew between machines, key-rotation timing windows, and —
-depressingly often — somebody hand-rolling a verifier that doesn't
+clock skew between machines, key-rotation timing windows, and,
+depressingly often, somebody hand-rolling a verifier that doesn't
 pin `alg`.
 
 ## The takeaway
@@ -151,10 +151,10 @@ pin `alg`.
 A JWT is not magic. It is a signed, base64url-wrapped JSON pair where
 the contents are public, the signature proves untampered transport, and
 the standard claims tell you who minted it, who it is for, when it
-became valid, and when it dies. Treat every token as a credential —
-because it is one — and decode them where the bytes cannot leak.
+became valid, and when it dies. Treat every token as a credential (because it is one)
+and decode them where the bytes cannot leak.
 
 If you spend any time in auth code, an offline JWT decoder belongs in
 your toolbox next to your hex editor and your regex tester. Bench's
-[JWT decoder](/tools/jwt-decoder.html) processes everything locally — try
+[JWT decoder](/tools/jwt-decoder.html) processes everything locally. Try
 it the next time a token confuses you.

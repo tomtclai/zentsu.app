@@ -6,7 +6,7 @@
     <title>JWT Decoder for Mac — Bench by Zentsu LLC</title>
     <meta
       name="description"
-      content="Native Mac JWT decoder. Paste a token, read the header and claims instantly. Offline, no tracking, no upload — part of Bench, $14.99 one-time."
+      content="Native Mac JWT decoder. Paste a token, read the header and claims instantly. Offline, no tracking, no upload. Part of Bench, $14.99 one-time."
     />
     <link rel="canonical" href="https://zentsu.app/tools/jwt-decoder.html" />
 
@@ -179,7 +179,7 @@
         <h1>JWT Decoder for Mac</h1>
         <p class="lede">
           A native Mac JWT decoder. Paste a token, see the header and claims laid out instantly.
-          Nothing is uploaded — the token never leaves your machine.
+          Nothing is uploaded. The token never leaves your machine.
         </p>
 
         <h2>What it does</h2>
@@ -188,7 +188,7 @@
           signature) and renders the decoded JSON of the first two with syntax highlighting.
           Standard claims like <code>iat</code>, <code>exp</code>, and <code>nbf</code> are rendered
           as human-readable timestamps so you can tell at a glance whether a token is still valid.
-          The signature is shown as raw base64url — we don't try to verify it for you, because
+          The signature is shown as raw base64url. We don't try to verify it for you, because
           verifying meaningfully requires the shared secret or public key, and shipping a tool that
           quietly says "valid" without one would be misleading.
         </p>
@@ -196,7 +196,7 @@
         <h2>Why use Bench's JWT decoder</h2>
         <p>
           Most JWT decoders on the web ask you to paste a token into a textbox on a remote server.
-          That's a bad idea for tokens that came out of production. Bench runs on your Mac — the
+          That's a bad idea for tokens that came out of production. Bench runs on your Mac. The
           decoder is local code in a sandboxed app, with no network calls and no analytics, so
           debugging a real auth header doesn't mean shipping a real auth header to a third party.
           It's also a single keystroke away once you've launched the app, instead of a tab to find
@@ -208,7 +208,7 @@
           <li><strong>No tracking.</strong> No analytics, no telemetry, no third-party SDKs.</li>
           <li>
             <strong>One-time purchase.</strong> $14.99 once, year of updates included, $9 optional
-            renewal — no subscription.
+            renewal, no subscription.
           </li>
         </ul>
 
@@ -224,7 +224,7 @@
             >
           </p>
           <p style="margin-top: 0.5rem; font-size: 0.875rem; color: var(--muted)">
-            The detection runs entirely on your Mac as a rule-based heuristic — three base64url
+            The detection runs entirely on your Mac as a rule-based heuristic: three base64url
             segments separated by dots, with a JSON header that has an
             <code>alg</code> field. Nothing is uploaded.
           </p>
@@ -239,7 +239,7 @@
           <a href="/tools/hash-generator.html">
             <span class="name">Hash Generator</span>
             <span class="hook"
-              >SHA-256 and friends — useful when you're checking signatures by hand.</span
+              >SHA-256 and friends, useful when you're checking signatures by hand.</span
             >
           </a>
           <a href="/tools/timestamp-converter.html">
