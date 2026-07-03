@@ -1372,6 +1372,11 @@ section.slab {
   gap: 1.5rem;
   margin-bottom: 1.5rem;
 }
+/* Single-card pricing: the renewal SKU is not offered yet, so center one card. */
+.pricing--single {
+  grid-template-columns: minmax(0, 34rem);
+  justify-content: center;
+}
 .price-card {
   background: var(--surface);
   border: 1px solid var(--border);

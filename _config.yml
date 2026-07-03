@@ -19,6 +19,9 @@ description: 'Native Mac developer tools by Zentsu LLC.'
 # label live in the templates. Currency is USD. Keep in sync with the app's
 # StoreKit configuration.
 price_lifetime: '14.99'
+# The renewal-for-updates SKU is not offered at launch (it does not exist in App
+# Store Connect yet), so this value is intentionally not rendered anywhere on the
+# site. Kept here so the renewal copy can be restored in one place once it ships.
 price_renewal: '9'
 
 plugins:

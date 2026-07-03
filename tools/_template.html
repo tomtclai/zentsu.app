@@ -44,10 +44,10 @@ og_description: '{{OG_DESCRIPTION}}'
     • Anonymous studio voice — "we", never "I".
     • Smart Detection is heuristic. Never say "AI" / "AI-powered" /
       "intelligent" / "machine learning" / "ML".
-    • Don't name competitors. Never hardcode a dollar amount: every price
-      renders from _config.yml (price_lifetime / price_renewal) via Liquid, as
-      in the bullet and CTA below. Keep it honest: one-time purchase, a year of
-      updates included, optional renewal. Never imply subscription.
+    • Don't name competitors. Never hardcode a dollar amount: the price
+      renders from _config.yml (price_lifetime) via Liquid, as in the bullet
+      and CTA below. Keep it honest: one-time purchase, a year of updates
+      included. Never imply subscription.
   ─────────────────────────────────────────────────────────────────────────
 -->
 
@@ -63,8 +63,8 @@ og_description: '{{OG_DESCRIPTION}}'
   <li><strong>Offline.</strong> No network calls. Whatever you paste stays on your Mac.</li>
   <li><strong>No tracking.</strong> No analytics, no telemetry, no third-party SDKs.</li>
   <li>
-    <strong>One-time purchase.</strong> ${{ site.price_lifetime }} once, year of updates included,
-    ${{ site.price_renewal }} optional renewal. No subscription.
+    <strong>One-time purchase.</strong> ${{ site.price_lifetime }} once, year of updates included.
+    No subscription.
   </li>
 </ul>
 
@@ -107,5 +107,5 @@ og_description: '{{OG_DESCRIPTION}}'
 <hr />
 <p style="font-size: 0.8125rem; color: var(--muted)">
   Bench is published by Zentsu LLC. <a href="/bench.html">Back to Bench</a> ·
-  <a href="/bench/renewal-faq.html">Renewal FAQ</a> · <a href="/bench/support.html">Support</a>.
+  <a href="/bench/support.html">Support</a>.
 </p>

@@ -96,22 +96,6 @@ footer_indie: true
           },
           {
             "@type": "Question",
-            "name": "What's the ${{ site.price_renewal }} renewal, and is it required?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It's optional. After your first year, you can pay ${{ site.price_renewal }} for another year of new updates. If you skip it, the version you already have keeps working with no nags and no expiry. There's no subscription and nothing auto‑charges. We have a dedicated renewal FAQ that spells out exactly how it works."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What if I skip a year and want updates again later?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Come back whenever. You can renew at any time to start receiving new updates again. There's no penalty and no back‑payment for the years you skipped."
-            }
-          },
-          {
-            "@type": "Question",
             "name": "Does it sync between my Macs?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -800,12 +784,12 @@ footer_indie: true
               <h2>Pay once. Keep it forever.</h2>
             </div>
             <p class="kicker">
-              One price, paid once. A year of updates is included. Renewal for new updates is
-              optional. Your version of Bench works forever either way.
+              One price, paid once. A year of updates is included. Your version of Bench works
+              forever.
             </p>
           </div>
 
-          <div class="pricing reveal">
+          <div class="pricing pricing--single reveal">
             <div class="price-card price-card--main">
               <div class="price-eyebrow">One‑time purchase</div>
               <div class="price-amount">
@@ -821,22 +805,6 @@ footer_indie: true
               </ul>
               <a class="btn btn-primary feature-app-store" href="">View on the Mac App Store</a>
             </div>
-
-            <div class="price-card price-card--side">
-              <div class="price-eyebrow">After year 1 (optional)</div>
-              <div class="price-amount price-amount--small">
-                <span class="price-currency">$</span
-                ><span class="price-num">{{ site.price_renewal }}</span
-                ><span class="price-suffix">/yr</span>
-              </div>
-              <div class="price-sub">Only buys access to new updates</div>
-              <ul class="price-list">
-                <li>Optional. Skip it and the app keeps working.</li>
-                <li>Come back anytime. Renew whenever you want more updates.</li>
-                <li>Billed only when you choose to renew. You buy a year when you want one.</li>
-              </ul>
-              <a class="btn btn-secondary" href="bench/renewal-faq.html">Read the renewal FAQ →</a>
-            </div>
           </div>
 
           <p class="price-region-note">
@@ -847,7 +815,7 @@ footer_indie: true
             <span class="price-promo-tag">Launch</span>
             <p>
               Bench is <strong>${{ site.price_lifetime }}</strong> on the Mac App Store: one‑time,
-              with a year of updates included. Same forever‑version, same optional renewal.
+              with a year of updates included. Your version works forever.
             </p>
           </div>
 
@@ -885,17 +853,15 @@ footer_indie: true
             <h2>Bench is on the Mac App Store.</h2>
             <p>
               <strong>${{ site.price_lifetime }}</strong>, one‑time purchase. A year of updates
-              included. Your version works forever. Renewal for new updates is always optional.
+              included. Your version works forever.
             </p>
             <div class="hero-cta">
               <a class="btn btn-primary" href="">View on the Mac App Store</a>
-              <a class="btn btn-secondary" href="bench/renewal-faq.html">Renewal FAQ</a>
             </div>
           </div>
           <div class="buy-facts reveal">
             <div><b>→</b> ${{ site.price_lifetime }} one‑time, year of updates included</div>
             <div><b>→</b> Your version works forever, no time limit</div>
-            <div><b>→</b> ${{ site.price_renewal }}/yr renewal is optional, never auto‑charged</div>
             <div><b>→</b> One‑time purchase, runs entirely on your Mac</div>
           </div>
         </div>
@@ -943,27 +909,6 @@ footer_indie: true
               </p>
             </details>
 
-            <details>
-              <summary>What's the ${{ site.price_renewal }} renewal, and is it required?</summary>
-              <p>
-                It's optional. After your first year, you can pay
-                <strong>${{ site.price_renewal }}</strong> for another year of <em>new</em> updates.
-                If you skip it, the version you already have keeps working with no nags and no
-                expiry. There's no subscription and nothing auto‑charges. We have a
-                <a href="bench/renewal-faq.html" style="color: var(--accent)"
-                  >dedicated renewal FAQ</a
-                >
-                that spells out exactly how it works.
-              </p>
-            </details>
-
-            <details>
-              <summary>What if I skip a year and want updates again later?</summary>
-              <p>
-                Come back whenever. You can renew at any time to start receiving new updates again.
-                There's no penalty and no back‑payment for the years you skipped.
-              </p>
-            </details>
             <details>
               <summary>Does it sync between my Macs?</summary>
               <p>
