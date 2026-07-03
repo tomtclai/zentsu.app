@@ -4,7 +4,7 @@ title: 'What every segment of a JWT actually means'
 slug: jwt-anatomy
 date: 2026-05-21
 description: 'A technical walkthrough of JWT structure, claims, signature mechanics, and why online debuggers are a security problem.'
-image: /assets/bench-icon.png
+image: /assets/zentsu-og.png
 ---
 
 If you have ever shipped an authenticated API, you have pasted a JWT
