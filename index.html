@@ -71,70 +71,107 @@
         padding: 0 1.5rem;
       }
 
-      /* Hero */
+      /* Hero — a quiet echo of the Bench pegboard grid */
       .hero {
-        padding: 5rem 0 3rem;
+        position: relative;
+        padding: 5.5rem 0 3.5rem;
         border-bottom: 1px solid var(--border);
+        overflow: hidden;
+      }
+      .hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(
+          circle at 1px 1px,
+          rgba(20, 17, 15, 0.05) 1px,
+          transparent 0
+        );
+        background-size: 24px 24px;
+        mask-image: linear-gradient(180deg, transparent 0, #000 30%, #000 78%, transparent 100%);
+        -webkit-mask-image: linear-gradient(
+          180deg,
+          transparent 0,
+          #000 30%,
+          #000 78%,
+          transparent 100%
+        );
+        pointer-events: none;
+      }
+      .hero .wrap {
+        position: relative;
       }
       .hero h1 {
-        font-size: clamp(2rem, 5vw, 2.75rem);
+        font-size: clamp(2.25rem, 5.5vw, 3.25rem);
         font-weight: 700;
-        letter-spacing: -0.03em;
-        color: var(--text);
-        margin-bottom: 0.75rem;
+        letter-spacing: -0.035em;
+        line-height: 1.02;
+        color: var(--ink);
+        margin-bottom: 0.85rem;
       }
       .hero .lede {
-        font-size: 1.125rem;
-        color: var(--text);
-        line-height: 1.55;
+        font-size: clamp(1.1875rem, 2vw, 1.375rem);
+        color: var(--ink-soft);
+        line-height: 1.45;
         margin-bottom: 1rem;
+        max-width: 32ch;
       }
       .hero p.detail {
-        font-size: 1rem;
+        font-size: 1.0625rem;
         color: var(--muted);
         line-height: 1.65;
-        max-width: 56ch;
+        max-width: 58ch;
       }
 
       /* Sections */
       section.block {
-        padding: 3.5rem 0;
+        padding: 3.75rem 0;
         border-bottom: 1px solid var(--border);
       }
       section.block:last-of-type {
         border-bottom: none;
       }
       .block h2 {
+        font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
         font-size: 0.75rem;
-        font-weight: 600;
-        letter-spacing: 0.12em;
+        font-weight: 500;
+        letter-spacing: 0.14em;
         text-transform: uppercase;
         color: var(--accent);
-        margin-bottom: 1.25rem;
+        margin-bottom: 1.5rem;
       }
 
       /* Product card */
       .product {
         display: flex;
-        gap: 1.25rem;
+        gap: 1.35rem;
         align-items: flex-start;
         background: var(--surface);
         border: 1px solid var(--border);
-        border-radius: 12px;
-        padding: 1.5rem;
+        border-radius: 14px;
+        padding: 1.65rem;
+        box-shadow: 0 1px 2px rgba(20, 17, 15, 0.04);
+        transition:
+          border-color 0.15s ease,
+          box-shadow 0.2s ease;
+      }
+      .product:hover {
+        border-color: var(--accent);
+        box-shadow: 0 12px 28px -18px rgba(20, 17, 15, 0.3);
       }
       .product img.icon {
         width: 64px;
         height: 64px;
-        border-radius: 14px;
+        border-radius: 15px;
         flex-shrink: 0;
+        box-shadow: 0 4px 12px -6px rgba(20, 17, 15, 0.25);
       }
       .product .body h3 {
-        font-size: 1.125rem;
+        font-size: 1.1875rem;
         font-weight: 600;
-        color: var(--text);
+        color: var(--ink);
         margin-bottom: 0.25rem;
-        letter-spacing: -0.01em;
+        letter-spacing: -0.015em;
       }
       .product .status {
         font-size: 0.8125rem;
@@ -145,35 +182,39 @@
         font-size: 0.9375rem;
         color: var(--body-text);
         line-height: 1.6;
-        margin-bottom: 0.75rem;
+        margin-bottom: 0.85rem;
       }
       .product a.more {
         font-size: 0.9375rem;
         color: var(--accent);
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 600;
       }
       .product a.more:hover {
         text-decoration: underline;
       }
       .more-products {
-        margin-top: 1rem;
+        margin-top: 1.15rem;
         font-size: 0.875rem;
         color: var(--muted);
       }
 
-      /* Principles list */
+      /* Principles grid */
       .principles {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1.25rem 2rem;
+        gap: 1.5rem 2.5rem;
         list-style: none;
+      }
+      .principles li {
+        padding-left: 0.9rem;
+        border-left: 2px solid var(--border);
       }
       .principles li h3 {
         font-size: 0.9375rem;
         font-weight: 600;
-        color: var(--text);
-        margin-bottom: 0.3rem;
+        color: var(--ink);
+        margin-bottom: 0.35rem;
       }
       .principles li p {
         font-size: 0.9375rem;
@@ -188,7 +229,7 @@
           flex-direction: column;
         }
         .hero {
-          padding: 3.5rem 0 2.5rem;
+          padding: 3.75rem 0 2.75rem;
         }
       }
 
