@@ -1,10 +1,16 @@
 ---
+# Orphaned page: unlinked while the renewal-for-updates SKU is not offered. Keep
+# it out of the sitemap (jekyll-sitemap honors sitemap:false) and the search
+# index (see the noindex robots meta below) until the renewal product ships.
+sitemap: false
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     {% include head-common.html %}
+    <!-- Unlinked while the renewal SKU is not offered: keep it out of the search index. -->
+    <meta name="robots" content="noindex" />
     <title>Bench Renewal FAQ · Zentsu LLC</title>
     <meta
       name="description"
