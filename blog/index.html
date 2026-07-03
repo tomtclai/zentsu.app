@@ -80,15 +80,15 @@ permalink: /blog/
         <span class="page-label">Blog</span>
         <h1>Blog</h1>
         <ul class="post-list">
-          {% for post in site.posts %}
+          {%- for post in site.posts %}
           <li>
             <a href="{{ post.url }}">{{ post.title }}</a>
             <p class="date">{{ post.date | date: '%B %-d, %Y' }}</p>
-            {% if post.description %}
+            {%- if post.description %}
             <p class="desc">{{ post.description }}</p>
-            {% endif %}
+            {%- endif %}
           </li>
-          {% endfor %}
+          {%- endfor %}
         </ul>
       </article>
     </main>
