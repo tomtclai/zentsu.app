@@ -210,6 +210,9 @@ main {
 }
 .hero-icon {
   width: min(320px, 80%);
+  /* height:auto must beat the img's height="512" attribute, or the CSS width
+     override stretches the icon (attribute height wins over aspect-ratio). */
+  height: auto;
   aspect-ratio: 1;
   border-radius: 22%;
   box-shadow:
