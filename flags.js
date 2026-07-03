@@ -8,8 +8,20 @@ const FLAGS = {
 };
 
 if (FLAGS.appStore.live) {
+  // Add the reveal class on <html> immediately so gated markup never flashes.
   document.documentElement.classList.add('flag-appStoreLive');
-  document.querySelectorAll('.feature-app-store a').forEach((a) => {
-    if (FLAGS.appStore.url) a.href = FLAGS.appStore.url;
-  });
+
+  // Href rewrites must wait for <body>: this script runs in <head>, before the
+  // elements it targets exist.
+  const applyAppStoreUrl = () => {
+    if (!FLAGS.appStore.url) return;
+    document.querySelectorAll('.feature-app-store a').forEach((a) => {
+      a.href = FLAGS.appStore.url;
+    });
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', applyAppStoreUrl);
+  } else {
+    applyAppStoreUrl();
+  }
 }
