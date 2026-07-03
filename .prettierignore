@@ -2,3 +2,6 @@ node_modules/
 package-lock.json
 assets/
 *.min.js
+# Generated Bench tool index — Liquid control flow in start tags that Prettier reflows.
+_includes/tool-index.html
+_includes/tool-count.html

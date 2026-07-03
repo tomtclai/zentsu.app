@@ -1,0 +1,9 @@
+{%- comment -%}
+  Total Bench tool count, zero-padded to two digits (e.g. 16), derived from
+  _data/tools.yml. Used for the "Counted exactly" figure on bench.html and kept
+  in a Liquid include so it never drifts from the tool index. bench.js overwrites
+  #spec-tool-count with the same value at runtime.
+{%- endcomment -%}
+{%- assign t = 0 -%}
+{%- for c in site.data.tools.categories -%}{%- assign t = t | plus: c.tools.size -%}{%- endfor -%}
+{%- if t < 10 -%}0{%- endif -%}{{ t }}

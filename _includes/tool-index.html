@@ -1,0 +1,63 @@
+{%- comment -%}
+  Bench tool index — rendered from _data/tools.yml at BUILD time.
+
+  Emits the #tool-filters pills and the #tool-cats category list with real
+  numbers baked in: item numbers (01, 02, …), per-category count badges, the
+  filter-pill counts, and (via #spec-tool-count elsewhere) the total. bench.js
+  recomputes the identical values at runtime, so JS-on and no-JS renders agree.
+
+  Do NOT hand-edit numbers or add tools here — edit _data/tools.yml. This file
+  is deliberately kept out of Prettier (.prettierignore) because Prettier
+  reflows Liquid control flow inside start tags.
+{%- endcomment -%}
+{%- assign cats = site.data.tools.categories -%}
+{%- assign total = 0 -%}
+{%- for c in cats -%}{%- assign total = total | plus: c.tools.size -%}{%- endfor -%}
+<div
+  class="tool-filters reveal"
+  role="tablist"
+  aria-label="Filter tools by category"
+  id="tool-filters"
+>
+  <button type="button" class="tool-filter active" role="tab" aria-selected="true" data-filter="all">All<span class="fcount">{% if total < 10 %}0{% endif %}{{ total }}</span></button>
+  {%- for category in cats %}
+  {%- assign cn = category.tools | size %}
+  <button type="button" class="tool-filter" role="tab" aria-selected="false" data-filter="{{ category.name }}">{{ category.name }}<span class="fcount">{% if cn < 10 %}0{% endif %}{{ cn }}</span></button>
+  {%- endfor %}
+</div>
+
+<div class="tool-cats reveal" id="tool-cats">
+  {%- assign counter = 0 %}
+  {%- for category in cats %}
+  {%- assign cn = category.tools | size %}
+  <div class="tool-cat" data-cat="{{ category.name }}">
+    <header>
+      <div class="cat-title">
+        <svg
+          class="cat-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          {{ category.icon }}
+        </svg>
+        <h3>{{ category.name }}</h3>
+      </div>
+      <span class="count" data-count>{% if cn < 10 %}0{% endif %}{{ cn }}</span>
+    </header>
+    <ul>
+      {%- for tool in category.tools %}
+      {%- assign counter = counter | plus: 1 %}
+      <li data-tool="{{ tool.label }}"{% if tool.popular %} data-popular{% endif %} data-benefit="{{ tool.benefit }}">
+        <span class="n mono">{% if counter < 10 %}0{% endif %}{{ counter }}</span
+        ><span><a href="{{ tool.href }}">{{ tool.label }}</a>{% if tool.meta %} <span class="mono" style="color: var(--muted); font-size: 0.78rem">{{ tool.meta }}</span>{% endif %}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+  {%- endfor %}
+</div>

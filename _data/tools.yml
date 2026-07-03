@@ -1,0 +1,109 @@
+# ─────────────────────────────────────────────────────────────────────────
+# Bench tool index — single source of truth for the "#tools" slab on bench.html.
+#
+# Add a tool  = add an entry under the right category here. Everything else
+# derives at BUILD time via Liquid: the item numbers (01, 02, …), the per-
+# category count badges, the filter-pill counts, and the "Counted exactly"
+# total on the spec strip all come from this file. Nothing is hand-typed in
+# the markup. bench.js recomputes the identical numbers at runtime, so JS-on
+# and no-JS (crawler) renders agree.
+#
+# Order matters: categories render in the order listed here, and tools render
+# in the order listed within each category — that order is the numbering.
+#
+# Keep every visible string byte-for-byte. Note the meta field uses a middle
+# dot (U+00B7 "·") and non-breaking hyphens (U+2011 "‑"), NOT plain ASCII.
+#
+# Fields
+#   category.name   the data-cat value AND the <h3> heading (identical today)
+#   category.icon   inner SVG markup for the category glyph (raw, not escaped)
+#   tool.label      link text and the data-tool value
+#   tool.href       landing-page URL
+#   tool.popular    optional; true renders the runtime "Popular" badge
+#   tool.benefit    the data-benefit hover tooltip text
+#   tool.meta       optional; a muted mono suffix beside the label
+# ─────────────────────────────────────────────────────────────────────────
+categories:
+  - name: Encoding
+    icon: |
+      <path d="M8 4 L4 12 L8 20" />
+      <path d="M16 4 L20 12 L16 20" />
+    tools:
+      - label: Base64
+        href: /tools/base64-encoder.html
+        benefit: 'Paste a Base64 blob, get the text. Or the other way around.'
+      - label: URL Encode
+        href: /tools/url-encoder.html
+        benefit: 'Encode or decode a URL fragment. Spaces, emoji, the works.'
+
+  - name: Formatting
+    icon: |
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="4" y1="12" x2="14" y2="12" />
+      <line x1="4" y1="18" x2="18" y2="18" />
+    tools:
+      - label: JSON Formatter
+        href: /tools/json-formatter.html
+        popular: true
+        benefit: 'Pretty-print minified JSON. Spot the missing comma before you ship it.'
+      - label: Markdown Preview
+        href: /tools/markdown-preview.html
+        benefit: 'See what your README looks like before you push it.'
+      - label: Text Diff
+        href: /tools/text-diff.html
+        benefit: "Two chunks of text, side by side. You'll see exactly what changed."
+      - label: Image Diff
+        href: /tools/image-diff.html
+        benefit: 'Overlay two PNGs. The pixels that moved light up.'
+
+  - name: Generators
+    icon: |
+      <circle cx="12" cy="12" r="8" />
+      <path d="M12 4 V2 M12 22 V20 M4 12 H2 M22 12 H20" />
+    tools:
+      - label: UUID Generator
+        href: /tools/uuid-generator.html
+        benefit: 'Grab a v4 UUID. Or a hundred. Uppercase or lowercase, your call.'
+      - label: Timestamp
+        href: /tools/timestamp-converter.html
+        benefit: 'Unix timestamp to human date, in any timezone.'
+
+  - name: Crypto
+    icon: |
+      <rect x="5" y="10" width="14" height="10" rx="2" />
+      <path d="M8 10 V7 a4 4 0 0 1 8 0 v3" />
+    tools:
+      - label: Hash Generator
+        href: /tools/hash-generator.html
+        popular: true
+        benefit: 'MD5, SHA-1, SHA-256, SHA-512. For the moment the README asks for a checksum.'
+        meta: 'MD5 · SHA‑1 · SHA‑256 · SHA‑512'
+      - label: JWT Decoder
+        href: /tools/jwt-decoder.html
+        popular: true
+        benefit: "Paste a JWT. Read the claims. Check what's actually in the header."
+
+  - name: Converters
+    icon: |
+      <path d="M4 8 H18 L14 4" />
+      <path d="M20 16 H6 L10 20" />
+    tools:
+      - label: Color Converter
+        href: /tools/color-converter.html
+        benefit: 'HEX, RGB, HSL, OKLCH. Paste one, get the others.'
+      - label: Text Case
+        href: /tools/text-case.html
+        benefit: 'camelCase, snake_case, Title Case, kebab-case. One paste, every variant.'
+      - label: Number Base
+        href: /tools/number-base.html
+        benefit: 'Binary, octal, decimal, hex. Any direction you need.'
+      - label: Regex Tester
+        href: /tools/regex-tester.html
+        popular: true
+        benefit: 'Try a pattern against real input. Matches light up as you type.'
+      - label: Regex Explainer
+        href: /tools/regex-tester.html
+        benefit: 'A regex, explained as a tree. Step through the NFA trace line by line.'
+      - label: MOV to MP4
+        href: /tools/mov-to-mp4.html
+        benefit: 'Convert a screen recording to a smaller, streamable MP4.'

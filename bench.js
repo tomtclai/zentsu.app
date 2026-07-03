@@ -1,7 +1,11 @@
 /* ───────────────────────────────────────────────────────────
-       Tool registry — single source of truth.
-       Adding a tool in the DOM is enough; this script rebuilds
-       numbers, counts, chip labels, and filter pills from it.
+       Tool registry — read from the rendered DOM.
+       Tools are authored in _data/tools.yml and rendered by
+       _includes/tool-index.html, which bakes the item numbers,
+       count badges and filter-pill counts at build time. This
+       script re-derives the identical values at runtime (so
+       counts/numbers agree with the baked HTML) and wires up
+       chip labels, filtering, and the hover tooltips.
        ─────────────────────────────────────────────────────────── */
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -88,6 +92,10 @@ const TOTAL = TOOLS.length;
 (function buildFilters() {
   const host = document.getElementById('tool-filters');
   if (!host) return;
+  // Pills are baked into the static HTML from _data/tools.yml (so crawlers and
+  // no-JS visitors see correct counts). Clear them and rebuild identically —
+  // this stays the runtime source of truth and wires up the click handler.
+  host.replaceChildren();
   const byCat = {};
   TOOLS.forEach((t) => {
     byCat[t.category] = (byCat[t.category] || 0) + 1;
