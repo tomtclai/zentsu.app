@@ -38,7 +38,7 @@ footer_indie: true
     <meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#14110f" media="(prefers-color-scheme: dark)" />
 
-    <link rel="stylesheet" href="/bench.css" />
+    <link rel="stylesheet" href="/bench.css?v={{ site.time | date: '%s' }}" />
 
     <script type="application/ld+json">
       {
@@ -1021,6 +1021,6 @@ footer_indie: true
       data-cfasync="false"
       src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
     ></script>
-    <script src="/bench.js" defer></script>
+    <script src="/bench.js?v={{ site.time | date: '%s' }}" defer></script>
   </body>
 </html>
