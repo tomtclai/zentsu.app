@@ -86,12 +86,15 @@ nav {
   -webkit-backdrop-filter: saturate(140%) blur(8px);
 }
 nav ul {
+  /* Full-width row: brand flush left, links flush right — identical on every
+     page regardless of that page's content column width. Do not re-add a
+     max-width/centered band here: it only lines up with pages whose content
+     grid happens to match (it used to match bench.html's 1160px grid and
+     looked mis-aligned on every 760px-column page). */
   list-style: none;
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  max-width: 1160px;
-  margin: 0 auto;
   height: 60px;
 }
 nav a {
