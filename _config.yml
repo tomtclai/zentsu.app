@@ -7,9 +7,19 @@ exclude:
   - README.md
   - tools/_template.html
 
-url: "https://zentsu.app"
-title: "Zentsu"
-description: "Native Mac developer tools by Zentsu LLC."
+url: 'https://zentsu.app'
+title: 'Zentsu'
+description: 'Native Mac developer tools by Zentsu LLC.'
+
+# ── Bench pricing: single source of truth ──
+# Every price shown anywhere on the site (pricing cards, FAQ prose, the FAQPage
+# and SoftwareApplication JSON-LD, tool pages, meta descriptions) renders from
+# these two values via Liquid. Change a price here and rebuild — that is the
+# only edit required. Values are the numeric amounts only; the "$" and currency
+# label live in the templates. Currency is USD. Keep in sync with the app's
+# StoreKit configuration.
+price_lifetime: '14.99'
+price_renewal: '9'
 
 plugins:
   - jekyll-seo-tag
@@ -21,7 +31,7 @@ plugins:
 # (e.g. /privacy/ instead of /privacy.html) and break existing links.
 defaults:
   - scope:
-      path: ""
+      path: ''
       type: posts
     values:
       permalink: /blog/:year/:slug/

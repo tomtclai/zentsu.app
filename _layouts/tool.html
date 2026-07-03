@@ -3,7 +3,10 @@
   <head>
     {% include head-common.html %}
     <title>{{ page.h1 }} — Bench by Zentsu LLC</title>
-    <meta name="description" content="{{ page.description }}" />
+    <meta
+      name="description"
+      content="{{ page.description }} Part of Bench, ${{ site.price_lifetime }} one-time."
+    />
     <link rel="canonical" href="https://zentsu.app{{ page.url }}" />
 
     <!-- Open Graph / social -->
@@ -37,7 +40,7 @@
         "publisher": { "@type": "Organization", "name": "Zentsu LLC" },
         "offers": {
           "@type": "Offer",
-          "price": "14.99",
+          "price": "{{ site.price_lifetime }}",
           "priceCurrency": "USD"
         }
       }

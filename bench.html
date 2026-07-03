@@ -58,7 +58,7 @@ footer_indie: true
         },
         "offers": {
           "@type": "Offer",
-          "price": "14.99",
+          "price": "{{ site.price_lifetime }}",
           "priceCurrency": "USD",
           "category": "https://schema.org/PaymentInAdvance"
         }
@@ -91,15 +91,15 @@ footer_indie: true
             "name": "How much is Bench, and what do I get?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Bench is $14.99, one‑time. That unlocks every tool, including Smart Detection, and includes one full year of updates. Your version keeps working forever. There's no time limit on what you bought."
+              "text": "Bench is ${{ site.price_lifetime }}, one‑time. That unlocks every tool, including Smart Detection, and includes one full year of updates. Your version keeps working forever. There's no time limit on what you bought."
             }
           },
           {
             "@type": "Question",
-            "name": "What's the $9 renewal, and is it required?",
+            "name": "What's the ${{ site.price_renewal }} renewal, and is it required?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "It's optional. After your first year, you can pay $9 for another year of new updates. If you skip it, the version you already have keeps working with no nags and no expiry. There's no subscription and nothing auto‑charges. We have a dedicated renewal FAQ that spells out exactly how it works."
+              "text": "It's optional. After your first year, you can pay ${{ site.price_renewal }} for another year of new updates. If you skip it, the version you already have keeps working with no nags and no expiry. There's no subscription and nothing auto‑charges. We have a dedicated renewal FAQ that spells out exactly how it works."
             }
           },
           {
@@ -221,7 +221,7 @@ footer_indie: true
                   stroke-width="3"
                 >
                   <path d="M4 12l6 6L20 6" /></svg
-                >One-time $14.99</span
+                >One-time ${{ site.price_lifetime }}</span
               >
             </div>
             <p class="hero-specline">
@@ -1058,7 +1058,8 @@ footer_indie: true
             <div class="price-card price-card--main">
               <div class="price-eyebrow">One‑time purchase</div>
               <div class="price-amount">
-                <span class="price-currency">$</span><span class="price-num">14.99</span>
+                <span class="price-currency">$</span
+                ><span class="price-num">{{ site.price_lifetime }}</span>
               </div>
               <div class="price-sub">USD · paid once</div>
               <ul class="price-list">
@@ -1073,7 +1074,8 @@ footer_indie: true
             <div class="price-card price-card--side">
               <div class="price-eyebrow">After year 1 (optional)</div>
               <div class="price-amount price-amount--small">
-                <span class="price-currency">$</span><span class="price-num">9</span
+                <span class="price-currency">$</span
+                ><span class="price-num">{{ site.price_renewal }}</span
                 ><span class="price-suffix">/yr</span>
               </div>
               <div class="price-sub">Only buys access to new updates</div>
@@ -1087,11 +1089,15 @@ footer_indie: true
             </div>
           </div>
 
+          <p class="price-region-note">
+            Prices in USD. The App Store shows the final price for your region.
+          </p>
+
           <div class="price-promo reveal">
             <span class="price-promo-tag">Launch</span>
             <p>
-              Bench is <strong>$14.99</strong> on the Mac App Store: one‑time, with a year of
-              updates included. Same forever‑version, same optional renewal.
+              Bench is <strong>${{ site.price_lifetime }}</strong> on the Mac App Store: one‑time,
+              with a year of updates included. Same forever‑version, same optional renewal.
             </p>
           </div>
 
@@ -1128,8 +1134,8 @@ footer_indie: true
           <div class="reveal">
             <h2>Bench is on the Mac App Store.</h2>
             <p>
-              <strong>$14.99</strong>, one‑time purchase. A year of updates included. Your version
-              works forever. Renewal for new updates is always optional.
+              <strong>${{ site.price_lifetime }}</strong>, one‑time purchase. A year of updates
+              included. Your version works forever. Renewal for new updates is always optional.
             </p>
             <div class="hero-cta">
               <a class="btn btn-primary" href="">View on the Mac App Store</a>
@@ -1137,9 +1143,9 @@ footer_indie: true
             </div>
           </div>
           <div class="buy-facts reveal">
-            <div><b>→</b> $14.99 one‑time, year of updates included</div>
+            <div><b>→</b> ${{ site.price_lifetime }} one‑time, year of updates included</div>
             <div><b>→</b> Your version works forever, no time limit</div>
-            <div><b>→</b> $9/yr renewal is optional, never auto‑charged</div>
+            <div><b>→</b> ${{ site.price_renewal }}/yr renewal is optional, never auto‑charged</div>
             <div><b>→</b> Renewal price locked, won't rise with the list price</div>
             <div><b>→</b> One‑time purchase, runs entirely on your Mac</div>
           </div>
@@ -1182,19 +1188,19 @@ footer_indie: true
             <details>
               <summary>How much is Bench, and what do I get?</summary>
               <p>
-                Bench is <strong>$14.99</strong>, one‑time. That unlocks every tool, including Smart
-                Detection, and includes one full year of updates. Your version keeps working
-                forever. There's no time limit on what you bought.
+                Bench is <strong>${{ site.price_lifetime }}</strong>, one‑time. That unlocks every
+                tool, including Smart Detection, and includes one full year of updates. Your version
+                keeps working forever. There's no time limit on what you bought.
               </p>
             </details>
 
             <details>
-              <summary>What's the $9 renewal, and is it required?</summary>
+              <summary>What's the ${{ site.price_renewal }} renewal, and is it required?</summary>
               <p>
-                It's optional. After your first year, you can pay <strong>$9</strong> for another
-                year of <em>new</em> updates. If you skip it, the version you already have keeps
-                working with no nags and no expiry. There's no subscription and nothing
-                auto‑charges. We have a
+                It's optional. After your first year, you can pay
+                <strong>${{ site.price_renewal }}</strong> for another year of <em>new</em> updates.
+                If you skip it, the version you already have keeps working with no nags and no
+                expiry. There's no subscription and nothing auto‑charges. We have a
                 <a href="bench/renewal-faq.html" style="color: var(--accent)"
                   >dedicated renewal FAQ</a
                 >

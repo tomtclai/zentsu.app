@@ -8,7 +8,7 @@
     <title>Bench Renewal FAQ · Zentsu LLC</title>
     <meta
       name="description"
-      content="Plain-language explanation of how Bench's one-time purchase and optional $9 renewal work. Your version works forever; renewal only buys access to new updates."
+      content="Plain-language explanation of how Bench's one-time purchase and optional ${{ site.price_renewal }} renewal work. Your version works forever; renewal only buys access to new updates."
     />
     <link rel="canonical" href="https://zentsu.app/bench/renewal-faq.html" />
 
@@ -18,7 +18,7 @@
     <meta property="og:title" content="Bench Renewal FAQ · Zentsu LLC" />
     <meta
       property="og:description"
-      content="Plain-language explanation of how Bench's one-time purchase and optional $9 renewal work. Your version works forever; renewal only buys access to new updates."
+      content="Plain-language explanation of how Bench's one-time purchase and optional ${{ site.price_renewal }} renewal work. Your version works forever; renewal only buys access to new updates."
     />
     <meta property="og:url" content="https://zentsu.app/bench/renewal-faq.html" />
     <meta property="og:image" content="https://zentsu.app/assets/bench-og.png" />
@@ -30,7 +30,7 @@
     <meta name="twitter:title" content="Bench Renewal FAQ · Zentsu LLC" />
     <meta
       name="twitter:description"
-      content="Plain-language explanation of how Bench's one-time purchase and optional $9 renewal work. Your version works forever; renewal only buys access to new updates."
+      content="Plain-language explanation of how Bench's one-time purchase and optional ${{ site.price_renewal }} renewal work. Your version works forever; renewal only buys access to new updates."
     />
     <meta name="twitter:image" content="https://zentsu.app/assets/bench-og.png" />
 
@@ -85,9 +85,9 @@
 
         <div class="reassure">
           <strong>The short version.</strong> You buy Bench once. The version you bought works
-          forever. The first year of new updates is included. After that, $9 buys another year of
-          new updates if you want them. If you don't want them, the app keeps working exactly as it
-          does today, with no nags and no expiry.
+          forever. The first year of new updates is included. After that, ${{ site.price_renewal }}
+          buys another year of new updates if you want them. If you don't want them, the app keeps
+          working exactly as it does today, with no nags and no expiry.
         </div>
 
         <h2>The questions people actually ask</h2>
@@ -112,24 +112,25 @@
         <p>
           No, and we want to be specific about this:
           <strong>your renewal price is locked at the rate you started on</strong>. If Bench's list
-          price climbs from $14.99 to $24 to $29 over the next few years, the cost to renew
-          <em>your</em> copy stays where it was. This is a commitment, not a vague intention. The
-          whole point of the renewal model is that it stays predictable for the people who already
-          trusted us with a purchase.
+          price climbs from ${{ site.price_lifetime }} to $24 to $29 over the next few years, the
+          cost to renew <em>your</em> copy stays where it was. This is a commitment, not a vague
+          intention. The whole point of the renewal model is that it stays predictable for the
+          people who already trusted us with a purchase.
         </p>
 
         <h3>Is this a subscription? Will I be auto-billed?</h3>
         <p>
           No. There is no subscription, no auto-renewal billing, and no surprise charges. When your
           renewal year ends, nothing happens automatically. If you want another year of updates, you
-          come back and pay $9. If you don't, nothing is charged and the app keeps running.
+          come back and pay ${{ site.price_renewal }}. If you don't, nothing is charged and the app
+          keeps running.
         </p>
 
         <h3>What happens if I skip a year, or several, and want to renew later?</h3>
         <p>
           You can renew at any time. There's no penalty, no back-payment for the years you skipped,
-          and no expired-account state to recover from. Pay $9 and you're back on the update train
-          for another year.
+          and no expired-account state to recover from. Pay ${{ site.price_renewal }} and you're
+          back on the update train for another year.
         </p>
 
         <h3>Can I just keep using the version I have forever?</h3>

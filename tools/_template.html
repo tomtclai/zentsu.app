@@ -27,9 +27,10 @@ og_description: '{{OG_DESCRIPTION}}'
          h1              e.g. JWT Decoder for Mac
          tool_name       e.g. JWT Decoder (used in the SoftwareApplication
                          name "Bench — [tool_name]" and the breadcrumb)
-         description     ≤155-char meta description (include "Part of Bench,
-                         $14.99 one-time.")
-         og_description  shorter social variant (drop the price sentence)
+         description     ≤155-char meta description. Do NOT put the price in
+                         here — the tool layout appends "Part of Bench,
+                         $[price] one-time." automatically from _config.yml.
+         og_description  shorter social variant (already price-free)
     3. Replace every {{TOKEN}} placeholder in the body below.
     4. Pick 2–3 related tools for the cross-link block.
     5. Keep the body under ~600 words. Tight, useful, scannable pages win.
@@ -38,8 +39,10 @@ og_description: '{{OG_DESCRIPTION}}'
     • Anonymous studio voice — "we", never "I".
     • Smart Detection is heuristic. Never say "AI" / "AI-powered" /
       "intelligent" / "machine learning" / "ML".
-    • Don't name competitors. Keep the price honest: $14.99 one-time, year of
-      updates included, $9 optional renewal. Never imply subscription.
+    • Don't name competitors. Never hardcode a dollar amount: every price
+      renders from _config.yml (price_lifetime / price_renewal) via Liquid, as
+      in the bullet and CTA below. Keep it honest: one-time purchase, a year of
+      updates included, optional renewal. Never imply subscription.
   ─────────────────────────────────────────────────────────────────────────
 -->
 
@@ -55,8 +58,8 @@ og_description: '{{OG_DESCRIPTION}}'
   <li><strong>Offline.</strong> No network calls. Whatever you paste stays on your Mac.</li>
   <li><strong>No tracking.</strong> No analytics, no telemetry, no third-party SDKs.</li>
   <li>
-    <strong>One-time purchase.</strong> $14.99 once, year of updates included, $9 optional renewal.
-    No subscription.
+    <strong>One-time purchase.</strong> ${{ site.price_lifetime }} once, year of updates included,
+    ${{ site.price_renewal }} optional renewal. No subscription.
   </li>
 </ul>
 
@@ -90,8 +93,8 @@ og_description: '{{OG_DESCRIPTION}}'
 
 <div class="cta-band">
   <p>
-    <strong>{{TOOL_NAME}}</strong> ships inside Bench, alongside the rest of the toolbox. $14.99
-    one-time, year of updates included.
+    <strong>{{TOOL_NAME}}</strong> ships inside Bench, alongside the rest of the toolbox. ${{
+    site.price_lifetime }} one-time, year of updates included.
   </p>
   <a href="/bench.html#pricing">Get Bench</a>
 </div>
