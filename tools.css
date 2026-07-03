@@ -105,10 +105,3 @@ article h3 {
   background: var(--accent);
   color: #fff;
 }
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.25rem;
-  margin-bottom: 0.5rem;
-  flex-wrap: wrap;
-}
