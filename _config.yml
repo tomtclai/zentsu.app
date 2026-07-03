@@ -16,4 +16,12 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
 
-permalink: /blog/:year/:slug/
+# Pretty blog URLs are scoped to posts only. A top-level `permalink` with a
+# trailing slash would force every front-matter *page* to a directory URL
+# (e.g. /privacy/ instead of /privacy.html) and break existing links.
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      permalink: /blog/:year/:slug/

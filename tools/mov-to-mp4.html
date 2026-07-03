@@ -1,257 +1,76 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MOV to MP4 Converter for Mac — Bench by Zentsu LLC</title>
-    <meta
-      name="description"
-      content="Native Mac MOV to MP4 converter. Drag a .mov file into Bench and convert it to MP4 without uploading to a web service. Offline, no tracking. Part of Bench, $14.99 one-time."
-    />
-    <link rel="canonical" href="https://zentsu.app/tools/mov-to-mp4.html" />
+---
+layout: tool
+h1: 'MOV to MP4 Converter for Mac'
+tool_name: 'MOV to MP4'
+description: 'Native Mac MOV to MP4 converter. Drag a .mov file into Bench and convert it to MP4 without uploading to a web service. Offline, no tracking. Part of Bench, $14.99 one-time.'
+og_description: 'Native Mac MOV to MP4 converter. Drag a .mov file into Bench and convert it to MP4 without uploading to a web service. Offline, no tracking.'
+---
 
-    <!-- Open Graph / social -->
-    <meta property="og:type" content="article" />
-    <meta property="og:site_name" content="Bench" />
-    <meta property="og:title" content="MOV to MP4 Converter for Mac" />
-    <meta
-      property="og:description"
-      content="Native Mac MOV to MP4 converter. Drag a .mov file into Bench and convert it to MP4 without uploading to a web service. Offline, no tracking."
-    />
-    <meta property="og:url" content="https://zentsu.app/tools/mov-to-mp4.html" />
-    <meta property="og:image" content="https://zentsu.app/assets/bench-icon.png" />
-    <meta name="twitter:card" content="summary_large_image" />
+<p class="lede">
+  A native Mac MOV to MP4 converter. Drag a .mov file into Bench and get an MP4 back without
+  uploading anything to a web service. Conversion happens on your Mac.
+</p>
 
-    <link rel="icon" type="image/png" href="/assets/bench-icon.png" />
-    <link rel="stylesheet" href="/shared.css" />
-    <script src="/flags.js"></script>
+<h2>What it does</h2>
+<p>
+  Bench's MOV to MP4 tool converts QuickTime .mov files to H.264 MP4 using macOS's built-in
+  AVFoundation framework. The output is a broadly compatible MP4 with no intermediate files: drag
+  the source in, choose a destination, and the converted file lands there. This is the format most
+  video platforms, Slack, and Notion accept when the original screen recording from a Mac comes out
+  as a .mov. No third-party codecs, no ffmpeg command to remember, no browser upload.
+</p>
 
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Bench — MOV to MP4",
-        "operatingSystem": "macOS 14+",
-        "applicationCategory": "DeveloperApplication",
-        "url": "https://zentsu.app/tools/mov-to-mp4.html",
-        "publisher": { "@type": "Organization", "name": "Zentsu LLC" },
-        "offers": {
-          "@type": "Offer",
-          "price": "14.99",
-          "priceCurrency": "USD"
-        }
-      }
-    </script>
+<h2>Why use Bench's MOV to MP4 converter</h2>
+<p>
+  Web-based converters require you to upload the file to a remote server. For screen recordings that
+  contain in-progress code, internal dashboards, or unreleased UI, that's a meaningful tradeoff.
+  Bench converts locally using macOS APIs. The video stays on your disk from start to finish. It's
+  also faster than a browser upload for larger recordings: the bottleneck is local I/O and the
+  encoder, not network speed.
+</p>
+<ul>
+  <li><strong>Native Mac app.</strong> SwiftUI, single window, instant launch.</li>
+  <li><strong>Offline.</strong> No network calls. Video files stay on your Mac.</li>
+  <li><strong>No tracking.</strong> No analytics, no telemetry, no third-party SDKs.</li>
+  <li>
+    <strong>One-time purchase.</strong> $14.99 once, year of updates included, $9 optional renewal.
+    No subscription.
+  </li>
+</ul>
 
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Bench",
-            "item": "https://zentsu.app/bench.html"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "MOV to MP4",
-            "item": "https://zentsu.app/tools/mov-to-mp4.html"
-          }
-        ]
-      }
-    </script>
+<h2>How to open</h2>
+<div class="how-to-open">
+  <p>Drag a .mov file into Bench to open MOV to MP4 directly.</p>
+</div>
 
-    <style>
-      main {
-        flex: 1;
-        padding: 3rem 1.5rem;
-      }
-      article h3 {
-        font-size: 0.9375rem;
-        font-weight: 600;
-        margin-top: 1.5rem;
-        margin-bottom: 0.4rem;
-        color: var(--text);
-      }
-      .lede {
-        font-size: 1.0625rem;
-        color: var(--body-text);
-        line-height: 1.65;
-        margin: 0.5rem 0 1.75rem;
-      }
-      .how-to-open {
-        background: var(--accent-light);
-        border-radius: 8px;
-        padding: 1rem 1.25rem;
-        margin: 1rem 0 0.5rem;
-      }
-      .related {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.75rem;
-        margin-top: 1rem;
-      }
-      .related a {
-        display: block;
-        background: var(--surface);
-        border: 1px solid var(--border);
-        border-radius: 8px;
-        padding: 0.85rem 1rem;
-        text-decoration: none;
-      }
-      .related a:hover {
-        border-color: var(--accent);
-      }
-      .related .name {
-        display: block;
-        font-weight: 600;
-        color: var(--text);
-        font-size: 0.9375rem;
-        margin-bottom: 0.25rem;
-      }
-      .related .hook {
-        font-size: 0.8125rem;
-        color: var(--muted);
-        line-height: 1.45;
-      }
-      @media (max-width: 700px) {
-        .related {
-          grid-template-columns: 1fr;
-        }
-      }
-      .cta-band {
-        background: var(--accent-light);
-        border: 1px solid var(--accent);
-        border-radius: 12px;
-        padding: 1.5rem 1.5rem;
-        margin-top: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1rem;
-        flex-wrap: wrap;
-      }
-      .cta-band p {
-        margin: 0;
-        font-size: 0.9375rem;
-        color: var(--text);
-      }
-      .cta-band a {
-        background: var(--text);
-        color: var(--bg);
-        padding: 0.65rem 1.15rem;
-        border-radius: 8px;
-        font-size: 0.9375rem;
-        font-weight: 600;
-        text-decoration: none;
-      }
-      .cta-band a:hover {
-        background: var(--accent);
-        color: #fff;
-      }
-      .footer-links {
-        display: flex;
-        justify-content: center;
-        gap: 1.25rem;
-        margin-bottom: 0.5rem;
-        flex-wrap: wrap;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="nav-placeholder"></div>
-    <script src="/nav.js"></script>
+<h2>Related tools in Bench</h2>
+<div class="related">
+  <a href="/tools/mov-to-gif.html">
+    <span class="name">MOV to GIF</span>
+    <span class="hook"
+      >Convert a short screen recording to an animated GIF for docs or issues.</span
+    >
+  </a>
+  <a href="/tools/image-diff.html">
+    <span class="name">Image Diff</span>
+    <span class="hook">Compare video frame exports or UI screenshots pixel by pixel.</span>
+  </a>
+  <a href="/tools/hash-generator.html">
+    <span class="name">Hash Generator</span>
+    <span class="hook">Checksum a converted file to verify it matches the original source.</span>
+  </a>
+</div>
 
-    <main>
-      <article>
-        <span class="page-label">Bench Tool</span>
-        <h1>MOV to MP4 Converter for Mac</h1>
-        <p class="lede">
-          A native Mac MOV to MP4 converter. Drag a .mov file into Bench and get an MP4 back without
-          uploading anything to a web service. Conversion happens on your Mac.
-        </p>
+<div class="cta-band">
+  <p>
+    <strong>MOV to MP4</strong> ships inside Bench, alongside the rest of the toolbox. $14.99
+    one-time, year of updates included.
+  </p>
+  <a href="/bench.html#pricing">Get Bench</a>
+</div>
 
-        <h2>What it does</h2>
-        <p>
-          Bench's MOV to MP4 tool converts QuickTime .mov files to H.264 MP4 using macOS's built-in
-          AVFoundation framework. The output is a broadly compatible MP4 with no intermediate files:
-          drag the source in, choose a destination, and the converted file lands there. This is the
-          format most video platforms, Slack, and Notion accept when the original screen recording
-          from a Mac comes out as a .mov. No third-party codecs, no ffmpeg command to remember, no
-          browser upload.
-        </p>
-
-        <h2>Why use Bench's MOV to MP4 converter</h2>
-        <p>
-          Web-based converters require you to upload the file to a remote server. For screen
-          recordings that contain in-progress code, internal dashboards, or unreleased UI, that's a
-          meaningful tradeoff. Bench converts locally using macOS APIs. The video stays on your disk
-          from start to finish. It's also faster than a browser upload for larger recordings: the
-          bottleneck is local I/O and the encoder, not network speed.
-        </p>
-        <ul>
-          <li><strong>Native Mac app.</strong> SwiftUI, single window, instant launch.</li>
-          <li><strong>Offline.</strong> No network calls. Video files stay on your Mac.</li>
-          <li><strong>No tracking.</strong> No analytics, no telemetry, no third-party SDKs.</li>
-          <li>
-            <strong>One-time purchase.</strong> $14.99 once, year of updates included, $9 optional
-            renewal. No subscription.
-          </li>
-        </ul>
-
-        <h2>How to open</h2>
-        <div class="how-to-open">
-          <p>Drag a .mov file into Bench to open MOV to MP4 directly.</p>
-        </div>
-
-        <h2>Related tools in Bench</h2>
-        <div class="related">
-          <a href="/tools/mov-to-gif.html">
-            <span class="name">MOV to GIF</span>
-            <span class="hook"
-              >Convert a short screen recording to an animated GIF for docs or issues.</span
-            >
-          </a>
-          <a href="/tools/image-diff.html">
-            <span class="name">Image Diff</span>
-            <span class="hook">Compare video frame exports or UI screenshots pixel by pixel.</span>
-          </a>
-          <a href="/tools/hash-generator.html">
-            <span class="name">Hash Generator</span>
-            <span class="hook"
-              >Checksum a converted file to verify it matches the original source.</span
-            >
-          </a>
-        </div>
-
-        <div class="cta-band">
-          <p>
-            <strong>MOV to MP4</strong> ships inside Bench, alongside the rest of the toolbox.
-            $14.99 one-time, year of updates included.
-          </p>
-          <a href="/bench.html#pricing">Get Bench</a>
-        </div>
-
-        <hr />
-        <p style="font-size: 0.8125rem; color: var(--muted)">
-          Bench is published by Zentsu LLC. <a href="/bench.html">Back to Bench</a> ·
-          <a href="/bench/renewal-faq.html">Renewal FAQ</a> ·
-          <a href="/bench/support.html">Support</a>.
-        </p>
-      </article>
-    </main>
-
-    <footer>
-      <div class="footer-links">
-        <a href="/bench.html">Bench</a>
-        <a href="/bench/support.html">Support</a>
-        <a href="/privacy.html">Privacy</a>
-        <a href="/terms.html">Terms</a>
-      </div>
-      <p>&copy; 2026 Zentsu LLC</p>
-    </footer>
-  </body>
-</html>
+<hr />
+<p style="font-size: 0.8125rem; color: var(--muted)">
+  Bench is published by Zentsu LLC. <a href="/bench.html">Back to Bench</a> ·
+  <a href="/bench/renewal-faq.html">Renewal FAQ</a> · <a href="/bench/support.html">Support</a>.
+</p>

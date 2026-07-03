@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head-common.html %}
+    <title>{{ page.h1 }} — Bench by Zentsu LLC</title>
+    <meta name="description" content="{{ page.description }}" />
+    <link rel="canonical" href="https://zentsu.app{{ page.url }}" />
+
+    <!-- Open Graph / social -->
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Bench" />
+    <meta property="og:title" content="{{ page.h1 }}" />
+    <meta
+      property="og:description"
+      content="{{ page.og_description | default: page.description }}"
+    />
+    <meta property="og:url" content="https://zentsu.app{{ page.url }}" />
+    <meta property="og:image" content="https://zentsu.app/assets/bench-icon.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="stylesheet" href="/tools.css" />
+
+    <!-- JSON-LD: SoftwareApplication for the tool, scoped to Bench -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Bench — {{ page.tool_name }}",
+        "operatingSystem": "macOS 14+",
+        "applicationCategory": "DeveloperApplication",
+        "url": "https://zentsu.app{{ page.url }}",
+        "publisher": { "@type": "Organization", "name": "Zentsu LLC" },
+        "offers": {
+          "@type": "Offer",
+          "price": "14.99",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Bench",
+            "item": "https://zentsu.app/bench.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "{{ page.tool_name }}",
+            "item": "https://zentsu.app{{ page.url }}"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    {% include nav.html %}
+
+    <main>
+      <article>
+        <span class="page-label">Bench Tool</span>
+        <h1>{{ page.h1 }}</h1>
+        {{ content }}
+      </article>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="/bench.html">Bench</a>
+        <a href="/bench/support.html">Support</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+      </div>
+      <p>&copy; 2026 Zentsu LLC</p>
+    </footer>
+  </body>
+</html>

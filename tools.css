@@ -1,0 +1,114 @@
+/* ──────────────────────────────────────────────────────────────────────────
+   tools.css — shared styles for the per-tool landing pages (/tools/*.html)
+   Extracted from the previously-inlined <style> block each tool page carried.
+   Layered on top of /shared.css; loaded by _layouts/tool.html.
+   ────────────────────────────────────────────────────────────────────────── */
+
+main {
+  flex: 1;
+  padding: 3rem 1.5rem;
+}
+article h3 {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.4rem;
+  color: var(--text);
+}
+.lede {
+  font-size: 1.0625rem;
+  color: var(--body-text);
+  line-height: 1.65;
+  margin: 0.5rem 0 1.75rem;
+}
+.smart-paste {
+  background: var(--accent-light);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0 0.5rem;
+}
+.smart-paste code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.8125rem;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  word-break: break-all;
+}
+.how-to-open {
+  background: var(--accent-light);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0 0.5rem;
+}
+.related {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.related a {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  text-decoration: none;
+}
+.related a:hover {
+  border-color: var(--accent);
+}
+.related .name {
+  display: block;
+  font-weight: 600;
+  color: var(--text);
+  font-size: 0.9375rem;
+  margin-bottom: 0.25rem;
+}
+.related .hook {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+@media (max-width: 700px) {
+  .related {
+    grid-template-columns: 1fr;
+  }
+}
+.cta-band {
+  background: var(--accent-light);
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  padding: 1.5rem 1.5rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.cta-band p {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--text);
+}
+.cta-band a {
+  background: var(--text);
+  color: var(--bg);
+  padding: 0.65rem 1.15rem;
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.cta-band a:hover {
+  background: var(--accent);
+  color: #fff;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}

@@ -1,271 +1,81 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Markdown Preview for Mac — Bench by Zentsu LLC</title>
-    <meta
-      name="description"
-      content="Native Mac Markdown preview. Paste Markdown, see the rendered output instantly. Check your README before you push. Offline, no tracking. Part of Bench, $14.99 one-time."
-    />
-    <link rel="canonical" href="https://zentsu.app/tools/markdown-preview.html" />
+---
+layout: tool
+h1: 'Markdown Preview for Mac'
+tool_name: 'Markdown Preview'
+description: 'Native Mac Markdown preview. Paste Markdown, see the rendered output instantly. Check your README before you push. Offline, no tracking. Part of Bench, $14.99 one-time.'
+og_description: 'Native Mac Markdown preview. Paste Markdown, see the rendered output instantly. Check your README before you push. Offline, no tracking.'
+---
 
-    <!-- Open Graph / social -->
-    <meta property="og:type" content="article" />
-    <meta property="og:site_name" content="Bench" />
-    <meta property="og:title" content="Markdown Preview for Mac" />
-    <meta
-      property="og:description"
-      content="Native Mac Markdown preview. Paste Markdown, see the rendered output instantly. Check your README before you push. Offline, no tracking."
-    />
-    <meta property="og:url" content="https://zentsu.app/tools/markdown-preview.html" />
-    <meta property="og:image" content="https://zentsu.app/assets/bench-icon.png" />
-    <meta name="twitter:card" content="summary_large_image" />
+<p class="lede">
+  A native Mac Markdown preview. Paste Markdown, see what it renders to, before you commit it,
+  before you push it, before it lands in a PR that 40 people read.
+</p>
 
-    <link rel="icon" type="image/png" href="/assets/bench-icon.png" />
-    <link rel="stylesheet" href="/shared.css" />
-    <script src="/flags.js"></script>
+<h2>What it does</h2>
+<p>
+  Bench's Markdown preview takes CommonMark-compatible Markdown and renders it to styled HTML in a
+  side panel. Headings, bold, italic, inline code, fenced code blocks, tables, and blockquotes all
+  render correctly. The preview updates as you edit the source pane, so you see the result without
+  switching contexts. It's useful for READMEs, pull-request descriptions, changelogs, and any other
+  structured text you're writing in Markdown before it lands somewhere public.
+</p>
 
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Bench — Markdown Preview",
-        "operatingSystem": "macOS 14+",
-        "applicationCategory": "DeveloperApplication",
-        "url": "https://zentsu.app/tools/markdown-preview.html",
-        "publisher": { "@type": "Organization", "name": "Zentsu LLC" },
-        "offers": {
-          "@type": "Offer",
-          "price": "14.99",
-          "priceCurrency": "USD"
-        }
-      }
-    </script>
+<h2>Why use Bench's Markdown preview</h2>
+<p>
+  Most editors have Markdown preview built in, but it's another setting to find and another mode to
+  toggle. Bench is one keystroke away from any app: paste the Markdown, check the render, copy the
+  result or go back to your editor. For quick spot-checks, that's faster than configuring a preview
+  panel in a tool you don't normally use for writing.
+</p>
+<ul>
+  <li><strong>Native Mac app.</strong> SwiftUI, single window, instant launch.</li>
+  <li><strong>Offline.</strong> No network calls. Whatever you paste stays on your Mac.</li>
+  <li><strong>No tracking.</strong> No analytics, no telemetry, no third-party SDKs.</li>
+  <li>
+    <strong>One-time purchase.</strong> $14.99 once, year of updates included, $9 optional renewal,
+    no subscription.
+  </li>
+</ul>
 
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Bench",
-            "item": "https://zentsu.app/bench.html"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Markdown Preview",
-            "item": "https://zentsu.app/tools/markdown-preview.html"
-          }
-        ]
-      }
-    </script>
+<h2>Paste it. Bench picks the tool.</h2>
+<div class="smart-paste">
+  <p>
+    Smart Detection reads your clipboard locally and routes you to Markdown preview when it sees
+    something like:
+  </p>
+  <p><code>## Getting started&#10;&#10;Run `npm install` then `npm start`.</code></p>
+  <p style="margin-top: 0.5rem; font-size: 0.875rem; color: var(--muted)">
+    The detection runs entirely on your Mac as a rule-based heuristic. It looks for common Markdown
+    syntax patterns like headings, fenced code blocks, and link syntax. Nothing is uploaded.
+  </p>
+</div>
 
-    <style>
-      main {
-        flex: 1;
-        padding: 3rem 1.5rem;
-      }
-      article h3 {
-        font-size: 0.9375rem;
-        font-weight: 600;
-        margin-top: 1.5rem;
-        margin-bottom: 0.4rem;
-        color: var(--text);
-      }
-      .lede {
-        font-size: 1.0625rem;
-        color: var(--body-text);
-        line-height: 1.65;
-        margin: 0.5rem 0 1.75rem;
-      }
-      .smart-paste {
-        background: var(--accent-light);
-        border-radius: 8px;
-        padding: 1rem 1.25rem;
-        margin: 1rem 0 0.5rem;
-      }
-      .smart-paste code {
-        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-        font-size: 0.8125rem;
-        background: rgba(0, 0, 0, 0.05);
-        padding: 0.1rem 0.35rem;
-        border-radius: 4px;
-        word-break: break-all;
-      }
-      .related {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.75rem;
-        margin-top: 1rem;
-      }
-      .related a {
-        display: block;
-        background: var(--surface);
-        border: 1px solid var(--border);
-        border-radius: 8px;
-        padding: 0.85rem 1rem;
-        text-decoration: none;
-      }
-      .related a:hover {
-        border-color: var(--accent);
-      }
-      .related .name {
-        display: block;
-        font-weight: 600;
-        color: var(--text);
-        font-size: 0.9375rem;
-        margin-bottom: 0.25rem;
-      }
-      .related .hook {
-        font-size: 0.8125rem;
-        color: var(--muted);
-        line-height: 1.45;
-      }
-      @media (max-width: 700px) {
-        .related {
-          grid-template-columns: 1fr;
-        }
-      }
-      .cta-band {
-        background: var(--accent-light);
-        border: 1px solid var(--accent);
-        border-radius: 12px;
-        padding: 1.5rem 1.5rem;
-        margin-top: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1rem;
-        flex-wrap: wrap;
-      }
-      .cta-band p {
-        margin: 0;
-        font-size: 0.9375rem;
-        color: var(--text);
-      }
-      .cta-band a {
-        background: var(--text);
-        color: var(--bg);
-        padding: 0.65rem 1.15rem;
-        border-radius: 8px;
-        font-size: 0.9375rem;
-        font-weight: 600;
-        text-decoration: none;
-      }
-      .cta-band a:hover {
-        background: var(--accent);
-        color: #fff;
-      }
-      .footer-links {
-        display: flex;
-        justify-content: center;
-        gap: 1.25rem;
-        margin-bottom: 0.5rem;
-        flex-wrap: wrap;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="nav-placeholder"></div>
-    <script src="/nav.js"></script>
+<h2>Related tools in Bench</h2>
+<div class="related">
+  <a href="/tools/text-diff.html">
+    <span class="name">Text Diff</span>
+    <span class="hook">Compare two versions of a Markdown document side by side.</span>
+  </a>
+  <a href="/tools/json-formatter.html">
+    <span class="name">JSON Formatter</span>
+    <span class="hook">Format the JSON you're embedding in code blocks.</span>
+  </a>
+  <a href="/tools/lorem-ipsum.html">
+    <span class="name">Lorem Ipsum</span>
+    <span class="hook">Fill in placeholder text while you're building out a doc structure.</span>
+  </a>
+</div>
 
-    <main>
-      <article>
-        <span class="page-label">Bench Tool</span>
-        <h1>Markdown Preview for Mac</h1>
-        <p class="lede">
-          A native Mac Markdown preview. Paste Markdown, see what it renders to, before you commit
-          it, before you push it, before it lands in a PR that 40 people read.
-        </p>
+<div class="cta-band">
+  <p>
+    <strong>Markdown Preview</strong> ships inside Bench, alongside the rest of the tools. $14.99
+    one-time, year of updates included.
+  </p>
+  <a href="/bench.html#pricing">Get Bench</a>
+</div>
 
-        <h2>What it does</h2>
-        <p>
-          Bench's Markdown preview takes CommonMark-compatible Markdown and renders it to styled
-          HTML in a side panel. Headings, bold, italic, inline code, fenced code blocks, tables, and
-          blockquotes all render correctly. The preview updates as you edit the source pane, so you
-          see the result without switching contexts. It's useful for READMEs, pull-request
-          descriptions, changelogs, and any other structured text you're writing in Markdown before
-          it lands somewhere public.
-        </p>
-
-        <h2>Why use Bench's Markdown preview</h2>
-        <p>
-          Most editors have Markdown preview built in, but it's another setting to find and another
-          mode to toggle. Bench is one keystroke away from any app: paste the Markdown, check the
-          render, copy the result or go back to your editor. For quick spot-checks, that's faster
-          than configuring a preview panel in a tool you don't normally use for writing.
-        </p>
-        <ul>
-          <li><strong>Native Mac app.</strong> SwiftUI, single window, instant launch.</li>
-          <li><strong>Offline.</strong> No network calls. Whatever you paste stays on your Mac.</li>
-          <li><strong>No tracking.</strong> No analytics, no telemetry, no third-party SDKs.</li>
-          <li>
-            <strong>One-time purchase.</strong> $14.99 once, year of updates included, $9 optional
-            renewal, no subscription.
-          </li>
-        </ul>
-
-        <h2>Paste it. Bench picks the tool.</h2>
-        <div class="smart-paste">
-          <p>
-            Smart Detection reads your clipboard locally and routes you to Markdown preview when it
-            sees something like:
-          </p>
-          <p><code>## Getting started&#10;&#10;Run `npm install` then `npm start`.</code></p>
-          <p style="margin-top: 0.5rem; font-size: 0.875rem; color: var(--muted)">
-            The detection runs entirely on your Mac as a rule-based heuristic. It looks for common
-            Markdown syntax patterns like headings, fenced code blocks, and link syntax. Nothing is
-            uploaded.
-          </p>
-        </div>
-
-        <h2>Related tools in Bench</h2>
-        <div class="related">
-          <a href="/tools/text-diff.html">
-            <span class="name">Text Diff</span>
-            <span class="hook">Compare two versions of a Markdown document side by side.</span>
-          </a>
-          <a href="/tools/json-formatter.html">
-            <span class="name">JSON Formatter</span>
-            <span class="hook">Format the JSON you're embedding in code blocks.</span>
-          </a>
-          <a href="/tools/lorem-ipsum.html">
-            <span class="name">Lorem Ipsum</span>
-            <span class="hook"
-              >Fill in placeholder text while you're building out a doc structure.</span
-            >
-          </a>
-        </div>
-
-        <div class="cta-band">
-          <p>
-            <strong>Markdown Preview</strong> ships inside Bench, alongside the rest of the tools.
-            $14.99 one-time, year of updates included.
-          </p>
-          <a href="/bench.html#pricing">Get Bench</a>
-        </div>
-
-        <hr />
-        <p style="font-size: 0.8125rem; color: var(--muted)">
-          Bench is published by Zentsu LLC. <a href="/bench.html">Back to Bench</a> ·
-          <a href="/bench/renewal-faq.html">Renewal FAQ</a> ·
-          <a href="/bench/support.html">Support</a>.
-        </p>
-      </article>
-    </main>
-
-    <footer>
-      <div class="footer-links">
-        <a href="/bench.html">Bench</a>
-        <a href="/bench/support.html">Support</a>
-        <a href="/privacy.html">Privacy</a>
-        <a href="/terms.html">Terms</a>
-      </div>
-      <p>&copy; 2026 Zentsu LLC</p>
-    </footer>
-  </body>
-</html>
+<hr />
+<p style="font-size: 0.8125rem; color: var(--muted)">
+  Bench is published by Zentsu LLC. <a href="/bench.html">Back to Bench</a> ·
+  <a href="/bench/renewal-faq.html">Renewal FAQ</a> · <a href="/bench/support.html">Support</a>.
+</p>
