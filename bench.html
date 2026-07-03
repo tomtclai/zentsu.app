@@ -1,8 +1,10 @@
+---
+---
+
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% include head-common.html %}
     <title>Bench: Dev Toolbox for macOS</title>
     <meta
       name="description"
@@ -10,12 +12,6 @@
     />
 
     <link rel="canonical" href="https://zentsu.app/bench.html" />
-
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/bench-icon.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/bench-icon.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/bench-icon.png" />
-    <link rel="shortcut icon" href="assets/bench-icon.png" />
 
     <!-- Open Graph / social -->
     <meta property="og:type" content="website" />
@@ -44,9 +40,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/shared.css" />
     <link rel="stylesheet" href="/bench.css" />
-    <script src="/flags.js"></script>
 
     <script type="application/ld+json">
       {
@@ -171,7 +165,7 @@
     </script>
   </head>
   <body>
-    <div id="nav-placeholder"></div>
+    {% include nav.html %}
 
     <main>
       <!-- ── HERO ── -->
@@ -1280,7 +1274,6 @@
       data-cfasync="false"
       src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
     ></script>
-    <script src="/nav.js"></script>
     <script src="/bench.js" defer></script>
   </body>
 </html>

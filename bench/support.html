@@ -1,8 +1,10 @@
+---
+---
+
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% include head-common.html %}
     <title>Bench Support · Zentsu LLC</title>
     <meta
       name="description"
@@ -28,8 +30,6 @@
     />
     <meta name="twitter:image" content="https://zentsu.app/assets/bench-icon.png" />
 
-    <link rel="stylesheet" href="/shared.css" />
-    <script src="/flags.js"></script>
     <style>
       /* ── Content (page-specific) ── */
       main {
@@ -82,8 +82,7 @@
     </style>
   </head>
   <body>
-    <div id="nav-placeholder"></div>
-    <script src="/nav.js"></script>
+    {% include nav.html %}
 
     <main>
       <article>

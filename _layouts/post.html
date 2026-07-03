@@ -4,8 +4,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% include head-common.html %}
     <title>{{ page.title }} — Zentsu</title>
     <meta name="description" content="{{ page.description | default: site.description }}" />
     <link rel="canonical" href="{{ page.url | absolute_url }}" />
@@ -17,12 +16,9 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://zentsu.app/assets/bench-icon.png" />
     {% seo %}
-    <link rel="stylesheet" href="/shared.css" />
-    <script src="/flags.js"></script>
   </head>
   <body>
-    <div id="nav-placeholder"></div>
-    <script src="/nav.js"></script>
+    {% include nav.html %}
     <main style="flex: 1; padding: 3rem 1.5rem; max-width: 720px; margin: 0 auto">
       <article>
         <span class="page-label">Blog</span>

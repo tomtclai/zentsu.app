@@ -1,8 +1,10 @@
+---
+---
+
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% include head-common.html %}
     <title>Zentsu LLC · Software for Apple platforms</title>
     <meta
       name="description"
@@ -29,9 +31,6 @@
       content="A software studio building small, focused native tools and apps for macOS, iOS, and iPadOS."
     />
     <meta name="twitter:image" content="https://zentsu.app/assets/bench-icon.png" />
-
-    <link rel="stylesheet" href="/shared.css" />
-    <script src="/flags.js"></script>
 
     <script type="application/ld+json">
       {
@@ -208,7 +207,7 @@
     </style>
   </head>
   <body>
-    <div id="nav-placeholder"></div>
+    {% include nav.html %}
 
     <main>
       <section class="hero">
@@ -302,7 +301,5 @@
     <footer>
       <p>&copy; 2026 Zentsu LLC</p>
     </footer>
-
-    <script src="/nav.js"></script>
   </body>
 </html>
