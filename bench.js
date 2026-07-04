@@ -10,11 +10,6 @@
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-// When the App Store launches, swap this for the ASC URL.
-const NAV_CTA_HREF = '#tools';
-const NAV_CTA_LABEL_SHORT = 'Tools';
-const NAV_CTA_LABEL_LONG = 'See all tools';
-
 /* ── Collect tools from the DOM (only place they're authored) ── */
 function collectTools() {
   const out = [];
@@ -159,44 +154,6 @@ const TOTAL = TOOLS.length;
     { threshold: 0.12, rootMargin: '0px 0px -40px 0px' },
   );
   items.forEach((el) => io.observe(el));
-})();
-
-/* ── Sticky mini-CTA in nav ── */
-(function navMiniCta() {
-  const nav = document.querySelector('nav ul');
-  if (!nav) return;
-  const li = document.createElement('li');
-  li.style.marginLeft = 'auto';
-  const a = document.createElement('a');
-  a.className = 'nav-mini-cta';
-  a.href = NAV_CTA_HREF;
-  a.innerHTML =
-    '<span class="nav-mini-long">' +
-    NAV_CTA_LABEL_LONG +
-    '</span><span aria-hidden="true" style="opacity:.6;">→</span>';
-  // Shorter label on narrow screens (handled in CSS by .nav-mini-long hide)
-  const short = document.createElement('span');
-  short.textContent = NAV_CTA_LABEL_SHORT;
-  short.style.display = 'none';
-  li.appendChild(a);
-  nav.appendChild(li);
-
-  // Show once hero is mostly offscreen
-  const hero = document.querySelector('.hero');
-  if (!hero) return;
-  if (!('IntersectionObserver' in window)) {
-    a.classList.add('show');
-    return;
-  }
-  const io = new IntersectionObserver(
-    (entries) => {
-      const e = entries[0];
-      if (e.intersectionRatio < 0.18) a.classList.add('show');
-      else a.classList.remove('show');
-    },
-    { threshold: [0, 0.18, 0.5, 1] },
-  );
-  io.observe(hero);
 })();
 
 /* ───────────────────────────────────────────────────────────

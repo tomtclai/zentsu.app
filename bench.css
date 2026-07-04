@@ -43,42 +43,6 @@ body {
 /* ── Nav (match existing site chrome) ── */
 /* Nav rules live in /shared.css now (sticky + backdrop-blur, applied to all pages). */
 
-/* Sticky mini-CTA in nav (appended by JS) */
-.nav-mini-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.4rem 0.85rem;
-  font-size: 0.8125rem;
-  font-weight: 600;
-  color: var(--bg);
-  background: var(--ink);
-  border-radius: 8px;
-  text-decoration: none !important;
-  letter-spacing: 0;
-  opacity: 0;
-  transform: translateY(-4px);
-  pointer-events: none;
-  transition:
-    opacity 0.25s ease,
-    transform 0.25s ease,
-    background 0.15s ease;
-}
-.nav-mini-cta.show {
-  opacity: 1;
-  transform: none;
-  pointer-events: auto;
-}
-.nav-mini-cta:hover {
-  background: var(--spot);
-  color: var(--bg) !important;
-}
-@media (max-width: 520px) {
-  .nav-mini-cta .nav-mini-long {
-    display: none;
-  }
-}
-
 /* ── Layout ── */
 main {
   flex: 1;
@@ -1825,10 +1789,6 @@ footer a:hover {
   }
   .btn-primary:hover {
     background: var(--spot);
-    color: var(--bg);
-  }
-  .nav-mini-cta {
-    background: var(--ink);
     color: var(--bg);
   }
   .shots-section {
