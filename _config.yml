@@ -6,6 +6,11 @@ exclude:
   - node_modules/
   - README.md
   - tools/_template.html
+  # CI: setup-ruby vendors gems into the workspace; Jekyll must not build them
+  - vendor/
+  - .bundle/
+  - Gemfile
+  - Gemfile.lock
 
 url: 'https://zentsu.app'
 title: 'Zentsu'
