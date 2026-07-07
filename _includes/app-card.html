@@ -1,0 +1,55 @@
+{%- comment -%} One Zentsu app card, rendered from a single _data/apps.yml entry at BUILD time. Used
+by the studio homepage (index.html) to iterate the apps list. Pass the app entry in as
+`include.app`: {% include app-card.html app=item %} Layout reuses the existing .product component
+from index.html (icon + body). Behaviour by status: live → status line, tagline, price (from
+_config.yml via price_key), and a "Learn more" link to page_url. coming_soon → a muted "Coming soon"
+label, tagline, price, and (if a page exists) a "Learn more" link. The link uses the brand accent on
+every card regardless of status; the coming-soon card only reads quieter via its background. NO App
+Store / download button. parked → not rendered (index.html filters these out before calling). Icon:
+if the app's icon file is missing the <img /> would break, so the card renders a monogram tile
+(first letter of the slug) tinted with the app's accent as a graceful fallback. Drop the real icon
+in later, no markup change. Do NOT hardcode a "$" price here. It comes from _config.yml via
+price_key. {%- endcomment -%} {%- assign app = include.app -%} {%- assign price = nil -%} {%- if
+app.price_key -%}{%- assign price = site[app.price_key] -%}{%- endif -%} {%- assign monogram =
+app.slug | slice: 0 | upcase -%}
+<article class="product{% if app.status != 'live' %} product--soon{% endif %}">
+  {%- if app.icon %}
+  <img
+    class="icon"
+    src="{{ app.icon }}"
+    alt="{{ app.name }} app icon"
+    width="64"
+    height="64"
+    loading="lazy"
+    onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'icon icon--mono',textContent:'{{ monogram }}',style:'--mono-accent:{{ app.accent }}'}))"
+  />
+  {%- else %}
+  <span class="icon icon--mono" style="--mono-accent: {{ app.accent }}" aria-hidden="true"
+    >{{ monogram }}</span
+  >
+  {%- endif %}
+  <div class="body">
+    <h3>{{ app.name }}</h3>
+    {%- if app.status == 'live' %}
+    <p class="status">
+      <span class="status-tag">Private beta</span> · {{ app.platforms }}{% if app.status_note %} ·
+      {{ app.status_note }}{% endif %}
+    </p>
+    {%- elsif app.status == 'coming_soon' %}
+    <p class="status">
+      <span class="status-tag">Coming soon</span> · {{ app.platforms }}{% if app.status_note %} · {{
+      app.status_note }}{% endif %}
+    </p>
+    {%- endif %}
+    <p>{{ app.tagline }}</p>
+    <div class="product-foot">
+      {%- if price %}
+      <span class="product-price"
+        >${{ price }}{% if app.price_suffix %} {{ app.price_suffix }}{% endif %}</span
+      >
+      {%- endif %} {%- if app.page_url %}
+      <a class="more" href="{{ app.page_url }}">Learn more about {{ app.name }} →</a>
+      {%- endif %}
+    </div>
+  </div>
+</article>

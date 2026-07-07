@@ -1,12 +1,13 @@
 {%- comment -%}
-  Bench tool index — rendered from _data/tools.yml at BUILD time.
+  Bench tool index, rendered from _data/tools.yml at BUILD time.
 
   Emits the #tool-filters pills and the #tool-cats category list with real
-  numbers baked in: item numbers (01, 02, …), per-category count badges, the
-  filter-pill counts, and (via #spec-tool-count elsewhere) the total. bench.js
-  recomputes the identical values at runtime, so JS-on and no-JS renders agree.
+  numbers baked in: per-category count badges, the filter-pill counts, and
+  (via #spec-tool-count elsewhere) the total. Each tool row shows its Lucide
+  glyph (from tool-hero-icons/) in the left slot. bench.js recomputes the
+  identical count values at runtime, so JS-on and no-JS renders agree.
 
-  Do NOT hand-edit numbers or add tools here — edit _data/tools.yml. This file
+  Do NOT hand-edit numbers or add tools here. Edit _data/tools.yml. This file
   is deliberately kept out of Prettier (.prettierignore) because Prettier
   reflows Liquid control flow inside start tags.
 {%- endcomment -%}
@@ -27,7 +28,6 @@
 </div>
 
 <div class="tool-cats reveal" id="tool-cats">
-  {%- assign counter = 0 %}
   {%- for category in cats %}
   {%- assign cn = category.tools | size %}
   <div class="tool-cat" data-cat="{{ category.name }}">
@@ -51,13 +51,23 @@
     </header>
     <ul>
       {%- for tool in category.tools %}
-      {%- assign counter = counter | plus: 1 %}
-      <li data-tool="{{ tool.label }}"{% if tool.popular %} data-popular{% endif %} data-benefit="{{ tool.benefit }}">
-        <span class="n mono">{% if counter < 10 %}0{% endif %}{{ counter }}</span
+      <li data-tool="{{ tool.label }}" data-benefit="{{ tool.benefit }}">
+        <span class="tool-ico" aria-hidden="true">{% include tool-hero-icons/{{ tool.icon }}.svg %}</span
         ><span><a href="{{ tool.href }}">{{ tool.label }}</a>{% if tool.meta %} <span class="mono" style="color: var(--muted); font-size: 0.78rem">{{ tool.meta }}</span>{% endif %}</span>
       </li>
       {%- endfor %}
     </ul>
   </div>
   {%- endfor %}
+  {%- comment -%}
+    Pad the last row so trailing empty grid cells read as plain page
+    background instead of the container's hairline color. Count is for the
+    widest (3-col) layout; fillers are page-colored and borderless, so a
+    filler that lands mid-grid at the 2-col width is invisible, and all
+    fillers are hidden at the 1-col width (see bench.css).
+  {%- endcomment -%}
+  {%- assign rem = cats.size | modulo: 3 %}
+  {%- if rem != 0 %}{%- assign fillers = 3 | minus: rem %}{%- for i in (1..fillers) %}
+  <div class="tool-cat-filler" aria-hidden="true"></div>
+  {%- endfor %}{%- endif %}
 </div>

@@ -3,6 +3,10 @@
 # it out of the sitemap (jekyll-sitemap honors sitemap:false) and the search
 # index (see the noindex robots meta below) until the renewal product ships.
 sitemap: false
+# Keeps its own bespoke title/OG block: the description interpolates the renewal
+# price via Liquid ({{ site.price_renewal }}), which front-matter YAML can't
+# render, so head-common supplies only the base scaffolding here.
+seo_managed_externally: true
 ---
 
 <!doctype html>
@@ -31,7 +35,7 @@ sitemap: false
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:alt" content="Bench — Dev Toolbox for macOS" />
+    <meta property="og:image:alt" content="Bench: dev toolbox for macOS" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Bench Renewal FAQ · Zentsu LLC" />
     <meta
@@ -116,17 +120,17 @@ sitemap: false
 
         <h3>Is this a subscription? Will I be auto-billed?</h3>
         <p>
-          No. There is no subscription, no auto-renewal billing, and no surprise charges. When your
-          renewal year ends, nothing happens automatically. If you want another year of updates, you
-          come back and pay ${{ site.price_renewal }}. If you don't, nothing is charged and the app
-          keeps running.
+          No. It is not a subscription, and nothing auto-renews or bills you again on its own. When
+          your renewal year ends, nothing happens automatically. If you want another year of
+          updates, you come back and pay ${{ site.price_renewal }}. If you don't, nothing is charged
+          and the app keeps running.
         </p>
 
         <h3>What happens if I skip a year, or several, and want to renew later?</h3>
         <p>
-          You can renew at any time. There's no penalty, no back-payment for the years you skipped,
-          and no expired-account state to recover from. Pay ${{ site.price_renewal }} and you're
-          back on the update train for another year.
+          You can renew at any time. There's no penalty and no back-payment for the years you
+          skipped, and nothing expires that you'd have to recover. Pay ${{ site.price_renewal }} and
+          you're back on the update train for another year.
         </p>
 
         <h3>Can I just keep using the version I have forever?</h3>
@@ -149,11 +153,12 @@ sitemap: false
 
         <h3>Why use this model instead of a subscription?</h3>
         <p>
-          Bench has no servers, no accounts, and no recurring costs to operate. It's a native Mac
-          app that runs on your machine. A subscription would charge you indefinitely for something
-          that doesn't have indefinite costs. The renewal model lets us fund ongoing development
-          without forcing the app onto a billing cycle. If we ever stop shipping, the app you bought
-          stays exactly where it is, and nothing of yours disappears with us.
+          Bench runs entirely on your machine, with no servers or accounts to operate and no
+          recurring costs behind it. It's a native Mac app. A subscription would charge you
+          indefinitely for something that doesn't have indefinite costs. The renewal model lets us
+          fund ongoing development without forcing the app onto a billing cycle. If we ever stop
+          shipping, the app you bought stays exactly where it is, and nothing of yours disappears
+          with us.
         </p>
 
         <h3>Why a renewal model at all, instead of pure one-time purchase?</h3>

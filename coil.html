@@ -1,0 +1,160 @@
+---
+title: Coil · Subscription tracker by Zentsu LLC
+description: 'Coil is a native subscription tracker for iPhone and Mac. It runs on your device and never links to your bank. Currently in beta.'
+og_description: 'A native subscription tracker for iPhone and Mac. It runs on your device and never links to your bank.'
+canonical: https://zentsu.app/coil.html
+og_image_alt: 'Coil: subscription tracker by Zentsu LLC'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head-common.html %} {%- assign coil = site.data.apps.apps | where: 'slug', 'coil' |
+    first %} {%- assign coil_price = site[coil.price_key] %}
+
+    <style>
+      /* Page-specific only. The page shell (.wrap), hero base, section rhythm,
+         and small-screen hero padding now live in /shared.css. Coil overrides
+         just two shared values (the hero dot tint via --hero-dot, and a wider
+         .lede) and adds its own coming-soon badge, specline, points grid, and
+         prose block. */
+
+      /* Coil tints the pegboard hero dots with its warm spot color, and gives
+         the lede a touch more room than the studio default (32ch). */
+      .hero {
+        --hero-dot: rgba(184, 78, 26, 0.06);
+      }
+      .hero .lede {
+        max-width: 40ch;
+      }
+      .soon-badge {
+        display: inline-block;
+        font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.6875rem;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--spot);
+        background: var(--spot-soft);
+        padding: 0.32rem 0.62rem;
+        border-radius: 6px;
+        margin-bottom: 1.15rem;
+      }
+      .hero .specline {
+        margin-top: 1.25rem;
+        font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.8125rem;
+        color: var(--muted);
+      }
+      .points {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem 2.5rem;
+        list-style: none;
+      }
+      .points li {
+        padding-left: 0.9rem;
+        border-left: 2px solid var(--border);
+      }
+      .points li h3 {
+        font-size: 0.9375rem;
+        font-weight: 600;
+        color: var(--ink);
+        margin-bottom: 0.35rem;
+      }
+      .points li p {
+        font-size: 0.9375rem;
+        color: var(--body-text);
+        line-height: 1.6;
+      }
+      .block p.prose {
+        font-size: 0.9375rem;
+        color: var(--body-text);
+        line-height: 1.7;
+        max-width: 60ch;
+      }
+      .block p.prose a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      .block p.prose a:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 600px) {
+        .points {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    {% include nav.html %}
+
+    <main>
+      <section class="hero">
+        <div class="wrap">
+          <span class="soon-badge">Coming soon</span>
+          <h1>Coil</h1>
+          <p class="lede">Track every subscription in one place.</p>
+          <p class="detail">
+            Coil is a native subscription tracker for iPhone and Mac. It runs on your device, never
+            links to your bank, and needs no account. You add what you pay for, and Coil keeps the
+            renewals, totals, and reminders in front of you. It's in beta now, with the App Store
+            release close behind.
+          </p>
+          <p class="specline">
+            iOS · macOS · native Swift / SwiftUI{% if coil_price %} · ${{ coil_price }} one-time{%
+            endif %}
+          </p>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="wrap">
+          <h2>What it does</h2>
+          <ul class="points">
+            <li>
+              <h3>Everything in one place</h3>
+              <p>
+                Add each subscription once. Coil keeps the price, the billing cycle, and the next
+                renewal date together, so you always know what's coming.
+              </p>
+            </li>
+            <li>
+              <h3>Renewal reminders</h3>
+              <p>
+                A heads-up before a charge lands, so a free trial or a plan you meant to cancel
+                doesn't quietly renew.
+              </p>
+            </li>
+            <li>
+              <h3>Private by design</h3>
+              <p>
+                No bank linking and no account. What you enter stays on your devices, synced through
+                your own iCloud. We run no server and receive nothing.
+              </p>
+            </li>
+            <li>
+              <h3>Native on every device</h3>
+              <p>Built in Swift and SwiftUI for iPhone and Mac, not a web view in a wrapper.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="wrap">
+          <h2>Availability</h2>
+          <p class="prose">
+            Coil is in private beta. It isn't on the App Store yet, so there's nothing to download
+            from this page today. For how Coil handles your data, see the
+            <a href="/coil/privacy">Coil privacy policy</a>. For anything else, email
+            <a href="mailto:hello@zentsu.app">hello@zentsu.app</a>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>

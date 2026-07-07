@@ -8,7 +8,7 @@ og_description: '{{OG_DESCRIPTION}}'
 
 <!--
   ─────────────────────────────────────────────────────────────────────────
-  TOOL LANDING PAGE TEMPLATE — /tools/[slug].html
+  TOOL LANDING PAGE TEMPLATE: /tools/[slug].html
   ─────────────────────────────────────────────────────────────────────────
 
   One SEO-targeted landing page per Bench tool. Each targets long-tail
@@ -16,7 +16,7 @@ og_description: '{{OG_DESCRIPTION}}'
 
   Structure now lives in _layouts/tool.html (head, JSON-LD, nav, footer) and
   /tools.css (styles). A tool page is just the front matter above plus the
-  unique article body below — no head element, no style block, no nav/footer.
+  unique article body below. No head element, no style block, no nav/footer.
   This file is excluded from the build (see _config.yml), so its {{TOKEN}}
   placeholders are never rendered.
 
@@ -26,22 +26,22 @@ og_description: '{{OG_DESCRIPTION}}'
     2. Fill in the front-matter fields:
          h1              e.g. JWT Decoder for Mac
          tool_name       e.g. JWT Decoder (used in the SoftwareApplication
-                         name "Bench — [tool_name]" and the breadcrumb)
+                         name "Bench: [tool_name]" and the breadcrumb)
          description     ≤155-char meta description. Do NOT put the price in
-                         here — the tool layout appends "Part of Bench,
+                         here. The tool layout appends "Part of Bench,
                          $[price] one-time." automatically from _config.yml.
          og_description  shorter social variant (already price-free)
     3. Replace every {{TOKEN}} placeholder in the body below.
-    4. Pick 2–3 related tools for the cross-link block.
+    4. Pick 2 to 3 related tools for the cross-link block.
     5. Keep the body under ~600 words. Tight, useful, scannable pages win.
     6. Register the tool in _data/tools.yml so it appears in the bench.html
        tool index. Add one entry under the right category (label, href,
-       benefit, optional popular/meta) — the item numbers, count badges,
+       benefit, optional popular/meta). The item numbers, count badges,
        filter-pill counts and the "Counted exactly" total all derive from
        that file at build time. That is the only place tools are listed.
 
   Style rules:
-    • Anonymous studio voice — "we", never "I".
+    • Anonymous studio voice: "we", never "I".
     • Smart Detection is heuristic. Never say "AI" / "AI-powered" /
       "intelligent" / "machine learning" / "ML".
     • Don't name competitors. Never hardcode a dollar amount: the price
@@ -61,7 +61,10 @@ og_description: '{{OG_DESCRIPTION}}'
 <ul>
   <li><strong>Native Mac app.</strong> SwiftUI, single window, instant launch.</li>
   <li><strong>Offline.</strong> No network calls. Whatever you paste stays on your Mac.</li>
-  <li><strong>No tracking.</strong> No analytics, no telemetry, no third-party SDKs.</li>
+  <li>
+    <strong>No tracking.</strong> Nothing you enter is logged, sent, or shared. Bench has no
+    analytics and no third-party SDKs.
+  </li>
   <li>
     <strong>One-time purchase.</strong> ${{ site.price_lifetime }} once, year of updates included.
     No subscription.

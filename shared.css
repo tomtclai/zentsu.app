@@ -326,6 +326,218 @@ footer a:hover {
   display: revert !important;
 }
 
+/* ──────────────────────────────────────────────────────────────────────────
+   Marketing / product pages — shared component scaffold
+   Used by the studio homepage (index.html) and per-app pages (coil.html). This
+   is the ONE home for the page shell (.wrap), the pegboard hero, the section
+   rhythm (section.block + .block h2), and the app-card component (.product,
+   .status-tag). Both pages used to hand-copy these rules inline; now they only
+   declare their genuine page-specific deltas (the hero dot tint via
+   --hero-dot, the .hero .lede max-width, and their own two-column point grid).
+
+   bench.html loads /bench.css AFTER this file and redefines .wrap/.hero/main
+   with its own richer values, so these base rules never reach the flagship.
+   ────────────────────────────────────────────────────────────────────────── */
+main {
+  flex: 1;
+  width: 100%;
+}
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Hero — a quiet echo of the Bench pegboard grid. The dot tint defaults to a
+   near-ink neutral; per-app pages override --hero-dot with their spot color. */
+.hero {
+  position: relative;
+  padding: 5.5rem 0 3.5rem;
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    var(--hero-dot, rgba(20, 17, 15, 0.05)) 1px,
+    transparent 0
+  );
+  background-size: 24px 24px;
+  mask-image: linear-gradient(180deg, transparent 0, #000 30%, #000 78%, transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 30%, #000 78%, transparent 100%);
+  pointer-events: none;
+}
+.hero .wrap {
+  position: relative;
+}
+.hero h1 {
+  font-size: clamp(2.25rem, 5.5vw, 3.25rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+  color: var(--ink);
+  margin-bottom: 0.85rem;
+}
+.hero .lede {
+  font-size: clamp(1.1875rem, 2vw, 1.375rem);
+  font-weight: 400;
+  letter-spacing: normal;
+  color: var(--ink-soft);
+  line-height: 1.45;
+  margin-bottom: 1rem;
+  max-width: 32ch;
+}
+.hero p.detail {
+  font-size: 1.0625rem;
+  color: var(--muted);
+  line-height: 1.65;
+  max-width: 58ch;
+}
+
+/* Section rhythm — evenly spaced bands with a mono kicker heading. */
+section.block {
+  padding: 3.75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+section.block:last-of-type {
+  border-bottom: none;
+}
+.block h2 {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+/* App-card component (.product) — rendered by _includes/app-card.html on the
+   homepage. Icon + body, quieter "coming soon" variant, mono status tag, and a
+   monogram fallback tile for apps without a shipped icon yet. */
+.product {
+  display: flex;
+  gap: 1.35rem;
+  align-items: flex-start;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.65rem;
+  box-shadow: 0 1px 2px rgba(20, 17, 15, 0.04);
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.2s ease;
+}
+.product:hover {
+  border-color: var(--accent);
+  box-shadow: 0 12px 28px -18px rgba(20, 17, 15, 0.3);
+}
+/* Space between stacked cards (they're direct siblings, no container gap). */
+.product + .product {
+  margin-top: 1.25rem;
+}
+.product img.icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 15px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px -6px rgba(20, 17, 15, 0.25);
+}
+.product .body h3 {
+  font-size: 1.1875rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.015em;
+}
+.product .status {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  margin-bottom: 0.65rem;
+}
+.product .body p {
+  font-size: 0.9375rem;
+  color: var(--body-text);
+  line-height: 1.6;
+  margin-bottom: 0.85rem;
+}
+.product a.more {
+  font-size: 0.9375rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+.product a.more:hover {
+  text-decoration: underline;
+}
+/* Footer row of a card: price + link, wrapping cleanly on narrow cards. */
+.product .product-foot {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+}
+.product .product-price {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+/* Coming-soon cards: quieter, non-clickable-feeling, still on-brand. */
+.product--soon {
+  background: var(--bg-alt);
+}
+.product--soon:hover {
+  border-color: var(--border);
+  box-shadow: 0 1px 2px rgba(20, 17, 15, 0.04);
+}
+/* Status tag: shared mono-uppercase label that leads every card's status line,
+   so "Private beta" and "Coming soon" read as siblings. Live apps use the brand
+   accent; coming-soon uses the quieter spot. */
+.status-tag {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.product--soon .status-tag {
+  color: var(--spot);
+}
+/* Monogram fallback tile — stands in for a not-yet-shipped app icon. Same
+   footprint as .product img.icon so layout never shifts. */
+.icon--mono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 15px;
+  flex-shrink: 0;
+  font-family:
+    'Inter Tight',
+    -apple-system,
+    sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 1;
+  color: #fff;
+  background: var(--mono-accent, var(--accent));
+  box-shadow: 0 4px 12px -6px rgba(20, 17, 15, 0.25);
+}
+
+/* Shared hero padding tighten on small screens (marketing + product pages). */
+@media (max-width: 600px) {
+  .hero {
+    padding: 3.75rem 0 2.75rem;
+  }
+  .product {
+    flex-direction: column;
+  }
+}
+
 /* ── Dark mode — matched to bench.css dark tokens ── */
 @media (prefers-color-scheme: dark) {
   :root {

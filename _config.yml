@@ -14,20 +14,29 @@ exclude:
 
 url: 'https://zentsu.app'
 title: 'Zentsu'
-description: 'Native Mac developer tools by Zentsu LLC.'
+description: 'Software for Apple platforms, built by Zentsu LLC.'
 
-# ── Bench pricing: single source of truth ──
+# ── Pricing: single source of truth ──
 # Every price shown anywhere on the site (pricing cards, FAQ prose, the FAQPage
-# and SoftwareApplication JSON-LD, tool pages, meta descriptions) renders from
-# these two values via Liquid. Change a price here and rebuild — that is the
-# only edit required. Values are the numeric amounts only; the "$" and currency
-# label live in the templates. Currency is USD. Keep in sync with the app's
-# StoreKit configuration.
+# and SoftwareApplication JSON-LD, tool pages, app cards, meta descriptions)
+# renders from these values via Liquid. Change a price here and rebuild. That
+# is the only edit required. Values are the numeric amounts only; the "$" and
+# currency label live in the templates. Currency is USD. Keep in sync with each
+# app's StoreKit configuration.
+#
+# Per-app prices are keyed so the apps data (_data/apps.yml) can reference them
+# via `price_key` without hardcoding a "$" figure. Add a new app's price here,
+# then point its apps.yml entry's `price_key` at it (e.g. price_key: price_coil_lifetime).
+
+# Bench: one-time lifetime purchase.
 price_lifetime: '14.99'
 # The renewal-for-updates SKU is not offered at launch (it does not exist in App
 # Store Connect yet), so this value is intentionally not rendered anywhere on the
 # site. Kept here so the renewal copy can be restored in one place once it ships.
 price_renewal: '9'
+
+# Coil: one-time lifetime purchase (currently TestFlight; not yet on the App Store).
+price_coil_lifetime: '14.99'
 
 plugins:
   - jekyll-seo-tag

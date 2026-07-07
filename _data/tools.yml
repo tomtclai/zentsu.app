@@ -1,5 +1,5 @@
 # ─────────────────────────────────────────────────────────────────────────
-# Bench tool index — single source of truth for the "#tools" slab on bench.html.
+# Bench tool index: single source of truth for the "#tools" slab on bench.html.
 #
 # Add a tool  = add an entry under the right category here. Everything else
 # derives at BUILD time via Liquid: the item numbers (01, 02, …), the per-
@@ -9,7 +9,7 @@
 # and no-JS (crawler) renders agree.
 #
 # Order matters: categories render in the order listed here, and tools render
-# in the order listed within each category — that order is the numbering.
+# in the order listed within each category. That order is the numbering.
 #
 # Keep every visible string byte-for-byte. Note the meta field uses a middle
 # dot (U+00B7 "·") and non-breaking hyphens (U+2011 "‑"), NOT plain ASCII.
@@ -19,7 +19,6 @@
 #   category.icon   inner SVG markup for the category glyph (raw, not escaped)
 #   tool.label      link text and the data-tool value
 #   tool.href       landing-page URL
-#   tool.popular    optional; true renders the runtime "Popular" badge
 #   tool.benefit    the data-benefit hover tooltip text
 #   tool.meta       optional; a muted mono suffix beside the label
 # ─────────────────────────────────────────────────────────────────────────
@@ -31,9 +30,11 @@ categories:
     tools:
       - label: Base64
         href: /tools/base64-encoder.html
+        icon: base64-encoder
         benefit: 'Paste a Base64 blob, get the text. Or the other way around.'
       - label: URL Encode
         href: /tools/url-encoder.html
+        icon: url-encoder
         benefit: 'Encode or decode a URL fragment. Spaces, emoji, the works.'
 
   - name: Formatting
@@ -44,16 +45,19 @@ categories:
     tools:
       - label: JSON Formatter
         href: /tools/json-formatter.html
-        popular: true
+        icon: json-formatter
         benefit: 'Pretty-print minified JSON. Spot the missing comma before you ship it.'
       - label: Markdown Preview
         href: /tools/markdown-preview.html
+        icon: markdown-preview
         benefit: 'See what your README looks like before you push it.'
       - label: Text Diff
         href: /tools/text-diff.html
+        icon: text-diff
         benefit: "Two chunks of text, side by side. You'll see exactly what changed."
       - label: Image Diff
         href: /tools/image-diff.html
+        icon: image-diff
         benefit: 'Overlay two PNGs. The pixels that moved light up.'
 
   - name: Generators
@@ -63,9 +67,11 @@ categories:
     tools:
       - label: UUID Generator
         href: /tools/uuid-generator.html
+        icon: uuid-generator
         benefit: 'Grab a v4 UUID. Or a hundred. Uppercase or lowercase, your call.'
       - label: Timestamp
         href: /tools/timestamp-converter.html
+        icon: timestamp-converter
         benefit: 'Unix timestamp to human date, in any timezone.'
 
   - name: Crypto
@@ -75,12 +81,12 @@ categories:
     tools:
       - label: Hash Generator
         href: /tools/hash-generator.html
-        popular: true
+        icon: hash-generator
         benefit: 'MD5, SHA-1, SHA-256, SHA-512. For the moment the README asks for a checksum.'
         meta: 'MD5 · SHA‑1 · SHA‑256 · SHA‑512'
       - label: JWT Decoder
         href: /tools/jwt-decoder.html
-        popular: true
+        icon: jwt-decoder
         benefit: "Paste a JWT. Read the claims. Check what's actually in the header."
 
   - name: Converters
@@ -90,20 +96,25 @@ categories:
     tools:
       - label: Color Converter
         href: /tools/color-converter.html
+        icon: color-converter
         benefit: 'HEX, RGB, HSL, OKLCH. Paste one, get the others.'
       - label: Text Case
         href: /tools/text-case.html
+        icon: text-case
         benefit: 'camelCase, snake_case, Title Case, kebab-case. One paste, every variant.'
       - label: Number Base
         href: /tools/number-base.html
+        icon: number-base
         benefit: 'Binary, octal, decimal, hex. Any direction you need.'
       - label: Regex Tester
         href: /tools/regex-tester.html
-        popular: true
+        icon: regex-tester
         benefit: 'Try a pattern against real input. Matches light up as you type.'
       - label: Regex Explainer
         href: /tools/regex-tester.html
+        icon: regex-explainer
         benefit: 'A regex, explained as a tree. Step through the NFA trace line by line.'
       - label: MOV to MP4
         href: /tools/mov-to-mp4.html
+        icon: mov-to-mp4
         benefit: 'Convert a screen recording to a smaller, streamable MP4.'

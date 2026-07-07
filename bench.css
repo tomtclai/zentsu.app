@@ -457,6 +457,13 @@ section.slab {
   opacity: 0.28;
   filter: saturate(0.6);
 }
+/* Pads trailing grid cells (5 categories in a 3- or 2-col grid leaves one
+   empty). Page-colored and borderless so the leftover cell reads as plain
+   background, not an empty surface box. Hidden at 1-col where no cell is
+   left over. */
+.tool-cat-filler {
+  background: var(--bg);
+}
 .tool-cat header {
   display: flex;
   align-items: center;
@@ -517,21 +524,18 @@ section.slab {
 .tool-cat li:hover {
   color: var(--ink);
 }
-.tool-cat li .n {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.75rem;
+.tool-cat li .tool-ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--muted);
 }
-.tool-cat li .pop {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.65rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: var(--spot);
-  background: var(--spot-soft);
-  padding: 0.15rem 0.45rem;
-  border-radius: 4px;
+.tool-cat li .tool-ico svg {
+  width: 17px;
+  height: 17px;
+}
+.tool-cat li:hover .tool-ico {
+  color: var(--accent);
 }
 .tool-cat li.flash {
   background: var(--accent-soft);
@@ -614,6 +618,11 @@ section.slab {
 @media (max-width: 580px) {
   .tool-cats {
     grid-template-columns: 1fr;
+  }
+  /* Single column: no cell is ever left over, so the padding filler would
+     only add blank space at the bottom. Remove it. */
+  .tool-cat-filler {
+    display: none;
   }
 }
 

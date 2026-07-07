@@ -1,0 +1,75 @@
+# ─────────────────────────────────────────────────────────────────────────
+# Zentsu apps: single source of truth for the studio homepage (index.html)
+# and any future "all apps" listing.
+#
+# ── HOW TO ADD AN APP ────────────────────────────────────────────────────
+# 1. Add one entry to the `apps:` list below (order = display order on the
+#    homepage; `live` apps read best first).
+# 2. Add its price to _config.yml (see the pricing block there) and point
+#    `price_key` at that config key. NEVER hardcode a "$" figure here or in
+#    copy. The "$" and the number both come from the template + config.
+# 3. Drop an icon at the `icon` path (e.g. assets/coil-icon.png). If the file
+#    is missing, the card falls back to a monogram tile (no broken image)
+#    so you can ship the data entry before the art lands.
+# 4. Rebuild. The homepage card and any listing auto-include the new app.
+#    Nothing else is hand-typed in the markup.
+#
+# ── TOGGLING VISIBILITY ──────────────────────────────────────────────────
+# The homepage renders apps by `status`:
+#   live        → full card with its call-to-action / "Learn more" link.
+#   coming_soon → card with a muted "Coming soon" treatment, NO download or
+#                 App Store link (nothing to link to yet).
+#   parked      → NOT shown on the homepage. Kept in the data so the entry
+#                 (and its copy) survives; flip `status` back to revive it.
+# To hide a coming-soon app entirely, change its `status` to `parked`
+# (single-field edit). To reveal it, change it back to `coming_soon`.
+#
+# ── FIELDS ───────────────────────────────────────────────────────────────
+#   name           display name.
+#   slug           short id (also the icon-fallback monogram source).
+#   tagline        one plain-voice sentence. Company "we"; no superlatives,
+#                  no "AI"/"ML", no badge language.
+#   status         live | coming_soon | parked  (see toggling, above).
+#   status_note    optional qualifier appended after the platform on the card's
+#                  status line, e.g. "Mac App Store submission pending". The card
+#                  always leads with a tag ("Private beta" / "Coming soon"), then
+#                  the platforms, then this note. One shared format for every app.
+#   platforms      short human string, e.g. "macOS" / "iOS · macOS".
+#   price_key      name of the _config.yml key holding this app's price
+#                  (numeric only). Rendered as "${{ … }}" by the template.
+#                  Omit for apps with no single headline price.
+#   price_suffix   optional trailing words after the price, e.g. "one-time".
+#   app_store_url  live store link, or null while not on the store.
+#   page_url       the app's own page on this site (e.g. /bench.html).
+#                  Omit if the app has no dedicated page yet.
+#   icon           icon path under assets/. Missing file → monogram tile.
+#   accent         brand color for the card's monogram tile / hover accent.
+# ─────────────────────────────────────────────────────────────────────────
+apps:
+  - name: Bench
+    slug: bench
+    tagline: >-
+      A native macOS developer toolbox in one offline window: JSON, JWT, regex,
+      hashes, UUIDs, video conversion, and more.
+    status: coming_soon
+    platforms: macOS
+    price_key: price_lifetime
+    price_suffix: one-time
+    app_store_url: null # Mac App Store submission pending; card shows the page link, not a store button.
+    page_url: /bench.html
+    icon: /assets/bench-icon.png
+    accent: '#4a7c6f'
+
+  - name: Coil
+    slug: coil
+    tagline: >-
+      Track every subscription in one place. It runs on your device and never
+      links to your bank.
+    status: coming_soon
+    platforms: iOS · macOS # v1 is iPhone + Mac; native iPad deferred (runs on iPad in compatibility mode).
+    price_key: price_coil_lifetime
+    price_suffix: one-time
+    app_store_url: null # In TestFlight; not yet on the App Store.
+    page_url: /coil.html
+    icon: /assets/coil-icon.png
+    accent: '#b84e1a'

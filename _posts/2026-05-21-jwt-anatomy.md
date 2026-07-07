@@ -8,7 +8,7 @@ image:
   path: /assets/zentsu-og.png
   width: 1200
   height: 630
-  alt: 'Zentsu LLC — Software for Apple platforms'
+  alt: 'Zentsu LLC. Software for Apple platforms'
 ---
 
 If you have ever shipped an authenticated API, you have pasted a JWT

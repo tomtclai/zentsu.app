@@ -1,51 +1,28 @@
 ---
 footer_indie: true
+title: 'Bench: Dev Toolbox for macOS'
+description: 'A native Mac toolbox that recognizes whatever you copy (a JWT, a JSON blob, a hex color, a regex) and opens the right tool the moment you switch to it. Offline, no account, one-time purchase.'
+twitter_description: 'A native Mac toolbox that recognizes whatever you copy and opens the right tool the moment you switch to it. Offline, no account, one-time purchase.'
+canonical: https://zentsu.app/bench.html
+og_site_name: Bench
+og_image: https://zentsu.app/assets/bench-og.png
+og_image_alt: 'Bench: dev toolbox for macOS'
+page_stylesheet: /bench.css
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     {% include head-common.html %}
-    <title>Bench: Dev Toolbox for macOS</title>
-    <meta
-      name="description"
-      content="A native Mac toolbox that recognizes whatever you copy (a JWT, a JSON blob, a hex color, a regex) and opens the right tool the moment you switch to it. Offline, no account, one-time purchase."
-    />
-
-    <link rel="canonical" href="https://zentsu.app/bench.html" />
-
-    <!-- Open Graph / social -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Bench" />
-    <meta property="og:title" content="Bench: Dev Toolbox for macOS" />
-    <meta
-      property="og:description"
-      content="A native Mac toolbox that recognizes whatever you copy (a JWT, a JSON blob, a hex color, a regex) and opens the right tool the moment you switch to it. Offline, no account, one-time purchase."
-    />
-    <meta property="og:image" content="https://zentsu.app/assets/bench-og.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:alt" content="Bench — Dev Toolbox for macOS" />
-    <meta property="og:url" content="https://zentsu.app/bench.html" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Bench: Dev Toolbox for macOS" />
-    <meta
-      name="twitter:description"
-      content="A native Mac toolbox that recognizes whatever you copy and opens the right tool the moment you switch to it. Offline, no account, one-time purchase."
-    />
-    <meta name="twitter:image" content="https://zentsu.app/assets/bench-og.png" />
     <meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#14110f" media="(prefers-color-scheme: dark)" />
-
-    <link rel="stylesheet" href="/bench.css?v={{ site.time | date: '%s' }}" />
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
         "name": "Bench",
-        "description": "A native Mac developer toolbox that recognizes whatever you copy — a JWT, a JSON blob, a hex color, a regex — and opens the right tool the moment you switch to it. Offline, no account, one-time purchase.",
+        "description": "A native Mac developer toolbox. Copy a JWT, a JSON blob, a hex color, or a regex, then switch to Bench and the right tool is already open with your content loaded. Offline, no account, one-time purchase.",
         "url": "https://zentsu.app/bench.html",
         "operatingSystem": "macOS 14",
         "applicationCategory": "DeveloperApplication",
@@ -115,7 +92,7 @@ footer_indie: true
             "name": "What data does Bench collect?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "None. Bench has no analytics, no telemetry, no third‑party SDKs, and no account system. Smart Paste reads your clipboard locally to pick a tool; the detection is a rule‑based heuristic that runs on your device. Whatever you type, paste, or generate stays on your Mac."
+              "text": "None. Bench has no account system and carries no analytics or third‑party SDKs. Smart Paste reads your clipboard locally to pick a tool; the detection is a rule‑based heuristic that runs on your device. Whatever you type, paste, or generate stays on your Mac."
             }
           },
           {
@@ -147,14 +124,9 @@ footer_indie: true
         <div class="hero-inner">
           <div class="hero-copy">
             <p class="hero-kicker">Runs entirely on your Mac. Deterministic. Yours to keep.</p>
-            <h1>
-              Offline tools that open themselves, starting with a
-              <span class="accent">real regex engine</span>.
-            </h1>
+            <h1>Offline developer tools that open <span class="accent">fast</span>.</h1>
             <p class="lede">
-              Copy a regex, a JWT, a tangled JSON blob, or a hex color, then switch to Bench. The
-              right tool is already open with your content loaded. Rule‑based matching runs on your
-              Mac in under a millisecond. One‑time purchase.
+              Paste a JWT, a hash, or a blob of JSON, and the right tool is already open.
             </p>
             <div class="hero-cta">
               <a class="btn btn-primary feature-app-store" href="">
@@ -238,7 +210,7 @@ footer_indie: true
           </div>
 
           <!-- Tool index (#tool-filters + #tool-cats) is generated from
-               _data/tools.yml at build time — item numbers, count badges and
+               _data/tools.yml at build time: item numbers, count badges and
                filter-pill counts are baked in. See _includes/tool-index.html. -->
           {% include tool-index.html %}
         </div>
@@ -494,7 +466,7 @@ footer_indie: true
             </div>
             <div class="reveal">
               <pre class="manifest" aria-label="Bench capability manifest">
-<span class="c"># bench.manifest — what Bench does, and doesn't</span>
+<span class="c"># bench.manifest: what Bench does, and doesn't</span>
 
 <span class="k">network.client</span>        : <span class="v">false</span>    <span class="c"># sandbox entitlement</span>
 <span class="k">analytics</span>             : <span class="v">none</span>
@@ -927,8 +899,8 @@ footer_indie: true
             <details>
               <summary>What data does Bench collect?</summary>
               <p>
-                None. Bench has no analytics, no telemetry, no third‑party SDKs, and no account
-                system. Smart Paste reads your clipboard locally to pick a tool; the detection is a
+                None. Bench has no account system and carries no analytics or third‑party SDKs.
+                Smart Paste reads your clipboard locally to pick a tool; the detection is a
                 rule‑based heuristic that runs on your device. Whatever you type, paste, or generate
                 stays on your Mac.
               </p>

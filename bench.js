@@ -1,10 +1,10 @@
 /* ───────────────────────────────────────────────────────────
        Tool registry — read from the rendered DOM.
        Tools are authored in _data/tools.yml and rendered by
-       _includes/tool-index.html, which bakes the item numbers,
-       count badges and filter-pill counts at build time. This
-       script re-derives the identical values at runtime (so
-       counts/numbers agree with the baked HTML) and wires up
+       _includes/tool-index.html, which bakes the per-tool
+       glyphs, count badges and filter-pill counts at build
+       time. This script re-derives the identical counts at
+       runtime (so they agree with the baked HTML) and wires up
        chip labels, filtering, and the hover tooltips.
        ─────────────────────────────────────────────────────────── */
 
@@ -19,7 +19,6 @@ function collectTools() {
       out.push({
         name: li.getAttribute('data-tool'),
         category,
-        popular: li.hasAttribute('data-popular'),
         el: li,
       });
     });
@@ -30,19 +29,8 @@ function collectTools() {
 const TOOLS = collectTools();
 const TOTAL = TOOLS.length;
 
-/* ── Tool numbering + counts + tool-count words ── */
+/* ── Counts + tool-count words ── */
 (function numberAndCount() {
-  TOOLS.forEach((t, i) => {
-    const n = String(i + 1).padStart(2, '0');
-    const nEl = t.el.querySelector('.n');
-    if (nEl) nEl.textContent = n;
-    if (t.popular) {
-      const pop = document.createElement('span');
-      pop.className = 'pop';
-      pop.textContent = 'Popular';
-      t.el.appendChild(pop);
-    }
-  });
   document.querySelectorAll('.tool-cat').forEach((cat) => {
     const n = cat.querySelectorAll('li[data-tool]').length;
     const countEl = cat.querySelector('[data-count]');
