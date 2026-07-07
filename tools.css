@@ -214,3 +214,67 @@ main {
     transform: none;
   }
 }
+
+/* ── Scroll-driven animations (progressive enhancement) ──
+   Tool pages ship no JS, so this is pure CSS: browsers with scroll
+   timelines get scroll-linked entrances; everything else renders the page
+   fully visible and static. Hidden initial states exist ONLY inside this
+   block, and the whole block is skipped under prefers-reduced-motion.
+   Keyframes animate opacity + individual transform properties
+   (translate/scale) so the transform-based hover lifts above keep working. */
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    /* Hero tile — drifts down and settles smaller as the hero scrolls out
+       (a slight parallax lag), reversing as you scroll back up. The hero
+       sits at the top of the page, so an entry-range settle would never
+       play; the exit range is the visible half of the effect. */
+    .tool-hero {
+      view-timeline: --tool-hero block;
+    }
+    .tool-hero-tile {
+      animation: sda-tile-drift linear both;
+      animation-timeline: --tool-hero;
+      animation-range: exit 0% exit 100%;
+    }
+    @keyframes sda-tile-drift {
+      to {
+        opacity: 0.35;
+        translate: 0 24px;
+        scale: 0.94;
+      }
+    }
+
+    /* Article sections, callouts, and the CTA band rise as they enter. */
+    article h2,
+    article .smart-paste,
+    article .how-to-open,
+    article .cta-band {
+      animation: sda-tool-rise linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 55%;
+    }
+
+    /* Related cards — same rise, staggered left-to-right. */
+    .related a {
+      animation: sda-tool-rise linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 45%;
+    }
+    .related a:nth-child(2) {
+      animation-range: entry 8% entry 53%;
+    }
+    .related a:nth-child(3) {
+      animation-range: entry 16% entry 61%;
+    }
+    @keyframes sda-tool-rise {
+      from {
+        opacity: 0;
+        translate: 0 14px;
+      }
+      to {
+        opacity: 1;
+        translate: 0 0;
+      }
+    }
+  }
+}

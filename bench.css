@@ -1436,7 +1436,10 @@ section.slab {
   background: var(--spot-soft);
   border: 1px solid var(--spot);
   border-radius: 12px;
-  padding: 1rem 1.25rem;
+  /* Clear space below the .price-region-note fine print above (which
+     carries no bottom margin of its own). */
+  margin: 2rem 0 0;
+  padding: 1.15rem 1.35rem;
   flex-wrap: wrap;
 }
 .price-promo-tag {
@@ -1486,7 +1489,21 @@ section.slab {
 .email-capture .email-caption {
   font-size: 0.9375rem;
   color: var(--muted);
-  margin-bottom: 1.1rem;
+  margin-bottom: 1.35rem;
+}
+/* Visually-hidden utility for accessible labels (the email field's label).
+   Previously undefined, so the label rendered as a stray line of text jammed
+   between the caption and the input row. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 .email-row {
   display: flex;
@@ -1823,5 +1840,282 @@ footer a:hover {
   }
   .email-row input[type='email']:focus {
     box-shadow: 0 0 0 3px rgba(111, 167, 150, 0.2);
+  }
+}
+
+/* ── Scroll-driven animations (progressive enhancement) ──
+   Browsers with CSS scroll timelines get scroll-linked motion; everything
+   else keeps the IntersectionObserver .reveal fallback above, untouched.
+   Hidden initial states exist ONLY inside this block, and the whole block
+   is skipped when the user prefers reduced motion. Keyframes animate
+   compositor-friendly properties only (opacity, translate, scale,
+   clip-path). Individual transform properties (translate/scale) are used
+   instead of the transform shorthand so existing transform-based hover
+   states and JS-driven transforms keep working alongside. Elements that
+   already carry .reveal are parked (forced visible, transition off) before
+   a scroll timeline takes over, so nothing double-animates. */
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    /* 1 · Hero depth exit — copy and icon leave at slightly different
+       rates as the hero scrolls away, and settle back on the way up. */
+    .hero {
+      view-timeline: --bench-hero block;
+    }
+    .hero-copy {
+      animation: sda-hero-copy linear both;
+      animation-timeline: --bench-hero;
+      animation-range: exit 0% exit 90%;
+    }
+    .hero-icon-wrap {
+      animation: sda-hero-icon linear both;
+      animation-timeline: --bench-hero;
+      animation-range: exit 0% exit 90%;
+    }
+    @keyframes sda-hero-copy {
+      to {
+        opacity: 0.3;
+        translate: 0 -32px;
+      }
+    }
+    @keyframes sda-hero-icon {
+      to {
+        opacity: 0.5;
+        translate: 0 -12px;
+        scale: 0.95;
+      }
+    }
+
+    /* 2 · Smart Detection diagram — pins and scales 0.72 → 1 while the
+       reader scrolls through a 190vh stage, then releases at full size so
+       the demo below flows in naturally. Wide viewports only; the .sd-stage
+       wrapper is an inert div everywhere else. */
+    @media (min-width: 820px) {
+      .sd-stage {
+        height: 190vh;
+        view-timeline: --bench-sd block;
+      }
+      .sd-stage .sd-lead {
+        position: sticky;
+        /* Center the pinned figure: its height is ~63.3% of the content
+           column (1200×760 aspect, 1160px column max). Floor clears the
+           sticky nav. */
+        top: max(4.75rem, calc(50vh - min(31.7vw, 367px)));
+        animation: sda-sd-grow linear both;
+        animation-timeline: --bench-sd;
+        animation-range: cover 0% cover 55%;
+      }
+      /* The scroll timeline owns this element now; park the IO reveal. */
+      .sd-stage .sd-lead.reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+      @keyframes sda-sd-grow {
+        from {
+          scale: 0.72;
+          clip-path: inset(0 round 28px);
+        }
+        to {
+          scale: 1;
+          clip-path: inset(0 round 16px);
+        }
+      }
+    }
+
+    /* 3 · Screenshot scroller — settles up and in as it enters. Vertical
+       view timeline only; horizontal scroll-snap and the dot pagination
+       are untouched. */
+    .shots {
+      animation: sda-shots-enter linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 85%;
+    }
+    @keyframes sda-shots-enter {
+      from {
+        opacity: 0.2;
+        translate: 0 28px;
+        scale: 0.94;
+      }
+      to {
+        opacity: 1;
+        translate: 0 0;
+        scale: 1;
+      }
+    }
+
+    /* 4 · Slab heads — the section label slides in from the left; the
+       scale-x settle reads as letter-spacing tightening without animating
+       layout. The head itself fades up on the same scroll. */
+    .slab-head.reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+    .slab-head {
+      animation: sda-fade-rise linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 45%;
+    }
+    .slab-head .num {
+      transform-origin: 0 50%;
+      animation: sda-num-slide linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 65%;
+    }
+    @keyframes sda-num-slide {
+      from {
+        opacity: 0;
+        translate: -18px 0;
+        scale: 1.08 1;
+      }
+      to {
+        opacity: 1;
+        translate: 0 0;
+        scale: 1;
+      }
+    }
+
+    /* 5 · Tool index — each row rises slightly as it enters. Filter pills
+       only toggle .dim on categories (opacity/filter, no display change),
+       so finished row animations hold their end state during filtering. */
+    .tool-cats.reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+    .tool-cat li[data-tool] {
+      animation: sda-fade-rise-sm linear both;
+      animation-timeline: view();
+      animation-range: entry 5% entry 40%;
+    }
+
+    /* 6 · Specs — cells cascade left-to-right per row via staggered
+       entry ranges; rows stagger naturally by scroll position. */
+    .specs.reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+    .specs .cell {
+      animation: sda-fade-rise-sm linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 35%;
+    }
+    .specs .cell:nth-child(4n + 2) {
+      animation-range: entry 6% entry 41%;
+    }
+    .specs .cell:nth-child(4n + 3) {
+      animation-range: entry 12% entry 47%;
+    }
+    .specs .cell:nth-child(4n) {
+      animation-range: entry 18% entry 53%;
+    }
+
+    /* 7 · Pricing — the card scales into focus while its shadow deepens.
+       The shadow lives on a pseudo-element so only opacity animates. */
+    .pricing--single.reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+    .price-card--main {
+      position: relative;
+      view-timeline: --bench-price block;
+      animation: sda-price-in linear both;
+      animation-timeline: --bench-price;
+      animation-range: entry 0% entry 70%;
+    }
+    .price-card--main::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 14px;
+      box-shadow: 0 28px 56px -28px rgba(20, 17, 15, 0.35);
+      opacity: 0;
+      pointer-events: none;
+      animation: sda-price-shadow linear both;
+      animation-timeline: --bench-price;
+      animation-range: entry 0% entry 70%;
+    }
+    @keyframes sda-price-in {
+      from {
+        opacity: 0.4;
+        scale: 0.96;
+      }
+      to {
+        opacity: 1;
+        scale: 1;
+      }
+    }
+    @keyframes sda-price-shadow {
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Buy band — a quiet accent sweep crosses as the band scrolls through.
+       Token-driven gradient, so it adapts to dark mode on its own. */
+    section.buy {
+      position: relative;
+      overflow: hidden;
+      view-timeline: --bench-buy block;
+    }
+    section.buy::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(100deg, transparent 25%, var(--accent-soft) 50%, transparent 75%);
+      opacity: 0;
+      pointer-events: none;
+      animation: sda-buy-sweep linear both;
+      animation-timeline: --bench-buy;
+      animation-range: cover 10% cover 90%;
+    }
+    section.buy .buy-inner {
+      /* Positioned so it paints above the sweep pseudo-element. */
+      position: relative;
+    }
+    @keyframes sda-buy-sweep {
+      from {
+        opacity: 0;
+        translate: -55% 0;
+      }
+      40% {
+        opacity: 0.55;
+      }
+      to {
+        opacity: 0;
+        translate: 55% 0;
+      }
+    }
+
+    /* Shared entrance keyframes */
+    @keyframes sda-fade-rise {
+      from {
+        opacity: 0;
+        translate: 0 16px;
+      }
+      to {
+        opacity: 1;
+        translate: 0 0;
+      }
+    }
+    @keyframes sda-fade-rise-sm {
+      from {
+        opacity: 0;
+        translate: 0 8px;
+      }
+      to {
+        opacity: 1;
+        translate: 0 0;
+      }
+    }
+
+    /* Dark mode: deepen the pricing shadow against the dark tokens. */
+    @media (prefers-color-scheme: dark) {
+      .price-card--main::after {
+        box-shadow: 0 28px 56px -28px rgba(0, 0, 0, 0.6);
+      }
+    }
   }
 }
