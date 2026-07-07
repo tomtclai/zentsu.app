@@ -1,17 +1,15 @@
 {%- comment -%} One Zentsu app card, rendered from a single _data/apps.yml entry at BUILD time. Used
 by the studio homepage (index.html) to iterate the apps list. Pass the app entry in as
 `include.app`: {% include app-card.html app=item %} Layout reuses the existing .product component
-from index.html (icon + body). Behaviour by status: live → status line, tagline, price (from
-_config.yml via price_key), and a "Learn more" link to page_url. coming_soon → a muted "Coming soon"
-label, tagline, price, and (if a page exists) a "Learn more" link. The link uses the brand accent on
-every card regardless of status; the coming-soon card only reads quieter via its background. NO App
-Store / download button. parked → not rendered (index.html filters these out before calling). Icon:
-if the app's icon file is missing the <img /> would break, so the card renders a monogram tile
-(first letter of the slug) tinted with the app's accent as a graceful fallback. Drop the real icon
-in later, no markup change. Do NOT hardcode a "$" price here. It comes from _config.yml via
-price_key. {%- endcomment -%} {%- assign app = include.app -%} {%- assign price = nil -%} {%- if
-app.price_key -%}{%- assign price = site[app.price_key] -%}{%- endif -%} {%- assign monogram =
-app.slug | slice: 0 | upcase -%}
+from index.html (icon + body). Behaviour by status: live → linked app name, status line, tagline,
+and price (from _config.yml via price_key). coming_soon → linked app name, muted "Coming soon"
+label, tagline, and price. NO App Store / download button. parked → not rendered (index.html filters
+these out before calling). Icon: if the app's icon file is missing the <img /> would break, so the
+card renders a monogram tile (first letter of the slug) tinted with the app's accent as a graceful
+fallback. Drop the real icon in later, no markup change. Do NOT hardcode a "$" price here. It comes
+from _config.yml via price_key. {%- endcomment -%} {%- assign app = include.app -%} {%- assign price
+= nil -%} {%- if app.price_key -%}{%- assign price = site[app.price_key] -%}{%- endif -%} {%- assign
+monogram = app.slug | slice: 0 | upcase -%}
 <article class="product{% if app.status != 'live' %} product--soon{% endif %}">
   {%- if app.icon %}
   <img
@@ -29,7 +27,11 @@ app.slug | slice: 0 | upcase -%}
   >
   {%- endif %}
   <div class="body">
-    <h3>{{ app.name }}</h3>
+    <h3>
+      {%- if app.page_url %}
+      <a class="product-title-link" href="{{ app.page_url }}">{{ app.name }}</a>
+      {%- else %} {{ app.name }} {%- endif %}
+    </h3>
     {%- if app.status == 'live' %}
     <p class="status">
       <span class="status-tag">Private beta</span> · {{ app.platforms }}{% if app.status_note %} ·
@@ -47,8 +49,6 @@ app.slug | slice: 0 | upcase -%}
       <span class="product-price"
         >${{ price }}{% if app.price_suffix %} {{ app.price_suffix }}{% endif %}</span
       >
-      {%- endif %} {%- if app.page_url %}
-      <a class="more" href="{{ app.page_url }}">Learn more about {{ app.name }} →</a>
       {%- endif %}
     </div>
   </div>

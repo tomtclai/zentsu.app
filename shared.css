@@ -449,9 +449,19 @@ section.block:last-of-type {
 .product .body h3 {
   font-size: 1.1875rem;
   font-weight: 600;
-  color: var(--ink);
   margin-bottom: 0.25rem;
   letter-spacing: -0.015em;
+}
+.product .product-title-link {
+  color: var(--ink);
+  text-decoration: none;
+  text-underline-offset: 0.18em;
+  transition: color 0.15s ease;
+}
+.product .product-title-link:hover,
+.product .product-title-link:focus-visible {
+  color: var(--accent);
+  text-decoration: underline;
 }
 .product .status {
   font-size: 0.8125rem;
@@ -463,15 +473,6 @@ section.block:last-of-type {
   color: var(--body-text);
   line-height: 1.6;
   margin-bottom: 0.85rem;
-}
-.product a.more {
-  font-size: 0.9375rem;
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 600;
-}
-.product a.more:hover {
-  text-decoration: underline;
 }
 /* Footer row of a card: price + link, wrapping cleanly on narrow cards. */
 .product .product-foot {

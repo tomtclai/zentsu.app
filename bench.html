@@ -246,207 +246,258 @@ page_stylesheet: /bench.css
             </figure>
           </div>
 
-          <!-- Static paste → detect → output demo (recreates the real app's output panels) -->
-          <div class="bp-demo reveal">
-            <!-- JWT demo column -->
-            <div class="bp-col">
-              <span class="bp-step-label">Paste →</span>
-              <div class="bp-paste" aria-label="Clipboard sample: a JWT">
-                eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik5ldmVyIGdvbm5hIGdpdmUgeW91IHVwIiwiaWF0IjoxNzYwMDAwMDAwfQ.fake_signature_for_demo_only
-              </div>
+          <!-- Paste → detect → output demo (recreates the real app's output panels) -->
+          <div class="bp-stage" id="bp-stage">
+            <div class="bp-pin">
+              <div class="bp-demo reveal" id="bp-demo">
+                <!-- JWT demo column -->
+                <div class="bp-col">
+                  <span class="bp-step-label">Paste →</span>
+                  <div class="bp-paste" aria-label="Clipboard sample: a JWT">
+                    eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik5ldmVyIGdvbm5hIGdpdmUgeW91IHVwIiwiaWF0IjoxNzYwMDAwMDAwfQ.fake_signature_for_demo_only
+                  </div>
 
-              <button
-                type="button"
-                class="bp-pill"
-                aria-label="Detected: JWT Decoder, high confidence"
-              >
-                <span class="bp-pill-glyph" aria-hidden="true">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                  <button
+                    type="button"
+                    class="bp-pill"
+                    aria-label="Detected: JWT Decoder, high confidence"
                   >
-                    <circle cx="8" cy="15" r="4" />
-                    <path d="M10.85 12.15 21 2" />
-                    <path d="M18 5l3 3" />
-                    <path d="M15 8l3 3" />
-                  </svg>
-                </span>
-                <span class="bp-pill-text">
-                  <span class="bp-pill-title">JWT Decoder</span>
-                  <span class="bp-pill-sub">High confidence</span>
-                </span>
-                <span class="bp-pill-enter" aria-hidden="true">⏎</span>
-              </button>
+                    <span class="bp-pill-glyph" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="8" cy="15" r="4" />
+                        <path d="M10.85 12.15 21 2" />
+                        <path d="M18 5l3 3" />
+                        <path d="M15 8l3 3" />
+                      </svg>
+                    </span>
+                    <span class="bp-pill-text">
+                      <span class="bp-pill-title">JWT Decoder</span>
+                      <span class="bp-pill-sub">High confidence</span>
+                    </span>
+                    <span class="bp-pill-enter" aria-hidden="true">⏎</span>
+                  </button>
 
-              <span class="bp-step-label">→ Bench renders</span>
-              <div class="bp-out">
-                <div class="bp-card">
-                  <span class="bp-card-label">Header</span>
-                  <div class="bp-card-body">
-                    <span class="tok-punct">{</span> <span class="tok-key">"alg"</span
-                    ><span class="tok-punct">:</span> <span class="tok-str">"HS256"</span
-                    ><span class="tok-punct">,</span> <span class="tok-key">"typ"</span
-                    ><span class="tok-punct">:</span> <span class="tok-str">"JWT"</span>
-                    <span class="tok-punct">}</span>
-                  </div>
-                </div>
-                <div class="bp-card">
-                  <span class="bp-card-label">Payload</span>
-                  <div class="bp-card-body">
-                    <span class="tok-punct">{</span> <span class="tok-key">"iat"</span
-                    ><span class="tok-punct">:</span> <span class="tok-num">1760000000</span
-                    ><span class="tok-punct">,</span> <span class="tok-key">"name"</span
-                    ><span class="tok-punct">:</span>
-                    <span class="tok-str">"Never gonna give you up"</span
-                    ><span class="tok-punct">,</span> <span class="tok-key">"sub"</span
-                    ><span class="tok-punct">:</span> <span class="tok-str">"1234567890"</span>
-                    <span class="tok-punct">}</span>
-                  </div>
-                </div>
-                <div class="bp-card">
-                  <span class="bp-card-label">Signature (raw)</span>
-                  <div class="bp-card-body">
-                    <span class="tok-plain">fake_signature_for_demo_only</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- JSON demo column -->
-            <div class="bp-col">
-              <span class="bp-step-label">Paste →</span>
-              <div class="bp-paste" aria-label="Clipboard sample: minified JSON">
-                {"order_id":"8f3b","items":[{"sku":"BNCH-001","qty":2,"price":19.99},{"sku":"BNCH-PRO","qty":1,"price":14.99}],"customer":{"id":9001,"tier":"pro"},"total":42.99}
-              </div>
-
-              <button
-                type="button"
-                class="bp-pill"
-                aria-label="Detected: JSON Formatter, high confidence"
-              >
-                <span class="bp-pill-glyph" aria-hidden="true">{&#8202;}</span>
-                <span class="bp-pill-text">
-                  <span class="bp-pill-title">JSON Formatter</span>
-                  <span class="bp-pill-sub">High confidence</span>
-                </span>
-                <span class="bp-pill-enter" aria-hidden="true">⏎</span>
-              </button>
-
-              <span class="bp-step-label">→ Bench renders</span>
-              <div class="bp-out">
-                <div class="bp-card">
-                  <span class="bp-card-label">Output</span>
-                  <div class="bp-card-body">
-                    <span class="tok-punct">{</span> <span class="tok-key">"order_id"</span>
-                    <span class="tok-punct">:</span> <span class="tok-str">"8f3b"</span
-                    ><span class="tok-punct">,</span> <span class="tok-key">"items"</span>
-                    <span class="tok-punct">:</span> <span class="tok-punct">[</span>
-                    <span class="tok-punct">{</span>
-                    <span class="tok-key">"sku"</span> <span class="tok-punct">:</span>
-                    <span class="tok-str">"BNCH-001"</span><span class="tok-punct">,</span>
-                    <span class="tok-key">"qty"</span> <span class="tok-punct">:</span>
-                    <span class="tok-num">2</span><span class="tok-punct">,</span>
-                    <span class="tok-key">"price"</span> <span class="tok-punct">:</span>
-                    <span class="tok-num">19.99</span> <span class="tok-punct">}</span
-                    ><span class="tok-punct">,</span>
-                    <span class="tok-punct">{</span>
-                    <span class="tok-key">"sku"</span> <span class="tok-punct">:</span>
-                    <span class="tok-str">"BNCH-PRO"</span><span class="tok-punct">,</span>
-                    <span class="tok-key">"qty"</span> <span class="tok-punct">:</span>
-                    <span class="tok-num">1</span><span class="tok-punct">,</span>
-                    <span class="tok-key">"price"</span> <span class="tok-punct">:</span>
-                    <span class="tok-num">14.99</span>
-                    <span class="tok-punct">}</span>
-                    <span class="tok-punct">]</span><span class="tok-punct">,</span>
-                    <span class="tok-key">"customer"</span> <span class="tok-punct">:</span>
-                    <span class="tok-punct">{</span> <span class="tok-key">"id"</span>
-                    <span class="tok-punct">:</span> <span class="tok-num">9001</span
-                    ><span class="tok-punct">,</span> <span class="tok-key">"tier"</span>
-                    <span class="tok-punct">:</span> <span class="tok-str">"pro"</span>
-                    <span class="tok-punct">}</span><span class="tok-punct">,</span>
-                    <span class="tok-key">"total"</span> <span class="tok-punct">:</span>
-                    <span class="tok-num">42.99</span> <span class="tok-punct">}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Color Converter demo column -->
-            <div class="bp-col">
-              <span class="bp-step-label">Paste →</span>
-              <div class="bp-paste" aria-label="Clipboard sample: a hex color">ff8a3d</div>
-
-              <button
-                type="button"
-                class="bp-pill"
-                aria-label="Detected: Color Converter, high confidence"
-              >
-                <span class="bp-pill-glyph" aria-hidden="true">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.75"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M12 2a10 10 0 0 0 0 20c1 0 2-.5 2-1.5S13 19 13 18s.5-2 2-2h3a4 4 0 0 0 4-4 10 10 0 0 0-10-10z"
-                    />
-                    <circle cx="7.5" cy="10.5" r="1.3" />
-                    <circle cx="10.5" cy="7" r="1.3" />
-                    <circle cx="14.5" cy="7" r="1.3" />
-                    <circle cx="17.5" cy="10.5" r="1.3" />
-                  </svg>
-                </span>
-                <span class="bp-pill-text">
-                  <span class="bp-pill-title">Color Converter</span>
-                  <span class="bp-pill-sub">High confidence</span>
-                </span>
-                <span class="bp-pill-enter" aria-hidden="true">⏎</span>
-              </button>
-
-              <span class="bp-step-label">→ Bench renders</span>
-              <div class="bp-out">
-                <div class="bp-card">
-                  <div class="bp-card-body bp-color-body" style="padding: 0.85rem 1rem">
-                    <div class="bp-color-swatch" aria-label="Color swatch: #ff8a3d"></div>
-
-                    <div class="bp-color-field inline">
-                      <span class="bp-card-label">Hex</span>
-                      <div class="bp-color-line">#FF8A3D</div>
-                    </div>
-
-                    <div class="bp-color-field">
-                      <span class="bp-card-label">RGB</span>
-                      <div class="bp-color-field-row">
-                        <div class="bp-color-mini"><span class="sub">R</span>255</div>
-                        <div class="bp-color-mini"><span class="sub">G</span>138</div>
-                        <div class="bp-color-mini"><span class="sub">B</span>61</div>
+                  <span class="bp-step-label">→ Bench renders</span>
+                  <div class="bp-out">
+                    <div class="bp-card">
+                      <span class="bp-card-label">Header</span>
+                      <div class="bp-card-body">
+                        <span class="tok-punct">{</span> <span class="tok-key">"alg"</span
+                        ><span class="tok-punct">:</span> <span class="tok-str">"HS256"</span
+                        ><span class="tok-punct">,</span> <span class="tok-key">"typ"</span
+                        ><span class="tok-punct">:</span> <span class="tok-str">"JWT"</span>
+                        <span class="tok-punct">}</span>
                       </div>
                     </div>
-
-                    <div class="bp-color-field">
-                      <span class="bp-card-label">HSL</span>
-                      <div class="bp-color-field-row">
-                        <div class="bp-color-mini"><span class="sub">H°</span>23</div>
-                        <div class="bp-color-mini"><span class="sub">S%</span>100</div>
-                        <div class="bp-color-mini"><span class="sub">L%</span>62</div>
+                    <div class="bp-card">
+                      <span class="bp-card-label">Payload</span>
+                      <div class="bp-card-body">
+                        <span class="tok-punct">{</span> <span class="tok-key">"iat"</span
+                        ><span class="tok-punct">:</span> <span class="tok-num">1760000000</span
+                        ><span class="tok-punct">,</span> <span class="tok-key">"name"</span
+                        ><span class="tok-punct">:</span>
+                        <span class="tok-str">"Never gonna give you up"</span
+                        ><span class="tok-punct">,</span> <span class="tok-key">"sub"</span
+                        ><span class="tok-punct">:</span> <span class="tok-str">"1234567890"</span>
+                        <span class="tok-punct">}</span>
                       </div>
                     </div>
-
-                    <div class="bp-color-field inline">
-                      <span class="bp-card-label">SwiftUI</span>
-                      <div class="bp-color-line">Color(red: 1.000, green: 0.541, blue: 0.239)</div>
+                    <div class="bp-card">
+                      <span class="bp-card-label">Signature (raw)</span>
+                      <div class="bp-card-body">
+                        <span class="tok-plain">fake_signature_for_demo_only</span>
+                      </div>
                     </div>
+                  </div>
+                </div>
 
-                    <div class="bp-color-field inline">
-                      <span class="bp-card-label">CSS</span>
-                      <div class="bp-color-line">rgb(255, 138, 61)</div>
+                <!-- JSON demo column -->
+                <div class="bp-col">
+                  <span class="bp-step-label">Paste →</span>
+                  <div class="bp-paste" aria-label="Clipboard sample: minified JSON">
+                    {"order_id":"8f3b","items":[{"sku":"BNCH-001","qty":2,"price":19.99},{"sku":"BNCH-PRO","qty":1,"price":14.99}],"customer":{"id":9001,"tier":"pro"},"total":42.99}
+                  </div>
+
+                  <button
+                    type="button"
+                    class="bp-pill"
+                    aria-label="Detected: JSON Formatter, high confidence"
+                  >
+                    <span class="bp-pill-glyph" aria-hidden="true">{&#8202;}</span>
+                    <span class="bp-pill-text">
+                      <span class="bp-pill-title">JSON Formatter</span>
+                      <span class="bp-pill-sub">High confidence</span>
+                    </span>
+                    <span class="bp-pill-enter" aria-hidden="true">⏎</span>
+                  </button>
+
+                  <span class="bp-step-label">→ Bench renders</span>
+                  <div class="bp-out">
+                    <div class="bp-card">
+                      <span class="bp-card-label">Output</span>
+                      <pre
+                        class="bp-card-body bp-json-output"
+                      ><code><span class="tok-punct">{</span>
+  <span class="tok-key">"order_id"</span><span class="tok-punct">:</span> <span class="tok-str">"8f3b"</span><span class="tok-punct">,</span>
+  <span class="tok-key">"items"</span><span class="tok-punct">:</span> <span class="tok-punct">[</span>
+    <span class="tok-punct">{</span>
+      <span class="tok-key">"sku"</span><span class="tok-punct">:</span> <span class="tok-str">"BNCH-001"</span><span class="tok-punct">,</span>
+      <span class="tok-key">"qty"</span><span class="tok-punct">:</span> <span class="tok-num">2</span><span class="tok-punct">,</span>
+      <span class="tok-key">"price"</span><span class="tok-punct">:</span> <span class="tok-num">19.99</span>
+    <span class="tok-punct">}</span><span class="tok-punct">,</span>
+    <span class="tok-punct">{</span>
+      <span class="tok-key">"sku"</span><span class="tok-punct">:</span> <span class="tok-str">"BNCH-PRO"</span><span class="tok-punct">,</span>
+      <span class="tok-key">"qty"</span><span class="tok-punct">:</span> <span class="tok-num">1</span><span class="tok-punct">,</span>
+      <span class="tok-key">"price"</span><span class="tok-punct">:</span> <span class="tok-num">14.99</span>
+    <span class="tok-punct">}</span>
+  <span class="tok-punct">]</span><span class="tok-punct">,</span>
+  <span class="tok-key">"customer"</span><span class="tok-punct">:</span> <span class="tok-punct">{</span>
+    <span class="tok-key">"id"</span><span class="tok-punct">:</span> <span class="tok-num">9001</span><span class="tok-punct">,</span>
+    <span class="tok-key">"tier"</span><span class="tok-punct">:</span> <span class="tok-str">"pro"</span>
+  <span class="tok-punct">}</span><span class="tok-punct">,</span>
+  <span class="tok-key">"total"</span><span class="tok-punct">:</span> <span class="tok-num">42.99</span>
+<span class="tok-punct">}</span></code></pre>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Color Converter demo column -->
+                <div class="bp-col">
+                  <span class="bp-step-label">Paste →</span>
+                  <div class="bp-paste" aria-label="Clipboard sample: a hex color">ff8a3d</div>
+
+                  <button
+                    type="button"
+                    class="bp-pill"
+                    aria-label="Detected: Color Converter, high confidence"
+                  >
+                    <span class="bp-pill-glyph" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.75"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M12 2a10 10 0 0 0 0 20c1 0 2-.5 2-1.5S13 19 13 18s.5-2 2-2h3a4 4 0 0 0 4-4 10 10 0 0 0-10-10z"
+                        />
+                        <circle cx="7.5" cy="10.5" r="1.3" />
+                        <circle cx="10.5" cy="7" r="1.3" />
+                        <circle cx="14.5" cy="7" r="1.3" />
+                        <circle cx="17.5" cy="10.5" r="1.3" />
+                      </svg>
+                    </span>
+                    <span class="bp-pill-text">
+                      <span class="bp-pill-title">Color Converter</span>
+                      <span class="bp-pill-sub">High confidence</span>
+                    </span>
+                    <span class="bp-pill-enter" aria-hidden="true">⏎</span>
+                  </button>
+
+                  <span class="bp-step-label">→ Bench renders</span>
+                  <div class="bp-out">
+                    <div class="bp-card">
+                      <div class="bp-card-body bp-color-body" style="padding: 0.85rem 1rem">
+                        <div class="bp-color-swatch" aria-label="Color swatch: #ff8a3d"></div>
+
+                        <div class="bp-color-field inline">
+                          <span class="bp-card-label">Hex</span>
+                          <div class="bp-color-line">#FF8A3D</div>
+                        </div>
+
+                        <div class="bp-color-field">
+                          <span class="bp-card-label">RGB</span>
+                          <div class="bp-color-field-row">
+                            <div class="bp-color-mini"><span class="sub">R</span>255</div>
+                            <div class="bp-color-mini"><span class="sub">G</span>138</div>
+                            <div class="bp-color-mini"><span class="sub">B</span>61</div>
+                          </div>
+                        </div>
+
+                        <div class="bp-color-field">
+                          <span class="bp-card-label">HSL</span>
+                          <div class="bp-color-field-row">
+                            <div class="bp-color-mini"><span class="sub">H°</span>23</div>
+                            <div class="bp-color-mini"><span class="sub">S%</span>100</div>
+                            <div class="bp-color-mini"><span class="sub">L%</span>62</div>
+                          </div>
+                        </div>
+
+                        <div class="bp-color-field inline">
+                          <span class="bp-card-label">SwiftUI</span>
+                          <div class="bp-color-line">
+                            Color(red: 1.000, green: 0.541, blue: 0.239)
+                          </div>
+                        </div>
+
+                        <div class="bp-color-field inline">
+                          <span class="bp-card-label">CSS</span>
+                          <div class="bp-color-line">rgb(255, 138, 61)</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Regex Tester demo column -->
+                <div class="bp-col">
+                  <span class="bp-step-label">Paste →</span>
+                  <div class="bp-paste" aria-label="Clipboard sample: a regex literal">
+                    /order-(\d{4})-(paid|due)/i
+                  </div>
+
+                  <button
+                    type="button"
+                    class="bp-pill"
+                    aria-label="Detected: Regex Tester, high confidence"
+                  >
+                    <span class="bp-pill-glyph" aria-hidden="true">.*</span>
+                    <span class="bp-pill-text">
+                      <span class="bp-pill-title">Regex Tester</span>
+                      <span class="bp-pill-sub">High confidence</span>
+                    </span>
+                    <span class="bp-pill-enter" aria-hidden="true">⏎</span>
+                  </button>
+
+                  <span class="bp-step-label">→ Bench renders</span>
+                  <div class="bp-out">
+                    <div class="bp-card">
+                      <span class="bp-card-label">Pattern</span>
+                      <div class="bp-card-body bp-regex-pattern">
+                        <span class="tok-str">/order-(\d{4})-(paid|due)/i</span>
+                      </div>
+                    </div>
+                    <div class="bp-card">
+                      <span class="bp-card-label">Test string</span>
+                      <div class="bp-card-body">
+                        invoice order-2847-paid synced · order-1930-due waiting
+                      </div>
+                    </div>
+                    <div class="bp-card">
+                      <span class="bp-card-label">Matches</span>
+                      <div class="bp-card-body bp-regex-body">
+                        <div>
+                          <span class="bp-match">order-2847-paid</span>
+                          <span class="tok-plain">@ 8-23</span>
+                        </div>
+                        <div>
+                          <span class="bp-match">order-1930-due</span>
+                          <span class="tok-plain">@ 33-47</span>
+                        </div>
+                        <div class="bp-regex-note">
+                          <span class="tok-key">\d{4}</span> captures the order number.
+                          <span class="tok-key">(paid|due)</span> captures status.
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -583,110 +634,114 @@ page_stylesheet: /bench.css
 
       <!-- ── SCREENSHOTS (full-bleed) ── -->
       <section class="shots-section" aria-label="Screenshots">
-        <div class="shots-head reveal">
-          <span class="num">05 · THE TOOLS IN USE</span>
-          <h2>Native Swift 6 / SwiftUI, built on the current Apple stack.</h2>
+        <div class="shots-stage" id="shots-stage">
+          <div class="shots-pin">
+            <div class="shots-head reveal">
+              <span class="num">05 · THE TOOLS IN USE</span>
+              <h2>Native Swift 6 / SwiftUI, built on the current Apple stack.</h2>
+            </div>
+            <div class="shots" id="shots-scroller">
+              <div class="shot">
+                <picture>
+                  <source type="image/avif" srcset="assets/bench-03-regex.avif" />
+                  <source type="image/webp" srcset="assets/bench-03-regex.webp" />
+                  <img
+                    src="assets/bench-03-regex@1x.png"
+                    srcset="assets/bench-03-regex@2x.png 2x"
+                    width="720"
+                    height="450"
+                    alt="Regex tester and explainer: token-highlighted pattern, hover explanations, inline match highlights, and a step-by-step execution trace"
+                    loading="lazy"
+                  />
+                </picture>
+                <div class="caption">
+                  <span class="hook"
+                    >Read a regex as a tree, watch matches light up, step the trace.</span
+                  >
+                  <span class="meta">bench-03 · Regex Tester &amp; Explainer</span>
+                </div>
+              </div>
+              <div class="shot">
+                <picture>
+                  <source type="image/avif" srcset="assets/bench-01-json.avif" />
+                  <source type="image/webp" srcset="assets/bench-01-json.webp" />
+                  <img
+                    src="assets/bench-01-json@1x.png"
+                    srcset="assets/bench-01-json@2x.png 2x"
+                    width="720"
+                    height="450"
+                    alt="JSON formatter with pasted payload and formatted output"
+                    loading="lazy"
+                  />
+                </picture>
+                <div class="caption">
+                  <span class="hook">Paste minified JSON, get it back indented.</span>
+                  <span class="meta">bench-01 · JSON Formatter</span>
+                </div>
+              </div>
+              <div class="shot">
+                <picture>
+                  <source type="image/avif" srcset="assets/bench-02-jwt.avif" />
+                  <source type="image/webp" srcset="assets/bench-02-jwt.webp" />
+                  <img
+                    src="assets/bench-02-jwt@1x.png"
+                    srcset="assets/bench-02-jwt@2x.png 2x"
+                    width="720"
+                    height="450"
+                    alt="JWT decoder with header, payload and signature panels"
+                    loading="lazy"
+                  />
+                </picture>
+                <div class="caption">
+                  <span class="hook">Paste a JWT, get the claims.</span>
+                  <span class="meta">bench-02 · JWT Decoder</span>
+                </div>
+              </div>
+              <div class="shot">
+                <picture>
+                  <source type="image/avif" srcset="assets/bench-04-hash.avif" />
+                  <source type="image/webp" srcset="assets/bench-04-hash.webp" />
+                  <img
+                    src="assets/bench-04-hash@1x.png"
+                    srcset="assets/bench-04-hash@2x.png 2x"
+                    width="720"
+                    height="450"
+                    alt="Hash generator producing MD5, SHA-1, SHA-256 and SHA-512"
+                    loading="lazy"
+                  />
+                </picture>
+                <div class="caption">
+                  <span class="hook">Paste text, pick an algorithm, copy the hash.</span>
+                  <span class="meta">bench-04 · Hash Generator</span>
+                </div>
+              </div>
+              <div class="shot">
+                <picture>
+                  <source type="image/avif" srcset="assets/bench-05-uuid.avif" />
+                  <source type="image/webp" srcset="assets/bench-05-uuid.webp" />
+                  <img
+                    src="assets/bench-05-uuid@1x.png"
+                    srcset="assets/bench-05-uuid@2x.png 2x"
+                    width="720"
+                    height="450"
+                    alt="UUID generator with v4 identifiers"
+                    loading="lazy"
+                  />
+                </picture>
+                <div class="caption">
+                  <span class="hook">Generate a UUID (or a hundred), copy, done.</span>
+                  <span class="meta">bench-05 · UUID Generator</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="shots-dots"
+              id="shots-dots"
+              role="tablist"
+              aria-label="Jump to screenshot"
+            ></div>
+          </div>
         </div>
-        <div class="shots" id="shots-scroller">
-          <div class="shot">
-            <picture>
-              <source type="image/avif" srcset="assets/bench-03-regex.avif" />
-              <source type="image/webp" srcset="assets/bench-03-regex.webp" />
-              <img
-                src="assets/bench-03-regex@1x.png"
-                srcset="assets/bench-03-regex@2x.png 2x"
-                width="720"
-                height="450"
-                alt="Regex tester and explainer: token-highlighted pattern, hover explanations, inline match highlights, and a step-by-step execution trace"
-                loading="lazy"
-              />
-            </picture>
-            <div class="caption">
-              <span class="hook"
-                >Read a regex as a tree, watch matches light up, step the trace.</span
-              >
-              <span class="meta">bench-03 · Regex Tester &amp; Explainer</span>
-            </div>
-          </div>
-          <div class="shot">
-            <picture>
-              <source type="image/avif" srcset="assets/bench-01-json.avif" />
-              <source type="image/webp" srcset="assets/bench-01-json.webp" />
-              <img
-                src="assets/bench-01-json@1x.png"
-                srcset="assets/bench-01-json@2x.png 2x"
-                width="720"
-                height="450"
-                alt="JSON formatter with pasted payload and formatted output"
-                loading="lazy"
-              />
-            </picture>
-            <div class="caption">
-              <span class="hook">Paste minified JSON, get it back indented.</span>
-              <span class="meta">bench-01 · JSON Formatter</span>
-            </div>
-          </div>
-          <div class="shot">
-            <picture>
-              <source type="image/avif" srcset="assets/bench-02-jwt.avif" />
-              <source type="image/webp" srcset="assets/bench-02-jwt.webp" />
-              <img
-                src="assets/bench-02-jwt@1x.png"
-                srcset="assets/bench-02-jwt@2x.png 2x"
-                width="720"
-                height="450"
-                alt="JWT decoder with header, payload and signature panels"
-                loading="lazy"
-              />
-            </picture>
-            <div class="caption">
-              <span class="hook">Paste a JWT, get the claims.</span>
-              <span class="meta">bench-02 · JWT Decoder</span>
-            </div>
-          </div>
-          <div class="shot">
-            <picture>
-              <source type="image/avif" srcset="assets/bench-04-hash.avif" />
-              <source type="image/webp" srcset="assets/bench-04-hash.webp" />
-              <img
-                src="assets/bench-04-hash@1x.png"
-                srcset="assets/bench-04-hash@2x.png 2x"
-                width="720"
-                height="450"
-                alt="Hash generator producing MD5, SHA-1, SHA-256 and SHA-512"
-                loading="lazy"
-              />
-            </picture>
-            <div class="caption">
-              <span class="hook">Paste text, pick an algorithm, copy the hash.</span>
-              <span class="meta">bench-04 · Hash Generator</span>
-            </div>
-          </div>
-          <div class="shot">
-            <picture>
-              <source type="image/avif" srcset="assets/bench-05-uuid.avif" />
-              <source type="image/webp" srcset="assets/bench-05-uuid.webp" />
-              <img
-                src="assets/bench-05-uuid@1x.png"
-                srcset="assets/bench-05-uuid@2x.png 2x"
-                width="720"
-                height="450"
-                alt="UUID generator with v4 identifiers"
-                loading="lazy"
-              />
-            </picture>
-            <div class="caption">
-              <span class="hook">Generate a UUID (or a hundred), copy, done.</span>
-              <span class="meta">bench-05 · UUID Generator</span>
-            </div>
-          </div>
-        </div>
-        <div
-          class="shots-dots"
-          id="shots-dots"
-          role="tablist"
-          aria-label="Jump to screenshot"
-        ></div>
       </section>
 
       <!-- ── SPECS ── -->
@@ -861,7 +916,7 @@ page_stylesheet: /bench.css
           </div>
 
           <div class="faq-list reveal">
-            <details>
+            <details open>
               <summary>Does it work offline?</summary>
               <p>
                 Yes. Every tool runs entirely on your Mac. No tool in Bench makes network calls. The
@@ -869,7 +924,7 @@ page_stylesheet: /bench.css
                 handled by macOS itself and uses the network to talk to Apple, not to us.
               </p>
             </details>
-            <details>
+            <details open>
               <summary>Is the "smart" part AI?</summary>
               <p>
                 No. It's rule‑based pattern matching: regex and string checks tuned per format, with
@@ -877,7 +932,7 @@ page_stylesheet: /bench.css
                 entirely on your Mac.
               </p>
             </details>
-            <details>
+            <details open>
               <summary>How much is Bench, and what do I get?</summary>
               <p>
                 Bench is <strong>${{ site.price_lifetime }}</strong>, one‑time. That unlocks every
@@ -886,7 +941,7 @@ page_stylesheet: /bench.css
               </p>
             </details>
 
-            <details>
+            <details open>
               <summary>Does it sync between my Macs?</summary>
               <p>
                 No. Bench keeps everything local on the Mac you're using. There are no accounts, no
@@ -894,14 +949,14 @@ page_stylesheet: /bench.css
                 If you want your recent inputs on another Mac, copy and paste them.
               </p>
             </details>
-            <details>
+            <details open>
               <summary>Is it a universal binary?</summary>
               <p>
                 Yes. Bench ships as a universal binary that runs natively on Apple silicon and Intel
                 Macs. The minimum system requirement is macOS 14.
               </p>
             </details>
-            <details>
+            <details open>
               <summary>What data does Bench collect?</summary>
               <p>
                 None. Bench has no account system and carries no analytics or third‑party SDKs.
@@ -910,7 +965,7 @@ page_stylesheet: /bench.css
                 stays on your Mac.
               </p>
             </details>
-            <details>
+            <details open>
               <summary>How do updates work?</summary>
               <p>
                 Once Bench ships, updates will arrive through Apple the same way as any Mac app you
@@ -918,7 +973,7 @@ page_stylesheet: /bench.css
                 install when an update is available.
               </p>
             </details>
-            <details>
+            <details open>
               <summary>Can I get a refund?</summary>
               <p>
                 Once the app ships, purchases and refunds will be handled by Apple. You'll be able

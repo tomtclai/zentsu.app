@@ -941,6 +941,9 @@ section.slab {
   scroll-padding-left: 0.5rem;
   scrollbar-width: thin;
 }
+.bp-stage {
+  --bp-grow: 0;
+}
 .bp-col {
   display: flex;
   flex-direction: column;
@@ -1076,6 +1079,14 @@ section.slab {
   overflow-x: auto;
   white-space: pre-line;
 }
+.bp-json-output {
+  margin: 0;
+  white-space: pre;
+  tab-size: 2;
+}
+.bp-json-output code {
+  font: inherit;
+}
 /* JSON token colors — tuned for legibility in both light + dark page modes */
 .bp-card-body .tok-key {
   color: #6ad0d9;
@@ -1091,6 +1102,29 @@ section.slab {
 }
 .bp-card-body .tok-plain {
   color: #e8e4dc;
+}
+.bp-regex-pattern {
+  text-align: left;
+  white-space: normal;
+}
+.bp-regex-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  white-space: normal;
+}
+.bp-match {
+  display: inline-flex;
+  border-radius: 5px;
+  padding: 0.1rem 0.28rem;
+  background: rgba(74, 140, 255, 0.18);
+  color: #d8e6ff;
+}
+.bp-regex-note {
+  margin-top: 0.35rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #b7b0a7;
 }
 
 /* Color Converter swatch + field rows (third demo column) */
@@ -1201,11 +1235,59 @@ section.slab {
   }
 }
 
+@media (min-width: 900px) and (prefers-reduced-motion: no-preference) {
+  .bp-stage.scroll-driven {
+    min-height: calc(var(--bp-count, 4) * 72vh + 70vh);
+    margin: clamp(1rem, 3vh, 2rem) calc(50% - 50vw) 3rem;
+  }
+  .bp-stage.scroll-driven .bp-pin {
+    position: sticky;
+    top: 0;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: clamp(4rem, 7vh, 5.5rem) 0 clamp(2rem, 5vh, 4rem);
+  }
+  .bp-stage.scroll-driven .bp-demo {
+    width: max-content;
+    overflow: visible;
+    gap: clamp(1.25rem, 2vw, 2rem);
+    padding: 0 clamp(1.5rem, 8vw, 7rem);
+    scroll-snap-type: none;
+    scrollbar-width: none;
+    transform: translate3d(var(--bp-x, 0px), 0, 0);
+    will-change: transform;
+  }
+  .bp-stage.scroll-driven .bp-demo::-webkit-scrollbar {
+    display: none;
+  }
+  .bp-stage.scroll-driven .bp-col {
+    flex: 0 0 clamp(390px, calc(33vw + (4vw * var(--bp-grow))), 470px);
+    opacity: 0.58;
+    transform: scale(0.985);
+    transition:
+      opacity 0.18s ease,
+      transform 0.28s ease;
+  }
+  .bp-stage.scroll-driven .bp-col.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .bp-stage.scroll-driven .bp-demo.reveal {
+    opacity: 1;
+    transform: translate3d(var(--bp-x, 0px), 0, 0);
+    transition: none;
+  }
+}
+
 /* ── Screenshots full-bleed ── */
 .shots-section {
   background: var(--bg-alt);
   padding: 5rem 0;
   border-bottom: 1px solid var(--border);
+  --shots-grow: 0;
+  --shots-immersive: 0;
 }
 .shots-head {
   max-width: 1160px;
@@ -1258,6 +1340,7 @@ section.slab {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
+  order: -1;
 }
 .shot .caption .hook {
   font-size: 1rem;
@@ -1292,6 +1375,123 @@ section.slab {
 .shots-dots .dot.active {
   background: var(--ink);
   transform: scale(1.25);
+}
+
+@media (min-width: 900px) and (prefers-reduced-motion: no-preference) {
+  body.shots-immersive nav {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-100%);
+  }
+  body nav {
+    transition:
+      opacity 0.24s ease,
+      transform 0.24s ease;
+  }
+  .shots-section.scroll-driven {
+    padding: 0;
+  }
+  .shots-section.scroll-driven .shots-stage {
+    min-height: calc(var(--shot-count, 5) * 78vh + 100vh);
+  }
+  .shots-section.scroll-driven .shots-pin {
+    position: sticky;
+    top: 0;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(4.5rem, 7vh, 6rem) 0 clamp(2rem, 5vh, 4rem);
+    overflow: hidden;
+  }
+  .shots-section.scroll-driven .shots-head {
+    width: min(1160px, calc(100vw - 3rem));
+    margin-bottom: calc(clamp(1.25rem, 3vh, 2rem) * (1 - var(--shots-immersive)));
+    opacity: calc(1 - var(--shots-immersive));
+    transform: translateY(calc(var(--shots-immersive) * -28px));
+    transition:
+      opacity 0.18s ease,
+      transform 0.18s ease,
+      margin-bottom 0.18s ease;
+  }
+  .shots-section.scroll-driven .shots {
+    position: relative;
+    width: max-content;
+    max-width: none;
+    height: auto;
+    margin: 0;
+    display: flex;
+    gap: clamp(1rem, 2vw, 1.5rem);
+    overflow: visible;
+    padding: 0 clamp(1.5rem, 6vw, 5.5rem);
+    scroll-snap-type: none;
+    scrollbar-width: none;
+    animation: none;
+    transform: translate3d(var(--shots-x, 0px), 0, 0);
+    transition: none;
+    will-change: transform;
+  }
+  .shots-section.scroll-driven .shots::-webkit-scrollbar {
+    display: none;
+  }
+  .shots-section.scroll-driven .shot {
+    position: relative;
+    flex: 0 0
+      min(calc(72vw + (22vw * var(--shots-grow))), calc(840px + (380px * var(--shots-grow))));
+    width: min(calc(72vw + (22vw * var(--shots-grow))), calc(840px + (380px * var(--shots-grow))));
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: clamp(0.65rem, 1.4vh, 0.9rem);
+    opacity: calc(0.52 - (0.44 * var(--shots-immersive)));
+    pointer-events: auto;
+    transform: scale(0.965);
+    transition:
+      opacity 0.18s ease,
+      transform 0.36s ease;
+  }
+  .shots-section.scroll-driven .shot.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .shots-section.scroll-driven .shot picture {
+    display: block;
+    aspect-ratio: 16 / 10;
+  }
+  .shots-section.scroll-driven .shot img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: calc(10px + (8px * var(--shots-grow)));
+    box-shadow:
+      0 36px 80px -42px rgba(20, 17, 15, 0.58),
+      0 10px 28px -18px rgba(20, 17, 15, 0.34);
+  }
+  .shots-section.scroll-driven .shot .caption {
+    width: min(100%, 70rem);
+    margin: 0 auto;
+    opacity: calc(1 - var(--shots-immersive));
+    transform: translateY(calc(var(--shots-immersive) * -8px));
+    transition:
+      opacity 0.18s ease,
+      transform 0.18s ease;
+  }
+  .shots-section.scroll-driven .shot.active .caption {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .shots-section.scroll-driven .shot .caption .hook {
+    font-size: clamp(1rem, 1.45vw, 1.2rem);
+  }
+  .shots-section.scroll-driven .shots-dots {
+    position: relative;
+    z-index: 2;
+    margin-top: clamp(1rem, 2.5vh, 1.4rem);
+    opacity: calc(1 - var(--shots-immersive));
+    transform: translateY(calc(var(--shots-immersive) * 10px));
+    transition:
+      opacity 0.18s ease,
+      transform 0.18s ease;
+  }
 }
 
 /* ── Specs ── */
@@ -1630,7 +1830,29 @@ section.buy {
 }
 .faq-list details {
   border-bottom: 1px solid var(--border);
-  padding: 1.25rem 0.25rem;
+  padding: 1.25rem 1.25rem 1.25rem 1.35rem;
+  position: relative;
+  overflow: hidden;
+}
+.faq-list details::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: var(--accent);
+  opacity: 0;
+  transform: scaleY(0.2);
+  transform-origin: 50% 0;
+  transition:
+    opacity 0.24s ease,
+    transform 0.42s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.faq-list details:hover::before,
+.faq-list details:focus-within::before {
+  opacity: 0.85;
+  transform: scaleY(1);
 }
 .faq-list summary {
   font-size: 1.0625rem;
@@ -1643,12 +1865,17 @@ section.buy {
   align-items: center;
   gap: 1rem;
   letter-spacing: -0.01em;
+  transition: color 0.18s ease;
+}
+.faq-list details:hover summary,
+.faq-list details:focus-within summary {
+  color: var(--ink);
 }
 .faq-list summary::-webkit-details-marker {
   display: none;
 }
 .faq-list summary::after {
-  content: '+';
+  content: '–';
   font-family: 'JetBrains Mono', monospace;
   font-weight: 400;
   font-size: 1.35rem;
@@ -1656,15 +1883,38 @@ section.buy {
   transition: transform 0.2s;
   line-height: 1;
 }
-.faq-list details[open] summary::after {
-  content: '−';
+.faq-list details:hover summary::after,
+.faq-list details:focus-within summary::after {
   color: var(--accent);
 }
 .faq-list details p {
-  margin-top: 0.8rem;
+  margin-top: 0;
   color: var(--ink-soft);
   line-height: 1.65;
   max-width: 68ch;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-8px);
+  transition:
+    max-height 0.55s cubic-bezier(0.2, 0.8, 0.2, 1),
+    opacity 0.26s ease,
+    transform 0.36s cubic-bezier(0.2, 0.8, 0.2, 1),
+    margin-top 0.28s ease;
+}
+.faq-list details:hover p,
+.faq-list details:focus-within p {
+  margin-top: 0.8rem;
+  max-height: 18rem;
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .faq-list details p {
+    max-height: none;
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /* ── System requirements mini line ── */
@@ -2011,45 +2261,144 @@ footer a:hover {
       animation-range: entry 18% entry 53%;
     }
 
-    /* 7 · Pricing — the card scales into focus while its shadow deepens.
-       The shadow lives on a pseudo-element so only opacity animates. */
+    /* 7 · Pricing — Keynote-style drop. The card falls in as the reader
+       scrolls, hits an invisible floor, then settles while the floor shadow
+       squashes underneath it. */
     .pricing--single.reveal {
       opacity: 1;
       transform: none;
       transition: none;
+      perspective: 1100px;
+      overflow: visible;
+      min-height: 96vh;
+      align-content: center;
+      view-timeline: --bench-price block;
     }
     .price-card--main {
-      position: relative;
-      view-timeline: --bench-price block;
-      animation: sda-price-in linear both;
+      position: sticky;
+      top: max(4.75rem, calc(50vh - 13.5rem));
+      transform-origin: 50% 100%;
+      animation: sda-price-drop linear both;
       animation-timeline: --bench-price;
-      animation-range: entry 0% entry 70%;
+      animation-range: cover 18% cover 52%;
+      will-change: transform, opacity;
+    }
+    .price-card--main::before {
+      content: '';
+      position: absolute;
+      left: 8%;
+      right: 8%;
+      bottom: -34px;
+      height: 34px;
+      z-index: 0;
+      border-radius: 50%;
+      background:
+        radial-gradient(ellipse at center, rgba(111, 167, 150, 0.38), transparent 38%),
+        radial-gradient(ellipse at center, rgba(20, 17, 15, 0.46), transparent 70%);
+      opacity: 0;
+      transform: scaleX(0.52) scaleY(0.35);
+      animation: sda-price-floor linear both;
+      animation-timeline: --bench-price;
+      animation-range: cover 18% cover 52%;
     }
     .price-card--main::after {
       content: '';
       position: absolute;
-      inset: 0;
-      border-radius: 14px;
-      box-shadow: 0 28px 56px -28px rgba(20, 17, 15, 0.35);
+      left: -12%;
+      right: -12%;
+      bottom: -52px;
+      height: 76px;
+      border-radius: 50%;
+      background:
+        radial-gradient(ellipse at 18% 45%, rgba(214, 208, 194, 0.2), transparent 24%),
+        radial-gradient(ellipse at 42% 52%, rgba(214, 208, 194, 0.16), transparent 22%),
+        radial-gradient(ellipse at 68% 46%, rgba(214, 208, 194, 0.18), transparent 26%),
+        radial-gradient(ellipse at 50% 55%, rgba(111, 167, 150, 0.2), transparent 46%);
+      filter: blur(10px);
       opacity: 0;
       pointer-events: none;
-      animation: sda-price-shadow linear both;
+      z-index: 0;
+      transform: translateY(8px) scale(0.35, 0.18);
+      animation: sda-price-smoke linear both;
       animation-timeline: --bench-price;
-      animation-range: entry 0% entry 70%;
+      animation-range: cover 18% cover 52%;
     }
-    @keyframes sda-price-in {
-      from {
-        opacity: 0.4;
-        scale: 0.96;
+    .price-card--main > * {
+      position: relative;
+      z-index: 1;
+    }
+    @keyframes sda-price-drop {
+      0% {
+        opacity: 0;
+        transform: translateY(-96vh) rotateX(58deg) rotateZ(-9deg) scale(0.72);
       }
-      to {
+      20% {
         opacity: 1;
-        scale: 1;
+        transform: translateY(-20vh) rotateX(22deg) rotateZ(-2.5deg) scale(0.9);
+      }
+      30% {
+        opacity: 1;
+        transform: translateY(52px) rotateX(-18deg) rotateZ(1.8deg) scale(1.14, 0.84);
+      }
+      42% {
+        opacity: 1;
+        transform: translateY(-28px) rotateX(11deg) rotateZ(-0.9deg) scale(0.95, 1.06);
+      }
+      64% {
+        opacity: 1;
+        transform: translateY(9px) rotateX(-4deg) rotateZ(0.25deg) scale(1.018, 0.982);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) rotateX(0) rotateZ(0) scale(1, 1);
       }
     }
-    @keyframes sda-price-shadow {
-      to {
+    @keyframes sda-price-floor {
+      0% {
+        opacity: 0;
+        transform: scaleX(0.18) scaleY(0.16);
+      }
+      20% {
+        opacity: 0.14;
+        transform: scaleX(0.48) scaleY(0.22);
+      }
+      30% {
+        opacity: 0.96;
+        transform: scaleX(1.78) scaleY(0.55);
+      }
+      42% {
+        opacity: 0.44;
+        transform: scaleX(0.74) scaleY(0.26);
+      }
+      64% {
+        opacity: 0.64;
+        transform: scaleX(1.08) scaleY(0.38);
+      }
+      100% {
+        opacity: 0.42;
+        transform: scaleX(1) scaleY(0.34);
+      }
+    }
+    @keyframes sda-price-smoke {
+      0% {
+        opacity: 0;
+        transform: translateY(12px) scale(0.24, 0.12);
+      }
+      24% {
+        opacity: 0;
+        transform: translateY(10px) scale(0.28, 0.14);
+      }
+      31% {
         opacity: 1;
+        transform: translateY(-2px) scale(1.04, 0.48);
+      }
+      48% {
+        opacity: 0.58;
+        transform: translateY(-18px) scale(1.5, 0.68);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-26px) scale(1.72, 0.72);
       }
     }
 
@@ -2113,8 +2462,17 @@ footer a:hover {
 
     /* Dark mode: deepen the pricing shadow against the dark tokens. */
     @media (prefers-color-scheme: dark) {
+      .price-card--main::before {
+        background:
+          radial-gradient(ellipse at center, rgba(111, 167, 150, 0.32), transparent 38%),
+          radial-gradient(ellipse at center, rgba(0, 0, 0, 0.78), transparent 70%);
+      }
       .price-card--main::after {
-        box-shadow: 0 28px 56px -28px rgba(0, 0, 0, 0.6);
+        background:
+          radial-gradient(ellipse at 18% 45%, rgba(240, 236, 227, 0.18), transparent 24%),
+          radial-gradient(ellipse at 42% 52%, rgba(240, 236, 227, 0.13), transparent 22%),
+          radial-gradient(ellipse at 68% 46%, rgba(240, 236, 227, 0.16), transparent 26%),
+          radial-gradient(ellipse at 50% 55%, rgba(111, 167, 150, 0.22), transparent 46%);
       }
     }
   }

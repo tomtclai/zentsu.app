@@ -509,49 +509,266 @@ Order <span class="sp-r">2847</span>, shipped <span class="sp-r">2026</span>-04-
 })();
 
 /* ───────────────────────────────────────────────────────────
-       Screenshots scroller — progress dots + reduced-motion guard
+       Paste demo rail — desktop vertical scroll drives horizontal columns
        ─────────────────────────────────────────────────────────── */
-(function shotsDots() {
+(function pasteDemoRail() {
+  const stage = document.getElementById('bp-stage');
+  const rail = document.getElementById('bp-demo');
+  if (!stage || !rail) return;
+  const cols = [...rail.querySelectorAll('.bp-col')];
+  if (!cols.length) return;
+
+  const desktopMotion = window.matchMedia(
+    '(min-width: 900px) and (prefers-reduced-motion: no-preference)',
+  );
+  let ticking = false;
+  let cleanup = () => {};
+
+  function setActive(index) {
+    cols.forEach((col, i) => col.classList.toggle('active', i === index));
+  }
+
+  function nearestColumn() {
+    const viewportCenter = window.innerWidth / 2;
+    let best = 0;
+    let bestDist = Infinity;
+    cols.forEach((col, i) => {
+      const rect = col.getBoundingClientRect();
+      const center = rect.left + rect.width / 2;
+      const dist = Math.abs(center - viewportCenter);
+      if (dist < bestDist) {
+        bestDist = dist;
+        best = i;
+      }
+    });
+    return best;
+  }
+
+  function setupHorizontal() {
+    stage.classList.remove('scroll-driven');
+    stage.style.removeProperty('--bp-count');
+    stage.style.removeProperty('--bp-grow');
+    rail.style.removeProperty('--bp-x');
+    cols.forEach((col) => col.classList.remove('active'));
+    cleanup = () => {};
+  }
+
+  function setupScrollDriven() {
+    stage.classList.add('scroll-driven');
+    stage.style.setProperty('--bp-count', String(cols.length));
+
+    const update = () => {
+      ticking = false;
+      const rect = stage.getBoundingClientRect();
+      const travel = Math.max(1, stage.offsetHeight - window.innerHeight);
+      const progress = Math.max(0, Math.min(1, -rect.top / travel));
+      const grow = Math.max(0, Math.min(1, progress / 0.2));
+      stage.style.setProperty('--bp-grow', grow.toFixed(3));
+
+      const railProgress = Math.max(0, Math.min(1, (progress - 0.08) / 0.9));
+      const first = cols[0];
+      const last = cols[cols.length - 1];
+      const startShift = window.innerWidth / 2 - (first.offsetLeft + first.offsetWidth / 2);
+      const endShift = window.innerWidth / 2 - (last.offsetLeft + last.offsetWidth / 2);
+      const shift = startShift + (endShift - startShift) * railProgress;
+      rail.style.setProperty('--bp-x', shift.toFixed(1) + 'px');
+      setActive(nearestColumn());
+    };
+
+    const requestUpdate = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(update);
+    };
+
+    window.addEventListener('scroll', requestUpdate, { passive: true });
+    window.addEventListener('resize', requestUpdate);
+    update();
+    cleanup = () => {
+      window.removeEventListener('scroll', requestUpdate);
+      window.removeEventListener('resize', requestUpdate);
+      stage.classList.remove('scroll-driven');
+      stage.style.removeProperty('--bp-grow');
+      rail.style.removeProperty('--bp-x');
+    };
+  }
+
+  function setup() {
+    cleanup();
+    ticking = false;
+    if (desktopMotion.matches) setupScrollDriven();
+    else setupHorizontal();
+  }
+
+  setup();
+  if (desktopMotion.addEventListener) desktopMotion.addEventListener('change', setup);
+  else desktopMotion.addListener(setup);
+})();
+
+/* ───────────────────────────────────────────────────────────
+       Screenshots scroller — desktop scroll scrub + fallback dots
+       ─────────────────────────────────────────────────────────── */
+(function shotsScroller() {
+  const stage = document.getElementById('shots-stage');
   const scroller = document.getElementById('shots-scroller');
   const dotsHost = document.getElementById('shots-dots');
   if (!scroller || !dotsHost) return;
   const shots = [...scroller.querySelectorAll('.shot')];
   if (!shots.length) return;
+  const desktopMotion = window.matchMedia(
+    '(min-width: 900px) and (prefers-reduced-motion: no-preference)',
+  );
+
+  let active = 0;
+  let ticking = false;
+  let scrollMode = false;
+  let cleanup = () => {};
+
+  function setActive(index) {
+    active = Math.max(0, Math.min(shots.length - 1, index));
+    shots.forEach((shot, i) => {
+      shot.classList.toggle('active', i === active);
+      shot.setAttribute('aria-hidden', i === active ? 'false' : 'true');
+    });
+    dotsHost.querySelectorAll('.dot').forEach((dot, i) => {
+      dot.classList.toggle('active', i === active);
+      dot.setAttribute('aria-selected', i === active ? 'true' : 'false');
+    });
+  }
 
   shots.forEach((s, i) => {
     const b = document.createElement('button');
     b.type = 'button';
     b.className = 'dot' + (i === 0 ? ' active' : '');
     b.setAttribute('role', 'tab');
+    b.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
     b.setAttribute('aria-label', 'Screenshot ' + (i + 1));
     b.addEventListener('click', () => {
       const behavior = prefersReducedMotion ? 'auto' : 'smooth';
-      s.scrollIntoView({ behavior, inline: 'start', block: 'nearest' });
+      if (scrollMode && stage) {
+        const rect = stage.getBoundingClientRect();
+        const start = window.scrollY + rect.top;
+        const travel = Math.max(1, stage.offsetHeight - window.innerHeight);
+        const frameStart = 0.18;
+        const frameSpan = 0.82;
+        const targetProgress =
+          shots.length <= 1 ? 0 : frameStart + (i / (shots.length - 1)) * frameSpan;
+        window.scrollTo({ top: start + travel * targetProgress, behavior });
+      } else {
+        s.scrollIntoView({ behavior, inline: 'start', block: 'nearest' });
+      }
+      setActive(i);
     });
     dotsHost.appendChild(b);
   });
 
-  let ticking = false;
-  scroller.addEventListener('scroll', () => {
-    if (ticking) return;
-    ticking = true;
-    requestAnimationFrame(() => {
-      const sl = scroller.scrollLeft;
+  function setupHorizontal() {
+    scrollMode = false;
+    if (stage) stage.style.removeProperty('--shot-count');
+    scroller.closest('.shots-section')?.classList.remove('scroll-driven');
+    shots.forEach((shot) => {
+      shot.classList.remove('active');
+      shot.removeAttribute('aria-hidden');
+    });
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const sl = scroller.scrollLeft;
+        let best = 0;
+        let bestDist = Infinity;
+        shots.forEach((s, i) => {
+          const d = Math.abs(s.offsetLeft - sl);
+          if (d < bestDist) {
+            bestDist = d;
+            best = i;
+          }
+        });
+        setActive(best);
+        ticking = false;
+      });
+    };
+    scroller.addEventListener('scroll', onScroll, { passive: true });
+    setActive(0);
+    cleanup = () => scroller.removeEventListener('scroll', onScroll);
+  }
+
+  function setupScrollScrub() {
+    if (!stage) {
+      setupHorizontal();
+      return;
+    }
+    scrollMode = true;
+    const section = scroller.closest('.shots-section');
+    section?.classList.add('scroll-driven');
+    stage.style.setProperty('--shot-count', String(shots.length));
+
+    const update = () => {
+      ticking = false;
+      const rect = stage.getBoundingClientRect();
+      const travel = Math.max(1, stage.offsetHeight - window.innerHeight);
+      const progress = Math.max(0, Math.min(1, -rect.top / travel));
+      const grow = Math.max(0, Math.min(1, progress / 0.24));
+      const immersive = Math.max(0, Math.min(1, (grow - 0.42) / 0.58));
+      section?.style.setProperty('--shots-grow', grow.toFixed(3));
+      section?.style.setProperty('--shots-immersive', immersive.toFixed(3));
+      document.body.classList.toggle('shots-immersive', immersive > 0.7);
+
+      const frameProgress = Math.max(0, Math.min(1, (progress - 0.18) / 0.82));
+      const first = shots[0];
+      const last = shots[shots.length - 1];
+      const startShift = window.innerWidth / 2 - (first.offsetLeft + first.offsetWidth / 2);
+      const endShift = window.innerWidth / 2 - (last.offsetLeft + last.offsetWidth / 2);
+      const shift = startShift + (endShift - startShift) * frameProgress;
+      scroller.style.setProperty('--shots-x', shift.toFixed(1) + 'px');
+
+      const viewportCenter = window.innerWidth / 2;
       let best = 0;
       let bestDist = Infinity;
-      shots.forEach((s, i) => {
-        const d = Math.abs(s.offsetLeft - sl);
-        if (d < bestDist) {
-          bestDist = d;
+      shots.forEach((shot, i) => {
+        const shotRect = shot.getBoundingClientRect();
+        const center = shotRect.left + shotRect.width / 2;
+        const dist = Math.abs(center - viewportCenter);
+        if (dist < bestDist) {
+          bestDist = dist;
           best = i;
         }
       });
-      dotsHost.querySelectorAll('.dot').forEach((d, i) => {
-        d.classList.toggle('active', i === best);
-      });
-      ticking = false;
-    });
-  });
-  // No auto-scroll is implemented; if one is added later, wrap it in:
-  //   if (!prefersReducedMotion) { ... }
+      setActive(best);
+    };
+
+    const requestUpdate = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(update);
+    };
+
+    window.addEventListener('scroll', requestUpdate, { passive: true });
+    window.addEventListener('resize', requestUpdate);
+    setActive(0);
+    update();
+    cleanup = () => {
+      window.removeEventListener('scroll', requestUpdate);
+      window.removeEventListener('resize', requestUpdate);
+      section?.style.removeProperty('--shots-grow');
+      section?.style.removeProperty('--shots-immersive');
+      section?.classList.remove('scroll-driven');
+      scroller.style.removeProperty('--shots-x');
+      document.body.classList.remove('shots-immersive');
+    };
+  }
+
+  function setup() {
+    cleanup();
+    if (ticking) return;
+    if (desktopMotion.matches) setupScrollScrub();
+    else setupHorizontal();
+  }
+
+  setup();
+  if (desktopMotion.addEventListener) {
+    desktopMotion.addEventListener('change', setup);
+  } else {
+    desktopMotion.addListener(setup);
+  }
 })();

@@ -109,11 +109,7 @@ categories:
       - label: Regex Tester
         href: /tools/regex-tester.html
         icon: regex-tester
-        benefit: 'Try a pattern against real input. Matches light up as you type.'
-      - label: Regex Explainer
-        href: /tools/regex-tester.html
-        icon: regex-explainer
-        benefit: 'A regex, explained as a tree. Step through the NFA trace line by line.'
+        benefit: 'Try a pattern against real input, read the AST, and step through the trace.'
       - label: MOV to MP4
         href: /tools/mov-to-mp4.html
         icon: mov-to-mp4
