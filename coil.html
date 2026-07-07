@@ -1,6 +1,6 @@
 ---
 title: Coil · Subscription tracker by Zentsu LLC
-description: 'Coil is a native subscription tracker for iPhone and Mac. It runs on your device and never links to your bank. Currently in beta.'
+description: 'Coil is a native subscription tracker for iPhone and Mac. It runs on your device, never links to your bank, and needs no account. Free for up to 10 subscriptions, with a one-time Coil Pro unlock.'
 og_description: 'A native subscription tracker for iPhone and Mac. It runs on your device and never links to your bank.'
 canonical: https://zentsu.app/coil.html
 og_image_alt: 'Coil: subscription tracker by Zentsu LLC'
@@ -14,13 +14,13 @@ og_image_alt: 'Coil: subscription tracker by Zentsu LLC'
 
     <style>
       /* Page-specific only. The page shell (.wrap), hero base, section rhythm,
-         and small-screen hero padding now live in /shared.css. Coil overrides
-         just two shared values (the hero dot tint via --hero-dot, and a wider
-         .lede) and adds its own coming-soon badge, specline, points grid, and
-         prose block. */
+         and small-screen hero padding live in /shared.css. Coil overrides just
+         two shared values (the hero dot tint via --hero-dot, and a wider .lede)
+         and adds its own coming-soon badge, specline, points grid, free/Pro
+         tiers, and prose block. */
 
       /* Coil tints the pegboard hero dots with its warm spot color, and gives
-         the lede a touch more room than the studio default (32ch). */
+         the lede a touch more room than the studio default. */
       .hero {
         --hero-dot: rgba(184, 78, 26, 0.06);
       }
@@ -67,6 +67,66 @@ og_image_alt: 'Coil: subscription tracker by Zentsu LLC'
         color: var(--body-text);
         line-height: 1.6;
       }
+
+      /* Free / Pro tiers. Two bordered cards; the Pro card takes the warm spot
+         border. Feature rows use a small arrow marker, matching the footer/buy
+         facts elsewhere on the site. */
+      .tiers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem;
+        margin-top: 0.5rem;
+      }
+      .tier {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1.5rem 1.6rem;
+      }
+      .tier--pro {
+        border-color: var(--spot);
+      }
+      .tier h3 {
+        font-size: 1.0625rem;
+        font-weight: 600;
+        color: var(--ink);
+        margin-bottom: 0.15rem;
+      }
+      .tier .tier-price {
+        font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.8125rem;
+        color: var(--muted);
+        margin-bottom: 0.95rem;
+      }
+      .tier p {
+        font-size: 0.9375rem;
+        color: var(--body-text);
+        line-height: 1.6;
+        margin-bottom: 0.95rem;
+      }
+      .tier ul {
+        list-style: none;
+        display: grid;
+        gap: 0.5rem;
+      }
+      .tier li {
+        position: relative;
+        padding-left: 1.15rem;
+        font-size: 0.9375rem;
+        color: var(--body-text);
+        line-height: 1.5;
+      }
+      .tier li::before {
+        content: '→';
+        position: absolute;
+        left: 0;
+        color: var(--spot);
+      }
+      .price-note {
+        font-size: 0.8125rem;
+        color: var(--muted);
+        margin-top: 1rem;
+      }
       .block p.prose {
         font-size: 0.9375rem;
         color: var(--body-text);
@@ -81,7 +141,8 @@ og_image_alt: 'Coil: subscription tracker by Zentsu LLC'
         text-decoration: underline;
       }
       @media (max-width: 600px) {
-        .points {
+        .points,
+        .tiers {
           grid-template-columns: 1fr;
         }
       }
@@ -99,13 +160,10 @@ og_image_alt: 'Coil: subscription tracker by Zentsu LLC'
           <p class="detail">
             Coil is a native subscription tracker for iPhone and Mac. It runs on your device, never
             links to your bank, and needs no account. You add what you pay for, and Coil keeps the
-            renewals, totals, and reminders in front of you. It's in beta now, with the App Store
-            release close behind.
+            renewals, totals, and reminders in front of you. It's in TestFlight now, with the App
+            Store release close behind.
           </p>
-          <p class="specline">
-            iOS · macOS · native Swift / SwiftUI{% if coil_price %} · ${{ coil_price }} one-time{%
-            endif %}
-          </p>
+          <p class="specline">iOS · macOS · native Swift / SwiftUI</p>
         </div>
       </section>
 
@@ -114,29 +172,56 @@ og_image_alt: 'Coil: subscription tracker by Zentsu LLC'
           <h2>What it does</h2>
           <ul class="points">
             <li>
-              <h3>Everything in one place</h3>
+              <h3>Fast entry</h3>
               <p>
-                Add each subscription once. Coil keeps the price, the billing cycle, and the next
-                renewal date together, so you always know what's coming.
+                The built-in catalog covers 362 services and fills in the details when you pick one.
+                Anything else takes a few fields. The catalog is bundled with the app and works
+                offline.
               </p>
             </li>
             <li>
-              <h3>Renewal reminders</h3>
+              <h3>Renewal calendar</h3>
               <p>
-                A heads-up before a charge lands, so a free trial or a plan you meant to cancel
-                doesn't quietly renew.
+                A month view of every upcoming charge, with an upcoming-payments list beside it, so
+                you can see what lands and when.
+              </p>
+            </li>
+            <li>
+              <h3>Trials and cancel-by dates</h3>
+              <p>
+                Record a trial's end date and the last day to cancel. A forgotten trial stays
+                visible before it turns into a charge.
+              </p>
+            </li>
+            <li>
+              <h3>Real multi-currency</h3>
+              <p>
+                Track subscriptions in different currencies. Coil converts the totals to your base
+                currency using bundled exchange rates, so nothing phones home for a rate.
+              </p>
+            </li>
+            <li>
+              <h3>Spending insights</h3>
+              <p>Monthly and yearly totals, broken down by category.</p>
+            </li>
+            <li>
+              <h3>Widgets</h3>
+              <p>Upcoming payments on the home screen, the lock screen, and the Mac desktop.</p>
+            </li>
+            <li>
+              <h3>Full backup, free for everyone</h3>
+              <p>
+                Complete JSON backup and restore is included at no cost. Your data stays portable
+                and yours to move.
               </p>
             </li>
             <li>
               <h3>Private by design</h3>
               <p>
-                No bank linking and no account. What you enter stays on your devices, synced through
-                your own iCloud. We run no server and receive nothing.
+                There is no account and no bank linking. What you enter stays on your devices and
+                syncs through your own iCloud. We run no server and receive nothing. Skip iCloud and
+                it all stays on the one device.
               </p>
-            </li>
-            <li>
-              <h3>Native on every device</h3>
-              <p>Built in Swift and SwiftUI for iPhone and Mac, not a web view in a wrapper.</p>
             </li>
           </ul>
         </div>
@@ -144,10 +229,58 @@ og_image_alt: 'Coil: subscription tracker by Zentsu LLC'
 
       <section class="block">
         <div class="wrap">
+          <h2>Free and Pro</h2>
+          <div class="tiers">
+            <div class="tier">
+              <h3>Free</h3>
+              <p class="tier-price">Up to 10 subscriptions</p>
+              <p>
+                The free tier is a complete tracker. The catalog, renewal calendar, iCloud sync,
+                widgets, multi-currency, trial tracking, and backup are all included.
+              </p>
+            </div>
+            <div class="tier tier--pro">
+              <h3>Coil Pro</h3>
+              <p class="tier-price">
+                {% if coil_price %}${{ coil_price }} {% endif %}one-time, iPhone and Mac
+              </p>
+              <p>
+                One purchase, made once. It unlocks on both iPhone and Mac. A subscription tracker
+                should not itself be a subscription.
+              </p>
+              <ul>
+                <li>Unlimited subscriptions</li>
+                <li>Payment reminders, including trial-conversion and cancel-by alerts</li>
+                <li>Budget warnings: set a monthly limit and get told as you near it</li>
+                <li>CSV export for spreadsheets</li>
+                <li>Custom categories beyond the built-in set</li>
+                <li>A cancelled archive, so past subscriptions stay on record</li>
+              </ul>
+            </div>
+          </div>
+          <p class="price-note">
+            Prices in USD. The App Store shows the final Coil Pro price for your region.
+          </p>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="wrap">
+          <h2>The tradeoff</h2>
+          <p class="prose">
+            Coil never connects to your bank, so it can't auto-detect what you pay for. You add
+            subscriptions yourself. With the catalog, most people are done in a few minutes, and in
+            exchange nothing about your money leaves your devices.
+          </p>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="wrap">
           <h2>Availability</h2>
           <p class="prose">
-            Coil is in private beta. It isn't on the App Store yet, so there's nothing to download
-            from this page today. For how Coil handles your data, see the
+            Coil is in TestFlight now, with the App Store release close behind. There's nothing to
+            download from this page today. For how Coil handles your data, see the
             <a href="/coil/privacy">Coil privacy policy</a>. For anything else, email
             <a href="mailto:hello@zentsu.app">hello@zentsu.app</a>.
           </p>
