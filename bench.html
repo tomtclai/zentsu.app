@@ -1,8 +1,8 @@
 ---
 footer_indie: true
 title: 'Bench: Dev Toolbox for macOS'
-description: 'A native Mac toolbox that recognizes whatever you copy (a JWT, a JSON blob, a hex color, a regex) and opens the right tool the moment you switch to it. Offline, no account, one-time purchase.'
-twitter_description: 'A native Mac toolbox that recognizes whatever you copy and opens the right tool the moment you switch to it. Offline, no account, one-time purchase.'
+description: 'A native Mac toolbox for JSON, JWTs, regex, hashes, colors, and more. Free download with an optional one-time Bench Pro unlock for Smart Detection, Pro tools, and higher limits.'
+twitter_description: 'A native Mac toolbox for JSON, JWTs, regex, hashes, colors, and more. Free download with an optional one-time Bench Pro unlock.'
 canonical: https://zentsu.app/bench.html
 og_site_name: Bench
 og_image: https://zentsu.app/assets/bench-og.png
@@ -22,7 +22,7 @@ page_stylesheet: /bench.css
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
         "name": "Bench",
-        "description": "A native Mac developer toolbox. Copy a JWT, a JSON blob, a hex color, or a regex, then switch to Bench and the right tool is already open with your content loaded. Offline, no account, one-time purchase.",
+        "description": "A native Mac developer toolbox for JSON, JWTs, regex, hashes, colors, and more. Free download with an optional one-time Bench Pro unlock for Smart Detection, Pro tools, and higher limits.",
         "url": "https://zentsu.app/bench.html",
         "operatingSystem": "macOS 14",
         "applicationCategory": "DeveloperApplication",
@@ -35,9 +35,9 @@ page_stylesheet: /bench.css
         },
         "offers": {
           "@type": "Offer",
-          "price": "{{ site.price_lifetime }}",
+          "price": "0",
           "priceCurrency": "USD",
-          "category": "https://schema.org/PaymentInAdvance"
+          "description": "Free download. Bench Pro is an optional ${{ site.price_lifetime }} non-consumable in-app purchase."
         }
       }
     </script>
@@ -52,7 +52,7 @@ page_stylesheet: /bench.css
             "name": "Does it work offline?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Every tool runs entirely on your Mac. No tool in Bench makes network calls. The one exception will be Apple's purchase/restore flow once the app is live, which is handled by macOS itself and uses the network to talk to Apple, not to us."
+              "text": "Yes. Every tool runs entirely on your Mac. No tool in Bench makes network calls. The exceptions are Apple's App Store download and Pro purchase/restore flows, which are handled by macOS itself and use the network to talk to Apple, not to us."
             }
           },
           {
@@ -68,7 +68,7 @@ page_stylesheet: /bench.css
             "name": "How much is Bench, and what do I get?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Bench is ${{ site.price_lifetime }}, one‑time. That unlocks every tool, including Smart Detection, and includes one full year of updates. Your version keeps working forever. There's no time limit on what you bought."
+              "text": "Bench is free to download. Bench Pro is an optional ${{ site.price_lifetime }} one-time in-app purchase that unlocks Smart Detection, Pro tools, and higher input limits."
             }
           },
           {
@@ -129,11 +129,11 @@ page_stylesheet: /bench.css
               Paste a JWT, a hash, or a blob of JSON, and the right tool is already open.
             </p>
             <div class="hero-cta">
-              <a class="btn btn-primary feature-app-store" href="">
+              <a class="btn btn-primary" href="#release-notes">
                 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M12 3 4 7l8 4 8-4-8-4Zm-8 6v8l8 4V13L4 9Zm10 4v8l8-4V9l-8 4Z" />
                 </svg>
-                Download on the Mac App Store
+                Get notified
               </a>
               <a class="btn btn-primary" href="#how" id="hero-primary-cta">See how it works →</a>
             </div>
@@ -169,7 +169,7 @@ page_stylesheet: /bench.css
                   stroke-width="3"
                 >
                   <path d="M4 12l6 6L20 6" /></svg
-                >One-time ${{ site.price_lifetime }}</span
+                >Free download</span
               >
             </div>
             <p class="hero-specline">
@@ -787,8 +787,8 @@ page_stylesheet: /bench.css
             </div>
             <div class="cell">
               <div class="label">Purchase</div>
-              <div class="value">One time</div>
-              <div class="sub">One-time purchase</div>
+              <div class="value">Free download</div>
+              <div class="sub">${{ site.price_lifetime }} Pro unlock</div>
             </div>
             <div class="cell feature-app-store">
               <div class="label">Distribution</div>
@@ -813,51 +813,57 @@ page_stylesheet: /bench.css
           <div class="slab-head reveal">
             <div>
               <div class="num">07 · PRICING</div>
-              <h2>Pay once. Keep it forever.</h2>
+              <h2>Free download. Pro when you need it.</h2>
             </div>
             <p class="kicker">
-              One price, paid once. A year of updates is included. Your version of Bench works
-              forever.
+              Bench has been submitted to the Mac App Store. Core tools are included; Bench Pro is
+              an optional one-time unlock for Smart Detection, Pro tools, and higher limits.
             </p>
           </div>
 
           <div class="pricing pricing--single reveal">
             <div class="price-card price-card--main">
-              <div class="price-eyebrow">One‑time purchase</div>
+              <div class="price-eyebrow">Bench Pro unlock</div>
               <div class="price-amount">
                 <span class="price-currency">$</span
                 ><span class="price-num">{{ site.price_lifetime }}</span>
               </div>
-              <div class="price-sub">USD · paid once</div>
+              <div class="price-sub">USD · optional in-app purchase</div>
               <ul class="price-list">
-                <li>Every tool unlocked, including Smart Detection</li>
-                <li>1 year of updates included</li>
-                <li>Your version keeps working forever, with no time limit</li>
-                <li>A one‑time purchase that stays yours to keep</li>
+                <li>Free download with core tools included</li>
+                <li>Unlocks Smart Detection and every Pro tool</li>
+                <li>Raises input limits for large payloads</li>
               </ul>
-              <a class="btn btn-primary feature-app-store" href="">View on the Mac App Store</a>
+              <a class="btn btn-primary" href="#release-notes">Get notified</a>
             </div>
           </div>
 
           <p class="price-region-note">
-            Prices in USD. The App Store shows the final price for your region.
+            Prices in USD. The App Store shows the final Pro unlock price for your region.
           </p>
 
           <div class="price-promo reveal">
             <span class="price-promo-tag">Launch</span>
             <p>
-              Bench is <strong>${{ site.price_lifetime }}</strong> on the Mac App Store: one‑time,
-              with a year of updates included. Your version works forever.
+              Bench has been submitted to the Mac App Store. Once available, the app is free to
+              download; Bench Pro is <strong>${{ site.price_lifetime }}</strong> as a one-time
+              unlock.
             </p>
           </div>
+        </div>
+      </section>
 
-          <!-- ── EMAIL CAPTURE ── -->
-          <div class="email-capture reveal">
-            <h3>Get release notes</h3>
-            <p class="email-caption">
-              We send a short note when a new version ships. Nothing else.
+      <section class="buy" id="release-notes">
+        <div class="buy-inner">
+          <div class="reveal">
+            <h2>Bench has been submitted to the Mac App Store.</h2>
+            <p>
+              Once available, Bench is free to download. Bench Pro is an optional
+              <strong>${{ site.price_lifetime }}</strong> one-time unlock for Smart Detection, Pro
+              tools, and higher input limits.
             </p>
             <form
+              class="email-capture buy-email-capture"
               action="https://buttondown.email/api/emails/embed-subscribe/zentsullc"
               method="post"
             >
@@ -871,30 +877,15 @@ page_stylesheet: /bench.css
                   required
                 />
                 <input type="hidden" name="tag" value="bench-launch" />
-                <button type="submit" class="btn-email">Get release notes</button>
+                <button type="submit" class="btn-email">Get notified</button>
               </div>
+              <p class="email-note">One short launch note. No tracking. Unsubscribe anytime.</p>
             </form>
-            <p class="email-note">No tracking. Unsubscribe anytime.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="buy feature-app-store" id="get">
-        <div class="buy-inner">
-          <div class="reveal">
-            <h2>Bench is on the Mac App Store.</h2>
-            <p>
-              <strong>${{ site.price_lifetime }}</strong>, one‑time purchase. A year of updates
-              included. Your version works forever.
-            </p>
-            <div class="hero-cta">
-              <a class="btn btn-primary" href="">View on the Mac App Store</a>
-            </div>
           </div>
           <div class="buy-facts reveal">
-            <div><b>→</b> ${{ site.price_lifetime }} one‑time, year of updates included</div>
-            <div><b>→</b> Your version works forever, no time limit</div>
-            <div><b>→</b> One‑time purchase, runs entirely on your Mac</div>
+            <div><b>→</b> Free download with core tools included</div>
+            <div><b>→</b> Bench Pro unlocks Smart Detection and Pro tools</div>
+            <div><b>→</b> ${{ site.price_lifetime }} one-time, no subscription</div>
           </div>
         </div>
       </section>
@@ -920,8 +911,8 @@ page_stylesheet: /bench.css
               <summary>Does it work offline?</summary>
               <p>
                 Yes. Every tool runs entirely on your Mac. No tool in Bench makes network calls. The
-                one exception will be Apple's purchase/restore flow once the app is live, which is
-                handled by macOS itself and uses the network to talk to Apple, not to us.
+                exceptions are Apple's App Store download and Pro purchase/restore flows, which are
+                handled by macOS itself and use the network to talk to Apple, not to us.
               </p>
             </details>
             <details open>
@@ -935,9 +926,9 @@ page_stylesheet: /bench.css
             <details open>
               <summary>How much is Bench, and what do I get?</summary>
               <p>
-                Bench is <strong>${{ site.price_lifetime }}</strong>, one‑time. That unlocks every
-                tool, including Smart Detection, and includes one full year of updates. Your version
-                keeps working forever. There's no time limit on what you bought.
+                Bench is free to download. Bench Pro is an optional
+                <strong>${{ site.price_lifetime }}</strong> one-time in-app purchase that unlocks
+                Smart Detection, Pro tools, and higher input limits.
               </p>
             </details>
 

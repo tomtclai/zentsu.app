@@ -8,7 +8,7 @@
     <title>{{ page.h1 }} · Bench by Zentsu LLC</title>
     <meta
       name="description"
-      content="{{ page.description }} Part of Bench, ${{ site.price_lifetime }} one-time."
+      content="{{ page.description }} Part of Bench, a free download with an optional ${{ site.price_lifetime }} Bench Pro unlock."
     />
     <link rel="canonical" href="https://zentsu.app{{ page.url }}" />
 
@@ -41,8 +41,9 @@
         "publisher": { "@type": "Organization", "name": "Zentsu LLC" },
         "offers": {
           "@type": "Offer",
-          "price": "{{ site.price_lifetime }}",
-          "priceCurrency": "USD"
+          "price": "0",
+          "priceCurrency": "USD",
+          "description": "Free download. Bench Pro is an optional ${{ site.price_lifetime }} non-consumable in-app purchase."
         }
       }
     </script>

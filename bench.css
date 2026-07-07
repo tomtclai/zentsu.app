@@ -534,6 +534,27 @@ section.slab {
   width: 17px;
   height: 17px;
 }
+.tool-cat li .tool-label {
+  min-width: 0;
+}
+.pro-badge {
+  display: inline-flex;
+  align-items: center;
+  height: 1.15rem;
+  margin-left: 0.45rem;
+  padding: 0 0.35rem;
+  border: 1px solid rgba(111, 167, 150, 0.38);
+  border-radius: 999px;
+  color: var(--accent);
+  background: var(--accent-soft);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  vertical-align: 0.08em;
+}
 .tool-cat li:hover .tool-ico {
   color: var(--accent);
 }
@@ -1769,6 +1790,17 @@ section.slab {
   font-size: 0.8125rem;
   color: var(--muted);
   margin-top: 0.6rem;
+}
+.buy-email-capture {
+  margin-top: 1.6rem;
+  padding-top: 0;
+  border-top: 0;
+}
+.buy-email-capture .email-row {
+  max-width: 38rem;
+}
+.buy-email-capture .email-note {
+  margin-bottom: 0;
 }
 @media (max-width: 460px) {
   .email-row {

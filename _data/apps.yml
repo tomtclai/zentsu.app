@@ -52,9 +52,10 @@ apps:
       A native macOS developer toolbox in one offline window: JSON, JWT, regex,
       hashes, UUIDs, video conversion, and more.
     status: coming_soon
+    status_note: Submitted to Mac App Store
     platforms: macOS
     price_key: price_lifetime
-    price_suffix: one-time
+    price_suffix: Pro unlock
     app_store_url: null # Mac App Store submission pending; card shows the page link, not a store button.
     page_url: /bench.html
     icon: /assets/bench-icon.png

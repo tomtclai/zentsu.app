@@ -51,9 +51,9 @@
     </header>
     <ul>
       {%- for tool in category.tools %}
-      <li data-tool="{{ tool.label }}" data-benefit="{{ tool.benefit }}">
+      <li data-tool="{{ tool.label }}" data-benefit="{{ tool.benefit }}"{% if tool.pro %} data-pro="true"{% endif %}>
         <span class="tool-ico" aria-hidden="true">{% include tool-hero-icons/{{ tool.icon }}.svg %}</span
-        ><span><a href="{{ tool.href }}">{{ tool.label }}</a>{% if tool.meta %} <span class="mono" style="color: var(--muted); font-size: 0.78rem">{{ tool.meta }}</span>{% endif %}</span>
+        ><span class="tool-label"><a href="{{ tool.href }}">{{ tool.label }}</a>{% if tool.pro %} <span class="pro-badge">Pro</span>{% endif %}{% if tool.meta %} <span class="mono" style="color: var(--muted); font-size: 0.78rem">{{ tool.meta }}</span>{% endif %}</span>
       </li>
       {%- endfor %}
     </ul>

@@ -21,6 +21,7 @@
 #   tool.href       landing-page URL
 #   tool.benefit    the data-benefit hover tooltip text
 #   tool.meta       optional; a muted mono suffix beside the label
+#   tool.pro        optional true when the app gates the tool behind Bench Pro
 # ─────────────────────────────────────────────────────────────────────────
 categories:
   - name: Encoding
@@ -46,18 +47,22 @@ categories:
       - label: JSON Formatter
         href: /tools/json-formatter.html
         icon: json-formatter
+        pro: true
         benefit: 'Pretty-print minified JSON. Spot the missing comma before you ship it.'
       - label: Markdown Preview
         href: /tools/markdown-preview.html
         icon: markdown-preview
+        pro: true
         benefit: 'See what your README looks like before you push it.'
       - label: Text Diff
         href: /tools/text-diff.html
         icon: text-diff
+        pro: true
         benefit: "Two chunks of text, side by side. You'll see exactly what changed."
       - label: Image Diff
         href: /tools/image-diff.html
         icon: image-diff
+        pro: true
         benefit: 'Overlay two PNGs. The pixels that moved light up.'
 
   - name: Generators
@@ -87,6 +92,7 @@ categories:
       - label: JWT Decoder
         href: /tools/jwt-decoder.html
         icon: jwt-decoder
+        pro: true
         benefit: "Paste a JWT. Read the claims. Check what's actually in the header."
 
   - name: Converters
@@ -109,8 +115,10 @@ categories:
       - label: Regex Tester
         href: /tools/regex-tester.html
         icon: regex-tester
+        pro: true
         benefit: 'Try a pattern against real input, read the AST, and step through the trace.'
       - label: MOV to MP4
         href: /tools/mov-to-mp4.html
         icon: mov-to-mp4
+        pro: true
         benefit: 'Convert a screen recording to a smaller, streamable MP4.'

@@ -28,7 +28,7 @@ description: 'Software for Apple platforms, built by Zentsu LLC.'
 # via `price_key` without hardcoding a "$" figure. Add a new app's price here,
 # then point its apps.yml entry's `price_key` at it (e.g. price_key: price_coil_lifetime).
 
-# Bench: one-time lifetime purchase.
+# Bench: one-time Bench Pro unlock, sold as a non-consumable in-app purchase.
 price_lifetime: '14.99'
 # The renewal-for-updates SKU is not offered at launch (it does not exist in App
 # Store Connect yet), so this value is intentionally not rendered anywhere on the
