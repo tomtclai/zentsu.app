@@ -1,0 +1,279 @@
+:root {
+  --dial-coral: #ef705f;
+  --dial-coral-dark: #b9463b;
+  --dial-coral-soft: #fff0ec;
+  --dial-cream: #fffaf6;
+}
+
+.dial-page .hero {
+  --hero-dot: rgba(239, 112, 95, 0.11);
+  padding: 4.75rem 0 4rem;
+}
+
+.dial-page .wrap {
+  max-width: 980px;
+}
+
+.dial-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.8fr);
+  gap: clamp(2.5rem, 7vw, 6rem);
+  align-items: center;
+}
+
+.dial-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1.6rem;
+}
+
+.dial-brand picture,
+.dial-brand img {
+  width: 76px;
+  height: 76px;
+}
+
+.dial-brand img {
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 14px 32px -16px rgba(114, 36, 27, 0.55);
+}
+
+.dial-brand-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.beta-badge {
+  display: inline-block;
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--dial-coral-dark);
+  background: var(--dial-coral-soft);
+  padding: 0.34rem 0.62rem;
+  border-radius: 999px;
+}
+
+.dial-page .hero h1 {
+  max-width: 11ch;
+  font-size: clamp(2.75rem, 7vw, 5.25rem);
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+  margin-bottom: 1.25rem;
+}
+
+.dial-page .hero h1 span {
+  color: var(--dial-coral-dark);
+}
+
+.dial-page .hero .detail {
+  max-width: 51ch;
+}
+
+.dial-specline {
+  margin-top: 1.35rem;
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.7;
+}
+
+.hero-device {
+  position: relative;
+  width: min(100%, 340px);
+  justify-self: end;
+  padding: 11px;
+  border-radius: 48px;
+  background: #171412;
+  box-shadow: 0 32px 70px -32px rgba(86, 34, 29, 0.65);
+  transform: rotate(2.5deg);
+}
+
+.hero-device::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 76%;
+  aspect-ratio: 1;
+  border: 18px solid rgba(239, 112, 95, 0.2);
+  border-right-color: var(--dial-coral);
+  border-radius: 50%;
+  right: -30%;
+  top: 22%;
+}
+
+.hero-device picture,
+.hero-device img {
+  display: block;
+  width: 100%;
+}
+
+.hero-device img {
+  height: auto;
+  border-radius: 38px;
+}
+
+.feature-lead {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 7vw, 5rem);
+  align-items: center;
+}
+
+.feature-lead h2,
+.privacy-callout h2 {
+  font-family:
+    'Inter Tight',
+    -apple-system,
+    sans-serif;
+  text-transform: none;
+  letter-spacing: -0.035em;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.05;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+
+.feature-lead p,
+.privacy-callout p,
+.availability p {
+  max-width: 58ch;
+  color: var(--body-text);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.body-map-frame {
+  width: min(100%, 360px);
+  justify-self: center;
+}
+
+.body-map-shot {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  box-shadow: 0 24px 60px -36px rgba(20, 17, 15, 0.45);
+}
+
+.dial-points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  list-style: none;
+}
+
+.dial-points li {
+  min-height: 180px;
+  padding: 1.35rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+.point-num {
+  display: block;
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: var(--dial-coral-dark);
+  font-size: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.dial-points h3 {
+  color: var(--ink);
+  font-size: 1.05rem;
+  margin-bottom: 0.45rem;
+}
+
+.dial-points p {
+  color: var(--body-text);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.privacy-callout {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(2rem, 6vw, 4rem);
+  border: 1px solid color-mix(in srgb, var(--dial-coral) 40%, var(--border));
+  border-radius: 24px;
+  background: var(--dial-cream);
+}
+
+.privacy-callout::after {
+  content: '';
+  position: absolute;
+  width: 190px;
+  aspect-ratio: 1;
+  border: 20px solid rgba(239, 112, 95, 0.16);
+  border-top-color: var(--dial-coral);
+  border-radius: 50%;
+  right: -65px;
+  bottom: -82px;
+  transform: rotate(22deg);
+}
+
+.dial-page a.inline-link,
+.availability a {
+  color: var(--dial-coral-dark);
+  text-underline-offset: 0.18em;
+}
+
+.medical-note {
+  padding: 1rem 1.15rem;
+  margin-top: 1.5rem;
+  border-left: 3px solid var(--dial-coral);
+  background: var(--bg-alt);
+  color: var(--body-text);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 760px) {
+  .dial-hero-grid,
+  .feature-lead {
+    grid-template-columns: 1fr;
+  }
+  .hero-device {
+    justify-self: center;
+    width: min(82vw, 330px);
+  }
+  .dial-points {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .dial-page .hero {
+    padding-top: 3rem;
+  }
+  .dial-page .hero h1 {
+    font-size: clamp(2.7rem, 14vw, 4rem);
+  }
+  .dial-points {
+    grid-template-columns: 1fr;
+  }
+  .dial-points li {
+    min-height: 0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --dial-coral-dark: #ff8d7d;
+    --dial-coral-soft: #3a221e;
+    --dial-cream: #211916;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-device {
+    transform: none;
+  }
+}

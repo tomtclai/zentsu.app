@@ -1,0 +1,182 @@
+---
+title: Dial · Private GLP-1 tracker for iPhone and Apple Watch
+description: 'Dial keeps a private record of GLP-1 doses, injection sites, weight, side effects, and user-set reminders on iPhone and Apple Watch. Now in TestFlight.'
+og_description: 'A private GLP-1 dose, injection-site, weight, and reminder log for iPhone and Apple Watch.'
+canonical: https://zentsu.app/dial
+permalink: /dial/
+og_site_name: Dial
+og_image: https://zentsu.app/assets/dial-og.png
+og_image_alt: 'Dial: a private GLP-1 routine tracker for iPhone and Apple Watch'
+page_stylesheet: /dial.css
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head-common.html %}
+    <meta name="theme-color" content="#fffaf6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#14110f" media="(prefers-color-scheme: dark)" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Dial",
+        "description": "A private GLP-1 medication tracker for doses, injection sites, weight, side effects, and user-set reminders.",
+        "url": "https://zentsu.app/dial",
+        "operatingSystem": "iOS; watchOS",
+        "applicationCategory": "HealthApplication",
+        "image": "https://zentsu.app/assets/dial-icon.png",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Zentsu LLC",
+          "url": "https://zentsu.app/"
+        }
+      }
+    </script>
+  </head>
+  <body class="dial-page">
+    {% include nav.html %}
+
+    <main>
+      <section class="hero">
+        <div class="wrap dial-hero-grid">
+          <div>
+            <div class="dial-brand">
+              <picture>
+                <source type="image/avif" srcset="/assets/dial-icon.avif" />
+                <source type="image/webp" srcset="/assets/dial-icon.webp" />
+                <img src="/assets/dial-icon@1x.png" width="76" height="76" alt="Dial app icon" />
+              </picture>
+              <div>
+                <div class="dial-brand-name">Dial</div>
+                <span class="beta-badge">TestFlight beta</span>
+              </div>
+            </div>
+            <h1>Your GLP-1 routine, <span>on record.</span></h1>
+            <p class="detail">
+              Log each dose, remember where you injected, and keep weight, side effects, and the
+              reminders you choose in one private timeline.
+            </p>
+            <p class="dial-specline">iPhone · Apple Watch · private iCloud sync</p>
+          </div>
+          <div class="hero-device" aria-label="Dial Today screen showing a medication reminder">
+            <picture>
+              <source type="image/avif" srcset="/assets/dial-today.avif" />
+              <source type="image/webp" srcset="/assets/dial-today.webp" />
+              <img
+                src="/assets/dial-today@1x.png"
+                srcset="/assets/dial-today@2x.png 2x"
+                width="1179"
+                height="2556"
+                alt="Dial Today screen showing Wegovy, the next reminder, time since the last logged dose, and a Log a dose button"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="wrap feature-lead">
+          <div>
+            <h2>See the routine you actually followed.</h2>
+            <p>
+              Each entry keeps the medication, amount, date, time, injection site, and notes
+              together. History stays available when you need to check the sequence or bring an
+              accurate record to a conversation with your prescriber.
+            </p>
+          </div>
+          <picture class="body-map-frame">
+            <source type="image/avif" srcset="/assets/dial-body-map.avif" />
+            <source type="image/webp" srcset="/assets/dial-body-map.webp" />
+            <img
+              class="body-map-shot"
+              src="/assets/dial-body-map@1x.png"
+              srcset="/assets/dial-body-map@2x.png 2x"
+              width="1179"
+              height="2556"
+              loading="lazy"
+              alt="Dial body map showing the recency of injection sites"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="wrap">
+          <h2>Built around the log</h2>
+          <ul class="dial-points">
+            <li>
+              <span class="point-num">01</span>
+              <h3>Dose history</h3>
+              <p>Record doses in a few taps and edit the entry if something changes.</p>
+            </li>
+            <li>
+              <span class="point-num">02</span>
+              <h3>Site rotation</h3>
+              <p>A body map shows how recently each injection site appears in your own log.</p>
+            </li>
+            <li>
+              <span class="point-num">03</span>
+              <h3>Your reminders</h3>
+              <p>Set daily, weekly, or every-N-days notifications, or use Dial without one.</p>
+            </li>
+            <li>
+              <span class="point-num">04</span>
+              <h3>Weight and side effects</h3>
+              <p>
+                Keep dated entries beside the medication record. Apple Health weight access is
+                optional.
+              </p>
+            </li>
+            <li>
+              <span class="point-num">05</span>
+              <h3>Apple Watch</h3>
+              <p>Check time since the last logged dose and add a dose from your wrist.</p>
+            </li>
+            <li>
+              <span class="point-num">06</span>
+              <h3>Shotsy import</h3>
+              <p>Open a Shotsy export with Dial to bring an existing record into the app.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="wrap">
+          <div class="privacy-callout">
+            <h2>Your record lives in your iCloud.</h2>
+            <p>
+              Dial has no Zentsu account and no analytics or advertising SDKs. Medication, dose,
+              side-effect, and reminder data sync through the private CloudKit database attached to
+              your Apple Account. Zentsu runs no server that can read it. Weight entries stay in a
+              separate local store and can use Apple Health only when you grant access.
+            </p>
+            <p style="margin-top: 1rem">
+              Read the <a class="inline-link" href="/dial/privacy">Dial privacy policy</a> for the
+              full storage and permission details.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block availability">
+        <div class="wrap">
+          <h2>Availability</h2>
+          <p>
+            Dial is in TestFlight now and is not yet publicly available on the App Store. For beta
+            access or help with the app, visit <a href="/dial/support">Dial support</a> or email
+            <a href="mailto:support@zentsu.app">support@zentsu.app</a>.
+          </p>
+          <div class="medical-note">
+            Dial is a personal tracking tool, not a medical device. It does not diagnose, calculate
+            doses, recommend changes, or provide medical advice. Confirm medication and dosing
+            decisions with your prescriber.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>

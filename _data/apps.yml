@@ -74,3 +74,16 @@ apps:
     page_url: /coil.html
     icon: /assets/coil-icon.png
     accent: '#b84e1a'
+
+  - name: Dial
+    slug: dial
+    tagline: >-
+      Keep a private record of GLP-1 doses, injection sites, weight, side effects,
+      and the reminders you choose to set.
+    status: coming_soon
+    status_note: TestFlight beta
+    platforms: iPhone · Apple Watch
+    app_store_url: null # In TestFlight; not yet on the App Store.
+    page_url: /dial/
+    icon: /assets/dial-icon.png
+    accent: '#ef705f'
