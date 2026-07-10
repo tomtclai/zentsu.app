@@ -42,11 +42,6 @@ page_stylesheet: /dial.css
         <div class="wrap dial-hero-grid">
           <div>
             <div class="dial-brand">
-              <picture>
-                <source type="image/avif" srcset="/assets/dial-icon.avif" />
-                <source type="image/webp" srcset="/assets/dial-icon.webp" />
-                <img src="/assets/dial-icon@1x.png" width="76" height="76" alt="Dial app icon" />
-              </picture>
               <div>
                 <div class="dial-brand-name">Dial</div>
                 <span class="beta-badge">TestFlight beta</span>
@@ -59,16 +54,16 @@ page_stylesheet: /dial.css
             </p>
             <p class="dial-specline">iPhone · Apple Watch · private iCloud sync</p>
           </div>
-          <div class="hero-device" aria-label="Dial Today screen showing a medication reminder">
+          <div class="dial-mark" aria-hidden="true">
             <picture>
-              <source type="image/avif" srcset="/assets/dial-today.avif" />
-              <source type="image/webp" srcset="/assets/dial-today.webp" />
+              <source type="image/avif" srcset="/assets/dial-icon.avif" />
+              <source type="image/webp" srcset="/assets/dial-icon.webp" />
               <img
-                src="/assets/dial-today@1x.png"
-                srcset="/assets/dial-today@2x.png 2x"
-                width="1179"
-                height="2556"
-                alt="Dial Today screen showing Wegovy, the next reminder, time since the last logged dose, and a Log a dose button"
+                src="/assets/dial-icon@1x.png"
+                srcset="/assets/dial-icon@2x.png 2x"
+                width="512"
+                height="512"
+                alt=""
               />
             </picture>
           </div>
@@ -85,19 +80,6 @@ page_stylesheet: /dial.css
               accurate record to a conversation with your prescriber.
             </p>
           </div>
-          <picture class="body-map-frame">
-            <source type="image/avif" srcset="/assets/dial-body-map.avif" />
-            <source type="image/webp" srcset="/assets/dial-body-map.webp" />
-            <img
-              class="body-map-shot"
-              src="/assets/dial-body-map@1x.png"
-              srcset="/assets/dial-body-map@2x.png 2x"
-              width="1179"
-              height="2556"
-              loading="lazy"
-              alt="Dial body map showing the recency of injection sites"
-            />
-          </picture>
         </div>
       </section>
 
@@ -112,8 +94,8 @@ page_stylesheet: /dial.css
             </li>
             <li>
               <span class="point-num">02</span>
-              <h3>Site rotation</h3>
-              <p>A body map shows how recently each injection site appears in your own log.</p>
+              <h3>Injection-site log</h3>
+              <p>Record where you injected so the location stays attached to that dose.</p>
             </li>
             <li>
               <span class="point-num">03</span>
