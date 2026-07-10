@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "nav.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "bundle exec jekyll build",
+    "validate:html": "html-validate '_site/**/*.html'",
+    "validate:links": "test -f _site/bench.html && rg -q 'id=\"pricing\"' _site/bench.html && linkinator _site --recurse --clean-urls --check-fragments --check-css --skip '/bench(#.*)?$' --skip 'mailto:' --skip 'cdn-cgi'",
+    "test": "npm run build && npm run validate:html && npm run validate:links"
   },
   "repository": {
     "type": "git",

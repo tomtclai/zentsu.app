@@ -40,7 +40,7 @@
 #                  Omit for apps with no single headline price.
 #   price_suffix   optional trailing words after the price, e.g. "one-time".
 #   app_store_url  live store link, or null while not on the store.
-#   page_url       the app's own page on this site (e.g. /bench.html).
+#   page_url       the app's own page on this site (e.g. /bench).
 #                  Omit if the app has no dedicated page yet.
 #   icon           icon path under assets/. Missing file → monogram tile.
 #   accent         brand color for the card's monogram tile / hover accent.
@@ -57,7 +57,7 @@ apps:
     price_key: price_lifetime
     price_suffix: Pro unlock
     app_store_url: null # Mac App Store submission pending; card shows the page link, not a store button.
-    page_url: /bench.html
+    page_url: /bench
     icon: /assets/bench-icon.png
     accent: '#4a7c6f'
 

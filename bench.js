@@ -90,8 +90,8 @@ const TOTAL = TOOLS.length;
     const b = document.createElement('button');
     b.type = 'button';
     b.className = 'tool-filter' + (active ? ' active' : '');
-    b.setAttribute('role', 'tab');
-    b.setAttribute('aria-selected', active ? 'true' : 'false');
+    b.setAttribute('aria-pressed', active ? 'true' : 'false');
+    b.setAttribute('aria-controls', 'tool-cats');
     b.dataset.filter = value;
     b.innerHTML = label + '<span class="fcount">' + String(count).padStart(2, '0') + '</span>';
     return b;
@@ -108,10 +108,10 @@ const TOTAL = TOOLS.length;
     if (!btn) return;
     host.querySelectorAll('.tool-filter').forEach((el) => {
       el.classList.remove('active');
-      el.setAttribute('aria-selected', 'false');
+      el.setAttribute('aria-pressed', 'false');
     });
     btn.classList.add('active');
-    btn.setAttribute('aria-selected', 'true');
+    btn.setAttribute('aria-pressed', 'true');
     const filter = btn.dataset.filter;
     document.querySelectorAll('.tool-cat').forEach((cat) => {
       if (filter === 'all' || cat.getAttribute('data-cat') === filter) {
@@ -182,10 +182,13 @@ const TOTAL = TOOLS.length;
   }
 
   const state = TOOLS.map((t, i) => {
-    const chip = document.createElement('span');
+    const chip = document.createElement('button');
+    chip.type = 'button';
     chip.className = 'chip';
     chip.dataset.tool = t.name;
     chip.textContent = chipLabel(t.name);
+    chip.tabIndex = -1;
+    chip.setAttribute('aria-hidden', 'true');
     chip.addEventListener('click', () => scrollToTool(t.name));
     wrap.appendChild(chip);
     return {
@@ -261,8 +264,8 @@ const TOTAL = TOOLS.length;
   state.forEach((s) => {
     s.el.addEventListener('mouseenter', () => showTip(s));
     s.el.addEventListener('mouseleave', () => hideTip());
-    // Accessibility — keyboard focus also shows the tip.
-    s.el.setAttribute('tabindex', '0');
+    // Keyboard focus also shows the tooltip. Hidden orbit items are removed
+    // from the focus order whenever visibility changes.
     s.el.addEventListener('focus', () => showTip(s));
     s.el.addEventListener('blur', () => hideTip());
   });
@@ -292,6 +295,8 @@ const TOTAL = TOOLS.length;
     });
     state.forEach((s) => {
       if (!chosenSet.has(s)) s.visible = false;
+      s.el.tabIndex = s.visible ? 0 : -1;
+      s.el.setAttribute('aria-hidden', s.visible ? 'false' : 'true');
     });
   }
 
@@ -356,17 +361,21 @@ const TOTAL = TOOLS.length;
 
   // Periodic swap: hide one, reveal another. The spin keeps going.
   function cycleOne() {
-    const visibles = state.filter((s) => s.visible);
+    const visibles = state.filter((s) => s.visible && s !== hoveredChip);
     const hiddens = state.filter((s) => !s.visible);
     if (!visibles.length || !hiddens.length) return;
     const leaving = visibles[Math.floor(Math.random() * visibles.length)];
     const entering = hiddens[Math.floor(Math.random() * hiddens.length)];
     leaving.visible = false;
+    leaving.el.tabIndex = -1;
+    leaving.el.setAttribute('aria-hidden', 'true');
     // entering chip takes the leaving slot's phase so orbit stays evenly spaced
     entering.phase = leaving.phase;
     entering.tilt = ((Math.random() * 16 - 8) * Math.PI) / 180;
     entering.summonK = 0.4; // pop in from closer to the icon
     entering.visible = true;
+    entering.el.tabIndex = 0;
+    entering.el.setAttribute('aria-hidden', 'false');
   }
 
   // (No hover-to-resummon — chips just orbit steadily after the initial burst.)
@@ -632,7 +641,8 @@ Order <span class="sp-r">2847</span>, shipped <span class="sp-r">2026</span>-04-
     });
     dotsHost.querySelectorAll('.dot').forEach((dot, i) => {
       dot.classList.toggle('active', i === active);
-      dot.setAttribute('aria-selected', i === active ? 'true' : 'false');
+      if (i === active) dot.setAttribute('aria-current', 'true');
+      else dot.removeAttribute('aria-current');
     });
   }
 
@@ -640,9 +650,8 @@ Order <span class="sp-r">2847</span>, shipped <span class="sp-r">2026</span>-04-
     const b = document.createElement('button');
     b.type = 'button';
     b.className = 'dot' + (i === 0 ? ' active' : '');
-    b.setAttribute('role', 'tab');
-    b.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
-    b.setAttribute('aria-label', 'Screenshot ' + (i + 1));
+    if (i === 0) b.setAttribute('aria-current', 'true');
+    b.setAttribute('aria-label', 'Show screenshot ' + (i + 1) + ' of ' + shots.length);
     b.addEventListener('click', () => {
       const behavior = prefersReducedMotion ? 'auto' : 'smooth';
       if (scrollMode && stage) {

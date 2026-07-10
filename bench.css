@@ -247,6 +247,7 @@ main {
   box-shadow: 0 4px 12px -4px rgba(20, 17, 15, 0.12);
   white-space: nowrap;
   cursor: pointer;
+  appearance: none;
   user-select: none;
   opacity: 0;
   transform: translate(-50%, -50%);
@@ -1382,20 +1383,31 @@ section.slab {
   margin-top: 1rem;
 }
 .shots-dots .dot {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  position: relative;
+}
+.shots-dots .dot::after {
+  content: '';
+  position: absolute;
   width: 7px;
   height: 7px;
   border-radius: 50%;
   background: var(--border);
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
   transition:
     background 0.2s,
     transform 0.2s;
-  cursor: pointer;
-  border: none;
-  padding: 0;
 }
-.shots-dots .dot.active {
+.shots-dots .dot.active::after {
   background: var(--ink);
-  transform: scale(1.25);
+  transform: translate(-50%, -50%) scale(1.25);
 }
 
 @media (min-width: 900px) and (prefers-reduced-motion: no-preference) {
@@ -1791,6 +1803,9 @@ section.slab {
   color: var(--muted);
   margin-top: 0.6rem;
 }
+.email-note a {
+  color: inherit;
+}
 .buy-email-capture {
   margin-top: 1.6rem;
   padding-top: 0;
@@ -1862,7 +1877,7 @@ section.buy {
 }
 .faq-list details {
   border-bottom: 1px solid var(--border);
-  padding: 1.25rem 1.25rem 1.25rem 1.35rem;
+  padding: 1.25rem 0;
   position: relative;
   overflow: hidden;
 }
@@ -1907,13 +1922,16 @@ section.buy {
   display: none;
 }
 .faq-list summary::after {
-  content: '–';
+  content: '+';
   font-family: 'JetBrains Mono', monospace;
   font-weight: 400;
   font-size: 1.35rem;
   color: var(--muted);
   transition: transform 0.2s;
   line-height: 1;
+}
+.faq-list details[open] summary::after {
+  content: '−';
 }
 .faq-list details:hover summary::after,
 .faq-list details:focus-within summary::after {
@@ -1934,8 +1952,7 @@ section.buy {
     transform 0.36s cubic-bezier(0.2, 0.8, 0.2, 1),
     margin-top 0.28s ease;
 }
-.faq-list details:hover p,
-.faq-list details:focus-within p {
+.faq-list details[open] p {
   margin-top: 0.8rem;
   max-height: 18rem;
   opacity: 1;

@@ -119,6 +119,21 @@ nav li:first-child a {
   letter-spacing: -0.01em;
 }
 
+@media (max-width: 480px) {
+  nav {
+    padding-inline: 0.75rem;
+  }
+  nav ul {
+    gap: clamp(0.5rem, 2.8vw, 0.875rem);
+  }
+  nav a {
+    font-size: 0.75rem;
+  }
+  nav li:first-child a {
+    font-size: 0.875rem;
+  }
+}
+
 /* ── Legal / support / tool article ── */
 article {
   background: var(--surface);

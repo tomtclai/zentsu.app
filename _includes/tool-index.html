@@ -16,14 +16,14 @@
 {%- for c in cats -%}{%- assign total = total | plus: c.tools.size -%}{%- endfor -%}
 <div
   class="tool-filters reveal"
-  role="tablist"
+  role="group"
   aria-label="Filter tools by category"
   id="tool-filters"
 >
-  <button type="button" class="tool-filter active" role="tab" aria-selected="true" data-filter="all">All<span class="fcount">{% if total < 10 %}0{% endif %}{{ total }}</span></button>
+  <button type="button" class="tool-filter active" aria-pressed="true" aria-controls="tool-cats" data-filter="all">All<span class="fcount">{% if total < 10 %}0{% endif %}{{ total }}</span></button>
   {%- for category in cats %}
   {%- assign cn = category.tools | size %}
-  <button type="button" class="tool-filter" role="tab" aria-selected="false" data-filter="{{ category.name }}">{{ category.name }}<span class="fcount">{% if cn < 10 %}0{% endif %}{{ cn }}</span></button>
+  <button type="button" class="tool-filter" aria-pressed="false" aria-controls="tool-cats" data-filter="{{ category.name }}">{{ category.name }}<span class="fcount">{% if cn < 10 %}0{% endif %}{{ cn }}</span></button>
   {%- endfor %}
 </div>
 

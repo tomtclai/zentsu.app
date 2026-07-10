@@ -3,7 +3,7 @@ footer_indie: true
 title: 'Bench: Dev Toolbox for macOS'
 description: 'A native Mac toolbox for JSON, JWTs, regex, hashes, colors, and more. Free download with an optional one-time Bench Pro unlock for Smart Detection, Pro tools, and higher limits.'
 twitter_description: 'A native Mac toolbox for JSON, JWTs, regex, hashes, colors, and more. Free download with an optional one-time Bench Pro unlock.'
-canonical: https://zentsu.app/bench.html
+canonical: https://zentsu.app/bench
 og_site_name: Bench
 og_image: https://zentsu.app/assets/bench-og.png
 og_image_alt: 'Bench: dev toolbox for macOS'
@@ -23,7 +23,7 @@ page_stylesheet: /bench.css
         "@type": "SoftwareApplication",
         "name": "Bench",
         "description": "A native Mac developer toolbox for JSON, JWTs, regex, hashes, colors, and more. Free download with an optional one-time Bench Pro unlock for Smart Detection, Pro tools, and higher limits.",
-        "url": "https://zentsu.app/bench.html",
+        "url": "https://zentsu.app/bench",
         "operatingSystem": "macOS 14",
         "applicationCategory": "DeveloperApplication",
         "image": "https://zentsu.app/assets/bench-icon.png",
@@ -737,8 +737,8 @@ page_stylesheet: /bench.css
             <div
               class="shots-dots"
               id="shots-dots"
-              role="tablist"
-              aria-label="Jump to screenshot"
+              role="group"
+              aria-label="Choose a screenshot"
             ></div>
           </div>
         </div>
@@ -879,7 +879,10 @@ page_stylesheet: /bench.css
                 <input type="hidden" name="tag" value="bench-launch" />
                 <button type="submit" class="btn-email">Get notified</button>
               </div>
-              <p class="email-note">One short launch note. No tracking. Unsubscribe anytime.</p>
+              <p class="email-note">
+                One short launch note. No open or link tracking. Unsubscribe anytime.
+                <a href="/privacy">Privacy details</a>.
+              </p>
             </form>
           </div>
           <div class="buy-facts reveal">
@@ -907,7 +910,7 @@ page_stylesheet: /bench.css
           </div>
 
           <div class="faq-list reveal">
-            <details open>
+            <details>
               <summary>Does it work offline?</summary>
               <p>
                 Yes. Every tool runs entirely on your Mac. No tool in Bench makes network calls. The
@@ -915,7 +918,7 @@ page_stylesheet: /bench.css
                 handled by macOS itself and use the network to talk to Apple, not to us.
               </p>
             </details>
-            <details open>
+            <details>
               <summary>Is the "smart" part AI?</summary>
               <p>
                 No. It's rule‑based pattern matching: regex and string checks tuned per format, with
@@ -923,7 +926,7 @@ page_stylesheet: /bench.css
                 entirely on your Mac.
               </p>
             </details>
-            <details open>
+            <details>
               <summary>How much is Bench, and what do I get?</summary>
               <p>
                 Bench is free to download. Bench Pro is an optional
@@ -932,7 +935,7 @@ page_stylesheet: /bench.css
               </p>
             </details>
 
-            <details open>
+            <details>
               <summary>Does it sync between my Macs?</summary>
               <p>
                 No. Bench keeps everything local on the Mac you're using. There are no accounts, no
@@ -940,14 +943,14 @@ page_stylesheet: /bench.css
                 If you want your recent inputs on another Mac, copy and paste them.
               </p>
             </details>
-            <details open>
+            <details>
               <summary>Is it a universal binary?</summary>
               <p>
                 Yes. Bench ships as a universal binary that runs natively on Apple silicon and Intel
                 Macs. The minimum system requirement is macOS 14.
               </p>
             </details>
-            <details open>
+            <details>
               <summary>What data does Bench collect?</summary>
               <p>
                 None. Bench has no account system and carries no analytics or third‑party SDKs.
@@ -956,7 +959,7 @@ page_stylesheet: /bench.css
                 stays on your Mac.
               </p>
             </details>
-            <details open>
+            <details>
               <summary>How do updates work?</summary>
               <p>
                 Once Bench ships, updates will arrive through Apple the same way as any Mac app you
@@ -964,7 +967,7 @@ page_stylesheet: /bench.css
                 install when an update is available.
               </p>
             </details>
-            <details open>
+            <details>
               <summary>Can I get a refund?</summary>
               <p>
                 Once the app ships, purchases and refunds will be handled by Apple. You'll be able
@@ -985,10 +988,6 @@ page_stylesheet: /bench.css
 
     {% include footer.html %}
 
-    <script
-      data-cfasync="false"
-      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-    ></script>
     <script src="/bench.js?v={{ site.time | date: '%s' }}" defer></script>
   </body>
 </html>

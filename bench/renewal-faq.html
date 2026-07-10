@@ -1,192 +1,29 @@
 ---
-# Orphaned page: unlinked while the renewal-for-updates SKU is not offered. Keep
-# it out of the sitemap (jekyll-sitemap honors sitemap:false) and the search
-# index (see the noindex robots meta below) until the renewal product ships.
+# This URL previously described a renewal product that is not offered. Keep the
+# old route working, but send visitors and search engines to current pricing.
+permalink: /bench/renewal-faq.html
 sitemap: false
-# Keeps its own bespoke title/OG block: the description interpolates the renewal
-# price via Liquid ({{ site.price_renewal }}), which front-matter YAML can't
-# render, so head-common supplies only the base scaffolding here.
-seo_managed_externally: true
+title: Bench pricing · Zentsu LLC
+description: 'Current Bench pricing: a free download with an optional one-time Bench Pro unlock.'
+canonical: https://zentsu.app/bench
+og_site_name: Bench
+og_image: https://zentsu.app/assets/bench-og.png
+og_image_alt: 'Bench: dev toolbox for macOS'
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     {% include head-common.html %}
-    <!-- Unlinked while the renewal SKU is not offered: keep it out of the search index. -->
     <meta name="robots" content="noindex" />
-    <title>Bench Renewal FAQ · Zentsu LLC</title>
-    <meta
-      name="description"
-      content="Plain-language explanation of how Bench's one-time purchase and optional ${{ site.price_renewal }} renewal work. Your version works forever; renewal only buys access to new updates."
-    />
-    <link rel="canonical" href="https://zentsu.app/bench/renewal-faq.html" />
-
-    <!-- Open Graph / social -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Bench" />
-    <meta property="og:title" content="Bench Renewal FAQ · Zentsu LLC" />
-    <meta
-      property="og:description"
-      content="Plain-language explanation of how Bench's one-time purchase and optional ${{ site.price_renewal }} renewal work. Your version works forever; renewal only buys access to new updates."
-    />
-    <meta property="og:url" content="https://zentsu.app/bench/renewal-faq.html" />
-    <meta property="og:image" content="https://zentsu.app/assets/bench-og.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:alt" content="Bench: dev toolbox for macOS" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Bench Renewal FAQ · Zentsu LLC" />
-    <meta
-      name="twitter:description"
-      content="Plain-language explanation of how Bench's one-time purchase and optional ${{ site.price_renewal }} renewal work. Your version works forever; renewal only buys access to new updates."
-    />
-    <meta name="twitter:image" content="https://zentsu.app/assets/bench-og.png" />
-
-    <style>
-      /* ── Content (page-specific) ── */
-      main {
-        flex: 1;
-        padding: 3rem 1.5rem;
-      }
-      article h3 {
-        font-size: 0.9375rem;
-        font-weight: 600;
-        margin-top: 1.5rem;
-        margin-bottom: 0.4rem;
-        color: var(--text);
-      }
-      article .lede {
-        font-size: 1rem;
-        color: var(--body-text);
-        line-height: 1.65;
-        margin-bottom: 1.5rem;
-      }
-      .reassure {
-        background: var(--accent-light);
-        border-radius: 8px;
-        padding: 1rem 1.25rem;
-        margin: 1.25rem 0 0.5rem;
-        font-size: 0.9375rem;
-        line-height: 1.6;
-      }
-      .reassure strong {
-        color: var(--text);
-      }
-    </style>
+    <meta http-equiv="refresh" content="0; url=/bench#pricing" />
+    <script>
+      window.location.replace('/bench#pricing');
+    </script>
   </head>
   <body>
-    {% include nav.html %}
-
     <main>
-      <article>
-        <span class="page-label">Bench</span>
-        <h1>How renewal works</h1>
-        <p class="effective">
-          Plain-language guide to Bench's one-time purchase and optional renewal · Zentsu LLC
-        </p>
-
-        <p class="lede">
-          Bench is a one-time purchase. We added an optional renewal so we can keep shipping new
-          updates without ever needing to switch the app to a subscription. This page spells out
-          exactly what that means in practice. No marketing fog, no fine print.
-        </p>
-
-        <div class="reassure">
-          <strong>The short version.</strong> You buy Bench once. The version you bought works
-          forever. The first year of new updates is included. After that, ${{ site.price_renewal }}
-          buys another year of new updates if you want them. If you don't want them, the app keeps
-          working exactly as it does today, with no nags and no expiry.
-        </div>
-
-        <h2>The questions people actually ask</h2>
-
-        <h3>Does my copy of Bench stop working if I don't renew?</h3>
-        <p>
-          No. The version of Bench you purchased keeps working forever, with no time limit. We don't
-          lock features, throttle the app, or pop up "please renew" prompts. If you never renew,
-          nothing breaks.
-        </p>
-
-        <h3>Then what does renewal actually buy me?</h3>
-        <p>
-          Renewal buys access to <em>new</em> updates released after your initial 1-year window
-          expires. New tools, new features, performance work, new file-format support, that kind of
-          thing. If we ship Bench 2.4 a year and a half after you bought, and you haven't renewed,
-          you stay on the version you have. Renew, and you get 2.4 (and everything that follows for
-          the next 12 months).
-        </p>
-
-        <h3>Is this a subscription? Will I be auto-billed?</h3>
-        <p>
-          No. It is not a subscription, and nothing auto-renews or bills you again on its own. When
-          your renewal year ends, nothing happens automatically. If you want another year of
-          updates, you come back and pay ${{ site.price_renewal }}. If you don't, nothing is charged
-          and the app keeps running.
-        </p>
-
-        <h3>What happens if I skip a year, or several, and want to renew later?</h3>
-        <p>
-          You can renew at any time. There's no penalty and no back-payment for the years you
-          skipped, and nothing expires that you'd have to recover. Pay ${{ site.price_renewal }} and
-          you're back on the update train for another year.
-        </p>
-
-        <h3>Can I just keep using the version I have forever?</h3>
-        <p>
-          Yes. That's the whole design. People buy software for different reasons. Some want the
-          latest of everything; some want a stable tool that does what it does and doesn't shift
-          under them. Both are fine. We built the renewal model so the second group is never
-          punished for not buying upgrades.
-        </p>
-
-        <h3>What if I want a refund?</h3>
-        <p>
-          Bench is sold through the Mac App Store, so refunds are handled by Apple via
-          <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. If something in
-          the app isn't working the way you expect, please email us first at
-          <a href="mailto:support@zentsu.app?subject=Bench%20support">support@zentsu.app</a>.
-          There's a good chance it's a fixable bug, and we'd rather fix it than have you give up on
-          the app.
-        </p>
-
-        <h3>Why use this model instead of a subscription?</h3>
-        <p>
-          Bench runs entirely on your machine, with no servers or accounts to operate and no
-          recurring costs behind it. It's a native Mac app. A subscription would charge you
-          indefinitely for something that doesn't have indefinite costs. The renewal model lets us
-          fund ongoing development without forcing the app onto a billing cycle. If we ever stop
-          shipping, the app you bought stays exactly where it is, and nothing of yours disappears
-          with us.
-        </p>
-
-        <h3>Why a renewal model at all, instead of pure one-time purchase?</h3>
-        <p>
-          The honest answer: pure one-time-only purchases push small studios into either aggressive
-          paid major upgrades or, eventually, an emergency conversion to subscription under revenue
-          pressure. We didn't want either of those failure modes to hit Bench's customers. A small,
-          optional renewal lets us keep shipping updates steadily without ever needing to migrate
-          the model. Adopting it on day one means we never have to ask anyone to switch later.
-        </p>
-
-        <div class="reassure">
-          <strong>Still unsure?</strong> Email us at
-          <a href="mailto:support@zentsu.app?subject=Bench%20renewal%20question"
-            >support@zentsu.app</a
-          >. We'd rather answer the question now than have you find out something unexpected after
-          you bought.
-        </div>
-
-        <hr />
-        <p style="font-size: 0.8125rem; color: var(--muted)">
-          Published by Zentsu LLC. <a href="/bench.html">Back to Bench</a> ·
-          <a href="/bench/support.html">Support</a> · <a href="/privacy.html">Privacy</a> ·
-          <a href="/terms.html">Terms</a>.
-        </p>
-      </article>
+      <p>Bench pricing has moved to <a href="/bench#pricing">the Bench page</a>.</p>
     </main>
-
-    {% include footer.html %}
   </body>
 </html>
