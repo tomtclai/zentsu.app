@@ -11,20 +11,24 @@ from _config.yml via price_key. {%- endcomment -%} {%- assign app = include.app 
 = nil -%} {%- if app.price_key -%}{%- assign price = site[app.price_key] -%}{%- endif -%} {%- assign
 monogram = app.slug | slice: 0 | upcase -%}
 <article class="product{% if app.status != 'live' %} product--soon{% endif %}">
-  {%- if app.icon %}
-  <img
-    class="icon"
-    src="{{ app.icon }}"
-    alt="{{ app.name }} app icon"
-    width="64"
-    height="64"
-    loading="lazy"
-    onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'icon icon--mono',textContent:'{{ monogram }}',style:'--mono-accent:{{ app.accent }}'}))"
-  />
-  {%- else %}
-  <span class="icon icon--mono" style="--mono-accent: {{ app.accent }}" aria-hidden="true"
-    >{{ monogram }}</span
-  >
+  {%- if app.page_url %}
+  <a class="product-icon-link" href="{{ app.page_url }}" tabindex="-1" aria-hidden="true">
+    {%- endif %} {%- if app.icon %}
+    <img
+      class="icon"
+      src="{{ app.icon }}"
+      alt="{{ app.name }} app icon"
+      width="64"
+      height="64"
+      loading="lazy"
+      onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'icon icon--mono',textContent:'{{ monogram }}',style:'--mono-accent:{{ app.accent }}'}))"
+    />
+    {%- else %}
+    <span class="icon icon--mono" style="--mono-accent: {{ app.accent }}" aria-hidden="true"
+      >{{ monogram }}</span
+    >
+    {%- endif %} {%- if app.page_url %}
+  </a>
   {%- endif %}
   <div class="body">
     <h3>

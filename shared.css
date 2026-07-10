@@ -461,9 +461,24 @@ section.block:last-of-type {
   flex-shrink: 0;
   box-shadow: 0 4px 12px -6px rgba(20, 17, 15, 0.25);
 }
+/* The icon links to the same page as the title. Redundant to assistive tech, so
+   the anchor is hidden from it and skipped in the tab order (see app-card.html). */
+.product .product-icon-link {
+  display: block;
+  flex-shrink: 0;
+  line-height: 0;
+  border-radius: 15px;
+  transition: opacity 0.15s ease;
+}
+.product .product-icon-link:hover {
+  opacity: 0.85;
+}
+/* `article h3` carries a 1.5rem top margin for prose pages. Inside a card the
+   title must sit flush with the top of the icon. */
 .product .body h3 {
   font-size: 1.1875rem;
   font-weight: 600;
+  margin-top: 0;
   margin-bottom: 0.25rem;
   letter-spacing: -0.015em;
 }
