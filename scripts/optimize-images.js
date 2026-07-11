@@ -32,7 +32,7 @@ async function processImage(srcPath) {
   const srcStat = await stat(srcPath);
   const srcMtime = srcStat.mtimeMs;
 
-  const isDialScreen = base.startsWith('dial-screen-');
+  const isDialScreen = base.startsWith('dial-screen-') || base.startsWith('dial-web-');
   const [webpFresh, avifFresh, png2xFresh, png1xFresh, responsiveWebpFresh, responsiveAvifFresh] =
     await Promise.all([
       fileExistsAndNewer(webpPath, srcMtime),

@@ -61,17 +61,35 @@ favicon: /assets/dial-icon.png
               Log doses, injection sites, weight, and reminders in one clear record. Review the
               history you entered whenever you need it.
             </p>
-            <div class="dial-actions">
-              <a
-                class="dial-button dial-button-primary"
-                href="mailto:support@zentsu.app?subject=Dial%20TestFlight%20access&amp;body=Hi%20Zentsu%2C%0A%0AI%27d%20like%20to%20try%20the%20Dial%20TestFlight.%0A%0AThanks."
-                >Request TestFlight access</a
-              >
+            <form
+              class="dial-signup dial-signup-hero"
+              action="https://buttondown.email/api/emails/embed-subscribe/zentsullc"
+              method="post"
+            >
+              <label for="dial-email-hero" class="dial-sr-only">Email address</label>
+              <div class="dial-email-row">
+                <input
+                  id="dial-email-hero"
+                  type="email"
+                  name="email"
+                  placeholder="your@email.com"
+                  autocomplete="email"
+                  required
+                />
+                <input type="hidden" name="tag" value="dial-updates" />
+                <button type="submit">Get Dial updates</button>
+              </div>
+              <p class="dial-signup-note">
+                Release and beta availability updates. No open or link tracking. Unsubscribe
+                anytime. <a href="/privacy">Privacy details</a>.
+              </p>
+            </form>
+            <div class="dial-actions dial-actions-secondary">
               <a class="dial-button dial-button-secondary" href="#how-it-works"
                 >See how Dial works</a
               >
+              <a class="dial-button dial-button-secondary" href="/dial/support/">Dial support</a>
             </div>
-            <p class="dial-beta-note">We send TestFlight invitations when space is available.</p>
             <ul class="dial-platforms" aria-label="Dial platforms and storage">
               <li>iPhone</li>
               <li>Apple Watch</li>
@@ -85,29 +103,20 @@ favicon: /assets/dial-icon.png
               <picture>
                 <source
                   type="image/avif"
-                  srcset="
-                    /assets/dial-screen-today-640.avif  640w,
-                    /assets/dial-screen-today.avif     1290w
-                  "
+                  srcset="/assets/dial-web-today-640.avif 640w, /assets/dial-web-today.avif 1290w"
                   sizes="(max-width: 760px) 78vw, 430px"
                 />
                 <source
                   type="image/webp"
-                  srcset="
-                    /assets/dial-screen-today-640.webp  640w,
-                    /assets/dial-screen-today.webp     1290w
-                  "
+                  srcset="/assets/dial-web-today-640.webp 640w, /assets/dial-web-today.webp 1290w"
                   sizes="(max-width: 760px) 78vw, 430px"
                 />
                 <img
-                  src="/assets/dial-screen-today@1x.png"
-                  srcset="
-                    /assets/dial-screen-today@1x.png  645w,
-                    /assets/dial-screen-today@2x.png 1290w
-                  "
+                  src="/assets/dial-web-today@1x.png"
+                  srcset="/assets/dial-web-today@1x.png 645w, /assets/dial-web-today@2x.png 1290w"
                   sizes="(max-width: 760px) 78vw, 430px"
                   width="1290"
-                  height="2796"
+                  height="2160"
                   alt="Dial Today screen showing the next reminder, estimated medication level, and a log dose button"
                   fetchpriority="high"
                 />
@@ -147,29 +156,20 @@ favicon: /assets/dial-icon.png
               <picture>
                 <source
                   type="image/avif"
-                  srcset="
-                    /assets/dial-screen-level-640.avif  640w,
-                    /assets/dial-screen-level.avif     1290w
-                  "
+                  srcset="/assets/dial-web-level-640.avif 640w, /assets/dial-web-level.avif 1290w"
                   sizes="(max-width: 760px) 76vw, 390px"
                 />
                 <source
                   type="image/webp"
-                  srcset="
-                    /assets/dial-screen-level-640.webp  640w,
-                    /assets/dial-screen-level.webp     1290w
-                  "
+                  srcset="/assets/dial-web-level-640.webp 640w, /assets/dial-web-level.webp 1290w"
                   sizes="(max-width: 760px) 76vw, 390px"
                 />
                 <img
-                  src="/assets/dial-screen-level@1x.png"
-                  srcset="
-                    /assets/dial-screen-level@1x.png  645w,
-                    /assets/dial-screen-level@2x.png 1290w
-                  "
+                  src="/assets/dial-web-level@1x.png"
+                  srcset="/assets/dial-web-level@1x.png 645w, /assets/dial-web-level@2x.png 1290w"
                   sizes="(max-width: 760px) 76vw, 390px"
                   width="1290"
-                  height="2796"
+                  height="1620"
                   alt="Dial estimated level screen with a timeline chart based on logged doses"
                   loading="lazy"
                   decoding="async"
@@ -201,20 +201,29 @@ favicon: /assets/dial-icon.png
               <picture>
                 <source
                   type="image/avif"
-                  srcset="/assets/dial-screen-log-640.avif 640w, /assets/dial-screen-log.avif 1290w"
+                  srcset="
+                    /assets/dial-web-log-dose-640.avif  640w,
+                    /assets/dial-web-log-dose.avif     1290w
+                  "
                   sizes="(max-width: 760px) 76vw, 390px"
                 />
                 <source
                   type="image/webp"
-                  srcset="/assets/dial-screen-log-640.webp 640w, /assets/dial-screen-log.webp 1290w"
+                  srcset="
+                    /assets/dial-web-log-dose-640.webp  640w,
+                    /assets/dial-web-log-dose.webp     1290w
+                  "
                   sizes="(max-width: 760px) 76vw, 390px"
                 />
                 <img
-                  src="/assets/dial-screen-log@1x.png"
-                  srcset="/assets/dial-screen-log@1x.png 645w, /assets/dial-screen-log@2x.png 1290w"
+                  src="/assets/dial-web-log-dose@1x.png"
+                  srcset="
+                    /assets/dial-web-log-dose@1x.png  645w,
+                    /assets/dial-web-log-dose@2x.png 1290w
+                  "
                   sizes="(max-width: 760px) 76vw, 390px"
                   width="1290"
-                  height="2796"
+                  height="1800"
                   alt="Dial dose form with medication, amount, time, and injection site fields"
                   loading="lazy"
                   decoding="async"
@@ -242,28 +251,28 @@ favicon: /assets/dial-icon.png
                   <source
                     type="image/avif"
                     srcset="
-                      /assets/dial-screen-history-640.avif  640w,
-                      /assets/dial-screen-history.avif     1290w
+                      /assets/dial-web-history-640.avif  640w,
+                      /assets/dial-web-history.avif     1290w
                     "
                     sizes="(max-width: 680px) 76vw, 360px"
                   />
                   <source
                     type="image/webp"
                     srcset="
-                      /assets/dial-screen-history-640.webp  640w,
-                      /assets/dial-screen-history.webp     1290w
+                      /assets/dial-web-history-640.webp  640w,
+                      /assets/dial-web-history.webp     1290w
                     "
                     sizes="(max-width: 680px) 76vw, 360px"
                   />
                   <img
-                    src="/assets/dial-screen-history@1x.png"
+                    src="/assets/dial-web-history@1x.png"
                     srcset="
-                      /assets/dial-screen-history@1x.png  645w,
-                      /assets/dial-screen-history@2x.png 1290w
+                      /assets/dial-web-history@1x.png  645w,
+                      /assets/dial-web-history@2x.png 1290w
                     "
                     sizes="(max-width: 680px) 76vw, 360px"
                     width="1290"
-                    height="2796"
+                    height="2640"
                     alt="Dial history screen showing dose and weight charts over time"
                     loading="lazy"
                     decoding="async"
@@ -281,28 +290,28 @@ favicon: /assets/dial-icon.png
                   <source
                     type="image/avif"
                     srcset="
-                      /assets/dial-screen-effects-640.avif  640w,
-                      /assets/dial-screen-effects.avif     1290w
+                      /assets/dial-web-side-effects-640.avif  640w,
+                      /assets/dial-web-side-effects.avif     1290w
                     "
                     sizes="(max-width: 680px) 76vw, 360px"
                   />
                   <source
                     type="image/webp"
                     srcset="
-                      /assets/dial-screen-effects-640.webp  640w,
-                      /assets/dial-screen-effects.webp     1290w
+                      /assets/dial-web-side-effects-640.webp  640w,
+                      /assets/dial-web-side-effects.webp     1290w
                     "
                     sizes="(max-width: 680px) 76vw, 360px"
                   />
                   <img
-                    src="/assets/dial-screen-effects@1x.png"
+                    src="/assets/dial-web-side-effects@1x.png"
                     srcset="
-                      /assets/dial-screen-effects@1x.png  645w,
-                      /assets/dial-screen-effects@2x.png 1290w
+                      /assets/dial-web-side-effects@1x.png  645w,
+                      /assets/dial-web-side-effects@2x.png 1290w
                     "
                     sizes="(max-width: 680px) 76vw, 360px"
                     width="1290"
-                    height="2796"
+                    height="2100"
                     alt="Dial Pro side-effect trends screen reviewing weekly frequency and severity from existing records"
                     loading="lazy"
                     decoding="async"
@@ -325,29 +334,20 @@ favicon: /assets/dial-icon.png
               <picture>
                 <source
                   type="image/avif"
-                  srcset="
-                    /assets/dial-screen-report-640.avif  640w,
-                    /assets/dial-screen-report.avif     1290w
-                  "
+                  srcset="/assets/dial-web-report-640.avif 640w, /assets/dial-web-report.avif 1290w"
                   sizes="(max-width: 760px) 76vw, 390px"
                 />
                 <source
                   type="image/webp"
-                  srcset="
-                    /assets/dial-screen-report-640.webp  640w,
-                    /assets/dial-screen-report.webp     1290w
-                  "
+                  srcset="/assets/dial-web-report-640.webp 640w, /assets/dial-web-report.webp 1290w"
                   sizes="(max-width: 760px) 76vw, 390px"
                 />
                 <img
-                  src="/assets/dial-screen-report@1x.png"
-                  srcset="
-                    /assets/dial-screen-report@1x.png  645w,
-                    /assets/dial-screen-report@2x.png 1290w
-                  "
+                  src="/assets/dial-web-report@1x.png"
+                  srcset="/assets/dial-web-report@1x.png 645w, /assets/dial-web-report@2x.png 1290w"
                   sizes="(max-width: 760px) 76vw, 390px"
                   width="1290"
-                  height="2796"
+                  height="2610"
                   alt="Dial Pro report screen summarizing doses, weight, and applicable existing history for export"
                   loading="lazy"
                   decoding="async"
@@ -437,31 +437,37 @@ favicon: /assets/dial-icon.png
             <img src="/assets/dial-icon@1x.png" width="128" height="128" alt="" loading="lazy" />
           </picture>
           <div>
-            <p class="dial-kicker">TestFlight beta</p>
-            <h2 id="availability-title">Try Dial before the App Store release.</h2>
+            <p class="dial-kicker">Dial updates</p>
+            <h2 id="availability-title">Follow Dial to the App Store.</h2>
             <p>
-              Dial is currently available to beta testers. Email us to request access or get help
-              with an existing installation. We send invitations when space is available.
+              Join the Dial mailing list for release news and beta availability updates. Current
+              testers can use Dial support whenever they need help.
             </p>
           </div>
-          <div class="dial-actions dial-actions-footer">
-            <a
-              class="dial-button dial-button-primary"
-              href="mailto:support@zentsu.app?subject=Dial%20TestFlight%20access&amp;body=Hi%20Zentsu%2C%0A%0AI%27d%20like%20to%20try%20the%20Dial%20TestFlight.%0A%0AThanks."
-              >Request TestFlight access</a
-            >
-            <a class="dial-button dial-button-secondary" href="/dial/support/">Dial support</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="dial-medical" aria-label="Medical disclaimer">
-        <div class="dial-wrap">
-          <strong>Dial is a personal tracking tool, not a medical device.</strong>
-          <p>
-            It does not diagnose, calculate doses, recommend changes, or provide medical advice.
-            Confirm medication and dosing decisions with your prescriber.
-          </p>
+          <form
+            class="dial-signup dial-signup-closing"
+            action="https://buttondown.email/api/emails/embed-subscribe/zentsullc"
+            method="post"
+          >
+            <label for="dial-email-closing" class="dial-sr-only">Email address</label>
+            <div class="dial-email-row">
+              <input
+                id="dial-email-closing"
+                type="email"
+                name="email"
+                placeholder="your@email.com"
+                autocomplete="email"
+                required
+              />
+              <input type="hidden" name="tag" value="dial-updates" />
+              <button type="submit">Join the Dial list</button>
+            </div>
+            <p class="dial-signup-note">
+              No open or link tracking. Unsubscribe anytime.
+              <a href="/privacy">Privacy details</a>. Already testing?
+              <a href="/dial/support/">Dial support</a>.
+            </p>
+          </form>
         </div>
       </section>
     </main>

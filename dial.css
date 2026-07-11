@@ -163,6 +163,108 @@
   outline-offset: 3px;
 }
 
+.dial-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.dial-signup {
+  margin-top: 1.8rem;
+}
+
+.dial-email-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.dial-email-row input[type='email'] {
+  min-width: 0;
+  flex: 1 1 210px;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  transition:
+    border-color 150ms ease,
+    box-shadow 150ms ease;
+}
+
+.dial-email-row input[type='email']::placeholder {
+  color: var(--muted);
+}
+
+.dial-email-row input[type='email']:focus {
+  outline: none;
+  border-color: var(--dial-coral-dark);
+  box-shadow: 0 0 0 3px rgba(239, 112, 95, 0.18);
+}
+
+.dial-email-row input[type='email']:focus-visible,
+.dial-email-row button:focus-visible {
+  outline: 2px solid var(--dial-coral-dark);
+  outline-offset: 2px;
+}
+
+.dial-email-row button {
+  min-height: 46px;
+  flex: 0 0 auto;
+  padding: 0.75rem 1.25rem;
+  border: 0;
+  border-radius: 8px;
+  background: var(--dial-coral-dark);
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9375rem;
+  font-weight: 650;
+  line-height: 1.4;
+  white-space: nowrap;
+  transition:
+    background-color 150ms ease,
+    transform 120ms ease;
+}
+
+.dial-email-row button:hover {
+  background: #9f382f;
+}
+
+.dial-email-row button:active {
+  transform: translateY(1px);
+}
+
+.dial-signup-note {
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.dial-signup-note a {
+  color: inherit;
+  text-underline-offset: 0.18em;
+}
+
+.dial-actions-secondary {
+  margin-top: 0.85rem;
+}
+
+.dial-signup-closing {
+  width: min(100%, 390px);
+  margin-top: 0;
+}
+
 .dial-platforms {
   display: flex;
   flex-wrap: wrap;
@@ -174,13 +276,6 @@
   list-style: none;
 }
 
-.dial-beta-note {
-  margin-top: 0.75rem;
-  color: var(--muted);
-  font-size: 0.8rem;
-  line-height: 1.5;
-}
-
 .dial-platforms li:not(:first-child)::before {
   content: '·';
   margin-right: 1.2rem;
@@ -190,8 +285,8 @@
 .dial-hero-visual {
   position: relative;
   display: grid;
+  align-items: start;
   justify-items: center;
-  min-height: 620px;
 }
 
 .dial-orbit {
@@ -348,11 +443,10 @@
 }
 
 .dial-product-stage {
-  min-height: 660px;
   display: grid;
-  place-items: end center;
+  place-items: start center;
   overflow: hidden;
-  padding: 3.25rem 2rem 0;
+  padding: clamp(1.5rem, 4vw, 2.75rem);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 28px;
 }
@@ -371,7 +465,6 @@
 
 .dial-phone-section {
   width: min(100%, 390px);
-  transform: translateY(52px);
 }
 
 .dial-checklist {
@@ -427,7 +520,7 @@
 }
 
 .dial-screen-card-offset {
-  padding-top: 4.5rem;
+  padding-top: 2rem;
 }
 
 .dial-phone-card {
@@ -581,33 +674,6 @@
   font-size: clamp(2rem, 4vw, 3.4rem);
 }
 
-.dial-actions-footer {
-  justify-content: flex-end;
-  margin-top: 0;
-}
-
-.dial-medical {
-  padding: 1.8rem 0;
-  background: var(--bg-alt);
-}
-
-.dial-medical .dial-wrap {
-  display: grid;
-  grid-template-columns: minmax(220px, 0.55fr) minmax(0, 1fr);
-  gap: 2rem;
-}
-
-.dial-medical strong {
-  color: var(--ink);
-  font-size: 0.9rem;
-}
-
-.dial-medical p {
-  color: var(--body-text);
-  font-size: 0.84rem;
-  line-height: 1.65;
-}
-
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
   .dial-button:hover {
     transform: translateY(-2px);
@@ -623,9 +689,9 @@
     grid-template-columns: auto minmax(0, 1fr);
   }
 
-  .dial-actions-footer {
+  .dial-signup-closing {
     grid-column: 1 / -1;
-    justify-content: flex-start;
+    width: min(100%, 560px);
   }
 }
 
@@ -655,7 +721,6 @@
   }
 
   .dial-hero-visual {
-    min-height: 0;
     padding: 2rem 0 0;
   }
 
@@ -684,31 +749,30 @@
     order: initial;
   }
 
-  .dial-product-stage {
-    min-height: 560px;
-  }
-
   .dial-screen-pair {
     grid-template-columns: 1fr;
   }
 
   .dial-screen-card-offset {
-    padding-top: 1.5rem;
+    padding-top: 0;
   }
 
   .dial-report .dial-story-copy {
     grid-row: 1;
-  }
-
-  .dial-medical .dial-wrap {
-    grid-template-columns: 1fr;
-    gap: 0.6rem;
   }
 }
 
 @media (max-width: 480px) {
   .dial-actions,
   .dial-button {
+    width: 100%;
+  }
+
+  .dial-email-row {
+    flex-direction: column;
+  }
+
+  .dial-email-row button {
     width: 100%;
   }
 
@@ -722,8 +786,7 @@
   }
 
   .dial-product-stage {
-    min-height: 500px;
-    padding-inline: 1rem;
+    padding: 1rem;
   }
 
   .dial-screen-pair {
