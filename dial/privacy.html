@@ -1,7 +1,9 @@
 ---
 title: Privacy Policy · Zentsu LLC
-description: 'Privacy policy for Dial by Zentsu LLC. Your medication and dose data stays in your own iCloud, your weight log stays on your device, and Health data never leaves it.'
-canonical: https://zentsu.app/dial/privacy
+description: 'Privacy policy for Dial by Zentsu LLC. Core records stay on your device and can use your private iCloud storage when you choose. Weight and progress photos stay local.'
+canonical: https://zentsu.app/dial/privacy/
+permalink: /dial/privacy/
+favicon: /assets/dial-icon.png
 ---
 
 <!doctype html>
@@ -26,6 +28,8 @@ canonical: https://zentsu.app/dial/privacy
         <h1>Privacy Policy</h1>
         <p class="effective">Effective date: July 9, 2026</p>
 
+        <p><a href="/dial/">Return to the Dial overview</a>.</p>
+
         <p>
           This privacy policy applies to Dial (hereby referred to as "the Application"), published
           by Zentsu LLC (hereby referred to as "Service Provider") as a Commercial service. The
@@ -33,40 +37,49 @@ canonical: https://zentsu.app/dial/privacy
         </p>
 
         <p>
-          The short version: your medication, dose, and reminder data stays in your own iCloud. Your
-          weight log stays on your device and is never synced anywhere, even by us. The Service
-          Provider runs no server, receives nothing, and cannot access what you store. Dial has no
-          account system, and it carries no analytics, advertising, or third-party SDKs.
+          The short version: Dial stores its records on your device. An in-app control lets you use
+          the private CloudKit database attached to your Apple Account for core records, or keep
+          those records on the device only. Weight entries and progress photos use separate local
+          storage. The Service Provider runs no server that can read what you store in Dial.
         </p>
 
         <h2>What information does the Application obtain and how is it used?</h2>
         <p>
-          The Application does not send any information to the Service Provider. Registration is not
-          required and there are no accounts. Everything you track (the medications you add, doses,
-          injection sites, side effects, reminder schedules, and titration plans) is data you enter
-          yourself, and it is stored on your device. The Service Provider does not collect, receive,
-          or have any way to see it.
+          The Application does not send your Dial records to the Service Provider. Registration with
+          Zentsu is not required. Medications, doses, injection sites, reminder schedules, supply
+          records, and side-effect history from a compatible file you choose to import are stored on
+          your device. The Service Provider does not collect, receive, or have a way to see these
+          records.
         </p>
 
-        <h2>Where is my medication data stored, and does the Application sync it?</h2>
+        <h2>Where are my core records stored?</h2>
         <p>
-          Your medication, dose, side-effect, and reminder data is stored on your device and, when
-          your device is signed in to iCloud, synced across your own devices through iCloud (Apple's
-          CloudKit service), using the private iCloud database tied to your Apple Account. This is
-          the only data that ever leaves your device, and it goes only to your own iCloud storage.
-          The Service Provider operates no server, holds no copy of your data, and cannot access,
-          read, or recover it. Whether syncing happens is controlled entirely by your device's
-          system iCloud settings: if you sign out of iCloud or turn iCloud off for the Application,
-          your data simply stays local to that device. iCloud storage and transmission are governed
-          by Apple's own terms and privacy policy.
+          Your medication, dose, injection-site, reminder, supply, and imported side-effect records
+          are stored on your device. Dial also includes a "Sync with iCloud" control in Settings.
+          When that control is on and iCloud is available, these records can use Apple's CloudKit
+          service and the private database tied to your Apple Account. The Service Provider operates
+          no server, holds no copy of these records, and cannot access, read, or recover them.
+        </p>
+        <p>
+          Turning the in-app control off keeps these records on that device only after you next open
+          Dial. Your device's iCloud settings also affect whether CloudKit is available. Apple's
+          terms and privacy policy govern iCloud storage and transmission.
         </p>
 
         <h2>Where is my weight data stored?</h2>
         <p>
           Your weight log is kept in a separate, local-only store on your device. It is not part of
-          the iCloud sync described above and does not leave your device through the Application
-          under any circumstance. If you use Dial on more than one device, your weight entries on
-          each device stay independent.
+          the optional CloudKit storage described above and does not leave your device through the
+          Application. If you use Dial on more than one device, weight entries on each device stay
+          independent.
+        </p>
+
+        <h2>Where are progress photos stored?</h2>
+        <p>
+          Progress photos and their dates are stored in the Application's documents directory on
+          your device. They are not part of Dial's CloudKit records. If you use the supply-label
+          scanner, Dial processes the selected or captured label image to fill fields and does not
+          save that label image as a supply record.
         </p>
 
         <h2>How does the Application use Health?</h2>
@@ -83,10 +96,10 @@ canonical: https://zentsu.app/dial/privacy
         <h2>Is Dial a substitute for medical advice?</h2>
         <p>
           Dial is a tracking tool. It is not a medical device and does not provide medical advice.
-          It performs no dose calculations and makes no dosing recommendations of any kind: every
-          dose, schedule, and titration step you record is one you entered yourself, on the guidance
-          of your own judgment and your prescriber. Confirm anything about your treatment, including
-          doses, schedules, and side effects, with your prescriber.
+          It performs no dose calculations and makes no dosing recommendations of any kind. Every
+          dose and schedule in Dial comes from information you entered or chose to import. Confirm
+          anything about your treatment, including doses, schedules, and side effects, with your
+          prescriber.
         </p>
 
         <h2>Does the Application send notifications?</h2>
@@ -105,22 +118,22 @@ canonical: https://zentsu.app/dial/privacy
 
         <h2>Do third parties see and/or have access to information obtained by the Application?</h2>
         <p>
-          Since the Application transmits nothing to the Service Provider, there is no data for the
-          Service Provider to share with third parties. The Application contains no third-party SDKs
-          and no analytics of any kind. The optional one-time Pro purchase is processed by Apple
-          through StoreKit; the Service Provider receives no payment details from the transaction.
+          Since the Application does not transmit Dial records to the Service Provider, the Service
+          Provider has no such records to share with third parties. Optional Dial Pro purchases and
+          subscriptions are processed by Apple through StoreKit. The Service Provider receives no
+          payment-card details from those transactions.
         </p>
 
         <h2>What are my opt-out rights and how do I delete my data?</h2>
         <p>
           You can stop all storage of information by the Application by deleting it. You may use the
           standard uninstall processes available as part of your device or application marketplace.
-          Deleting an entry in the Application removes it from your synced devices. Data already
-          synced to your iCloud remains in your iCloud account until you remove it. You can delete
-          the Application's data from iCloud, or disable iCloud syncing for the Application at any
-          time, in your device's system iCloud settings. You can revoke Health permission at any
-          time in your device's system Health settings, and Health data already written to Health
-          remains there under Apple's own controls until you remove it.
+          Deleting an entry removes it from Dial's active store. When the in-app iCloud control is
+          on, deletion can be reflected through the private CloudKit database attached to your Apple
+          Account. You can turn that control off in Dial Settings and manage the Application's data
+          through your device's iCloud settings. You can revoke Health permission at any time in
+          your device's Health settings. Health data already written to Health remains there under
+          Apple's controls until you remove it. Progress photos can be deleted inside Dial.
         </p>
 
         <h2>Children</h2>
@@ -149,9 +162,8 @@ canonical: https://zentsu.app/dial/privacy
           The Service Provider is concerned about safeguarding the confidentiality of your
           information. Since the Application does not transmit any information to the Service
           Provider, there is no risk of your data being accessed through the Service Provider. Data
-          synced through iCloud is protected by your Apple Account and is encrypted by Apple in
-          transit and at rest. Data in Health is protected by Apple's own Health data security
-          controls.
+          stored through CloudKit is protected by your Apple Account and is encrypted by Apple in
+          transit and at rest. Data in Health is protected by Apple's Health data security controls.
         </p>
 
         <h2>Terms of Use</h2>

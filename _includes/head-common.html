@@ -28,14 +28,14 @@ hand-pasted into each page: charset/viewport, icons, fonts, the shared styleshee
   -%}{%- endif -%} {%- assign seo_external = include.seo_managed_externally | default:
   page.seo_managed_externally -%} {%- assign page_stylesheet = include.page_stylesheet | default:
   page.page_stylesheet -%} <meta charset="UTF-8" /> <meta name="viewport"
-  content="width=device-width, initial-scale=1.0" /> <link rel="icon" type="image/png" sizes="32x32"
-  href="/assets/bench-icon.png" /> <link rel="icon" type="image/png" sizes="16x16"
-  href="/assets/bench-icon.png" /> <link rel="apple-touch-icon" sizes="180x180"
-  href="/assets/bench-icon.png" /> <link rel="shortcut icon" href="/assets/bench-icon.png" /> <link
-  rel="stylesheet" href="/shared.css?v={{ site.time | date: '%s' }}" /> {%- if page_stylesheet %}
-  <link rel="stylesheet" href="{{ page_stylesheet }}?v={{ site.time | date: '%s' }}" /> {%- endif %}
-  <link rel="preconnect" href="https://fonts.googleapis.com" /> <link rel="preconnect"
-  href="https://fonts.gstatic.com" crossorigin /> <link
+  content="width=device-width, initial-scale=1.0" /> {%- assign favicon = page.favicon | default:
+  '/assets/bench-icon.png' %} <link rel="icon" type="image/png" sizes="32x32" href="{{ favicon }}"
+  /> <link rel="icon" type="image/png" sizes="16x16" href="{{ favicon }}" /> <link
+  rel="apple-touch-icon" sizes="180x180" href="{{ favicon }}" /> <link rel="shortcut icon" href="{{
+  favicon }}" /> <link rel="stylesheet" href="/shared.css?v={{ site.time | date: '%s' }}" /> {%- if
+  page_stylesheet %} <link rel="stylesheet" href="{{ page_stylesheet }}?v={{ site.time | date: '%s'
+  }}" /> {%- endif %} <link rel="preconnect" href="https://fonts.googleapis.com" /> <link
+  rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> <link
   href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
   rel="stylesheet" /> <script src="/flags.js?v={{ site.time | date: '%s' }}"></script> {%- unless
   seo_external %} <title>{{ page.title }}

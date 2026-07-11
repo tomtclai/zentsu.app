@@ -132,6 +132,9 @@ nav li:first-child a {
   nav li:first-child a {
     font-size: 0.875rem;
   }
+  .nav-long-label {
+    display: none;
+  }
 }
 
 /* ── Legal / support / tool article ── */

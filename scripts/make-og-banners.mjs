@@ -12,7 +12,8 @@ import sharp from 'sharp';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ASSETS = path.resolve(__dirname, '..', 'assets');
-const ICON = path.join(ASSETS, 'bench-icon.png');
+const BENCH_ICON = path.join(ASSETS, 'bench-icon.png');
+const DIAL_ICON = path.join(ASSETS, 'dial-icon.png');
 
 const W = 1200;
 const H = 630;
@@ -38,11 +39,11 @@ const backdrop = `
   <rect width="${W}" height="${H}" fill="url(#fade)"/>
   <rect x="0" y="${H - 8}" width="${W}" height="8" fill="#4a7c6f"/>`;
 
-async function roundedIcon(size, radius) {
+async function roundedIcon(iconPath, size, radius) {
   const mask = Buffer.from(
     `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}"><rect width="${size}" height="${size}" rx="${radius}" ry="${radius}" fill="#fff"/></svg>`,
   );
-  return sharp(ICON)
+  return sharp(iconPath)
     .resize(size, size)
     .composite([{ input: mask, blend: 'dest-in' }])
     .png()
@@ -62,7 +63,7 @@ async function benchBanner() {
   <text x="96" y="406" font-family="Inter Tight" font-weight="500" font-size="46" fill="#2a2622">Dev Toolbox for macOS</text>
   <text x="98" y="486" font-family="JetBrains Mono" font-weight="500" font-size="25" letter-spacing="2" fill="#4a7c6f">zentsu.app</text>
 </svg>`;
-  const icon = await roundedIcon(s, r);
+  const icon = await roundedIcon(BENCH_ICON, s, r);
   await sharp(Buffer.from(svg))
     .composite([{ input: icon, left: x, top: y }])
     .png({ compressionLevel: 9 })
@@ -88,5 +89,37 @@ async function zentsuBanner() {
   console.log('[done] zentsu-og.png');
 }
 
+async function dialBanner() {
+  const s = 300;
+  const x = 800;
+  const y = 165;
+  const r = 66;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+  <defs>
+    <pattern id="dial-dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.4" cy="1.4" r="1.4" fill="#ef705f" opacity="0.12"/>
+    </pattern>
+    <filter id="dial-shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+  </defs>
+  <rect width="${W}" height="${H}" fill="#fffaf6"/>
+  <rect width="${W}" height="${H}" fill="url(#dial-dots)"/>
+  <circle cx="970" cy="315" r="230" fill="none" stroke="#ef705f" stroke-width="18" opacity="0.12"/>
+  <rect x="${x}" y="${y + 20}" width="${s}" height="${s}" rx="${r}" fill="#4c211c" opacity="0.28" filter="url(#dial-shadow)"/>
+  <text x="90" y="300" font-family="Inter Tight" font-weight="800" font-size="150" letter-spacing="-6" fill="#14110f">Dial</text>
+  <text x="96" y="375" font-family="Inter Tight" font-weight="600" font-size="42" fill="#2a2622">Private GLP-1 medication tracker</text>
+  <text x="98" y="448" font-family="JetBrains Mono" font-weight="500" font-size="23" letter-spacing="1.5" fill="#b9463b">iPhone · Apple Watch</text>
+  <rect x="0" y="${H - 8}" width="${W}" height="8" fill="#ef705f"/>
+</svg>`;
+  const icon = await roundedIcon(DIAL_ICON, s, r);
+  await sharp(Buffer.from(svg))
+    .composite([{ input: icon, left: x, top: y }])
+    .png({ compressionLevel: 9 })
+    .toFile(path.join(ASSETS, 'dial-og.png'));
+  console.log('[done] dial-og.png');
+}
+
 await benchBanner();
+await dialBanner();
 await zentsuBanner();

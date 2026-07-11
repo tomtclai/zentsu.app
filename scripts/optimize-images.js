@@ -26,18 +26,31 @@ async function processImage(srcPath) {
   const avifPath = path.join(dir, `${base}.avif`);
   const png2xPath = path.join(dir, `${base}@2x.png`);
   const png1xPath = path.join(dir, `${base}@1x.png`);
+  const responsiveWebpPath = path.join(dir, `${base}-640.webp`);
+  const responsiveAvifPath = path.join(dir, `${base}-640.avif`);
 
   const srcStat = await stat(srcPath);
   const srcMtime = srcStat.mtimeMs;
 
-  const [webpFresh, avifFresh, png2xFresh, png1xFresh] = await Promise.all([
-    fileExistsAndNewer(webpPath, srcMtime),
-    fileExistsAndNewer(avifPath, srcMtime),
-    fileExistsAndNewer(png2xPath, srcMtime),
-    fileExistsAndNewer(png1xPath, srcMtime),
-  ]);
+  const isDialScreen = base.startsWith('dial-screen-');
+  const [webpFresh, avifFresh, png2xFresh, png1xFresh, responsiveWebpFresh, responsiveAvifFresh] =
+    await Promise.all([
+      fileExistsAndNewer(webpPath, srcMtime),
+      fileExistsAndNewer(avifPath, srcMtime),
+      fileExistsAndNewer(png2xPath, srcMtime),
+      fileExistsAndNewer(png1xPath, srcMtime),
+      isDialScreen ? fileExistsAndNewer(responsiveWebpPath, srcMtime) : true,
+      isDialScreen ? fileExistsAndNewer(responsiveAvifPath, srcMtime) : true,
+    ]);
 
-  if (webpFresh && avifFresh && png2xFresh && png1xFresh) {
+  if (
+    webpFresh &&
+    avifFresh &&
+    png2xFresh &&
+    png1xFresh &&
+    responsiveWebpFresh &&
+    responsiveAvifFresh
+  ) {
     console.log(`[skip] ${baseName}`);
     return;
   }
@@ -59,6 +72,16 @@ async function processImage(srcPath) {
   }
   if (!png1xFresh) {
     tasks.push(sharp(srcPath).resize({ width: halfWidth }).png().toFile(png1xPath));
+  }
+  if (isDialScreen && !responsiveWebpFresh) {
+    tasks.push(
+      sharp(srcPath).resize({ width: 640 }).webp({ quality: 82 }).toFile(responsiveWebpPath),
+    );
+  }
+  if (isDialScreen && !responsiveAvifFresh) {
+    tasks.push(
+      sharp(srcPath).resize({ width: 640 }).avif({ quality: 58 }).toFile(responsiveAvifPath),
+    );
   }
 
   await Promise.all(tasks);

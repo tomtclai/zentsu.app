@@ -1,13 +1,14 @@
 ---
-title: Dial · Private GLP-1 tracker for iPhone and Apple Watch
-description: 'Dial keeps a private record of GLP-1 doses, injection sites, weight, side effects, and user-set reminders on iPhone and Apple Watch. Now in TestFlight.'
-og_description: 'A private GLP-1 dose, injection-site, weight, and reminder log for iPhone and Apple Watch.'
-canonical: https://zentsu.app/dial
+title: GLP-1 medication tracker for iPhone and Apple Watch | Dial
+description: 'Dial is a private GLP-1 medication tracker for iPhone and Apple Watch. Log doses, reminders, weight, history, and reports in one clear record you control.'
+og_description: 'Keep a clear record of GLP-1 doses, weight, reminders, and history on iPhone and Apple Watch.'
+canonical: https://zentsu.app/dial/
 permalink: /dial/
 og_site_name: Dial
 og_image: https://zentsu.app/assets/dial-og.png
-og_image_alt: 'Dial: a private GLP-1 routine tracker for iPhone and Apple Watch'
+og_image_alt: 'Dial, a private GLP-1 medication tracker for iPhone and Apple Watch'
 page_stylesheet: /dial.css
+favicon: /assets/dial-icon.png
 ---
 
 <!doctype html>
@@ -21,8 +22,8 @@ page_stylesheet: /dial.css
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
         "name": "Dial",
-        "description": "A private GLP-1 medication tracker for doses, injection sites, weight, side effects, and user-set reminders.",
-        "url": "https://zentsu.app/dial",
+        "description": "A private GLP-1 medication tracker for doses, injection sites, weight, reminders, and history.",
+        "url": "https://zentsu.app/dial/",
         "operatingSystem": "iOS; watchOS",
         "applicationCategory": "HealthApplication",
         "image": "https://zentsu.app/assets/dial-icon.png",
@@ -38,123 +39,429 @@ page_stylesheet: /dial.css
     {% include nav.html %}
 
     <main>
-      <section class="hero">
-        <div class="wrap dial-hero-grid">
-          <div>
-            <div class="dial-brand">
+      <section class="dial-hero" aria-labelledby="dial-title">
+        <div class="dial-wrap dial-hero-grid">
+          <div class="dial-hero-copy">
+            <div class="dial-brandline">
+              <picture class="dial-brand-icon">
+                <source type="image/avif" srcset="/assets/dial-icon.avif" />
+                <source type="image/webp" srcset="/assets/dial-icon.webp" />
+                <img src="/assets/dial-icon@1x.png" width="96" height="96" alt="" />
+              </picture>
               <div>
-                <div class="dial-brand-name">Dial</div>
-                <span class="beta-badge">TestFlight beta</span>
+                <strong>Dial</strong>
+                <span>TestFlight beta</span>
               </div>
             </div>
-            <h1>Your GLP-1 routine, <span>on record.</span></h1>
-            <p class="detail">
-              Log each dose, remember where you injected, and keep weight, side effects, and the
-              reminders you choose in one private timeline.
+            <h1 id="dial-title">Your GLP-1 routine, <span>on record.</span></h1>
+            <p class="dial-category">
+              Dial is a private GLP-1 medication tracker for iPhone and Apple Watch.
             </p>
-            <p class="dial-specline">iPhone · Apple Watch · private iCloud sync</p>
+            <p class="dial-hero-detail">
+              Log doses, injection sites, weight, and reminders in one clear record. Review the
+              history you entered whenever you need it.
+            </p>
+            <div class="dial-actions">
+              <a
+                class="dial-button dial-button-primary"
+                href="mailto:support@zentsu.app?subject=Dial%20TestFlight%20access&amp;body=Hi%20Zentsu%2C%0A%0AI%27d%20like%20to%20try%20the%20Dial%20TestFlight.%0A%0AThanks."
+                >Request TestFlight access</a
+              >
+              <a class="dial-button dial-button-secondary" href="#how-it-works"
+                >See how Dial works</a
+              >
+            </div>
+            <p class="dial-beta-note">We send TestFlight invitations when space is available.</p>
+            <ul class="dial-platforms" aria-label="Dial platforms and storage">
+              <li>iPhone</li>
+              <li>Apple Watch</li>
+              <li>Optional private iCloud storage</li>
+            </ul>
           </div>
-          <div class="dial-mark" aria-hidden="true">
-            <picture>
-              <source type="image/avif" srcset="/assets/dial-icon.avif" />
-              <source type="image/webp" srcset="/assets/dial-icon.webp" />
-              <img
-                src="/assets/dial-icon@1x.png"
-                srcset="/assets/dial-icon@2x.png 2x"
-                width="512"
-                height="512"
-                alt=""
-              />
-            </picture>
+
+          <div class="dial-hero-visual" aria-label="Dial Today screen">
+            <div class="dial-orbit" aria-hidden="true"></div>
+            <figure class="dial-phone dial-phone-hero">
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    /assets/dial-screen-today-640.avif  640w,
+                    /assets/dial-screen-today.avif     1290w
+                  "
+                  sizes="(max-width: 760px) 78vw, 430px"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /assets/dial-screen-today-640.webp  640w,
+                    /assets/dial-screen-today.webp     1290w
+                  "
+                  sizes="(max-width: 760px) 78vw, 430px"
+                />
+                <img
+                  src="/assets/dial-screen-today@1x.png"
+                  srcset="
+                    /assets/dial-screen-today@1x.png  645w,
+                    /assets/dial-screen-today@2x.png 1290w
+                  "
+                  sizes="(max-width: 760px) 78vw, 430px"
+                  width="1290"
+                  height="2796"
+                  alt="Dial Today screen showing the next reminder, estimated medication level, and a log dose button"
+                  fetchpriority="high"
+                />
+              </picture>
+            </figure>
           </div>
         </div>
       </section>
 
-      <section class="block">
-        <div class="wrap feature-lead">
-          <div>
-            <h2>See the routine you actually followed.</h2>
+      <section class="dial-proof" aria-label="What Dial records">
+        <div class="dial-wrap">
+          <p>Doses</p>
+          <p>Injection sites</p>
+          <p>Weight</p>
+          <p>Reports</p>
+          <p>Reminders</p>
+        </div>
+      </section>
+
+      <section class="dial-story" id="how-it-works" aria-labelledby="level-title">
+        <div class="dial-wrap dial-story-grid">
+          <div class="dial-story-copy">
+            <p class="dial-kicker">Dial Pro · Estimated level</p>
+            <h2 id="level-title">A clearer view of the doses you logged.</h2>
             <p>
-              Each entry keeps the medication, amount, date, time, injection site, and notes
-              together. History stays available when you need to check the sequence or bring an
-              accurate record to a conversation with your prescriber.
+              Dial plots an estimated medication level over time from your recorded doses and the
+              half-life value shown in the app. Change the range to review a week, month, or six
+              months of your own history.
+            </p>
+            <div class="dial-boundary">
+              This is an informational estimate, not a measured blood level, dose recommendation, or
+              treatment instruction. Dial explains the method inside the app.
+            </div>
+          </div>
+          <div class="dial-product-stage dial-product-stage-blue">
+            <figure class="dial-phone dial-phone-section">
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    /assets/dial-screen-level-640.avif  640w,
+                    /assets/dial-screen-level.avif     1290w
+                  "
+                  sizes="(max-width: 760px) 76vw, 390px"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /assets/dial-screen-level-640.webp  640w,
+                    /assets/dial-screen-level.webp     1290w
+                  "
+                  sizes="(max-width: 760px) 76vw, 390px"
+                />
+                <img
+                  src="/assets/dial-screen-level@1x.png"
+                  srcset="
+                    /assets/dial-screen-level@1x.png  645w,
+                    /assets/dial-screen-level@2x.png 1290w
+                  "
+                  sizes="(max-width: 760px) 76vw, 390px"
+                  width="1290"
+                  height="2796"
+                  alt="Dial estimated level screen with a timeline chart based on logged doses"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="dial-story dial-story-tint" aria-labelledby="logging-title">
+        <div class="dial-wrap dial-story-grid dial-story-reverse">
+          <div class="dial-story-copy">
+            <p class="dial-kicker">Quick logging</p>
+            <h2 id="logging-title">Keep the details with the dose.</h2>
+            <p>
+              Record medication, amount, date, time, injection site, and notes in a focused form.
+              Your recent values make the next entry faster, while every field remains yours to
+              confirm.
+            </p>
+            <ul class="dial-checklist">
+              <li>Edit an entry when something changes</li>
+              <li>Keep injection sites attached to each dose</li>
+              <li>Keep weight entries alongside the dose timeline</li>
+            </ul>
+          </div>
+          <div class="dial-product-stage dial-product-stage-coral">
+            <figure class="dial-phone dial-phone-section">
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="/assets/dial-screen-log-640.avif 640w, /assets/dial-screen-log.avif 1290w"
+                  sizes="(max-width: 760px) 76vw, 390px"
+                />
+                <source
+                  type="image/webp"
+                  srcset="/assets/dial-screen-log-640.webp 640w, /assets/dial-screen-log.webp 1290w"
+                  sizes="(max-width: 760px) 76vw, 390px"
+                />
+                <img
+                  src="/assets/dial-screen-log@1x.png"
+                  srcset="/assets/dial-screen-log@1x.png 645w, /assets/dial-screen-log@2x.png 1290w"
+                  sizes="(max-width: 760px) 76vw, 390px"
+                  width="1290"
+                  height="2796"
+                  alt="Dial dose form with medication, amount, time, and injection site fields"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="dial-history" aria-labelledby="history-title">
+        <div class="dial-wrap">
+          <div class="dial-section-heading">
+            <p class="dial-kicker">Dial Pro · History and trends</p>
+            <h2 id="history-title">Review the pattern across your record.</h2>
+            <p>
+              Move between dose history, weight changes, and trends from side-effect entries already
+              present in your record.
+            </p>
+          </div>
+          <div class="dial-screen-pair">
+            <figure class="dial-screen-card">
+              <div class="dial-phone dial-phone-card">
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcset="
+                      /assets/dial-screen-history-640.avif  640w,
+                      /assets/dial-screen-history.avif     1290w
+                    "
+                    sizes="(max-width: 680px) 76vw, 360px"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      /assets/dial-screen-history-640.webp  640w,
+                      /assets/dial-screen-history.webp     1290w
+                    "
+                    sizes="(max-width: 680px) 76vw, 360px"
+                  />
+                  <img
+                    src="/assets/dial-screen-history@1x.png"
+                    srcset="
+                      /assets/dial-screen-history@1x.png  645w,
+                      /assets/dial-screen-history@2x.png 1290w
+                    "
+                    sizes="(max-width: 680px) 76vw, 360px"
+                    width="1290"
+                    height="2796"
+                    alt="Dial history screen showing dose and weight charts over time"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <figcaption>
+                <strong>Dial Pro: dose and weight history</strong>
+                <span>Review changes across the range you choose.</span>
+              </figcaption>
+            </figure>
+            <figure class="dial-screen-card dial-screen-card-offset">
+              <div class="dial-phone dial-phone-card">
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcset="
+                      /assets/dial-screen-effects-640.avif  640w,
+                      /assets/dial-screen-effects.avif     1290w
+                    "
+                    sizes="(max-width: 680px) 76vw, 360px"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      /assets/dial-screen-effects-640.webp  640w,
+                      /assets/dial-screen-effects.webp     1290w
+                    "
+                    sizes="(max-width: 680px) 76vw, 360px"
+                  />
+                  <img
+                    src="/assets/dial-screen-effects@1x.png"
+                    srcset="
+                      /assets/dial-screen-effects@1x.png  645w,
+                      /assets/dial-screen-effects@2x.png 1290w
+                    "
+                    sizes="(max-width: 680px) 76vw, 360px"
+                    width="1290"
+                    height="2796"
+                    alt="Dial Pro side-effect trends screen reviewing weekly frequency and severity from existing records"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <figcaption>
+                <strong>Dial Pro: side-effect trends</strong>
+                <span>Review frequency and severity from existing or imported history.</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="dial-report" aria-labelledby="report-title">
+        <div class="dial-wrap dial-report-grid">
+          <div class="dial-report-visual">
+            <figure class="dial-phone dial-phone-report">
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    /assets/dial-screen-report-640.avif  640w,
+                    /assets/dial-screen-report.avif     1290w
+                  "
+                  sizes="(max-width: 760px) 76vw, 390px"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /assets/dial-screen-report-640.webp  640w,
+                    /assets/dial-screen-report.webp     1290w
+                  "
+                  sizes="(max-width: 760px) 76vw, 390px"
+                />
+                <img
+                  src="/assets/dial-screen-report@1x.png"
+                  srcset="
+                    /assets/dial-screen-report@1x.png  645w,
+                    /assets/dial-screen-report@2x.png 1290w
+                  "
+                  sizes="(max-width: 760px) 76vw, 390px"
+                  width="1290"
+                  height="2796"
+                  alt="Dial Pro report screen summarizing doses, weight, and applicable existing history for export"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </figure>
+          </div>
+          <div class="dial-story-copy">
+            <p class="dial-kicker">Dial Pro · PDF report</p>
+            <h2 id="report-title">Bring a useful record to the conversation.</h2>
+            <p>
+              Create a PDF summary of dates, doses, weight entries, and applicable history already
+              in Dial. Review it first, then share it with your prescriber when it helps.
+            </p>
+            <p class="dial-smallprint">
+              The report summarizes your entries. It is not a medical record or treatment plan.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="block">
-        <div class="wrap">
-          <h2>Built around the log</h2>
-          <ul class="dial-points">
-            <li>
-              <span class="point-num">01</span>
-              <h3>Dose history</h3>
-              <p>Record doses in a few taps and edit the entry if something changes.</p>
-            </li>
-            <li>
-              <span class="point-num">02</span>
-              <h3>Injection-site log</h3>
-              <p>Record where you injected so the location stays attached to that dose.</p>
-            </li>
-            <li>
-              <span class="point-num">03</span>
-              <h3>Your reminders</h3>
-              <p>Set daily, weekly, or every-N-days notifications, or use Dial without one.</p>
-            </li>
-            <li>
-              <span class="point-num">04</span>
-              <h3>Weight and side effects</h3>
-              <p>
-                Keep dated entries beside the medication record. Apple Health weight access is
-                optional.
-              </p>
-            </li>
-            <li>
-              <span class="point-num">05</span>
+      <section class="dial-supporting" aria-labelledby="supporting-title">
+        <div class="dial-wrap">
+          <div class="dial-section-heading">
+            <p class="dial-kicker">Around the routine</p>
+            <h2 id="supporting-title">The practical details stay close.</h2>
+          </div>
+          <div class="dial-feature-grid">
+            <article>
+              <span aria-hidden="true">01</span>
               <h3>Apple Watch</h3>
-              <p>Check time since the last logged dose and add a dose from your wrist.</p>
-            </li>
-            <li>
-              <span class="point-num">06</span>
-              <h3>Shotsy import</h3>
-              <p>Open a Shotsy export with Dial to bring an existing record into the app.</p>
-            </li>
-          </ul>
+              <p>
+                Check your latest log from your wrist. Quick logging and complications are in Pro.
+              </p>
+            </article>
+            <article>
+              <span aria-hidden="true">02</span>
+              <h3>Supply inventory</h3>
+              <p>
+                Track pens or vials with concentration, pharmacy, expiration date, and lot number.
+              </p>
+            </article>
+            <article>
+              <span aria-hidden="true">03</span>
+              <h3>Your reminders</h3>
+              <p>
+                Create daily, weekly, or every-N-days notifications around the schedule you set.
+              </p>
+            </article>
+            <article>
+              <span aria-hidden="true">04</span>
+              <h3>Bring your history</h3>
+              <p>
+                Open a compatible medication-tracker export with Dial to import existing entries.
+              </p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="block">
-        <div class="wrap">
-          <div class="privacy-callout">
-            <h2>Your record lives in your iCloud.</h2>
+      <section class="dial-privacy" aria-labelledby="privacy-title">
+        <div class="dial-wrap dial-privacy-card">
+          <div>
+            <p class="dial-kicker">Privacy</p>
+            <h2 id="privacy-title">On your device, with iCloud when you choose.</h2>
+          </div>
+          <div>
             <p>
-              Dial has no Zentsu account and no analytics or advertising SDKs. Medication, dose,
-              side-effect, and reminder data sync through the private CloudKit database attached to
-              your Apple Account. Zentsu runs no server that can read it. Weight entries stay in a
-              separate local store and can use Apple Health only when you grant access.
+              Dial keeps medication, dose, reminder, and supply records on your device. If you turn
+              on the in-app iCloud control, those records can also use the private CloudKit database
+              attached to your Apple Account. Zentsu runs no server that can read them.
             </p>
-            <p style="margin-top: 1rem">
-              Read the <a class="inline-link" href="/dial/privacy">Dial privacy policy</a> for the
-              full storage and permission details.
+            <p>
+              Weight entries use a separate local store. Apple Health access is optional and only
+              covers body weight when you grant permission.
             </p>
+            <a class="dial-text-link" href="/dial/privacy/">Read the Dial privacy policy</a>
           </div>
         </div>
       </section>
 
-      <section class="block availability">
-        <div class="wrap">
-          <h2>Availability</h2>
-          <p>
-            Dial is in TestFlight now and is not yet publicly available on the App Store. For beta
-            access or help with the app, visit <a href="/dial/support">Dial support</a> or email
-            <a href="mailto:support@zentsu.app">support@zentsu.app</a>.
-          </p>
-          <div class="medical-note">
-            Dial is a personal tracking tool, not a medical device. It does not diagnose, calculate
-            doses, recommend changes, or provide medical advice. Confirm medication and dosing
-            decisions with your prescriber.
+      <section class="dial-availability" aria-labelledby="availability-title">
+        <div class="dial-wrap dial-availability-card">
+          <picture class="dial-availability-icon">
+            <source type="image/avif" srcset="/assets/dial-icon.avif" />
+            <source type="image/webp" srcset="/assets/dial-icon.webp" />
+            <img src="/assets/dial-icon@1x.png" width="128" height="128" alt="" loading="lazy" />
+          </picture>
+          <div>
+            <p class="dial-kicker">TestFlight beta</p>
+            <h2 id="availability-title">Try Dial before the App Store release.</h2>
+            <p>
+              Dial is currently available to beta testers. Email us to request access or get help
+              with an existing installation. We send invitations when space is available.
+            </p>
           </div>
+          <div class="dial-actions dial-actions-footer">
+            <a
+              class="dial-button dial-button-primary"
+              href="mailto:support@zentsu.app?subject=Dial%20TestFlight%20access&amp;body=Hi%20Zentsu%2C%0A%0AI%27d%20like%20to%20try%20the%20Dial%20TestFlight.%0A%0AThanks."
+              >Request TestFlight access</a
+            >
+            <a class="dial-button dial-button-secondary" href="/dial/support/">Dial support</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="dial-medical" aria-label="Medical disclaimer">
+        <div class="dial-wrap">
+          <strong>Dial is a personal tracking tool, not a medical device.</strong>
+          <p>
+            It does not diagnose, calculate doses, recommend changes, or provide medical advice.
+            Confirm medication and dosing decisions with your prescriber.
+          </p>
         </div>
       </section>
     </main>

@@ -13,6 +13,7 @@ exclude:
   - Gemfile.lock
 
 url: 'https://zentsu.app'
+baseurl: ''
 title: 'Zentsu'
 description: 'Software for Apple platforms, built by Zentsu LLC.'
 
@@ -42,6 +43,9 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
+
+include:
+  - _redirects
 
 # Pretty blog URLs are scoped to posts only. A top-level `permalink` with a
 # trailing slash would force every front-matter *page* to a directory URL
