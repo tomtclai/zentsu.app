@@ -10,7 +10,10 @@ fallback. Drop the real icon in later, no markup change. Do NOT hardcode a "$" p
 from _config.yml via price_key. {%- endcomment -%} {%- assign app = include.app -%} {%- assign price
 = nil -%} {%- if app.price_key -%}{%- assign price = site[app.price_key] -%}{%- endif -%} {%- assign
 monogram = app.slug | slice: 0 | upcase -%}
-<article class="product{% if app.status != 'live' %} product--soon{% endif %}">
+<article
+  class="product{% if app.status != 'live' %} product--soon{% endif %}"
+  data-app="{{ app.slug }}"
+>
   {%- if app.page_url %}
   <a class="product-icon-link" href="{{ app.page_url }}" tabindex="-1" aria-hidden="true">
     {%- endif %} {%- if app.icon %}

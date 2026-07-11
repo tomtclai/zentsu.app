@@ -1,15 +1,17 @@
 {%- comment -%} apps-section.html: the shared "Apps" band, rendered from _data/apps.yml. This is the
 ONE copy of the studio's app listing. It is included by BOTH the studio homepage (index.html) and
 the standalone /apps page (apps.html) so the two never drift. To change how apps are listed, edit
-here once. Live apps render first, then coming-soon; `parked` apps are omitted. To add an app: one
-entry in _data/apps.yml plus an icon, with no markup change here. See _data/apps.yml for the full
-"how to add an app" notes and the status toggle, and _includes/app-card.html for the per-card
-markup. {%- endcomment -%}
+here once. Apps with an explicit `visible: false` are removed first; missing visibility values are
+visible by default. Live apps then render before coming-soon, while `parked` apps are omitted. To
+add an app: one entry in _data/apps.yml plus an icon, with no markup change here. See _data/apps.yml
+for the full "how to add an app" notes and the one-line visibility switch, and
+_includes/app-card.html for the per-card markup. {%- endcomment -%}
 <section class="block">
   <div class="wrap">
     <h2>Apps</h2>
-    {%- assign live_apps = site.data.apps.apps | where: 'status', 'live' -%} {%- assign soon_apps =
-    site.data.apps.apps | where: 'status', 'coming_soon' -%} {%- for item in live_apps %} {% include
+    {%- assign visible_apps = site.data.apps.apps | where_exp: 'item', 'item.visible != false' -%}
+    {%- assign live_apps = visible_apps | where: 'status', 'live' -%} {%- assign soon_apps =
+    visible_apps | where: 'status', 'coming_soon' -%} {%- for item in live_apps %} {% include
     app-card.html app=item %} {%- endfor %} {%- for item in soon_apps %} {% include app-card.html
     app=item %} {%- endfor %}
   </div>

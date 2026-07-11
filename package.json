@@ -6,8 +6,9 @@
     "build": "bundle exec jekyll build",
     "validate:html": "html-validate '_site/**/*.html'",
     "validate:links": "test -f _site/bench.html && rg -q 'id=\"pricing\"' _site/bench.html && linkinator _site --recurse --clean-urls --check-fragments --check-css --skip '/bench(#.*)?$' --skip 'mailto:' --skip 'cdn-cgi'",
+    "validate:app-visibility": "test -f _site/index.html && test -f _site/apps.html && ! rg -q 'data-app=\"coil\"' _site/index.html _site/apps.html && rg -q 'data-app=\"bench\"' _site/index.html && rg -q 'data-app=\"dial\"' _site/index.html && rg -q 'data-app=\"bench\"' _site/apps.html && rg -q 'data-app=\"dial\"' _site/apps.html && test -f _site/coil.html && rg -q 'mailto:hello@zentsu.app' _site/coil.html && test -f _site/coil/privacy.html && rg -q '<link rel=\"canonical\" href=\"https://zentsu.app/coil/privacy\"' _site/coil/privacy.html",
     "validate:sitemap": "test -f _site/sitemap.xml && ! rg -q '/pages/' _site/sitemap.xml && test \"$(rg -c '<loc>https://zentsu.app/' _site/sitemap.xml)\" = \"$(rg -c '<loc>' _site/sitemap.xml)\" && rg -q '<loc>https://zentsu.app/dial/</loc>' _site/sitemap.xml && rg -q '<link rel=\"canonical\" href=\"https://zentsu.app/dial/\"' _site/dial/index.html && test -f _site/_redirects && rg -q '^/dial.html /dial/ 301$' _site/_redirects",
-    "test": "npm run build && npm run validate:html && npm run validate:links && npm run validate:sitemap"
+    "test": "npm run build && npm run validate:html && npm run validate:links && npm run validate:app-visibility && npm run validate:sitemap"
   },
   "repository": {
     "type": "git",

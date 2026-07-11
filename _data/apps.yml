@@ -15,18 +15,24 @@
 #    Nothing else is hand-typed in the markup.
 #
 # ── TOGGLING VISIBILITY ──────────────────────────────────────────────────
-# The homepage renders apps by `status`:
+# `visible` is the one promotional visibility switch used by every public app
+# collection. Only an explicit `false` hides an app, so older entries and new
+# entries that omit the field stay visible by default. Direct product, support,
+# and privacy URLs are unaffected.
+#
+# Re-enable an app in one line: set `visible: true` on its entry below.
+#
+# Visible apps are then rendered by `status`:
 #   live        → full card with its call-to-action / "Learn more" link.
 #   coming_soon → card with a muted "Coming soon" treatment, NO download or
 #                 App Store link (nothing to link to yet).
-#   parked      → NOT shown on the homepage. Kept in the data so the entry
-#                 (and its copy) survives; flip `status` back to revive it.
-# To hide a coming-soon app entirely, change its `status` to `parked`
-# (single-field edit). To reveal it, change it back to `coming_soon`.
+#   parked      → omitted because it has no active lifecycle state.
 #
 # ── FIELDS ───────────────────────────────────────────────────────────────
 #   name           display name.
 #   slug           short id (also the icon-fallback monogram source).
+#   visible        promotional master switch. `false` hides the app from every
+#                  app collection; `true` or an omitted value keeps it visible.
 #   tagline        one plain-voice sentence. Company "we"; no superlatives,
 #                  no "AI"/"ML", no badge language.
 #   status         live | coming_soon | parked  (see toggling, above).
@@ -48,6 +54,7 @@
 apps:
   - name: Bench
     slug: bench
+    visible: true
     tagline: >-
       A native macOS developer toolbox in one offline window: JSON, JWT, regex,
       hashes, UUIDs, video conversion, and more.
@@ -63,6 +70,7 @@ apps:
 
   - name: Coil
     slug: coil
+    visible: false
     tagline: >-
       Track every subscription in one place. It runs on your device and never
       links to your bank.
@@ -77,6 +85,7 @@ apps:
 
   - name: Dial
     slug: dial
+    visible: true
     tagline: >-
       Keep a private record of GLP-1 doses, injection sites, weight, side effects,
       and the reminders you choose to set.
