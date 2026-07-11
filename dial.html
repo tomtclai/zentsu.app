@@ -147,8 +147,11 @@ favicon: /assets/dial-icon.png
               months of your own history.
             </p>
             <div class="dial-boundary">
-              This is an informational estimate, not a measured blood level, dose recommendation, or
-              treatment instruction. Dial explains the method inside the app.
+              <strong>An estimate, and we say so.</strong>
+              The chart models a standard decay curve from the doses you logged. It is built to help
+              you notice your own patterns between doses, not to stand in for a measured blood level
+              or suggest what to take next. Dial does not calculate doses. The app explains the
+              method in full.
             </div>
           </div>
           <div class="dial-product-stage dial-product-stage-blue">
@@ -330,25 +333,25 @@ favicon: /assets/dial-icon.png
       <section class="dial-report" aria-labelledby="report-title">
         <div class="dial-wrap dial-report-grid">
           <div class="dial-report-visual">
-            <figure class="dial-phone dial-phone-report">
+            <figure class="dial-paper dial-paper-report">
               <picture>
                 <source
                   type="image/avif"
-                  srcset="/assets/dial-web-report-640.avif 640w, /assets/dial-web-report.avif 1290w"
-                  sizes="(max-width: 760px) 76vw, 390px"
+                  srcset="/assets/dial-web-report-640.avif 640w, /assets/dial-web-report.avif 1836w"
+                  sizes="(max-width: 760px) 78vw, 420px"
                 />
                 <source
                   type="image/webp"
-                  srcset="/assets/dial-web-report-640.webp 640w, /assets/dial-web-report.webp 1290w"
-                  sizes="(max-width: 760px) 76vw, 390px"
+                  srcset="/assets/dial-web-report-640.webp 640w, /assets/dial-web-report.webp 1836w"
+                  sizes="(max-width: 760px) 78vw, 420px"
                 />
                 <img
                   src="/assets/dial-web-report@1x.png"
-                  srcset="/assets/dial-web-report@1x.png 645w, /assets/dial-web-report@2x.png 1290w"
-                  sizes="(max-width: 760px) 76vw, 390px"
-                  width="1290"
-                  height="2610"
-                  alt="Dial Pro report screen summarizing doses, weight, and applicable existing history for export"
+                  srcset="/assets/dial-web-report@1x.png 918w, /assets/dial-web-report@2x.png 1836w"
+                  sizes="(max-width: 760px) 78vw, 420px"
+                  width="1836"
+                  height="2376"
+                  alt="A page of the Dial Pro PDF report summarizing dose titration, weight over time, and side effects for a prescriber"
                   loading="lazy"
                   decoding="async"
                 />
@@ -357,10 +360,15 @@ favicon: /assets/dial-icon.png
           </div>
           <div class="dial-story-copy">
             <p class="dial-kicker">Dial Pro · PDF report</p>
-            <h2 id="report-title">Bring a useful record to the conversation.</h2>
+            <h2 id="report-title">Bring the whole picture to your next visit.</h2>
             <p>
-              Create a PDF summary of dates, doses, weight entries, and applicable history already
-              in Dial. Review it first, then share it with your prescriber when it helps.
+              Generate a PDF with your dose titration, injection sites, weight trend, and
+              side-effect patterns. Dial builds it on your device, and you share it only when you
+              decide to, by AirDrop, email, or print.
+            </p>
+            <p>
+              Private the rest of the time, and useful the one moment your record needs to leave
+              your phone.
             </p>
             <p class="dial-smallprint">
               The report summarizes your entries. It is not a medical record or treatment plan.
@@ -412,17 +420,37 @@ favicon: /assets/dial-icon.png
         <div class="dial-wrap dial-privacy-card">
           <div>
             <p class="dial-kicker">Privacy</p>
-            <h2 id="privacy-title">On your device, with iCloud when you choose.</h2>
+            <h2 id="privacy-title">Clear about what stays on your device.</h2>
           </div>
           <div>
+            <dl class="dial-privacy-specs">
+              <div>
+                <dt>Accounts</dt>
+                <dd>There is no Dial account. Open the app and start logging.</dd>
+              </div>
+              <div>
+                <dt>Analytics</dt>
+                <dd>
+                  Dial runs no usage analytics or telemetry. We measure nothing about how you use
+                  it.
+                </dd>
+              </div>
+              <div>
+                <dt>Our servers</dt>
+                <dd>Zentsu operates no server that stores or reads your records.</dd>
+              </div>
+              <div>
+                <dt>Optional sync</dt>
+                <dd>
+                  Turn on iCloud in the app and records sync through the private CloudKit database
+                  on your own Apple Account, not to us.
+                </dd>
+              </div>
+            </dl>
             <p>
-              Dial keeps medication, dose, reminder, and supply records on your device. If you turn
-              on the in-app iCloud control, those records can also use the private CloudKit database
-              attached to your Apple Account. Zentsu runs no server that can read them.
-            </p>
-            <p>
-              Weight entries use a separate local store. Apple Health access is optional and only
-              covers body weight when you grant permission.
+              Medication, dose, reminder, and supply records stay on your device. Weight entries use
+              a separate local store, and Apple Health access is optional, covering body weight only
+              when you grant permission.
             </p>
             <a class="dial-text-link" href="/dial/privacy/">Read the Dial privacy policy</a>
           </div>
