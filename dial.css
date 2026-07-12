@@ -108,6 +108,14 @@
   line-height: 1.72;
 }
 
+.dial-hero-legal {
+  max-width: 54ch;
+  margin-top: 1.4rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
 .dial-actions {
   display: flex;
   flex-wrap: wrap;
@@ -362,13 +370,25 @@
 }
 
 .dial-proof .dial-wrap {
-  min-height: 86px;
+  padding-block: 1.15rem;
+}
+
+.dial-proof-label {
+  margin: 0 0 0.7rem;
+  color: var(--muted);
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.dial-proof-row {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
 }
 
-.dial-proof p {
+.dial-proof-row p {
   padding: 0.6rem 1rem;
   border-right: 1px solid var(--border-soft);
   color: var(--muted);
@@ -379,13 +399,18 @@
   text-transform: uppercase;
 }
 
-.dial-proof p:last-child {
+.dial-proof-row p:first-child {
+  padding-left: 0;
+}
+
+.dial-proof-row p:last-child {
   border-right: 0;
 }
 
 .dial-story,
 .dial-history,
 .dial-report,
+.dial-watch-band,
 .dial-supporting,
 .dial-privacy,
 .dial-availability {
@@ -611,6 +636,46 @@
   transform: rotate(-2deg);
 }
 
+.dial-watch-band {
+  background:
+    radial-gradient(circle at 30% 20%, rgba(47, 140, 255, 0.1), transparent 42%), var(--surface);
+}
+
+.dial-watch-visual {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: clamp(0.75rem, 2vw, 1.75rem);
+}
+
+.dial-watch {
+  margin: 0;
+  width: min(46%, 188px);
+  padding: clamp(7px, 1.4vw, 11px);
+  border-radius: clamp(30px, 6vw, 46px);
+  background: linear-gradient(160deg, #3a3f4a, #16191f 72%);
+  box-shadow:
+    0 26px 58px -24px rgba(10, 11, 16, 0.7),
+    0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.dial-watch picture,
+.dial-watch img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: clamp(22px, 4.6vw, 36px);
+}
+
+.dial-watch-front {
+  transform: rotate(-3deg);
+}
+
+.dial-watch-back {
+  margin-top: clamp(2.5rem, 7vw, 4.5rem);
+  transform: rotate(3deg);
+}
+
 .dial-smallprint {
   margin-top: 1.25rem;
   font-size: 0.86rem !important;
@@ -619,7 +684,7 @@
 
 .dial-feature-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
 
@@ -786,7 +851,7 @@
   }
 
   .dial-hero h1 {
-    max-width: 9ch;
+    max-width: 12ch;
   }
 
   .dial-hero-visual {
@@ -801,17 +866,18 @@
     width: min(78vw, 380px);
   }
 
-  .dial-proof .dial-wrap {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0.7rem 0;
+  .dial-proof-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.2rem 0;
   }
 
-  .dial-proof p {
+  .dial-proof-row p {
     border-right: 0;
+    padding: 0.45rem 0.5rem;
   }
 
-  .dial-proof p:last-child {
-    grid-column: 1 / -1;
+  .dial-proof-row p:first-child {
+    padding-left: 0.5rem;
   }
 
   .dial-story-reverse .dial-story-copy {
@@ -839,6 +905,11 @@
 
   .dial-email-row {
     flex-direction: column;
+  }
+
+  .dial-email-row input[type='email'] {
+    flex: 0 0 auto;
+    width: 100%;
   }
 
   .dial-email-row button {

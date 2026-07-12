@@ -26,7 +26,13 @@ favicon: /assets/dial-icon.png
         "url": "https://zentsu.app/dial/",
         "operatingSystem": "iOS; watchOS",
         "applicationCategory": "HealthApplication",
-        "image": "https://zentsu.app/assets/dial-icon.png",
+        "image": "https://zentsu.app/assets/dial-icon@2x.png",
+        "screenshot": [
+          "https://zentsu.app/assets/dial-web-today.png",
+          "https://zentsu.app/assets/dial-web-level.png",
+          "https://zentsu.app/assets/dial-web-report.png",
+          "https://zentsu.app/assets/dial-web-watch-glance.png"
+        ],
         "publisher": {
           "@type": "Organization",
           "name": "Zentsu LLC",
@@ -58,12 +64,13 @@ favicon: /assets/dial-icon.png
               Dial is a private GLP-1 medication tracker for iPhone and Apple Watch.
             </p>
             <p class="dial-hero-detail">
-              Log doses, injection sites, weight, and reminders in one clear record. Review the
-              history you entered whenever you need it.
+              Log doses, injection sites, weight, and reminders for semaglutide or tirzepatide in
+              one clear record. It stays on your device, and nothing leaves your phone unless you
+              choose to share it.
             </p>
             <form
               class="dial-signup dial-signup-hero"
-              action="https://buttondown.email/api/emails/embed-subscribe/zentsullc"
+              action="https://buttondown.email/api/emails/embed-subscribe/dialapp"
               method="post"
             >
               <label for="dial-email-hero" class="dial-sr-only">Email address</label>
@@ -88,16 +95,20 @@ favicon: /assets/dial-icon.png
               <a class="dial-button dial-button-secondary" href="#how-it-works"
                 >See how Dial works</a
               >
-              <a class="dial-button dial-button-secondary" href="/dial/support/">Dial support</a>
             </div>
             <ul class="dial-platforms" aria-label="Dial platforms and storage">
               <li>iPhone</li>
               <li>Apple Watch</li>
               <li>Optional private iCloud storage</li>
             </ul>
+            <p class="dial-hero-legal">
+              Logging doses and reminders is free. Dial Pro adds the estimated level, history and
+              trends, the PDF report, and logging from Apple Watch. Dial is a personal record. It
+              does not calculate doses or replace guidance from your prescriber.
+            </p>
           </div>
 
-          <div class="dial-hero-visual" aria-label="Dial Today screen">
+          <div class="dial-hero-visual">
             <div class="dial-orbit" aria-hidden="true"></div>
             <figure class="dial-phone dial-phone-hero">
               <picture>
@@ -126,13 +137,16 @@ favicon: /assets/dial-icon.png
         </div>
       </section>
 
-      <section class="dial-proof" aria-label="What Dial records">
+      <section class="dial-proof" aria-labelledby="proof-label">
         <div class="dial-wrap">
-          <p>Doses</p>
-          <p>Injection sites</p>
-          <p>Weight</p>
-          <p>Reports</p>
-          <p>Reminders</p>
+          <p class="dial-proof-label" id="proof-label">What Dial tracks</p>
+          <div class="dial-proof-row">
+            <p>Doses</p>
+            <p>Injection sites</p>
+            <p>Weight</p>
+            <p>Reports</p>
+            <p>Reminders</p>
+          </div>
         </div>
       </section>
 
@@ -187,11 +201,12 @@ favicon: /assets/dial-icon.png
         <div class="dial-wrap dial-story-grid dial-story-reverse">
           <div class="dial-story-copy">
             <p class="dial-kicker">Quick logging</p>
-            <h2 id="logging-title">Keep the details with the dose.</h2>
+            <h2 id="logging-title">Log the dose and everything with it.</h2>
             <p>
               Record medication, amount, date, time, injection site, and notes in a focused form.
               Your recent values make the next entry faster, while every field remains yours to
-              confirm.
+              confirm. Dial works whether your prescriber calls it Ozempic, Wegovy, Mounjaro, or
+              Zepbound.
             </p>
             <ul class="dial-checklist">
               <li>Edit an entry when something changes</li>
@@ -283,7 +298,7 @@ favicon: /assets/dial-icon.png
                 </picture>
               </div>
               <figcaption>
-                <strong>Dial Pro: dose and weight history</strong>
+                <strong>Dose and weight history</strong>
                 <span>Review changes across the range you choose.</span>
               </figcaption>
             </figure>
@@ -322,7 +337,7 @@ favicon: /assets/dial-icon.png
                 </picture>
               </div>
               <figcaption>
-                <strong>Dial Pro: side-effect trends</strong>
+                <strong>Side-effect trends</strong>
                 <span>Review frequency and severity from existing or imported history.</span>
               </figcaption>
             </figure>
@@ -377,6 +392,97 @@ favicon: /assets/dial-icon.png
         </div>
       </section>
 
+      <section class="dial-watch-band" aria-labelledby="watch-title">
+        <div class="dial-wrap dial-story-grid">
+          <div class="dial-watch-visual">
+            <figure class="dial-watch dial-watch-front">
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    /assets/dial-web-watch-glance-640.avif 640w,
+                    /assets/dial-web-watch-glance.avif     792w
+                  "
+                  sizes="(max-width: 760px) 42vw, 190px"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /assets/dial-web-watch-glance-640.webp 640w,
+                    /assets/dial-web-watch-glance.webp     792w
+                  "
+                  sizes="(max-width: 760px) 42vw, 190px"
+                />
+                <img
+                  src="/assets/dial-web-watch-glance@1x.png"
+                  srcset="
+                    /assets/dial-web-watch-glance@1x.png 396w,
+                    /assets/dial-web-watch-glance@2x.png 792w
+                  "
+                  sizes="(max-width: 760px) 42vw, 190px"
+                  width="792"
+                  height="968"
+                  alt="Dial on Apple Watch showing a cycle ring counting down the days to the next dose, the next reminder, and a Log Dose button"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </figure>
+            <figure class="dial-watch dial-watch-back">
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    /assets/dial-web-watch-logged-640.avif 640w,
+                    /assets/dial-web-watch-logged.avif     792w
+                  "
+                  sizes="(max-width: 760px) 42vw, 190px"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    /assets/dial-web-watch-logged-640.webp 640w,
+                    /assets/dial-web-watch-logged.webp     792w
+                  "
+                  sizes="(max-width: 760px) 42vw, 190px"
+                />
+                <img
+                  src="/assets/dial-web-watch-logged@1x.png"
+                  srcset="
+                    /assets/dial-web-watch-logged@1x.png 396w,
+                    /assets/dial-web-watch-logged@2x.png 792w
+                  "
+                  sizes="(max-width: 760px) 42vw, 190px"
+                  width="792"
+                  height="968"
+                  alt="Dial on Apple Watch confirming a logged dose with a checkmark, showing the amount and injection site"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </figure>
+          </div>
+          <div class="dial-story-copy">
+            <p class="dial-kicker">Apple Watch</p>
+            <h2 id="watch-title">Log the dose from your wrist.</h2>
+            <p>
+              The watch face shows a cycle ring counting down to your next dose, the medication
+              name, and when the next reminder lands. Dial Pro turns that glance into a full log:
+              set the amount with the Digital Crown, choose an injection site, and confirm. The
+              entry syncs to your iPhone and stays between your two devices.
+            </p>
+            <ul class="dial-checklist">
+              <li>Cycle ring, dose status, and next reminder at a glance (free)</li>
+              <li>Log a dose from the wrist with the Digital Crown (Dial Pro)</li>
+              <li>
+                Estimated-level and next-dose widgets on your watch face, plus Smart Stack quick
+                logging (Dial Pro)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section class="dial-supporting" aria-labelledby="supporting-title">
         <div class="dial-wrap">
           <div class="dial-section-heading">
@@ -386,27 +492,20 @@ favicon: /assets/dial-icon.png
           <div class="dial-feature-grid">
             <article>
               <span aria-hidden="true">01</span>
-              <h3>Apple Watch</h3>
-              <p>
-                Check your latest log from your wrist. Quick logging and complications are in Pro.
-              </p>
-            </article>
-            <article>
-              <span aria-hidden="true">02</span>
               <h3>Supply inventory</h3>
               <p>
                 Track pens or vials with concentration, pharmacy, expiration date, and lot number.
               </p>
             </article>
             <article>
-              <span aria-hidden="true">03</span>
+              <span aria-hidden="true">02</span>
               <h3>Your reminders</h3>
               <p>
                 Create daily, weekly, or every-N-days notifications around the schedule you set.
               </p>
             </article>
             <article>
-              <span aria-hidden="true">04</span>
+              <span aria-hidden="true">03</span>
               <h3>Bring your history</h3>
               <p>
                 Open a compatible medication-tracker export with Dial to import existing entries.
@@ -474,7 +573,7 @@ favicon: /assets/dial-icon.png
           </div>
           <form
             class="dial-signup dial-signup-closing"
-            action="https://buttondown.email/api/emails/embed-subscribe/zentsullc"
+            action="https://buttondown.email/api/emails/embed-subscribe/dialapp"
             method="post"
           >
             <label for="dial-email-closing" class="dial-sr-only">Email address</label>
