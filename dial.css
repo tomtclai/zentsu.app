@@ -964,6 +964,14 @@
     --dial-cream: #211916;
   }
 
+  .dial-email-row button {
+    background: #b9463b;
+  }
+
+  .dial-email-row button:hover {
+    background: #9f382f;
+  }
+
   .dial-button-primary {
     border-color: #d75e50;
     background: #d75e50;
