@@ -60,6 +60,27 @@ for (const path of htmlFiles) {
     (match) => match[1],
   );
   check(legacyLinks.length === 0, `${path} links to legacy HTML URLs: ${legacyLinks.join(', ')}`);
+
+  const relativeResourceUrls = [
+    ...[...html.matchAll(/\b(?:href|src|poster)="([^"]+)"/g)].map((match) => match[1]),
+    ...[...html.matchAll(/\bsrcset="([^"]+)"/g)].flatMap((match) =>
+      match[1].split(',').map((candidate) => candidate.trim().split(/\s+/)[0]),
+    ),
+  ].filter(
+    (url) =>
+      url &&
+      !url.startsWith('/') &&
+      !url.startsWith('#') &&
+      !url.startsWith('https://') &&
+      !url.startsWith('http://') &&
+      !url.startsWith('mailto:') &&
+      !url.startsWith('tel:') &&
+      !url.startsWith('data:'),
+  );
+  check(
+    relativeResourceUrls.length === 0,
+    `${path} uses route-relative resource URLs: ${relativeResourceUrls.join(', ')}`,
+  );
 }
 
 const notFound = read(join(outputDirectory, '404.html'));

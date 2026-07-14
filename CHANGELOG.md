@@ -17,6 +17,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- Load Bench hero and screenshot assets from root-relative URLs so they work on extensionless and
+  trailing-slash routes.
 - Return a dedicated, non-indexable 404 page for unknown Cloudflare Pages routes.
 - Match the shipping 17-tool Bench inventory by adding Lorem Ipsum and MOV to GIF, with both video
   converters grouped under Media.
