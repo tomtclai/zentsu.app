@@ -41,8 +41,8 @@ monogram = app.slug | slice: 0 | upcase -%}
     </h3>
     {%- if app.status == 'live' %}
     <p class="status">
-      <span class="status-tag">Private beta</span> · {{ app.platforms }}{% if app.status_note %} ·
-      {{ app.status_note }}{% endif %}
+      <span class="status-tag">Available</span> · {{ app.platforms }}{% if app.status_note %} · {{
+      app.status_note }}{% endif %}
     </p>
     {%- elsif app.status == 'coming_soon' %}
     <p class="status">
@@ -55,6 +55,10 @@ monogram = app.slug | slice: 0 | upcase -%}
       {%- if price %}
       <span class="product-price"
         >${{ price }}{% if app.price_suffix %} {{ app.price_suffix }}{% endif %}</span
+      >
+      {%- endif %} {%- if app.status == 'live' and app.app_store_url %}
+      <a class="product-store-link" href="{{ app.app_store_url }}" rel="noopener noreferrer"
+        >Mac App Store</a
       >
       {%- endif %}
     </div>

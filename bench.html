@@ -33,10 +33,13 @@ page_stylesheet: /bench.css
           "name": "Zentsu LLC",
           "url": "https://zentsu.app/"
         },
+        "downloadUrl": "https://apps.apple.com/app/bench-dev-toolbox/id6763368925?mt=12",
+        "installUrl": "https://apps.apple.com/app/bench-dev-toolbox/id6763368925?mt=12",
         "offers": {
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "USD",
+          "url": "https://apps.apple.com/app/bench-dev-toolbox/id6763368925?mt=12",
           "description": "Free download. Bench Pro is an optional ${{ site.price_lifetime }} non-consumable in-app purchase."
         }
       }
@@ -129,13 +132,18 @@ page_stylesheet: /bench.css
               Paste a JWT, a hash, or a blob of JSON, and the right tool is already open.
             </p>
             <div class="hero-cta">
-              <a class="btn btn-primary" href="#release-notes">
+              <a
+                class="btn btn-primary"
+                href="https://apps.apple.com/app/bench-dev-toolbox/id6763368925?mt=12"
+                rel="noopener noreferrer"
+                id="hero-primary-cta"
+              >
                 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M12 3 4 7l8 4 8-4-8-4Zm-8 6v8l8 4V13L4 9Zm10 4v8l8-4V9l-8 4Z" />
                 </svg>
-                Get notified
+                Mac App Store
               </a>
-              <a class="btn btn-primary" href="#how" id="hero-primary-cta">See how it works →</a>
+              <a class="btn btn-secondary" href="#how">See how it works →</a>
             </div>
             <div class="hero-meta">
               <span
@@ -816,8 +824,8 @@ page_stylesheet: /bench.css
               <h2>Free download. Pro when you need it.</h2>
             </div>
             <p class="kicker">
-              Bench has been submitted to the Mac App Store. Core tools are included; Bench Pro is
-              an optional one-time unlock for Smart Detection, Pro tools, and higher limits.
+              Bench is free on the Mac App Store. Core tools are included; Bench Pro is an optional
+              one-time unlock for Smart Detection, Pro tools, and higher limits.
             </p>
           </div>
 
@@ -834,7 +842,12 @@ page_stylesheet: /bench.css
                 <li>Unlocks Smart Detection and every Pro tool</li>
                 <li>Raises input limits for large payloads</li>
               </ul>
-              <a class="btn btn-primary" href="#release-notes">Get notified</a>
+              <a
+                class="btn btn-primary"
+                href="https://apps.apple.com/app/bench-dev-toolbox/id6763368925?mt=12"
+                rel="noopener noreferrer"
+                >Mac App Store</a
+              >
             </div>
           </div>
 
@@ -843,24 +856,31 @@ page_stylesheet: /bench.css
           </p>
 
           <div class="price-promo reveal">
-            <span class="price-promo-tag">Launch</span>
+            <span class="price-promo-tag">Available now</span>
             <p>
-              Bench has been submitted to the Mac App Store. Once available, the app is free to
-              download; Bench Pro is <strong>${{ site.price_lifetime }}</strong> as a one-time
-              unlock.
+              Bench is free on the Mac App Store. Bench Pro is
+              <strong>${{ site.price_lifetime }}</strong> as a one-time unlock.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="buy" id="release-notes">
+      <section class="buy" id="download">
         <div class="buy-inner">
           <div class="reveal">
-            <h2>Bench has been submitted to the Mac App Store.</h2>
+            <h2>Bench is on the Mac App Store.</h2>
             <p>
-              Once available, Bench is free to download. Bench Pro is an optional
+              Free to download. Bench Pro is an optional
               <strong>${{ site.price_lifetime }}</strong> one-time unlock for Smart Detection, Pro
               tools, and higher input limits.
+            </p>
+            <p class="buy-cta-row">
+              <a
+                class="btn btn-primary"
+                href="https://apps.apple.com/app/bench-dev-toolbox/id6763368925?mt=12"
+                rel="noopener noreferrer"
+                >Download on the Mac App Store</a
+              >
             </p>
             <form
               class="email-capture buy-email-capture"
@@ -877,10 +897,10 @@ page_stylesheet: /bench.css
                   required
                 />
                 <input type="hidden" name="tag" value="bench-launch" />
-                <button type="submit" class="btn-email">Get notified</button>
+                <button type="submit" class="btn-email">Product notes</button>
               </div>
               <p class="email-note">
-                One short launch note. No open or link tracking. Unsubscribe anytime.
+                Occasional product notes only. No open or link tracking. Unsubscribe anytime.
                 <a href="/privacy">Privacy details</a>.
               </p>
             </form>

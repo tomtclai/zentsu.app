@@ -1853,6 +1853,9 @@ section.buy {
   margin-bottom: 1.5rem;
   max-width: 46ch;
 }
+.buy-cta-row {
+  margin-bottom: 1.5rem;
+}
 .buy-facts {
   display: grid;
   gap: 0.65rem;

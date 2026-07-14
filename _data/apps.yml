@@ -23,7 +23,8 @@
 # Re-enable an app in one line: set `visible: true` on its entry below.
 #
 # Visible apps are then rendered by `status`:
-#   live        → full card with its call-to-action / "Learn more" link.
+#   live        → full card with "Available" tag and optional Mac App Store link
+#                 when app_store_url is set.
 #   coming_soon → card with a muted "Coming soon" treatment, NO download or
 #                 App Store link (nothing to link to yet).
 #   parked      → omitted because it has no active lifecycle state.
@@ -37,9 +38,9 @@
 #                  no "AI"/"ML", no badge language.
 #   status         live | coming_soon | parked  (see toggling, above).
 #   status_note    optional qualifier appended after the platform on the card's
-#                  status line, e.g. "Mac App Store submission pending". The card
-#                  always leads with a tag ("Private beta" / "Coming soon"), then
-#                  the platforms, then this note. One shared format for every app.
+#                  status line, e.g. "Mac App Store". The card always leads with a
+#                  tag ("Available" / "Coming soon"), then the platforms, then this
+#                  note. One shared format for every app.
 #   platforms      short human string, e.g. "macOS" / "iOS · macOS".
 #   price_key      name of the _config.yml key holding this app's price
 #                  (numeric only). Rendered as "${{ … }}" by the template.
@@ -58,12 +59,12 @@ apps:
     tagline: >-
       A native macOS developer toolbox in one offline window: JSON, JWT, regex,
       hashes, UUIDs, video conversion, and more.
-    status: coming_soon
-    status_note: Submitted to Mac App Store
+    status: live
+    status_note: Mac App Store
     platforms: macOS
     price_key: price_lifetime
     price_suffix: Pro unlock
-    app_store_url: null # Mac App Store submission pending; card shows the page link, not a store button.
+    app_store_url: https://apps.apple.com/app/bench-dev-toolbox/id6763368925?mt=12
     page_url: /bench
     icon: /assets/bench-icon.png
     accent: '#4a7c6f'
