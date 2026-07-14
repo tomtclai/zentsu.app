@@ -19,6 +19,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- Use POSIX `grep` in production validation so the Cloudflare deployment does not depend on
+  ripgrep being preinstalled on the GitHub Actions runner.
 - Load Bench hero and screenshot assets from root-relative URLs so they work on extensionless and
   trailing-slash routes.
 - Return a dedicated, non-indexable 404 page for unknown Cloudflare Pages routes.
