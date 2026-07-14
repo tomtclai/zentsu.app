@@ -31,9 +31,9 @@
   --ink-soft: #2a2622;
   --text: #14110f; /* alias of --ink so existing page rules keep working */
   --muted: #6b655e;
-  --accent: #4a7c6f;
+  --accent: #3e7064;
   --accent-light: #e6efec;
-  --spot: #b84e1a;
+  --spot: #a84216;
   --spot-soft: #f1e3d8;
   --body-text: #2a2622;
   --code-bg: #1c1917;
@@ -72,6 +72,38 @@ body {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
   border-radius: 3px;
+}
+
+/* First focus stop on every page. It stays outside the viewport until a
+   keyboard user focuses it, then moves focus to the main landmark. */
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 1000;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  background: var(--ink);
+  color: var(--bg);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+  transform: translateY(calc(-100% - 1rem));
+  transition: transform 0.15s ease;
+}
+.skip-link:focus,
+.skip-link:focus-visible {
+  outline: 3px solid var(--spot);
+  outline-offset: 3px;
+  transform: translateY(0);
+}
+main[tabindex='-1']:focus {
+  outline: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .skip-link {
+    transition: none;
+  }
 }
 
 /* ── Nav (matches bench.html: sticky w/ backdrop blur) ── */

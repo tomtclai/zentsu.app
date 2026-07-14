@@ -72,7 +72,7 @@
   <body>
     {% include nav.html %}
 
-    <main>
+    <main id="main-content" tabindex="-1">
       {%- if page.hero_icon %}
       <section class="tool-hero" aria-hidden="true">
         <div class="tool-hero-tile">{% include tool-hero-icons/{{ page.hero_icon }}.svg %}</div>

@@ -1,0 +1,35 @@
+---
+title: Page not found · Zentsu LLC
+description: The requested page could not be found.
+permalink: /404.html
+sitemap: false
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head-common.html seo_managed_externally=true %}
+    <title>{{ page.title }}</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <style>
+      main {
+        flex: 1;
+        padding: 3rem 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    {% include nav.html %}
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <span class="page-label">404</span>
+        <h1>Page not found</h1>
+        <p>The address may have changed, or the page may no longer exist.</p>
+        <p><a href="/">Return to Zentsu</a>.</p>
+      </article>
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>

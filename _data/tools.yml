@@ -30,11 +30,11 @@ categories:
       <path d="M16 4 L20 12 L16 20" />
     tools:
       - label: Base64
-        href: /tools/base64-encoder.html
+        href: /tools/base64-encoder
         icon: base64-encoder
         benefit: 'Paste a Base64 blob, get the text. Or the other way around.'
       - label: URL Encode
-        href: /tools/url-encoder.html
+        href: /tools/url-encoder
         icon: url-encoder
         benefit: 'Encode or decode a URL fragment. Spaces, emoji, the works.'
 
@@ -45,22 +45,22 @@ categories:
       <line x1="4" y1="18" x2="18" y2="18" />
     tools:
       - label: JSON Formatter
-        href: /tools/json-formatter.html
+        href: /tools/json-formatter
         icon: json-formatter
         pro: true
         benefit: 'Pretty-print minified JSON. Spot the missing comma before you ship it.'
       - label: Markdown Preview
-        href: /tools/markdown-preview.html
+        href: /tools/markdown-preview
         icon: markdown-preview
         pro: true
         benefit: 'See what your README looks like before you push it.'
       - label: Text Diff
-        href: /tools/text-diff.html
+        href: /tools/text-diff
         icon: text-diff
         pro: true
         benefit: "Two chunks of text, side by side. You'll see exactly what changed."
       - label: Image Diff
-        href: /tools/image-diff.html
+        href: /tools/image-diff
         icon: image-diff
         pro: true
         benefit: 'Overlay two PNGs. The pixels that moved light up.'
@@ -71,13 +71,17 @@ categories:
       <path d="M12 4 V2 M12 22 V20 M4 12 H2 M22 12 H20" />
     tools:
       - label: UUID Generator
-        href: /tools/uuid-generator.html
+        href: /tools/uuid-generator
         icon: uuid-generator
         benefit: 'Grab a v4 UUID. Or a hundred. Uppercase or lowercase, your call.'
       - label: Timestamp
-        href: /tools/timestamp-converter.html
+        href: /tools/timestamp-converter
         icon: timestamp-converter
         benefit: 'Unix timestamp to human date, in any timezone.'
+      - label: Lorem Ipsum
+        href: /tools/lorem-ipsum
+        icon: lorem-ipsum
+        benefit: 'Generate words, sentences, or paragraphs of placeholder text.'
 
   - name: Crypto
     icon: |
@@ -85,12 +89,12 @@ categories:
       <path d="M8 10 V7 a4 4 0 0 1 8 0 v3" />
     tools:
       - label: Hash Generator
-        href: /tools/hash-generator.html
+        href: /tools/hash-generator
         icon: hash-generator
         benefit: 'MD5, SHA-1, SHA-256, SHA-512. For the moment the README asks for a checksum.'
         meta: 'MD5 · SHA‑1 · SHA‑256 · SHA‑512'
       - label: JWT Decoder
-        href: /tools/jwt-decoder.html
+        href: /tools/jwt-decoder
         icon: jwt-decoder
         pro: true
         benefit: "Paste a JWT. Read the claims. Check what's actually in the header."
@@ -101,24 +105,35 @@ categories:
       <path d="M20 16 H6 L10 20" />
     tools:
       - label: Color Converter
-        href: /tools/color-converter.html
+        href: /tools/color-converter
         icon: color-converter
         benefit: 'HEX, RGB, HSL, OKLCH. Paste one, get the others.'
       - label: Text Case
-        href: /tools/text-case.html
+        href: /tools/text-case
         icon: text-case
         benefit: 'camelCase, snake_case, Title Case, kebab-case. One paste, every variant.'
       - label: Number Base
-        href: /tools/number-base.html
+        href: /tools/number-base
         icon: number-base
         benefit: 'Binary, octal, decimal, hex. Any direction you need.'
       - label: Regex Tester
-        href: /tools/regex-tester.html
+        href: /tools/regex-tester
         icon: regex-tester
         pro: true
         benefit: 'Try a pattern against real input, read the AST, and step through the trace.'
+
+  - name: Media
+    icon: |
+      <rect x="2" y="5" width="20" height="14" rx="2" />
+      <path d="M10 9 L15 12 L10 15 Z" />
+    tools:
       - label: MOV to MP4
-        href: /tools/mov-to-mp4.html
+        href: /tools/mov-to-mp4
         icon: mov-to-mp4
         pro: true
         benefit: 'Convert a screen recording to a smaller, streamable MP4.'
+      - label: MOV to GIF
+        href: /tools/mov-to-gif
+        icon: mov-to-gif
+        pro: true
+        benefit: 'Convert a short screen recording to an animated GIF.'

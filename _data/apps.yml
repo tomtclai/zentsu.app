@@ -80,7 +80,7 @@ apps:
     price_key: price_coil_lifetime
     price_suffix: one-time
     app_store_url: null # In TestFlight; not yet on the App Store.
-    page_url: /coil.html
+    page_url: /coil
     icon: /assets/coil-icon.png
     accent: '#b84e1a'
 

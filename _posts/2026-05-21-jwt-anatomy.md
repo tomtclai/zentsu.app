@@ -161,5 +161,5 @@ and decode them where the bytes cannot leak.
 
 If you spend any time in auth code, an offline JWT decoder belongs in
 your toolbox next to your hex editor and your regex tester. Bench's
-[JWT decoder](/tools/jwt-decoder.html) processes everything locally. Try
+[JWT decoder](/tools/jwt-decoder) processes everything locally. Try
 it the next time a token confuses you.

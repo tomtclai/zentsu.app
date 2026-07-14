@@ -75,6 +75,7 @@ const TOTAL = TOOLS.length;
 (function buildFilters() {
   const host = document.getElementById('tool-filters');
   if (!host) return;
+  const results = document.getElementById('tool-filter-results');
   // Pills are baked into the static HTML from _data/tools.yml (so crawlers and
   // no-JS visitors see correct counts). Clear them and rebuild identically —
   // this stays the runtime source of truth and wires up the click handler.
@@ -114,12 +115,15 @@ const TOTAL = TOOLS.length;
     btn.setAttribute('aria-pressed', 'true');
     const filter = btn.dataset.filter;
     document.querySelectorAll('.tool-cat').forEach((cat) => {
-      if (filter === 'all' || cat.getAttribute('data-cat') === filter) {
-        cat.classList.remove('dim');
-      } else {
-        cat.classList.add('dim');
-      }
+      cat.hidden = filter !== 'all' && cat.getAttribute('data-cat') !== filter;
     });
+    if (results) {
+      const count = filter === 'all' ? TOTAL : byCat[filter] || 0;
+      results.textContent =
+        filter === 'all'
+          ? 'Showing all ' + count + ' tools.'
+          : 'Showing ' + count + ' tools in ' + filter + '.';
+    }
   });
 })();
 
@@ -218,7 +222,7 @@ const TOTAL = TOOLS.length;
   function showTip(s) {
     hoveredChip = s;
     tipName.textContent = s.tool.name;
-    const benefit = s.tool.el && s.tool.el.getAttribute('data-benefit');
+    const benefit = s.tool.el?.querySelector('.tool-benefit')?.textContent.trim();
     tipBody.textContent = benefit || '';
     positionTip(s);
     tip.classList.add('visible');
@@ -408,7 +412,7 @@ const TOTAL = TOOLS.length;
 function scrollToTool(name) {
   const li = document.querySelector('.tool-cat li[data-tool="' + CSS.escape(name) + '"]');
   if (!li) return;
-  // Ensure category isn't dimmed by a stale filter
+  // Ensure the tool's category is visible if a filter is active.
   const allBtn = document.querySelector('.tool-filter[data-filter="all"]');
   if (allBtn && !allBtn.classList.contains('active')) allBtn.click();
   const behavior = prefersReducedMotion ? 'auto' : 'smooth';
@@ -631,7 +635,43 @@ Order <span class="sp-r">2847</span>, shipped <span class="sp-r">2026</span>-04-
   let active = 0;
   let ticking = false;
   let scrollMode = false;
+  let frameId = 0;
+  let navIsInert = false;
+  let navRestoreTimer = 0;
   let cleanup = () => {};
+  const nav = document.querySelector('body > nav');
+
+  function finishNavRestore() {
+    clearTimeout(navRestoreTimer);
+    navRestoreTimer = 0;
+    nav?.removeEventListener('transitionend', finishNavRestore);
+    if (!nav || document.body.classList.contains('shots-immersive')) return;
+    nav.removeAttribute('inert');
+    nav.removeAttribute('aria-hidden');
+    navIsInert = false;
+  }
+
+  function setImmersive(active, restoreImmediately = false) {
+    document.body.classList.toggle('shots-immersive', active);
+    if (!nav) return;
+    if (active) {
+      clearTimeout(navRestoreTimer);
+      navRestoreTimer = 0;
+      nav.removeEventListener('transitionend', finishNavRestore);
+      if (navIsInert) return;
+      navIsInert = true;
+      if (nav.contains(document.activeElement)) document.activeElement.blur();
+      nav.setAttribute('inert', '');
+      nav.setAttribute('aria-hidden', 'true');
+    } else if (navIsInert) {
+      if (restoreImmediately) {
+        finishNavRestore();
+      } else if (!navRestoreTimer) {
+        nav.addEventListener('transitionend', finishNavRestore, { once: true });
+        navRestoreTimer = window.setTimeout(finishNavRestore, 300);
+      }
+    }
+  }
 
   function setActive(index) {
     active = Math.max(0, Math.min(shots.length - 1, index));
@@ -721,7 +761,7 @@ Order <span class="sp-r">2847</span>, shipped <span class="sp-r">2026</span>-04-
       const immersive = Math.max(0, Math.min(1, (grow - 0.42) / 0.58));
       section?.style.setProperty('--shots-grow', grow.toFixed(3));
       section?.style.setProperty('--shots-immersive', immersive.toFixed(3));
-      document.body.classList.toggle('shots-immersive', immersive > 0.7);
+      setImmersive(immersive > 0.7);
 
       const frameProgress = Math.max(0, Math.min(1, (progress - 0.18) / 0.82));
       const first = shots[0];
@@ -749,7 +789,7 @@ Order <span class="sp-r">2847</span>, shipped <span class="sp-r">2026</span>-04-
     const requestUpdate = () => {
       if (ticking) return;
       ticking = true;
-      requestAnimationFrame(update);
+      frameId = requestAnimationFrame(update);
     };
 
     window.addEventListener('scroll', requestUpdate, { passive: true });
@@ -759,17 +799,20 @@ Order <span class="sp-r">2847</span>, shipped <span class="sp-r">2026</span>-04-
     cleanup = () => {
       window.removeEventListener('scroll', requestUpdate);
       window.removeEventListener('resize', requestUpdate);
+      cancelAnimationFrame(frameId);
+      frameId = 0;
+      ticking = false;
       section?.style.removeProperty('--shots-grow');
       section?.style.removeProperty('--shots-immersive');
       section?.classList.remove('scroll-driven');
       scroller.style.removeProperty('--shots-x');
-      document.body.classList.remove('shots-immersive');
+      setImmersive(false, !desktopMotion.matches);
     };
   }
 
   function setup() {
     cleanup();
-    if (ticking) return;
+    ticking = false;
     if (desktopMotion.matches) setupScrollScrub();
     else setupHorizontal();
   }

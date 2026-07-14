@@ -4,6 +4,7 @@ title: 'Bench: Dev Toolbox for macOS'
 description: 'A native Mac toolbox for JSON, JWTs, regex, hashes, colors, and more. Free download with an optional one-time Bench Pro unlock for Smart Detection, Pro tools, and higher limits.'
 twitter_description: 'A native Mac toolbox for JSON, JWTs, regex, hashes, colors, and more. Free download with an optional one-time Bench Pro unlock.'
 canonical: https://zentsu.app/bench
+permalink: /bench
 og_site_name: Bench
 og_image: https://zentsu.app/assets/bench-og.png
 og_image_alt: 'Bench: dev toolbox for macOS'
@@ -103,7 +104,7 @@ page_stylesheet: /bench.css
             "name": "How do updates work?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Once Bench ships, updates will arrive through Apple the same way as any Mac app you install from the store. You won't need to do anything special; macOS handles the install when an update is available."
+              "text": "Bench updates arrive through Apple the same way as any Mac app you install from the store. You don't need to do anything special; macOS handles the install when an update is available."
             }
           },
           {
@@ -111,7 +112,7 @@ page_stylesheet: /bench.css
             "name": "Can I get a refund?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Once the app ships, purchases and refunds will be handled by Apple. You'll be able to request a refund from Apple directly via reportaproblem.apple.com. If something in the app isn't behaving, email support@zentsu.app first. There's a good chance it's a fixable bug."
+              "text": "Purchases and refunds are handled by Apple. You can request a refund from Apple directly via reportaproblem.apple.com. If something in the app isn't behaving, email support@zentsu.app first. There's a good chance it's a fixable bug."
             }
           }
         ]
@@ -121,7 +122,7 @@ page_stylesheet: /bench.css
   <body>
     {% include nav.html %}
 
-    <main>
+    <main id="main-content" tabindex="-1">
       <!-- ── HERO ── -->
       <section class="hero">
         <div class="hero-inner">
@@ -265,11 +266,7 @@ page_stylesheet: /bench.css
                     eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik5ldmVyIGdvbm5hIGdpdmUgeW91IHVwIiwiaWF0IjoxNzYwMDAwMDAwfQ.fake_signature_for_demo_only
                   </div>
 
-                  <button
-                    type="button"
-                    class="bp-pill"
-                    aria-label="Detected: JWT Decoder, high confidence"
-                  >
+                  <div class="bp-pill">
                     <span class="bp-pill-glyph" aria-hidden="true">
                       <svg
                         viewBox="0 0 24 24"
@@ -289,8 +286,7 @@ page_stylesheet: /bench.css
                       <span class="bp-pill-title">JWT Decoder</span>
                       <span class="bp-pill-sub">High confidence</span>
                     </span>
-                    <span class="bp-pill-enter" aria-hidden="true">⏎</span>
-                  </button>
+                  </div>
 
                   <span class="bp-step-label">→ Bench renders</span>
                   <div class="bp-out">
@@ -333,18 +329,13 @@ page_stylesheet: /bench.css
                     {"order_id":"8f3b","items":[{"sku":"BNCH-001","qty":2,"price":19.99},{"sku":"BNCH-PRO","qty":1,"price":14.99}],"customer":{"id":9001,"tier":"pro"},"total":42.99}
                   </div>
 
-                  <button
-                    type="button"
-                    class="bp-pill"
-                    aria-label="Detected: JSON Formatter, high confidence"
-                  >
+                  <div class="bp-pill">
                     <span class="bp-pill-glyph" aria-hidden="true">{&#8202;}</span>
                     <span class="bp-pill-text">
                       <span class="bp-pill-title">JSON Formatter</span>
                       <span class="bp-pill-sub">High confidence</span>
                     </span>
-                    <span class="bp-pill-enter" aria-hidden="true">⏎</span>
-                  </button>
+                  </div>
 
                   <span class="bp-step-label">→ Bench renders</span>
                   <div class="bp-out">
@@ -381,11 +372,7 @@ page_stylesheet: /bench.css
                   <span class="bp-step-label">Paste →</span>
                   <div class="bp-paste" aria-label="Clipboard sample: a hex color">ff8a3d</div>
 
-                  <button
-                    type="button"
-                    class="bp-pill"
-                    aria-label="Detected: Color Converter, high confidence"
-                  >
+                  <div class="bp-pill">
                     <span class="bp-pill-glyph" aria-hidden="true">
                       <svg
                         viewBox="0 0 24 24"
@@ -408,8 +395,7 @@ page_stylesheet: /bench.css
                       <span class="bp-pill-title">Color Converter</span>
                       <span class="bp-pill-sub">High confidence</span>
                     </span>
-                    <span class="bp-pill-enter" aria-hidden="true">⏎</span>
-                  </button>
+                  </div>
 
                   <span class="bp-step-label">→ Bench renders</span>
                   <div class="bp-out">
@@ -463,18 +449,13 @@ page_stylesheet: /bench.css
                     /order-(\d{4})-(paid|due)/i
                   </div>
 
-                  <button
-                    type="button"
-                    class="bp-pill"
-                    aria-label="Detected: Regex Tester, high confidence"
-                  >
+                  <div class="bp-pill">
                     <span class="bp-pill-glyph" aria-hidden="true">.*</span>
                     <span class="bp-pill-text">
                       <span class="bp-pill-title">Regex Tester</span>
                       <span class="bp-pill-sub">High confidence</span>
                     </span>
-                    <span class="bp-pill-enter" aria-hidden="true">⏎</span>
-                  </button>
+                  </div>
 
                   <span class="bp-step-label">→ Bench renders</span>
                   <div class="bp-out">
@@ -896,7 +877,7 @@ page_stylesheet: /bench.css
                   placeholder="your@email.com"
                   required
                 />
-                <input type="hidden" name="tag" value="bench-launch" />
+                <input type="hidden" name="tag" value="bench-product-notes" />
                 <button type="submit" class="btn-email">Product notes</button>
               </div>
               <p class="email-note">
@@ -982,16 +963,16 @@ page_stylesheet: /bench.css
             <details>
               <summary>How do updates work?</summary>
               <p>
-                Once Bench ships, updates will arrive through Apple the same way as any Mac app you
-                install from the store. You won't need to do anything special; macOS handles the
-                install when an update is available.
+                Bench updates arrive through Apple the same way as any Mac app you install from the
+                store. You don't need to do anything special; macOS handles the install when an
+                update is available.
               </p>
             </details>
             <details>
               <summary>Can I get a refund?</summary>
               <p>
-                Once the app ships, purchases and refunds will be handled by Apple. You'll be able
-                to request a refund from Apple directly via
+                Purchases and refunds are handled by Apple. You can request a refund from Apple
+                directly via
                 <a href="https://reportaproblem.apple.com" style="color: var(--accent)"
                   >reportaproblem.apple.com</a
                 >. If something in the app isn't behaving, email

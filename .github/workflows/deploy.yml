@@ -22,8 +22,17 @@ jobs:
           ruby-version: 3.2.2
           bundler-cache: true
 
-      - name: Build site
-        run: bundle exec jekyll build
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install validation dependencies
+        run: npm ci
+
+      - name: Test production build
+        run: npm test
         env:
           JEKYLL_ENV: production
           LANG: en_US.UTF-8

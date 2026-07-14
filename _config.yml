@@ -5,6 +5,8 @@ exclude:
   - scripts/
   - node_modules/
   - README.md
+  - AGENTS.md
+  - CHANGELOG.md
   - tools/_template.html
   # CI: setup-ruby vendors gems into the workspace; Jekyll must not build them
   - vendor/
@@ -52,12 +54,26 @@ plugins:
 include:
   - _redirects
 
-# Pretty blog URLs are scoped to posts only. A top-level `permalink` with a
-# trailing slash would force every front-matter *page* to a directory URL
-# (e.g. /privacy/ instead of /privacy.html) and break existing links.
+# Public pages use extensionless URLs. Folder defaults keep tool and app-support
+# routes consistent without repeating a permalink in every source file.
 defaults:
   - scope:
       path: ''
       type: posts
     values:
       permalink: /blog/:year/:slug/
+  - scope:
+      path: tools
+      type: pages
+    values:
+      permalink: /tools/:basename
+  - scope:
+      path: bench
+      type: pages
+    values:
+      permalink: /bench/:basename
+  - scope:
+      path: coil
+      type: pages
+    values:
+      permalink: /coil/:basename

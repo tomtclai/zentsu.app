@@ -26,6 +26,7 @@
   <button type="button" class="tool-filter" aria-pressed="false" aria-controls="tool-cats" data-filter="{{ category.name }}">{{ category.name }}<span class="fcount">{% if cn < 10 %}0{% endif %}{{ cn }}</span></button>
   {%- endfor %}
 </div>
+<p class="filter-results" id="tool-filter-results" role="status" aria-live="polite" aria-atomic="true">Showing all {{ total }} tools.</p>
 
 <div class="tool-cats reveal" id="tool-cats">
   {%- for category in cats %}
@@ -51,9 +52,11 @@
     </header>
     <ul>
       {%- for tool in category.tools %}
-      <li data-tool="{{ tool.label }}" data-benefit="{{ tool.benefit }}"{% if tool.pro %} data-pro="true"{% endif %}>
+      {%- assign benefit_id = 'tool-benefit-' | append: tool.label | slugify %}
+      <li data-tool="{{ tool.label }}"{% if tool.pro %} data-pro="true"{% endif %}>
         <span class="tool-ico" aria-hidden="true">{% include tool-hero-icons/{{ tool.icon }}.svg %}</span
-        ><span class="tool-label"><a href="{{ tool.href }}">{{ tool.label }}</a>{% if tool.pro %} <span class="pro-badge">Pro</span>{% endif %}{% if tool.meta %} <span class="mono" style="color: var(--muted); font-size: 0.78rem">{{ tool.meta }}</span>{% endif %}</span>
+        ><span class="tool-label"><a href="{{ tool.href }}" aria-describedby="{{ benefit_id }}">{{ tool.label }}</a>{% if tool.pro %} <span class="pro-badge">Pro</span>{% endif %}{% if tool.meta %} <span class="mono" style="color: var(--muted); font-size: 0.78rem">{{ tool.meta }}</span>{% endif %}</span>
+        <span class="tool-benefit" id="{{ benefit_id }}" role="tooltip">{{ tool.benefit }}</span>
       </li>
       {%- endfor %}
     </ul>
