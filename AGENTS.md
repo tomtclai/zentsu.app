@@ -27,6 +27,16 @@ Zentsu workspace and deploys to Cloudflare Pages.
 - Site fonts are self-hosted under `assets/fonts/`. Keep the matching license files when updating
   them. Do not restore requests to Google Fonts or another font CDN.
 
+## Apple marketing artwork
+
+- `assets/download-on-the-mac-app-store.svg` is Apple's unmodified black English Mac App Store
+  badge from
+  `https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-mac-app-store.svg`.
+  Its SHA-256 is `15111cd04380b58d95307dcb07f0b6b06304dbc7504c57fd9cdbf0a2f78e3a92`.
+- Do not edit, optimize, recolor, crop, or recreate that file. Keep one badge on the Bench page,
+  render it at least 40 CSS pixels high, and preserve clear space equal to one-quarter of its
+  height.
+
 ## Structure
 
 - Every page includes `_includes/head-common.html` inside its own `head` element.

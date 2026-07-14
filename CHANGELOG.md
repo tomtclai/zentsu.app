@@ -8,6 +8,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- Replace Bench's custom hero download button with Apple's official, self-hosted Download on the
+  Mac App Store badge and add the required Apple trademark credit.
 - Self-host the Inter Tight and JetBrains Mono web fonts instead of requesting them from Google.
 - Gate Cloudflare Pages deployments on the complete production validation suite.
 - Use extensionless canonical, sitemap, and internal URLs throughout the site.

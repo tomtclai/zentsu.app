@@ -1,4 +1,5 @@
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { join } from 'node:path';
 
 const outputDirectory = '_site';
@@ -104,6 +105,46 @@ for (const fontAsset of [
 }
 
 const bench = read(join(outputDirectory, 'bench.html'));
+const benchBadgeAsset = 'assets/download-on-the-mac-app-store.svg';
+const benchBadgeUrl = 'https://apps.apple.com/app/bench-dev-toolbox/id6763368925?mt=12';
+const benchBadgeHash = '15111cd04380b58d95307dcb07f0b6b06304dbc7504c57fd9cdbf0a2f78e3a92';
+check(existsSync(benchBadgeAsset), `Missing official Mac App Store badge: ${benchBadgeAsset}`);
+if (existsSync(benchBadgeAsset)) {
+  const actualHash = createHash('sha256').update(readFileSync(benchBadgeAsset)).digest('hex');
+  check(actualHash === benchBadgeHash, 'Official Mac App Store badge must remain unmodified');
+}
+const benchBadgeLinks =
+  bench.match(/<a[^>]*class="app-store-badge-link"[^>]*>[\s\S]*?<\/a>/g) ?? [];
+check(
+  benchBadgeLinks.length === 1,
+  `Bench must contain exactly one official App Store badge, found ${benchBadgeLinks.length}`,
+);
+const benchBadgeLink = benchBadgeLinks[0] ?? '';
+check(
+  benchBadgeLink.includes(`href="${benchBadgeUrl}"`),
+  'Official Mac App Store badge must link directly to the Bench product page',
+);
+check(
+  benchBadgeLink.includes(`src="/${benchBadgeAsset}"`),
+  'Official Mac App Store badge must use the root-relative self-hosted asset',
+);
+check(
+  benchBadgeLink.includes('alt="Download Bench on the Mac App Store"'),
+  'Official Mac App Store badge must have an accessible link description',
+);
+const benchCss = read('bench.css');
+check(
+  /\.app-store-badge-link img\s*{[\s\S]*?height:\s*40px;/.test(benchCss),
+  'Official Mac App Store badge must render at least 40 CSS pixels high',
+);
+check(
+  /\.app-store-badge-link\s*{[\s\S]*?padding:\s*10px;/.test(benchCss),
+  'Official Mac App Store badge must preserve one-quarter-height clear space',
+);
+check(
+  bench.includes('Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc.'),
+  'Bench footer must include the Apple trademark credit required with the badge',
+);
 const benchToolNames = [...bench.matchAll(/<li data-tool="([^"]+)"/g)].map((match) => match[1]);
 check(
   benchToolNames.length === 17,

@@ -366,6 +366,10 @@ footer a:hover {
   color: var(--ink-soft);
   font-weight: 500;
 }
+.apple-trademark-credit {
+  max-width: 64ch;
+  margin: 0.4rem auto;
+}
 
 /* Feature flags — see /flags.js. Hidden by default; revealed when corresponding flag is live.
    !important is intentional: feature gates must beat any later layout rule (e.g. .btn { display: inline-flex }). */
