@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
-  <rect width="128" height="128" rx="28" fill="#FDF4FF"/>
-
-    <ellipse cx="64" cy="56" rx="28" ry="36" fill="#A21CAF"/>
-    <path d="M48 96 q16 12 32 0" fill="none" stroke="#0EA5E9" stroke-width="6"/>
-    
-  
-</svg>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
-  <rect width="128" height="128" rx="28" fill="#EAF8FF"/>
-
-    <path d="M32 64 h48" stroke="#1F8AB8" stroke-width="10" stroke-linecap="round"/>
-    <polygon points="80,48 80,80 108,64" fill="#E85D3D"/>
-    
-  
-</svg>

@@ -8,7 +8,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- Improve Japanese2k emoji coverage and replace unclear fallback artwork with readable SVG icons.
+- Improve Japanese2k emoji coverage, preserve the high-confidence mappings, and make the 16 active
+  fallback SVG icons transparent and revisioned for readable light and dark mode rendering.
+- Replace the misleading pregnancy emoji for お腹 with dedicated stomach artwork and remove 738
+  unreferenced Japanese2k SVG files.
 - Replace Bench's custom hero download button with Apple's official, self-hosted Download on the
   Mac App Store badge and add the required Apple trademark credit.
 - Self-host the Inter Tight and JetBrains Mono web fonts instead of requesting them from Google.
