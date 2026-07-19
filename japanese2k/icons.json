@@ -1,6 +1,6 @@
 {
-  "version": 12,
-  "updated": "2026-07-19T15:08:58Z",
+  "version": 13,
+  "updated": "2026-07-19T15:25:48Z",
   "icons": {
     "b89b869b65d1": {
       "japanese": "ああ",
@@ -6118,7 +6118,7 @@
       "reading": "がんばる",
       "english": "to try one's best, to try hard, to persist",
       "kind": "emoji",
-      "value": "🔢"
+      "value": "💪"
     },
     "3aa5016a8b82": {
       "japanese": "投げる",
