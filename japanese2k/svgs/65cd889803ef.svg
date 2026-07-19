@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <rect width="128" height="128" rx="28" fill="#EAF8FF"/>
+
+    <rect x="30" y="32" width="20" height="64" fill="#1F8AB8"/>
+    <rect x="54" y="32" width="20" height="64" fill="#E85D3D"/>
+    <rect x="78" y="32" width="20" height="64" fill="#1F8AB8"/>
+    <text x="64" y="110" text-anchor="middle" font-size="14" font-family="system-ui" fill="#1F8AB8">×N</text>
+    
+  
+</svg>

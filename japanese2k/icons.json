@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "updated": "2026-07-19T00:06:57Z",
+  "version": 4,
+  "updated": "2026-07-19T00:12:22Z",
   "icons": {
     "b89b869b65d1": {
       "japanese": "ああ",
@@ -3031,7 +3031,8 @@
       "reading": "でも",
       "english": "but, however",
       "kind": "asset",
-      "value": "3c6960b9dad4"
+      "value": "3c6960b9dad4",
+      "url": "https://zentsu.app/japanese2k/svgs/3c6960b9dad4.svg"
     },
     "8fc35eef5bbf": {
       "japanese": "出る",
@@ -3388,7 +3389,8 @@
       "reading": "～など",
       "english": "et cetera",
       "kind": "asset",
-      "value": "a4d5d4c6c791"
+      "value": "a4d5d4c6c791",
+      "url": "https://zentsu.app/japanese2k/svgs/a4d5d4c6c791.svg"
     },
     "fb7bd3ea92e4": {
       "japanese": "七つ",
@@ -3535,7 +3537,8 @@
       "reading": "ぬるい",
       "english": "lukewarm",
       "kind": "asset",
-      "value": "433eadd03b9d"
+      "value": "433eadd03b9d",
+      "url": "https://zentsu.app/japanese2k/svgs/433eadd03b9d.svg"
     },
     "62747c1e33ed": {
       "japanese": "ネクタイ",
@@ -5047,7 +5050,8 @@
       "reading": "たいてい",
       "english": "generally, usually",
       "kind": "asset",
-      "value": "a817a9afe9f6"
+      "value": "a817a9afe9f6",
+      "url": "https://zentsu.app/japanese2k/svgs/a817a9afe9f6.svg"
     },
     "725a7278f162": {
       "japanese": "とうとう",
@@ -5152,7 +5156,8 @@
       "reading": "おる",
       "english": "to snap, to break; to bend",
       "kind": "asset",
-      "value": "0f848cc55a1c"
+      "value": "0f848cc55a1c",
+      "url": "https://zentsu.app/japanese2k/svgs/0f848cc55a1c.svg"
     },
     "b8941889076f": {
       "japanese": "会",
@@ -5236,7 +5241,8 @@
       "reading": "もし",
       "english": "if",
       "kind": "asset",
-      "value": "d6288e522992"
+      "value": "d6288e522992",
+      "url": "https://zentsu.app/japanese2k/svgs/d6288e522992.svg"
     },
     "29916ed022b7": {
       "japanese": "表",
@@ -5334,7 +5340,8 @@
       "reading": "ほとんど",
       "english": "mostly, almost",
       "kind": "asset",
-      "value": "d69cc289f5d9"
+      "value": "d69cc289f5d9",
+      "url": "https://zentsu.app/japanese2k/svgs/d69cc289f5d9.svg"
     },
     "c318077c7b7f": {
       "japanese": "つもり",
@@ -7329,7 +7336,8 @@
       "reading": "つごう",
       "english": "circumstances, convenience",
       "kind": "asset",
-      "value": "ce16771e61e5"
+      "value": "ce16771e61e5",
+      "url": "https://zentsu.app/japanese2k/svgs/ce16771e61e5.svg"
     },
     "f36f7e009032": {
       "japanese": "遠慮",
@@ -7609,7 +7617,8 @@
       "reading": "うかがう",
       "english": "humble form of 行く (いく), 聞く (きく) and 来る (くる)",
       "kind": "asset",
-      "value": "1cee4eccdf51"
+      "value": "1cee4eccdf51",
+      "url": "https://zentsu.app/japanese2k/svgs/1cee4eccdf51.svg"
     },
     "048c2ac1992a": {
       "japanese": "再来週",
@@ -7658,7 +7667,8 @@
       "reading": "ふべん",
       "english": "inconvenience",
       "kind": "asset",
-      "value": "b5c53f6cd787"
+      "value": "b5c53f6cd787",
+      "url": "https://zentsu.app/japanese2k/svgs/b5c53f6cd787.svg"
     },
     "faee631b41c2": {
       "japanese": "血",
@@ -8078,7 +8088,8 @@
       "reading": "それほど",
       "english": "to that degree; extent",
       "kind": "asset",
-      "value": "df89280076d2"
+      "value": "df89280076d2",
+      "url": "https://zentsu.app/japanese2k/svgs/df89280076d2.svg"
     },
     "837f3d7d4044": {
       "japanese": "以上",
@@ -9086,7 +9097,8 @@
       "reading": "けれど; けれども",
       "english": "but, although",
       "kind": "asset",
-      "value": "629403eb8578"
+      "value": "629403eb8578",
+      "url": "https://zentsu.app/japanese2k/svgs/629403eb8578.svg"
     },
     "da674425d21f": {
       "japanese": "舟",
@@ -9219,7 +9231,8 @@
       "reading": "まいる",
       "english": "humble expression for 行く and 来る",
       "kind": "asset",
-      "value": "d33a1c4243ee"
+      "value": "d33a1c4243ee",
+      "url": "https://zentsu.app/japanese2k/svgs/d33a1c4243ee.svg"
     },
     "74e537f6bac1": {
       "japanese": "全然",
@@ -9660,7 +9673,8 @@
       "reading": "たまに",
       "english": "occasionally",
       "kind": "asset",
-      "value": "c2ee1e0dcdd1"
+      "value": "c2ee1e0dcdd1",
+      "url": "https://zentsu.app/japanese2k/svgs/c2ee1e0dcdd1.svg"
     },
     "d10c0a04545c": {
       "japanese": "社会",
@@ -9989,7 +10003,8 @@
       "reading": "しだい",
       "english": "order; circumstances; immediate(ly)",
       "kind": "asset",
-      "value": "060bc8db8081"
+      "value": "060bc8db8081",
+      "url": "https://zentsu.app/japanese2k/svgs/060bc8db8081.svg"
     },
     "e4f70a1a682f": {
       "japanese": "従う",
@@ -11144,7 +11159,8 @@
       "reading": "すいじゅん",
       "english": "level, standard",
       "kind": "asset",
-      "value": "105e4b10f0a1"
+      "value": "105e4b10f0a1",
+      "url": "https://zentsu.app/japanese2k/svgs/105e4b10f0a1.svg"
     },
     "4dad5c5ca42f": {
       "japanese": "推薦",
@@ -11221,7 +11237,8 @@
       "reading": "すくなくとも",
       "english": "at least",
       "kind": "asset",
-      "value": "a5c3c0ffa179"
+      "value": "a5c3c0ffa179",
+      "url": "https://zentsu.app/japanese2k/svgs/a5c3c0ffa179.svg"
     },
     "cdd8d973c40f": {
       "japanese": "優れる",
@@ -11991,7 +12008,8 @@
       "reading": "あら",
       "english": "defect, flaw, fault",
       "kind": "asset",
-      "value": "3017d7ac5541"
+      "value": "3017d7ac5541",
+      "url": "https://zentsu.app/japanese2k/svgs/3017d7ac5541.svg"
     },
     "8a1b48b38da9": {
       "japanese": "嵐",
@@ -12152,7 +12170,8 @@
       "reading": "あんなに",
       "english": "to that extent, to that degree",
       "kind": "asset",
-      "value": "e158a75a89ba"
+      "value": "e158a75a89ba",
+      "url": "https://zentsu.app/japanese2k/svgs/e158a75a89ba.svg"
     },
     "339fb42735b9": {
       "japanese": "あんまり",
@@ -13573,7 +13592,8 @@
       "reading": "かえる",
       "english": "to warp, to be warped, to curve",
       "kind": "asset",
-      "value": "d78c5c8c4b13"
+      "value": "d78c5c8c4b13",
+      "url": "https://zentsu.app/japanese2k/svgs/d78c5c8c4b13.svg"
     },
     "d01aa9505e7b": {
       "japanese": "香り",

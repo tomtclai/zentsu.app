@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <rect width="128" height="128" rx="28" fill="#E8F1FF"/>
+
+    <circle cx="64" cy="64" r="34" fill="none" stroke="#2F6FED" stroke-width="6"/>
+    <polygon points="64,30 72,64 64,56 56,64" fill="#F2C14E"/>
+    <text x="64" y="100" text-anchor="middle" font-size="14" font-family="system-ui" fill="#2F6FED">E</text>
+    
+  
+</svg>
