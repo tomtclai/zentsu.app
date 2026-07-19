@@ -1,6 +1,6 @@
 {
-  "version": 11,
-  "updated": "2026-07-19T15:02:22Z",
+  "version": 12,
+  "updated": "2026-07-19T15:08:58Z",
   "icons": {
     "b89b869b65d1": {
       "japanese": "ああ",
@@ -6667,8 +6667,8 @@
       "value": "😲"
     },
     "3c8088239c4e": {
-      "japanese": "いただく",
-      "reading": "頂く",
+      "japanese": "頂く",
+      "reading": "いただく",
       "english": "to eat; to drink (humble); to receive (humble)",
       "kind": "emoji",
       "value": "🙏"
