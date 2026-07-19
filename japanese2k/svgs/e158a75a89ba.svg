@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
   <rect width="128" height="128" rx="28" fill="#F3F4F6"/>
-
-    <text x="64" y="80" text-anchor="middle" font-size="48" font-family="system-ui" font-weight="800" fill="#374151">!!</text>
-    
-  
+  <rect x="18" y="43" width="92" height="42" rx="10" fill="#FFFFFF" stroke="#374151" stroke-width="4"/>
+  <path d="M30 54V66 M42 54V61 M54 54V66 M66 54V61 M78 54V66 M90 54V61 M102 54V66" stroke="#9CA3AF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M98 38V91" stroke="#374151" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="98" cy="85" r="6" fill="#374151"/>
 </svg>

@@ -1,6 +1,6 @@
 {
-  "version": 4,
-  "updated": "2026-07-19T00:12:22Z",
+  "version": 5,
+  "updated": "2026-07-19T00:21:19Z",
   "icons": {
     "b89b869b65d1": {
       "japanese": "ああ",
@@ -231,7 +231,7 @@
       "reading": "あびる",
       "english": "to bathe, to shower",
       "kind": "emoji",
-      "value": "🚻"
+      "value": "🚿"
     },
     "a1e811ac5a00": {
       "japanese": "危ない",
@@ -734,8 +734,8 @@
       "japanese": "置く",
       "reading": "おく",
       "english": "to put; to lay; to place",
-      "kind": "sfSymbol",
-      "value": "mappin.and.ellipse"
+      "kind": "emoji",
+      "value": "📌"
     },
     "0eb8721f6181": {
       "japanese": "奥さん",
@@ -770,7 +770,7 @@
       "reading": "おじいさん",
       "english": "grandfather, male senior citizen",
       "kind": "emoji",
-      "value": "👨"
+      "value": "👴"
     },
     "b38ff7ac28d4": {
       "japanese": "教える",
@@ -784,7 +784,7 @@
       "reading": "おす",
       "english": "to push, to press, to stamp (e.g., a passport)",
       "kind": "emoji",
-      "value": "📬"
+      "value": "👆"
     },
     "6a2c87aca005": {
       "japanese": "遅い",
@@ -833,7 +833,7 @@
       "reading": "おとこのこ",
       "english": "boy",
       "kind": "emoji",
-      "value": "👨"
+      "value": "👦"
     },
     "c2fd7b2884ab": {
       "japanese": "一昨日",
@@ -896,7 +896,7 @@
       "reading": "おばあさん",
       "english": "grandmother, female senior-citizen",
       "kind": "emoji",
-      "value": "👩"
+      "value": "👵"
     },
     "6f366c5029b1": {
       "japanese": "お風呂",
@@ -959,7 +959,7 @@
       "reading": "おわる",
       "english": "to finish, to close",
       "kind": "emoji",
-      "value": "📁"
+      "value": "🏁"
     },
     "6cb1082c2807": {
       "japanese": "音楽",
@@ -980,7 +980,7 @@
       "reading": "おんなのこ",
       "english": "girl",
       "kind": "emoji",
-      "value": "👩"
+      "value": "👧"
     },
     "52052874a1d0": {
       "japanese": "回",
@@ -993,8 +993,8 @@
       "japanese": "階",
       "reading": "～かい",
       "english": "counter for stories (floors) of a building",
-      "kind": "sfSymbol",
-      "value": "building.2.fill"
+      "kind": "emoji",
+      "value": "🏢"
     },
     "825e29cd3af4": {
       "japanese": "外国",
@@ -1098,8 +1098,8 @@
       "japanese": "掛ける",
       "reading": "かける",
       "english": "to put on (e.g., glasses); to hang (e.g., on a wall)",
-      "kind": "sfSymbol",
-      "value": "eyeglasses"
+      "kind": "emoji",
+      "value": "👓"
     },
     "6be369515a13": {
       "japanese": "かける",
@@ -1134,7 +1134,7 @@
       "reading": "かぜ",
       "english": "cold, flu",
       "kind": "emoji",
-      "value": "❄️"
+      "value": "🤧"
     },
     "a743f61d6b77": {
       "japanese": "方",
@@ -1211,7 +1211,7 @@
       "reading": "かぶる",
       "english": "to wear, to put on (e.g., a hat on the head)",
       "kind": "emoji",
-      "value": "🙂"
+      "value": "🧢"
     },
     "acced5b26df7": {
       "japanese": "紙",
@@ -1308,8 +1308,9 @@
       "japanese": "漢字",
       "reading": "かんじ",
       "english": "kanji; Chinese character",
-      "kind": "emoji",
-      "value": "🇨🇳"
+      "kind": "asset",
+      "value": "4834e82ff737",
+      "url": "https://zentsu.app/japanese2k/svgs/4834e82ff737.svg"
     },
     "7789c2cb00bb": {
       "japanese": "木",
@@ -1456,7 +1457,7 @@
       "reading": "きる",
       "english": "to cut; to hang up (a phone)",
       "kind": "emoji",
-      "value": "📱"
+      "value": "✂️"
     },
     "f370e6acf4fb": {
       "japanese": "着る",
@@ -1484,7 +1485,7 @@
       "reading": "キロ; キロメートル",
       "english": "(abbr.) kilo (kilometer)",
       "kind": "emoji",
-      "value": "⚖️"
+      "value": "📏"
     },
     "5ab550fcb901": {
       "japanese": "銀行",
@@ -1547,7 +1548,7 @@
       "reading": "くに",
       "english": "country; place of origin",
       "kind": "emoji",
-      "value": "🏳️"
+      "value": "🌍"
     },
     "f21f17038265": {
       "japanese": "曇り",
@@ -1560,8 +1561,8 @@
       "japanese": "曇る",
       "reading": "くもる",
       "english": "to become cloudy, to become dim",
-      "kind": "sfSymbol",
-      "value": "cloud.fill"
+      "kind": "emoji",
+      "value": "☁️"
     },
     "1b42bccb7ab4": {
       "japanese": "暗い",
@@ -1652,7 +1653,7 @@
       "reading": "けっこん (する)",
       "english": "marriage (get married)",
       "kind": "emoji",
-      "value": "📥"
+      "value": "💍"
     },
     "ddeded7658ea": {
       "japanese": "月曜日",
@@ -2135,14 +2136,14 @@
       "reading": "しまる",
       "english": "to close, to be closed",
       "kind": "emoji",
-      "value": "📁"
+      "value": "🚪"
     },
     "9a433ff5ca3a": {
       "japanese": "閉める",
       "reading": "しめる",
       "english": "to close, to shut",
       "kind": "emoji",
-      "value": "📁"
+      "value": "🚪"
     },
     "c30264b3f7ab": {
       "japanese": "締める",
@@ -2694,8 +2695,8 @@
       "japanese": "建物",
       "reading": "たてもの",
       "english": "building",
-      "kind": "sfSymbol",
-      "value": "building.2.fill"
+      "kind": "emoji",
+      "value": "🏢"
     },
     "9545846cf60a": {
       "japanese": "楽しい",
@@ -2884,7 +2885,7 @@
       "reading": "つかれる",
       "english": "to get (become) tired; to become fatigued",
       "kind": "emoji",
-      "value": "📥"
+      "value": "😫"
     },
     "ccff0e66b2f5": {
       "japanese": "次",
@@ -2918,8 +2919,8 @@
       "japanese": "つける",
       "reading": "つける",
       "english": "to turn on (e.g., a light); to take",
-      "kind": "sfSymbol",
-      "value": "lightbulb.fill"
+      "kind": "emoji",
+      "value": "💡"
     },
     "f3b478c5f7a5": {
       "japanese": "勤める",
@@ -3030,9 +3031,8 @@
       "japanese": "でも",
       "reading": "でも",
       "english": "but, however",
-      "kind": "asset",
-      "value": "3c6960b9dad4",
-      "url": "https://zentsu.app/japanese2k/svgs/3c6960b9dad4.svg"
+      "kind": "emoji",
+      "value": "↔️"
     },
     "8fc35eef5bbf": {
       "japanese": "出る",
@@ -3081,7 +3081,7 @@
       "reading": "と",
       "english": "door (Japanese style)",
       "kind": "emoji",
-      "value": "🇯🇵"
+      "value": "🚪"
     },
     "840bf7f8afcf": {
       "japanese": "度",
@@ -3192,8 +3192,8 @@
       "japanese": "所",
       "reading": "ところ",
       "english": "place",
-      "kind": "sfSymbol",
-      "value": "mappin.and.ellipse"
+      "kind": "emoji",
+      "value": "📍"
     },
     "9eb780529794": {
       "japanese": "年",
@@ -3536,9 +3536,8 @@
       "japanese": "温い",
       "reading": "ぬるい",
       "english": "lukewarm",
-      "kind": "asset",
-      "value": "433eadd03b9d",
-      "url": "https://zentsu.app/japanese2k/svgs/433eadd03b9d.svg"
+      "kind": "emoji",
+      "value": "🌡️"
     },
     "62747c1e33ed": {
       "japanese": "ネクタイ",
@@ -3909,7 +3908,7 @@
       "reading": "ひく",
       "english": "to play (a string instrument or piano)",
       "kind": "emoji",
-      "value": "🎮"
+      "value": "🎶"
     },
     "2f757dfb1916": {
       "japanese": "低い",
@@ -4287,7 +4286,7 @@
       "reading": "～まい",
       "english": "counter for flat things",
       "kind": "emoji",
-      "value": "🏢"
+      "value": "📄"
     },
     "1ff98591469a": {
       "japanese": "毎朝",
@@ -4588,7 +4587,7 @@
       "reading": "めがね",
       "english": "eye glasses",
       "kind": "emoji",
-      "value": "👁️"
+      "value": "👓"
     },
     "27191c19d719": {
       "japanese": "もう",
@@ -4721,7 +4720,7 @@
       "reading": "ゆうがた",
       "english": "late afternoon (typically just before dinner time), evening",
       "kind": "emoji",
-      "value": "🍚"
+      "value": "🌇"
     },
     "0ee6b2725e47": {
       "japanese": "夕飯",
@@ -5049,9 +5048,8 @@
       "japanese": "大抵",
       "reading": "たいてい",
       "english": "generally, usually",
-      "kind": "asset",
-      "value": "a817a9afe9f6",
-      "url": "https://zentsu.app/japanese2k/svgs/a817a9afe9f6.svg"
+      "kind": "emoji",
+      "value": "🔁"
     },
     "725a7278f162": {
       "japanese": "とうとう",
@@ -5071,8 +5069,8 @@
       "japanese": "鳴る",
       "reading": "なる",
       "english": "to sound, to ring (v.i.)",
-      "kind": "sfSymbol",
-      "value": "speaker.wave.2.fill"
+      "kind": "emoji",
+      "value": "🔔"
     },
     "493e1b231ba7": {
       "japanese": "しっかり",
@@ -5424,8 +5422,8 @@
       "japanese": "ごみ",
       "reading": "ごみ",
       "english": "trash, garbage",
-      "kind": "sfSymbol",
-      "value": "trash.fill"
+      "kind": "emoji",
+      "value": "🗑️"
     },
     "8b683fd8d14b": {
       "japanese": "アフリカ",
@@ -5446,7 +5444,7 @@
       "reading": "いっしょうけんめい",
       "english": "very hard (as in \"to work hard\"), with utmost effort",
       "kind": "emoji",
-      "value": "🏢"
+      "value": "💪"
     },
     "617eaab5f292": {
       "japanese": "今度",
@@ -5529,8 +5527,8 @@
       "japanese": "注意",
       "reading": "ちゅうい",
       "english": "caution, attention",
-      "kind": "sfSymbol",
-      "value": "exclamationmark.triangle.fill"
+      "kind": "emoji",
+      "value": "⚠️"
     },
     "32f96e30d124": {
       "japanese": "台風",
@@ -5585,8 +5583,8 @@
       "japanese": "葉",
       "reading": "は",
       "english": "leaf",
-      "kind": "sfSymbol",
-      "value": "leaf.fill"
+      "kind": "emoji",
+      "value": "🍃"
     },
     "2a5ba4088fda": {
       "japanese": "必要",
@@ -5838,7 +5836,7 @@
       "reading": "パート (タイム)",
       "english": "part time (esp. female part time employees)",
       "kind": "emoji",
-      "value": "👩"
+      "value": "💼"
     },
     "d6436f98e9f5": {
       "japanese": "時代",
@@ -5970,8 +5968,9 @@
       "japanese": "畳",
       "reading": "たたみ",
       "english": "tatami mat (Japanese straw mat)",
-      "kind": "emoji",
-      "value": "🇯🇵"
+      "kind": "asset",
+      "value": "c5c3f6b2e72f",
+      "url": "https://zentsu.app/japanese2k/svgs/c5c3f6b2e72f.svg"
     },
     "e67bdf1dd7e5": {
       "japanese": "丁寧",
@@ -6111,7 +6110,7 @@
       "reading": "がんばる",
       "english": "to try one's best, to try hard, to persist",
       "kind": "emoji",
-      "value": "🔢"
+      "value": "💪"
     },
     "3aa5016a8b82": {
       "japanese": "投げる",
@@ -6229,8 +6228,8 @@
       "japanese": "住所",
       "reading": "じゅうしょ",
       "english": "address; place of residence",
-      "kind": "sfSymbol",
-      "value": "mappin.and.ellipse"
+      "kind": "emoji",
+      "value": "🏠"
     },
     "26865d56f262": {
       "japanese": "再来月",
@@ -6404,8 +6403,8 @@
       "japanese": "捨てる",
       "reading": "すてる",
       "english": "throw away (trash), dump, discard",
-      "kind": "sfSymbol",
-      "value": "trash.fill"
+      "kind": "emoji",
+      "value": "🗑️"
     },
     "d71c897e8ee8": {
       "japanese": "なさる",
@@ -6552,7 +6551,7 @@
       "reading": "ねつ",
       "english": "fever, temperature",
       "kind": "emoji",
-      "value": "🌦️"
+      "value": "🌡️"
     },
     "45e63141dda2": {
       "japanese": "お祭り",
@@ -6587,7 +6586,7 @@
       "reading": "あかんぼう",
       "english": "baby",
       "kind": "emoji",
-      "value": "👨‍👩‍👧"
+      "value": "👶"
     },
     "45c5e2d6ca16": {
       "japanese": "おかしい",
@@ -6677,8 +6676,8 @@
       "japanese": "場所",
       "reading": "ばしょ",
       "english": "place, location",
-      "kind": "sfSymbol",
-      "value": "mappin.and.ellipse"
+      "kind": "emoji",
+      "value": "📍"
     },
     "b74f7415610d": {
       "japanese": "答",
@@ -6845,8 +6844,8 @@
       "japanese": "予定",
       "reading": "よてい",
       "english": "plans, arrangement, schedule",
-      "kind": "sfSymbol",
-      "value": "calendar"
+      "kind": "emoji",
+      "value": "📅"
     },
     "18d8e9c2a245": {
       "japanese": "オーバー",
@@ -6993,7 +6992,7 @@
       "reading": "りょかん",
       "english": "a Japanese inn",
       "kind": "emoji",
-      "value": "🇯🇵"
+      "value": "🏨"
     },
     "12a0b5619b32": {
       "japanese": "海岸",
@@ -7216,8 +7215,8 @@
       "japanese": "チェックする",
       "reading": "チェックする",
       "english": "check",
-      "kind": "sfSymbol",
-      "value": "checkmark.circle.fill"
+      "kind": "emoji",
+      "value": "✅"
     },
     "21e3e767e325": {
       "japanese": "会話",
@@ -7407,7 +7406,7 @@
       "reading": "すごい",
       "english": "terrific, great",
       "kind": "emoji",
-      "value": "⬜"
+      "value": "🤩"
     },
     "79f98a038408": {
       "japanese": "入学",
@@ -7512,7 +7511,7 @@
       "reading": "きもの",
       "english": "kimono; Japanese traditional dress",
       "kind": "emoji",
-      "value": "🇯🇵"
+      "value": "👘"
     },
     "3de47921415f": {
       "japanese": "おもちゃ",
@@ -7616,9 +7615,8 @@
       "japanese": "伺う",
       "reading": "うかがう",
       "english": "humble form of 行く (いく), 聞く (きく) and 来る (くる)",
-      "kind": "asset",
-      "value": "1cee4eccdf51",
-      "url": "https://zentsu.app/japanese2k/svgs/1cee4eccdf51.svg"
+      "kind": "emoji",
+      "value": "🙇"
     },
     "048c2ac1992a": {
       "japanese": "再来週",
@@ -7666,9 +7664,8 @@
       "japanese": "不便",
       "reading": "ふべん",
       "english": "inconvenience",
-      "kind": "asset",
-      "value": "b5c53f6cd787",
-      "url": "https://zentsu.app/japanese2k/svgs/b5c53f6cd787.svg"
+      "kind": "emoji",
+      "value": "🚧"
     },
     "faee631b41c2": {
       "japanese": "血",
@@ -7828,8 +7825,8 @@
       "japanese": "計画",
       "reading": "けいかくする",
       "english": "plan, project, schedule",
-      "kind": "sfSymbol",
-      "value": "calendar"
+      "kind": "emoji",
+      "value": "🗓️"
     },
     "1ca8393c675e": {
       "japanese": "通り",
@@ -7968,8 +7965,8 @@
       "japanese": "音",
       "reading": "おと",
       "english": "sound, note",
-      "kind": "sfSymbol",
-      "value": "speaker.wave.2.fill"
+      "kind": "emoji",
+      "value": "🔊"
     },
     "499942cca409": {
       "japanese": "きっと",
@@ -8010,8 +8007,8 @@
       "japanese": "正しい",
       "reading": "ただしい",
       "english": "correct",
-      "kind": "sfSymbol",
-      "value": "checkmark.circle.fill"
+      "kind": "emoji",
+      "value": "✅"
     },
     "b2233eadbee1": {
       "japanese": "輸入",
@@ -8073,8 +8070,8 @@
       "japanese": "道具",
       "reading": "どうぐ",
       "english": "tool",
-      "kind": "sfSymbol",
-      "value": "wrench.and.screwdriver.fill"
+      "kind": "emoji",
+      "value": "🛠️"
     },
     "04711658ee7b": {
       "japanese": "滑る",
@@ -8159,7 +8156,7 @@
       "reading": "ちゅうしゃじょう",
       "english": "parking lot",
       "kind": "emoji",
-      "value": "📊"
+      "value": "🅿️"
     },
     "ffdedd167daa": {
       "japanese": "スーツ",
@@ -8438,8 +8435,9 @@
       "japanese": "寺",
       "reading": "てら",
       "english": "Buddhist temple",
-      "kind": "emoji",
-      "value": "⛩️"
+      "kind": "asset",
+      "value": "092e6aa260d6",
+      "url": "https://zentsu.app/japanese2k/svgs/092e6aa260d6.svg"
     },
     "ee17daa4d72e": {
       "japanese": "慣れる",
@@ -8494,8 +8492,8 @@
       "japanese": "会場",
       "reading": "かいじょう",
       "english": "venue, meeting place",
-      "kind": "sfSymbol",
-      "value": "mappin.and.ellipse"
+      "kind": "emoji",
+      "value": "📍"
     },
     "146efd7a4aa5": {
       "japanese": "笑う",
@@ -8753,8 +8751,8 @@
       "japanese": "直す",
       "reading": "なおす",
       "english": "to correct (v.t.); to fix",
-      "kind": "sfSymbol",
-      "value": "checkmark.circle.fill"
+      "kind": "emoji",
+      "value": "🔧"
     },
     "b3f194cf59c0": {
       "japanese": "続く",
@@ -9096,9 +9094,8 @@
       "japanese": "けれど; けれども",
       "reading": "けれど; けれども",
       "english": "but, although",
-      "kind": "asset",
-      "value": "629403eb8578",
-      "url": "https://zentsu.app/japanese2k/svgs/629403eb8578.svg"
+      "kind": "emoji",
+      "value": "↔️"
     },
     "da674425d21f": {
       "japanese": "舟",
@@ -9153,8 +9150,8 @@
       "japanese": "植える",
       "reading": "うえる",
       "english": "to plant",
-      "kind": "sfSymbol",
-      "value": "leaf.fill"
+      "kind": "emoji",
+      "value": "🌱"
     },
     "28c82e8b6e92": {
       "japanese": "両方",
@@ -9230,9 +9227,8 @@
       "japanese": "参る",
       "reading": "まいる",
       "english": "humble expression for 行く and 来る",
-      "kind": "asset",
-      "value": "d33a1c4243ee",
-      "url": "https://zentsu.app/japanese2k/svgs/d33a1c4243ee.svg"
+      "kind": "emoji",
+      "value": "🙇"
     },
     "74e537f6bac1": {
       "japanese": "全然",
@@ -9393,7 +9389,7 @@
       "reading": "かんごふ",
       "english": "(female) nurse",
       "kind": "emoji",
-      "value": "💊"
+      "value": "👩‍⚕️"
     },
     "10903c449009": {
       "japanese": "見物",
@@ -9414,7 +9410,7 @@
       "reading": "ガソリンスタンド",
       "english": "gas station, service station",
       "kind": "emoji",
-      "value": "🚉"
+      "value": "⛽"
     },
     "d40dcc0d936b": {
       "japanese": "テニス",
@@ -9526,7 +9522,7 @@
       "reading": "かんけい",
       "english": "relation(ship), connection",
       "kind": "emoji",
-      "value": "🚢"
+      "value": "🔗"
     },
     "36cefc6f0cbb": {
       "japanese": "ピアノ",
@@ -9652,7 +9648,7 @@
       "reading": "かない",
       "english": "(one's own) wife",
       "kind": "emoji",
-      "value": "🔢"
+      "value": "👩"
     },
     "265a7cddae09": {
       "japanese": "指",
@@ -10053,7 +10049,7 @@
       "reading": "じっけん",
       "english": "lab work; experiment",
       "kind": "emoji",
-      "value": "🏢"
+      "value": "🧪"
     },
     "007a508511b1": {
       "japanese": "実現",
@@ -10172,7 +10168,7 @@
       "reading": "しばい",
       "english": "play, drama",
       "kind": "emoji",
-      "value": "🎮"
+      "value": "🎭"
     },
     "e80f00dd0e4d": {
       "japanese": "しばしば",
@@ -10347,7 +10343,7 @@
       "reading": "ジュース",
       "english": "juice, soft drink; deuce",
       "kind": "emoji",
-      "value": "💧"
+      "value": "🧃"
     },
     "2a82d8110832": {
       "japanese": "修正",
@@ -10577,8 +10573,8 @@
       "japanese": "賞",
       "reading": "しょう",
       "english": "prize, award",
-      "kind": "sfSymbol",
-      "value": "trophy.fill"
+      "kind": "emoji",
+      "value": "🏆"
     },
     "8ce9fcb9efd3": {
       "japanese": "上",
@@ -10759,8 +10755,8 @@
       "japanese": "賞品",
       "reading": "しょうひん",
       "english": "prize, trophy",
-      "kind": "sfSymbol",
-      "value": "trophy.fill"
+      "kind": "emoji",
+      "value": "🏆"
     },
     "3b242b83cf7f": {
       "japanese": "消防",
@@ -10829,8 +10825,8 @@
       "japanese": "植物",
       "reading": "しょくぶつ",
       "english": "plant, vegetation",
-      "kind": "sfSymbol",
-      "value": "leaf.fill"
+      "kind": "emoji",
+      "value": "🌿"
     },
     "82db9f82b9d8": {
       "japanese": "食物",
@@ -11137,8 +11133,8 @@
       "japanese": "巣",
       "reading": "す",
       "english": "nest, breeding place",
-      "kind": "sfSymbol",
-      "value": "mappin.and.ellipse"
+      "kind": "emoji",
+      "value": "🪺"
     },
     "4b5377fbcd1a": {
       "japanese": "酢",
@@ -11158,9 +11154,8 @@
       "japanese": "水準",
       "reading": "すいじゅん",
       "english": "level, standard",
-      "kind": "asset",
-      "value": "105e4b10f0a1",
-      "url": "https://zentsu.app/japanese2k/svgs/105e4b10f0a1.svg"
+      "kind": "emoji",
+      "value": "📊"
     },
     "4dad5c5ca42f": {
       "japanese": "推薦",
@@ -11258,8 +11253,8 @@
       "japanese": "スケジュール",
       "reading": "スケジュール",
       "english": "schedule",
-      "kind": "sfSymbol",
-      "value": "calendar"
+      "kind": "emoji",
+      "value": "📅"
     },
     "4139e1318fd7": {
       "japanese": "少しも",
@@ -11797,8 +11792,8 @@
       "japanese": "明かり",
       "reading": "あかり",
       "english": "lamplight, light (in general)",
-      "kind": "sfSymbol",
-      "value": "lightbulb.fill"
+      "kind": "emoji",
+      "value": "💡"
     },
     "2f927be2713c": {
       "japanese": "空き",
@@ -12007,9 +12002,8 @@
       "japanese": "粗",
       "reading": "あら",
       "english": "defect, flaw, fault",
-      "kind": "asset",
-      "value": "3017d7ac5541",
-      "url": "https://zentsu.app/japanese2k/svgs/3017d7ac5541.svg"
+      "kind": "emoji",
+      "value": "⚠️"
     },
     "8a1b48b38da9": {
       "japanese": "嵐",
@@ -12184,8 +12178,9 @@
       "japanese": "胃",
       "reading": "い",
       "english": "stomach",
-      "kind": "emoji",
-      "value": "🫃"
+      "kind": "asset",
+      "value": "d9e37f0b53c1",
+      "url": "https://zentsu.app/japanese2k/svgs/d9e37f0b53c1.svg"
     },
     "a153a14b07c4": {
       "japanese": "委員",
@@ -12366,8 +12361,8 @@
       "japanese": "位置",
       "reading": "いち",
       "english": "place, position",
-      "kind": "sfSymbol",
-      "value": "mappin.and.ellipse"
+      "kind": "emoji",
+      "value": "📍"
     },
     "a9da8ecb5269": {
       "japanese": "一時",
@@ -12828,8 +12823,8 @@
       "japanese": "生まれ",
       "reading": "うまれ",
       "english": "birth, birth-place",
-      "kind": "sfSymbol",
-      "value": "mappin.and.ellipse"
+      "kind": "emoji",
+      "value": "👶"
     },
     "e4f1388d94b2": {
       "japanese": "有無",
@@ -13284,7 +13279,7 @@
       "reading": "おに",
       "english": "ogre, demon, 'it' (e.g.,in a game of tag)",
       "kind": "emoji",
-      "value": "🎮"
+      "value": "👹"
     },
     "0b351585cb36": {
       "japanese": "帯",

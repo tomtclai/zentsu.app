@@ -8,6 +8,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- Improve Japanese2k emoji coverage and replace unclear fallback artwork with readable SVG icons.
 - Replace Bench's custom hero download button with Apple's official, self-hosted Download on the
   Mac App Store badge and add the required Apple trademark credit.
 - Self-host the Inter Tight and JetBrains Mono web fonts instead of requesting them from Google.
