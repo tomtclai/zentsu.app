@@ -1,6 +1,6 @@
 {
-  "version": 13,
-  "updated": "2026-07-19T15:25:48Z",
+  "version": 15,
+  "updated": "2026-07-20T01:32:30Z",
   "icons": {
     "b89b869b65d1": {
       "japanese": "ああ",
@@ -140,7 +140,7 @@
       "reading": "あたま",
       "english": "head",
       "kind": "emoji",
-      "value": "👤"
+      "value": "🧑"
     },
     "a375891d36df": {
       "japanese": "新しい",
@@ -280,7 +280,7 @@
       "reading": "ある",
       "english": "to be, to have",
       "kind": "emoji",
-      "value": "📦"
+      "value": "✨"
     },
     "bf1af1a1ea92": {
       "japanese": "歩く",
@@ -329,7 +329,7 @@
       "reading": "いかが",
       "english": "how, in what way",
       "kind": "emoji",
-      "value": "🛣️"
+      "value": "🤔"
     },
     "67c363afd04c": {
       "japanese": "行く",
@@ -413,7 +413,7 @@
       "reading": "いつ",
       "english": "when",
       "kind": "emoji",
-      "value": "📅"
+      "value": "❔"
     },
     "cbf78192d206": {
       "japanese": "五日",
@@ -448,7 +448,7 @@
       "reading": "いぬ",
       "english": "dog",
       "kind": "emoji",
-      "value": "🐕"
+      "value": "🐶"
     },
     "7cf28dc9bd16": {
       "japanese": "今",
@@ -497,7 +497,7 @@
       "reading": "いる",
       "english": "to need",
       "kind": "emoji",
-      "value": "✨"
+      "value": "🛒"
     },
     "c1357f4d7232": {
       "japanese": "入れる",
@@ -588,7 +588,7 @@
       "reading": "うるさい",
       "english": "noisy; annoying",
       "kind": "emoji",
-      "value": "🗣️"
+      "value": "📢"
     },
     "44bb932305a7": {
       "japanese": "上着",
@@ -910,7 +910,7 @@
       "reading": "おべんとう",
       "english": "a boxed lunch",
       "kind": "emoji",
-      "value": "🍚"
+      "value": "🍱"
     },
     "c646821aef90": {
       "japanese": "覚える",
@@ -1211,7 +1211,7 @@
       "reading": "かぶる",
       "english": "to wear, to put on (e.g., a hat on the head)",
       "kind": "emoji",
-      "value": "🙂"
+      "value": "🧢"
     },
     "acced5b26df7": {
       "japanese": "紙",
@@ -1652,7 +1652,7 @@
       "reading": "けっこん (する)",
       "english": "marriage (get married)",
       "kind": "emoji",
-      "value": "📥"
+      "value": "💍"
     },
     "ddeded7658ea": {
       "japanese": "月曜日",
@@ -1862,7 +1862,7 @@
       "reading": "これ",
       "english": "this one",
       "kind": "emoji",
-      "value": "🔢"
+      "value": "☝️"
     },
     "e7638eb55734": {
       "japanese": "ころ; ごろ",
@@ -1890,7 +1890,7 @@
       "reading": "こんな",
       "english": "such, like this",
       "kind": "emoji",
-      "value": "❤️"
+      "value": "☝️"
     },
     "1f8742cc0d26": {
       "japanese": "今晩",
@@ -1953,7 +1953,7 @@
       "reading": "さす",
       "english": "to raise (stretch out) hands, to raise (e.g., umbrella)",
       "kind": "emoji",
-      "value": "🌧️"
+      "value": "☂️"
     },
     "65cd889803ef": {
       "japanese": "冊",
@@ -2191,7 +2191,7 @@
       "reading": "～じゅう",
       "english": "during, while",
       "kind": "emoji",
-      "value": "📦"
+      "value": "⏳"
     },
     "d3a8cc50886b": {
       "japanese": "週間",
@@ -2401,7 +2401,7 @@
       "reading": "せい",
       "english": "(one's) height, stature",
       "kind": "emoji",
-      "value": "🔢"
+      "value": "📏"
     },
     "b17d0ed27206": {
       "japanese": "生徒",
@@ -2485,7 +2485,7 @@
       "reading": "ぜんぶ",
       "english": "all, entire, whole",
       "kind": "emoji",
-      "value": "💯"
+      "value": "👥"
     },
     "b7a1b0203161": {
       "japanese": "そう; そうです",
@@ -2506,7 +2506,7 @@
       "reading": "そうして; そして",
       "english": "and, like that",
       "kind": "emoji",
-      "value": "❤️"
+      "value": "➡️"
     },
     "fb1823758792": {
       "japanese": "そこ",
@@ -2653,7 +2653,7 @@
       "reading": "たくさん",
       "english": "many, much",
       "kind": "emoji",
-      "value": "📊"
+      "value": "📚"
     },
     "164d6bba5041": {
       "japanese": "タクシー",
@@ -2849,7 +2849,7 @@
       "reading": "～ちゅう",
       "english": "during, while ~ing",
       "kind": "emoji",
-      "value": "📦"
+      "value": "⏳"
     },
     "3a8ae654f964": {
       "japanese": "丁度",
@@ -2884,7 +2884,7 @@
       "reading": "つかれる",
       "english": "to get (become) tired; to become fatigued",
       "kind": "emoji",
-      "value": "📥"
+      "value": "😩"
     },
     "ccff0e66b2f5": {
       "japanese": "次",
@@ -3229,7 +3229,7 @@
       "reading": "とても",
       "english": "very (much), greatly, exceedingly",
       "kind": "emoji",
-      "value": "💯"
+      "value": "🌟"
     },
     "69097659cba2": {
       "japanese": "どなた",
@@ -3341,7 +3341,7 @@
       "reading": "なか",
       "english": "inside, middle, among",
       "kind": "emoji",
-      "value": "📦"
+      "value": "📍"
     },
     "65d8fe1c1e08": {
       "japanese": "長い",
@@ -3392,7 +3392,7 @@
       "kind": "asset",
       "value": "a4d5d4c6c791",
       "url": "https://zentsu.app/japanese2k/svgs/a4d5d4c6c791.svg",
-      "revision": "751846d1d0d2"
+      "revision": "baf4aa8619cf"
     },
     "fb7bd3ea92e4": {
       "japanese": "七つ",
@@ -3511,7 +3511,7 @@
       "reading": "ニュース",
       "english": "news",
       "kind": "emoji",
-      "value": "🗞️"
+      "value": "📰"
     },
     "714083a75629": {
       "japanese": "庭",
@@ -4227,7 +4227,7 @@
       "reading": "ほしい",
       "english": "to want, in need of",
       "kind": "emoji",
-      "value": "✨"
+      "value": "🛒"
     },
     "08fb5f6b69c8": {
       "japanese": "ポスト",
@@ -4290,7 +4290,7 @@
       "reading": "～まい",
       "english": "counter for flat things",
       "kind": "emoji",
-      "value": "🏢"
+      "value": "📄"
     },
     "1ff98591469a": {
       "japanese": "毎朝",
@@ -4507,7 +4507,7 @@
       "reading": "みなさん",
       "english": "all of you, everyone",
       "kind": "emoji",
-      "value": "💯"
+      "value": "🌟"
     },
     "a67dd6b053b1": {
       "japanese": "南",
@@ -4535,7 +4535,7 @@
       "reading": "みんな",
       "english": "all, everyone, everybody",
       "kind": "emoji",
-      "value": "💯"
+      "value": "🌟"
     },
     "c1fc2ef35cce": {
       "japanese": "六日",
@@ -4717,7 +4717,7 @@
       "reading": "やる",
       "english": "to do; to give (to pets, parents, siblings, etc.)",
       "kind": "emoji",
-      "value": "🎁"
+      "value": "🛠️"
     },
     "fcde3e0acbdd": {
       "japanese": "夕方",
@@ -5162,7 +5162,7 @@
       "kind": "asset",
       "value": "0f848cc55a1c",
       "url": "https://zentsu.app/japanese2k/svgs/0f848cc55a1c.svg",
-      "revision": "a4b685e10264"
+      "revision": "4ad03e0b5110"
     },
     "b8941889076f": {
       "japanese": "会",
@@ -5248,7 +5248,7 @@
       "kind": "asset",
       "value": "d6288e522992",
       "url": "https://zentsu.app/japanese2k/svgs/d6288e522992.svg",
-      "revision": "dc290601aeab"
+      "revision": "947703017f65"
     },
     "29916ed022b7": {
       "japanese": "表",
@@ -5348,7 +5348,7 @@
       "kind": "asset",
       "value": "d69cc289f5d9",
       "url": "https://zentsu.app/japanese2k/svgs/d69cc289f5d9.svg",
-      "revision": "83b164773921"
+      "revision": "6c5a5296f70d"
     },
     "c318077c7b7f": {
       "japanese": "つもり",
@@ -5453,7 +5453,7 @@
       "reading": "いっしょうけんめい",
       "english": "very hard (as in \"to work hard\"), with utmost effort",
       "kind": "emoji",
-      "value": "🏢"
+      "value": "💪"
     },
     "617eaab5f292": {
       "japanese": "今度",
@@ -6090,14 +6090,14 @@
       "reading": "いくら～ても",
       "english": "however much one may ~",
       "kind": "emoji",
-      "value": "🔢"
+      "value": "🔁"
     },
     "ab5bdf038ee5": {
       "japanese": "用事",
       "reading": "ようじ",
       "english": "business to take care of; tasks; errands",
       "kind": "emoji",
-      "value": "🏢"
+      "value": "📝"
     },
     "5dc54c0e6d0f": {
       "japanese": "ビル",
@@ -6167,7 +6167,7 @@
       "reading": "そんな",
       "english": "such, like that, that sort of",
       "kind": "emoji",
-      "value": "❤️"
+      "value": "👉"
     },
     "4a6594dfcc1a": {
       "japanese": "星",
@@ -6216,7 +6216,7 @@
       "reading": "なくなる",
       "english": "to disappear, to get lost",
       "kind": "emoji",
-      "value": "📥"
+      "value": "💨"
     },
     "ad5ec31f1e88": {
       "japanese": "準備",
@@ -6342,7 +6342,7 @@
       "reading": "～(て) しまう",
       "english": "to end up ~",
       "kind": "emoji",
-      "value": "▶️"
+      "value": "🏁"
     },
     "21f84858dd58": {
       "japanese": "飛行場",
@@ -6552,7 +6552,7 @@
       "reading": "なおる",
       "english": "to get better; to recover from illness (v.i.)",
       "kind": "emoji",
-      "value": "📥"
+      "value": "🩹"
     },
     "2c58224d64ba": {
       "japanese": "熱",
@@ -6776,7 +6776,7 @@
       "reading": "こころ",
       "english": "heart, mind",
       "kind": "emoji",
-      "value": "🧠"
+      "value": "❤️"
     },
     "c842296738de": {
       "japanese": "だす",
@@ -6797,7 +6797,7 @@
       "reading": "とどける",
       "english": "to deliver (v.t.)",
       "kind": "emoji",
-      "value": "📦"
+      "value": "🚚"
     },
     "84ff1900ec2e": {
       "japanese": "挨拶",
@@ -6867,7 +6867,7 @@
       "reading": "かわく",
       "english": "to get dry",
       "kind": "emoji",
-      "value": "📥"
+      "value": "☀️"
     },
     "5b1b9f9d72a4": {
       "japanese": "石",
@@ -6923,7 +6923,7 @@
       "reading": "よう",
       "english": "errand, task, business (to take care of)",
       "kind": "emoji",
-      "value": "🏢"
+      "value": "📝"
     },
     "08ad71831234": {
       "japanese": "公務員",
@@ -7273,7 +7273,7 @@
       "reading": "みな",
       "english": "everyone",
       "kind": "emoji",
-      "value": "💯"
+      "value": "🌟"
     },
     "cd52db3cf724": {
       "japanese": "味",
@@ -7345,7 +7345,7 @@
       "kind": "asset",
       "value": "ce16771e61e5",
       "url": "https://zentsu.app/japanese2k/svgs/ce16771e61e5.svg",
-      "revision": "6bc7455ae753"
+      "revision": "2ac8073c2f82"
     },
     "f36f7e009032": {
       "japanese": "遠慮",
@@ -7415,7 +7415,7 @@
       "reading": "すごい",
       "english": "terrific, great",
       "kind": "emoji",
-      "value": "⬜"
+      "value": "👍"
     },
     "79f98a038408": {
       "japanese": "入学",
@@ -7534,7 +7534,7 @@
       "reading": "くれる",
       "english": "to get dark, to come to an end",
       "kind": "emoji",
-      "value": "📥"
+      "value": "🌆"
     },
     "95623b02c54c": {
       "japanese": "釣る",
@@ -7562,7 +7562,7 @@
       "reading": "あんな",
       "english": "such, like that",
       "kind": "emoji",
-      "value": "❤️"
+      "value": "👉"
     },
     "4c1490c4c106": {
       "japanese": "謝る",
@@ -8100,7 +8100,7 @@
       "kind": "asset",
       "value": "df89280076d2",
       "url": "https://zentsu.app/japanese2k/svgs/df89280076d2.svg",
-      "revision": "156b8ecccb1f"
+      "revision": "7eeb21e502eb"
     },
     "837f3d7d4044": {
       "japanese": "以上",
@@ -8170,7 +8170,7 @@
       "reading": "ちゅうしゃじょう",
       "english": "parking lot",
       "kind": "emoji",
-      "value": "📊"
+      "value": "🅿️"
     },
     "ffdedd167daa": {
       "japanese": "スーツ",
@@ -8352,7 +8352,7 @@
       "reading": "そんなに",
       "english": "so much, like that",
       "kind": "emoji",
-      "value": "❤️"
+      "value": "👉"
     },
     "b02c4eb01e58": {
       "japanese": "昼休み",
@@ -8975,7 +8975,7 @@
       "reading": "ぬれる",
       "english": "to get wet",
       "kind": "emoji",
-      "value": "📥"
+      "value": "💦"
     },
     "a03f2c8dd105": {
       "japanese": "倒れる",
@@ -9087,7 +9087,7 @@
       "reading": "けんきゅうしつ",
       "english": "the professor's office; laboratory",
       "kind": "emoji",
-      "value": "🏢"
+      "value": "🔬"
     },
     "bb72f86c4868": {
       "japanese": "工場",
@@ -9665,7 +9665,7 @@
       "reading": "かない",
       "english": "(one's own) wife",
       "kind": "emoji",
-      "value": "🔢"
+      "value": "👩"
     },
     "265a7cddae09": {
       "japanese": "指",
@@ -9688,7 +9688,7 @@
       "kind": "asset",
       "value": "c2ee1e0dcdd1",
       "url": "https://zentsu.app/japanese2k/svgs/c2ee1e0dcdd1.svg",
-      "revision": "945aa5aaad90"
+      "revision": "99750a77befc"
     },
     "d10c0a04545c": {
       "japanese": "社会",
@@ -9877,7 +9877,7 @@
       "reading": "しき",
       "english": "four seasons",
       "kind": "emoji",
-      "value": "🔢"
+      "value": "🍂"
     },
     "409adb9f9375": {
       "japanese": "直",
@@ -10019,7 +10019,7 @@
       "kind": "asset",
       "value": "060bc8db8081",
       "url": "https://zentsu.app/japanese2k/svgs/060bc8db8081.svg",
-      "revision": "c7a30237eaaa"
+      "revision": "f33bd3a8915b"
     },
     "e4f70a1a682f": {
       "japanese": "従う",
@@ -10068,7 +10068,7 @@
       "reading": "じっけん",
       "english": "lab work; experiment",
       "kind": "emoji",
-      "value": "🏢"
+      "value": "🧪"
     },
     "007a508511b1": {
       "japanese": "実現",
@@ -10474,7 +10474,7 @@
       "reading": "しゅだん",
       "english": "means, way, measure",
       "kind": "emoji",
-      "value": "🛣️"
+      "value": "🛠️"
     },
     "0f0632df570f": {
       "japanese": "主張",
@@ -11255,7 +11255,7 @@
       "kind": "asset",
       "value": "a5c3c0ffa179",
       "url": "https://zentsu.app/japanese2k/svgs/a5c3c0ffa179.svg",
-      "revision": "77c8f27670d0"
+      "revision": "bde55e74e2ab"
     },
     "cdd8d973c40f": {
       "japanese": "優れる",
@@ -11444,7 +11444,7 @@
       "reading": "すれちがう",
       "english": "to pass by one another",
       "kind": "emoji",
-      "value": "🔢"
+      "value": "👥"
     },
     "2b44999f6bc4": {
       "japanese": "ずれる",
@@ -11843,7 +11843,7 @@
       "reading": "あきる",
       "english": "to get tired of, to lose interest in",
       "kind": "emoji",
-      "value": "📥"
+      "value": "😑"
     },
     "02745a1da88a": {
       "japanese": "握手",
@@ -12174,7 +12174,7 @@
       "reading": "あんき",
       "english": "memorization, learning by heart",
       "kind": "emoji",
-      "value": "❤️"
+      "value": "🧠"
     },
     "d1221e42d469": {
       "japanese": "安定",
@@ -12190,7 +12190,7 @@
       "kind": "asset",
       "value": "e158a75a89ba",
       "url": "https://zentsu.app/japanese2k/svgs/e158a75a89ba.svg",
-      "revision": "702c671ec64c"
+      "revision": "811a262dc7bb"
     },
     "339fb42735b9": {
       "japanese": "あんまり",
@@ -12260,7 +12260,7 @@
       "reading": "いし",
       "english": "doctor, physician",
       "kind": "emoji",
-      "value": "💊"
+      "value": "👨‍⚕️"
     },
     "21b13471664a": {
       "japanese": "意思",
@@ -12442,7 +12442,7 @@
       "reading": "いっしょう",
       "english": "throughout (one's) life",
       "kind": "emoji",
-      "value": "🔢"
+      "value": "♾️"
     },
     "6fc1aeb07b4c": {
       "japanese": "一層",
@@ -12477,7 +12477,7 @@
       "reading": "いつのまにか",
       "english": "before one knows",
       "kind": "emoji",
-      "value": "🔢"
+      "value": "😯"
     },
     "47cab7bb2516": {
       "japanese": "一般",
@@ -12582,7 +12582,7 @@
       "reading": "イメージ",
       "english": "one's image",
       "kind": "emoji",
-      "value": "🔢"
+      "value": "🖼️"
     },
     "1318883d3211": {
       "japanese": "否",
@@ -12862,7 +12862,7 @@
       "reading": "うめ",
       "english": "plum, lowest (of a three-tier ranking system)",
       "kind": "emoji",
-      "value": "🔢"
+      "value": "🌸"
     },
     "cfe29a461121": {
       "japanese": "埋める",
@@ -13613,7 +13613,7 @@
       "kind": "asset",
       "value": "d78c5c8c4b13",
       "url": "https://zentsu.app/japanese2k/svgs/d78c5c8c4b13.svg",
-      "revision": "a5fec977b0a0"
+      "revision": "5e8dd877725e"
     },
     "d01aa9505e7b": {
       "japanese": "香り",
@@ -13830,7 +13830,7 @@
       "reading": "かさなる",
       "english": "to be piled up, lie on top of one another",
       "kind": "emoji",
-      "value": "🔢"
+      "value": "📚"
     },
     "e90c6511cde2": {
       "japanese": "重ねる",
@@ -13970,7 +13970,7 @@
       "reading": "がっかり",
       "english": "feel disappointed, be dejected, lose heart",
       "kind": "emoji",
-      "value": "❤️"
+      "value": "😞"
     },
     "a39f37a53417": {
       "japanese": "活気",
