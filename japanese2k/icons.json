@@ -1,6 +1,6 @@
 {
-  "version": 15,
-  "updated": "2026-07-20T01:32:30Z",
+  "version": 16,
+  "updated": "2026-07-20T01:42:40Z",
   "icons": {
     "b89b869b65d1": {
       "japanese": "ああ",
@@ -686,14 +686,14 @@
       "reading": "おおきい",
       "english": "big, large",
       "kind": "emoji",
-      "value": "⬜"
+      "value": "🐘"
     },
     "3bc51f42878d": {
       "japanese": "大きな",
       "reading": "おおきな",
       "english": "big",
       "kind": "emoji",
-      "value": "⬜"
+      "value": "🐘"
     },
     "ab83c5c6d8cf": {
       "japanese": "大勢",
@@ -1680,7 +1680,7 @@
       "reading": "～こ",
       "english": "counter for small items (e.g., fruits, cups)",
       "kind": "emoji",
-      "value": "▫️"
+      "value": "🧩"
     },
     "dd352c3305fc": {
       "japanese": "五",
@@ -2317,7 +2317,7 @@
       "reading": "すくない",
       "english": "a little; a few",
       "kind": "emoji",
-      "value": "▫️"
+      "value": "📉"
     },
     "bd4e3e555334": {
       "japanese": "すぐに",
@@ -2387,7 +2387,7 @@
       "reading": "する",
       "english": "to do, to try; to wear small items (e.g., necktie, watch, etc.)",
       "kind": "emoji",
-      "value": "▫️"
+      "value": "🛠️"
     },
     "66bd0097ad09": {
       "japanese": "座る",
@@ -2779,14 +2779,14 @@
       "reading": "ちいさい",
       "english": "small, little",
       "kind": "emoji",
-      "value": "▫️"
+      "value": "🐁"
     },
     "4670c2eff853": {
       "japanese": "小さな",
       "reading": "ちいさな",
       "english": "small, little",
       "kind": "emoji",
-      "value": "▫️"
+      "value": "🐁"
     },
     "2403dfa58a3e": {
       "japanese": "近い",
@@ -2863,7 +2863,7 @@
       "reading": "ちょっと",
       "english": "a little, somewhat; just a little, somewhat",
       "kind": "emoji",
-      "value": "▫️"
+      "value": "🤏"
     },
     "27894b62b6b6": {
       "japanese": "一日",
@@ -3033,7 +3033,7 @@
       "kind": "asset",
       "value": "3c6960b9dad4",
       "url": "https://zentsu.app/japanese2k/svgs/3c6960b9dad4.svg",
-      "revision": "a01a9f272c34"
+      "revision": "52f71fe1189e"
     },
     "8fc35eef5bbf": {
       "japanese": "出る",
@@ -3898,7 +3898,7 @@
       "reading": "～ひき",
       "english": "counter for small animals",
       "kind": "emoji",
-      "value": "▫️"
+      "value": "🐾"
     },
     "64e5441bf504": {
       "japanese": "引く",
@@ -9110,7 +9110,7 @@
       "kind": "asset",
       "value": "629403eb8578",
       "url": "https://zentsu.app/japanese2k/svgs/629403eb8578.svg",
-      "revision": "851b69c01e25"
+      "revision": "45f4dbe3e63d"
     },
     "da674425d21f": {
       "japanese": "舟",
@@ -9637,7 +9637,7 @@
       "reading": "だいぶ",
       "english": "fairly well, to a large extent, considerably, pretty much",
       "kind": "emoji",
-      "value": "⬜"
+      "value": "📈"
     },
     "debe31d8d569": {
       "japanese": "楽しみ",
@@ -10544,7 +10544,7 @@
       "reading": "じゅん",
       "english": "order, turn",
       "kind": "emoji",
-      "value": "🔢"
+      "value": "📶"
     },
     "8c4e37762570": {
       "japanese": "瞬間",
@@ -10579,7 +10579,7 @@
       "reading": "しょう",
       "english": "small",
       "kind": "emoji",
-      "value": "▫️"
+      "value": "🔹"
     },
     "bcc3b0f946c2": {
       "japanese": "章",
@@ -10901,7 +10901,7 @@
       "reading": "じょじょに",
       "english": "slowly, little by little",
       "kind": "emoji",
-      "value": "▫️"
+      "value": "🐌"
     },
     "eb06a0687df4": {
       "japanese": "署名",
@@ -11255,7 +11255,7 @@
       "kind": "asset",
       "value": "a5c3c0ffa179",
       "url": "https://zentsu.app/japanese2k/svgs/a5c3c0ffa179.svg",
-      "revision": "bde55e74e2ab"
+      "revision": "dd9f3f401499"
     },
     "cdd8d973c40f": {
       "japanese": "優れる",
@@ -11360,7 +11360,7 @@
       "reading": "すてき",
       "english": "lovely, great",
       "kind": "emoji",
-      "value": "⬜"
+      "value": "✨"
     },
     "29bc62593ac2": {
       "japanese": "既に",
