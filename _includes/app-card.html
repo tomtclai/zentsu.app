@@ -58,7 +58,7 @@ monogram = app.slug | slice: 0 | upcase -%}
       >
       {%- endif %} {%- if app.status == 'live' and app.app_store_url %}
       <a class="product-store-link" href="{{ app.app_store_url }}" rel="noopener noreferrer"
-        >Mac App Store</a
+        >{{ app.store_label | default: 'App Store' }}</a
       >
       {%- endif %}
     </div>

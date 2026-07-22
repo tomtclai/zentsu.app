@@ -23,8 +23,9 @@
 # Re-enable an app in one line: set `visible: true` on its entry below.
 #
 # Visible apps are then rendered by `status`:
-#   live        → full card with "Available" tag and optional Mac App Store link
-#                 when app_store_url is set.
+#   live        → full card with "Available" tag and an optional store link
+#                 when app_store_url is set (labeled by store_label, "App Store"
+#                 by default; set store_label: Mac App Store for Mac-only apps).
 #   coming_soon → card with a muted "Coming soon" treatment, NO download or
 #                 App Store link (nothing to link to yet).
 #   parked      → omitted because it has no active lifecycle state.
@@ -47,6 +48,8 @@
 #                  Omit for apps with no single headline price.
 #   price_suffix   optional trailing words after the price, e.g. "one-time".
 #   app_store_url  live store link, or null while not on the store.
+#   store_label    text for the store link, e.g. "Mac App Store" or "App Store".
+#                  Defaults to "App Store" when omitted.
 #   page_url       the app's own page on this site (e.g. /bench).
 #                  Omit if the app has no dedicated page yet.
 #   icon           icon path under assets/. Missing file → monogram tile.
@@ -65,6 +68,7 @@ apps:
     price_key: price_lifetime
     price_suffix: Pro unlock
     app_store_url: https://apps.apple.com/app/bench-dev-toolbox/id6763368925?mt=12
+    store_label: Mac App Store
     page_url: /bench
     icon: /assets/bench-icon.png
     accent: '#4a7c6f'
@@ -90,10 +94,10 @@ apps:
     tagline: >-
       Keep a private record of GLP-1 doses, injection sites, weight, side effects,
       and the reminders you choose to set.
-    status: coming_soon
-    status_note: TestFlight beta
+    status: live
+    status_note: null
     platforms: iPhone · Apple Watch
-    app_store_url: null # In TestFlight; not yet on the App Store.
+    app_store_url: https://apps.apple.com/app/id6789408903
     page_url: /dial/
     icon: /assets/dial-icon.png
     accent: '#ef705f'

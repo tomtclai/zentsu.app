@@ -1,7 +1,7 @@
 ---
 title: GLP-1 medication tracker for iPhone and Apple Watch | Dial
-description: 'Dial is a private GLP-1 medication tracker for iPhone and Apple Watch. Log doses, reminders, weight, history, and reports in one clear record you control.'
-og_description: 'Keep a clear record of GLP-1 doses, weight, reminders, and history on iPhone and Apple Watch.'
+description: 'Dial is a private GLP-1 medication tracker for iPhone and Apple Watch. Available now on the App Store. Log doses, reminders, weight, history, and reports in one clear record you control.'
+og_description: 'A private GLP-1 medication tracker for iPhone and Apple Watch. Available now on the App Store.'
 canonical: https://zentsu.app/dial/
 permalink: /dial/
 og_site_name: Dial
@@ -10,6 +10,7 @@ og_image_alt: 'Dial, a private GLP-1 medication tracker for iPhone and Apple Wat
 page_stylesheet: /dial.css
 favicon: /assets/dial-icon-64.png
 apple_touch_icon: /assets/dial-icon-180.png
+footer_apple_badge: true
 ---
 
 <!doctype html>
@@ -34,6 +35,15 @@ apple_touch_icon: /assets/dial-icon-180.png
           "https://zentsu.app/assets/dial-web-report.png",
           "https://zentsu.app/assets/dial-web-watch-glance.png"
         ],
+        "downloadUrl": "https://apps.apple.com/app/id6789408903",
+        "installUrl": "https://apps.apple.com/app/id6789408903",
+        "offers": {
+          "@type": "AggregateOffer",
+          "lowPrice": "{{ site.price_dial_monthly }}",
+          "highPrice": "{{ site.price_dial_lifetime }}",
+          "priceCurrency": "USD",
+          "offerCount": "3"
+        },
         "publisher": {
           "@type": "Organization",
           "name": "Zentsu LLC",
@@ -57,7 +67,7 @@ apple_touch_icon: /assets/dial-icon-180.png
               </picture>
               <div>
                 <strong>Dial</strong>
-                <span>Private TestFlight beta</span>
+                <span>Available now on the App Store</span>
               </div>
             </div>
             <h1 id="dial-title">Your GLP-1 routine, <span>on record.</span></h1>
@@ -68,30 +78,19 @@ apple_touch_icon: /assets/dial-icon-180.png
               Log doses on iPhone or Apple Watch, see an estimated level built from the doses you
               record, and keep core records on your device or in your private iCloud database.
             </p>
-            <form
-              class="dial-signup dial-signup-hero"
-              action="https://buttondown.email/api/emails/embed-subscribe/dialapp"
-              method="post"
-            >
-              <label for="dial-email-hero" class="dial-sr-only">Email address</label>
-              <div class="dial-email-row">
-                <input
-                  id="dial-email-hero"
-                  type="email"
-                  name="email"
-                  placeholder="your@email.com"
-                  autocomplete="email"
-                  required
+            <div class="dial-actions dial-actions-primary">
+              <a
+                class="app-store-badge-link"
+                href="https://apps.apple.com/app/id6789408903"
+                rel="noopener noreferrer"
+                id="hero-primary-cta"
+              >
+                <img
+                  src="/assets/download-on-the-app-store.svg"
+                  alt="Download Dial on the App Store"
+                  height="40"
                 />
-                <input type="hidden" name="tag" value="dial-updates" />
-                <button type="submit">Get Dial updates</button>
-              </div>
-              <p class="dial-signup-note">
-                Release news and any future beta openings. No open or link tracking. Unsubscribe
-                anytime. <a href="/privacy">Privacy details</a>.
-              </p>
-            </form>
-            <div class="dial-actions dial-actions-secondary">
+              </a>
               <a class="dial-button dial-button-secondary" href="#how-it-works"
                 >See how Dial works</a
               >
@@ -143,7 +142,7 @@ apple_touch_icon: /assets/dial-icon-180.png
           <p class="dial-proof-label" id="proof-label">Why Dial</p>
           <div class="dial-proof-row">
             <p>iPhone and Apple Watch</p>
-            <p>Device or private iCloud storage</p>
+            <p>No accounts, no analytics</p>
             <p>Lifetime option</p>
             <p>Modeled level from your doses</p>
           </div>
@@ -629,13 +628,24 @@ apple_touch_icon: /assets/dial-icon-180.png
             <img src="/assets/dial-icon@1x.png" width="128" height="128" alt="" loading="lazy" />
           </picture>
           <div>
-            <p class="dial-kicker">Dial updates</p>
-            <h2 id="availability-title">Follow Dial to the App Store.</h2>
+            <p class="dial-kicker">Get Dial</p>
+            <h2 id="availability-title">Available now on the App Store.</h2>
             <p>
-              The current TestFlight group is private. Join the Dial mailing list for release news
-              and any future beta openings. Current testers can use Dial support whenever they need
-              help.
+              Dial is free to download. The core tracker works from the first log. Dial Pro adds the
+              estimated level chart, full charts, PDF export, and quick logging from Apple Watch and
+              iPhone.
             </p>
+            <a
+              class="app-store-badge-link"
+              href="https://apps.apple.com/app/id6789408903"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/assets/download-on-the-app-store.svg"
+                alt="Download Dial on the App Store"
+                height="40"
+              />
+            </a>
           </div>
           <form
             class="dial-signup dial-signup-closing"
@@ -653,12 +663,12 @@ apple_touch_icon: /assets/dial-icon-180.png
                 required
               />
               <input type="hidden" name="tag" value="dial-updates" />
-              <button type="submit">Join the Dial list</button>
+              <button type="submit">Get release news</button>
             </div>
             <p class="dial-signup-note">
-              Release news and any future beta openings. No open or link tracking. Unsubscribe
-              anytime.
-              <a href="/privacy">Privacy details</a>. Already testing?
+              Optional. Release notes for new versions, nothing else. No open or link tracking.
+              Unsubscribe anytime.
+              <a href="/privacy">Privacy details</a>. Need help?
               <a href="/dial/support/">Dial support</a>.
             </p>
           </form>

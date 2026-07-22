@@ -123,6 +123,24 @@
   margin-top: 1.8rem;
 }
 
+.dial-actions-primary {
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.app-store-badge-link {
+  display: inline-flex;
+  padding: 10px;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.app-store-badge-link img {
+  display: block;
+  width: auto;
+  height: 40px;
+}
+
 .dial-button {
   min-height: 46px;
   display: inline-flex;
