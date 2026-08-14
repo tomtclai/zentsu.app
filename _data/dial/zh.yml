@@ -45,8 +45,8 @@ images:
 
 hero:
   availability: "已在 App Store 上架"
-  headline_lead: "记下 GLP-1 日常，"
-  headline_accent: "随时可查。"
+  headline_lead: "GLP-1"
+  headline_accent: "有记录。"
   category: "Dial 是面向 iPhone 和 Apple Watch 的私人 GLP-1 用药日记。"
   detail: "在 iPhone 或 Apple Watch 上记录剂量，查看根据您所记剂量绘出的估计水平。核心记录留在设备上，或留在您的私人 iCloud 数据库中。"
   secondary_cta: "Dial 怎么用"

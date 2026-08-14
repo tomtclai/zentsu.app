@@ -45,8 +45,8 @@ images:
 
 hero:
   availability: "Зараз в App Store"
-  headline_lead: "Ваші дози GLP-1,"
-  headline_accent: "у журналі."
+  headline_lead: "Ваш GLP-1"
+  headline_accent: "записано."
   category: "Dial: приватний щоденник препаратів GLP-1 для iPhone і Apple Watch."
   detail: "Записуйте дози на iPhone або Apple Watch, дивіться оцінений рівень з доз, які вже є в журналі, і тримайте основні записи на пристрої або у приватній базі iCloud."
   secondary_cta: "Як працює Dial"

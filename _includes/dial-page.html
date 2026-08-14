@@ -315,14 +315,18 @@
 
       <section class="dial-availability" aria-labelledby="availability-title">
         <div class="dial-wrap dial-availability-card">
-          <picture class="dial-availability-icon">
-            <source type="image/avif" srcset="/assets/dial-icon.avif" />
-            <source type="image/webp" srcset="/assets/dial-icon.webp" />
-            <img src="/assets/dial-icon@1x.png" width="128" height="128" alt="" loading="lazy" />
-          </picture>
-          <div>
-            <p class="dial-kicker">{{ copy.availability.kicker }}</p>
-            <h2 id="availability-title">{{ copy.availability.heading }}</h2>
+          <div class="dial-availability-copy">
+            <div class="dial-availability-brand">
+              <picture class="dial-availability-icon">
+                <source type="image/avif" srcset="/assets/dial-icon.avif" />
+                <source type="image/webp" srcset="/assets/dial-icon.webp" />
+                <img src="/assets/dial-icon@1x.png" width="128" height="128" alt="" loading="lazy" />
+              </picture>
+              <div>
+                <p class="dial-kicker">{{ copy.availability.kicker }}</p>
+                <h2 id="availability-title">{{ copy.availability.heading }}</h2>
+              </div>
+            </div>
             <p>{{ copy.availability.body }}</p>
             <a class="app-store-badge-link" href="{{ app_store_url }}" rel="noopener noreferrer">
               <img

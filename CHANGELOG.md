@@ -18,6 +18,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- Shorten Dial hero headlines in most locales so they wrap in two or three lines at 10ch,
+  without a mid-word hyphen through GLP-1.
+- Order the Dial language picker by total speakers, highest first, instead of add-order.
+- Rebuild the Dial closing "Get Dial" block as a two-column close (icon plus title, then form)
+  so long and CJK headings no longer stack into a poster-tall column.
 - Improve Japanese2k emoji coverage, preserve the high-confidence mappings, and make the 16 active
   fallback SVG icons transparent and revisioned for readable light and dark mode rendering.
 - Replace the misleading pregnancy emoji for お腹 with dedicated stomach artwork and remove 738
