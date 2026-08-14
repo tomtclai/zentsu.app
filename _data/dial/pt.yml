@@ -195,9 +195,7 @@ plans:
   annual_terms: por ano
   monthly_name: Mensal
   monthly_terms: por mês
-  price_note:
-    As assinaturas renovam até você cancelar. Os preços mostrados são preços dos EUA.
-    A App Store mostra o preço local antes da compra.
+
 
 privacy:
   kicker: Privacidade

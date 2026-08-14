@@ -191,9 +191,7 @@ plans:
   annual_terms: par an
   monthly_name: Mensuel
   monthly_terms: par mois
-  price_note:
-    Les abonnements se renouvellent jusqu'à résiliation. Les prix affichés sont des prix
-    américains. L'App Store affiche votre prix local avant l'achat.
+
 
 privacy:
   kicker: Confidentialité

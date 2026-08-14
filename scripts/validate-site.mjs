@@ -1,3 +1,4 @@
+import { spawnSync } from 'node:child_process';
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { createRequire } from 'node:module';
@@ -16,6 +17,16 @@ function check(condition, message) {
 function read(path) {
   check(existsSync(path), `Missing required file: ${path}`);
   return existsSync(path) ? readFileSync(path, 'utf8') : '';
+}
+
+function loadYaml(path) {
+  const result = spawnSync(
+    'ruby',
+    ['-ryaml', '-rjson', '-e', 'puts YAML.load_file(ARGV[0]).to_json', path],
+    { encoding: 'utf8' },
+  );
+  check(result.status === 0, `Failed to parse ${path}: ${result.stderr}`);
+  return result.status === 0 ? JSON.parse(result.stdout) : {};
 }
 
 function filesUnder(directory) {
@@ -210,7 +221,6 @@ for (const [label, html, boundaries] of [
       'Dial does not calculate doses',
       'not a stand-in for a measured blood',
       'replace guidance from your prescriber',
-      'Prices shown are U.S. prices',
     ],
   ],
   [
@@ -220,17 +230,49 @@ for (const [label, html, boundaries] of [
       'Dial no calcula dosis',
       'no para sustituir un nivel medido en sangre',
       'ni reemplaza la orientación de tu médico',
-      'Los precios mostrados son precios de Estados Unidos',
     ],
   ],
 ]) {
   for (const boundary of boundaries) {
     check(html.includes(boundary), `${label} is missing required boundary text: "${boundary}"`);
   }
-  for (const price of ['49.99', '19.99', '3.99']) {
-    check(html.includes(`$${price}`), `${label} does not render the $${price} Dial Pro price`);
-  }
   check(!/[—]|\s–\s/.test(html), `${label} contains an em-dash or spaced en-dash`);
+}
+
+const dialPrices = loadYaml('_data/dial_prices.yml');
+const dialStorefronts = loadYaml('_data/dial_storefronts.yml');
+const dialRoutes = loadYaml('_data/alternates.yml').dial ?? {};
+for (const [lang, route] of Object.entries(dialRoutes)) {
+  const prices = dialPrices[lang];
+  const storefront = dialStorefronts[lang];
+  check(Boolean(storefront), `Missing Dial storefront mapping for locale ${lang}`);
+  check(Boolean(prices), `Missing ASC storefront prices for Dial locale ${lang}`);
+  if (!prices || !storefront) continue;
+  check(
+    prices.territory === storefront.territory,
+    `${lang} prices territory ${prices.territory} does not match storefront ${storefront.territory}`,
+  );
+
+  const html = read(outputPathFor(`${siteOrigin}${route}`));
+  for (const display of [prices.lifetime_display, prices.annual_display, prices.monthly_display]) {
+    check(html.includes(display), `${route} is missing storefront price ${display}`);
+  }
+  check(html.includes(storefront.note), `${route} is missing the storefront price note`);
+  check(
+    html.includes(`"priceCurrency": "${prices.currency}"`),
+    `${route} schema is missing priceCurrency ${prices.currency}`,
+  );
+  check(
+    html.includes(`"lowPrice": "${prices.monthly}"`),
+    `${route} schema is missing monthly ${prices.monthly}`,
+  );
+  check(
+    html.includes(`"highPrice": "${prices.lifetime}"`),
+    `${route} schema is missing lifetime ${prices.lifetime}`,
+  );
+  if (lang !== 'en') {
+    check(!html.includes('Prices shown are U.S. prices'), `${route} still claims U.S. prices`);
+  }
 }
 
 const notFound = read(join(outputDirectory, '404.html'));

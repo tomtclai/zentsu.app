@@ -193,9 +193,7 @@ plans:
   annual_terms: all'anno
   monthly_name: Mensile
   monthly_terms: al mese
-  price_note:
-    Gli abbonamenti si rinnovano fino alla disdetta. I prezzi mostrati sono prezzi
-    statunitensi. L'App Store mostra il prezzo locale prima dell'acquisto.
+
 
 privacy:
   kicker: Privacy

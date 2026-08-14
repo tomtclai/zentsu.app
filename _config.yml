@@ -41,10 +41,9 @@ price_renewal: '9'
 # Coil: one-time lifetime purchase (currently TestFlight; not yet on the App Store).
 price_coil_lifetime: '14.99'
 
-# Dial: free download with three equivalent Dial Pro purchase options.
-price_dial_lifetime: '49.99'
-price_dial_annual: '19.99'
-price_dial_monthly: '3.99'
+# Dial amounts are not here. Each marketing page reads the customer price for
+# its primary storefront from _data/dial_prices.yml. Refresh with
+# `npm run sync:dial-prices` after an App Store Connect price change.
 
 plugins:
   - jekyll-seo-tag

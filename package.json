@@ -11,7 +11,9 @@
     "validate:sitemap:es": "for route in /es/dial/ /es/dial/support/ /es/dial/privacy/; do grep -q \"<loc>https://zentsu.app$route</loc>\" _site/sitemap.xml || { echo \"Sitemap is missing $route\"; exit 1; }; grep -q \"<link rel=\\\"canonical\\\" href=\\\"https://zentsu.app$route\\\"\" \"_site${route}index.html\" || { echo \"$route has no self-canonical\"; exit 1; }; grep -q '<html lang=\"es\"' \"_site${route}index.html\" || { echo \"$route is not marked lang=es\"; exit 1; }; done",
     "validate:bench-accessibility": "node scripts/validate-bench-accessibility.mjs",
     "validate:site": "node scripts/validate-site.mjs",
-    "test": "npm run build && npm run validate:html && npm run validate:links && npm run validate:app-visibility && npm run validate:sitemap && npm run validate:bench-accessibility && npm run validate:site"
+    "sync:dial-prices": "python3 scripts/sync-dial-prices.py",
+    "validate:dial-prices": "python3 scripts/sync-dial-prices.py --self-test",
+    "test": "npm run build && npm run validate:html && npm run validate:links && npm run validate:app-visibility && npm run validate:sitemap && npm run validate:bench-accessibility && npm run validate:site && npm run validate:dial-prices"
   },
   "repository": {
     "type": "git",

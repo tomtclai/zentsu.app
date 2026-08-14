@@ -191,9 +191,7 @@ plans:
   annual_terms: per year
   monthly_name: Monthly
   monthly_terms: per month
-  price_note:
-    Subscriptions renew until canceled. Prices shown are U.S. prices. The App Store
-    displays your local price before purchase.
+
 
 privacy:
   kicker: Privacy

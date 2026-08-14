@@ -162,8 +162,7 @@ plans:
   annual_terms: 年ごと
   monthly_name: 月額
   monthly_terms: 月ごと
-  price_note:
-    サブスクリプションは解約するまで更新されます。表示価格は米国価格です。購入前にApp Storeが現地価格を表示します。
+
 
 privacy:
   kicker: プライバシー

@@ -1,0 +1,136 @@
+# Primary App Store territory for each Dial marketing page, plus the
+# customer-facing price note. One language is one storefront, not every
+# country that speaks the language. Edit this file when adding a locale.
+# Amounts come from live ASC via `npm run sync:dial-prices`.
+
+en:
+  territory: USA
+  note: "Subscriptions renew until canceled. Prices are from the U.S. App Store."
+
+es:
+  territory: MEX
+  note: "Las suscripciones se renuevan hasta que se cancelen. Los precios son del App Store de México."
+
+de:
+  territory: DEU
+  note: "Abonnements verlängern sich, bis sie gekündigt werden. Preise stammen aus dem App Store für Deutschland."
+
+fr:
+  territory: FRA
+  note: "Les abonnements se renouvellent jusqu'à résiliation. Les prix viennent de l'App Store France."
+
+ja:
+  territory: JPN
+  note: "サブスクリプションは解約するまで更新されます。価格は日本のApp Storeの価格です。"
+
+it:
+  territory: ITA
+  note: "Gli abbonamenti si rinnovano fino alla disdetta. I prezzi sono quelli dell'App Store Italia."
+
+nl:
+  territory: NLD
+  note: "Abonnementen verlengen tot ze worden opgezegd. Prijzen komen uit de Nederlandse App Store."
+
+pt:
+  territory: BRA
+  note: "As assinaturas renovam até serem canceladas. Os preços são da App Store do Brasil."
+
+pl:
+  territory: POL
+  note: "Subskrypcje odnawiają się do anulowania. Ceny pochodzą z polskiego App Store."
+
+ru:
+  territory: RUS
+  note: "Подписки продлеваются, пока их не отменят. Цены из App Store для России."
+
+zh:
+  territory: CHN
+  note: "订阅会续订直至取消。价格来自中国大陆 App Store。"
+
+zh-hant:
+  territory: TWN
+  note: "訂閱會續訂直至取消。價格來自台灣 App Store。"
+
+ko:
+  territory: KOR
+  note: "구독은 해지할 때까지 갱신됩니다. 가격은 한국 App Store 기준입니다."
+
+ar:
+  territory: SAU
+  note: "تتجدد الاشتراكات حتى الإلغاء. الأسعار من App Store في السعودية."
+
+tr:
+  territory: TUR
+  note: "Abonelikler iptal edilene dek yenilenir. Fiyatlar Türkiye App Store fiyatlarıdır."
+
+hi:
+  territory: IND
+  note: "सदस्यता रद्द होने तक नवीकृत होती है। कीमतें भारत के App Store की हैं।"
+
+id:
+  territory: IDN
+  note: "Langganan diperbarui sampai dibatalkan. Harga dari App Store Indonesia."
+
+th:
+  territory: THA
+  note: "การสมัครสมาชิกต่ออายุจนกว่าจะยกเลิก ราคาจาก App Store ประเทศไทย"
+
+vi:
+  territory: VNM
+  note: "Thuê bao gia hạn đến khi hủy. Giá lấy từ App Store Việt Nam."
+
+ms:
+  territory: MYS
+  note: "Langganan diperbaharui sehingga dibatalkan. Harga dari App Store Malaysia."
+
+uk:
+  territory: UKR
+  note: "Підписки поновлюються, доки їх не скасують. Ціни з App Store для України."
+
+he:
+  territory: ISR
+  note: "המנויים מתחדשים עד הביטול. המחירים הם ממחיר App Store בישראל."
+
+cs:
+  territory: CZE
+  note: "Předplatné se obnovuje, dokud ho nezrušíte. Ceny jsou z App Store pro Česko."
+
+sk:
+  territory: SVK
+  note: "Predplatné sa obnovuje, kým ho nezrušíte. Ceny sú z App Store pre Slovensko."
+
+hu:
+  territory: HUN
+  note: "Az előfizetések a lemondásig megújulnak. Az árak a magyar App Store árai."
+
+ro:
+  territory: ROU
+  note: "Abonamentele se reînnoiesc până la anulare. Prețurile sunt din App Store România."
+
+hr:
+  territory: HRV
+  note: "Pretplate se obnavljaju dok ih ne otkažete. Cijene su iz hrvatskog App Storea."
+
+el:
+  territory: GRC
+  note: "Οι συνδρομές ανανεώνονται μέχρι την ακύρωση. Οι τιμές είναι από το App Store Ελλάδας."
+
+da:
+  territory: DNK
+  note: "Abonnementer fornyes, indtil de opsiges. Priserne er fra den danske App Store."
+
+sv:
+  territory: SWE
+  note: "Prenumerationer förnyas tills de sägs upp. Priserna är från svenska App Store."
+
+"no":
+  territory: NOR
+  note: "Abonnementer fornyes til de sies opp. Prisene er fra den norske App Store."
+
+fi:
+  territory: FIN
+  note: "Tilaukset uusiutuvat, kunnes ne perutaan. Hinnat ovat Suomen App Storen hintoja."
+
+ca:
+  territory: ESP
+  note: "Les subscripcions es renoven fins que es cancel·len. Els preus són de l'App Store d'Espanya."

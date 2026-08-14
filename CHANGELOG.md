@@ -8,6 +8,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- `npm run sync:dial-prices` pulls live Dial customer prices from App Store Connect
+  into `_data/dial_prices.yml` for every marketing-page storefront.
 - Dial marketing, support, and privacy pages for the remaining 1.2 locales, each under its own
   prefix, with matching language-picker names and store listing URLs.
 - Spanish Dial marketing page at `/es/dial/`, plus translated support and privacy pages, with
@@ -18,6 +20,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- Show each Dial marketing page's App Store currency and amounts from live ASC
+  for that language's primary storefront, instead of U.S. dollar prices on every locale.
 - Shorten Dial hero headlines in most locales so they wrap in two or three lines at 10ch,
   without a mid-word hyphen through GLP-1.
 - Order the Dial language picker by total speakers, highest first, instead of add-order.

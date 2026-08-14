@@ -1,4 +1,6 @@
 {%- assign copy = site.data.dial[page.lang] -%}
+{%- assign storefront = site.data.dial_storefronts[page.lang] | default: site.data.dial_storefronts.en -%}
+{%- assign prices = site.data.dial_prices[page.lang] | default: site.data.dial_prices.en -%}
 {%- assign app_store_url = 'https://apps.apple.com/app/id6789408903' -%}
 {%- assign hero_sizes = '(max-width: 760px) 78vw, 430px' -%}
 {%- assign stage_sizes = '(max-width: 760px) 76vw, 390px' -%}
@@ -32,9 +34,9 @@
         "installUrl": "{{ app_store_url }}",
         "offers": {
           "@type": "AggregateOffer",
-          "lowPrice": "{{ site.price_dial_monthly }}",
-          "highPrice": "{{ site.price_dial_lifetime }}",
-          "priceCurrency": "USD",
+          "lowPrice": "{{ prices.monthly }}",
+          "highPrice": "{{ prices.lifetime }}",
+          "priceCurrency": "{{ prices.currency }}",
           "offerCount": "3"
         },
         "publisher": {
@@ -273,18 +275,18 @@
               <div class="dial-plan-options" aria-label="{{ copy.plans.options_label }}">
                 <div>
                   <strong>{{ copy.plans.lifetime_name }}</strong>
-                  <span>${{ site.price_dial_lifetime }} {{ copy.plans.lifetime_terms }}</span>
+                  <span>{{ prices.lifetime_display }} {{ copy.plans.lifetime_terms }}</span>
                 </div>
                 <div>
                   <strong>{{ copy.plans.annual_name }}</strong>
-                  <span>${{ site.price_dial_annual }} {{ copy.plans.annual_terms }}</span>
+                  <span>{{ prices.annual_display }} {{ copy.plans.annual_terms }}</span>
                 </div>
                 <div>
                   <strong>{{ copy.plans.monthly_name }}</strong>
-                  <span>${{ site.price_dial_monthly }} {{ copy.plans.monthly_terms }}</span>
+                  <span>{{ prices.monthly_display }} {{ copy.plans.monthly_terms }}</span>
                 </div>
               </div>
-              <p class="dial-plan-note">{{ copy.plans.price_note }}</p>
+              <p class="dial-plan-note">{{ storefront.note }}</p>
             </article>
           </div>
         </div>

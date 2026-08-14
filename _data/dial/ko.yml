@@ -144,7 +144,7 @@ plans:
   annual_terms: "연"
   monthly_name: "월간"
   monthly_terms: "월"
-  price_note: "구독은 해지할 때까지 갱신됩니다. 표시 가격은 미국 가격입니다. App Store가 구매 전에 현지 가격을 보여 줍니다."
+
 
 privacy:
   kicker: "개인정보"
