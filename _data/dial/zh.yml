@@ -3,50 +3,50 @@ app_store_badge_alt: "从 App Store 下载 Dial"
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-zh
     width: 1290
     height: 2160
     alt: "Dial 的今天页，显示下次提醒、估计药量水平和记录剂量按钮"
   level:
-    base: dial-web-level
+    base: dial-web-level-zh
     width: 1290
     height: 1620
     alt: "Dial 估计水平屏幕，根据已记录剂量绘制时间图表"
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-zh
     width: 1290
     height: 1800
     alt: "Dial 剂量表单，含药物、剂量、时间和注射部位字段"
   history:
-    base: dial-web-history
+    base: dial-web-history-zh
     width: 1290
     height: 2640
     alt: "Dial 历史，含剂量和体重随时间变化的图表"
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-zh
     width: 1290
     height: 2100
     alt: "Dial Pro 副作用趋势屏幕，显示现有记录的每周频率和严重程度"
   report:
-    base: dial-web-report
+    base: dial-web-report-zh
     width: 1836
     height: 2376
     alt: "Dial Pro PDF 报告的一页，向医生汇总剂量历史、体重随时间和副作用"
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-zh
     width: 792
     height: 968
     alt: "Apple Watch 上的 Dial，周期环显示距下次剂量还有几天，并显示下次提醒和记录按钮"
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-zh
     width: 792
     height: 968
     alt: "Apple Watch 上的 Dial 用勾号确认已记录剂量，并显示剂量和注射部位"
 
 hero:
   availability: "已在 App Store 上架"
-  headline_lead: "把 GLP-1"
-  headline_accent: "写进日记。"
+  headline_lead: "记下每次剂量。"
+  headline_accent: ""
   category: "Dial 是面向 iPhone 和 Apple Watch 的私人 GLP-1 用药日记。"
   detail: "在 iPhone 或 Apple Watch 上记录剂量，查看根据您所记剂量绘出的估计水平。核心记录留在设备上，或留在您的私人 iCloud 数据库中。"
   secondary_cta: "Dial 怎么用"

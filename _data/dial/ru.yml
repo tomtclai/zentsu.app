@@ -3,51 +3,51 @@ app_store_badge_alt: "Скачать Dial в App Store"
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-ru
     width: 1290
     height: 2160
     alt: "Экран Сегодня в Dial со следующим напоминанием, оценочным уровнем препарата и кнопкой записи дозы"
   level:
-    base: dial-web-level
+    base: dial-web-level-ru
     width: 1290
     height: 1620
     alt: "Экран оценочного уровня Dial с графиком во времени по записанным дозам"
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-ru
     width: 1290
     height: 1800
     alt: "Форма дозы Dial с полями препарата, количества, времени и места инъекции"
   history:
-    base: dial-web-history
+    base: dial-web-history-ru
     width: 1290
     height: 2640
     alt: "История Dial с графиками дозы и веса во времени"
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-ru
     width: 1290
     height: 2100
     alt: "Экран тенденций побочных эффектов Dial Pro с недельной частотой и тяжестью из существующих записей"
   report:
-    base: dial-web-report
+    base: dial-web-report-ru
     width: 1836
     height: 2376
     alt: "Страница PDF-отчёта Dial Pro с историей доз, весом во времени и побочными эффектами для лечащего врача"
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-ru
     width: 792
     height: 968
     alt: "Dial на Apple Watch с кольцом цикла, которое считает дни до следующей дозы, следующим напоминанием и кнопкой записи"
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-ru
     width: 792
     height: 968
     alt: "Dial на Apple Watch подтверждает записанную дозу галочкой и показывает количество и место инъекции"
 
 hero:
   availability: "Сейчас в App Store"
-  headline_lead: "Ваш режим GLP-1,"
-  headline_accent: "в журнале."
-  category: "Dial является личным дневником препаратов GLP-1 для iPhone и Apple Watch."
+  headline_lead: "Дневник доз GLP-1."
+  headline_accent: ""
+  category: "Dial: личный дневник препаратов GLP-1 для iPhone и Apple Watch."
   detail: "Записывайте дозы на iPhone или Apple Watch, смотрите оценочный уровень (это оценка) по тем дозам, которые ведёте, и храните основные записи на устройстве или в своей частной базе iCloud."
   secondary_cta: "Как работает Dial"
   platforms_label: "Платформы и хранение Dial"

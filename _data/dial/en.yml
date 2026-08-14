@@ -58,8 +58,8 @@ images:
 
 hero:
   availability: Available now on the App Store
-  headline_lead: Your GLP-1
-  headline_accent: on record.
+  headline_lead: "Keep a GLP-1 log."
+  headline_accent: ""
   category: Dial is a private GLP-1 medication tracker for iPhone and Apple Watch.
   detail:
     Log doses on iPhone or Apple Watch, see an estimated level built from the doses

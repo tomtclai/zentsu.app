@@ -3,50 +3,50 @@ app_store_badge_alt: "Descărcați Dial din App Store"
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-ro
     width: 1290
     height: 2160
     alt: "Ecranul Astăzi din Dial cu următoarea reamintire, nivelul estimat al medicamentului și un buton de înregistrare a dozei"
   level:
-    base: dial-web-level
+    base: dial-web-level-ro
     width: 1290
     height: 1620
     alt: "Ecranul de nivel estimat Dial cu un grafic în timp din dozele înregistrate"
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-ro
     width: 1290
     height: 1800
     alt: "Formularul de doză Dial cu câmpuri pentru medicament, cantitate, oră și loc de injecție"
   history:
-    base: dial-web-history
+    base: dial-web-history-ro
     width: 1290
     height: 2640
     alt: "Istoricul Dial cu grafice de doză și greutate în timp"
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-ro
     width: 1290
     height: 2100
     alt: "Ecranul de tendințe ale efectelor secundare Dial Pro cu frecvență săptămânală și severitate din înregistrările existente"
   report:
-    base: dial-web-report
+    base: dial-web-report-ro
     width: 1836
     height: 2376
     alt: "O pagină din raportul PDF Dial Pro cu istoricul dozelor, greutatea în timp și efectele secundare pentru medicul care prescrie"
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-ro
     width: 792
     height: 968
     alt: "Dial pe Apple Watch cu un inel de ciclu care numără zilele până la următoarea doză, următoarea reamintire și un buton de înregistrare"
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-ro
     width: 792
     height: 968
     alt: "Dial pe Apple Watch confirmă o doză înregistrată cu o bifă și arată cantitatea și locul de injecție"
 
 hero:
   availability: "Acum în App Store"
-  headline_lead: "Rutina GLP-1,"
-  headline_accent: "în jurnal."
+  headline_lead: "Evidența dozelor GLP-1."
+  headline_accent: ""
   category: "Dial este un jurnal privat de medicamente GLP-1 pentru iPhone și Apple Watch."
   detail: "Înregistrați dozele pe iPhone sau Apple Watch, vedeți un nivel estimat din dozele notate și păstrați înregistrările principale pe dispozitiv sau în contul iCloud privat."
   secondary_cta: "Cum funcționează Dial"

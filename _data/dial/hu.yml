@@ -3,50 +3,50 @@ app_store_badge_alt: "A Dial letöltése az App Store-ból"
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-hu
     width: 1290
     height: 2160
     alt: "A Dial Ma képernyője a következő emlékeztetővel, a becsült gyógyszerszinttel és egy adag rögzítésére szolgáló gombbal"
   level:
-    base: dial-web-level
+    base: dial-web-level-hu
     width: 1290
     height: 1620
     alt: "A Dial becsült szint képernyője a rögzített adagokból készült idődiagrammal"
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-hu
     width: 1290
     height: 1800
     alt: "A Dial adagűrlapja gyógyszer, mennyiség, idő és injekcióhely mezőkkel"
   history:
-    base: dial-web-history
+    base: dial-web-history-hu
     width: 1290
     height: 2640
     alt: "A Dial előzménye adag- és testsúlydiagramokkal az időben"
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-hu
     width: 1290
     height: 2100
     alt: "A Dial Pro mellékhatás-trend képernyője heti gyakorisággal és súlyossággal a meglévő bejegyzésekből"
   report:
-    base: dial-web-report
+    base: dial-web-report-hu
     width: 1836
     height: 2376
     alt: "A Dial Pro PDF-jelentésének egy oldala adagelőzménnyel, testsúllyal az időben és mellékhatásokkal a felírónak"
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-hu
     width: 792
     height: 968
     alt: "A Dial Apple Watchon ciklusgyűrűvel, amely a következő adagig számolja a napokat, a következő emlékeztetővel és rögzítőgombbal"
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-hu
     width: 792
     height: 968
     alt: "A Dial Apple Watchon pipával igazolja a rögzített adagot, és mutatja a mennyiséget és az injekcióhelyet"
 
 hero:
   availability: "Most az App Store-ban"
-  headline_lead: "Az Ön GLP-1,"
-  headline_accent: "naplóban."
+  headline_lead: "GLP-1 napló."
+  headline_accent: ""
   category: "A Dial privát GLP-1-gyógyszernapló iPhone-ra és Apple Watchra."
   detail: "Rögzítsen adagokat iPhone-on vagy Apple Watchon, lásson becsült szintet a rögzített adagokból, és tartsa a fő bejegyzéseket a készüléken vagy a privát iCloud-adatbázisában."
   secondary_cta: "Hogyan működik a Dial"

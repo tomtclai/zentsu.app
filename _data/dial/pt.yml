@@ -6,50 +6,50 @@ app_store_badge_alt: Baixar o Dial na App Store
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-pt
     width: 1290
     height: 2160
     alt:
       Tela Hoje do Dial com o próximo lembrete, o nível estimado do medicamento e um
       botão para registrar uma dose
   level:
-    base: dial-web-level
+    base: dial-web-level-pt
     width: 1290
     height: 1620
     alt: Tela de nível estimado do Dial com um gráfico no tempo a partir das doses registradas
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-pt
     width: 1290
     height: 1800
     alt: Formulário de dose do Dial com os campos medicamento, quantidade, hora e local de injeção
   history:
-    base: dial-web-history
+    base: dial-web-history-pt
     width: 1290
     height: 2640
     alt: Tela de histórico do Dial com gráficos de doses e peso ao longo do tempo
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-pt
     width: 1290
     height: 2100
     alt:
       Tela do Dial Pro de tendências de efeitos colaterais com frequência e gravidade
       semanais dos registros existentes
   report:
-    base: dial-web-report
+    base: dial-web-report-pt
     width: 1836
     height: 2376
     alt:
       Uma página do relatório em PDF do Dial Pro com o histórico de doses, o peso ao
       longo do tempo e os efeitos colaterais para quem prescreve
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-pt
     width: 792
     height: 968
     alt:
       Dial no Apple Watch com um anel de ciclo que conta os dias até a próxima dose,
       o próximo lembrete e um botão para registrar
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-pt
     width: 792
     height: 968
     alt:
@@ -58,8 +58,8 @@ images:
 
 hero:
   availability: Já disponível na App Store
-  headline_lead: 'Sua rotina de GLP-1,'
-  headline_accent: anotada.
+  headline_lead: "GLP-1 por escrito."
+  headline_accent: ""
   category: O Dial é um registro privado de medicamentos GLP-1 para iPhone e Apple Watch.
   detail:
     Registre doses no iPhone ou no Apple Watch, veja um nível estimado a partir das

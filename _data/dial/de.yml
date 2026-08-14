@@ -6,50 +6,50 @@ app_store_badge_alt: Dial im App Store laden
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-de
     width: 1290
     height: 2160
     alt:
       Dial-Bildschirm Heute mit der nächsten Erinnerung, dem geschätzten Medikamentenspiegel
       und einer Schaltfläche zum Erfassen einer Dosis
   level:
-    base: dial-web-level
+    base: dial-web-level-de
     width: 1290
     height: 1620
     alt: Dial-Bildschirm zum geschätzten Spiegel mit einem Zeitdiagramm aus erfassten Dosen
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-de
     width: 1290
     height: 1800
     alt: Dial-Dosisformular mit Feldern für Medikament, Menge, Uhrzeit und Injektionsstelle
   history:
-    base: dial-web-history
+    base: dial-web-history-de
     width: 1290
     height: 2640
     alt: Dial-Verlauf mit Dosis- und Gewichtsdiagrammen über die Zeit
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-de
     width: 1290
     height: 2100
     alt:
       Dial-Pro-Bildschirm zu Nebenwirkungstrends mit wöchentlicher Häufigkeit und Schwere
       aus vorhandenen Einträgen
   report:
-    base: dial-web-report
+    base: dial-web-report-de
     width: 1836
     height: 2376
     alt:
       Eine Seite des Dial-Pro-PDF-Berichts mit Dosisverlauf, Gewicht über die Zeit und
       Nebenwirkungen für die verschreibende Person
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-de
     width: 792
     height: 968
     alt:
       Dial auf der Apple Watch mit einem Zyklusring, der die Tage bis zur nächsten Dosis
       zählt, der nächsten Erinnerung und einer Schaltfläche zum Erfassen
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-de
     width: 792
     height: 968
     alt:
@@ -58,9 +58,9 @@ images:
 
 hero:
   availability: Jetzt im App Store
-  headline_lead: 'Ihre GLP-1 Routine,'
-  headline_accent: im Protokoll.
-  category: Dial ist ein privates GLP-1-Medikamententagebuch für iPhone und Apple Watch.
+  headline_lead: "Ihr GLP-1-Tagebuch."
+  headline_accent: ""
+  category: "Für iPhone und Apple Watch. Die Einträge bleiben bei Ihnen."
   detail:
     Erfassen Sie Dosen auf iPhone oder Apple Watch, sehen Sie einen geschätzten Spiegel
     aus den Dosen, die Sie festhalten, und behalten Sie Kerndatensätze auf dem Gerät oder

@@ -3,50 +3,50 @@ app_store_badge_alt: "Dial'i App Store'dan indirin"
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-tr
     width: 1290
     height: 2160
     alt: "Sonraki anımsatıcı, tahmini ilaç düzeyi ve doz kaydetme düğmesiyle Dial Bugün ekranı"
   level:
-    base: dial-web-level
+    base: dial-web-level-tr
     width: 1290
     height: 1620
     alt: "Kaydedilen dozlardan zaman grafiğiyle Dial tahmini düzey ekranı"
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-tr
     width: 1290
     height: 1800
     alt: "İlaç, miktar, saat ve enjeksiyon yeri alanlarıyla Dial doz formu"
   history:
-    base: dial-web-history
+    base: dial-web-history-tr
     width: 1290
     height: 2640
     alt: "Zaman içinde doz ve kilo grafiklerini gösteren Dial geçmişi"
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-tr
     width: 1290
     height: 2100
     alt: "Mevcut kayıtlardan haftalık sıklık ve şiddetle Dial Pro yan etki eğilimleri ekranı"
   report:
-    base: dial-web-report
+    base: dial-web-report-tr
     width: 1836
     height: 2376
     alt: "Hekiminize doz geçmişi, zaman içinde kilo ve yan etkileri özetleyen Dial Pro PDF raporu sayfası"
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-tr
     width: 792
     height: 968
     alt: "Sonraki doza gün sayan döngü halkası, sonraki anımsatıcı ve kaydetme düğmesiyle Apple Watch'ta Dial"
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-tr
     width: 792
     height: 968
     alt: "Apple Watch'ta Dial kaydedilen dozu onay işaretiyle doğrular, miktarı ve enjeksiyon yerini gösterir"
 
 hero:
   availability: "Şimdi App Store'da"
-  headline_lead: "GLP-1 rutininiz,"
-  headline_accent: "kayıtta."
+  headline_lead: "GLP-1 dozlarınız yazılı."
+  headline_accent: ""
   category: "Dial, iPhone ve Apple Watch için özel bir GLP-1 ilaç günlüğüdür."
   detail: "iPhone veya Apple Watch'ta doz kaydedin, tuttuğunuz dozlardan oluşan tahmini düzeyi görün ve temel kayıtları cihazda veya özel iCloud veritabanınızda tutun."
   secondary_cta: "Dial nasıl çalışır"

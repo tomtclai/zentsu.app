@@ -3,51 +3,51 @@ app_store_badge_alt: "حمّلوا Dial من App Store"
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-ar
     width: 1290
     height: 2160
     alt: "شاشة اليوم في Dial مع التذكير التالي والمستوى المقدّر للدواء وزر لتسجيل جرعة"
   level:
-    base: dial-web-level
+    base: dial-web-level-ar
     width: 1290
     height: 1620
     alt: "شاشة المستوى المقدّر في Dial مع مخطط زمني من الجرعات المسجّلة"
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-ar
     width: 1290
     height: 1800
     alt: "نموذج جرعة Dial بحقول للدواء والكمية والوقت وموضع الحقن"
   history:
-    base: dial-web-history
+    base: dial-web-history-ar
     width: 1290
     height: 2640
     alt: "سجل Dial مع مخططات الجرعة والوزن عبر الزمن"
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-ar
     width: 1290
     height: 2100
     alt: "شاشة اتجاهات الآثار الجانبية في Dial Pro بتكرار أسبوعي وشدة من السجلات الحالية"
   report:
-    base: dial-web-report
+    base: dial-web-report-ar
     width: 1836
     height: 2376
     alt: "صفحة من تقرير PDF في Dial Pro تلخص سجل الجرعات والوزن عبر الزمن والآثار الجانبية لمن وصف الدواء"
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-ar
     width: 792
     height: 968
     alt: "Dial على Apple Watch مع حلقة دورة تعد الأيام حتى الجرعة التالية والتذكير التالي وزر تسجيل"
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-ar
     width: 792
     height: 968
     alt: "Dial على Apple Watch يؤكد جرعة مسجّلة بعلامة صح ويعرض الكمية وموضع الحقن"
 
 hero:
   availability: "الآن في App Store"
-  headline_lead: "GLP-1 لديكم،"
-  headline_accent: "مسجّل."
-  category: "Dial سجل أدوية GLP-1 خاص لـ iPhone وApple Watch."
+  headline_lead: "جرعات GLP-1 في سجل خاص."
+  headline_accent: ""
+  category: "Dial دفتر جرعات GLP-1 على iPhone وApple Watch."
   detail: "سجّلوا الجرعات على iPhone أو Apple Watch، واطلعوا على مستوى مقدّر يُبنى من الجرعات التي تسجّلونها، وأبقوا السجلات الأساسية على الجهاز أو في قاعدة iCloud الخاصة بكم."
   secondary_cta: "كيف يعمل Dial"
   platforms_label: "منصات Dial والتخزين"

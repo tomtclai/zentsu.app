@@ -3,51 +3,51 @@ app_store_badge_alt: "Stáhnout Dial z App Store"
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-cs
     width: 1290
     height: 2160
     alt: "Obrazovka Dnes v Dial s další připomínkou, odhadovanou hladinou léku a tlačítkem k zaznamenání dávky"
   level:
-    base: dial-web-level
+    base: dial-web-level-cs
     width: 1290
     height: 1620
     alt: "Obrazovka odhadované hladiny v Dial s časovým grafem z zaznamenaných dávek"
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-cs
     width: 1290
     height: 1800
     alt: "Formulář dávky v Dial s poli pro lék, množství, čas a místo vpichu"
   history:
-    base: dial-web-history
+    base: dial-web-history-cs
     width: 1290
     height: 2640
     alt: "Historie Dial s grafy dávek a hmotnosti v čase"
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-cs
     width: 1290
     height: 2100
     alt: "Obrazovka trendů nežádoucích účinků Dial Pro s týdenní četností a závažností z existujících záznamů"
   report:
-    base: dial-web-report
+    base: dial-web-report-cs
     width: 1836
     height: 2376
     alt: "Stránka PDF zprávy Dial Pro se souhrnem historie dávek, hmotnosti v čase a nežádoucích účinků pro předepisující osobu"
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-cs
     width: 792
     height: 968
     alt: "Dial na Apple Watch s cyklickým kroužkem, který odpočítává dny do další dávky, další připomínkou a tlačítkem k záznamu"
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-cs
     width: 792
     height: 968
     alt: "Dial na Apple Watch potvrzuje zaznamenanou dávku fajfkou a ukazuje množství a místo vpichu"
 
 hero:
   availability: "Teď v App Store"
-  headline_lead: "Vaše GLP-1"
-  headline_accent: "v záznamu."
-  category: "Dial je soukromý GLP-1 deník léků pro iPhone a Apple Watch."
+  headline_lead: "Váš záznam dávek GLP-1."
+  headline_accent: ""
+  category: "Soukromý deník dávek GLP-1 pro iPhone a Apple Watch."
   detail: "Zaznamenávejte dávky na iPhonu nebo Apple Watch, sledujte odhadovanou hladinu z dávek, které vedete, a držte hlavní záznamy na zařízení nebo v soukromé databázi iCloud."
   secondary_cta: "Jak Dial funguje"
   platforms_label: "Platformy Dial a úložiště"

@@ -3,50 +3,50 @@ app_store_badge_alt: "Hämta Dial i App Store"
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-sv
     width: 1290
     height: 2160
     alt: "Dial-skärmen I dag med nästa påminnelse, den uppskattade läkemedelsnivån och en knapp för att registrera en dos"
   level:
-    base: dial-web-level
+    base: dial-web-level-sv
     width: 1290
     height: 1620
     alt: "Dial-skärm för uppskattad nivå med ett tidsdiagram från registrerade doser"
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-sv
     width: 1290
     height: 1800
     alt: "Dial-dosformulär med fält för läkemedel, mängd, tid och injektionsställe"
   history:
-    base: dial-web-history
+    base: dial-web-history-sv
     width: 1290
     height: 2640
     alt: "Dial-historik med dos- och viktdiagram över tid"
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-sv
     width: 1290
     height: 2100
     alt: "Dial Pro-skärm för biverkningstrender med veckovis frekvens och allvarlighetsgrad från befintliga poster"
   report:
-    base: dial-web-report
+    base: dial-web-report-sv
     width: 1836
     height: 2376
     alt: "En sida i Dial Pro-PDF-rapporten med doshistorik, vikt över tid och biverkningar till förskrivaren"
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-sv
     width: 792
     height: 968
     alt: "Dial på Apple Watch med en cykelring som räknar dagar till nästa dos, nästa påminnelse och en knapp för att registrera"
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-sv
     width: 792
     height: 968
     alt: "Dial på Apple Watch bekräftar en registrerad dos med en bock och visar mängd och injektionsställe"
 
 hero:
   availability: "Nu i App Store"
-  headline_lead: "GLP-1-rutin,"
-  headline_accent: "på pränt."
+  headline_lead: "GLP-1 du antecknar."
+  headline_accent: ""
   category: "Dial är en privat GLP-1-läkemedelsjournal för iPhone och Apple Watch."
   detail: "Registrera doser på iPhone eller Apple Watch, se en uppskattad nivå byggd av doserna du registrerar, och behåll kärnposterna på enheten eller i din privata iCloud-databas."
   secondary_cta: "Så fungerar Dial"

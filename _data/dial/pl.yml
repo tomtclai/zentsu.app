@@ -3,50 +3,50 @@ app_store_badge_alt: "Pobierz Dial z App Store"
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-pl
     width: 1290
     height: 2160
     alt: "Ekran Dziś w Dial z następnym przypomnieniem, szacowanym poziomem leku i przyciskiem zapisu dawki"
   level:
-    base: dial-web-level
+    base: dial-web-level-pl
     width: 1290
     height: 1620
     alt: "Ekran szacowanego poziomu w Dial z wykresem czasu z zapisanych dawek"
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-pl
     width: 1290
     height: 1800
     alt: "Formularz dawki w Dial z polami leku, ilości, czasu i miejsca wstrzyknięcia"
   history:
-    base: dial-web-history
+    base: dial-web-history-pl
     width: 1290
     height: 2640
     alt: "Historia Dial z wykresami dawek i wagi w czasie"
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-pl
     width: 1290
     height: 2100
     alt: "Ekran trendów działań niepożądanych Dial Pro z tygodniową częstością i nasileniem z istniejących wpisów"
   report:
-    base: dial-web-report
+    base: dial-web-report-pl
     width: 1836
     height: 2376
     alt: "Strona raportu PDF Dial Pro z historią dawek, wagą w czasie i działaniami niepożądanymi dla osoby przepisującej"
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-pl
     width: 792
     height: 968
     alt: "Dial na Apple Watch z pierścieniem cyklu odliczającym dni do następnej dawki, następnym przypomnieniem i przyciskiem zapisu"
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-pl
     width: 792
     height: 968
     alt: "Dial na Apple Watch potwierdza zapisaną dawkę znakiem zaznaczenia i pokazuje ilość oraz miejsce wstrzyknięcia"
 
 hero:
   availability: "Już w App Store"
-  headline_lead: "Państwa GLP-1,"
-  headline_accent: "w zapisie."
+  headline_lead: "Dziennik dawek GLP-1."
+  headline_accent: ""
   category: "Dial to prywatny rejestr leków GLP-1 na iPhone i Apple Watch."
   detail: "Zapisują Państwo dawki na iPhonie lub Apple Watch, oglądają szacowany poziom zbudowany z dawek, które zapisują, i trzymają główne zapisy na urządzeniu lub w prywatnej bazie iCloud."
   secondary_cta: "Jak działa Dial"

@@ -3,50 +3,50 @@ app_store_badge_alt: "Hent Dial i App Store"
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-da
     width: 1290
     height: 2160
     alt: "Dial-skærmen I dag med den næste påmindelse, det estimerede medicinniveau og en knap til at registrere en dosis"
   level:
-    base: dial-web-level
+    base: dial-web-level-da
     width: 1290
     height: 1620
     alt: "Dial-skærm for estimeret niveau med et tidsdiagram ud fra registrerede doser"
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-da
     width: 1290
     height: 1800
     alt: "Dial-dosisformular med felter til medicin, mængde, tid og injektionssted"
   history:
-    base: dial-web-history
+    base: dial-web-history-da
     width: 1290
     height: 2640
     alt: "Dial-historik med dosis- og vægtdiagrammer over tid"
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-da
     width: 1290
     height: 2100
     alt: "Dial Pro-skærm for bivirkningstendenser med ugentlig hyppighed og alvorlighed fra eksisterende poster"
   report:
-    base: dial-web-report
+    base: dial-web-report-da
     width: 1836
     height: 2376
     alt: "En side i Dial Pro-PDF-rapporten med dosishistorik, vægt over tid og bivirkninger til den ordinerende læge"
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-da
     width: 792
     height: 968
     alt: "Dial på Apple Watch med en cyklusring, der tæller dage til næste dosis, næste påmindelse og en knap til at registrere"
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-da
     width: 792
     height: 968
     alt: "Dial på Apple Watch bekræfter en registreret dosis med et flueben og viser mængde og injektionssted"
 
 hero:
   availability: "Nu i App Store"
-  headline_lead: "Din GLP-1 rutine,"
-  headline_accent: "i journalen."
+  headline_lead: "Din GLP-1 på skrift."
+  headline_accent: ""
   category: "Dial er en privat GLP-1-medicinjournal til iPhone og Apple Watch."
   detail: "Registrer doser på iPhone eller Apple Watch, se et estimeret niveau bygget af de doser, du fører, og behold de centrale poster på enheden eller i din private iCloud-database."
   secondary_cta: "Sådan virker Dial"

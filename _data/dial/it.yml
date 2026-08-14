@@ -6,50 +6,50 @@ app_store_badge_alt: Scarichi Dial sull'App Store
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-it
     width: 1290
     height: 2160
     alt:
       Schermata Oggi di Dial con il prossimo promemoria, il livello stimato del farmaco
       e un pulsante per registrare una dose
   level:
-    base: dial-web-level
+    base: dial-web-level-it
     width: 1290
     height: 1620
     alt: Schermata del livello stimato di Dial con un grafico nel tempo dalle dosi registrate
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-it
     width: 1290
     height: 1800
     alt: Modulo dose di Dial con i campi farmaco, quantità, ora e sito di iniezione
   history:
-    base: dial-web-history
+    base: dial-web-history-it
     width: 1290
     height: 2640
     alt: Schermata cronologia di Dial con grafici di dosi e peso nel tempo
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-it
     width: 1290
     height: 2100
     alt:
       Schermata Dial Pro delle tendenze degli effetti collaterali con frequenza e gravità
       settimanali dai dati esistenti
   report:
-    base: dial-web-report
+    base: dial-web-report-it
     width: 1836
     height: 2376
     alt:
       Una pagina del riepilogo PDF Dial Pro che riassume cronologia delle dosi, peso nel
       tempo ed effetti collaterali per chi prescrive
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-it
     width: 792
     height: 968
     alt:
       Dial su Apple Watch con un anello di ciclo che conta i giorni alla prossima dose,
       il prossimo promemoria e un pulsante per registrare
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-it
     width: 792
     height: 968
     alt:
@@ -58,8 +58,8 @@ images:
 
 hero:
   availability: Disponibile ora sull'App Store
-  headline_lead: 'La sua GLP-1,'
-  headline_accent: nel registro.
+  headline_lead: "Le dosi annotate."
+  headline_accent: ""
   category: Dial è un registro privato di farmaci GLP-1 per iPhone e Apple Watch.
   detail:
     Registri le dosi su iPhone o Apple Watch, veda un livello stimato costruito dalle

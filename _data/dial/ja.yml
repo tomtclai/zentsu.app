@@ -52,9 +52,9 @@ images:
 
 hero:
   availability: App Storeで公開中
-  headline_lead: 記録する。思い出す。
-  headline_accent: 続ける。
-  category: Dialは、iPhoneとApple Watch向けの非公開のGLP-1記録です。
+  headline_lead: "GLP-1を記録に残す。"
+  headline_accent: ""
+  category: "Dialは、iPhoneとApple Watch向けの非公開の記録です。"
   detail:
     iPhoneまたはApple WatchでGLP-1の投与を記録し、記録した投与から推定レベルを見ます。主な記録は端末内、または自分のプライベートなiCloudデータベースに残ります。
   secondary_cta: Dialの使い方

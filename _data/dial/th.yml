@@ -3,50 +3,50 @@ app_store_badge_alt: "ดาวน์โหลด Dial จาก App Store"
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-th
     width: 1290
     height: 2160
     alt: "หน้าจอวันนี้ของ Dial พร้อมการเตือนถัดไป ระดับยาโดยประมาณ และปุ่มบันทึกขนาดยา"
   level:
-    base: dial-web-level
+    base: dial-web-level-th
     width: 1290
     height: 1620
     alt: "หน้าจอระดับโดยประมาณของ Dial พร้อมกราฟเวลาจากขนาดยาที่บันทึก"
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-th
     width: 1290
     height: 1800
     alt: "แบบฟอร์มขนาดยา Dial พร้อมช่องยา ปริมาณ เวลา และจุดฉีด"
   history:
-    base: dial-web-history
+    base: dial-web-history-th
     width: 1290
     height: 2640
     alt: "ประวัติ Dial พร้อมกราฟขนาดยาและน้ำหนักตามเวลา"
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-th
     width: 1290
     height: 2100
     alt: "หน้าจอแนวโน้มผลข้างเคียง Dial Pro พร้อมความถี่รายสัปดาห์และความรุนแรงจากรายการที่มีอยู่"
   report:
-    base: dial-web-report
+    base: dial-web-report-th
     width: 1836
     height: 2376
     alt: "หน้าหนึ่งของรายงาน PDF Dial Pro สรุปประวัติขนาดยา น้ำหนักตามเวลา และผลข้างเคียงสำหรับผู้สั่งยา"
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-th
     width: 792
     height: 968
     alt: "Dial บน Apple Watch พร้อมวงจรนับวันที่เหลือถึงขนาดยาถัดไป การเตือนถัดไป และปุ่มบันทึก"
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-th
     width: 792
     height: 968
     alt: "Dial บน Apple Watch ยืนยันขนาดยาที่บันทึกด้วยเครื่องหมายถูก และแสดงปริมาณกับจุดฉีด"
 
 hero:
   availability: "มีใน App Store แล้ว"
-  headline_lead: "GLP-1 ของคุณ"
-  headline_accent: "อยู่ในบันทึก"
+  headline_lead: "จดขนาดยา GLP-1"
+  headline_accent: ""
   category: "Dial เป็นสมุดบันทึกยา GLP-1 ส่วนตัวสำหรับ iPhone และ Apple Watch"
   detail: "บันทึกขนาดยาบน iPhone หรือ Apple Watch ดูระดับโดยประมาณจากขนาดยาที่คุณเก็บ และเก็บบันทึกหลักไว้บนอุปกรณ์หรือในฐานข้อมูล iCloud ส่วนตัว"
   secondary_cta: "Dial ทำงานอย่างไร"

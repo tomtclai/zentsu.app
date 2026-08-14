@@ -3,50 +3,50 @@ app_store_badge_alt: "App Store에서 Dial 다운로드"
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-ko
     width: 1290
     height: 2160
     alt: "다음 알림, 추정 약물 수준, 용량 기록 버튼이 있는 Dial 오늘 화면"
   level:
-    base: dial-web-level
+    base: dial-web-level-ko
     width: 1290
     height: 1620
     alt: "기록한 용량으로 만든 시간 그래프가 있는 Dial 추정 수준 화면"
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-ko
     width: 1290
     height: 1800
     alt: "약물, 양, 시각, 주사 부위 필드가 있는 Dial 용량 양식"
   history:
-    base: dial-web-history
+    base: dial-web-history-ko
     width: 1290
     height: 2640
     alt: "시간에 따른 용량·체중 그래프가 있는 Dial 이력"
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-ko
     width: 1290
     height: 2100
     alt: "기존 기록의 주간 빈도와 중증도가 있는 Dial Pro 부작용 추세 화면"
   report:
-    base: dial-web-report
+    base: dial-web-report-ko
     width: 1836
     height: 2376
     alt: "처방의에게 용량 이력, 시간에 따른 체중, 부작용을 요약한 Dial Pro PDF 보고서 페이지"
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-ko
     width: 792
     height: 968
     alt: "다음 용량까지 남은 날을 세는 주기 링, 다음 알림, 기록 버튼이 있는 Apple Watch의 Dial"
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-ko
     width: 792
     height: 968
     alt: "Apple Watch의 Dial이 체크 표시로 기록된 용량을 확인하고 양과 주사 부위를 표시"
 
 hero:
   availability: "지금 App Store에서"
-  headline_lead: "GLP-1 루틴을"
-  headline_accent: "기록으로."
+  headline_lead: "GLP-1 용량을 남깁니다"
+  headline_accent: ""
   category: "Dial은 iPhone과 Apple Watch를 위한 비공개 GLP-1 약물 일기입니다."
   detail: "iPhone 또는 Apple Watch에서 용량을 기록하고, 직접 남긴 용량으로 만든 추정 수준을 보며, 핵심 기록은 기기 또는 개인 iCloud 데이터베이스에 두세요."
   secondary_cta: "Dial 작동 방식"

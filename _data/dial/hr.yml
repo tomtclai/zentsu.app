@@ -3,50 +3,50 @@ app_store_badge_alt: "Preuzmite Dial iz App Storea"
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-hr
     width: 1290
     height: 2160
     alt: "Zaslon Danas u Dialu sa sljedećim podsjetnikom, procijenjenom razinom lijeka i gumbom za unos doze"
   level:
-    base: dial-web-level
+    base: dial-web-level-hr
     width: 1290
     height: 1620
     alt: "Zaslon procijenjene razine u Dialu s vremenskim grafikonom iz unesenih doza"
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-hr
     width: 1290
     height: 1800
     alt: "Obrazac doze u Dialu s poljima za lijek, količinu, vrijeme i mjesto injekcije"
   history:
-    base: dial-web-history
+    base: dial-web-history-hr
     width: 1290
     height: 2640
     alt: "Povijest Diala s grafikonima doze i težine kroz vrijeme"
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-hr
     width: 1290
     height: 2100
     alt: "Zaslon trendova nuspojava Dial Pro s tjednom učestalošću i ozbiljnošću iz postojećih unosa"
   report:
-    base: dial-web-report
+    base: dial-web-report-hr
     width: 1836
     height: 2376
     alt: "Stranica PDF izvješća Dial Pro s poviješću doza, težinom kroz vrijeme i nuspojavama za propisivača"
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-hr
     width: 792
     height: 968
     alt: "Dial na Apple Watchu s prstenom ciklusa koji broji dane do sljedeće doze, sljedećim podsjetnikom i gumbom za unos"
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-hr
     width: 792
     height: 968
     alt: "Dial na Apple Watchu potvrđuje unesenu dozu kvačicom i pokazuje količinu i mjesto injekcije"
 
 hero:
   availability: "Sada u App Storeu"
-  headline_lead: "Vaš GLP-1"
-  headline_accent: "u zapisu."
+  headline_lead: "GLP-1 ostaje kod vas."
+  headline_accent: ""
   category: "Dial je privatni GLP-1 dnevnik lijekova za iPhone i Apple Watch."
   detail: "Unosite doze na iPhoneu ili Apple Watchu, vidite procijenjenu razinu iz doza koje vodite i držite glavne zapise na uređaju ili u privatnoj iCloud bazi."
   secondary_cta: "Kako Dial radi"

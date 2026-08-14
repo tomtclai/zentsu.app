@@ -3,50 +3,50 @@ app_store_badge_alt: "Tải Dial từ App Store"
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-vi
     width: 1290
     height: 2160
     alt: "Màn hình Hôm nay của Dial với lời nhắc tiếp theo, mức thuốc ước tính và nút ghi liều"
   level:
-    base: dial-web-level
+    base: dial-web-level-vi
     width: 1290
     height: 1620
     alt: "Màn hình mức ước tính Dial với biểu đồ thời gian từ các liều đã ghi"
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-vi
     width: 1290
     height: 1800
     alt: "Biểu mẫu liều Dial với các trường thuốc, lượng, giờ và vị trí tiêm"
   history:
-    base: dial-web-history
+    base: dial-web-history-vi
     width: 1290
     height: 2640
     alt: "Lịch sử Dial với biểu đồ liều và cân nặng theo thời gian"
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-vi
     width: 1290
     height: 2100
     alt: "Màn hình xu hướng tác dụng phụ Dial Pro với tần suất tuần và mức độ từ các mục hiện có"
   report:
-    base: dial-web-report
+    base: dial-web-report-vi
     width: 1836
     height: 2376
     alt: "Một trang báo cáo PDF Dial Pro với lịch sử liều, cân nặng theo thời gian và tác dụng phụ cho bác sĩ kê đơn"
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-vi
     width: 792
     height: 968
     alt: "Dial trên Apple Watch với vòng chu kỳ đếm ngày đến liều tiếp theo, lời nhắc tiếp theo và nút ghi"
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-vi
     width: 792
     height: 968
     alt: "Dial trên Apple Watch xác nhận liều đã ghi bằng dấu tick và hiện lượng cùng vị trí tiêm"
 
 hero:
   availability: "Hiện có trên App Store"
-  headline_lead: "GLP-1 của bạn,"
-  headline_accent: "đã ghi."
+  headline_lead: "Ghi liều GLP-1 trên máy."
+  headline_accent: ""
   category: "Dial là nhật ký thuốc GLP-1 riêng tư cho iPhone và Apple Watch."
   detail: "Ghi liều trên iPhone hoặc Apple Watch, xem mức ước tính từ các liều bạn ghi, và giữ bản ghi chính trên thiết bị hoặc trong cơ sở dữ liệu iCloud riêng."
   secondary_cta: "Dial hoạt động thế nào"

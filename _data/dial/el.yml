@@ -3,51 +3,51 @@ app_store_badge_alt: "Λήψη του Dial από το App Store"
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-el
     width: 1290
     height: 2160
     alt: "Οθόνη Σήμερα του Dial με την επόμενη υπενθύμιση, το εκτιμώμενο επίπεδο φαρμάκου και κουμπί καταγραφής δόσης"
   level:
-    base: dial-web-level
+    base: dial-web-level-el
     width: 1290
     height: 1620
     alt: "Οθόνη εκτιμώμενου επιπέδου του Dial με χρονοδιάγραμμα από καταγεγραμμένες δόσεις"
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-el
     width: 1290
     height: 1800
     alt: "Φόρμα δόσης Dial με πεδία φαρμάκου, ποσότητας, ώρας και σημείου ένεσης"
   history:
-    base: dial-web-history
+    base: dial-web-history-el
     width: 1290
     height: 2640
     alt: "Ιστορικό Dial με γραφήματα δόσης και βάρους στον χρόνο"
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-el
     width: 1290
     height: 2100
     alt: "Οθόνη τάσεων ανεπιθύμητων ενεργειών Dial Pro με εβδομαδιαία συχνότητα και σοβαρότητα από υπάρχουσες εγγραφές"
   report:
-    base: dial-web-report
+    base: dial-web-report-el
     width: 1836
     height: 2376
     alt: "Σελίδα της αναφοράς PDF του Dial Pro με ιστορικό δόσεων, βάρος στον χρόνο και ανεπιθύμητες ενέργειες για τον συνταγογράφο σας"
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-el
     width: 792
     height: 968
     alt: "Το Dial στο Apple Watch με δακτύλιο κύκλου που μετρά τις ημέρες έως την επόμενη δόση, την επόμενη υπενθύμιση και κουμπί καταγραφής"
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-el
     width: 792
     height: 968
     alt: "Το Dial στο Apple Watch επιβεβαιώνει καταγεγραμμένη δόση με σημάδι και δείχνει ποσότητα και σημείο ένεσης"
 
 hero:
   availability: "Τώρα στο App Store"
-  headline_lead: "Η ρουτίνα GLP-1 σας,"
-  headline_accent: "γραμμένη."
-  category: "Το Dial είναι ιδιωτικό ημερολόγιο φαρμάκου GLP-1 για iPhone και Apple Watch."
+  headline_lead: "Ιδιωτικό ημερολόγιο GLP-1."
+  headline_accent: ""
+  category: "Το Dial καταγράφει δόσεις στο iPhone και στο Apple Watch."
   detail: "Καταγράψτε δόσεις στο iPhone ή στο Apple Watch, δείτε εκτιμώμενο επίπεδο από τις δόσεις που καταγράφετε και κρατήστε τις βασικές εγγραφές στη συσκευή ή στην ιδιωτική βάση iCloud σας."
   secondary_cta: "Πώς λειτουργεί το Dial"
   platforms_label: "Πλατφόρμες και αποθήκευση Dial"

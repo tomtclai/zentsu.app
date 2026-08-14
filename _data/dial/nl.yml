@@ -6,50 +6,50 @@ app_store_badge_alt: Dial downloaden in de App Store
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-nl
     width: 1290
     height: 2160
     alt:
       Dial-scherm Vandaag met de volgende herinnering, de geschatte medicijnspiegel
       en een knop om een dosis vast te leggen
   level:
-    base: dial-web-level
+    base: dial-web-level-nl
     width: 1290
     height: 1620
     alt: Dial-scherm voor het geschatte niveau, met een tijdlijn van de doses die u vastlegde
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-nl
     width: 1290
     height: 1800
     alt: Dial-dosisformulier met velden voor medicijn, hoeveelheid, tijd en injectieplaats
   history:
-    base: dial-web-history
+    base: dial-web-history-nl
     width: 1290
     height: 2640
     alt: Dial-historie met dosis- en gewichtsdiagrammen in de tijd
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-nl
     width: 1290
     height: 2100
     alt:
       Dial Pro-scherm voor bijwerkingstrends met wekelijkse frequentie en ernst uit
       bestaande invoer
   report:
-    base: dial-web-report
+    base: dial-web-report-nl
     width: 1836
     height: 2376
     alt:
       Een pagina van het Dial Pro-pdf-verslag met dosishistorie, gewicht in de tijd
       en bijwerkingen voor uw voorschrijver
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-nl
     width: 792
     height: 968
     alt:
       Dial op Apple Watch met een cyclusring die de dagen tot de volgende dosis telt,
       de volgende herinnering en een knop om vast te leggen
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-nl
     width: 792
     height: 968
     alt:
@@ -58,8 +58,8 @@ images:
 
 hero:
   availability: Nu beschikbaar in de App Store
-  headline_lead: 'Uw GLP-1,'
-  headline_accent: op schrift.
+  headline_lead: "GLP-1 privé bijhouden."
+  headline_accent: ""
   category: Dial is een privé GLP-1-medicijndagboek voor iPhone en Apple Watch.
   detail:
     Leg doses vast op iPhone of Apple Watch, zie een geschat niveau op basis van de doses

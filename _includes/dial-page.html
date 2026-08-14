@@ -2,6 +2,7 @@
 {%- assign storefront = site.data.dial_storefronts[page.lang] | default: site.data.dial_storefronts.en -%}
 {%- assign prices = site.data.dial_prices[page.lang] | default: site.data.dial_prices.en -%}
 {%- assign app_store_url = 'https://apps.apple.com/app/id6789408903' -%}
+{%- assign app_store_badge = '/assets/badges/download-on-the-app-store-' | append: page.lang | append: '.svg' -%}
 {%- assign hero_sizes = '(max-width: 760px) 78vw, 430px' -%}
 {%- assign stage_sizes = '(max-width: 760px) 76vw, 390px' -%}
 {%- assign card_sizes = '(max-width: 680px) 76vw, 360px' -%}
@@ -65,9 +66,7 @@
                 <span>{{ copy.hero.availability }}</span>
               </div>
             </div>
-            <h1 id="dial-title">
-              {{ copy.hero.headline_lead }} <span>{{ copy.hero.headline_accent }}</span>
-            </h1>
+            <h1 id="dial-title">{{ copy.hero.headline_lead }}</h1>
             <p class="dial-category">{{ copy.hero.category }}</p>
             <p class="dial-hero-detail">{{ copy.hero.detail }}</p>
             <div class="dial-actions dial-actions-primary">
@@ -78,7 +77,7 @@
                 id="hero-primary-cta"
               >
                 <img
-                  src="/assets/download-on-the-app-store.svg"
+                  src="{{ app_store_badge }}"
                   alt="{{ copy.app_store_badge_alt }}"
                   height="40"
                 />
@@ -332,7 +331,7 @@
             <p>{{ copy.availability.body }}</p>
             <a class="app-store-badge-link" href="{{ app_store_url }}" rel="noopener noreferrer">
               <img
-                src="/assets/download-on-the-app-store.svg"
+                src="{{ app_store_badge }}"
                 alt="{{ copy.app_store_badge_alt }}"
                 height="40"
               />

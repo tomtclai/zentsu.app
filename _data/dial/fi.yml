@@ -3,50 +3,50 @@ app_store_badge_alt: "Lataa Dial App Storesta"
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-fi
     width: 1290
     height: 2160
     alt: "Dialin Tänään-näyttö seuraavalla muistutuksella, arvioidulla lääketasolla ja Kirjaa annos -toiminnolla"
   level:
-    base: dial-web-level
+    base: dial-web-level-fi
     width: 1290
     height: 1620
     alt: "Dialin arvioidun tason näyttö aikakaaviolla kirjatuista annoksista"
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-fi
     width: 1290
     height: 1800
     alt: "Dialin annoslomake kentillä lääkkeelle, määrälle, ajalle ja pistoskohdalle"
   history:
-    base: dial-web-history
+    base: dial-web-history-fi
     width: 1290
     height: 2640
     alt: "Dial-historia annos- ja painokaavioineen ajan mittaan"
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-fi
     width: 1290
     height: 2100
     alt: "Dial Pron haittavaikutustrendien näyttö viikoittaisella esiintymistiheydellä ja vakavuudella olemassa olevista merkinnöistä"
   report:
-    base: dial-web-report
+    base: dial-web-report-fi
     width: 1836
     height: 2376
     alt: "Sivu Dial Pron PDF-raportista, jossa annoshistoria, paino ajan mittaan ja haittavaikutukset määrääjälle"
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-fi
     width: 792
     height: 968
     alt: "Dial Apple Watchissa syklirenkaalla, joka laskee päiviä seuraavaan annokseen, seuraavalla muistutuksella ja kirjaamispainikkeella"
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-fi
     width: 792
     height: 968
     alt: "Dial Apple Watchissa vahvistaa kirjatun annoksen rastilla ja näyttää määrän ja pistoskohdan"
 
 hero:
   availability: "Nyt App Storessa"
-  headline_lead: "GLP-1 rutiinisi,"
-  headline_accent: "kirjattu."
+  headline_lead: "Pidä GLP-1 kirjassa."
+  headline_accent: ""
   category: "Dial on yksityinen GLP-1-lääkepäiväkirja iPhonelle ja Apple Watchille."
   detail: "Kirjaa annokset iPhonella tai Apple Watchilla, katso arvioitu taso kirjaamistasi annoksista ja pidä ydintiedot laitteella tai yksityisessä iCloud-tietokannassa."
   secondary_cta: "Näin Dial toimii"

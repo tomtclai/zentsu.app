@@ -20,6 +20,15 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- Point every Dial marketing page at localized in-app screenshots for that
+  language, including Simplified and Traditional Chinese, instead of the
+  English crops.
+- Rewrite every Dial hero as a single native headline and drop the two-color
+  coral split that only worked in English.
+- Replace the Hindi, Ukrainian, and Croatian App Store badges. The AMS badge API
+  served the US-UK SVG for those three. Ukrainian and Croatian now come from the
+  Marketing Tools language dropdown. Hindi is not in that dropdown; it uses Apple's
+  official Hindi artwork (App Store / पर डाउनलोड करें).
 - Show each Dial marketing page's App Store currency and amounts from live ASC
   for that language's primary storefront, instead of U.S. dollar prices on every locale.
 - Shorten Dial hero headlines in most locales so they wrap in two or three lines at 10ch,

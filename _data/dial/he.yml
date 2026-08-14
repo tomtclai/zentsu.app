@@ -5,46 +5,46 @@ app_store_badge_alt: הורידו את Dial מ-App Store
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-he
     width: 1290
     height: 2160
     alt:
       מסך היום ב-Dial עם התזכורת הבאה, רמה משוערת של התרופה וכפתור לרישום מנה
   level:
-    base: dial-web-level
+    base: dial-web-level-he
     width: 1290
     height: 1620
     alt: מסך רמה משוערת ב-Dial עם תרשים זמן מהמנות שנרשמו
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-he
     width: 1290
     height: 1800
     alt: טופס מנה ב-Dial עם שדות לתרופה, כמות, שעה ואתר הזרקה
   history:
-    base: dial-web-history
+    base: dial-web-history-he
     width: 1290
     height: 2640
     alt: מסך היסטוריה ב-Dial עם תרשימי מנה ומשקל לאורך זמן
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-he
     width: 1290
     height: 2100
     alt:
       מסך מגמות תופעות לוואי של Dial Pro עם תדירות וחומרה שבועית מהרשומות הקיימות
   report:
-    base: dial-web-report
+    base: dial-web-report-he
     width: 1836
     height: 2376
     alt:
       עמוד מדוח ה-PDF של Dial Pro עם היסטוריית מנות, משקל לאורך זמן ותופעות לוואי למי שרושם לכם
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-he
     width: 792
     height: 968
     alt:
       Dial ב-Apple Watch עם טבעת מחזור שסופרת ימים עד המנה הבאה, התזכורת הבאה וכפתור רישום מנה
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-he
     width: 792
     height: 968
     alt:
@@ -52,9 +52,9 @@ images:
 
 hero:
   availability: עכשיו ב-App Store
-  headline_lead: 'GLP-1 שלכם,'
-  headline_accent: על הכתב.
-  category: Dial הוא יומן תרופות GLP-1 פרטי ל-iPhone ול-Apple Watch.
+  headline_lead: "GLP-1 ביומן פרטי."
+  headline_accent: ""
+  category: "רשמו מנות, אתרי הזרקה ומשקל ב-iPhone וב-Apple Watch."
   detail:
     רשמו מנות ב-iPhone או ב-Apple Watch, ראו רמה משוערת שנבנית מהמנות שאתם רושמים, והשאירו את הרישומים העיקריים במכשיר או במסד הנתונים הפרטי ב-iCloud שלכם.
   secondary_cta: כך Dial עובד

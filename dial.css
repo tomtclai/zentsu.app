@@ -79,17 +79,13 @@
 }
 
 .dial-hero h1 {
-  max-width: 10ch;
+  max-width: 16ch;
   margin-bottom: 1.25rem;
   color: var(--ink);
   font-size: clamp(3.15rem, 7vw, 5.9rem);
   font-weight: 750;
   letter-spacing: -0.06em;
   line-height: 0.95;
-}
-
-.dial-hero h1 span {
-  color: var(--dial-coral-dark);
 }
 
 .dial-category {

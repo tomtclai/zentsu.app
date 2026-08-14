@@ -3,50 +3,50 @@ app_store_badge_alt: "Unduh Dial dari App Store"
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-id
     width: 1290
     height: 2160
     alt: "Layar Hari Ini Dial dengan pengingat berikutnya, tingkat obat perkiraan, dan tombol untuk mencatat dosis"
   level:
-    base: dial-web-level
+    base: dial-web-level-id
     width: 1290
     height: 1620
     alt: "Layar tingkat perkiraan Dial dengan grafik waktu dari dosis yang dicatat"
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-id
     width: 1290
     height: 1800
     alt: "Formulir dosis Dial dengan bidang obat, jumlah, waktu, dan lokasi suntikan"
   history:
-    base: dial-web-history
+    base: dial-web-history-id
     width: 1290
     height: 2640
     alt: "Riwayat Dial dengan grafik dosis dan berat sepanjang waktu"
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-id
     width: 1290
     height: 2100
     alt: "Layar tren efek samping Dial Pro dengan frekuensi mingguan dan keparahan dari catatan yang ada"
   report:
-    base: dial-web-report
+    base: dial-web-report-id
     width: 1836
     height: 2376
     alt: "Halaman laporan PDF Dial Pro dengan riwayat dosis, berat sepanjang waktu, dan efek samping untuk pemberi resep"
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-id
     width: 792
     height: 968
     alt: "Dial di Apple Watch dengan cincin siklus yang menghitung hari hingga dosis berikutnya, pengingat berikutnya, dan tombol catat"
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-id
     width: 792
     height: 968
     alt: "Dial di Apple Watch mengonfirmasi dosis tercatat dengan tanda centang serta menampilkan jumlah dan lokasi suntikan"
 
 hero:
   availability: "Sekarang di App Store"
-  headline_lead: "GLP-1 Anda"
-  headline_accent: "tertulis."
+  headline_lead: "Catat dosis GLP-1."
+  headline_accent: ""
   category: "Dial adalah buku harian obat GLP-1 pribadi untuk iPhone dan Apple Watch."
   detail: "Catat dosis di iPhone atau Apple Watch, lihat tingkat perkiraan dari dosis yang Anda simpan, dan jaga catatan inti di perangkat atau di basis data iCloud pribadi Anda."
   secondary_cta: "Cara kerja Dial"

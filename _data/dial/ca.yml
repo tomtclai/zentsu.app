@@ -3,50 +3,50 @@ app_store_badge_alt: "Baixi Dial de l’App Store"
 
 images:
   today:
-    base: dial-web-today
+    base: dial-web-today-ca
     width: 1290
     height: 2160
     alt: "Pantalla Avui de Dial amb el proper recordatori, el nivell estimat del medicament i un botó per registrar una dosi"
   level:
-    base: dial-web-level
+    base: dial-web-level-ca
     width: 1290
     height: 1620
     alt: "Pantalla de nivell estimat de Dial amb un gràfic temporal a partir de les dosis registrades"
   log_dose:
-    base: dial-web-log-dose
+    base: dial-web-log-dose-ca
     width: 1290
     height: 1800
     alt: "Formulari de dosi de Dial amb camps de medicament, quantitat, hora i lloc d’injecció"
   history:
-    base: dial-web-history
+    base: dial-web-history-ca
     width: 1290
     height: 2640
     alt: "Historial de Dial amb gràfics de dosi i pes al llarg del temps"
   side_effects:
-    base: dial-web-side-effects
+    base: dial-web-side-effects-ca
     width: 1290
     height: 2100
     alt: "Pantalla de tendències d’efectes secundaris de Dial Pro amb freqüència setmanal i gravetat dels registres existents"
   report:
-    base: dial-web-report
+    base: dial-web-report-ca
     width: 1836
     height: 2376
     alt: "Una pàgina de l’informe PDF de Dial Pro amb historial de dosis, pes al llarg del temps i efectes secundaris per a qui prescriu"
   watch_glance:
-    base: dial-web-watch-glance
+    base: dial-web-watch-glance-ca
     width: 792
     height: 968
     alt: "Dial a l’Apple Watch amb un anell de cicle que compta els dies fins a la propera dosi, el proper recordatori i un botó per registrar"
   watch_logged:
-    base: dial-web-watch-logged
+    base: dial-web-watch-logged-ca
     width: 792
     height: 968
     alt: "Dial a l’Apple Watch confirma una dosi registrada amb una marca i mostra la quantitat i el lloc d’injecció"
 
 hero:
   availability: "Ara a l’App Store"
-  headline_lead: "La seva GLP-1,"
-  headline_accent: "per escrit."
+  headline_lead: "El GLP-1, al diari."
+  headline_accent: ""
   category: "Dial és un diari privat de medicació GLP-1 per a iPhone i Apple Watch."
   detail: "Registri dosis a l’iPhone o a l’Apple Watch, vegi un nivell estimat a partir de les dosis que anoti i conservi els registres principals al dispositiu o a la seva base de dades privada d’iCloud."
   secondary_cta: "Com funciona Dial"
