@@ -1,0 +1,178 @@
+schema_description: "Un diari privat de medicació GLP-1 per a dosis, llocs d’injecció, pes, recordatoris i historial."
+app_store_badge_alt: "Baixi Dial de l’App Store"
+
+images:
+  today:
+    base: dial-web-today
+    width: 1290
+    height: 2160
+    alt: "Pantalla Avui de Dial amb el proper recordatori, el nivell estimat del medicament i un botó per registrar una dosi"
+  level:
+    base: dial-web-level
+    width: 1290
+    height: 1620
+    alt: "Pantalla de nivell estimat de Dial amb un gràfic temporal a partir de les dosis registrades"
+  log_dose:
+    base: dial-web-log-dose
+    width: 1290
+    height: 1800
+    alt: "Formulari de dosi de Dial amb camps de medicament, quantitat, hora i lloc d’injecció"
+  history:
+    base: dial-web-history
+    width: 1290
+    height: 2640
+    alt: "Historial de Dial amb gràfics de dosi i pes al llarg del temps"
+  side_effects:
+    base: dial-web-side-effects
+    width: 1290
+    height: 2100
+    alt: "Pantalla de tendències d’efectes secundaris de Dial Pro amb freqüència setmanal i gravetat dels registres existents"
+  report:
+    base: dial-web-report
+    width: 1836
+    height: 2376
+    alt: "Una pàgina de l’informe PDF de Dial Pro amb historial de dosis, pes al llarg del temps i efectes secundaris per a qui prescriu"
+  watch_glance:
+    base: dial-web-watch-glance
+    width: 792
+    height: 968
+    alt: "Dial a l’Apple Watch amb un anell de cicle que compta els dies fins a la propera dosi, el proper recordatori i un botó per registrar"
+  watch_logged:
+    base: dial-web-watch-logged
+    width: 792
+    height: 968
+    alt: "Dial a l’Apple Watch confirma una dosi registrada amb una marca i mostra la quantitat i el lloc d’injecció"
+
+hero:
+  availability: "Ara a l’App Store"
+  headline_lead: "La seva rutina GLP-1,"
+  headline_accent: "per escrit."
+  category: "Dial és un diari privat de medicació GLP-1 per a iPhone i Apple Watch."
+  detail: "Registri dosis a l’iPhone o a l’Apple Watch, vegi un nivell estimat a partir de les dosis que anoti i conservi els registres principals al dispositiu o a la seva base de dades privada d’iCloud."
+  secondary_cta: "Com funciona Dial"
+  platforms_label: "Plataformes i emmagatzematge de Dial"
+  platforms:
+    - iPhone
+    - Apple Watch
+    - "Siri, Centre de control i pantalla de bloqueig"
+    - "Emmagatzematge privat opcional d’iCloud"
+  legal: "El diari bàsic és gratuït. Dial Pro afegeix gràfics, exportació, més medicaments i recordatoris i el registre amb un toc als dispositius Apple. Dial és un registre personal. No calcula dosis ni substitueix les indicacions de qui prescriu."
+
+proof:
+  label: "Per què Dial"
+  points:
+    - "iPhone i Apple Watch"
+    - "No cal cap compte. Tampoc no hi ha anàlisi d’ús."
+    - "Opció Lifetime"
+    - "Nivell modelat a partir de les seves dosis"
+
+level:
+  kicker: "Dial Pro · Nivell estimat"
+  heading: "Una visió més clara de les dosis que ha registrat."
+  body: "Dial traça un nivell estimat del medicament al llarg del temps a partir de les dosis registrades i de la semivida que mostra l’app. Canviï l’interval per revisar una setmana, un mes o sis mesos del seu historial."
+  boundary_lead: "És una estimació, i ho deixem clar."
+  boundary_body: "El gràfic modela una corba de disminució estàndard a partir de les dosis que ha registrat. Mostra els seus patrons entre dosis. No és un nivell mesurat a la sang ni un suggeriment del que cal prendre després. Dial no calcula dosis. L’app explica el mètode sencer."
+
+logging:
+  kicker: "Registre ràpid"
+  heading: "Registri la dosi i tot el que l’acompanya."
+  body: "Anoti medicament, quantitat, data, hora, lloc d’injecció i notes en un formulari concentrat. Els valors recents acceleren l’entrada següent i vostè confirma cada camp. Dial funciona tant si qui prescriu en diu Ozempic, Wegovy, Mounjaro o Zepbound."
+  checklist:
+    - "Editi una entrada quan alguna cosa canvia"
+    - "Mantingui els llocs d’injecció lligats a cada dosi"
+    - "Mantingui les entrades de pes al costat de la línia temporal de dosis"
+
+history:
+  kicker: "Dial Pro · Historial i tendències"
+  heading: "Revisi el patró de tot el registre."
+  body: "Les llistes de dosi, pes i efectes secundaris resten gratuïtes. Dial Pro afegeix gràfics complets de dosi i pes i tendències a partir de les entrades d’efectes secundaris que ja té."
+  history_card_title: "Historial de dosi i pes"
+  history_card_note: "Revisi els canvis en l’interval que triï."
+  side_effects_card_title: "Tendències d’efectes secundaris"
+  side_effects_card_note: "Revisi freqüència i gravetat de l’historial existent o importat."
+
+report:
+  kicker: "Dial Pro · Informe PDF"
+  heading: "Porti tot el resum a la propera visita."
+  body: "Generi un PDF amb l’historial de dosis, els canvis de quantitat registrada, els llocs d’injecció, la tendència de pes i els patrons d’efectes secundaris. Dial el genera al dispositiu i el comparteix només quan ho decideixi, per AirDrop, correu o impressió."
+  closing: "Resta privat la resta del temps. És útil el dia que el registre ha de sortir del telèfon."
+  smallprint: "L’informe resumeix les seves entrades. No és un historial clínic ni un pla de tractament."
+
+watch:
+  kicker: Apple Watch
+  heading: "Registri la dosi des del canell."
+  body: "L’app del rellotge mostra un anell de cicle que compta enrere fins a la propera dosi i l’hora del proper recordatori. Dial Pro converteix aquesta ullada en un registre complet: ajusti la quantitat amb Digital Crown, triï el lloc d’injecció i confirmi. L’entrada se sincronitza a l’iPhone i resta entre els dos dispositius."
+  checklist:
+    - "Anell de cicle, estat de la dosi i proper recordatori d’un cop d’ull (gratuït)"
+    - "Registri una dosi des del canell amb Digital Crown (Dial Pro)"
+    - "Ginys de nivell estimat i propera dosi a l’esfera, i registre ràpid a la Pila intel·ligent (Dial Pro)"
+    - "A l’iPhone, Pro permet el registre amb un toc des del Centre de control, el botó d’acció, Siri o una activitat en directe el dia del recordatori. Les accions gratuïtes obren el formulari."
+
+supporting:
+  kicker: "Al voltant de la rutina"
+  heading: "Els detalls pràctics queden a mà."
+  features:
+    - title: "Inventari"
+      body: "Faci el seguiment de plomes o vials amb concentració, farmàcia, data de caducitat i número de lot."
+    - title: "Els seus recordatoris"
+      body: "Creï notificacions diàries, setmanals o cada N dies al voltant de l’horari que defineixi. El dia de la dosi, una acció de registre apareix a la notificació, i una activitat en directe pot restar a la pantalla de bloqueig fins que registri."
+    - title: "Porti l’historial"
+      body: "Obri una exportació compatible d’un diari de medicació amb Dial per importar les entrades existents."
+
+plans:
+  kicker: "Gratuït i Dial Pro"
+  heading: "Faci servir el diari bàsic de franc."
+  body: "Passi a Pro quan vulgui gràfics més detallats, exportació o un registre més ràpid als dispositius Apple. Cada pla Dial Pro inclou les mateixes funcions."
+  free_name: "Gratuït"
+  free_summary: "Un diari complet per a un medicament actiu."
+  free_features:
+    - "Registri dosis, llocs d’injecció, pes, efectes secundaris i fotos de progrés"
+    - "Un medicament actiu i un recordatori"
+    - "Llistes de dosi i pes, inventari, importació i la ullada d’Apple Watch"
+    - "Ginys de compte enrere i recordatoris que obren el formulari"
+  pro_name: Dial Pro
+  pro_summary: "El nivell estimat, gràfics complets, exportació i registre ràpid."
+  pro_features:
+    - "Gràfic de nivell estimat i giny a la pantalla d’inici"
+    - "Gràfics complets de dosi i pes, tendències d’efectes secundaris i comparació de fotos"
+    - "Informe PDF, exportació CSV, diversos medicaments i diversos recordatoris"
+    - "Registre ràpid i complicacions a l’Apple Watch, i registre amb un toc a l’iPhone"
+  options_label: "Opcions del pla Dial Pro"
+  lifetime_name: "Lifetime"
+  lifetime_terms: "un cop"
+  annual_name: "Anual"
+  annual_terms: "per any"
+  monthly_name: "Mensual"
+  monthly_terms: "per mes"
+  price_note: "Les subscripcions es renoven fins que es cancel·len. Els preus mostrats són dels EUA. L’App Store mostra el preu local abans de la compra."
+
+privacy:
+  kicker: "Privadesa"
+  heading: "Clar sobre què resta al seu dispositiu."
+  specs:
+    - term: "Comptes"
+      detail: "No hi ha cap compte Dial. Obri l’app i comenci a registrar."
+    - term: "Anàlisi d’ús"
+      detail: "Dial no executa anàlisi d’ús ni telemetria. No mesurem com la fa servir."
+    - term: "Els nostres servidors"
+      detail: "Zentsu no opera cap servidor que emmagatzemi o llegeixi els seus registres."
+    - term: "Sincronització opcional"
+      detail: "Activi iCloud a l’app i els registres se sincronitzen amb la base privada CloudKit del seu compte d’Apple, no cap a nosaltres."
+  body: "Els registres de medicament, dosi, recordatori i subministrament resten al dispositiu. Les entrades de pes fan servir un magatzem local separat, i l’accés a Salut és opcional i cobreix només el pes corporal quan en doni permís."
+  policy_link: "Llegeixi la política de privadesa de Dial"
+  policy_url: /ca/dial/privacy/
+
+availability:
+  kicker: "Baixi Dial"
+  heading: "Ara a l’App Store."
+  body: "Dial es pot baixar de franc. El diari bàsic funciona des del primer registre. Dial Pro afegeix el gràfic de nivell estimat, gràfics complets, exportació PDF i registre ràpid des de l’Apple Watch i l’iPhone."
+  email_label: "Adreça electrònica"
+  email_placeholder: "nom@email.com"
+  submit: "Rebi notícies de versions"
+  signup_note: "Opcional. Notes de versió per a edicions noves, res més. Sense seguiment d’obertures ni d’enllaços. Cancel·li quan vulgui."
+  signup_privacy_link: "Detalls de privadesa"
+  signup_privacy_url: /privacy
+  signup_help: "Li cal ajuda?"
+  signup_support_link: "Assistència de Dial"
+  signup_support_url: /ca/dial/support/
+

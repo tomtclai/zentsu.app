@@ -1,0 +1,177 @@
+schema_description: "用於劑量、注射部位、體重、提醒和歷史的私人 GLP-1 用藥日記。"
+app_store_badge_alt: "從 App Store 下載 Dial"
+
+images:
+  today:
+    base: dial-web-today
+    width: 1290
+    height: 2160
+    alt: "Dial 的今天畫面，顯示下一次提醒、估計藥量水平和記錄劑量按鈕"
+  level:
+    base: dial-web-level
+    width: 1290
+    height: 1620
+    alt: "Dial 估計水平畫面，根據已記錄劑量繪製時間圖表"
+  log_dose:
+    base: dial-web-log-dose
+    width: 1290
+    height: 1800
+    alt: "Dial 劑量表單，含藥物、劑量、時間和注射部位欄位"
+  history:
+    base: dial-web-history
+    width: 1290
+    height: 2640
+    alt: "Dial 歷史，含劑量和體重隨時間變化的圖表"
+  side_effects:
+    base: dial-web-side-effects
+    width: 1290
+    height: 2100
+    alt: "Dial Pro 副作用趨勢畫面，顯示既有紀錄的每週頻率和嚴重度"
+  report:
+    base: dial-web-report
+    width: 1836
+    height: 2376
+    alt: "Dial Pro PDF 報告的一頁，向醫生彙總劑量歷史、體重隨時間和副作用"
+  watch_glance:
+    base: dial-web-watch-glance
+    width: 792
+    height: 968
+    alt: "Apple Watch 上的 Dial，週期環倒數距下次劑量的天數、下一次提醒和記錄按鈕"
+  watch_logged:
+    base: dial-web-watch-logged
+    width: 792
+    height: 968
+    alt: "Apple Watch 上的 Dial 用勾號確認已記錄劑量，並顯示劑量和注射部位"
+
+hero:
+  availability: "現已於 App Store 上架"
+  headline_lead: "你的 GLP-1 日常，"
+  headline_accent: "有紀錄。"
+  category: "Dial 是給 iPhone 和 Apple Watch 使用的私人 GLP-1 用藥日記。"
+  detail: "在 iPhone 或 Apple Watch 上記錄劑量，查看由你所記劑量構成的估計水平，並把核心紀錄留在裝置或你的私人 iCloud 資料庫中。"
+  secondary_cta: "Dial 如何運作"
+  platforms_label: "Dial 平台與儲存"
+  platforms:
+    - iPhone
+    - Apple Watch
+    - "Siri、控制中心和鎖定畫面"
+    - "可選的私人 iCloud 儲存"
+  legal: "核心日記免費。Dial Pro 增加圖表、匯出、多種藥物和提醒，以及在 Apple 裝置上一鍵記錄。Dial 是個人紀錄。它不計算劑量，也不能取代醫生的指導。"
+
+proof:
+  label: "為何選擇 Dial"
+  points:
+    - "iPhone 和 Apple Watch"
+    - "沒有 Dial 帳號，也沒有使用分析"
+    - "Lifetime 選項"
+    - "由你的劑量建模的水平"
+
+level:
+  kicker: "Dial Pro · 估計水平"
+  heading: "更清楚地看到你記錄過的劑量。"
+  body: "Dial 根據你記錄的劑量和 app 中顯示的半衰期，繪製隨時間變化的估計藥量水平。切換範圍即可查看自己歷史中的一週、一個月或六個月。"
+  boundary_lead: "這是估計，我們會標明。"
+  boundary_body: "圖表根據你記錄的劑量建模標準衰減曲線。它顯示劑量之間你自己的模式。它不是測得的血藥水平，也不是下一步該用什麼的建議。Dial 不計算劑量。app 完整說明方法。"
+
+logging:
+  kicker: "快速記錄"
+  heading: "記下劑量以及與之相關的一切。"
+  body: "在聚焦表單中填寫藥物、劑量、日期、時間、注射部位和備註。最近的值會加快下一次輸入，每個欄位仍需你確認。無論醫生稱為 Ozempic、Wegovy、Mounjaro 還是 Zepbound，Dial 都能用。"
+  checklist:
+    - "有變化時編輯項目"
+    - "把注射部位與每次劑量關聯"
+    - "把體重項目放在劑量時間線旁"
+
+history:
+  kicker: "Dial Pro · 歷史與趨勢"
+  heading: "查看整份紀錄中的模式。"
+  body: "劑量、體重和副作用清單仍免費。Dial Pro 增加完整的劑量和體重圖表，以及已在紀錄中的副作用項目趨勢。"
+  history_card_title: "劑量與體重歷史"
+  history_card_note: "查看你所選範圍內的變化。"
+  side_effects_card_title: "副作用趨勢"
+  side_effects_card_note: "從既有或匯入的歷史查看頻率和嚴重度。"
+
+report:
+  kicker: "Dial Pro · PDF 報告"
+  heading: "把完整情況帶到下次就診。"
+  body: "產生含劑量歷史、記錄劑量變化、注射部位、體重趨勢和副作用模式的 PDF。Dial 在裝置上產生，僅在你決定時透過 AirDrop、郵件或列印分享。"
+  closing: "其餘時間保持私密，在紀錄需要離開手機的那一刻才派上用場。"
+  smallprint: "報告彙總你的項目。它不是病歷，也不是治療計畫。"
+
+watch:
+  kicker: Apple Watch
+  heading: "從手腕記錄劑量。"
+  body: "手錶 app 顯示倒數到下次劑量的週期環，以及下次提醒何時到來。Dial Pro 把這一眼變成完整紀錄：用數位錶冠（Digital Crown）設定劑量，選擇注射部位，確認。項目同步到 iPhone，留在你的兩台裝置之間。"
+  checklist:
+    - "一眼看到週期環、劑量狀態和下次提醒（免費）"
+    - "用數位錶冠（Digital Crown）從手腕記錄劑量（Dial Pro）"
+    - "錶面上的估計水平和下次劑量小組件，以及 Smart Stack 快速記錄（Dial Pro）"
+    - "在 iPhone 上，Pro 可從控制中心、動作按鈕、Siri 或提醒日的即時動態一鍵記錄。免費操作打開記錄表單。"
+
+supporting:
+  kicker: "日常周邊"
+  heading: "實用細節就在旁邊。"
+  features:
+    - title: "庫存"
+      body: "追蹤筆或小瓶的濃度、藥局、有效期限和批號。"
+    - title: "你的提醒"
+      body: "按你設定的計畫建立每日、每週或每 N 天通知。劑量日通知上有記錄操作，即時動態可留在鎖定畫面直到你記錄。"
+    - title: "帶上歷史"
+      body: "用 Dial 打開相容的用藥日記匯出檔，匯入既有項目。"
+
+plans:
+  kicker: "免費與 Dial Pro"
+  heading: "免費使用核心日記。"
+  body: "需要更細的圖表、匯出或在 Apple 裝置上更快記錄時再升級到 Pro。每個 Dial Pro 方案包含相同功能。"
+  free_name: "免費"
+  free_summary: "一種使用中藥物的完整紀錄。"
+  free_features:
+    - "記錄劑量、注射部位、體重、副作用和進展照片"
+    - "一種使用中的藥物和一則提醒"
+    - "劑量和體重清單、庫存、匯入和 Apple Watch 一覽"
+    - "倒數小組件和打開記錄表單的提醒"
+  pro_name: Dial Pro
+  pro_summary: "估計水平、完整圖表、匯出和快速記錄。"
+  pro_features:
+    - "估計水平圖表和主畫面小組件"
+    - "完整劑量和體重圖表、副作用趨勢和照片比較"
+    - "PDF 報告、CSV 匯出、多種藥物和多則提醒"
+    - "Apple Watch 快速記錄和複雜功能，以及 iPhone 一鍵記錄"
+  options_label: "Dial Pro 方案選擇"
+  lifetime_name: "Lifetime"
+  lifetime_terms: "一次"
+  annual_name: "按年"
+  annual_terms: "每年"
+  monthly_name: "按月"
+  monthly_terms: "每月"
+  price_note: "訂閱會續訂直至取消。所示價格為美國價格。App Store 在購買前顯示當地價格。"
+
+privacy:
+  kicker: "隱私"
+  heading: "清楚哪些留在裝置上。"
+  specs:
+    - term: "帳號"
+      detail: "沒有 Dial 帳號。打開 app 即可開始記錄。"
+    - term: "使用分析"
+      detail: "Dial 不執行使用分析或遙測。我們不測量你如何使用它。"
+    - term: "我們的伺服器"
+      detail: "Zentsu 不營運儲存或讀取你紀錄的伺服器。"
+    - term: "可選同步"
+      detail: "在 app 中打開 Sync with iCloud 後，紀錄透過你自己 Apple 帳號上的私人 CloudKit 資料庫同步，而不是到我們這裡。"
+  body: "藥物、劑量、提醒和庫存紀錄留在裝置上。體重項目使用單獨的本機儲存，健康存取可選，僅在你授權時涵蓋體重。"
+  policy_link: "閱讀 Dial 隱私權政策"
+  policy_url: /zh-hant/dial/privacy/
+
+availability:
+  kicker: "下載 Dial"
+  heading: "現已於 App Store 上架。"
+  body: "Dial 可免費下載。核心日記從第一次記錄起即可用。Dial Pro 增加估計水平圖表、完整圖表、PDF 匯出，以及從 Apple Watch 和 iPhone 快速記錄。"
+  email_label: "電子郵件地址"
+  email_placeholder: "name@email.com"
+  submit: "取得版本消息"
+  signup_note: "可選。只寄新版本發行說明。沒有開信或連結追蹤。隨時可退訂。"
+  signup_privacy_link: "隱私詳情"
+  signup_privacy_url: /privacy
+  signup_help: "需要協助？"
+  signup_support_link: "Dial 支援"
+  signup_support_url: /zh-hant/dial/support/

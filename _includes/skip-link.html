@@ -1,1 +1,2 @@
-<a class="skip-link" href="#main-content">Skip to main content</a>
+{%- assign strings = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+<a class="skip-link" href="#main-content">{{ strings.skip_link }}</a>

@@ -1092,6 +1092,23 @@
   }
 }
 
+/* Spanish strings run longer than English. Widen the two character-capped
+   headlines rather than shortening the translations. */
+html[lang='es'] .dial-hero h1 {
+  max-width: 16ch;
+  font-size: clamp(2.55rem, 6.2vw, 4.7rem);
+}
+
+html[lang='es'] .dial-availability h2 {
+  max-width: 24ch;
+}
+
+@media (max-width: 760px) {
+  html[lang='es'] .dial-hero h1 {
+    max-width: 18ch;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

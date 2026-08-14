@@ -89,7 +89,33 @@ async function zentsuBanner() {
   console.log('[done] zentsu-og.png');
 }
 
-async function dialBanner() {
+// One banner per Dial locale. `tagline` is the only translated string; the
+// tagline font size shrinks for longer translations so the text clears the icon.
+const DIAL_BANNERS = [
+  { file: 'dial-og.png', tagline: 'Private GLP-1 medication tracker', taglineSize: 42 },
+  { file: 'dial-og-es.png', tagline: 'Registro privado de medicamentos GLP-1', taglineSize: 33 },
+  // Hiragino: Inter Tight has no CJK glyphs.
+  {
+    file: 'dial-og-ja.png',
+    tagline: '非公開のGLP-1記録',
+    taglineSize: 42,
+    taglineFont: 'Hiragino Sans, Hiragino Kaku Gothic ProN',
+  },
+  {
+    file: 'dial-og-he.png',
+    tagline: 'יומן תרופות GLP-1 פרטי',
+    taglineSize: 36,
+    taglineFont: 'Arial Hebrew, Arial',
+  },
+  {
+    file: 'dial-og-ar.png',
+    tagline: 'سجل أدوية GLP-1 خاص',
+    taglineSize: 36,
+    taglineFont: 'Geeza Pro, Arial',
+  },
+];
+
+async function dialBanner({ file, tagline, taglineSize, taglineFont = 'Inter Tight' }) {
   const s = 300;
   const x = 800;
   const y = 165;
@@ -108,7 +134,7 @@ async function dialBanner() {
   <circle cx="970" cy="315" r="230" fill="none" stroke="#ef705f" stroke-width="18" opacity="0.12"/>
   <rect x="${x}" y="${y + 20}" width="${s}" height="${s}" rx="${r}" fill="#4c211c" opacity="0.28" filter="url(#dial-shadow)"/>
   <text x="90" y="300" font-family="Inter Tight" font-weight="800" font-size="150" letter-spacing="-6" fill="#14110f">Dial</text>
-  <text x="96" y="375" font-family="Inter Tight" font-weight="600" font-size="42" fill="#2a2622">Private GLP-1 medication tracker</text>
+  <text x="96" y="375" font-family="${taglineFont}" font-weight="600" font-size="${taglineSize}" fill="#2a2622">${tagline}</text>
   <text x="98" y="448" font-family="JetBrains Mono" font-weight="500" font-size="23" letter-spacing="1.5" fill="#b9463b">iPhone · Apple Watch</text>
   <rect x="0" y="${H - 8}" width="${W}" height="8" fill="#ef705f"/>
 </svg>`;
@@ -116,10 +142,10 @@ async function dialBanner() {
   await sharp(Buffer.from(svg))
     .composite([{ input: icon, left: x, top: y }])
     .png({ compressionLevel: 9 })
-    .toFile(path.join(ASSETS, 'dial-og.png'));
-  console.log('[done] dial-og.png');
+    .toFile(path.join(ASSETS, file));
+  console.log(`[done] ${file}`);
 }
 
 await benchBanner();
-await dialBanner();
+for (const banner of DIAL_BANNERS) await dialBanner(banner);
 await zentsuBanner();

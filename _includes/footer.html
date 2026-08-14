@@ -1,21 +1,19 @@
+{%- assign strings = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
 <footer>
   <div class="footer-links">
-    <a href="/">Zentsu</a>
-    <a href="/apps">Apps</a>
-    <a href="/dial/">Dial</a>
-    <a href="/bench/support">Bench support</a>
-    <a href="/dial/support/">Dial support</a>
-    <a href="/blog/">Blog</a>
-    <a href="/privacy">Privacy</a>
-    <a href="/terms">Terms</a>
+    <a href="/">{{ strings.footer.home }}</a>
+    <a href="/apps">{{ strings.footer.apps }}</a>
+    <a href="{{ strings.footer.dial_url }}">{{ strings.footer.dial }}</a>
+    <a href="/bench/support">{{ strings.footer.bench_support }}</a>
+    <a href="{{ strings.footer.dial_support_url }}">{{ strings.footer.dial_support }}</a>
+    <a href="/blog/">{{ strings.footer.blog }}</a>
+    <a href="/privacy">{{ strings.footer.privacy }}</a>
+    <a href="/terms">{{ strings.footer.terms }}</a>
   </div>
   {%- if page.footer_indie %}
-  <p class="indie-line">Made by one person in <span class="indie-name">&nbsp;</span></p>
+  <p class="indie-line">{{ strings.footer.indie_line }} <span class="indie-name">&nbsp;</span></p>
   {%- endif %} {%- if page.footer_apple_badge %}
-  <p class="apple-trademark-credit">
-    Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered in the U.S. and
-    other countries and regions. App Store and Mac App Store are service marks of Apple Inc.
-  </p>
+  <p class="apple-trademark-credit">{{ strings.footer.apple_trademark }}</p>
   {%- endif %}
   <p>&copy; 2026 Zentsu LLC</p>
 </footer>

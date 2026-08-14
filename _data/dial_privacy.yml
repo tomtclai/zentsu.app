@@ -1,0 +1,1742 @@
+cs:
+  page_label: "Právní informace"
+  h1: "Zásady ochrany osobních údajů"
+  effective: "Datum účinnosti: 12. července 2026"
+  notice_before: ""
+  notice_link: "Anglická verze"
+  notice_after: "je závazný text těchto zásad. Tato stránka je poskytnuta pro pohodlí."
+  overview_url: "/cs/dial/"
+  overview_link: "Zpět na přehled Dial"
+  intro: "Tyto zásady se vztahují na Dial (dále „Aplikace“), který jako komerční službu vydává Zentsu LLC (dále „Poskytovatel služby“). Služba je určena k použití „JAK JE“."
+  short: "Stručně: Dial ukládá záznamy na zařízení. Ovládací prvek v aplikaci umožňuje použít soukromou databázi CloudKit připojenou k vašemu Apple Account pro hlavní záznamy, nebo je nechat jen na zařízení. Záznamy hmotnosti a fotky pokroku používají samostatné místní úložiště. Poskytovatel služby neprovozuje žádný server, který by mohl číst, co v Dial uložíte."
+  copyright: "© 2026 Zentsu LLC. Všechna práva vyhrazena."
+  sections:
+    - heading: "Jaké informace Aplikace získává a jak se používají?"
+      paragraphs:
+        - "Aplikace neodesílá vaše záznamy Dial Poskytovateli služby. Registrace u Zentsu není nutná. Léky, dávky, místa vpichu, plány připomínek, zásoby a historie nežádoucích účinků z kompatibilního souboru, který se rozhodnete importovat, se ukládají na zařízení. Poskytovatel služby je neshromažďuje, nepřijímá a nemá způsob, jak je vidět."
+    - heading: "Kde se ukládají hlavní záznamy?"
+      paragraphs:
+        - "Záznamy léků, dávek, míst vpichu, připomínek, zásob a importovaných nežádoucích účinků se ukládají na zařízení. Dial má v Nastavení také ovládací prvek „Sync with iCloud“. Když je zapnutý a iCloud je dostupný, tyto záznamy mohou používat službu CloudKit společnosti Apple a soukromou databázi vázanou na váš Apple Account. Poskytovatel služby neprovozuje žádný server, nedrží kopii těchto záznamů a nemůže k nim přistupovat, číst je ani je obnovit."
+        - "Vypnutí ovládacího prvku v aplikaci nechá tyto záznamy jen na daném zařízení po příštím otevření Dial. Nastavení iCloud na zařízení také ovlivňuje, zda je CloudKit dostupný. Úložiště a přenos iCloud se řídí podmínkami a zásadami ochrany osobních údajů společnosti Apple."
+    - heading: "Kde se ukládají údaje o hmotnosti?"
+      paragraphs:
+        - "Záznam hmotnosti je v samostatném, pouze místním úložišti na zařízení. Není součástí volitelného úložiště CloudKit výše a Aplikací zařízení neopouští. Pokud Dial používáte na více zařízeních, záznamy hmotnosti na každém zařízení zůstávají nezávislé."
+    - heading: "Kde se ukládají fotky pokroku?"
+      paragraphs:
+        - "Fotky pokroku a data jejich pořízení se ukládají v adresáři dokumentů Aplikace na zařízení. Nejsou součástí záznamů CloudKit Dial. Pokud použijete skener štítků zásob, Dial zpracuje vybraný nebo pořízený snímek štítku k vyplnění polí a tento snímek jako záznam zásoby neukládá."
+    - heading: "Jak Aplikace používá Zdraví?"
+      paragraphs:
+        - "Pokud udělíte oprávnění, Dial čte tělesnou hmotnost ze Zdraví, aby byl záznam hmotnosti aktuální, a může do Zdraví zapisovat hmotnost, kterou v Dial zaznamenáte. Dial nečte ani nezapisuje žádnou jinou kategorii dat ve Zdraví. Data ze Zdraví se nikdy nepřenášejí ze zařízení Poskytovateli služby ani nikomu dalšímu. Nepoužívají se k reklamě ani marketingu, neprodávají se, nesdílejí se s třetími stranami a nepoužívají se k ničemu jinému než k vlastnímu sledování hmotnosti Aplikace. Toto oprávnění ovládáte kdykoli v nastavení Zdraví na zařízení."
+    - heading: "Nahrazuje Dial lékařskou radu?"
+      paragraphs:
+        - "Dial je nástroj k záznamu. Není zdravotnický prostředek a neposkytuje lékařskou radu. Neprovádí výpočty dávek a nedává žádná doporučení k dávkování. Každá dávka a každý plán v Dial pochází z údajů, které jste zadali nebo se rozhodli importovat. Cokoli k léčbě, včetně dávek, plánů a nežádoucích účinků, potvrďte s předepisující osobou."
+    - heading: "Posílá Aplikace oznámení?"
+      paragraphs:
+        - "Aplikace může naplánovat místní připomínky na dávky a další události, které nastavíte, ale jen když připomínky zapnete a udělíte oprávnění k oznámením. Jsou to místní oznámení vytvořená na zařízení z dat, která jste zadali. Neodesílají se ze žádného serveru Poskytovatele služby ani přes něj neprocházejí a obsah oznámení zařízení neopouští."
+    - heading: "Shromažďuje Aplikace přesné informace o poloze zařízení v reálném čase?"
+      paragraphs:
+        - "Aplikace neshromažďuje přesné informace o poloze vašeho zařízení."
+    - heading: "Vidí třetí strany informace získané Aplikací, nebo k nim mají přístup?"
+      paragraphs:
+        - "Protože Aplikace neodesílá záznamy Dial Poskytovateli služby, Poskytovatel služby nemá takové záznamy, které by mohl sdílet s třetími stranami. Volitelné nákupy a předplatné Dial Pro zpracovává Apple přes StoreKit. Poskytovatel služby z těchto transakcí nedostává údaje o platební kartě."
+    - heading: "Jaká mám práva na odhlášení a jak data smažu?"
+      paragraphs:
+        - "Veškeré ukládání informací Aplikací zastavíte jejím smazáním. Můžete použít standardní odinstalaci zařízení nebo obchodu. Smazání záznamu ho odebere z aktivního úložiště Dial. Když je v aplikaci zapnuté iCloud, smazání se může projevit v soukromé databázi CloudKit připojené k vašemu Apple Account. Ovládací prvek můžete v nastavení Dial vypnout a data Aplikace spravovat v nastavení iCloud na zařízení. Oprávnění ke Zdraví můžete kdykoli odebrat v nastavení Zdraví. Data už zapsaná do Zdraví tam zůstanou pod kontrolou Apple, dokud je neodstraníte. Fotky pokroku lze smazat v Dial."
+    - heading: "Děti"
+      paragraphs:
+        - "Aplikace se vědomě nepoužívá k získávání dat od dětí mladších 13 let ani k marketingu vůči nim."
+      email_before: "Poskytovatel služby vědomě neshromažďuje osobní údaje dětí. Vyzývá všechny děti, aby takové údaje přes Aplikaci ani Služby neposílaly. Vyzývá rodiče a zákonné zástupce, aby sledovali používání internetu dětmi a pomáhali tyto zásady vymáhat tím, že dětem řeknou, aby bez svolení osobní údaje přes Aplikaci ani Služby neposkytovaly. Máte-li důvod se domnívat, že dítě poskytlo osobní údaje Poskytovateli služby přes Aplikaci nebo Služby, napište na"
+      email_after: ", aby mohl přijmout potřebné kroky. Musíte mít také alespoň 16 let, abyste mohli souhlasit se zpracováním osobních údajů ve své zemi (v některých zemích to může za vás udělat rodič nebo zákonný zástupce)."
+    - heading: "Zabezpečení"
+      paragraphs:
+        - "Dial neodesílá vaše záznamy Poskytovateli služby, což omezuje expozici přes systémy, které provozujeme. Záznamy na zařízení chrání bezpečnostní kontroly tohoto zařízení. Data uložená přes CloudKit chrání váš Apple Account a bezpečnostní kontroly iCloud společnosti Apple. Data ve Zdraví chrání bezpečnostní kontroly dat Zdraví společnosti Apple. Žádný systém úložiště nelze zaručit jako zcela bezpečný."
+    - heading: "Podmínky používání"
+      paragraphs:
+        []
+      terms_before: "Používání Aplikace se řídí také"
+      terms_link: "Podmínkami používání"
+      terms_after: " Zentsu LLC."
+    - heading: "Změny"
+      paragraphs:
+        - "Tyto zásady se mohou čas od času aktualizovat z jakéhokoli důvodu. Poskytovatel služby vás o změnách informuje aktualizací této stránky. Pravidelně je kontrolujte, protože další používání se považuje za souhlas se všemi změnami."
+    - heading: "Váš souhlas"
+      paragraphs:
+        - "Používáním Aplikace souhlasíte se zpracováním informací podle těchto zásad ochrany osobních údajů nyní i v podobě, kterou je Poskytovatel služby změní."
+    - heading: "Kontakt"
+      paragraphs:
+        []
+      email_before: "Máte-li otázky k soukromí při používání Aplikace nebo k našim postupům, napište Poskytovateli služby na"
+      email_after: "."
+
+pl:
+  page_label: "Informacje prawne"
+  h1: "Polityka prywatności"
+  effective: "Data wejścia w życie: 12 lipca 2026"
+  notice_before: ""
+  notice_link: "Angielska wersja"
+  notice_after: "jest wiążąca. To tłumaczenie jest pomocą."
+  overview_url: "/pl/dial/"
+  overview_link: "Powrót do przeglądu Dial"
+  intro: "Niniejsza polityka dotyczy Dial (dalej „Aplikacja”), którą jako usługę komercyjną wydaje Zentsu LLC (dalej „Dostawca usługi”). Usługa jest przeznaczona do użytku „TAKA, JAKA JEST”."
+  short: "Krótko: Dial przechowuje zapisy na urządzeniu. Sterowanie w aplikacji pozwala użyć prywatnej bazy CloudKit powiązanej z Państwa kontem Apple dla głównych zapisów albo zostawić je tylko na urządzeniu. Wpisy wagi i zdjęcia postępów używają osobnego magazynu lokalnego. Dostawca usługi nie prowadzi serwera, który mógłby czytać to, co Państwo zapiszą w Dial."
+  copyright: "© 2026 Zentsu LLC. Wszelkie prawa zastrzeżone."
+  sections:
+    - heading: "Jakie informacje Aplikacja uzyskuje i jak są używane?"
+      paragraphs:
+        - "Aplikacja nie wysyła zapisów Dial do Dostawcy usługi. Rejestracja w Zentsu nie jest wymagana. Leki, dawki, miejsca wstrzyknięć, harmonogramy przypomnień, zapasy oraz historia działań niepożądanych ze zgodnego pliku, który Państwo zdecydują się zaimportować, są przechowywane na urządzeniu. Dostawca usługi ich nie zbiera, nie otrzymuje i nie ma sposobu, by je zobaczyć."
+    - heading: "Gdzie są przechowywane główne zapisy?"
+      paragraphs:
+        - "Zapisy leków, dawek, miejsc wstrzyknięć, przypomnień, zapasów i zaimportowanych działań niepożądanych są przechowywane na urządzeniu. Dial ma w Ustawieniach także sterowanie „Sync with iCloud”. Gdy jest włączone i iCloud jest dostępny, te zapisy mogą używać CloudKit Apple i prywatnej bazy powiązanej z Państwa kontem Apple. Dostawca usługi nie prowadzi serwera, nie trzyma kopii i nie może ich odczytać, odzyskać ani do nich uzyskać dostępu."
+        - "Wyłączenie sterowania w aplikacji zostawia te zapisy tylko na danym urządzeniu po następnym otwarciu Dial. Ustawienia iCloud na urządzeniu też wpływają na to, czy CloudKit jest dostępny. Przechowywanie i przesyłanie iCloud regulują warunki i polityka prywatności Apple."
+    - heading: "Gdzie są przechowywane dane o wadze?"
+      paragraphs:
+        - "Dziennik wagi jest w osobnym, wyłącznie lokalnym magazynie na urządzeniu. Nie jest częścią opcjonalnego magazynu CloudKit powyżej i nie opuszcza urządzenia przez Aplikację. Jeśli Państwo używają Dial na więcej niż jednym urządzeniu, wpisy wagi na każdym urządzeniu pozostają niezależne."
+    - heading: "Gdzie są przechowywane zdjęcia postępów?"
+      paragraphs:
+        - "Zdjęcia postępów i ich daty są przechowywane w katalogu dokumentów Aplikacji na urządzeniu. Nie są częścią zapisów CloudKit Dial. Jeśli Państwo użyją skanera etykiet zapasu, Dial przetwarza wybrany lub zrobiony obraz etykiety, żeby wypełnić pola, i nie zapisuje tego obrazu jako zapisu zapasu."
+    - heading: "Jak Aplikacja używa Zdrowia?"
+      paragraphs:
+        - "Jeśli udzielą Państwo zgody, Dial odczytuje masę ciała ze Zdrowia, żeby dziennik wagi był aktualny, i może zapisywać w Zdrowiu wagę, którą Państwo zapiszą w Dial. Dial nie czyta ani nie zapisuje żadnej innej kategorii danych w Zdrowiu. Dane ze Zdrowia nigdy nie są przesyłane z urządzenia do Dostawcy usługi ani do nikogo innego. Nie są używane do reklamy ani marketingu, nie są sprzedawane, nie są udostępniane stronom trzecim i nie są używane do niczego poza własnym śledzeniem wagi Aplikacji. Tę zgodę kontrolują Państwo w każdej chwili w ustawieniach Zdrowia na urządzeniu."
+    - heading: "Czy Dial zastępuje poradę medyczną?"
+      paragraphs:
+        - "Dial jest narzędziem zapisu. Nie jest wyrobem medycznym i nie udziela porad medycznych. Nie oblicza dawek i nie daje żadnych zaleceń dawkowania. Każda dawka i każdy harmonogram w Dial pochodzą z danych, które Państwo wprowadzili albo zdecydowali się zaimportować. Cokolwiek dotyczy leczenia, w tym dawek, harmonogramów i działań niepożądanych, potwierdzają Państwo z osobą przepisującą."
+    - heading: "Czy Aplikacja wysyła powiadomienia?"
+      paragraphs:
+        - "Aplikacja może zaplanować lokalne przypomnienia o dawkach i innych zdarzeniach, które Państwo ustawią, ale tylko gdy włączą przypomnienia i udzielą zgody na powiadomienia. To lokalne powiadomienia tworzone na urządzeniu z danych, które Państwo wprowadzili. Nie są wysyłane z żadnego serwera Dostawcy usługi ani przez niego nie przechodzą, a treść powiadomienia nie opuszcza urządzenia."
+    - heading: "Czy Aplikacja zbiera dokładne informacje o położeniu urządzenia w czasie rzeczywistym?"
+      paragraphs:
+        - "Aplikacja nie zbiera dokładnych informacji o położeniu Państwa urządzenia."
+    - heading: "Czy strony trzecie widzą informacje uzyskane przez Aplikację albo mają do nich dostęp?"
+      paragraphs:
+        - "Ponieważ Aplikacja nie wysyła zapisów Dial do Dostawcy usługi, Dostawca usługi nie ma takich zapisów, które mógłby udostępnić stronom trzecim. Opcjonalne zakupy i subskrypcje Dial Pro przetwarza Apple przez StoreKit. Dostawca usługi nie otrzymuje z tych transakcji danych karty płatniczej."
+    - heading: "Jakie mam prawa rezygnacji i jak usunąć dane?"
+      paragraphs:
+        - "Wszelkie przechowywanie informacji przez Aplikację zatrzymują Państwo, usuwając ją. Można użyć standardowego odinstalowania urządzenia lub sklepu. Usunięcie wpisu usuwa go z aktywnego magazynu Dial. Gdy sterowanie iCloud w aplikacji jest włączone, usunięcie może się odzwierciedlić w prywatnej bazie CloudKit powiązanej z Państwa kontem Apple. Sterowanie można wyłączyć w ustawieniach Dial i zarządzać danymi Aplikacji w ustawieniach iCloud na urządzeniu. Zgodę na Zdrowie można cofnąć w każdej chwili w ustawieniach Zdrowia. Dane już zapisane w Zdrowiu zostają tam pod kontrolą Apple, dopóki Państwo ich nie usuną. Zdjęcia postępów można usunąć w Dial."
+    - heading: "Dzieci"
+      paragraphs:
+        - "Aplikacja nie jest świadomie używana do pozyskiwania danych od dzieci poniżej 13. roku życia ani do marketingu wobec nich."
+      email_before: "Dostawca usługi świadomie nie zbiera danych osobowych dzieci. Zachęca wszystkie dzieci, żeby takich danych nie wysyłały przez Aplikację ani Usługi. Rodziców i opiekunów prawnych zachęca do nadzorowania korzystania z internetu przez dzieci i do egzekwowania tej polityki, prosząc dzieci, by bez zgody nie podawały danych osobowych przez Aplikację ani Usługi. Jeśli mają Państwo powód sądzić, że dziecko przekazało dane osobowe Dostawcy usługi przez Aplikację lub Usługi, prosimy napisać na"
+      email_after: ", żeby mógł podjąć potrzebne kroki. Trzeba też mieć co najmniej 16 lat, żeby wyrazić zgodę na przetwarzanie danych osobowych w swoim kraju (w niektórych krajach może to zrobić rodzic lub opiekun prawny)."
+    - heading: "Bezpieczeństwo"
+      paragraphs:
+        - "Dial nie wysyła Państwa zapisów do Dostawcy usługi, co ogranicza narażenie przez systemy, które prowadzimy. Zapisy na urządzeniu chronią zabezpieczenia tego urządzenia. Dane przechowywane przez CloudKit chroni Państwa konto Apple i zabezpieczenia iCloud Apple. Dane w Zdrowiu chronią zabezpieczenia danych Zdrowia Apple. Żadnego systemu przechowywania nie da się zagwarantować jako w pełni bezpiecznego."
+    - heading: "Warunki korzystania"
+      paragraphs:
+        []
+      terms_before: "Korzystanie z Aplikacji podlega także"
+      terms_link: "Warunkom korzystania"
+      terms_after: " Zentsu LLC."
+    - heading: "Zmiany"
+      paragraphs:
+        - "Niniejsza polityka może być od czasu do czasu aktualizowana z dowolnego powodu. Dostawca usługi informuje o zmianach, aktualizując tę stronę. Prosimy czytać ją regularnie, bo dalsze korzystanie uważa się za zgodę na wszystkie zmiany."
+    - heading: "Państwa zgoda"
+      paragraphs:
+        - "Korzystając z Aplikacji, wyrażają Państwo zgodę na przetwarzanie informacji zgodnie z niniejszą polityką prywatności teraz i w postaci, w jakiej zmieni ją Dostawca usługi."
+    - heading: "Kontakt"
+      paragraphs:
+        []
+      email_before: "Jeśli mają Państwo pytania o prywatność podczas korzystania z Aplikacji albo o nasze praktyki, prosimy napisać do Dostawcy usługi na"
+      email_after: "."
+
+da:
+  page_label: "Juridisk"
+  h1: "Privatlivspolitik"
+  effective: "Ikrafttrædelsesdato: 12. juli 2026"
+  notice_before: ""
+  notice_link: "Den engelske version"
+  notice_after: "er den gældende tekst. Denne oversættelse er til orientering."
+  overview_url: "/da/dial/"
+  overview_link: "Tilbage til oversigten over Dial"
+  intro: "Denne privatlivspolitik gælder for Dial (herefter „Applikationen“), udgivet af Zentsu LLC (herefter „Tjenesteudbyderen“) som en kommerciel tjeneste. Tjenesten er beregnet til brug „SOM DEN ER“."
+  short: "Kort sagt: Dial gemmer posterne på din enhed. En kontrol i appen lader dig bruge den private CloudKit-database knyttet til din Apple-konto til kerneposter, eller beholde dem kun på enheden. Vægtposter og udviklingsfotos bruger separat lokalt lager. Tjenesteudbyderen driver ingen server, der kan læse det, du gemmer i Dial."
+  copyright: "© 2026 Zentsu LLC. Alle rettigheder forbeholdes."
+  sections:
+    - heading: "Hvilke oplysninger indhenter Applikationen, og hvordan bruges de?"
+      paragraphs:
+        - "Applikationen sender ikke dine Dial-poster til Tjenesteudbyderen. Registrering hos Zentsu er ikke påkrævet. Lægemidler, doser, injektionssteder, påmindelsesplaner, lagerposter og bivirkningshistorik fra en kompatibel fil, du vælger at importere, gemmes på enheden. Tjenesteudbyderen indsamler ikke, modtager ikke og har ingen måde at se disse poster."
+    - heading: "Hvor gemmes mine kerneposter?"
+      paragraphs:
+        - "Dine poster om lægemiddel, dosis, injektionssted, påmindelse, lager og importerede bivirkninger gemmes på enheden. Dial har også en „Sync with iCloud“-kontrol i Indstillinger. Når den er slået til, og iCloud er tilgængelig, kan disse poster bruge Apples CloudKit og den private database knyttet til din Apple-konto. Tjenesteudbyderen driver ingen server, gemmer ingen kopi og kan ikke tilgå, læse eller gendanne dem."
+        - "Hvis du slår kontrollen i appen fra, bliver disse poster kun på den enhed, næste gang du åbner Dial. Enhedens iCloud-indstillinger påvirker også, om CloudKit er tilgængelig. Apples vilkår og privatlivspolitik gælder for iCloud-lagring og -overførsel."
+    - heading: "Hvor gemmes mine vægtdata?"
+      paragraphs:
+        - "Din vægtjournal ligger i et separat, kun-lokalt lager på enheden. Den er ikke del af det valgfrie CloudKit-lager ovenfor og forlader ikke enheden via Applikationen. Hvis du bruger Dial på flere enheder, forbliver vægtposter på hver enhed uafhængige."
+    - heading: "Hvor gemmes udviklingsfotos?"
+      paragraphs:
+        - "Udviklingsfotos og deres datoer gemmes i Applikationens dokumentmappe på enheden. De er ikke del af Dials CloudKit-poster. Hvis du bruger lageretiketscanneren, behandler Dial det valgte eller optagne etiketbillede for at udfylde felter og gemmer ikke det billede som en lagerpost."
+    - heading: "Hvordan bruger Applikationen Sundhed?"
+      paragraphs:
+        - "Hvis du giver tilladelse, læser Dial din kropsvægt fra Sundhed for at holde vægtjournalen opdateret og kan skrive vægtposter, du registrerer i Dial, tilbage til Sundhed. Dial læser eller skriver ingen anden datakategori i Sundhed. Data fra Sundhed sendes aldrig væk fra enheden til Tjenesteudbyderen eller andre. De bruges aldrig til reklame eller markedsføring, sælges aldrig, deles aldrig med tredjeparter og bruges aldrig til andet end Applikationens egen vægtregistrering. Du styrer tilladelsen når som helst i enhedens indstillinger for Sundhed."
+    - heading: "Er Dial en erstatning for lægelig rådgivning?"
+      paragraphs:
+        - "Dial er et journalværktøj. Det er ikke et medicinsk udstyr og giver ikke lægelig rådgivning. Det udfører ingen dosisberegninger og giver ingen dosisanbefalinger. Hver dosis og hver plan i Dial kommer fra oplysninger, du har indtastet eller valgt at importere. Bekræft alt om din behandling, herunder doser, planer og bivirkninger, med den ordinerende læge."
+    - heading: "Sender Applikationen meddelelser?"
+      paragraphs:
+        - "Applikationen kan planlægge lokale påmindelser om doser og andre hændelser, du indstiller, men kun hvis du slår påmindelser til og giver tilladelse til meddelelser. Det er lokale meddelelser på enheden fra de data, du har indtastet. De sendes ikke fra og går ikke via nogen server hos Tjenesteudbyderen, og intet meddelelsesindhold forlader enheden."
+    - heading: "Indsamler Applikationen præcise oplysninger om enhedens position i realtid?"
+      paragraphs:
+        - "Applikationen indsamler ikke præcise oplysninger om din enheds position."
+    - heading: "Ser tredjeparter oplysninger, som Applikationen indhenter, eller har de adgang til dem?"
+      paragraphs:
+        - "Da Applikationen ikke sender Dial-poster til Tjenesteudbyderen, har Tjenesteudbyderen ingen sådanne poster at dele med tredjeparter. Valgfrie Dial Pro-køb og -abonnementer behandles af Apple via StoreKit. Tjenesteudbyderen modtager ingen betalingskortoplysninger fra de transaktioner."
+    - heading: "Hvilke fravalg har jeg, og hvordan sletter jeg mine data?"
+      paragraphs:
+        - "Du kan stoppe al lagring af oplysninger ved at slette Applikationen. Brug den almindelige afinstallation på enheden eller i butikken. Sletning af en post fjerner den fra Dials aktive lager. Når iCloud-kontrollen i appen er slået til, kan sletningen slå igennem i den private CloudKit-database knyttet til din Apple-konto. Du kan slå kontrollen fra i Dial-indstillinger og administrere Applikationens data via enhedens iCloud-indstillinger. Du kan tilbagekalde tilladelsen til Sundhed når som helst i indstillingerne for Sundhed. Data allerede skrevet til Sundhed bliver der under Apples kontrol, indtil du fjerner dem. Udviklingsfotos kan slettes i Dial."
+    - heading: "Børn"
+      paragraphs:
+        - "Applikationen bruges ikke bevidst til at indhente data fra eller markedsføre til børn under 13 år."
+      email_before: "Tjenesteudbyderen indsamler ikke bevidst personligt identificerbare oplysninger fra børn. Tjenesteudbyderen opfordrer alle børn til aldrig at sende sådanne oplysninger via Applikationen eller Tjenesterne. Forældre og værger opfordres til at overvåge børns internetbrug og hjælpe med at håndhæve denne politik ved at instruere dem i aldrig at give personligt identificerbare oplysninger via Applikationen eller Tjenesterne uden tilladelse. Hvis du har grund til at tro, at et barn har givet sådanne oplysninger til Tjenesteudbyderen via Applikationen eller Tjenesterne, så skriv til"
+      email_after: ", så der kan tages de nødvendige skridt. Du skal også være mindst 16 år for at samtykke til behandling af dine personligt identificerbare oplysninger i dit land (i nogle lande kan en forælder eller værge gøre det på dine vegne)."
+    - heading: "Sikkerhed"
+      paragraphs:
+        - "Dial sender ikke dine poster til Tjenesteudbyderen, hvilket begrænser eksponering via systemer, vi driver. Poster på din enhed er beskyttet af enhedens sikkerhedskontroller. Data gemt via CloudKit er beskyttet af din Apple-konto og Apples iCloud-sikkerhedskontroller. Data i Sundhed er beskyttet af Apples sikkerhedskontroller for Sundhed. Intet lagersystem kan garanteres fuldt sikkert."
+    - heading: "Brugsvilkår"
+      paragraphs:
+        []
+      terms_before: "Din brug af Applikationen er også underlagt Zentsu LLC's"
+      terms_link: "brugsvilkår"
+      terms_after: "."
+    - heading: "Ændringer"
+      paragraphs:
+        - "Denne privatlivspolitik kan opdateres fra tid til anden af enhver grund. Tjenesteudbyderen underretter dig om ændringer ved at opdatere denne side. Du bør læse politikken jævnligt, da fortsat brug anses for godkendelse af alle ændringer."
+    - heading: "Dit samtykke"
+      paragraphs:
+        - "Ved at bruge Applikationen samtykker du i behandlingen af dine oplysninger som beskrevet i denne privatlivspolitik nu og som ændret af Tjenesteudbyderen."
+    - heading: "Kontakt os"
+      paragraphs:
+        []
+      email_before: "Har du spørgsmål om privatliv, mens du bruger Applikationen, eller om vores praksis, så kontakt Tjenesteudbyderen på"
+      email_after: "."
+
+"no":
+  page_label: "Juridisk"
+  h1: "Personvernerklæring"
+  effective: "Ikrafttredelsesdato: 12. juli 2026"
+  notice_before: ""
+  notice_link: "Den engelske versjonen"
+  notice_after: "er den offisielle teksten i denne erklæringen. Denne siden er til orientering."
+  overview_url: "/no/dial/"
+  overview_link: "Tilbake til oversikten over Dial"
+  intro: "Denne personvernerklæringen gjelder for Dial (heretter «Applikasjonen»), utgitt av Zentsu LLC (heretter «Tjenesteleverandøren») som en kommersiell tjeneste. Tjenesten er beregnet for bruk «SOM DEN ER»."
+  short: "Kort sagt: Dial lagrer postene på enheten din. En kontroll i appen lar deg bruke den private CloudKit-databasen knyttet til Apple-kontoen din for kjerneposter, eller beholde dem bare på enheten. Vektposter og fremgangsfoto bruker separat lokalt lager. Tjenesteleverandøren driver ingen server som kan lese det du lagrer i Dial."
+  copyright: "© 2026 Zentsu LLC. Alle rettigheter forbeholdt."
+  sections:
+    - heading: "Hvilke opplysninger innhenter Applikasjonen, og hvordan brukes de?"
+      paragraphs:
+        - "Applikasjonen sender ikke Dial-postene dine til Tjenesteleverandøren. Registrering hos Zentsu er ikke påkrevd. Legemidler, doser, injeksjonssteder, påminnelsesplaner, lagerposter og bivirkningshistorikk fra en kompatibel fil du velger å importere, lagres på enheten. Tjenesteleverandøren samler ikke inn, mottar ikke og har ingen måte å se disse postene."
+    - heading: "Hvor lagres kjernepostene mine?"
+      paragraphs:
+        - "Postene dine om legemiddel, dose, injeksjonssted, påminnelse, lager og importerte bivirkninger lagres på enheten. Dial har også en «Sync with iCloud»-kontroll i Innstillinger. Når den er slått på, og iCloud er tilgjengelig, kan disse postene bruke Apples CloudKit og den private databasen knyttet til Apple-kontoen din. Tjenesteleverandøren driver ingen server, lagrer ingen kopi og kan ikke få tilgang til, lese eller gjenopprette dem."
+        - "Hvis du slår kontrollen i appen av, blir disse postene bare på den enheten neste gang du åpner Dial. Enhetens iCloud-innstillinger påvirker også om CloudKit er tilgjengelig. Apples vilkår og personvernerklæring gjelder for iCloud-lagring og -overføring."
+    - heading: "Hvor lagres vektdataene mine?"
+      paragraphs:
+        - "Vektjournalen din ligger i et separat, kun lokalt lager på enheten. Den er ikke del av det valgfrie CloudKit-lageret ovenfor og forlater ikke enheten via Applikasjonen. Hvis du bruker Dial på flere enheter, forblir vektposter på hver enhet uavhengige."
+    - heading: "Hvor lagres fremgangsfoto?"
+      paragraphs:
+        - "Fremgangsfoto og datoene deres lagres i Applikasjonens dokumentmappe på enheten. De er ikke del av Dials CloudKit-poster. Hvis du bruker lageretikettskanneren, behandler Dial det valgte eller fotograferte etikettbildet for å fylle ut felt og lagrer ikke det bildet som en lagerpost."
+    - heading: "Hvordan bruker Applikasjonen Helse?"
+      paragraphs:
+        - "Hvis du gir tillatelse, leser Dial kroppsvekten din fra Helse for å holde vektjournalen oppdatert, og kan skrive vektposter du registrerer i Dial tilbake til Helse. Dial leser eller skriver ingen annen datakategori i Helse. Data fra Helse sendes aldri vekk fra enheten til Tjenesteleverandøren eller andre. De brukes aldri til reklame eller markedsføring, selges aldri, deles aldri med tredjeparter og brukes aldri til annet enn Applikasjonens egen vektregistrering. Du styrer tillatelsen når som helst i enhetens innstillinger for Helse."
+    - heading: "Er Dial en erstatning for medisinsk råd?"
+      paragraphs:
+        - "Dial er et journalverktøy. Det er ikke et medisinsk utstyr og gir ikke medisinsk råd. Det utfører ingen doseberegninger og gir ingen doseanbefalinger. Hver dose og hver plan i Dial kommer fra opplysninger du har skrevet inn eller valgt å importere. Bekreft alt om behandlingen din, herunder doser, planer og bivirkninger, med forskriveren din."
+    - heading: "Sender Applikasjonen varsler?"
+      paragraphs:
+        - "Applikasjonen kan planlegge lokale påminnelser om doser og andre hendelser du stiller inn, men bare hvis du slår påminnelser på og gir tillatelse til varsler. Det er lokale varsler på enheten fra dataene du har skrevet inn. De sendes ikke fra og går ikke via noen server hos Tjenesteleverandøren, og ikke noe varslingsinnhold forlater enheten."
+    - heading: "Samler Applikasjonen inn presise opplysninger om enhetens posisjon i sanntid?"
+      paragraphs:
+        - "Applikasjonen samler ikke inn presise opplysninger om enhetens posisjon."
+    - heading: "Ser tredjeparter opplysninger som Applikasjonen innhenter, eller har de tilgang til dem?"
+      paragraphs:
+        - "Siden Applikasjonen ikke sender Dial-poster til Tjenesteleverandøren, har Tjenesteleverandøren ingen slike poster å dele med tredjeparter. Valgfrie Dial Pro-kjøp og -abonnementer behandles av Apple via StoreKit. Tjenesteleverandøren mottar ingen betalingskortopplysninger fra de transaksjonene."
+    - heading: "Hvilke reservasjonsrettigheter har jeg, og hvordan sletter jeg dataene mine?"
+      paragraphs:
+        - "Du kan stanse all lagring av opplysninger ved å slette Applikasjonen. Bruk den vanlige avinstallasjonen på enheten eller i butikken. Sletting av en post fjerner den fra Dials aktive lager. Når iCloud-kontrollen i appen er slått på, kan slettingen speiles i den private CloudKit-databasen knyttet til Apple-kontoen din. Du kan slå kontrollen av i Dial-innstillingene og administrere Applikasjonens data via enhetens iCloud-innstillinger. Du kan trekke tilbake tillatelsen til Helse når som helst i innstillingene for Helse. Data allerede skrevet til Helse blir der under Apples kontroll til du fjerner dem. Fremgangsfoto kan slettes i Dial."
+    - heading: "Barn"
+      paragraphs:
+        - "Applikasjonen brukes ikke bevisst til å innhente data fra eller markedsføre mot barn under 13 år."
+      email_before: "Tjenesteleverandøren innhenter ikke bevisst personopplysninger fra barn. Tjenesteleverandøren oppfordrer alle barn til aldri å sende slike opplysninger via Applikasjonen eller Tjenestene. Foreldre og verger oppfordres til å overvåke barns internettbruk og hjelpe til med å håndheve denne erklæringen ved å instruere dem i aldri å gi personopplysninger via Applikasjonen eller Tjenestene uten tillatelse. Hvis du har grunn til å tro at et barn har gitt slike opplysninger til Tjenesteleverandøren via Applikasjonen eller Tjenestene, så skriv til"
+      email_after: ", slik at de nødvendige skrittene kan tas. Du må også være minst 16 år for å samtykke til behandling av dine personopplysninger i landet ditt (i noen land kan en forelder eller verge gjøre det på dine vegne)."
+    - heading: "Sikkerhet"
+      paragraphs:
+        - "Dial sender ikke postene dine til Tjenesteleverandøren, noe som begrenser eksponering via systemer vi driver. Poster på enheten din er beskyttet av enhetens sikkerhetskontroller. Data lagret via CloudKit er beskyttet av Apple-kontoen din og Apples iCloud-sikkerhetskontroller. Data i Helse er beskyttet av Apples sikkerhetskontroller for Helse. Ingen lagersystemer kan garanteres fullt sikre."
+    - heading: "Bruksvilkår"
+      paragraphs:
+        []
+      terms_before: "Din bruk av Applikasjonen er også underlagt Zentsu LLCs"
+      terms_link: "bruksvilkår"
+      terms_after: "."
+    - heading: "Endringer"
+      paragraphs:
+        - "Denne personvernerklæringen kan oppdateres fra tid til annen av enhver grunn. Tjenesteleverandøren underretter deg om endringer ved å oppdatere denne siden. Du bør lese erklæringen jevnlig, da fortsatt bruk anses som godkjenning av alle endringer."
+    - heading: "Ditt samtykke"
+      paragraphs:
+        - "Ved å bruke Applikasjonen samtykker du i behandlingen av opplysningene dine som beskrevet i denne personvernerklæringen nå og som endret av Tjenesteleverandøren."
+    - heading: "Kontakt oss"
+      paragraphs:
+        []
+      email_before: "Har du spørsmål om personvern mens du bruker Applikasjonen, eller om vår praksis, så kontakt Tjenesteleverandøren på"
+      email_after: "."
+
+el:
+  page_label: "Νομικά"
+  h1: "Πολιτική απορρήτου"
+  effective: "Ημερομηνία ισχύος: 12 Ιουλίου 2026"
+  notice_before: ""
+  notice_link: "Η αγγλική έκδοση"
+  notice_after: "είναι το επίσημο κείμενο αυτής της πολιτικής. Η σελίδα παρέχεται για διευκόλυνση."
+  overview_url: "/el/dial/"
+  overview_link: "Επιστροφή στην επισκόπηση του Dial"
+  intro: "Η παρούσα πολιτική απορρήτου ισχύει για το Dial (εφεξής «η Εφαρμογή»), που εκδίδει η Zentsu LLC (εφεξής «Πάροχος υπηρεσίας») ως εμπορική υπηρεσία. Η υπηρεσία προορίζεται για χρήση «ΩΣ ΕΧΕΙ»."
+  short: "Με λίγα λόγια: το Dial αποθηκεύει τις εγγραφές στη συσκευή. Ένας διακόπτης στην εφαρμογή σάς επιτρέπει να χρησιμοποιείτε την ιδιωτική βάση CloudKit που συνδέεται με τον λογαριασμό Apple για τις βασικές εγγραφές, ή να τις αφήσετε μόνο στη συσκευή. Οι εγγραφές βάρους και οι φωτογραφίες προόδου χρησιμοποιούν χωριστή τοπική αποθήκευση. Ο Πάροχος υπηρεσίας δεν λειτουργεί διακομιστή που μπορεί να διαβάσει ό,τι αποθηκεύετε στο Dial."
+  copyright: "© 2026 Zentsu LLC. Με την επιφύλαξη παντός δικαιώματος."
+  sections:
+    - heading: "Ποιες πληροφορίες λαμβάνει η Εφαρμογή και πώς χρησιμοποιούνται;"
+      paragraphs:
+        - "Η Εφαρμογή δεν στέλνει τις εγγραφές Dial στον Πάροχο υπηρεσίας. Δεν απαιτείται εγγραφή στη Zentsu. Φάρμακα, δόσεις, σημεία ένεσης, προγράμματα υπενθυμίσεων, απόθεμα και ιστορικό ανεπιθύμητων ενεργειών από συμβατό αρχείο που επιλέγετε να εισαγάγετε αποθηκεύονται στη συσκευή. Ο Πάροχος υπηρεσίας δεν τα συλλέγει, δεν τα λαμβάνει και δεν έχει τρόπο να τα δει."
+    - heading: "Πού αποθηκεύονται οι βασικές εγγραφές;"
+      paragraphs:
+        - "Οι εγγραφές φαρμάκου, δόσης, σημείου ένεσης, υπενθύμισης, αποθέματος και εισαγμένων ανεπιθύμητων ενεργειών αποθηκεύονται στη συσκευή. Το Dial έχει επίσης διακόπτη «Sync with iCloud» στις Ρυθμίσεις. Όταν είναι ενεργός και το iCloud διαθέσιμο, αυτές οι εγγραφές μπορούν να χρησιμοποιούν το CloudKit της Apple και την ιδιωτική βάση του λογαριασμού Apple σας. Ο Πάροχος υπηρεσίας δεν λειτουργεί διακομιστή, δεν κρατά αντίγραφο και δεν μπορεί να τις προσπελάσει, να τις διαβάσει ή να τις ανακτήσει."
+        - "Αν απενεργοποιήσετε τον διακόπτη στην εφαρμογή, αυτές οι εγγραφές μένουν μόνο σε εκείνη τη συσκευή μετά το επόμενο άνοιγμα του Dial. Οι ρυθμίσεις iCloud της συσκευής επηρεάζουν επίσης αν το CloudKit είναι διαθέσιμο. Οι όροι και η πολιτική απορρήτου της Apple διέπουν την αποθήκευση και τη μετάδοση iCloud."
+    - heading: "Πού αποθηκεύονται τα δεδομένα βάρους;"
+      paragraphs:
+        - "Το ημερολόγιο βάρους βρίσκεται σε χωριστή, μόνο τοπική αποθήκευση στη συσκευή. Δεν είναι μέρος της προαιρετικής αποθήκευσης CloudKit παραπάνω και δεν φεύγει από τη συσκευή μέσω της Εφαρμογής. Αν χρησιμοποιείτε το Dial σε περισσότερες συσκευές, οι εγγραφές βάρους σε κάθε συσκευή μένουν ανεξάρτητες."
+    - heading: "Πού αποθηκεύονται οι φωτογραφίες προόδου;"
+      paragraphs:
+        - "Οι φωτογραφίες προόδου και οι ημερομηνίες τους αποθηκεύονται στον φάκελο εγγράφων της Εφαρμογής στη συσκευή. Δεν είναι μέρος των εγγραφών CloudKit του Dial. Αν χρησιμοποιείτε τον σαρωτή ετικέτας αποθέματος, το Dial επεξεργάζεται την επιλεγμένη ή τραβηγμένη εικόνα ετικέτας για να συμπληρώσει πεδία και δεν αποθηκεύει εκείνη την εικόνα ως εγγραφή αποθέματος."
+    - heading: "Πώς χρησιμοποιεί η Εφαρμογή την Υγεία;"
+      paragraphs:
+        - "Αν δώσετε άδεια, το Dial διαβάζει το σωματικό βάρος από την Υγεία για να ενημερώνει το ημερολόγιο βάρους και μπορεί να γράφει στην Υγεία βάρος που καταγράφετε στο Dial. Το Dial δεν διαβάζει ούτε γράφει άλλη κατηγορία δεδομένων στην Υγεία. Τα δεδομένα Υγείας δεν φεύγουν ποτέ από τη συσκευή προς τον Πάροχο υπηρεσίας ή άλλον. Δεν χρησιμοποιούνται για διαφήμιση ή μάρκετινγκ, δεν πωλούνται, δεν κοινοποιούνται σε τρίτους και δεν χρησιμοποιούνται για τίποτε άλλο από την καταγραφή βάρους της Εφαρμογής. Ελέγχετε την άδεια οποτεδήποτε στις ρυθμίσεις Υγείας της συσκευής."
+    - heading: "Υποκαθιστά το Dial ιατρική συμβουλή;"
+      paragraphs:
+        - "Το Dial είναι εργαλείο ημερολογίου. Δεν είναι ιατροτεχνολογικό προϊόν και δεν παρέχει ιατρική συμβουλή. Δεν εκτελεί υπολογισμούς δόσης και δεν κάνει συστάσεις δοσολογίας. Κάθε δόση και κάθε πρόγραμμα στο Dial προέρχεται από στοιχεία που εισαγάγατε ή επιλέξατε να εισαγάγετε. Επιβεβαιώστε οτιδήποτε για τη θεραπεία, συμπεριλαμβανομένων δόσεων, προγραμμάτων και ανεπιθύμητων ενεργειών, με τον συνταγογράφο σας."
+    - heading: "Στέλνει η Εφαρμογή ειδοποιήσεις;"
+      paragraphs:
+        - "Η Εφαρμογή μπορεί να προγραμματίσει τοπικές υπενθυμίσεις για δόσεις και άλλα γεγονότα που ορίζετε, αλλά μόνο αν ενεργοποιήσετε υπενθυμίσεις και δώσετε άδεια ειδοποιήσεων. Είναι τοπικές ειδοποιήσεις στη συσκευή από τα δεδομένα που εισαγάγατε. Δεν στέλνονται από ούτε περνούν από διακομιστή του Παρόχου υπηρεσίας, και κανένα περιεχόμενο ειδοποίησης δεν φεύγει από τη συσκευή."
+    - heading: "Συλλέγει η Εφαρμογή ακριβείς πληροφορίες θέσης της συσκευής σε πραγματικό χρόνο;"
+      paragraphs:
+        - "Η Εφαρμογή δεν συλλέγει ακριβείς πληροφορίες για τη θέση της συσκευής σας."
+    - heading: "Βλέπουν τρίτοι πληροφορίες που λαμβάνει η Εφαρμογή, ή έχουν πρόσβαση σε αυτές;"
+      paragraphs:
+        - "Επειδή η Εφαρμογή δεν στέλνει εγγραφές Dial στον Πάροχο υπηρεσίας, ο Πάροχος υπηρεσίας δεν έχει τέτοιες εγγραφές να μοιραστεί με τρίτους. Προαιρετικές αγορές και συνδρομές Dial Pro τις επεξεργάζεται η Apple μέσω StoreKit. Ο Πάροχος υπηρεσίας δεν λαμβάνει στοιχεία κάρτας πληρωμής από αυτές τις συναλλαγές."
+    - heading: "Ποια δικαιώματα εξαίρεσης έχω και πώς διαγράφω τα δεδομένα;"
+      paragraphs:
+        - "Σταματάτε κάθε αποθήκευση πληροφοριών από την Εφαρμογή διαγράφοντάς την. Χρησιμοποιήστε την τυπική απεγκατάσταση της συσκευής ή του καταστήματος. Η διαγραφή εγγραφής την αφαιρεί από την ενεργή αποθήκευση του Dial. Όταν ο διακόπτης iCloud στην εφαρμογή είναι ενεργός, η διαγραφή μπορεί να εφαρμοστεί στην ιδιωτική βάση CloudKit του λογαριασμού Apple. Μπορείτε να απενεργοποιήσετε τον διακόπτη στις ρυθμίσεις Dial και να διαχειριστείτε τα δεδομένα της Εφαρμογής στις ρυθμίσεις iCloud της συσκευής. Μπορείτε να ανακαλέσετε την άδεια Υγείας οποτεδήποτε στις ρυθμίσεις Υγείας. Δεδομένα ήδη γραμμένα στην Υγεία μένουν εκεί υπό τον έλεγχο της Apple μέχρι να τα αφαιρέσετε. Οι φωτογραφίες προόδου μπορούν να διαγραφούν στο Dial."
+    - heading: "Παιδιά"
+      paragraphs:
+        - "Η Εφαρμογή δεν χρησιμοποιείται εν γνώσει μας για συλλογή δεδομένων από παιδιά κάτω των 13 ετών ούτε για διαφήμιση προς αυτά."
+      email_before: "Ο Πάροχος υπηρεσίας δεν συλλέγει εν γνώσει του προσωπικά αναγνωρίσιμες πληροφορίες από παιδιά. Ενθαρρύνει όλα τα παιδιά να μην υποβάλλουν τέτοιες πληροφορίες μέσω της Εφαρμογής ή των Υπηρεσιών. Οι γονείς και κηδεμόνες ενθαρρύνονται να παρακολουθούν τη χρήση διαδικτύου των παιδιών και να βοηθούν στην εφαρμογή αυτής της πολιτικής, λέγοντάς τους να μην δίνουν προσωπικά αναγνωρίσιμες πληροφορίες μέσω της Εφαρμογής ή των Υπηρεσιών χωρίς άδεια. Αν έχετε λόγο να πιστεύετε ότι παιδί έδωσε τέτοιες πληροφορίες στον Πάροχο υπηρεσίας μέσω της Εφαρμογής ή των Υπηρεσιών, γράψτε στο"
+      email_after: ", ώστε να ληφθούν τα απαραίτητα μέτρα. Πρέπει επίσης να είστε τουλάχιστον 16 ετών για να συναινέσετε στην επεξεργασία προσωπικά αναγνωρίσιμων πληροφοριών στη χώρα σας (σε ορισμένες χώρες γονέας ή κηδεμόνας μπορεί να το κάνει εκ μέρους σας)."
+    - heading: "Ασφάλεια"
+      paragraphs:
+        - "Το Dial δεν στέλνει τις εγγραφές σας στον Πάροχο υπηρεσίας, περιορίζοντας την έκθεση μέσω συστημάτων που λειτουργούμε. Οι εγγραφές στη συσκευή προστατεύονται από τους ελέγχους ασφαλείας της συσκευής. Τα δεδομένα μέσω CloudKit προστατεύονται από τον λογαριασμό Apple και τους ελέγχους ασφαλείας iCloud της Apple. Τα δεδομένα στην Υγεία προστατεύονται από τους ελέγχους ασφαλείας δεδομένων Υγείας της Apple. Κανένα σύστημα αποθήκευσης δεν μπορεί να εγγυηθεί πλήρη ασφάλεια."
+    - heading: "Όροι χρήσης"
+      paragraphs:
+        []
+      terms_before: "Η χρήση της Εφαρμογής διέπεται επίσης από τους"
+      terms_link: "Όρους χρήσης"
+      terms_after: " της Zentsu LLC."
+    - heading: "Αλλαγές"
+      paragraphs:
+        - "Αυτή η πολιτική απορρήτου μπορεί να ενημερώνεται κατά καιρούς για οποιονδήποτε λόγο. Ο Πάροχος υπηρεσίας σάς ειδοποιεί για τις αλλαγές ενημερώνοντας αυτή τη σελίδα. Να την συμβουλεύεστε τακτικά, γιατί η συνεχιζόμενη χρήση θεωρείται έγκριση όλων των αλλαγών."
+    - heading: "Η συναίνεσή σας"
+      paragraphs:
+        - "Χρησιμοποιώντας την Εφαρμογή συναινείτε στην επεξεργασία των πληροφοριών σας όπως περιγράφεται σε αυτή την πολιτική απορρήτου τώρα και όπως την τροποποιεί ο Πάροχος υπηρεσίας."
+    - heading: "Επικοινωνία"
+      paragraphs:
+        []
+      email_before: "Για ερωτήσεις απορρήτου κατά τη χρήση της Εφαρμογής ή για τις πρακτικές μας, επικοινωνήστε με τον Πάροχο υπηρεσίας στο"
+      email_after: "."
+
+zh:
+  page_label: "法律"
+  h1: "隐私政策"
+  effective: "生效日期：2026 年 7 月 12 日"
+  notice_before: ""
+  notice_link: "英文版本"
+  notice_after: "是本政策的正式文本。本页仅供阅读。"
+  overview_url: "/zh/dial/"
+  overview_link: "返回 Dial 概览"
+  intro: "本隐私政策适用于 Dial（下称「本应用」），由 Zentsu LLC（下称「服务提供方」）作为商业服务发布。服务按「现状」提供。"
+  short: "简要说明：Dial 把记录存在设备上。应用内控件可让核心记录使用绑定到您 Apple 账户的私人 CloudKit 数据库，或仅留在设备上。体重条目和进展照片使用单独的本地存储。服务提供方不运营能读取您在 Dial 中所存内容的服务器。"
+  copyright: "© 2026 Zentsu LLC。保留所有权利。"
+  sections:
+    - heading: "本应用获取哪些信息，如何使用？"
+      paragraphs:
+        - "本应用不会把您的 Dial 记录发送给服务提供方。无需在 Zentsu 注册。药物、剂量、注射部位、提醒计划、库存，以及您选择导入的兼容文件中的副作用历史，都存在设备上。服务提供方不收集、不接收，也没有办法看到这些记录。"
+    - heading: "核心记录存在哪里？"
+      paragraphs:
+        - "药物、剂量、注射部位、提醒、库存和导入的副作用记录存在设备上。Dial 设置中还有「Sync with iCloud」控件。打开且 iCloud 可用时，这些记录可使用 Apple 的 CloudKit 以及绑定到您 Apple 账户的私人数据库。服务提供方不运营服务器、不保存副本，也无法访问、读取或恢复它们。"
+        - "关闭应用内控件后，下次打开 Dial 时这些记录只留在该设备上。设备的 iCloud 设置也会影响 CloudKit 是否可用。iCloud 存储与传输受 Apple 条款和隐私政策约束。"
+    - heading: "体重数据存在哪里？"
+      paragraphs:
+        - "体重日志在设备上单独的仅本地存储中。它不属于上面的可选 CloudKit 存储，也不会通过本应用离开设备。若在多台设备上使用 Dial，各设备上的体重条目彼此独立。"
+    - heading: "进展照片存在哪里？"
+      paragraphs:
+        - "进展照片及其日期存在本应用在设备上的文稿目录中。它们不是 Dial CloudKit 记录的一部分。若使用库存标签扫描，Dial 处理所选或拍摄的标签图像以填写字段，不会把该图像存为库存记录。"
+    - heading: "本应用如何使用健康？"
+      paragraphs:
+        - "若您授权，Dial 从健康读取体重以保持体重日志更新，并可将您在 Dial 中记录的体重写回健康。Dial 不读取或写入健康中的其他数据类别。健康数据从不离开设备发送给服务提供方或任何其他方。不用于广告或营销，不出售，不与第三方共享，除本应用自身的体重记录外不作他用。您可随时在设备的健康设置中控制该权限。"
+    - heading: "Dial 能替代医疗建议吗？"
+      paragraphs:
+        - "Dial 是日记工具。它不是医疗器械，不提供医疗建议。它不做剂量计算，也不给出任何用药建议。Dial 中的每一剂和每一计划都来自您输入或选择导入的信息。治疗相关事项，包括剂量、计划和副作用，请与医生确认。"
+    - heading: "本应用会发送通知吗？"
+      paragraphs:
+        - "本应用可为您设置的剂量和其他事件安排本地提醒，但仅在您打开提醒并授予通知权限时。这些是设备根据您输入的数据生成的本地通知。它们不从服务提供方的任何服务器发出或经过，通知内容也不会离开设备。"
+    - heading: "本应用是否收集设备的精确实时位置？"
+      paragraphs:
+        - "本应用不收集关于您设备位置的精确信息。"
+    - heading: "第三方是否看到或访问本应用获取的信息？"
+      paragraphs:
+        - "由于本应用不向服务提供方传输 Dial 记录，服务提供方没有此类记录可与第三方共享。可选的 Dial Pro 购买和订阅由 Apple 通过 StoreKit 处理。服务提供方不会从这些交易中收到支付卡详情。"
+    - heading: "如何退出，如何删除数据？"
+      paragraphs:
+        - "删除本应用即可停止其存储任何信息。可使用设备或商店的标准卸载流程。删除一条记录会将其从 Dial 的活动存储中移除。应用内 iCloud 控件打开时，删除可通过绑定到您 Apple 账户的私人 CloudKit 数据库反映。可在 Dial 设置中关闭该控件，并通过设备的 iCloud 设置管理本应用数据。可随时在健康设置中撤销健康权限。已写入健康的数据仍受 Apple 控制，直到您移除。进展照片可在 Dial 内删除。"
+    - heading: "儿童"
+      paragraphs:
+        - "本应用不会故意向 13 岁以下儿童征求数据或向其营销。"
+      email_before: "服务提供方不会故意收集儿童的个人身份信息。鼓励所有儿童不要通过本应用或服务提交此类信息。鼓励家长和法定监护人监督儿童的互联网使用，并告知儿童未经许可不要通过本应用或服务提供个人身份信息。若您有理由相信儿童通过本应用或服务向服务提供方提供了个人身份信息，请写信至"
+      email_after: "，以便采取必要措施。您还必须至少年满 16 岁才能在所在国家同意处理个人身份信息（在某些国家可由家长或监护人代为同意）。"
+    - heading: "安全"
+      paragraphs:
+        - "Dial 不向服务提供方传输您的记录，从而减少经我们系统接触这些记录的可能。设备上的记录受该设备安全控制保护。通过 CloudKit 存储的数据受您的 Apple 账户和 Apple 的 iCloud 安全控制保护。健康中的数据受健康数据安全控制保护。任何存储系统都无法保证完全安全。"
+    - heading: "使用条款"
+      paragraphs:
+        []
+      terms_before: "使用本应用还受 Zentsu LLC"
+      terms_link: "使用条款"
+      terms_after: "约束。"
+    - heading: "变更"
+      paragraphs:
+        - "本隐私政策可能不时因任何原因更新。服务提供方通过更新本页通知您。请定期查阅，继续使用视为批准所有变更。"
+    - heading: "您的同意"
+      paragraphs:
+        - "使用本应用即表示您同意按本隐私政策及其后由服务提供方修订的内容处理您的信息。"
+    - heading: "联系我们"
+      paragraphs:
+        []
+      email_before: "若对使用本应用时的隐私或我们的做法有疑问，请通过邮件联系服务提供方："
+      email_after: "。"
+
+zh-hant:
+  page_label: "法律"
+  h1: "隱私權政策"
+  effective: "生效日期：2026 年 7 月 12 日"
+  notice_before: ""
+  notice_link: "英文版本"
+  notice_after: "是本政策的正式正文。本頁為便利而提供。"
+  overview_url: "/zh-hant/dial/"
+  overview_link: "返回 Dial 概覽"
+  intro: "本隱私權政策適用於 Dial（下稱「本 App」），由 Zentsu LLC（下稱「服務提供者」）作為商業服務發布。服務按「現狀」提供。"
+  short: "簡要說明：Dial 把紀錄存在裝置上。App 內控制項可讓核心紀錄使用綁定到你 Apple 帳號的私人 CloudKit 資料庫，或僅留在裝置上。體重項目和進展照片使用單獨的本機儲存。服務提供者不營運能讀取你在 Dial 中所存內容的伺服器。"
+  copyright: "© 2026 Zentsu LLC。保留所有權利。"
+  sections:
+    - heading: "本 App 取得哪些資訊，如何使用？"
+      paragraphs:
+        - "本 App 不會把你的 Dial 紀錄傳送給服務提供者。無需在 Zentsu 註冊。藥物、劑量、注射部位、提醒計畫、庫存，以及你選擇匯入的相容檔案中的副作用歷史，都存在裝置上。服務提供者不收集、不接收，也沒有辦法看到這些紀錄。"
+    - heading: "核心紀錄存在哪裡？"
+      paragraphs:
+        - "藥物、劑量、注射部位、提醒、庫存和匯入的副作用紀錄存在裝置上。Dial 設定中還有「Sync with iCloud」控制項。打開且 iCloud 可用時，這些紀錄可使用 Apple 的 CloudKit 以及綁定到你 Apple 帳號的私人資料庫。服務提供者不營運伺服器、不儲存副本，也無法存取、讀取或還原它們。"
+        - "關閉 App 內控制項後，下次打開 Dial 時這些紀錄只留在該裝置上。裝置的 iCloud 設定也會影響 CloudKit 是否可用。iCloud 儲存與傳輸受 Apple 條款和隱私權政策約束。"
+    - heading: "體重資料存在哪裡？"
+      paragraphs:
+        - "體重日誌在裝置上單獨的僅本機儲存中。它不屬於上面的可選 CloudKit 儲存，也不會透過本 App 離開裝置。若在多台裝置上使用 Dial，各裝置上的體重項目彼此獨立。"
+    - heading: "進展照片存在哪裡？"
+      paragraphs:
+        - "進展照片及其日期存在本 App 在裝置上的檔案目錄中。它們不是 Dial CloudKit 紀錄的一部分。若使用庫存標籤掃描，Dial 處理所選或拍攝的標籤影像以填寫欄位，不會把該影像存為庫存紀錄。"
+    - heading: "本 App 如何使用健康？"
+      paragraphs:
+        - "若你授權，Dial 從健康讀取體重以保持體重日誌更新，並可將你在 Dial 中記錄的體重寫回健康。Dial 不讀取或寫入健康中的其他資料類別。健康資料從不離開裝置傳送給服務提供者或任何其他方。不用於廣告或行銷，不出售，不與第三方分享，除本 App 自身的體重紀錄外不作他用。你可隨時在裝置的健康設定中控制該權限。"
+    - heading: "Dial 能替代醫療建議嗎？"
+      paragraphs:
+        - "Dial 是日記工具。它不是醫療器材，不提供醫療建議。它不做劑量計算，也不給出任何給藥建議。Dial 中的每一劑和每一計畫都來自你輸入或選擇匯入的資訊。治療相關事項，包括劑量、計畫和副作用，請與醫生確認。"
+    - heading: "本 App 會傳送通知嗎？"
+      paragraphs:
+        - "本 App 可為你設定的劑量和其他事件安排本機提醒，但僅在你打開提醒並授予通知權限時。這些是裝置根據你輸入的資料產生的本機通知。它們不從服務提供者的任何伺服器發出或經過，通知內容也不會離開裝置。"
+    - heading: "本 App 是否收集裝置的精確即時位置？"
+      paragraphs:
+        - "本 App 不收集關於你裝置位置的精確資訊。"
+    - heading: "第三方是否看到或存取本 App 取得的資訊？"
+      paragraphs:
+        - "由於本 App 不向服務提供者傳輸 Dial 紀錄，服務提供者沒有此類紀錄可與第三方分享。可選的 Dial Pro 購買和訂閱由 Apple 透過 StoreKit 處理。服務提供者不會從這些交易中收到付款卡資料。"
+    - heading: "我有哪些退出權，如何刪除資料？"
+      paragraphs:
+        - "刪除本 App 即可停止其儲存任何資訊。可使用裝置或商店的標準解除安裝流程。刪除一筆紀錄會將其從 Dial 的活動儲存中移除。App 內 iCloud 控制項打開時，刪除可透過綁定到你 Apple 帳號的私人 CloudKit 資料庫反映。可在 Dial 設定中關閉該控制項，並透過裝置的 iCloud 設定管理本 App 資料。可隨時在健康設定中撤銷健康權限。已寫入健康的資料仍受 Apple 控制，直到你移除。進展照片可在 Dial 內刪除。"
+    - heading: "兒童"
+      paragraphs:
+        - "本 App 不會故意向 13 歲以下兒童徵求資料或向其行銷。"
+      email_before: "服務提供者不會故意收集兒童的個人身分資訊。鼓勵所有兒童不要透過本 App 或服務提交此類資訊。鼓勵家長和法定監護人監督兒童的網際網路使用，並告知兒童未經許可不要透過本 App 或服務提供個人身分資訊。若你有理由相信兒童透過本 App 或服務向服務提供者提供了個人身分資訊，請寫信至"
+      email_after: "，以便採取必要措施。你還必須至少年滿 16 歲才能在所在國家同意處理個人身分資訊（在某些國家可由家長或監護人代為同意）。"
+    - heading: "安全"
+      paragraphs:
+        - "Dial 不向服務提供者傳輸你的紀錄，從而限制了我們營運系統上的暴露。裝置上的紀錄受該裝置安全控制保護。透過 CloudKit 儲存的資料受你的 Apple 帳號和 Apple 的 iCloud 安全控制保護。健康中的資料受 Apple 健康資料安全控制保護。任何儲存系統都無法保證完全安全。"
+    - heading: "使用條款"
+      paragraphs:
+        []
+      terms_before: "使用本 App 還受 Zentsu LLC"
+      terms_link: "使用條款"
+      terms_after: "約束。"
+    - heading: "變更"
+      paragraphs:
+        - "本隱私權政策可能不時因任何原因更新。服務提供者透過更新本頁通知你。請定期查閱，繼續使用視為同意所有變更。"
+    - heading: "你的同意"
+      paragraphs:
+        - "使用本 App 即表示你同意按本隱私權政策及其後由服務提供者修訂的內容處理你的資訊。"
+    - heading: "聯絡我們"
+      paragraphs:
+        []
+      email_before: "若對使用本 App 時的隱私或我們的做法有疑問，請透過郵件聯絡服務提供者："
+      email_after: "。"
+
+ko:
+  page_label: "법률"
+  h1: "개인정보 처리방침"
+  effective: "시행일: 2026년 7월 12일"
+  notice_before: ""
+  notice_link: "영어 버전은"
+  notice_after: "이 정책의 공식 텍스트입니다. 이 페이지는 편의를 위해 제공됩니다."
+  overview_url: "/ko/dial/"
+  overview_link: "Dial 개요로 돌아가기"
+  intro: "이 개인정보 처리방침은 Zentsu LLC(이하 '서비스 제공자')가 상업 서비스로 게시하는 Dial(이하 '본 애플리케이션')에 적용됩니다. 서비스는 '있는 그대로' 제공됩니다."
+  short: "요약: Dial은 기록을 기기에 저장합니다. 앱 안 설정으로 핵심 기록을 Apple 계정에 연결된 비공개 CloudKit 데이터베이스에 두거나 기기에만 둘 수 있습니다. 체중 항목과 경과 사진은 별도의 로컬 저장을 씁니다. 서비스 제공자는 Dial에 저장한 내용을 읽을 수 있는 서버를 운영하지 않습니다."
+  copyright: "© 2026 Zentsu LLC. 모든 권리 보유."
+  sections:
+    - heading: "본 애플리케이션은 어떤 정보를 얻으며 어떻게 사용합니까?"
+      paragraphs:
+        - "본 애플리케이션은 Dial 기록을 서비스 제공자에게 보내지 않습니다. Zentsu 등록은 필요하지 않습니다. 약물, 용량, 주사 부위, 알림 일정, 재고, 그리고 가져오기로 선택한 호환 파일의 부작용 이력은 기기에 저장됩니다. 서비스 제공자는 이를 수집하거나 받지 않으며 볼 방법이 없습니다."
+    - heading: "핵심 기록은 어디에 저장됩니까?"
+      paragraphs:
+        - "약물, 용량, 주사 부위, 알림, 재고, 가져온 부작용 기록은 기기에 저장됩니다. Dial 설정에는 Sync with iCloud 항목도 있습니다. 켜져 있고 iCloud를 쓸 수 있으면 이 기록은 Apple CloudKit과 Apple 계정에 묶인 비공개 데이터베이스를 사용할 수 있습니다. 이 기록의 서버 운영, 사본 보관, 접근, 읽기, 복구는 서비스 제공자의 범위 밖입니다."
+        - "설정에서 Sync with iCloud를 끄면 다음에 Dial을 열 때 이 기록은 그 기기에만 남습니다. 기기의 iCloud 설정도 CloudKit 사용 가능 여부에 영향을 줍니다. iCloud 저장과 전송은 Apple 약관과 개인정보 처리방침이 규율합니다."
+    - heading: "체중 데이터는 어디에 저장됩니까?"
+      paragraphs:
+        - "체중 일기는 기기의 별도 로컬 전용 저장에 있습니다. 위의 선택적 CloudKit 저장에 포함되지 않으며 본 애플리케이션을 통해 기기를 떠나지 않습니다. 여러 기기에서 Dial을 쓰면 각 기기의 체중 항목은 독립적입니다."
+    - heading: "경과 사진은 어디에 저장됩니까?"
+      paragraphs:
+        - "경과 사진과 날짜는 본 애플리케이션의 기기 문서 디렉터리에 저장됩니다. Dial CloudKit 기록의 일부가 아닙니다. 재고 라벨 스캐너를 쓰면 Dial은 선택하거나 촬영한 라벨 이미지를 처리해 필드를 채우고 그 이미지를 재고 기록으로 저장하지 않습니다."
+    - heading: "본 애플리케이션은 건강을 어떻게 사용합니까?"
+      paragraphs:
+        - "권한을 주면 Dial은 체중 일기를 최신으로 유지하기 위해 건강에서 체중을 읽고, Dial에 기록한 체중을 건강에 쓸 수 있습니다. Dial이 건강에서 다루는 범주는 체중입니다. 건강 데이터는 기기를 떠나 서비스 제공자나 다른 쪽으로 전송되지 않습니다. 용도는 본 애플리케이션의 체중 기록이며, 광고, 마케팅, 판매, 제3자 공유가 아닙니다. 기기 건강 설정에서 언제든 이 권한을 제어합니다."
+    - heading: "Dial이 의학적 조언을 대체합니까?"
+      paragraphs:
+        - "Dial은 일기 도구이며 의료기기가 아닙니다. 모든 용량과 일정은 입력했거나 가져오기로 선택한 정보에서 옵니다. 용량, 일정, 부작용을 포함한 치료 관련 사항은 처방의에게 확인하세요."
+    - heading: "본 애플리케이션은 알림을 보냅니까?"
+      paragraphs:
+        - "본 애플리케이션은 설정한 용량과 다른 이벤트에 대해 로컬 알림을 예약할 수 있지만, 알림을 켜고 알림 권한을 준 경우에만 그렇습니다. 입력한 데이터로 기기에서 만든 로컬 알림입니다. 서비스 제공자 서버에서 보내지거나 거치지 않으며 알림 내용은 기기를 떠나지 않습니다."
+    - heading: "본 애플리케이션은 기기의 정확한 실시간 위치 정보를 수집합니까?"
+      paragraphs:
+        - "본 애플리케이션은 기기 위치에 대한 정확한 정보를 수집하지 않습니다."
+    - heading: "제3자가 본 애플리케이션이 얻은 정보를 보거나 접근합니까?"
+      paragraphs:
+        - "본 애플리케이션이 Dial 기록을 서비스 제공자에게 전송하지 않으므로 서비스 제공자는 제3자와 공유할 그런 기록이 없습니다. 선택적 Dial Pro 구매와 구독은 Apple이 StoreKit으로 처리합니다. 서비스 제공자는 그 거래에서 결제 카드 정보를 받지 않습니다."
+    - heading: "거부 권리는 무엇이며 데이터는 어떻게 삭제합니까?"
+      paragraphs:
+        - "본 애플리케이션을 삭제하면 정보 저장이 모두 멈춥니다. 기기나 스토어의 표준 삭제 절차를 쓰면 됩니다. 항목을 삭제하면 Dial의 활성 저장에서 제거됩니다. 앱 안 iCloud 제어가 켜져 있으면 삭제가 Apple 계정에 연결된 비공개 CloudKit 데이터베이스에 반영될 수 있습니다. Dial 설정에서 그 제어를 끄고 기기 iCloud 설정으로 본 애플리케이션 데이터를 관리할 수 있습니다. 건강 권한은 건강 설정에서 언제든 철회할 수 있습니다. 이미 건강에 쓴 데이터는 제거할 때까지 Apple 통제 아래 남습니다. 경과 사진은 Dial 안에서 삭제할 수 있습니다."
+    - heading: "아동"
+      paragraphs:
+        - "본 애플리케이션은 13세 미만 아동에게 고의로 데이터를 요청하거나 마케팅하지 않습니다."
+      email_before: "서비스 제공자는 아동의 개인 식별 정보를 고의로 수집하지 않습니다. 모든 아동이 본 애플리케이션이나 서비스를 통해 그런 정보를 제출하지 않도록 권합니다. 부모와 법정 대리인은 아동의 인터넷 사용을 감독하고, 허가 없이 본 애플리케이션이나 서비스를 통해 개인 식별 정보를 제공하지 말라고 알려 이 정책 준수를 돕도록 권합니다. 아동이 본 애플리케이션이나 서비스를 통해 서비스 제공자에게 개인 식별 정보를 제공했다고 믿을 이유가 있으면"
+      email_after: "로 연락해 필요한 조치를 취할 수 있게 하세요. 또한 해당 국가에서 개인 식별 정보 처리에 동의하려면 만 16세 이상이어야 합니다(일부 국가에서는 부모나 보호자가 대신할 수 있습니다)."
+    - heading: "보안"
+      paragraphs:
+        - "Dial은 기록을 서비스 제공자에게 전송하지 않아 우리가 운영하는 시스템을 통한 노출을 제한합니다. 기기상의 기록은 그 기기의 보안 제어로 보호됩니다. CloudKit으로 저장된 데이터는 Apple 계정과 Apple의 iCloud 보안 제어로 보호됩니다. 건강 데이터는 Apple의 건강 데이터 보안 제어로 보호됩니다. 어떤 저장 시스템도 완전한 보안을 보장할 수 없습니다."
+    - heading: "이용 약관"
+      paragraphs:
+        []
+      terms_before: "본 애플리케이션 사용은 Zentsu LLC"
+      terms_link: "이용 약관"
+      terms_after: "의 적용도 받습니다."
+    - heading: "변경"
+      paragraphs:
+        - "이 개인정보 처리방침은 어떤 이유로든 수시로 업데이트될 수 있습니다. 서비스 제공자는 이 페이지를 업데이트하여 알립니다. 정기적으로 확인하세요. 계속 사용은 모든 변경에 대한 승인으로 봅니다."
+    - heading: "동의"
+      paragraphs:
+        - "본 애플리케이션을 사용하면 이 개인정보 처리방침과 서비스 제공자가 개정하는 내용에 따라 정보 처리에 동의하는 것입니다."
+    - heading: "문의"
+      paragraphs:
+        []
+      email_before: "본 애플리케이션 사용 중 개인정보나 관행에 대한 질문은 서비스 제공자에게 "
+      email_after: "로 보내 주세요."
+
+hi:
+  page_label: "कानूनी"
+  h1: "गोपनीयता नीति"
+  effective: "प्रभावी तिथि: 12 जुलाई 2026"
+  notice_before: ""
+  notice_link: "अंग्रेज़ी संस्करण"
+  notice_after: "इस नीति का आधिकारिक पाठ है। यह पृष्ठ सुविधा के लिए है।"
+  overview_url: "/hi/dial/"
+  overview_link: "Dial अवलोकन पर वापस"
+  intro: "यह गोपनीयता नीति Dial (यहाँ «अनुप्रयोग») पर लागू होती है, जिसे Zentsu LLC (यहाँ «सेवा प्रदाता») व्यावसायिक सेवा के रूप में प्रकाशित करती है। सेवा «जैसी है» उपयोग के लिए है।"
+  short: "संक्षेप में: Dial रिकॉर्ड डिवाइस पर रखता है। ऐप में नियंत्रण से मुख्य रिकॉर्ड आपके Apple खाते से जुड़ी निजी CloudKit डेटाबेस में रखे जा सकते हैं, या केवल डिवाइस पर रह सकते हैं। वजन प्रविष्टियाँ और प्रगति फ़ोटो अलग स्थानीय संग्रहण इस्तेमाल करती हैं। सेवा प्रदाता ऐसा सर्वर नहीं चलाती जो Dial में संग्रहीत सामग्री पढ़ सके।"
+  copyright: "© 2026 Zentsu LLC. सर्वाधिकार सुरक्षित।"
+  sections:
+    - heading: "अनुप्रयोग कौन सी जानकारी प्राप्त करता है और उसका उपयोग कैसे होता है?"
+      paragraphs:
+        - "अनुप्रयोग आपके Dial रिकॉर्ड सेवा प्रदाता को नहीं भेजता। Zentsu पर पंजीकरण आवश्यक नहीं है। दवा, खुराक, इंजेक्शन स्थल, अनुस्मारक अनुसूची, भंडार, और आपके चुने संगत फ़ाइल से दुष्प्रभाव इतिहास डिवाइस पर संग्रहीत होते हैं। सेवा प्रदाता इन्हें एकत्र, प्राप्त नहीं करती और देखने का कोई तरीका नहीं है।"
+    - heading: "मुख्य रिकॉर्ड कहाँ संग्रहीत होते हैं?"
+      paragraphs:
+        - "दवा, खुराक, इंजेक्शन स्थल, अनुस्मारक, भंडार और आयातित दुष्प्रभाव रिकॉर्ड डिवाइस पर हैं। Dial सेटिंग में «Sync with iCloud» नियंत्रण भी है। चालू होने और iCloud उपलब्ध होने पर ये रिकॉर्ड Apple के CloudKit और आपके Apple खाते से बंधी निजी डेटाबेस इस्तेमाल कर सकते हैं। सेवा प्रदाता सर्वर नहीं चलाती, प्रति नहीं रखती, और इन्हें पढ़ या पुनर्प्राप्त नहीं कर सकती।"
+        - "ऐप में नियंत्रण बंद करने पर अगली बार Dial खोलने पर ये रिकॉर्ड केवल उसी डिवाइस पर रहते हैं। डिवाइस की iCloud सेटिंग भी CloudKit उपलब्धता प्रभावित करती है। iCloud संग्रहण और प्रेषण Apple की शर्तों और गोपनीयता नीति से शासित हैं।"
+    - heading: "वजन डेटा कहाँ संग्रहीत होता है?"
+      paragraphs:
+        - "वजन लॉग डिवाइस पर अलग, केवल-स्थानीय संग्रहण में है। यह ऊपर के वैकल्पिक CloudKit संग्रहण का भाग नहीं है और अनुप्रयोग के माध्यम से डिवाइस नहीं छोड़ता। एक से अधिक डिवाइस पर Dial इस्तेमाल करने पर प्रत्येक पर वजन प्रविष्टियाँ स्वतंत्र रहती हैं।"
+    - heading: "प्रगति फ़ोटो कहाँ संग्रहीत होती हैं?"
+      paragraphs:
+        - "प्रगति फ़ोटो और उनकी तिथियाँ अनुप्रयोग के दस्तावेज़ फ़ोल्डर में डिवाइस पर संग्रहीत होती हैं। वे Dial CloudKit रिकॉर्ड का भाग नहीं हैं। भंडार लेबल स्कैनर इस्तेमाल करने पर Dial चुनी या ली गई लेबल छवि से फ़ील्ड भरता है और उस छवि को भंडार रिकॉर्ड के रूप में नहीं रखता।"
+    - heading: "अनुप्रयोग स्वास्थ्य का उपयोग कैसे करता है?"
+      paragraphs:
+        - "अनुमति देने पर Dial वजन लॉग अद्यतन रखने के लिए स्वास्थ्य से शरीर का वजन पढ़ता है और Dial में दर्ज वजन स्वास्थ्य में लिख सकता है। Dial स्वास्थ्य की अन्य डेटा श्रेणियाँ नहीं पढ़ता या लिखता। स्वास्थ्य डेटा कभी डिवाइस से सेवा प्रदाता या किसी और को नहीं जाता। विज्ञापन या विपणन के लिए नहीं, बिकता नहीं, तीसरे पक्ष से साझा नहीं, और अनुप्रयोग के अपने वजन रिकॉर्ड के अलावा उपयोग नहीं होता। यह अनुमति आप डिवाइस की स्वास्थ्य सेटिंग में कभी भी नियंत्रित करते हैं।"
+    - heading: "क्या Dial चिकित्सा सलाह का विकल्प है?"
+      paragraphs:
+        - "Dial डायरी उपकरण है। यह चिकित्सा उपकरण नहीं है और चिकित्सा सलाह नहीं देता। यह खुराक गणना नहीं करता और कोई खुराक सिफारिश नहीं करता। Dial में हर खुराक और अनुसूची आपके दर्ज या आयातित जानकारी से आती है। उपचार, खुराक, अनुसूची और दुष्प्रभाव निर्धारित करने वाले से पुष्टि करें।"
+    - heading: "क्या अनुप्रयोग सूचनाएँ भेजता है?"
+      paragraphs:
+        - "अनुप्रयोग आपके सेट खुराक और अन्य घटनाओं के लिए स्थानीय अनुस्मारक शेड्यूल कर सकता है, केवल जब अनुस्मारक चालू करें और सूचना अनुमति दें। ये आपके दर्ज डेटा से डिवाइस पर बनी स्थानीय सूचनाएँ हैं। सेवा प्रदाता के किसी सर्वर से नहीं जातीं और सूचना सामग्री डिवाइस नहीं छोड़ती।"
+    - heading: "क्या अनुप्रयोग डिवाइस की सटीक वास्तविक समय स्थिति एकत्र करता है?"
+      paragraphs:
+        - "अनुप्रयोग आपके डिवाइस की स्थिति की सटीक जानकारी एकत्र नहीं करता।"
+    - heading: "क्या तीसरे पक्ष अनुप्रयोग द्वारा प्राप्त जानकारी देखते या उस तक पहुँचते हैं?"
+      paragraphs:
+        - "चूँकि अनुप्रयोग Dial रिकॉर्ड सेवा प्रदाता को नहीं भेजता, सेवा प्रदाता के पास तीसरे पक्ष से साझा करने के लिए ऐसे रिकॉर्ड नहीं हैं। वैकल्पिक Dial Pro खरीद और सदस्यता Apple StoreKit से संसाधित करती है। सेवा प्रदाता उन लेनदेन से भुगतान कार्ड विवरण नहीं प्राप्त करती।"
+    - heading: "मेरे ऑप्ट-आउट अधिकार क्या हैं और डेटा कैसे हटाऊँ?"
+      paragraphs:
+        - "अनुप्रयोग हटाकर सारी जानकारी संग्रहण रोक सकते हैं। डिवाइस या स्टोर की मानक अनइंस्टॉल प्रक्रिया इस्तेमाल करें। प्रविष्टि हटाने से वह Dial के सक्रिय संग्रहण से हटती है। ऐप में iCloud नियंत्रण चालू होने पर हटाना आपके Apple खाते की निजी CloudKit डेटाबेस में दिख सकता है। Dial सेटिंग में नियंत्रण बंद कर डिवाइस की iCloud सेटिंग से अनुप्रयोग डेटा प्रबंधित कर सकते हैं। स्वास्थ्य अनुमति स्वास्थ्य सेटिंग में कभी भी वापस ले सकते हैं। स्वास्थ्य में पहले से लिखा डेटा आपके हटाने तक Apple नियंत्रण में रहता है। प्रगति फ़ोटो Dial में हटा सकते हैं।"
+    - heading: "बच्चे"
+      paragraphs:
+        - "अनुप्रयोग जानबूझकर 13 वर्ष से कम बच्चों से डेटा नहीं माँगता और न उन पर विपणन करता है।"
+      email_before: "सेवा प्रदाता जानबूझकर बच्चों की व्यक्तिगत पहचान योग्य जानकारी एकत्र नहीं करती। सभी बच्चों को अनुप्रयोग या सेवाओं के माध्यम से ऐसी जानकारी न भेजने को कहती है। अभिभावकों से बच्चों के इंटरनेट उपयोग पर नज़र रखने और बिना अनुमति व्यक्तिगत जानकारी न देने को कहने का अनुरोध है। यदि विश्वास है कि बच्चे ने अनुप्रयोग या सेवाओं से सेवा प्रदाता को ऐसी जानकारी दी है, लिखें"
+      email_after: ", ताकि आवश्यक कदम उठाए जा सकें। अपने देश में व्यक्तिगत जानकारी प्रसंस्करण की सहमति के लिए आपकी आयु कम से कम 16 वर्ष होनी चाहिए (कुछ देशों में अभिभावक आपकी ओर से कर सकते हैं)।"
+    - heading: "सुरक्षा"
+      paragraphs:
+        - "Dial आपके रिकॉर्ड सेवा प्रदाता को नहीं भेजता, जिससे हमारे सिस्टम पर जोखिम सीमित रहता है। डिवाइस पर रिकॉर्ड उस डिवाइस के सुरक्षा नियंत्रण से सुरक्षित हैं। CloudKit से संग्रहीत डेटा आपके Apple खाते और Apple के iCloud सुरक्षा नियंत्रण से सुरक्षित है। स्वास्थ्य डेटा Apple के स्वास्थ्य डेटा सुरक्षा नियंत्रण से सुरक्षित है। कोई संग्रहण प्रणाली पूरी तरह सुरक्षित नहीं कही जा सकती।"
+    - heading: "उपयोग की शर्तें"
+      paragraphs:
+        []
+      terms_before: "अनुप्रयोग का उपयोग Zentsu LLC की"
+      terms_link: "उपयोग की शर्तों"
+      terms_after: " से भी शासित है।"
+    - heading: "परिवर्तन"
+      paragraphs:
+        - "यह गोपनीयता नीति किसी भी कारण समय-समय पर अद्यतन हो सकती है। सेवा प्रदाता इस पृष्ठ को अद्यतन कर सूचित करती है। नियमित रूप से पढ़ें, निरंतर उपयोग सभी परिवर्तनों की स्वीकृति माना जाता है।"
+    - heading: "आपकी सहमति"
+      paragraphs:
+        - "अनुप्रयोग इस्तेमाल करके आप इस गोपनीयता नीति और सेवा प्रदाता द्वारा संशोधित रूप में अपनी जानकारी के प्रसंस्करण से सहमत होते हैं।"
+    - heading: "संपर्क"
+      paragraphs:
+        []
+      email_before: "अनुप्रयोग इस्तेमाल करते गोपनीयता या हमारी प्रथाओं पर प्रश्न हों तो सेवा प्रदाता को लिखें"
+      email_after: "."
+
+ru:
+  page_label: "Правовая информация"
+  h1: "Политика конфиденциальности"
+  effective: "Дата вступления в силу: 12 июля 2026 г."
+  notice_before: ""
+  notice_link: "Английская версия"
+  notice_after: "является официальным текстом этой политики. Эта страница предоставлена для удобства."
+  overview_url: "/ru/dial/"
+  overview_link: "Вернуться к обзору Dial"
+  intro: "Эта политика конфиденциальности применяется к Dial (далее «Приложение»), которое Zentsu LLC (далее «Поставщик услуги») публикует как коммерческую услугу. Услуга предназначена для использования «КАК ЕСТЬ»."
+  short: "Кратко: Dial хранит записи на устройстве. Переключатель Sync with iCloud в приложении позволяет использовать частную базу CloudKit, привязанную к аккаунту Apple, для основных записей или оставить их только на устройстве. Записи веса и фото прогресса используют отдельное локальное хранилище. У Поставщика услуги нет сервера, который мог бы прочитать то, что вы храните в Dial."
+  copyright: "© 2026 Zentsu LLC. Все права защищены."
+  sections:
+    - heading: "Какую информацию получает Приложение и как она используется?"
+      paragraphs:
+        - "Приложение не отправляет записи Dial Поставщику услуги. Регистрация в Zentsu не требуется. Препараты, дозы, места инъекций, расписания напоминаний, запас и история побочных эффектов из совместимого файла, который вы решили импортировать, хранятся на устройстве. Поставщик услуги их не собирает, не получает и не имеет способа увидеть."
+    - heading: "Где хранятся основные записи?"
+      paragraphs:
+        - "Записи препарата, дозы, места инъекции, напоминания, запаса и импортированных побочных эффектов хранятся на устройстве. В настройках Dial также есть переключатель «Sync with iCloud». Когда он включён и iCloud доступен, эти записи могут использовать CloudKit Apple и частную базу, привязанную к вашему аккаунту Apple. У Поставщика услуги нет сервера: он не хранит копию и не может получить к ним доступ, прочитать или восстановить их."
+        - "Если выключить переключатель Sync with iCloud в приложении, эти записи останутся только на том устройстве после следующего открытия Dial. Настройки iCloud устройства также влияют на доступность CloudKit. Хранение и передача iCloud регулируются условиями и политикой конфиденциальности Apple."
+    - heading: "Где хранятся данные о весе?"
+      paragraphs:
+        - "Журнал веса находится в отдельном, только локальном хранилище на устройстве. Он не входит в необязательное хранение CloudKit выше и не покидает устройство через Приложение. Если вы используете Dial на нескольких устройствах, записи веса на каждом остаются независимыми."
+    - heading: "Где хранятся фото прогресса?"
+      paragraphs:
+        - "Фото прогресса и их даты хранятся в папке документов Приложения на устройстве. Они не входят в записи CloudKit Dial. Если вы используете сканер этикетки запаса, Dial обрабатывает выбранное или снятое изображение этикетки, чтобы заполнить поля, и не сохраняет это изображение как запись запаса."
+    - heading: "Как Приложение использует Здоровье?"
+      paragraphs:
+        - "Если вы даёте разрешение, Dial читает массу тела из Здоровья, чтобы вести журнал веса, и может записывать в Здоровье вес, который вы фиксируете в Dial. Dial не читает и не пишет другие категории данных в Здоровье. Данные Здоровья никогда не уходят с устройства к Поставщику услуги или кому-либо ещё. Они не используются для рекламы или маркетинга, не продаются, не передаются третьим лицам и не используются ни для чего, кроме собственного учёта веса Приложения. Вы управляете разрешением в любой момент в настройках Здоровья устройства."
+    - heading: "Заменяет ли Dial медицинскую консультацию?"
+      paragraphs:
+        - "Dial является инструментом дневника. Это не медицинское изделие и не даёт медицинских советов. Он не выполняет расчёты доз и не даёт рекомендаций по дозировке. Каждая доза и каждый план в Dial исходят из сведений, которые вы ввели или решили импортировать. Всё, что касается лечения, включая дозы, планы и побочные эффекты, подтверждайте с лечащим врачом."
+    - heading: "Отправляет ли Приложение уведомления?"
+      paragraphs:
+        - "Приложение может планировать локальные напоминания о дозах и других событиях, которые вы задаёте, но только если вы включаете напоминания и даёте разрешение на уведомления. Это локальные уведомления на устройстве из введённых вами данных. Они не отправляются с сервера Поставщика услуги и не проходят через него, содержимое уведомлений устройство не покидает."
+    - heading: "Собирает ли Приложение точные сведения о местоположении устройства в реальном времени?"
+      paragraphs:
+        - "Приложение не собирает точные сведения о местоположении вашего устройства."
+    - heading: "Видят ли третьи лица информацию, полученную Приложением, или имеют к ней доступ?"
+      paragraphs:
+        - "Поскольку Приложение не передаёт записи Dial Поставщику услуги, у Поставщика услуги нет таких записей, которыми можно поделиться с третьими лицами. Необязательные покупки и подписки Dial Pro обрабатывает Apple через StoreKit. Поставщик услуги не получает данные платёжной карты из этих транзакций."
+    - heading: "Как отказаться от хранения и удалить данные?"
+      paragraphs:
+        - "Вы можете остановить любое хранение информации Приложением, удалив его. Используйте стандартное удаление устройства или магазина. Удаление записи убирает её из активного хранилища Dial. Когда переключатель Sync with iCloud в приложении включён, удаление может отразиться в частной базе CloudKit, привязанной к аккаунту Apple. Переключатель можно выключить в настройках Dial и управлять данными Приложения через настройки iCloud устройства. Разрешение Здоровья можно отозвать в любой момент в настройках Здоровья. Данные, уже записанные в Здоровье, остаются там под контролем Apple, пока вы их не удалите. Фото прогресса можно удалить в Dial."
+    - heading: "Дети"
+      paragraphs:
+        - "Приложение сознательно не собирает данные у детей младше 13 лет и не используется для маркетинга им."
+      email_before: "Поставщик услуги сознательно не собирает персональные данные детей. Поставщик услуги призывает всех детей не отправлять такие данные через Приложение или Услуги. Родителям и опекунам рекомендуется следить за использованием интернета детьми и помогать соблюдать эту политику, говоря им не предоставлять персональные данные через Приложение или Услуги без разрешения. Если есть основания полагать, что ребёнок предоставил такие данные Поставщику услуги через Приложение или Услуги, напишите на"
+      email_after: ", чтобы можно было принять необходимые меры. Вам также должно быть не менее 16 лет, чтобы согласиться на обработку персональных данных в вашей стране (в некоторых странах это может сделать родитель или опекун)."
+    - heading: "Безопасность"
+      paragraphs:
+        - "Dial не передаёт ваши записи Поставщику услуги, что ограничивает раскрытие через системы, которые мы ведём. Записи на устройстве защищены средствами безопасности этого устройства. Данные через CloudKit защищены вашим аккаунтом Apple и средствами безопасности iCloud Apple. Данные в Здоровье защищены средствами безопасности данных Здоровья Apple. Ни одну систему хранения нельзя гарантировать полностью безопасной."
+    - heading: "Условия использования"
+      paragraphs:
+        []
+      terms_before: "Использование Приложения также регулируется"
+      terms_link: "Условиями использования"
+      terms_after: " Zentsu LLC."
+    - heading: "Изменения"
+      paragraphs:
+        - "Эта политика конфиденциальности может обновляться время от времени по любой причине. Поставщик услуги уведомляет вас, обновляя эту страницу. Читайте её регулярно: продолжение использования считается согласием со всеми изменениями."
+    - heading: "Ваше согласие"
+      paragraphs:
+        - "Используя Приложение, вы соглашаетесь на обработку информации, как описано в этой политике конфиденциальности сейчас и в редакции Поставщика услуги."
+    - heading: "Связаться с нами"
+      paragraphs:
+        []
+      email_before: "Если есть вопросы о конфиденциальности при использовании Приложения или о наших практиках, напишите Поставщику услуги на"
+      email_after: "."
+
+vi:
+  page_label: "Pháp lý"
+  h1: "Chính sách quyền riêng tư"
+  effective: "Ngày hiệu lực: 12 tháng 7 năm 2026"
+  notice_before: ""
+  notice_link: "Bản tiếng Anh"
+  notice_after: "là văn bản chính thức của chính sách này. Trang này được cung cấp để tiện tham khảo."
+  overview_url: "/vi/dial/"
+  overview_link: "Quay lại tổng quan Dial"
+  intro: "Chính sách quyền riêng tư này áp dụng cho Dial (sau đây gọi là Ứng dụng), do Zentsu LLC (sau đây gọi là Nhà cung cấp dịch vụ) phát hành như dịch vụ thương mại. Dịch vụ được cung cấp để dùng nguyên trạng."
+  short: "Tóm tắt: Dial lưu bản ghi trên thiết bị. Điều khiển trong ứng dụng cho phép dùng cơ sở dữ liệu CloudKit riêng gắn với Tài khoản Apple cho bản ghi chính, hoặc chỉ giữ trên thiết bị. Mục cân nặng và ảnh tiến triển dùng kho lưu trữ cục bộ riêng. Nhà cung cấp dịch vụ không vận hành máy chủ có thể đọc những gì bạn lưu trong Dial."
+  copyright: "© 2026 Zentsu LLC. Bảo lưu mọi quyền."
+  sections:
+    - heading: "Ứng dụng thu thập thông tin gì và dùng thế nào?"
+      paragraphs:
+        - "Ứng dụng không gửi bản ghi Dial cho Nhà cung cấp dịch vụ. Không cần đăng ký với Zentsu. Thuốc, liều, vị trí tiêm, lịch lời nhắc, tồn kho, và lịch sử tác dụng phụ từ tệp tương thích bạn chọn nhập được lưu trên thiết bị. Nhà cung cấp dịch vụ không thu thập các bản ghi này và không có cách xem chúng."
+    - heading: "Bản ghi chính lưu ở đâu?"
+      paragraphs:
+        - "Bản ghi thuốc, liều, vị trí tiêm, lời nhắc, tồn kho và tác dụng phụ nhập vào được lưu trên thiết bị. Dial còn có điều khiển «Sync with iCloud» trong Cài đặt. Khi bật và iCloud khả dụng, các bản ghi này có thể dùng CloudKit của Apple và cơ sở dữ liệu riêng gắn với Tài khoản Apple. Nhà cung cấp dịch vụ không vận hành máy chủ lưu các bản ghi này và không thể đọc hay khôi phục chúng."
+        - "Tắt điều khiển trong ứng dụng thì các bản ghi này chỉ ở trên thiết bị đó sau lần mở Dial tiếp theo. Cài đặt iCloud của thiết bị cũng ảnh hưởng CloudKit có sẵn hay không. Lưu trữ và truyền iCloud chịu điều khoản và chính sách quyền riêng tư của Apple."
+    - heading: "Dữ liệu cân nặng lưu ở đâu?"
+      paragraphs:
+        - "Nhật ký cân nặng nằm trong kho lưu trữ cục bộ riêng trên thiết bị. Không thuộc kho lưu trữ CloudKit tùy chọn ở trên và không rời thiết bị thông qua Ứng dụng. Nếu dùng Dial trên nhiều thiết bị, mục cân nặng trên mỗi thiết bị độc lập."
+    - heading: "Ảnh tiến triển lưu ở đâu?"
+      paragraphs:
+        - "Ảnh tiến triển và ngày của chúng lưu trong thư mục tài liệu của Ứng dụng trên thiết bị. Chúng không thuộc bản ghi CloudKit của Dial. Nếu dùng máy quét nhãn tồn kho, Dial xử lý ảnh nhãn đã chọn hoặc chụp để điền trường và không lưu ảnh đó như bản ghi tồn kho."
+    - heading: "Ứng dụng dùng Sức khoẻ thế nào?"
+      paragraphs:
+        - "Nếu bạn cho phép, Dial đọc cân nặng cơ thể từ Sức khoẻ để nhật ký cân nặng cập nhật, và có thể ghi cân nặng bạn ghi trong Dial vào Sức khoẻ. Dial không đọc hay ghi danh mục dữ liệu Sức khoẻ khác. Dữ liệu Sức khoẻ không bao giờ rời thiết bị đến Nhà cung cấp dịch vụ hay bên khác. Dữ liệu Sức khoẻ không dùng cho quảng cáo. Dial không bán dữ liệu này và không chia sẻ với bên thứ ba. Việc dùng chỉ để theo dõi cân nặng trong Ứng dụng. Bạn kiểm soát quyền này bất cứ lúc nào trong cài đặt Sức khoẻ của thiết bị."
+    - heading: "Dial có thay thế tư vấn y tế không?"
+      paragraphs:
+        - "Dial là công cụ nhật ký, không phải thiết bị y tế. Ứng dụng không đưa tư vấn y tế và không tính liều. Mọi liều và lịch trong Dial đến từ thông tin bạn nhập hoặc chọn nhập. Mọi điều về điều trị, gồm liều, lịch và tác dụng phụ, hãy xác nhận với bác sĩ kê đơn."
+    - heading: "Ứng dụng có gửi thông báo không?"
+      paragraphs:
+        - "Ứng dụng có thể lên lịch lời nhắc cục bộ cho liều và sự kiện khác bạn đặt, nhưng chỉ khi bạn bật lời nhắc và cấp quyền thông báo. Đây là thông báo cục bộ trên thiết bị từ dữ liệu bạn nhập. Chúng không gửi từ hay đi qua máy chủ nào của Nhà cung cấp dịch vụ, và nội dung thông báo không rời thiết bị."
+    - heading: "Ứng dụng có thu thập vị trí chính xác theo thời gian thực của thiết bị không?"
+      paragraphs:
+        - "Ứng dụng không thu thập thông tin chính xác về vị trí thiết bị của bạn."
+    - heading: "Bên thứ ba có thấy hoặc truy cập thông tin Ứng dụng thu được không?"
+      paragraphs:
+        - "Vì Ứng dụng không truyền bản ghi Dial cho Nhà cung cấp dịch vụ, Nhà cung cấp dịch vụ không có bản ghi đó để chia sẻ với bên thứ ba. Mua và thuê bao Dial Pro tùy chọn do Apple xử lý qua StoreKit. Nhà cung cấp dịch vụ không nhận chi tiết thẻ thanh toán từ các giao dịch đó."
+    - heading: "Quyền từ chối của tôi là gì và xóa dữ liệu thế nào?"
+      paragraphs:
+        - "Bạn dừng mọi lưu trữ thông tin của Ứng dụng bằng cách xóa nó. Dùng cách gỡ cài đặt chuẩn của thiết bị hoặc cửa hàng. Xóa một mục sẽ gỡ nó khỏi kho lưu trữ đang dùng của Dial. Khi điều khiển iCloud trong ứng dụng bật, việc xóa có thể phản ánh qua cơ sở dữ liệu CloudKit riêng gắn với Tài khoản Apple. Bạn có thể tắt điều khiển trong cài đặt Dial và quản lý dữ liệu Ứng dụng qua cài đặt iCloud của thiết bị. Có thể thu hồi quyền Sức khoẻ bất cứ lúc nào trong cài đặt Sức khoẻ. Dữ liệu đã ghi vào Sức khoẻ vẫn ở đó dưới kiểm soát của Apple đến khi bạn gỡ. Ảnh tiến triển có thể xóa trong Dial."
+    - heading: "Trẻ em"
+      paragraphs:
+        - "Ứng dụng không cố ý dùng để lấy dữ liệu từ trẻ dưới 13 tuổi hay tiếp thị tới chúng."
+      email_before: "Nhà cung cấp dịch vụ không cố ý thu thập thông tin nhận dạng cá nhân từ trẻ em. Khuyến khích mọi trẻ không gửi thông tin đó qua Ứng dụng hoặc Dịch vụ. Cha mẹ và người giám hộ được khuyến khích theo dõi việc dùng internet của trẻ và giúp thực thi chính sách này bằng cách bảo trẻ không cung cấp thông tin nhận dạng cá nhân qua Ứng dụng hoặc Dịch vụ khi chưa phép. Nếu có lý do tin rằng trẻ đã cung cấp thông tin đó cho Nhà cung cấp dịch vụ qua Ứng dụng hoặc Dịch vụ, hãy viết tới"
+      email_after: " để có thể thực hiện bước cần thiết. Bạn cũng phải ít nhất 16 tuổi để đồng ý xử lý thông tin nhận dạng cá nhân tại quốc gia bạn (ở một số nước cha mẹ hoặc người giám hộ có thể làm thay)."
+    - heading: "Bảo mật"
+      paragraphs:
+        - "Dial không truyền bản ghi của bạn cho Nhà cung cấp dịch vụ, hạn chế việc lộ dữ liệu qua hệ thống chúng tôi vận hành. Bản ghi trên thiết bị được bảo vệ bởi kiểm soát bảo mật của thiết bị đó. Dữ liệu lưu qua CloudKit được bảo vệ bởi Tài khoản Apple và kiểm soát bảo mật iCloud của Apple. Dữ liệu trong Sức khoẻ được bảo vệ bởi kiểm soát bảo mật dữ liệu Sức khoẻ của Apple. Không hệ thống lưu trữ nào được bảo đảm hoàn toàn an toàn."
+    - heading: "Điều khoản sử dụng"
+      paragraphs:
+        []
+      terms_before: "Việc dùng Ứng dụng cũng chịu"
+      terms_link: "Điều khoản sử dụng"
+      terms_after: " của Zentsu LLC."
+    - heading: "Thay đổi"
+      paragraphs:
+        - "Chính sách quyền riêng tư này có thể được cập nhật theo thời gian vì bất kỳ lý do nào. Nhà cung cấp dịch vụ thông báo bằng cách cập nhật trang này. Nên đọc thường xuyên vì tiếp tục dùng được coi là chấp thuận mọi thay đổi."
+    - heading: "Sự đồng ý của bạn"
+      paragraphs:
+        - "Dùng Ứng dụng nghĩa là bạn đồng ý xử lý thông tin như mô tả trong chính sách quyền riêng tư này hiện nay và khi Nhà cung cấp dịch vụ sửa đổi."
+    - heading: "Liên hệ"
+      paragraphs:
+        []
+      email_before: "Nếu có câu hỏi về quyền riêng tư khi dùng Ứng dụng hoặc về thực hành của chúng tôi, hãy liên hệ Nhà cung cấp dịch vụ tại"
+      email_after: "."
+
+hr:
+  page_label: "Pravno"
+  h1: "Pravila privatnosti"
+  effective: "Datum stupanja na snagu: 12. srpnja 2026."
+  notice_before: ""
+  notice_link: "Engleska verzija"
+  notice_after: "službeni je tekst ovih pravila. Ova je stranica dana radi praktičnosti."
+  overview_url: "/hr/dial/"
+  overview_link: "Natrag na pregled Diala"
+  intro: "Ova pravila privatnosti primjenjuju se na Dial (dalje „Aplikacija“), koji kao komercijalnu uslugu objavljuje Zentsu LLC (dalje „Pružatelj usluge“). Usluga je namijenjena uporabi „KAKVA JEST“."
+  short: "Ukratko: Dial sprema zapise na uređaj. Kontrola u aplikaciji omogućuje privatnu CloudKit bazu povezanu s Apple računom za glavne zapise ili da ostanu samo na uređaju. Unosi težine i fotografije napretka koriste odvojenu lokalnu pohranu. Pružatelj usluge ne vodi poslužitelj koji može pročitati što spremate u Dial."
+  copyright: "© 2026 Zentsu LLC. Sva prava pridržana."
+  sections:
+    - heading: "Koje informacije Aplikacija pribavlja i kako se koriste?"
+      paragraphs:
+        - "Aplikacija ne šalje Dial zapise Pružatelju usluge. Registracija kod Zentsua nije potrebna. Lijekovi, doze, mjesta injekcije, rasporedi podsjetnika, zaliha i povijest nuspojava iz kompatibilne datoteke koju odlučite uvesti spremaju se na uređaj. Pružatelj usluge ih ne prikuplja, ne prima i nema način da ih vidi."
+    - heading: "Gdje se spremaju glavni zapisi?"
+      paragraphs:
+        - "Zapisi lijeka, doze, mjesta injekcije, podsjetnika, zalihe i uvezenih nuspojava spremaju se na uređaj. Dial u Postavkama ima i kontrolu „Sync with iCloud“. Kad je uključena i iCloud dostupan, ti zapisi mogu koristiti Appleov CloudKit i privatnu bazu vezanu uz vaš Apple račun. Pružatelj usluge ne vodi poslužitelj, ne drži kopiju i ne može im pristupiti, čitati ih ni vratiti."
+        - "Isključivanje kontrole u aplikaciji ostavlja te zapise samo na tom uređaju nakon sljedećeg otvaranja Diala. Postavke iClouda na uređaju također utječu na dostupnost CloudKita. Appleovi uvjeti i pravila privatnosti uređuju pohranu i prijenos iClouda."
+    - heading: "Gdje se spremaju podaci o težini?"
+      paragraphs:
+        - "Dnevnik težine je u odvojenoj, samo lokalnoj pohrani na uređaju. Nije dio neobavezne CloudKit pohrane gore i Aplikacijom ne napušta uređaj. Ako Dial koristite na više uređaja, unosi težine na svakom ostaju neovisni."
+    - heading: "Gdje se spremaju fotografije napretka?"
+      paragraphs:
+        - "Fotografije napretka i njihovi datumi spremaju se u mapu dokumenata Aplikacije na uređaju. Nisu dio CloudKit zapisa Diala. Ako koristite skener naljepnice zalihe, Dial obradi odabranu ili snimljenu sliku naljepnice da popuni polja i ne sprema tu sliku kao zapis zalihe."
+    - heading: "Kako Aplikacija koristi Zdravlje?"
+      paragraphs:
+        - "Ako date dopuštenje, Dial čita tjelesnu težinu iz Zdravlja da dnevnik težine bude ažuran i može u Zdravlje zapisati težinu koju unesete u Dial. Dial ne čita niti piše druge kategorije podataka u Zdravlju. Podaci Zdravlja nikad ne napuštaju uređaj prema Pružatelju usluge ili drugome. Ne koriste se za oglašavanje ili marketing, ne prodaju se, ne dijele s trećima i ne koriste ni za što osim vlastitog praćenja težine Aplikacije. Dopuštenje kontrolirate u bilo koj trenutku u postavkama Zdravlja na uređaju."
+    - heading: "Zamjenjuje li Dial liječnički savjet?"
+      paragraphs:
+        - "Dial je alat dnevnika. Nije medicinski proizvod i ne daje liječnički savjet. Ne izračunava doze i ne daje preporuke doziranja. Svaka doza i svaki raspored u Dialu dolaze iz podataka koje ste unijeli ili odlučili uvesti. Sve o liječenju, uključujući doze, rasporede i nuspojave, potvrdite s propisivačem."
+    - heading: "Šalje li Aplikacija obavijesti?"
+      paragraphs:
+        - "Aplikacija može zakazati lokalne podsjetnike za doze i druge događaje koje postavite, ali samo ako uključite podsjetnike i date dopuštenje za obavijesti. To su lokalne obavijesti na uređaju iz podataka koje ste unijeli. Ne šalju se s poslužitelja Pružatelja usluge niti kroz njega, a sadržaj obavijesti ne napušta uređaj."
+    - heading: "Prikuplja li Aplikacija precizne podatke o lokaciji uređaja u stvarnom vremenu?"
+      paragraphs:
+        - "Aplikacija ne prikuplja precizne podatke o lokaciji vašeg uređaja."
+    - heading: "Vide li treće strane informacije koje Aplikacija pribavlja ili imaju pristup?"
+      paragraphs:
+        - "Budući da Aplikacija ne šalje Dial zapise Pružatelju usluge, Pružatelj usluge nema takve zapise za dijeljenje s trećima. Neobavezne kupnje i pretplate Dial Pro obrađuje Apple preko StoreKita. Pružatelj usluge iz tih transakcija ne prima podatke o platnoj kartici."
+    - heading: "Koja su moja prava odjave i kako brišem podatke?"
+      paragraphs:
+        - "Svu pohranu informacija Aplikacijom zaustavite njezinim brisanjem. Koristite standardno deinstaliranje uređaja ili trgovine. Brisanje unosa uklanja ga iz aktivne pohrane Diala. Kad je kontrola iClouda u aplikaciji uključena, brisanje se može odraziti u privatnoj CloudKit bazi povezanoj s Apple računom. Kontrolu možete isključiti u postavkama Diala i podacima Aplikacije upravljati u postavkama iClouda na uređaju. Dopuštenje Zdravlja možete opozvati bilo kada u postavkama Zdravlja. Podaci već zapisani u Zdravlje ostaju tamo pod Appleovom kontrolom dok ih ne uklonite. Fotografije napretka možete obrisati u Dialu."
+    - heading: "Djeca"
+      paragraphs:
+        - "Aplikacija se svjesno ne koristi za prikupljanje podataka od djece mlađe od 13 godina niti za marketing prema njima."
+      email_before: "Pružatelj usluge svjesno ne prikuplja osobno prepoznatljive podatke od djece. Potiče svu djecu da takve podatke ne šalju putem Aplikacije ili Usluga. Roditelji i skrbnici potiču se da prate internetsku uporabu djece i pomognu provoditi ova pravila govoreći im da bez dopuštenja ne daju osobne podatke putem Aplikacije ili Usluga. Ako imate razloga vjerovati da je dijete dalo takve podatke Pružatelju usluge putem Aplikacije ili Usluga, pišite na"
+      email_after: ", kako bi se poduzeli potrebni koraci. Također morate imati najmanje 16 godina da biste pristali na obradu osobno prepoznatljivih podataka u svojoj zemlji (u nekim zemljama to može učiniti roditelj ili skrbnik)."
+    - heading: "Sigurnost"
+      paragraphs:
+        - "Dial ne šalje vaše zapise Pružatelju usluge, čime se ograničava izloženost kroz sustave koje vodimo. Zapise na uređaju štite sigurnosne kontrole tog uređaja. Podatke spremljene preko CloudKita štite vaš Apple račun i Appleove iCloud sigurnosne kontrole. Podatke u Zdravlju štite Appleove sigurnosne kontrole podataka Zdravlja. Nijedan sustav pohrane nije zajamčeno potpuno siguran."
+    - heading: "Uvjeti korištenja"
+      paragraphs:
+        []
+      terms_before: "Korištenje Aplikacije uređuju i"
+      terms_link: "Uvjeti korištenja"
+      terms_after: " Zentsu LLC."
+    - heading: "Izmjene"
+      paragraphs:
+        - "Ova se pravila privatnosti mogu s vremena na vrijeme ažurirati iz bilo koj razloga. Pružatelj usluge obavještava vas ažuriranjem ove stranice. Redovito ih čitajte jer se nastavak korištenja smatra odobrenjem svih izmjena."
+    - heading: "Vaša suglasnost"
+      paragraphs:
+        - "Korištenjem Aplikacije pristajete na obradu informacija kako je opisano u ovim pravilima privatnosti sada i kako ih izmijeni Pružatelj usluge."
+    - heading: "Kontakt"
+      paragraphs:
+        []
+      email_before: "Ako imate pitanja o privatnosti tijekom korištenja Aplikacije ili o našim praksama, pišite Pružatelju usluge na"
+      email_after: "."
+
+id:
+  page_label: "Hukum"
+  h1: "Kebijakan privasi"
+  effective: "Tanggal berlaku: 12 Juli 2026"
+  notice_before: ""
+  notice_link: "Versi bahasa Inggris"
+  notice_after: "adalah teks resmi kebijakan ini. Halaman ini disediakan untuk kemudahan."
+  overview_url: "/id/dial/"
+  overview_link: "Kembali ke ikhtisar Dial"
+  intro: "Kebijakan privasi ini berlaku untuk Dial (selanjutnya „Aplikasi“), yang diterbitkan Zentsu LLC (selanjutnya „Penyedia layanan“) sebagai layanan komersial. Layanan dimaksudkan untuk digunakan „SEBAGAIMANA ADANYA“."
+  short: "Ringkasnya: Dial menyimpan catatan di perangkat. Kontrol dalam aplikasi memungkinkan basis CloudKit pribadi yang terhubung ke Akun Apple untuk catatan inti, atau tetap hanya di perangkat. Entri berat dan foto perkembangan memakai penyimpanan lokal terpisah. Penyedia layanan tidak mengoperasikan server yang dapat membaca apa yang Anda simpan di Dial."
+  copyright: "© 2026 Zentsu LLC. Hak cipta dilindungi."
+  sections:
+    - heading: "Informasi apa yang diperoleh Aplikasi dan bagaimana digunakan?"
+      paragraphs:
+        - "Aplikasi tidak mengirim catatan Dial ke Penyedia layanan. Pendaftaran di Zentsu tidak diperlukan. Obat, dosis, lokasi suntikan, jadwal pengingat, persediaan, dan riwayat efek samping dari berkas kompatibel yang Anda pilih untuk diimpor disimpan di perangkat. Penyedia layanan tidak mengumpulkan, tidak menerima, dan tidak punya cara melihatnya."
+    - heading: "Di mana catatan inti disimpan?"
+      paragraphs:
+        - "Catatan obat, dosis, lokasi suntikan, pengingat, persediaan, dan efek samping yang diimpor disimpan di perangkat. Dial juga punya kontrol „Sync with iCloud“ di Pengaturan. Saat menyala dan iCloud tersedia, catatan ini dapat memakai CloudKit Apple dan basis pribadi yang terikat pada Akun Apple Anda. Penyedia layanan tidak mengoperasikan server, tidak menyimpan salinan, dan tidak dapat mengakses, membaca, atau memulihkannya."
+        - "Mematikan kontrol dalam aplikasi membuat catatan ini hanya di perangkat itu setelah Anda berikutnya membuka Dial. Pengaturan iCloud perangkat juga memengaruhi ketersediaan CloudKit. Ketentuan dan kebijakan privasi Apple mengatur penyimpanan dan transmisi iCloud."
+    - heading: "Di mana data berat disimpan?"
+      paragraphs:
+        - "Jurnal berat ada di penyimpanan terpisah, hanya lokal, di perangkat. Bukan bagian penyimpanan CloudKit opsional di atas dan tidak meninggalkan perangkat melalui Aplikasi. Jika Anda memakai Dial di lebih dari satu perangkat, entri berat di setiap perangkat tetap independen."
+    - heading: "Di mana foto perkembangan disimpan?"
+      paragraphs:
+        - "Foto perkembangan dan tanggalnya disimpan di folder dokumen Aplikasi di perangkat. Mereka bukan bagian catatan CloudKit Dial. Jika Anda memakai pemindai label persediaan, Dial memproses gambar label yang dipilih atau diambil untuk mengisi bidang dan tidak menyimpan gambar itu sebagai catatan persediaan."
+    - heading: "Bagaimana Aplikasi memakai Kesehatan?"
+      paragraphs:
+        - "Jika Anda memberi izin, Dial membaca berat tubuh dari Kesehatan agar jurnal berat tetap mutakhir, dan dapat menulis ke Kesehatan berat yang Anda catat di Dial. Dial tidak membaca atau menulis kategori data Kesehatan lain. Data Kesehatan tidak pernah dikirim dari perangkat ke Penyedia layanan atau pihak lain. Tidak dipakai untuk iklan atau pemasaran, tidak dijual, tidak dibagikan ke pihak ketiga, dan tidak dipakai untuk apa pun selain pencatatan berat Aplikasi sendiri. Anda mengontrol izin ini kapan saja di pengaturan Kesehatan perangkat."
+    - heading: "Apakah Dial menggantikan nasihat medis?"
+      paragraphs:
+        - "Dial adalah alat buku harian. Bukan alat kesehatan dan tidak memberi nasihat medis. Tidak melakukan perhitungan dosis dan tidak membuat rekomendasi dosis. Setiap dosis dan jadwal di Dial berasal dari informasi yang Anda masukkan atau pilih untuk diimpor. Apa pun tentang pengobatan, termasuk dosis, jadwal, dan efek samping, konfirmasikan dengan pemberi resep."
+    - heading: "Apakah Aplikasi mengirim notifikasi?"
+      paragraphs:
+        - "Aplikasi dapat menjadwalkan pengingat lokal untuk dosis dan peristiwa lain yang Anda atur, tetapi hanya jika Anda menyalakan pengingat dan memberi izin notifikasi. Itu notifikasi lokal di perangkat dari data yang Anda masukkan. Tidak dikirim dari atau melalui server Penyedia layanan, dan isi notifikasi tidak meninggalkan perangkat."
+    - heading: "Apakah Aplikasi mengumpulkan informasi lokasi perangkat yang tepat secara waktu nyata?"
+      paragraphs:
+        - "Aplikasi tidak mengumpulkan informasi tepat tentang lokasi perangkat Anda."
+    - heading: "Apakah pihak ketiga melihat atau mengakses informasi yang diperoleh Aplikasi?"
+      paragraphs:
+        - "Karena Aplikasi tidak mengirim catatan Dial ke Penyedia layanan, Penyedia layanan tidak punya catatan semacam itu untuk dibagikan ke pihak ketiga. Pembelian dan langganan Dial Pro opsional diproses Apple melalui StoreKit. Penyedia layanan tidak menerima rincian kartu pembayaran dari transaksi itu."
+    - heading: "Apa hak opt-out saya dan bagaimana menghapus data?"
+      paragraphs:
+        - "Anda menghentikan semua penyimpanan informasi oleh Aplikasi dengan menghapusnya. Gunakan proses uninstal standar perangkat atau toko. Menghapus entri mengeluarkannya dari penyimpanan aktif Dial. Saat kontrol iCloud dalam aplikasi menyala, penghapusan dapat tercermin di basis CloudKit pribadi yang terhubung ke Akun Apple. Anda dapat mematikan kontrol di pengaturan Dial dan mengelola data Aplikasi lewat pengaturan iCloud perangkat. Izin Kesehatan dapat dicabut kapan saja di pengaturan Kesehatan. Data yang sudah ditulis ke Kesehatan tetap di sana di bawah kendali Apple sampai Anda menghapusnya. Foto perkembangan dapat dihapus di Dial."
+    - heading: "Anak-anak"
+      paragraphs:
+        - "Aplikasi tidak dipakai secara sadar untuk meminta data dari anak di bawah 13 tahun atau memasarkan kepada mereka."
+      email_before: "Penyedia layanan tidak secara sadar mengumpulkan informasi yang dapat mengidentifikasi pribadi dari anak-anak. Mendorong semua anak untuk tidak mengirim informasi itu melalui Aplikasi atau Layanan. Orang tua dan wali didorong memantau penggunaan internet anak dan membantu menegakkan kebijakan ini dengan meminta mereka tidak memberikan informasi yang dapat mengidentifikasi pribadi melalui Aplikasi atau Layanan tanpa izin. Jika Anda punya alasan percaya seorang anak telah memberi informasi itu kepada Penyedia layanan melalui Aplikasi atau Layanan, tulis ke"
+      email_after: " agar langkah yang diperlukan dapat diambil. Anda juga harus berusia setidaknya 16 tahun untuk menyetujui pemrosesan informasi yang dapat mengidentifikasi pribadi di negara Anda (di beberapa negara orang tua atau wali dapat melakukannya atas nama Anda)."
+    - heading: "Keamanan"
+      paragraphs:
+        - "Dial tidak mengirim catatan Anda ke Penyedia layanan, sehingga membatasi paparan melalui sistem yang kami operasikan. Catatan di perangkat dilindungi kontrol keamanan perangkat itu. Data yang disimpan melalui CloudKit dilindungi Akun Apple Anda dan kontrol keamanan iCloud Apple. Data di Kesehatan dilindungi kontrol keamanan data Kesehatan Apple. Tidak ada sistem penyimpanan yang dapat dijamin sepenuhnya aman."
+    - heading: "Ketentuan penggunaan"
+      paragraphs:
+        []
+      terms_before: "Penggunaan Aplikasi juga diatur"
+      terms_link: "Ketentuan penggunaan"
+      terms_after: " Zentsu LLC."
+    - heading: "Perubahan"
+      paragraphs:
+        - "Kebijakan privasi ini dapat diperbarui dari waktu ke waktu karena alasan apa pun. Penyedia layanan memberitahu Anda dengan memperbarui halaman ini. Bacalah secara berkala karena penggunaan berkelanjutan dianggap persetujuan semua perubahan."
+    - heading: "Persetujuan Anda"
+      paragraphs:
+        - "Dengan memakai Aplikasi, Anda menyetujui pemrosesan informasi sebagaimana diuraikan dalam kebijakan privasi ini sekarang dan sebagaimana diubah Penyedia layanan."
+    - heading: "Hubungi kami"
+      paragraphs:
+        []
+      email_before: "Jika ada pertanyaan privasi saat memakai Aplikasi, atau tentang praktik kami, hubungi Penyedia layanan di"
+      email_after: "."
+
+hu:
+  page_label: "Jogi információ"
+  h1: "Adatvédelmi szabályzat"
+  effective: "Hatálybalépés: 2026. július 12."
+  notice_before: ""
+  notice_link: "Az angol változat"
+  notice_after: "a szabályzat hivatalos szövege. Ez az oldal kényelmi fordítás."
+  overview_url: "/hu/dial/"
+  overview_link: "Vissza a Dial áttekintéséhez"
+  intro: "Ez az adatvédelmi szabályzat a Dialra (a továbbiakban „Alkalmazás”) vonatkozik, amelyet a Zentsu LLC (a továbbiakban „Szolgáltató”) kereskedelmi szolgáltatásként ad ki. A szolgáltatás „AHOGY VAN” használatra készült."
+  short: "Röviden: a Dial a bejegyzéseket a készüléken tárolja. Az alkalmazásbeli vezérlővel a fő bejegyzésekhez használhatja az Apple-fiókjához kötött privát CloudKit-adatbázist, vagy csak a készüléken tarthatja őket. A testsúlybejegyzések és a fejlődési fotók külön helyi tárolót használnak. A Szolgáltató nem üzemeltet szervert, amely elolvashatná, amit a Dialban tárol."
+  copyright: "© 2026 Zentsu LLC. Minden jog fenntartva."
+  sections:
+    - heading: "Milyen információt szerez az Alkalmazás, és hogyan használják?"
+      paragraphs:
+        - "Az Alkalmazás nem küldi a Dial-bejegyzéseket a Szolgáltatónak. Zentsu-regisztráció nem szükséges. A gyógyszerek, adagok, injekcióhelyek, emlékeztető-ütemezések, készlet és a kompatibilis fájlból importált mellékhatás-előzmény a készüléken tárolódik. A Szolgáltató nem gyűjti, nem kapja, és nincs módja látni ezeket."
+    - heading: "Hol tárolódnak a fő bejegyzések?"
+      paragraphs:
+        - "A gyógyszer, adag, injekcióhely, emlékeztető, készlet és importált mellékhatás-bejegyzések a készüléken vannak. A Dial Beállításaiban van „Sync with iCloud” vezérlő is. Ha be van kapcsolva és az iCloud elérhető, ezek a bejegyzések használhatják az Apple CloudKitet és az Apple-fiókjához kötött privát adatbázist. A Szolgáltató nem üzemeltet szervert, nem tart másolatot, és nem férhet hozzájuk, nem olvashatja és nem állíthatja helyre őket."
+        - "Az alkalmazásbeli vezérlő kikapcsolása után a bejegyzések csak azon a készüléken maradnak, amikor legközelebb megnyitja a Dialt. A készülék iCloud-beállításai is befolyásolják, elérhető-e a CloudKit. Az iCloud tárolását és továbbítását az Apple feltételei és adatvédelmi szabályzata szabályozza."
+    - heading: "Hol tárolódnak a testsúlyadatok?"
+      paragraphs:
+        - "A testsúlynapló külön, csak helyi tárolóban van a készüléken. Nem része a fenti választható CloudKit-tárolónak, és az Alkalmazáson keresztül nem hagyja el a készüléket. Ha több készüléken használja a Dialt, a testsúlybejegyzések minden készüléken függetlenek maradnak."
+    - heading: "Hol tárolódnak a fejlődési fotók?"
+      paragraphs:
+        - "A fejlődési fotók és dátumaik az Alkalmazás dokumentumkönyvtárában vannak a készüléken. Nem részei a Dial CloudKit-bejegyzéseinek. Ha a készletcímke-olvasót használja, a Dial a kiválasztott vagy készített címkeképet dolgozza fel a mezők kitöltéséhez, és nem menti azt készletbejegyzésként."
+    - heading: "Hogyan használja az Alkalmazás az Egészséget?"
+      paragraphs:
+        - "Ha engedélyt ad, a Dial a testsúlyt olvassa az Egészségből, hogy a testsúlynapló naprakész legyen, és a Dialban rögzített testsúlyt visszaírhatja az Egészségbe. A Dial nem olvas és nem ír más adatkategóriát az Egészségben. Az Egészség adatai soha nem hagyják el a készüléket a Szolgáltató vagy bárki más felé. Nem használják hirdetésre vagy marketingre, nem adják el, nem osztják meg harmadik felekkel, és az Alkalmazás saját testsúlykövetésén kívül semmire sem használják. Az engedélyt bármikor a készülék Egészség beállításaiban szabályozza."
+    - heading: "A Dial helyettesíti az orvosi tanácsot?"
+      paragraphs:
+        - "A Dial naplóeszköz. Nem orvostechnikai eszköz, és nem ad orvosi tanácsot. Nem végez adagszámítást, és nem ad adagolási javaslatot. Minden adag és ütemezés a Dialban az Ön által megadott vagy importált adatokból jön. A kezeléssel kapcsolatos mindent, beleértve az adagokat, ütemezéseket és mellékhatásokat, a felíróval erősítse meg."
+    - heading: "Küld az Alkalmazás értesítéseket?"
+      paragraphs:
+        - "Az Alkalmazás helyi emlékeztetőket ütemezhet a beállított adagokra és más eseményekre, de csak ha bekapcsolja az emlékeztetőket és értesítési engedélyt ad. Ezek a megadott adatokból a készüléken készült helyi értesítések. Nem a Szolgáltató szerveréről mennek, és nem haladnak át rajta, az értesítés tartalma nem hagyja el a készüléket."
+    - heading: "Gyűjt az Alkalmazás pontos valós idejű helyadatot a készülékről?"
+      paragraphs:
+        - "Az Alkalmazás nem gyűjt pontos információt a készüléke helyéről."
+    - heading: "Látják harmadik felek az Alkalmazás által szerzett információt, vagy hozzáférnek hozzá?"
+      paragraphs:
+        - "Mivel az Alkalmazás nem küld Dial-bejegyzéseket a Szolgáltatónak, a Szolgáltatónak nincs ilyen bejegyzése, amelyet harmadik felekkel megoszthatna. A választható Dial Pro vásárlásokat és előfizetéseket az Apple StoreKiten keresztül dolgozza fel. A Szolgáltató ezekből a tranzakciókból nem kap bankkártyaadatot."
+    - heading: "Milyen leiratkozási jogaim vannak, és hogyan törlöm az adatokat?"
+      paragraphs:
+        - "Az Alkalmazás minden információtárolását a törlésével állítja le. Használja a készülék vagy az App Store szokásos eltávolítását. Egy bejegyzés törlése kiveszi a Dial aktív tárolójából. Ha az alkalmazásbeli iCloud-vezérlő be van kapcsolva, a törlés tükröződhet az Apple-fiókjához kötött privát CloudKit-adatbázisban. A vezérlőt a Dial beállításaiban kikapcsolhatja, és az Alkalmazás adatait a készülék iCloud-beállításaiban kezelheti. Az Egészség engedélyét bármikor visszavonhatja az Egészség beállításaiban. Az Egészségbe már írt adatok ott maradnak az Apple ellenőrzése alatt, amíg el nem távolítja őket. A fejlődési fotók a Dialban törölhetők."
+    - heading: "Gyermekek"
+      paragraphs:
+        - "Az Alkalmazást nem használják tudatosan 13 év alatti gyermekektől adatgyűjtésre vagy marketingre."
+      email_before: "A Szolgáltató nem gyűjt tudatosan személyazonosításra alkalmas adatot gyermekektől. Arra ösztönöz minden gyermeket, hogy ilyen adatot ne küldjön az Alkalmazáson vagy a Szolgáltatásokon keresztül. A szülőket és gyámokat arra kérik, hogy kísérjék figyelemmel a gyermekek internethasználatát, és segítsék e szabályzat betartását azzal, hogy megmondják a gyermekeknek: engedély nélkül ne adjanak személyazonosításra alkalmas adatot az Alkalmazáson vagy a Szolgáltatásokon keresztül. Ha oka van azt hinni, hogy egy gyermek ilyen adatot adott a Szolgáltatónak az Alkalmazáson vagy a Szolgáltatásokon keresztül, írjon ide:"
+      email_after: ", hogy a szükséges lépéseket megtehessük. A személyazonosításra alkalmas adatok kezeléséhez az országában legalább 16 évesnek kell lennie (egyes országokban szülő vagy gyám teheti ezt az Ön nevében)."
+    - heading: "Biztonság"
+      paragraphs:
+        - "A Dial nem küldi a bejegyzéseit a Szolgáltatónak, ezzel korlátozza a kitettséget az általunk üzemeltetett rendszereken. A készüléken lévő bejegyzéseket a készülék biztonsági vezérlői védik. A CloudKiten tárolt adatokat az Apple-fiókja és az Apple iCloud biztonsági vezérlői védik. Az Egészségben lévő adatokat az Apple Egészség-adatbiztonsági vezérlői védik. Egyetlen tárolórendszer sem garantálható teljesen biztonságosnak."
+    - heading: "Használati feltételek"
+      paragraphs:
+        []
+      terms_before: "Az Alkalmazás használatát a Zentsu LLC"
+      terms_link: "használati feltételei"
+      terms_after: " is szabályozzák."
+    - heading: "Változások"
+      paragraphs:
+        - "Ez az adatvédelmi szabályzat időről időre bármilyen okból frissülhet. A Szolgáltató az oldal frissítésével értesíti Önt. Rendszeresen olvassa, mert a további használat minden változás jóváhagyásának minősül."
+    - heading: "Az Ön hozzájárulása"
+      paragraphs:
+        - "Az Alkalmazás használatával hozzájárul az információk kezeléséhez, ahogy ez az adatvédelmi szabályzat most és a Szolgáltató módosításai szerint leírja."
+    - heading: "Kapcsolat"
+      paragraphs:
+        []
+      email_before: "Ha kérdése van az adatvédelemről az Alkalmazás használata közben, vagy a gyakorlatainkról, írjon a Szolgáltatónak ide:"
+      email_after: "."
+
+sk:
+  page_label: "Právne informácie"
+  h1: "Zásady ochrany osobných údajov"
+  effective: "Dátum účinnosti: 12. júla 2026"
+  notice_before: ""
+  notice_link: "Anglická verzia"
+  notice_after: "je záväzný text týchto zásad. Táto stránka je poskytnutá pre pohodlie."
+  overview_url: "/sk/dial/"
+  overview_link: "Späť na prehľad Dial"
+  intro: "Tieto zásady sa vzťahujú na Dial (ďalej „Aplikácia“), ktorý ako komerčnú službu vydáva Zentsu LLC (ďalej „Poskytovateľ služby“). Služba je určená na použitie „TAK, AKO JE“."
+  short: "Stručne: Dial ukladá záznamy na zariadení. Ovládací prvok v aplikácii umožňuje použiť súkromnú databázu CloudKit pripojenú k vášmu Apple Account pre hlavné záznamy, alebo ich nechať len na zariadení. Záznamy hmotnosti a fotky pokroku používajú samostatné miestne úložisko. Poskytovateľ služby neprevádzkuje žiadny server, ktorý by mohol čítať, čo v Dial uložíte."
+  copyright: "© 2026 Zentsu LLC. Všetky práva vyhradené."
+  sections:
+    - heading: "Aké informácie Aplikácia získava a ako sa používajú?"
+      paragraphs:
+        - "Aplikácia neodosiela vaše záznamy Dial Poskytovateľovi služby. Registrácia u Zentsu nie je nutná. Lieky, dávky, miesta vpichu, plány pripomienok, zásoby a história nežiaducich účinkov z kompatibilného súboru, ktorý sa rozhodnete importovať, sa ukladajú na zariadení. Poskytovateľ služby ich nezhromažďuje, neprijíma a nemá spôsob, ako ich vidieť."
+    - heading: "Kde sa ukladajú hlavné záznamy?"
+      paragraphs:
+        - "Záznamy liekov, dávok, miest vpichu, pripomienok, zásob a importovaných nežiaducich účinkov sa ukladajú na zariadení. Dial má v Nastaveniach aj ovládací prvok „Sync with iCloud“. Keď je zapnutý a iCloud je dostupný, tieto záznamy môžu používať službu CloudKit spoločnosti Apple a súkromnú databázu viazanú na váš Apple Account. Poskytovateľ služby neprevádzkuje žiadny server, nedrží kópiu týchto záznamov a nemôže k nim pristupovať, čítať ich ani ich obnoviť."
+        - "Vypnutie ovládacieho prvku v aplikácii nechá tieto záznamy len na danom zariadení po ďalšom otvorení Dial. Nastavenia iCloud na zariadení tiež ovplyvňujú, či je CloudKit dostupný. Úložisko a prenos iCloud sa riadia podmienkami a zásadami ochrany osobných údajov spoločnosti Apple."
+    - heading: "Kde sa ukladajú údaje o hmotnosti?"
+      paragraphs:
+        - "Záznam hmotnosti je v samostatnom, iba miestnom úložisku na zariadení. Nie je súčasťou voliteľného úložiska CloudKit vyššie a Aplikáciou zariadenie neopúšťa. Ak Dial používate na viacerých zariadeniach, záznamy hmotnosti na každom zariadení ostávajú nezávislé."
+    - heading: "Kde sa ukladajú fotky pokroku?"
+      paragraphs:
+        - "Fotky pokroku a ich dátumy sa ukladajú v adresári dokumentov Aplikácie na zariadení. Nie sú súčasťou záznamov CloudKit Dial. Ak použijete skener štítkov zásob, Dial spracuje vybraný alebo nasnímaný snímok štítku na vyplnenie polí a tento snímok ako záznam zásoby neukladá."
+    - heading: "Ako Aplikácia používa Zdravie?"
+      paragraphs:
+        - "Ak udelíte oprávnenie, Dial číta telesnú hmotnosť zo Zdravia, aby bol záznam hmotnosti aktuálny, a môže do Zdravia zapisovať hmotnosť, ktorú v Dial zaznamenáte. Dial nečíta ani nezapisuje žiadnu inú kategóriu dát v Zdraví. Dáta zo Zdravia sa nikdy neprenášajú zo zariadenia Poskytovateľovi služby ani nikomu ďalšiemu. Nepoužívajú sa na reklamu ani marketing, nepredávajú sa, nezdieľajú sa s tretími stranami a nepoužívajú sa na nič iné ako na vlastné sledovanie hmotnosti Aplikácie. Toto oprávnenie ovládate kedykoľvek v nastaveniach Zdravia na zariadení."
+    - heading: "Nahrádza Dial lekársku radu?"
+      paragraphs:
+        - "Dial je nástroj denníka. Nie je zdravotnícka pomôcka a neposkytuje lekársku radu. Nevykonáva výpočty dávok a nedáva žiadne odporúčania k dávkovaniu. Každá dávka a každý plán v Dial pochádza z údajov, ktoré ste zadali alebo sa rozhodli importovať. Čokoľvek k liečbe, vrátane dávok, plánov a nežiaducich účinkov, potvrďte s predpisujúcou osobou."
+    - heading: "Posiela Aplikácia oznámenia?"
+      paragraphs:
+        - "Aplikácia môže naplánovať miestne pripomienky na dávky a ďalšie udalosti, ktoré nastavíte, ale len keď pripomienky zapnete a udelíte oprávnenie k oznámeniam. Sú to miestne oznámenia vytvorené na zariadení z dát, ktoré ste zadali. Neodosielajú sa zo žiadneho servera Poskytovateľa služby ani cez neho neprechádzajú a obsah oznámenia zariadenie neopúšťa."
+    - heading: "Zhromažďuje Aplikácia presné informácie o polohe zariadenia v reálnom čase?"
+      paragraphs:
+        - "Aplikácia nezhromažďuje presné informácie o polohe vášho zariadenia."
+    - heading: "Vidí tretie strany informácie získané Aplikáciou, alebo k nim majú prístup?"
+      paragraphs:
+        - "Pretože Aplikácia neodosiela záznamy Dial Poskytovateľovi služby, Poskytovateľ služby nemá také záznamy, ktoré by mohol zdieľať s tretími stranami. Voliteľné nákupy a predplatné Dial Pro spracúva Apple cez StoreKit. Poskytovateľ služby z týchto transakcií nedostáva údaje o platobnej karte."
+    - heading: "Aké mám práva na odhlásenie a ako dáta zmažem?"
+      paragraphs:
+        - "Všetko ukladanie informácií Aplikáciou zastavíte jej zmazaním. Môžete použiť štandardnú odinštaláciu zariadenia alebo obchodu. Zmazanie záznamu ho odoberie z aktívneho úložiska Dial. Keď je v aplikácii zapnuté iCloud, zmazanie sa môže prejaviť v súkromnej databáze CloudKit pripojenej k vášmu Apple Account. Ovládací prvok môžete v nastaveniach Dial vypnúť a dáta Aplikácie spravovať v nastaveniach iCloud na zariadení. Oprávnenie k Zdraviu môžete kedykoľvek odobrať v nastaveniach Zdravia. Dáta už zapísané do Zdravia tam ostanú pod kontrolou Apple, kým ich neodstránite. Fotky pokroku možno zmazať v Dial."
+    - heading: "Deti"
+      paragraphs:
+        - "Aplikácia sa vedome nepoužíva na získavanie dát od detí mladších ako 13 rokov ani na marketing voči nim."
+      email_before: "Poskytovateľ služby vedome nezhromažďuje osobné údaje detí. Vyzýva všetky deti, aby také údaje cez Aplikáciu ani Služby neposielali. Vyzýva rodičov a zákonných zástupcov, aby sledovali používanie internetu deťmi a pomáhali tieto zásady vymáhať tým, že deťom povedia, aby bez súhlasu osobné údaje cez Aplikáciu ani Služby neposkytovali. Ak máte dôvod domnievať sa, že dieťa poskytlo osobné údaje Poskytovateľovi služby cez Aplikáciu alebo Služby, napíšte na"
+      email_after: ", aby mohol prijať potrebné kroky. Musíte mať tiež aspoň 16 rokov, aby ste mohli súhlasiť so spracovaním osobných údajov vo svojej krajine (v niektorých krajinách to môže za vás urobiť rodič alebo zákonný zástupca)."
+    - heading: "Zabezpečenie"
+      paragraphs:
+        - "Dial neodosiela vaše záznamy Poskytovateľovi služby, čo obmedzuje expozíciu cez systémy, ktoré prevádzkujeme. Záznamy na zariadení chránia bezpečnostné kontroly tohto zariadenia. Dáta uložené cez CloudKit chráni váš Apple Account a bezpečnostné kontroly iCloud spoločnosti Apple. Dáta v Zdraví chránia bezpečnostné kontroly dát Zdravia spoločnosti Apple. Žiadny systém úložiska nemožno zaručiť ako úplne bezpečný."
+    - heading: "Podmienky používania"
+      paragraphs:
+        []
+      terms_before: "Používanie Aplikácie sa riadi aj"
+      terms_link: "Podmienkami používania"
+      terms_after: " Zentsu LLC."
+    - heading: "Zmeny"
+      paragraphs:
+        - "Tieto zásady sa môžu čas od času aktualizovať z akéhokoľvek dôvodu. Poskytovateľ služby vás o zmenách informuje aktualizáciou tejto stránky. Pravidelne ich kontrolujte, pretože ďalšie používanie sa považuje za súhlas so všetkými zmenami."
+    - heading: "Váš súhlas"
+      paragraphs:
+        - "Používaním Aplikácie súhlasíte so spracovaním informácií podľa týchto zásad ochrany osobných údajov teraz aj v znení, na ktoré ich Poskytovateľ služby zmení."
+    - heading: "Kontakt"
+      paragraphs:
+        []
+      email_before: "Ak máte otázky k súkromiu pri používaní Aplikácie alebo k našim postupom, napíšte Poskytovateľovi služby na"
+      email_after: "."
+
+ms:
+  page_label: "Undang-undang"
+  h1: "Dasar privasi"
+  effective: "Tarikh berkuat kuasa: 12 Julai 2026"
+  notice_before: ""
+  notice_link: "Versi bahasa Inggeris"
+  notice_after: "ialah teks rasmi dasar ini. Halaman ini disediakan untuk kemudahan."
+  overview_url: "/ms/dial/"
+  overview_link: "Kembali ke gambaran Dial"
+  intro: "Dasar privasi ini terpakai kepada Dial (selepas ini „Aplikasi“), yang diterbitkan Zentsu LLC (selepas ini „Penyedia perkhidmatan“) sebagai perkhidmatan komersial. Perkhidmatan dimaksudkan untuk digunakan „SEBAGAIMANA ADANYA“."
+  short: "Ringkasnya: Dial menyimpan rekod pada peranti. Kawalan dalam aplikasi membolehkan pangkalan CloudKit peribadi yang terikat pada Akaun Apple untuk rekod teras, atau kekal hanya pada peranti. Entri berat dan foto perkembangan menggunakan storan setempat berasingan. Penyedia perkhidmatan tidak mengendalikan pelayan yang dapat membaca apa yang anda simpan dalam Dial."
+  copyright: "© 2026 Zentsu LLC. Hak cipta terpelihara."
+  sections:
+    - heading: "Maklumat apa yang Aplikasi peroleh dan bagaimana digunakan?"
+      paragraphs:
+        - "Aplikasi tidak menghantar rekod Dial kepada Penyedia perkhidmatan. Pendaftaran dengan Zentsu tidak diperlukan. Ubat, dos, tapak suntikan, jadual peringatan, bekalan, dan sejarah kesan sampingan daripada fail serasi yang anda pilih untuk diimport disimpan pada peranti. Penyedia perkhidmatan tidak mengumpul, tidak menerima, dan tiada cara melihatnya."
+    - heading: "Di manakah rekod teras disimpan?"
+      paragraphs:
+        - "Rekod ubat, dos, tapak suntikan, peringatan, bekalan dan kesan sampingan yang diimport disimpan pada peranti. Dial juga mempunyai kawalan „Sync with iCloud“ dalam Tetapan. Apabila dihidupkan dan iCloud tersedia, rekod ini boleh menggunakan CloudKit Apple dan pangkalan peribadi yang terikat pada Akaun Apple anda. Penyedia perkhidmatan tidak mengendalikan pelayan, tidak menyimpan salinan, dan tidak dapat mengakses, membaca atau memulihkannya."
+        - "Mematikan kawalan dalam aplikasi menjadikan rekod ini hanya pada peranti itu selepas anda seterusnya membuka Dial. Tetapan iCloud peranti juga mempengaruhi sama ada CloudKit tersedia. Terma dan dasar privasi Apple mengawal storan dan penghantaran iCloud."
+    - heading: "Di manakah data berat disimpan?"
+      paragraphs:
+        - "Rekod berat berada dalam storan berasingan, hanya setempat, pada peranti. Ia bukan sebahagian storan CloudKit pilihan di atas dan tidak meninggalkan peranti melalui Aplikasi. Jika anda menggunakan Dial pada lebih daripada satu peranti, entri berat pada setiap peranti kekal bebas."
+    - heading: "Di manakah foto perkembangan disimpan?"
+      paragraphs:
+        - "Foto perkembangan dan tarikhnya disimpan dalam folder dokumen Aplikasi pada peranti. Ia bukan sebahagian rekod CloudKit Dial. Jika anda menggunakan pengimbas label bekalan, Dial memproses imej label yang dipilih atau diambil untuk mengisi medan dan tidak menyimpan imej itu sebagai rekod bekalan."
+    - heading: "Bagaimana Aplikasi menggunakan Kesihatan?"
+      paragraphs:
+        - "Jika anda memberi kebenaran, Dial membaca berat badan daripada Kesihatan supaya rekod berat kekal semasa, dan boleh menulis ke Kesihatan berat yang anda rekod dalam Dial. Dial tidak membaca atau menulis kategori data Kesihatan lain. Data Kesihatan tidak pernah dihantar dari peranti kepada Penyedia perkhidmatan atau mana-mana pihak lain. Ia tidak digunakan untuk pengiklanan atau pemasaran, tidak dijual, tidak dikongsi dengan pihak ketiga, dan tidak digunakan untuk apa-apa selain penjejakan berat Aplikasi sendiri. Anda mengawal kebenaran ini pada bila-bila masa dalam tetapan Kesihatan peranti."
+    - heading: "Adakah Dial menggantikan nasihat perubatan?"
+      paragraphs:
+        - "Dial ialah alat diari. Ia bukan peranti perubatan dan tidak memberi nasihat perubatan. Ia tidak melakukan pengiraan dos dan tidak membuat cadangan dos. Setiap dos dan jadual dalam Dial datang daripada maklumat yang anda masukkan atau pilih untuk diimport. Apa-apa tentang rawatan, termasuk dos, jadual dan kesan sampingan, sahkan dengan pemberi preskripsi."
+    - heading: "Adakah Aplikasi menghantar pemberitahuan?"
+      paragraphs:
+        - "Aplikasi boleh menjadualkan peringatan setempat untuk dos dan peristiwa lain yang anda tetapkan, tetapi hanya jika anda menghidupkan peringatan dan memberi kebenaran pemberitahuan. Itu pemberitahuan setempat pada peranti daripada data yang anda masukkan. Ia tidak dihantar dari atau melalui mana-mana pelayan Penyedia perkhidmatan, dan kandungan pemberitahuan tidak meninggalkan peranti."
+    - heading: "Adakah Aplikasi mengumpul maklumat lokasi tepat peranti secara masa nyata?"
+      paragraphs:
+        - "Aplikasi tidak mengumpul maklumat tepat tentang lokasi peranti anda."
+    - heading: "Adakah pihak ketiga melihat atau mempunyai akses kepada maklumat yang diperoleh Aplikasi?"
+      paragraphs:
+        - "Oleh kerana Aplikasi tidak menghantar rekod Dial kepada Penyedia perkhidmatan, Penyedia perkhidmatan tiada rekod sedemikian untuk dikongsi dengan pihak ketiga. Pembelian dan langganan Dial Pro pilihan diproses Apple melalui StoreKit. Penyedia perkhidmatan tidak menerima butiran kad pembayaran daripada transaksi itu."
+    - heading: "Apakah hak opt-out saya dan bagaimana saya padamkan data?"
+      paragraphs:
+        - "Anda menghentikan semua storan maklumat oleh Aplikasi dengan memadamkannya. Gunakan proses nyahpasang piawai peranti atau kedai. Memadam entri mengeluarkannya daripada storan aktif Dial. Apabila kawalan iCloud dalam aplikasi dihidupkan, pemadaman boleh tercermin dalam pangkalan CloudKit peribadi yang terikat pada Akaun Apple. Anda boleh mematikan kawalan dalam tetapan Dial dan mengurus data Aplikasi melalui tetapan iCloud peranti. Kebenaran Kesihatan boleh dibatalkan pada bila-bila masa dalam tetapan Kesihatan. Data yang sudah ditulis ke Kesihatan kekal di sana di bawah kawalan Apple sehingga anda mengeluarkannya. Foto perkembangan boleh dipadam dalam Dial."
+    - heading: "Kanak-kanak"
+      paragraphs:
+        - "Aplikasi tidak digunakan secara sedar untuk meminta data daripada kanak-kanak bawah 13 tahun atau memasarkan kepada mereka."
+      email_before: "Penyedia perkhidmatan tidak secara sedar mengumpul maklumat yang boleh mengenal pasti peribadi daripada kanak-kanak. Menggalakkan semua kanak-kanak supaya tidak menghantar maklumat itu melalui Aplikasi atau Perkhidmatan. Ibu bapa dan penjaga digalakkan memantau penggunaan internet kanak-kanak dan membantu menguatkuasakan dasar ini dengan meminta mereka tidak memberikan maklumat yang boleh mengenal pasti peribadi melalui Aplikasi atau Perkhidmatan tanpa kebenaran. Jika anda ada sebab percaya seorang kanak-kanak telah memberikan maklumat itu kepada Penyedia perkhidmatan melalui Aplikasi atau Perkhidmatan, tulis kepada"
+      email_after: " supaya langkah yang perlu dapat diambil. Anda juga mesti berumur sekurang-kurangnya 16 tahun untuk bersetuju dengan pemprosesan maklumat yang boleh mengenal pasti peribadi di negara anda (di sesetengah negara ibu bapa atau penjaga boleh berbuat demikian bagi pihak anda)."
+    - heading: "Keselamatan"
+      paragraphs:
+        - "Dial tidak menghantar rekod anda kepada Penyedia perkhidmatan, yang mengehadkan pendedahan melalui sistem yang kami kendalikan. Rekod pada peranti dilindungi kawalan keselamatan peranti itu. Data yang disimpan melalui CloudKit dilindungi Akaun Apple anda dan kawalan keselamatan iCloud Apple. Data dalam Kesihatan dilindungi kawalan keselamatan data Kesihatan Apple. Tiada sistem storan dapat dijamin sepenuhnya selamat."
+    - heading: "Syarat penggunaan"
+      paragraphs:
+        []
+      terms_before: "Penggunaan Aplikasi juga tertakluk kepada"
+      terms_link: "Syarat penggunaan"
+      terms_after: " Zentsu LLC."
+    - heading: "Perubahan"
+      paragraphs:
+        - "Dasar privasi ini boleh dikemas kini dari semasa ke semasa atas sebarang sebab. Penyedia perkhidmatan memberitahu anda dengan mengemas kini halaman ini. Bacalah secara berkala kerana penggunaan berterusan dianggap kelulusan semua perubahan."
+    - heading: "Persetujuan anda"
+      paragraphs:
+        - "Dengan menggunakan Aplikasi, anda bersetuju dengan pemprosesan maklumat seperti yang dinyatakan dalam dasar privasi ini sekarang dan sebagaimana diubah oleh Penyedia perkhidmatan."
+    - heading: "Hubungi kami"
+      paragraphs:
+        []
+      email_before: "Jika anda ada soalan privasi semasa menggunakan Aplikasi, atau tentang amalan kami, hubungi Penyedia perkhidmatan di"
+      email_after: "."
+
+ro:
+  page_label: "Juridic"
+  h1: "Politică de confidențialitate"
+  effective: "Data de intrare în vigoare: 12 iulie 2026"
+  notice_before: ""
+  notice_link: "Versiunea în engleză"
+  notice_after: "este versiunea oficială a acestei politici. Această pagină este oferită pentru comoditate."
+  overview_url: "/ro/dial/"
+  overview_link: "Înapoi la prezentarea Dial"
+  intro: "Această politică de confidențialitate se aplică aplicației Dial (denumită în continuare „Aplicația”), publicată de Zentsu LLC (denumită în continuare „Furnizorul de servicii”) ca serviciu comercial. Serviciul este destinat utilizării „AȘA CUM ESTE”."
+  short: "Pe scurt: Dial stochează înregistrările pe dispozitiv. Un control din aplicație permite folosirea bazei CloudKit private legate de contul Apple pentru înregistrările de bază sau păstrarea lor doar pe dispozitiv. Înregistrările de greutate și fotografiile de progres folosesc un depozit local separat. Furnizorul de servicii nu operează niciun server care ar putea citi ce stocați în Dial."
+  copyright: "© 2026 Zentsu LLC. Toate drepturile rezervate."
+  sections:
+    - heading: "Ce informații obține Aplicația și cum sunt folosite?"
+      paragraphs:
+        - "Aplicația nu trimite înregistrările Dial Furnizorului de servicii. Nu este necesară înregistrarea la Zentsu. Medicamentele, dozele, locurile de injecție, programele de reamintire, stocul și istoricul efectelor secundare dintr-un fișier compatibil pe care alegeți să-l importați se stochează pe dispozitiv. Furnizorul de servicii nu le colectează, nu le primește și nu are cum să le vadă."
+    - heading: "Unde se stochează înregistrările de bază?"
+      paragraphs:
+        - "Înregistrările de medicament, doză, loc de injecție, reamintire, stoc și efecte secundare importate se stochează pe dispozitiv. Dial are și un control „Sync with iCloud” în Configurări. Când este pornit și iCloud este disponibil, aceste înregistrări pot folosi CloudKit de la Apple și baza privată legată de contul Apple. Furnizorul de servicii nu operează server, nu păstrează copie și nu poate accesa, citi sau recupera aceste înregistrări."
+        - "Dezactivarea controlului din aplicație lasă aceste înregistrări doar pe acel dispozitiv după următoarea deschidere a Dial. Setările iCloud ale dispozitivului influențează și ele dacă CloudKit este disponibil. Stocarea și transmisia iCloud sunt guvernate de termenii și politica de confidențialitate Apple."
+    - heading: "Unde se stochează datele de greutate?"
+      paragraphs:
+        - "Jurnalul de greutate stă într-un depozit separat, doar local, pe dispozitiv. Nu face parte din stocarea CloudKit opțională de mai sus și nu părăsește dispozitivul prin Aplicație. Dacă folosiți Dial pe mai multe dispozitive, înregistrările de greutate de pe fiecare rămân independente."
+    - heading: "Unde se stochează fotografiile de progres?"
+      paragraphs:
+        - "Fotografiile de progres și datele lor se stochează în directorul de documente al Aplicației pe dispozitiv. Nu fac parte din înregistrările CloudKit Dial. Dacă folosiți scanerul de etichete de stoc, Dial prelucrează imaginea de etichetă selectată sau capturată pentru a completa câmpurile și nu salvează acea imagine ca înregistrare de stoc."
+    - heading: "Cum folosește Aplicația Sănătatea?"
+      paragraphs:
+        - "Dacă acordați permisiunea, Dial citește greutatea corporală din Sănătate ca jurnalul de greutate să rămână actual și poate scrie în Sănătate greutatea pe care o înregistrați în Dial. Dial nu citește și nu scrie alte categorii de date din Sănătate. Datele din Sănătate nu părăsesc niciodată dispozitivul către Furnizorul de servicii sau altcineva. Nu sunt folosite pentru publicitate sau marketing, nu se vând, nu se partajează cu terți și nu se folosesc pentru altceva decât urmărirea greutății în Aplicație. Controlați această permisiune oricând în setările Sănătate ale dispozitivului."
+    - heading: "Înlocuiește Dial sfatul medical?"
+      paragraphs:
+        - "Dial este un instrument de jurnal. Nu este un dispozitiv medical și nu oferă sfat medical. Nu face calcule de doză și nu dă recomandări de dozare. Fiecare doză și fiecare program din Dial vin din informațiile pe care le-ați introdus sau ați ales să le importați. Confirmați orice aspect al tratamentului, inclusiv dozele, programele și efectele secundare, cu medicul care prescrie."
+    - heading: "Trimite Aplicația notificări?"
+      paragraphs:
+        - "Aplicația poate programa reamintiri locale pentru doze și alte evenimente pe care le configurați, dar numai dacă porniți reamintirile și acordați permisiunea de notificări. Sunt notificări locale pe dispozitiv din datele introduse. Nu sunt trimise de pe serverul Furnizorului de servicii și nu trec prin el, iar conținutul notificării nu părăsește dispozitivul."
+    - heading: "Colectează Aplicația informații precise de localizare a dispozitivului în timp real?"
+      paragraphs:
+        - "Aplicația nu colectează informații precise despre locația dispozitivului dumneavoastră."
+    - heading: "Văd terții informațiile obținute de Aplicație sau au acces la ele?"
+      paragraphs:
+        - "Deoarece Aplicația nu transmite înregistrări Dial Furnizorului de servicii, Furnizorul de servicii nu are astfel de înregistrări de partajat cu terți. Achizițiile și abonamentele Dial Pro opționale sunt procesate de Apple prin StoreKit. Furnizorul de servicii nu primește detalii de card de plată din acele tranzacții."
+    - heading: "Ce drepturi de retragere am și cum șterg datele?"
+      paragraphs:
+        - "Opriți toată stocarea de informații de către Aplicație ștergând-o. Folosiți dezinstalarea standard a dispozitivului sau a magazinului. Ștergerea unei înregistrări o scoate din depozitul activ Dial. Când controlul iCloud din aplicație este pornit, ștergerea se poate reflecta în baza CloudKit privată legată de contul Apple. Puteți opri controlul în setările Dial și gestiona datele Aplicației prin setările iCloud ale dispozitivului. Permisiunea Sănătate o puteți revoca oricând în setările Sănătate. Datele deja scrise în Sănătate rămân acolo sub controlul Apple până le eliminați. Fotografiile de progres se pot șterge în Dial."
+    - heading: "Copii"
+      paragraphs:
+        - "Aplicația nu este folosită în cunoștință de cauză pentru a solicita date de la copii sub 13 ani sau pentru marketing către ei."
+      email_before: "Furnizorul de servicii nu colectează în cunoștință de cauză informații de identificare personală de la copii. Încurajează toți copiii să nu trimită astfel de informații prin Aplicație sau Servicii. Părinții și tutorii sunt încurajați să supravegheze folosirea internetului de către copii și să ajute la aplicarea acestei politici cerându-le să nu furnizeze informații de identificare personală prin Aplicație sau Servicii fără permisiune. Dacă aveți motive să credeți că un copil a furnizat astfel de informații Furnizorului de servicii prin Aplicație sau Servicii, scrieți la"
+      email_after: ", ca să poată fi luați pașii necesari. Trebuie să aveți și cel puțin 16 ani ca să consimțiți la prelucrarea informațiilor de identificare personală în țara dumneavoastră (în unele țări un părinte sau tutore o poate face în numele dumneavoastră)."
+    - heading: "Securitate"
+      paragraphs:
+        - "Dial nu transmite înregistrările dumneavoastră Furnizorului de servicii, ceea ce limitează expunerea prin sistemele pe care le operăm. Înregistrările de pe dispozitiv sunt protejate de controalele de securitate ale acelui dispozitiv. Datele stocate prin CloudKit sunt protejate de contul Apple și de controalele de securitate iCloud ale Apple. Datele din Sănătate sunt protejate de controalele de securitate ale datelor Sănătate ale Apple. Niciun sistem de stocare nu poate fi garantat complet sigur."
+    - heading: "Termeni de utilizare"
+      paragraphs:
+        []
+      terms_before: "Folosirea Aplicației este guvernată și de"
+      terms_link: "Termenii de utilizare"
+      terms_after: " Zentsu LLC."
+    - heading: "Modificări"
+      paragraphs:
+        - "Această politică de confidențialitate poate fi actualizată din când în când din orice motiv. Furnizorul de servicii vă anunță actualizând această pagină. Consultați-o periodic, deoarece folosirea în continuare este considerată aprobarea tuturor modificărilor."
+    - heading: "Consimțământul dumneavoastră"
+      paragraphs:
+        - "Folosind Aplicația, consimțiți la prelucrarea informațiilor așa cum este descrisă în această politică de confidențialitate acum și așa cum o modifică Furnizorul de servicii."
+    - heading: "Contact"
+      paragraphs:
+        []
+      email_before: "Dacă aveți întrebări despre confidențialitate în timpul folosirii Aplicației sau despre practicile noastre, scrieți Furnizorului de servicii la"
+      email_after: "."
+
+tr:
+  page_label: "Hukuki"
+  h1: "Gizlilik politikası"
+  effective: "Yürürlük tarihi: 12 Temmuz 2026"
+  notice_before: ""
+  notice_link: "İngilizce sürüm"
+  notice_after: "bu politikanın resmi metnidir. Bu sayfa kolaylık için sunulmuştur."
+  overview_url: "/tr/dial/"
+  overview_link: "Dial özetine dön"
+  intro: "Bu gizlilik politikası, Zentsu LLC (bundan sonra „Hizmet sağlayıcı“) tarafından ticari hizmet olarak yayımlanan Dial (bundan sonra „Uygulama“) için geçerlidir. Hizmet „OLDUĞU GİBİ“ kullanılmak üzere tasarlanmıştır."
+  short: "Kısaca: Dial kayıtları aygıtta saklar. Uygulama içi denetim, temel kayıtlar için Apple hesabınıza bağlı özel CloudKit veritabanını kullanmanıza veya bunları yalnızca aygıtta tutmanıza izin verir. Kilo girdileri ve ilerleme fotoğrafları ayrı yerel depolama kullanır. Hizmet sağlayıcı, Dial'de sakladığınızı okuyabilecek bir sunucu işletmez."
+  copyright: "© 2026 Zentsu LLC. Tüm hakları saklıdır."
+  sections:
+    - heading: "Uygulama hangi bilgileri alır ve nasıl kullanılır?"
+      paragraphs:
+        - "Uygulama Dial kayıtlarını Hizmet sağlayıcıya göndermez. Zentsu kaydı gerekmez. İlaçlar, dozlar, enjeksiyon yerleri, anımsatıcı programları, stok ve içe aktarmayı seçtiğiniz uyumlu dosyadaki yan etki geçmişi aygıtta saklanır. Hizmet sağlayıcı bunları toplamaz, almaz ve görme yolu yoktur."
+    - heading: "Temel kayıtlar nerede saklanır?"
+      paragraphs:
+        - "İlaç, doz, enjeksiyon yeri, anımsatıcı, stok ve içe aktarılan yan etki kayıtları aygıtta saklanır. Dial Ayarlarında ayrıca „Sync with iCloud“ denetimi vardır. Açıkken ve iCloud kullanılabilirken bu kayıtlar Apple CloudKit ve Apple hesabınıza bağlı özel veritabanını kullanabilir. Hizmet sağlayıcı sunucu işletmez, kopya tutmaz ve bunlara erişemez, okuyamaz veya kurtaramaz."
+        - "Uygulama içi denetimi kapatmak, Dial'i bir sonraki açışınızda bu kayıtları yalnızca o aygıtta tutar. Aygıtın iCloud ayarları da CloudKit'in kullanılabilirliğini etkiler. iCloud depolama ve iletimi Apple'ın koşulları ve gizlilik politikasına tabidir."
+    - heading: "Kilo verileri nerede saklanır?"
+      paragraphs:
+        - "Kilo günlüğü aygıttaki ayrı, yalnızca yerel bir depodadır. Yukarıdaki isteğe bağlı CloudKit depolamasının parçası değildir ve Uygulama aracılığıyla aygıttan çıkmaz. Dial'i birden fazla aygıtta kullanırsanız her aygıttaki kilo girdileri bağımsız kalır."
+    - heading: "İlerleme fotoğrafları nerede saklanır?"
+      paragraphs:
+        - "İlerleme fotoğrafları ve tarihleri Uygulamanın aygıttaki belgeler klasöründe saklanır. Dial CloudKit kayıtlarının parçası değildir. Stok etiketi tarayıcısını kullanırsanız Dial, alanları doldurmak için seçilen veya çekilen etiket görüntüsünü işler ve o görüntüyü stok kaydı olarak saklamaz."
+    - heading: "Uygulama Sağlık'ı nasıl kullanır?"
+      paragraphs:
+        - "İzin verirseniz Dial, kilo günlüğünü güncel tutmak için Sağlık'tan vücut ağırlığını okur ve Dial'de kaydettiğiniz kiloyu Sağlık'a yazabilir. Dial Sağlık'taki başka veri kategorilerini okumaz veya yazmaz. Sağlık verileri aygıttan Hizmet sağlayıcıya veya başka bir tarafa asla iletilmez. Reklam veya pazarlama için kullanılmaz, satılmaz, üçüncü taraflarla paylaşılmaz ve Uygulamanın kendi kilo takibinden başka bir şey için kullanılmaz. Bu izni aygıtın Sağlık ayarlarında istediğiniz zaman kontrol edersiniz."
+    - heading: "Dial tıbbi tavsiyenin yerini alır mı?"
+      paragraphs:
+        - "Dial bir günlük aracıdır. Tıbbi cihaz değildir ve tıbbi tavsiye vermez. Doz hesaplaması yapmaz ve doz önerisi vermez. Dial'deki her doz ve program, girdiğiniz veya içe aktarmayı seçtiğiniz bilgilerden gelir. Dozlar, programlar ve yan etkiler dahil tedavinizle ilgili her şeyi hekiminizle doğrulayın."
+    - heading: "Uygulama bildirim gönderir mi?"
+      paragraphs:
+        - "Uygulama, ayarladığınız dozlar ve diğer olaylar için yerel anımsatıcılar zamanlayabilir, ancak yalnızca anımsatıcıları açar ve bildirim izni verirseniz. Bunlar girdiğiniz verilerden aygıtta oluşturulan yerel bildirimlerdir. Hizmet sağlayıcının herhangi bir sunucusundan gönderilmez veya oradan geçmez ve bildirim içeriği aygıttan çıkmaz."
+    - heading: "Uygulama aygıtın kesin gerçek zamanlı konumunu toplar mı?"
+      paragraphs:
+        - "Uygulama aygıtınızın konumu hakkında kesin bilgi toplamaz."
+    - heading: "Üçüncü taraflar Uygulamanın aldığı bilgileri görür veya erişir mi?"
+      paragraphs:
+        - "Uygulama Dial kayıtlarını Hizmet sağlayıcıya iletmediği için Hizmet sağlayıcının üçüncü taraflarla paylaşacağı böyle kayıtları yoktur. İsteğe bağlı Dial Pro satın alımları ve abonelikleri Apple tarafından StoreKit üzerinden işlenir. Hizmet sağlayıcı bu işlemlerden ödeme kartı ayrıntısı almaz."
+    - heading: "Vazgeçme haklarım nelerdir ve verilerimi nasıl silerim?"
+      paragraphs:
+        - "Uygulamayı silerek tüm bilgi depolamasını durdurursunuz. Aygıtın veya mağazanın standart kaldırma işlemini kullanın. Bir girdiyi silmek onu Dial'in etkin deposundan çıkarır. Uygulama içi iCloud denetimi açıkken silme, Apple hesabınıza bağlı özel CloudKit veritabanına yansıyabilir. Denetimi Dial Ayarlarında kapatabilir ve Uygulama verilerini aygıtın iCloud ayarlarından yönetebilirsiniz. Sağlık iznini Sağlık ayarlarında istediğiniz zaman geri alabilirsiniz. Sağlık'a zaten yazılmış veriler siz kaldırana dek Apple'ın denetiminde orada kalır. İlerleme fotoğrafları Dial içinde silinebilir."
+    - heading: "Çocuklar"
+      paragraphs:
+        - "Uygulama, 13 yaşın altındaki çocuklardan bilinçli olarak veri istemek veya onlara pazarlama yapmak için kullanılmaz."
+      email_before: "Hizmet sağlayıcı çocuklardan bilinçli olarak kişisel olarak tanımlanabilir bilgi toplamaz. Tüm çocukları Uygulama veya Hizmetler aracılığıyla böyle bilgi göndermemeye teşvik eder. Ebeveynler ve yasal vasiler, çocukların internet kullanımını izlemeye ve izin olmadan Uygulama veya Hizmetler aracılığıyla kişisel olarak tanımlanabilir bilgi vermemelerini söyleyerek bu politikayı uygulamaya yardımcı olmaya teşvik edilir. Bir çocuğun Uygulama veya Hizmetler aracılığıyla Hizmet sağlayıcıya böyle bilgi verdiğine inanmak için nedeniniz varsa şuraya yazın"
+      email_after: ", böylece gerekli adımlar atılabilir. Kişisel olarak tanımlanabilir bilgilerinizin işlenmesine ülkenizde rıza vermek için de en az 16 yaşında olmalısınız (bazı ülkelerde ebeveyn veya vasi sizin adınıza yapabilir)."
+    - heading: "Güvenlik"
+      paragraphs:
+        - "Dial kayıtlarınızı Hizmet sağlayıcıya iletmez, işlettiğimiz sistemler üzerinden maruziyeti sınırlar. Aygıttaki kayıtlar o aygıtın güvenlik denetimleriyle korunur. CloudKit üzerinden saklanan veriler Apple hesabınız ve Apple'ın iCloud güvenlik denetimleriyle korunur. Sağlık'taki veriler Apple'ın Sağlık verisi güvenlik denetimleriyle korunur. Hiçbir depolama sistemi tamamen güvenli olarak garanti edilemez."
+    - heading: "Kullanım koşulları"
+      paragraphs:
+        []
+      terms_before: "Uygulamanın kullanımı ayrıca Zentsu LLC"
+      terms_link: "kullanım koşullarına"
+      terms_after: " da tabidir."
+    - heading: "Değişiklikler"
+      paragraphs:
+        - "Bu gizlilik politikası herhangi bir nedenle zaman zaman güncellenebilir. Hizmet sağlayıcı bu sayfayı güncelleyerek sizi bilgilendirir. Sürekli kullanım tüm değişikliklerin onayı sayıldığından düzenli okuyun."
+    - heading: "Onayınız"
+      paragraphs:
+        - "Uygulamayı kullanarak, bilgilerinizin bu gizlilik politikasında şimdi ve Hizmet sağlayıcı tarafından değiştirildiği haliyle işlenmesine onay vermiş olursunuz."
+    - heading: "Bize ulaşın"
+      paragraphs:
+        []
+      email_before: "Uygulamayı kullanırken gizlilik veya uygulamalarımız hakkında sorularınız varsa Hizmet sağlayıcıya şuradan yazın"
+      email_after: "."
+
+th:
+  page_label: "กฎหมาย"
+  h1: "นโยบายความเป็นส่วนตัว"
+  effective: "วันที่มีผล: 12 กรกฎาคม 2026"
+  notice_before: ""
+  notice_link: "ฉบับภาษาอังกฤษ"
+  notice_after: "เป็นข้อความทางการของนโยบายนี้ หน้านี้จัดไว้เพื่อความสะดวก"
+  overview_url: "/th/dial/"
+  overview_link: "กลับไปภาพรวม Dial"
+  intro: "นโยบายความเป็นส่วนตัวนี้ใช้กับ Dial (ต่อไปนี้เรียก «แอปพลิเคชัน») ซึ่ง Zentsu LLC (ต่อไปนี้เรียก «ผู้ให้บริการ») เผยแพร่เป็นบริการเชิงพาณิชย์ บริการมีไว้ให้ใช้ «ตามสภาพ»."
+  short: "โดยย่อ: Dial เก็บบันทึกไว้บนอุปกรณ์ ตัวควบคุมในแอปให้ใช้ฐาน CloudKit ส่วนตัวที่ผูกกับบัญชี Apple สำหรับบันทึกหลัก หรือให้เหลืออยู่บนอุปกรณ์เท่านั้น รายการน้ำหนักและรูปความคืบหน้าใช้ที่เก็บในเครื่องแยก ผู้ให้บริการไม่ได้ดำเนินเซิร์ฟเวอร์ที่อ่านสิ่งที่คุณเก็บใน Dial ได้"
+  copyright: "© 2026 Zentsu LLC สงวนลิขสิทธิ์"
+  sections:
+    - heading: "แอปพลิเคชันได้ข้อมูลใด และใช้อย่างไร?"
+      paragraphs:
+        - "แอปพลิเคชันไม่ส่งบันทึก Dial ไปยังผู้ให้บริการ ไม่ต้องลงทะเบียนกับ Zentsu ยา ขนาดยา จุดฉีด ตารางการเตือน สต็อก และประวัติผลข้างเคียงจากไฟล์ที่เข้ากันได้ซึ่งคุณเลือกนำเข้า ถูกเก็บบนอุปกรณ์ ผู้ให้บริการไม่เก็บ ไม่รับ และไม่มีทางเห็นข้อมูลนั้น"
+    - heading: "บันทึกหลักเก็บไว้ที่ไหน?"
+      paragraphs:
+        - "บันทึกยา ขนาดยา จุดฉีด การเตือน สต็อก และผลข้างเคียงที่นำเข้า ถูกเก็บบนอุปกรณ์ Dial มีตัวควบคุม «Sync with iCloud» ในการตั้งค่าด้วย เมื่อเปิดอยู่และ iCloud พร้อมใช้ บันทึกเหล่านี้ใช้ CloudKit ของ Apple และฐานส่วนตัวที่ผูกกับบัญชี Apple ของคุณได้ ผู้ให้บริการไม่ได้ดำเนินเซิร์ฟเวอร์ ไม่เก็บสำเนา และเข้าถึง อ่าน หรือกู้คืนไม่ได้"
+        - "การปิดตัวควบคุมในแอปทำให้บันทึกเหล่านี้อยู่บนอุปกรณ์นั้นเท่านั้นเมื่อคุณเปิด Dial ครั้งถัดไป การตั้งค่า iCloud ของอุปกรณ์ก็มีผลว่า CloudKit พร้อมใช้หรือไม่ การเก็บและส่งผ่าน iCloud อยู่ภายใต้ข้อกำหนดและนโยบายความเป็นส่วนตัวของ Apple"
+    - heading: "ข้อมูลน้ำหนักเก็บไว้ที่ไหน?"
+      paragraphs:
+        - "บันทึกน้ำหนักอยู่ในที่เก็บแยก เฉพาะในเครื่อง บนอุปกรณ์ ไม่ใช่ส่วนของการเก็บ CloudKit ที่เลือกได้ด้านบน และไม่ได้ออกจากอุปกรณ์ผ่านแอปพลิเคชัน หากใช้ Dial บนหลายอุปกรณ์ รายการน้ำหนักบนแต่ละเครื่องเป็นอิสระต่อกัน"
+    - heading: "รูปความคืบหน้าเก็บไว้ที่ไหน?"
+      paragraphs:
+        - "รูปความคืบหน้าและวันที่เก็บในโฟลเดอร์เอกสารของแอปพลิเคชันบนอุปกรณ์ ไม่ใช่ส่วนของบันทึก CloudKit ของ Dial หากใช้สแกนป้ายสต็อก Dial ประมวลผลภาพป้ายที่เลือกหรือถ่ายเพื่อกรอกช่อง และไม่เก็บภาพนั้นเป็นบันทึกสต็อก"
+    - heading: "แอปพลิเคชันใช้สุขภาพอย่างไร?"
+      paragraphs:
+        - "หากคุณให้สิทธิ์ Dial อ่านน้ำหนักตัวจากสุขภาพเพื่อให้บันทึกน้ำหนักทันสมัย และเขียนน้ำหนักที่คุณบันทึกใน Dial กลับไปยังสุขภาพได้ Dial ไม่อ่านหรือเขียนหมวดข้อมูลอื่นในสุขภาพ ข้อมูลสุขภาพไม่ออกจากอุปกรณ์ไปยังผู้ให้บริการหรือฝ่ายอื่น ไม่ใช้โฆษณาหรือการตลาด ไม่ขาย ไม่แชร์กับบุคคลที่สาม และไม่ใช้เพื่ออย่างอื่นนอกจากการติดตามน้ำหนักของแอปพลิเคชันเอง คุณควบคุมสิทธิ์นี้ได้ทุกเมื่อที่ตั้งค่า &gt; สุขภาพ"
+    - heading: "Dial แทนคำแนะนำทางการแพทย์หรือไม่?"
+      paragraphs:
+        - "Dial เป็นเครื่องมือบันทึกประจำวัน ไม่ใช่อุปกรณ์การแพทย์ และไม่ให้คำแนะนำทางการแพทย์ ไม่คำนวณขนาดยา และไม่แนะนำขนาดยา ทุกขนาดยาและตารางใน Dial มาจากข้อมูลที่คุณกรอกหรือเลือกนำเข้า เรื่องการรักษา รวมถึงขนาดยา ตาราง และผลข้างเคียง ให้ยืนยันกับผู้สั่งยา"
+    - heading: "แอปพลิเคชันส่งการแจ้งเตือนหรือไม่?"
+      paragraphs:
+        - "แอปพลิเคชันสามารถตั้งการเตือนในเครื่องสำหรับขนาดยาและเหตุการณ์อื่นที่คุณตั้ง แต่เฉพาะเมื่อเปิดการเตือนและให้สิทธิ์การแจ้งเตือน เป็นการแจ้งเตือนในเครื่องจากข้อมูลที่คุณกรอก ไม่ส่งจากหรือผ่านเซิร์ฟเวอร์ของผู้ให้บริการ และเนื้อหาการแจ้งเตือนไม่ออกจากอุปกรณ์"
+    - heading: "แอปพลิเคชันเก็บตำแหน่งแม่นยำของอุปกรณ์แบบเรียลไทม์หรือไม่?"
+      paragraphs:
+        - "แอปพลิเคชันไม่เก็บข้อมูลแม่นยำเกี่ยวกับตำแหน่งอุปกรณ์ของคุณ"
+    - heading: "บุคคลที่สามเห็นหรือเข้าถึงข้อมูลที่แอปพลิเคชันได้รับหรือไม่?"
+      paragraphs:
+        - "เนื่องจากแอปพลิเคชันไม่ส่งบันทึก Dial ไปยังผู้ให้บริการ ผู้ให้บริการจึงไม่มีบันทึกเช่นนั้นที่จะแชร์กับบุคคลที่สาม การซื้อและสมัคร Dial Pro ที่เลือกได้ Apple ประมวลผลผ่าน StoreKit ผู้ให้บริการไม่ได้รับรายละเอียดบัตรชำระเงินจากธุรกรรมนั้น"
+    - heading: "สิทธิ์ถอนตัวมีอะไรบ้าง และลบข้อมูลอย่างไร?"
+      paragraphs:
+        - "คุณหยุดการเก็บข้อมูลทั้งหมดของแอปพลิเคชันด้วยการลบแอป ใช้ขั้นตอนถอนการติดตั้งมาตรฐานของอุปกรณ์หรือร้านค้า การลบรายการนำออกจากที่เก็บที่ใช้งานของ Dial เมื่อตัวควบคุม iCloud ในแอปเปิดอยู่ การลบอาจสะท้อนในฐาน CloudKit ส่วนตัวที่ผูกกับบัญชี Apple คุณปิดตัวควบคุมได้ในการตั้งค่า Dial และจัดการข้อมูลแอปพลิเคชันผ่านการตั้งค่า iCloud ของอุปกรณ์ สิทธิ์สุขภาพเพิกถอนได้ทุกเมื่อที่ตั้งค่า &gt; สุขภาพ ข้อมูลที่เขียนไปสุขภาพแล้วอยู่ที่นั่นภายใต้การควบคุมของ Apple จนกว่าคุณจะเอาออก รูปความคืบหน้าลบใน Dial ได้"
+    - heading: "เด็ก"
+      paragraphs:
+        - "แอปพลิเคชันไม่ได้ถูกใช้โดยเจตนาเพื่อขอข้อมูลจากเด็กอายุต่ำกว่า 13 ปี หรือทำการตลาดกับเด็ก"
+      email_before: "ผู้ให้บริการไม่ได้เก็บข้อมูลที่ระบุตัวตนได้จากเด็กโดยเจตนา ขอให้เด็กทุกคนไม่ส่งข้อมูลเช่นนั้นผ่านแอปพลิเคชันหรือบริการ ผู้ปกครองและผู้ดูแลควรติดตามการใช้เน็ตของเด็ก และช่วยบังคับใช้นโยบายนี้โดยบอกไม่ให้ให้ข้อมูลที่ระบุตัวตนได้ผ่านแอปพลิเคชันหรือบริการโดยไม่ได้รับอนุญาต หากมีเหตุให้เชื่อว่าเด็กได้ให้ข้อมูลเช่นนั้นแก่ผู้ให้บริการผ่านแอปพลิเคชันหรือบริการ ให้เขียนถึง"
+      email_after: " เพื่อให้ดำเนินการที่จำเป็น คุณต้องมีอายุอย่างน้อย 16 ปีจึงจะยินยอมให้ประมวลผลข้อมูลที่ระบุตัวตนได้ในประเทศของคุณ (ในบางประเทศผู้ปกครองหรือผู้ดูแลทำแทนได้)"
+    - heading: "ความปลอดภัย"
+      paragraphs:
+        - "Dial ไม่ส่งบันทึกของคุณไปยังผู้ให้บริการ จึงจำกัดการเปิดเผยผ่านระบบที่เราดำเนิน บันทึกบนอุปกรณ์ได้รับการปกป้องด้วยการควบคุมความปลอดภัยของอุปกรณ์นั้น ข้อมูลที่เก็บผ่าน CloudKit ได้รับการปกป้องด้วยบัญชี Apple และการควบคุมความปลอดภัย iCloud ของ Apple ข้อมูลในสุขภาพได้รับการปกป้องด้วยการควบคุมความปลอดภัยข้อมูลสุขภาพของ Apple ไม่มีระบบจัดเก็บใดรับประกันว่าปลอดภัยสมบูรณ์"
+    - heading: "ข้อกำหนดการใช้งาน"
+      paragraphs:
+        []
+      terms_before: "การใช้แอปพลิเคชันยังอยู่ภายใต้"
+      terms_link: "ข้อกำหนดการใช้งาน"
+      terms_after: " ของ Zentsu LLC"
+    - heading: "การเปลี่ยนแปลง"
+      paragraphs:
+        - "นโยบายความเป็นส่วนตัวนี้อาจอัปเดตเป็นครั้งคราวด้วยเหตุใดก็ได้ ผู้ให้บริการแจ้งโดยอัปเดตหน้านี้ โปรดอ่านเป็นระยะ เพราะการใช้ต่อถือว่าอนุมัติการเปลี่ยนแปลงทั้งหมด"
+    - heading: "ความยินยอมของคุณ"
+      paragraphs:
+        - "การใช้แอปพลิเคชันถือว่าคุณยินยอมให้ประมวลผลข้อมูลตามที่นโยบายความเป็นส่วนตัวนี้ระบุในขณะนี้ และตามที่ผู้ให้บริการแก้ไข"
+    - heading: "ติดต่อเรา"
+      paragraphs:
+        []
+      email_before: "หากมีคำถามเรื่องความเป็นส่วนตัวขณะใช้แอปพลิเคชัน หรือเกี่ยวกับวิธีปฏิบัติของเรา ให้ติดต่อผู้ให้บริการที่"
+      email_after: "."
+
+uk:
+  page_label: "Правова інформація"
+  h1: "Політика конфіденційності"
+  effective: "Дата набрання чинності: 12 липня 2026"
+  notice_before: ""
+  notice_link: "Англійська версія"
+  notice_after: "є офіційним текстом цієї політики. Цю сторінку надано для зручності."
+  overview_url: "/uk/dial/"
+  overview_link: "Назад до огляду Dial"
+  intro: "Ця політика конфіденційності стосується Dial (далі «Застосунок»), який Zentsu LLC (далі «Постачальник послуги») публікує як комерційну послугу. Послугу призначено для використання «ЯК Є»."
+  short: "Коротко: Dial зберігає записи на пристрої. Елемент керування в застосунку дає змогу використовувати приватну базу CloudKit, прив’язану до облікового запису Apple, для основних записів або залишити їх лише на пристрої. Записи ваги та фото прогресу використовують окреме локальне сховище. Постачальник послуги не експлуатує сервер, який міг би читати те, що ви зберігаєте в Dial."
+  copyright: "© 2026 Zentsu LLC. Усі права захищено."
+  sections:
+    - heading: "Яку інформацію отримує Застосунок і як її використовують?"
+      paragraphs:
+        - "Застосунок не надсилає записи Dial Постачальнику послуги. Реєстрація в Zentsu не потрібна. Ліки, дози, місця ін’єкцій, розклади нагадувань, запаси та історія побічних ефектів із сумісного файлу, який ви вирішите імпортувати, зберігаються на пристрої. Постачальник послуги їх не збирає, не отримує і не має способу їх побачити."
+    - heading: "Де зберігаються основні записи?"
+      paragraphs:
+        - "Записи ліків, доз, місць ін’єкцій, нагадувань, запасів та імпортованих побічних ефектів зберігаються на пристрої. У налаштуваннях Dial також є елемент «Sync with iCloud». Коли він увімкнений і iCloud доступний, ці записи можуть використовувати CloudKit Apple і приватну базу, прив’язану до вашого облікового запису Apple. Постачальник послуги не експлуатує сервер, не зберігає копію і не може отримати доступ, прочитати чи відновити їх."
+        - "Вимкнення елемента в застосунку залишає ці записи лише на тому пристрої після наступного відкриття Dial. Налаштування iCloud на пристрої також впливають на доступність CloudKit. Зберігання та передавання iCloud регулюються умовами та політикою конфіденційності Apple."
+    - heading: "Де зберігаються дані про вагу?"
+      paragraphs:
+        - "Журнал ваги перебуває в окремому, лише локальному сховищі на пристрої. Він не є частиною необов’язкового сховища CloudKit вище і не залишає пристрій через Застосунок. Якщо ви використовуєте Dial на кількох пристроях, записи ваги на кожному залишаються незалежними."
+    - heading: "Де зберігаються фото прогресу?"
+      paragraphs:
+        - "Фото прогресу та їхні дати зберігаються в теці документів Застосунку на пристрої. Вони не є частиною записів CloudKit Dial. Якщо ви використовуєте сканер етикетки запасів, Dial обробляє вибране або зняте зображення етикетки, щоб заповнити поля, і не зберігає це зображення як запис запасів."
+    - heading: "Як Застосунок використовує Здоров’я?"
+      paragraphs:
+        - "Якщо ви надасте дозвіл, Dial читає масу тіла зі Здоров’я, щоб журнал ваги лишався актуальним, і може записувати у Здоров’я вагу, яку ви фіксуєте в Dial. Dial не читає і не записує інші категорії даних у Здоров’ї. Дані Здоров’я ніколи не надходять з пристрою до Постачальника послуги чи будь-кого іншого. Їх не використовують для реклами чи маркетингу, не продають, не передають третім сторонам і не використовують ні для чого, крім власного обліку ваги Застосунку. Цим дозволом ви керуєте будь-коли в налаштуваннях Здоров’я на пристрої."
+    - heading: "Чи замінює Dial медичну пораду?"
+      paragraphs:
+        - "Dial є інструментом щоденника. Це не медичний виріб і він не надає медичних порад. Він не виконує розрахунків дози і не дає рекомендацій щодо дозування. Кожна доза і кожен розклад у Dial походять з інформації, яку ви ввели або вирішили імпортувати. Усе щодо лікування, включно з дозами, розкладами та побічними ефектами, підтверджуйте з особою, яка призначає."
+    - heading: "Чи надсилає Застосунок сповіщення?"
+      paragraphs:
+        - "Застосунок може планувати локальні нагадування для доз та інших подій, які ви налаштуєте, але лише якщо ви ввімкнете нагадування і надасте дозвіл на сповіщення. Це локальні сповіщення на пристрої з даних, які ви ввели. Їх не надсилають із сервера Постачальника послуги і вони не проходять через нього, а вміст сповіщення не залишає пристрій."
+    - heading: "Чи збирає Застосунок точні дані про розташування пристрою у реальному часі?"
+      paragraphs:
+        - "Застосунок не збирає точної інформації про розташування вашого пристрою."
+    - heading: "Чи бачать треті сторони інформацію, яку отримує Застосунок, або мають до неї доступ?"
+      paragraphs:
+        - "Оскільки Застосунок не надсилає записи Dial Постачальнику послуги, Постачальник послуги не має таких записів, щоб ділитися ними з третіми сторонами. Необов’язкові покупки та передплати Dial Pro обробляє Apple через StoreKit. Постачальник послуги не отримує реквізитів платіжної картки з цих транзакцій."
+    - heading: "Які в мене права на відмову і як видалити дані?"
+      paragraphs:
+        - "Ви зупиняєте все зберігання інформації Застосунком, видаливши його. Скористайтеся стандартним видаленням програми на пристрої або в App Store. Видалення запису прибирає його з активного сховища Dial. Коли елемент iCloud у застосунку ввімкнено, видалення може відобразитися в приватній базі CloudKit, прив’язаній до облікового запису Apple. Ви можете вимкнути елемент у налаштуваннях Dial і керувати даними Застосунку через налаштування iCloud на пристрої. Дозвіл Здоров’я можна відкликати будь-коли в налаштуваннях Здоров’я. Дані, уже записані у Здоров’я, залишаються там під контролем Apple, доки ви їх не приберете. Фото прогресу можна видалити в Dial."
+    - heading: "Діти"
+      paragraphs:
+        - "Застосунок свідомо не збирає дані від дітей молодше 13 років і не використовує їх для маркетингу."
+      email_before: "Постачальник послуги свідомо не збирає персональні дані дітей. Він закликає всіх дітей не надсилати такі дані через Застосунок або Послуги. Батьків і опікунів просимо стежити, як діти користуються інтернетом, і пояснювати, що персональні дані не варто надсилати через Застосунок або Послуги без дозволу. Якщо є підстави вважати, що дитина надала такі дані Постачальнику послуги через Застосунок або Послуги, напишіть на"
+      email_after: ", щоб можна було вжити потрібних заходів. Вам також має бути щонайменше 16 років, щоб дати згоду на обробку персональних даних у вашій країні (у деяких країнах це може зробити батько, мати або опікун від вашого імені)."
+    - heading: "Безпека"
+      paragraphs:
+        - "Dial не надсилає ваші записи Постачальнику послуги, що обмежує розкриття через системи, які ми експлуатуємо. Записи на пристрої захищені засобами безпеки цього пристрою. Дані, збережені через CloudKit, захищені обліковим записом Apple і засобами безпеки iCloud Apple. Дані у Здоров’ї захищені засобами безпеки даних Здоров’я Apple. Жодну систему зберігання не можна гарантувати як повністю безпечну."
+    - heading: "Умови використання"
+      paragraphs:
+        []
+      terms_before: "Користування Застосунком також регулюють"
+      terms_link: "Умови використання"
+      terms_after: " Zentsu LLC."
+    - heading: "Зміни"
+      paragraphs:
+        - "Цю політику конфіденційності можуть час від часу оновлювати з будь-якої причини. Постачальник послуги повідомляє вас, оновлюючи цю сторінку. Переглядайте її регулярно, бо подальше користування вважається схваленням усіх змін."
+    - heading: "Ваша згода"
+      paragraphs:
+        - "Користуючись Застосунком, ви даєте згоду на обробку інформації так, як описано в цій політиці конфіденційності зараз і як її змінить Постачальник послуги."
+    - heading: "Контакт"
+      paragraphs:
+        []
+      email_before: "Якщо маєте запитання про конфіденційність під час користування Застосунком або про наші практики, напишіть Постачальнику послуги на"
+      email_after: "."
+
+
+sv:
+  page_label: "Juridisk information"
+  h1: "Integritetspolicy"
+  effective: "Ikraftträdandedatum: 12 juli 2026"
+  notice_before: ""
+  notice_link: "Den engelska versionen"
+  notice_after: "är den officiella texten i den här policyn. Den här sidan finns som hjälp."
+  overview_url: "/sv/dial/"
+  overview_link: "Tillbaka till översikten över Dial"
+  intro: "Den här integritetspolicyn gäller Dial (nedan \"Applikationen\"), utgiven av Zentsu LLC (nedan \"Tjänsteleverantören\") som en kommersiell tjänst. Tjänsten är avsedd att användas \"SOM DEN ÄR\"."
+  short: "Kort sagt: Dial lagrar posterna på din enhet. Ett reglage i appen låter dig använda den privata CloudKit-databasen kopplad till ditt Apple-konto för kärnposter, eller behålla dem bara på enheten. Viktposter och framstegsfoton använder separat lokal lagring. Tjänsteleverantören driver ingen server som kan läsa det du lagrar i Dial."
+  copyright: "© 2026 Zentsu LLC. Alla rättigheter förbehållna."
+  sections:
+    - heading: "Vilka uppgifter samlar Applikationen in och hur används de?"
+      paragraphs:
+        - "Applikationen skickar inte dina Dial-poster till Tjänsteleverantören. Registrering hos Zentsu krävs inte. Läkemedel, doser, injektionsställen, påminnelsescheman, lagerposter och biverkningshistorik från en kompatibel fil du väljer att importera lagras på enheten. Tjänsteleverantören samlar inte in, tar inte emot och har inget sätt att se de här posterna."
+    - heading: "Var lagras mina kärnposter?"
+      paragraphs:
+        - "Dina poster om läkemedel, dos, injektionsställe, påminnelse, lager och importerade biverkningar lagras på enheten. Dial har också ett \"Sync with iCloud\"-reglage i Inställningar. När det är påslaget och iCloud är tillgängligt kan de här posterna använda Apples CloudKit och den privata databasen kopplad till ditt Apple-konto. Tjänsteleverantören driver ingen server, behåller ingen kopia och kan inte komma åt, läsa eller återställa dem."
+        - "Om du slår av reglaget i appen stannar de här posterna bara på den enheten nästa gång du öppnar Dial. Enhetens iCloud-inställningar påverkar också om CloudKit är tillgängligt. Apples villkor och integritetspolicy gäller för iCloud-lagring och överföring."
+    - heading: "Var lagras mina viktuppgifter?"
+      paragraphs:
+        - "Din viktjournal ligger i en separat, enbart lokal lagring på enheten. Den ingår inte i den valfria CloudKit-lagringen ovan och lämnar inte enheten via Applikationen. Om du använder Dial på flera enheter förblir viktposter på varje enhet oberoende."
+    - heading: "Var lagras framstegsfoton?"
+      paragraphs:
+        - "Framstegsfoton och deras datum lagras i Applikationens dokumentmapp på enheten. De ingår inte i Dials CloudKit-poster. Om du använder skannern för lageretiketter behandlar Dial den valda eller tagna etikettbilden för att fylla i fält och sparar inte den bilden som en lagerpost."
+    - heading: "Hur använder Applikationen Hälsa?"
+      paragraphs:
+        - "Om du ger tillstånd läser Dial din kroppsvikt från Hälsa för att hålla viktjournalen uppdaterad, och kan skriva viktposter du registrerar i Dial tillbaka till Hälsa. Dial läser eller skriver inga andra datakategorier i Hälsa. Data från Hälsa skickas aldrig från enheten till Tjänsteleverantören eller någon annan. De används aldrig för reklam eller marknadsföring, säljs aldrig, delas aldrig med tredje part och används aldrig till något annat än Applikationens egen viktregistrering. Du styr tillståndet när som helst i enhetens inställningar för Hälsa."
+    - heading: "Ersätter Dial medicinsk rådgivning?"
+      paragraphs:
+        - "Dial är ett journalverktyg. Det är inte en medicinteknisk produkt och ger inte medicinsk rådgivning. Det gör inga dosberäkningar och ger inga dosrekommendationer. Varje dos och varje schema i Dial kommer från uppgifter du har angett eller valt att importera. Bekräfta allt om din behandling, inklusive doser, scheman och biverkningar, med förskrivaren."
+    - heading: "Skickar Applikationen notiser?"
+      paragraphs:
+        - "Applikationen kan schemalägga lokala påminnelser om doser och andra händelser du ställer in, men bara om du slår på påminnelser och ger tillstånd till notiser. Det är lokala notiser på enheten från de data du har angett. De skickas inte från och går inte via någon server hos Tjänsteleverantören, och inget notisinnehåll lämnar enheten."
+    - heading: "Samlar Applikationen in exakta uppgifter om enhetens position i realtid?"
+      paragraphs:
+        - "Applikationen samlar inte in exakta uppgifter om din enhets position."
+    - heading: "Ser tredje parter uppgifter som Applikationen samlar in, eller har de åtkomst till dem?"
+      paragraphs:
+        - "Eftersom Applikationen inte skickar Dial-poster till Tjänsteleverantören har Tjänsteleverantören inga sådana poster att dela med tredje parter. Valfria Dial Pro-köp och prenumerationer behandlas av Apple via StoreKit. Tjänsteleverantören får inga betalkortsuppgifter från de transaktionerna."
+    - heading: "Vilka avval har jag, och hur raderar jag mina data?"
+      paragraphs:
+        - "Du kan stoppa all lagring av uppgifter genom att radera Applikationen. Använd den vanliga avinstallationen på enheten eller i butiken. Radering av en post tar bort den från Dials aktiva lagring. När iCloud-reglaget i appen är påslaget kan raderingen slå igenom i den privata CloudKit-databasen kopplad till ditt Apple-konto. Du kan slå av reglaget i Dial-inställningarna och hantera Applikationens data via enhetens iCloud-inställningar. Du kan återkalla tillståndet till Hälsa när som helst i inställningarna för Hälsa. Data som redan skrivits till Hälsa stannar där under Apples kontroll tills du tar bort dem. Framstegsfoton kan raderas i Dial."
+    - heading: "Barn"
+      paragraphs:
+        - "Applikationen används inte medvetet för att samla in data från eller marknadsföra till barn under 13 år."
+      email_before: "Tjänsteleverantören samlar inte medvetet in personuppgifter från barn. Tjänsteleverantören uppmanar alla barn att aldrig skicka sådana uppgifter via Applikationen eller Tjänsterna. Föräldrar och vårdnadshavare uppmanas att övervaka barns internetanvändning och hjälpa till att upprätthålla den här policyn genom att instruera dem att aldrig lämna personuppgifter via Applikationen eller Tjänsterna utan tillstånd. Om du har skäl att tro att ett barn har lämnat personuppgifter till Tjänsteleverantören via Applikationen eller Tjänsterna, skriv till"
+      email_after: " så att nödvändiga åtgärder kan vidtas. Du måste också vara minst 16 år för att samtycka till behandling av dina personuppgifter i ditt land (i vissa länder kan en förälder eller vårdnadshavare göra det åt dig)."
+    - heading: "Säkerhet"
+      paragraphs:
+        - "Dial skickar inte dina poster till Tjänsteleverantören, vilket begränsar exponeringen via system vi driver. Poster på din enhet skyddas av enhetens säkerhetskontroller. Data lagrade via CloudKit skyddas av ditt Apple-konto och Apples iCloud-säkerhetskontroller. Data i Hälsa skyddas av Apples säkerhetskontroller för Hälsa. Inget lagringssystem kan garanteras helt säkert."
+    - heading: "Användarvillkor"
+      paragraphs:
+        []
+      terms_before: "Din användning av Applikationen styrs också av Zentsu LLC:s"
+      terms_link: "användarvillkor"
+      terms_after: "."
+    - heading: "Ändringar"
+      paragraphs:
+        - "Den här integritetspolicyn kan uppdateras då och då av vilken anledning som helst. Tjänsteleverantören meddelar dig om ändringar genom att uppdatera den här sidan. Du bör läsa policyn regelbundet, eftersom fortsatt användning räknas som godkännande av alla ändringar."
+    - heading: "Ditt samtycke"
+      paragraphs:
+        - "Genom att använda Applikationen samtycker du till behandlingen av dina uppgifter som beskrivs i den här integritetspolicyn nu och som ändrad av Tjänsteleverantören."
+    - heading: "Kontakta oss"
+      paragraphs:
+        []
+      email_before: "Har du frågor om integritet medan du använder Applikationen, eller om vår praxis, kontakta Tjänsteleverantören på"
+      email_after: "."
+
+fi:
+  page_label: "Oikeudellista"
+  h1: "Tietosuojakäytäntö"
+  effective: "Voimaantulopäivä: 12. heinäkuuta 2026"
+  notice_before: ""
+  notice_link: "Englanninkielinen versio"
+  notice_after: "on tämän käytännön virallinen teksti. Tämä sivu on tarjolla avuksi."
+  overview_url: "/fi/dial/"
+  overview_link: "Takaisin Dial-yleiskatsaukseen"
+  intro: "Tämä tietosuojakäytäntö koskee Dalia (jäljempänä „Sovellus”), jonka Zentsu LLC (jäljempänä „Palveluntarjoaja”) julkaisee kaupallisena palveluna. Palvelu on tarkoitettu käytettäväksi „SELLAISENAAN”."
+  short: "Lyhyesti: Dial tallentaa merkinnät laitteelle. Sovelluksen asetus antaa käyttää Apple-tiliisi sidottua yksityistä CloudKit-tietokantaa ydintiedoille tai pitää ne vain laitteella. Painomerkinnät ja edistymiskuvat käyttävät erillistä paikallista tallennusta. Palveluntarjoaja ei ylläpidä palvelinta, joka voisi lukea sen, mitä tallennat Dialiin."
+  copyright: "© 2026 Zentsu LLC. Kaikki oikeudet pidätetään."
+  sections:
+    - heading: "Mitä tietoja Sovellus saa ja miten niitä käytetään?"
+      paragraphs:
+        - "Sovellus ei lähetä Dial-merkintöjäsi Palveluntarjoajalle. Rekisteröitymistä Zentsuun ei tarvita. Lääkkeet, annokset, pistoskohdat, muistutusaikataulut, varasto ja haittavaikutushistoria yhteensopivasta tiedostosta, jonka päätät tuoda, tallennetaan laitteelle. Palveluntarjoaja ei kerää, vastaanota eikä voi nähdä näitä merkintöjä."
+    - heading: "Mihin ydintiedot tallennetaan?"
+      paragraphs:
+        - "Lääke-, annos-, pistoskohta-, muistutus-, varasto- ja tuodut haittavaikutusmerkinnät tallennetaan laitteelle. Dialissa on Asetuksissa myös „Sync with iCloud” -ohjain. Kun se on päällä ja iCloud on käytettävissä, nämä merkinnät voivat käyttää Applen CloudKitia ja Apple-tiliisi sidottua yksityistä tietokantaa. Palveluntarjoaja ei ylläpidä palvelinta, ei säilytä kopiota eikä voi käyttää, lukea tai palauttaa niitä."
+        - "Sovelluksen ohjaimen katkaiseminen jättää nämä merkinnät vain kyseiselle laitteelle, kun seuraavan kerran avaat Dialin. Laitteen iCloud-asetukset vaikuttavat myös siihen, onko CloudKit käytettävissä. iCloud-tallennusta ja -siirtoa koskevat Applen ehdot ja tietosuojakäytäntö."
+    - heading: "Mihin painotiedot tallennetaan?"
+      paragraphs:
+        - "Painokirjaus on erillisessä, vain paikallisessa tallennuksessa laitteella. Se ei kuulu yllä kuvattuun valinnaiseen CloudKit-tallennukseen eikä poistu laitteelta Sovelluksen kautta. Jos käytät Dalia usealla laitteella, painomerkinnät pysyvät kussakin laitteessa erillisinä."
+    - heading: "Mihin edistymiskuvat tallennetaan?"
+      paragraphs:
+        - "Edistymiskuvat ja niiden päivämäärät tallennetaan Sovelluksen asiakirjahakemistoon laitteella. Ne eivät kuulu Dialin CloudKit-merkintöihin. Jos käytät varastoetiketin skanneria, Dial käsittelee valitun tai otetun etikettikuvan kenttien täyttämiseksi eikä tallenna kuvaa varastomerkinnäksi."
+    - heading: "Miten Sovellus käyttää Terveys-sovellusta?"
+      paragraphs:
+        - "Jos annat luvan, Dial lukee kehonpainon Terveydestä pitääkseen painokirjauksen ajan tasalla ja voi kirjoittaa Dialiin kirjaamasi painon takaisin Terveyteen. Dial ei lue eikä kirjoita muita Terveys-tietoluokkia. Terveys-tiedot eivät koskaan poistu laitteelta Palveluntarjoajalle tai muille. Niitä ei käytetä mainontaan eikä markkinointiin, niitä ei myydä, niitä ei jaeta kolmansille osapuolille eikä niitä käytetä muuhun kuin Sovelluksen omaan painon seurantaan. Hallitset tätä lupaa milloin tahansa laitteen Terveys-asetuksissa."
+    - heading: "Korvaako Dial lääketieteellisen neuvonnan?"
+      paragraphs:
+        - "Dial on kirjausväline. Se ei ole lääkinnällinen laite eikä anna lääketieteellistä neuvontaa. Se ei tee annoslaskentaa eikä anna annossuosituksia. Jokainen annos ja aikataulu Dialissa tulee tiedoista, jotka olet syöttänyt tai päättänyt tuoda. Vahvista kaikki hoitoon liittyvä, mukaan lukien annokset, aikataulut ja haittavaikutukset, määrääjän kanssa."
+    - heading: "Lähettääkö Sovellus ilmoituksia?"
+      paragraphs:
+        - "Sovellus voi ajoittaa paikallisia muistutuksia annoksista ja muista tapahtumista, jotka asetat, mutta vain jos otat muistutukset käyttöön ja annat ilmoitusluvan. Ne ovat paikallisia ilmoituksia laitteella syöttämistäsi tiedoista. Niitä ei lähetetä Palveluntarjoajan palvelimelta eikä niiden kautta, eikä ilmoituksen sisältö poistu laitteelta."
+    - heading: "Kerääkö Sovellus tarkkoja tietoja laitteen sijainnista reaaliajassa?"
+      paragraphs:
+        - "Sovellus ei kerää tarkkoja tietoja laitteesi sijainnista."
+    - heading: "Näkevätkö kolmannet osapuolet Sovelluksen saamia tietoja tai pääsevätkö niihin?"
+      paragraphs:
+        - "Koska Sovellus ei lähetä Dial-merkintöjä Palveluntarjoajalle, Palveluntarjoajalla ei ole sellaisia merkintöjä jaettavaksi kolmansille osapuolille. Valinnaiset Dial Pro -ostot ja tilaukset käsittelee Apple StoreKitin kautta. Palveluntarjoaja ei saa näistä tapahtumista maksukorttitietoja."
+    - heading: "Mitkä ovat kieltäytymisoikeuteni ja miten poistan tietoni?"
+      paragraphs:
+        - "Lopetat kaiken Sovelluksen tiedontallennuksen poistamalla sen. Käytä laitteen tai kaupan tavanomaista asennuksen poistoa. Merkinnän poistaminen poistaa sen Dialin aktiivisesta tallennuksesta. Kun Sovelluksen iCloud-ohjain on päällä, poisto voi näkyä Apple-tiliisi sidotussa yksityisessä CloudKit-tietokannassa. Voit katkaista ohjaimen Dialin asetuksissa ja hallita Sovelluksen tietoja laitteen iCloud-asetuksissa. Terveys-luvan voit perua milloin tahansa Terveys-asetuksissa. Terveyteen jo kirjoitetut tiedot jäävät sinne Applen hallintaan, kunnes poistat ne. Edistymiskuvat voi poistaa Dialissa."
+    - heading: "Lapset"
+      paragraphs:
+        - "Sovellusta ei käytetä tietoisesti tietojen keräämiseen alle 13-vuotiailta lapsilta eikä heille markkinointiin."
+      email_before: "Palveluntarjoaja ei tietoisesti kerää henkilötietoja lapsilta. Se kehottaa kaikkia lapsia olemaan lähettämättä sellaisia tietoja Sovelluksen tai Palvelujen kautta. Vanhempia ja huoltajia kehotetaan seuraamaan lasten internetin käyttöä ja auttamaan tämän käytännön noudattamisessa ohjaamalla lapsia olemaan antamatta henkilötietoja Sovelluksen tai Palvelujen kautta ilman lupaa. Jos sinulla on syytä uskoa, että lapsi on antanut henkilötietoja Palveluntarjoajalle Sovelluksen tai Palvelujen kautta, kirjoita osoitteeseen"
+      email_after: ", jotta tarvittavat toimet voidaan tehdä. Sinun on oltava myös vähintään 16-vuotias suostuaksesi henkilötietojesi käsittelyyn maassasi (joissain maissa vanhempi tai huoltaja voi tehdä sen puolestasi)."
+    - heading: "Tietoturva"
+      paragraphs:
+        - "Dial ei lähetä merkintäsi Palveluntarjoajalle, mikä rajaa altistusta järjestelmien kautta, joita me ylläpidämme. Laitteella olevia merkintöjä suojaavat laitteen tietoturvaohjaimet. CloudKitin kautta tallennettuja tietoja suojaavat Apple-tilisi ja Applen iCloud-tietoturvaohjaimet. Terveys-tietoja suojaavat Applen Terveys-tietojen tietoturvaohjaimet. Mikään tallennusjärjestelmä ei ole taattavissa täysin turvalliseksi."
+    - heading: "Käyttöehdot"
+      paragraphs: []
+      terms_before: "Sovelluksen käyttöön sovelletaan myös Zentsu LLC:n"
+      terms_link: "käyttöehtoja"
+      terms_after: "."
+    - heading: "Muutokset"
+      paragraphs:
+        - "Tätä tietosuojakäytäntöä voidaan päivittää ajoittain mistä tahansa syystä. Palveluntarjoaja ilmoittaa muutoksista päivittämällä tämän sivun. Tarkista se säännöllisesti, koska käytön jatkaminen katsotaan kaikkien muutosten hyväksynnäksi."
+    - heading: "Suostumuksesi"
+      paragraphs:
+        - "Käyttämällä Sovellusta suostut tietojesi käsittelyyn tämän tietosuojakäytännön mukaisesti nyt ja siinä muodossa, johon Palveluntarjoaja sitä muuttaa."
+    - heading: "Yhteystiedot"
+      paragraphs: []
+      email_before: "Jos sinulla on kysymyksiä tietosuojasta Sovelluksen käytön aikana tai käytännöistämme, kirjoita Palveluntarjoajalle osoitteeseen"
+      email_after: "."
+
+ca:
+  page_label: "Informació legal"
+  h1: "Política de privadesa"
+  effective: "Data d'entrada en vigor: 12 de juliol de 2026"
+  notice_before: ""
+  notice_link: "La versió anglesa"
+  notice_after: "és el text oficial d'aquesta política. Aquesta pàgina es facilita per conveniència."
+  overview_url: "/ca/dial/"
+  overview_link: "Torni a la visió general de Dial"
+  intro: "Aquesta política de privadesa s'aplica a Dial (d'ara endavant «l'Aplicació»), publicada per Zentsu LLC (d'ara endavant «el Proveïdor del servei») com a servei comercial. El servei es destina a un ús «tal qual»."
+  short: "En breu: Dial desa els registres al dispositiu. Un control de l'app permet fer servir la base privada CloudKit vinculada al seu compte d'Apple per als registres principals, o deixar-los només al dispositiu. Les entrades de pes i les fotos de progrés fan servir un magatzem local separat. El Proveïdor del servei no opera cap servidor que pugui llegir el que desa a Dial."
+  copyright: "© 2026 Zentsu LLC. Tots els drets reservats."
+  sections:
+    - heading: "Quina informació obté l'Aplicació i com s'usa?"
+      paragraphs:
+        - "L'Aplicació no envia els seus registres de Dial al Proveïdor del servei. No cal registrar-se a Zentsu. Medicaments, dosis, llocs d'injecció, horaris de recordatori, existències i l'historial d'efectes secundaris d'un fitxer compatible que triï d'importar es desen al dispositiu. El Proveïdor del servei no els recull, no els rep i no té manera de veure'ls."
+    - heading: "On es desen els registres principals?"
+      paragraphs:
+        - "Els registres de medicament, dosi, lloc d'injecció, recordatori, existències i efectes secundaris importats es desen al dispositiu. Dial també té a Configuració el control «Sync with iCloud». Quan està activat i iCloud està disponible, aquests registres poden fer servir CloudKit d'Apple i la base privada vinculada al seu compte d'Apple. El Proveïdor del servei no opera cap servidor, no en guarda cap còpia i no hi pot accedir, llegir-los ni recuperar-los."
+        - "Desactivar el control de l'app deixa aquests registres només en aquell dispositiu després de la pròxima obertura de Dial. La configuració d'iCloud del dispositiu també afecta si CloudKit està disponible. L'emmagatzematge i la transmissió d'iCloud es regeixen pels termes i la política de privadesa d'Apple."
+    - heading: "On es desen les dades de pes?"
+      paragraphs:
+        - "El registre de pes està en un magatzem separat, només local, al dispositiu. No forma part de l'emmagatzematge opcional de CloudKit d'aquí dalt i no surt del dispositiu a través de l'Aplicació. Si fa servir Dial en més d'un dispositiu, les entrades de pes de cada dispositiu resten independents."
+    - heading: "On es desen les fotos de progrés?"
+      paragraphs:
+        - "Les fotos de progrés i les seves dates es desen al directori de documents de l'Aplicació al dispositiu. No formen part dels registres CloudKit de Dial. Si fa servir l'escàner d'etiquetes d'existències, Dial processa la imatge d'etiqueta seleccionada o capturada per omplir camps i no desa aquella imatge com a registre d'existències."
+    - heading: "Com fa servir l'Aplicació Salut?"
+      paragraphs:
+        - "Si en concedeix el permís, Dial llegeix el pes corporal de Salut perquè el registre de pes resti al dia, i pot escriure a Salut el pes que registri a Dial. Dial no llegeix ni escriu cap altra categoria de dades de Salut. Les dades de Salut no es transmeten mai fora del dispositiu al Proveïdor del servei ni a ningú més. No s'usen per a publicitat ni màrqueting, no es venen, no es comparteixen amb tercers i no s'usen per a res que no sigui el seguiment de pes de l'Aplicació. Controli aquest permís en qualsevol moment a la configuració de Salut del dispositiu."
+    - heading: "Dial substitueix el consell mèdic?"
+      paragraphs:
+        - "Dial és una eina de registre. No és un producte sanitari i no ofereix consell mèdic. No fa càlculs de dosi i no fa cap recomanació de dosificació. Cada dosi i cada horari a Dial provenen de la informació que ha introduït o ha triat d'importar. Confirmi qualsevol qüestió del tractament, incloses dosis, horaris i efectes secundaris, amb qui prescriu."
+    - heading: "L'Aplicació envia notificacions?"
+      paragraphs:
+        - "L'Aplicació pot programar recordatoris locals per a dosis i altres esdeveniments que configuri, però només si activa els recordatoris i concedeix el permís de notificacions. Són notificacions locals generades al dispositiu a partir de les dades introduïdes. No s'envien des de cap servidor del Proveïdor del servei ni hi passen, i el contingut de la notificació no surt del dispositiu."
+    - heading: "L'Aplicació recull informació precisa d'ubicació del dispositiu en temps real?"
+      paragraphs:
+        - "L'Aplicació no recull informació precisa sobre la ubicació del seu dispositiu."
+    - heading: "Tercers veuen la informació que obté l'Aplicació, o hi tenen accés?"
+      paragraphs:
+        - "Com que l'Aplicació no transmet registres de Dial al Proveïdor del servei, el Proveïdor del servei no té aquests registres per compartir amb tercers. Les compres i subscripcions opcionals de Dial Pro les processa Apple amb StoreKit. El Proveïdor del servei no en recull dades de targeta de pagament."
+    - heading: "Com deixo de cedir dades i com les esborro?"
+      paragraphs:
+        - "Pot aturar tot l'emmagatzematge d'informació de l'Aplicació esborrant-la. Faci servir la desinstal·lació estàndard del dispositiu o de la botiga. Esborrar una entrada la treu del magatzem actiu de Dial. Quan el control d'iCloud de l'app està activat, l'esborrat es pot reflectir a la base privada CloudKit vinculada al seu compte d'Apple. Pot desactivar aquest control a la configuració de Dial i gestionar les dades de l'Aplicació des de la configuració d'iCloud del dispositiu. Pot revocar el permís de Salut en qualsevol moment a la configuració de Salut. Les dades ja escrites a Salut hi resten sota els controls d'Apple fins que les treu. Les fotos de progrés es poden esborrar dins de Dial."
+    - heading: "Infants"
+      paragraphs:
+        - "L'Aplicació no s'usa de manera conscient per sol·licitar dades a infants menors de 13 anys ni per fer-hi publicitat."
+      email_before: "El Proveïdor del servei no recull de manera conscient informació d'identificació personal d'infants. Anima tots els infants a no enviar mai aquesta informació a través de l'Aplicació ni dels Serveis. Anima pares i tutors a vigilar l'ús d'internet dels infants i a ajudar a aplicar aquesta política demanant-los que no proporcionin informació d'identificació personal a través de l'Aplicació ni dels Serveis sense permís. Si té motius per creure que un infant ha proporcionat aquesta informació al Proveïdor del servei a través de l'Aplicació o dels Serveis, escrigui a"
+      email_after: " perquè pugui prendre les mesures necessàries. També ha de tenir almenys 16 anys per consentir el tractament de la seva informació d'identificació personal al seu país (en alguns països un pare, una mare o un tutor ho pot fer en nom seu)."
+    - heading: "Seguretat"
+      paragraphs:
+        - "Dial no transmet els seus registres al Proveïdor del servei, i això limita l'exposició a través dels sistemes que operem. Els registres al dispositiu els protegeixen els controls de seguretat d'aquest dispositiu. Les dades desades amb CloudKit les protegeixen el seu compte d'Apple i els controls de seguretat d'iCloud d'Apple. Les dades a Salut les protegeixen els controls de seguretat de dades de Salut d'Apple. Cap sistema d'emmagatzematge es pot garantir del tot segur."
+    - heading: "Termes d'ús"
+      paragraphs: []
+      terms_before: "L'ús de l'Aplicació també es regeix pels"
+      terms_link: "Termes d'ús"
+      terms_after: " de Zentsu LLC."
+    - heading: "Canvis"
+      paragraphs:
+        - "Aquesta política de privadesa es pot actualitzar de tant en tant per qualsevol motiu. El Proveïdor del servei n'informa actualitzant aquesta pàgina. Consulti-la periòdicament, perquè l'ús continuat es considera l'aprovació de tots els canvis."
+    - heading: "El seu consentiment"
+      paragraphs:
+        - "En fer servir l'Aplicació, consent el tractament de la seva informació segons aquesta política de privadesa, ara i tal com la modifiqui el Proveïdor del servei."
+    - heading: "Contacte"
+      paragraphs: []
+      email_before: "Si té preguntes sobre privadesa mentre fa servir l'Aplicació, o sobre les nostres pràctiques, escrigui al Proveïdor del servei a"
+      email_after: "."
+
+he:
+  page_label: "מידע משפטי"
+  h1: "מדיניות פרטיות"
+  effective: "תאריך תחולה: 12 ביולי 2026"
+  notice_before: ""
+  notice_link: "הגרסה האנגלית"
+  notice_after: "היא הנוסח הרשמי של מדיניות זו. הדף הזה ניתן לנוחות."
+  overview_url: "/he/dial/"
+  overview_link: "חזרה לסקירת Dial"
+  intro: "מדיניות פרטיות זו חלה על Dial (להלן \"היישום\"), שמפרסמת Zentsu LLC (להלן \"ספק השירות\") כשירות מסחרי. השירות מיועד לשימוש \"כפי שהוא\"."
+  short: "בקצרה: Dial שומר את הרישומים במכשיר. פקד ביישום מאפשר להשתמש במסד הנתונים הפרטי של CloudKit המחובר לחשבון Apple שלכם לרישומים העיקריים, או להשאיר אותם במכשיר בלבד. רשומות משקל ותמונות התקדמות משתמשות באחסון מקומי נפרד. ספק השירות אינו מפעיל שרת שיכול לקרוא את מה שאתם שומרים ב-Dial."
+  copyright: "© 2026 Zentsu LLC. כל הזכויות שמורות."
+  sections:
+    - heading: "איזה מידע היישום מקבל וכיצד משתמשים בו?"
+      paragraphs:
+        - "היישום אינו שולח את רישומי Dial שלכם לספק השירות. אין צורך ברישום אצל Zentsu. תרופות, מנות, אתרי הזרקה, לוחות זמנים של תזכורות, רשומות מלאי והיסטוריית תופעות לוואי מקובץ תואם שאתם בוחרים לייבא נשמרים במכשיר. ספק השירות אינו אוסף אותם, אינו מקבל אותם ואין לו דרך לראות אותם."
+    - heading: "היכן נשמרים הרישומים העיקריים שלי?"
+      paragraphs:
+        - "רישומי התרופה, המנה, אתר ההזרקה, התזכורת, המלאי ותופעות הלוואי המיובאות נשמרים במכשיר. ב-Dial יש בהגדרות גם פקד Sync with iCloud. כשהפקד פועל ו-iCloud זמין, הרישומים האלה יכולים להשתמש בשירות CloudKit של Apple ובמסד הנתונים הפרטי הקשור לחשבון Apple שלכם. ספק השירות אינו מפעיל שרת, אינו מחזיק עותק של הרישומים ואינו יכול לגשת אליהם, לקרוא אותם או לשחזר אותם."
+        - "כיבוי הפקד ביישום משאיר את הרישומים האלה במכשיר הזה בלבד אחרי הפתיחה הבאה של Dial. הגדרות iCloud במכשיר משפיעות גם הן על זמינות CloudKit. האחסון וההעברה ב-iCloud כפופים לתנאים ולמדיניות הפרטיות של Apple."
+    - heading: "היכן נשמרים נתוני המשקל שלי?"
+      paragraphs:
+        - "יומן המשקל נשמר במאגר מקומי נפרד במכשיר. הוא אינו חלק מאחסון CloudKit האופציונלי שתואר למעלה ואינו יוצא מהמכשיר דרך היישום. אם אתם משתמשים ב-Dial ביותר ממכשיר אחד, רשומות המשקל בכל מכשיר נשארות עצמאיות."
+    - heading: "היכן נשמרות תמונות ההתקדמות?"
+      paragraphs:
+        - "תמונות התקדמות והתאריכים שלהן נשמרים בתיקיית המסמכים של היישום במכשיר. הן אינן חלק מרישומי CloudKit של Dial. אם אתם משתמשים בסורק תוויות המלאי, Dial מעבד את תמונת התווית שנבחרה או שצולמה כדי למלא שדות ואינו שומר את תמונת התווית כרשומת מלאי."
+    - heading: "כיצד היישום משתמש בבריאות?"
+      paragraphs:
+        - "אם אתם מעניקים הרשאה, Dial קורא את משקל הגוף מבריאות כדי לעדכן את יומן המשקל, ויכול לכתוב לבריאות משקל שרשמתם ב-Dial. Dial אינו קורא ואינו כותב אף קטגוריית נתונים אחרת בבריאות. נתוני בריאות לעולם אינם מועברים מהמכשיר לספק השירות או לכל צד אחר. הם אינם משמשים לפרסום או לשיווק, אינם נמכרים, אינם משותפים עם צדדים שלישיים ואינם משמשים לשום דבר מלבד מעקב המשקל של היישום עצמו. אתם שולטים בהרשאה בכל עת בהגדרות בריאות במכשיר."
+    - heading: "האם Dial מחליף ייעוץ רפואי?"
+      paragraphs:
+        - "Dial הוא כלי רישום. הוא אינו מכשיר רפואי ואינו נותן ייעוץ רפואי. הוא אינו מחשב מנות ואינו נותן המלצות מינון מכל סוג. כל מנה וכל לוח זמנים ב-Dial מגיעים ממידע שהזנתם או שבחרתם לייבא. אשרו כל דבר שקשור לטיפול, כולל מנות, לוחות זמנים ותופעות לוואי, עם מי שרושם לכם."
+    - heading: "האם היישום שולח התראות?"
+      paragraphs:
+        - "היישום יכול לקבוע תזכורות מקומיות למנות ולאירועים אחרים שהגדרתם, אבל רק אם הפעלתם תזכורות ואישרתם הרשאת התראות. אלו התראות מקומיות שנוצרות במכשיר מהנתונים שהזנתם. הן אינן נשלחות משרת של ספק השירות ואינן עוברות דרכו, ותוכן ההתראה אינו יוצא מהמכשיר."
+    - heading: "האם היישום אוסף מידע מיקום מדויק בזמן אמת על המכשיר?"
+      paragraphs:
+        - "היישום אינו אוסף מידע מדויק על מיקום המכשיר שלכם."
+    - heading: "האם צדדים שלישיים רואים מידע שהיישום קיבל, או שיש להם גישה אליו?"
+      paragraphs:
+        - "מכיוון שהיישום אינו מעביר רישומי Dial לספק השירות, לספק השירות אין רישומים כאלה לשתף עם צדדים שלישיים. רכישות ומנויים אופציונליים של Dial Pro מעובדים בידי Apple דרך StoreKit. ספק השירות אינו מקבל פרטי כרטיס תשלום מהעסקאות האלה."
+    - heading: "מהן זכויות הביטול שלי וכיצד מוחקים את הנתונים?"
+      paragraphs:
+        - "אפשר להפסיק כל אחסון מידע בידי היישום במחיקתו. אפשר להשתמש בהסרה הרגילה של המכשיר או החנות. מחיקת רשומה מסירה אותה מהמאגר הפעיל של Dial. כשפקד iCloud ביישום פועל, המחיקה יכולה להשתקף במסד הנתונים הפרטי של CloudKit המחובר לחשבון Apple שלכם. אפשר לכבות את הפקד בהגדרות Dial ולנהל את נתוני היישום בהגדרות iCloud במכשיר. אפשר לבטל את הרשאת בריאות בכל עת בהגדרות בריאות. נתונים שכבר נכתבו לבריאות נשארים שם תחת הבקרות של Apple עד שתסירו אותם. תמונות התקדמות אפשר למחוק בתוך Dial."
+    - heading: "ילדים"
+      paragraphs:
+        - "היישום אינו משמש ביודעין לאיסוף נתונים מילדים מתחת לגיל 13 או לשיווק אליהם."
+      email_before: "ספק השירות אינו אוסף ביודעין מידע אישי מזהה מילדים. ספק השירות מעודד את כל הילדים שלא לשלוח מידע אישי מזהה דרך היישום או השירותים. ספק השירות מעודד הורים ואפוטרופוסים לעקוב אחרי השימוש של ילדיהם באינטרנט ולסייע באכיפת מדיניות זו בכך שיורו לילדים שלא למסור מידע אישי מזהה דרך היישום או השירותים בלי רשות. אם יש לכם יסוד להניח שילד מסר מידע אישי מזהה לספק השירות דרך היישום או השירותים, כתבו אל"
+      email_after: ", כדי שיוכל לנקוט את הצעדים הנדרשים. עליכם להיות גם בני 16 לפחות כדי להסכים לעיבוד מידע אישי מזהה במדינתכם (בחלק מהמדינות הורה או אפוטרופוס יכולים לעשות זאת בשמכם)."
+    - heading: "אבטחה"
+      paragraphs:
+        - "Dial אינו מעביר את הרישומים שלכם לספק השירות, וזה מצמצם חשיפה דרך מערכות שאנחנו מפעילים. רישומים במכשיר מוגנים בבקרות האבטחה של המכשיר. נתונים השמורים דרך CloudKit מוגנים בחשבון Apple שלכם ובבקרות האבטחה של iCloud מבית Apple. נתונים בבריאות מוגנים בבקרות האבטחה של נתוני בריאות מבית Apple. אין מערכת אחסון שאפשר להבטיח שהיא מאובטחת לחלוטין."
+    - heading: "תנאי שימוש"
+      paragraphs: []
+      terms_before: "השימוש ביישום כפוף גם ל"
+      terms_link: "תנאי השימוש"
+      terms_after: " של Zentsu LLC."
+    - heading: "שינויים"
+      paragraphs:
+        - "מדיניות פרטיות זו עשויה להתעדכן מעת לעת מכל סיבה. ספק השירות יודיע על שינויים בעדכון הדף הזה במדיניות החדשה. מומלץ לעיין במדיניות באופן קבוע, כי המשך שימוש נחשב להסכמה לכל השינויים."
+    - heading: "הסכמתכם"
+      paragraphs:
+        - "בשימוש ביישום אתם מסכימים לעיבוד המידע שלכם כמפורט במדיניות פרטיות זו עכשיו וכפי שספק השירות יעדכן אותה."
+    - heading: "יצירת קשר"
+      paragraphs: []
+      email_before: "אם יש לכם שאלות על פרטיות בזמן השימוש ביישום, או שאלות על הנוהגים שלנו, כתבו לספק השירות בכתובת"
+      email_after: "."
+
+ar:
+  page_label: "معلومات قانونية"
+  h1: "سياسة الخصوصية"
+  effective: "تاريخ السريان: 12 يوليو 2026"
+  notice_before: ""
+  notice_link: "النسخة الإنجليزية"
+  notice_after: "هي النص الملزم لهذه السياسة. هذه الصفحة مقدّمة للتيسير."
+  overview_url: "/ar/dial/"
+  overview_link: "العودة إلى نظرة Dial"
+  intro: "تنطبق هذه السياسة على Dial (ويُشار إليه هنا بـ «التطبيق»)، الذي تصدره Zentsu LLC (ويُشار إليها هنا بـ «مزوّد الخدمة») كخدمة تجارية. الخدمة معدّة للاستخدام «كما هي»."
+  short: "باختصار: يحفظ Dial السجلات على الجهاز. يتيح عنصر تحكم في التطبيق استخدام قاعدة CloudKit الخاصة المرتبطة بحساب Apple لديكم للسجلات الأساسية، أو إبقاؤها على الجهاز فقط. إدخالات الوزن وصور التقدّم تستخدم تخزيناً محلياً منفصلاً. لا يشغّل مزوّد الخدمة أي خادم يستطيع قراءة ما تحفظونه في Dial."
+  copyright: "© 2026 Zentsu LLC. جميع الحقوق محفوظة."
+  sections:
+    - heading: "ما المعلومات التي يحصل عليها التطبيق وكيف تُستخدم؟"
+      paragraphs:
+        - "لا يرسل التطبيق سجلات Dial لديكم إلى مزوّد الخدمة. التسجيل لدى Zentsu غير مطلوب. تُحفظ الأدوية والجرعات ومواضع الحقن وجداول التذكير وسجلات المخزون وتاريخ الآثار الجانبية من ملف متوافق تختارون استيراده على الجهاز. لا يجمع مزوّد الخدمة هذه السجلات ولا يستلمها وليس لديه طريقة لرؤيتها."
+    - heading: "أين تُحفظ السجلات الأساسية؟"
+      paragraphs:
+        - "تُحفظ سجلات الدواء والجرعة وموضع الحقن والتذكير والمخزون والآثار الجانبية المستوردة على الجهاز. يتضمن Dial أيضاً عنصر التحكم «Sync with iCloud» في الإعدادات. عندما يكون هذا التحكم مشغّلاً وiCloud متاحاً، يمكن لهذه السجلات استخدام خدمة CloudKit من Apple وقاعدة البيانات الخاصة المرتبطة بحساب Apple لديكم. لا يشغّل مزوّد الخدمة أي خادم، ولا يحتفظ بنسخة من هذه السجلات، ولا يستطيع الوصول إليها أو قراءتها أو استعادتها."
+        - "إيقاف عنصر التحكم في التطبيق يُبقي هذه السجلات على ذلك الجهاز فقط بعد أن تفتحوا Dial في المرة التالية. إعدادات iCloud على الجهاز تؤثر أيضاً في توفّر CloudKit. تخزين iCloud ونقله يخضعان لشروط Apple وسياسة خصوصيتها."
+    - heading: "أين تُحفظ بيانات الوزن؟"
+      paragraphs:
+        - "يُحفظ سجل الوزن في مخزن محلي منفصل على الجهاز. ليس جزءاً من تخزين CloudKit الاختياري المذكور أعلاه، ولا يغادر الجهاز عبر التطبيق. إذا استخدمتم Dial على أكثر من جهاز، تبقى إدخالات الوزن على كل جهاز مستقلة."
+    - heading: "أين تُحفظ صور التقدّم؟"
+      paragraphs:
+        - "تُحفظ صور التقدّم وتواريخها في مجلد مستندات التطبيق على الجهاز. ليست جزءاً من سجلات CloudKit في Dial. إذا استخدمتم ماسح ملصق المخزون، يعالج Dial صورة الملصق المختارة أو الملتقطة لملء الحقول ولا يحفظ صورة الملصق كسجل مخزون."
+    - heading: "كيف يستخدم التطبيق صحتي؟"
+      paragraphs:
+        - "إذا منحتم الإذن، يقرأ Dial وزن الجسم من صحتي لإبقاء سجل الوزن محدّثاً، ويمكنه كتابة الوزن الذي تسجّلونه في Dial إلى صحتي. لا يقرأ Dial ولا يكتب أي فئة بيانات أخرى في صحتي. لا تُنقل بيانات صحتي أبداً خارج الجهاز إلى مزوّد الخدمة أو إلى أي طرف آخر. لا تُستخدم للإعلان أو التسويق، ولا تُباع، ولا تُشارك مع أطراف ثالثة، ولا تُستخدم لشيء غير تتبع الوزن في التطبيق نفسه. تتحكمون بهذا الإذن في أي وقت من إعدادات صحتي على الجهاز."
+    - heading: "هل يحل Dial محل المشورة الطبية؟"
+      paragraphs:
+        - "Dial أداة سجل. ليس جهازاً طبياً ولا يقدّم مشورة طبية. لا يحسب الجرعات ولا يقدّم أي توصيات جرعة. كل جرعة وكل جدول في Dial يأتيان من معلومات أدخلتموها أو اخترتم استيرادها. أكّدوا أي أمر يتعلق بالعلاج، بما في ذلك الجرعات والجداول والآثار الجانبية، مع من يصف الدواء."
+    - heading: "هل يرسل التطبيق إشعارات؟"
+      paragraphs:
+        - "يمكن للتطبيق جدولة تذكيرات محلية للجرعات والأحداث الأخرى التي تضبطونها، لكن فقط عندما تشغّلون التذكيرات وتمنحون إذن الإشعارات. هذه إشعارات محلية تُنشأ على الجهاز من البيانات التي أدخلتموها. لا تُرسل من أي خادم لمزوّد الخدمة ولا تمرّ عبره، ولا يغادر محتوى الإشعار الجهاز."
+    - heading: "هل يجمع التطبيق معلومات موقع دقيقة للجهاز في الوقت الفعلي؟"
+      paragraphs:
+        - "لا يجمع التطبيق معلومات دقيقة عن موقع جهازكم."
+    - heading: "هل ترى أطراف ثالثة المعلومات التي حصل عليها التطبيق، أو تصل إليها؟"
+      paragraphs:
+        - "لأن التطبيق لا يرسل سجلات Dial إلى مزوّد الخدمة، ليس لدى مزوّد الخدمة مثل هذه السجلات ليشاركها مع أطراف ثالثة. تُعالج مشتريات واشتراكات Dial Pro الاختيارية عبر Apple من خلال StoreKit. لا يستلم مزوّد الخدمة تفاصيل بطاقة الدفع من تلك المعاملات."
+    - heading: "ما حقوق إلغاء الاشتراك وكيف أحذف بياناتي؟"
+      paragraphs:
+        - "يمكنكم إيقاف كل تخزين للمعلومات من التطبيق بحذفه. استخدموا عملية إلغاء التثبيت القياسية على الجهاز أو المتجر. حذف إدخال يزيله من المخزن النشط في Dial. عندما يكون تحكم iCloud في التطبيق مشغّلاً، يمكن أن ينعكس الحذف في قاعدة CloudKit الخاصة المرتبطة بحساب Apple لديكم. يمكنكم إيقاف ذلك التحكم في إعدادات Dial وإدارة بيانات التطبيق من إعدادات iCloud على الجهاز. يمكنكم سحب إذن صحتي في أي وقت من إعدادات صحتي. تبقى البيانات المكتوبة مسبقاً إلى صحتي هناك تحت ضوابط Apple حتى تزيلوها. يمكن حذف صور التقدّم داخل Dial."
+    - heading: "الأطفال"
+      paragraphs:
+        - "لا يُستخدم التطبيق عن علم لجمع بيانات من أطفال دون 13 عاماً أو للتسويق إليهم."
+      email_before: "لا يجمع مزوّد الخدمة عن علم معلومات تعريف شخصية من الأطفال. يشجّع جميع الأطفال على عدم إرسال مثل هذه المعلومات عبر التطبيق أو الخدمات. يشجّع الآباء والأوصياء القانونيين على مراقبة استخدام أطفالهم للإنترنت والمساعدة في إنفاذ هذه السياسة بأن يوجّهوا أطفالهم إلى عدم تقديم معلومات تعريف شخصية عبر التطبيق أو الخدمات دون إذن. إذا كان لديكم سبب للاعتقاد أن طفلاً قدّم معلومات تعريف شخصية إلى مزوّد الخدمة عبر التطبيق أو الخدمات، اكتبوا إلى"
+      email_after: " حتى يتمكّن من اتخاذ الخطوات اللازمة. يجب أيضاً أن تبلغوا 16 عاماً على الأقل للموافقة على معالجة معلومات التعريف الشخصية في بلدكم (في بعض البلدان يمكن لوالد أو وصي أن يفعل ذلك نيابة عنكم)."
+    - heading: "الأمان"
+      paragraphs:
+        - "لا يرسل Dial سجلاتكم إلى مزوّد الخدمة، وهذا يحدّ من التعرّض عبر أنظمة نشغّلها. السجلات على الجهاز محمية بضوابط أمان ذلك الجهاز. البيانات المحفوظة عبر CloudKit محمية بحساب Apple لديكم وبضوابط أمان iCloud لدى Apple. البيانات في صحتي محمية بضوابط أمان بيانات صحتي لدى Apple. لا يمكن ضمان أن أي نظام تخزين آمن بالكامل."
+    - heading: "شروط الاستخدام"
+      paragraphs: []
+      terms_before: "يخضع استخدام التطبيق أيضاً لـ"
+      terms_link: "شروط الاستخدام"
+      terms_after: " لدى Zentsu LLC."
+    - heading: "التغييرات"
+      paragraphs:
+        - "قد تُحدَّث هذه السياسة من حين لآخر لأي سبب. يُعلمكم مزوّد الخدمة بالتغييرات بتحديث هذه الصفحة. راجعوها بانتظام، لأن استمرار الاستخدام يُعدّ موافقة على كل التغييرات."
+    - heading: "موافقتكم"
+      paragraphs:
+        - "باستخدام التطبيق توافقون على معالجة معلوماتكم وفق سياسة الخصوصية هذه الآن وكما يعدّلها مزوّد الخدمة."
+    - heading: "التواصل"
+      paragraphs: []
+      email_before: "إذا كانت لديكم أسئلة عن الخصوصية أثناء استخدام التطبيق، أو عن ممارساتنا، اكتبوا إلى مزوّد الخدمة على"
+      email_after: "."

@@ -1,19 +1,21 @@
+{%- assign strings = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
 {% include skip-link.html %}
 <nav>
   <ul>
-    <li><a href="/" class="{% if page.url == '/' %}active{% endif %}">Zentsu</a></li>
+    <li><a href="/" class="{% if page.url == '/' %}active{% endif %}">{{ strings.nav.home }}</a></li>
     <li>
-      <a href="/apps" class="{% if page.url == '/apps' %}active{% endif %}">Apps</a>
+      <a href="/apps" class="{% if page.url == '/apps' %}active{% endif %}">{{ strings.nav.apps }}</a>
     </li>
     <li>
       <a href="/privacy" class="{% if page.url == '/privacy' %}active{% endif %}"
-        >Privacy<span class="nav-long-label"> Policy</span></a
+        >{{ strings.nav.privacy }}{% if strings.nav.privacy_long %}<span class="nav-long-label">{{ strings.nav.privacy_long }}</span>{% endif %}</a
       >
     </li>
     <li>
       <a href="/terms" class="{% if page.url == '/terms' %}active{% endif %}"
-        >Terms<span class="nav-long-label"> of Use</span></a
+        >{{ strings.nav.terms }}{% if strings.nav.terms_long %}<span class="nav-long-label">{{ strings.nav.terms_long }}</span>{% endif %}</a
       >
     </li>
+    {%- include language-switcher.html %}
   </ul>
 </nav>

@@ -3,11 +3,13 @@ title: Dial support · Zentsu LLC
 description: 'Support for Dial, the private GLP-1 routine tracker for iPhone and Apple Watch.'
 canonical: https://zentsu.app/dial/support/
 permalink: /dial/support/
+lang: en
+alternate_group: dial-support
 favicon: /assets/dial-icon.png
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="{{ page.lang }}" dir="{{ site.data.i18n[page.lang].dir | default: 'ltr' }}">
   <head>
     {% include head-common.html %}
   </head>
@@ -34,8 +36,8 @@ favicon: /assets/dial-icon.png
         <h2>Records on your Apple devices</h2>
         <p>
           Dial can store medication records in the private CloudKit database attached to your Apple
-          Account. Confirm that both devices use the same Apple Account and have iCloud Drive
-          enabled. Weight entries remain local to each device.
+          Account. Confirm that both devices use the same Apple Account, have iCloud turned on, and
+          have Sync with iCloud on in Dial Settings. Weight entries remain local to each device.
         </p>
 
         <h2>Apple Health</h2>

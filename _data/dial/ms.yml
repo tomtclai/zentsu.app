@@ -1,0 +1,178 @@
+schema_description: "Diari ubat GLP-1 peribadi untuk dos, tapak suntikan, berat, peringatan dan sejarah."
+app_store_badge_alt: "Muat turun Dial dari App Store"
+
+images:
+  today:
+    base: dial-web-today
+    width: 1290
+    height: 2160
+    alt: "Skrin Hari Ini Dial dengan peringatan seterusnya, tahap ubat anggaran dan butang untuk merekod dos"
+  level:
+    base: dial-web-level
+    width: 1290
+    height: 1620
+    alt: "Skrin tahap anggaran Dial dengan carta masa daripada dos yang direkod"
+  log_dose:
+    base: dial-web-log-dose
+    width: 1290
+    height: 1800
+    alt: "Borang dos Dial dengan medan ubat, jumlah, masa dan tapak suntikan"
+  history:
+    base: dial-web-history
+    width: 1290
+    height: 2640
+    alt: "Sejarah Dial dengan carta dos dan berat sepanjang masa"
+  side_effects:
+    base: dial-web-side-effects
+    width: 1290
+    height: 2100
+    alt: "Skrin tren kesan sampingan Dial Pro dengan kekerapan mingguan dan keterukan daripada rekod sedia ada"
+  report:
+    base: dial-web-report
+    width: 1836
+    height: 2376
+    alt: "Halaman laporan PDF Dial Pro dengan sejarah dos, berat sepanjang masa dan kesan sampingan untuk pemberi preskripsi"
+  watch_glance:
+    base: dial-web-watch-glance
+    width: 792
+    height: 968
+    alt: "Dial pada Apple Watch dengan cincin kitaran yang mengira hari hingga dos seterusnya, peringatan seterusnya dan butang rekod"
+  watch_logged:
+    base: dial-web-watch-logged
+    width: 792
+    height: 968
+    alt: "Dial pada Apple Watch mengesahkan dos direkod dengan tanda semak serta menunjukkan jumlah dan tapak suntikan"
+
+hero:
+  availability: "Kini di App Store"
+  headline_lead: "Rutin GLP-1 anda,"
+  headline_accent: "dalam rekod."
+  category: "Dial ialah diari ubat GLP-1 peribadi untuk iPhone dan Apple Watch."
+  detail: "Rekod dos pada iPhone atau Apple Watch, lihat tahap anggaran daripada dos yang anda simpan, dan kekalkan rekod teras pada peranti atau dalam pangkalan data iCloud peribadi anda."
+  secondary_cta: "Cara Dial berfungsi"
+  platforms_label: "Platform dan storan Dial"
+  platforms:
+    - iPhone
+    - Apple Watch
+    - "Siri, Pusat Kawalan dan Skrin Kunci"
+    - "Storan iCloud peribadi pilihan"
+  legal: "Diari teras percuma. Dial Pro menambah graf, eksport, lebih banyak ubat dan peringatan, serta rekod satu ketikan pada peranti Apple. Dial ialah rekod peribadi. Ia tidak mengira dos dan tidak menggantikan arahan pemberi preskripsi."
+
+proof:
+  label: "Mengapa Dial"
+  points:
+    - "iPhone dan Apple Watch"
+    - "Tiada akaun, tiada analitik penggunaan"
+    - "Pilihan Lifetime"
+    - "Tahap dimodelkan daripada dos anda"
+
+level:
+  kicker: "Dial Pro · Tahap anggaran"
+  heading: "Gambaran lebih jelas tentang dos yang anda rekod."
+  body: "Dial melukis tahap ubat anggaran sepanjang masa daripada dos direkod dan separuh hayat yang ditunjukkan aplikasi. Tukar julat untuk meninjau seminggu, sebulan atau enam bulan sejarah anda sendiri."
+  boundary_lead: "Anggaran, dan kami mengatakannya."
+  boundary_body: "Carta memodelkan lengkung pereputan piawai daripada dos yang anda rekod. Ia menunjukkan corak anda sendiri antara dos. Bukan tahap darah diukur dan bukan cadangan apa yang perlu diambil seterusnya. Dial tidak mengira dos. Aplikasi menjelaskan kaedah sepenuhnya."
+
+logging:
+  kicker: "Rekod pantas"
+  heading: "Rekod dos dan segala yang bersamanya."
+  body: "Rekod ubat, jumlah, tarikh, masa, tapak suntikan dan nota dalam borang tertumpu. Nilai terkini mempercepatkan entri seterusnya, dan setiap medan kekal untuk anda sahkan. Dial berfungsi sama ada pemberi preskripsi memanggilnya Ozempic, Wegovy, Mounjaro atau Zepbound."
+  checklist:
+    - "Edit entri apabila sesuatu berubah"
+    - "Kekalkan tapak suntikan terikat pada setiap dos"
+    - "Kekalkan entri berat di sisi garis masa dos"
+
+history:
+  kicker: "Dial Pro · Sejarah dan tren"
+  heading: "Tinjau corak merentas rekod."
+  body: "Senarai dos, berat dan kesan sampingan kekal percuma. Dial Pro menambah carta dos dan berat penuh serta tren daripada entri kesan sampingan yang sudah ada dalam rekod."
+  history_card_title: "Sejarah dos dan berat"
+  history_card_note: "Tinjau perubahan dalam julat yang anda pilih."
+  side_effects_card_title: "Tren kesan sampingan"
+  side_effects_card_note: "Tinjau kekerapan dan keterukan daripada sejarah sedia ada atau diimport."
+
+report:
+  kicker: "Dial Pro · Laporan PDF"
+  heading: "Bawa keseluruhan gambaran ke lawatan seterusnya."
+  body: "Hasilkan PDF dengan sejarah dos, perubahan jumlah direkod, tapak suntikan, tren berat dan corak kesan sampingan. Dial membina di peranti, dan anda kongsikan hanya apabila memutuskan, melalui AirDrop, e-mel atau cetakan."
+  closing: "Peribadi pada masa lain, dan berguna pada saat rekod perlu meninggalkan telefon."
+  smallprint: "Laporan merumuskan entri anda. Ia bukan rekod perubatan atau rancangan rawatan."
+
+watch:
+  kicker: Apple Watch
+  heading: "Rekod dos dari pergelangan."
+  body: "Aplikasi jam menunjukkan cincin kitaran yang mengira undur ke dos seterusnya dan bila peringatan seterusnya jatuh. Dial Pro menukar pandangan itu menjadi rekod penuh: tetapkan jumlah dengan Digital Crown, pilih tapak suntikan, dan sahkan. Entri disegerakkan ke iPhone dan kekal antara dua peranti anda."
+  checklist:
+    - "Cincin kitaran, status dos dan peringatan seterusnya sepintas lalu (percuma)"
+    - "Rekod dos dari pergelangan dengan Digital Crown (Dial Pro)"
+    - "Widget tahap anggaran dan dos seterusnya pada muka jam, serta rekod pantas dalam Smart Stack (Dial Pro)"
+    - "Pada iPhone, Pro membolehkan rekod satu ketikan dari Pusat Kawalan, butang tindakan, Siri atau Live Activity pada hari peringatan. Tindakan percuma membuka borang."
+
+supporting:
+  kicker: "Di sekitar rutin"
+  heading: "Butiran praktikal kekal dekat."
+  features:
+    - title: "Inventori bekalan"
+      body: "Jejaki pen atau vial dengan kepekatan, farmasi, tarikh luput dan nombor lot."
+    - title: "Peringatan anda"
+      body: "Cipta pemberitahuan harian, mingguan atau setiap N hari sekitar jadual yang anda tetapkan. Pada hari dos, tindakan rekod ada pada pemberitahuan, dan Live Activity boleh kekal pada Skrin Kunci sehingga anda merekod."
+    - title: "Bawa sejarah"
+      body: "Buka eksport diari ubat yang serasi dengan Dial untuk mengimport entri sedia ada."
+
+plans:
+  kicker: "Percuma dan Dial Pro"
+  heading: "Gunakan diari teras secara percuma."
+  body: "Beralih ke Pro apabila anda mahu graf lebih terperinci, eksport atau rekod lebih pantas pada peranti Apple. Setiap pelan Dial Pro merangkumi ciri yang sama."
+  free_name: "Percuma"
+  free_summary: "Rekod lengkap untuk satu ubat aktif."
+  free_features:
+    - "Rekod dos, tapak suntikan, berat, kesan sampingan dan foto perkembangan"
+    - "Satu ubat aktif dan satu peringatan"
+    - "Senarai dos dan berat, inventori, import dan tinjauan Apple Watch"
+    - "Widget kira undur dan peringatan yang membuka borang"
+  pro_name: Dial Pro
+  pro_summary: "Tahap anggaran, carta penuh, eksport dan rekod pantas."
+  pro_features:
+    - "Carta tahap anggaran dan widget Skrin Utama"
+    - "Carta dos dan berat penuh, tren kesan sampingan dan perbandingan foto"
+    - "Laporan PDF, eksport CSV, pelbagai ubat dan pelbagai peringatan"
+    - "Rekod pantas dan komplikasi pada Apple Watch, serta rekod satu ketikan pada iPhone"
+  options_label: "Pilihan pelan Dial Pro"
+  lifetime_name: "Lifetime"
+  lifetime_terms: "sekali"
+  annual_name: "Tahunan"
+  annual_terms: "setahun"
+  monthly_name: "Bulanan"
+  monthly_terms: "sebulan"
+  price_note: "Langganan diperbaharui sehingga dibatalkan. Harga dipaparkan ialah harga AS. App Store menunjukkan harga tempatan sebelum pembelian."
+
+privacy:
+  kicker: "Privasi"
+  heading: "Jelas apa yang kekal pada peranti anda."
+  specs:
+    - term: "Akaun"
+      detail: "Tiada akaun Dial. Buka aplikasi dan mula merekod."
+    - term: "Analitik penggunaan"
+      detail: "Dial tidak menjalankan analitik penggunaan atau telemetri. Kami tidak mengukur cara anda menggunakannya."
+    - term: "Pelayan kami"
+      detail: "Zentsu tidak mengendalikan pelayan yang menyimpan atau membaca rekod anda."
+    - term: "Penyegerakan pilihan"
+      detail: "Hidupkan iCloud dalam aplikasi dan rekod disegerakkan melalui pangkalan data CloudKit peribadi pada Akaun Apple anda sendiri, bukan kepada kami."
+  body: "Rekod ubat, dos, peringatan dan bekalan kekal pada peranti. Entri berat menggunakan storan setempat berasingan, dan akses ke Kesihatan adalah pilihan serta hanya merangkumi berat badan apabila anda memberi kebenaran."
+  policy_link: "Baca dasar privasi Dial"
+  policy_url: /ms/dial/privacy/
+
+availability:
+  kicker: "Muat turun Dial"
+  heading: "Kini di App Store."
+  body: "Dial percuma untuk dimuat turun. Diari teras berfungsi dari rekod pertama. Dial Pro menambah carta tahap anggaran, carta penuh, eksport PDF dan rekod pantas dari Apple Watch dan iPhone."
+  email_label: "Alamat e-mel"
+  email_placeholder: "nama@email.com"
+  submit: "Dapatkan berita versi"
+  signup_note: "Pilihan. Nota keluaran untuk versi baharu, tiada yang lain. Tiada penjejakan buka atau pautan. Nyahlanggan bila-bila masa."
+  signup_privacy_link: "Butiran privasi"
+  signup_privacy_url: /privacy
+  signup_help: "Perlukan bantuan?"
+  signup_support_link: "Sokongan Dial"
+  signup_support_url: /ms/dial/support/
+

@@ -1,0 +1,39 @@
+{%- assign s = site.data.dial_support[page.lang] -%} {%- assign health_name = s.health_name |
+default: 'Apple Health' -%}
+<!doctype html>
+<html lang="{{ page.lang }}" dir="{{ site.data.i18n[page.lang].dir | default: 'ltr' }}">
+  <head>
+    {% include head-common.html %}
+  </head>
+  <body>
+    {% include nav.html %}
+    <main id="main-content" tabindex="-1">
+      <article>
+        <span class="page-label">Dial</span>
+        <h1>{{ s.h1 }}</h1>
+        <p><a href="{{ s.overview_url }}">{{ s.overview_link }}</a> {{ s.overview_rest }}</p>
+        <p>
+          {{ s.email_lead }}
+          <a href="mailto:support@zentsu.app">support@zentsu.app</a>. {{ s.email_body }}
+        </p>
+
+        <h2>{{ s.notifications_h }}</h2>
+        <p>{{ s.notifications_p }}</p>
+
+        <h2>{{ s.records_h }}</h2>
+        <p>{{ s.records_p }}</p>
+
+        <h2>{{ health_name }}</h2>
+        <p>{{ s.health_p }}</p>
+
+        <h2>{{ s.privacy_h }}</h2>
+        <p>
+          {{ s.privacy_before }}
+          <a href="{{ s.privacy_url }}">{{ s.privacy_link }}</a>
+          {{ s.privacy_after }}
+        </p>
+      </article>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

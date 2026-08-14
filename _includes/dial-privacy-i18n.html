@@ -1,0 +1,49 @@
+{%- assign p = site.data.dial_privacy[page.lang] -%}
+<!doctype html>
+<html lang="{{ page.lang }}" dir="{{ site.data.i18n[page.lang].dir | default: 'ltr' }}">
+  <head>
+    {% include head-common.html %}
+    <style>
+      main {
+        flex: 1;
+        padding: 3rem 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    {% include nav.html %}
+    <main id="main-content" tabindex="-1">
+      <article>
+        <span class="page-label">{{ p.page_label }}</span>
+        <h1>{{ p.h1 }}</h1>
+        <p class="effective">{{ p.effective }}</p>
+        <p class="translation-notice">
+          {%- if p.notice_before != blank %}{{ p.notice_before }} {% endif -%}
+          <a href="/dial/privacy/" hreflang="en" lang="en">{{ p.notice_link }}</a>
+          {{ p.notice_after }}
+        </p>
+        <p><a href="{{ p.overview_url }}">{{ p.overview_link }}</a></p>
+        <p>{{ p.intro }}</p>
+        <p>{{ p.short }}</p>
+        {%- for section in p.sections %}
+        <h2>{{ section.heading }}</h2>
+        {%- for para in section.paragraphs %}
+        <p>{{ para }}</p>
+        {%- endfor %} {%- if section.terms_link %}
+        <p>
+          {{ section.terms_before }}
+          <a href="/terms">{{ section.terms_link }}</a>{{ section.terms_after }}
+        </p>
+        {%- endif %} {%- if section.email_before %}
+        <p>
+          {{ section.email_before }}<a href="mailto:privacy@zentsu.app">privacy@zentsu.app</a>{{
+          section.email_after }}
+        </p>
+        {%- endif %} {%- endfor %}
+        <hr />
+        <p style="font-size: 0.8125rem; color: var(--muted)">{{ p.copyright }}</p>
+      </article>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

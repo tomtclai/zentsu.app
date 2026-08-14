@@ -1,0 +1,178 @@
+schema_description: "Nhật ký thuốc GLP-1 riêng tư cho liều, vị trí tiêm, cân nặng, lời nhắc và lịch sử."
+app_store_badge_alt: "Tải Dial từ App Store"
+
+images:
+  today:
+    base: dial-web-today
+    width: 1290
+    height: 2160
+    alt: "Màn hình Hôm nay của Dial với lời nhắc tiếp theo, mức thuốc ước tính và nút ghi liều"
+  level:
+    base: dial-web-level
+    width: 1290
+    height: 1620
+    alt: "Màn hình mức ước tính Dial với biểu đồ thời gian từ các liều đã ghi"
+  log_dose:
+    base: dial-web-log-dose
+    width: 1290
+    height: 1800
+    alt: "Biểu mẫu liều Dial với các trường thuốc, lượng, giờ và vị trí tiêm"
+  history:
+    base: dial-web-history
+    width: 1290
+    height: 2640
+    alt: "Lịch sử Dial với biểu đồ liều và cân nặng theo thời gian"
+  side_effects:
+    base: dial-web-side-effects
+    width: 1290
+    height: 2100
+    alt: "Màn hình xu hướng tác dụng phụ Dial Pro với tần suất tuần và mức độ từ các mục hiện có"
+  report:
+    base: dial-web-report
+    width: 1836
+    height: 2376
+    alt: "Một trang báo cáo PDF Dial Pro với lịch sử liều, cân nặng theo thời gian và tác dụng phụ cho bác sĩ kê đơn"
+  watch_glance:
+    base: dial-web-watch-glance
+    width: 792
+    height: 968
+    alt: "Dial trên Apple Watch với vòng chu kỳ đếm ngày đến liều tiếp theo, lời nhắc tiếp theo và nút ghi"
+  watch_logged:
+    base: dial-web-watch-logged
+    width: 792
+    height: 968
+    alt: "Dial trên Apple Watch xác nhận liều đã ghi bằng dấu tick và hiện lượng cùng vị trí tiêm"
+
+hero:
+  availability: "Hiện có trên App Store"
+  headline_lead: "Lịch GLP-1 của bạn,"
+  headline_accent: "đã được ghi."
+  category: "Dial là nhật ký thuốc GLP-1 riêng tư cho iPhone và Apple Watch."
+  detail: "Ghi liều trên iPhone hoặc Apple Watch, xem mức ước tính từ các liều bạn ghi, và giữ bản ghi chính trên thiết bị hoặc trong cơ sở dữ liệu iCloud riêng."
+  secondary_cta: "Dial hoạt động thế nào"
+  platforms_label: "Nền tảng và lưu trữ Dial"
+  platforms:
+    - iPhone
+    - Apple Watch
+    - "Siri, Trung tâm điều khiển và màn hình khóa"
+    - "Lưu trữ iCloud riêng tùy chọn"
+  legal: "Nhật ký cốt lõi miễn phí. Dial Pro thêm biểu đồ, xuất, thêm thuốc và lời nhắc, cùng ghi một lần chạm trên thiết bị Apple. Dial là bản ghi cá nhân. Ứng dụng không tính liều và không thay thế hướng dẫn của bác sĩ kê đơn."
+
+proof:
+  label: "Vì sao Dial"
+  points:
+    - "iPhone và Apple Watch"
+    - "Dial không có tài khoản và không thu thập phân tích sử dụng."
+    - "Tùy chọn Lifetime"
+    - "Mức ước tính từ liều của bạn"
+
+level:
+  kicker: "Dial Pro · Mức ước tính"
+  heading: "Xem rõ hơn các liều bạn đã ghi."
+  body: "Dial vẽ mức thuốc ước tính theo thời gian từ các liều đã ghi và giá trị thời gian bán hủy hiển thị trong ứng dụng. Đổi khoảng để xem một tuần, một tháng hoặc sáu tháng lịch sử của chính bạn."
+  boundary_lead: "Đây là ước tính, và chúng tôi nói rõ điều đó."
+  boundary_body: "Biểu đồ mô hình hóa đường cong suy giảm chuẩn từ các liều bạn đã ghi. Nó hiện xu hướng của bạn giữa các liều. Đó là ước tính, không phải mức máu đo được. Dial không tính liều. Ứng dụng giải thích phương pháp đầy đủ."
+
+logging:
+  kicker: "Ghi nhanh"
+  heading: "Ghi liều và những gì đi kèm."
+  body: "Ghi thuốc, lượng, ngày, giờ, vị trí tiêm và ghi chú trong biểu mẫu tập trung. Giá trị gần đây giúp ghi mục tiếp theo nhanh hơn, và mỗi trường vẫn để bạn xác nhận. Dial hoạt động dù bác sĩ kê đơn gọi thuốc là Ozempic, Wegovy, Mounjaro hay Zepbound."
+  checklist:
+    - "Sửa mục khi có thay đổi"
+    - "Giữ vị trí tiêm gắn với mỗi liều"
+    - "Giữ mục cân nặng cạnh dòng thời gian liều"
+
+history:
+  kicker: "Dial Pro · Lịch sử và xu hướng"
+  heading: "Xem xu hướng trên toàn bộ bản ghi."
+  body: "Danh sách liều, cân nặng và tác dụng phụ vẫn miễn phí. Dial Pro thêm biểu đồ liều và cân nặng đầy đủ cùng xu hướng từ các mục tác dụng phụ đã có trong bản ghi."
+  history_card_title: "Lịch sử liều và cân nặng"
+  history_card_note: "Xem thay đổi trong khoảng bạn chọn."
+  side_effects_card_title: "Xu hướng tác dụng phụ"
+  side_effects_card_note: "Xem tần suất và mức độ từ lịch sử hiện có hoặc nhập vào."
+
+report:
+  kicker: "Dial Pro · Báo cáo PDF"
+  heading: "Mang đầy đủ thông tin đến lần khám tiếp theo."
+  body: "Tạo PDF với lịch sử liều, thay đổi lượng đã ghi, vị trí tiêm, xu hướng cân nặng và xu hướng tác dụng phụ. Dial tạo trên thiết bị, và bạn chỉ chia sẻ khi quyết định, qua AirDrop, email hoặc in."
+  closing: "Giữ riêng tư mọi lúc. Chỉ chia sẻ khi bản ghi cần rời điện thoại."
+  smallprint: "Báo cáo tóm tắt các mục của bạn. Không phải hồ sơ y tế hay kế hoạch điều trị."
+
+watch:
+  kicker: Apple Watch
+  heading: "Ghi liều từ cổ tay."
+  body: "Ứng dụng đồng hồ hiện vòng chu kỳ đếm đến liều tiếp theo và khi lời nhắc tiếp theo đến. Dial Pro biến cái nhìn đó thành bản ghi đầy đủ: đặt lượng bằng Digital Crown, chọn vị trí tiêm, xác nhận. Mục đồng bộ sang iPhone và chỉ ở trên hai thiết bị của bạn."
+  checklist:
+    - "Vòng chu kỳ, trạng thái liều và lời nhắc tiếp theo, nhìn thoáng qua (miễn phí)"
+    - "Ghi liều từ cổ tay bằng Digital Crown (Dial Pro)"
+    - "Widget mức ước tính và liều tiếp theo trên mặt đồng hồ, cộng ghi nhanh trong Smart Stack (Dial Pro)"
+    - "Trên iPhone, Pro bật ghi một lần chạm từ Trung tâm điều khiển, nút tác vụ, Siri hoặc Live Activity ngày lời nhắc. Thao tác miễn phí mở biểu mẫu."
+
+supporting:
+  kicker: "Cùng lịch dùng"
+  heading: "Chi tiết thực tế luôn trong tầm tay."
+  features:
+    - title: "Tồn kho"
+      body: "Theo dõi bút hoặc lọ với nồng độ, nhà thuốc, hạn dùng và số lô."
+    - title: "Lời nhắc của bạn"
+      body: "Tạo thông báo hàng ngày, hàng tuần hoặc mỗi N ngày quanh lịch bạn đặt. Ngày liều có thao tác ghi trên thông báo, và Live Activity có thể ở màn hình khóa đến khi bạn ghi."
+    - title: "Mang theo lịch sử"
+      body: "Mở bản xuất nhật ký thuốc tương thích với Dial để nhập các mục hiện có."
+
+plans:
+  kicker: "Miễn phí và Dial Pro"
+  heading: "Dùng nhật ký cốt lõi miễn phí."
+  body: "Chuyển sang Pro khi muốn biểu đồ chi tiết hơn, xuất hoặc ghi nhanh hơn trên thiết bị Apple. Mỗi gói Dial Pro gồm cùng các tính năng."
+  free_name: "Miễn phí"
+  free_summary: "Bản ghi đầy đủ cho một thuốc đang dùng."
+  free_features:
+    - "Ghi liều, vị trí tiêm, cân nặng, tác dụng phụ và ảnh tiến triển"
+    - "Một thuốc đang dùng và một lời nhắc"
+    - "Danh sách liều và cân nặng, tồn kho, nhập và tổng quan Apple Watch"
+    - "Widget đếm ngược và lời nhắc mở biểu mẫu"
+  pro_name: Dial Pro
+  pro_summary: "Mức ước tính, biểu đồ đầy đủ, xuất và ghi nhanh."
+  pro_features:
+    - "Biểu đồ mức ước tính và widget Màn hình chính"
+    - "Biểu đồ liều và cân nặng đầy đủ, xu hướng tác dụng phụ và so sánh ảnh"
+    - "Báo cáo PDF, xuất CSV, nhiều thuốc và nhiều lời nhắc"
+    - "Ghi nhanh và complication trên Apple Watch, cộng ghi một lần chạm trên iPhone"
+  options_label: "Lựa chọn gói Dial Pro"
+  lifetime_name: "Lifetime"
+  lifetime_terms: "một lần"
+  annual_name: "Hàng năm"
+  annual_terms: "mỗi năm"
+  monthly_name: "Hàng tháng"
+  monthly_terms: "mỗi tháng"
+  price_note: "Thuê bao gia hạn đến khi hủy. Giá hiện là giá Hoa Kỳ. App Store hiện giá địa phương trước khi mua."
+
+privacy:
+  kicker: "Quyền riêng tư"
+  heading: "Rõ những gì ở lại trên thiết bị."
+  specs:
+    - term: "Tài khoản"
+      detail: "Không có tài khoản Dial. Mở ứng dụng và bắt đầu ghi."
+    - term: "Phân tích sử dụng"
+      detail: "Dial không phân tích cách dùng và không gửi dữ liệu ngầm. Chúng tôi không theo dõi thao tác của bạn."
+    - term: "Máy chủ của chúng tôi"
+      detail: "Zentsu không vận hành máy chủ lưu hoặc đọc bản ghi của bạn."
+    - term: "Đồng bộ tùy chọn"
+      detail: "Bật iCloud trong ứng dụng thì bản ghi đồng bộ qua cơ sở dữ liệu CloudKit riêng trên Tài khoản Apple của bạn, không về chúng tôi."
+  body: "Bản ghi thuốc, liều, lời nhắc và tồn kho ở lại trên thiết bị. Mục cân nặng dùng kho lưu trữ cục bộ riêng, và quyền truy cập Sức khoẻ là tùy chọn, chỉ gồm cân nặng cơ thể khi bạn cho phép."
+  policy_link: "Đọc chính sách quyền riêng tư Dial"
+  policy_url: /vi/dial/privacy/
+
+availability:
+  kicker: "Tải Dial"
+  heading: "Hiện có trên App Store."
+  body: "Dial tải miễn phí. Nhật ký cốt lõi hoạt động từ mục ghi đầu tiên. Dial Pro thêm biểu đồ mức ước tính, biểu đồ đầy đủ, xuất PDF và ghi nhanh từ Apple Watch và iPhone."
+  email_label: "Địa chỉ email"
+  email_placeholder: "ten@email.com"
+  submit: "Nhận tin phiên bản"
+  signup_note: "Tùy chọn. Ghi chú phát hành cho bản mới, không gì khác. Không theo dõi mở hay liên kết. Hủy bất cứ lúc nào."
+  signup_privacy_link: "Chi tiết quyền riêng tư"
+  signup_privacy_url: /privacy
+  signup_help: "Cần trợ giúp?"
+  signup_support_link: "Hỗ trợ Dial"
+  signup_support_url: /vi/dial/support/
+

@@ -1,0 +1,178 @@
+schema_description: "Buku harian obat GLP-1 pribadi untuk dosis, lokasi suntikan, berat, pengingat, dan riwayat."
+app_store_badge_alt: "Unduh Dial dari App Store"
+
+images:
+  today:
+    base: dial-web-today
+    width: 1290
+    height: 2160
+    alt: "Layar Hari Ini Dial dengan pengingat berikutnya, tingkat obat perkiraan, dan tombol untuk mencatat dosis"
+  level:
+    base: dial-web-level
+    width: 1290
+    height: 1620
+    alt: "Layar tingkat perkiraan Dial dengan grafik waktu dari dosis yang dicatat"
+  log_dose:
+    base: dial-web-log-dose
+    width: 1290
+    height: 1800
+    alt: "Formulir dosis Dial dengan bidang obat, jumlah, waktu, dan lokasi suntikan"
+  history:
+    base: dial-web-history
+    width: 1290
+    height: 2640
+    alt: "Riwayat Dial dengan grafik dosis dan berat sepanjang waktu"
+  side_effects:
+    base: dial-web-side-effects
+    width: 1290
+    height: 2100
+    alt: "Layar tren efek samping Dial Pro dengan frekuensi mingguan dan keparahan dari catatan yang ada"
+  report:
+    base: dial-web-report
+    width: 1836
+    height: 2376
+    alt: "Halaman laporan PDF Dial Pro dengan riwayat dosis, berat sepanjang waktu, dan efek samping untuk pemberi resep"
+  watch_glance:
+    base: dial-web-watch-glance
+    width: 792
+    height: 968
+    alt: "Dial di Apple Watch dengan cincin siklus yang menghitung hari hingga dosis berikutnya, pengingat berikutnya, dan tombol catat"
+  watch_logged:
+    base: dial-web-watch-logged
+    width: 792
+    height: 968
+    alt: "Dial di Apple Watch mengonfirmasi dosis tercatat dengan tanda centang serta menampilkan jumlah dan lokasi suntikan"
+
+hero:
+  availability: "Sekarang di App Store"
+  headline_lead: "Rutinitas GLP-1 Anda,"
+  headline_accent: "tertulis."
+  category: "Dial adalah buku harian obat GLP-1 pribadi untuk iPhone dan Apple Watch."
+  detail: "Catat dosis di iPhone atau Apple Watch, lihat tingkat perkiraan dari dosis yang Anda simpan, dan jaga catatan inti di perangkat atau di basis data iCloud pribadi Anda."
+  secondary_cta: "Cara kerja Dial"
+  platforms_label: "Platform dan penyimpanan Dial"
+  platforms:
+    - iPhone
+    - Apple Watch
+    - "Siri, Pusat Kontrol, dan Layar Kunci"
+    - "Penyimpanan iCloud pribadi opsional"
+  legal: "Buku harian inti gratis. Dial Pro menambah grafik, ekspor, lebih banyak obat dan pengingat, serta pencatatan satu ketukan di perangkat Apple. Dial adalah catatan pribadi. Dial tidak menghitung dosis dan tidak menggantikan arahan pemberi resep."
+
+proof:
+  label: "Mengapa Dial"
+  points:
+    - "iPhone dan Apple Watch"
+    - "Tanpa akun, tanpa analitik penggunaan"
+    - "Opsi Lifetime"
+    - "Tingkat termodel dari dosis Anda"
+
+level:
+  kicker: "Dial Pro · Tingkat perkiraan"
+  heading: "Gambaran lebih jelas dari dosis yang Anda catat."
+  body: "Dial menggambar tingkat obat perkiraan sepanjang waktu dari dosis tercatat dan waktu paruh yang ditampilkan aplikasi. Ubah rentang untuk meninjau seminggu, sebulan, atau enam bulan riwayat Anda sendiri."
+  boundary_lead: "Perkiraan, dan kami mengatakannya."
+  boundary_body: "Grafik memodelkan kurva peluruhan standar dari dosis yang Anda catat. Grafik menampilkan pola Anda sendiri antar dosis. Bukan tingkat darah terukur dan bukan saran apa yang harus diambil berikutnya. Dial tidak menghitung dosis. Aplikasi menjelaskan metodenya sepenuhnya."
+
+logging:
+  kicker: "Pencatatan cepat"
+  heading: "Catat dosis dan semua yang menyertainya."
+  body: "Tuliskan obat, jumlah, tanggal, waktu, lokasi suntikan, dan catatan dalam formulir terfokus. Nilai terbaru mempercepat entri berikutnya, dan setiap bidang tetap untuk Anda konfirmasi. Dial berfungsi baik pemberi resep menyebutnya Ozempic, Wegovy, Mounjaro, atau Zepbound."
+  checklist:
+    - "Sunting entri ketika sesuatu berubah"
+    - "Tetap kaitkan lokasi suntikan dengan setiap dosis"
+    - "Simpan entri berat di samping garis waktu dosis"
+
+history:
+  kicker: "Dial Pro · Riwayat dan tren"
+  heading: "Tinjau pola di seluruh catatan."
+  body: "Daftar dosis, berat, dan efek samping tetap gratis. Dial Pro menambah grafik dosis dan berat lengkap plus tren dari entri efek samping yang sudah ada di catatan."
+  history_card_title: "Riwayat dosis dan berat"
+  history_card_note: "Tinjau perubahan pada rentang yang Anda pilih."
+  side_effects_card_title: "Tren efek samping"
+  side_effects_card_note: "Tinjau frekuensi dan keparahan dari riwayat yang ada atau diimpor."
+
+report:
+  kicker: "Dial Pro · Laporan PDF"
+  heading: "Bawa seluruh gambaran ke kunjungan berikutnya."
+  body: "Buat PDF dengan riwayat dosis, perubahan jumlah tercatat, lokasi suntikan, tren berat, dan pola efek samping. Dial menyusunnya di perangkat, dan Anda membagikannya hanya ketika memutuskan, lewat AirDrop, email, atau cetak."
+  closing: "Pribadi di sisa waktu, dan berguna pada saat catatan harus meninggalkan telepon."
+  smallprint: "Laporan merangkum entri Anda. Bukan rekam medis atau rencana pengobatan."
+
+watch:
+  kicker: Apple Watch
+  heading: "Catat dosis dari pergelangan."
+  body: "Aplikasi jam menampilkan cincin siklus yang menghitung mundur ke dosis berikutnya dan kapan pengingat berikutnya jatuh. Dial Pro mengubah pandangan itu menjadi pencatatan penuh: atur jumlah dengan Digital Crown, pilih lokasi suntikan, dan konfirmasi. Entri disinkronkan ke iPhone dan tetap di antara kedua perangkat Anda."
+  checklist:
+    - "Cincin siklus, status dosis, dan pengingat berikutnya sekilas (gratis)"
+    - "Catat dosis dari pergelangan dengan Digital Crown (Dial Pro)"
+    - "Widget tingkat perkiraan dan dosis berikutnya di muka jam, plus pencatatan cepat di Smart Stack (Dial Pro)"
+    - "Di iPhone, Pro mengaktifkan pencatatan satu ketukan dari Pusat Kontrol, tombol aksi, Siri, atau Live Activity pada hari pengingat. Tindakan gratis membuka formulir."
+
+supporting:
+  kicker: "Di sekitar rutinitas"
+  heading: "Detail praktis tetap dekat."
+  features:
+    - title: "Persediaan"
+      body: "Lacak pena atau vial dengan konsentrasi, apotek, tanggal kedaluwarsa, dan nomor lot."
+    - title: "Pengingat Anda"
+      body: "Buat notifikasi harian, mingguan, atau setiap N hari di sekitar jadwal yang Anda tetapkan. Pada hari dosis, tindakan catat ada di notifikasi, dan Live Activity dapat tetap di Layar Kunci sampai Anda mencatat."
+    - title: "Bawa riwayat"
+      body: "Buka ekspor buku harian obat yang kompatibel dengan Dial untuk mengimpor entri yang ada."
+
+plans:
+  kicker: "Gratis dan Dial Pro"
+  heading: "Gunakan buku harian inti secara gratis."
+  body: "Beralih ke Pro ketika Anda ingin grafik lebih rinci, ekspor, atau pencatatan lebih cepat di perangkat Apple. Setiap paket Dial Pro mencakup fitur yang sama."
+  free_name: "Gratis"
+  free_summary: "Catatan lengkap untuk satu obat aktif."
+  free_features:
+    - "Catat dosis, lokasi suntikan, berat, efek samping, dan foto perkembangan"
+    - "Satu obat aktif dan satu pengingat"
+    - "Daftar dosis dan berat, persediaan, impor, dan tinjauan Apple Watch"
+    - "Widget hitung mundur dan pengingat yang membuka formulir"
+  pro_name: Dial Pro
+  pro_summary: "Tingkat perkiraan, grafik lengkap, ekspor, dan pencatatan cepat."
+  pro_features:
+    - "Grafik tingkat perkiraan dan widget Layar Utama"
+    - "Grafik dosis dan berat lengkap, tren efek samping, dan perbandingan foto"
+    - "Laporan PDF, ekspor CSV, beberapa obat, dan beberapa pengingat"
+    - "Pencatatan cepat dan komplikasi di Apple Watch, plus pencatatan satu ketukan di iPhone"
+  options_label: "Pilihan paket Dial Pro"
+  lifetime_name: "Lifetime"
+  lifetime_terms: "sekali"
+  annual_name: "Tahunan"
+  annual_terms: "per tahun"
+  monthly_name: "Bulanan"
+  monthly_terms: "per bulan"
+  price_note: "Langganan diperbarui sampai dibatalkan. Harga yang ditampilkan adalah harga AS. App Store menampilkan harga lokal sebelum pembelian."
+
+privacy:
+  kicker: "Privasi"
+  heading: "Jelas apa yang tetap di perangkat Anda."
+  specs:
+    - term: "Akun"
+      detail: "Tidak ada akun Dial. Buka aplikasi dan mulai mencatat."
+    - term: "Analitik penggunaan"
+      detail: "Dial tidak menjalankan analitik penggunaan atau telemetri. Kami tidak mengukur cara Anda menggunakannya."
+    - term: "Server kami"
+      detail: "Zentsu tidak mengoperasikan server yang menyimpan atau membaca catatan Anda."
+    - term: "Sinkronisasi opsional"
+      detail: "Nyalakan iCloud di aplikasi, lalu catatan disinkronkan lewat basis data CloudKit pribadi pada Akun Apple Anda sendiri, bukan kepada kami."
+  body: "Catatan obat, dosis, pengingat, dan persediaan tetap di perangkat. Entri berat memakai penyimpanan lokal terpisah, dan akses ke Kesehatan bersifat opsional serta hanya mencakup berat tubuh ketika Anda memberi izin."
+  policy_link: "Baca kebijakan privasi Dial"
+  policy_url: /id/dial/privacy/
+
+availability:
+  kicker: "Unduh Dial"
+  heading: "Sekarang di App Store."
+  body: "Dial gratis diunduh. Buku harian inti bekerja dari catatan pertama. Dial Pro menambah grafik tingkat perkiraan, grafik lengkap, ekspor PDF, dan pencatatan cepat dari Apple Watch dan iPhone."
+  email_label: "Alamat email"
+  email_placeholder: "nama@email.com"
+  submit: "Dapatkan berita versi"
+  signup_note: "Opsional. Catatan rilis untuk versi baru, tidak ada yang lain. Tanpa pelacakan buka atau tautan. Berhenti kapan saja."
+  signup_privacy_link: "Detail privasi"
+  signup_privacy_url: /privacy
+  signup_help: "Butuh bantuan?"
+  signup_support_link: "Dukungan Dial"
+  signup_support_url: /id/dial/support/
+

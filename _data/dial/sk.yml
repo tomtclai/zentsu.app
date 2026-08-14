@@ -1,0 +1,178 @@
+schema_description: "Súkromný GLP-1 denník liekov pre dávky, miesta vpichu, hmotnosť, pripomienky a históriu."
+app_store_badge_alt: "Stiahnuť Dial z App Store"
+
+images:
+  today:
+    base: dial-web-today
+    width: 1290
+    height: 2160
+    alt: "Obrazovka Dnes v Dial s ďalšou pripomienkou, odhadovanou hladinou lieku a tlačidlom na zaznamenanie dávky"
+  level:
+    base: dial-web-level
+    width: 1290
+    height: 1620
+    alt: "Obrazovka odhadovanej hladiny Dial s časovým grafom zo zaznamenaných dávok"
+  log_dose:
+    base: dial-web-log-dose
+    width: 1290
+    height: 1800
+    alt: "Formulár dávky Dial s poľami pre liek, množstvo, čas a miesto vpichu"
+  history:
+    base: dial-web-history
+    width: 1290
+    height: 2640
+    alt: "História Dial s grafmi dávok a hmotnosti v čase"
+  side_effects:
+    base: dial-web-side-effects
+    width: 1290
+    height: 2100
+    alt: "Obrazovka trendov nežiaducich účinkov Dial Pro s týždennou početnosťou a závažnosťou z existujúcich záznamov"
+  report:
+    base: dial-web-report
+    width: 1836
+    height: 2376
+    alt: "Stránka PDF správy Dial Pro s históriou dávok, hmotnosťou v čase a nežiaducimi účinkami pre predpisujúcu osobu"
+  watch_glance:
+    base: dial-web-watch-glance
+    width: 792
+    height: 968
+    alt: "Dial na Apple Watch s cyklickým krúžkom, ktorý odpočítava dni do ďalšej dávky, ďalšou pripomienkou a tlačidlom na záznam"
+  watch_logged:
+    base: dial-web-watch-logged
+    width: 792
+    height: 968
+    alt: "Dial na Apple Watch potvrdzuje zaznamenanú dávku fajkou a ukazuje množstvo a miesto vpichu"
+
+hero:
+  availability: "Teraz v App Store"
+  headline_lead: "Vaša rutina GLP-1,"
+  headline_accent: "v zázname."
+  category: "Dial je súkromný GLP-1 denník liekov pre iPhone a Apple Watch."
+  detail: "Zaznamenávajte dávky na iPhone alebo Apple Watch, sledujte odhadovanú hladinu z dávok, ktoré zaznamenávate, a držte hlavné záznamy na zariadení alebo v súkromnej databáze iCloud."
+  secondary_cta: "Ako Dial funguje"
+  platforms_label: "Platformy Dial a úložisko"
+  platforms:
+    - iPhone
+    - Apple Watch
+    - "Siri, Ovládacie centrum a uzamknutá obrazovka"
+    - "Voliteľné súkromné úložisko iCloud"
+  legal: "Základný denník je zadarmo. Dial Pro pridáva grafy, export, viac liekov a pripomienok a záznam jedným klepnutím na zariadeniach Apple. Dial je osobný záznam. Nepočíta dávky a nenahrádza pokyny predpisujúcej osoby."
+
+proof:
+  label: "Prečo Dial"
+  points:
+    - "iPhone a Apple Watch"
+    - "Žiadny účet ani analytika"
+    - "Možnosť Lifetime"
+    - "Modelovaná hladina z vašich dávok"
+
+level:
+  kicker: "Dial Pro · Odhadovaná hladina"
+  heading: "Jasnejší pohľad na dávky, ktoré ste zaznamenali."
+  body: "Dial vykreslí odhadovanú hladinu lieku v čase zo zaznamenaných dávok a hodnoty polčasu v aplikácii. Zmeňte rozsah a prezrite si týždeň, mesiac alebo šesť mesiacov vlastnej histórie."
+  boundary_lead: "Odhad, a hovoríme to."
+  boundary_body: "Graf modeluje štandardnú krivku poklesu z dávok, ktoré ste zaznamenali. Ukazuje vaše vlastné vzorce medzi dávkami. Nie je to nameraná hladina v krvi ani návrh, čo užiť ďalej. Dial nepočíta dávky. Aplikácia metódu vysvetľuje celú."
+
+logging:
+  kicker: "Rýchly záznam"
+  heading: "Zaznamenajte dávku a všetko, čo k nej patrí."
+  body: "Zapíšte liek, množstvo, dátum, čas, miesto vpichu a poznámky v sústredenom formulári. Nedávne hodnoty zrýchlia ďalší záznam a každé pole ostáva na vaše potvrdenie. Dial funguje, či už predpisujúca osoba hovorí Ozempic, Wegovy, Mounjaro alebo Zepbound."
+  checklist:
+    - "Upraviť záznam, keď sa niečo zmení"
+    - "Miesta vpichu držať pri každej dávke"
+    - "Záznamy hmotnosti držať vedľa časovej osi dávok"
+
+history:
+  kicker: "Dial Pro · História a trendy"
+  heading: "Prezrite si vzorec v celom zázname."
+  body: "Zoznamy dávok, hmotnosti a nežiaducich účinkov ostávajú zadarmo. Dial Pro pridáva úplné grafy dávok a hmotnosti plus trendy z nežiaducich účinkov, ktoré už v zázname sú."
+  history_card_title: "História dávok a hmotnosti"
+  history_card_note: "Prezrite si zmeny v rozsahu, ktorý zvolíte."
+  side_effects_card_title: "Trendy nežiaducich účinkov"
+  side_effects_card_note: "Prezrite si početnosť a závažnosť z existujúcej alebo importovanej histórie."
+
+report:
+  kicker: "Dial Pro · PDF správa"
+  heading: "Vezmite si celý obraz na ďalšiu návštevu."
+  body: "Vytvorte PDF s históriou dávok, zmenami zaznamenaného množstva, miestami vpichu, vývojom hmotnosti a vzorcami nežiaducich účinkov. Dial ho zostaví na zariadení a zdieľate ho, len keď sa rozhodnete, cez AirDrop, e-mail alebo tlač."
+  closing: "Inak ostane súkromné. Keď záznam musí opustiť telefón, je pripravené."
+  smallprint: "Správa zhŕňa vaše záznamy. Nie je to zdravotnícka dokumentácia ani liečebný plán."
+
+watch:
+  kicker: Apple Watch
+  heading: "Zaznamenajte dávku zo zápästia."
+  body: "Aplikácia na hodinkách ukazuje cyklický krúžok, ktorý odpočítava dni do ďalšej dávky, a kedy príde ďalšia pripomienka. Dial Pro z toho pohľadu urobí plný záznam: množstvo nastavíte pomocou Digital Crown, zvolíte miesto vpichu a potvrdíte. Záznam sa synchronizuje na iPhone a ostane medzi vašimi dvoma zariadeniami."
+  checklist:
+    - "Cyklický krúžok, stav dávky a ďalšia pripomienka na pohľad (zadarmo)"
+    - "Záznam dávky zo zápästia s Digital Crown (Dial Pro)"
+    - "Widgety odhadovanej hladiny a ďalšej dávky na ciferníku plus rýchly záznam v Smart Stack (Dial Pro)"
+    - "Na iPhone Dial Pro zapne záznam jedným klepnutím z Ovládacieho centra, akčného tlačidla, Siri alebo živej aktivity v deň pripomienky. Bezplatné akcie otvoria formulár záznamu."
+
+supporting:
+  kicker: "Okolo rutiny"
+  heading: "Praktické detaily ostanú nablízku."
+  features:
+    - title: "Zásoby"
+      body: "Sledujte perá alebo liekovky s koncentráciou, lekárňou, dátumom exspirácie a číslom šarže."
+    - title: "Vaše pripomienky"
+      body: "Vytvorte denné, týždenné alebo každých-N-dní oznámenia okolo plánu, ktorý nastavíte. V deň dávky je na oznámení akcia na záznam a živá aktivita môže ostať na uzamknutej obrazovke, kým nezaznamenáte."
+    - title: "Vezmite si históriu so sebou"
+      body: "Otvorte v Dial kompatibilný export z iného denníka liekov a naimportujte existujúce záznamy."
+
+plans:
+  kicker: "Zadarmo a Dial Pro"
+  heading: "Základný denník používajte zadarmo."
+  body: "Prejdite na Pro, keď chcete podrobnejšie grafy, export alebo rýchlejší záznam na zariadeniach Apple. Každá tarifa Dial Pro obsahuje rovnaké funkcie."
+  free_name: "Zadarmo"
+  free_summary: "Úplný záznam pre jeden aktívny liek."
+  free_features:
+    - "Záznam dávok, miest vpichu, hmotnosti, nežiaducich účinkov a fotiek pokroku"
+    - "Jeden aktívny liek a jedna pripomienka"
+    - "Zoznamy dávok a hmotnosti, zásoby, importy a prehľad na Apple Watch"
+    - "Widgety odpočtu a pripomienky, ktoré otvoria formulár záznamu"
+  pro_name: Dial Pro
+  pro_summary: "Odhadovaná hladina, úplné grafy, export a rýchly záznam."
+  pro_features:
+    - "Graf odhadovanej hladiny a widget na ploche"
+    - "Úplné grafy dávok a hmotnosti, trendy nežiaducich účinkov a porovnanie fotiek"
+    - "PDF správa, export CSV, viac liekov a viac pripomienok"
+    - "Rýchly záznam a komplikácie na Apple Watch plus záznam jedným klepnutím na iPhone"
+  options_label: "Voľby tarify Dial Pro"
+  lifetime_name: "Lifetime"
+  lifetime_terms: "raz"
+  annual_name: "Ročný"
+  annual_terms: "za rok"
+  monthly_name: "Mesačný"
+  monthly_terms: "za mesiac"
+  price_note: "Predplatné sa obnovuje, kým ho nezrušíte. Zobrazené ceny sú ceny v USA. App Store pred nákupom ukáže miestnu cenu."
+
+privacy:
+  kicker: "Súkromie"
+  heading: "Jasné, čo ostane na zariadení."
+  specs:
+    - term: "Účty"
+      detail: "Účet Dial neexistuje. Otvorte aplikáciu a začnite zaznamenávať."
+    - term: "Analytika"
+      detail: "Dial nespúšťa analytiku používania ani telemetriu. Nemeriame, ako aplikáciu používate."
+    - term: "Naše servery"
+      detail: "Zentsu neprevádzkuje žiadny server, ktorý by ukladal alebo čítal vaše záznamy."
+    - term: "Voliteľná synchronizácia"
+      detail: "Zapnite iCloud v aplikácii a záznamy sa synchronizujú cez súkromnú databázu CloudKit na vašom Apple Account, nie k nám."
+  body: "Záznamy lieku, dávky, pripomienky a zásob ostávajú na zariadení. Záznamy hmotnosti používajú samostatné miestne úložisko a prístup k Zdraviu je voliteľný a týka sa len telesnej hmotnosti, keď udelíte oprávnenie."
+  policy_link: "Prečítať zásady ochrany osobných údajov Dial"
+  policy_url: /sk/dial/privacy/
+
+availability:
+  kicker: "Stiahnuť Dial"
+  heading: "Teraz v App Store."
+  body: "Dial je na stiahnutie zadarmo. Základný denník funguje od prvého záznamu. Dial Pro pridáva graf odhadovanej hladiny, úplné grafy, export PDF a rýchly záznam z Apple Watch a iPhonu."
+  email_label: "E-mailová adresa"
+  email_placeholder: "vas@email.com"
+  submit: "Dostávať novinky o verziách"
+  signup_note: "Voliteľné. Poznámky k novým verziám, nič iné. Žiadne sledovanie otvorení ani odkazov. Odhlásenie kedykoľvek."
+  signup_privacy_link: "Podrobnosti o súkromí"
+  signup_privacy_url: /privacy
+  signup_help: "Potrebujete pomoc?"
+  signup_support_link: "Podpora Dial"
+  signup_support_url: /sk/dial/support/
+

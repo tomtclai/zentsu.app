@@ -1,0 +1,896 @@
+en:
+  language_name: English
+  language_switcher_label: Language
+  og_locale: en_US
+  skip_link: Skip to main content
+  nav:
+    home: Zentsu
+    apps: Apps
+    privacy: Privacy
+    privacy_long: ' Policy'
+    terms: Terms
+    terms_long: ' of Use'
+  footer:
+    home: Zentsu
+    apps: Apps
+    dial: Dial
+    dial_url: /dial/
+    bench_support: Bench support
+    dial_support: Dial support
+    dial_support_url: /dial/support/
+    blog: Blog
+    privacy: Privacy
+    terms: Terms
+    indie_line: Made by one person in
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+de:
+  language_name: Deutsch
+  language_switcher_label: Sprache
+  og_locale: de_DE
+  skip_link: Zum Hauptinhalt springen
+  nav:
+    home: Zentsu
+    apps: Apps
+    privacy: Datenschutz
+    terms: Nutzungsbedingungen
+  footer:
+    home: Zentsu
+    apps: Apps
+    dial: Dial
+    dial_url: /de/dial/
+    bench_support: Bench-Support
+    dial_support: Dial-Support
+    dial_support_url: /de/dial/support/
+    blog: Blog
+    privacy: Datenschutz
+    terms: Nutzungsbedingungen
+    indie_line: Von einer Person gemacht in
+    apple_trademark:
+      Apple, das Apple-Logo, Mac und macOS sind Marken von Apple Inc., eingetragen
+      in den USA und in anderen Ländern und Regionen. App Store und Mac App Store sind
+      Dienstleistungsmarken von Apple Inc.
+
+es:
+  language_name: Español
+  language_switcher_label: Idioma
+  og_locale: es_MX
+  skip_link: Ir al contenido principal
+  nav:
+    home: Zentsu
+    apps: Apps
+    privacy: Privacidad
+    terms: Términos
+    terms_long: ' de uso'
+  footer:
+    home: Zentsu
+    apps: Apps
+    dial: Dial
+    dial_url: /es/dial/
+    bench_support: Soporte de Bench
+    dial_support: Soporte de Dial
+    dial_support_url: /es/dial/support/
+    blog: Blog
+    privacy: Privacidad
+    terms: Términos
+    indie_line: Hecho por una sola persona en
+    apple_trademark:
+      Apple, el logotipo de Apple, Mac y macOS son marcas comerciales de Apple Inc.,
+      registradas en Estados Unidos y en otros países y regiones. App Store y Mac App
+      Store son marcas de servicio de Apple Inc.
+
+fr:
+  language_name: Français
+  language_switcher_label: Langue
+  og_locale: fr_FR
+  skip_link: Aller au contenu principal
+  nav:
+    home: Zentsu
+    apps: Apps
+    privacy: Confidentialité
+    terms: Conditions
+    terms_long: " d'utilisation"
+  footer:
+    home: Zentsu
+    apps: Apps
+    dial: Dial
+    dial_url: /fr/dial/
+    bench_support: Assistance Bench
+    dial_support: Assistance Dial
+    dial_support_url: /fr/dial/support/
+    blog: Blog
+    privacy: Confidentialité
+    terms: Conditions
+    indie_line: Fait par une seule personne à
+    apple_trademark:
+      Apple, le logo Apple, Mac et macOS sont des marques d'Apple Inc., déposées aux
+      États-Unis et dans d'autres pays et régions. App Store et Mac App Store sont des
+      marques de service d'Apple Inc.
+
+it:
+  language_name: Italiano
+  language_switcher_label: Lingua
+  og_locale: it_IT
+  skip_link: Vai al contenuto principale
+  nav:
+    home: Zentsu
+    apps: Apps
+    privacy: Privacy
+    terms: Termini
+    terms_long: ' di utilizzo'
+  footer:
+    home: Zentsu
+    apps: Apps
+    dial: Dial
+    dial_url: /it/dial/
+    bench_support: Supporto Bench
+    dial_support: Supporto Dial
+    dial_support_url: /it/dial/support/
+    blog: Blog
+    privacy: Privacy
+    terms: Termini
+    indie_line: Realizzato da una sola persona a
+    apple_trademark:
+      Apple, il logo Apple, Mac e macOS sono marchi di Apple Inc., registrati negli
+      Stati Uniti e in altri paesi e regioni. App Store e Mac App Store sono marchi di
+      servizio di Apple Inc.
+
+ja:
+  language_name: 日本語
+  language_switcher_label: 言語
+  og_locale: ja_JP
+  skip_link: 本文へスキップ
+  nav:
+    home: Zentsu
+    apps: Apps
+    privacy: プライバシー
+    terms: 利用規約
+  footer:
+    home: Zentsu
+    apps: Apps
+    dial: Dial
+    dial_url: /ja/dial/
+    bench_support: Benchサポート
+    dial_support: Dialサポート
+    dial_support_url: /ja/dial/support/
+    blog: Blog
+    privacy: プライバシー
+    terms: 利用規約
+    indie_line: 一人で作っています。拠点は
+    apple_trademark:
+      Apple、Appleのロゴ、Mac、macOSは、米国およびその他の国や地域で登録されたApple Inc.の商標です。App StoreおよびMac
+      App StoreはApple Inc.のサービスマークです。
+
+nl:
+  language_name: Nederlands
+  language_switcher_label: Taal
+  og_locale: nl_NL
+  skip_link: Naar de hoofdinhoud
+  nav:
+    home: Zentsu
+    apps: Apps
+    privacy: Privacy
+    terms: Voorwaarden
+  footer:
+    home: Zentsu
+    apps: Apps
+    dial: Dial
+    dial_url: /nl/dial/
+    bench_support: Bench-ondersteuning
+    dial_support: Dial-ondersteuning
+    dial_support_url: /nl/dial/support/
+    blog: Blog
+    privacy: Privacy
+    terms: Voorwaarden
+    indie_line: Gemaakt door één persoon in
+    apple_trademark:
+      Apple, het Apple-logo, Mac en macOS zijn handelsmerken van Apple Inc., gedeponeerd
+      in de VS en in andere landen en regio's. App Store en Mac App Store zijn dienstmerken
+      van Apple Inc.
+
+pt:
+  language_name: Português
+  language_switcher_label: Idioma
+  og_locale: pt_BR
+  skip_link: Ir para o conteúdo principal
+  nav:
+    home: Zentsu
+    apps: Apps
+    privacy: Privacidade
+    terms: Termos
+    terms_long: ' de uso'
+  footer:
+    home: Zentsu
+    apps: Apps
+    dial: Dial
+    dial_url: /pt/dial/
+    bench_support: Suporte do Bench
+    dial_support: Suporte do Dial
+    dial_support_url: /pt/dial/support/
+    blog: Blog
+    privacy: Privacidade
+    terms: Termos
+    indie_line: Feito por uma só pessoa em
+    apple_trademark:
+      Apple, o logotipo da Apple, Mac e macOS são marcas comerciais da Apple Inc.,
+      registradas nos EUA e em outros países e regiões. App Store e Mac App Store são
+      marcas de serviço da Apple Inc.
+
+hi:
+  language_name: हिन्दी
+  language_switcher_label: भाषा
+  og_locale: hi_IN
+  skip_link: मुख्य सामग्री पर जाएँ
+  nav:
+    home: Zentsu
+    apps: ऐप्स
+    privacy: गोपनीयता
+    terms: शर्तें
+  footer:
+    home: Zentsu
+    apps: ऐप्स
+    dial: Dial
+    dial_url: /hi/dial/
+    bench_support: Bench सहायता
+    dial_support: Dial सहायता
+    dial_support_url: /hi/dial/support/
+    blog: ब्लॉग
+    privacy: गोपनीयता
+    terms: शर्तें
+    indie_line: एक व्यक्ति ने बनाया
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+tr:
+  language_name: Türkçe
+  language_switcher_label: Dil
+  og_locale: tr_TR
+  skip_link: Ana içeriğe geç
+  nav:
+    home: Zentsu
+    apps: Uygulamalar
+    privacy: Gizlilik
+    terms: Koşullar
+  footer:
+    home: Zentsu
+    apps: Uygulamalar
+    dial: Dial
+    dial_url: /tr/dial/
+    bench_support: Bench desteği
+    dial_support: Dial desteği
+    dial_support_url: /tr/dial/support/
+    blog: Blog
+    privacy: Gizlilik
+    terms: Koşullar
+    indie_line: Tek kişi tarafından yapıldı
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+ar:
+  language_name: العربية
+  language_switcher_label: اللغة
+  og_locale: ar_SA
+  dir: rtl
+  skip_link: تخطٍ إلى المحتوى الرئيسي
+  nav:
+    home: Zentsu
+    apps: تطبيقات
+    privacy: الخصوصية
+    terms: الشروط
+  footer:
+    home: Zentsu
+    apps: تطبيقات
+    dial: Dial
+    dial_url: /ar/dial/
+    bench_support: دعم Bench
+    dial_support: دعم Dial
+    dial_support_url: /ar/dial/support/
+    blog: مدونة
+    privacy: الخصوصية
+    terms: الشروط
+    indie_line: صنعها شخص واحد في
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+ca:
+  language_name: Català
+  language_switcher_label: Idioma
+  og_locale: ca_ES
+  skip_link: Salti al contingut principal
+  nav:
+    home: Zentsu
+    apps: Aplicacions
+    privacy: Privadesa
+    terms: Termes
+  footer:
+    home: Zentsu
+    apps: Aplicacions
+    dial: Dial
+    dial_url: /ca/dial/
+    bench_support: Assistència de Bench
+    dial_support: Assistència de Dial
+    dial_support_url: /ca/dial/support/
+    blog: Blog
+    privacy: Privadesa
+    terms: Termes
+    indie_line: Fet per una sola persona a
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+ko:
+  language_name: 한국어
+  language_switcher_label: 언어
+  og_locale: ko_KR
+  skip_link: 본문으로 건너뛰기
+  nav:
+    home: Zentsu
+    apps: 앱
+    privacy: 개인정보
+    terms: 약관
+  footer:
+    home: Zentsu
+    apps: 앱
+    dial: Dial
+    dial_url: /ko/dial/
+    bench_support: Bench 지원
+    dial_support: Dial 지원
+    dial_support_url: /ko/dial/support/
+    blog: 블로그
+    privacy: 개인정보
+    terms: 약관
+    indie_line: 한 사람이 만들었습니다
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+zh:
+  language_name: 简体中文
+  language_switcher_label: 语言
+  og_locale: zh_CN
+  skip_link: 跳到主要内容
+  nav:
+    home: Zentsu
+    apps: 应用
+    privacy: 隐私
+    terms: 条款
+  footer:
+    home: Zentsu
+    apps: 应用
+    dial: Dial
+    dial_url: /zh/dial/
+    bench_support: Bench 支持
+    dial_support: Dial 支持
+    dial_support_url: /zh/dial/support/
+    blog: 博客
+    privacy: 隐私
+    terms: 条款
+    indie_line: 一人制作，地点在
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+zh-hant:
+  language_name: 繁體中文
+  language_switcher_label: 語言
+  og_locale: zh_TW
+  skip_link: 跳至主要內容
+  nav:
+    home: Zentsu
+    apps: App
+    privacy: 隱私權
+    terms: 條款
+  footer:
+    home: Zentsu
+    apps: App
+    dial: Dial
+    dial_url: /zh-hant/dial/
+    bench_support: Bench 支援
+    dial_support: Dial 支援
+    dial_support_url: /zh-hant/dial/support/
+    blog: 部落格
+    privacy: 隱私權
+    terms: 條款
+    indie_line: 由一人製作於
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+id:
+  language_name: Bahasa Indonesia
+  language_switcher_label: Bahasa
+  og_locale: id_ID
+  skip_link: Lewati ke konten utama
+  nav:
+    home: Zentsu
+    apps: Aplikasi
+    privacy: Privasi
+    terms: Ketentuan
+  footer:
+    home: Zentsu
+    apps: Aplikasi
+    dial: Dial
+    dial_url: /id/dial/
+    bench_support: Dukungan Bench
+    dial_support: Dukungan Dial
+    dial_support_url: /id/dial/support/
+    blog: Blog
+    privacy: Privasi
+    terms: Ketentuan
+    indie_line: Dibuat oleh satu orang di
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+pl:
+  language_name: Polski
+  language_switcher_label: Język
+  og_locale: pl_PL
+  skip_link: Przejdź do treści
+  nav:
+    home: Zentsu
+    apps: Aplikacje
+    privacy: Prywatność
+    terms: Warunki
+  footer:
+    home: Zentsu
+    apps: Aplikacje
+    dial: Dial
+    dial_url: /pl/dial/
+    bench_support: Wsparcie Bench
+    dial_support: Wsparcie Dial
+    dial_support_url: /pl/dial/support/
+    blog: Blog
+    privacy: Prywatność
+    terms: Warunki
+    indie_line: Zrobione przez jedną osobę w
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+ms:
+  language_name: Bahasa Melayu
+  language_switcher_label: Bahasa
+  og_locale: ms_MY
+  skip_link: Langkau ke kandungan utama
+  nav:
+    home: Zentsu
+    apps: Aplikasi
+    privacy: Privasi
+    terms: Terma
+  footer:
+    home: Zentsu
+    apps: Aplikasi
+    dial: Dial
+    dial_url: /ms/dial/
+    bench_support: Sokongan Bench
+    dial_support: Sokongan Dial
+    dial_support_url: /ms/dial/support/
+    blog: Blog
+    privacy: Privasi
+    terms: Terma
+    indie_line: Dibuat oleh seorang di
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+he:
+  language_name: עברית
+  language_switcher_label: שפה
+  og_locale: he_IL
+  dir: rtl
+  skip_link: דלגו לתוכן הראשי
+  nav:
+    home: Zentsu
+    apps: יישומים
+    privacy: פרטיות
+    terms: תנאים
+  footer:
+    home: Zentsu
+    apps: יישומים
+    dial: Dial
+    dial_url: /he/dial/
+    bench_support: תמיכה ב-Bench
+    dial_support: תמיכה ב-Dial
+    dial_support_url: /he/dial/support/
+    blog: בלוג
+    privacy: פרטיות
+    terms: תנאים
+    indie_line: נעשה על ידי אדם אחד ב
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+vi:
+  language_name: Tiếng Việt
+  language_switcher_label: Ngôn ngữ
+  og_locale: vi_VN
+  skip_link: Chuyển đến nội dung chính
+  nav:
+    home: Zentsu
+    apps: Ứng dụng
+    privacy: Quyền riêng tư
+    terms: Điều khoản
+  footer:
+    home: Zentsu
+    apps: Ứng dụng
+    dial: Dial
+    dial_url: /vi/dial/
+    bench_support: Hỗ trợ Bench
+    dial_support: Hỗ trợ Dial
+    dial_support_url: /vi/dial/support/
+    blog: Blog
+    privacy: Quyền riêng tư
+    terms: Điều khoản
+    indie_line: Làm bởi một người tại
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+fi:
+  language_name: Suomi
+  language_switcher_label: Kieli
+  og_locale: fi_FI
+  skip_link: Siirry pääsisältöön
+  nav:
+    home: Zentsu
+    apps: Apit
+    privacy: Tietosuoja
+    terms: Ehdot
+  footer:
+    home: Zentsu
+    apps: Apit
+    dial: Dial
+    dial_url: /fi/dial/
+    bench_support: Bench-tuki
+    dial_support: Dial-tuki
+    dial_support_url: /fi/dial/support/
+    blog: Blogi
+    privacy: Tietosuoja
+    terms: Ehdot
+    indie_line: Yhden ihmisen tekemä,
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+ro:
+  language_name: Română
+  language_switcher_label: Limbă
+  og_locale: ro_RO
+  skip_link: Săriți la conținutul principal
+  nav:
+    home: Zentsu
+    apps: Aplicații
+    privacy: Confidențialitate
+    terms: Termeni
+  footer:
+    home: Zentsu
+    apps: Aplicații
+    dial: Dial
+    dial_url: /ro/dial/
+    bench_support: Asistență Bench
+    dial_support: Asistență Dial
+    dial_support_url: /ro/dial/support/
+    blog: Blog
+    privacy: Confidențialitate
+    terms: Termeni
+    indie_line: Făcut de o singură persoană în
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+ru:
+  language_name: Русский
+  language_switcher_label: Язык
+  og_locale: ru_RU
+  skip_link: Перейти к основному содержимому
+  nav:
+    home: Zentsu
+    apps: Программы
+    privacy: Конфиденциальность
+    terms: Условия
+  footer:
+    home: Zentsu
+    apps: Программы
+    dial: Dial
+    dial_url: /ru/dial/
+    bench_support: Поддержка Bench
+    dial_support: Поддержка Dial
+    dial_support_url: /ru/dial/support/
+    blog: Блог
+    privacy: Конфиденциальность
+    terms: Условия
+    indie_line: Сделано одним человеком в
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+th:
+  language_name: ไทย
+  language_switcher_label: ภาษา
+  og_locale: th_TH
+  skip_link: ข้ามไปยังเนื้อหาหลัก
+  nav:
+    home: Zentsu
+    apps: แอป
+    privacy: ความเป็นส่วนตัว
+    terms: ข้อกำหนด
+  footer:
+    home: Zentsu
+    apps: แอป
+    dial: Dial
+    dial_url: /th/dial/
+    bench_support: ฝ่ายสนับสนุน Bench
+    dial_support: ฝ่ายสนับสนุน Dial
+    dial_support_url: /th/dial/support/
+    blog: บล็อก
+    privacy: ความเป็นส่วนตัว
+    terms: ข้อกำหนด
+    indie_line: ทำโดยคนคนเดียวที่
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+sv:
+  language_name: Svenska
+  language_switcher_label: Språk
+  og_locale: sv_SE
+  skip_link: Hoppa till huvudinnehåll
+  nav:
+    home: Zentsu
+    apps: Appar
+    privacy: Integritet
+    terms: Villkor
+  footer:
+    home: Zentsu
+    apps: Appar
+    dial: Dial
+    dial_url: /sv/dial/
+    bench_support: Bench-support
+    dial_support: Dial-support
+    dial_support_url: /sv/dial/support/
+    blog: Blogg
+    privacy: Integritet
+    terms: Villkor
+    indie_line: Gjort av en person i
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+da:
+  language_name: Dansk
+  language_switcher_label: Sprog
+  og_locale: da_DK
+  skip_link: Spring til hovedindhold
+  nav:
+    home: Zentsu
+    apps: Apps
+    privacy: Privatliv
+    terms: Vilkår
+  footer:
+    home: Zentsu
+    apps: Apps
+    dial: Dial
+    dial_url: /da/dial/
+    bench_support: Bench-support
+    dial_support: Dial-support
+    dial_support_url: /da/dial/support/
+    blog: Blog
+    privacy: Privatliv
+    terms: Vilkår
+    indie_line: Lavet af én person i
+    apple_trademark:
+      Apple, Apple-logoet, Mac og macOS er varemærker tilhørende Apple Inc., registreret
+      i USA og i andre lande og regioner. App Store og Mac App Store er servicemærker
+      tilhørende Apple Inc.
+
+el:
+  language_name: Ελληνικά
+  language_switcher_label: Γλώσσα
+  og_locale: el_GR
+  skip_link: Μετάβαση στο κύριο περιεχόμενο
+  nav:
+    home: Zentsu
+    apps: Εφαρμογές
+    privacy: Απόρρητο
+    terms: Όροι
+  footer:
+    home: Zentsu
+    apps: Εφαρμογές
+    dial: Dial
+    dial_url: /el/dial/
+    bench_support: Υποστήριξη Bench
+    dial_support: Υποστήριξη Dial
+    dial_support_url: /el/dial/support/
+    blog: Ιστολόγιο
+    privacy: Απόρρητο
+    terms: Όροι
+    indie_line: Φτιαγμένο από ένα άτομο στην
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+hu:
+  language_name: Magyar
+  language_switcher_label: Nyelv
+  og_locale: hu_HU
+  skip_link: Ugrás a tartalomra
+  nav:
+    home: Zentsu
+    apps: Appok
+    privacy: Adatvédelem
+    terms: Feltételek
+  footer:
+    home: Zentsu
+    apps: Appok
+    dial: Dial
+    dial_url: /hu/dial/
+    bench_support: Bench-támogatás
+    dial_support: Dial-támogatás
+    dial_support_url: /hu/dial/support/
+    blog: Blog
+    privacy: Adatvédelem
+    terms: Feltételek
+    indie_line: Egy ember készítette
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+hr:
+  language_name: Hrvatski
+  language_switcher_label: Jezik
+  og_locale: hr_HR
+  skip_link: Preskočite na glavni sadržaj
+  nav:
+    home: Zentsu
+    apps: Aplikacije
+    privacy: Privatnost
+    terms: Uvjeti
+  footer:
+    home: Zentsu
+    apps: Aplikacije
+    dial: Dial
+    dial_url: /hr/dial/
+    bench_support: Podrška za Bench
+    dial_support: Podrška za Dial
+    dial_support_url: /hr/dial/support/
+    blog: Blog
+    privacy: Privatnost
+    terms: Uvjeti
+    indie_line: Napravio jedan čovjek u
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+uk:
+  language_name: Українська
+  language_switcher_label: Мова
+  og_locale: uk_UA
+  skip_link: Перейти до основного вмісту
+  nav:
+    home: Zentsu
+    apps: Apps
+    privacy: Конфіденційність
+    terms: Умови
+  footer:
+    home: Zentsu
+    apps: Apps
+    dial: Dial
+    dial_url: /uk/dial/
+    bench_support: Підтримка Bench
+    dial_support: Підтримка Dial
+    dial_support_url: /uk/dial/support/
+    blog: Blog
+    privacy: Конфіденційність
+    terms: Умови
+    indie_line: Зроблено однією людиною в
+    apple_trademark:
+      Apple, логотип Apple, Mac і macOS є торговельними марками Apple Inc.,
+      зареєстрованими в США та інших країнах і регіонах. App Store і Mac App Store є
+      знаками обслуговування Apple Inc.
+
+sk:
+  language_name: Slovenčina
+  language_switcher_label: Jazyk
+  og_locale: sk_SK
+  skip_link: Preskočiť na hlavný obsah
+  nav:
+    home: Zentsu
+    apps: Aplikácie
+    privacy: Súkromie
+    terms: Podmienky
+  footer:
+    home: Zentsu
+    apps: Aplikácie
+    dial: Dial
+    dial_url: /sk/dial/
+    bench_support: Podpora Bench
+    dial_support: Podpora Dial
+    dial_support_url: /sk/dial/support/
+    blog: Blog
+    privacy: Súkromie
+    terms: Podmienky
+    indie_line: Vytvoril jeden človek v
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+
+"no":
+  language_name: Norsk
+  language_switcher_label: Språk
+  og_locale: nb_NO
+  skip_link: Hopp til hovedinnhold
+  nav:
+    home: Zentsu
+    apps: Apper
+    privacy: Personvern
+    terms: Vilkår
+  footer:
+    home: Zentsu
+    apps: Apper
+    dial: Dial
+    dial_url: /no/dial/
+    bench_support: Bench-støtte
+    dial_support: Dial-støtte
+    dial_support_url: /no/dial/support/
+    blog: Blogg
+    privacy: Personvern
+    terms: Vilkår
+    indie_line: Laget av én person i
+    apple_trademark:
+      Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc., registered
+      in the U.S. and other countries and regions. App Store and Mac App Store are service
+      marks of Apple Inc.
+cs:
+  language_name: Čeština
+  language_switcher_label: Jazyk
+  og_locale: cs_CZ
+  skip_link: Přeskočit na hlavní obsah
+  nav:
+    home: Zentsu
+    apps: Aplikace
+    privacy: Soukromí
+    terms: Podmínky
+  footer:
+    home: Zentsu
+    apps: Aplikace
+    dial: Dial
+    dial_url: /cs/dial/
+    bench_support: Podpora Bench
+    dial_support: Podpora Dial
+    dial_support_url: /cs/dial/support/
+    blog: Blog
+    privacy: Soukromí
+    terms: Podmínky
+    indie_line: Vytvořila jedna osoba v
+    apple_trademark:
+      Apple, logo Apple, Mac a macOS jsou ochranné známky společnosti Apple Inc.,
+      registrované v USA a v dalších zemích a oblastech. App Store a Mac App Store jsou
+      servisní známky společnosti Apple Inc.

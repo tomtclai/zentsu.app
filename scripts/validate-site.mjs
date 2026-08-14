@@ -1,6 +1,9 @@
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { createHash } from 'node:crypto';
+import { createRequire } from 'node:module';
 import { join } from 'node:path';
+
+const { localeFromLanguageTags } = createRequire(import.meta.url)('../locale.js');
 
 const outputDirectory = '_site';
 const siteOrigin = 'https://zentsu.app';
@@ -82,6 +85,152 @@ for (const path of htmlFiles) {
     relativeResourceUrls.length === 0,
     `${path} uses route-relative resource URLs: ${relativeResourceUrls.join(', ')}`,
   );
+}
+
+// Absolute self-references (canonicals, hreflang, og:image, JSON-LD) are resolved
+// against the build rather than against production, so a page that has not been
+// deployed yet still gets its own URLs checked.
+for (const path of htmlFiles) {
+  const html = read(path);
+  const selfReferences = [...html.matchAll(/https:\/\/zentsu\.app(\/[^"'\s]*)?/g)].map(
+    (match) => match[1] ?? '/',
+  );
+  for (const reference of selfReferences) {
+    const [pathname] = reference.split(/[?#]/);
+    const target = /\.[a-z0-9]+$/i.test(pathname)
+      ? join(outputDirectory, pathname)
+      : outputPathFor(`${siteOrigin}${pathname}`);
+    check(existsSync(target), `${path} references ${pathname}, which the build does not produce`);
+  }
+}
+
+const localizedPages = new Map();
+for (const path of htmlFiles) {
+  const html = read(path);
+  const alternates = new Map(
+    [...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"\s*\/?>/g)].map(
+      (match) => [match[1], match[2]],
+    ),
+  );
+  if (alternates.size === 0) continue;
+
+  const canonical = html.match(/<link rel="canonical" href="([^"]+)"\s*\/?>/)?.[1];
+  const documentLanguage = html.match(/<html\b[^>]*\slang="([^"]+)"/)?.[1];
+  check(canonical, `${path} declares hreflang alternates without a canonical URL`);
+  check(documentLanguage, `${path} declares hreflang alternates without an html lang attribute`);
+  localizedPages.set(canonical, { path, documentLanguage, alternates });
+}
+
+check(localizedPages.size > 0, 'No page declares hreflang alternates');
+
+function alternateSignature(alternates) {
+  return [...alternates].map(([language, url]) => `${language}=${url}`).join(' ');
+}
+
+for (const [canonical, page] of localizedPages) {
+  const selfUrl = page.alternates.get(page.documentLanguage);
+  check(
+    selfUrl === canonical,
+    `${canonical} must list itself under hreflang="${page.documentLanguage}", found ${selfUrl ?? '(missing)'}`,
+  );
+  check(page.alternates.has('x-default'), `${canonical} is missing an x-default alternate`);
+
+  for (const [language, url] of page.alternates) {
+    if (language === 'x-default') continue;
+    const partner = localizedPages.get(url);
+    check(
+      partner !== undefined,
+      `${canonical} points hreflang="${language}" at ${url}, which declares no alternates of its own`,
+    );
+    if (!partner) continue;
+    check(
+      partner.documentLanguage === language,
+      `${canonical} labels ${url} as hreflang="${language}" but that page renders lang="${partner.documentLanguage}"`,
+    );
+    check(
+      alternateSignature(partner.alternates) === alternateSignature(page.alternates),
+      `${canonical} and ${url} disagree on their hreflang set`,
+    );
+  }
+}
+
+const dialSpanish = read(join(outputDirectory, 'es/dial/index.html'));
+const dialEnglish = read(join(outputDirectory, 'dial/index.html'));
+check(
+  /<script type="application\/json" id="zentsu-locales">/.test(dialEnglish),
+  'The English Dial page must expose published locales to the language picker',
+);
+check(
+  dialEnglish.includes('src="/locale.js'),
+  'The English Dial page must load locale.js',
+);
+const dialPicker = dialEnglish.match(/<details>[\s\S]*?<\/details>/)?.[0] ?? '';
+check(
+  dialPicker.includes('hreflang="en"') && dialPicker.includes('hreflang="es"'),
+  'The Dial language picker must list published locales in one details control',
+);
+check(
+  dialPicker.includes('hreflang="zh"') && dialPicker.includes('hreflang="zh-hant"'),
+  'The Dial language picker must list Simplified Chinese and Traditional Chinese separately',
+);
+
+const publishedDialLocales = { zh: '/zh/dial/', 'zh-hant': '/zh-hant/dial/', es: '/es/dial/' };
+for (const [tags, expected] of [
+  [['zh-TW'], 'zh-hant'],
+  [['zh-HK'], 'zh-hant'],
+  [['zh-MO'], 'zh-hant'],
+  [['zh-Hant'], 'zh-hant'],
+  [['zh-Hant-TW'], 'zh-hant'],
+  [['zh-CN'], 'zh'],
+  [['zh-SG'], 'zh'],
+  [['zh-Hans'], 'zh'],
+  [['zh'], 'zh'],
+  [['zh-TW', 'zh'], 'zh-hant'],
+  [['es-MX'], 'es'],
+]) {
+  check(
+    localeFromLanguageTags(tags, publishedDialLocales) === expected,
+    `localeFromLanguageTags(${JSON.stringify(tags)}) should be ${expected}`,
+  );
+}
+check(
+  !dialEnglish.includes('nav-lang-options'),
+  'The Dial language picker must not use the two-button segmented toggle',
+);
+check(
+  dialSpanish.includes('content="https://zentsu.app/assets/dial-og-es.png"'),
+  'The Spanish Dial page must use the Spanish social banner',
+);
+check(existsSync('assets/dial-og-es.png'), 'Missing Spanish social banner: assets/dial-og-es.png');
+for (const [label, html, boundaries] of [
+  [
+    '/dial/',
+    dialEnglish,
+    [
+      'Dial does not calculate doses',
+      'not a stand-in for a measured blood',
+      'replace guidance from your prescriber',
+      'Prices shown are U.S. prices',
+    ],
+  ],
+  [
+    '/es/dial/',
+    dialSpanish,
+    [
+      'Dial no calcula dosis',
+      'no para sustituir un nivel medido en sangre',
+      'ni reemplaza la orientación de tu médico',
+      'Los precios mostrados son precios de Estados Unidos',
+    ],
+  ],
+]) {
+  for (const boundary of boundaries) {
+    check(html.includes(boundary), `${label} is missing required boundary text: "${boundary}"`);
+  }
+  for (const price of ['49.99', '19.99', '3.99']) {
+    check(html.includes(`$${price}`), `${label} does not render the $${price} Dial Pro price`);
+  }
+  check(!/[—]|\s–\s/.test(html), `${label} contains an em-dash or spaced en-dash`);
 }
 
 const notFound = read(join(outputDirectory, '404.html'));
@@ -208,5 +357,5 @@ if (errors.length > 0) {
 }
 
 console.log(
-  `Validated ${sitemapUrls.length} canonical URLs, ${htmlFiles.length} HTML files, and the custom 404.`,
+  `Validated ${sitemapUrls.length} canonical URLs, ${htmlFiles.length} HTML files, ${localizedPages.size} localized pages, and the custom 404.`,
 );

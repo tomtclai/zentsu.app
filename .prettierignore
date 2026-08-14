@@ -5,3 +5,12 @@ assets/
 # Generated Bench tool index — Liquid control flow in start tags that Prettier reflows.
 _includes/tool-index.html
 _includes/tool-count.html
+# Liquid-heavy includes: Prettier reflows control flow and output tags inside
+# start tags, which changes the rendered whitespace.
+_includes/head-common.html
+_includes/nav.html
+_includes/skip-link.html
+_includes/footer.html
+_includes/language-switcher.html
+_includes/dial-page.html
+_includes/dial-shot.html

@@ -1,0 +1,371 @@
+{%- assign copy = site.data.dial[page.lang] -%}
+{%- assign app_store_url = 'https://apps.apple.com/app/id6789408903' -%}
+{%- assign hero_sizes = '(max-width: 760px) 78vw, 430px' -%}
+{%- assign stage_sizes = '(max-width: 760px) 76vw, 390px' -%}
+{%- assign card_sizes = '(max-width: 680px) 76vw, 360px' -%}
+{%- assign report_sizes = '(max-width: 760px) 78vw, 420px' -%}
+{%- assign watch_sizes = '(max-width: 760px) 42vw, 190px' -%}
+<!doctype html>
+<html lang="{{ page.lang }}" dir="{{ site.data.i18n[page.lang].dir | default: 'ltr' }}">
+  <head>
+    {% include head-common.html %}
+    <meta name="theme-color" content="#fffaf6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#14110f" media="(prefers-color-scheme: dark)" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Dial",
+        "description": "{{ copy.schema_description }}",
+        "url": "{{ page.canonical }}",
+        "inLanguage": "{{ page.lang }}",
+        "operatingSystem": "iOS; watchOS",
+        "applicationCategory": "HealthApplication",
+        "image": "https://zentsu.app/assets/dial-icon@2x.png",
+        "screenshot": [
+          "https://zentsu.app/assets/{{ copy.images.today.base }}.png",
+          "https://zentsu.app/assets/{{ copy.images.level.base }}.png",
+          "https://zentsu.app/assets/{{ copy.images.report.base }}.png",
+          "https://zentsu.app/assets/{{ copy.images.watch_glance.base }}.png"
+        ],
+        "downloadUrl": "{{ app_store_url }}",
+        "installUrl": "{{ app_store_url }}",
+        "offers": {
+          "@type": "AggregateOffer",
+          "lowPrice": "{{ site.price_dial_monthly }}",
+          "highPrice": "{{ site.price_dial_lifetime }}",
+          "priceCurrency": "USD",
+          "offerCount": "3"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Zentsu LLC",
+          "url": "https://zentsu.app/"
+        }
+      }
+    </script>
+  </head>
+  <body class="dial-page">
+    {% include nav.html %}
+
+    <main id="main-content" tabindex="-1">
+      <section class="dial-hero" aria-labelledby="dial-title">
+        <div class="dial-wrap dial-hero-grid">
+          <div class="dial-hero-copy">
+            <div class="dial-brandline">
+              <picture class="dial-brand-icon">
+                <source type="image/avif" srcset="/assets/dial-icon.avif" />
+                <source type="image/webp" srcset="/assets/dial-icon.webp" />
+                <img src="/assets/dial-icon@1x.png" width="96" height="96" alt="" />
+              </picture>
+              <div>
+                <strong>Dial</strong>
+                <span>{{ copy.hero.availability }}</span>
+              </div>
+            </div>
+            <h1 id="dial-title">
+              {{ copy.hero.headline_lead }} <span>{{ copy.hero.headline_accent }}</span>
+            </h1>
+            <p class="dial-category">{{ copy.hero.category }}</p>
+            <p class="dial-hero-detail">{{ copy.hero.detail }}</p>
+            <div class="dial-actions dial-actions-primary">
+              <a
+                class="app-store-badge-link"
+                href="{{ app_store_url }}"
+                rel="noopener noreferrer"
+                id="hero-primary-cta"
+              >
+                <img
+                  src="/assets/download-on-the-app-store.svg"
+                  alt="{{ copy.app_store_badge_alt }}"
+                  height="40"
+                />
+              </a>
+              <a class="dial-button dial-button-secondary" href="#how-it-works"
+                >{{ copy.hero.secondary_cta }}</a
+              >
+            </div>
+            <ul class="dial-platforms" aria-label="{{ copy.hero.platforms_label }}">
+              {%- for platform in copy.hero.platforms %}
+              <li>{{ platform }}</li>
+              {%- endfor %}
+            </ul>
+            <p class="dial-hero-legal">{{ copy.hero.legal }}</p>
+          </div>
+
+          <div class="dial-hero-visual">
+            <div class="dial-orbit" aria-hidden="true"></div>
+            <figure class="dial-phone dial-phone-hero">
+              {% include dial-shot.html image=copy.images.today sizes=hero_sizes priority=true %}
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="dial-proof" aria-labelledby="proof-label">
+        <div class="dial-wrap">
+          <p class="dial-proof-label" id="proof-label">{{ copy.proof.label }}</p>
+          <div class="dial-proof-row">
+            {%- for point in copy.proof.points %}
+            <p>{{ point }}</p>
+            {%- endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section class="dial-story" id="how-it-works" aria-labelledby="level-title">
+        <div class="dial-wrap dial-story-grid">
+          <div class="dial-story-copy">
+            <p class="dial-kicker">{{ copy.level.kicker }}</p>
+            <h2 id="level-title">{{ copy.level.heading }}</h2>
+            <p>{{ copy.level.body }}</p>
+            <div class="dial-boundary">
+              <strong>{{ copy.level.boundary_lead }}</strong>
+              {{ copy.level.boundary_body }}
+            </div>
+          </div>
+          <div class="dial-product-stage dial-product-stage-blue">
+            <figure class="dial-phone dial-phone-section">
+              {% include dial-shot.html image=copy.images.level sizes=stage_sizes %}
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="dial-story dial-story-tint" aria-labelledby="logging-title">
+        <div class="dial-wrap dial-story-grid dial-story-reverse">
+          <div class="dial-story-copy">
+            <p class="dial-kicker">{{ copy.logging.kicker }}</p>
+            <h2 id="logging-title">{{ copy.logging.heading }}</h2>
+            <p>{{ copy.logging.body }}</p>
+            <ul class="dial-checklist">
+              {%- for item in copy.logging.checklist %}
+              <li>{{ item }}</li>
+              {%- endfor %}
+            </ul>
+          </div>
+          <div class="dial-product-stage dial-product-stage-coral">
+            <figure class="dial-phone dial-phone-section">
+              {% include dial-shot.html image=copy.images.log_dose sizes=stage_sizes %}
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="dial-history" aria-labelledby="history-title">
+        <div class="dial-wrap">
+          <div class="dial-section-heading">
+            <p class="dial-kicker">{{ copy.history.kicker }}</p>
+            <h2 id="history-title">{{ copy.history.heading }}</h2>
+            <p>{{ copy.history.body }}</p>
+          </div>
+          <div class="dial-screen-pair">
+            <figure class="dial-screen-card">
+              <div class="dial-phone dial-phone-card">
+                {% include dial-shot.html image=copy.images.history sizes=card_sizes %}
+              </div>
+              <figcaption>
+                <strong>{{ copy.history.history_card_title }}</strong>
+                <span>{{ copy.history.history_card_note }}</span>
+              </figcaption>
+            </figure>
+            <figure class="dial-screen-card dial-screen-card-offset">
+              <div class="dial-phone dial-phone-card">
+                {% include dial-shot.html image=copy.images.side_effects sizes=card_sizes %}
+              </div>
+              <figcaption>
+                <strong>{{ copy.history.side_effects_card_title }}</strong>
+                <span>{{ copy.history.side_effects_card_note }}</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="dial-report" aria-labelledby="report-title">
+        <div class="dial-wrap dial-report-grid">
+          <div class="dial-report-visual">
+            <figure class="dial-paper dial-paper-report">
+              {% include dial-shot.html image=copy.images.report sizes=report_sizes %}
+            </figure>
+          </div>
+          <div class="dial-story-copy">
+            <p class="dial-kicker">{{ copy.report.kicker }}</p>
+            <h2 id="report-title">{{ copy.report.heading }}</h2>
+            <p>{{ copy.report.body }}</p>
+            <p>{{ copy.report.closing }}</p>
+            <p class="dial-smallprint">{{ copy.report.smallprint }}</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="dial-watch-band" aria-labelledby="watch-title">
+        <div class="dial-wrap dial-story-grid">
+          <div class="dial-watch-visual">
+            <figure class="dial-watch dial-watch-front">
+              {% include dial-shot.html image=copy.images.watch_glance sizes=watch_sizes %}
+            </figure>
+            <figure class="dial-watch dial-watch-back">
+              {% include dial-shot.html image=copy.images.watch_logged sizes=watch_sizes %}
+            </figure>
+          </div>
+          <div class="dial-story-copy">
+            <p class="dial-kicker">{{ copy.watch.kicker }}</p>
+            <h2 id="watch-title">{{ copy.watch.heading }}</h2>
+            <p>{{ copy.watch.body }}</p>
+            <ul class="dial-checklist">
+              {%- for item in copy.watch.checklist %}
+              <li>{{ item }}</li>
+              {%- endfor %}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="dial-supporting" aria-labelledby="supporting-title">
+        <div class="dial-wrap">
+          <div class="dial-section-heading">
+            <p class="dial-kicker">{{ copy.supporting.kicker }}</p>
+            <h2 id="supporting-title">{{ copy.supporting.heading }}</h2>
+          </div>
+          <div class="dial-feature-grid">
+            {%- for feature in copy.supporting.features %}
+            {%- assign ordinal = forloop.index | prepend: '0' %}
+            <article>
+              <span aria-hidden="true">{{ ordinal }}</span>
+              <h3>{{ feature.title }}</h3>
+              <p>{{ feature.body }}</p>
+            </article>
+            {%- endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section class="dial-plans" aria-labelledby="plans-title">
+        <div class="dial-wrap">
+          <div class="dial-section-heading">
+            <p class="dial-kicker">{{ copy.plans.kicker }}</p>
+            <h2 id="plans-title">{{ copy.plans.heading }}</h2>
+            <p>{{ copy.plans.body }}</p>
+          </div>
+          <div class="dial-plan-grid">
+            <article class="dial-plan-card">
+              <div>
+                <p class="dial-plan-name">{{ copy.plans.free_name }}</p>
+                <p class="dial-plan-summary">{{ copy.plans.free_summary }}</p>
+              </div>
+              <ul class="dial-plan-features">
+                {%- for feature in copy.plans.free_features %}
+                <li>{{ feature }}</li>
+                {%- endfor %}
+              </ul>
+            </article>
+            <article class="dial-plan-card dial-plan-card-pro">
+              <div>
+                <p class="dial-plan-name">{{ copy.plans.pro_name }}</p>
+                <p class="dial-plan-summary">{{ copy.plans.pro_summary }}</p>
+              </div>
+              <ul class="dial-plan-features">
+                {%- for feature in copy.plans.pro_features %}
+                <li>{{ feature }}</li>
+                {%- endfor %}
+              </ul>
+              <div class="dial-plan-options" aria-label="{{ copy.plans.options_label }}">
+                <div>
+                  <strong>{{ copy.plans.lifetime_name }}</strong>
+                  <span>${{ site.price_dial_lifetime }} {{ copy.plans.lifetime_terms }}</span>
+                </div>
+                <div>
+                  <strong>{{ copy.plans.annual_name }}</strong>
+                  <span>${{ site.price_dial_annual }} {{ copy.plans.annual_terms }}</span>
+                </div>
+                <div>
+                  <strong>{{ copy.plans.monthly_name }}</strong>
+                  <span>${{ site.price_dial_monthly }} {{ copy.plans.monthly_terms }}</span>
+                </div>
+              </div>
+              <p class="dial-plan-note">{{ copy.plans.price_note }}</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="dial-privacy" aria-labelledby="privacy-title">
+        <div class="dial-wrap dial-privacy-card">
+          <div>
+            <p class="dial-kicker">{{ copy.privacy.kicker }}</p>
+            <h2 id="privacy-title">{{ copy.privacy.heading }}</h2>
+          </div>
+          <div>
+            <dl class="dial-privacy-specs">
+              {%- for spec in copy.privacy.specs %}
+              <div>
+                <dt>{{ spec.term }}</dt>
+                <dd>{{ spec.detail }}</dd>
+              </div>
+              {%- endfor %}
+            </dl>
+            <p>{{ copy.privacy.body }}</p>
+            <a class="dial-text-link" href="{{ copy.privacy.policy_url }}"
+              >{{ copy.privacy.policy_link }}</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="dial-availability" aria-labelledby="availability-title">
+        <div class="dial-wrap dial-availability-card">
+          <picture class="dial-availability-icon">
+            <source type="image/avif" srcset="/assets/dial-icon.avif" />
+            <source type="image/webp" srcset="/assets/dial-icon.webp" />
+            <img src="/assets/dial-icon@1x.png" width="128" height="128" alt="" loading="lazy" />
+          </picture>
+          <div>
+            <p class="dial-kicker">{{ copy.availability.kicker }}</p>
+            <h2 id="availability-title">{{ copy.availability.heading }}</h2>
+            <p>{{ copy.availability.body }}</p>
+            <a class="app-store-badge-link" href="{{ app_store_url }}" rel="noopener noreferrer">
+              <img
+                src="/assets/download-on-the-app-store.svg"
+                alt="{{ copy.app_store_badge_alt }}"
+                height="40"
+              />
+            </a>
+          </div>
+          <form
+            class="dial-signup dial-signup-closing"
+            action="https://buttondown.email/api/emails/embed-subscribe/dialapp"
+            method="post"
+          >
+            <label for="dial-email-closing" class="dial-sr-only"
+              >{{ copy.availability.email_label }}</label
+            >
+            <div class="dial-email-row">
+              <input
+                id="dial-email-closing"
+                type="email"
+                name="email"
+                placeholder="{{ copy.availability.email_placeholder }}"
+                autocomplete="email"
+                required
+              />
+              <input type="hidden" name="tag" value="dial-updates" />
+              <button type="submit">{{ copy.availability.submit }}</button>
+            </div>
+            <p class="dial-signup-note">
+              {{ copy.availability.signup_note }}
+              <a href="{{ copy.availability.signup_privacy_url }}"
+                >{{ copy.availability.signup_privacy_link }}</a
+              >. {{ copy.availability.signup_help }}
+              <a href="{{ copy.availability.signup_support_url }}"
+                >{{ copy.availability.signup_support_link }}</a
+              >.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>

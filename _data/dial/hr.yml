@@ -1,0 +1,178 @@
+schema_description: "Privatni GLP-1 dnevnik lijekova za doze, mjesta injekcije, težinu, podsjetnike i povijest."
+app_store_badge_alt: "Preuzmite Dial iz App Storea"
+
+images:
+  today:
+    base: dial-web-today
+    width: 1290
+    height: 2160
+    alt: "Zaslon Danas u Dialu sa sljedećim podsjetnikom, procijenjenom razinom lijeka i gumbom za unos doze"
+  level:
+    base: dial-web-level
+    width: 1290
+    height: 1620
+    alt: "Zaslon procijenjene razine u Dialu s vremenskim grafikonom iz unesenih doza"
+  log_dose:
+    base: dial-web-log-dose
+    width: 1290
+    height: 1800
+    alt: "Obrazac doze u Dialu s poljima za lijek, količinu, vrijeme i mjesto injekcije"
+  history:
+    base: dial-web-history
+    width: 1290
+    height: 2640
+    alt: "Povijest Diala s grafikonima doze i težine kroz vrijeme"
+  side_effects:
+    base: dial-web-side-effects
+    width: 1290
+    height: 2100
+    alt: "Zaslon trendova nuspojava Dial Pro s tjednom učestalošću i ozbiljnošću iz postojećih unosa"
+  report:
+    base: dial-web-report
+    width: 1836
+    height: 2376
+    alt: "Stranica PDF izvješća Dial Pro s poviješću doza, težinom kroz vrijeme i nuspojavama za propisivača"
+  watch_glance:
+    base: dial-web-watch-glance
+    width: 792
+    height: 968
+    alt: "Dial na Apple Watchu s prstenom ciklusa koji broji dane do sljedeće doze, sljedećim podsjetnikom i gumbom za unos"
+  watch_logged:
+    base: dial-web-watch-logged
+    width: 792
+    height: 968
+    alt: "Dial na Apple Watchu potvrđuje unesenu dozu kvačicom i pokazuje količinu i mjesto injekcije"
+
+hero:
+  availability: "Sada u App Storeu"
+  headline_lead: "Vaša GLP-1 rutina,"
+  headline_accent: "u zapisu."
+  category: "Dial je privatni GLP-1 dnevnik lijekova za iPhone i Apple Watch."
+  detail: "Unosite doze na iPhoneu ili Apple Watchu, vidite procijenjenu razinu iz doza koje vodite i držite glavne zapise na uređaju ili u privatnoj iCloud bazi."
+  secondary_cta: "Kako Dial radi"
+  platforms_label: "Platforme i pohrana Diala"
+  platforms:
+    - iPhone
+    - Apple Watch
+    - "Siri, Kontrolni centar i zaključani zaslon"
+    - "Neobavezna privatna iCloud pohrana"
+  legal: "Osnovni dnevnik je besplatan. Dial Pro dodaje grafikone, izvoz, više lijekova i podsjetnika te unos jednim dodirom na Apple uređajima. Dial je osobni zapis. Ne izračunava doze i ne zamjenjuje upute propisivača."
+
+proof:
+  label: "Zašto Dial"
+  points:
+    - "iPhone i Apple Watch"
+    - "Bez računa, bez analitike korištenja"
+    - "Doživotna kupnja"
+    - "Procijenjena razina iz vaših doza"
+
+level:
+  kicker: "Dial Pro · Procijenjena razina"
+  heading: "Jasniji pogled na doze koje ste unijeli."
+  body: "Dial crta procijenjenu razinu lijeka kroz vrijeme iz unesenih doza i poluživota prikazanog u aplikaciji. Promijenite raspon da pregledate tjedan, mjesec ili šest mjeseci vlastite povijesti."
+  boundary_lead: "Procjena, i to kažemo."
+  boundary_body: "Grafikon modelira standardnu krivulju opadanja iz doza koje ste unijeli. Pokazuje vaše obrasce između doza. Nije izmjerena razina u krvi ni prijedlog što uzeti sljedeće. Dial ne izračunava doze. Aplikacija metodu objašnjava u cijelosti."
+
+logging:
+  kicker: "Brzi unos"
+  heading: "Unesite dozu i sve što ide uz nju."
+  body: "Zapišite lijek, količinu, datum, vrijeme, mjesto injekcije i bilješke u usredotočenom obrascu. Nedavne vrijednosti ubrzavaju sljedeći unos, a svako polje ostaje vama za potvrdu. Dial radi bilo da propisivač to zove Ozempic, Wegovy, Mounjaro ili Zepbound."
+  checklist:
+    - "Uredite unos kad se nešto promijeni"
+    - "Držite mjesta injekcije vezana uz svaku dozu"
+    - "Držite unose težine uz vremensku crtu doza"
+
+history:
+  kicker: "Dial Pro · Povijest i trendovi"
+  heading: "Pregledajte obrazac kroz cijeli zapis."
+  body: "Popisi doze, težine i nuspojava ostaju besplatni. Dial Pro dodaje pune grafikone doze i težine plus trendove iz unosa nuspojava koji već stoje u zapisu."
+  history_card_title: "Povijest doze i težine"
+  history_card_note: "Pregledajte promjene u rasponu koji odaberete."
+  side_effects_card_title: "Trendovi nuspojava"
+  side_effects_card_note: "Pregledajte učestalost i ozbiljnost iz postojeće ili uvezene povijesti."
+
+report:
+  kicker: "Dial Pro · PDF izvješće"
+  heading: "Ponesite cijelu sliku na sljedeći posjet."
+  body: "Napravite PDF s poviješću doza, promjenama unesene količine, mjestima injekcije, trendom težine i obrascima nuspojava. Dial ga sastavlja na uređaju, a dijelite ga tek kad odlučite, AirDropom, e-poštom ili ispisom."
+  closing: "Inače privatno, a korisno u trenutku kad zapis mora napustiti telefon."
+  smallprint: "Izvješće sažima vaše unose. Nije medicinski karton ni plan liječenja."
+
+watch:
+  kicker: Apple Watch
+  heading: "Unesite dozu sa zapešća."
+  body: "Aplikacija na satu pokazuje prsten ciklusa koji odbrojava do sljedeće doze i kad pada sljedeći podsjetnik. Dial Pro od tog pogleda pravi puni unos: količinu postavite Digital Crownom, odaberite mjesto injekcije i potvrdite. Unos se sinkronizira na iPhone i ostaje između vaša dva uređaja."
+  checklist:
+    - "Prsten ciklusa, stanje doze i sljedeći podsjetnik na prvi pogled (besplatno)"
+    - "Unos doze sa zapešća Digital Crownom (Dial Pro)"
+    - "Widgeti procijenjene razine i sljedeće doze na brojčaniku te brzi unos u Pametnom stogu (Dial Pro)"
+    - "Na iPhoneu Dial Pro omogućuje unos jednim dodirom iz Kontrolnog centra, tipke za radnju, Siri ili žive aktivnosti na dan podsjetnika. Besplatne radnje otvaraju obrazac."
+
+supporting:
+  kicker: "Oko rutine"
+  heading: "Praktični detalji ostaju blizu."
+  features:
+    - title: "Zaliha"
+      body: "Pratite olovke ili bočice s koncentracijom, ljekarnom, datumom isteka i brojem serije."
+    - title: "Vaši podsjetnici"
+      body: "Stvorite dnevne, tjedne ili svakih N dana obavijesti oko rasporeda koji postavite. Na dan doze na obavijesti je radnja unosa, a živa aktivnost može ostati na zaključanom zaslonu dok ne unesete."
+    - title: "Ponesite povijest"
+      body: "Uvezite postojeće unose iz kompatibilnog izvoza dnevnika lijekova u Dial."
+
+plans:
+  kicker: "Besplatno i Dial Pro"
+  heading: "Osnovni dnevnik koristite besplatno."
+  body: "Prijeđite na Pro kad želite detaljnije grafikone, izvoz ili brži unos na Apple uređajima. Svaki Dial Pro plan uključuje iste značajke."
+  free_name: "Besplatno"
+  free_summary: "Potpun zapis za jedan aktivni lijek."
+  free_features:
+    - "Unos doza, mjesta injekcije, težine, nuspojava i fotografija napretka"
+    - "Jedan aktivni lijek i jedan podsjetnik"
+    - "Popisi doze i težine, zaliha, uvoz i pregled na Apple Watchu"
+    - "Widgeti odbrojavanja i podsjetnici koji otvaraju obrazac"
+  pro_name: Dial Pro
+  pro_summary: "Procijenjena razina, puni grafikoni, izvoz i brzi unos."
+  pro_features:
+    - "Grafikon procijenjene razine i widget na početnom zaslonu"
+    - "Puni grafikoni doze i težine, trendovi nuspojava i usporedba fotografija"
+    - "PDF izvješće, CSV izvoz, više lijekova i više podsjetnika"
+    - "Brzi unos i komplikacije na Apple Watchu te unos jednim dodirom na iPhoneu"
+  options_label: "Opcije plana Dial Pro"
+  lifetime_name: "Doživotno"
+  lifetime_terms: "jednom"
+  annual_name: "Godišnje"
+  annual_terms: "godišnje"
+  monthly_name: "Mjesečno"
+  monthly_terms: "mjesečno"
+  price_note: "Pretplate se obnavljaju dok ih ne otkažete. Prikazane cijene su američke cijene. App Store prije kupnje pokazuje lokalnu cijenu."
+
+privacy:
+  kicker: "Privatnost"
+  heading: "Jasno što ostaje na uređaju."
+  specs:
+    - term: "Računi"
+      detail: "Dial račun ne postoji. Otvorite aplikaciju i počnite unositi."
+    - term: "Analitika korištenja"
+      detail: "Dial ne pokreće analitiku korištenja ni telemetriju. Ne mjerimo kako je koristite."
+    - term: "Naši poslužitelji"
+      detail: "Zentsu ne vodi poslužitelj koji pohranjuje ili čita vaše zapise."
+    - term: "Neobavezna sinkronizacija"
+      detail: "Uključite iCloud u aplikaciji pa se zapisi sinkroniziraju preko privatne CloudKit baze na vašem Apple računu, ne prema nama."
+  body: "Zapisi lijeka, doze, podsjetnika i zalihe ostaju na uređaju. Unosi težine koriste odvojenu lokalnu pohranu, a pristup Zdravlju je neobavezan i pokriva samo tjelesnu težinu kad date dopuštenje."
+  policy_link: "Pročitajte pravila privatnosti Diala"
+  policy_url: /hr/dial/privacy/
+
+availability:
+  kicker: "Preuzmite Dial"
+  heading: "Sada u App Storeu."
+  body: "Dial je besplatan za preuzimanje. Osnovni dnevnik radi od prvog unosa. Dial Pro dodaje grafikon procijenjene razine, pune grafikone, PDF izvoz i brzi unos s Apple Watcha i iPhonea."
+  email_label: "Adresa e-pošte"
+  email_placeholder: "ime@email.com"
+  submit: "Primajte novosti o verzijama"
+  signup_note: "Neobavezno. Bilješke uz nove izdanja, ništa drugo. Bez praćenja otvaranja ili poveznica. Odjava bilo kada."
+  signup_privacy_link: "Pojedinosti o privatnosti"
+  signup_privacy_url: /privacy
+  signup_help: "Trebate pomoć?"
+  signup_support_link: "Podrška za Dial"
+  signup_support_url: /hr/dial/support/
+
