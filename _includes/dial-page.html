@@ -271,21 +271,33 @@
                 <li>{{ feature }}</li>
                 {%- endfor %}
               </ul>
-              <div class="dial-plan-options" aria-label="{{ copy.plans.options_label }}">
-                <div>
-                  <strong>{{ copy.plans.lifetime_name }}</strong>
-                  <span>{{ prices.lifetime_display }} {{ copy.plans.lifetime_terms }}</span>
+              <div class="dial-plan-pricing">
+                {% include dial-currency.html %}
+                <div class="dial-plan-options" aria-label="{{ copy.plans.options_label }}">
+                  <div>
+                    <strong>{{ copy.plans.lifetime_name }}</strong>
+                    <span
+                      ><span data-dial-price="lifetime">{{ prices.lifetime_display }}</span>
+                      {{ copy.plans.lifetime_terms }}</span
+                    >
+                  </div>
+                  <div>
+                    <strong>{{ copy.plans.annual_name }}</strong>
+                    <span
+                      ><span data-dial-price="annual">{{ prices.annual_display }}</span>
+                      {{ copy.plans.annual_terms }}</span
+                    >
+                  </div>
+                  <div>
+                    <strong>{{ copy.plans.monthly_name }}</strong>
+                    <span
+                      ><span data-dial-price="monthly">{{ prices.monthly_display }}</span>
+                      {{ copy.plans.monthly_terms }}</span
+                    >
+                  </div>
                 </div>
-                <div>
-                  <strong>{{ copy.plans.annual_name }}</strong>
-                  <span>{{ prices.annual_display }} {{ copy.plans.annual_terms }}</span>
-                </div>
-                <div>
-                  <strong>{{ copy.plans.monthly_name }}</strong>
-                  <span>{{ prices.monthly_display }} {{ copy.plans.monthly_terms }}</span>
-                </div>
+                <p class="dial-plan-note" data-dial-price-note>{{ storefront.note }}</p>
               </div>
-              <p class="dial-plan-note">{{ storefront.note }}</p>
             </article>
           </div>
         </div>
@@ -372,5 +384,16 @@
     </main>
 
     {% include footer.html %}
+    {%- assign strings = site.data.i18n[page.lang] | default: site.data.i18n.en %}
+    <script type="application/json" id="dial-price-data">
+      {
+        "lang": {{ page.lang | jsonify }},
+        "defaultCurrency": {{ prices.currency | jsonify }},
+        "defaultNote": {{ storefront.note | jsonify }},
+        "overrideNote": {{ strings.price_shown_in | jsonify }},
+        "prices": {{ site.data.dial_prices | jsonify }}
+      }
+    </script>
+    <script src="/dial-currency.js?v={{ site.time | date: '%s' }}"></script>
   </body>
 </html>

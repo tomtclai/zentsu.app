@@ -20,6 +20,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- Keep the Dial language picker on language only. Currency is a separate
+  dropdown next to the plan prices. Each language still presets its App Store
+  storefront, and a chosen currency persists across language pages.
 - Point every Dial marketing page at localized in-app screenshots for that
   language, including Simplified and Traditional Chinese, instead of the
   English crops.

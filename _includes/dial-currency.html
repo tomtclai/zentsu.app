@@ -1,0 +1,24 @@
+{%- assign strings = site.data.i18n[page.lang] | default: site.data.i18n.en -%} {%- assign
+currency_codes = '' -%} {%- for entry in site.data.dial_prices -%} {%- assign row = entry[1] -%} {%-
+assign token = row.currency | append: ',' -%} {%- unless currency_codes contains token -%} {%-
+assign currency_codes = currency_codes | append: token -%} {%- endunless -%} {%- endfor -%} {%-
+assign currency_codes = currency_codes | split: ',' | sort -%}
+<div class="dial-currency">
+  <details>
+    <summary
+      aria-label="{{ strings.currency_switcher_label }}: {{ prices.currency }}"
+      data-dial-currency-summary
+    >
+      {{ prices.currency }}
+    </summary>
+    <ul class="dial-currency-menu" aria-label="{{ strings.currency_switcher_label }}">
+      {%- for code in currency_codes -%} {%- if code == '' -%}{%- else -%} {%- if code ==
+      prices.currency -%} {%- assign current = ' aria-current="true"' -%} {%- else -%} {%- assign
+      current = '' -%} {%- endif %}
+      <li>
+        <button type="button" data-dial-currency="{{ code }}" {{ current }}>{{ code }}</button>
+      </li>
+      {%- endif -%} {%- endfor %}
+    </ul>
+  </details>
+</div>

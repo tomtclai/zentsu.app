@@ -1,6 +1,8 @@
 en:
   language_name: English
   language_switcher_label: Language
+  currency_switcher_label: "Currency"
+  price_shown_in: "Shown in {currency}."
   og_locale: en_US
   skip_link: Skip to main content
   nav:
@@ -30,6 +32,8 @@ en:
 de:
   language_name: Deutsch
   language_switcher_label: Sprache
+  currency_switcher_label: "Währung"
+  price_shown_in: "Angaben in {currency}."
   og_locale: de_DE
   skip_link: Zum Hauptinhalt springen
   nav:
@@ -57,6 +61,8 @@ de:
 es:
   language_name: Español
   language_switcher_label: Idioma
+  currency_switcher_label: "Moneda"
+  price_shown_in: "Mostrado en {currency}."
   og_locale: es_MX
   skip_link: Ir al contenido principal
   nav:
@@ -85,6 +91,8 @@ es:
 fr:
   language_name: Français
   language_switcher_label: Langue
+  currency_switcher_label: "Devise"
+  price_shown_in: "Affiché en {currency}."
   og_locale: fr_FR
   skip_link: Aller au contenu principal
   nav:
@@ -113,6 +121,8 @@ fr:
 it:
   language_name: Italiano
   language_switcher_label: Lingua
+  currency_switcher_label: "Valuta"
+  price_shown_in: "Visualizzato in {currency}."
   og_locale: it_IT
   skip_link: Vai al contenuto principale
   nav:
@@ -141,6 +151,8 @@ it:
 ja:
   language_name: 日本語
   language_switcher_label: 言語
+  currency_switcher_label: "通貨"
+  price_shown_in: "{currency}で表示。"
   og_locale: ja_JP
   skip_link: 本文へスキップ
   nav:
@@ -167,6 +179,8 @@ ja:
 nl:
   language_name: Nederlands
   language_switcher_label: Taal
+  currency_switcher_label: "Valuta"
+  price_shown_in: "Weergegeven in {currency}."
   og_locale: nl_NL
   skip_link: Naar de hoofdinhoud
   nav:
@@ -194,6 +208,8 @@ nl:
 pt:
   language_name: Português
   language_switcher_label: Idioma
+  currency_switcher_label: "Moeda"
+  price_shown_in: "Exibido em {currency}."
   og_locale: pt_BR
   skip_link: Ir para o conteúdo principal
   nav:
@@ -222,6 +238,8 @@ pt:
 hi:
   language_name: हिन्दी
   language_switcher_label: भाषा
+  currency_switcher_label: "मुद्रा"
+  price_shown_in: "{currency} में दिखाया गया।"
   og_locale: hi_IN
   skip_link: मुख्य सामग्री पर जाएँ
   nav:
@@ -249,6 +267,8 @@ hi:
 tr:
   language_name: Türkçe
   language_switcher_label: Dil
+  currency_switcher_label: "Para birimi"
+  price_shown_in: "{currency} olarak gösterilir."
   og_locale: tr_TR
   skip_link: Ana içeriğe geç
   nav:
@@ -276,6 +296,8 @@ tr:
 ar:
   language_name: العربية
   language_switcher_label: اللغة
+  currency_switcher_label: "العملة"
+  price_shown_in: "معروض ب{currency}."
   og_locale: ar_SA
   dir: rtl
   skip_link: تخطٍ إلى المحتوى الرئيسي
@@ -304,6 +326,8 @@ ar:
 ca:
   language_name: Català
   language_switcher_label: Idioma
+  currency_switcher_label: "Moneda"
+  price_shown_in: "Es mostra en {currency}."
   og_locale: ca_ES
   skip_link: Salti al contingut principal
   nav:
@@ -331,6 +355,8 @@ ca:
 ko:
   language_name: 한국어
   language_switcher_label: 언어
+  currency_switcher_label: "통화"
+  price_shown_in: "{currency}로 표시."
   og_locale: ko_KR
   skip_link: 본문으로 건너뛰기
   nav:
@@ -358,6 +384,8 @@ ko:
 zh:
   language_name: 简体中文
   language_switcher_label: 语言
+  currency_switcher_label: "货币"
+  price_shown_in: "以 {currency} 显示。"
   og_locale: zh_CN
   skip_link: 跳到主要内容
   nav:
@@ -385,6 +413,8 @@ zh:
 zh-hant:
   language_name: 繁體中文
   language_switcher_label: 語言
+  currency_switcher_label: "貨幣"
+  price_shown_in: "以 {currency} 顯示。"
   og_locale: zh_TW
   skip_link: 跳至主要內容
   nav:
@@ -412,6 +442,8 @@ zh-hant:
 id:
   language_name: Bahasa Indonesia
   language_switcher_label: Bahasa
+  currency_switcher_label: "Mata uang"
+  price_shown_in: "Ditampilkan dalam {currency}."
   og_locale: id_ID
   skip_link: Lewati ke konten utama
   nav:
@@ -439,6 +471,8 @@ id:
 pl:
   language_name: Polski
   language_switcher_label: Język
+  currency_switcher_label: "Waluta"
+  price_shown_in: "Wyświetlane w {currency}."
   og_locale: pl_PL
   skip_link: Przejdź do treści
   nav:
@@ -466,6 +500,8 @@ pl:
 ms:
   language_name: Bahasa Melayu
   language_switcher_label: Bahasa
+  currency_switcher_label: "Mata wang"
+  price_shown_in: "Dipaparkan dalam {currency}."
   og_locale: ms_MY
   skip_link: Langkau ke kandungan utama
   nav:
@@ -493,6 +529,8 @@ ms:
 he:
   language_name: עברית
   language_switcher_label: שפה
+  currency_switcher_label: "מטבע"
+  price_shown_in: "מוצג ב-{currency}."
   og_locale: he_IL
   dir: rtl
   skip_link: דלגו לתוכן הראשי
@@ -521,6 +559,8 @@ he:
 vi:
   language_name: Tiếng Việt
   language_switcher_label: Ngôn ngữ
+  currency_switcher_label: "Tiền tệ"
+  price_shown_in: "Hiển thị bằng {currency}."
   og_locale: vi_VN
   skip_link: Chuyển đến nội dung chính
   nav:
@@ -548,6 +588,8 @@ vi:
 fi:
   language_name: Suomi
   language_switcher_label: Kieli
+  currency_switcher_label: "Valuutta"
+  price_shown_in: "Näytetään valuutassa {currency}."
   og_locale: fi_FI
   skip_link: Siirry pääsisältöön
   nav:
@@ -575,6 +617,8 @@ fi:
 ro:
   language_name: Română
   language_switcher_label: Limbă
+  currency_switcher_label: "Monedă"
+  price_shown_in: "Afișat în {currency}."
   og_locale: ro_RO
   skip_link: Săriți la conținutul principal
   nav:
@@ -602,6 +646,8 @@ ro:
 ru:
   language_name: Русский
   language_switcher_label: Язык
+  currency_switcher_label: "Валюта"
+  price_shown_in: "Показано в {currency}."
   og_locale: ru_RU
   skip_link: Перейти к основному содержимому
   nav:
@@ -629,6 +675,8 @@ ru:
 th:
   language_name: ไทย
   language_switcher_label: ภาษา
+  currency_switcher_label: "สกุลเงิน"
+  price_shown_in: "แสดงเป็น {currency}"
   og_locale: th_TH
   skip_link: ข้ามไปยังเนื้อหาหลัก
   nav:
@@ -656,6 +704,8 @@ th:
 sv:
   language_name: Svenska
   language_switcher_label: Språk
+  currency_switcher_label: "Valuta"
+  price_shown_in: "Visas i {currency}."
   og_locale: sv_SE
   skip_link: Hoppa till huvudinnehåll
   nav:
@@ -683,6 +733,8 @@ sv:
 da:
   language_name: Dansk
   language_switcher_label: Sprog
+  currency_switcher_label: "Valuta"
+  price_shown_in: "Vist i {currency}."
   og_locale: da_DK
   skip_link: Spring til hovedindhold
   nav:
@@ -710,6 +762,8 @@ da:
 el:
   language_name: Ελληνικά
   language_switcher_label: Γλώσσα
+  currency_switcher_label: "Νόμισμα"
+  price_shown_in: "Εμφάνιση σε {currency}."
   og_locale: el_GR
   skip_link: Μετάβαση στο κύριο περιεχόμενο
   nav:
@@ -737,6 +791,8 @@ el:
 hu:
   language_name: Magyar
   language_switcher_label: Nyelv
+  currency_switcher_label: "Pénznem"
+  price_shown_in: "Megjelenítés: {currency}."
   og_locale: hu_HU
   skip_link: Ugrás a tartalomra
   nav:
@@ -764,6 +820,8 @@ hu:
 hr:
   language_name: Hrvatski
   language_switcher_label: Jezik
+  currency_switcher_label: "Valuta"
+  price_shown_in: "Prikazano u {currency}."
   og_locale: hr_HR
   skip_link: Preskočite na glavni sadržaj
   nav:
@@ -791,6 +849,8 @@ hr:
 uk:
   language_name: Українська
   language_switcher_label: Мова
+  currency_switcher_label: "Валюта"
+  price_shown_in: "Показано в {currency}."
   og_locale: uk_UA
   skip_link: Перейти до основного вмісту
   nav:
@@ -818,6 +878,8 @@ uk:
 sk:
   language_name: Slovenčina
   language_switcher_label: Jazyk
+  currency_switcher_label: "Mena"
+  price_shown_in: "Zobrazené v {currency}."
   og_locale: sk_SK
   skip_link: Preskočiť na hlavný obsah
   nav:
@@ -845,6 +907,8 @@ sk:
 "no":
   language_name: Norsk
   language_switcher_label: Språk
+  currency_switcher_label: "Valuta"
+  price_shown_in: "Vist i {currency}."
   og_locale: nb_NO
   skip_link: Hopp til hovedinnhold
   nav:
@@ -871,6 +935,8 @@ sk:
 cs:
   language_name: Čeština
   language_switcher_label: Jazyk
+  currency_switcher_label: "Měna"
+  price_shown_in: "Zobrazeno v {currency}."
   og_locale: cs_CZ
   skip_link: Přeskočit na hlavní obsah
   nav:

@@ -5,6 +5,9 @@ import { createRequire } from 'node:module';
 import { join } from 'node:path';
 
 const { localeFromLanguageTags } = createRequire(import.meta.url)('../locale.js');
+const { catalogByCurrency, resolvePrices } = createRequire(import.meta.url)(
+  '../dial-currency.js',
+);
 
 const outputDirectory = '_site';
 const siteOrigin = 'https://zentsu.app';
@@ -273,7 +276,49 @@ for (const [lang, route] of Object.entries(dialRoutes)) {
   if (lang !== 'en') {
     check(!html.includes('Prices shown are U.S. prices'), `${route} still claims U.S. prices`);
   }
+  check(html.includes('class="dial-currency"'), `${route} is missing the currency picker`);
+  check(html.includes('id="dial-price-data"'), `${route} is missing the currency price catalog`);
+  check(
+    html.includes('class="nav-lang"'),
+    `${route} is missing the language picker`,
+  );
+  const nav = html.slice(html.indexOf('<nav'), html.indexOf('</nav>'));
+  check(nav.includes('class="nav-lang"'), `${route} language picker is not in the nav`);
+  check(!nav.includes('class="dial-currency"'), `${route} currency picker leaked into the nav`);
 }
+
+const samplePrices = {
+  en: { currency: 'USD', lifetime_display: '$49.99', lang: 'en' },
+  uk: { currency: 'USD', lifetime_display: '$59.99', lang: 'uk' },
+  de: { currency: 'EUR', lifetime_display: '59,99 €', lang: 'de' },
+  ja: { currency: 'JPY', lifetime_display: '¥8,000', lang: 'ja' },
+};
+const catalog = catalogByCurrency(samplePrices);
+check(catalog.USD.lifetime_display === '$49.99', 'USD catalog should keep the first storefront');
+check(catalog.EUR.lifetime_display === '59,99 €', 'EUR catalog is missing');
+const ukDefault = resolvePrices(
+  {
+    lang: 'uk',
+    defaultCurrency: 'USD',
+    defaultNote: 'Ukraine note',
+    overrideNote: 'Shown in {currency}.',
+    prices: samplePrices,
+  },
+  'USD',
+);
+check(ukDefault.row.lifetime_display === '$59.99', 'Ukrainian USD preset should keep Ukraine prices');
+const ukYen = resolvePrices(
+  {
+    lang: 'uk',
+    defaultCurrency: 'USD',
+    defaultNote: 'Ukraine note',
+    overrideNote: 'Shown in {currency}.',
+    prices: samplePrices,
+  },
+  'JPY',
+);
+check(ukYen.row.lifetime_display === '¥8,000', 'Currency override should load the JPY storefront');
+check(ukYen.note === 'Shown in JPY.', 'Override note should name the chosen currency');
 
 const notFound = read(join(outputDirectory, '404.html'));
 check(
