@@ -145,7 +145,6 @@ plans:
   monthly_name: "Месячный"
   monthly_terms: "в месяц"
 
-
 privacy:
   kicker: "Конфиденциальность"
   heading: "Ясно, что остаётся на устройстве."
@@ -166,13 +165,4 @@ availability:
   kicker: "Скачать Dial"
   heading: "Сейчас в App Store."
   body: "Dial бесплатен для скачивания. Основной дневник работает с первой записи. Dial Pro добавляет график оценочного уровня, полные графики, экспорт PDF и быструю запись с Apple Watch и iPhone."
-  email_label: "Адрес электронной почты"
-  email_placeholder: "name@email.com"
-  submit: "Получать новости о версиях"
-  signup_note: "Необязательно. Заметки к новым выпускам, ничего больше. Без отслеживания открытий и ссылок. Отписка в любой момент."
-  signup_privacy_link: "Сведения о конфиденциальности"
-  signup_privacy_url: /privacy
-  signup_help: "Нужна помощь?"
-  signup_support_link: "Поддержка Dial"
-  signup_support_url: /ru/dial/support/
 

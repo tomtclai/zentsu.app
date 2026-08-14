@@ -145,7 +145,6 @@ plans:
   monthly_name: "Kuukausittain"
   monthly_terms: "kuukaudessa"
 
-
 privacy:
   kicker: "Tietosuoja"
   heading: "Kerromme suoraan, mikä jää laitteelle."
@@ -166,13 +165,4 @@ availability:
   kicker: "Lataa Dial"
   heading: "Nyt App Storessa."
   body: "Dial on ilmainen ladata. Ydinpäiväkirja toimii ensimmäisestä kirjauksesta. Dial Pro lisää arvioidun tason kaavion, täydet kaaviot, PDF-viennin ja nopean kirjauksen Apple Watchista ja iPhonesta."
-  email_label: "Sähköpostiosoite"
-  email_placeholder: "oma@email.com"
-  submit: "Saa versiouutisia"
-  signup_note: "Valinnainen. Julkaisutiedot uusiin versioihin, ei muuta. Ei avaus- eikä linkkiseurantaa. Peru milloin tahansa."
-  signup_privacy_link: "Tietosuojatiedot"
-  signup_privacy_url: /privacy
-  signup_help: "Tarvitsetko apua?"
-  signup_support_link: "Dial-tuki"
-  signup_support_url: /fi/dial/support/
 

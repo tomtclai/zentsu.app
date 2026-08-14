@@ -145,7 +145,6 @@ plans:
   monthly_name: "按月"
   monthly_terms: "每月"
 
-
 privacy:
   kicker: "隐私"
   heading: "哪些留在设备上，写清楚。"
@@ -166,12 +165,3 @@ availability:
   kicker: "下载 Dial"
   heading: "已在 App Store 上架。"
   body: "Dial 可免费下载。核心日记从第一次记录起即可用。Dial Pro 增加估计水平图表、完整图表、PDF 导出，以及从 Apple Watch 和 iPhone 快速记录。"
-  email_label: "电子邮件地址"
-  email_placeholder: "name@email.com"
-  submit: "接收版本消息"
-  signup_note: "可选。仅新版本发行说明。不跟踪邮件打开或链接点击。随时退订。"
-  signup_privacy_link: "隐私详情"
-  signup_privacy_url: /privacy
-  signup_help: "需要帮助？"
-  signup_support_link: "Dial 支持"
-  signup_support_url: /zh/dial/support/

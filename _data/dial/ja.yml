@@ -163,7 +163,6 @@ plans:
   monthly_name: 月額
   monthly_terms: 月ごと
 
-
 privacy:
   kicker: プライバシー
   heading: 端末に残るものを、はっきり書く。
@@ -187,13 +186,3 @@ availability:
   heading: App Storeで公開中。
   body:
     Dialのダウンロードは無料です。基本の記録は最初の1件から使えます。Dial Proは推定レベルのグラフ、グラフと推移、PDF書き出し、Apple WatchとiPhoneからのクイック記録を追加します。
-  email_label: メールアドレス
-  email_placeholder: you@email.com
-  submit: リリース案内を受け取る
-  signup_note:
-    任意です。新しいバージョンの案内だけです。開封やリンクの追跡はありません。いつでも解除できます。
-  signup_privacy_link: プライバシーの詳細
-  signup_privacy_url: /privacy
-  signup_help: 困ったときは
-  signup_support_link: Dialサポート
-  signup_support_url: /ja/dial/support/

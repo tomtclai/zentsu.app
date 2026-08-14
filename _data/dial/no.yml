@@ -145,7 +145,6 @@ plans:
   monthly_name: "Månedlig"
   monthly_terms: "per måned"
 
-
 privacy:
   kicker: "Personvern"
   heading: "Tydelig om hva som blir på enheten din."
@@ -166,13 +165,4 @@ availability:
   kicker: "Last ned Dial"
   heading: "Nå i App Store."
   body: "Dial er gratis å laste ned. Kjernejournalen virker fra første registrering. Dial Pro legger til diagrammet for estimert nivå, fulle diagrammer, PDF-eksport og rask registrering fra Apple Watch og iPhone."
-  email_label: "E-postadresse"
-  email_placeholder: "din@epost.no"
-  submit: "Få versjonsnyheter"
-  signup_note: "Valgfritt. Versjonsnotater til nye utgaver, ingenting annet. Ingen åpnings- eller lenkesporing. Avmeld når som helst."
-  signup_privacy_link: "Personvernopplysninger"
-  signup_privacy_url: /privacy
-  signup_help: "Trenger du hjelp?"
-  signup_support_link: "Dial-støtte"
-  signup_support_url: /no/dial/support/
 

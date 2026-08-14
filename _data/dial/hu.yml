@@ -145,7 +145,6 @@ plans:
   monthly_name: "Havi"
   monthly_terms: "havonta"
 
-
 privacy:
   kicker: "Adatvédelem"
   heading: "Világos, mi marad a készüléken."
@@ -166,13 +165,4 @@ availability:
   kicker: "A Dial letöltése"
   heading: "Most az App Store-ban."
   body: "A Dial ingyenesen letölthető. Az alapnapló az első rögzítéstől működik. A Dial Pro hozzáadja a becsült szint grafikonját, a teljes grafikonokat, a PDF-exportot és a gyors rögzítést Apple Watchról és iPhone-ról."
-  email_label: "E-mail-cím"
-  email_placeholder: "nev@email.com"
-  submit: "Verzióhírek kérése"
-  signup_note: "Választható. Kiadási jegyzetek új verziókhoz, semmi más. Nincs megnyitás- vagy hivatkozáskövetés. Bármikor leiratkozhat."
-  signup_privacy_link: "Adatvédelmi részletek"
-  signup_privacy_url: /privacy
-  signup_help: "Szüksége van segítségre?"
-  signup_support_link: "Dial-támogatás"
-  signup_support_url: /hu/dial/support/
 

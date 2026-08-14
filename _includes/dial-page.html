@@ -349,36 +349,6 @@
               />
             </a>
           </div>
-          <form
-            class="dial-signup dial-signup-closing"
-            action="https://buttondown.email/api/emails/embed-subscribe/dialapp"
-            method="post"
-          >
-            <label for="dial-email-closing" class="dial-sr-only"
-              >{{ copy.availability.email_label }}</label
-            >
-            <div class="dial-email-row">
-              <input
-                id="dial-email-closing"
-                type="email"
-                name="email"
-                placeholder="{{ copy.availability.email_placeholder }}"
-                autocomplete="email"
-                required
-              />
-              <input type="hidden" name="tag" value="dial-updates" />
-              <button type="submit">{{ copy.availability.submit }}</button>
-            </div>
-            <p class="dial-signup-note">
-              {{ copy.availability.signup_note }}
-              <a href="{{ copy.availability.signup_privacy_url }}"
-                >{{ copy.availability.signup_privacy_link }}</a
-              >. {{ copy.availability.signup_help }}
-              <a href="{{ copy.availability.signup_support_url }}"
-                >{{ copy.availability.signup_support_link }}</a
-              >.
-            </p>
-          </form>
         </div>
       </section>
     </main>

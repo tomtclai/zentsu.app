@@ -20,6 +20,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- Remove the Dial release-news mailing list from every language page. The app
+  is on the App Store, so the close is the badge only.
 - Keep the Dial language picker on language only. Currency is a separate
   dropdown next to the plan prices. Each language still presets its App Store
   storefront, and a chosen currency persists across language pages.

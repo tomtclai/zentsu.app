@@ -193,7 +193,6 @@ plans:
   monthly_name: Maandelijks
   monthly_terms: per maand
 
-
 privacy:
   kicker: Privacy
   heading: Duidelijk over wat op het apparaat blijft.
@@ -222,13 +221,3 @@ availability:
     Dial is gratis te downloaden. Het kerndagboek werkt vanaf de eerste invoer.
     Dial Pro voegt de grafiek van de geschatte spiegel, volledige diagrammen, pdf-export
     en snel vastleggen vanaf Apple Watch en iPhone toe.
-  email_label: E-mailadres
-  email_placeholder: uw@email.com
-  submit: Versienotities ontvangen
-  signup_note:
-    Optioneel. Alleen nieuws over nieuwe versies. Geen open- of linktracking. Altijd uitschrijven.
-  signup_privacy_link: Privacydetails
-  signup_privacy_url: /privacy
-  signup_help: Hulp nodig?
-  signup_support_link: Dial-ondersteuning
-  signup_support_url: /nl/dial/support/

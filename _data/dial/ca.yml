@@ -145,7 +145,6 @@ plans:
   monthly_name: "Mensual"
   monthly_terms: "per mes"
 
-
 privacy:
   kicker: "Privadesa"
   heading: "Clar sobre què resta al seu dispositiu."
@@ -166,13 +165,4 @@ availability:
   kicker: "Baixi Dial"
   heading: "Ara a l’App Store."
   body: "Dial es pot baixar de franc. El diari bàsic funciona des del primer registre. Dial Pro afegeix el gràfic de nivell estimat, gràfics complets, exportació PDF i registre ràpid des de l’Apple Watch i l’iPhone."
-  email_label: "Adreça electrònica"
-  email_placeholder: "nom@email.com"
-  submit: "Rebi notícies de versions"
-  signup_note: "Opcional. Notes de versió per a edicions noves, res més. Sense seguiment d’obertures ni d’enllaços. Cancel·li quan vulgui."
-  signup_privacy_link: "Detalls de privadesa"
-  signup_privacy_url: /privacy
-  signup_help: "Li cal ajuda?"
-  signup_support_link: "Assistència de Dial"
-  signup_support_url: /ca/dial/support/
 

@@ -145,7 +145,6 @@ plans:
   monthly_name: "Μηνιαίο"
   monthly_terms: "ανά μήνα"
 
-
 privacy:
   kicker: "Απόρρητο"
   heading: "Σαφές τι μένει στη συσκευή σας."
@@ -166,13 +165,4 @@ availability:
   kicker: "Λήψη Dial"
   heading: "Τώρα στο App Store."
   body: "Το Dial είναι δωρεάν στη λήψη. Το βασικό ημερολόγιο λειτουργεί από την πρώτη καταγραφή. Το Dial Pro προσθέτει το γράφημα εκτιμώμενου επιπέδου, πλήρη γραφήματα, εξαγωγή PDF και γρήγορη καταγραφή από Apple Watch και iPhone."
-  email_label: "Διεύθυνση email"
-  email_placeholder: "σας@email.com"
-  submit: "Λάβετε τα νέα εκδόσεων"
-  signup_note: "Προαιρετικό. Σημειώσεις έκδοσης για νέες εκδόσεις, τίποτα άλλο. Χωρίς παρακολούθηση ανοίγματος ή συνδέσμων. Διαγραφή όποτε θέλετε."
-  signup_privacy_link: "Λεπτομέρειες απορρήτου"
-  signup_privacy_url: /privacy
-  signup_help: "Χρειάζεστε βοήθεια;"
-  signup_support_link: "Υποστήριξη Dial"
-  signup_support_url: /el/dial/support/
 

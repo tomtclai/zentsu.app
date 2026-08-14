@@ -192,7 +192,6 @@ plans:
   monthly_name: Monthly
   monthly_terms: per month
 
-
 privacy:
   kicker: Privacy
   heading: Clear about what stays on your device.
@@ -221,14 +220,3 @@ availability:
     Dial is free to download. The core tracker works from the first log. Dial Pro adds
     the estimated level chart, full charts, PDF export, and quick logging from Apple Watch
     and iPhone.
-  email_label: Email address
-  email_placeholder: your@email.com
-  submit: Get release news
-  signup_note:
-    Optional. Release notes for new versions, nothing else. No open or link tracking.
-    Unsubscribe anytime.
-  signup_privacy_link: Privacy details
-  signup_privacy_url: /privacy
-  signup_help: Need help?
-  signup_support_link: Dial support
-  signup_support_url: /dial/support/

@@ -145,7 +145,6 @@ plans:
   monthly_name: "Mesačný"
   monthly_terms: "za mesiac"
 
-
 privacy:
   kicker: "Súkromie"
   heading: "Jasné, čo ostane na zariadení."
@@ -166,13 +165,4 @@ availability:
   kicker: "Stiahnuť Dial"
   heading: "Teraz v App Store."
   body: "Dial je na stiahnutie zadarmo. Základný denník funguje od prvého záznamu. Dial Pro pridáva graf odhadovanej hladiny, úplné grafy, export PDF a rýchly záznam z Apple Watch a iPhonu."
-  email_label: "E-mailová adresa"
-  email_placeholder: "vas@email.com"
-  submit: "Dostávať novinky o verziách"
-  signup_note: "Voliteľné. Poznámky k novým verziám, nič iné. Žiadne sledovanie otvorení ani odkazov. Odhlásenie kedykoľvek."
-  signup_privacy_link: "Podrobnosti o súkromí"
-  signup_privacy_url: /privacy
-  signup_help: "Potrebujete pomoc?"
-  signup_support_link: "Podpora Dial"
-  signup_support_url: /sk/dial/support/
 

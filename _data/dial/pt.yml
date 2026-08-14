@@ -196,7 +196,6 @@ plans:
   monthly_name: Mensal
   monthly_terms: por mês
 
-
 privacy:
   kicker: Privacidade
   heading: Clareza sobre o que fica no dispositivo.
@@ -225,14 +224,3 @@ availability:
     O Dial é grátis para baixar. O registro básico funciona desde o primeiro registro.
     O Dial Pro adiciona o gráfico de nível estimado, os gráficos completos, a exportação
     em PDF e o registro rápido pelo Apple Watch e pelo iPhone.
-  email_label: Endereço de e-mail
-  email_placeholder: seu@email.com
-  submit: Receber novidades
-  signup_note:
-    Opcional. Notas de versão, nada mais. Sem rastreamento de aberturas ou cliques.
-    Cancele quando quiser.
-  signup_privacy_link: Detalhes de privacidade
-  signup_privacy_url: /privacy
-  signup_help: Precisa de ajuda?
-  signup_support_link: Suporte do Dial
-  signup_support_url: /pt/dial/support/

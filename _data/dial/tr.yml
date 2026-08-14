@@ -145,7 +145,6 @@ plans:
   monthly_name: "Aylık"
   monthly_terms: "ayda"
 
-
 privacy:
   kicker: "Gizlilik"
   heading: "Cihazda neyin kaldığı açık."
@@ -166,13 +165,4 @@ availability:
   kicker: "Dial'i indirin"
   heading: "Şimdi App Store'da."
   body: "Dial indirmesi ücretsizdir. Temel günlük ilk kayıttan çalışır. Dial Pro tahmini düzey grafiği, tam grafikler, PDF dışa aktarma ve Apple Watch ile iPhone'dan hızlı kayıt ekler."
-  email_label: "E-posta adresi"
-  email_placeholder: "ad@email.com"
-  submit: "Sürüm haberleri alın"
-  signup_note: "İsteğe bağlı. Yeni sürümler için sürüm notları, başka bir şey yok. Açılış veya bağlantı izleme yok. İstediğiniz zaman çıkın."
-  signup_privacy_link: "Gizlilik ayrıntıları"
-  signup_privacy_url: /privacy
-  signup_help: "Yardım mı lazım?"
-  signup_support_link: "Dial desteği"
-  signup_support_url: /tr/dial/support/
 

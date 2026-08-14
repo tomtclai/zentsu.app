@@ -145,7 +145,6 @@ plans:
   monthly_name: "รายเดือน"
   monthly_terms: "ต่อเดือน"
 
-
 privacy:
   kicker: "ความเป็นส่วนตัว"
   heading: "ชัดเจนว่าอะไรอยู่บนอุปกรณ์"
@@ -166,13 +165,4 @@ availability:
   kicker: "ดาวน์โหลด Dial"
   heading: "มีใน App Store แล้ว"
   body: "Dial ดาวน์โหลดฟรี สมุดบันทึกหลักใช้ได้ตั้งแต่รายการแรก Dial Pro เพิ่มกราฟระดับโดยประมาณ กราฟเต็ม การส่งออก PDF และการบันทึกเร็วจาก Apple Watch และ iPhone"
-  email_label: "ที่อยู่อีเมล"
-  email_placeholder: "name@email.com"
-  submit: "รับข่าวรุ่น"
-  signup_note: "ทางเลือก บันทึกประจำรุ่นสำหรับรุ่นใหม่เท่านั้น ไม่มีการติดตามการเปิดหรือลิงก์ ยกเลิกเมื่อใดก็ได้"
-  signup_privacy_link: "รายละเอียดความเป็นส่วนตัว"
-  signup_privacy_url: /privacy
-  signup_help: "ต้องการความช่วยเหลือ?"
-  signup_support_link: "ฝ่ายสนับสนุน Dial"
-  signup_support_url: /th/dial/support/
 

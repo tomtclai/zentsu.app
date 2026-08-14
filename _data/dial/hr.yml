@@ -145,7 +145,6 @@ plans:
   monthly_name: "Mjesečno"
   monthly_terms: "mjesečno"
 
-
 privacy:
   kicker: "Privatnost"
   heading: "Jasno što ostaje na uređaju."
@@ -166,13 +165,4 @@ availability:
   kicker: "Preuzmite Dial"
   heading: "Sada u App Storeu."
   body: "Dial je besplatan za preuzimanje. Osnovni dnevnik radi od prvog unosa. Dial Pro dodaje grafikon procijenjene razine, pune grafikone, PDF izvoz i brzi unos s Apple Watcha i iPhonea."
-  email_label: "Adresa e-pošte"
-  email_placeholder: "ime@email.com"
-  submit: "Primajte novosti o verzijama"
-  signup_note: "Neobavezno. Bilješke uz nove izdanja, ništa drugo. Bez praćenja otvaranja ili poveznica. Odjava bilo kada."
-  signup_privacy_link: "Pojedinosti o privatnosti"
-  signup_privacy_url: /privacy
-  signup_help: "Trebate pomoć?"
-  signup_support_link: "Podrška za Dial"
-  signup_support_url: /hr/dial/support/
 

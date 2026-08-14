@@ -145,7 +145,6 @@ plans:
   monthly_name: "Miesięcznie"
   monthly_terms: "miesięcznie"
 
-
 privacy:
   kicker: "Prywatność"
   heading: "Jasno, co zostaje na urządzeniu."
@@ -166,12 +165,3 @@ availability:
   kicker: "Dial"
   heading: "Już w App Store."
   body: "Dial można pobrać za darmo. Podstawowy rejestr działa od pierwszego zapisu. Dial Pro dodaje wykres szacowanego poziomu, pełne wykresy, eksport PDF i szybki zapis z Apple Watch i iPhone’a."
-  email_label: "Adres e-mail"
-  email_placeholder: "jan@email.com"
-  submit: "Nowości o wersjach"
-  signup_note: "Opcjonalnie. Informacje o nowych wersjach, nic więcej. Bez śledzenia otwarć ani łączy. Wypis w każdej chwili."
-  signup_privacy_link: "Szczegóły prywatności"
-  signup_privacy_url: /privacy
-  signup_help: "Potrzebna pomoc?"
-  signup_support_link: "Wsparcie Dial"
-  signup_support_url: /pl/dial/support/

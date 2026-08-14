@@ -192,7 +192,6 @@ plans:
   monthly_name: Mensuel
   monthly_terms: par mois
 
-
 privacy:
   kicker: Confidentialité
   heading: Clair sur ce qui reste sur l'appareil.
@@ -221,14 +220,3 @@ availability:
     Dial se télécharge gratuitement. Le suivi de base fonctionne dès le premier
     enregistrement. Dial Pro ajoute le graphique de niveau estimé, les graphiques complets,
     l'export PDF et l'enregistrement rapide depuis Apple Watch et iPhone.
-  email_label: Adresse e-mail
-  email_placeholder: vous@email.com
-  submit: Recevoir les nouveautés
-  signup_note:
-    Facultatif. Notes de version uniquement. Pas de suivi d'ouverture ni de clic.
-    Désabonnement à tout moment.
-  signup_privacy_link: Détails de confidentialité
-  signup_privacy_url: /privacy
-  signup_help: Besoin d'aide?
-  signup_support_link: Assistance Dial
-  signup_support_url: /fr/dial/support/

@@ -196,7 +196,6 @@ plans:
   monthly_name: Monatlich
   monthly_terms: pro Monat
 
-
 privacy:
   kicker: Datenschutz
   heading: Klar, was auf Ihrem Gerät bleibt.
@@ -225,14 +224,3 @@ availability:
     Dial ist kostenlos zu laden. Das Kerntagebuch funktioniert ab dem ersten Eintrag. Dial
     Pro ergänzt das Diagramm zum geschätzten Spiegel, volle Diagramme, PDF-Export und
     schnelles Erfassen von Apple Watch und iPhone.
-  email_label: E-Mail-Adresse
-  email_placeholder: ihre@email.com
-  submit: Versionshinweise erhalten
-  signup_note:
-    Optional. Hinweise zu neuen Versionen, sonst nichts. Kein Öffnungs- oder Link-Tracking.
-    Jederzeit abbestellen.
-  signup_privacy_link: Datenschutzdetails
-  signup_privacy_url: /privacy
-  signup_help: Brauchen Sie Hilfe?
-  signup_support_link: Dial-Support
-  signup_support_url: /de/dial/support/

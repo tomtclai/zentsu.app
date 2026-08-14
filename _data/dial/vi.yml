@@ -145,7 +145,6 @@ plans:
   monthly_name: "Hàng tháng"
   monthly_terms: "mỗi tháng"
 
-
 privacy:
   kicker: "Quyền riêng tư"
   heading: "Rõ những gì ở lại trên thiết bị."
@@ -166,13 +165,4 @@ availability:
   kicker: "Tải Dial"
   heading: "Hiện có trên App Store."
   body: "Dial tải miễn phí. Nhật ký cốt lõi hoạt động từ mục ghi đầu tiên. Dial Pro thêm biểu đồ mức ước tính, biểu đồ đầy đủ, xuất PDF và ghi nhanh từ Apple Watch và iPhone."
-  email_label: "Địa chỉ email"
-  email_placeholder: "ten@email.com"
-  submit: "Nhận tin phiên bản"
-  signup_note: "Tùy chọn. Ghi chú phát hành cho bản mới, không gì khác. Không theo dõi mở hay liên kết. Hủy bất cứ lúc nào."
-  signup_privacy_link: "Chi tiết quyền riêng tư"
-  signup_privacy_url: /privacy
-  signup_help: "Cần trợ giúp?"
-  signup_support_link: "Hỗ trợ Dial"
-  signup_support_url: /vi/dial/support/
 

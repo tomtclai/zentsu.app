@@ -145,7 +145,6 @@ plans:
   monthly_name: "Lunar"
   monthly_terms: "pe lună"
 
-
 privacy:
   kicker: "Confidențialitate"
   heading: "E clar ce rămâne pe dispozitiv."
@@ -166,13 +165,4 @@ availability:
   kicker: "Descărcați Dial"
   heading: "Acum în App Store."
   body: "Dial se descarcă gratuit. Jurnalul de bază funcționează de la prima înregistrare. Dial Pro adaugă graficul nivelului estimat, grafice complete, export PDF și înregistrare rapidă de pe Apple Watch și iPhone."
-  email_label: "Adresă de e-mail"
-  email_placeholder: "nume@email.com"
-  submit: "Primiți noutăți despre versiuni"
-  signup_note: "Opțional. Note de versiune pentru ediții noi, nimic altceva. Fără urmărirea deschiderilor sau a linkurilor. Dezabonare oricând."
-  signup_privacy_link: "Detalii de confidențialitate"
-  signup_privacy_url: /privacy
-  signup_help: "Aveți nevoie de ajutor?"
-  signup_support_link: "Asistență Dial"
-  signup_support_url: /ro/dial/support/
 

@@ -145,7 +145,6 @@ plans:
   monthly_name: "شهري"
   monthly_terms: "في الشهر"
 
-
 privacy:
   kicker: "الخصوصية"
   heading: "واضح ما يبقى على جهازكم."
@@ -166,13 +165,4 @@ availability:
   kicker: "حمّلوا Dial"
   heading: "الآن في App Store."
   body: "Dial مجاني للتنزيل. يعمل السجل الأساسي من أول تسجيل. يضيف Dial Pro مخطط المستوى المقدّر والرسوم الكاملة وتصدير PDF والتسجيل السريع من Apple Watch وiPhone."
-  email_label: "عنوان البريد"
-  email_placeholder: "name@email.com"
-  submit: "احصلوا على أخبار الإصدارات"
-  signup_note: "اختياري. ملاحظات الإصدار للإصدارات الجديدة فقط. بلا تتبع فتح أو روابط. إلغاء الاشتراك في أي وقت."
-  signup_privacy_link: "تفاصيل الخصوصية"
-  signup_privacy_url: /privacy
-  signup_help: "تحتاجون مساعدة؟"
-  signup_support_link: "دعم Dial"
-  signup_support_url: /ar/dial/support/
 

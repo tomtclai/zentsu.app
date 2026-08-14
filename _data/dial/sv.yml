@@ -145,7 +145,6 @@ plans:
   monthly_name: "Månadsvis"
   monthly_terms: "per månad"
 
-
 privacy:
   kicker: "Integritet"
   heading: "Tydligt vad som stannar på din enhet."
@@ -166,13 +165,4 @@ availability:
   kicker: "Hämta Dial"
   heading: "Nu i App Store."
   body: "Dial är gratis att hämta. Kärnjournalen fungerar från första registreringen. Dial Pro lägger till diagrammet för uppskattad nivå, fullständiga diagram, PDF-export och snabb registrering från Apple Watch och iPhone."
-  email_label: "E-postadress"
-  email_placeholder: "namn@exempel.se"
-  submit: "Få versionsnyheter"
-  signup_note: "Valfritt. Versionsanteckningar till nya utgåvor, inget annat. Ingen öppnings- eller länkspårning. Avsluta när som helst."
-  signup_privacy_link: "Integritetsuppgifter"
-  signup_privacy_url: /privacy
-  signup_help: "Behöver du hjälp?"
-  signup_support_link: "Dial-support"
-  signup_support_url: /sv/dial/support/
 

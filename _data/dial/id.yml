@@ -145,7 +145,6 @@ plans:
   monthly_name: "Bulanan"
   monthly_terms: "per bulan"
 
-
 privacy:
   kicker: "Privasi"
   heading: "Jelas apa yang tetap di perangkat Anda."
@@ -166,13 +165,4 @@ availability:
   kicker: "Unduh Dial"
   heading: "Sekarang di App Store."
   body: "Dial gratis diunduh. Buku harian inti bekerja dari catatan pertama. Dial Pro menambah grafik tingkat perkiraan, grafik lengkap, ekspor PDF, dan pencatatan cepat dari Apple Watch dan iPhone."
-  email_label: "Alamat email"
-  email_placeholder: "nama@email.com"
-  submit: "Dapatkan berita versi"
-  signup_note: "Opsional. Catatan rilis untuk versi baru, tidak ada yang lain. Tanpa pelacakan buka atau tautan. Berhenti kapan saja."
-  signup_privacy_link: "Detail privasi"
-  signup_privacy_url: /privacy
-  signup_help: "Butuh bantuan?"
-  signup_support_link: "Dukungan Dial"
-  signup_support_url: /id/dial/support/
 

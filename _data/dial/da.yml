@@ -145,7 +145,6 @@ plans:
   monthly_name: "Månedlig"
   monthly_terms: "pr. måned"
 
-
 privacy:
   kicker: "Privatliv"
   heading: "Klart, hvad der bliver på din enhed."
@@ -166,12 +165,3 @@ availability:
   kicker: "Hent Dial"
   heading: "Nu i App Store."
   body: "Dial er gratis at hente. Kernejournalen virker fra den første registrering. Dial Pro tilføjer diagrammet for estimeret niveau, fulde grafer, PDF-eksport og hurtig registrering fra Apple Watch og iPhone."
-  email_label: "E-mailadresse"
-  email_placeholder: "din@email.com"
-  submit: "Få versionsnyheder"
-  signup_note: "Valgfrit. Versionsnoter til nye udgaver, intet andet. Ingen åbnings- eller linksporing. Afmeld når som helst."
-  signup_privacy_link: "Privatlivsoplysninger"
-  signup_privacy_url: /privacy
-  signup_help: "Brug for hjælp?"
-  signup_support_link: "Dial-support"
-  signup_support_url: /da/dial/support/

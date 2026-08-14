@@ -164,7 +164,6 @@ plans:
   monthly_name: חודשי
   monthly_terms: לחודש
 
-
 privacy:
   kicker: פרטיות
   heading: ברור מה נשאר במכשיר.
@@ -188,13 +187,3 @@ availability:
   heading: עכשיו ב-App Store.
   body:
     Dial להורדה בחינם. כלי הרישום הבסיסי עובד מהרישום הראשון. Dial Pro מוסיף את תרשים הרמה המשוערת, תרשימים מלאים, ייצוא PDF ורישום מהיר מ-Apple Watch ומ-iPhone.
-  email_label: כתובת דוא״ל
-  email_placeholder: shem@email.com
-  submit: קבלו עדכוני גרסה
-  signup_note:
-    אופציונלי. הערות גרסה לגרסאות חדשות, לא יותר מזה. בלי מעקב פתיחה או קישורים. ביטול בכל עת.
-  signup_privacy_link: פרטי פרטיות
-  signup_privacy_url: /privacy
-  signup_help: צריכים עזרה?
-  signup_support_link: תמיכה ב-Dial
-  signup_support_url: /he/dial/support/

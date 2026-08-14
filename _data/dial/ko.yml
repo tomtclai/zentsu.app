@@ -145,7 +145,6 @@ plans:
   monthly_name: "월간"
   monthly_terms: "월"
 
-
 privacy:
   kicker: "개인정보"
   heading: "기기에 남는 것을 분명히 합니다."
@@ -166,13 +165,4 @@ availability:
   kicker: "Dial 다운로드"
   heading: "지금 App Store에서."
   body: "Dial은 무료로 받을 수 있습니다. 핵심 일기는 첫 기록부터 쓸 수 있습니다. Dial Pro는 추정 수준 그래프, 전체 그래프, PDF 내보내기, Apple Watch와 iPhone의 빠른 기록을 더합니다."
-  email_label: "이메일 주소"
-  email_placeholder: "name@email.com"
-  submit: "버전 소식 받기"
-  signup_note: "선택. 새 버전의 출시 노트만. 열람이나 링크 추적은 없습니다. 언제든 구독을 해지하세요."
-  signup_privacy_link: "개인정보 세부 사항"
-  signup_privacy_url: /privacy
-  signup_help: "도움이 필요하신가요?"
-  signup_support_link: "Dial 지원"
-  signup_support_url: /ko/dial/support/
 

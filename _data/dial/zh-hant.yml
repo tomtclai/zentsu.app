@@ -145,7 +145,6 @@ plans:
   monthly_name: "按月"
   monthly_terms: "每月"
 
-
 privacy:
   kicker: "隱私"
   heading: "清楚哪些留在裝置上。"
@@ -166,12 +165,3 @@ availability:
   kicker: "下載 Dial"
   heading: "現已於 App Store 上架。"
   body: "Dial 可免費下載。核心日記從第一次記錄起即可用。Dial Pro 增加估計水平圖表、完整圖表、PDF 匯出，以及從 Apple Watch 和 iPhone 快速記錄。"
-  email_label: "電子郵件地址"
-  email_placeholder: "name@email.com"
-  submit: "取得版本消息"
-  signup_note: "可選。只寄新版本發行說明。沒有開信或連結追蹤。隨時可退訂。"
-  signup_privacy_link: "隱私詳情"
-  signup_privacy_url: /privacy
-  signup_help: "需要協助？"
-  signup_support_link: "Dial 支援"
-  signup_support_url: /zh-hant/dial/support/

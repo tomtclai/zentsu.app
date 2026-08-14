@@ -145,7 +145,6 @@ plans:
   monthly_name: "मासिक"
   monthly_terms: "प्रति माह"
 
-
 privacy:
   kicker: "गोपनीयता"
   heading: "साफ है कि डिवाइस पर क्या रहता है।"
@@ -166,13 +165,4 @@ availability:
   kicker: "Dial डाउनलोड करें"
   heading: "अब App Store पर।"
   body: "Dial डाउनलोड करने के लिए मुफ्त है। मूल डायरी पहली प्रविष्टि से काम करती है। Dial Pro अनुमानित स्तर ग्राफ़, पूरे ग्राफ़, PDF निर्यात और Apple Watch तथा iPhone से तेज़ दर्ज करना जोड़ता है।"
-  email_label: "ईमेल पता"
-  email_placeholder: "name@email.com"
-  submit: "संस्करण समाचार पाएँ"
-  signup_note: "वैकल्पिक। केवल नई रिलीज़ के नोट। ईमेल खोले जाने या लिंक की ट्रैकिंग नहीं। आप कभी भी सदस्यता समाप्त कर सकते हैं।"
-  signup_privacy_link: "गोपनीयता विवरण"
-  signup_privacy_url: /privacy
-  signup_help: "मदद चाहिए?"
-  signup_support_link: "Dial सहायता"
-  signup_support_url: /hi/dial/support/
 

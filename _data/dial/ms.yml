@@ -145,7 +145,6 @@ plans:
   monthly_name: "Bulanan"
   monthly_terms: "sebulan"
 
-
 privacy:
   kicker: "Privasi"
   heading: "Jelas apa yang kekal pada peranti anda."
@@ -166,13 +165,4 @@ availability:
   kicker: "Muat turun Dial"
   heading: "Kini di App Store."
   body: "Dial percuma untuk dimuat turun. Diari teras berfungsi dari rekod pertama. Dial Pro menambah carta tahap anggaran, carta penuh, eksport PDF dan rekod pantas dari Apple Watch dan iPhone."
-  email_label: "Alamat e-mel"
-  email_placeholder: "nama@email.com"
-  submit: "Dapatkan berita versi"
-  signup_note: "Pilihan. Nota keluaran untuk versi baharu, tiada yang lain. Tiada penjejakan buka atau pautan. Nyahlanggan bila-bila masa."
-  signup_privacy_link: "Butiran privasi"
-  signup_privacy_url: /privacy
-  signup_help: "Perlukan bantuan?"
-  signup_support_link: "Sokongan Dial"
-  signup_support_url: /ms/dial/support/
 

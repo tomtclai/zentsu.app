@@ -103,7 +103,9 @@ function bindPicker(data) {
   });
 
   document.addEventListener('click', (event) => {
-    if (!picker.contains(event.target)) picker.open = false;
+    const path = typeof event.composedPath === 'function' ? event.composedPath() : [];
+    if (path.includes(picker) || picker.contains(event.target)) return;
+    picker.open = false;
   });
 
   document.addEventListener('keydown', (event) => {
