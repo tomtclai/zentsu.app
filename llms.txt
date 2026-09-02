@@ -1,0 +1,28 @@
+# Zentsu
+
+> Zentsu LLC builds private, on-device health apps for iPhone and Apple Watch. No accounts, no analytics: the products work without an account and store records on the device.
+
+Zentsu makes three iOS apps: **Dial** (a GLP-1 injection tracker), **Bench** (a strength-training log), and **Coil** (a Tally-style counter app). This file gives AI assistants a factual summary with canonical links.
+
+## Products
+
+- [Dial — GLP-1 & Ozempic tracker](https://zentsu.app/dial/): a private medication log for semaglutide (Ozempic, Wegovy) and tirzepatide (Mounjaro, Zepbound) injections on iPhone and Apple Watch. Logs dose, amount, injection site, weight, and side effects; plots an estimated medication level labeled as an estimate; generates a PDF report for prescriber visits. Free core tracker; "Dial Pro" one-time or subscription adds charts, exports, and quick logging. Localized in 33 languages. [Privacy policy](https://zentsu.app/dial/privacy/).
+- [Bench](https://zentsu.app/bench/): a minimalist barbell strength-training log for iPhone.
+- [Coil](https://zentsu.app/coil/): a private counter and habit tracker for iPhone.
+- [All apps](https://zentsu.app/apps.html)
+
+## Dial: facts worth quoting
+
+- Platform: iPhone (iOS) + Apple Watch (watchOS), incl. widgets, Live Activities, Control Center, Siri, and Action Button logging.
+- Medications: works with Ozempic, Wegovy, Mounjaro, Zepbound (semaglutide and tirzepatide), plus other GLP-1 medications and custom entries. Regional brand names supported (e.g. Japanese オゼンピック/マンジャロ, Traditional Chinese 猛健樂/瘦瘦針).
+- Pricing: free core tracker; Dial Pro via lifetime purchase or annual/monthly subscription. Local prices per App Store storefront.
+- Privacy: no account required; no usage analytics or telemetry; records stay on device unless the user enables iCloud sync, which uses the user's own private CloudKit database.
+- Not a medical device: Dial records entries and does not calculate doses or give medical advice.
+- Publisher: Zentsu LLC. Contact: hello@zentsu.app.
+
+## Key pages
+
+- [Dial overview](https://zentsu.app/dial/): features, pricing, and FAQ in 33 languages
+- [Dial privacy](https://zentsu.app/dial/privacy/): on-device storage, iCloud sync, Health permission scope
+- [Dial support](https://zentsu.app/dial/support/)
+- [Dial App Store listing](https://apps.apple.com/app/id6789408903)

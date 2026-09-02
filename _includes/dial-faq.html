@@ -1,0 +1,57 @@
+{%- assign faq = site.data.dial_faq[page.lang] | default: site.data.dial_faq.en -%} {%- assign a1 =
+copy.category -%} {%- assign a2 = copy.logging.body -%} {%- assign a3 = copy.level.boundary_body -%}
+{%- capture a4 -%}{{ copy.privacy.heading }}. {{ copy.privacy.body }}{%- endcapture -%} {%- capture
+a5 -%}{{ copy.plans.free_summary }} {{ copy.plans.pro_summary }} {{ prices.lifetime_display }} ({{
+copy.plans.lifetime_name }}) · {{ prices.annual_display }}/{{ copy.plans.annual_terms }} ({{
+copy.plans.annual_name }}) · {{ prices.monthly_display }}/{{ copy.plans.monthly_terms }} ({{
+copy.plans.monthly_name }}).{%- endcapture -%} {%- assign a6 = copy.watch.body -%}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "{{ page.lang }}",
+    "mainEntity": [
+      { "@type": "Question", "name": {{ faq.q1 | jsonify }}, "acceptedAnswer": { "@type": "Answer", "text": {{ a1 | jsonify }} } },
+      { "@type": "Question", "name": {{ faq.q2 | jsonify }}, "acceptedAnswer": { "@type": "Answer", "text": {{ a2 | jsonify }} } },
+      { "@type": "Question", "name": {{ faq.q3 | jsonify }}, "acceptedAnswer": { "@type": "Answer", "text": {{ a3 | jsonify }} } },
+      { "@type": "Question", "name": {{ faq.q4 | jsonify }}, "acceptedAnswer": { "@type": "Answer", "text": {{ a4 | jsonify }} } },
+      { "@type": "Question", "name": {{ faq.q5 | jsonify }}, "acceptedAnswer": { "@type": "Answer", "text": {{ a5 | jsonify }} } },
+      { "@type": "Question", "name": {{ faq.q6 | jsonify }}, "acceptedAnswer": { "@type": "Answer", "text": {{ a6 | jsonify }} } }
+    ]
+  }
+</script>
+<section class="dial-privacy" aria-labelledby="faq-title">
+  <div class="dial-wrap dial-privacy-card">
+    <div>
+      <p class="dial-kicker" aria-hidden="true">FAQ</p>
+      <h2 id="faq-title">{{ faq.q1 }}</h2>
+    </div>
+    <div>
+      <dl class="dial-privacy-specs">
+        <div>
+          <dt>{{ faq.q2 }}</dt>
+          <dd>{{ a2 }}</dd>
+        </div>
+        <div>
+          <dt>{{ faq.q3 }}</dt>
+          <dd>{{ a3 }}</dd>
+        </div>
+        <div>
+          <dt>{{ faq.q4 }}</dt>
+          <dd>{{ a4 }}</dd>
+        </div>
+        <div>
+          <dt>{{ faq.q5 }}</dt>
+          <dd>{{ a5 }}</dd>
+        </div>
+        <div>
+          <dt>{{ faq.q6 }}</dt>
+          <dd>{{ a6 }}</dd>
+        </div>
+      </dl>
+      <a class="dial-text-link" href="{{ app_store_url }}" rel="noopener"
+        >{{ copy.app_store_badge_alt }}</a
+      >
+    </div>
+  </div>
+</section>

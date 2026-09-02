@@ -1,4 +1,31 @@
+# Default: everything is crawlable.
 User-agent: *
+Allow: /
+
+# AI assistants and search crawlers are explicitly welcome.
+# zentsu.app publishes llms.txt with product facts for AI answers.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://zentsu.app/sitemap.xml

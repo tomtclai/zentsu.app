@@ -24,6 +24,11 @@
         "inLanguage": "{{ page.lang }}",
         "operatingSystem": "iOS; watchOS",
         "applicationCategory": "HealthApplication",
+        "featureList": [
+          {{ copy.plans.free_features[0] | jsonify }},
+          {{ copy.plans.pro_features[0] | jsonify }},
+          {{ copy.plans.pro_features[2] | jsonify }}
+        ],
         "image": "https://zentsu.app/assets/dial-icon@2x.png",
         "screenshot": [
           "https://zentsu.app/assets/{{ copy.images.today.base }}.png",
@@ -33,6 +38,7 @@
         ],
         "downloadUrl": "{{ app_store_url }}",
         "installUrl": "{{ app_store_url }}",
+        "sameAs": ["https://apps.apple.com/app/id6789408903"],
         "offers": {
           "@type": "AggregateOffer",
           "lowPrice": "{{ prices.monthly }}",
@@ -325,6 +331,8 @@
           </div>
         </div>
       </section>
+
+      {% include dial-faq.html %}
 
       <section class="dial-availability" aria-labelledby="availability-title">
         <div class="dial-wrap dial-availability-card">
