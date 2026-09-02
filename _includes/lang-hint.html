@@ -1,0 +1,98 @@
+{%- assign alternates = site.data.alternates[page.alternate_group] -%} {%- if alternates and
+alternates.size > 1 -%} {%- assign strings = site.data.i18n[page.lang] | default: site.data.i18n.en
+%}
+<div id="lang-hint" hidden role="status">
+  <svg
+    viewBox="0 0 20 20"
+    width="15"
+    height="15"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.4"
+    aria-hidden="true"
+    focusable="false"
+  >
+    <circle cx="10" cy="10" r="7.3" />
+    <path d="M2.7 10h14.6" />
+    <ellipse cx="10" cy="10" rx="3.4" ry="7.3" />
+  </svg>
+  {%- for alternate in alternates -%} {%- assign language = alternate[0] -%}
+  <a
+    data-lang-hint-link
+    href="{{ alternate[1] }}"
+    lang="{{ language }}"
+    hreflang="{{ language }}"
+    hidden
+    >{{ site.data.i18n[language].language_name | default: language }} →</a
+  >
+  {%- endfor -%}
+  <button type="button" class="lang-hint-close" aria-label="{{ strings.language_switcher_label }}">
+    ✕
+  </button>
+</div>
+<script type="application/json" id="lang-hint-data">
+  {
+    "current": "{{ page.lang }}"
+    {%- for alternate in alternates -%}
+    , "{{ alternate[0] }}": "{{ alternate[1] }}"
+    {%- endfor %}
+  }
+</script>
+<script>
+  (function () {
+    'use strict';
+    try {
+      if (localStorage.getItem('lang-hint-dismissed') === '1') return;
+      var data = JSON.parse(document.getElementById('lang-hint-data').textContent);
+      var current = (data.current || '').toLowerCase();
+      var nav = (
+        navigator.language ||
+        (navigator.languages && navigator.languages[0]) ||
+        ''
+      ).toLowerCase();
+      if (!nav) return;
+      var target = null;
+      if (data[nav]) {
+        target = nav;
+      } else {
+        var base = nav.split('-')[0];
+        if (data[base]) {
+          target = base;
+        } else if (base === 'zh') {
+          if (
+            ['tw', 'hk', 'mo', 'hant', 'hant-hk'].indexOf(nav.split('-')[1] || '') !== -1 ||
+            nav.indexOf('hant') !== -1
+          ) {
+            target = 'zh-hant';
+          } else {
+            target = data.zh ? 'zh' : null;
+          }
+        } else {
+          for (var key in data) {
+            if (key.split('-')[0] === base) {
+              target = key;
+              break;
+            }
+          }
+        }
+      }
+      if (!target || target === current) return;
+      var hint = document.getElementById('lang-hint');
+      var link = hint.querySelector('[data-lang-hint-link][lang="' + target + '"]');
+      if (!link) return;
+      hint.hidden = false;
+      link.hidden = false;
+      hint.querySelector('.lang-hint-close').addEventListener('click', function () {
+        hint.hidden = true;
+        try {
+          localStorage.setItem('lang-hint-dismissed', '1');
+        } catch (e) {
+          /* private mode */
+        }
+      });
+    } catch (e) {
+      /* never break the page over a hint */
+    }
+  })();
+</script>
+{%- endif -%}
