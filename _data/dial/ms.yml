@@ -48,7 +48,7 @@ hero:
   headline_lead: "Rekod dos GLP-1."
   headline_accent: ""
   category: "Dial ialah diari ubat GLP-1 peribadi untuk iPhone dan Apple Watch."
-  detail: "Rekod dos pada iPhone atau Apple Watch, lihat tahap anggaran daripada dos yang anda simpan, dan kekalkan rekod teras pada peranti atau dalam pangkalan data iCloud peribadi anda."
+  detail: "Rekod dos pada iPhone atau Apple Watch. Dial memaparkan tahap anggaran daripada entri itu. Rekod kekal pada peranti, atau dalam pangkalan data iCloud peribadi anda jika anda hidupkan pilihan itu."
   secondary_cta: "Cara Dial berfungsi"
   platforms_label: "Platform dan storan Dial"
   platforms:
@@ -62,29 +62,29 @@ proof:
   label: "Mengapa Dial"
   points:
     - "iPhone dan Apple Watch"
-    - "Tiada akaun, tiada analitik penggunaan"
+    - "Buka tanpa akaun Dial"
     - "Pilihan Lifetime"
     - "Tahap dimodelkan daripada dos anda"
 
 level:
   kicker: "Dial Pro · Tahap anggaran"
-  heading: "Gambaran lebih jelas tentang dos yang anda rekod."
-  body: "Dial melukis tahap ubat anggaran sepanjang masa daripada dos direkod dan separuh hayat yang ditunjukkan aplikasi. Tukar julat untuk meninjau seminggu, sebulan atau enam bulan sejarah anda sendiri."
-  boundary_lead: "Anggaran, dan kami mengatakannya."
-  boundary_body: "Carta memodelkan lengkung pereputan piawai daripada dos yang anda rekod. Ia menunjukkan corak anda sendiri antara dos. Bukan tahap darah diukur dan bukan cadangan apa yang perlu diambil seterusnya. Dial tidak mengira dos. Aplikasi menjelaskan kaedah sepenuhnya."
+  heading: "Carta berasaskan dos yang sudah anda rekod."
+  body: "Dial memaparkan tahap ubat anggaran mengikut garis masa, daripada dos yang direkod dan separuh hayat yang tertera dalam aplikasi. Tukar julat untuk melihat sejarah anda sendiri selama seminggu, sebulan atau enam bulan."
+  boundary_lead: "Ini anggaran. Kami nyatakan dengan jelas."
+  boundary_body: "Carta memodelkan lengkung penurunan piawai daripada dos yang anda rekod. Yang kelihatan ialah corak anda sendiri antara dos. Ini anggaran, bukan tahap darah yang diukur, dan bukan cadangan dos seterusnya. Dial tidak mengira dos. Aplikasi menjelaskan kaedahnya sepenuhnya."
 
 logging:
   kicker: "Rekod pantas"
-  heading: "Rekod dos dan segala yang bersamanya."
-  body: "Rekod ubat, jumlah, tarikh, masa, tapak suntikan dan nota dalam borang tertumpu. Nilai terkini mempercepatkan entri seterusnya, dan setiap medan kekal untuk anda sahkan. Dial berfungsi sama ada pemberi preskripsi memanggilnya Ozempic, Wegovy, Mounjaro atau Zepbound."
+  heading: "Ubat, jumlah, tapak dan nota dalam satu borang."
+  body: "Rekod ubat, jumlah, tarikh, masa, tapak suntikan dan nota. Nilai terkini mengisi entri seterusnya. Anda masih sahkan setiap medan. Dial berfungsi dengan Ozempic, Wegovy, Mounjaro dan Zepbound."
   checklist:
     - "Edit entri apabila sesuatu berubah"
-    - "Kekalkan tapak suntikan terikat pada setiap dos"
-    - "Kekalkan entri berat di sisi garis masa dos"
+    - "Simpan tapak suntikan pada setiap dos"
+    - "Simpan entri berat di sisi garis masa dos"
 
 history:
   kicker: "Dial Pro · Sejarah dan tren"
-  heading: "Tinjau corak merentas rekod."
+  heading: "Carta dos, berat dan kesan sampingan daripada entri anda."
   body: "Senarai dos, berat dan kesan sampingan kekal percuma. Dial Pro menambah carta dos dan berat penuh serta tren daripada entri kesan sampingan yang sudah ada dalam rekod."
   history_card_title: "Sejarah dos dan berat"
   history_card_note: "Tinjau perubahan dalam julat yang anda pilih."
@@ -93,15 +93,15 @@ history:
 
 report:
   kicker: "Dial Pro · Laporan PDF"
-  heading: "Bawa keseluruhan gambaran ke lawatan seterusnya."
-  body: "Hasilkan PDF dengan sejarah dos, perubahan jumlah direkod, tapak suntikan, tren berat dan corak kesan sampingan. Dial membina di peranti, dan anda kongsikan hanya apabila memutuskan, melalui AirDrop, e-mel atau cetakan."
-  closing: "Peribadi pada masa lain, dan berguna pada saat rekod perlu meninggalkan telefon."
+  heading: "PDF entri anda untuk lawatan klinik."
+  body: "Hasilkan PDF dengan sejarah dos, perubahan jumlah yang direkod, tapak suntikan, tren berat dan corak kesan sampingan. Dial hasilkannya pada peranti. Anda kongsikan hanya jika anda mahu, melalui AirDrop, e-mel atau cetakan."
+  closing: "Selebihnya kekal peribadi. Berguna apabila rekod perlu dibawa keluar dari telefon."
   smallprint: "Laporan merumuskan entri anda. Ia bukan rekod perubatan atau rancangan rawatan."
 
 watch:
   kicker: Apple Watch
   heading: "Rekod dos dari pergelangan."
-  body: "Aplikasi jam menunjukkan cincin kitaran yang mengira undur ke dos seterusnya dan bila peringatan seterusnya jatuh. Dial Pro menukar pandangan itu menjadi rekod penuh: tetapkan jumlah dengan Digital Crown, pilih tapak suntikan, dan sahkan. Entri disegerakkan ke iPhone dan kekal antara dua peranti anda."
+  body: "Aplikasi jam menunjukkan cincin kitaran yang mengira undur ke dos seterusnya, dan bila peringatan seterusnya muncul. Dial Pro merekod dari skrin itu. Tetapkan jumlah dengan Digital Crown, pilih tapak suntikan, lalu sahkan. Entri disegerakkan ke iPhone."
   checklist:
     - "Cincin kitaran, status dos dan peringatan seterusnya sepintas lalu (percuma)"
     - "Rekod dos dari pergelangan dengan Digital Crown (Dial Pro)"
@@ -109,20 +109,20 @@ watch:
     - "Pada iPhone, Pro membolehkan rekod satu ketikan dari Pusat Kawalan, butang tindakan, Siri atau Live Activity pada hari peringatan. Tindakan percuma membuka borang."
 
 supporting:
-  kicker: "Di sekitar rutin"
-  heading: "Butiran praktikal kekal dekat."
+  kicker: "Ikut jadual anda"
+  heading: "Stok, peringatan dan import ada dalam rekod yang sama."
   features:
-    - title: "Inventori bekalan"
+    - title: "Stok"
       body: "Jejaki pen atau vial dengan kepekatan, farmasi, tarikh luput dan nombor lot."
     - title: "Peringatan anda"
-      body: "Cipta pemberitahuan harian, mingguan atau setiap N hari sekitar jadual yang anda tetapkan. Pada hari dos, tindakan rekod ada pada pemberitahuan, dan Live Activity boleh kekal pada Skrin Kunci sehingga anda merekod."
-    - title: "Bawa sejarah"
-      body: "Buka eksport diari ubat yang serasi dengan Dial untuk mengimport entri sedia ada."
+      body: "Cipta pemberitahuan harian, mingguan atau setiap N hari mengikut jadual yang anda tetapkan. Pada hari dos, tindakan rekod ada pada pemberitahuan, dan Live Activity boleh kekal pada Skrin Kunci sehingga anda merekod."
+    - title: "Import entri sedia ada"
+      body: "Buka fail eksport diari ubat yang serasi dengan Dial untuk import entri sedia ada."
 
 plans:
   kicker: "Percuma dan Dial Pro"
   heading: "Gunakan diari teras secara percuma."
-  body: "Beralih ke Pro apabila anda mahu graf lebih terperinci, eksport atau rekod lebih pantas pada peranti Apple. Setiap pelan Dial Pro merangkumi ciri yang sama."
+  body: "Naik taraf untuk carta tahap anggaran, eksport atau rekod satu ketikan pada Apple Watch dan iPhone. Setiap pelan Dial Pro merangkumi ciri yang sama."
   free_name: "Percuma"
   free_summary: "Rekod lengkap untuk satu ubat aktif."
   free_features:
@@ -131,7 +131,7 @@ plans:
     - "Senarai dos dan berat, inventori, import dan tinjauan Apple Watch"
     - "Widget kira undur dan peringatan yang membuka borang"
   pro_name: Dial Pro
-  pro_summary: "Tahap anggaran, carta penuh, eksport dan rekod pantas."
+  pro_summary: "Tahap anggaran, carta penuh, eksport dan rekod satu ketikan."
   pro_features:
     - "Carta tahap anggaran dan widget Skrin Utama"
     - "Carta dos dan berat penuh, tren kesan sampingan dan perbandingan foto"
@@ -147,7 +147,7 @@ plans:
 
 privacy:
   kicker: "Privasi"
-  heading: "Jelas apa yang kekal pada peranti anda."
+  heading: "Rekod kekal pada peranti anda."
   specs:
     - term: "Akaun"
       detail: "Tiada akaun Dial. Buka aplikasi dan mula merekod."
@@ -165,4 +165,3 @@ availability:
   kicker: "Muat turun Dial"
   heading: "Kini di App Store."
   body: "Dial percuma untuk dimuat turun. Diari teras berfungsi dari rekod pertama. Dial Pro menambah carta tahap anggaran, carta penuh, eksport PDF dan rekod pantas dari Apple Watch dan iPhone."
-

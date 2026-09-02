@@ -62,8 +62,9 @@ hero:
   headline_accent: ""
   category: Dial is a private GLP-1 medication tracker for iPhone and Apple Watch.
   detail:
-    Log doses on iPhone or Apple Watch, see an estimated level built from the doses
-    you record, and keep core records on your device or in your private iCloud database.
+    Log a dose on iPhone or Apple Watch. Dial plots an estimated level from those
+    entries. Core records stay on the device, or in your private iCloud database if you
+    turn that on.
   secondary_cta: See how Dial works
   platforms_label: Dial platforms and storage
   platforms:
@@ -80,13 +81,13 @@ proof:
   label: Why Dial
   points:
     - iPhone and Apple Watch
-    - No accounts, no analytics
+    - Opens without a Dial account
     - Lifetime option
     - Modeled level from your doses
 
 level:
   kicker: Dial Pro · Estimated level
-  heading: A clearer view of the doses you logged.
+  heading: The chart uses the doses you already logged.
   body:
     Dial plots an estimated medication level over time from your recorded doses and
     the half-life value shown in the app. Change the range to review a week, month, or
@@ -100,12 +101,11 @@ level:
 
 logging:
   kicker: Quick logging
-  heading: Log the dose and everything with it.
+  heading: Medication, amount, site, and notes in one form.
   body:
-    Record medication, amount, date, time, injection site, and notes in a focused
-    form. Your recent values make the next entry faster, while every field remains yours
-    to confirm. Dial works with Ozempic, Wegovy, Mounjaro,
-    and Zepbound.
+    Record medication, amount, date, time, injection site, and notes. Recent values
+    fill the next entry. You still confirm every field. Dial works with Ozempic, Wegovy,
+    Mounjaro, and Zepbound.
   checklist:
     - Edit an entry when something changes
     - Keep injection sites attached to each dose
@@ -113,7 +113,7 @@ logging:
 
 history:
   kicker: Dial Pro · History and trends
-  heading: Review the pattern across your record.
+  heading: Dose, weight, and side-effect charts from your entries.
   body:
     Dose, weight, and side-effect lists stay free. Dial Pro adds full dose and weight
     charts plus trends from the side-effect entries already in your record.
@@ -124,7 +124,7 @@ history:
 
 report:
   kicker: Dial Pro · PDF report
-  heading: Bring the whole picture to your next visit.
+  heading: A PDF of your entries for a clinic visit.
   body:
     Generate a PDF with your dose history, changes in recorded amount, injection sites,
     weight trend, and side-effect patterns. Dial builds it on your device, and you share
@@ -138,10 +138,9 @@ watch:
   kicker: Apple Watch
   heading: Log the dose from your wrist.
   body: >-
-    The watch app shows a cycle ring counting down to your next dose and when the next
-    reminder lands. Dial Pro turns that glance into a full log: set the amount with the
-    Digital Crown, choose an injection site, and confirm. The entry syncs to your iPhone
-    and stays between your two devices.
+    The watch app shows a cycle ring counting down to your next dose, and when the next
+    reminder fires. Dial Pro logs from that screen. Set the amount with the Digital Crown,
+    pick an injection site, and confirm. The entry syncs to your iPhone.
   checklist:
     - Cycle ring, dose status, and next reminder at a glance (free)
     - Log a dose from the wrist with the Digital Crown (Dial Pro)
@@ -152,7 +151,7 @@ watch:
 
 supporting:
   kicker: Around the routine
-  heading: The practical details stay close.
+  heading: Inventory, reminders, and imports sit in the same record.
   features:
     - title: Supply inventory
       body: Track pens or vials with concentration, pharmacy, expiration date, and lot number.
@@ -161,15 +160,15 @@ supporting:
         Create daily, weekly, or every-N-days notifications around the schedule you
         set. On dose day, a Log dose action sits on the notification, and a Live Activity
         can stay on the Lock Screen until you log.
-    - title: Bring your history
+    - title: Import existing entries
       body: Open a compatible medication-tracker export with Dial to import existing entries.
 
 plans:
   kicker: Free and Dial Pro
   heading: Use the core tracker for free.
   body:
-    Upgrade when you want deeper analysis, exports, or faster logging across Apple
-    devices. Every Dial Pro plan includes the same features.
+    Upgrade for the estimated-level chart, exports, or one-tap logging on Apple Watch
+    and iPhone. Every Dial Pro plan includes the same features.
   free_name: Free
   free_summary: A complete record for one active medication.
   free_features:
@@ -194,7 +193,7 @@ plans:
 
 privacy:
   kicker: Privacy
-  heading: Clear about what stays on your device.
+  heading: Records stay on your device.
   specs:
     - term: Accounts
       detail: There is no Dial account. Open the app and start logging.

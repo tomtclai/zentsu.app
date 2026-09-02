@@ -6,12 +6,12 @@ images:
     base: dial-web-today-zh
     width: 1290
     height: 2160
-    alt: "Dial 的今天页，显示下次提醒、估计药量水平和记录剂量按钮"
+    alt: "Dial 的今天这一屏，显示下次提醒、估计水平和记录剂量按钮"
   level:
     base: dial-web-level-zh
     width: 1290
     height: 1620
-    alt: "Dial 估计水平屏幕，根据已记录剂量绘制时间图表"
+    alt: "Dial 的估计水平屏幕，按已记下的剂量画出随时间变化的图"
   log_dose:
     base: dial-web-log-dose-zh
     width: 1290
@@ -31,7 +31,7 @@ images:
     base: dial-web-report-zh
     width: 1836
     height: 2376
-    alt: "Dial Pro PDF 报告的一页，向医生汇总剂量历史、体重随时间和副作用"
+    alt: "Dial Pro PDF 报告的一页，向医生汇总剂量历史、体重变化和副作用"
   watch_glance:
     base: dial-web-watch-glance-zh
     width: 792
@@ -48,7 +48,7 @@ hero:
   headline_lead: "记下每次剂量。"
   headline_accent: ""
   category: "Dial 是面向 iPhone 和 Apple Watch 的私人 GLP-1 用药日记。"
-  detail: "在 iPhone 或 Apple Watch 上记录剂量，查看根据您所记剂量绘出的估计水平。核心记录留在设备上，或留在您的私人 iCloud 数据库中。"
+  detail: "在 iPhone 或 Apple Watch 上记剂量。估计水平按你记下的剂量来画。用药记录留在设备上，或留在你自己的私人 iCloud。"
   secondary_cta: "Dial 怎么用"
   platforms_label: "Dial 支持的设备和存储方式"
   platforms:
@@ -56,78 +56,78 @@ hero:
     - Apple Watch
     - "Siri、控制中心和锁定屏幕"
     - "可选的私人 iCloud 存储"
-  legal: "核心日记免费。Dial Pro 增加图表、导出、多种药物和提醒，以及在 Apple 设备上一键记录。Dial 是个人记录。它不计算剂量，也不能替代医生的指导。"
+  legal: "核心日记免费。Dial Pro 增加图表、导出、多种药物和提醒，以及在 Apple 设备上一键记录。Dial 是个人记录。不计算剂量，也不能替代医生的指导。"
 
 proof:
   label: "关于 Dial"
   points:
     - "iPhone 和 Apple Watch"
-    - "打开即可记录，不做使用分析"
+    - "不用 Dial 账号就能打开"
     - "可一次买断"
-    - "按您记录的剂量估算的水平"
+    - "按你记下的剂量估算水平"
 
 level:
   kicker: "Dial Pro · 估计水平"
-  heading: "把您记录过的剂量看清楚。"
-  body: "Dial 根据您记录的剂量和应用中显示的半衰期，按时间绘出估计药量水平。切换范围，即可按一周、一个月或六个月查看自己的记录。"
+  heading: "图按你已经记下的剂量来画。"
+  body: "Dial 根据你记下的剂量和应用里写明的半衰期，随时间画出估计水平。切换时段，就能按一周、一个月或六个月查看自己的记录。"
   boundary_lead: "这是估计，不是实测。"
-  boundary_body: "图是按您记录的剂量画出的标准衰减曲线，用来看各次剂量之间您自己的变化。它不是测得的血药浓度，也不是下一步该用什么的建议。Dial 不计算剂量。方法在应用里写明。"
+  boundary_body: "图是按你记录的剂量画出的标准衰减曲线，用来看各次剂量之间你自己的变化。它不是测得的血药浓度，也不是下一步该用什么的建议。Dial 不计算剂量。方法在应用里写明。"
 
 logging:
   kicker: "快速记录"
-  heading: "记下剂量，以及当时相关的信息。"
-  body: "在记录表单中填写药物、剂量、日期、时间、注射部位和备注。最近的值会加快下一次录入，每个字段仍需您确认。无论医生称为 Ozempic、Wegovy、Mounjaro 还是 Zepbound，Dial 都能用。"
+  heading: "药物、剂量、注射部位和备注。"
+  body: "填写药物、剂量、日期、时间、注射部位和备注。上次填的会带到下一笔。每栏都还要你确认。Ozempic、Wegovy、Mounjaro、Zepbound，Dial 都能用。"
   checklist:
-    - "有变化时编辑条目"
+    - "有变化时改那一笔"
     - "每次剂量都记下注射部位"
     - "体重记录放在剂量记录旁边"
 
 history:
   kicker: "Dial Pro · 历史与趋势"
-  heading: "查看整份记录里的变化。"
-  body: "剂量、体重和副作用列表仍免费。Dial Pro 增加完整的剂量和体重图表，以及已在记录中的副作用条目趋势。"
+  heading: "剂量、体重和副作用图表。"
+  body: "剂量、体重和副作用列表仍免费。Dial Pro 增加完整的剂量和体重图表，以及已记下的副作用趋势。"
   history_card_title: "剂量与体重历史"
-  history_card_note: "查看您所选范围内的变化。"
+  history_card_note: "查看你所选时段内的变化。"
   side_effects_card_title: "副作用趋势"
   side_effects_card_note: "从现有或导入的历史查看频率和严重程度。"
 
 report:
   kicker: "Dial Pro · PDF 报告"
-  heading: "下次就诊时带上完整记录。"
-  body: "生成含剂量历史、记录剂量变化、注射部位、体重趋势和副作用模式的 PDF。Dial 在设备上生成，仅在您决定时通过 AirDrop、邮件或打印分享。"
-  closing: "平时留在手机里。只有您决定把记录带出去时，才用得上。"
-  smallprint: "报告汇总您的条目。它不是病历，也不是治疗计划。"
+  heading: "给门诊看的 PDF。"
+  body: "生成含剂量历史、记下的剂量变化、注射部位、体重趋势和副作用走势的 PDF。Dial 在设备上生成。只有你决定分享时，才通过 AirDrop、邮件或打印发出去。"
+  closing: "平时留在手机里。只有你决定把记录带出去时，才用得上。"
+  smallprint: "报告只汇总你记下的内容。不是病历，也不是治疗计划。"
 
 watch:
   kicker: Apple Watch
   heading: "从手腕记录剂量。"
-  body: "手表应用显示倒数到下次剂量的周期环，以及下次提醒何时到来。Dial Pro 把这一眼看到的内容变成完整记录：用数码表冠设定剂量，选择注射部位，确认。记录同步到 iPhone，留在您的两台设备上。"
+  body: "手表应用用周期环倒数到下次剂量，并显示下次提醒何时到。Dial Pro 就在这个画面上记录。用 Digital Crown 调剂量，选注射部位，确认。记录会同步到 iPhone。"
   checklist:
     - "一眼看到周期环、剂量状态和下次提醒（免费）"
-    - "用数码表冠从手腕记录剂量（Dial Pro）"
+    - "用 Digital Crown 从手腕记录剂量（Dial Pro）"
     - "表盘上的估计水平和下次剂量小组件，以及智能叠放快速记录（Dial Pro）"
-    - "在 iPhone 上，Pro 可从控制中心、操作按钮、Siri 或提醒日的实时活动一键记录。免费操作打开记录表单。"
+    - "在 iPhone 上，Pro 可从控制中心、操作按钮、Siri 或提醒日的 Live Activity 一键记录。免费版点进去会打开记录表单。"
 
 supporting:
   kicker: "记录之外"
-  heading: "库存和提醒就在手边。"
+  heading: "库存、提醒和导入。"
   features:
     - title: "库存"
       body: "记录笔或西林瓶的浓度、药房、有效期和批号。"
-    - title: "您的提醒"
-      body: "按您设定的计划创建每日、每周或每 N 天通知。剂量日通知上有记录操作，实时活动可留在锁定屏幕直到您记录。"
+    - title: "你的提醒"
+      body: "按你设定的计划创建每日、每周或每 N 天通知。剂量日通知上可以直接记录，Live Activity 可留在锁定屏幕直到你记完。"
     - title: "导入已有记录"
-      body: "用 Dial 打开兼容的用药日记导出文件，导入已有条目。"
+      body: "用 Dial 打开兼容的用药日记导出文件，导入已有记录。"
 
 plans:
   kicker: "免费与 Dial Pro"
   heading: "免费使用核心日记。"
-  body: "需要更细的图表、导出或在 Apple 设备上更快记录时再升级到 Pro。每个 Dial Pro 方案包含相同功能。"
+  body: "需要估计水平图、导出，或在 Apple Watch 和 iPhone 上一键记录时，再升级到 Pro。每个 Dial Pro 方案功能相同。"
   free_name: "免费"
-  free_summary: "一种在用药物的完整记录。"
+  free_summary: "一种正在使用的药物的完整记录。"
   free_features:
     - "记录剂量、注射部位、体重、副作用和进展照片"
-    - "一种在用药物和一条提醒"
+    - "一种正在使用的药物和一条提醒"
     - "剂量和体重列表、库存、导入和 Apple Watch 一览"
     - "倒计时小组件和打开记录表单的提醒"
   pro_name: Dial Pro
@@ -147,17 +147,17 @@ plans:
 
 privacy:
   kicker: "隐私"
-  heading: "哪些留在设备上，写清楚。"
+  heading: "记录留在设备上。"
   specs:
     - term: "账户"
       detail: "没有 Dial 账户。打开应用即可开始记录。"
     - term: "使用分析"
-      detail: "Dial 不运行使用分析或遥测。我们不测量您如何使用它。"
+      detail: "Dial 不做使用分析，也不会统计你怎么用。"
     - term: "我们的服务器"
-      detail: "Zentsu 不运营存储或读取您记录的服务器。"
+      detail: "Zentsu 没有用来存或读你记录的服务器。"
     - term: "可选同步"
-      detail: "在应用中打开 Sync with iCloud 后，记录通过您自己 Apple 账户上的私人 CloudKit 数据库同步，不会到我们这边。"
-  body: "药物、剂量、提醒和库存记录留在设备上。体重条目使用单独的本地存储，健康访问可选，仅在您授权时涵盖体重。"
+      detail: "在应用中打开「与 iCloud 同步」后，记录会走你自己 Apple 账户上的私人 CloudKit 数据库，不会到我们这边。"
+  body: "药物、剂量、提醒和库存记录留在设备上。体重记在单独的本地存储里。健康访问可选，授权后只同步体重。"
   policy_link: "阅读 Dial 隐私政策"
   policy_url: /zh/dial/privacy/
 

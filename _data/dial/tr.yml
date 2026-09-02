@@ -31,7 +31,7 @@ images:
     base: dial-web-report-tr
     width: 1836
     height: 2376
-    alt: "Hekiminize doz geçmişi, zaman içinde kilo ve yan etkileri özetleyen Dial Pro PDF raporu sayfası"
+    alt: "Doz geçmişini, zaman içindeki kiloyu ve yan etkileri hekiminiz için özetleyen Dial Pro PDF raporu sayfası"
   watch_glance:
     base: dial-web-watch-glance-tr
     width: 792
@@ -45,47 +45,47 @@ images:
 
 hero:
   availability: "Şimdi App Store'da"
-  headline_lead: "GLP-1 dozlarınız yazılı."
+  headline_lead: "GLP-1 dozlarınız kayıtta."
   headline_accent: ""
   category: "Dial, iPhone ve Apple Watch için özel bir GLP-1 ilaç günlüğüdür."
-  detail: "iPhone veya Apple Watch'ta doz kaydedin, tuttuğunuz dozlardan oluşan tahmini düzeyi görün ve temel kayıtları cihazda veya özel iCloud veritabanınızda tutun."
+  detail: "iPhone veya Apple Watch'ta doz kaydedin. Dial, kaydettiğiniz dozlardan tahmini düzeyi çizer. Kayıtlar cihazda kalır. iCloud'u açarsanız özel iCloud veritabanınızda da durur."
   secondary_cta: "Dial nasıl çalışır"
   platforms_label: "Dial platformları ve depolama"
   platforms:
     - iPhone
     - Apple Watch
-    - "Siri, Denetim Merkezi ve kilit ekranı"
+    - "Siri, Denetim Merkezi ve Kilit Ekranı"
     - "İsteğe bağlı özel iCloud depolama"
-  legal: "Temel günlük ücretsizdir. Dial Pro grafik, dışa aktarma, ek ilaç ve anımsatıcı ile Apple aygıtlarında tek dokunuşla kaydı ekler. Dial kişisel bir kayıttır. Doz hesaplamaz ve hekiminizin yönlendirmesinin yerini almaz."
+  legal: "Temel günlük ücretsizdir. Dial Pro grafik, dışa aktarma, birden fazla ilaç, anımsatıcı ve Apple cihazlarında tek dokunuşla kayıt ekler. Dial kişisel bir kayıttır. Doz hesaplamaz ve hekiminizin yönlendirmesinin yerini almaz."
 
 proof:
   label: "Neden Dial"
   points:
     - "iPhone ve Apple Watch"
-    - "Hesap yok, kullanım analizi yok"
+    - "Dial hesabı olmadan açılır"
     - "Lifetime seçeneği"
-    - "Dozlarınızdan modellenen düzey"
+    - "Dozlarınızdan tahmini düzey"
 
 level:
   kicker: "Dial Pro · Tahmini düzey"
-  heading: "Kaydettiğiniz dozların daha net görünümü."
-  body: "Dial, kaydedilen dozlardan ve uygulamada gösterilen yarı ömürden zaman içinde tahmini bir ilaç düzeyi çizer. Kendi geçmişinizin bir haftasını, bir ayını veya altı ayını incelemek için aralığı değiştirin."
-  boundary_lead: "Bir tahmin, ve bunu söylüyoruz."
-  boundary_body: "Grafik, kaydettiğiniz dozlardan standart bir azalma eğrisi modeller. Dozlar arasındaki kendi örüntülerinizi gösterir. Ölçülmüş bir kan düzeyi değildir ve sonra ne alınacağına dair bir öneri değildir. Dial doz hesaplamaz. Uygulama yöntemi tam açıklar."
+  heading: "Grafik, kaydettiğiniz dozları kullanır."
+  body: "Dial, kaydettiğiniz dozlardan ve uygulamada gösterilen yarı ömürden zaman içinde tahmini bir ilaç düzeyi çizer. Aralığı değiştirerek kendi geçmişinizin bir haftasını, bir ayını veya altı ayını incelersiniz."
+  boundary_lead: "Bu bir tahmin. Bunu açıkça söylüyoruz."
+  boundary_body: "Grafik, kaydettiğiniz dozlardan standart bir azalma eğrisi çizer. Dozlar arasındaki kendi örüntülerinizi gösterir. Ölçülmüş bir kan düzeyi değildir. Sonra ne alınacağına dair bir öneri de değildir. Dial doz hesaplamaz. Uygulama yöntemi baştan sona açıklar."
 
 logging:
   kicker: "Hızlı kayıt"
-  heading: "Dozu ve onunla gelen her şeyi kaydedin."
-  body: "Odaklı bir formda ilaç, miktar, tarih, saat, enjeksiyon yeri ve notları yazın. Son değerler sonraki girdiyi hızlandırır ve her alan sizin onayınıza kalır. Dial, hekiminiz Ozempic, Wegovy, Mounjaro veya Zepbound desin çalışır."
+  heading: "İlaç, miktar, yer ve not alanları tek formda."
+  body: "İlaç, miktar, tarih, saat, enjeksiyon yeri ve notları yazın. Son değerler bir sonraki kaydı doldurur. Her alanı siz onaylarsınız. Dial, Ozempic, Wegovy, Mounjaro ve Zepbound ile çalışır."
   checklist:
-    - "Bir şey değişince girdiyi düzenleyin"
-    - "Enjeksiyon yerlerini her doza bağlı tutun"
-    - "Kilo girdilerini doz zaman çizelgesinin yanında tutun"
+    - "Bir şey değişince kaydı düzenleyin"
+    - "Her dozun enjeksiyon yerini kaydedin"
+    - "Kilo kayıtlarını doz geçmişinin yanında tutun"
 
 history:
   kicker: "Dial Pro · Geçmiş ve eğilimler"
-  heading: "Kaydın tamamındaki örüntüyü inceleyin."
-  body: "Doz, kilo ve yan etki listeleri ücretsiz kalır. Dial Pro tam doz ve kilo grafikleri ile zaten kayıttaki yan etki girdilerinden eğilimler ekler."
+  heading: "Doz, kilo ve yan etki grafikleri kayıtlardan gelir."
+  body: "Doz, kilo ve yan etki listeleri ücretsiz kalır. Dial Pro tam doz ve kilo grafikleri ekler. Yan etki eğilimleri, zaten kayıttaki yan etki kayıtlarından çıkar."
   history_card_title: "Doz ve kilo geçmişi"
   history_card_note: "Seçtiğiniz aralıktaki değişiklikleri inceleyin."
   side_effects_card_title: "Yan etki eğilimleri"
@@ -93,36 +93,36 @@ history:
 
 report:
   kicker: "Dial Pro · PDF raporu"
-  heading: "Sonraki ziyarete tüm resmi götürün."
-  body: "Doz geçmişi, kaydedilen miktardaki değişiklikler, enjeksiyon yerleri, kilo eğilimi ve yan etki örüntüleriyle bir PDF oluşturun. Dial bunu cihazda kurar ve AirDrop, e-posta veya yazdırma ile yalnızca siz karar verince paylaşırsınız."
-  closing: "Geri kalan zamanda özel, kaydın telefondan çıkması gereken anda işe yarar."
-  smallprint: "Rapor girdilerinizi özetler. Tıbbi kayıt veya tedavi planı değildir."
+  heading: "Muayene için kayıtlarınızın PDF'i."
+  body: "Doz geçmişi, kaydedilen miktardaki değişiklikler, enjeksiyon yerleri, kilo eğilimi ve yan etki örüntüleriyle bir PDF oluşturun. Dial bunu cihazda oluşturur. Paylaşmaya yalnızca siz karar verince AirDrop, e-posta veya yazıcıyı kullanırsınız."
+  closing: "Başka zamanlarda özel kalır. Kaydı telefondan çıkarmanız gerektiğinde işe yarar."
+  smallprint: "Rapor kayıtlarınızı özetler. Tıbbi kayıt veya tedavi planı değildir."
 
 watch:
   kicker: Apple Watch
   heading: "Dozu bilekten kaydedin."
-  body: "Saat uygulaması sonraki doza geri sayan bir döngü halkası ve sonraki anımsatıcının ne zaman düşeceğini gösterir. Dial Pro o bakışı tam kayda çevirir: Digital Crown ile miktarı ayarlayın, enjeksiyon yeri seçin, onaylayın. Girdi iPhone'a senkronize olur ve iki aygıtınız arasında kalır."
+  body: "Saat uygulaması sonraki doza geri sayan bir döngü halkası ve sonraki anımsatıcının ne zaman geleceğini gösterir. Dial Pro o ekrandan kaydeder. Digital Crown ile miktarı ayarlayın, enjeksiyon yeri seçin, onaylayın. Kayıt iPhone'a gelir."
   checklist:
     - "Döngü halkası, doz durumu ve sonraki anımsatıcı bir bakışta (ücretsiz)"
     - "Digital Crown ile bilekten doz kaydı (Dial Pro)"
     - "Saat yüzünde tahmini düzey ve sonraki doz widget'ları, Smart Stack'te hızlı kayıt (Dial Pro)"
-    - "iPhone'da Pro, Denetim Merkezi, eylem düğmesi, Siri veya anımsatıcı günü Live Activity'den tek dokunuşla kaydı açar. Ücretsiz eylemler formu açar."
+    - "iPhone'da Dial Pro; Denetim Merkezi, eylem düğmesi, Siri veya anımsatıcı günü Live Activity'den tek dokunuşla kaydı açar. Ücretsiz eylemler formu açar."
 
 supporting:
-  kicker: "Rutinin çevresinde"
-  heading: "Pratik ayrıntılar yakın durur."
+  kicker: "Rutinin yanında"
+  heading: "Stok, anımsatıcılar ve içe aktarma aynı kayıtta durur."
   features:
     - title: "Stok"
       body: "Kalem veya flakonları konsantrasyon, eczane, son kullanma tarihi ve parti numarasıyla izleyin."
     - title: "Anımsatıcılarınız"
-      body: "Koyduğunuz programın çevresinde günlük, haftalık veya her N günde bir bildirimler oluşturun. Doz gününde bildirimde kaydetme eylemi vardır ve Live Activity siz kaydedene dek kilit ekranında kalabilir."
-    - title: "Geçmişi getirin"
-      body: "Mevcut girdileri içe aktarmak için Dial ile uyumlu bir ilaç günlüğü dışa aktarmasını açın."
+      body: "Koyduğunuz programa göre günlük, haftalık veya her N günde bir bildirimler oluşturun. Doz günü bildiriminde kaydetme eylemi vardır ve Live Activity siz kaydedene dek Kilit Ekranı'nda kalabilir."
+    - title: "Mevcut kayıtları içe aktarın"
+      body: "Mevcut kayıtları aktarmak için Dial ile uyumlu bir ilaç günlüğü dışa aktarımını açın."
 
 plans:
   kicker: "Ücretsiz ve Dial Pro"
   heading: "Temel günlüğü ücretsiz kullanın."
-  body: "Daha ayrıntılı grafikler, dışa aktarma veya Apple aygıtlarında daha hızlı kayıt istediğinizde Pro'ya geçin. Her Dial Pro planı aynı özellikleri içerir."
+  body: "Tahmini düzey grafiği, dışa aktarma ve Apple Watch ile iPhone'da tek dokunuşla kayıt için Pro'ya geçin. Her Dial Pro planı aynı özellikleri içerir."
   free_name: "Ücretsiz"
   free_summary: "Tek aktif ilaç için tam kayıt."
   free_features:
@@ -136,7 +136,7 @@ plans:
     - "Tahmini düzey grafiği ve Ana Ekran widget'ı"
     - "Tam doz ve kilo grafikleri, yan etki eğilimleri ve fotoğraf karşılaştırması"
     - "PDF raporu, CSV dışa aktarma, birden fazla ilaç ve anımsatıcı"
-    - "Apple Watch'ta hızlı kayıt ve komplikasyonlar, iPhone'da tek dokunuşla kayıt"
+    - "Apple Watch'ta hızlı kayıt ve Complications, iPhone'da tek dokunuşla kayıt"
   options_label: "Dial Pro plan seçenekleri"
   lifetime_name: "Lifetime"
   lifetime_terms: "bir kez"
@@ -147,12 +147,12 @@ plans:
 
 privacy:
   kicker: "Gizlilik"
-  heading: "Cihazda neyin kaldığı açık."
+  heading: "Kayıtlar cihazda kalır."
   specs:
     - term: "Hesaplar"
       detail: "Dial hesabı yoktur. Uygulamayı açın ve kaydetmeye başlayın."
     - term: "Kullanım analizi"
-      detail: "Dial kullanım analizi veya telemetri çalıştırmaz. Nasıl kullandığınızı ölçmeyiz."
+      detail: "Dial kullanım analizi veya telemetri toplamaz. Nasıl kullandığınızı ölçmeyiz."
     - term: "Sunucularımız"
       detail: "Zentsu kayıtlarınızı saklayan veya okuyan bir sunucu işletmez."
     - term: "İsteğe bağlı senkronizasyon"
@@ -165,4 +165,3 @@ availability:
   kicker: "Dial'i indirin"
   heading: "Şimdi App Store'da."
   body: "Dial indirmesi ücretsizdir. Temel günlük ilk kayıttan çalışır. Dial Pro tahmini düzey grafiği, tam grafikler, PDF dışa aktarma ve Apple Watch ile iPhone'dan hızlı kayıt ekler."
-

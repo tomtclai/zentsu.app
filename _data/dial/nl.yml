@@ -16,7 +16,7 @@ images:
     base: dial-web-level-nl
     width: 1290
     height: 1620
-    alt: Dial-scherm voor het geschatte niveau, met een tijdlijn van de doses die u vastlegde
+    alt: Dial-scherm voor de geschatte spiegel, met een tijdlijn van de doses die u vastlegde
   log_dose:
     base: dial-web-log-dose-nl
     width: 1290
@@ -26,7 +26,7 @@ images:
     base: dial-web-history-nl
     width: 1290
     height: 2640
-    alt: Dial-historie met dosis- en gewichtsdiagrammen in de tijd
+    alt: Dial-historie met dosis- en gewichtsgrafieken in de tijd
   side_effects:
     base: dial-web-side-effects-nl
     width: 1290
@@ -39,7 +39,7 @@ images:
     width: 1836
     height: 2376
     alt:
-      Een pagina van het Dial Pro-pdf-verslag met dosishistorie, gewicht in de tijd
+      Een pagina van het Dial Pro-PDF-verslag met dosishistorie, gewicht in de tijd
       en bijwerkingen voor uw voorschrijver
   watch_glance:
     base: dial-web-watch-glance-nl
@@ -62,8 +62,8 @@ hero:
   headline_accent: ""
   category: Dial is een privé GLP-1-medicijndagboek voor iPhone en Apple Watch.
   detail:
-    Leg doses vast op iPhone of Apple Watch, zie een geschat niveau op basis van de doses
-    die u vastlegt, en houd de kerngegevens op het apparaat of in uw privé-iCloud-database.
+    Leg een dosis vast op iPhone of Apple Watch. De geschatte spiegel is gebaseerd op die invoer.
+    De gegevens blijven op het apparaat of in uw privé-iCloud.
   secondary_cta: Zo werkt Dial
   platforms_label: Dial-platforms en opslag
   platforms:
@@ -72,7 +72,7 @@ hero:
     - Siri, Bedieningspaneel en toegangsscherm
     - Optionele privé-iCloud-opslag
   legal:
-    Het kerndagboek is gratis. Dial Pro voegt grafieken, export, meerdere medicijnen en
+    Het dagboek zelf is gratis. Dial Pro voegt grafieken, export, meerdere medicijnen en
     herinneringen toe, plus vastleggen met één tik op Apple-apparaten. Dial is een
     persoonlijk logboek. Het berekent geen doses en vervangt geen aanwijzingen van uw
     voorschrijver.
@@ -81,18 +81,18 @@ proof:
   label: Waarom Dial
   points:
     - iPhone en Apple Watch
-    - Geen accounts, geen analyses
+    - Opent zonder Dial-account
     - Lifetime-optie
-    - Gemodelleerde spiegel uit uw doses
+    - Geschatte spiegel uit uw doses
 
 level:
   kicker: Dial Pro · Geschatte spiegel
-  heading: Een duidelijker beeld van de doses die u vastlegde.
+  heading: De grafiek gebruikt de doses die u al vastlegde.
   body:
-    Dial maakt een geschatte medicijnspiegel in de tijd op basis van de doses die u vastlegde
+    Dial toont een geschatte spiegel in de tijd op basis van de doses die u vastlegde
     en de halfwaardetijd in de app. Wijzig het bereik om een week, maand of zes maanden
     van uw eigen historie te bekijken.
-  boundary_lead: Een schatting, en dat zeggen we.
+  boundary_lead: Het blijft een schatting.
   boundary_body:
     De grafiek modelleert een standaard afnamecurve uit de doses die u vastlegde.
     U ziet uw eigen patronen tussen doses. Het is een schatting, geen vervanging van een gemeten bloedspiegel en geen suggestie van wat u daarna moet nemen. Dial berekent geen doses.
@@ -100,22 +100,22 @@ level:
 
 logging:
   kicker: Snel vastleggen
-  heading: Leg de dosis vast en alles wat erbij hoort.
+  heading: Medicijn, hoeveelheid, injectieplaats en notities.
   body:
-    Noteer medicijn, hoeveelheid, datum, tijd, injectieplaats en notities in een gericht
-    formulier. Uw recente waarden maken de volgende invoer sneller, en u bevestigt elk veld zelf. Dial werkt ongeacht of uw voorschrijver het Ozempic, Wegovy, Mounjaro
-    of Zepbound noemt.
+    Noteer medicijn, hoeveelheid, datum, tijd, injectieplaats en notities. Recente waarden
+    vullen de volgende invoer. U bevestigt elk veld. Dial werkt met Ozempic, Wegovy, Mounjaro
+    en Zepbound.
   checklist:
     - Een invoer bewerken als iets verandert
-    - Prikplekken koppelen aan elke dosis
-    - Gewichten naast de dosistijdlijn zetten
+    - Injectieplaatsen koppelen aan elke dosis
+    - Gewicht naast de dosistijdlijn zetten
 
 history:
   kicker: Dial Pro · Historie en trends
-  heading: Bekijk het verloop over uw hele logboek.
+  heading: Grafieken van dosis, gewicht en bijwerkingen.
   body:
     Lijsten van dosis, gewicht en bijwerkingen blijven gratis. Dial Pro voegt volledige
-    dosis- en gewichtsdiagrammen toe, plus trends uit de bijwerkingen die al in uw
+    dosis- en gewichtsgrafieken toe, plus trends uit de bijwerkingen die al in uw
     logboek staan.
   history_card_title: Dosis- en gewichtshistorie
   history_card_note: Wijzigingen bekijken in het bereik dat u kiest.
@@ -124,13 +124,13 @@ history:
 
 report:
   kicker: Dial Pro · PDF-verslag
-  heading: Het hele beeld meenemen naar uw volgende bezoek.
+  heading: Een PDF voor het spreekuur.
   body:
-    Maak een pdf met dosishistorie, wijzigingen in de vastgelegde hoeveelheid,
+    Maak een PDF met dosishistorie, wijzigingen in de vastgelegde hoeveelheid,
     injectieplaatsen, gewichtstrend en bijwerkingspatronen. Dial maakt het op uw apparaat,
     en u deelt het alleen als u dat wilt, via AirDrop, e-mail of afdrukken.
   closing:
-    Privé de rest van de tijd, en nuttig op het moment dat uw logboek de telefoon moet
+    De rest van de tijd blijft het privé. U deelt het alleen als het logboek de telefoon moet
     verlaten.
   smallprint: Het verslag vat uw invoer samen. Het is geen medisch dossier en geen behandelplan.
 
@@ -138,51 +138,51 @@ watch:
   kicker: Apple Watch
   heading: De dosis vanaf de pols vastleggen.
   body: >-
-    De Watch-app toont een cyclusring die aftelt tot de volgende dosis en wanneer de
-    volgende herinnering valt. Dial Pro maakt van die blik een volledig logboek: stel
-    de hoeveelheid in met de Digital Crown, kies een injectieplaats, bevestig. De invoer
-    synchroniseert met de iPhone en blijft op iPhone en Apple Watch staan.
+    De Watch-app toont een cyclusring die aftelt tot de volgende dosis, en wanneer de
+    volgende herinnering valt. Met Dial Pro legt u op dat scherm vast. Stel de hoeveelheid in
+    met de Digital Crown, kies een injectieplaats en bevestig. De invoer synchroniseert
+    met de iPhone.
   checklist:
     - Cyclusring, dosisstatus en volgende herinnering in één oogopslag (gratis)
     - Een dosis vanaf de pols vastleggen met de Digital Crown (Dial Pro)
     - Widgets voor geschatte spiegel en volgende dosis op de wijzerplaat, plus snel
-      vastleggen in de Smart Stack (Dial Pro)
+      vastleggen in de slimme stapel (Dial Pro)
     - Op iPhone maakt Pro vastleggen met één tik mogelijk vanuit Bedieningspaneel,
-      de Actieknop, Siri of een Live-activiteit op herinneringsdag. Gratis acties openen
+      de Actieknop, Siri of een Live Activity op herinneringsdag. Gratis acties openen
       het formulier.
 
 supporting:
-  kicker: Rond de routine
-  heading: De praktische details blijven dichtbij.
+  kicker: Bij de routine
+  heading: Voorraad, herinneringen en import.
   features:
     - title: Voorraad
       body: Noteer pennen of flacons met concentratie, apotheek, houdbaarheidsdatum en lotnummer.
     - title: Uw herinneringen
       body:
         Maak dagelijkse of wekelijkse meldingen, of meldingen die elke N dagen herhalen,
-        rond het schema dat u instelt. Op dosisdag zit een actie Dosis vastleggen op de melding, en een
-        Live-activiteit kan op het toegangsscherm blijven tot u vastlegt.
-    - title: Historie meenemen
-      body: Open een compatibele export van een medicijndagboek met Dial om bestaande invoer te importeren.
+        rond het schema dat u instelt. Op dosisdag heeft de melding een actie Dosis vastleggen, en een
+        Live Activity kan op het toegangsscherm blijven tot u vastlegt.
+    - title: Bestaande invoer importeren
+      body: Importeer bestaande invoer uit een compatibele export van een medicijndagboek.
 
 plans:
   kicker: Gratis en Dial Pro
-  heading: Het kerndagboek gratis gebruiken.
+  heading: Het dagboek zelf gratis gebruiken.
   body:
-    Stap over op Pro voor uitgebreidere grafieken, export of sneller vastleggen op Apple-apparaten.
-    Elk Dial Pro-abonnement bevat dezelfde functies.
+    Stap over op Pro voor de grafiek van de geschatte spiegel, export of vastleggen
+    met één tik. Alle Dial Pro-opties bevatten dezelfde functies.
   free_name: Gratis
   free_summary: Een volledig logboek voor één actief medicijn.
   free_features:
     - Doses, injectieplaatsen, gewicht, bijwerkingen en voortgangsfoto's vastleggen
     - Eén actief medicijn en één herinnering
-    - Dosis- en gewichtslijsten, voorraad, import en de blik op Apple Watch
+    - Dosis- en gewichtslijsten, voorraad, import en het overzicht op Apple Watch
     - Aftelwidgets en herinneringen die het formulier openen
   pro_name: Dial Pro
-  pro_summary: De geschatte spiegel, volledige diagrammen, export en snel vastleggen.
+  pro_summary: De geschatte spiegel, volledige grafieken, export en snel vastleggen.
   pro_features:
     - Grafiek van de geschatte spiegel en beginschermwidget
-    - Volledige dosis- en gewichtsdiagrammen, bijwerkingstrends en fotovergelijking
+    - Volledige dosis- en gewichtsgrafieken, bijwerkingstrends en fotovergelijking
     - PDF-verslag, CSV-export, meerdere medicijnen en meerdere herinneringen
     - Snel vastleggen en complicaties op Apple Watch, plus vastleggen met één tik op iPhone
   options_label: Dial Pro-keuzes
@@ -195,7 +195,7 @@ plans:
 
 privacy:
   kicker: Privacy
-  heading: Duidelijk over wat op het apparaat blijft.
+  heading: Gegevens blijven op het apparaat.
   specs:
     - term: Accounts
       detail: Er is geen Dial-account. Open de app en begin vast te leggen.
@@ -208,8 +208,8 @@ privacy:
         Zet iCloud in de app aan en gegevens synchroniseren via de privé-CloudKit-database
         van uw eigen Apple Account, niet naar ons.
   body:
-    Medicijn, dosis, herinnering en voorraad blijven op het apparaat. Gewichten
-    gebruiken een aparte lokale opslag, en toegang tot Gezondheid is optioneel, alleen
+    Medicijn, dosis, herinnering en voorraad blijven op het apparaat.     Gewicht
+    staat in een aparte lokale opslag, en toegang tot Gezondheid is optioneel, alleen
     lichaamsgewicht wanneer u toestemming geeft.
   policy_link: Het Dial-privacybeleid lezen
   policy_url: /nl/dial/privacy/
@@ -218,6 +218,6 @@ availability:
   kicker: Dial downloaden
   heading: Nu beschikbaar in de App Store.
   body:
-    Dial is gratis te downloaden. Het kerndagboek werkt vanaf de eerste invoer.
-    Dial Pro voegt de grafiek van de geschatte spiegel, volledige diagrammen, pdf-export
+    Dial is gratis te downloaden. Het dagboek zelf werkt vanaf de eerste invoer.
+    Dial Pro voegt de grafiek van de geschatte spiegel, volledige grafieken, PDF-export
     en snel vastleggen vanaf Apple Watch en iPhone toe.

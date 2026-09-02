@@ -53,14 +53,14 @@ images:
     alt: "Dial sur Apple Watch : confirmation d'une dose enregistrée, quantité et site d'injection"
 
 hero:
-  availability: Disponible maintenant sur l'App Store
+  availability: Disponible dès maintenant sur l'App Store
   headline_lead: "Le journal de vos GLP-1."
   headline_accent: ""
   category: Dial est un suivi privé de médicaments GLP-1 pour iPhone et Apple Watch.
   detail:
-    Enregistrez les doses sur iPhone ou Apple Watch, voyez un niveau estimé construit
-    à partir des doses que vous notez, et gardez les dossiers principaux sur l'appareil
-    ou dans votre base de données iCloud privée.
+    Notez une dose sur iPhone ou Apple Watch. Dial en déduit un niveau estimé.
+    Vos données restent sur l'appareil ou dans votre
+    iCloud, si vous l'activez.
   secondary_cta: Voir comment Dial fonctionne
   platforms_label: Plateformes et stockage Dial
   platforms:
@@ -78,31 +78,31 @@ proof:
   label: Pourquoi Dial
   points:
     - iPhone et Apple Watch
-    - Aucun compte, aucune analyse
-    - Option à vie
+    - L'app s'ouvre sans compte Dial
+    - Achat à vie
     - Niveau modélisé à partir de vos doses
 
 level:
   kicker: Dial Pro · Niveau estimé
-  heading: Une vue plus claire des doses que vous avez enregistrées.
+  heading: Le graphique utilise les doses déjà notées.
   body:
-    Dial trace un niveau estimé du médicament dans le temps à partir des doses enregistrées
+    Dial représente un niveau estimé du médicament dans le temps, à partir des doses enregistrées
     et de la demi-vie affichée dans l'app. Changez la plage pour revoir une semaine, un
     mois ou six mois de votre propre historique.
-  boundary_lead: Une estimation, et nous le disons.
+  boundary_lead: C'est une estimation, et nous le disons clairement.
   boundary_body:
     Le graphique modélise une courbe de décroissance standard à partir des doses que vous
-    avez enregistrées. Il sert à remarquer vos propres schémas entre les doses, pas à
-    remplacer un taux sanguin mesuré ni à suggérer quoi prendre ensuite. Dial ne calcule
-    pas les doses. L'app explique la méthode en entier.
+    avez enregistrées. Il sert à repérer vos propres habitudes entre les doses, pas à
+    remplacer un taux sanguin mesuré ni à suggérer la prochaine prise. Dial ne calcule
+    pas les doses. L'app explique toute la méthode.
 
 logging:
   kicker: Enregistrement rapide
-  heading: Enregistrez la dose et tout ce qui va avec.
+  heading: Médicament, quantité, site d'injection et notes.
   body:
-    Enregistrez médicament, quantité, date, heure, site d'injection et notes dans un formulaire
-    ciblé. Vos valeurs récentes accélèrent la saisie suivante. Vous confirmez chaque champ. Dial fonctionne que votre prescripteur l'appelle Ozempic, Wegovy,
-    Mounjaro ou Zepbound.
+    Notez le médicament, la quantité, la date, l'heure, le site d'injection et les notes.
+    Les valeurs récentes préremplissent l'entrée suivante. Vous confirmez chaque champ.
+    Dial fonctionne avec Ozempic, Wegovy, Mounjaro et Zepbound.
   checklist:
     - Modifier une entrée quand quelque chose change
     - Garder le site d'injection associé à chaque dose
@@ -110,7 +110,7 @@ logging:
 
 history:
   kicker: Dial Pro · Historique et tendances
-  heading: Revoir le schéma sur tout votre dossier.
+  heading: Graphiques de doses, de poids et d'effets indésirables.
   body:
     Les listes de doses, de poids et d'effets indésirables restent gratuites. Dial Pro
     ajoute les graphiques complets de doses et de poids, plus les tendances des effets
@@ -118,14 +118,14 @@ history:
   history_card_title: Historique des doses et du poids
   history_card_note: Revoir les changements sur la plage que vous choisissez.
   side_effects_card_title: Tendances des effets indésirables
-  side_effects_card_note: Revoir fréquence et intensité à partir de l'historique existant ou importé.
+  side_effects_card_note: Revoir la fréquence et l'intensité à partir de l'historique existant ou importé.
 
 report:
   kicker: Dial Pro · Rapport PDF
-  heading: Apporter le dossier complet à la prochaine consultation.
+  heading: Un PDF pour la consultation.
   body:
     Générez un PDF avec l'historique des doses, les changements de quantité enregistrée,
-    les sites d'injection, la tendance du poids et les schémas d'effets indésirables. Dial
+    les sites d'injection, la tendance du poids et les tendances des effets indésirables. Dial
     le construit sur l'appareil, et vous le partagez seulement si vous le décidez, par
     AirDrop, e-mail ou impression.
   closing:
@@ -136,46 +136,47 @@ watch:
   kicker: Apple Watch
   heading: Enregistrer la dose depuis le poignet.
   body: >-
-    L'app Watch montre un anneau de cycle qui compte jusqu'à la prochaine dose et
-    l'échéance du prochain rappel. Dial Pro transforme ce coup d'œil en enregistrement
-    complet: réglez la quantité avec la Digital Crown, choisissez un site d'injection,
-    confirmez. L'entrée se synchronise avec l'iPhone et reste entre vos deux appareils.
+    L'app Apple Watch montre un anneau de cycle qui fait le compte à rebours jusqu'à la
+    prochaine dose, et l'heure du prochain rappel. Dial Pro enregistre depuis cet écran. Réglez la
+    quantité avec la Digital Crown, choisissez un site d'injection, confirmez. L'entrée
+    se synchronise avec l'iPhone.
   checklist:
     - Anneau de cycle, état de la dose et prochain rappel d'un coup d'œil (gratuit)
     - Enregistrer une dose depuis le poignet avec la Digital Crown (Dial Pro)
     - Widgets de niveau estimé et de prochaine dose sur le cadran, plus enregistrement
       rapide dans la pile intelligente (Dial Pro)
     - Sur iPhone, Pro active l'enregistrement en un geste depuis le Centre de contrôle,
-      le bouton d'action, Siri ou une activité en direct le jour du rappel. Les actions
+      le bouton d'action, Siri ou une Live Activity le jour du rappel. Les actions
       gratuites ouvrent le formulaire.
 
 supporting:
   kicker: Autour de la routine
-  heading: Les détails pratiques restent à portée.
+  heading: Stocks, rappels et importation.
   features:
     - title: Inventaire des stocks
-      body: Suivre stylos ou flacons avec concentration, pharmacie, date de péremption et numéro de lot.
+      body: "Suivre les stylos ou les flacons : concentration, pharmacie, date de péremption et numéro de lot."
     - title: Vos rappels
       body:
         Créez des notifications quotidiennes, hebdomadaires ou tous les N jours selon
-        le calendrier que vous définissez. Le jour de la dose, une action Enregistrer
-        une dose est sur la notification, et une activité en direct peut rester sur
+        le calendrier que vous définissez. Le jour de la dose, la notification propose
+        une action Enregistrer une dose, et une Live Activity peut rester sur
         l'écran de verrouillage jusqu'à l'enregistrement.
-    - title: Apporter votre historique
-      body: Ouvrez avec Dial l'export d'un suivi de médicaments compatible pour importer les entrées existantes.
+    - title: Importer des saisies existantes
+      body: Ouvrez dans Dial l'export d'un suivi de médicaments compatible pour importer les entrées existantes.
 
 plans:
   kicker: Gratuit et Dial Pro
   heading: Utiliser le suivi de base gratuitement.
   body:
-    Passez à Pro pour des graphiques plus détaillés, des exports ou un enregistrement plus
-    rapide sur les appareils Apple. Chaque formule Dial Pro inclut les mêmes fonctions.
+    Passez à Pro pour le graphique de niveau estimé, les exports ou l'enregistrement
+    en un geste sur Apple Watch et iPhone. Chaque formule Dial Pro inclut les mêmes
+    fonctions.
   free_name: Gratuit
   free_summary: Un dossier complet pour un médicament actif.
   free_features:
-    - Enregistrer doses, sites d'injection, poids, effets indésirables et photos de progression
+    - Enregistrer les doses, les sites d'injection, le poids, les effets indésirables et les photos d'évolution
     - Un médicament actif et un rappel
-    - Listes de doses et de poids, inventaire, imports et le coup d'œil Apple Watch
+    - Listes de doses et de poids, inventaire, importations et aperçu Apple Watch
     - Widgets de compte à rebours et rappels qui ouvrent le formulaire
   pro_name: Dial Pro
   pro_summary: Le niveau estimé, les graphiques complets, les exports et l'enregistrement rapide.
@@ -194,7 +195,7 @@ plans:
 
 privacy:
   kicker: Confidentialité
-  heading: Clair sur ce qui reste sur l'appareil.
+  heading: Les dossiers restent sur l'appareil.
   specs:
     - term: Comptes
       detail: Il n'existe pas de compte Dial. Ouvrez l'app et commencez à enregistrer.
@@ -215,7 +216,7 @@ privacy:
 
 availability:
   kicker: Obtenir Dial
-  heading: Disponible maintenant sur l'App Store.
+  heading: Disponible dès maintenant sur l'App Store.
   body:
     Dial se télécharge gratuitement. Le suivi de base fonctionne dès le premier
     enregistrement. Dial Pro ajoute le graphique de niveau estimé, les graphiques complets,

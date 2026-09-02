@@ -11,7 +11,7 @@ images:
     base: dial-web-level-ro
     width: 1290
     height: 1620
-    alt: "Ecranul de nivel estimat Dial cu un grafic în timp din dozele înregistrate"
+    alt: "Ecranul de nivel estimat din Dial, cu un grafic construit din dozele înregistrate"
   log_dose:
     base: dial-web-log-dose-ro
     width: 1290
@@ -21,7 +21,7 @@ images:
     base: dial-web-history-ro
     width: 1290
     height: 2640
-    alt: "Istoricul Dial cu grafice de doză și greutate în timp"
+    alt: "Istoricul Dial cu grafice de doză și greutate"
   side_effects:
     base: dial-web-side-effects-ro
     width: 1290
@@ -31,7 +31,7 @@ images:
     base: dial-web-report-ro
     width: 1836
     height: 2376
-    alt: "O pagină din raportul PDF Dial Pro cu istoricul dozelor, greutatea în timp și efectele secundare pentru medicul care prescrie"
+    alt: "O pagină din raportul PDF Dial Pro cu istoricul dozelor, evoluția greutății și efectele secundare pentru medicul curant"
   watch_glance:
     base: dial-web-watch-glance-ro
     width: 792
@@ -45,10 +45,10 @@ images:
 
 hero:
   availability: "Acum în App Store"
-  headline_lead: "Evidența dozelor GLP-1."
+  headline_lead: "Jurnalul GLP-1."
   headline_accent: ""
   category: "Dial este un jurnal privat de medicamente GLP-1 pentru iPhone și Apple Watch."
-  detail: "Înregistrați dozele pe iPhone sau Apple Watch, vedeți un nivel estimat din dozele notate și păstrați înregistrările principale pe dispozitiv sau în contul iCloud privat."
+  detail: "Înregistrați o doză pe iPhone sau Apple Watch. Dial construiește un nivel estimat din aceste înregistrări. Înregistrările de bază rămân pe dispozitiv sau în baza de date iCloud privată, dacă o activați."
   secondary_cta: "Cum funcționează Dial"
   platforms_label: "Platformele și stocarea Dial"
   platforms:
@@ -56,73 +56,73 @@ hero:
     - Apple Watch
     - "Siri, Centrul de control și ecranul de blocare"
     - "Stocare iCloud privată opțională"
-  legal: "Jurnalul de bază este gratuit. Dial Pro adaugă grafice, exporturi, mai multe medicamente și reamintiri, și înregistrarea dintr-o atingere pe dispozitivele Apple. Dial este un jurnal personal. Nu calculează doze și nu înlocuiește indicațiile medicului care prescrie."
+  legal: "Jurnalul de bază este gratuit. Dial Pro adaugă grafice, exporturi, mai multe medicamente, reamintiri și înregistrarea dintr-o atingere pe dispozitivele Apple. Dial este un jurnal personal. Nu calculează doze și nu înlocuiește indicațiile medicului curant."
 
 proof:
   label: "De ce Dial"
   points:
     - "iPhone și Apple Watch"
-    - "Fără conturi, fără analize"
+    - "Se deschide fără un cont Dial"
     - "Opțiune Lifetime"
-    - "Nivel modelat din dozele dumneavoastră"
+    - "Nivel estimat din dozele dumneavoastră"
 
 level:
   kicker: "Dial Pro · Nivel estimat"
-  heading: "O privire mai clară asupra dozelor pe care le-ați înregistrat."
-  body: "Dial trasează un nivel estimat al medicamentului în timp din dozele înregistrate și timpul de înjumătățire afișat în aplicație. Schimbați intervalul pentru a revizui o săptămână, o lună sau șase luni din propriul istoric."
-  boundary_lead: "O estimare: o spunem clar."
-  boundary_body: "Graficul modelează o curbă standard de scădere din dozele pe care le-ați înregistrat. Arată propriile tipare între doze. Este o estimare, nu un nivel măsurat în sânge și nu o sugestie despre ce să luați în continuare. Dial nu calculează doze. Aplicația explică metoda complet."
+  heading: "Graficul folosește dozele pe care le-ați înregistrat deja."
+  body: "Dial construiește un nivel estimat al medicamentului din dozele înregistrate și din timpul de înjumătățire afișat în aplicație. Schimbați intervalul ca să vedeți o săptămână, o lună sau șase luni din propriul istoric."
+  boundary_lead: "Este o estimare. O spunem deschis."
+  boundary_body: "Graficul construiește o curbă standard de scădere din dozele pe care le-ați înregistrat. Arată propriile intervale dintre doze. Este o estimare, nu un nivel măsurat în sânge. Nu este o sugestie despre ce să luați în continuare. Dial nu calculează doze. Aplicația explică metoda în detaliu."
 
 logging:
   kicker: "Înregistrare rapidă"
-  heading: "Înregistrați doza și tot ce o însoțește."
-  body: "Notați medicamentul, cantitatea, data, ora, locul de injecție și notele într-un formular concentrat. Valorile recente grăbesc următoarea înregistrare, iar fiecare câmp rămâne de confirmat de dumneavoastră. Dial funcționează indiferent dacă medicul care prescrie îi spune Ozempic, Wegovy, Mounjaro sau Zepbound."
+  heading: "Medicament, cantitate, loc de injecție și note, într-un formular."
+  body: "Notați medicamentul, cantitatea, data, ora, locul de injecție și notele. Valorile recente completează următoarea înregistrare. Confirmați totuși fiecare câmp. Dial funcționează cu Ozempic, Wegovy, Mounjaro și Zepbound."
   checklist:
     - "Editați o înregistrare când se schimbă ceva"
-    - "Păstrați locurile de injecție legate de fiecare doză"
-    - "Păstrați înregistrările de greutate lângă linia de timp a dozelor"
+    - "Păstrați locul de injecție la fiecare doză"
+    - "Păstrați înregistrările de greutate lângă istoricul dozelor"
 
 history:
   kicker: "Dial Pro · Istoric și tendințe"
-  heading: "Revizuiți tiparul din tot registrul."
-  body: "Listele de doză, greutate și efecte secundare rămân gratuite. Dial Pro adaugă grafice complete de doză și greutate plus tendințe din înregistrările de efecte secundare deja din registru."
+  heading: "Grafice de doză, greutate și efecte secundare din înregistrări."
+  body: "Listele de doză, greutate și efecte secundare rămân gratuite. Dial Pro adaugă grafice complete de doză și greutate plus tendințe din înregistrările de efecte secundare pe care le aveți deja în registru."
   history_card_title: "Istoric de doză și greutate"
-  history_card_note: "Revizuiți modificările din intervalul ales."
+  history_card_note: "Vedeți modificările din intervalul ales."
   side_effects_card_title: "Tendințe ale efectelor secundare"
-  side_effects_card_note: "Revizuiți frecvența și severitatea din istoricul existent sau importat."
+  side_effects_card_note: "Vedeți frecvența și severitatea din istoricul existent sau importat."
 
 report:
   kicker: "Dial Pro · Raport PDF"
-  heading: "Duceți tot istoricul la următoarea consultație."
-  body: "Generați un PDF cu istoricul dozelor, modificările cantității înregistrate, locurile de injecție, tendința greutății și tiparele efectelor secundare. Dial îl construiește pe dispozitiv și îl partajați doar când decideți, prin AirDrop, e-mail sau imprimare."
+  heading: "Un PDF al înregistrărilor, pentru consultație."
+  body: "Generați un PDF cu istoricul dozelor, modificările cantității înregistrate, locurile de injecție, tendința greutății și evoluția efectelor secundare. Dial îl construiește pe dispozitiv și îl partajați doar când decideți, prin AirDrop, e-mail sau imprimare."
   closing: "Rămâne privat. Îl scoateți de pe telefon doar când aveți nevoie."
   smallprint: "Raportul rezumă înregistrările. Nu este un dosar medical și nici un plan de tratament."
 
 watch:
   kicker: Apple Watch
   heading: "Înregistrați doza de la încheietură."
-  body: "Aplicația de pe ceas arată un inel de ciclu care numără până la următoarea doză și când sosește următoarea reamintire. Dial Pro transformă ce vedeți acolo într-o înregistrare completă: setați cantitatea cu Digital Crown, alegeți locul de injecție și confirmați. Înregistrarea se sincronizează pe iPhone și rămâne între cele două dispozitive."
+  body: "Aplicația de pe ceas arată un inel de ciclu care numără zilele până la următoarea doză și când sosește următoarea reamintire. Dial Pro înregistrează de pe acel ecran. Setați cantitatea cu Digital Crown, alegeți locul de injecție și confirmați. Înregistrarea se sincronizează pe iPhone."
   checklist:
     - "Inel de ciclu, starea dozei și următoarea reamintire dintr-o privire (gratuit)"
     - "Înregistrați o doză de la încheietură cu Digital Crown (Dial Pro)"
     - "Widgeturi de nivel estimat și doză următoare pe cadran, plus înregistrare rapidă în Smart Stack (Dial Pro)"
-    - "Pe iPhone, Pro activează înregistrarea cu o atingere din Centrul de control, butonul de acțiune, Siri sau o activitate în timp real în ziua reamintirii. Acțiunile gratuite deschid formularul."
+    - "Pe iPhone, Pro activează înregistrarea cu o atingere din Centrul de control, butonul de acțiune, Siri sau o Live Activity în ziua reamintirii. Acțiunile gratuite deschid formularul."
 
 supporting:
-  kicker: "În jurul rutinei"
-  heading: "Detaliile practice rămân la îndemână."
+  kicker: "Pe lângă rutină"
+  heading: "Stoc, reamintiri și importuri, în același registru."
   features:
     - title: "Stoc"
-      body: "Urmăriți injectoare sau flacoane cu concentrație, farmacie, data expirării și numărul lotului."
+      body: "Urmăriți pixurile injectoare sau flacoanele, cu concentrație, farmacie, data expirării și numărul lotului."
     - title: "Reamintirile dumneavoastră"
-      body: "Creați notificări zilnice, săptămânale sau la fiecare N zile în jurul programului pe care îl setați. În ziua dozei, o acțiune de înregistrare stă pe notificare, iar o activitate în timp real poate rămâne pe ecranul de blocare până înregistrați."
+      body: "Creați notificări zilnice, săptămânale sau la fiecare N zile în jurul programului pe care îl setați. În ziua dozei, o acțiune de înregistrare apare pe notificare, iar o Live Activity poate rămâne pe ecranul de blocare până înregistrați."
     - title: "Importați istoricul"
-      body: "Deschideți cu Dial un export compatibil dintr-un jurnal de medicamente pentru a importa înregistrările existente."
+      body: "Deschideți în Dial un export compatibil dintr-un jurnal de medicamente, ca să importați înregistrările existente."
 
 plans:
   kicker: "Gratuit și Dial Pro"
   heading: "Folosiți jurnalul de bază gratuit."
-  body: "Treceți la Pro când doriți grafice mai detaliate, export sau înregistrare mai rapidă pe dispozitivele Apple. Fiecare plan Dial Pro include aceleași funcții."
+  body: "Treceți la Pro pentru graficul nivelului estimat, exporturi sau înregistrarea dintr-o atingere pe Apple Watch și iPhone. Fiecare plan Dial Pro include aceleași funcții."
   free_name: "Gratuit"
   free_summary: "Un registru complet pentru un medicament activ."
   free_features:
@@ -131,12 +131,12 @@ plans:
     - "Liste de doză și greutate, stoc, importuri și rezumatul de pe Apple Watch"
     - "Widgeturi de numărătoare inversă și reamintiri care deschid formularul"
   pro_name: Dial Pro
-  pro_summary: "Nivelul estimat, grafice complete, export și înregistrare rapidă."
+  pro_summary: "Nivelul estimat, grafice complete, exporturi și înregistrare dintr-o atingere."
   pro_features:
     - "Graficul nivelului estimat și widget pe ecranul de pornire"
     - "Grafice complete de doză și greutate, tendințe ale efectelor secundare și compararea fotografiilor"
     - "Raport PDF, export CSV, mai multe medicamente și mai multe reamintiri"
-    - "Înregistrare rapidă și complicații pe Apple Watch, plus înregistrare cu o atingere pe iPhone"
+    - "Înregistrare rapidă și Complications pe Apple Watch, plus înregistrare cu o atingere pe iPhone"
   options_label: "Opțiuni ale planului Dial Pro"
   lifetime_name: "Lifetime"
   lifetime_terms: "o dată"
@@ -147,7 +147,7 @@ plans:
 
 privacy:
   kicker: "Confidențialitate"
-  heading: "E clar ce rămâne pe dispozitiv."
+  heading: "Înregistrările rămân pe dispozitiv."
   specs:
     - term: "Conturi"
       detail: "Nu există un cont Dial. Deschideți aplicația și începeți să înregistrați."
@@ -165,4 +165,3 @@ availability:
   kicker: "Descărcați Dial"
   heading: "Acum în App Store."
   body: "Dial se descarcă gratuit. Jurnalul de bază funcționează de la prima înregistrare. Dial Pro adaugă graficul nivelului estimat, grafice complete, export PDF și înregistrare rapidă de pe Apple Watch și iPhone."
-

@@ -31,7 +31,7 @@ images:
     base: dial-web-report-pl
     width: 1836
     height: 2376
-    alt: "Strona raportu PDF Dial Pro z historią dawek, wagą w czasie i działaniami niepożądanymi dla osoby przepisującej"
+    alt: "Strona raportu PDF Dial Pro z historią dawek, wagą w czasie i działaniami niepożądanymi dla lekarza prowadzącego"
   watch_glance:
     base: dial-web-watch-glance-pl
     width: 792
@@ -47,44 +47,44 @@ hero:
   availability: "Już w App Store"
   headline_lead: "Dziennik dawek GLP-1."
   headline_accent: ""
-  category: "Dial to prywatny rejestr leków GLP-1 na iPhone i Apple Watch."
-  detail: "Zapisują Państwo dawki na iPhonie lub Apple Watch, oglądają szacowany poziom zbudowany z dawek, które zapisują, i trzymają główne zapisy na urządzeniu lub w prywatnej bazie iCloud."
+  category: "Dial to prywatny rejestr leków GLP-1 na iPhone’a i Apple Watch."
+  detail: "Zapisują Państwo dawkę na iPhonie lub Apple Watch. Dial rysuje wykres szacowanego poziomu z tych wpisów. Zapisy zostają na urządzeniu albo, gdy włączą Państwo tę opcję, w prywatnej bazie iCloud."
   secondary_cta: "Jak działa Dial"
   platforms_label: "Platformy Dial i przechowywanie"
   platforms:
     - iPhone
     - Apple Watch
     - "Siri, Centrum sterowania i ekran blokady"
-    - "Opcjonalne prywatne przechowywanie iCloud"
-  legal: "Podstawowy dziennik jest bezpłatny. Dial Pro dodaje wykresy, eksport, więcej leków i przypomnień oraz zapis jednym stuknięciem na urządzeniach Apple. Dial to osobisty zapis. Nie oblicza dawek i nie zastępuje wskazówek osoby przepisującej."
+    - "Opcjonalna prywatna baza iCloud"
+  legal: "Podstawowy dziennik jest bezpłatny. Dial Pro dodaje wykresy, eksport, więcej leków i przypomnień oraz zapis jednym stuknięciem na urządzeniach Apple. Dial to osobisty dziennik. Nie oblicza dawek i nie zastępuje wskazówek lekarza prowadzącego."
 
 proof:
   label: "Dlaczego Dial"
   points:
     - "iPhone i Apple Watch"
-    - "Dial nie zakłada konta i nie zbiera analityki"
+    - "Działa bez konta Dial"
     - "Opcja Lifetime"
-    - "Modelowany poziom z Państwa dawek"
+    - "Szacowany poziom z Państwa dawek"
 
 level:
   kicker: "Dial Pro · Szacowany poziom"
-  heading: "Jaśniejszy widok dawek, które Państwo zapisali."
-  body: "Dial rysuje szacowany poziom leku w czasie z zapisanych dawek i wartości okresu półtrwania w aplikacji. Zmieniają Państwo zakres, aby zobaczyć tydzień, miesiąc lub sześć miesięcy własnej historii."
-  boundary_lead: "Oszacowanie. Tak go nazywamy."
-  boundary_body: "Wykres modeluje standardową krzywą zaniku z zapisanych dawek. Pomaga zauważyć własne wzorce między dawkami. Nie zastępuje zmierzonego poziomu we krwi i nie sugeruje, co przyjąć dalej. Dial nie oblicza dawek. Aplikacja opisuje metodę w całości."
+  heading: "Wykres korzysta z dawek, które Państwo już zapisali."
+  body: "Dial rysuje wykres szacowanego poziomu leku w czasie. Opiera się na zapisanych dawkach i okresie półtrwania z aplikacji. Zmieniają Państwo zakres, żeby zobaczyć tydzień, miesiąc albo sześć miesięcy własnej historii."
+  boundary_lead: "Oszacowanie. Tak to nazywamy."
+  boundary_body: "Wykres modeluje standardową krzywą zaniku z zapisanych dawek. Pokazuje Państwa własne wzorce między dawkami. To oszacowanie, nie zmierzony poziom we krwi i nie wskazówka, co przyjąć dalej. Dial nie oblicza dawek. Aplikacja opisuje metodę w całości."
 
 logging:
   kicker: "Szybki zapis"
-  heading: "Zapis dawki i wszystkiego, co z nią idzie."
-  body: "Zapisują Państwo lek, ilość, datę, godzinę, miejsce wstrzyknięcia i notatki w skupionym formularzu. Ostatnie wartości przyspieszają kolejny wpis, a każde pole nadal wymaga Państwa potwierdzenia. Dial działa niezależnie od tego, czy osoba przepisująca nazywa to Ozempic, Wegovy, Mounjaro czy Zepbound."
+  heading: "Lek, ilość, miejsce i notatki w jednym formularzu."
+  body: "Zapisują Państwo lek, ilość, datę, godzinę, miejsce wstrzyknięcia i notatki. Ostatnie wartości wypełniają kolejny wpis. Każde pole i tak potwierdzają Państwo sami. Dial działa z Ozempic, Wegovy, Mounjaro i Zepbound."
   checklist:
     - "Edytują Państwo wpis, gdy coś się zmieni"
-    - "Miejsca wstrzyknięć zostają przy każdej dawce"
-    - "Wpisy wagi zostają obok osi czasu dawek"
+    - "Miejsca wstrzyknięć są przy każdej dawce"
+    - "Wpisy wagi są obok osi czasu dawek"
 
 history:
   kicker: "Dial Pro · Historia i trendy"
-  heading: "Wzorzec w całym zapisie."
+  heading: "Wykresy dawek, wagi i działań niepożądanych z Państwa wpisów."
   body: "Listy dawek, wagi i działań niepożądanych pozostają darmowe. Dial Pro dodaje pełne wykresy dawek i wagi oraz trendy z wpisów działań niepożądanych, które już są w zapisie."
   history_card_title: "Historia dawek i wagi"
   history_card_note: "Przeglądają Państwo zmiany w wybranym zakresie."
@@ -93,36 +93,36 @@ history:
 
 report:
   kicker: "Dial Pro · Raport PDF"
-  heading: "Cały obraz na następną wizytę."
-  body: "Tworzą Państwo PDF z historią dawek, zmianami zapisanej ilości, miejscami wstrzyknięć, trendem wagi i wzorcami działań niepożądanych. Dial składa go na urządzeniu, a udostępniają go Państwo tylko wtedy, gdy zdecydują, przez AirDrop, e-mail lub druk."
-  closing: "Prywatny przez resztę czasu i przydatny w chwili, gdy zapis musi opuścić telefon."
+  heading: "PDF z Państwa wpisów na wizytę."
+  body: "Tworzą Państwo PDF z historią dawek, zmianami zapisanej ilości, miejscami wstrzyknięć, trendem wagi i wzorcami działań niepożądanych. Dial składa go na urządzeniu. Udostępniają go Państwo tylko wtedy, gdy się zdecydują: AirDrop, e-mail albo druk."
+  closing: "Na co dzień raport zostaje prywatny. Przydaje się w chwili, gdy zapis musi opuścić telefon."
   smallprint: "Raport streszcza wpisy. To nie jest dokumentacja medyczna ani plan leczenia."
 
 watch:
   kicker: Apple Watch
   heading: "Zapis dawki z nadgarstka."
-  body: "Aplikacja na zegarku pokazuje pierścień cyklu odliczający do następnej dawki i kiedy przypada następne przypomnienie. Dial Pro zamienia ten rzut oka w pełny zapis: ustawiają Państwo ilość za pomocą Digital Crown, wybierają miejsce wstrzyknięcia i potwierdzają. Wpis synchronizuje się z iPhonem i zostaje na obu urządzeniach."
+  body: "Aplikacja na zegarku pokazuje pierścień cyklu odliczający do następnej dawki i kiedy przypada następne przypomnienie. Dial Pro zapisuje z tego ekranu. Ustawiają Państwo ilość za pomocą Digital Crown, wybierają miejsce wstrzyknięcia i potwierdzają. Wpis synchronizuje się z iPhonem."
   checklist:
     - "Pierścień cyklu, status dawki i następne przypomnienie w jednym rzucie oka (za darmo)"
     - "Zapis dawki z nadgarstka z Digital Crown (Dial Pro)"
     - "Widżety szacowanego poziomu i następnej dawki na tarczy oraz szybki zapis w Smart Stack (Dial Pro)"
-    - "Na iPhonie Dial Pro umożliwia zapis jednym stuknięciem z Centrum sterowania, przycisku czynności, Siri lub aktywności na żywo w dniu przypomnienia. Darmowe działania otwierają formularz zapisu."
+    - "Na iPhonie Dial Pro umożliwia zapis jednym stuknięciem z Centrum sterowania, przycisku czynności, Siri albo Live Activity w dniu przypomnienia. W darmowym planie te skróty otwierają formularz zapisu."
 
 supporting:
   kicker: "Wokół rutyny"
-  heading: "Praktyczne szczegóły zostają blisko."
+  heading: "Zapas, przypomnienia i import w tym samym zapisie."
   features:
     - title: "Zapas"
       body: "Śledzą Państwo peny lub fiolki ze stężeniem, apteką, datą ważności i numerem serii."
     - title: "Państwa przypomnienia"
-      body: "Tworzą Państwo powiadomienia codzienne, tygodniowe lub co N dni wokół harmonogramu, który ustawią. W dniu dawki na powiadomieniu jest działanie zapisu, a aktywność na żywo może zostać na ekranie blokady, aż zapiszą Państwo dawkę."
-    - title: "Historia ze sobą"
-      body: "Otwierają Państwo zgodny eksport z dziennika leków w Dial, aby zaimportować istniejące wpisy."
+      body: "Tworzą Państwo powiadomienia codzienne, tygodniowe albo co N dni według harmonogramu, który ustawią. W dniu dawki na powiadomieniu jest działanie zapisu. Live Activity może zostać na ekranie blokady, aż zapiszą Państwo dawkę."
+    - title: "Import istniejących wpisów"
+      body: "W Dial otwierają Państwo zgodny eksport z dziennika leków, żeby zaimportować istniejące wpisy."
 
 plans:
   kicker: "Za darmo i Dial Pro"
   heading: "Podstawowy rejestr za darmo."
-  body: "Przechodzą Państwo na Pro, gdy chcą pełniejszych wykresów, eksportu lub szybszego zapisu na urządzeniach Apple. Każdy plan Dial Pro obejmuje te same funkcje."
+  body: "Przechodzą Państwo na Pro, gdy chcą wykresu szacowanego poziomu, eksportu albo zapisu jednym stuknięciem na Apple Watch i iPhonie. Każdy plan Dial Pro ma te same funkcje."
   free_name: "Za darmo"
   free_summary: "Pełny dziennik dla jednego aktywnego leku."
   free_features:
@@ -147,17 +147,17 @@ plans:
 
 privacy:
   kicker: "Prywatność"
-  heading: "Jasno, co zostaje na urządzeniu."
+  heading: "Wpisy zostają na urządzeniu."
   specs:
     - term: "Konta"
       detail: "Nie ma konta Dial. Otwierają Państwo aplikację i zaczynają zapis."
     - term: "Analityka użycia"
-      detail: "Dial nie prowadzi analityki użycia ani telemetrii. Nie mierzymy, jak z niego korzystają Państwo."
+      detail: "Dial nie prowadzi analityki użycia ani telemetrii. Nie mierzymy, jak Państwo z niego korzystają."
     - term: "Nasze serwery"
       detail: "Zentsu nie prowadzi serwera, który przechowuje lub czyta Państwa zapisy."
     - term: "Opcjonalna synchronizacja"
       detail: "Włączają Państwo iCloud w aplikacji, a zapisy synchronizują się przez prywatną bazę CloudKit na Państwa koncie Apple, nie do nas."
-  body: "Lek, dawka, przypomnienie i zapas zostają na urządzeniu. Wpisy wagi używają osobnego magazynu lokalnego, a dostęp do Zdrowia jest opcjonalny i obejmuje tylko masę ciała, gdy udzielą Państwo zgody."
+  body: "Lek, dawka, przypomnienie i zapas zostają na urządzeniu. Wpisy wagi mają osobny lokalny zapis. Dostęp do Zdrowia jest opcjonalny i obejmuje tylko masę ciała, gdy udzielą Państwo zgody."
   policy_link: "Polityka prywatności Dial"
   policy_url: /pl/dial/privacy/
 

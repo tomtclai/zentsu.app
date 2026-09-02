@@ -45,10 +45,10 @@ images:
 
 hero:
   availability: "Nu i App Store"
-  headline_lead: "GLP-1 du antecknar."
+  headline_lead: "Din GLP-1-journal."
   headline_accent: ""
   category: "Dial är en privat GLP-1-läkemedelsjournal för iPhone och Apple Watch."
-  detail: "Registrera doser på iPhone eller Apple Watch, se en uppskattad nivå byggd av doserna du registrerar, och behåll kärnposterna på enheten eller i din privata iCloud-databas."
+  detail: "Registrera en dos på iPhone eller Apple Watch. Dial ritar en uppskattad nivå utifrån de doser du registrerar. Journalen stannar på enheten, eller i din privata iCloud-databas om du slår på synkronisering."
   secondary_cta: "Så fungerar Dial"
   platforms_label: "Dial-plattformar och lagring"
   platforms:
@@ -62,21 +62,21 @@ proof:
   label: "Varför Dial"
   points:
     - "iPhone och Apple Watch"
-    - "Du skapar inget konto"
-    - "Livstidsalternativ"
-    - "Modellerad nivå från dina doser"
+    - "Öppnas utan Dial-konto"
+    - "Lifetime-köp"
+    - "Uppskattad nivå från dina doser"
 
 level:
   kicker: "Dial Pro · Uppskattad nivå"
-  heading: "En tydligare bild av doserna du har registrerat."
+  heading: "Diagrammet bygger på doserna du redan har registrerat."
   body: "Dial ritar en uppskattad läkemedelsnivå över tid från dina registrerade doser och halveringstiden appen visar. Byt intervall för att se en vecka, en månad eller sex månader av din egen historik."
-  boundary_lead: "En uppskattning, och vi säger det."
-  boundary_body: "Diagrammet modellerar en standardiserad avklingningskurva från doserna du har registrerat. Det visar dina egna mönster mellan doser. Det är inte en uppmätt blodnivå och inte ett förslag på vad du ska ta härnäst. Dial beräknar inte doser. Appen förklarar metoden i sin helhet."
+  boundary_lead: "Vi kallar den en uppskattning."
+  boundary_body: "Diagrammet modellerar en vanlig avklingningskurva från doserna du har registrerat. Det visar dina egna mönster mellan doser. Det är en uppskattning, inte en uppmätt blodnivå, och inte ett förslag på vad du ska ta härnäst. Dial beräknar inte doser. Appen förklarar hela metoden."
 
 logging:
   kicker: "Snabb registrering"
-  heading: "Registrera dosen och det som hör till."
-  body: "Anteckna läkemedel, mängd, datum, tid, injektionsställe och anteckningar i ett fokuserat formulär. Dina senaste värden gör nästa post snabbare, och varje fält ska fortfarande bekräftas av dig. Dial fungerar oavsett om förskrivaren kallar det Ozempic, Wegovy, Mounjaro eller Zepbound."
+  heading: "Läkemedel, mängd, injektionsställe och anteckningar i ett formulär."
+  body: "Anteckna läkemedel, mängd, datum, tid, injektionsställe och anteckningar. Senaste värdena fyller i nästa post. Du bekräftar fortfarande varje fält. Dial fungerar med Ozempic, Wegovy, Mounjaro och Zepbound."
   checklist:
     - "Redigera en post när något ändras"
     - "Behåll injektionsställen kopplade till varje dos"
@@ -84,8 +84,8 @@ logging:
 
 history:
   kicker: "Dial Pro · Historik och trender"
-  heading: "Se mönstret i hela journalen."
-  body: "Listor över dos, vikt och biverkningar förblir gratis. Dial Pro lägger till fullständiga dos- och viktdiagram plus trender från biverkningsposterna som redan står i journalen."
+  heading: "Dos-, vikt- och biverkningsdiagram från dina poster."
+  body: "Listor över dos, vikt och biverkningar är fortfarande gratis. Dial Pro lägger till fullständiga dos- och viktdiagram plus trender från biverkningsposterna som redan står i journalen."
   history_card_title: "Dos- och vikthistorik"
   history_card_note: "Granska ändringar i det intervall du väljer."
   side_effects_card_title: "Biverkningstrender"
@@ -93,40 +93,40 @@ history:
 
 report:
   kicker: "Dial Pro · PDF-rapport"
-  heading: "Ta med hela bilden till nästa besök."
-  body: "Skapa en PDF med doshistorik, ändringar i registrerad mängd, injektionsställen, viktutveckling och biverkningsmönster. Dial bygger den på enheten, och du delar den bara när du själv beslutar, via AirDrop, e-post eller utskrift."
-  closing: "Privat resten av tiden, och användbar i det ögonblick journalen behöver lämna telefonen."
+  heading: "En PDF av dina poster till läkarbesöket."
+  body: "Skapa en PDF med doshistorik, ändringar i registrerad mängd, injektionsställen, viktutveckling och biverkningsmönster. Dial bygger den på din enhet, och du delar den bara när du själv beslutar, via AirDrop, e-post eller utskrift."
+  closing: "Privat till vardags. Användbar när journalen behöver lämna telefonen."
   smallprint: "Rapporten sammanfattar dina poster. Den är inte en patientjournal eller en behandlingsplan."
 
 watch:
   kicker: Apple Watch
   heading: "Registrera dosen från handleden."
-  body: "Apple Watch-appen visar en cykelring som räknar ner till nästa dos, och när nästa påminnelse infaller. Dial Pro gör den blicken till en full registrering: sätt mängden med Digital Crown, välj injektionsställe och bekräfta. Posten synkas till iPhone och stannar på dina två enheter."
+  body: "Apple Watch-appen visar en cykelring som räknar ner till nästa dos, och när nästa påminnelse kommer. Med Dial Pro registrerar du från den skärmen. Sätt mängden med Digital Crown, välj injektionsställe och bekräfta. Posten synkas till iPhone."
   checklist:
     - "Cykelring, dosstatus och nästa påminnelse i en blick (gratis)"
     - "Registrera en dos från handleden med Digital Crown (Dial Pro)"
     - "Widgetar för uppskattad nivå och nästa dos på urtavlan, plus snabb registrering i Smart Stack (Dial Pro)"
-    - "På iPhone ger Pro registrering med ett tryck från Kontrollcenter, åtgärdsknappen, Siri eller en Live-aktivitet på påminnelsedagen. Gratisåtgärder öppnar registreringsformuläret."
+    - "På iPhone ger Pro registrering med ett tryck från Kontrollcenter, åtgärdsknappen, Siri eller en Live Activity på påminnelsedagen. Gratisåtgärder öppnar registreringsformuläret."
 
 supporting:
-  kicker: "Runt rutinen"
-  heading: "Det praktiska ligger nära till hands."
+  kicker: "Utöver dosen"
+  heading: "Lager, påminnelser och import ligger i samma journal."
   features:
     - title: "Lager"
-      body: "Håll reda på pennor eller injektionsflaskor med koncentration, apotek, utgångsdatum och satskod."
+      body: "Håll reda på pennor eller injektionsflaskor med koncentration, apotek, utgångsdatum och satsnummer."
     - title: "Dina påminnelser"
-      body: "Skapa notiser varje dag, varje vecka eller var N:e dag, efter schemat du sätter. På dosdagen sitter en åtgärd för att registrera på notisen, och en Live-aktivitet kan stanna på låsskärmen tills du registrerar."
-    - title: "Ta med historiken"
+      body: "Skapa notiser varje dag, varje vecka eller med valfritt antal dagar, efter schemat du sätter. På dosdagen kan du registrera från notisen, och en Live Activity kan stanna på låsskärmen tills du registrerar."
+    - title: "Importera befintliga poster"
       body: "Öppna en kompatibel export från en läkemedelsjournal med Dial för att importera befintliga poster."
 
 plans:
   kicker: "Gratis och Dial Pro"
   heading: "Använd kärnjournalen gratis."
-  body: "Gå över till Pro när du vill ha mer detaljerade diagram, export eller snabbare registrering på Apple-enheter. Varje Dial Pro-plan innehåller samma funktioner."
+  body: "Uppgradera till Pro för diagrammet för uppskattad nivå, export eller registrering med ett tryck på Apple Watch och iPhone. Varje Dial Pro-plan innehåller samma funktioner."
   free_name: "Gratis"
   free_summary: "En komplett journal för ett aktivt läkemedel."
   free_features:
-    - "Registrera doser, injektionsställen, vikt, biverkningar och framstegsfoton"
+    - "Registrera doser, injektionsställen, vikt, biverkningar och foton på framsteg"
     - "Ett aktivt läkemedel och en påminnelse"
     - "Dos- och viktlistor, lager, import och Apple Watch-översikten"
     - "Nedräkningswidgetar och påminnelser som öppnar registreringsformuläret"
@@ -136,7 +136,7 @@ plans:
     - "Diagram för uppskattad nivå och widget på hemskärmen"
     - "Fullständiga dos- och viktdiagram, biverkningstrender och bildjämförelse"
     - "PDF-rapport, CSV-export, flera läkemedel och flera påminnelser"
-    - "Snabb registrering och komplikationer på Apple Watch, plus registrering med ett tryck på iPhone"
+    - "Snabb registrering och Complications på Apple Watch, plus registrering med ett tryck på iPhone"
   options_label: "Dial Pro-planval"
   lifetime_name: "Lifetime"
   lifetime_terms: "en gång"
@@ -147,7 +147,7 @@ plans:
 
 privacy:
   kicker: "Integritet"
-  heading: "Tydligt vad som stannar på din enhet."
+  heading: "Posterna stannar på din enhet."
   specs:
     - term: "Konton"
       detail: "Det finns inget Dial-konto. Öppna appen och börja registrera."
@@ -165,4 +165,3 @@ availability:
   kicker: "Hämta Dial"
   heading: "Nu i App Store."
   body: "Dial är gratis att hämta. Kärnjournalen fungerar från första registreringen. Dial Pro lägger till diagrammet för uppskattad nivå, fullständiga diagram, PDF-export och snabb registrering från Apple Watch och iPhone."
-

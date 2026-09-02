@@ -1,4 +1,4 @@
-schema_description: "Privát GLP-1-gyógyszernapló adagokhoz, injekcióhelyekhez, testsúlyhoz, emlékeztetőkhöz és előzményekhez."
+schema_description: "Privát GLP-1-gyógyszernapló: adagok, injekcióhelyek, testsúly, emlékeztetők és előzmények."
 app_store_badge_alt: "A Dial letöltése az App Store-ból"
 
 images:
@@ -6,7 +6,7 @@ images:
     base: dial-web-today-hu
     width: 1290
     height: 2160
-    alt: "A Dial Ma képernyője a következő emlékeztetővel, a becsült gyógyszerszinttel és egy adag rögzítésére szolgáló gombbal"
+    alt: "A Dial Ma nézete a következő emlékeztetővel, a becsült gyógyszerszinttel és egy adagrögzítő gombbal"
   level:
     base: dial-web-level-hu
     width: 1290
@@ -16,12 +16,12 @@ images:
     base: dial-web-log-dose-hu
     width: 1290
     height: 1800
-    alt: "A Dial adagűrlapja gyógyszer, mennyiség, idő és injekcióhely mezőkkel"
+    alt: "A Dial adagrögzítő űrlapja gyógyszer, mennyiség, idő és injekcióhely mezőkkel"
   history:
     base: dial-web-history-hu
     width: 1290
     height: 2640
-    alt: "A Dial előzménye adag- és testsúlydiagramokkal az időben"
+    alt: "A Dial előzményképernyője időbeli adag- és testsúlydiagramokkal"
   side_effects:
     base: dial-web-side-effects-hu
     width: 1290
@@ -31,24 +31,24 @@ images:
     base: dial-web-report-hu
     width: 1836
     height: 2376
-    alt: "A Dial Pro PDF-jelentésének egy oldala adagelőzménnyel, testsúllyal az időben és mellékhatásokkal a felírónak"
+    alt: "A Dial Pro PDF-jelentésének egy oldala adagelőzménnyel, időbeli testsúlygrafikonnal és mellékhatásokkal a felíró orvosnak"
   watch_glance:
     base: dial-web-watch-glance-hu
     width: 792
     height: 968
-    alt: "A Dial Apple Watchon ciklusgyűrűvel, amely a következő adagig számolja a napokat, a következő emlékeztetővel és rögzítőgombbal"
+    alt: "A Dial az Apple Watchon ciklusgyűrűvel, amely a következő adagig számolja a napokat, a következő emlékeztetővel és rögzítőgombbal"
   watch_logged:
     base: dial-web-watch-logged-hu
     width: 792
     height: 968
-    alt: "A Dial Apple Watchon pipával igazolja a rögzített adagot, és mutatja a mennyiséget és az injekcióhelyet"
+    alt: "A Dial az Apple Watchon pipával jelzi a rögzített adagot, és mutatja a mennyiséget és az injekcióhelyet"
 
 hero:
   availability: "Most az App Store-ban"
   headline_lead: "GLP-1 napló."
   headline_accent: ""
   category: "A Dial privát GLP-1-gyógyszernapló iPhone-ra és Apple Watchra."
-  detail: "Rögzítsen adagokat iPhone-on vagy Apple Watchon, lásson becsült szintet a rögzített adagokból, és tartsa a fő bejegyzéseket a készüléken vagy a privát iCloud-adatbázisában."
+  detail: "Rögzítsen adagot iPhone-on vagy Apple Watchon. A Dial ebből becsült szintet rajzol. A bejegyzések a készüléken maradnak, vagy a saját privát iCloud-adatbázisában, ha bekapcsolja az iCloudot."
   secondary_cta: "Hogyan működik a Dial"
   platforms_label: "A Dial platformjai és tárolása"
   platforms:
@@ -56,35 +56,35 @@ hero:
     - Apple Watch
     - "Siri, Vezérlőközpont és zárolási képernyő"
     - "Választható privát iCloud-tárolás"
-  legal: "Az alapnapló ingyenes. A Dial Pro grafikonokat, exportot, több gyógyszert és emlékeztetőt, valamint egy koppintásos rögzítést ad Apple-készülékeken. A Dial személyes nyilvántartás. Nem számol adagot, és nem helyettesíti a felíró útmutatását."
+  legal: "Az alapnapló ingyenes. A Dial Pro grafikonokat, exportot, több gyógyszert és emlékeztetőt, valamint egy koppintásos rögzítést ad Apple-készülékeken. A Dial személyes nyilvántartás. Nem számol adagot, és nem helyettesíti a felíró orvos útmutatását."
 
 proof:
   label: "Miért a Dial"
   points:
     - "iPhone és Apple Watch"
-    - "Nincs fiók, nincs használati elemzés"
+    - "Dial-fiók nélkül használható"
     - "Lifetime lehetőség"
-    - "Modellezett szint az adagjaiból"
+    - "Becsült szint az adagjaiból"
 
 level:
   kicker: "Dial Pro · Becsült szint"
-  heading: "Tisztább kép a rögzített adagokról."
-  body: "A Dial a rögzített adagokból és az alkalmazásban látható felezési időből becsült gyógyszerszintet rajzol az időben. Váltson tartományt, hogy egy hetet, egy hónapot vagy hat hónapot nézzen meg a saját előzményéből."
-  boundary_lead: "Becslés, és ezt mondjuk is."
-  boundary_body: "A grafikon standard lecsengési görbét modellez a rögzített adagokból. A saját mintázatait mutatja az adagok között. Nem mért vérszint, és nem javaslat a következő adagra. A Dial nem számol adagot. Az alkalmazás a módszert teljesen elmagyarázza."
+  heading: "A grafikon a már rögzített adagokat használja."
+  body: "A Dial a rögzített adagokból és az alkalmazásban látható felezési időből rajzol becsült gyógyszerszintet. Váltson időtartományt, ha egy hetet, egy hónapot vagy hat hónapot szeretne látni a saját előzményéből."
+  boundary_lead: "Ez becslés, és ezt jelezzük is."
+  boundary_body: "A grafikon standard lecsengési görbét modellez a rögzített adagokból. Az adagok között a saját mintázatait mutatja. Nem mért vérszint, és nem javaslat a következő adagra. A Dial nem számol adagot. Az alkalmazás részletesen elmagyarázza a módszert."
 
 logging:
   kicker: "Gyors rögzítés"
-  heading: "Rögzítse az adagot és mindent, ami vele jár."
-  body: "Írja be a gyógyszert, mennyiséget, dátumot, időt, injekcióhelyet és jegyzeteket egy fókuszált űrlapon. A legutóbbi értékek gyorsítják a következő bejegyzést, és minden mezőt Önnek kell megerősítenie. A Dial akkor is működik, ha a felíró Ozempicnek, Wegovynak, Mounjarónak vagy Zepboundnak hívja."
+  heading: "Gyógyszer, mennyiség, injekcióhely és jegyzetek egy űrlapon."
+  body: "Írja be a gyógyszert, mennyiséget, dátumot, időt, injekcióhelyet és a jegyzeteket. A legutóbbi értékek kitöltik a következő bejegyzést. Minden mezőt Önnek kell megerősítenie. A Dial az Ozempic, Wegovy, Mounjaro és Zepbound készítményekkel is használható."
   checklist:
     - "Szerkesszen bejegyzést, ha valami változik"
-    - "Tartsa az injekcióhelyeket minden adaghoz kötve"
-    - "Tartsa a testsúlybejegyzéseket az adagidővonal mellett"
+    - "Írja az injekcióhelyet minden adaghoz"
+    - "Írja a testsúlyt az adagok idővonala mellé"
 
 history:
   kicker: "Dial Pro · Előzmények és trendek"
-  heading: "Nézze át a mintázatot a teljes nyilvántartásban."
+  heading: "Adag-, testsúly- és mellékhatás-grafikonok a bejegyzéseiből."
   body: "Az adag-, testsúly- és mellékhatáslisták ingyenesek maradnak. A Dial Pro teljes adag- és testsúlygrafikonokat ad, valamint trendeket a már a nyilvántartásban lévő mellékhatás-bejegyzésekből."
   history_card_title: "Adag- és testsúlyelőzmény"
   history_card_note: "Nézze át a változásokat a választott tartományban."
@@ -93,40 +93,40 @@ history:
 
 report:
   kicker: "Dial Pro · PDF-jelentés"
-  heading: "Vigye magával a teljes képet a következő vizitre."
+  heading: "PDF a bejegyzéseiből a következő vizitre."
   body: "Készítsen PDF-et adagelőzménnyel, a rögzített mennyiség változásaival, injekcióhelyekkel, testsúlytrenddel és mellékhatásmintákkal. A Dial a készüléken állítja össze, és csak akkor osztja meg, amikor Ön dönt, AirDroppal, e-maillel vagy nyomtatással."
-  closing: "A többi időben privát marad, és akkor hasznos, amikor a nyilvántartásnak el kell hagynia a telefont."
+  closing: "Addig privát marad. Akkor kell, amikor a nyilvántartást le kell vinnie a telefonról."
   smallprint: "A jelentés az Ön bejegyzéseit foglalja össze. Nem kórlap és nem kezelési terv."
 
 watch:
   kicker: Apple Watch
   heading: "Rögzítse az adagot a csuklóról."
-  body: "Az Apple Watch-alkalmazás ciklusgyűrűt mutat, amely a következő adagig számol, és azt is, mikor esik a következő emlékeztető. A Dial Pro ezt a pillantást teljes rögzítéssé alakítja: állítsa be a mennyiséget a Digital Crownnal, válasszon injekcióhelyet, erősítse meg. A bejegyzés az iPhone-ra szinkronizálódik, és a két készülékén marad."
+  body: "Az Apple Watch-alkalmazás ciklusgyűrűt mutat, amely a következő adagig számol, és azt is, mikor jön a következő emlékeztető. A Dial Pro arról a képernyőről rögzít. Állítsa be a mennyiséget a Digital Crownnal, válasszon injekcióhelyet, majd erősítse meg. A bejegyzés az iPhone-ra szinkronizálódik."
   checklist:
     - "Ciklusgyűrű, adagállapot és következő emlékeztető egy pillantásra (ingyenes)"
     - "Adag rögzítése a csuklóról Digital Crownnal (Dial Pro)"
     - "Becsült szint és következő adag widgetek a számlapon, valamint gyors rögzítés a Smart Stackben (Dial Pro)"
-    - "iPhone-on a Pro egy koppintásos rögzítést ad a Vezérlőközpontból, a műveletgombból, a Siriből vagy emlékeztetőnapi Élő tevékenységből. Az ingyenes műveletek megnyitják az űrlapot."
+    - "iPhone-on a Pro egy koppintásos rögzítést ad a Vezérlőközpontból, a műveletgombból, a Siriből vagy az emlékeztető napján megjelenő Live Activityből. Az ingyenes műveletek megnyitják az űrlapot."
 
 supporting:
-  kicker: "A rutin körül"
-  heading: "A gyakorlati részletek közel maradnak."
+  kicker: "A rutinhoz"
+  heading: "Készlet, emlékeztetők és import ugyanabban a nyilvántartásban."
   features:
     - title: "Készlet"
-      body: "Kövesse a peneket vagy injekciós üvegeket koncentrációval, gyógyszertárral, lejárattal és tételszámmal."
+      body: "Tartsa nyilván a peneket vagy injekciós üvegeket koncentrációval, gyógyszertárral, lejárattal és tételszámmal."
     - title: "Az Ön emlékeztetői"
-      body: "Hozzon létre napi, heti vagy N naponkénti értesítéseket a beállított ütemezés körül. Adag napján rögzítési művelet van az értesítésen, és egy Élő tevékenység a zárolási képernyőn maradhat, amíg nem rögzít."
-    - title: "Vigye magával az előzményt"
+      body: "Hozzon létre napi, heti vagy N naponkénti értesítéseket a beállított ütemezés szerint. Adag napján rögzítési művelet jelenik meg az értesítésen, és egy Live Activity a zárolási képernyőn maradhat, amíg nem rögzít."
+    - title: "Meglévő bejegyzések importálása"
       body: "Nyisson meg egy kompatibilis gyógyszernapló-exportot a Diallal a meglévő bejegyzések importálásához."
 
 plans:
   kicker: "Ingyenes és Dial Pro"
   heading: "Használja az alapnaplót ingyen."
-  body: "Váltson Próra, ha részletesebb grafikonokat, exportot vagy gyorsabb rögzítést szeretne Apple-készülékeken. Minden Dial Pro csomag ugyanazokat a funkciókat tartalmazza."
+  body: "Váltson Próra a becsült szintért, az exportért vagy az egy koppintásos rögzítésért Apple Watchon és iPhone-on. Minden Dial Pro csomag ugyanazokat a funkciókat tartalmazza."
   free_name: "Ingyenes"
   free_summary: "Teljes nyilvántartás egy aktív gyógyszerhez."
   free_features:
-    - "Adagok, injekcióhelyek, testsúly, mellékhatások és fejlődési fotók rögzítése"
+    - "Adagok, injekcióhelyek, testsúly, mellékhatások és haladási fotók rögzítése"
     - "Egy aktív gyógyszer és egy emlékeztető"
     - "Adag- és testsúlylisták, készlet, import és az Apple Watch áttekintés"
     - "Visszaszámláló widgetek és emlékeztetők, amelyek megnyitják az űrlapot"
@@ -147,7 +147,7 @@ plans:
 
 privacy:
   kicker: "Adatvédelem"
-  heading: "Világos, mi marad a készüléken."
+  heading: "A bejegyzések a készüléken maradnak."
   specs:
     - term: "Fiókok"
       detail: "Nincs Dial-fiók. Nyissa meg az alkalmazást, és kezdjen rögzíteni."
@@ -165,4 +165,3 @@ availability:
   kicker: "A Dial letöltése"
   heading: "Most az App Store-ban."
   body: "A Dial ingyenesen letölthető. Az alapnapló az első rögzítéstől működik. A Dial Pro hozzáadja a becsült szint grafikonját, a teljes grafikonokat, a PDF-exportot és a gyors rögzítést Apple Watchról és iPhone-ról."
-
