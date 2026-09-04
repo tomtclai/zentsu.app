@@ -49,6 +49,7 @@ hero:
   headline_accent: ""
   category: "Dial 是 iPhone 和 Apple Watch 上的私人 GLP-1 用藥日記。"
   detail: "在 iPhone 或 Apple Watch 記錄劑量。估計水平依你已記錄的劑量繪製。核心紀錄留在裝置上，或留在你自己的私人 iCloud。"
+  free_line: 免費下載。用藥紀錄沒有上限。
   secondary_cta: "Dial 怎麼用"
   platforms_label: "Dial 平台與儲存"
   platforms:
@@ -56,7 +57,7 @@ hero:
     - Apple Watch
     - "Siri、控制中心和鎖定畫面"
     - "可選的私人 iCloud 儲存"
-  legal: "核心日記免費。Dial Pro 增加圖表、匯出、多種藥物和提醒，以及在 Apple 裝置上一鍵記錄。Dial 是個人紀錄。Dial 不計算劑量，也不能取代醫生的指導。"
+  legal: "Dial Pro 增加圖表、匯出、多種藥物和提醒，以及在 Apple 裝置上一鍵記錄。Dial 是個人紀錄。Dial 不計算劑量，也不能取代醫生的指導。"
 
 proof:
   label: "為何選擇 Dial"
@@ -76,7 +77,7 @@ level:
 logging:
   kicker: "快速記錄"
   heading: "藥物、劑量、注射部位和備註。"
-  body: "填寫藥物、劑量、日期、時間、注射部位和備註。上一筆的內容會帶入下一筆。每一欄都還是要你確認。Ozempic、Wegovy、Mounjaro、Zepbound 都能記。"
+  body: "填寫藥物、劑量、日期、時間、注射部位和備註。上一筆的內容會帶入下一筆。每一欄都還是要你確認。Dial 認得司美格魯肽（胰妥讚、週纖達、維秀美，還有口服的瑞倍適）、替爾泊肽（猛健樂、滿健樂）、利拉魯肽（善纖達、秀身達、胰妥善）等 GLP-1 藥物，都用你所在地區的品名和包裝寫法，清單裡沒有你的處方也可以自己輸入。"
   checklist:
     - "內容有變時，再改那一筆"
     - "每次劑量都記下注射部位"

@@ -61,6 +61,7 @@ hero:
     Notez une dose sur iPhone ou Apple Watch. Dial en déduit un niveau estimé.
     Vos données restent sur l'appareil ou dans votre
     iCloud, si vous l'activez.
+  free_line: Téléchargement gratuit. Le carnet d'injections n'a pas de limite.
   secondary_cta: Voir comment Dial fonctionne
   platforms_label: Plateformes et stockage Dial
   platforms:
@@ -69,10 +70,9 @@ hero:
     - Siri, Centre de contrôle et écran de verrouillage
     - Stockage iCloud privé facultatif
   legal:
-    Le suivi de base est gratuit. Dial Pro ajoute les graphiques, les exports, plusieurs
-    médicaments et rappels, et l'enregistrement en un geste sur les appareils Apple. Dial
-    est un dossier personnel. Il ne calcule pas les doses et ne remplace pas les indications
-    de votre prescripteur.
+    Dial Pro ajoute les graphiques, les exports, plusieurs médicaments et rappels, et
+    l'enregistrement en un geste sur les appareils Apple. Dial est un dossier personnel.
+    Il ne calcule pas les doses et ne remplace pas les indications de votre prescripteur.
 
 proof:
   label: Pourquoi Dial
@@ -100,9 +100,12 @@ logging:
   kicker: Enregistrement rapide
   heading: Médicament, quantité, site d'injection et notes.
   body:
-    Notez le médicament, la quantité, la date, l'heure, le site d'injection et les notes.
-    Les valeurs récentes préremplissent l'entrée suivante. Vous confirmez chaque champ.
-    Dial fonctionne avec Ozempic, Wegovy, Mounjaro et Zepbound.
+    Notez le médicament, la quantité, la date, l'heure, le site d'injection et les
+    notes. Les valeurs récentes préremplissent l'entrée suivante. Vous confirmez
+    chaque champ. Dial connaît le sémaglutide (Ozempic, Wegovy, Rybelsus), le
+    tirzépatide (Mounjaro), le liraglutide (Saxenda, Victoza), le dulaglutide
+    (Trulicity) et l'exénatide sous les noms de marque et de boîte utilisés en
+    France, et accepte un médicament personnalisé si le vôtre n'y figure pas.
   checklist:
     - Modifier une entrée quand quelque chose change
     - Garder le site d'injection associé à chaque dose

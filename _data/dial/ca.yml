@@ -49,6 +49,7 @@ hero:
   headline_accent: ""
   category: "Dial és un diari privat de medicació GLP-1 per a iPhone i Apple Watch."
   detail: "Registri una dosi a l’iPhone o a l’Apple Watch. Dial traça un nivell estimat a partir d’aquestes entrades. Els registres queden al dispositiu, o a la seva base de dades privada d’iCloud si l’activa."
+  free_line: Descàrrega gratuïta. El registre de dosis no té límit.
   secondary_cta: "Vegi com funciona Dial"
   platforms_label: "Plataformes i emmagatzematge de Dial"
   platforms:
@@ -56,7 +57,7 @@ hero:
     - Apple Watch
     - "Siri, Centre de control i pantalla de bloqueig"
     - "Emmagatzematge privat opcional d’iCloud"
-  legal: "El diari bàsic és gratuït. Dial Pro afegeix gràfics, exportacions, diversos medicaments i recordatoris, i el registre amb un toc als dispositius Apple. Dial és un registre personal. No calcula dosis ni substitueix les indicacions de qui li prescriu."
+  legal: "Dial Pro afegeix gràfics, exportacions, diversos medicaments i recordatoris, i el registre amb un toc als dispositius Apple. Dial és un registre personal. No calcula dosis ni substitueix les indicacions de qui li prescriu."
 
 proof:
   label: "Per què Dial"
@@ -76,7 +77,7 @@ level:
 logging:
   kicker: "Registre ràpid"
   heading: "Medicament, quantitat, lloc d’injecció i notes."
-  body: "Anoti medicament, quantitat, data, hora, lloc d’injecció i notes. Els valors recents omplen l’entrada següent. Vostè confirma cada camp. Dial funciona amb Ozempic, Wegovy, Mounjaro i Zepbound."
+  body: "Anoti medicament, quantitat, data, hora, lloc d'injecció i notes. Els valors recents omplen l'entrada següent. Vostè confirma cada camp. Dial coneix semaglutida (Ozempic, Wegovy), tirzepatida (Mounjaro, Zepbound), liraglutida, dulaglutida i exenatida amb les marques i presentacions que s'utilitzen al seu país, i accepta un medicament personalitzat si la seva recepta no hi surt."
   checklist:
     - "Editi una entrada quan alguna cosa canvia"
     - "Anoti el lloc d’injecció a cada dosi"

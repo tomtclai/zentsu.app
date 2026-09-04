@@ -49,6 +49,7 @@ hero:
   headline_accent: ""
   category: "A Dial privát GLP-1-gyógyszernapló iPhone-ra és Apple Watchra."
   detail: "Rögzítsen adagot iPhone-on vagy Apple Watchon. A Dial ebből becsült szintet rajzol. A bejegyzések a készüléken maradnak, vagy a saját privát iCloud-adatbázisában, ha bekapcsolja az iCloudot."
+  free_line: Ingyenes letöltés. Az adagnaplónak nincs felső határa.
   secondary_cta: "Hogyan működik a Dial"
   platforms_label: "A Dial platformjai és tárolása"
   platforms:
@@ -56,7 +57,7 @@ hero:
     - Apple Watch
     - "Siri, Vezérlőközpont és zárolási képernyő"
     - "Választható privát iCloud-tárolás"
-  legal: "Az alapnapló ingyenes. A Dial Pro grafikonokat, exportot, több gyógyszert és emlékeztetőt, valamint egy koppintásos rögzítést ad Apple-készülékeken. A Dial személyes nyilvántartás. Nem számol adagot, és nem helyettesíti a felíró orvos útmutatását."
+  legal: "A Dial Pro grafikonokat, exportot, több gyógyszert és emlékeztetőt, valamint egy koppintásos rögzítést ad Apple-készülékeken. A Dial személyes nyilvántartás. Nem számol adagot, és nem helyettesíti a felíró orvos útmutatását."
 
 proof:
   label: "Miért a Dial"
@@ -76,7 +77,7 @@ level:
 logging:
   kicker: "Gyors rögzítés"
   heading: "Gyógyszer, mennyiség, injekcióhely és jegyzetek egy űrlapon."
-  body: "Írja be a gyógyszert, mennyiséget, dátumot, időt, injekcióhelyet és a jegyzeteket. A legutóbbi értékek kitöltik a következő bejegyzést. Minden mezőt Önnek kell megerősítenie. A Dial az Ozempic, Wegovy, Mounjaro és Zepbound készítményekkel is használható."
+  body: "Írja be a gyógyszert, mennyiséget, dátumot, időt, injekcióhelyet és a jegyzeteket. A legutóbbi értékek kitöltik a következő bejegyzést. Minden mezőt maga erősít meg. A Dial ismeri a szemaglutidot (Ozempic, Wegovy), tirzepatidot (Mounjaro), liraglutidot, dulaglutidot és exenatidot a Magyarországon használt márka- és csomagolási néven, és egyéni gyógyszerként veszi fel, ha a felírt gyógyszer nincs a listán."
   checklist:
     - "Szerkesszen bejegyzést, ha valami változik"
     - "Írja az injekcióhelyet minden adaghoz"

@@ -69,6 +69,7 @@ hero:
     Registra una dosis en el iPhone o en el Apple Watch. Dial traza un nivel estimado
     a partir de esas entradas. Tus registros se quedan en el dispositivo
     o en tu iCloud privado.
+  free_line: Descarga gratis. El registro de dosis no tiene límite.
   secondary_cta: Mira cómo funciona Dial
   platforms_label: Plataformas y almacenamiento de Dial
   platforms:
@@ -77,9 +78,9 @@ hero:
     - Siri, Centro de Control y pantalla de bloqueo
     - Almacenamiento privado opcional en iCloud
   legal:
-    El registro básico es gratis. Dial Pro agrega gráficos, exportaciones, varios medicamentos
-    y recordatorios, y registro en un toque en tus dispositivos Apple. Dial es un registro
-    personal. No calcula dosis ni reemplaza la orientación de tu médico.
+    Dial Pro agrega gráficos, exportaciones, varios medicamentos y recordatorios, y
+    registro en un toque en tus dispositivos Apple. Dial es un registro personal. No
+    calcula dosis ni reemplaza la orientación de tu médico.
 
 proof:
   label: Por qué Dial
@@ -107,9 +108,12 @@ logging:
   kicker: Registro rápido
   heading: Medicamento, cantidad, sitio de inyección y notas.
   body:
-    Anota medicamento, cantidad, fecha, hora, sitio de inyección y notas. Los valores
-    recientes rellenan la siguiente entrada. Tú confirmas cada campo. Dial funciona
-    con Ozempic, Wegovy, Mounjaro y Zepbound.
+    Anota medicamento, cantidad, fecha, hora, sitio de inyección y notas. Los
+    valores recientes rellenan la siguiente entrada. Confirmas cada campo. Dial
+    conoce semaglutida (Ozempic, Wegovy), tirzepatida (Mounjaro, Zepbound),
+    liraglutida, dulaglutida y exenatida con las marcas y presentaciones que se usan
+    en tu país, y acepta un medicamento personalizado si el tuyo no está en la
+    lista.
   checklist:
     - Edita una entrada cuando algo cambie
     - Anota el sitio de inyección en cada dosis

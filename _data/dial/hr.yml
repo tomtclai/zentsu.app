@@ -49,6 +49,7 @@ hero:
   headline_accent: ""
   category: "Dial je privatni GLP-1 dnevnik lijekova za iPhone i Apple Watch."
   detail: "Unesite dozu na iPhoneu ili Apple Watchu. Dial crta procijenjenu razinu iz tih unosa. Glavni zapisi ostaju na uređaju ili u privatnoj iCloud bazi, ako to uključite."
+  free_line: Besplatno preuzimanje. Dnevnik doza nema ograničenje.
   secondary_cta: "Kako Dial radi"
   platforms_label: "Platforme i pohrana Diala"
   platforms:
@@ -56,7 +57,7 @@ hero:
     - Apple Watch
     - "Siri, Kontrolni centar i zaključani zaslon"
     - "Neobavezna privatna iCloud pohrana"
-  legal: "Osnovni dnevnik je besplatan. Dial Pro dodaje grafikone, izvoz, više lijekova i podsjetnika te unos jednim dodirom na Apple uređajima. Dial je osobni zapis. Ne izračunava doze i ne zamjenjuje upute liječnika."
+  legal: "Dial Pro dodaje grafikone, izvoz, više lijekova i podsjetnika te unos jednim dodirom na Apple uređajima. Dial je osobni zapis. Ne izračunava doze i ne zamjenjuje upute liječnika."
 
 proof:
   label: "Zašto Dial"
@@ -76,7 +77,7 @@ level:
 logging:
   kicker: "Brzi unos"
   heading: "Lijek, količina, mjesto i bilješke u jednom obrascu."
-  body: "Zapišite lijek, količinu, datum, vrijeme, mjesto injekcije i bilješke. Nedavne vrijednosti popunjavaju sljedeći unos. Svako polje i dalje potvrđujete. Dial radi s Ozempicom, Wegovyjem, Mounjarom i Zepboundom."
+  body: "Zapišite lijek, količinu, datum, vrijeme, mjesto injekcije i bilješke. Nedavne vrijednosti popunjavaju sljedeći unos. Svako polje i dalje potvrđujete sami. Dial prepoznaje semaglutid (Ozempic, Wegovy), tirzepatid (Mounjaro), liraglutid, dulaglutid i eksenatid pod zaštićenim nazivima i nazivima pakiranja koji se koriste u Hrvatskoj, i prima vlastiti lijek ako propisanog nema na popisu."
   checklist:
     - "Uredite unos kad se nešto promijeni"
     - "Mjesta injekcije ostaju uz svaku dozu"

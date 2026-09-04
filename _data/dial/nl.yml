@@ -64,6 +64,7 @@ hero:
   detail:
     Leg een dosis vast op iPhone of Apple Watch. De geschatte spiegel is gebaseerd op die invoer.
     De gegevens blijven op het apparaat of in uw privé-iCloud.
+  free_line: Gratis te downloaden. Aan het logboek zelf zit geen limiet.
   secondary_cta: Zo werkt Dial
   platforms_label: Dial-platforms en opslag
   platforms:
@@ -72,10 +73,9 @@ hero:
     - Siri, Bedieningspaneel en toegangsscherm
     - Optionele privé-iCloud-opslag
   legal:
-    Het dagboek zelf is gratis. Dial Pro voegt grafieken, export, meerdere medicijnen en
-    herinneringen toe, plus vastleggen met één tik op Apple-apparaten. Dial is een
-    persoonlijk logboek. Het berekent geen doses en vervangt geen aanwijzingen van uw
-    voorschrijver.
+    Dial Pro voegt grafieken, export, meerdere medicijnen en herinneringen toe, plus
+    vastleggen met één tik op Apple-apparaten. Dial is een persoonlijk logboek. Het
+    berekent geen doses en vervangt geen aanwijzingen van uw voorschrijver.
 
 proof:
   label: Waarom Dial
@@ -102,9 +102,11 @@ logging:
   kicker: Snel vastleggen
   heading: Medicijn, hoeveelheid, injectieplaats en notities.
   body:
-    Noteer medicijn, hoeveelheid, datum, tijd, injectieplaats en notities. Recente waarden
-    vullen de volgende invoer. U bevestigt elk veld. Dial werkt met Ozempic, Wegovy, Mounjaro
-    en Zepbound.
+    Noteer medicijn, hoeveelheid, datum, tijd, injectieplaats en notities. Recente
+    waarden vullen de volgende invoer. U bevestigt elk veld. Dial kent semaglutide
+    (Ozempic, Wegovy), tirzepatide (Mounjaro, Zepbound), liraglutide, dulaglutide en
+    exenatide onder de merk- en verpakkingsnamen die in uw land gangbaar zijn, en
+    neemt een eigen medicijn op als het uwe er niet bij staat.
   checklist:
     - Een invoer bewerken als iets verandert
     - Injectieplaatsen koppelen aan elke dosis

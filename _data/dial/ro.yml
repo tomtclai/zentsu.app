@@ -49,6 +49,7 @@ hero:
   headline_accent: ""
   category: "Dial este un jurnal privat de medicamente GLP-1 pentru iPhone și Apple Watch."
   detail: "Înregistrați o doză pe iPhone sau Apple Watch. Dial construiește un nivel estimat din aceste înregistrări. Înregistrările de bază rămân pe dispozitiv sau în baza de date iCloud privată, dacă o activați."
+  free_line: Descărcare gratuită. Jurnalul de doze nu are limită.
   secondary_cta: "Cum funcționează Dial"
   platforms_label: "Platformele și stocarea Dial"
   platforms:
@@ -56,7 +57,7 @@ hero:
     - Apple Watch
     - "Siri, Centrul de control și ecranul de blocare"
     - "Stocare iCloud privată opțională"
-  legal: "Jurnalul de bază este gratuit. Dial Pro adaugă grafice, exporturi, mai multe medicamente, reamintiri și înregistrarea dintr-o atingere pe dispozitivele Apple. Dial este un jurnal personal. Nu calculează doze și nu înlocuiește indicațiile medicului curant."
+  legal: "Dial Pro adaugă grafice, exporturi, mai multe medicamente, reamintiri și înregistrarea dintr-o atingere pe dispozitivele Apple. Dial este un jurnal personal. Nu calculează doze și nu înlocuiește indicațiile medicului curant."
 
 proof:
   label: "De ce Dial"
@@ -76,7 +77,7 @@ level:
 logging:
   kicker: "Înregistrare rapidă"
   heading: "Medicament, cantitate, loc de injecție și note, într-un formular."
-  body: "Notați medicamentul, cantitatea, data, ora, locul de injecție și notele. Valorile recente completează următoarea înregistrare. Confirmați totuși fiecare câmp. Dial funcționează cu Ozempic, Wegovy, Mounjaro și Zepbound."
+  body: "Notați medicamentul, cantitatea, data, ora, locul de injecție și notele. Valorile recente completează următoarea înregistrare. Confirmați fiecare câmp. Dial recunoaște semaglutidă (Ozempic, Wegovy, Rybelsus), tirzepatidă (Mounjaro), liraglutidă (Saxenda, Victoza), dulaglutidă (Trulicity) și exenatidă sub denumirile de marcă și de cutie folosite în România, și acceptă un medicament personalizat dacă rețeta dumneavoastră nu este în listă."
   checklist:
     - "Editați o înregistrare când se schimbă ceva"
     - "Păstrați locul de injecție la fiecare doză"

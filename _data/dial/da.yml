@@ -49,6 +49,7 @@ hero:
   headline_accent: ""
   category: "Dial er en privat GLP-1-medicinjournal til iPhone og Apple Watch."
   detail: "Registrer en dosis på iPhone eller Apple Watch. Dial tegner et estimeret niveau ud fra de doser, du registrerer. Kernejournalen bliver på enheden, eller i din private iCloud-database, hvis du slår synkronisering til."
+  free_line: Gratis at hente. Der er ingen grænse for, hvor mange doser du kan logge.
   secondary_cta: "Sådan virker Dial"
   platforms_label: "Dial-platforme og lagring"
   platforms:
@@ -56,7 +57,7 @@ hero:
     - Apple Watch
     - "Siri, Kontrolcenter og låseskærm"
     - "Valgfri privat iCloud-lagring"
-  legal: "Kernejournalen er gratis. Dial Pro tilføjer grafer, eksport, flere lægemidler og påmindelser samt registrering med ét tryk på Apple-enheder. Dial er en personlig journal. Den beregner ikke doser og erstatter ikke vejledning fra den ordinerende læge."
+  legal: "Dial Pro tilføjer grafer, eksport, flere lægemidler og påmindelser samt registrering med ét tryk på Apple-enheder. Dial er en personlig journal. Den beregner ikke doser og erstatter ikke vejledning fra den ordinerende læge."
 
 proof:
   label: "Hvorfor Dial"
@@ -76,7 +77,7 @@ level:
 logging:
   kicker: "Hurtig registrering"
   heading: "Lægemiddel, mængde, injektionssted og noter i én formular."
-  body: "Notér lægemiddel, mængde, dato, tid, injektionssted og noter. De seneste værdier udfylder den næste post. Du skal stadig bekræfte hvert felt. Dial virker med Ozempic, Wegovy, Mounjaro og Zepbound."
+  body: "Notér lægemiddel, mængde, dato, tid, injektionssted og noter. De seneste værdier udfylder den næste post. Du skal stadig bekræfte hvert felt. Dial kender semaglutid (Ozempic, Wegovy), tirzepatid (Mounjaro), liraglutid (Saxenda, Victoza), dulaglutid og exenatid under de mærke- og pakningsnavne, der bruges i Danmark, og tager et eget lægemiddel, hvis dit ikke står på listen."
   checklist:
     - "Rediger en post, når noget ændrer sig"
     - "Behold injektionssteder knyttet til hver dosis"

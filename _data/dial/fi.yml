@@ -49,6 +49,7 @@ hero:
   headline_accent: ""
   category: "Dial on yksityinen GLP-1-lääkepäiväkirja iPhonelle ja Apple Watchille."
   detail: "Kirjaa annos iPhonella tai Apple Watchilla. Dial piirtää arvioidun tason näiden merkintöjen perusteella. Tiedot jäävät laitteelle tai yksityiseen iCloud-tietokantaasi, jos otat sen käyttöön."
+  free_line: Ilmainen lataus. Annoslokiin ei ole kattoa.
   secondary_cta: "Näin Dial toimii"
   platforms_label: "Dialin laitteet ja tallennus"
   platforms:
@@ -56,7 +57,7 @@ hero:
     - Apple Watch
     - "Siri, Ohjauskeskus ja lukitusnäyttö"
     - "Valinnainen yksityinen iCloud-tallennus"
-  legal: "Päiväkirja on ilmainen. Dial Pro lisää kaaviot, viennin, useita lääkkeitä ja muistutuksia sekä mahdollisuuden kirjata yhdellä napautuksella Apple-laitteilla. Dial on henkilökohtainen päiväkirja. Se ei laske annoksia eikä korvaa määrääjän ohjeita."
+  legal: "Dial Pro lisää kaaviot, viennin, useita lääkkeitä ja muistutuksia sekä mahdollisuuden kirjata yhdellä napautuksella Apple-laitteilla. Dial on henkilökohtainen päiväkirja. Se ei laske annoksia eikä korvaa määrääjän ohjeita."
 
 proof:
   label: "Miksi Dial"
@@ -76,7 +77,7 @@ level:
 logging:
   kicker: "Nopea kirjaus"
   heading: "Lääke, määrä, pistoskohta ja muistiinpanot yhdessä lomakkeessa."
-  body: "Kirjaa lääke, määrä, päivä, aika, pistoskohta ja muistiinpanot. Edelliset arvot esitäytetään seuraavaan merkintään. Vahvistat silti jokaisen kentän. Dial toimii Ozempicin, Wegovyn, Mounjaron ja Zepboundin kanssa."
+  body: "Kirjaa lääke, määrä, päivä, aika, pistoskohta ja muistiinpanot. Edelliset arvot esitäytetään seuraavaan merkintään. Vahvistat jokaisen kentän itse. Dial tunnistaa semaglutidin (Ozempic, Wegovy), tirtsepatidin (Mounjaro), liraglutidin (Saxenda, Victoza), dulaglutidin ja eksenatidin Suomessa käytetyillä kauppa- ja pakkausnimillä, ja ottaa oman lääkkeen, jos reseptissäsi oleva lääke ei ole listalla."
   checklist:
     - "Muokkaa merkintää, kun jokin muuttuu"
     - "Pistoskohta tallentuu jokaiseen annokseen"

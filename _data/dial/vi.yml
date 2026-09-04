@@ -49,6 +49,7 @@ hero:
   headline_accent: ""
   category: "Dial là nhật ký thuốc GLP-1 riêng tư cho iPhone và Apple Watch."
   detail: "Ghi một liều trên iPhone hoặc Apple Watch. Dial vẽ biểu đồ mức ước tính từ những mục đó. Nhật ký ở lại trên máy, hoặc trong cơ sở dữ liệu iCloud riêng nếu bạn bật đồng bộ."
+  free_line: Tải miễn phí. Nhật ký liều không giới hạn.
   secondary_cta: "Dial hoạt động thế nào"
   platforms_label: "Nền tảng và lưu trữ Dial"
   platforms:
@@ -56,7 +57,7 @@ hero:
     - Apple Watch
     - "Siri, Trung tâm điều khiển và màn hình khóa"
     - "Lưu trữ iCloud riêng, bật khi cần"
-  legal: "Nhật ký cơ bản dùng miễn phí. Dial Pro thêm biểu đồ, xuất, nhiều thuốc và lời nhắc, cùng ghi một chạm trên thiết bị Apple. Dial là bản ghi cá nhân. Ứng dụng không tính liều và không thay thế hướng dẫn của bác sĩ."
+  legal: "Dial Pro thêm biểu đồ, xuất, nhiều thuốc và lời nhắc, cùng ghi một chạm trên thiết bị Apple. Dial là bản ghi cá nhân. Ứng dụng không tính liều và không thay thế hướng dẫn của bác sĩ."
 
 proof:
   label: "Vì sao Dial"
@@ -76,7 +77,7 @@ level:
 logging:
   kicker: "Ghi nhanh"
   heading: "Thuốc, lượng, vị trí tiêm và ghi chú trong một biểu mẫu."
-  body: "Ghi thuốc, lượng, ngày, giờ, vị trí tiêm và ghi chú. Mục tiếp theo nhớ giá trị vừa dùng. Bạn vẫn xác nhận từng trường. Dial dùng được với Ozempic, Wegovy, Mounjaro và Zepbound."
+  body: "Ghi thuốc, lượng, ngày, giờ, vị trí tiêm và ghi chú. Mục tiếp theo nhớ giá trị vừa dùng. Bạn vẫn xác nhận từng trường. Dial biết Semaglutide (Ozempic, Wegovy), tirzepatide (Mounjaro, Zepbound), liraglutide, dulaglutide và exenatide theo tên thương hiệu và tên trên hộp thuốc bán ở nước bạn, và nhận tên thuốc riêng nếu đơn thuốc của bạn không có trong danh sách."
   checklist:
     - "Sửa mục khi có thay đổi"
     - "Mỗi liều gắn với một vị trí tiêm"

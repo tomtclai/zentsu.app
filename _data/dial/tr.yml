@@ -49,6 +49,7 @@ hero:
   headline_accent: ""
   category: "Dial, iPhone ve Apple Watch için özel bir GLP-1 ilaç günlüğüdür."
   detail: "iPhone veya Apple Watch'ta doz kaydedin. Dial, kaydettiğiniz dozlardan tahmini düzeyi çizer. Kayıtlar cihazda kalır. iCloud'u açarsanız özel iCloud veritabanınızda da durur."
+  free_line: Ücretsiz indirin. Doz günlüğünün sınırı yok.
   secondary_cta: "Dial nasıl çalışır"
   platforms_label: "Dial platformları ve depolama"
   platforms:
@@ -56,7 +57,7 @@ hero:
     - Apple Watch
     - "Siri, Denetim Merkezi ve Kilit Ekranı"
     - "İsteğe bağlı özel iCloud depolama"
-  legal: "Temel günlük ücretsizdir. Dial Pro grafik, dışa aktarma, birden fazla ilaç, anımsatıcı ve Apple cihazlarında tek dokunuşla kayıt ekler. Dial kişisel bir kayıttır. Doz hesaplamaz ve hekiminizin yönlendirmesinin yerini almaz."
+  legal: "Dial Pro grafik, dışa aktarma, birden fazla ilaç, anımsatıcı ve Apple cihazlarında tek dokunuşla kayıt ekler. Dial kişisel bir kayıttır. Doz hesaplamaz ve hekiminizin yönlendirmesinin yerini almaz."
 
 proof:
   label: "Neden Dial"
@@ -76,7 +77,7 @@ level:
 logging:
   kicker: "Hızlı kayıt"
   heading: "İlaç, miktar, yer ve not alanları tek formda."
-  body: "İlaç, miktar, tarih, saat, enjeksiyon yeri ve notları yazın. Son değerler bir sonraki kaydı doldurur. Her alanı siz onaylarsınız. Dial, Ozempic, Wegovy, Mounjaro ve Zepbound ile çalışır."
+  body: "İlaç, miktar, tarih, saat, enjeksiyon yeri ve notları yazın. Son değerler bir sonraki kaydı doldurur. Her alanı siz onaylarsınız. Dial, semaglutid (Ozempic, Wegovy), tirzepatid (Mounjaro, Zepbound), liraglutid, dulaglutid ve eksenatidi ülkenizde kullanılan kutu adlarıyla tanır ve ilacınız listede yoksa adını kendiniz yazabilirsiniz."
   checklist:
     - "Bir şey değişince kaydı düzenleyin"
     - "Her dozun enjeksiyon yerini kaydedin"

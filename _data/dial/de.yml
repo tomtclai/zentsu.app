@@ -65,6 +65,7 @@ hero:
     Erfassen Sie eine Dosis auf iPhone oder Apple Watch. Der geschätzte Spiegel ergibt
     sich aus diesen Einträgen. Ihre Einträge bleiben auf dem Gerät oder, wenn Sie das
     einschalten, in Ihrer privaten iCloud-Datenbank.
+  free_line: Kostenlos laden. Das Spritzenprotokoll hat kein Limit.
   secondary_cta: So funktioniert Dial
   platforms_label: Dial-Plattformen und Speicher
   platforms:
@@ -73,9 +74,9 @@ hero:
     - Siri, Kontrollzentrum und Sperrbildschirm
     - Optionaler privater iCloud-Speicher
   legal:
-    Das Tagebuch ist kostenlos. Dial Pro ergänzt Diagramme, Exporte, mehrere Medikamente
-    und Erinnerungen sowie das Erfassen mit einem Tipp auf Apple-Geräten. Dial ist ein
-    persönliches Protokoll. Es berechnet keine Dosen und ersetzt keine Hinweise Ihrer
+    Dial Pro ergänzt Diagramme, Exporte, mehrere Medikamente und Erinnerungen sowie
+    das Erfassen mit einem Tipp auf Apple-Geräten. Dial ist ein persönliches
+    Protokoll. Es berechnet keine Dosen und ersetzt keine Hinweise Ihrer
     verschreibenden Person.
 
 proof:
@@ -105,8 +106,11 @@ logging:
   heading: Medikament, Menge, Injektionsstelle und Notizen in einem Formular.
   body:
     Halten Sie Medikament, Menge, Datum, Uhrzeit, Injektionsstelle und Notizen fest.
-    Für den nächsten Eintrag sind die letzten Werte vorausgefüllt. Jedes Feld bestätigen Sie selbst.
-    Dial funktioniert mit Ozempic, Wegovy, Mounjaro und Zepbound.
+    Für den nächsten Eintrag sind die letzten Werte vorausgefüllt. Jedes Feld
+    bestätigen Sie selbst. Dial kennt Semaglutid (Ozempic, Wegovy), Tirzepatid
+    (Mounjaro, Zepbound), Liraglutid, Dulaglutid und Exenatid unter den in Ihrem
+    Land gebräuchlichen Marken- und Packungsnamen und nimmt ein individuelles
+    Medikament auf, wenn Ihres nicht gelistet ist.
   checklist:
     - Einen Eintrag bearbeiten, wenn sich etwas ändert
     - Injektionsstellen je Dosis speichern

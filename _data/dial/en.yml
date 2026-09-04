@@ -65,6 +65,7 @@ hero:
     Log a dose on iPhone or Apple Watch. Dial plots an estimated level from those
     entries. Core records stay on the device, or in your private iCloud database if you
     turn that on.
+  free_line: Free to download. The dose log has no cap.
   secondary_cta: See how Dial works
   platforms_label: Dial platforms and storage
   platforms:
@@ -73,9 +74,9 @@ hero:
     - Siri, Control Center, and Lock Screen
     - Optional private iCloud storage
   legal:
-    The core tracker is free. Dial Pro adds analysis, exports, multiple medications
-    and reminders, and one-tap logging across Apple devices. Dial is a personal record.
-    It does not calculate doses or replace guidance from your prescriber.
+    Dial Pro adds analysis, exports, multiple medications and reminders, and one-tap
+    logging across Apple devices. Dial is a personal record. It does not calculate
+    doses or replace guidance from your prescriber.
 
 proof:
   label: Why Dial
@@ -104,8 +105,10 @@ logging:
   heading: Medication, amount, site, and notes in one form.
   body:
     Record medication, amount, date, time, injection site, and notes. Recent values
-    fill the next entry. You still confirm every field. Dial works with Ozempic, Wegovy,
-    Mounjaro, and Zepbound.
+    fill the next entry. You still confirm every field. Dial knows semaglutide
+    (Ozempic, Wegovy), tirzepatide (Mounjaro, Zepbound), liraglutide, dulaglutide,
+    and exenatide under the names used in your country, and takes a custom
+    medication when yours is not listed.
   checklist:
     - Edit an entry when something changes
     - Keep injection sites attached to each dose

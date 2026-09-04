@@ -49,6 +49,7 @@ hero:
   headline_accent: ""
   category: "Dial ialah diari ubat GLP-1 peribadi untuk iPhone dan Apple Watch."
   detail: "Rekod dos pada iPhone atau Apple Watch. Dial memaparkan tahap anggaran daripada entri itu. Rekod kekal pada peranti, atau dalam pangkalan data iCloud peribadi anda jika anda hidupkan pilihan itu."
+  free_line: Muat turun percuma. Log dos tiada had.
   secondary_cta: "Cara Dial berfungsi"
   platforms_label: "Platform dan storan Dial"
   platforms:
@@ -56,7 +57,7 @@ hero:
     - Apple Watch
     - "Siri, Pusat Kawalan dan Skrin Kunci"
     - "Storan iCloud peribadi pilihan"
-  legal: "Diari teras percuma. Dial Pro menambah graf, eksport, lebih banyak ubat dan peringatan, serta rekod satu ketikan pada peranti Apple. Dial ialah rekod peribadi. Ia tidak mengira dos dan tidak menggantikan arahan pemberi preskripsi."
+  legal: "Dial Pro menambah graf, eksport, lebih banyak ubat dan peringatan, serta rekod satu ketikan pada peranti Apple. Dial ialah rekod peribadi. Ia tidak mengira dos dan tidak menggantikan arahan pemberi preskripsi."
 
 proof:
   label: "Mengapa Dial"
@@ -76,7 +77,7 @@ level:
 logging:
   kicker: "Rekod pantas"
   heading: "Ubat, jumlah, tapak dan nota dalam satu borang."
-  body: "Rekod ubat, jumlah, tarikh, masa, tapak suntikan dan nota. Nilai terkini mengisi entri seterusnya. Anda masih sahkan setiap medan. Dial berfungsi dengan Ozempic, Wegovy, Mounjaro dan Zepbound."
+  body: "Rekod ubat, jumlah, tarikh, masa, tapak suntikan dan nota. Nilai terkini mengisi entri seterusnya. Anda masih sahkan setiap medan. Dial mengenali Semaglutide (Ozempic, Wegovy), tirzepatide (Mounjaro, Zepbound), liraglutide, dulaglutide dan exenatide mengikut nama jenama dan kemasan yang digunakan di negara anda, dan menerima ubat tersuai jika preskripsi anda tiada dalam senarai."
   checklist:
     - "Edit entri apabila sesuatu berubah"
     - "Simpan tapak suntikan pada setiap dos"

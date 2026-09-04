@@ -49,6 +49,7 @@ hero:
   headline_accent: ""
   category: "Dial är en privat GLP-1-läkemedelsjournal för iPhone och Apple Watch."
   detail: "Registrera en dos på iPhone eller Apple Watch. Dial ritar en uppskattad nivå utifrån de doser du registrerar. Journalen stannar på enheten, eller i din privata iCloud-databas om du slår på synkronisering."
+  free_line: Gratis att hämta. Det finns ingen gräns för hur många doser du kan logga.
   secondary_cta: "Så fungerar Dial"
   platforms_label: "Dial-plattformar och lagring"
   platforms:
@@ -56,7 +57,7 @@ hero:
     - Apple Watch
     - "Siri, Kontrollcenter och låsskärm"
     - "Valfri privat iCloud-lagring"
-  legal: "Kärnjournalen är gratis. Dial Pro lägger till diagram, export, flera läkemedel och påminnelser samt registrering med ett tryck på Apple-enheter. Dial är en personlig journal. Den räknar inte ut doser och ersätter inte råd från din förskrivare."
+  legal: "Dial Pro lägger till diagram, export, flera läkemedel och påminnelser samt registrering med ett tryck på Apple-enheter. Dial är en personlig journal. Den räknar inte ut doser och ersätter inte råd från din förskrivare."
 
 proof:
   label: "Varför Dial"
@@ -76,7 +77,7 @@ level:
 logging:
   kicker: "Snabb registrering"
   heading: "Läkemedel, mängd, injektionsställe och anteckningar i ett formulär."
-  body: "Anteckna läkemedel, mängd, datum, tid, injektionsställe och anteckningar. Senaste värdena fyller i nästa post. Du bekräftar fortfarande varje fält. Dial fungerar med Ozempic, Wegovy, Mounjaro och Zepbound."
+  body: "Anteckna läkemedel, mängd, datum, tid, injektionsställe och anteckningar. Senaste värdena fyller i nästa post. Du bekräftar fortfarande varje fält. Dial känner semaglutid (Ozempic, Wegovy), tirzepatid (Mounjaro), liraglutid (Saxenda, Victoza), dulaglutid och exenatid under de varumärkes- och förpackningsnamn som används i Sverige, och tar ett eget läkemedel om det du har på recept inte finns i listan."
   checklist:
     - "Redigera en post när något ändras"
     - "Behåll injektionsställen kopplade till varje dos"
