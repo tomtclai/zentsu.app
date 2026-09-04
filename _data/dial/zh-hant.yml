@@ -45,38 +45,39 @@ images:
 
 hero:
   availability: "現已於 App Store 上架"
-  headline_lead: "記下每一次劑量。"
+  headline_lead: "每次劑量的私人紀錄。"
   headline_accent: ""
-  category: "Dial 是 iPhone 和 Apple Watch 上的私人 GLP-1 用藥日記。"
-  detail: "在 iPhone 或 Apple Watch 記錄劑量。估計水平依你已記錄的劑量繪製。核心紀錄留在裝置上，或留在你自己的私人 iCloud。"
-  free_line: 免費下載。用藥紀錄沒有上限。
-  secondary_cta: "Dial 怎麼用"
+  category: "Dial 是 iPhone 和 Apple Watch 上的 GLP-1 用藥紀錄。"
+  detail: "用手機或手腕，為每次劑量附上時間和注射部位。Dial Pro 依紀錄繪出兩次劑量之間的估計水平，並產生給醫師看的 PDF。紀錄留在裝置上。若開啟 iCloud，也可放進你自己的私人 iCloud 資料庫。"
+  free_line: 免費下載，不必建立 Dial 帳號。用藥紀錄沒有上限。
+  secondary_cta: "Dial 的用法"
+  qr_caption: "掃描後即可在 iPhone 的 App Store 開啟 Dial。"
   platforms_label: "Dial 平台與儲存"
   platforms:
     - iPhone
     - Apple Watch
     - "Siri、控制中心和鎖定畫面"
     - "可選的私人 iCloud 儲存"
-  legal: "Dial Pro 增加圖表、匯出、多種藥物和提醒，以及在 Apple 裝置上一鍵記錄。Dial 是個人紀錄。Dial 不計算劑量，也不能取代醫生的指導。"
+  legal: "Dial 是個人紀錄。不計算劑量，也不能取代醫師的指導。Dial Pro 增加下文的估計水平圖表、完整歷史、匯出和快速記錄。"
 
 proof:
   label: "為何選擇 Dial"
   points:
-    - "iPhone 和 Apple Watch"
+    - "Apple Watch 上的週期環和下次提醒"
     - "不用 Dial 帳號就能打開"
-    - "永久買斷"
-    - "依你記錄的劑量估算水平"
+    - "永久買斷，一次購買"
+    - "兩次劑量之間的估計水平（Dial Pro）"
 
 level:
   kicker: "Dial Pro · 估計水平"
-  heading: "圖表依你已記錄的劑量繪製。"
+  heading: "依半衰期，查看兩次劑量之間的估計水平。"
   body: "Dial 根據你記錄的劑量和 App 裡顯示的半衰期，繪製隨時間變化的估計水平。切換範圍，即可查看自己一週、一個月或六個月的紀錄。"
   boundary_lead: "這是估計，我們會標明。"
   boundary_body: "圖表依你記錄的劑量套用標準衰減曲線，用來看劑量之間你自己的變化。這不是測得的血藥濃度，也不是下一步該用什麼的建議。Dial 不計算劑量。方法在 App 裡有完整說明。"
 
 logging:
   kicker: "快速記錄"
-  heading: "藥物、劑量、注射部位和備註。"
+  heading: "在同一張表單記下藥物、劑量和注射部位。"
   body: "填寫藥物、劑量、日期、時間、注射部位和備註。上一筆的內容會帶入下一筆。每一欄都還是要你確認。Dial 認得司美格魯肽（胰妥讚、週纖達、維秀美，還有口服的瑞倍適）、替爾泊肽（猛健樂、滿健樂）、利拉魯肽（善纖達、秀身達、胰妥善）等 GLP-1 藥物，都用你所在地區的品名和包裝寫法，清單裡沒有你的處方也可以自己輸入。"
   checklist:
     - "內容有變時，再改那一筆"
@@ -86,7 +87,7 @@ logging:
 history:
   kicker: "Dial Pro · 歷史與趨勢"
   heading: "劑量、體重和副作用圖表。"
-  body: "劑量、體重和副作用清單仍免費。Dial Pro 增加完整的劑量和體重圖表，以及紀錄裡已有的副作用趨勢。"
+  body: "劑量、體重和副作用清單仍免費。Dial Pro 加上圖表。"
   history_card_title: "劑量與體重歷史"
   history_card_note: "查看你所選範圍內的變化。"
   side_effects_card_title: "副作用趨勢"
@@ -95,7 +96,8 @@ history:
 report:
   kicker: "Dial Pro · PDF 報告"
   heading: "給看診用的 PDF。"
-  body: "產生含劑量歷史、劑量變化、注射部位、體重趨勢和副作用模式的 PDF。Dial 在裝置上產生，只有你決定要分享時，才透過 AirDrop、郵件或列印送出。"
+  card_title: "給看診用的 PDF"
+  body: "產生含劑量歷史、劑量變化、注射部位、體重趨勢和副作用模式的 PDF。Dial 在裝置上產生，只有你決定要分享時，才透過 AirDrop、郵件或列印送出。同一份歷史也可匯出成 CSV。"
   closing: "其餘時間保持私密，在紀錄需要離開手機的那一刻才派上用場。"
   smallprint: "報告彙總你的紀錄。這不是病歷，也不是治療計畫。"
 
@@ -110,8 +112,8 @@ watch:
     - "在 iPhone 上，Pro 可從控制中心、動作按鈕、Siri 或提醒日的 Live Activity 一鍵記錄。免費版則會打開記錄表單。"
 
 supporting:
-  kicker: "紀錄以外"
-  heading: "庫存、提醒和匯入。"
+  kicker: "紀錄裡的全部"
+  heading: "歷史、報告、庫存、提醒和匯入，都在同一處。"
   features:
     - title: "庫存"
       body: "追蹤筆或小瓶的濃度、藥局、有效期限和批號。"
@@ -122,17 +124,18 @@ supporting:
 
 plans:
   kicker: "免費與 Dial Pro"
-  heading: "免費使用核心日記。"
-  body: "需要估計水平圖表、匯出，或在 Apple 裝置上一鍵記錄時，再升級到 Pro。各 Dial Pro 方案功能相同。"
+  heading: "免費使用核心紀錄。"
+  body: "Dial Pro 增加估計水平圖表、完整歷史圖表、匯出，以及在 Apple Watch 和 iPhone 上快速記錄。各 Dial Pro 方案功能相同。"
   free_name: "免費"
-  free_summary: "一種使用中的藥物，完整紀錄。"
+  free_summary: "一種使用中的藥物，用藥紀錄沒有上限。"
   free_features:
     - "記錄劑量、注射部位、體重、副作用和進展照片"
     - "一種使用中的藥物和一則提醒"
     - "劑量和體重清單、庫存、匯入和 Apple Watch 一覽"
     - "倒數小工具，以及可打開記錄表單的提醒"
   pro_name: Dial Pro
-  pro_summary: "估計水平、完整圖表、匯出和快速記錄。"
+  pro_summary: "查看兩次劑量之間的水平，把完整歷史畫成圖表，從手腕記錄。"
+  cta_caption: "先免費下載，再在 App 裡選方案。"
   pro_features:
     - "估計水平圖表和主畫面小工具"
     - "完整劑量和體重圖表、副作用趨勢和照片比較"
@@ -151,18 +154,22 @@ privacy:
   heading: "紀錄留在裝置上。"
   specs:
     - term: "帳號"
-      detail: "沒有 Dial 帳號。打開 App 即可開始記錄。"
+      detail: "開始記錄不需要 Dial 帳號。"
     - term: "使用分析"
-      detail: "Dial 不做使用分析，也不做遙測。我們不會測量你怎麼使用。"
+      detail: "Dial 不收集使用分析，也不做遙測。"
     - term: "我們的伺服器"
       detail: "Zentsu 沒有伺服器會儲存或讀取你的紀錄。"
     - term: "可選同步"
-      detail: "在 App 中打開「與 iCloud 同步」後，紀錄會透過你自己 Apple 帳號上的私人 CloudKit 資料庫同步，不會送到我們這邊。"
-  body: "藥物、劑量、提醒和庫存紀錄留在裝置上。體重紀錄另外存在本機。健康存取是選用的，只有你授權時才會讀取體重。"
+      detail: "開啟 iCloud 後，核心紀錄使用你自己 Apple 帳號上的私人 CloudKit 資料庫，不會到我們的伺服器。"
+  body: "核心紀錄留在裝置上。體重和進展照片使用另一套僅本機的儲存。"
   policy_link: "閱讀 Dial 隱私權政策"
   policy_url: /zh-hant/dial/privacy/
 
 availability:
   kicker: "下載 Dial"
   heading: "現已於 App Store 上架。"
-  body: "Dial 可免費下載。核心日記從第一次記錄起即可用。Dial Pro 增加估計水平圖表、完整圖表、PDF 匯出，以及從 Apple Watch 和 iPhone 快速記錄。"
+  body: "Dial 可免費下載，不必建立帳號。Dial Pro 增加估計水平圖表、完整歷史圖表、PDF 與 CSV 匯出，以及從 Apple Watch 和 iPhone 快速記錄。"
+
+trademarks: |
+  Ozempic, Wegovy, Mounjaro, and Zepbound are trademarks of their respective owners.
+  Zentsu is not affiliated with any pharmaceutical company.

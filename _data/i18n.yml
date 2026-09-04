@@ -47,9 +47,15 @@ de:
     apps: Apps
     privacy: Datenschutz
     terms: Nutzungsbedingungen
+    get_dial: "Dial holen"
+  sticky:
+    get_dial: "Dial kostenlos"
+  plans_ui:
+    plan_legend: "Wähle einen Dial-Pro-Plan"
   footer:
     home: Zentsu
     apps: Apps
+    learn: "Lesen"
     dial: Dial
     dial_url: /de/dial/
     bench_support: Bench-Support
@@ -77,9 +83,15 @@ es:
     privacy: Privacidad
     terms: Términos
     terms_long: ' de uso'
+    get_dial: "Obtener Dial"
+  sticky:
+    get_dial: "Dial, gratis"
+  plans_ui:
+    plan_legend: "Elige un plan Dial Pro"
   footer:
     home: Zentsu
     apps: Apps
+    learn: "Aprende"
     dial: Dial
     dial_url: /es/dial/
     bench_support: Soporte de Bench
@@ -107,9 +119,15 @@ fr:
     privacy: Confidentialité
     terms: Conditions
     terms_long: " d'utilisation"
+    get_dial: "Obtenir Dial"
+  sticky:
+    get_dial: "Dial, gratuit"
+  plans_ui:
+    plan_legend: "Choisis une formule Dial Pro"
   footer:
     home: Zentsu
     apps: Apps
+    learn: "Découvrir"
     dial: Dial
     dial_url: /fr/dial/
     bench_support: Assistance Bench
@@ -137,9 +155,15 @@ it:
     privacy: Privacy
     terms: Termini
     terms_long: ' di utilizzo'
+    get_dial: "Scarica Dial"
+  sticky:
+    get_dial: "Dial, gratis"
+  plans_ui:
+    plan_legend: "Scegli un piano Dial Pro"
   footer:
     home: Zentsu
     apps: Apps
+    learn: "Scopri"
     dial: Dial
     dial_url: /it/dial/
     bench_support: Supporto Bench
@@ -166,9 +190,15 @@ ja:
     apps: Apps
     privacy: プライバシー
     terms: 利用規約
+    get_dial: "Dialを入手"
+  sticky:
+    get_dial: "無料でDialを入手"
+  plans_ui:
+    plan_legend: "Dial Proプランを選ぶ"
   footer:
     home: Zentsu
     apps: Apps
+    learn: "学ぶ"
     dial: Dial
     dial_url: /ja/dial/
     bench_support: Benchサポート
@@ -194,9 +224,15 @@ nl:
     apps: Apps
     privacy: Privacy
     terms: Voorwaarden
+    get_dial: "Dial halen"
+  sticky:
+    get_dial: "Dial, gratis"
+  plans_ui:
+    plan_legend: "Kies een Dial Pro-plan"
   footer:
     home: Zentsu
     apps: Apps
+    learn: "Lezen"
     dial: Dial
     dial_url: /nl/dial/
     bench_support: Bench-ondersteuning
@@ -224,9 +260,15 @@ pt:
     privacy: Privacidade
     terms: Termos
     terms_long: ' de uso'
+    get_dial: "Baixar Dial"
+  sticky:
+    get_dial: "Dial, grátis"
+  plans_ui:
+    plan_legend: "Escolha um plano Dial Pro"
   footer:
     home: Zentsu
     apps: Apps
+    learn: "Saiba mais"
     dial: Dial
     dial_url: /pt/dial/
     bench_support: Suporte do Bench
@@ -253,9 +295,15 @@ hi:
     apps: ऐप्स
     privacy: गोपनीयता
     terms: शर्तें
+    get_dial: "Dial लें"
+  sticky:
+    get_dial: "Dial मुफ्त लें"
+  plans_ui:
+    plan_legend: "Dial Pro योजना चुनें"
   footer:
     home: Zentsu
     apps: ऐप्स
+    learn: "जानें"
     dial: Dial
     dial_url: /hi/dial/
     bench_support: Bench सहायता
@@ -282,9 +330,15 @@ tr:
     apps: Uygulamalar
     privacy: Gizlilik
     terms: Koşullar
+    get_dial: "Dial'i al"
+  sticky:
+    get_dial: "Dial, ücretsiz"
+  plans_ui:
+    plan_legend: "Bir Dial Pro planı seç"
   footer:
     home: Zentsu
     apps: Uygulamalar
+    learn: "Öğren"
     dial: Dial
     dial_url: /tr/dial/
     bench_support: Bench desteği
@@ -312,9 +366,15 @@ ar:
     apps: تطبيقات
     privacy: الخصوصية
     terms: الشروط
+    get_dial: "حمّل Dial"
+  sticky:
+    get_dial: "Dial مجاناً"
+  plans_ui:
+    plan_legend: "اختر خطة Dial Pro"
   footer:
     home: Zentsu
     apps: تطبيقات
+    learn: "تعرّف"
     dial: Dial
     dial_url: /ar/dial/
     bench_support: دعم Bench
@@ -341,9 +401,15 @@ ca:
     apps: Aplicacions
     privacy: Privadesa
     terms: Termes
+    get_dial: "Baixa Dial"
+  sticky:
+    get_dial: "Dial, de franc"
+  plans_ui:
+    plan_legend: "Tria un pla Dial Pro"
   footer:
     home: Zentsu
     apps: Aplicacions
+    learn: "Aprèn"
     dial: Dial
     dial_url: /ca/dial/
     bench_support: Assistència de Bench
@@ -370,9 +436,15 @@ ko:
     apps: 앱
     privacy: 개인정보
     terms: 약관
+    get_dial: "Dial 받기"
+  sticky:
+    get_dial: "무료로 Dial 받기"
+  plans_ui:
+    plan_legend: "Dial Pro 요금제 고르기"
   footer:
     home: Zentsu
     apps: 앱
+    learn: "알아보기"
     dial: Dial
     dial_url: /ko/dial/
     bench_support: Bench 지원
@@ -399,9 +471,15 @@ zh:
     apps: 应用
     privacy: 隐私
     terms: 条款
+    get_dial: "获取 Dial"
+  sticky:
+    get_dial: "免费获取 Dial"
+  plans_ui:
+    plan_legend: "选择 Dial Pro 方案"
   footer:
     home: Zentsu
     apps: 应用
+    learn: "了解"
     dial: Dial
     dial_url: /zh/dial/
     bench_support: Bench 支持
@@ -428,9 +506,15 @@ zh-hant:
     apps: App
     privacy: 隱私權
     terms: 條款
+    get_dial: "取得 Dial"
+  sticky:
+    get_dial: "免費取得 Dial"
+  plans_ui:
+    plan_legend: "選擇 Dial Pro 方案"
   footer:
     home: Zentsu
     apps: App
+    learn: "瞭解"
     dial: Dial
     dial_url: /zh-hant/dial/
     bench_support: Bench 支援
@@ -457,9 +541,15 @@ id:
     apps: Aplikasi
     privacy: Privasi
     terms: Ketentuan
+    get_dial: "Unduh Dial"
+  sticky:
+    get_dial: "Dial, gratis"
+  plans_ui:
+    plan_legend: "Pilih paket Dial Pro"
   footer:
     home: Zentsu
     apps: Aplikasi
+    learn: "Pelajari"
     dial: Dial
     dial_url: /id/dial/
     bench_support: Dukungan Bench
@@ -486,9 +576,15 @@ pl:
     apps: Aplikacje
     privacy: Prywatność
     terms: Warunki
+    get_dial: "Pobierz Dial"
+  sticky:
+    get_dial: "Dial za darmo"
+  plans_ui:
+    plan_legend: "Wybierz plan Dial Pro"
   footer:
     home: Zentsu
     apps: Aplikacje
+    learn: "Poznaj"
     dial: Dial
     dial_url: /pl/dial/
     bench_support: Wsparcie Bench
@@ -515,9 +611,15 @@ ms:
     apps: Aplikasi
     privacy: Privasi
     terms: Terma
+    get_dial: "Ambil Dial"
+  sticky:
+    get_dial: "Dial percuma"
+  plans_ui:
+    plan_legend: "Pilih pelan Dial Pro"
   footer:
     home: Zentsu
     apps: Aplikasi
+    learn: "Ketahui"
     dial: Dial
     dial_url: /ms/dial/
     bench_support: Sokongan Bench
@@ -545,9 +647,15 @@ he:
     apps: יישומים
     privacy: פרטיות
     terms: תנאים
+    get_dial: "הורידו Dial"
+  sticky:
+    get_dial: "Dial בחינם"
+  plans_ui:
+    plan_legend: "בחרו תוכנית Dial Pro"
   footer:
     home: Zentsu
     apps: יישומים
+    learn: "מידע"
     dial: Dial
     dial_url: /he/dial/
     bench_support: תמיכה ב-Bench
@@ -574,9 +682,15 @@ vi:
     apps: Ứng dụng
     privacy: Quyền riêng tư
     terms: Điều khoản
+    get_dial: "Tải Dial"
+  sticky:
+    get_dial: "Dial miễn phí"
+  plans_ui:
+    plan_legend: "Chọn gói Dial Pro"
   footer:
     home: Zentsu
     apps: Ứng dụng
+    learn: "Tìm hiểu"
     dial: Dial
     dial_url: /vi/dial/
     bench_support: Hỗ trợ Bench
@@ -603,9 +717,15 @@ fi:
     apps: Apit
     privacy: Tietosuoja
     terms: Ehdot
+    get_dial: "Lataa Dial"
+  sticky:
+    get_dial: "Dial ilmaiseksi"
+  plans_ui:
+    plan_legend: "Valitse Dial Pro -paketti"
   footer:
     home: Zentsu
     apps: Apit
+    learn: "Lue"
     dial: Dial
     dial_url: /fi/dial/
     bench_support: Bench-tuki
@@ -632,9 +752,15 @@ ro:
     apps: Aplicații
     privacy: Confidențialitate
     terms: Termeni
+    get_dial: "Obține Dial"
+  sticky:
+    get_dial: "Dial, gratuit"
+  plans_ui:
+    plan_legend: "Alege un plan Dial Pro"
   footer:
     home: Zentsu
     apps: Aplicații
+    learn: "Descoperă"
     dial: Dial
     dial_url: /ro/dial/
     bench_support: Asistență Bench
@@ -661,9 +787,15 @@ ru:
     apps: Программы
     privacy: Конфиденциальность
     terms: Условия
+    get_dial: "Скачать Dial"
+  sticky:
+    get_dial: "Dial бесплатно"
+  plans_ui:
+    plan_legend: "Выберите тариф Dial Pro"
   footer:
     home: Zentsu
     apps: Программы
+    learn: "Читать"
     dial: Dial
     dial_url: /ru/dial/
     bench_support: Поддержка Bench
@@ -690,9 +822,15 @@ th:
     apps: แอป
     privacy: ความเป็นส่วนตัว
     terms: ข้อกำหนด
+    get_dial: "รับ Dial"
+  sticky:
+    get_dial: "รับ Dial ฟรี"
+  plans_ui:
+    plan_legend: "เลือกแผน Dial Pro"
   footer:
     home: Zentsu
     apps: แอป
+    learn: "เรียนรู้"
     dial: Dial
     dial_url: /th/dial/
     bench_support: ฝ่ายสนับสนุน Bench
@@ -719,9 +857,15 @@ sv:
     apps: Appar
     privacy: Integritet
     terms: Villkor
+    get_dial: "Hämta Dial"
+  sticky:
+    get_dial: "Dial, gratis"
+  plans_ui:
+    plan_legend: "Välj en Dial Pro-plan"
   footer:
     home: Zentsu
     apps: Appar
+    learn: "Läs"
     dial: Dial
     dial_url: /sv/dial/
     bench_support: Bench-support
@@ -748,9 +892,15 @@ da:
     apps: Apps
     privacy: Privatliv
     terms: Vilkår
+    get_dial: "Hent Dial"
+  sticky:
+    get_dial: "Dial, gratis"
+  plans_ui:
+    plan_legend: "Vælg en Dial Pro-plan"
   footer:
     home: Zentsu
     apps: Apps
+    learn: "Læs"
     dial: Dial
     dial_url: /da/dial/
     bench_support: Bench-support
@@ -777,9 +927,15 @@ el:
     apps: Εφαρμογές
     privacy: Απόρρητο
     terms: Όροι
+    get_dial: "Πάρε Dial"
+  sticky:
+    get_dial: "Dial δωρεάν"
+  plans_ui:
+    plan_legend: "Διάλεξε πλάνο Dial Pro"
   footer:
     home: Zentsu
     apps: Εφαρμογές
+    learn: "Μάθε"
     dial: Dial
     dial_url: /el/dial/
     bench_support: Υποστήριξη Bench
@@ -806,9 +962,15 @@ hu:
     apps: Appok
     privacy: Adatvédelem
     terms: Feltételek
+    get_dial: "Dial ingyen"
+  sticky:
+    get_dial: "Dial, ingyen"
+  plans_ui:
+    plan_legend: "Válassz Dial Pro csomagot"
   footer:
     home: Zentsu
     apps: Appok
+    learn: "Tudnivalók"
     dial: Dial
     dial_url: /hu/dial/
     bench_support: Bench-támogatás
@@ -835,9 +997,15 @@ hr:
     apps: Aplikacije
     privacy: Privatnost
     terms: Uvjeti
+    get_dial: "Preuzmi Dial"
+  sticky:
+    get_dial: "Dial besplatno"
+  plans_ui:
+    plan_legend: "Odaberi plan Dial Pro"
   footer:
     home: Zentsu
     apps: Aplikacije
+    learn: "Saznaj"
     dial: Dial
     dial_url: /hr/dial/
     bench_support: Podrška za Bench
@@ -864,9 +1032,15 @@ uk:
     apps: Apps
     privacy: Конфіденційність
     terms: Умови
+    get_dial: "Скачати Dial"
+  sticky:
+    get_dial: "Dial безплатно"
+  plans_ui:
+    plan_legend: "Оберіть тариф Dial Pro"
   footer:
     home: Zentsu
     apps: Apps
+    learn: "Читати"
     dial: Dial
     dial_url: /uk/dial/
     bench_support: Підтримка Bench
@@ -893,9 +1067,15 @@ sk:
     apps: Aplikácie
     privacy: Súkromie
     terms: Podmienky
+    get_dial: "Stiahni Dial"
+  sticky:
+    get_dial: "Dial zadarmo"
+  plans_ui:
+    plan_legend: "Vyber tarif Dial Pro"
   footer:
     home: Zentsu
     apps: Aplikácie
+    learn: "Zistiť"
     dial: Dial
     dial_url: /sk/dial/
     bench_support: Podpora Bench
@@ -922,9 +1102,15 @@ sk:
     apps: Apper
     privacy: Personvern
     terms: Vilkår
+    get_dial: "Få Dial"
+  sticky:
+    get_dial: "Dial, gratis"
+  plans_ui:
+    plan_legend: "Velg en Dial Pro-plan"
   footer:
     home: Zentsu
     apps: Apper
+    learn: "Les"
     dial: Dial
     dial_url: /no/dial/
     bench_support: Bench-støtte
@@ -950,9 +1136,15 @@ cs:
     apps: Aplikace
     privacy: Soukromí
     terms: Podmínky
+    get_dial: "Stáhni Dial"
+  sticky:
+    get_dial: "Dial zdarma"
+  plans_ui:
+    plan_legend: "Vyber tarif Dial Pro"
   footer:
     home: Zentsu
     apps: Aplikace
+    learn: "Zjistit"
     dial: Dial
     dial_url: /cs/dial/
     bench_support: Podpora Bench

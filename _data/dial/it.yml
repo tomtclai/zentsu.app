@@ -58,14 +58,16 @@ images:
 
 hero:
   availability: Disponibile ora sull'App Store
-  headline_lead: "Le dosi annotate."
+  headline_lead: "Un registro privato di ogni dose."
   headline_accent: ""
-  category: Dial è un registro privato di farmaci GLP-1 per iPhone e Apple Watch.
+  category: Dial è un registro di farmaci GLP-1 per iPhone e Apple Watch.
   detail:
-    Registri una dose su iPhone o Apple Watch. Dial traccia un livello stimato da
-    quelle voci. I dati principali restano sul dispositivo o nel suo iCloud privato.
-  free_line: Download gratuito. Il diario delle iniezioni non ha limiti.
-  secondary_cta: Scopra come funziona Dial
+    Registra ogni dose con l'ora e il sito di iniezione, sul telefono o dal polso. Dial
+    Pro traccia un livello stimato tra le dosi e prepara un PDF per il medico. I registri
+    restano sul dispositivo, o nel tuo database iCloud privato se lo attivi.
+  free_line: Download gratuito, senza un account da creare. Il registro delle dosi non ha limite.
+  secondary_cta: Scopri come funziona Dial
+  qr_caption: Scansiona per aprire Dial sull'App Store dal tuo iPhone.
   platforms_label: Piattaforme e archiviazione Dial
   platforms:
     - iPhone
@@ -73,21 +75,21 @@ hero:
     - Siri, Centro di Controllo e schermata di blocco
     - Archiviazione iCloud privata facoltativa
   legal:
-    Dial Pro aggiunge grafici, esportazioni, altri farmaci e altri promemoria, e la
-    registrazione con un tocco sui dispositivi Apple. Dial è un registro personale. Non
-    calcola le dosi e non sostituisce le indicazioni di chi prescrive.
+    Dial è un registro personale. Non calcola le dosi e non sostituisce le indicazioni
+    del medico. Dial Pro aggiunge il grafico del livello stimato, la cronologia completa,
+    le esportazioni e la registrazione rapida descritti più sotto.
 
 proof:
   label: Perché Dial
   points:
-    - iPhone e Apple Watch
+    - Anello di ciclo e prossimo promemoria su Apple Watch
     - Si apre senza un account Dial
-    - Acquisto a vita
-    - Livello modellato dalle sue dosi
+    - Opzione a vita, un solo acquisto
+    - Livello stimato tra le dosi (Dial Pro)
 
 level:
   kicker: Dial Pro · Livello stimato
-  heading: Il grafico usa le dosi che ha già registrato.
+  heading: Vedi un livello stimato tra le dosi, in base all'emivita.
   body:
     Dial traccia un livello stimato del farmaco nel tempo dalle dosi registrate e dal
     valore di emivita mostrato nell'app. Cambi l'intervallo per rivedere una settimana,
@@ -101,7 +103,7 @@ level:
 
 logging:
   kicker: Registrazione rapida
-  heading: Farmaco, quantità, sito di iniezione e note nello stesso modulo.
+  heading: Registra farmaco, dose e sito di iniezione in un solo modulo.
   body:
     Annoti farmaco, quantità, data, ora, sito di iniezione e note. I valori recenti
     precompilano la voce successiva. Confermi ogni campo. Dial conosce semaglutide
@@ -117,10 +119,7 @@ logging:
 history:
   kicker: Dial Pro · Cronologia e tendenze
   heading: Grafici di dosi, peso ed effetti collaterali.
-  body:
-    Le liste di dosi, peso ed effetti collaterali restano gratuite. Dial Pro aggiunge
-    i grafici completi di dosi e peso, più le tendenze dagli effetti collaterali già
-    nel registro.
+  body: Le liste di dosi, peso ed effetti collaterali restano gratuite. Dial Pro aggiunge i grafici.
   history_card_title: Cronologia di dosi e peso
   history_card_note: Riveda i cambiamenti nell'intervallo che sceglie.
   side_effects_card_title: Tendenze degli effetti collaterali
@@ -129,10 +128,12 @@ history:
 report:
   kicker: Dial Pro · Riepilogo PDF
   heading: Un PDF delle sue voci per la visita.
+  card_title: Riepilogo PDF per la visita
   body:
-    Generi un PDF con cronologia delle dosi, variazioni della quantità registrata, siti
+    Genera un PDF con cronologia delle dosi, variazioni della quantità registrata, siti
     di iniezione, andamento del peso e andamenti degli effetti collaterali. Dial lo crea sul
-    dispositivo. Lo condivida solo se lo decide, via AirDrop, e-mail o stampa.
+    dispositivo. Condividilo solo se lo decidi, via AirDrop, e-mail o stampa. La stessa
+    cronologia si esporta come CSV.
   closing:
     Resta privato. Le serve quando il registro deve uscire dal telefono.
   smallprint: Il riepilogo riassume le sue voci. Non è una cartella clinica né un piano di trattamento.
@@ -155,8 +156,8 @@ watch:
       azioni gratuite aprono il modulo.
 
 supporting:
-  kicker: Nella routine
-  heading: Scorte, promemoria e importazione nello stesso registro.
+  kicker: Tutto nel registro
+  heading: Cronologia, riepilogo, scorte, promemoria e importazioni, in un unico posto.
   features:
     - title: Inventario delle scorte
       body: Tenga penne o flaconi con concentrazione, farmacia, data di scadenza e numero di lotto.
@@ -171,19 +172,21 @@ supporting:
 
 plans:
   kicker: Gratis e Dial Pro
-  heading: Usi il registro di base gratis.
+  heading: Usa il registro di base gratis.
   body:
-    Passi a Pro per il grafico del livello stimato, le esportazioni o la registrazione
-    con un tocco su Apple Watch e iPhone. Ogni piano Dial Pro include le stesse funzioni.
+    Dial Pro aggiunge il grafico del livello stimato, i grafici della cronologia, le
+    esportazioni e la registrazione rapida su Apple Watch e iPhone. Ogni piano Dial
+    Pro include le stesse funzioni.
   free_name: Gratis
-  free_summary: Un registro completo per un farmaco attivo.
+  free_summary: Gratis per un farmaco attivo, senza limite sul registro delle dosi.
   free_features:
     - Registri dosi, siti di iniezione, peso, effetti collaterali e foto dei progressi
     - Un farmaco attivo e un promemoria
     - Elenchi di dosi e peso, inventario, importazioni e il colpo d'occhio su Apple Watch
     - Widget conto alla rovescia e promemoria che aprono il modulo
   pro_name: Dial Pro
-  pro_summary: Il livello stimato, i grafici completi, le esportazioni e la registrazione rapida.
+  pro_summary: Vedi il livello tra le dosi, tutta la cronologia in grafici e registra dal polso.
+  cta_caption: Scarica gratis, poi scegli un piano nell'app.
   pro_features:
     - Grafico del livello stimato e widget di livello sulla schermata Home
     - Grafici completi di dosi e peso, tendenze degli effetti collaterali e confronto foto
@@ -202,19 +205,18 @@ privacy:
   heading: I dati restano sul dispositivo.
   specs:
     - term: Account
-      detail: Non esiste un account Dial. Apra l'app e inizi a registrare.
+      detail: Non serve un account Dial per iniziare a registrare.
     - term: Analisi
-      detail: Dial non esegue analisi d'uso né telemetria. Non misuriamo nulla su come la usa.
+      detail: Dial non raccoglie analisi d'uso né telemetria.
     - term: I nostri server
       detail: Zentsu non gestisce alcun server che memorizza o legge i suoi dati.
     - term: Sincronizzazione facoltativa
       detail:
-        Attivi iCloud nell'app e i dati si sincronizzano tramite il database CloudKit
-        privato del suo Account Apple, non verso di noi.
+        Con iCloud attivo, i registri principali usano il database CloudKit privato del
+        tuo Account Apple, non i nostri server.
   body:
-    Farmaco, dose, promemoria e scorte restano sul dispositivo. Le voci di peso usano
-    un archivio locale separato, e l'accesso a Salute è facoltativo, limitato al peso
-    corporeo quando concede il permesso.
+    I registri principali restano sul dispositivo. Le voci di peso e le foto dei progressi
+    usano un archivio locale separato.
   policy_link: Legga l'informativa sulla privacy di Dial
   policy_url: /it/dial/privacy/
 
@@ -222,6 +224,10 @@ availability:
   kicker: Scarichi Dial
   heading: Disponibile ora sull'App Store.
   body:
-    Dial si scarica gratis. Il registro di base funziona già dalla prima voce. Dial Pro
-    aggiunge il grafico del livello stimato, i grafici completi, l'esportazione PDF e la
+    Dial si scarica gratis, senza un account da creare. Dial Pro aggiunge il grafico
+    del livello stimato, i grafici della cronologia, l'esportazione PDF e CSV, e la
     registrazione rapida da Apple Watch e iPhone.
+
+trademarks:
+  Ozempic, Wegovy, Mounjaro, and Zepbound are trademarks of their respective owners.
+  Zentsu is not affiliated with any pharmaceutical company.

@@ -45,38 +45,39 @@ images:
 
 hero:
   availability: "Nyt App Storessa"
-  headline_lead: "Pidä kirjaa GLP-1:stä."
+  headline_lead: "Yksityinen merkintä joka annoksesta."
   headline_accent: ""
-  category: "Dial on yksityinen GLP-1-lääkepäiväkirja iPhonelle ja Apple Watchille."
-  detail: "Kirjaa annos iPhonella tai Apple Watchilla. Dial piirtää arvioidun tason näiden merkintöjen perusteella. Tiedot jäävät laitteelle tai yksityiseen iCloud-tietokantaasi, jos otat sen käyttöön."
-  free_line: Ilmainen lataus. Annoslokiin ei ole kattoa.
+  category: "Dial on GLP-1-lääkeseuranta iPhonelle ja Apple Watchille."
+  detail: "Kirjaa jokainen annos ajan ja pistoskohdan kanssa, puhelimella tai ranteesta. Dial Pro piirtää arvioidun tason annosten välillä ja kokoaa PDF:n määrääjällesi. Merkinnät jäävät laitteelle, tai omaan yksityiseen iCloud-tietokantaasi, jos otat sen käyttöön."
+  free_line: Ilmainen lataus, ilman tiliä. Annoslokissa ei ole kattoa.
   secondary_cta: "Näin Dial toimii"
+  qr_caption: "Skannaa, niin Dial avautuu App Storesta iPhonellasi."
   platforms_label: "Dialin laitteet ja tallennus"
   platforms:
     - iPhone
     - Apple Watch
     - "Siri, Ohjauskeskus ja lukitusnäyttö"
     - "Valinnainen yksityinen iCloud-tallennus"
-  legal: "Dial Pro lisää kaaviot, viennin, useita lääkkeitä ja muistutuksia sekä mahdollisuuden kirjata yhdellä napautuksella Apple-laitteilla. Dial on henkilökohtainen päiväkirja. Se ei laske annoksia eikä korvaa määrääjän ohjeita."
+  legal: "Dial on henkilökohtainen merkintä. Se ei laske annoksia eikä korvaa määrääjän ohjeita. Dial Pro lisää arvioidun tason kaavion, täyden historian, viennit ja nopean kirjauksen, jotka on kuvattu alla."
 
 proof:
   label: "Miksi Dial"
   points:
-    - "iPhone ja Apple Watch"
+    - "Syklirengas ja seuraava muistutus Apple Watchissa"
     - "Aukeaa ilman Dial-tiliä"
-    - "Kertamaksu"
-    - "Taso mallinnetaan annoksistasi"
+    - "Elinikäinen vaihtoehto, yksi ostos"
+    - "Arvioitu taso annosten välillä (Dial Pro)"
 
 level:
   kicker: "Dial Pro · Arvioitu taso"
-  heading: "Kaavio käyttää jo kirjaamiasi annoksia."
+  heading: "Näe arvioitu taso annosten välillä, puoliintumisajan perusteella."
   body: "Dial piirtää arvioidun lääketason ajan mittaan kirjaamistasi annoksista ja sovelluksessa näytetystä puoliintumisajasta. Vaihda aikaväliä, niin näet viikon, kuukauden tai kuusi kuukautta omasta historiastasi."
   boundary_lead: "Se on arvio, ja kerromme sen suoraan."
   boundary_body: "Kaavio mallintaa tavanomaisen hajoamiskäyrän kirjaamistasi annoksista. Se näyttää omat kuviosi annosten välillä. Se ei ole mitattu veripitoisuus eikä ehdotus seuraavasta annoksesta. Dial ei laske annoksia. Sovellus selittää menetelmän kokonaan."
 
 logging:
   kicker: "Nopea kirjaus"
-  heading: "Lääke, määrä, pistoskohta ja muistiinpanot yhdessä lomakkeessa."
+  heading: "Kirjaa lääke, annos ja pistoskohta yhdessä lomakkeessa."
   body: "Kirjaa lääke, määrä, päivä, aika, pistoskohta ja muistiinpanot. Edelliset arvot esitäytetään seuraavaan merkintään. Vahvistat jokaisen kentän itse. Dial tunnistaa semaglutidin (Ozempic, Wegovy), tirtsepatidin (Mounjaro), liraglutidin (Saxenda, Victoza), dulaglutidin ja eksenatidin Suomessa käytetyillä kauppa- ja pakkausnimillä, ja ottaa oman lääkkeen, jos reseptissäsi oleva lääke ei ole listalla."
   checklist:
     - "Muokkaa merkintää, kun jokin muuttuu"
@@ -86,7 +87,7 @@ logging:
 history:
   kicker: "Dial Pro · Historia ja trendit"
   heading: "Annos-, paino- ja haittavaikutuskaaviot merkinnöistäsi."
-  body: "Annos-, paino- ja haittavaikutusluettelot pysyvät ilmaisina. Dial Pro lisää täydet annos- ja painokaaviot sekä trendit haittavaikutusmerkinnöistä, jotka ovat jo päiväkirjassa."
+  body: "Annos-, paino- ja haittavaikutusluettelot pysyvät ilmaisina. Dial Pro lisää kaaviot."
   history_card_title: "Annos- ja painohistoria"
   history_card_note: "Tarkastele muutoksia valitsemallasi aikavälillä."
   side_effects_card_title: "Haittavaikutustrendit"
@@ -95,7 +96,8 @@ history:
 report:
   kicker: "Dial Pro · PDF-raportti"
   heading: "PDF merkinnöistäsi vastaanotolle."
-  body: "Luo PDF, jossa on annoshistoria, kirjatun määrän muutokset, pistoskohdat, painokehitys ja haittavaikutuskuviot. Dial kokoaa sen laitteella. Jaat sen vain, kun päätät: AirDropilla, sähköpostilla tai tulostamalla."
+  card_title: "PDF-raportti vastaanotolle"
+  body: "Luo PDF, jossa on annoshistoria, kirjatun määrän muutokset, pistoskohdat, painokehitys ja haittavaikutuskuviot. Dial kokoaa sen laitteella. Jaat sen vain, kun päätät: AirDropilla, sähköpostilla tai tulostamalla. Sama historia viedään CSV:nä."
   closing: "Muuten se pysyy yksityisenä. Hyödyllinen juuri silloin, kun päiväkirja täytyy saada pois puhelimesta."
   smallprint: "Raportti tiivistää merkintäsi. Se ei ole potilaskertomus eikä hoitosuunnitelma."
 
@@ -110,8 +112,8 @@ watch:
     - "iPhonessa Prolla kirjaat yhdellä napautuksella Ohjauskeskuksesta, toimintopainikkeesta, Siristä tai muistutuspäivän Live Activity -näkymästä. Ilmaisessa versiossa toiminnot avaavat kirjauslomakkeen."
 
 supporting:
-  kicker: "Rutiinin tueksi"
-  heading: "Varasto, muistutukset ja tuonti samassa päiväkirjassa."
+  kicker: "Kaikki merkinnässä"
+  heading: "Historia, raportti, varasto, muistutukset ja tuonti yhdessä paikassa."
   features:
     - title: "Varasto"
       body: "Seuraa kyniä tai injektiopulloja: pitoisuus, apteekki, viimeinen käyttöpäivä ja eränumero."
@@ -122,17 +124,18 @@ supporting:
 
 plans:
   kicker: "Ilmainen ja Dial Pro"
-  heading: "Käytä päiväkirjaa ilmaiseksi."
-  body: "Pro tuo arvioidun tason kaavion, viennin ja mahdollisuuden kirjata yhdellä napautuksella Apple Watchissa ja iPhonessa. Jokainen Dial Pro -vaihtoehto sisältää samat ominaisuudet."
+  heading: "Käytä perusseurantaa ilmaiseksi."
+  body: "Dial Pro lisää arvioidun tason kaavion, täydet historiakaaviot, viennit ja nopean kirjauksen Apple Watchissa ja iPhonessa. Jokainen Dial Pro -paketti sisältää samat ominaisuudet."
   free_name: "Ilmainen"
-  free_summary: "Täydellinen päiväkirja yhdelle aktiiviselle lääkkeelle."
+  free_summary: "Ilmainen yhdelle aktiiviselle lääkkeelle, ilman kattoa annoslokissa."
   free_features:
     - "Kirjaa annokset, pistoskohdat, paino, haittavaikutukset ja edistymiskuvat"
     - "Yksi aktiivinen lääke ja yksi muistutus"
     - "Annos- ja painoluettelot, varasto, tuonti ja yleisnäkymä Apple Watchissa"
     - "Lähtölaskentawidgetit ja muistutukset, jotka avaavat kirjauslomakkeen"
   pro_name: Dial Pro
-  pro_summary: "Arvioitu taso, täydet kaaviot, vienti ja nopea kirjaus."
+  pro_summary: "Näe taso annosten välillä, kaavioi koko historia ja kirjaa ranteesta."
+  cta_caption: "Lataa ilmaiseksi, valitse sitten paketti sovelluksessa."
   pro_features:
     - "Arvioidun tason kaavio ja widget Koti-näytössä"
     - "Täydet annos- ja painokaaviot, haittavaikutustrendit ja kuvien vertailu"
@@ -151,19 +154,23 @@ privacy:
   heading: "Merkinnät jäävät laitteelle."
   specs:
     - term: "Tilit"
-      detail: "Dial-tiliä ei ole. Avaa sovellus ja ala kirjata."
+      detail: "Dial-tiliä ei tarvita, jotta voit alkaa kirjata."
     - term: "Käyttöanalytiikka"
-      detail: "Dial ei kerää käyttöanalytiikkaa eikä telemetriaa. Emme mittaa, miten käytät sitä."
+      detail: "Dial ei kerää käyttöanalytiikkaa eikä telemetriaa."
     - term: "Palvelimemme"
       detail: "Zentsu ei ylläpidä palvelinta, joka tallentaa tai lukee merkintäsi."
     - term: "Valinnainen synkronointi"
-      detail: "Ota iCloud käyttöön sovelluksessa, niin merkinnät synkronoituvat yksityisen CloudKit-tietokannan kautta omalla Apple-tililläsi, eivätkä ne tule meille."
-  body: "Lääke, annos, muistutus ja varasto jäävät laitteelle. Painomerkinnät käyttävät erillistä paikallista tallennusta, ja pääsy Terveyteen on valinnainen ja kattaa vain kehonpainon, kun annat luvan."
+      detail: "Kun iCloud on päällä, ydintiedot käyttävät yksityistä CloudKit-tietokantaa Apple-tililläsi, eivät meidän palvelimiamme."
+  body: "Ydintiedot jäävät laitteelle. Painomerkinnät ja edistymiskuvat käyttävät erillistä, vain paikallista tallennusta."
   policy_link: "Lue Dialin tietosuojakäytäntö"
   policy_url: /fi/dial/privacy/
 
 availability:
   kicker: "Lataa Dial"
   heading: "Nyt App Storessa."
-  body: "Dialin lataaminen on ilmaista. Päiväkirjaa voi käyttää heti ensimmäisestä kirjauksesta. Dial Pro lisää arvioidun tason kaavion, täydet kaaviot, PDF-viennin ja nopean kirjauksen Apple Watchista ja iPhonesta."
+  body: "Dialin lataaminen on ilmaista, ilman tiliä. Dial Pro lisää arvioidun tason kaavion, täydet historiakaaviot, PDF- ja CSV-viennin ja nopean kirjauksen Apple Watchista ja iPhonesta."
+
+trademarks: |
+  Ozempic, Wegovy, Mounjaro, and Zepbound are trademarks of their respective owners.
+  Zentsu is not affiliated with any pharmaceutical company.
 

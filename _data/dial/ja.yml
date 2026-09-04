@@ -52,13 +52,14 @@ images:
 
 hero:
   availability: App Storeで公開中
-  headline_lead: "GLP-1を記録に残す。"
+  headline_lead: "投与ごとの非公開記録。"
   headline_accent: ""
-  category: "Dialは、iPhoneとApple Watch向けの非公開のGLP-1記録です。"
+  category: "Dialは、iPhoneとApple Watch向けのGLP-1薬の記録です。"
   detail:
-    iPhoneとApple Watchで投与を記録します。記録した投与から推定レベルを描きます。主な記録は端末に残ります。任意で、自分のiCloudにも残せます。
-  free_line: 無料でダウンロードできます。投与の記録に上限はありません。
-  secondary_cta: Dialの使い方
+    iPhoneでも手首でも、時刻と注射部位をつけて毎回の投与を残します。Dial Proは投与と投与のあいだの推定レベルを描き、処方医向けのPDFを作ります。記録は端末に残ります。iCloudをオンにすれば、自分の非公開のiCloudデータベースにも置けます。
+  free_line: 無料でダウンロードできます。Dialアカウントは不要です。投与の記録に上限はありません。
+  secondary_cta: Dialの仕組み
+  qr_caption: スキャンすると、iPhoneのApp StoreでDialが開きます。
   platforms_label: Dialの対応機器と保存先
   platforms:
     - iPhone
@@ -66,19 +67,19 @@ hero:
     - Siri、コントロールセンター、ロック画面
     - iCloudへの任意保存
   legal:
-    Dial Proはグラフ、書き出し、複数の薬とリマインダー、iPhoneとApple Watchでのワンタップ記録を追加します。Dialは個人の記録です。医療機器ではありません。診断せず、用量を計算しません。処方医の指示の代わりにはなりません。
+    Dialは個人の記録です。医療機器ではありません。診断せず、用量を計算しません。処方医の指示の代わりにはなりません。Dial Proは、下記の推定レベルのグラフ、履歴、書き出し、クイック記録を追加します。
 
 proof:
   label: Dialについて
   points:
-    - iPhoneとApple Watch
-    - Dialアカウントなしで使える
-    - 買い切りの選択肢
-    - 記録した投与からの推定レベル
+    - Apple Watchのサイクルリングと次のリマインダー
+    - Dialアカウントなしで開く
+    - 買い切り、一度の購入
+    - 投与と投与のあいだの推定レベル（Dial Pro）
 
 level:
   kicker: Dial Pro · 推定レベル
-  heading: 記録済みの投与からグラフを描く。
+  heading: 半減期から、投与と投与のあいだの推定レベルを見る。
   body:
     Dialは、記録した投与とアプリに表示される半減期から、推定レベルを描きます。範囲を変えて、1週間、1か月、6か月の履歴を見直せます。
   boundary_lead: 推定レベルは推定です。実測ではありません。
@@ -87,7 +88,7 @@ level:
 
 logging:
   kicker: すばやく記録
-  heading: 薬、用量、注射部位、メモを残す。
+  heading: 同じ画面で薬、用量、注射部位を記録。
   body:
     薬、用量、日付、時刻、注射部位、メモを残します。直近の値が次の入力欄に入ります。各欄は自分で確認します。Dialはセマグルチド（オゼンピック、ウゴービ）、チルゼパチド（マンジャロ、ゼップバウンド）、リラグルチド、デュラグルチド、エキセナチドを、日本で使われている販売名で記録でき、一覧にない薬は名前を入力して自分で追加できます。
   checklist:
@@ -99,7 +100,7 @@ history:
   kicker: Dial Pro · グラフと推移
   heading: 投与、体重、副作用のグラフ。
   body:
-    投与、体重、副作用のリストは無料です。Dial Proは、投与と体重のグラフと、すでに記録した副作用からの推移を追加します。
+    投与、体重、副作用のリストは無料のままです。Dial Proがグラフを追加します。
   history_card_title: 投与と体重の履歴
   history_card_note: 選んだ期間の変化を見直す。
   side_effects_card_title: 副作用の推移
@@ -108,8 +109,9 @@ history:
 report:
   kicker: Dial Pro · PDF要約
   heading: 診察向けのPDF。
+  card_title: 診察向けのPDF
   body:
-    記録した投与、用量の変化、注射部位、体重の推移、副作用の推移をPDFにします。Dialは端末内で作り、AirDrop、メール、印刷で、自分で選んだときだけ共有します。
+    記録した投与、用量の変化、注射部位、体重の推移、副作用の推移をPDFにします。Dialは端末内で作り、AirDrop、メール、印刷で、自分で選んだときだけ共有します。同じ履歴はCSVとしても書き出せます。
   closing:
     普段は端末に置いたままです。出すときだけ使います。
   smallprint: 要約は入力した記録のまとめです。診療録でも治療計画でもありません。
@@ -126,8 +128,8 @@ watch:
     - iPhoneでは、Proがコントロールセンター、アクションボタン、Siri、リマインダー当日のLive Activityからのワンタップ記録を有効にします。無料の操作では、記録フォームが開きます。
 
 supporting:
-  kicker: 在庫と通知
-  heading: 在庫、リマインダー、取り込み。
+  kicker: 記録のすべて
+  heading: 履歴、PDF、在庫、リマインダー、取り込みを一箇所に。
   features:
     - title: 在庫
       body: ペンやバイアルを、濃度、薬局、使用期限、ロット番号とともに残します。
@@ -141,16 +143,17 @@ plans:
   kicker: 無料とDial Pro
   heading: 基本の記録は無料で使う。
   body:
-    推定レベル、書き出し、Apple WatchとiPhoneのワンタップ記録はProです。Dial Proのプランはどれも同じ機能です。
+    Dial Proは推定レベルのグラフ、履歴のグラフ、書き出し、Apple WatchとiPhoneでのクイック記録を追加します。Dial Proのプランはどれも同じ機能です。
   free_name: 無料
-  free_summary: 使用中の薬1つ分の記録。
+  free_summary: 使用中の薬1つ。投与の記録に上限はありません。
   free_features:
     - 投与、注射部位、体重、副作用、経過の写真を記録
     - 使用中の薬1つとリマインダー1つ
     - 投与と体重のリスト、在庫、読み込み、Apple Watchの一目表示
     - カウントダウンウィジェットと、記録フォームを開くリマインダー
   pro_name: Dial Pro
-  pro_summary: 推定レベル、グラフと推移、書き出し、クイック記録。
+  pro_summary: 投与のあいだのレベル、履歴のグラフ、手首からの記録。
+  cta_caption: 無料でダウンロードし、アプリ内でプランを選ぶ。
   pro_features:
     - 推定レベルのグラフとホーム画面のウィジェット
     - 投与と体重のグラフ、副作用の推移、写真の比較
@@ -169,16 +172,16 @@ privacy:
   heading: 記録は端末に残る。
   specs:
     - term: アカウント
-      detail: Dialアカウントはありません。アプリを開いて記録を始めます。
+      detail: 記録を始めるのにDialアカウントは不要です。
     - term: 分析機能
-      detail: 利用状況は計測しません。
+      detail: Dialは利用状況の分析もテレメトリも収集しません。
     - term: 私たちのサーバ
       detail: Zentsuは、記録を保存したり読んだりするサーバを運営していません。
     - term: 任意の同期
       detail:
-        アプリでiCloudと同期をオンにすると、記録は自分のApple AccountのプライベートCloudKitデータベースで同期します。Zentsuには来ません。
+        アプリでiCloudと同期をオンにすると、中核の記録は自分のApple AccountのプライベートCloudKitデータベースを使います。私たちのサーバではありません。
   body:
-    薬、投与、リマインダー、在庫の記録は端末内に残ります。体重は別に端末へ保存します。ヘルスケアと同期は任意で、許可したときだけ体重を扱います。
+    中核の記録は端末に残ります。体重と経過写真は、別の端末内だけの保存です。
   policy_link: Dialのプライバシーポリシーを読む
   policy_url: /ja/dial/privacy/
 
@@ -186,4 +189,8 @@ availability:
   kicker: Dialを入手
   heading: App Storeで公開中。
   body:
-    Dialのダウンロードは無料です。基本の記録は最初の1件から使えます。Dial Proは推定レベルのグラフ、グラフと推移、PDF書き出し、Apple WatchとiPhoneからのクイック記録を追加します。
+    Dialのダウンロードは無料です。アカウントは不要です。Dial Proは推定レベルのグラフ、履歴のグラフ、PDFとCSVの書き出し、Apple WatchとiPhoneからのクイック記録を追加します。
+
+trademarks: |
+  Ozempic, Wegovy, Mounjaro, and Zepbound are trademarks of their respective owners.
+  Zentsu is not affiliated with any pharmaceutical company.

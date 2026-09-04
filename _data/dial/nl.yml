@@ -58,14 +58,16 @@ images:
 
 hero:
   availability: Nu beschikbaar in de App Store
-  headline_lead: "GLP-1 privé bijhouden."
+  headline_lead: "Privérecord van elke dosis."
   headline_accent: ""
-  category: Dial is een privé GLP-1-medicijndagboek voor iPhone en Apple Watch.
+  category: Dial is een GLP-1-medicijntracker voor iPhone en Apple Watch.
   detail:
-    Leg een dosis vast op iPhone of Apple Watch. De geschatte spiegel is gebaseerd op die invoer.
-    De gegevens blijven op het apparaat of in uw privé-iCloud.
-  free_line: Gratis te downloaden. Aan het logboek zelf zit geen limiet.
+    Leg elke dosis vast met tijd en injectieplaats, op je telefoon of aan je pols. Dial Pro
+    tekent een geschatte spiegel tussen doses en maakt een PDF voor je voorschrijver. De
+    gegevens blijven op het apparaat, of in je eigen privé-iCloud-database als je dat aanzet.
+  free_line: Gratis te downloaden, zonder account. Het dosislog heeft geen limiet.
   secondary_cta: Zo werkt Dial
+  qr_caption: Scan om Dial in de App Store op je iPhone te openen.
   platforms_label: Dial-platforms en opslag
   platforms:
     - iPhone
@@ -73,21 +75,21 @@ hero:
     - Siri, Bedieningspaneel en toegangsscherm
     - Optionele privé-iCloud-opslag
   legal:
-    Dial Pro voegt grafieken, export, meerdere medicijnen en herinneringen toe, plus
-    vastleggen met één tik op Apple-apparaten. Dial is een persoonlijk logboek. Het
-    berekent geen doses en vervangt geen aanwijzingen van uw voorschrijver.
+    Dial is een persoonlijk overzicht. Het berekent geen doses en vervangt geen
+    aanwijzingen van je voorschrijver. Dial Pro voegt de grafiek van de geschatte spiegel,
+    de volledige historie, export en snel vastleggen toe, zoals hieronder beschreven.
 
 proof:
   label: Waarom Dial
   points:
-    - iPhone en Apple Watch
+    - Cyclusring en volgende herinnering op Apple Watch
     - Opent zonder Dial-account
-    - Lifetime-optie
-    - Geschatte spiegel uit uw doses
+    - Lifetime-optie, één aankoop
+    - Geschatte spiegel tussen doses (Dial Pro)
 
 level:
   kicker: Dial Pro · Geschatte spiegel
-  heading: De grafiek gebruikt de doses die u al vastlegde.
+  heading: Bekijk een geschatte spiegel tussen doses, op basis van de halfwaardetijd.
   body:
     Dial toont een geschatte spiegel in de tijd op basis van de doses die u vastlegde
     en de halfwaardetijd in de app. Wijzig het bereik om een week, maand of zes maanden
@@ -100,7 +102,7 @@ level:
 
 logging:
   kicker: Snel vastleggen
-  heading: Medicijn, hoeveelheid, injectieplaats en notities.
+  heading: Leg medicijn, dosis en injectieplaats vast in één formulier.
   body:
     Noteer medicijn, hoeveelheid, datum, tijd, injectieplaats en notities. Recente
     waarden vullen de volgende invoer. U bevestigt elk veld. Dial kent semaglutide
@@ -115,10 +117,7 @@ logging:
 history:
   kicker: Dial Pro · Historie en trends
   heading: Grafieken van dosis, gewicht en bijwerkingen.
-  body:
-    Lijsten van dosis, gewicht en bijwerkingen blijven gratis. Dial Pro voegt volledige
-    dosis- en gewichtsgrafieken toe, plus trends uit de bijwerkingen die al in uw
-    logboek staan.
+  body: Lijsten van dosis, gewicht en bijwerkingen blijven gratis. Dial Pro voegt de grafieken toe.
   history_card_title: Dosis- en gewichtshistorie
   history_card_note: Wijzigingen bekijken in het bereik dat u kiest.
   side_effects_card_title: Bijwerkingstrends
@@ -127,10 +126,12 @@ history:
 report:
   kicker: Dial Pro · PDF-verslag
   heading: Een PDF voor het spreekuur.
+  card_title: PDF-verslag voor het spreekuur
   body:
     Maak een PDF met dosishistorie, wijzigingen in de vastgelegde hoeveelheid,
-    injectieplaatsen, gewichtstrend en bijwerkingspatronen. Dial maakt het op uw apparaat,
-    en u deelt het alleen als u dat wilt, via AirDrop, e-mail of afdrukken.
+    injectieplaatsen, gewichtstrend en bijwerkingspatronen. Dial maakt het op je apparaat,
+    en je deelt het alleen als je dat wilt, via AirDrop, e-mail of afdrukken. Dezelfde
+    historie exporteer je als CSV.
   closing:
     De rest van de tijd blijft het privé. U deelt het alleen als het logboek de telefoon moet
     verlaten.
@@ -154,8 +155,8 @@ watch:
       het formulier.
 
 supporting:
-  kicker: Bij de routine
-  heading: Voorraad, herinneringen en import.
+  kicker: Alles in het overzicht
+  heading: Historie, verslag, voorraad, herinneringen en import op één plek.
   features:
     - title: Voorraad
       body: Noteer pennen of flacons met concentratie, apotheek, houdbaarheidsdatum en lotnummer.
@@ -169,19 +170,21 @@ supporting:
 
 plans:
   kicker: Gratis en Dial Pro
-  heading: Het dagboek zelf gratis gebruiken.
+  heading: Gebruik de basis gratis.
   body:
-    Stap over op Pro voor de grafiek van de geschatte spiegel, export of vastleggen
-    met één tik. Alle Dial Pro-opties bevatten dezelfde functies.
+    Dial Pro voegt de grafiek van de geschatte spiegel, de volledige historiegrafieken,
+    export en snel vastleggen op Apple Watch en iPhone toe. Elk Dial Pro-plan heeft
+    dezelfde functies.
   free_name: Gratis
-  free_summary: Een volledig logboek voor één actief medicijn.
+  free_summary: Gratis voor één actief medicijn, zonder limiet op het dosislog.
   free_features:
     - Doses, injectieplaatsen, gewicht, bijwerkingen en voortgangsfoto's vastleggen
     - Eén actief medicijn en één herinnering
     - Dosis- en gewichtslijsten, voorraad, import en het overzicht op Apple Watch
     - Aftelwidgets en herinneringen die het formulier openen
   pro_name: Dial Pro
-  pro_summary: De geschatte spiegel, volledige grafieken, export en snel vastleggen.
+  pro_summary: Zie je spiegel tussen doses, zet je hele historie in grafieken en leg vast vanaf je pols.
+  cta_caption: Download gratis, kies daarna een plan in de app.
   pro_features:
     - Grafiek van de geschatte spiegel en beginschermwidget
     - Volledige dosis- en gewichtsgrafieken, bijwerkingstrends en fotovergelijking
@@ -200,19 +203,18 @@ privacy:
   heading: Gegevens blijven op het apparaat.
   specs:
     - term: Accounts
-      detail: Er is geen Dial-account. Open de app en begin vast te leggen.
+      detail: Je hebt geen Dial-account nodig om te beginnen.
     - term: Analyses
-      detail: Dial voert geen gebruiksanalyses of telemetrie uit. We meten niets over hoe u de app gebruikt.
+      detail: Dial verzamelt geen gebruiksanalyses of telemetrie.
     - term: Onze servers
       detail: Zentsu draait geen server die uw gegevens opslaat of leest.
     - term: Optionele synchronisatie
       detail:
-        Zet iCloud in de app aan en gegevens synchroniseren via de privé-CloudKit-database
-        van uw eigen Apple Account, niet naar ons.
+        Met iCloud gebruiken de kerndata de privé-CloudKit-database op je Apple Account,
+        niet onze servers.
   body:
-    Medicijn, dosis, herinnering en voorraad blijven op het apparaat.     Gewicht
-    staat in een aparte lokale opslag, en toegang tot Gezondheid is optioneel, alleen
-    lichaamsgewicht wanneer u toestemming geeft.
+    Kerndata blijven op je apparaat. Gewicht en voortgangsfoto's staan in een aparte,
+    alleen lokale opslag.
   policy_link: Het Dial-privacybeleid lezen
   policy_url: /nl/dial/privacy/
 
@@ -220,6 +222,10 @@ availability:
   kicker: Dial downloaden
   heading: Nu beschikbaar in de App Store.
   body:
-    Dial is gratis te downloaden. Het dagboek zelf werkt vanaf de eerste invoer.
-    Dial Pro voegt de grafiek van de geschatte spiegel, volledige grafieken, PDF-export
-    en snel vastleggen vanaf Apple Watch en iPhone toe.
+    Dial is gratis te downloaden, zonder account. Dial Pro voegt de grafiek van de
+    geschatte spiegel, de volledige historiegrafieken, PDF- en CSV-export en snel
+    vastleggen vanaf Apple Watch en iPhone toe.
+
+trademarks:
+  Ozempic, Wegovy, Mounjaro, and Zepbound are trademarks of their respective owners.
+  Zentsu is not affiliated with any pharmaceutical company.

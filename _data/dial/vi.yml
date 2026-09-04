@@ -45,38 +45,39 @@ images:
 
 hero:
   availability: "Hiện có trên App Store"
-  headline_lead: "Nhật ký GLP-1 của bạn."
+  headline_lead: "Nhật ký riêng của từng liều."
   headline_accent: ""
-  category: "Dial là nhật ký thuốc GLP-1 riêng tư cho iPhone và Apple Watch."
-  detail: "Ghi một liều trên iPhone hoặc Apple Watch. Dial vẽ biểu đồ mức ước tính từ những mục đó. Nhật ký ở lại trên máy, hoặc trong cơ sở dữ liệu iCloud riêng nếu bạn bật đồng bộ."
-  free_line: Tải miễn phí. Nhật ký liều không giới hạn.
-  secondary_cta: "Dial hoạt động thế nào"
+  category: "Dial là ứng dụng theo dõi thuốc GLP-1 cho iPhone và Apple Watch."
+  detail: "Ghi từng liều kèm giờ và vị trí tiêm, trên điện thoại hoặc cổ tay. Dial Pro vẽ mức ước tính giữa các liều và tạo PDF cho bác sĩ. Bản ghi ở lại trên máy, hoặc trong cơ sở dữ liệu iCloud riêng của bạn nếu bạn bật."
+  free_line: Tải miễn phí, không cần tạo tài khoản. Nhật ký liều không giới hạn.
+  secondary_cta: "Cách Dial hoạt động"
+  qr_caption: "Quét để mở Dial trên App Store từ iPhone."
   platforms_label: "Nền tảng và lưu trữ Dial"
   platforms:
     - iPhone
     - Apple Watch
     - "Siri, Trung tâm điều khiển và màn hình khóa"
     - "Lưu trữ iCloud riêng, bật khi cần"
-  legal: "Dial Pro thêm biểu đồ, xuất, nhiều thuốc và lời nhắc, cùng ghi một chạm trên thiết bị Apple. Dial là bản ghi cá nhân. Ứng dụng không tính liều và không thay thế hướng dẫn của bác sĩ."
+  legal: "Dial là bản ghi cá nhân. Ứng dụng không tính liều và không thay thế hướng dẫn của bác sĩ. Dial Pro thêm biểu đồ mức ước tính, lịch sử đầy đủ, xuất file và ghi nhanh như mô tả bên dưới."
 
 proof:
   label: "Vì sao Dial"
   points:
-    - "iPhone và Apple Watch"
-    - "Mở mà không cần tài khoản Dial."
-    - "Tùy chọn Lifetime"
-    - "Mức ước tính từ liều của bạn"
+    - "Vòng chu kỳ và lời nhắc tiếp theo trên Apple Watch"
+    - "Mở không cần tài khoản Dial"
+    - "Gói Lifetime, mua một lần"
+    - "Mức ước tính giữa các liều (Dial Pro)"
 
 level:
   kicker: "Dial Pro · Mức ước tính"
-  heading: "Biểu đồ dựa trên các liều bạn đã ghi."
+  heading: "Xem mức ước tính giữa các liều, dựa trên thời gian bán hủy."
   body: "Dial vẽ biểu đồ mức thuốc ước tính theo thời gian, từ các liều đã ghi và thời gian bán hủy hiện trong ứng dụng. Chọn khoảng thời gian để xem lịch sử một tuần, một tháng hoặc sáu tháng của bạn."
   boundary_lead: "Đây là ước tính. Chúng tôi ghi rõ điều đó."
   boundary_body: "Biểu đồ vẽ đường cong suy giảm chuẩn từ các liều bạn đã ghi. Nó cho thấy xu hướng của bạn giữa các liều. Đó là ước tính, không phải mức máu đo được, cũng không phải gợi ý liều tiếp theo. Dial không tính liều. Ứng dụng giải thích đầy đủ cách ước tính."
 
 logging:
   kicker: "Ghi nhanh"
-  heading: "Thuốc, lượng, vị trí tiêm và ghi chú trong một biểu mẫu."
+  heading: "Ghi thuốc, liều và vị trí tiêm trong một biểu mẫu."
   body: "Ghi thuốc, lượng, ngày, giờ, vị trí tiêm và ghi chú. Mục tiếp theo nhớ giá trị vừa dùng. Bạn vẫn xác nhận từng trường. Dial biết Semaglutide (Ozempic, Wegovy), tirzepatide (Mounjaro, Zepbound), liraglutide, dulaglutide và exenatide theo tên thương hiệu và tên trên hộp thuốc bán ở nước bạn, và nhận tên thuốc riêng nếu đơn thuốc của bạn không có trong danh sách."
   checklist:
     - "Sửa mục khi có thay đổi"
@@ -86,7 +87,7 @@ logging:
 history:
   kicker: "Dial Pro · Lịch sử và xu hướng"
   heading: "Biểu đồ liều, cân nặng và tác dụng phụ từ các mục của bạn."
-  body: "Danh sách liều, cân nặng và tác dụng phụ vẫn miễn phí. Dial Pro thêm biểu đồ liều và cân nặng đầy đủ cùng xu hướng từ các mục tác dụng phụ đã có trong bản ghi."
+  body: "Danh sách liều, cân nặng và tác dụng phụ vẫn miễn phí. Dial Pro thêm biểu đồ."
   history_card_title: "Lịch sử liều và cân nặng"
   history_card_note: "Xem thay đổi trong khoảng bạn chọn."
   side_effects_card_title: "Xu hướng tác dụng phụ"
@@ -95,7 +96,8 @@ history:
 report:
   kicker: "Dial Pro · Báo cáo PDF"
   heading: "Một PDF gồm các mục của bạn, mang đi khám."
-  body: "Tạo PDF với lịch sử liều, thay đổi lượng đã ghi, vị trí tiêm, xu hướng cân nặng và xu hướng tác dụng phụ. Dial tạo file trên máy. Bạn chỉ chia sẻ khi muốn, qua AirDrop, email hoặc in."
+  card_title: "Báo cáo PDF mang đi khám"
+  body: "Tạo PDF với lịch sử liều, thay đổi lượng đã ghi, vị trí tiêm, xu hướng cân nặng và xu hướng tác dụng phụ. Dial tạo file trên máy. Bạn chỉ chia sẻ khi muốn, qua AirDrop, email hoặc in. Cùng lịch sử đó xuất ra CSV."
   closing: "Ngày thường thì ở lại máy. Hữu ích khi bạn cần mang bản ghi đi khám."
   smallprint: "Báo cáo tóm tắt các mục của bạn. Không phải hồ sơ y tế hay kế hoạch điều trị."
 
@@ -110,8 +112,8 @@ watch:
     - "Trên iPhone, Dial Pro cho phép ghi một chạm từ Trung tâm điều khiển, nút tác vụ, Siri hoặc Live Activity trong ngày lời nhắc. Bản miễn phí mở biểu mẫu ghi."
 
 supporting:
-  kicker: "Theo lịch của bạn"
-  heading: "Tồn kho, lời nhắc và nhập ở chung một bản ghi."
+  kicker: "Tất cả trong nhật ký"
+  heading: "Lịch sử, báo cáo, tồn kho, lời nhắc và nhập, cùng một chỗ."
   features:
     - title: "Tồn kho"
       body: "Theo dõi bút hoặc lọ với nồng độ, nhà thuốc, hạn dùng và số lô."
@@ -122,17 +124,18 @@ supporting:
 
 plans:
   kicker: "Miễn phí và Dial Pro"
-  heading: "Dùng nhật ký cơ bản miễn phí."
-  body: "Nâng cấp khi cần biểu đồ mức ước tính, xuất, hoặc ghi một chạm trên Apple Watch và iPhone. Mọi gói Dial Pro đều có cùng các tính năng."
+  heading: "Dùng bộ theo dõi cơ bản miễn phí."
+  body: "Dial Pro thêm biểu đồ mức ước tính, biểu đồ lịch sử đầy đủ, xuất file, và ghi nhanh trên Apple Watch và iPhone. Mọi gói Dial Pro đều có cùng tính năng."
   free_name: "Miễn phí"
-  free_summary: "Bản ghi đầy đủ cho một thuốc đang dùng."
+  free_summary: "Miễn phí cho một thuốc đang dùng, nhật ký liều không giới hạn."
   free_features:
     - "Ghi liều, vị trí tiêm, cân nặng, tác dụng phụ và ảnh tiến triển"
     - "Một thuốc đang dùng và một lời nhắc"
     - "Danh sách liều và cân nặng, tồn kho, nhập và tổng quan Apple Watch"
     - "Widget đếm ngược và lời nhắc dẫn tới biểu mẫu"
   pro_name: Dial Pro
-  pro_summary: "Mức ước tính, biểu đồ đầy đủ, xuất và ghi nhanh."
+  pro_summary: "Xem mức giữa các liều, xem lịch sử đầy đủ bằng biểu đồ, và ghi từ cổ tay."
+  cta_caption: "Tải miễn phí, rồi chọn gói trong ứng dụng."
   pro_features:
     - "Biểu đồ mức ước tính và widget Màn hình chính"
     - "Biểu đồ liều và cân nặng đầy đủ, xu hướng tác dụng phụ và so sánh ảnh"
@@ -151,19 +154,23 @@ privacy:
   heading: "Bản ghi ở lại trên máy."
   specs:
     - term: "Tài khoản"
-      detail: "Không có tài khoản Dial. Mở ứng dụng và bắt đầu ghi."
+      detail: "Không cần tài khoản Dial để bắt đầu ghi."
     - term: "Phân tích sử dụng"
-      detail: "Dial không phân tích cách dùng và không gửi dữ liệu ngầm. Chúng tôi không theo dõi thao tác của bạn."
+      detail: "Dial không thu thập phân tích sử dụng hay dữ liệu ngầm."
     - term: "Máy chủ của chúng tôi"
       detail: "Zentsu không vận hành máy chủ lưu hoặc đọc bản ghi của bạn."
     - term: "Đồng bộ tùy chọn"
-      detail: "Bật iCloud trong ứng dụng thì bản ghi đồng bộ qua cơ sở dữ liệu CloudKit riêng trên Tài khoản Apple của bạn, không về chúng tôi."
-  body: "Bản ghi thuốc, liều, lời nhắc và tồn kho ở lại trên máy. Mục cân nặng dùng kho lưu trữ cục bộ riêng, và quyền truy cập Sức khỏe là tùy chọn, chỉ gồm cân nặng cơ thể khi bạn cho phép."
+      detail: "Khi bật iCloud, bản ghi chính dùng cơ sở dữ liệu CloudKit riêng trên Tài khoản Apple của bạn, không phải máy chủ của chúng tôi."
+  body: "Bản ghi chính ở lại trên máy. Mục cân nặng và ảnh tiến triển dùng kho lưu trữ cục bộ riêng."
   policy_link: "Đọc chính sách quyền riêng tư Dial"
   policy_url: /vi/dial/privacy/
 
 availability:
   kicker: "Tải Dial"
   heading: "Hiện có trên App Store."
-  body: "Tải Dial miễn phí. Nhật ký cơ bản chạy ngay từ mục ghi đầu tiên. Dial Pro thêm biểu đồ mức ước tính, biểu đồ đầy đủ, xuất PDF và ghi nhanh từ Apple Watch và iPhone."
+  body: "Tải Dial miễn phí, không cần tạo tài khoản. Dial Pro thêm biểu đồ mức ước tính, biểu đồ lịch sử đầy đủ, xuất PDF và CSV, và ghi nhanh từ Apple Watch và iPhone."
+
+trademarks: |
+  Ozempic, Wegovy, Mounjaro, and Zepbound are trademarks of their respective owners.
+  Zentsu is not affiliated with any pharmaceutical company.
 

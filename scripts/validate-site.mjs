@@ -364,7 +364,7 @@ const compactHeadlineLocales = new Set(['ja', 'zh', 'zh-hant', 'ko']);
 const headlineLimits = { default: 40, compact: 16 };
 const descriptionLimit = 155;
 const dialCopyDir = '_data/dial';
-const strictCopy = process.env.DIAL_STRICT_COPY === '1';
+const strictCopy = process.env.DIAL_STRICT_COPY !== '0';
 const copyIssues = [];
 
 for (const name of readdirSync(dialCopyDir).filter((entry) => entry.endsWith('.yml'))) {

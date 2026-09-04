@@ -1,3 +1,7 @@
+.dial-faq {
+  border-bottom: 1px solid var(--border);
+}
+
 .dial-faq-list {
   max-width: 68ch;
 }

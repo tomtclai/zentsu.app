@@ -45,38 +45,39 @@ images:
 
 hero:
   availability: "Şimdi App Store'da"
-  headline_lead: "GLP-1 dozlarınız kayıtta."
+  headline_lead: "Her dozun özel kaydı."
   headline_accent: ""
-  category: "Dial, iPhone ve Apple Watch için özel bir GLP-1 ilaç günlüğüdür."
-  detail: "iPhone veya Apple Watch'ta doz kaydedin. Dial, kaydettiğiniz dozlardan tahmini düzeyi çizer. Kayıtlar cihazda kalır. iCloud'u açarsanız özel iCloud veritabanınızda da durur."
-  free_line: Ücretsiz indirin. Doz günlüğünün sınırı yok.
+  category: "Dial, iPhone ve Apple Watch için bir GLP-1 ilaç kaydıdır."
+  detail: "Her dozu saat ve enjeksiyon yeriyle kaydet, telefonda veya bilekte. Dial Pro dozlar arasındaki tahmini düzeyi çizer ve hekimin için bir PDF hazırlar. Kayıtlar cihazda kalır. iCloud'u açarsan kendi özel iCloud veritabanında da durur."
+  free_line: Ücretsiz indir, hesap açmana gerek yok. Doz kaydının sınırı yok.
   secondary_cta: "Dial nasıl çalışır"
+  qr_caption: "iPhone'unda App Store'da Dial'i açmak için tara."
   platforms_label: "Dial platformları ve depolama"
   platforms:
     - iPhone
     - Apple Watch
     - "Siri, Denetim Merkezi ve Kilit Ekranı"
     - "İsteğe bağlı özel iCloud depolama"
-  legal: "Dial Pro grafik, dışa aktarma, birden fazla ilaç, anımsatıcı ve Apple cihazlarında tek dokunuşla kayıt ekler. Dial kişisel bir kayıttır. Doz hesaplamaz ve hekiminizin yönlendirmesinin yerini almaz."
+  legal: "Dial kişisel bir kayıttır. Doz hesaplamaz ve hekiminin yönlendirmesinin yerini almaz. Dial Pro aşağıda anlatılan tahmini düzey grafiğini, tam geçmişi, dışa aktarmayı ve hızlı kaydı ekler."
 
 proof:
   label: "Neden Dial"
   points:
-    - "iPhone ve Apple Watch"
+    - "Apple Watch'ta döngü halkası ve sonraki anımsatıcı"
     - "Dial hesabı olmadan açılır"
-    - "Lifetime seçeneği"
-    - "Dozlarınızdan tahmini düzey"
+    - "Ömür boyu seçenek, tek satın alma"
+    - "Dozlar arasında tahmini düzey (Dial Pro)"
 
 level:
   kicker: "Dial Pro · Tahmini düzey"
-  heading: "Grafik, kaydettiğiniz dozları kullanır."
+  heading: "Dozlar arasında tahmini düzeyi gör, yarı ömre göre."
   body: "Dial, kaydettiğiniz dozlardan ve uygulamada gösterilen yarı ömürden zaman içinde tahmini bir ilaç düzeyi çizer. Aralığı değiştirerek kendi geçmişinizin bir haftasını, bir ayını veya altı ayını incelersiniz."
   boundary_lead: "Bu bir tahmin. Bunu açıkça söylüyoruz."
   boundary_body: "Grafik, kaydettiğiniz dozlardan standart bir azalma eğrisi çizer. Dozlar arasındaki kendi örüntülerinizi gösterir. Ölçülmüş bir kan düzeyi değildir. Sonra ne alınacağına dair bir öneri de değildir. Dial doz hesaplamaz. Uygulama yöntemi baştan sona açıklar."
 
 logging:
   kicker: "Hızlı kayıt"
-  heading: "İlaç, miktar, yer ve not alanları tek formda."
+  heading: "İlacı, dozu ve enjeksiyon yerini tek formda kaydet."
   body: "İlaç, miktar, tarih, saat, enjeksiyon yeri ve notları yazın. Son değerler bir sonraki kaydı doldurur. Her alanı siz onaylarsınız. Dial, semaglutid (Ozempic, Wegovy), tirzepatid (Mounjaro, Zepbound), liraglutid, dulaglutid ve eksenatidi ülkenizde kullanılan kutu adlarıyla tanır ve ilacınız listede yoksa adını kendiniz yazabilirsiniz."
   checklist:
     - "Bir şey değişince kaydı düzenleyin"
@@ -86,7 +87,7 @@ logging:
 history:
   kicker: "Dial Pro · Geçmiş ve eğilimler"
   heading: "Doz, kilo ve yan etki grafikleri kayıtlardan gelir."
-  body: "Doz, kilo ve yan etki listeleri ücretsiz kalır. Dial Pro tam doz ve kilo grafikleri ekler. Yan etki eğilimleri, zaten kayıttaki yan etki kayıtlarından çıkar."
+  body: "Doz, kilo ve yan etki listeleri ücretsiz kalır. Dial Pro grafikleri ekler."
   history_card_title: "Doz ve kilo geçmişi"
   history_card_note: "Seçtiğiniz aralıktaki değişiklikleri inceleyin."
   side_effects_card_title: "Yan etki eğilimleri"
@@ -95,7 +96,8 @@ history:
 report:
   kicker: "Dial Pro · PDF raporu"
   heading: "Muayene için kayıtlarınızın PDF'i."
-  body: "Doz geçmişi, kaydedilen miktardaki değişiklikler, enjeksiyon yerleri, kilo eğilimi ve yan etki örüntüleriyle bir PDF oluşturun. Dial bunu cihazda oluşturur. Paylaşmaya yalnızca siz karar verince AirDrop, e-posta veya yazıcıyı kullanırsınız."
+  card_title: "Muayene için PDF raporu"
+  body: "Doz geçmişi, kaydedilen miktardaki değişiklikler, enjeksiyon yerleri, kilo eğilimi ve yan etki örüntüleriyle bir PDF oluştur. Dial bunu cihazda oluşturur. Paylaşmaya yalnızca sen karar verince AirDrop, e-posta veya yazıcıyı kullanırsın. Aynı geçmiş CSV olarak da dışa aktarılır."
   closing: "Başka zamanlarda özel kalır. Kaydı telefondan çıkarmanız gerektiğinde işe yarar."
   smallprint: "Rapor kayıtlarınızı özetler. Tıbbi kayıt veya tedavi planı değildir."
 
@@ -110,8 +112,8 @@ watch:
     - "iPhone'da Dial Pro; Denetim Merkezi, eylem düğmesi, Siri veya anımsatıcı günü Live Activity'den tek dokunuşla kaydı açar. Ücretsiz eylemler formu açar."
 
 supporting:
-  kicker: "Rutinin yanında"
-  heading: "Stok, anımsatıcılar ve içe aktarma aynı kayıtta durur."
+  kicker: "Kaydın içindeki her şey"
+  heading: "Geçmiş, rapor, stok, anımsatıcılar ve içe aktarma aynı yerde."
   features:
     - title: "Stok"
       body: "Kalem veya flakonları konsantrasyon, eczane, son kullanma tarihi ve parti numarasıyla izleyin."
@@ -122,17 +124,18 @@ supporting:
 
 plans:
   kicker: "Ücretsiz ve Dial Pro"
-  heading: "Temel günlüğü ücretsiz kullanın."
-  body: "Tahmini düzey grafiği, dışa aktarma ve Apple Watch ile iPhone'da tek dokunuşla kayıt için Pro'ya geçin. Her Dial Pro planı aynı özellikleri içerir."
+  heading: "Temel kaydı ücretsiz kullan."
+  body: "Dial Pro tahmini düzey grafiğini, tam geçmiş grafiklerini, dışa aktarmayı ve Apple Watch ile iPhone'da hızlı kaydı ekler. Her Dial Pro planı aynı özellikleri içerir."
   free_name: "Ücretsiz"
-  free_summary: "Tek aktif ilaç için tam kayıt."
+  free_summary: "Tek aktif ilaç için ücretsiz, doz kaydında sınır yok."
   free_features:
     - "Doz, enjeksiyon yeri, kilo, yan etki ve ilerleme fotoğraflarını kaydedin"
     - "Bir aktif ilaç ve bir anımsatıcı"
     - "Doz ve kilo listeleri, stok, içe aktarma ve Apple Watch bakışı"
     - "Geri sayım widget'ları ve formu açan anımsatıcılar"
   pro_name: Dial Pro
-  pro_summary: "Tahmini düzey, tam grafikler, dışa aktarma ve hızlı kayıt."
+  pro_summary: "Dozlar arasındaki düzeyini gör, tüm geçmişini grafikleştir, bilekten kaydet."
+  cta_caption: "Ücretsiz indir, sonra uygulamadan plan seç."
   pro_features:
     - "Tahmini düzey grafiği ve Ana Ekran widget'ı"
     - "Tam doz ve kilo grafikleri, yan etki eğilimleri ve fotoğraf karşılaştırması"
@@ -151,18 +154,22 @@ privacy:
   heading: "Kayıtlar cihazda kalır."
   specs:
     - term: "Hesaplar"
-      detail: "Dial hesabı yoktur. Uygulamayı açın ve kaydetmeye başlayın."
+      detail: "Kayda başlamak için Dial hesabı gerekmez."
     - term: "Kullanım analizi"
-      detail: "Dial kullanım analizi veya telemetri toplamaz. Nasıl kullandığınızı ölçmeyiz."
+      detail: "Dial kullanım analizi veya telemetri toplamaz."
     - term: "Sunucularımız"
-      detail: "Zentsu kayıtlarınızı saklayan veya okuyan bir sunucu işletmez."
+      detail: "Zentsu senin kayıtlarını saklayan veya okuyan bir sunucu işletmez."
     - term: "İsteğe bağlı senkronizasyon"
-      detail: "Uygulamada iCloud'u açın, kayıtlar kendi Apple hesabınızdaki özel CloudKit veritabanı üzerinden senkronize olur, bize değil."
-  body: "İlaç, doz, anımsatıcı ve stok kayıtları cihazda kalır. Kilo girdileri ayrı yerel depolama kullanır ve Sağlık erişimi isteğe bağlıdır, izin verdiğinizde yalnızca vücut ağırlığını kapsar."
+      detail: "iCloud açıkken temel kayıtlar senin Apple hesabındaki özel CloudKit veritabanını kullanır, bizim sunucularımızı değil."
+  body: "Temel kayıtlar cihazda kalır. Kilo girdileri ve ilerleme fotoğrafları ayrı yerel depolama kullanır."
   policy_link: "Dial gizlilik politikasını okuyun"
   policy_url: /tr/dial/privacy/
 
 availability:
   kicker: "Dial'i indirin"
   heading: "Şimdi App Store'da."
-  body: "Dial indirmesi ücretsizdir. Temel günlük ilk kayıttan çalışır. Dial Pro tahmini düzey grafiği, tam grafikler, PDF dışa aktarma ve Apple Watch ile iPhone'dan hızlı kayıt ekler."
+  body: "Dial indirmesi ücretsizdir, hesap açmana gerek yok. Dial Pro tahmini düzey grafiği, tam geçmiş grafikleri, PDF ve CSV dışa aktarma ve Apple Watch ile iPhone'dan hızlı kayıt ekler."
+
+trademarks: |
+  Ozempic, Wegovy, Mounjaro, and Zepbound are trademarks of their respective owners.
+  Zentsu is not affiliated with any pharmaceutical company.

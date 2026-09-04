@@ -45,38 +45,39 @@ images:
 
 hero:
   availability: "Nu i App Store"
-  headline_lead: "Din GLP-1-journal."
+  headline_lead: "Privat anteckning per dos."
   headline_accent: ""
-  category: "Dial är en privat GLP-1-läkemedelsjournal för iPhone och Apple Watch."
-  detail: "Registrera en dos på iPhone eller Apple Watch. Dial ritar en uppskattad nivå utifrån de doser du registrerar. Journalen stannar på enheten, eller i din privata iCloud-databas om du slår på synkronisering."
-  free_line: Gratis att hämta. Det finns ingen gräns för hur många doser du kan logga.
+  category: "Dial är en GLP-1-läkemedelsöversikt för iPhone och Apple Watch."
+  detail: "Registrera varje dos med tid och injektionsställe, i telefonen eller på handleden. Dial Pro ritar en uppskattad nivå mellan doserna och tar fram en PDF till din förskrivare. Posterna stannar på enheten, eller i din egen privata iCloud-databas om du slår på det."
+  free_line: Gratis att hämta, utan konto. Dosloggen har inget tak.
   secondary_cta: "Så fungerar Dial"
+  qr_caption: "Skanna för att öppna Dial i App Store på din iPhone."
   platforms_label: "Dial-plattformar och lagring"
   platforms:
     - iPhone
     - Apple Watch
     - "Siri, Kontrollcenter och låsskärm"
     - "Valfri privat iCloud-lagring"
-  legal: "Dial Pro lägger till diagram, export, flera läkemedel och påminnelser samt registrering med ett tryck på Apple-enheter. Dial är en personlig journal. Den räknar inte ut doser och ersätter inte råd från din förskrivare."
+  legal: "Dial är en personlig anteckning. Den räknar inte ut doser och ersätter inte råd från din förskrivare. Dial Pro lägger till diagrammet för uppskattad nivå, hela historiken, export och snabb registrering, som beskrivs nedan."
 
 proof:
   label: "Varför Dial"
   points:
-    - "iPhone och Apple Watch"
+    - "Cykelring och nästa påminnelse på Apple Watch"
     - "Öppnas utan Dial-konto"
-    - "Lifetime-köp"
-    - "Uppskattad nivå från dina doser"
+    - "Lifetime-val, ett enda köp"
+    - "Uppskattad nivå mellan doser (Dial Pro)"
 
 level:
   kicker: "Dial Pro · Uppskattad nivå"
-  heading: "Diagrammet bygger på doserna du redan har registrerat."
+  heading: "Se en uppskattad nivå mellan doserna, utifrån halveringstiden."
   body: "Dial ritar en uppskattad läkemedelsnivå över tid från dina registrerade doser och halveringstiden appen visar. Byt intervall för att se en vecka, en månad eller sex månader av din egen historik."
   boundary_lead: "Vi kallar den en uppskattning."
   boundary_body: "Diagrammet modellerar en vanlig avklingningskurva från doserna du har registrerat. Det visar dina egna mönster mellan doser. Det är en uppskattning, inte en uppmätt blodnivå, och inte ett förslag på vad du ska ta härnäst. Dial beräknar inte doser. Appen förklarar hela metoden."
 
 logging:
   kicker: "Snabb registrering"
-  heading: "Läkemedel, mängd, injektionsställe och anteckningar i ett formulär."
+  heading: "Registrera läkemedel, dos och injektionsställe i ett formulär."
   body: "Anteckna läkemedel, mängd, datum, tid, injektionsställe och anteckningar. Senaste värdena fyller i nästa post. Du bekräftar fortfarande varje fält. Dial känner semaglutid (Ozempic, Wegovy), tirzepatid (Mounjaro), liraglutid (Saxenda, Victoza), dulaglutid och exenatid under de varumärkes- och förpackningsnamn som används i Sverige, och tar ett eget läkemedel om det du har på recept inte finns i listan."
   checklist:
     - "Redigera en post när något ändras"
@@ -86,7 +87,7 @@ logging:
 history:
   kicker: "Dial Pro · Historik och trender"
   heading: "Dos-, vikt- och biverkningsdiagram från dina poster."
-  body: "Listor över dos, vikt och biverkningar är fortfarande gratis. Dial Pro lägger till fullständiga dos- och viktdiagram plus trender från biverkningsposterna som redan står i journalen."
+  body: "Listor över dos, vikt och biverkningar är fortfarande gratis. Dial Pro lägger till diagrammen."
   history_card_title: "Dos- och vikthistorik"
   history_card_note: "Granska ändringar i det intervall du väljer."
   side_effects_card_title: "Biverkningstrender"
@@ -95,7 +96,8 @@ history:
 report:
   kicker: "Dial Pro · PDF-rapport"
   heading: "En PDF av dina poster till läkarbesöket."
-  body: "Skapa en PDF med doshistorik, ändringar i registrerad mängd, injektionsställen, viktutveckling och biverkningsmönster. Dial bygger den på din enhet, och du delar den bara när du själv beslutar, via AirDrop, e-post eller utskrift."
+  card_title: "PDF-rapport till läkarbesöket"
+  body: "Skapa en PDF med doshistorik, ändringar i registrerad mängd, injektionsställen, viktutveckling och biverkningsmönster. Dial bygger den på din enhet, och du delar den bara när du själv beslutar, via AirDrop, e-post eller utskrift. Samma historik exporteras som CSV."
   closing: "Privat till vardags. Användbar när journalen behöver lämna telefonen."
   smallprint: "Rapporten sammanfattar dina poster. Den är inte en patientjournal eller en behandlingsplan."
 
@@ -110,8 +112,8 @@ watch:
     - "På iPhone ger Pro registrering med ett tryck från Kontrollcenter, åtgärdsknappen, Siri eller en Live Activity på påminnelsedagen. Gratisåtgärder öppnar registreringsformuläret."
 
 supporting:
-  kicker: "Utöver dosen"
-  heading: "Lager, påminnelser och import ligger i samma journal."
+  kicker: "Allt i översikten"
+  heading: "Historik, rapport, lager, påminnelser och import på ett ställe."
   features:
     - title: "Lager"
       body: "Håll reda på pennor eller injektionsflaskor med koncentration, apotek, utgångsdatum och satsnummer."
@@ -122,17 +124,18 @@ supporting:
 
 plans:
   kicker: "Gratis och Dial Pro"
-  heading: "Använd kärnjournalen gratis."
-  body: "Uppgradera till Pro för diagrammet för uppskattad nivå, export eller registrering med ett tryck på Apple Watch och iPhone. Varje Dial Pro-plan innehåller samma funktioner."
+  heading: "Använd kärnöversikten gratis."
+  body: "Dial Pro lägger till diagrammet för uppskattad nivå, de fullständiga historikdiagrammen, export och snabb registrering på Apple Watch och iPhone. Varje Dial Pro-plan innehåller samma funktioner."
   free_name: "Gratis"
-  free_summary: "En komplett journal för ett aktivt läkemedel."
+  free_summary: "Gratis för ett aktivt läkemedel, utan tak på dosloggen."
   free_features:
     - "Registrera doser, injektionsställen, vikt, biverkningar och foton på framsteg"
     - "Ett aktivt läkemedel och en påminnelse"
     - "Dos- och viktlistor, lager, import och Apple Watch-översikten"
     - "Nedräkningswidgetar och påminnelser som öppnar registreringsformuläret"
   pro_name: Dial Pro
-  pro_summary: "Den uppskattade nivån, fullständiga diagram, export och snabb registrering."
+  pro_summary: "Se nivån mellan doserna, diagram över hela historiken, och registrera från handleden."
+  cta_caption: "Hämta gratis, välj sedan en plan i appen."
   pro_features:
     - "Diagram för uppskattad nivå och widget på hemskärmen"
     - "Fullständiga dos- och viktdiagram, biverkningstrender och bildjämförelse"
@@ -151,18 +154,22 @@ privacy:
   heading: "Posterna stannar på din enhet."
   specs:
     - term: "Konton"
-      detail: "Det finns inget Dial-konto. Öppna appen och börja registrera."
+      detail: "Du behöver inget Dial-konto för att börja registrera."
     - term: "Användningsanalys"
-      detail: "Dial kör ingen användningsanalys och ingen telemetri. Vi mäter inte hur du använder den."
+      detail: "Dial samlar ingen användningsanalys eller telemetri."
     - term: "Våra servrar"
       detail: "Zentsu driver ingen server som lagrar eller läser dina poster."
     - term: "Valfri synkronisering"
-      detail: "Slå på iCloud i appen så synkas poster via den privata CloudKit-databasen på ditt eget Apple-konto, inte till oss."
-  body: "Läkemedel, dos, påminnelse och lager stannar på din enhet. Viktposter använder en separat lokal lagring, och åtkomst till Hälsa är valfri och täcker bara kroppsvikt när du ger tillstånd."
+      detail: "Med iCloud använder kärnposterna den privata CloudKit-databasen på ditt Apple-konto, inte våra servrar."
+  body: "Kärnposterna stannar på din enhet. Viktposter och foton på framsteg använder en separat, enbart lokal lagring."
   policy_link: "Läs Dial-integritetspolicyn"
   policy_url: /sv/dial/privacy/
 
 availability:
   kicker: "Hämta Dial"
   heading: "Nu i App Store."
-  body: "Dial är gratis att hämta. Kärnjournalen fungerar från första registreringen. Dial Pro lägger till diagrammet för uppskattad nivå, fullständiga diagram, PDF-export och snabb registrering från Apple Watch och iPhone."
+  body: "Dial är gratis att hämta, utan konto. Dial Pro lägger till diagrammet för uppskattad nivå, de fullständiga historikdiagrammen, PDF- och CSV-export och snabb registrering från Apple Watch och iPhone."
+
+trademarks: |
+  Ozempic, Wegovy, Mounjaro, and Zepbound are trademarks of their respective owners.
+  Zentsu is not affiliated with any pharmaceutical company.
