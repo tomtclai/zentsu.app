@@ -171,17 +171,18 @@ plans:
   kicker: Free and Dial Pro
   heading: Use the core tracker for free.
   body:
-    Upgrade for the estimated-level chart, exports, or one-tap logging on Apple Watch
-    and iPhone. Every Dial Pro plan includes the same features.
+    Dial Pro adds the estimated-level chart, full history charts, exports, and quick logging
+    on Apple Watch and iPhone. Every Dial Pro plan includes the same features.
   free_name: Free
-  free_summary: A complete record for one active medication.
+  free_summary: Free for one active medication, with no cap on the dose log.
   free_features:
     - Log doses, injection sites, weight, side effects, and progress photos
     - One active medication and one reminder
     - Dose and weight lists, inventory, imports, and the Apple Watch glance
     - Countdown widgets and reminders that open the log form
   pro_name: Dial Pro
-  pro_summary: The estimated level, full charts, exports, and quick logging.
+  pro_summary: See your level between doses, chart your full history, and log from your wrist.
+  cta_caption: Download free, then choose a plan inside the app.
   pro_features:
     - Estimated-level chart and Home Screen level widget
     - Full dose and weight charts, side-effect trends, and photo comparison

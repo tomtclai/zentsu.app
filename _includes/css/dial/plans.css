@@ -4,8 +4,14 @@
 
 .dial-plan-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  grid-template-columns: 1fr;
   gap: 1rem;
+}
+
+@media (min-width: 761px) {
+  .dial-plan-grid {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  }
 }
 
 .dial-plan-card {
@@ -21,8 +27,14 @@
 }
 
 .dial-plan-card-pro {
-  border-color: color-mix(in srgb, var(--dial-coral) 58%, var(--border));
-  box-shadow: 0 18px 45px -32px rgba(185, 70, 59, 0.65);
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--dial-coral-soft) 42%, var(--surface));
+}
+
+@media (prefers-color-scheme: dark) {
+  .dial-plan-card-pro {
+    background: color-mix(in srgb, var(--dial-coral-soft) 72%, var(--surface));
+  }
 }
 
 .dial-plan-name {
@@ -52,14 +64,14 @@
 
 .dial-plan-features li {
   position: relative;
-  padding-left: 1.5rem;
+  padding-inline-start: 1.5rem;
 }
 
 .dial-plan-features li::before {
   content: '';
   position: absolute;
   top: 0.5em;
-  left: 0;
+  inset-inline-start: 0;
   width: 0.55rem;
   height: 0.3rem;
   border-bottom: 2px solid var(--dial-coral-dark);
@@ -69,15 +81,141 @@
 
 .dial-plan-pricing {
   display: grid;
-  gap: 0.75rem;
-  margin-top: auto;
+  gap: 1rem;
   overflow: visible;
+}
+
+.dial-plan-picker {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.dial-plan-picker legend {
+  margin: 0 0 0.65rem;
+  padding: 0;
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+.dial-plan-segments {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.dial-plan-segments input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.dial-plan-segments label {
+  display: block;
+  min-width: 0;
+  padding: 0.85rem 0.65rem;
+  border-inline-end: 1px solid var(--border);
+  color: var(--body-text);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dial-plan-segments label:last-of-type {
+  border-inline-end: 0;
+}
+
+.dial-plan-segments input:checked + label {
+  color: var(--ink);
+  font-weight: 650;
+  background: color-mix(in srgb, var(--dial-coral-soft) 55%, var(--surface));
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+
+.dial-plan-segments input:focus-visible + label {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  z-index: 1;
+}
+
+.dial-plan-price-display {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.dial-plan-price-active {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.75rem 1.25rem;
+  min-width: 0;
+}
+
+.dial-plan-price-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.dial-plan-price-amount {
+  color: var(--ink);
+  font-family:
+    'Inter Tight',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.dial-plan-price-terms {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+@supports selector(:has(*)) {
+  .dial-plan-price-block {
+    display: none;
+  }
+
+  .dial-plan-pricing:has(#dial-plan-lifetime:checked) .dial-plan-price-lifetime,
+  .dial-plan-pricing:has(#dial-plan-annual:checked) .dial-plan-price-annual,
+  .dial-plan-pricing:has(#dial-plan-monthly:checked) .dial-plan-price-monthly {
+    display: flex;
+  }
+}
+
+.dial-plan-price-currency {
+  flex-shrink: 0;
+  align-self: baseline;
 }
 
 .dial-currency {
   position: relative;
   z-index: 4;
-  justify-self: end;
 }
 
 .dial-currency details {
@@ -85,16 +223,16 @@
 }
 
 .dial-currency summary {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.35rem;
   list-style: none;
   cursor: pointer;
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: 0.88rem;
   letter-spacing: 0.02em;
   white-space: nowrap;
-  padding: 0.2rem 0.15rem 0.2rem 0.1rem;
+  padding: 0.15rem 0.1rem;
 }
 
 .dial-currency summary::-webkit-details-marker {
@@ -105,7 +243,7 @@
   content: '';
   width: 0.35rem;
   height: 0.35rem;
-  margin-top: -0.15rem;
+  margin-top: -0.12rem;
   border-right: 1.5px solid currentColor;
   border-bottom: 1.5px solid currentColor;
   transform: rotate(45deg);
@@ -116,7 +254,7 @@
 }
 
 .dial-currency details[open] summary::after {
-  margin-top: 0.15rem;
+  margin-top: 0.12rem;
   transform: rotate(225deg);
 }
 
@@ -159,44 +297,54 @@
   background: var(--bg-alt);
 }
 
-.dial-plan-options {
+.dial-plan-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.dial-plan-cta {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: 12px;
+  gap: 0.65rem;
+  justify-items: start;
 }
 
-.dial-plan-options div {
-  display: grid;
-  gap: 0.25rem;
-  padding: 1rem;
-  border-right: 1px solid var(--border);
+.dial-plan-cta .app-store-badge-link {
+  display: inline-flex;
+  padding: 10px;
+  margin: -10px;
+  line-height: 0;
+  text-decoration: none;
 }
 
-.dial-plan-options div:last-child {
-  border-right: 0;
+.dial-plan-cta .app-store-badge-link img {
+  display: block;
+  height: 40px;
 }
 
-.dial-plan-option-lifetime {
-  border-color: var(--dial-coral);
-  background: var(--dial-coral-soft);
+.dial-plan-cta-caption {
+  margin: 0;
+  max-width: 34ch;
+  color: var(--body-text);
+  font-size: 0.88rem;
+  line-height: 1.55;
 }
 
-.dial-plan-option-lifetime strong {
-  color: var(--dial-coral-dark);
-}
+@media (max-width: 560px) {
+  .dial-plan-segments {
+    grid-template-columns: 1fr;
+  }
 
-.dial-plan-option-lifetime [data-dial-price='lifetime'] {
-  color: var(--ink);
-  font-size: 0.92rem;
-  font-weight: 700;
-}
+  .dial-plan-segments label {
+    border-inline-end: 0;
+    border-bottom: 1px solid var(--border);
+    text-align: start;
+  }
 
-.dial-plans-cta {
-  display: flex;
-  justify-content: center;
-  margin-top: 1.75rem;
+  .dial-plan-segments label:last-of-type {
+    border-bottom: 0;
+  }
 }
 
 .dial-watch-band .app-store-badge-link {
