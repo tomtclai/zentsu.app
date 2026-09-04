@@ -2,7 +2,53 @@
 {%- assign storefront = site.data.dial_storefronts[page.lang] | default: site.data.dial_storefronts.en -%}
 {%- assign prices = site.data.dial_prices[page.lang] | default: site.data.dial_prices.en -%}
 {%- assign app_store_url = 'https://apps.apple.com/app/id6789408903' -%}
+{%- assign campaign = site.data.dial_campaign -%}
+{%- assign provider_token = campaign.provider_token -%}
+{%- assign media_type = campaign.media_type | default: '8' -%}
+{%- capture app_store_url_hero -%}
+{%- if provider_token.size > 0 -%}
+{{ app_store_url }}?pt={{ provider_token }}&ct={{ campaign.placements.hero }}&mt={{ media_type }}
+{%- else -%}
+{{ app_store_url }}
+{%- endif -%}
+{%- endcapture -%}
+{%- capture app_store_url_sticky -%}
+{%- if provider_token.size > 0 -%}
+{{ app_store_url }}?pt={{ provider_token }}&ct={{ campaign.placements.sticky }}&mt={{ media_type }}
+{%- else -%}
+{{ app_store_url }}
+{%- endif -%}
+{%- endcapture -%}
+{%- capture app_store_url_watch -%}
+{%- if provider_token.size > 0 -%}
+{{ app_store_url }}?pt={{ provider_token }}&ct={{ campaign.placements.watch }}&mt={{ media_type }}
+{%- else -%}
+{{ app_store_url }}
+{%- endif -%}
+{%- endcapture -%}
+{%- capture app_store_url_plans -%}
+{%- if provider_token.size > 0 -%}
+{{ app_store_url }}?pt={{ provider_token }}&ct={{ campaign.placements.plans }}&mt={{ media_type }}
+{%- else -%}
+{{ app_store_url }}
+{%- endif -%}
+{%- endcapture -%}
+{%- capture app_store_url_faq -%}
+{%- if provider_token.size > 0 -%}
+{{ app_store_url }}?pt={{ provider_token }}&ct={{ campaign.placements.faq }}&mt={{ media_type }}
+{%- else -%}
+{{ app_store_url }}
+{%- endif -%}
+{%- endcapture -%}
+{%- capture app_store_url_closer -%}
+{%- if provider_token.size > 0 -%}
+{{ app_store_url }}?pt={{ provider_token }}&ct={{ campaign.placements.closer }}&mt={{ media_type }}
+{%- else -%}
+{{ app_store_url }}
+{%- endif -%}
+{%- endcapture -%}
 {%- assign app_store_badge = '/assets/badges/download-on-the-app-store-' | append: page.lang | append: '.svg' -%}
+{%- assign badge_dims = site.data.dial_badges[page.lang] | default: site.data.dial_badges.en -%}
 {%- assign hero_sizes = '(max-width: 760px) 78vw, 430px' -%}
 {%- assign stage_sizes = '(max-width: 760px) 76vw, 390px' -%}
 {%- assign card_sizes = '(max-width: 680px) 76vw, 360px' -%}
@@ -12,6 +58,7 @@
 <html lang="{{ page.lang }}" dir="{{ site.data.i18n[page.lang].dir | default: 'ltr' }}">
   <head>
     {% include head-common.html %}
+    <meta name="apple-itunes-app" content="app-id=6789408903" />
     <meta name="theme-color" content="#fffaf6" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#14110f" media="(prefers-color-scheme: dark)" />
     <script type="application/ld+json">
@@ -78,20 +125,22 @@
             <div class="dial-actions dial-actions-primary">
               <a
                 class="app-store-badge-link"
-                href="{{ app_store_url }}"
+                href="{{ app_store_url_hero | strip }}"
                 rel="noopener noreferrer"
                 id="hero-primary-cta"
               >
                 <img
                   src="{{ app_store_badge }}"
                   alt="{{ copy.app_store_badge_alt }}"
-                  height="40"
+                  width="{{ badge_dims.width }}"
+                  height="{{ badge_dims.height }}"
                 />
               </a>
               <a class="dial-button dial-button-secondary" href="#how-it-works"
                 >{{ copy.hero.secondary_cta }}</a
               >
-            </div>
+            </div>{%- if copy.hero.free_line %}
+            <p class="dial-hero-free">{{ copy.hero.free_line }}</p>{%- endif %}
             <ul class="dial-platforms" aria-label="{{ copy.hero.platforms_label }}">
               {%- for platform in copy.hero.platforms %}
               <li>{{ platform }}</li>
@@ -225,6 +274,19 @@
               <li>{{ item }}</li>
               {%- endfor %}
             </ul>
+            <a
+              class="app-store-badge-link"
+              href="{{ app_store_url_watch | strip }}"
+              rel="noopener noreferrer"
+              id="watch-cta"
+            >
+              <img
+                src="{{ app_store_badge }}"
+                alt="{{ copy.app_store_badge_alt }}"
+                width="{{ badge_dims.width }}"
+                height="{{ badge_dims.height }}"
+              />
+            </a>
           </div>
         </div>
       </section>
@@ -280,7 +342,7 @@
               <div class="dial-plan-pricing">
                 {% include dial-currency.html %}
                 <div class="dial-plan-options" aria-label="{{ copy.plans.options_label }}">
-                  <div>
+                  <div class="dial-plan-option-lifetime">
                     <strong>{{ copy.plans.lifetime_name }}</strong>
                     <span
                       ><span data-dial-price="lifetime">{{ prices.lifetime_display }}</span>
@@ -305,6 +367,21 @@
                 <p class="dial-plan-note" data-dial-price-note>{{ storefront.note }}</p>
               </div>
             </article>
+          </div>
+          <div class="dial-plans-cta">
+            <a
+              class="app-store-badge-link"
+              href="{{ app_store_url_plans | strip }}"
+              rel="noopener noreferrer"
+              id="plans-cta"
+            >
+              <img
+                src="{{ app_store_badge }}"
+                alt="{{ copy.app_store_badge_alt }}"
+                width="{{ badge_dims.width }}"
+                height="{{ badge_dims.height }}"
+              />
+            </a>
           </div>
         </div>
       </section>
@@ -349,16 +426,42 @@
               </div>
             </div>
             <p>{{ copy.availability.body }}</p>
-            <a class="app-store-badge-link" href="{{ app_store_url }}" rel="noopener noreferrer">
+            <a
+              class="app-store-badge-link"
+              href="{{ app_store_url_closer | strip }}"
+              rel="noopener noreferrer"
+              id="closer-primary-cta"
+            >
               <img
                 src="{{ app_store_badge }}"
                 alt="{{ copy.app_store_badge_alt }}"
-                height="40"
+                width="{{ badge_dims.width }}"
+                height="{{ badge_dims.height }}"
               />
             </a>
           </div>
         </div>
       </section>
+
+      <div class="dial-sticky-cta" hidden>
+        <a
+          class="app-store-badge-link"
+          href="{{ app_store_url_sticky | strip }}"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="{{ app_store_badge }}"
+            alt="{{ copy.app_store_badge_alt }}"
+            width="{{ badge_dims.width }}"
+            height="{{ badge_dims.height }}"
+          />
+        </a>
+        <picture class="dial-sticky-icon" aria-hidden="true">
+          <source type="image/avif" srcset="/assets/dial-icon.avif" />
+          <source type="image/webp" srcset="/assets/dial-icon.webp" />
+          <img src="/assets/dial-icon@1x.png" width="32" height="32" alt="" />
+        </picture>
+      </div>
     </main>
 {% include lang-hint.html %}
 
@@ -375,5 +478,38 @@
       }
     </script>
     <script src="/dial-currency.js?v={{ site.time | date: '%s' }}"></script>
+    <script>
+      (function () {
+        'use strict';
+        if (!('IntersectionObserver' in window)) return;
+        var bar = document.querySelector('.dial-sticky-cta');
+        var hero = document.getElementById('hero-primary-cta');
+        var closer = document.getElementById('closer-primary-cta');
+        if (!bar || !hero || !closer) return;
+
+        var heroVisible = true;
+        var closerVisible = false;
+
+        function updateBar() {
+          var show = !heroVisible && !closerVisible;
+          bar.hidden = !show;
+          document.body.classList.toggle('dial-sticky-visible', show);
+        }
+
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.target === hero) heroVisible = entry.isIntersecting;
+              if (entry.target === closer) closerVisible = entry.isIntersecting;
+              updateBar();
+            });
+          },
+          { threshold: 0.01 }
+        );
+
+        observer.observe(hero);
+        observer.observe(closer);
+      })();
+    </script>
   </body>
 </html>

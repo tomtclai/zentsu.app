@@ -1,0 +1,9 @@
+provider_token: ""
+media_type: "8"
+placements:
+  hero: site-dial-hero
+  sticky: site-dial-sticky
+  watch: site-dial-watch
+  plans: site-dial-plans
+  faq: site-dial-faq
+  closer: site-dial-closer

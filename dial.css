@@ -133,8 +133,15 @@
 
 .app-store-badge-link img {
   display: block;
-  width: auto;
   height: 40px;
+}
+
+.dial-hero-free {
+  max-width: 52ch;
+  margin-top: 0.85rem;
+  color: var(--body-text);
+  font-size: 1.02rem;
+  line-height: 1.72;
 }
 
 .dial-button {
@@ -829,6 +836,86 @@
   border-right: 0;
 }
 
+.dial-plan-option-lifetime {
+  border-color: var(--dial-coral);
+  background: var(--dial-coral-soft);
+}
+
+.dial-plan-option-lifetime strong {
+  color: var(--dial-coral-dark);
+}
+
+.dial-plan-option-lifetime [data-dial-price='lifetime'] {
+  color: var(--ink);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.dial-plans-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.75rem;
+}
+
+.dial-watch-band .app-store-badge-link {
+  margin-top: 1.5rem;
+}
+
+.dial-sticky-cta {
+  position: fixed;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 1rem;
+  padding-bottom: calc(0.65rem + env(safe-area-inset-bottom, 0px));
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  box-shadow: 0 8px 28px -8px rgba(10, 11, 16, 0.35);
+  backdrop-filter: saturate(140%) blur(8px);
+  -webkit-backdrop-filter: saturate(140%) blur(8px);
+}
+
+.dial-sticky-cta[hidden] {
+  display: none;
+}
+
+.dial-sticky-icon {
+  flex: none;
+  width: 32px;
+  height: 32px;
+}
+
+.dial-sticky-icon img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 24%;
+}
+
+@media (min-width: 761px) {
+  .dial-sticky-cta {
+    inset-inline-end: 1.25rem;
+    inset-block-end: calc(1.25rem + env(safe-area-inset-bottom, 0px));
+    border-radius: 999px;
+  }
+}
+
+@media (max-width: 760px) {
+  body.dial-sticky-visible {
+    padding-bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .dial-sticky-cta {
+    inset-inline: 0;
+    inset-block-end: 0;
+    justify-content: center;
+    border-radius: 0;
+    border-inline: 0;
+    border-bottom: 0;
+  }
+}
+
 .dial-plan-options strong {
   color: var(--ink);
   font-size: 0.88rem;
@@ -974,7 +1061,60 @@
     width: min(100% - 2rem, 620px);
   }
 
-  .dial-hero-grid,
+  .dial-hero-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .dial-hero-copy,
+  .dial-hero-visual {
+    display: contents;
+  }
+
+  .dial-brandline {
+    order: 1;
+  }
+
+  .dial-hero h1 {
+    order: 2;
+    max-width: 12ch;
+  }
+
+  .dial-category {
+    order: 3;
+  }
+
+  .dial-hero-detail {
+    order: 4;
+  }
+
+  .dial-actions-primary {
+    order: 5;
+  }
+
+  .dial-hero-free {
+    order: 6;
+  }
+
+  .dial-phone-hero {
+    order: 7;
+    width: min(78vw, 380px);
+    margin-top: 1.5rem;
+  }
+
+  .dial-platforms {
+    order: 8;
+  }
+
+  .dial-hero-legal {
+    order: 9;
+  }
+
+  .dial-orbit {
+    order: 10;
+  }
+
   .dial-story-grid,
   .dial-report-grid,
   .dial-privacy-card {
@@ -985,25 +1125,8 @@
     padding-top: 3.5rem;
   }
 
-  .dial-hero-copy {
-    position: relative;
-    z-index: 2;
-  }
-
-  .dial-hero h1 {
-    max-width: 12ch;
-  }
-
-  .dial-hero-visual {
-    padding: 2rem 0 0;
-  }
-
   .dial-orbit {
     width: min(92vw, 470px);
-  }
-
-  .dial-phone-hero {
-    width: min(78vw, 380px);
   }
 
   .dial-proof-row {
@@ -1077,6 +1200,10 @@
     grid-template-columns: 1fr auto;
     border-right: 0;
     border-bottom: 1px solid var(--border);
+  }
+
+  .dial-plan-option-lifetime {
+    border-bottom-color: var(--dial-coral);
   }
 
   .dial-plan-options div:last-child {
