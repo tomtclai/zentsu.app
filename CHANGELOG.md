@@ -9,21 +9,27 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - Apple Smart App Banner on every Dial locale page (`apple-itunes-app`).
-- Campaign-ready App Store links tagged by placement (hero, sticky, watch, plans, FAQ, closer). Placement-tagged App Store links now include the App Store Connect provider token; JSON-LD download URLs stay untagged.
-- App Store badges after the Apple Watch section and below the plans.
-- Sticky App Store bar that appears only while the hero and closer badges are off-screen.
+- Campaign-ready App Store links tagged by placement (hero, sticky, watch, plans, FAQ, closer, nav, QR, plans card). Placement-tagged App Store links now include the App Store Connect provider token; JSON-LD download URLs stay untagged.
+- App Store badges in the hero, Watch section, Pro card, sticky bar, and closer.
+- Sticky App Store bar that appears only while the hero and closer badges are off-screen, with a Get Dial text button on phones.
 - Free line in the Dial hero (`hero.free_line`) across 33 locales.
 - Full five-molecule medication coverage in logging copy (semaglutide, tirzepatide, liraglutide, dulaglutide, exenatide, plus custom), using each locale's App Store names.
+- Object-led Dial hero, a desktop App Store QR code, and a Get Dial nav link on Dial pages.
+- Accordion FAQ with eight unique answers, including what happens if you switch phones.
+- Three GLP-1 explainers (`/blog/2026/how-long-semaglutide-stays-in-your-system/`, `/blog/2026/missed-glp-1-dose-what-to-record/`, `/blog/2026/bring-your-glp-1-log-to-your-doctor/`) and a Dial-only Learn group in the footer.
 
 ### Changed
 
-- Lifetime is the visual primary row in the Dial plans card.
-- On phones, the hero screenshot sits above the fold. Platform chips and the legal paragraph follow the shot.
+- Dial landing page: calmer type, three feature stories, and a five-card grid for history, report, inventory, reminders, and imports.
+- The Pro card shows one price at a time through a Lifetime / Annual / Monthly control (Lifetime selected). Currency sits on the price row.
+- On phones, the App Store badge, the secondary CTA, and the top of the phone sit in the first viewport.
+- Native copy for the redesign across 32 locales. Meta descriptions are 155 characters or shorter. The Dial copy-length guard now fails the site test unless `DIAL_STRICT_COPY=0`.
 
 ### Fixed
 
 - FAQ structured data: question 1 now uses `copy.hero.category` instead of a missing `copy.category` (which emitted `"text": null` and invalidated FAQPage). The visible FAQ now includes that answer. Privacy FAQ no longer doubles the period. Plan prices read as amount, terms, then name, not `$19.99/per year`.
-- `llms.txt` described Bench as a strength-training log and listed Coil as a live iOS app. It now covers only Dial and Bench as they actually ship.
+- `llms.txt` described Bench as a strength-training log and listed Coil as a live iOS app. It now covers only Dial and Bench as they actually ship. It now also points at CSV export, the switch-phones FAQ, and the three explainers.
+- Dial currency picker no longer collides with `locale.js` over a shared `STORAGE_KEY`.
 
 ## [Unreleased]
 
