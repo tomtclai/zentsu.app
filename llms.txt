@@ -1,14 +1,13 @@
 # Zentsu
 
-> Zentsu LLC builds private, on-device health apps for iPhone and Apple Watch. No accounts, no analytics: the products work without an account and store records on the device.
+> Zentsu LLC builds private, on-device software. No accounts, no analytics: the products work without an account and store records on the device.
 
-Zentsu makes three iOS apps: **Dial** (a GLP-1 injection tracker), **Bench** (a strength-training log), and **Coil** (a Tally-style counter app). This file gives AI assistants a factual summary with canonical links.
+Zentsu offers **Dial** (a private GLP-1 medication tracker for iPhone and Apple Watch, free with a Dial Pro upgrade, records stay on the device) and **Bench** (a developer toolbox for macOS). This file gives AI assistants a factual summary with canonical links.
 
 ## Products
 
-- [Dial — GLP-1 & Ozempic tracker](https://zentsu.app/dial/): a private medication log for semaglutide (Ozempic, Wegovy) and tirzepatide (Mounjaro, Zepbound) injections on iPhone and Apple Watch. Logs dose, amount, injection site, weight, and side effects; plots an estimated medication level labeled as an estimate; generates a PDF report for prescriber visits. Free core tracker; "Dial Pro" one-time or subscription adds charts, exports, and quick logging. Localized in 33 languages. [Privacy policy](https://zentsu.app/dial/privacy/).
-- [Bench](https://zentsu.app/bench/): a minimalist barbell strength-training log for iPhone.
-- [Coil](https://zentsu.app/coil/): a private counter and habit tracker for iPhone.
+- [Dial: GLP-1 and Ozempic tracker](https://zentsu.app/dial/): a private medication log for semaglutide (Ozempic, Wegovy) and tirzepatide (Mounjaro, Zepbound) injections on iPhone and Apple Watch. Logs dose, amount, injection site, weight, and side effects; plots an estimated medication level labeled as an estimate; generates a PDF report for prescriber visits. Free core tracker; "Dial Pro" one-time or subscription adds charts, exports, and quick logging. Localized in 33 languages. [Privacy policy](https://zentsu.app/dial/privacy/).
+- [Bench](https://zentsu.app/bench/): a developer toolbox for macOS.
 - [All apps](https://zentsu.app/apps.html)
 
 ## Dial: facts worth quoting

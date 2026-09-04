@@ -1,10 +1,11 @@
 {%- assign faq = site.data.dial_faq[page.lang] | default: site.data.dial_faq.en -%} {%- assign a1 =
-copy.category -%} {%- assign a2 = copy.logging.body -%} {%- assign a3 = copy.level.boundary_body -%}
-{%- capture a4 -%}{{ copy.privacy.heading }}. {{ copy.privacy.body }}{%- endcapture -%} {%- capture
-a5 -%}{{ copy.plans.free_summary }} {{ copy.plans.pro_summary }} {{ prices.lifetime_display }} ({{
-copy.plans.lifetime_name }}) · {{ prices.annual_display }}/{{ copy.plans.annual_terms }} ({{
-copy.plans.annual_name }}) · {{ prices.monthly_display }}/{{ copy.plans.monthly_terms }} ({{
-copy.plans.monthly_name }}).{%- endcapture -%} {%- assign a6 = copy.watch.body -%}
+copy.hero.category -%} {%- assign a2 = copy.logging.body -%} {%- assign a3 =
+copy.level.boundary_body -%} {%- assign a4 = copy.privacy.body -%} {%- capture a5 -%}{{
+copy.plans.free_summary }} {{ copy.plans.pro_summary }} {{ prices.lifetime_display }} {{
+copy.plans.lifetime_terms }} ({{ copy.plans.lifetime_name }}) · {{ prices.annual_display }} {{
+copy.plans.annual_terms }} ({{ copy.plans.annual_name }}) · {{ prices.monthly_display }} {{
+copy.plans.monthly_terms }} ({{ copy.plans.monthly_name }}).{%- endcapture -%} {%- assign a6 =
+copy.watch.body -%}
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -25,6 +26,7 @@ copy.plans.monthly_name }}).{%- endcapture -%} {%- assign a6 = copy.watch.body -
     <div>
       <p class="dial-kicker" aria-hidden="true">FAQ</p>
       <h2 id="faq-title">{{ faq.q1 }}</h2>
+      <p>{{ a1 }}</p>
     </div>
     <div>
       <dl class="dial-privacy-specs">
@@ -49,7 +51,10 @@ copy.plans.monthly_name }}).{%- endcapture -%} {%- assign a6 = copy.watch.body -
           <dd>{{ a6 }}</dd>
         </div>
       </dl>
-      <a class="dial-text-link" href="{{ app_store_url }}" rel="noopener"
+      <a
+        class="dial-text-link"
+        href="{{ app_store_url_faq | default: app_store_url }}"
+        rel="noopener"
         >{{ copy.app_store_badge_alt }}</a
       >
     </div>
