@@ -10,6 +10,14 @@
     <a href="/privacy">{{ strings.footer.privacy }}</a>
     <a href="/terms">{{ strings.footer.terms }}</a>
   </div>
+  {%- if page.alternate_group == 'dial' %}
+  <div class="footer-links">
+    <span>{{ strings.footer.learn | default: site.data.i18n.en.footer.learn }}</span>
+    <a href="/blog/2026/how-long-semaglutide-stays-in-your-system/">Semaglutide &amp; tirzepatide half-life</a>
+    <a href="/blog/2026/missed-glp-1-dose-what-to-record/">Missed dose: what to record</a>
+    <a href="/blog/2026/bring-your-glp-1-log-to-your-doctor/">GLP-1 log for your doctor</a>
+  </div>
+  {%- endif %}
   {%- if page.footer_indie %}
   <p class="indie-line">{{ strings.footer.indie_line }} <span class="indie-name">&nbsp;</span></p>
   {%- endif %} {%- if page.footer_apple_badge %}
