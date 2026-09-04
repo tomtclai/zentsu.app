@@ -119,11 +119,11 @@
   align-items: center;
   align-self: center;
   gap: 0.35rem;
-  width: 112px;
+  width: 96px;
 }
 
 .dial-hero-qr-plate {
-  padding: 8px;
+  padding: 4px;
   border-radius: 6px;
   background: #fff;
   line-height: 0;
@@ -131,8 +131,8 @@
 
 .dial-hero-qr-plate img {
   display: block;
-  width: 96px;
-  height: 96px;
+  width: 88px;
+  height: 88px;
 }
 
 .dial-hero-qr p {
