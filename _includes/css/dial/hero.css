@@ -109,15 +109,20 @@
 }
 
 .dial-actions-primary {
-  align-items: baseline;
+  align-items: center;
   gap: 1.1rem;
+}
+
+.dial-actions-primary .app-store-badge-link,
+.dial-actions-primary .dial-button-secondary,
+.dial-hero-qr {
+  flex-shrink: 0;
 }
 
 .dial-hero-qr {
   display: none;
   flex-direction: column;
   align-items: center;
-  align-self: center;
   gap: 0.35rem;
   width: 96px;
 }
@@ -136,7 +141,7 @@
 }
 
 .dial-hero-qr p {
-  max-width: 11rem;
+  max-width: 100%;
   margin: 0;
   color: var(--muted);
   font-size: 0.78rem;
@@ -146,6 +151,10 @@
 }
 
 @media (min-width: 761px) and (hover: hover) and (pointer: fine) {
+  .dial-actions-primary {
+    flex-wrap: nowrap;
+  }
+
   .dial-hero-qr {
     display: flex;
   }
