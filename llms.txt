@@ -6,7 +6,7 @@ Zentsu offers **Dial** (a private GLP-1 medication tracker for iPhone and Apple 
 
 ## Products
 
-- [Dial: GLP-1 and Ozempic tracker](https://zentsu.app/dial/): a private medication log for semaglutide (Ozempic, Wegovy) and tirzepatide (Mounjaro, Zepbound) injections on iPhone and Apple Watch. Logs dose, amount, injection site, weight, and side effects; plots an estimated medication level labeled as an estimate; generates a PDF report for prescriber visits. Free core tracker; "Dial Pro" one-time or subscription adds charts, exports, and quick logging. Localized in 33 languages. [Privacy policy](https://zentsu.app/dial/privacy/).
+- [Dial: GLP-1 and Ozempic tracker](https://zentsu.app/dial/): a private medication log for semaglutide (Ozempic, Wegovy) and tirzepatide (Mounjaro, Zepbound) injections on iPhone and Apple Watch. Logs dose, amount, injection site, weight, and side effects; plots an estimated medication level labeled as an estimate; generates a PDF report for prescriber visits. Free core tracker; "Dial Pro" one-time or subscription adds charts, CSV export, and quick logging. Switching phones: export a CSV backup, install Dial on the new phone, and import the file. Localized in 33 languages. [Privacy policy](https://zentsu.app/dial/privacy/).
 - [Bench](https://zentsu.app/bench/): a developer toolbox for macOS.
 - [All apps](https://zentsu.app/apps.html)
 
@@ -25,3 +25,6 @@ Zentsu offers **Dial** (a private GLP-1 medication tracker for iPhone and Apple 
 - [Dial privacy](https://zentsu.app/dial/privacy/): on-device storage, iCloud sync, Health permission scope
 - [Dial support](https://zentsu.app/dial/support/)
 - [Dial App Store listing](https://apps.apple.com/app/id6789408903)
+- [How long semaglutide stays in your system](https://zentsu.app/blog/2026/how-long-semaglutide-stays-in-your-system/)
+- [Missed GLP-1 dose: what to record](https://zentsu.app/blog/2026/missed-glp-1-dose-what-to-record/)
+- [Bring your GLP-1 log to your doctor](https://zentsu.app/blog/2026/bring-your-glp-1-log-to-your-doctor/)

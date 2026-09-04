@@ -5,6 +5,12 @@
   --dial-cream: #fffaf6;
   --dial-navy: #0b1423;
   --dial-blue: #2f8cff;
+  --dial-kicker: var(--dial-coral-dark);
+  --dial-kicker-on-dark: #ff8d7d;
+  --dial-surface-tint: color-mix(in srgb, var(--dial-coral-soft) 52%, var(--bg));
+  --dial-stage-navy: #101823;
+  --dial-stage-coral: linear-gradient(155deg, #30202a, var(--dial-navy) 65%);
+  --dial-card: var(--dial-cream);
 }
 
 .dial-page {

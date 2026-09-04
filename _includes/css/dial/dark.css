@@ -3,6 +3,9 @@
     --dial-coral-dark: #ff8d7d;
     --dial-coral-soft: #2a1d1a;
     --dial-cream: #211916;
+    --dial-kicker: #ff8d7d;
+    --dial-surface-tint: color-mix(in srgb, var(--dial-coral-soft) 52%, var(--bg));
+    --dial-card: var(--surface);
   }
 
   .dial-button-primary {

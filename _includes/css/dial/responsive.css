@@ -1,3 +1,9 @@
+@media (max-width: 1000px) {
+  .dial-hero-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(240px, 0.76fr);
+  }
+}
+
 @media (max-width: 900px) {
   .dial-feature-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -87,12 +93,12 @@
   }
 
   .dial-proof-row p {
-    border-right: 0;
+    border-inline-end: 0;
     padding: 0.45rem 0.5rem;
   }
 
   .dial-proof-row p:first-child {
-    padding-left: 0.5rem;
+    padding-inline-start: 0.5rem;
   }
 
   .dial-story-reverse .dial-story-copy {
@@ -150,7 +156,7 @@
 
   .dial-plan-options div {
     grid-template-columns: 1fr auto;
-    border-right: 0;
+    border-inline-end: 0;
     border-bottom: 1px solid var(--border);
   }
 

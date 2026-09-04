@@ -17,6 +17,18 @@
   display: none;
 }
 
+.dial-sticky-get {
+  display: none;
+  flex: none;
+  padding: 0.55rem 1rem;
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+
+.dial-sticky-badge {
+  flex: none;
+}
+
 .dial-sticky-icon {
   flex: none;
   width: 32px;
@@ -40,7 +52,7 @@
 
 @media (max-width: 760px) {
   body.dial-sticky-visible {
-    padding-bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px));
+    padding-bottom: var(--sticky-cta-height, calc(4.75rem + env(safe-area-inset-bottom, 0px)));
   }
 
   .dial-sticky-cta {
@@ -51,22 +63,8 @@
     border-inline: 0;
     border-bottom: 0;
   }
-}
 
-.dial-plan-options strong {
-  color: var(--ink);
-  font-size: 0.88rem;
-}
-
-.dial-plan-options span {
-  color: var(--muted);
-  font-size: 0.76rem;
-  line-height: 1.45;
-}
-
-.dial-plan-note {
-  margin: -0.6rem 0 0;
-  color: var(--muted);
-  font-size: 0.76rem;
-  line-height: 1.55;
+  .dial-sticky-get {
+    display: inline-flex;
+  }
 }

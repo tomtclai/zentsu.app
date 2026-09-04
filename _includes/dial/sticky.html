@@ -1,19 +1,27 @@
-      <div class="dial-sticky-cta" hidden>
-        <a
-          class="app-store-badge-link"
-          href="{{ app_store_url_sticky | strip }}"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="{{ app_store_badge }}"
-            alt="{{ copy.app_store_badge_alt }}"
-            width="{{ badge_dims.width }}"
-            height="{{ badge_dims.height }}"
-          />
-        </a>
-        <picture class="dial-sticky-icon" aria-hidden="true">
-          <source type="image/avif" srcset="/assets/dial-icon.avif" />
-          <source type="image/webp" srcset="/assets/dial-icon.webp" />
-          <img src="/assets/dial-icon@1x.png" width="32" height="32" alt="" />
-        </picture>
-      </div>
+{%- assign strings = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+<div class="dial-sticky-cta" hidden>
+  <a
+    class="dial-button dial-button-primary dial-sticky-get"
+    href="{{ app_store_url_sticky | strip }}"
+    rel="noopener noreferrer"
+  >
+    {{ strings.sticky.get_dial | default: site.data.i18n.en.sticky.get_dial }}
+  </a>
+  <a
+    class="app-store-badge-link dial-sticky-badge"
+    href="{{ app_store_url_sticky | strip }}"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="{{ app_store_badge }}"
+      alt="{{ copy.app_store_badge_alt }}"
+      width="{{ badge_dims.width }}"
+      height="{{ badge_dims.height }}"
+    />
+  </a>
+  <picture class="dial-sticky-icon" aria-hidden="true">
+    <source type="image/avif" srcset="/assets/dial-icon.avif" />
+    <source type="image/webp" srcset="/assets/dial-icon.webp" />
+    <img src="/assets/dial-icon@1x.png" width="32" height="32" alt="" />
+  </picture>
+</div>

@@ -9,36 +9,4 @@
       }
     </script>
     <script src="/dial-currency.js?v={{ site.time | date: '%s' }}"></script>
-    <script>
-      (function () {
-        'use strict';
-        if (!('IntersectionObserver' in window)) return;
-        var bar = document.querySelector('.dial-sticky-cta');
-        var hero = document.getElementById('hero-primary-cta');
-        var closer = document.getElementById('closer-primary-cta');
-        if (!bar || !hero || !closer) return;
-
-        var heroVisible = true;
-        var closerVisible = false;
-
-        function updateBar() {
-          var show = !heroVisible && !closerVisible;
-          bar.hidden = !show;
-          document.body.classList.toggle('dial-sticky-visible', show);
-        }
-
-        var observer = new IntersectionObserver(
-          function (entries) {
-            entries.forEach(function (entry) {
-              if (entry.target === hero) heroVisible = entry.isIntersecting;
-              if (entry.target === closer) closerVisible = entry.isIntersecting;
-              updateBar();
-            });
-          },
-          { threshold: 0.01 }
-        );
-
-        observer.observe(hero);
-        observer.observe(closer);
-      })();
-    </script>
+    <script src="/dial-sticky.js?v={{ site.time | date: '%s' }}" defer></script>

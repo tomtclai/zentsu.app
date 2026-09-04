@@ -8,13 +8,19 @@ const { localeFromLanguageTags } = createRequire(import.meta.url)('../locale.js'
 const { catalogByCurrency, resolvePrices } = createRequire(import.meta.url)(
   '../dial-currency.js',
 );
+const { stickyBarVisible } = createRequire(import.meta.url)('../dial-sticky.js');
 
 const outputDirectory = '_site';
 const siteOrigin = 'https://zentsu.app';
 const errors = [];
+const warnings = [];
 
 function check(condition, message) {
   if (!condition) errors.push(message);
+}
+
+function warn(message) {
+  warnings.push(message);
 }
 
 function read(path) {
@@ -212,6 +218,36 @@ check(
   'The Dial language picker must not use the two-button segmented toggle',
 );
 check(
+  dialEnglish.includes('rel="preload"') &&
+    dialEnglish.includes('type="image/avif"') &&
+    dialEnglish.includes('imagesrcset="/assets/dial-web-today'),
+  'The English Dial page must preload the hero AVIF capture',
+);
+check(
+  dialEnglish.includes('"isAccessibleForFree": true'),
+  'The English Dial page schema must declare isAccessibleForFree',
+);
+check(
+  dialEnglish.includes('"@type": "Offer"') &&
+    dialEnglish.includes('"name": "Lifetime"') &&
+    dialEnglish.includes('"name": "Annual"') &&
+    dialEnglish.includes('"name": "Monthly"'),
+  'The English Dial page schema must list Lifetime, Annual, and Monthly offers',
+);
+check(!dialEnglish.includes('"@type": "AggregateOffer"'), 'Dial schema must not use AggregateOffer');
+check(
+  stickyBarVisible(true, false) === false,
+  'Sticky bar must stay hidden while the hero CTA is visible',
+);
+check(
+  stickyBarVisible(false, true) === false,
+  'Sticky bar must stay hidden while the closer CTA is visible',
+);
+check(
+  stickyBarVisible(false, false) === true,
+  'Sticky bar must show when neither the hero nor closer CTA is visible',
+);
+check(
   dialSpanish.includes('content="https://zentsu.app/assets/dial-og-es.png"'),
   'The Spanish Dial page must use the Spanish social banner',
 );
@@ -266,12 +302,16 @@ for (const [lang, route] of Object.entries(dialRoutes)) {
     `${route} schema is missing priceCurrency ${prices.currency}`,
   );
   check(
-    html.includes(`"lowPrice": "${prices.monthly}"`),
-    `${route} schema is missing monthly ${prices.monthly}`,
+    html.includes(`"price": "${prices.lifetime}"`) &&
+      html.includes(`"price": "${prices.annual}"`) &&
+      html.includes(`"price": "${prices.monthly}"`),
+    `${route} schema is missing one or more plan prices`,
   );
   check(
-    html.includes(`"highPrice": "${prices.lifetime}"`),
-    `${route} schema is missing lifetime ${prices.lifetime}`,
+    html.includes('"name": "Lifetime"') &&
+      html.includes('"name": "Annual"') &&
+      html.includes('"name": "Monthly"'),
+    `${route} schema is missing named Offer entries`,
   );
   if (lang !== 'en') {
     check(!html.includes('Prices shown are U.S. prices'), `${route} still claims U.S. prices`);
@@ -319,6 +359,52 @@ const ukYen = resolvePrices(
 );
 check(ukYen.row.lifetime_display === '¥8,000', 'Currency override should load the JPY storefront');
 check(ukYen.note === 'Shown in JPY.', 'Override note should name the chosen currency');
+
+const compactHeadlineLocales = new Set(['ja', 'zh', 'zh-hant', 'ko']);
+const headlineLimits = { default: 40, compact: 16 };
+const descriptionLimit = 155;
+const dialCopyDir = '_data/dial';
+const strictCopy = process.env.DIAL_STRICT_COPY === '1';
+const copyIssues = [];
+
+for (const name of readdirSync(dialCopyDir).filter((entry) => entry.endsWith('.yml'))) {
+  const lang = name.replace(/\.yml$/, '');
+  const copy = loadYaml(join(dialCopyDir, name));
+  const headline = copy?.hero?.headline_lead ?? '';
+  const headlineLimit = compactHeadlineLocales.has(lang)
+    ? headlineLimits.compact
+    : headlineLimits.default;
+  if (headline.length > headlineLimit) {
+    copyIssues.push(
+      `${lang} hero.headline_lead is ${headline.length} characters (limit ${headlineLimit})`,
+    );
+  }
+}
+
+for (const path of readdirSync('.').filter((name) => name === 'dial.html' || /\/dial\.html$/.test(name))) {
+  const frontMatter = read(path).match(/^---\n([\s\S]*?)\n---/)?.[1] ?? '';
+  const description = frontMatter.match(/^description:\s*['"]?(.*?)['"]?\s*$/m)?.[1] ?? '';
+  if (description.length > descriptionLimit) {
+    copyIssues.push(`${path} description is ${description.length} characters (limit ${descriptionLimit})`);
+  }
+}
+
+for (const entry of readdirSync('.').filter((dir) => {
+  const route = join(dir, 'dial.html');
+  return existsSync(route);
+})) {
+  const path = join(entry, 'dial.html');
+  const frontMatter = read(path).match(/^---\n([\s\S]*?)\n---/)?.[1] ?? '';
+  const description = frontMatter.match(/^description:\s*['"]?(.*?)['"]?\s*$/m)?.[1] ?? '';
+  if (description.length > descriptionLimit) {
+    copyIssues.push(`${path} description is ${description.length} characters (limit ${descriptionLimit})`);
+  }
+}
+
+for (const issue of copyIssues) {
+  if (strictCopy) check(false, issue);
+  else warn(issue);
+}
 
 const notFound = read(join(outputDirectory, '404.html'));
 check(
@@ -441,6 +527,10 @@ for (const line of redirects.split('\n')) {
 if (errors.length > 0) {
   console.error(errors.map((error) => `- ${error}`).join('\n'));
   process.exit(1);
+}
+
+if (warnings.length > 0) {
+  console.warn(warnings.map((warning) => `- ${warning}`).join('\n'));
 }
 
 console.log(
