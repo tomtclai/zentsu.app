@@ -52,7 +52,7 @@
 .dial-brandline span,
 .dial-kicker {
   font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
-  color: var(--dial-coral-dark);
+  color: var(--dial-kicker);
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.13em;
@@ -311,7 +311,7 @@
   position: absolute;
   inset: 13%;
   border: 14px solid rgba(239, 112, 95, 0.12);
-  border-right-color: var(--dial-coral);
+  border-inline-end-color: var(--dial-coral);
   border-radius: 50%;
 }
 

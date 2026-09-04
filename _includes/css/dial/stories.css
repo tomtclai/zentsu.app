@@ -10,7 +10,7 @@
 
 .dial-story-tint,
 .dial-supporting {
-  background: color-mix(in srgb, var(--dial-coral-soft) 52%, var(--bg));
+  background: var(--dial-surface-tint);
 }
 
 .dial-story-grid {
@@ -79,13 +79,13 @@
 .dial-product-stage-blue {
   background:
     radial-gradient(circle at 70% 20%, rgba(47, 140, 255, 0.42), transparent 38%),
-    linear-gradient(155deg, #132540, var(--dial-navy) 65%);
+    linear-gradient(155deg, var(--dial-stage-navy), var(--dial-navy) 65%);
 }
 
 .dial-product-stage-coral {
   background:
     radial-gradient(circle at 22% 18%, rgba(239, 112, 95, 0.45), transparent 38%),
-    linear-gradient(155deg, #30202a, var(--dial-navy) 65%);
+    var(--dial-stage-coral);
 }
 
 .dial-phone-section {

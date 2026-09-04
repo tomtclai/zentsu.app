@@ -75,7 +75,7 @@
   width: 0.55rem;
   height: 0.3rem;
   border-bottom: 2px solid var(--dial-coral-dark);
-  border-left: 2px solid var(--dial-coral-dark);
+  border-inline-start: 2px solid var(--dial-coral-dark);
   transform: rotate(-45deg);
 }
 
@@ -244,7 +244,7 @@
   width: 0.35rem;
   height: 0.35rem;
   margin-top: -0.12rem;
-  border-right: 1.5px solid currentColor;
+  border-inline-end: 1.5px solid currentColor;
   border-bottom: 1.5px solid currentColor;
   transform: rotate(45deg);
 }

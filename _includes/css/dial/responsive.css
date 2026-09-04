@@ -4,16 +4,6 @@
   }
 }
 
-@media (max-width: 900px) {
-  .dial-feature-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .dial-plan-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 @media (max-width: 760px) {
   .dial-wrap {
     width: min(100% - 2rem, 620px);
@@ -30,51 +20,7 @@
     display: contents;
   }
 
-  .dial-brandline {
-    order: 1;
-  }
-
-  .dial-hero h1 {
-    order: 2;
-    max-width: 12ch;
-  }
-
-  .dial-category {
-    order: 3;
-  }
-
-  .dial-hero-detail {
-    order: 4;
-  }
-
-  .dial-actions-primary {
-    order: 5;
-  }
-
-  .dial-hero-free {
-    order: 6;
-  }
-
-  .dial-phone-hero {
-    order: 7;
-    width: min(78vw, 380px);
-    margin-top: 1.5rem;
-  }
-
-  .dial-platforms {
-    order: 8;
-  }
-
-  .dial-hero-legal {
-    order: 9;
-  }
-
-  .dial-orbit {
-    order: 10;
-  }
-
   .dial-story-grid,
-  .dial-report-grid,
   .dial-privacy-card {
     grid-template-columns: 1fr;
   }
@@ -87,34 +33,8 @@
     width: min(92vw, 470px);
   }
 
-  .dial-proof-row {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.2rem 0;
-  }
-
-  .dial-proof-row p {
-    border-inline-end: 0;
-    padding: 0.45rem 0.5rem;
-  }
-
-  .dial-proof-row p:first-child {
-    padding-inline-start: 0.5rem;
-  }
-
   .dial-story-reverse .dial-story-copy {
     order: initial;
-  }
-
-  .dial-screen-pair {
-    grid-template-columns: 1fr;
-  }
-
-  .dial-screen-card-offset {
-    padding-top: 0;
-  }
-
-  .dial-report .dial-story-copy {
-    grid-row: 1;
   }
 }
 
@@ -135,37 +55,6 @@
 
   .dial-product-stage {
     padding: 1rem;
-  }
-
-  .dial-screen-pair {
-    margin-inline: -0.5rem;
-    padding-inline: 1rem;
-  }
-
-  .dial-feature-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .dial-feature-grid article > span {
-    margin-bottom: 1.5rem;
-  }
-
-  .dial-plan-options {
-    grid-template-columns: 1fr;
-  }
-
-  .dial-plan-options div {
-    grid-template-columns: 1fr auto;
-    border-inline-end: 0;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .dial-plan-option-lifetime {
-    border-bottom-color: var(--dial-coral);
-  }
-
-  .dial-plan-options div:last-child {
-    border-bottom: 0;
   }
 }
 
