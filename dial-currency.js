@@ -4,7 +4,7 @@
 // and survives language changes. Amounts stay the live ASC figures from
 // _data/dial_prices.yml. Schema.org offers stay on the page storefront.
 
-const STORAGE_KEY = 'zentsu-dial-currency';
+const DIAL_CURRENCY_STORAGE_KEY = 'zentsu-dial-currency';
 
 function priceData() {
   const node = document.getElementById('dial-price-data');
@@ -19,7 +19,7 @@ function priceData() {
 
 function readStored() {
   try {
-    return localStorage.getItem(STORAGE_KEY);
+    return localStorage.getItem(DIAL_CURRENCY_STORAGE_KEY);
   } catch {
     return null;
   }
@@ -27,7 +27,7 @@ function readStored() {
 
 function writeStored(currency) {
   try {
-    localStorage.setItem(STORAGE_KEY, currency);
+    localStorage.setItem(DIAL_CURRENCY_STORAGE_KEY, currency);
   } catch {
     // Private mode can block storage; the in-page switch still works.
   }
@@ -66,8 +66,9 @@ function applyPrices(resolved) {
     monthly: resolved.row.monthly_display,
   };
   for (const [key, value] of Object.entries(amounts)) {
-    const node = document.querySelector(`[data-dial-price="${key}"]`);
-    if (node && value) node.textContent = value;
+    document.querySelectorAll(`[data-dial-price="${key}"]`).forEach((node) => {
+      if (value) node.textContent = value;
+    });
   }
   const note = document.querySelector('[data-dial-price-note]');
   if (note && resolved.note) note.textContent = resolved.note;
