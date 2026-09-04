@@ -1,7 +1,6 @@
-# Per-locale FAQ question strings for the Dial page.
-# Answers are composed from existing localized copy in _data/dial/<locale>.yml
-# (category, logging.body, level.boundary_body, privacy, plans, watch) plus the
-# storefront prices in _data/dial_prices.yml — no new product claims here.
+# Per-locale FAQ strings for the Dial page.
+# Each locale keeps q1..q6 until W7 removes them. English items in en.items are
+# the canonical answers; other locales fall back to en.items until translated.
 # q6 refers to Apple Watch availability; keep the platform name in Latin script.
 
 en:
@@ -11,6 +10,40 @@ en:
   q4: "Where are my records stored?"
   q5: "What does Dial Pro cost?"
   q6: "Does Dial work on Apple Watch?"
+  items:
+    - q: "What is Dial?"
+      a: >-
+        Dial is a GLP-1 medication tracker for iPhone and Apple Watch. It is free to
+        download. Dial Pro adds charts, exports, and quick logging.
+    - q: "Which medications does Dial support?"
+      a: >-
+        Dial supports semaglutide, tirzepatide, liraglutide, dulaglutide, and exenatide
+        under the local names used in your country, plus a custom entry when yours is not
+        listed.
+    - q: "Does Dial calculate doses?"
+      a: >-
+        It does not. Dial records what you log and plots an estimate from those entries.
+        The estimate is not a measured level and not a suggestion of what to take next.
+    - q: "Where are my records stored?"
+      a: >-
+        Records stay on your device. iCloud is optional and uses your own private CloudKit
+        database when you turn it on. Zentsu runs no server that stores your records.
+    - q: "What happens if I switch phones?"
+      a: >-
+        With iCloud turned on in Dial, medication, dose, reminder, and supply records
+        follow your Apple Account to the new phone. Weight entries and progress photos stay
+        on the device they were logged on. Export the PDF or CSV to keep a copy of that
+        history.
+    - q: "What does Dial Pro cost?"
+      a: ""
+    - q: "Does Dial work on Apple Watch?"
+      a: >-
+        The watch app shows a cycle ring and your next reminder for free. Dial Pro adds
+        logging from the wrist, plus level and quick-log complications.
+    - q: "Can I export my data?"
+      a: >-
+        Dial Pro includes a PDF report and CSV export. Share either by AirDrop, email, or
+        print when you choose.
 de:
   q1: "Was ist Dial?"
   q2: "Welche Medikamente unterstützt Dial?"

@@ -41,6 +41,13 @@
   margin-top: 1.1rem;
 }
 
+.dial-trademarks {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
   .dial-button:hover {
     transform: translateY(-2px);
