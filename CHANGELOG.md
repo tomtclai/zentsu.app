@@ -9,7 +9,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - Apple Smart App Banner on every Dial locale page (`apple-itunes-app`).
-- Campaign-ready App Store links tagged by placement (hero, sticky, watch, plans, FAQ, closer). The provider token stays blank until App Store Connect campaign links can be copied; untagged URLs still work.
+- Campaign-ready App Store links tagged by placement (hero, sticky, watch, plans, FAQ, closer). Placement-tagged App Store links now include the App Store Connect provider token; JSON-LD download URLs stay untagged.
 - App Store badges after the Apple Watch section and below the plans.
 - Sticky App Store bar that appears only while the hero and closer badges are off-screen.
 - Free line in the Dial hero (`hero.free_line`) across 33 locales.
