@@ -1,16 +1,13 @@
-      <section class="dial-report" aria-labelledby="report-title">
-        <div class="dial-wrap dial-report-grid">
-          <div class="dial-report-visual">
-            <figure class="dial-paper dial-paper-report">
-              {% include dial-shot.html image=copy.images.report sizes=report_sizes %}
-            </figure>
-          </div>
-          <div class="dial-story-copy">
-            <p class="dial-kicker">{{ copy.report.kicker }}</p>
-            <h2 id="report-title">{{ copy.report.heading }}</h2>
-            <p>{{ copy.report.body }}</p>
-            <p>{{ copy.report.closing }}</p>
-            <p class="dial-smallprint">{{ copy.report.smallprint }}</p>
-          </div>
-        </div>
-      </section>
+            <article class="dial-grid-card dial-grid-card-paper">
+              <span class="dial-pro-tag">Dial Pro</span>
+              <div class="dial-grid-card-media dial-grid-card-media-navy">
+                <figure class="dial-paper dial-paper-card">
+                  {%- assign report_card_sizes = include.sizes | default: report_sizes -%}
+                  {% include dial-shot.html image=copy.images.report sizes=report_card_sizes %}
+                </figure>
+              </div>
+              <h3>
+                {{ copy.report.card_title | default: site.data.dial.en.report.card_title }}
+              </h3>
+              <p>{{ copy.report.body | default: site.data.dial.en.report.body }}</p>
+            </article>

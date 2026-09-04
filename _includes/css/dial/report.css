@@ -1,46 +1,10 @@
-.dial-report {
-  overflow: hidden;
-  background: #101823;
-}
-
-.dial-report-grid {
-  grid-template-columns: minmax(340px, 0.9fr) minmax(0, 0.8fr);
-}
-
-.dial-report .dial-story-copy h2,
-.dial-report .dial-story-copy p:not(.dial-kicker) {
-  color: #f7f7f5;
-}
-
-.dial-report .dial-story-copy p:not(.dial-kicker) {
-  color: #c4cad2;
-}
-
-.dial-report-visual {
-  position: relative;
-  display: grid;
-  place-items: center;
-}
-
-.dial-report-visual::before {
-  content: '';
-  position: absolute;
-  width: 90%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: rgba(239, 112, 95, 0.22);
-  filter: blur(1px);
-}
-
 .dial-paper {
-  position: relative;
-  z-index: 1;
   margin: 0;
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: 4px;
   background: #fff;
   box-shadow:
-    0 36px 80px -28px rgba(10, 11, 16, 0.65),
+    0 18px 42px -22px rgba(10, 11, 16, 0.55),
     0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
@@ -51,7 +15,11 @@
   height: auto;
 }
 
-.dial-paper-report {
-  width: min(100%, 420px);
+.dial-paper-card {
+  width: min(100%, 240px);
   transform: rotate(-2deg);
+}
+
+.dial-grid-card-paper .dial-grid-card-media {
+  padding-block: clamp(1.25rem, 3vw, 2rem);
 }

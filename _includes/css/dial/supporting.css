@@ -1,37 +1,64 @@
-.dial-feature-grid {
+.dial-supporting .dial-feature-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
-.dial-feature-grid article {
+.dial-grid-card {
+  display: grid;
+  gap: 0.85rem;
   min-width: 0;
-  max-width: none;
   margin: 0;
-  padding: 1.5rem;
+  padding: 1.25rem;
   border: 1px solid var(--border);
   border-radius: 16px;
   background: var(--surface);
-  box-shadow: none;
 }
 
-.dial-feature-grid article > span {
-  display: block;
-  margin-bottom: 2.5rem;
-  color: var(--dial-coral-dark);
-  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 0.68rem;
+.dial-pro-tag {
+  justify-self: start;
+  padding: 0.18rem 0.55rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.35;
 }
 
-.dial-feature-grid h3 {
-  margin: 0 0 0.5rem;
+.dial-grid-card h3 {
+  margin: 0;
   color: var(--ink);
-  font-size: 1.05rem;
+  font-size: 1.02rem;
+  font-weight: 650;
+  line-height: 1.25;
 }
 
-.dial-feature-grid p {
+.dial-grid-card p {
   margin: 0;
   color: var(--body-text);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   line-height: 1.6;
+}
+
+.dial-grid-card-media {
+  margin-bottom: 0.25rem;
+}
+
+@media (min-width: 681px) {
+  .dial-supporting .dial-feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1001px) {
+  .dial-supporting .dial-feature-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .dial-supporting .dial-feature-grid {
+    grid-template-columns: 1fr;
+  }
 }

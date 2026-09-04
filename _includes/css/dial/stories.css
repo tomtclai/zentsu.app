@@ -1,6 +1,4 @@
 .dial-story,
-.dial-history,
-.dial-report,
 .dial-watch-band,
 .dial-supporting,
 .dial-plans,
@@ -15,8 +13,7 @@
   background: color-mix(in srgb, var(--dial-coral-soft) 52%, var(--bg));
 }
 
-.dial-story-grid,
-.dial-report-grid {
+.dial-story-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.86fr) minmax(340px, 1fr);
   gap: clamp(3rem, 8vw, 7rem);
@@ -27,21 +24,24 @@
   order: 2;
 }
 
+.dial-story-copy .dial-kicker,
+.dial-supporting .dial-kicker {
+  color: var(--dial-kicker, var(--accent));
+}
+
 .dial-story-copy h2,
-.dial-section-heading h2,
-.dial-plans h2,
-.dial-privacy h2 {
+.dial-supporting .dial-section-heading h2 {
   margin: 0.7rem 0 1.2rem;
   color: var(--ink);
-  font-size: clamp(2.25rem, 5vw, 4.25rem);
+  font-size: clamp(1.75rem, 3.4vw, 2.6rem);
   font-weight: 720;
-  letter-spacing: -0.05em;
-  line-height: 1;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  text-wrap: balance;
 }
 
 .dial-story-copy p:not(.dial-kicker):not(.dial-smallprint),
 .dial-section-heading > p:last-child,
-.dial-report p,
 .dial-privacy-card p,
 .dial-availability-copy > p {
   color: var(--body-text);
@@ -52,7 +52,7 @@
 .dial-boundary {
   margin-top: 1.5rem;
   padding: 1rem 1.1rem;
-  border-left: 3px solid var(--dial-coral);
+  border-inline-start: 3px solid var(--dial-coral);
   background: var(--bg-alt);
   color: var(--body-text);
   font-size: 0.88rem;
@@ -103,22 +103,37 @@
 
 .dial-checklist li {
   position: relative;
-  padding-left: 1.6rem;
+  padding-inline-start: 1.6rem;
 }
 
 .dial-checklist li::before {
   content: '';
   position: absolute;
   top: 0.5em;
-  left: 0;
+  inset-inline-start: 0;
   width: 0.6rem;
   height: 0.32rem;
   border-bottom: 2px solid var(--dial-coral-dark);
-  border-left: 2px solid var(--dial-coral-dark);
+  border-inline-start: 2px solid var(--dial-coral-dark);
   transform: rotate(-45deg);
 }
 
 .dial-section-heading {
   max-width: 740px;
   margin-bottom: clamp(2.5rem, 6vw, 5rem);
+}
+
+@media (prefers-color-scheme: dark) {
+  .dial-product-stage-blue,
+  .dial-product-stage-coral {
+    background:
+      radial-gradient(circle at 70% 20%, rgba(47, 140, 255, 0.28), transparent 38%),
+      linear-gradient(155deg, #0a1018, var(--dial-navy) 72%);
+  }
+
+  .dial-product-stage-coral {
+    background:
+      radial-gradient(circle at 22% 18%, rgba(239, 112, 95, 0.24), transparent 38%),
+      linear-gradient(155deg, #1a1218, var(--dial-navy) 72%);
+  }
 }

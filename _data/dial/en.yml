@@ -89,7 +89,7 @@ proof:
 
 level:
   kicker: Dial Pro · Estimated level
-  heading: The chart uses the doses you already logged.
+  heading: See an estimated level between doses, based on half-life.
   body:
     Dial plots an estimated medication level over time from your recorded doses and
     the half-life value shown in the app. Change the range to review a week, month, or
@@ -103,7 +103,7 @@ level:
 
 logging:
   kicker: Quick logging
-  heading: Medication, amount, site, and notes in one form.
+  heading: Log your medication, dose, and injection site in one form.
   body:
     Record medication, amount, date, time, injection site, and notes. Recent values
     fill the next entry. You still confirm every field. Dial knows semaglutide
@@ -118,9 +118,7 @@ logging:
 history:
   kicker: Dial Pro · History and trends
   heading: Dose, weight, and side-effect charts from your entries.
-  body:
-    Dose, weight, and side-effect lists stay free. Dial Pro adds full dose and weight
-    charts plus trends from the side-effect entries already in your record.
+  body: Dose, weight, and side-effect lists stay free. Dial Pro adds the charts.
   history_card_title: Dose and weight history
   history_card_note: Review changes across the range you choose.
   side_effects_card_title: Side-effect trends
@@ -129,10 +127,11 @@ history:
 report:
   kicker: Dial Pro · PDF report
   heading: A PDF of your entries for a clinic visit.
+  card_title: PDF report for a clinic visit
   body:
     Generate a PDF with your dose history, changes in recorded amount, injection sites,
     weight trend, and side-effect patterns. Dial builds it on your device, and you share
-    it only when you decide to, by AirDrop, email, or print.
+    it only when you decide to, by AirDrop, email, or print. The same history exports as CSV.
   closing:
     Private the rest of the time, and useful the one moment your record needs to leave
     your phone.
@@ -154,8 +153,8 @@ watch:
       Siri, or a reminder-day Live Activity. Free actions open the log form.
 
 supporting:
-  kicker: Around the routine
-  heading: Inventory, reminders, and imports sit in the same record.
+  kicker: Everything in the record
+  heading: History, report, inventory, reminders, and imports in one place.
   features:
     - title: Supply inventory
       body: Track pens or vials with concentration, pharmacy, expiration date, and lot number.
