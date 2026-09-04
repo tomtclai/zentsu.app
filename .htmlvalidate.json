@@ -4,6 +4,7 @@
     "void-style": "off",
     "doctype-style": "off",
     "no-inline-style": "off",
-    "aria-label-misuse": "off"
+    "aria-label-misuse": "off",
+    "long-title": ["error", { "maxlength": 120 }]
   }
 }
