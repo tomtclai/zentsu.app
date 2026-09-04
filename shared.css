@@ -740,3 +740,49 @@ section.block:last-of-type {
     box-shadow: none;
   }
 }
+
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.nav-cta:hover {
+  background: color-mix(in srgb, var(--accent) 88%, #000);
+  color: #fff;
+}
+
+.nav-cta:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .nav-cta {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .nav-cta {
+    background: var(--accent);
+    color: #fff;
+  }
+
+  .nav-cta:hover {
+    background: color-mix(in srgb, var(--accent) 78%, #fff);
+    color: #fff;
+  }
+}
