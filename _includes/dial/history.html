@@ -1,29 +1,13 @@
-      <section class="dial-history" aria-labelledby="history-title">
-        <div class="dial-wrap">
-          <div class="dial-section-heading">
-            <p class="dial-kicker">{{ copy.history.kicker }}</p>
-            <h2 id="history-title">{{ copy.history.heading }}</h2>
-            <p>{{ copy.history.body }}</p>
-          </div>
-          <div class="dial-screen-pair">
-            <figure class="dial-screen-card">
-              <div class="dial-phone dial-phone-card">
-                {% include dial-shot.html image=copy.images.history sizes=card_sizes %}
+            <article class="dial-grid-card dial-grid-card-screenshot">
+              <span class="dial-pro-tag">Dial Pro</span>
+              <div class="dial-grid-card-media dial-grid-card-media-navy">
+                <figure class="dial-phone dial-phone-card">
+                  {%- assign history_sizes = include.sizes | default: card_sizes -%}
+                  {% include dial-shot.html image=copy.images.history sizes=history_sizes %}
+                </figure>
               </div>
-              <figcaption>
-                <strong>{{ copy.history.history_card_title }}</strong>
-                <span>{{ copy.history.history_card_note }}</span>
-              </figcaption>
-            </figure>
-            <figure class="dial-screen-card dial-screen-card-offset">
-              <div class="dial-phone dial-phone-card">
-                {% include dial-shot.html image=copy.images.side_effects sizes=card_sizes %}
-              </div>
-              <figcaption>
-                <strong>{{ copy.history.side_effects_card_title }}</strong>
-                <span>{{ copy.history.side_effects_card_note }}</span>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
+              <h3>
+                {{ copy.history.history_card_title | default: site.data.dial.en.history.history_card_title }}
+              </h3>
+              <p>{{ copy.history.body | default: site.data.dial.en.history.body }}</p>
+            </article>
