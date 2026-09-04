@@ -1,0 +1,71 @@
+.dial-faq-list {
+  max-width: 68ch;
+}
+
+.dial-faq h2 {
+  margin: 0 0 1.25rem;
+  color: var(--ink);
+  font-size: clamp(1.45rem, 2.4vw, 2rem);
+  font-weight: 720;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+.dial-faq details {
+  border-block-start: 1px solid var(--border);
+}
+
+.dial-faq details:last-of-type {
+  border-block-end: 1px solid var(--border);
+}
+
+.dial-faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1rem;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.45;
+  cursor: pointer;
+  list-style: none;
+}
+
+.dial-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.dial-faq summary span {
+  min-width: 0;
+}
+
+.dial-faq-chevron {
+  flex-shrink: 0;
+  color: var(--muted);
+}
+
+.dial-faq details[open] .dial-faq-chevron {
+  transform: rotate(180deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .dial-faq-chevron {
+    transition: transform 0.2s ease;
+  }
+}
+
+.dial-faq details p {
+  margin: 0;
+  padding-block: 0 1.1rem;
+  color: var(--body-text);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.dial-faq .dial-text-link {
+  display: inline-block;
+  margin-top: 1.3rem;
+}

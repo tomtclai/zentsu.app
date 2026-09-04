@@ -200,19 +200,18 @@ privacy:
   heading: Records stay on your device.
   specs:
     - term: Accounts
-      detail: There is no Dial account. Open the app and start logging.
+      detail: No Dial account is required to start logging.
     - term: Analytics
-      detail: Dial runs no usage analytics or telemetry. We measure nothing about how you use it.
+      detail: Dial collects no usage analytics or telemetry.
     - term: Our servers
       detail: Zentsu operates no server that stores or reads your records.
     - term: Optional sync
       detail:
-        Turn on iCloud in the app and records sync through the private CloudKit database
-        on your own Apple Account, not to us.
+        With iCloud on, core records use the private CloudKit database on your Apple
+        Account, not our servers.
   body:
-    Medication, dose, reminder, and supply records stay on your device. Weight entries
-    use a separate local store, and Apple Health access is optional, covering body weight
-    only when you grant permission.
+    Core records stay on your device. Weight entries and progress photos use separate
+    local-only storage.
   policy_link: Read the Dial privacy policy
   policy_url: /dial/privacy/
 
@@ -220,6 +219,10 @@ availability:
   kicker: Get Dial
   heading: Available now on the App Store.
   body:
-    Dial is free to download. The core tracker works from the first log. Dial Pro adds
-    the estimated level chart, full charts, PDF export, and quick logging from Apple Watch
+    Dial is free to download, with no account to create. Dial Pro adds the estimated-level
+    chart, full history charts, PDF and CSV export, and quick logging from Apple Watch
     and iPhone.
+
+trademarks:
+  Ozempic, Wegovy, Mounjaro, and Zepbound are trademarks of their respective owners.
+  Zentsu is not affiliated with any pharmaceutical company.

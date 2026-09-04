@@ -12,6 +12,7 @@
 {% include css/dial/plans.css %}
 {% include css/dial/sticky.css %}
 {% include css/dial/privacy.css %}
+{% include css/dial/faq.css %}
 {% include css/dial/availability.css %}
 {% include css/dial/responsive.css %}
 {% include css/dial/motion.css %}

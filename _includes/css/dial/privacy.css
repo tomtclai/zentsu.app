@@ -1,6 +1,5 @@
 .dial-privacy-card {
   display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
   gap: clamp(2rem, 8vw, 7rem);
   padding: clamp(2rem, 6vw, 4.5rem);
   overflow: hidden;
@@ -9,6 +8,12 @@
   background:
     radial-gradient(circle at 100% 100%, rgba(239, 112, 95, 0.18), transparent 19rem),
     var(--dial-cream);
+}
+
+@media (min-width: 761px) {
+  .dial-privacy-card {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+  }
 }
 
 .dial-privacy h2 {
