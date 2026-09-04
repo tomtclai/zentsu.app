@@ -1,0 +1,48 @@
+.dial-text-link {
+  display: inline-block;
+  margin-top: 1.3rem;
+  color: var(--dial-coral-dark);
+  font-weight: 650;
+  text-underline-offset: 0.2em;
+}
+
+.dial-availability-card {
+  display: block;
+  max-width: 40rem;
+}
+
+.dial-availability-copy {
+  min-width: 0;
+}
+
+.dial-availability-brand {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.95rem 1.1rem;
+  align-items: center;
+  margin-bottom: 0.85rem;
+}
+
+.dial-availability-icon {
+  width: clamp(56px, 7vw, 72px);
+}
+
+.dial-availability h2 {
+  margin: 0.25rem 0 0;
+  color: var(--ink);
+  font-size: clamp(1.45rem, 2.4vw, 2rem);
+  font-weight: 720;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+.dial-availability-copy .app-store-badge-link {
+  display: inline-block;
+  margin-top: 1.1rem;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .dial-button:hover {
+    transform: translateY(-2px);
+  }
+}

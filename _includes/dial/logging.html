@@ -1,0 +1,19 @@
+      <section class="dial-story dial-story-tint" aria-labelledby="logging-title">
+        <div class="dial-wrap dial-story-grid dial-story-reverse">
+          <div class="dial-story-copy">
+            <p class="dial-kicker">{{ copy.logging.kicker }}</p>
+            <h2 id="logging-title">{{ copy.logging.heading }}</h2>
+            <p>{{ copy.logging.body }}</p>
+            <ul class="dial-checklist">
+              {%- for item in copy.logging.checklist %}
+              <li>{{ item }}</li>
+              {%- endfor %}
+            </ul>
+          </div>
+          <div class="dial-product-stage dial-product-stage-coral">
+            <figure class="dial-phone dial-phone-section">
+              {% include dial-shot.html image=copy.images.log_dose sizes=stage_sizes %}
+            </figure>
+          </div>
+        </div>
+      </section>

@@ -12,9 +12,15 @@ en:
     privacy_long: ' Policy'
     terms: Terms
     terms_long: ' of Use'
+    get_dial: "Get Dial"
+  sticky:
+    get_dial: "Get Dial, free"
+  plans_ui:
+    plan_legend: "Choose a Dial Pro plan"
   footer:
     home: Zentsu
     apps: Apps
+    learn: "Learn"
     dial: Dial
     dial_url: /dial/
     bench_support: Bench support

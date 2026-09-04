@@ -1,0 +1,4 @@
+.dial-wrap {
+  width: min(100% - 3rem, 1120px);
+  margin-inline: auto;
+}

@@ -1,0 +1,16 @@
+      <section class="dial-report" aria-labelledby="report-title">
+        <div class="dial-wrap dial-report-grid">
+          <div class="dial-report-visual">
+            <figure class="dial-paper dial-paper-report">
+              {% include dial-shot.html image=copy.images.report sizes=report_sizes %}
+            </figure>
+          </div>
+          <div class="dial-story-copy">
+            <p class="dial-kicker">{{ copy.report.kicker }}</p>
+            <h2 id="report-title">{{ copy.report.heading }}</h2>
+            <p>{{ copy.report.body }}</p>
+            <p>{{ copy.report.closing }}</p>
+            <p class="dial-smallprint">{{ copy.report.smallprint }}</p>
+          </div>
+        </div>
+      </section>

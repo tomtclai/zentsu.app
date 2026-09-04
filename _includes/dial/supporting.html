@@ -1,0 +1,18 @@
+      <section class="dial-supporting" aria-labelledby="supporting-title">
+        <div class="dial-wrap">
+          <div class="dial-section-heading">
+            <p class="dial-kicker">{{ copy.supporting.kicker }}</p>
+            <h2 id="supporting-title">{{ copy.supporting.heading }}</h2>
+          </div>
+          <div class="dial-feature-grid">
+            {%- for feature in copy.supporting.features %}
+            {%- assign ordinal = forloop.index | prepend: '0' %}
+            <article>
+              <span aria-hidden="true">{{ ordinal }}</span>
+              <h3>{{ feature.title }}</h3>
+              <p>{{ feature.body }}</p>
+            </article>
+            {%- endfor %}
+          </div>
+        </div>
+      </section>

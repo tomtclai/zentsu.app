@@ -1,0 +1,35 @@
+      <section class="dial-watch-band" aria-labelledby="watch-title">
+        <div class="dial-wrap dial-story-grid">
+          <div class="dial-watch-visual">
+            <figure class="dial-watch dial-watch-front">
+              {% include dial-shot.html image=copy.images.watch_glance sizes=watch_sizes %}
+            </figure>
+            <figure class="dial-watch dial-watch-back">
+              {% include dial-shot.html image=copy.images.watch_logged sizes=watch_sizes %}
+            </figure>
+          </div>
+          <div class="dial-story-copy">
+            <p class="dial-kicker">{{ copy.watch.kicker }}</p>
+            <h2 id="watch-title">{{ copy.watch.heading }}</h2>
+            <p>{{ copy.watch.body }}</p>
+            <ul class="dial-checklist">
+              {%- for item in copy.watch.checklist %}
+              <li>{{ item }}</li>
+              {%- endfor %}
+            </ul>
+            <a
+              class="app-store-badge-link"
+              href="{{ app_store_url_watch | strip }}"
+              rel="noopener noreferrer"
+              id="watch-cta"
+            >
+              <img
+                src="{{ app_store_badge }}"
+                alt="{{ copy.app_store_badge_alt }}"
+                width="{{ badge_dims.width }}"
+                height="{{ badge_dims.height }}"
+              />
+            </a>
+          </div>
+        </div>
+      </section>

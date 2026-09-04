@@ -1,0 +1,75 @@
+      <section class="dial-plans" aria-labelledby="plans-title">
+        <div class="dial-wrap">
+          <div class="dial-section-heading">
+            <p class="dial-kicker">{{ copy.plans.kicker }}</p>
+            <h2 id="plans-title">{{ copy.plans.heading }}</h2>
+            <p>{{ copy.plans.body }}</p>
+          </div>
+          <div class="dial-plan-grid">
+            <article class="dial-plan-card">
+              <div>
+                <p class="dial-plan-name">{{ copy.plans.free_name }}</p>
+                <p class="dial-plan-summary">{{ copy.plans.free_summary }}</p>
+              </div>
+              <ul class="dial-plan-features">
+                {%- for feature in copy.plans.free_features %}
+                <li>{{ feature }}</li>
+                {%- endfor %}
+              </ul>
+            </article>
+            <article class="dial-plan-card dial-plan-card-pro">
+              <div>
+                <p class="dial-plan-name">{{ copy.plans.pro_name }}</p>
+                <p class="dial-plan-summary">{{ copy.plans.pro_summary }}</p>
+              </div>
+              <ul class="dial-plan-features">
+                {%- for feature in copy.plans.pro_features %}
+                <li>{{ feature }}</li>
+                {%- endfor %}
+              </ul>
+              <div class="dial-plan-pricing">
+                {% include dial-currency.html %}
+                <div class="dial-plan-options" aria-label="{{ copy.plans.options_label }}">
+                  <div class="dial-plan-option-lifetime">
+                    <strong>{{ copy.plans.lifetime_name }}</strong>
+                    <span
+                      ><span data-dial-price="lifetime">{{ prices.lifetime_display }}</span>
+                      {{ copy.plans.lifetime_terms }}</span
+                    >
+                  </div>
+                  <div>
+                    <strong>{{ copy.plans.annual_name }}</strong>
+                    <span
+                      ><span data-dial-price="annual">{{ prices.annual_display }}</span>
+                      {{ copy.plans.annual_terms }}</span
+                    >
+                  </div>
+                  <div>
+                    <strong>{{ copy.plans.monthly_name }}</strong>
+                    <span
+                      ><span data-dial-price="monthly">{{ prices.monthly_display }}</span>
+                      {{ copy.plans.monthly_terms }}</span
+                    >
+                  </div>
+                </div>
+                <p class="dial-plan-note" data-dial-price-note>{{ storefront.note }}</p>
+              </div>
+            </article>
+          </div>
+          <div class="dial-plans-cta">
+            <a
+              class="app-store-badge-link"
+              href="{{ app_store_url_plans | strip }}"
+              rel="noopener noreferrer"
+              id="plans-cta"
+            >
+              <img
+                src="{{ app_store_badge }}"
+                alt="{{ copy.app_store_badge_alt }}"
+                width="{{ badge_dims.width }}"
+                height="{{ badge_dims.height }}"
+              />
+            </a>
+          </div>
+        </div>
+      </section>

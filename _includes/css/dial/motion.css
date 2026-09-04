@@ -1,0 +1,9 @@
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .dial-button {
+    transition: none;
+  }
+}

@@ -1,0 +1,2 @@
+{%- if provider_token.size > 0 -%} {{ app_store_url }}?pt={{ provider_token }}&ct={{
+include.placement }}&mt={{ media_type }} {%- else -%} {{ app_store_url }} {%- endif -%}

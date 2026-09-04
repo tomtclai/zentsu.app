@@ -5,7 +5,7 @@
   "scripts": {
     "build": "bundle exec jekyll build",
     "validate:html": "html-validate '_site/**/*.html'",
-    "validate:links": "test -f _site/bench.html && grep -q 'id=\"pricing\"' _site/bench.html && linkinator _site --recurse --clean-urls --check-fragments --check-css --concurrency 20 --retry-errors --retry-errors-count 5 --skip '/bench(#.*)?$' --skip 'mailto:' --skip 'cdn-cgi' --skip 'https://zentsu\\.app'",
+    "validate:links": "test -f _site/bench.html && grep -q 'id=\"pricing\"' _site/bench.html && linkinator _site --recurse --clean-urls --check-fragments --check-css --concurrency 20 --retry-errors --retry-errors-count 5 --skip '/bench(#.*)?$' --skip 'mailto:' --skip 'cdn-cgi' --skip 'https://zentsu\\.app' --skip 'fda\\.gov' --skip 'dailymed\\.nlm\\.nih\\.gov'",
     "validate:app-visibility": "test -f _site/index.html && test -f _site/apps.html && ! grep -q 'data-app=\"coil\"' _site/index.html _site/apps.html && grep -q 'data-app=\"bench\"' _site/index.html && grep -q 'data-app=\"dial\"' _site/index.html && grep -q 'data-app=\"bench\"' _site/apps.html && grep -q 'data-app=\"dial\"' _site/apps.html && test -f _site/coil.html && grep -q 'mailto:hello@zentsu.app' _site/coil.html && test -f _site/coil/privacy.html && grep -q '<link rel=\"canonical\" href=\"https://zentsu.app/coil/privacy\"' _site/coil/privacy.html",
     "validate:sitemap": "test -f _site/sitemap.xml && ! grep -q '/pages/' _site/sitemap.xml && test \"$(grep -c '<loc>https://zentsu.app/' _site/sitemap.xml)\" = \"$(grep -c '<loc>' _site/sitemap.xml)\" && grep -q '<loc>https://zentsu.app/dial/</loc>' _site/sitemap.xml && grep -q '<link rel=\"canonical\" href=\"https://zentsu.app/dial/\"' _site/dial/index.html && test -f _site/_redirects && grep -q '^/dial.html /dial/ 301$' _site/_redirects && npm run validate:sitemap:es",
     "validate:sitemap:es": "for route in /es/dial/ /es/dial/support/ /es/dial/privacy/; do grep -q \"<loc>https://zentsu.app$route</loc>\" _site/sitemap.xml || { echo \"Sitemap is missing $route\"; exit 1; }; grep -q \"<link rel=\\\"canonical\\\" href=\\\"https://zentsu.app$route\\\"\" \"_site${route}index.html\" || { echo \"$route has no self-canonical\"; exit 1; }; grep -q '<html lang=\"es\"' \"_site${route}index.html\" || { echo \"$route is not marked lang=es\"; exit 1; }; done",
@@ -32,6 +32,7 @@
     "lefthook": "^2.1.6",
     "linkinator": "^7.6.1",
     "prettier": "^3.8.3",
+    "qrcode": "^1.5.4",
     "sharp": "^0.34.5",
     "wrangler": "^4.125.0"
   }

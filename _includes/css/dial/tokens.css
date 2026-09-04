@@ -1,0 +1,12 @@
+:root {
+  --dial-coral: #ef705f;
+  --dial-coral-dark: #b9463b;
+  --dial-coral-soft: #fff0ec;
+  --dial-cream: #fffaf6;
+  --dial-navy: #0b1423;
+  --dial-blue: #2f8cff;
+}
+
+.dial-page {
+  --accent: var(--dial-coral-dark);
+}

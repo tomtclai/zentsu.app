@@ -1,0 +1,52 @@
+      <section class="dial-hero" aria-labelledby="dial-title">
+        <div class="dial-wrap dial-hero-grid">
+          <div class="dial-hero-copy">
+            <div class="dial-brandline">
+              <picture class="dial-brand-icon">
+                <source type="image/avif" srcset="/assets/dial-icon.avif" />
+                <source type="image/webp" srcset="/assets/dial-icon.webp" />
+                <img src="/assets/dial-icon@1x.png" width="96" height="96" alt="" />
+              </picture>
+              <div>
+                <strong>Dial</strong>
+                <span>{{ copy.hero.availability }}</span>
+              </div>
+            </div>
+            <h1 id="dial-title">{{ copy.hero.headline_lead }}</h1>
+            <p class="dial-category">{{ copy.hero.category }}</p>
+            <p class="dial-hero-detail">{{ copy.hero.detail }}</p>
+            <div class="dial-actions dial-actions-primary">
+              <a
+                class="app-store-badge-link"
+                href="{{ app_store_url_hero | strip }}"
+                rel="noopener noreferrer"
+                id="hero-primary-cta"
+              >
+                <img
+                  src="{{ app_store_badge }}"
+                  alt="{{ copy.app_store_badge_alt }}"
+                  width="{{ badge_dims.width }}"
+                  height="{{ badge_dims.height }}"
+                />
+              </a>
+              <a class="dial-button dial-button-secondary" href="#how-it-works"
+                >{{ copy.hero.secondary_cta }}</a
+              >
+            </div>{%- if copy.hero.free_line %}
+            <p class="dial-hero-free">{{ copy.hero.free_line }}</p>{%- endif %}
+            <ul class="dial-platforms" aria-label="{{ copy.hero.platforms_label }}">
+              {%- for platform in copy.hero.platforms %}
+              <li>{{ platform }}</li>
+              {%- endfor %}
+            </ul>
+            <p class="dial-hero-legal">{{ copy.hero.legal }}</p>
+          </div>
+
+          <div class="dial-hero-visual">
+            <div class="dial-orbit" aria-hidden="true"></div>
+            <figure class="dial-phone dial-phone-hero">
+              {% include dial-shot.html image=copy.images.today sizes=hero_sizes priority=true %}
+            </figure>
+          </div>
+        </div>
+      </section>

@@ -1,0 +1,42 @@
+.dial-proof {
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.dial-proof .dial-wrap {
+  padding-block: 1.15rem;
+}
+
+.dial-proof-label {
+  margin: 0 0 0.7rem;
+  color: var(--muted);
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.dial-proof-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+
+.dial-proof-row p {
+  padding: 0.6rem 1rem;
+  border-right: 1px solid var(--border-soft);
+  color: var(--muted);
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.69rem;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.dial-proof-row p:first-child {
+  padding-left: 0;
+}
+
+.dial-proof-row p:last-child {
+  border-right: 0;
+}

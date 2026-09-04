@@ -1,0 +1,10 @@
+      <section class="dial-proof" aria-labelledby="proof-label">
+        <div class="dial-wrap">
+          <p class="dial-proof-label" id="proof-label">{{ copy.proof.label }}</p>
+          <div class="dial-proof-row">
+            {%- for point in copy.proof.points %}
+            <p>{{ point }}</p>
+            {%- endfor %}
+          </div>
+        </div>
+      </section>

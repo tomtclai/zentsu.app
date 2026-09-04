@@ -1,0 +1,37 @@
+.dial-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.dial-feature-grid article {
+  min-width: 0;
+  max-width: none;
+  margin: 0;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: none;
+}
+
+.dial-feature-grid article > span {
+  display: block;
+  margin-bottom: 2.5rem;
+  color: var(--dial-coral-dark);
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.68rem;
+}
+
+.dial-feature-grid h3 {
+  margin: 0 0 0.5rem;
+  color: var(--ink);
+  font-size: 1.05rem;
+}
+
+.dial-feature-grid p {
+  margin: 0;
+  color: var(--body-text);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}

@@ -7,3 +7,6 @@ placements:
   plans: site-dial-plans
   faq: site-dial-faq
   closer: site-dial-closer
+  qr: site-dial-qr
+  nav: site-dial-nav
+  plans_card: site-dial-plans-card

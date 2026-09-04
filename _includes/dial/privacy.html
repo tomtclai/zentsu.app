@@ -1,0 +1,22 @@
+      <section class="dial-privacy" aria-labelledby="privacy-title">
+        <div class="dial-wrap dial-privacy-card">
+          <div>
+            <p class="dial-kicker">{{ copy.privacy.kicker }}</p>
+            <h2 id="privacy-title">{{ copy.privacy.heading }}</h2>
+          </div>
+          <div>
+            <dl class="dial-privacy-specs">
+              {%- for spec in copy.privacy.specs %}
+              <div>
+                <dt>{{ spec.term }}</dt>
+                <dd>{{ spec.detail }}</dd>
+              </div>
+              {%- endfor %}
+            </dl>
+            <p>{{ copy.privacy.body }}</p>
+            <a class="dial-text-link" href="{{ copy.privacy.policy_url }}"
+              >{{ copy.privacy.policy_link }}</a
+            >
+          </div>
+        </div>
+      </section>

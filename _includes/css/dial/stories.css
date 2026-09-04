@@ -1,0 +1,124 @@
+.dial-story,
+.dial-history,
+.dial-report,
+.dial-watch-band,
+.dial-supporting,
+.dial-plans,
+.dial-privacy,
+.dial-availability {
+  padding: clamp(4.5rem, 9vw, 8rem) 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.dial-story-tint,
+.dial-supporting {
+  background: color-mix(in srgb, var(--dial-coral-soft) 52%, var(--bg));
+}
+
+.dial-story-grid,
+.dial-report-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.86fr) minmax(340px, 1fr);
+  gap: clamp(3rem, 8vw, 7rem);
+  align-items: center;
+}
+
+.dial-story-reverse .dial-story-copy {
+  order: 2;
+}
+
+.dial-story-copy h2,
+.dial-section-heading h2,
+.dial-plans h2,
+.dial-privacy h2 {
+  margin: 0.7rem 0 1.2rem;
+  color: var(--ink);
+  font-size: clamp(2.25rem, 5vw, 4.25rem);
+  font-weight: 720;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.dial-story-copy p:not(.dial-kicker):not(.dial-smallprint),
+.dial-section-heading > p:last-child,
+.dial-report p,
+.dial-privacy-card p,
+.dial-availability-copy > p {
+  color: var(--body-text);
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.dial-boundary {
+  margin-top: 1.5rem;
+  padding: 1rem 1.1rem;
+  border-left: 3px solid var(--dial-coral);
+  background: var(--bg-alt);
+  color: var(--body-text);
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.dial-boundary strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.98rem;
+  font-weight: 650;
+  color: var(--ink);
+}
+
+.dial-product-stage {
+  display: grid;
+  place-items: start center;
+  overflow: hidden;
+  padding: clamp(1.5rem, 4vw, 2.75rem);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 28px;
+}
+
+.dial-product-stage-blue {
+  background:
+    radial-gradient(circle at 70% 20%, rgba(47, 140, 255, 0.42), transparent 38%),
+    linear-gradient(155deg, #132540, var(--dial-navy) 65%);
+}
+
+.dial-product-stage-coral {
+  background:
+    radial-gradient(circle at 22% 18%, rgba(239, 112, 95, 0.45), transparent 38%),
+    linear-gradient(155deg, #30202a, var(--dial-navy) 65%);
+}
+
+.dial-phone-section {
+  width: min(100%, 390px);
+}
+
+.dial-checklist {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+  color: var(--body-text);
+  font-size: 0.94rem;
+  list-style: none;
+}
+
+.dial-checklist li {
+  position: relative;
+  padding-left: 1.6rem;
+}
+
+.dial-checklist li::before {
+  content: '';
+  position: absolute;
+  top: 0.5em;
+  left: 0;
+  width: 0.6rem;
+  height: 0.32rem;
+  border-bottom: 2px solid var(--dial-coral-dark);
+  border-left: 2px solid var(--dial-coral-dark);
+  transform: rotate(-45deg);
+}
+
+.dial-section-heading {
+  max-width: 740px;
+  margin-bottom: clamp(2.5rem, 6vw, 5rem);
+}
