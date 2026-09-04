@@ -12,28 +12,49 @@
                 <span>{{ copy.hero.availability }}</span>
               </div>
             </div>
-            <h1 id="dial-title">{{ copy.hero.headline_lead }}</h1>
+            <h1 id="dial-title">
+              {{- copy.hero.headline_lead -}}
+              {%- if copy.hero.headline_accent != "" -%}
+              <span>{{ copy.hero.headline_accent }}</span>
+              {%- endif -%}
+            </h1>
             <p class="dial-category">{{ copy.hero.category }}</p>
-            <p class="dial-hero-detail">{{ copy.hero.detail }}</p>
             <div class="dial-actions dial-actions-primary">
-              <a
-                class="app-store-badge-link"
-                href="{{ app_store_url_hero | strip }}"
-                rel="noopener noreferrer"
-                id="hero-primary-cta"
-              >
-                <img
-                  src="{{ app_store_badge }}"
-                  alt="{{ copy.app_store_badge_alt }}"
-                  width="{{ badge_dims.width }}"
-                  height="{{ badge_dims.height }}"
-                />
-              </a>
-              <a class="dial-button dial-button-secondary" href="#how-it-works"
-                >{{ copy.hero.secondary_cta }}</a
-              >
+              <div class="dial-hero-cta-badge">
+                <a
+                  class="app-store-badge-link"
+                  href="{{ app_store_url_hero | strip }}"
+                  rel="noopener noreferrer"
+                  id="hero-primary-cta"
+                >
+                  <img
+                    src="{{ app_store_badge }}"
+                    alt="{{ copy.app_store_badge_alt }}"
+                    width="{{ badge_dims.width }}"
+                    height="{{ badge_dims.height }}"
+                  />
+                </a>
+                <div class="dial-hero-qr">
+                  <div class="dial-hero-qr-plate">
+                    <img
+                      src="/assets/dial-qr.svg"
+                      width="96"
+                      height="96"
+                      alt=""
+                      decoding="async"
+                    />
+                  </div>
+                  <p>
+                    {{ copy.hero.qr_caption | default: site.data.dial.en.hero.qr_caption }}
+                  </p>
+                </div>
+              </div>
+              <a class="dial-button dial-button-secondary" href="#how-it-works">{{
+                copy.hero.secondary_cta
+              }}</a>
             </div>{%- if copy.hero.free_line %}
             <p class="dial-hero-free">{{ copy.hero.free_line }}</p>{%- endif %}
+            <p class="dial-hero-detail">{{ copy.hero.detail }}</p>
             <ul class="dial-platforms" aria-label="{{ copy.hero.platforms_label }}">
               {%- for platform in copy.hero.platforms %}
               <li>{{ platform }}</li>

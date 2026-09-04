@@ -17,5 +17,17 @@
       >
     </li>
     {%- include language-switcher.html %}
+    {%- if page.alternate_group == 'dial' -%}
+      {%- assign campaign = site.data.dial_campaign -%}
+      {%- assign app_store_url = 'https://apps.apple.com/app/id6789408903' -%}
+      {%- assign provider_token = campaign.provider_token -%}
+      {%- assign media_type = campaign.media_type | default: '8' -%}
+      {%- capture nav_url -%}{% include dial-store-url.html placement=campaign.placements.nav %}{%- endcapture -%}
+      <li>
+        <a class="nav-cta" href="{{ nav_url | strip }}"
+          >{{ strings.nav.get_dial | default: site.data.i18n.en.nav.get_dial }}</a
+        >
+      </li>
+    {%- endif -%}
   </ul>
 </nav>

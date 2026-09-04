@@ -58,15 +58,16 @@ images:
 
 hero:
   availability: Available now on the App Store
-  headline_lead: "Keep a GLP-1 log."
+  headline_lead: "A private record of every dose."
   headline_accent: ""
-  category: Dial is a private GLP-1 medication tracker for iPhone and Apple Watch.
+  category: Dial is a GLP‑1 medication tracker for iPhone and Apple Watch.
   detail:
-    Log a dose on iPhone or Apple Watch. Dial plots an estimated level from those
-    entries. Core records stay on the device, or in your private iCloud database if you
-    turn that on.
-  free_line: Free to download. The dose log has no cap.
+    Log each dose with the time and injection site, on your phone or your wrist. Dial Pro
+    plots an estimated level between doses and builds a PDF for your prescriber. Records
+    stay on the device, or in your own private iCloud database if you turn that on.
+  free_line: Free to download, with no account to create. The dose log has no cap.
   secondary_cta: See how Dial works
+  qr_caption: Scan to open Dial in the App Store on your iPhone.
   platforms_label: Dial platforms and storage
   platforms:
     - iPhone
@@ -74,17 +75,17 @@ hero:
     - Siri, Control Center, and Lock Screen
     - Optional private iCloud storage
   legal:
-    Dial Pro adds analysis, exports, multiple medications and reminders, and one-tap
-    logging across Apple devices. Dial is a personal record. It does not calculate
-    doses or replace guidance from your prescriber.
+    Dial is a personal record. It does not calculate doses or replace guidance from
+    your prescriber. Dial Pro adds the estimated-level chart, full history, exports,
+    and quick logging described below.
 
 proof:
   label: Why Dial
   points:
-    - iPhone and Apple Watch
+    - Cycle ring and next reminder on Apple Watch
     - Opens without a Dial account
-    - Lifetime option
-    - Modeled level from your doses
+    - Lifetime option, a single purchase
+    - Estimated level between doses (Dial Pro)
 
 level:
   kicker: Dial Pro · Estimated level
