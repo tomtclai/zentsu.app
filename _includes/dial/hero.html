@@ -20,35 +20,19 @@
             </h1>
             <p class="dial-category">{{ copy.hero.category }}</p>
             <div class="dial-actions dial-actions-primary">
-              <div class="dial-hero-cta-badge">
-                <a
-                  class="app-store-badge-link"
-                  href="{{ app_store_url_hero | strip }}"
-                  rel="noopener noreferrer"
-                  id="hero-primary-cta"
-                >
-                  <img
-                    src="{{ app_store_badge }}"
-                    alt="{{ copy.app_store_badge_alt }}"
-                    width="{{ badge_dims.width }}"
-                    height="{{ badge_dims.height }}"
-                  />
-                </a>
-                <div class="dial-hero-qr">
-                  <div class="dial-hero-qr-plate">
-                    <img
-                      src="/assets/dial-qr.svg"
-                      width="96"
-                      height="96"
-                      alt=""
-                      decoding="async"
-                    />
-                  </div>
-                  <p>
-                    {{ copy.hero.qr_caption | default: site.data.dial.en.hero.qr_caption }}
-                  </p>
-                </div>
-              </div>
+              <a
+                class="app-store-badge-link"
+                href="{{ app_store_url_hero | strip }}"
+                rel="noopener noreferrer"
+                id="hero-primary-cta"
+              >
+                <img
+                  src="{{ app_store_badge }}"
+                  alt="{{ copy.app_store_badge_alt }}"
+                  width="{{ badge_dims.width }}"
+                  height="{{ badge_dims.height }}"
+                />
+              </a>
               <a class="dial-button dial-button-secondary" href="#how-it-works">{{
                 copy.hero.secondary_cta
               }}</a>
@@ -68,6 +52,20 @@
             <figure class="dial-phone dial-phone-hero">
               {% include dial-shot.html image=copy.images.today sizes=hero_sizes priority=true %}
             </figure>
+            <div class="dial-hero-qr">
+              <div class="dial-hero-qr-plate">
+                <img
+                  src="/assets/dial-qr.svg"
+                  width="96"
+                  height="96"
+                  alt=""
+                  decoding="async"
+                />
+              </div>
+              <p>
+                {{ copy.hero.qr_caption | default: site.data.dial.en.hero.qr_caption }}
+              </p>
+            </div>
           </div>
         </div>
       </section>
