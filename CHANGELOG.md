@@ -4,6 +4,27 @@ All notable changes to this website are documented in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [2026-09-04]
+
+### Added
+
+- Apple Smart App Banner on every Dial locale page (`apple-itunes-app`).
+- Campaign-ready App Store links tagged by placement (hero, sticky, watch, plans, FAQ, closer). The provider token stays blank until App Store Connect campaign links can be copied; untagged URLs still work.
+- App Store badges after the Apple Watch section and below the plans.
+- Sticky App Store bar that appears only while the hero and closer badges are off-screen.
+- Free line in the Dial hero (`hero.free_line`) across 33 locales.
+- Full five-molecule medication coverage in logging copy (semaglutide, tirzepatide, liraglutide, dulaglutide, exenatide, plus custom), using each locale's App Store names.
+
+### Changed
+
+- Lifetime is the visual primary row in the Dial plans card.
+- On phones, the hero screenshot sits above the fold. Platform chips and the legal paragraph follow the shot.
+
+### Fixed
+
+- FAQ structured data: question 1 now uses `copy.hero.category` instead of a missing `copy.category` (which emitted `"text": null` and invalidated FAQPage). The visible FAQ now includes that answer. Privacy FAQ no longer doubles the period. Plan prices read as amount, terms, then name, not `$19.99/per year`.
+- `llms.txt` described Bench as a strength-training log and listed Coil as a live iOS app. It now covers only Dial and Bench as they actually ship.
+
 ## [Unreleased]
 
 ### Added
