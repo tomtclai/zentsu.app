@@ -30,6 +30,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - FAQ structured data: question 1 now uses `copy.hero.category` instead of a missing `copy.category` (which emitted `"text": null` and invalidated FAQPage). The visible FAQ now includes that answer. Privacy FAQ no longer doubles the period. Plan prices read as amount, terms, then name, not `$19.99/per year`.
 - `llms.txt` described Bench as a strength-training log and listed Coil as a live iOS app. It now covers only Dial and Bench as they actually ship. It now also points at CSV export, the switch-phones FAQ, and the three explainers.
 - Dial currency picker no longer collides with `locale.js` over a shared `STORAGE_KEY`.
+- Picking a language on a Dial page now sticks. `locale.js` and `dial-currency.js` are classic scripts on the same page, so their identically named top-level helpers shared one global scope and the currency file's `writeStored` replaced the locale file's. The picker wrote the chosen language into the currency key, left `zentsu-locale` empty, and the next page load sent the visitor back to their browser language. Both files are now wrapped in an IIFE, and a Playwright spec covers switching, reload, and cross-page persistence.
 
 ## [Unreleased]
 
