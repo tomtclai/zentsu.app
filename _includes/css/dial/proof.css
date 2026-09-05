@@ -19,43 +19,33 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
   align-items: stretch;
-  gap: 0.35rem 0;
+  gap: 0.65rem;
 }
 
 .dial-proof-item {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.45rem;
   margin: 0;
   padding: 0.55rem 0.85rem;
-  border-inline-end: 1px solid var(--border-soft);
+  border: 1px solid var(--border-soft);
+  border-radius: 10px;
+  background: var(--bg);
   color: var(--ink-soft);
   font-size: 0.82rem;
   line-height: 1.45;
   text-align: start;
 }
 
-.dial-proof-item:first-child {
-  padding-inline-start: 0;
-}
-
-.dial-proof-item:last-child {
-  border-inline-end: 0;
-}
-
 .dial-proof-icon {
   flex-shrink: 0;
   margin-top: 0.1rem;
-  color: var(--ink-soft);
+  color: var(--dial-coral-dark);
 }
 
 .dial-proof-item span {
   text-wrap: pretty;
-}
-
-.dial-proof-rating .dial-proof-icon {
-  color: var(--dial-coral-dark);
 }
 
 @media (max-width: 760px) {
@@ -64,13 +54,8 @@
   }
 
   .dial-proof-item {
-    border-inline-end: 0;
-    padding: 0.45rem 0.35rem;
+    padding: 0.7rem 0.85rem;
     justify-content: flex-start;
-  }
-
-  .dial-proof-item:first-child {
-    padding-inline-start: 0;
   }
 }
 

@@ -27,6 +27,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- Keep explicit translated Dial URLs on the requested locale when the browser or saved preference
+  names another language; automatic first-visit localization still applies on `/dial/`.
+
 - FAQ structured data: question 1 now uses `copy.hero.category` instead of a missing `copy.category` (which emitted `"text": null` and invalidated FAQPage). The visible FAQ now includes that answer. Privacy FAQ no longer doubles the period. Plan prices read as amount, terms, then name, not `$19.99/per year`.
 - `llms.txt` described Bench as a strength-training log and listed Coil as a live iOS app. It now covers only Dial and Bench as they actually ship. It now also points at CSV export, the switch-phones FAQ, and the three explainers.
 - Dial currency picker no longer collides with `locale.js` over a shared `STORAGE_KEY`.
@@ -35,6 +38,12 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+
+- English Dial medication-recording guide at `/dial/medication-log/`, with a matching landing-page
+  guide section covering what to record, how to correct entries, and how to prepare a shareable
+  record.
+- Source checks for the guide route, canonical metadata, privacy/support links, and the free phone
+  log versus Dial Pro boundary.
 
 - `npm run sync:dial-prices` pulls live Dial customer prices from App Store Connect
   into `_data/dial_prices.yml` for every marketing-page storefront.
@@ -47,6 +56,11 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   `localStorage`.
 
 ### Changed
+
+- Refresh the English Dial hero and section copy around the free phone log, with Dial Pro clearly
+  scoped to Apple Watch logging, charts, and PDF or CSV export.
+- Exclude internal tests, reports, docs, and tool configuration from the generated public site and
+  make Playwright use the checked-out `_site` directory by default.
 
 - Remove the Dial release-news mailing list from every language page. The app
   is on the App Store, so the close is the badge only.

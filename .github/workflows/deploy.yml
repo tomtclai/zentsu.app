@@ -3,14 +3,15 @@ name: Deploy to Cloudflare Pages
 on:
   push:
     branches: [main]
+  pull_request:
   workflow_dispatch:
 
 concurrency:
-  group: deploy-cloudflare-pages
+  group: ${{ github.event_name == 'pull_request' && format('dial-pr-{0}', github.event.pull_request.number) || 'deploy-cloudflare-pages' }}
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -31,6 +32,20 @@ jobs:
       - name: Install validation dependencies
         run: npm ci
 
+      - name: Get Playwright version
+        id: playwright-version
+        run: |
+          echo "version=$(node -p "require('./package-lock.json').packages['node_modules/playwright'].version")" >> "$GITHUB_OUTPUT"
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ steps.playwright-version.outputs.version }}
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium webkit
+
       - name: Test production build
         run: npm test
         env:
@@ -38,7 +53,68 @@ jobs:
           LANG: en_US.UTF-8
           LC_ALL: en_US.UTF-8
 
+      - name: Run Lighthouse CI
+        run: npx @lhci/cli@0.15.1 autorun
+        env:
+          JEKYLL_ENV: production
+          LANG: en_US.UTF-8
+          LC_ALL: en_US.UTF-8
+
+      - name: Upload test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports
+          path: |
+            playwright-report/
+            test-results/
+            .lighthouseci/
+          include-hidden-files: true
+          if-no-files-found: ignore
+
+  deploy:
+    needs: test
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2.2
+          bundler-cache: true
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install validation dependencies
+        run: npm ci
+
+      - name: Build production site
+        run: npm run build
+        env:
+          JEKYLL_ENV: production
+          LANG: en_US.UTF-8
+          LC_ALL: en_US.UTF-8
+
+      - name: Check push is still current
+        id: revision
+        if: github.event_name == 'push'
+        run: |
+          git fetch --no-tags origin main
+          if [ "$(git rev-parse FETCH_HEAD)" = "$GITHUB_SHA" ]; then
+            echo "current=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Skipping deployment because main has advanced."
+          fi
+
       - name: Deploy to Cloudflare Pages
+        if: github.event_name == 'workflow_dispatch' || steps.revision.outputs.current == 'true'
         uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}

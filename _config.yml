@@ -5,9 +5,15 @@ exclude:
   - scripts/
   - node_modules/
   - README.md
+  - docs/
   - AGENTS.md
   - CHANGELOG.md
   - tools/_template.html
+  - tests/
+  - test-results/
+  - playwright-report/
+  - playwright.config.mjs
+  - lighthouserc.json
   # CI: setup-ruby vendors gems into the workspace; Jekyll must not build them
   - vendor/
   - .bundle/

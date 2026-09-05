@@ -16,3 +16,7 @@ _includes/dial-page.html
 _includes/dial/
 _includes/dial-shot.html
 dial.css
+tests/visual/**/*-snapshots/
+tests/visual/**/__screenshots__/
+.wrangler/
+.lighthouseci/

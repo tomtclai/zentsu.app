@@ -1,4 +1,7 @@
 node_modules/
+test-results/
+playwright-report/
+blob-report/
 _site/
 dist/
 .DS_Store
@@ -10,3 +13,5 @@ scripts/fill_remaining_locales*.py
 scripts/fill_support_batch.py
 scripts/write_dial_yml.py
 scripts/write_support_privacy.py
+.wrangler/
+.lighthouseci/

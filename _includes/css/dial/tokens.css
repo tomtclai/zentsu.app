@@ -11,6 +11,9 @@
   --dial-stage-navy: #101823;
   --dial-stage-coral: linear-gradient(155deg, #30202a, var(--dial-navy) 65%);
   --dial-card: var(--dial-cream);
+  --dial-radius: 24px;
+  --dial-section-space: clamp(3rem, 6vw, 5.5rem);
+  --dial-panel: color-mix(in srgb, var(--dial-coral-soft) 60%, var(--surface));
 }
 
 .dial-page {

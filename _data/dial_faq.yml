@@ -1,6 +1,6 @@
 # Per-locale FAQ strings for the Dial page.
-# Eight items per locale. The cost question (index 6) has an empty answer;
-# the template fills prices from dial_prices.yml.
+# Eight items per locale. The item with type: pricing gets its answer from
+# dial_prices.yml, so questions can be reordered without moving price copy.
 # Apple Watch stays in Latin script.
 
 en:
@@ -16,6 +16,7 @@ en:
     - q: "What happens if I switch phones?"
       a: "With iCloud turned on in Dial, medication, dose, reminder, and supply records follow your Apple Account to the new phone. Weight entries and progress photos stay on the device they were logged on. Export the PDF or CSV to keep a copy of that history."
     - q: "What does Dial Pro cost?"
+      type: pricing
       a: ""
     - q: "Does Dial work on Apple Watch?"
       a: "The watch app shows a cycle ring and your next reminder for free. Dial Pro adds logging from the wrist, plus level and quick-log complications."
@@ -35,6 +36,7 @@ de:
     - q: "Was passiert, wenn ich das Telefon wechsle?"
       a: "Mit iCloud in Dial folgen Medikament, Dosis, Erinnerung und Bestand deinem Apple-Account auf das neue Telefon. Gewichtseinträge und Fortschrittsfotos bleiben auf dem Gerät, auf dem du sie erfasst hast. Exportiere PDF oder CSV, um eine Kopie dieses Verlaufs zu behalten."
     - q: "Was kostet Dial Pro?"
+      type: pricing
       a: ""
     - q: "Funktioniert Dial auf der Apple Watch?"
       a: "Die Watch-App zeigt kostenlos einen Zyklusring und die nächste Erinnerung. Dial Pro ergänzt das Erfassen vom Handgelenk sowie Komplikationen für Spiegel und schnelles Erfassen."
@@ -54,6 +56,7 @@ fr:
     - q: "Que se passe-t-il si je change de téléphone ?"
       a: "Avec iCloud activé dans Dial, médicaments, doses, rappels et stocks suivent ton compte Apple sur le nouveau téléphone. Les saisies de poids et les photos d'évolution restent sur l'appareil où tu les as notées. Exporte le PDF ou le CSV pour garder une copie de cet historique."
     - q: "Combien coûte Dial Pro ?"
+      type: pricing
       a: ""
     - q: "Dial fonctionne-t-il sur Apple Watch ?"
       a: "L'app montre un anneau de cycle et le prochain rappel, gratuitement. Dial Pro ajoute l'enregistrement depuis le poignet, plus des complications de niveau et d'enregistrement rapide."
@@ -73,6 +76,7 @@ es:
     - q: "¿Qué pasa si cambio de teléfono?"
       a: "Con iCloud activado en Dial, medicamento, dosis, recordatorios y suministros siguen tu cuenta de Apple al teléfono nuevo. El peso y las fotos de progreso se quedan en el dispositivo donde las registraste. Exporta el PDF o el CSV para conservar una copia de ese historial."
     - q: "¿Cuánto cuesta Dial Pro?"
+      type: pricing
       a: ""
     - q: "¿Dial funciona en Apple Watch?"
       a: "La app del reloj muestra un anillo de ciclo y el próximo recordatorio, gratis. Dial Pro agrega el registro desde la muñeca, más complicaciones de nivel y de registro rápido."
@@ -92,6 +96,7 @@ ca:
     - q: "Què passa si canvio de telèfon?"
       a: "Amb iCloud activat a Dial, medicament, dosi, recordatoris i subministrament segueixen el teu compte d’Apple al telèfon nou. El pes i les fotos de progrés queden al dispositiu on les vas registrar. Exporta el PDF o el CSV per conservar una còpia d’aquest historial."
     - q: "Quant costa Dial Pro?"
+      type: pricing
       a: ""
     - q: "Dial funciona a l’Apple Watch?"
       a: "L’app del rellotge mostra un anell de cicle i el proper recordatori, de franc. Dial Pro afegeix el registre des del canell, més complicacions de nivell i de registre ràpid."
@@ -111,6 +116,7 @@ it:
     - q: "Che succede se cambio telefono?"
       a: "Con iCloud attivo in Dial, farmaci, dosi, promemoria e scorte seguono il tuo Account Apple sul telefono nuovo. Peso e foto dei progressi restano sul dispositivo dove li hai registrati. Esporta il PDF o il CSV per tenere una copia di quella cronologia."
     - q: "Quanto costa Dial Pro?"
+      type: pricing
       a: ""
     - q: "Dial funziona su Apple Watch?"
       a: "L'app sull'orologio mostra un anello di ciclo e il prossimo promemoria, gratis. Dial Pro aggiunge la registrazione dal polso, più le complicazioni di livello e di registrazione rapida."
@@ -130,6 +136,7 @@ pt:
     - q: "O que acontece se eu trocar de celular?"
       a: "Com o iCloud ligado no Dial, medicamento, dose, lembretes e estoque seguem a sua conta Apple para o aparelho novo. Peso e fotos de progresso ficam no aparelho em que você registrou. Exporte o PDF ou o CSV para guardar uma cópia desse histórico."
     - q: "Quanto custa o Dial Pro?"
+      type: pricing
       a: ""
     - q: "O Dial funciona no Apple Watch?"
       a: "O app do relógio mostra um anel de ciclo e o próximo lembrete, de graça. O Dial Pro adiciona o registro pelo pulso, mais as complicações de nível e de registro rápido."
@@ -149,6 +156,7 @@ nl:
     - q: "Wat gebeurt er als ik van telefoon wissel?"
       a: "Met iCloud aan in Dial volgen medicijn, dosis, herinnering en voorraad je Apple Account naar de nieuwe telefoon. Gewicht en voortgangsfoto's blijven op het apparaat waarop je ze vastlegde. Exporteer de PDF of de CSV om een kopie van die historie te houden."
     - q: "Wat kost Dial Pro?"
+      type: pricing
       a: ""
     - q: "Werkt Dial op de Apple Watch?"
       a: "De Watch-app toont gratis een cyclusring en je volgende herinnering. Dial Pro voegt vastleggen vanaf de pols toe, plus complicaties voor spiegel en snel vastleggen."
@@ -168,6 +176,7 @@ sv:
     - q: "Vad händer om jag byter telefon?"
       a: "Med iCloud påslaget i Dial följer läkemedel, dos, påminnelse och lager ditt Apple-konto till den nya telefonen. Viktposter och foton på framsteg stannar på enheten där de registrerades. Exportera PDF eller CSV för att behålla en kopia av den historiken."
     - q: "Vad kostar Dial Pro?"
+      type: pricing
       a: ""
     - q: "Fungerar Dial på Apple Watch?"
       a: "Klockappen visar gratis en cykelring och din nästa påminnelse. Dial Pro lägger till registrering från handleden samt komplikationer för nivå och snabb registrering."
@@ -187,6 +196,7 @@ da:
     - q: "Hvad sker der, hvis jeg skifter telefon?"
       a: "Med iCloud slået til i Dial følger lægemiddel, dosis, påmindelse og lager din Apple-konto til den nye telefon. Vægtposter og fremgangsfotos bliver på den enhed, de blev registreret på. Eksportér PDF eller CSV for at beholde en kopi af den historik."
     - q: "Hvad koster Dial Pro?"
+      type: pricing
       a: ""
     - q: "Virker Dial på Apple Watch?"
       a: "Ur-appen viser gratis en cyklusring og din næste påmindelse. Dial Pro tilføjer registrering fra håndleddet samt komplikationer til niveau og hurtig registrering."
@@ -206,6 +216,7 @@ da:
     - q: "Hva skjer hvis jeg bytter telefon?"
       a: "Med iCloud slått på i Dial følger legemiddel, dose, påminnelse og lager Apple-kontoen din til den nye telefonen. Vektføringer og fremgangsbilder blir på enheten de ble ført på. Eksporter PDF eller CSV for å beholde en kopi av den historikken."
     - q: "Hva koster Dial Pro?"
+      type: pricing
       a: ""
     - q: "Fungerer Dial på Apple Watch?"
       a: "Klokkeappen viser gratis en syklusring og neste påminnelse. Dial Pro legger til føring fra håndleddet, pluss komplikasjoner for nivå og rask føring."
@@ -225,6 +236,7 @@ fi:
     - q: "Mitä tapahtuu, jos vaihdan puhelinta?"
       a: "Kun iCloud on päällä Dialissa, lääke, annos, muistutus ja varasto seuraavat Apple-tiliäsi uuteen puhelimeen. Painomerkinnät ja edistymiskuvat jäävät laitteelle, jolle ne kirjattiin. Vie PDF tai CSV, niin saat kopion siitä historiasta."
     - q: "Paljonko Dial Pro maksaa?"
+      type: pricing
       a: ""
     - q: "Toimiiko Dial Apple Watchissa?"
       a: "Kellosovellus näyttää ilmaiseksi syklirenkaan ja seuraavan muistutuksen. Dial Pro lisää kirjauksen ranteesta sekä tason ja pikakirjauksen komplikaatiot."
@@ -244,6 +256,7 @@ pl:
     - q: "Co się stanie, gdy zmienię telefon?"
       a: "Gdy w Dial włączysz iCloud, lek, dawki, przypomnienia i zapas przejdą na nowy telefon z twoim kontem Apple. Waga i zdjęcia postępów zostają na urządzeniu, na którym je zapisano. Wyeksportuj PDF lub CSV, żeby zachować kopię tej historii."
     - q: "Ile kosztuje Dial Pro?"
+      type: pricing
       a: ""
     - q: "Czy Dial działa na Apple Watch?"
       a: "Aplikacja na zegarku za darmo pokazuje pierścień cyklu i następne przypomnienie. Dial Pro dodaje zapis z nadgarstka oraz komplikacje poziomu i szybkiego zapisu."
@@ -263,6 +276,7 @@ cs:
     - q: "Co se stane, když vyměním telefon?"
       a: "Když v Dial zapneš iCloud, lék, dávky, připomínky a zásoby přejdou na nový telefon s tvým Apple Account. Hmotnost a fotky pokroku zůstanou v zařízení, ve kterém vznikly. Exportuj PDF nebo CSV, ať máš kopii té historie."
     - q: "Kolik stojí Dial Pro?"
+      type: pricing
       a: ""
     - q: "Funguje Dial na Apple Watch?"
       a: "Aplikace na hodinkách zdarma ukazuje kroužek cyklu a příští připomínku. Dial Pro přidá záznam ze zápěstí a komplikace hladiny i rychlého záznamu."
@@ -282,6 +296,7 @@ sk:
     - q: "Čo sa stane, keď vymením telefón?"
       a: "Keď v Dial zapneš iCloud, liek, dávky, pripomienky a zásoby prejdú na nový telefón s tvojím Apple Account. Hmotnosť a fotky pokroku ostanú v zariadení, v ktorom vznikli. Exportuj PDF alebo CSV, nech máš kópiu tej histórie."
     - q: "Koľko stojí Dial Pro?"
+      type: pricing
       a: ""
     - q: "Funguje Dial na Apple Watch?"
       a: "Aplikácia na hodinkách zadarmo ukazuje krúžok cyklu a ďalšiu pripomienku. Dial Pro pridá záznam zo zápästia a komplikácie hladiny aj rýchleho záznamu."
@@ -301,6 +316,7 @@ hu:
     - q: "Mi történik, ha telefont váltok?"
       a: "Ha a Dialban be van kapcsolva az iCloud, a gyógyszer-, adag-, emlékeztető- és készletbejegyzések az Apple-fiókoddal mennek az új telefonra. A testsúlybejegyzések és a haladási fotók azon a készüléken maradnak, ahol rögzítetted őket. Exportáld a PDF-et vagy a CSV-t, ha meg akarod tartani az előzmény másolatát."
     - q: "Mennyibe kerül a Dial Pro?"
+      type: pricing
       a: ""
     - q: "Működik a Dial Apple Watchen?"
       a: "Az óraalkalmazás ciklusgyűrűt és a következő emlékeztetőt mutatja ingyen. A Dial Pro a csuklóról rögzítést adja hozzá, a számlapra pedig szint- és gyorsrögzítés-complications."
@@ -320,6 +336,7 @@ ro:
     - q: "Ce se întâmplă dacă schimbi telefonul?"
       a: "Cu iCloud pornit în Dial, medicament, doză, reamintiri și stoc urmează contul tău Apple pe telefonul nou. Greutatea și fotografiile de progres rămân pe dispozitivul pe care le-ai notat. Exportă PDF-ul sau CSV-ul ca să păstrezi o copie a acelui istoric."
     - q: "Cât costă Dial Pro?"
+      type: pricing
       a: ""
     - q: "Dial funcționează pe Apple Watch?"
       a: "Aplicația de pe ceas arată un inel de ciclu și următoarea reamintire, gratuit. Dial Pro adaugă înregistrarea de la încheietură, plus Complications de nivel și de înregistrare rapidă."
@@ -339,6 +356,7 @@ hr:
     - q: "Što se dogodi ako zamijenim telefon?"
       a: "Kad u Dialu uključiš iCloud, lijek, doze, podsjetnici i zalihe prate tvoj Apple račun na novi telefon. Težina i fotografije napretka ostaju na uređaju na kojem su uneseni. Izvezi PDF ili CSV da sačuvaš kopiju te povijesti."
     - q: "Koliko košta Dial Pro?"
+      type: pricing
       a: ""
     - q: "Radi li Dial na Apple Watchu?"
       a: "Aplikacija na satu besplatno pokazuje prsten ciklusa i sljedeći podsjetnik. Dial Pro dodaje unos sa zapešća te komplikacije razine i brzog unosa."
@@ -358,6 +376,7 @@ tr:
     - q: "Telefon değiştirirsem ne olur?"
       a: "Dial'de iCloud açıksa ilaç, doz, anımsatıcı ve stok kayıtları Apple hesabınla yeni telefona gelir. Kilo girdileri ve ilerleme fotoğrafları kaydedildikleri cihazda kalır. O geçmişin kopyası için PDF veya CSV dışa aktar."
     - q: "Dial Pro kaç para?"
+      type: pricing
       a: ""
     - q: "Dial Apple Watch'ta çalışır mı?"
       a: "Saat uygulaması döngü halkasını ve sonraki anımsatıcıyı ücretsiz gösterir. Dial Pro bilekten kaydı ekler, düzey ve hızlı kayıt complications ile."
@@ -377,6 +396,7 @@ el:
     - q: "Τι γίνεται αν αλλάξω τηλέφωνο;"
       a: "Με το iCloud ενεργό στο Dial, φάρμακο, δόσεις, υπενθυμίσεις και απόθεμα ακολουθούν τον λογαριασμό Apple σου στο νέο τηλέφωνο. Οι εγγραφές βάρους και οι φωτογραφίες προόδου μένουν στη συσκευή όπου καταγράφηκαν. Εξήγαγε PDF ή CSV για να κρατήσεις αντίγραφο αυτού του ιστορικού."
     - q: "Πόσο κοστίζει το Dial Pro;"
+      type: pricing
       a: ""
     - q: "Λειτουργεί το Dial σε Apple Watch;"
       a: "Η εφαρμογή στο ρολόι δείχνει δακτύλιο αντίστροφης μέτρησης και την επόμενη υπενθύμιση, δωρεάν. Το Dial Pro προσθέτει καταγραφή από τον καρπό, και complications επιπέδου και γρήγορης καταγραφής."
@@ -396,6 +416,7 @@ ru:
     - q: "Что будет, если я сменю телефон?"
       a: "Если в Dial включён iCloud, записи препарата, доз, напоминаний и запаса перейдут на новый телефон с аккаунтом Apple. Записи веса и фото прогресса остаются на том устройстве, где их внесли. Выгрузите PDF или CSV, чтобы сохранить копию этой истории."
     - q: "Сколько стоит Dial Pro?"
+      type: pricing
       a: ""
     - q: "Dial работает на Apple Watch?"
       a: "Приложение на часах бесплатно показывает кольцо цикла и следующее напоминание. Dial Pro добавляет запись с запястья, а также Complications уровня и быстрой записи."
@@ -415,6 +436,7 @@ uk:
     - q: "Що буде, якщо я зміню телефон?"
       a: "Якщо в Dial увімкнено iCloud, записи препарату, доз, нагадувань і запасу перейдуть на новий телефон з обліковим записом Apple. Записи ваги і фото прогресу лишаються на тому пристрої, де їх внесли. Вивантажте PDF або CSV, щоб зберегти копію цієї історії."
     - q: "Скільки коштує Dial Pro?"
+      type: pricing
       a: ""
     - q: "Чи працює Dial на Apple Watch?"
       a: "Застосунок на годиннику безплатно показує кільце циклу і наступне нагадування. Dial Pro додає запис із зап’ястя, а також Complications рівня і швидкого запису."
@@ -434,6 +456,7 @@ ar:
     - q: "ماذا يحدث إذا بدّلت الهاتف؟"
       a: "مع تفعيل iCloud في Dial، تتبع سجلات الدواء والجرعة والتذكير والمخزون حساب Apple إلى الهاتف الجديد. إدخالات الوزن وصور التقدّم تبقى على الجهاز الذي سُجِّلت عليه. صدّر PDF أو CSV لتحتفظ بنسخة من ذلك السجل."
     - q: "كم يكلف Dial Pro؟"
+      type: pricing
       a: ""
     - q: "هل يعمل Dial على Apple Watch؟"
       a: "يعرض تطبيق الساعة حلقة الدورة والتذكير التالي مجاناً. يضيف Dial Pro التسجيل من المعصم، إضافة إلى complications للمستوى والتسجيل السريع."
@@ -453,6 +476,7 @@ he:
     - q: "מה קורה אם מחליפים טלפון?"
       a: "עם iCloud פעיל ב-Dial, רשומות תרופה, מנה, תזכורת ומלאי עוקבות אחרי חשבון Apple שלכם לטלפון החדש. רשומות משקל ותמונות התקדמות נשארות במכשיר שבו נרשמו. ייצאו PDF או CSV כדי לשמור עותק של ההיסטוריה."
     - q: "כמה עולה Dial Pro?"
+      type: pricing
       a: ""
     - q: "האם Dial עובד ב-Apple Watch?"
       a: "אפליקציית השעון מציגה טבעת ספירה לאחור ואת התזכורת הבאה בחינם. Dial Pro מוסיף רישום מפרק כף היד, וגם complications של רמה ורישום מהיר."
@@ -472,6 +496,7 @@ hi:
     - q: "फोन बदलने पर क्या होता है?"
       a: "Dial में iCloud चालू हो तो दवा, खुराक, अनुस्मारक और स्टॉक आपके Apple खाते के साथ नए फोन पर आ जाते हैं। वजन और प्रगति फ़ोटो उसी डिवाइस पर रहते हैं जहाँ दर्ज हुए। उस इतिहास की कॉपी के लिए PDF या CSV निर्यात करें।"
     - q: "Dial Pro की कीमत क्या है?"
+      type: pricing
       a: ""
     - q: "क्या Dial Apple Watch पर चलता है?"
       a: "वॉच ऐप चक्र रिंग और अगला अनुस्मारक मुफ्त दिखाता है। Dial Pro कलाई से दर्ज करना जोड़ता है, साथ में स्तर और तेज़-दर्ज कॉम्प्लिकेशन।"
@@ -491,6 +516,7 @@ th:
     - q: "ถ้าเปลี่ยนเครื่องใหม่จะเกิดอะไรขึ้น?"
       a: "ถ้าเปิด iCloud ใน Dial ยา ขนาดยา การเตือน และคลังยาจะตามบัญชี Apple ไปเครื่องใหม่ น้ำหนักและรูปความคืบหน้าอยู่ที่เครื่องที่บันทึก ส่งออก PDF หรือ CSV ถ้าต้องการสำเนาประวัตินั้น"
     - q: "Dial Pro ราคาเท่าไร?"
+      type: pricing
       a: ""
     - q: "Dial ใช้กับ Apple Watch ได้ไหม?"
       a: "แอปนาฬิกาแสดงวงจรและการเตือนครั้งถัดไป ฟรี Dial Pro เพิ่มการบันทึกจากข้อมือ รวมถึงคอมพลิเคชั่นระดับและการบันทึกเร็ว"
@@ -510,6 +536,7 @@ vi:
     - q: "Đổi điện thoại thì sao?"
       a: "Khi bật iCloud trong Dial, thuốc, liều, lời nhắc và tồn kho theo Tài khoản Apple sang máy mới. Cân nặng và ảnh tiến triển ở lại máy đã ghi. Xuất PDF hoặc CSV để giữ bản sao lịch sử đó."
     - q: "Dial Pro giá bao nhiêu?"
+      type: pricing
       a: ""
     - q: "Dial có chạy trên Apple Watch không?"
       a: "Ứng dụng đồng hồ hiện vòng chu kỳ và lời nhắc tiếp theo, miễn phí. Dial Pro thêm ghi từ cổ tay, kèm complication mức và ghi nhanh."
@@ -529,6 +556,7 @@ id:
     - q: "Apa yang terjadi jika Anda ganti ponsel?"
       a: "Dengan iCloud menyala di Dial, obat, dosis, pengingat, dan stok mengikuti Akun Apple Anda ke ponsel baru. Berat dan foto perkembangan tetap di perangkat tempat dicatat. Ekspor PDF atau CSV untuk menyimpan salinan riwayat itu."
     - q: "Berapa harga Dial Pro?"
+      type: pricing
       a: ""
     - q: "Apakah Dial berfungsi di Apple Watch?"
       a: "Aplikasi jam menampilkan cincin siklus dan pengingat berikutnya, gratis. Dial Pro menambah pencatatan dari pergelangan, serta komplikasi tingkat dan pencatatan cepat."
@@ -548,6 +576,7 @@ ms:
     - q: "Apa jadi jika anda tukar telefon?"
       a: "Dengan iCloud dihidupkan dalam Dial, ubat, dos, peringatan dan stok mengikut Akaun Apple anda ke telefon baharu. Berat dan foto perkembangan kekal pada peranti tempat direkod. Eksport PDF atau CSV untuk simpan salinan sejarah itu."
     - q: "Berapa harga Dial Pro?"
+      type: pricing
       a: ""
     - q: "Adakah Dial berfungsi di Apple Watch?"
       a: "Aplikasi jam menunjukkan cincin kitaran dan peringatan seterusnya, percuma. Dial Pro menambah rekod dari pergelangan, serta komplikasi tahap dan rekod pantas."
@@ -567,6 +596,7 @@ ja:
     - q: "機種変更するとどうなりますか？"
       a: "DialでiCloudをオンにしていれば、薬、投与、リマインダー、在庫はApple Accountとともに新しい端末へ移ります。体重と経過写真は記録した端末に残ります。PDFかCSVを書き出して控えを取れます。"
     - q: "Dial Proの料金はいくらですか？"
+      type: pricing
       a: ""
     - q: "DialはApple Watchで使えますか？"
       a: "Apple Watchのアプリはサイクルリングと次のリマインダーを無料で表示します。Dial Proは手首からの記録と、レベルとクイック記録のコンプリケーションを追加します。"
@@ -586,6 +616,7 @@ ko:
     - q: "휴대폰을 바꾸면 어떻게 되나요?"
       a: "Dial에서 iCloud를 켜 두면 약물, 용량, 알림, 재고가 Apple 계정과 함께 새 휴대폰으로 갑니다. 체중과 경과 사진은 기록한 기기에 남습니다. PDF나 CSV로 그 이력을 복사해 두세요."
     - q: "Dial Pro는 얼마인가요?"
+      type: pricing
       a: ""
     - q: "Dial은 Apple Watch에서 사용할 수 있나요?"
       a: "워치 앱은 주기 링과 다음 알림을 무료로 보여 줍니다. Dial Pro는 손목에서 기록하기와 수준·빠른 기록 컴플리케이션을 더합니다。"
@@ -605,6 +636,7 @@ zh:
     - q: "换手机会怎样？"
       a: "在 Dial 里打开 iCloud 后，药物、剂量、提醒和库存会随 Apple 账户到新手机。体重和进展照片留在记下它们的那台设备上。导出 PDF 或 CSV 可另存一份。"
     - q: "Dial Pro 多少钱？"
+      type: pricing
       a: ""
     - q: "Dial 可以在 Apple Watch 上用吗？"
       a: "手表应用免费显示周期环和下次提醒。Dial Pro 增加从手腕记录，以及水平和快速记录复杂功能。"
@@ -624,6 +656,7 @@ zh-hant:
     - q: "換手機會怎樣？"
       a: "在 Dial 裡開啟 iCloud 後，藥物、劑量、提醒和庫存會隨 Apple 帳號到新手機。體重和進展照片留在記下它們的那台裝置上。匯出 PDF 或 CSV 可另存一份。"
     - q: "Dial Pro 多少錢？"
+      type: pricing
       a: ""
     - q: "Dial 可以在 Apple Watch 上使用嗎？"
       a: "手錶 App 免費顯示週期環和下次提醒。Dial Pro 增加從手腕記錄，以及水平和快速記錄複雜功能。"

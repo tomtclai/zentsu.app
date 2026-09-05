@@ -97,6 +97,11 @@
     const locales = publishedLocales();
     if (!locales) return;
 
+    // Automatic localization is only for the default English route. Keep an
+    // explicitly requested translated path stable, regardless of browser or
+    // stored preference.
+    if (normalizePath(location.pathname) !== normalizePath(locales.en)) return;
+
     const next = matchingLocale(locales);
     if (!next) return;
     if (next === document.documentElement.lang) return;

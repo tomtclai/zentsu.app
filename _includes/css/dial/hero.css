@@ -1,20 +1,15 @@
 .dial-hero {
   position: relative;
   overflow: hidden;
-  padding: clamp(4rem, 8vw, 7.5rem) 0 clamp(3.5rem, 7vw, 6rem);
+  padding: clamp(2.5rem, 5vw, 4.75rem) 0;
   border-bottom: 1px solid var(--border);
-  background:
-    radial-gradient(circle at 75% 18%, rgba(239, 112, 95, 0.16), transparent 28rem),
-    radial-gradient(circle at 1px 1px, rgba(239, 112, 95, 0.11) 1px, transparent 0);
-  background-size:
-    auto,
-    24px 24px;
+  background: var(--dial-cream);
 }
 
 .dial-hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.76fr);
-  gap: clamp(3rem, 8vw, 7rem);
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
   align-items: center;
 }
 
@@ -51,13 +46,12 @@
 
 .dial-brandline span,
 .dial-kicker {
-  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
   color: var(--dial-kicker);
   font-size: 0.7rem;
   font-weight: 600;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.035em;
   line-height: 1.5;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .dial-hero-copy {
@@ -66,13 +60,13 @@
 }
 
 .dial-hero h1 {
-  max-width: 18ch;
+  max-width: 15ch;
   margin-bottom: 1.25rem;
   color: var(--ink);
-  font-size: clamp(2.5rem, 6vw, 4.6rem);
-  font-weight: 750;
+  font-size: clamp(2.6rem, 5.4vw, 4.4rem);
+  font-weight: 720;
   letter-spacing: -0.03em;
-  line-height: 1.02;
+  line-height: 1.06;
   text-wrap: balance;
 }
 
@@ -90,12 +84,12 @@
   max-width: 52ch;
   color: var(--body-text);
   font-size: 1.02rem;
-  line-height: 1.72;
+  line-height: 1.6;
 }
 
 .dial-hero-legal {
   max-width: 54ch;
-  margin-top: 1.4rem;
+  margin-top: 1rem;
   color: var(--muted);
   font-size: 0.82rem;
   line-height: 1.6;
@@ -163,7 +157,7 @@
   margin-top: 0.85rem;
   color: var(--body-text);
   font-size: 1.02rem;
-  line-height: 1.72;
+  line-height: 1.6;
 }
 
 @media (min-width: 761px) {
@@ -276,30 +270,25 @@
   position: relative;
   display: grid;
   justify-items: center;
+  padding: 2rem 1.25rem;
+  border: 1px solid color-mix(in srgb, var(--dial-coral) 24%, var(--border));
+  border-radius: 40px;
+  background: var(--dial-panel);
 }
 
 .dial-orbit {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: min(37vw, 460px);
-  aspect-ratio: 1;
-  border: 1px solid rgba(239, 112, 95, 0.28);
+  inset: 12% -18%;
+  border: 1px solid color-mix(in srgb, var(--dial-coral) 28%, transparent);
   border-radius: 50%;
-  background: repeating-conic-gradient(
-    from -8deg,
-    rgba(239, 112, 95, 0.32) 0 1deg,
-    transparent 1deg 10deg
-  );
-  transform: translate(-50%, -50%) rotate(-8deg);
+  pointer-events: none;
 }
 
 .dial-orbit::after {
   content: '';
   position: absolute;
-  inset: 13%;
-  border: 14px solid rgba(239, 112, 95, 0.12);
-  border-inline-end-color: var(--dial-coral);
+  inset: 12%;
+  border: 1px solid color-mix(in srgb, var(--dial-coral) 22%, transparent);
   border-radius: 50%;
 }
 
@@ -340,9 +329,9 @@
 }
 
 .dial-phone-hero {
-  width: min(100%, 392px);
+  width: min(100%, 300px);
   align-self: center;
-  transform: rotate(2.5deg);
+  transform: rotate(0deg);
 }
 
 @media (max-width: 760px) {
@@ -388,7 +377,7 @@
     order: 1;
   }
 
-  .dial-page .dial-hero-grid .dial-hero h1 {
+  .dial-page .dial-hero-grid h1 {
     order: 2;
     max-width: 18ch;
   }

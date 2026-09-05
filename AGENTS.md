@@ -6,7 +6,12 @@ Zentsu workspace and deploys to Cloudflare Pages.
 ## Validation and deployment
 
 - Run `npm test` before committing. It builds the site, validates generated HTML, checks internal
-  links and fragments, verifies app visibility, and checks sitemap invariants.
+  links and fragments, verifies app visibility, and checks sitemap invariants. `npm test` also runs
+  the Node unit tests, the 33-locale Dial validator, and the Playwright functional and axe suites
+  against a wrangler-served build; `npm run test:visual` compares full-page screenshots against
+  baselines recorded on macOS and is run locally before a push that changes the Dial page or its CSS;
+  `npm run test:visual:update` re-records after an intended visual change, and the diff of the PNGs
+  is reviewed like code.
 - Do not push or deploy this repository without explicit founder confirmation.
 - Do not edit generated files under `_site/`.
 

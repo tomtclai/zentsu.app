@@ -1,6 +1,5 @@
 .dial-watch-band {
-  background:
-    radial-gradient(circle at 30% 20%, rgba(47, 140, 255, 0.1), transparent 42%), var(--surface);
+  background: var(--surface);
 }
 
 .dial-watch-visual {
@@ -8,6 +7,10 @@
   align-items: flex-start;
   justify-content: center;
   gap: clamp(0.75rem, 2vw, 1.75rem);
+  padding: clamp(2rem, 5vw, 4rem) 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--dial-radius);
+  background: var(--dial-stage-navy);
 }
 
 .dial-watch {

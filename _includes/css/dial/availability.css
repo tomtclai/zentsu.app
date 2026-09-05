@@ -8,11 +8,16 @@
 
 .dial-availability-card {
   display: block;
-  max-width: 40rem;
+  max-width: none;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid var(--border);
+  border-radius: var(--dial-radius);
+  background: var(--dial-panel);
 }
 
 .dial-availability-copy {
   min-width: 0;
+  max-width: 44rem;
 }
 
 .dial-availability-brand {

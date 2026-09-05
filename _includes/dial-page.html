@@ -13,8 +13,8 @@
 {%- capture app_store_url_closer -%}{% include dial-store-url.html placement=campaign.placements.closer %}{%- endcapture -%}
 {%- assign app_store_badge = '/assets/badges/download-on-the-app-store-' | append: page.lang | append: '.svg' -%}
 {%- assign badge_dims = site.data.dial_badges[page.lang] | default: site.data.dial_badges.en -%}
-{%- assign hero_sizes = '(max-width: 760px) 78vw, 430px' -%}
-{%- assign stage_sizes = '(max-width: 760px) 76vw, 390px' -%}
+{%- assign hero_sizes = '(max-width: 760px) 72vw, 300px' -%}
+{%- assign stage_sizes = '(max-width: 380px) 76vw, 280px' -%}
 {%- assign card_sizes = '(max-width: 680px) 76vw, 360px' -%}
 {%- assign report_sizes = '(max-width: 760px) 78vw, 420px' -%}
 {%- assign watch_sizes = '(max-width: 760px) 42vw, 190px' -%}
@@ -30,10 +30,11 @@
     <main id="main-content" tabindex="-1">
       {% include dial/hero.html %}
       {% include dial/proof.html %}
-      {% include dial/level.html %}
       {% include dial/logging.html %}
       {% include dial/watch.html %}
+      {% include dial/level.html %}
       {% include dial/supporting.html %}
+      {%- if page.lang == 'en' %}{% include dial/guide.html %}{% endif -%}
       {% include dial/plans.html %}
       {% include dial/privacy.html %}
       {% include dial/faq.html %}

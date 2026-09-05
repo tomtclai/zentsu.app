@@ -17,3 +17,18 @@
 {% include css/dial/responsive.css %}
 {% include css/dial/motion.css %}
 {% include css/dial/dark.css %}
+@media (prefers-color-scheme: dark) {
+  .dial-page .nav-cta {
+    background: #b9463b;
+    color: #fff;
+  }
+
+  .dial-page .nav-cta:hover {
+    background: #a33d33;
+    color: #fff;
+  }
+
+  .dial-page .nav-cta:focus-visible {
+    outline-color: #ff8d7d;
+  }
+}

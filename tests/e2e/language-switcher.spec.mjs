@@ -55,4 +55,24 @@ test.describe('first visit without a stored choice', () => {
     await page.goto('/dial/', { waitUntil: 'networkidle' });
     await expect(page).toHaveURL(/\/de\/dial\/$/);
   });
+
+});
+
+test.describe('explicit translated routes', () => {
+  test.use({ locale: 'en-US' });
+
+  for (const path of ['/de/dial/', '/ar/dial/']) {
+    test(`an explicit ${path} route stays localized with an English browser`, async ({ page }) => {
+      await page.goto(path, { waitUntil: 'networkidle' });
+      await expect(page).toHaveURL(new RegExp(`${path.replaceAll('/', '\\/')}$`));
+      await expect(page.locator('html')).toHaveAttribute('lang', path.startsWith('/ar') ? 'ar' : 'de');
+    });
+
+    test(`an explicit ${path} route ignores a conflicting saved preference`, async ({ page }) => {
+      await page.addInitScript(() => localStorage.setItem('zentsu-locale', 'ja'));
+      await page.goto(path, { waitUntil: 'networkidle' });
+      await expect(page).toHaveURL(new RegExp(`${path.replaceAll('/', '\\/')}$`));
+      await expect(page.locator('html')).toHaveAttribute('lang', path.startsWith('/ar') ? 'ar' : 'de');
+    });
+  }
 });

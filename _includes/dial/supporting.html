@@ -4,8 +4,8 @@
             <p class="dial-kicker">{{ copy.supporting.kicker }}</p>
             <h2 id="supporting-title">{{ copy.supporting.heading }}</h2>
           </div>
-          {%- assign grid_card_sizes = '(max-width: 680px) 92vw, (max-width: 1000px) 44vw, 320px' -%}
-          {%- assign grid_paper_sizes = '(max-width: 680px) 88vw, (max-width: 1000px) 40vw, 280px' -%}
+          {%- assign grid_card_sizes = '128px' -%}
+          {%- assign grid_paper_sizes = '190px' -%}
           <div class="dial-feature-grid">
             {% include dial/history.html sizes=grid_card_sizes %}
             {% include dial/report.html sizes=grid_paper_sizes %}

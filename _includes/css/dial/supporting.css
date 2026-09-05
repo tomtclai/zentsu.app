@@ -1,22 +1,23 @@
 .dial-supporting .dial-feature-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 1.15rem;
 }
 
 .dial-grid-card {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 0.85rem;
   min-width: 0;
   margin: 0;
-  padding: 1.25rem;
+  padding: clamp(1.25rem, 2.5vw, 1.75rem);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: var(--dial-radius);
   background: var(--surface);
 }
 
 .dial-pro-tag {
-  justify-self: start;
+  align-self: flex-start;
   padding: 0.18rem 0.55rem;
   border: 1px solid var(--accent);
   border-radius: 999px;
@@ -29,7 +30,7 @@
 .dial-grid-card h3 {
   margin: 0;
   color: var(--ink);
-  font-size: 1.02rem;
+  font-size: 1.15rem;
   font-weight: 650;
   line-height: 1.25;
 }
@@ -45,20 +46,59 @@
   margin-bottom: 0.25rem;
 }
 
-@media (min-width: 681px) {
+@media (min-width: 761px) {
   .dial-supporting .dial-feature-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .dial-grid-card {
+    grid-column: span 2;
+  }
+
+  .dial-grid-card-screenshot,
+  .dial-grid-card-paper {
+    grid-column: span 3;
   }
 }
 
-@media (min-width: 1001px) {
-  .dial-supporting .dial-feature-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
+.dial-grid-card-media {
+  display: grid;
+  height: 320px;
+  place-items: center;
+  flex-shrink: 0;
 }
 
-@media (max-width: 680px) {
-  .dial-supporting .dial-feature-grid {
-    grid-template-columns: 1fr;
-  }
+.dial-grid-card-screenshot .dial-phone-card {
+  width: 128px;
+}
+
+.dial-grid-card-paper .dial-paper-card {
+  width: 190px;
+}
+
+.dial-guide {
+  padding-block: 0 var(--dial-section-space);
+  background: var(--dial-surface-tint);
+}
+
+.dial-guide-card {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border: 1px solid var(--border);
+  border-inline-start: 4px solid var(--dial-coral-dark);
+  border-radius: var(--dial-radius);
+  background: var(--surface);
+}
+
+.dial-guide-card h2 {
+  margin-block: 0.6rem;
+  color: var(--ink);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.dial-guide-card p {
+  max-width: 64ch;
+  color: var(--body-text);
+  line-height: 1.65;
 }

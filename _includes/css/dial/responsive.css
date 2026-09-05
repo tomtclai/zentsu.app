@@ -1,6 +1,6 @@
 @media (max-width: 1000px) {
   .dial-hero-grid {
-    grid-template-columns: minmax(0, 1fr) minmax(240px, 0.76fr);
+    grid-template-columns: minmax(0, 1.2fr) minmax(240px, 0.8fr);
   }
 }
 
@@ -30,7 +30,7 @@
   }
 
   .dial-orbit {
-    width: min(92vw, 470px);
+    display: none;
   }
 
   .dial-story-reverse .dial-story-copy {
@@ -49,7 +49,7 @@
     gap: 0.35rem;
   }
 
-  .dial-platforms li:not(:first-child)::before {
+  .dial-platforms li:not(:last-child)::after {
     content: none;
   }
 
@@ -58,18 +58,7 @@
   }
 }
 
-/* Spanish strings run longer than English. Widen the two character-capped
-   headlines rather than shortening the translations. */
-html[lang='es'] .dial-hero h1 {
-  max-width: 16ch;
-  font-size: clamp(2.55rem, 6.2vw, 4.7rem);
-}
-
 @media (max-width: 760px) {
-  html[lang='es'] .dial-hero h1 {
-    max-width: 18ch;
-  }
-
   .dial-story,
   .dial-watch-band,
   .dial-supporting,
@@ -77,57 +66,59 @@ html[lang='es'] .dial-hero h1 {
   .dial-privacy,
   .dial-availability,
   .dial-faq {
-    padding: 1.5rem 0;
+    padding-block: 2.5rem;
   }
 
   .dial-section-heading {
-    margin-bottom: 0.85rem;
+    margin-bottom: 1.5rem;
   }
 
   .dial-story-grid {
-    gap: 0.85rem;
+    gap: 1.5rem;
   }
 
   .dial-story-copy h2,
   .dial-supporting .dial-section-heading h2 {
-    margin: 0.35rem 0 0.5rem;
-    font-size: clamp(1.4rem, 5.2vw, 1.65rem);
+    margin: 0.5rem 0 0.75rem;
+    font-size: clamp(1.65rem, 6vw, 2rem);
   }
 
-  .dial-product-stage {
-    padding: 0.65rem;
+  .dial-watch-band .dial-story-copy {
+    order: -1;
   }
 
-  .dial-watch-back {
-    margin-top: 0.85rem;
+  .dial-watch-visual {
+    padding: 2rem 1rem;
   }
 
   .dial-checklist {
-    margin-top: 0.65rem;
-    gap: 0.4rem;
+    margin-top: 1rem;
+    gap: 0.6rem;
   }
 
   .dial-plan-card {
-    padding: 1rem;
-    gap: 0.85rem;
+    padding: 1.25rem;
+    gap: 1.15rem;
   }
 
   .dial-faq summary {
-    padding-block: 0.55rem;
-    font-size: 0.98rem;
-  }
-
-  .dial-faq h2 {
-    margin-bottom: 0.65rem;
+    padding-block: 0.85rem;
+    font-size: 1rem;
   }
 
   .dial-grid-card {
-    padding: 1rem;
-    gap: 0.65rem;
+    padding: 1.25rem;
+    gap: 0.85rem;
   }
 
   .dial-boundary {
-    margin-top: 0.85rem;
-    padding: 0.75rem 0.85rem;
+    margin-top: 1rem;
+    padding: 0.85rem 1rem;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1100px) {
+  .dial-actions-primary {
+    flex-wrap: wrap;
   }
 }
