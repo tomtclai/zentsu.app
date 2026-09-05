@@ -58,13 +58,36 @@
   .dial-sticky-cta {
     inset-inline: 0;
     inset-block-end: 0;
+    flex-wrap: wrap;
     justify-content: center;
+    row-gap: 0.5rem;
+    padding-left: calc(1rem + env(safe-area-inset-left, 0px));
+    padding-right: calc(1rem + env(safe-area-inset-right, 0px));
     border-radius: 0;
     border-inline: 0;
     border-bottom: 0;
   }
 
-  .dial-sticky-get {
+  .dial-sticky-cta .dial-sticky-get {
     display: inline-flex;
+    flex: 1 1 auto;
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .dial-sticky-cta .dial-sticky-badge {
+    flex: 0 0 auto;
+  }
+
+  .dial-sticky-cta .dial-sticky-badge img {
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .dial-sticky-cta .dial-sticky-icon {
+    display: none;
   }
 }
