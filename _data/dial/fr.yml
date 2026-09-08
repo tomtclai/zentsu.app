@@ -54,13 +54,10 @@ images:
 
 hero:
   availability: Disponible dès maintenant sur l'App Store
-  headline_lead: "Un relevé privé de chaque dose."
+  headline_lead: "Ton carnet d'injections GLP-1."
   headline_accent: ""
-  category: Dial est un suivi de médicaments GLP-1 pour iPhone et Apple Watch.
-  detail:
-    Note chaque dose avec l'heure et le site d'injection, sur le téléphone ou au poignet.
-    Dial Pro trace un niveau estimé entre les doses et prépare un PDF pour ton médecin.
-    Les relevés restent sur l'appareil, ou dans ta base iCloud privée si tu l'actives.
+  category: "Dial garde l'historique de tes doses et sites d'injection sur iPhone."
+  detail: "Note tes doses gratuitement sur iPhone. Dial Pro ajoute la saisie sur Apple Watch, les graphiques et un PDF pour la consultation. Les relevés de médicaments peuvent se synchroniser via ton propre iCloud. Le poids et les photos restent en local."
   free_line: Téléchargement gratuit, sans compte à créer. Le relevé de doses n'a pas de limite.
   secondary_cta: Voir comment Dial fonctionne
   qr_caption: Scanne pour ouvrir Dial dans l'App Store sur ton iPhone.
@@ -86,10 +83,7 @@ proof:
 level:
   kicker: Dial Pro · Niveau estimé
   heading: Vois un niveau estimé entre les doses, selon la demi-vie.
-  body:
-    Dial représente un niveau estimé du médicament dans le temps, à partir des doses enregistrées
-    et de la demi-vie affichée dans l'app. Changez la plage pour revoir une semaine, un
-    mois ou six mois de votre propre historique.
+  body: "Dial trace le niveau estimé pour les injectables et unités de dose compatibles, à partir de tes saisies et de la demi-vie indiquée. Les comprimés n'ont pas de courbe : leur absorption varie trop entre personnes. Consulte une semaine, un mois ou six mois d'injections."
   boundary_lead: C'est une estimation, et nous le disons clairement.
   boundary_body:
     Le graphique modélise une courbe de décroissance standard à partir des doses que vous
@@ -100,13 +94,7 @@ level:
 logging:
   kicker: Enregistrement rapide
   heading: Note le médicament, la dose et le site d'injection dans un seul formulaire.
-  body:
-    Notez le médicament, la quantité, la date, l'heure, le site d'injection et les
-    notes. Les valeurs récentes préremplissent l'entrée suivante. Vous confirmez
-    chaque champ. Dial connaît le sémaglutide (Ozempic, Wegovy, Rybelsus), le
-    tirzépatide (Mounjaro), le liraglutide (Saxenda, Victoza), le dulaglutide
-    (Trulicity) et l'exénatide sous les noms de marque et de boîte utilisés en
-    France, et accepte un médicament personnalisé si le vôtre n'y figure pas.
+  body: "Note le médicament, la dose, la date, l'heure et tes remarques. Ajoute le site pour une injection. Les comprimés comme Rybelsus se notent sans site. Dial répertorie le sémaglutide, le tirzépatide, l'orforglipron, le liraglutide, le dulaglutide et l'exénatide. Ajoute ton médicament s'il manque."
   checklist:
     - Modifier une entrée quand quelque chose change
     - Garder le site d'injection associé à chaque dose
@@ -156,7 +144,7 @@ supporting:
   heading: Historique, rapport, inventaire, rappels et imports, au même endroit.
   features:
     - title: Inventaire des stocks
-      body: "Suivre les stylos ou les flacons : concentration, pharmacie, date de péremption et numéro de lot."
+      body: "Suis tes stylos, flacons et boîtes de comprimés avec leur date de péremption. Scanne l'étiquette du conditionnement, puis vérifie les données avant de les enregistrer."
     - title: Vos rappels
       body:
         Créez des notifications quotidiennes, hebdomadaires ou tous les N jours selon
@@ -210,9 +198,7 @@ privacy:
       detail:
         Avec iCloud activé, les relevés principaux utilisent la base CloudKit privée de
         ton compte Apple, pas nos serveurs.
-  body:
-    Les relevés principaux restent sur ton appareil. Les saisies de poids et les photos
-    d'évolution utilisent un stockage local séparé.
+  body: "Les médicaments, doses, rappels et stocks peuvent se synchroniser via ton propre iCloud. Le poids reste dans un stockage local séparé, avec Santé d'Apple en option. Les fichiers des photos de progression restent sur ton appareil."
   policy_link: Lire la politique de confidentialité de Dial
   policy_url: /fr/dial/privacy/
 

@@ -4,7 +4,6 @@ import { createHash } from 'node:crypto';
 import { createRequire } from 'node:module';
 import { join } from 'node:path';
 
-const { localeFromLanguageTags } = createRequire(import.meta.url)('../locale.js');
 const { catalogByCurrency, resolvePrices } = createRequire(import.meta.url)(
   '../dial-currency.js',
 );
@@ -164,7 +163,7 @@ for (const [canonical, page] of localizedPages) {
     );
     if (!partner) continue;
     check(
-      partner.documentLanguage === language,
+      (partner.documentLanguage === language || (language === 'es' && partner.documentLanguage === 'es-MX')),
       `${canonical} labels ${url} as hreflang="${language}" but that page renders lang="${partner.documentLanguage}"`,
     );
     check(
@@ -186,7 +185,7 @@ check(
 );
 const dialPicker = dialEnglish.match(/<details>[\s\S]*?<\/details>/)?.[0] ?? '';
 check(
-  dialPicker.includes('hreflang="en"') && dialPicker.includes('hreflang="es"'),
+  dialPicker.includes('hreflang="en"') && dialPicker.includes('hreflang="es-MX"') && dialPicker.includes('hreflang="es-ES"'),
   'The Dial language picker must list published locales in one details control',
 );
 check(
@@ -194,25 +193,6 @@ check(
   'The Dial language picker must list Simplified Chinese and Traditional Chinese separately',
 );
 
-const publishedDialLocales = { zh: '/zh/dial/', 'zh-hant': '/zh-hant/dial/', es: '/es/dial/' };
-for (const [tags, expected] of [
-  [['zh-TW'], 'zh-hant'],
-  [['zh-HK'], 'zh-hant'],
-  [['zh-MO'], 'zh-hant'],
-  [['zh-Hant'], 'zh-hant'],
-  [['zh-Hant-TW'], 'zh-hant'],
-  [['zh-CN'], 'zh'],
-  [['zh-SG'], 'zh'],
-  [['zh-Hans'], 'zh'],
-  [['zh'], 'zh'],
-  [['zh-TW', 'zh'], 'zh-hant'],
-  [['es-MX'], 'es'],
-]) {
-  check(
-    localeFromLanguageTags(tags, publishedDialLocales) === expected,
-    `localeFromLanguageTags(${JSON.stringify(tags)}) should be ${expected}`,
-  );
-}
 check(
   !dialEnglish.includes('nav-lang-options'),
   'The Dial language picker must not use the two-button segmented toggle',
@@ -282,8 +262,9 @@ const dialPrices = loadYaml('_data/dial_prices.yml');
 const dialStorefronts = loadYaml('_data/dial_storefronts.yml');
 const dialRoutes = loadYaml('_data/alternates.yml').dial ?? {};
 for (const [lang, route] of Object.entries(dialRoutes)) {
-  const prices = dialPrices[lang];
-  const storefront = dialStorefronts[lang];
+  const key = lang === 'es-MX' ? 'es' : lang === 'es-ES' ? 'es-es' : lang;
+  const prices = dialPrices[key];
+  const storefront = dialStorefronts[key];
   check(Boolean(storefront), `Missing Dial storefront mapping for locale ${lang}`);
   check(Boolean(prices), `Missing ASC storefront prices for Dial locale ${lang}`);
   if (!prices || !storefront) continue;

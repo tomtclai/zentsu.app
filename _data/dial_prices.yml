@@ -331,3 +331,13 @@ ca:
   monthly_display: "3,99 €"
   annual_display: "22,99 €"
   lifetime_display: "59,99 €"
+
+es-es:
+  territory: ESP
+  currency: EUR
+  monthly: "3.99"
+  annual: "22.99"
+  lifetime: "59.99"
+  monthly_display: "3,99 €"
+  annual_display: "22,99 €"
+  lifetime_display: "59,99 €"

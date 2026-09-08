@@ -17,7 +17,7 @@ import argparse
 import json
 import subprocess
 import sys
-from concurrent.futures import ThreadPoolExecutor
+import time
 from decimal import Decimal, ROUND_HALF_UP
 from pathlib import Path
 
@@ -119,13 +119,15 @@ def format_display(raw: str, currency: str) -> str:
 
 
 def asc_json(args: list[str]) -> dict:
-    result = subprocess.run(
-        ["asc", *args, "--output", "json"],
-        check=True,
-        capture_output=True,
-        text=True,
-    )
-    return json.loads(result.stdout)
+    for attempt in range(3):
+        result = subprocess.run(
+            ["asc", *args, "--output", "json"], capture_output=True, text=True,
+        )
+        if result.returncode == 0:
+            return json.loads(result.stdout)
+        if attempt == 2:
+            raise RuntimeError(f"ASC read failed: {args}: {result.stderr.strip()}")
+        time.sleep(10 * (attempt + 1))
 
 
 def fetch_territory(territory: str) -> dict[str, str]:
@@ -155,10 +157,10 @@ def fetch_territory(territory: str) -> dict[str, str]:
 def build_prices(storefronts: dict[str, dict[str, str]]) -> dict[str, dict[str, str]]:
     territories = sorted({row["territory"] for row in storefronts.values()})
     fetched: dict[str, dict[str, str]] = {}
-    with ThreadPoolExecutor(max_workers=4) as pool:
-        for territory, row in zip(territories, pool.map(fetch_territory, territories)):
-            print(f"fetched {territory} {row['currency']}", file=sys.stderr)
-            fetched[territory] = row
+    for territory in territories:
+        row = fetch_territory(territory)
+        print(f"fetched {territory} {row['currency']}", file=sys.stderr)
+        fetched[territory] = row
     prices = {}
     for lang, storefront in storefronts.items():
         row = dict(fetched[storefront["territory"]])

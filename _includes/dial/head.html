@@ -15,7 +15,7 @@
         "name": "Dial",
         "description": {{ copy.schema_description | jsonify | replace: "<", "\u003c" }},
         "url": {{ page.canonical | jsonify | replace: "<", "\u003c" }},
-        "inLanguage": {{ page.lang | jsonify | replace: "<", "\u003c" }},
+        "inLanguage": {{ page.locale | default: page.lang | jsonify | replace: "<", "\u003c" }},
         "operatingSystem": "iOS; watchOS",
         "applicationCategory": "HealthApplication",
         "isAccessibleForFree": true,

@@ -424,16 +424,17 @@ export function validateAllDialLocales({
   const dialCopies = data.copies ?? {};
   const enCopy = dialCopies.en ?? loadYaml(join(repoRoot, '_data/dial/en.yml'));
   const enFaqCount = dialFaq.en?.items?.length ?? 6;
-  const expectedLanguages = Object.keys(dialRoutes);
+  const expectedLanguages = Object.keys(dialRoutes).filter((locale) => locale !== 'es' || !dialRoutes['es-MX']);
   const locales = expectedLanguages;
   const failures = [];
   let totalChecks = 0;
 
   for (const locale of locales) {
     const route = dialRoutes[locale];
-    const copy = dialCopies[locale] ?? loadYaml(join(repoRoot, '_data/dial', `${locale}.yml`));
-    const prices = dialPrices[locale];
-    const storefront = dialStorefronts[locale];
+    const key = locale === 'es-MX' ? 'es' : locale === 'es-ES' ? 'es-es' : locale;
+    const copy = dialCopies[key] ?? loadYaml(join(repoRoot, '_data/dial', `${key}.yml`));
+    const prices = dialPrices[key];
+    const storefront = dialStorefronts[key];
     const result = validateLocale({
       locale,
       route,
@@ -445,7 +446,7 @@ export function validateAllDialLocales({
       enCopy,
       expectedLanguages,
       dashAllowlistCounts,
-      expectedFaqCount: dialFaq[locale]?.items?.length ?? enFaqCount,
+      expectedFaqCount: dialFaq[key === 'es-es' ? 'es' : key]?.items?.length ?? enFaqCount,
     });
     totalChecks += result.checks;
     failures.push(...result.failures);

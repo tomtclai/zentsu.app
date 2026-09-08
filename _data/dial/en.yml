@@ -61,10 +61,7 @@ hero:
   headline_lead: "Your GLP-1 dose log, in one place."
   headline_accent: ""
   category: Dial is a GLP‑1 dose tracker for iPhone and Apple Watch.
-  detail:
-    Start with the free phone log. Record the medication, amount, time, and injection site.
-    Dial Pro adds quick logging on Apple Watch, charts, and a PDF or CSV export. Records stay
-    on your device, or in your own private iCloud database if you turn that on.
+  detail: "Start with the free iPhone dose log. Dial Pro adds Apple Watch logging, charts, and PDF or CSV export. Medication records can sync through your own iCloud. Weight and progress photos stay local."
   free_line: Free to download, with no account to create. The phone log has no cap on entries.
   secondary_cta: See how Dial works
   qr_caption: Scan to open Dial in the App Store on your iPhone.
@@ -89,9 +86,7 @@ proof:
 level:
   kicker: Dial Pro · Estimated level
   heading: Review an estimated level between doses.
-  body:
-    Dial plots an estimated medication level over time from your recorded doses and the
-    half-life value shown in the app. Review a week, month, or six months of your history.
+  body: "Dial plots an estimated level from logged doses and the half-life shown in the app, for supported injectables and dose units. Tablets have no level chart: oral absorption varies too much between people. Review a week, month, or six months of injection history."
   boundary_lead: An estimate, and we say so.
   boundary_body:
     The chart models a standard decay curve from the doses you logged. It shows your
@@ -102,11 +97,7 @@ level:
 logging:
   kicker: Quick logging
   heading: Put the details in one dose entry.
-  body:
-    Record the medication, amount, date, time, injection site, and a note. Recent values fill
-    the next entry, and you confirm every field. Dial supports semaglutide (Ozempic, Wegovy),
-    tirzepatide (Mounjaro, Zepbound), and the medication names used in your country. Add a
-    custom medication when yours is not listed.
+  body: "Record medication, amount, date, time, and notes. Injections include a site. Tablets such as Rybelsus log without one. Dial lists semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide, and exenatide, with regional names. Add a custom medication if yours is missing."
   checklist:
     - Edit an entry when something changes
     - Keep injection sites attached to each dose
@@ -154,7 +145,7 @@ supporting:
   heading: Keep the rest of the record together.
   features:
     - title: Supply inventory
-      body: Track pens or vials with concentration, pharmacy, expiration date, and lot number.
+      body: "Track pens, vials, and tablet bottles with expiration dates. Scan a package label to fill in details, then check them before saving."
     - title: Your reminders
       body:
         Create daily, weekly, or every-N-days notifications around the schedule you
@@ -206,9 +197,7 @@ privacy:
       detail:
         With iCloud on, core records use the private CloudKit database on your Apple
         Account, not our servers.
-  body:
-    Core records stay on your device. Weight entries and progress photos use separate
-    local-only storage.
+  body: "Medication, dose, reminder, and supply records can sync through your own iCloud if enabled. Weight stays in a separate local store, with optional Apple Health integration. Progress photo files stay on your device."
   policy_link: Read the Dial privacy policy
   policy_url: /dial/privacy/
 

@@ -37,6 +37,14 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- Separate Dial landing pages for Mexico (`/es/dial/`, MXN) and Spain (`/es-es/dial/`, EUR), with explicit regional selector labels, reciprocal `es-MX`/`es-ES` hreflang, Mexico as the `es` catchall, and English as `x-default`. Both regions have self-canonicals and share Spanish screenshots, badges, support and privacy pages.
+- Remove automatic browser-language and saved-language redirects. Explicit links preserve query strings and fragments; Escape closes the picker and restores focus.
+- Clarify free iPhone logging versus Pro Watch logging and PDF/CSV export in English, Japanese, German, Korean, French and both Spanish landing pages. Add tablet logging without injection sites, tablet inventory and the absence of tablet level estimates. Preserve optional core-record iCloud sync and local weight/photo storage.
+- Refresh prices using read-only live ASC summaries. Spain uses its own storefront row even when other EUR prices differ; currency overrides identify their source storefront in the audited languages. Brazil's scheduled September 10 reductions are not published early.
+- Serialize price reads with bounded retries after ASC rate limits. Extend regional metadata, routing, price, accessibility and visual checks. Visual capture now waits for image decoding rather than recording unloaded mobile screenshots.
+
 ### Added
 
 - English Dial medication-recording guide at `/dial/medication-log/`, with a matching landing-page

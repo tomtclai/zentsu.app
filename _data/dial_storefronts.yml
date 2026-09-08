@@ -1,27 +1,27 @@
 # Primary App Store territory for each Dial marketing page, plus the
-# customer-facing price note. One language is one storefront, not every
-# country that speaks the language. Edit this file when adding a locale.
+# customer-facing price note. A page default is not the visitor's Apple
+# Account storefront. Edit this file when adding a locale or regional page.
 # Amounts come from live ASC via `npm run sync:dial-prices`.
 
 en:
   territory: USA
-  note: "Subscriptions renew until canceled. Prices are from the U.S. App Store."
+  note: "Subscriptions renew until canceled. Prices are from the U.S. App Store. Your Apple Account region determines checkout prices."
 
 es:
   territory: MEX
-  note: "Las suscripciones se renuevan hasta que se cancelen. Los precios son del App Store de México."
+  note: "Las suscripciones se renuevan hasta que se cancelen. Los precios son del App Store de México. La región de tu cuenta de Apple determina el precio al comprar."
 
 de:
   territory: DEU
-  note: "Abonnements verlängern sich, bis sie gekündigt werden. Preise stammen aus dem App Store für Deutschland."
+  note: "Abonnements verlängern sich, bis sie gekündigt werden. Preise stammen aus dem App Store für Deutschland. Die Region deines Apple-Accounts bestimmt den Kaufpreis."
 
 fr:
   territory: FRA
-  note: "Les abonnements se renouvellent jusqu'à résiliation. Les prix viennent de l'App Store France."
+  note: "Les abonnements se renouvellent jusqu'à résiliation. Les prix viennent de l'App Store France. La région de ton compte Apple détermine le prix à l'achat."
 
 ja:
   territory: JPN
-  note: "サブスクリプションは解約するまで更新されます。価格は日本のApp Storeの価格です。"
+  note: "サブスクリプションは解約するまで更新されます。価格は日本のApp Storeの価格です。購入価格はApple Accountの国や地域で決まります。"
 
 it:
   territory: ITA
@@ -53,7 +53,7 @@ zh-hant:
 
 ko:
   territory: KOR
-  note: "구독은 해지할 때까지 갱신됩니다. 가격은 한국 App Store 기준입니다."
+  note: "구독은 해지할 때까지 갱신됩니다. 가격은 한국 App Store 기준입니다. 구매 가격은 Apple 계정의 국가 또는 지역에 따라 정해집니다."
 
 ar:
   territory: SAU
@@ -134,3 +134,7 @@ fi:
 ca:
   territory: ESP
   note: "Les subscripcions es renoven fins que es cancel·len. Els preus són de l'App Store d'Espanya."
+
+es-es:
+  territory: ESP
+  note: "Las suscripciones se renuevan hasta que las canceles. Precios del App Store de España. El país o región de tu cuenta de Apple determina el precio al comprar."

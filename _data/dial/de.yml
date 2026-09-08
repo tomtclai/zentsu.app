@@ -58,15 +58,11 @@ images:
 
 hero:
   availability: Jetzt im App Store
-  headline_lead: "Privater Eintrag jeder Dosis."
+  headline_lead: "Dein Tagebuch für die Abnehmspritze."
   headline_accent: ""
-  category: Dial ist ein GLP-1-Medikamententracker für iPhone und Apple Watch.
-  detail:
-    Erfasse jede Dosis mit Uhrzeit und Injektionsstelle, am Telefon oder am Handgelenk.
-    Dial Pro zeichnet einen geschätzten Spiegel zwischen den Dosen und erstellt ein PDF
-    für deine Praxis. Die Einträge bleiben auf dem Gerät oder, wenn du das einschaltest,
-    in deiner privaten iCloud-Datenbank.
-  free_line: Kostenlos laden, ohne Konto anzulegen. Das Dosiprotokoll hat kein Limit.
+  category: "Dial hält Dosen und Injektionsstellen deiner GLP-1-Medikamente auf dem iPhone fest."
+  detail: "Erfasse Dosen kostenlos auf dem iPhone. Dial Pro ergänzt Einträge auf der Apple Watch, Diagramme und PDF-Exporte für die Praxis. Medikamenteneinträge können über deine eigene iCloud synchronisiert werden. Gewicht und Fortschrittsfotos bleiben lokal."
+  free_line: "Kostenlos laden, ohne Konto. Die Anzahl deiner Dosiseinträge ist unbegrenzt."
   secondary_cta: So funktioniert Dial
   qr_caption: Scanne, um Dial im App Store auf deinem iPhone zu öffnen.
   platforms_label: Dial-Plattformen und Speicher
@@ -92,10 +88,7 @@ proof:
 level:
   kicker: Dial Pro · Geschätzter Spiegel
   heading: Den geschätzten Spiegel zwischen den Dosen sehen, anhand der Halbwertszeit.
-  body:
-    Dial zeigt einen geschätzten Medikamentenspiegel über die Zeit. Grundlage sind Ihre
-    erfassten Dosen und der in der App gezeigte Halbwertszeitwert. Ändern Sie den Zeitraum,
-    um eine Woche, einen Monat oder sechs Monate Ihres eigenen Verlaufs anzusehen.
+  body: "Dial zeichnet den geschätzten Spiegel für unterstützte Injektionspräparate und Dosiseinheiten aus deinen Einträgen und der angegebenen Halbwertszeit. Für Tabletten gibt es keine Kurve: Die Aufnahme ins Blut unterscheidet sich zu stark zwischen Menschen. Wähle eine Woche, einen Monat oder sechs Monate."
   boundary_lead: Es ist eine Schätzung. Das sagen wir auch so.
   boundary_body:
     Das Diagramm modelliert eine Standard-Abklingkurve aus den Dosen, die Sie erfasst haben.
@@ -106,13 +99,7 @@ level:
 logging:
   kicker: Schnelles Erfassen
   heading: Medikament, Dosis und Injektionsstelle in einem Formular erfassen.
-  body:
-    Halten Sie Medikament, Menge, Datum, Uhrzeit, Injektionsstelle und Notizen fest.
-    Für den nächsten Eintrag sind die letzten Werte vorausgefüllt. Jedes Feld
-    bestätigen Sie selbst. Dial kennt Semaglutid (Ozempic, Wegovy), Tirzepatid
-    (Mounjaro, Zepbound), Liraglutid, Dulaglutid und Exenatid unter den in Ihrem
-    Land gebräuchlichen Marken- und Packungsnamen und nimmt ein individuelles
-    Medikament auf, wenn Ihres nicht gelistet ist.
+  body: "Erfasse Medikament, Menge, Datum, Uhrzeit und Notizen. Bei Injektionen kommt die Stelle dazu. Tabletten wie Rybelsus erfasst du ohne Injektionsstelle. Dial kennt Semaglutid, Tirzepatid, Orforglipron, Liraglutid, Dulaglutid und Exenatid. Fehlende Medikamente kannst du selbst anlegen."
   checklist:
     - Einen Eintrag bearbeiten, wenn sich etwas ändert
     - Injektionsstellen je Dosis speichern
@@ -163,7 +150,7 @@ supporting:
   heading: Verlauf, Bericht, Bestand, Erinnerungen und Importe an einem Ort.
   features:
     - title: Bestandsführung
-      body: Pens oder Durchstechflaschen mit Konzentration, Apotheke, Ablaufdatum und Chargennummer führen.
+      body: "Behalte Pens, Durchstechflaschen und Tablettenbehälter mit Ablaufdatum im Blick. Scanne das Packungsetikett und prüfe die Angaben vor dem Speichern."
     - title: Ihre Erinnerungen
       body:
         Legen Sie tägliche, wöchentliche oder alle N Tage Mitteilungen nach dem Plan an, den Sie festlegen.
@@ -216,9 +203,7 @@ privacy:
       detail:
         Mit iCloud nutzen die zentralen Einträge die private CloudKit-Datenbank auf deinem
         Apple-Account, nicht unsere Server.
-  body:
-    Die zentralen Einträge bleiben auf deinem Gerät. Gewichtseinträge und Fortschrittsfotos
-    liegen in einem getrennten, nur lokalen Speicher.
+  body: "Medikamente, Dosen, Erinnerungen und Vorräte können über deine eigene iCloud synchronisiert werden. Gewichtseinträge bleiben in einem separaten lokalen Speicher, mit optionaler Anbindung an Apple Health. Fortschrittsfotos bleiben auf deinem Gerät."
   policy_link: Die Dial-Datenschutzerklärung lesen
   policy_url: /de/dial/privacy/
 

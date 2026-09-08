@@ -23,6 +23,6 @@ for (const lang of locales) {
     }
 
     const hreflangLinks = page.locator('.nav-lang a[hreflang]');
-    await expect(hreflangLinks).toHaveCount(Object.keys(alternates).length);
+    await expect(hreflangLinks).toHaveCount(Object.keys(alternates).filter((lang) => lang !== 'es').length);
   });
 }

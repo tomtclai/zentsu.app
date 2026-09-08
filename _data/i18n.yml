@@ -2,7 +2,7 @@ en:
   language_name: English
   language_switcher_label: Language
   currency_switcher_label: "Currency"
-  price_shown_in: "Shown in {currency}."
+  price_shown_in: "Prices in {currency} from the App Store ({storefront}). Your Apple Account region determines checkout prices. Subscriptions renew until canceled."
   og_locale: en_US
   skip_link: Skip to main content
   nav:
@@ -39,7 +39,7 @@ de:
   language_name: Deutsch
   language_switcher_label: Sprache
   currency_switcher_label: "Währung"
-  price_shown_in: "Angaben in {currency}."
+  price_shown_in: "Preise in {currency} aus dem App Store ({storefront}). Die Region deines Apple-Accounts bestimmt den Kaufpreis. Abonnements verlängern sich bis zur Kündigung."
   og_locale: de_DE
   skip_link: Zum Hauptinhalt springen
   nav:
@@ -74,7 +74,7 @@ es:
   language_name: Español
   language_switcher_label: Idioma
   currency_switcher_label: "Moneda"
-  price_shown_in: "Mostrado en {currency}."
+  price_shown_in: "Precios en {currency} del App Store ({storefront}). La región de tu cuenta de Apple determina el precio al comprar. Las suscripciones se renuevan hasta que las canceles."
   og_locale: es_MX
   skip_link: Ir al contenido principal
   nav:
@@ -110,7 +110,7 @@ fr:
   language_name: Français
   language_switcher_label: Langue
   currency_switcher_label: "Devise"
-  price_shown_in: "Affiché en {currency}."
+  price_shown_in: "Prix en {currency} de l'App Store ({storefront}). La région de ton compte Apple détermine le prix à l'achat. Les abonnements se renouvellent jusqu'à résiliation."
   og_locale: fr_FR
   skip_link: Aller au contenu principal
   nav:
@@ -182,7 +182,7 @@ ja:
   language_name: 日本語
   language_switcher_label: 言語
   currency_switcher_label: "通貨"
-  price_shown_in: "{currency}で表示。"
+  price_shown_in: "{storefront}のApp Store価格を{currency}で表示しています。購入価格はApple Accountの国や地域で決まります。サブスクリプションは解約するまで更新されます。"
   og_locale: ja_JP
   skip_link: 本文へスキップ
   nav:
@@ -428,7 +428,7 @@ ko:
   language_name: 한국어
   language_switcher_label: 언어
   currency_switcher_label: "통화"
-  price_shown_in: "{currency}로 표시."
+  price_shown_in: "{storefront} App Store 가격을 {currency}로 표시합니다. 구매 가격은 Apple 계정의 국가 또는 지역에 따라 정해집니다. 구독은 해지할 때까지 갱신됩니다."
   og_locale: ko_KR
   skip_link: 본문으로 건너뛰기
   nav:
@@ -1158,3 +1158,44 @@ cs:
       Apple, logo Apple, Mac a macOS jsou ochranné známky společnosti Apple Inc.,
       registrované v USA a v dalších zemích a oblastech. App Store a Mac App Store jsou
       servisní známky společnosti Apple Inc.
+
+# Spanish landing regions share navigation and support resources.
+es-MX:
+  language_name: Español (México)
+es-ES:
+  language_name: Español (España)
+es-es:
+  language_name: Español (España)
+  language_switcher_label: Idioma
+  currency_switcher_label: "Moneda"
+  price_shown_in: "Precios en {currency} del App Store ({storefront}). La región de tu cuenta de Apple determina el precio al comprar. Las suscripciones se renuevan hasta que las canceles."
+  og_locale: es_ES
+  skip_link: Ir al contenido principal
+  nav:
+    home: Zentsu
+    apps: Apps
+    privacy: Privacidad
+    terms: Términos
+    terms_long: ' de uso'
+    get_dial: "Obtener Dial"
+  sticky:
+    get_dial: "Dial, gratis"
+  plans_ui:
+    plan_legend: "Elige un plan Dial Pro"
+  footer:
+    home: Zentsu
+    apps: Apps
+    learn: "Aprende"
+    dial: Dial
+    dial_url: /es-es/dial/
+    bench_support: Soporte de Bench
+    dial_support: Soporte de Dial
+    dial_support_url: /es/dial/support/
+    blog: Blog
+    privacy: Privacidad
+    terms: Términos
+    indie_line: Hecho por una sola persona en
+    apple_trademark:
+      Apple, el logotipo de Apple, Mac y macOS son marcas comerciales de Apple Inc.,
+      registradas en Estados Unidos y en otros países y regiones. App Store y Mac App
+      Store son marcas de servicio de Apple Inc.

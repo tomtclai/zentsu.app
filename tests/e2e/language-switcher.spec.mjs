@@ -51,9 +51,10 @@ test.describe('language switcher', () => {
 test.describe('first visit without a stored choice', () => {
   test.use({ locale: 'de-DE' });
 
-  test('a German browser lands on the German page', async ({ page }) => {
+  test('a German browser keeps the requested English page', async ({ page }) => {
     await page.goto('/dial/', { waitUntil: 'networkidle' });
-    await expect(page).toHaveURL(/\/de\/dial\/$/);
+    expect(new URL(page.url()).pathname).toBe('/dial/');
+    await expect(page.locator('html')).toHaveAttribute('lang', 'en');
   });
 
 });
@@ -61,18 +62,18 @@ test.describe('first visit without a stored choice', () => {
 test.describe('explicit translated routes', () => {
   test.use({ locale: 'en-US' });
 
-  for (const path of ['/de/dial/', '/ar/dial/']) {
+  for (const path of ['/dial/', '/de/dial/', '/ar/dial/', '/es/dial/', '/es-es/dial/']) {
     test(`an explicit ${path} route stays localized with an English browser`, async ({ page }) => {
       await page.goto(path, { waitUntil: 'networkidle' });
       await expect(page).toHaveURL(new RegExp(`${path.replaceAll('/', '\\/')}$`));
-      await expect(page.locator('html')).toHaveAttribute('lang', path.startsWith('/ar') ? 'ar' : 'de');
+      await expect(page.locator('html')).toHaveAttribute('lang', ({ '/dial/': 'en', '/ar/dial/': 'ar', '/de/dial/': 'de', '/es/dial/': 'es-MX', '/es-es/dial/': 'es-ES' })[path]);
     });
 
     test(`an explicit ${path} route ignores a conflicting saved preference`, async ({ page }) => {
       await page.addInitScript(() => localStorage.setItem('zentsu-locale', 'ja'));
       await page.goto(path, { waitUntil: 'networkidle' });
       await expect(page).toHaveURL(new RegExp(`${path.replaceAll('/', '\\/')}$`));
-      await expect(page.locator('html')).toHaveAttribute('lang', path.startsWith('/ar') ? 'ar' : 'de');
+      await expect(page.locator('html')).toHaveAttribute('lang', ({ '/dial/': 'en', '/ar/dial/': 'ar', '/de/dial/': 'de', '/es/dial/': 'es-MX', '/es-es/dial/': 'es-ES' })[path]);
     });
   }
 });

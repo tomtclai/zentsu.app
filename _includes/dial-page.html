@@ -1,3 +1,4 @@
+{%- assign resource_lang = page.resource_lang | default: page.lang -%}
 {%- assign copy = site.data.dial[page.lang] -%}
 {%- assign storefront = site.data.dial_storefronts[page.lang] | default: site.data.dial_storefronts.en -%}
 {%- assign prices = site.data.dial_prices[page.lang] | default: site.data.dial_prices.en -%}
@@ -11,15 +12,15 @@
 {%- capture app_store_url_plans -%}{% include dial-store-url.html placement=campaign.placements.plans %}{%- endcapture -%}
 {%- capture app_store_url_faq -%}{% include dial-store-url.html placement=campaign.placements.faq %}{%- endcapture -%}
 {%- capture app_store_url_closer -%}{% include dial-store-url.html placement=campaign.placements.closer %}{%- endcapture -%}
-{%- assign app_store_badge = '/assets/badges/download-on-the-app-store-' | append: page.lang | append: '.svg' -%}
-{%- assign badge_dims = site.data.dial_badges[page.lang] | default: site.data.dial_badges.en -%}
+{%- assign app_store_badge = '/assets/badges/download-on-the-app-store-' | append: resource_lang | append: '.svg' -%}
+{%- assign badge_dims = site.data.dial_badges[resource_lang] | default: site.data.dial_badges.en -%}
 {%- assign hero_sizes = '(max-width: 760px) 72vw, 300px' -%}
 {%- assign stage_sizes = '(max-width: 380px) 76vw, 280px' -%}
 {%- assign card_sizes = '(max-width: 680px) 76vw, 360px' -%}
 {%- assign report_sizes = '(max-width: 760px) 78vw, 420px' -%}
 {%- assign watch_sizes = '(max-width: 760px) 42vw, 190px' -%}
 <!doctype html>
-<html lang="{{ page.lang }}" dir="{{ site.data.i18n[page.lang].dir | default: 'ltr' }}">
+<html lang="{{ page.locale | default: page.lang }}" dir="{{ site.data.i18n[page.lang].dir | default: 'ltr' }}">
   <head>
     {% include head-common.html %}
     {% include dial/head.html %}

@@ -4,7 +4,7 @@ import AxeBuilder from '@axe-core/playwright';
 /** @type {{ id: string; selector: string; reason: string }[]} */
 export const knownViolations = [];
 
-const locales = ['en', 'ar', 'ja'];
+const locales = ['en', 'ar', 'ja', 'es', 'es-es'];
 const schemes = [
   { name: 'light', colorScheme: 'light' },
   { name: 'dark', colorScheme: 'dark' },

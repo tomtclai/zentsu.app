@@ -55,7 +55,9 @@
     return {
       currency,
       row,
-      note: String(data.overrideNote || '').replaceAll('{currency}', currency),
+      note: String(data.overrideNote || '')
+        .replaceAll('{currency}', currency)
+        .replaceAll('{storefront}', row.territory),
     };
   }
 

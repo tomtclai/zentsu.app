@@ -91,3 +91,15 @@ describe('resolvePrices', () => {
     assert.equal(resolved.note, 'Ukraine note');
   });
 });
+
+test('Spain uses its own EUR row even when Germany has different EUR prices', () => {
+  const spain = { currency: 'EUR', territory: 'ESP', lifetime_display: '44,99 €' };
+  const data = {
+    lang: 'es-es', defaultCurrency: 'EUR', defaultNote: 'Spain note',
+    overrideNote: '{currency} App Store ({storefront})',
+    prices: { ...samplePrices, 'es-es': spain, es: { currency: 'MXN', territory: 'MEX' } },
+  };
+  assert.equal(resolvePrices(data, 'EUR').row, spain);
+  assert.equal(resolvePrices(data, 'EUR').note, 'Spain note');
+  assert.equal(resolvePrices(data, 'MXN').note, 'MXN App Store (MEX)');
+});

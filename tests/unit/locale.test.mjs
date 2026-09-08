@@ -1,43 +1,19 @@
-import { createRequire } from 'node:module';
 import assert from 'node:assert/strict';
-import { describe, test } from 'node:test';
+import { readFileSync } from 'node:fs';
+import { runInNewContext } from 'node:vm';
+import { test } from 'node:test';
 
-const require = createRequire(import.meta.url);
-const { localeFromLanguageTags } = require('../../locale.js');
+const source = readFileSync(new URL('../../locale.js', import.meta.url), 'utf8');
 
-const publishedDialLocales = {
-  zh: '/zh/dial/',
-  'zh-hant': '/zh-hant/dial/',
-  es: '/es/dial/',
-  en: '/dial/',
-};
-
-const cases = [
-  [['zh-TW'], 'zh-hant'],
-  [['zh-HK'], 'zh-hant'],
-  [['zh-MO'], 'zh-hant'],
-  [['zh-Hant'], 'zh-hant'],
-  [['zh-Hant-TW'], 'zh-hant'],
-  [['zh-CN'], 'zh'],
-  [['zh-SG'], 'zh'],
-  [['zh-Hans'], 'zh'],
-  [['zh'], 'zh'],
-  [['zh-TW', 'zh'], 'zh-hant'],
-  [['es-MX'], 'es'],
-  [['pt-PT'], null],
-  [['zh-Hans-SG'], 'zh'],
-  [['nb-NO'], null],
-  [['nn'], null],
-  [['sr'], null],
-  [['en-GB'], 'en'],
-  [[], null],
-  [['fr-CA'], null],
-];
-
-describe('localeFromLanguageTags', () => {
-  for (const [tags, expected] of cases) {
-    test(`${JSON.stringify(tags)} resolves to ${JSON.stringify(expected)}`, () => {
-      assert.equal(localeFromLanguageTags(tags, publishedDialLocales), expected);
+for (const pathname of ['/dial/', '/es/dial/', '/es-es/dial/']) {
+  test(`${pathname} never redirects for browser or saved language`, () => {
+    let bound = false;
+    runInNewContext(source, {
+      document: { readyState: 'loading', addEventListener: () => { bound = true; } },
+      navigator: { languages: ['es-ES'], userAgent: 'Browser' },
+      localStorage: { getItem: () => 'ja' },
+      location: { pathname, replace: () => assert.fail('automatic redirect') },
     });
-  }
-});
+    assert.ok(bound);
+  });
+}

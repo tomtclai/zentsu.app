@@ -14,7 +14,7 @@ test('currency picker switches, persists, and restores default note', async ({ p
   const defaultNote = storefronts.en.note;
   const usdLifetime = prices.en.lifetime_display;
   const eurLifetime = prices.de.lifetime_display;
-  const overrideNote = i18n.en.price_shown_in.replace('{currency}', 'EUR');
+  const overrideNote = i18n.en.price_shown_in.replace('{currency}', 'EUR').replace('{storefront}', prices.de.territory);
 
   await expect(dial.priceText('lifetime')).toHaveText(usdLifetime);
   await expect(dial.priceText('annual')).toHaveText(prices.en.annual_display);

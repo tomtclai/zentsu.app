@@ -1,7 +1,8 @@
 {%- assign alternates = site.data.alternates[page.alternate_group] -%}
 {%- if alternates -%}
 {%- assign strings = site.data.i18n[page.lang] | default: site.data.i18n.en %}
-{%- assign current_name = strings.language_name | default: page.lang %}
+{%- assign current_locale = page.locale | default: page.lang -%}
+{%- assign current_name = site.data.i18n[current_locale].language_name | default: strings.language_name %}
 <li class="nav-lang">
   <details>
     <summary aria-label="{{ strings.language_switcher_label }}: {{ current_name }}"
@@ -16,8 +17,9 @@
     <ul class="nav-lang-menu">
       {%- for alternate in alternates %}
       {%- assign language = alternate[0] -%}
+      {%- if page.alternate_group == 'dial' and language == 'es' -%}{%- continue -%}{%- endif -%}
       {%- assign url = alternate[1] -%}
-      {%- if language == page.lang -%}
+      {%- if language == current_locale -%}
       {%- assign current = ' aria-current="page"' -%}
       {%- else -%}
       {%- assign current = '' -%}

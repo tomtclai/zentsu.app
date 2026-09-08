@@ -1,11 +1,12 @@
-{%- assign faq = site.data.dial_faq[page.lang] | default: site.data.dial_faq.en -%}
+{%- assign resource_lang = page.resource_lang | default: page.lang -%}
+{%- assign faq = site.data.dial_faq[resource_lang] | default: site.data.dial_faq.en -%}
 {%- assign faq_items = faq.items | default: site.data.dial_faq.en.items -%}
-{%- capture pricing_answer -%}{{ prices.lifetime_display }} {{ copy.plans.lifetime_terms | default: site.data.dial.en.plans.lifetime_terms }} ({{ copy.plans.lifetime_name | default: site.data.dial.en.plans.lifetime_name }}), {{ prices.annual_display }} {{ copy.plans.annual_terms | default: site.data.dial.en.plans.annual_terms }} ({{ copy.plans.annual_name | default: site.data.dial.en.plans.annual_name }}), and {{ prices.monthly_display }} {{ copy.plans.monthly_terms | default: site.data.dial.en.plans.monthly_terms }} ({{ copy.plans.monthly_name | default: site.data.dial.en.plans.monthly_name }}).{%- endcapture -%}
+{%- capture pricing_answer -%}{{ prices.lifetime_display }} {{ copy.plans.lifetime_terms | default: site.data.dial.en.plans.lifetime_terms }} ({{ copy.plans.lifetime_name | default: site.data.dial.en.plans.lifetime_name }}), {{ prices.annual_display }} {{ copy.plans.annual_terms | default: site.data.dial.en.plans.annual_terms }} ({{ copy.plans.annual_name | default: site.data.dial.en.plans.annual_name }}), {{ prices.monthly_display }} {{ copy.plans.monthly_terms | default: site.data.dial.en.plans.monthly_terms }} ({{ copy.plans.monthly_name | default: site.data.dial.en.plans.monthly_name }}). {{ storefront.note }}{%- endcapture -%}
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "inLanguage": {{ page.lang | jsonify | replace: "<", "\u003c" }},
+    "inLanguage": {{ page.locale | default: page.lang | jsonify | replace: "<", "\u003c" }},
     "mainEntity": [
       {%- for item in faq_items -%}
         {%- if item.type == "pricing" -%}

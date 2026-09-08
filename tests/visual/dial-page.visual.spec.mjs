@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-const locales = ['en', 'de', 'ja', 'ar'];
+const locales = ['en', 'de', 'ja', 'ar', 'ko', 'fr', 'es', 'es-es'];
 const schemes = [
   { name: 'light', colorScheme: 'light' },
   { name: 'dark', colorScheme: 'dark' },
@@ -21,6 +21,10 @@ async function prepareDialPage(page, lang, colorScheme) {
       window.scrollTo(0, y);
       await new Promise((resolve) => requestAnimationFrame(resolve));
     }
+    await Promise.all([...document.images].map((image) => {
+      image.loading = 'eager';
+      return image.decode();
+    }));
     window.scrollTo(0, 0);
   });
   await page.waitForTimeout(150);
