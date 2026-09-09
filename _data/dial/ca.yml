@@ -71,14 +71,14 @@ proof:
 level:
   kicker: "Dial Pro · Nivell estimat"
   heading: "Mira un nivell estimat entre dosis, segons la semivida."
-  body: "Dial traça un nivell estimat del medicament al llarg del temps a partir de les dosis registrades i de la semivida que mostra l’app. Canviï l’interval per revisar una setmana, un mes o sis mesos del seu historial."
+  body: "Dial traça un nivell estimat a partir de les dosis registrades i de la semivida que mostra l'app, per als injectables i unitats de dosi compatibles. Els comprimits no tenen gràfic de nivell: l'absorció oral varia massa entre persones. Revisa una setmana, un mes o sis mesos d'injeccions."
   boundary_lead: "És una estimació, i ho deixem clar."
   boundary_body: "El gràfic modela una corba de disminució estàndard a partir de les dosis que ha registrat. Mostra els seus patrons entre dosis. No és un nivell mesurat a la sang ni un suggeriment del que cal prendre després. Dial no calcula dosis. L’app explica el mètode sencer."
 
 logging:
   kicker: "Registre ràpid"
   heading: "Registra el medicament, la dosi i el lloc d’injecció en un sol formulari."
-  body: "Anoti medicament, quantitat, data, hora, lloc d'injecció i notes. Els valors recents omplen l'entrada següent. Vostè confirma cada camp. Dial coneix semaglutida (Ozempic, Wegovy), tirzepatida (Mounjaro, Zepbound), liraglutida, dulaglutida i exenatida amb les marques i presentacions que s'utilitzen al seu país, i accepta un medicament personalitzat si la seva recepta no hi surt."
+  body: "Anota medicament, quantitat, data, hora i notes. Les injeccions inclouen el lloc. Els comprimits com Rybelsus es registren sense lloc. Dial inclou semaglutida, tirzepatida, orforglipron, liraglutida, dulaglutida i exenatida, amb noms regionals. Afegeix un medicament personalitzat si falta."
   checklist:
     - "Editi una entrada quan alguna cosa canvia"
     - "Anoti el lloc d’injecció a cada dosi"
@@ -161,7 +161,7 @@ privacy:
       detail: "Zentsu no opera cap servidor que emmagatzemi o llegeixi els seus registres."
     - term: "Sincronització opcional"
       detail: "Amb iCloud activat, els registres principals fan servir la base CloudKit privada del teu compte d’Apple, no els nostres servidors."
-  body: "Els registres principals queden al dispositiu. Les entrades de pes i les fotos de progrés fan servir un magatzem local a part."
+  body: "Els registres de medicament, dosi, recordatori i subministrament es poden sincronitzar amb el teu iCloud si l'actives. El pes queda en un magatzem local separat, amb integració opcional amb Apple Health. Els fitxers de fotos de progrés queden al dispositiu."
   policy_link: "Llegeixi la política de privadesa de Dial"
   policy_url: /ca/dial/privacy/
 

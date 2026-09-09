@@ -71,14 +71,14 @@ proof:
 level:
   kicker: "Dial Pro · Szacowany poziom"
   heading: "Szacowany poziom między dawkami, według okresu półtrwania."
-  body: "Dial rysuje wykres szacowanego poziomu leku w czasie. Opiera się na zapisanych dawkach i okresie półtrwania z aplikacji. Zmieniają Państwo zakres, żeby zobaczyć tydzień, miesiąc albo sześć miesięcy własnej historii."
+  body: "Dial rysuje szacowany poziom z zapisanych dawek i okresu półtrwania w aplikacji, dla obsługiwanych leków wstrzykiwanych i jednostek dawki. Tabletki nie mają wykresu poziomu: wchłanianie doustne zbyt mocno różni się między osobami. Przejrzyj tydzień, miesiąc lub sześć miesięcy historii wstrzyknięć."
   boundary_lead: "Oszacowanie. Tak to nazywamy."
   boundary_body: "Wykres modeluje standardową krzywą zaniku z zapisanych dawek. Pokazuje Państwa własne wzorce między dawkami. To oszacowanie, nie zmierzony poziom we krwi i nie wskazówka, co przyjąć dalej. Dial nie oblicza dawek. Aplikacja opisuje metodę w całości."
 
 logging:
   kicker: "Szybki zapis"
   heading: "Zapisz lek, dawkę i miejsce wstrzyknięcia w jednym formularzu."
-  body: "Zapisują Państwo lek, ilość, datę, godzinę, miejsce wstrzyknięcia i notatki. Ostatnie wartości wypełniają kolejny wpis. Każde pole potwierdzają Państwo sami. Dial zna semaglutyd (Ozempic, Wegovy), tirzepatyd (Mounjaro), liraglutyd, dulaglutyd i eksenatyd pod nazwami handlowymi i nazwami opakowań używanymi w Polsce i przyjmuje własny lek, jeśli przepisanego nie ma na liście."
+  body: "Zapisz lek, ilość, datę, godzinę i notatki. Wstrzyknięcia obejmują miejsce. Tabletki takie jak Rybelsus zapisujesz bez miejsca. Dial wymienia semaglutyd, tirzepatyd, orforglipron, liraglutyd, dulaglutyd i eksenatyd pod nazwami regionalnymi. Dodaj własny lek, jeśli Twojego brakuje."
   checklist:
     - "Edytują Państwo wpis, gdy coś się zmieni"
     - "Miejsca wstrzyknięć są przy każdej dawce"
@@ -161,7 +161,7 @@ privacy:
       detail: "Zentsu nie prowadzi serwera, który przechowuje lub czyta twoje zapisy."
     - term: "Opcjonalna synchronizacja"
       detail: "Gdy włączysz iCloud, główne zapisy trafiają do prywatnej bazy CloudKit na twoim koncie Apple, nie na nasze serwery."
-  body: "Główne zapisy zostają na urządzeniu. Wpisy wagi i zdjęcia postępów mają osobny, wyłącznie lokalny zapis."
+  body: "Zapisy leków, dawek, przypomnień i zapasów mogą synchronizować się przez Twoje iCloud po włączeniu. Waga zostaje w osobnym lokalnym magazynie, z opcjonalnym połączeniem z Apple Health. Pliki zdjęć postępów zostają na urządzeniu."
   policy_link: "Polityka prywatności Dial"
   policy_url: /pl/dial/privacy/
 

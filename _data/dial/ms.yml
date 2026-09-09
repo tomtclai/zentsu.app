@@ -71,14 +71,14 @@ proof:
 level:
   kicker: "Dial Pro · Tahap anggaran"
   heading: "Lihat tahap anggaran antara dos, berdasarkan separuh hayat."
-  body: "Dial memaparkan tahap ubat anggaran mengikut garis masa, daripada dos yang direkod dan separuh hayat yang tertera dalam aplikasi. Tukar julat untuk melihat sejarah anda sendiri selama seminggu, sebulan atau enam bulan."
+  body: "Dial memaparkan tahap anggaran daripada dos yang direkod dan separuh hayat dalam apl, untuk suntikan dan unit dos yang disokong. Tablet tiada carta tahap: penyerapan oral terlalu berbeza antara orang. Semak sejarah suntikan seminggu, sebulan atau enam bulan."
   boundary_lead: "Ini anggaran. Kami nyatakan dengan jelas."
   boundary_body: "Carta memodelkan lengkung penurunan piawai daripada dos yang anda rekod. Yang kelihatan ialah corak anda sendiri antara dos. Ini anggaran, bukan tahap darah yang diukur, dan bukan cadangan dos seterusnya. Dial tidak mengira dos. Aplikasi menjelaskan kaedahnya sepenuhnya."
 
 logging:
   kicker: "Rekod pantas"
   heading: "Rekod ubat, dos dan tapak suntikan dalam satu borang."
-  body: "Rekod ubat, jumlah, tarikh, masa, tapak suntikan dan nota. Nilai terkini mengisi entri seterusnya. Anda masih sahkan setiap medan. Dial mengenali Semaglutide (Ozempic, Wegovy), tirzepatide (Mounjaro, Zepbound), liraglutide, dulaglutide dan exenatide mengikut nama jenama dan kemasan yang digunakan di negara anda, dan menerima ubat tersuai jika preskripsi anda tiada dalam senarai."
+  body: "Rekod ubat, jumlah, tarikh, masa dan nota. Suntikan disertakan tapak. Tablet seperti Rybelsus direkod tanpa tapak. Dial menyenaraikan semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide dan exenatide dengan nama serantau. Tambah ubat tersuai jika milik anda tiada."
   checklist:
     - "Edit entri apabila sesuatu berubah"
     - "Simpan tapak suntikan pada setiap dos"
@@ -161,7 +161,7 @@ privacy:
       detail: "Zentsu tidak mengendalikan pelayan yang menyimpan atau membaca rekod anda."
     - term: "Penyegerakan pilihan"
       detail: "Dengan iCloud dihidupkan, rekod teras menggunakan pangkalan data CloudKit peribadi pada Akaun Apple anda, bukan pelayan kami."
-  body: "Rekod teras kekal pada peranti. Entri berat dan foto perkembangan menggunakan storan setempat berasingan."
+  body: "Rekod ubat, dos, peringatan dan bekalan boleh disegerakkan melalui iCloud anda sendiri jika dihidupkan. Berat kekal dalam storan setempat berasingan, dengan integrasi Apple Health pilihan. Fail foto perkembangan kekal pada peranti."
   policy_link: "Baca dasar privasi Dial"
   policy_url: /ms/dial/privacy/
 

@@ -71,14 +71,14 @@ proof:
 level:
   kicker: "Dial Pro · Tahmini düzey"
   heading: "Dozlar arasında tahmini düzeyi gör, yarı ömre göre."
-  body: "Dial, kaydettiğiniz dozlardan ve uygulamada gösterilen yarı ömürden zaman içinde tahmini bir ilaç düzeyi çizer. Aralığı değiştirerek kendi geçmişinizin bir haftasını, bir ayını veya altı ayını incelersiniz."
+  body: "Dial, kaydettiğiniz dozlardan ve uygulamada gösterilen yarı ömürden, desteklenen enjekte edilebilirler ve doz birimleri için tahmini bir düzey çizer. Tabletlerin düzey grafiği yoktur: ağızdan emilim insanlar arasında fazla değişir. Bir hafta, bir ay veya altı aylık enjeksiyon geçmişine bakın."
   boundary_lead: "Bu bir tahmin. Bunu açıkça söylüyoruz."
   boundary_body: "Grafik, kaydettiğiniz dozlardan standart bir azalma eğrisi çizer. Dozlar arasındaki kendi örüntülerinizi gösterir. Ölçülmüş bir kan düzeyi değildir. Sonra ne alınacağına dair bir öneri de değildir. Dial doz hesaplamaz. Uygulama yöntemi baştan sona açıklar."
 
 logging:
   kicker: "Hızlı kayıt"
   heading: "İlacı, dozu ve enjeksiyon yerini tek formda kaydet."
-  body: "İlaç, miktar, tarih, saat, enjeksiyon yeri ve notları yazın. Son değerler bir sonraki kaydı doldurur. Her alanı siz onaylarsınız. Dial, semaglutid (Ozempic, Wegovy), tirzepatid (Mounjaro, Zepbound), liraglutid, dulaglutid ve eksenatidi ülkenizde kullanılan kutu adlarıyla tanır ve ilacınız listede yoksa adını kendiniz yazabilirsiniz."
+  body: "İlaç, miktar, tarih, saat ve notları yazın. Enjeksiyonlara yer de eklenir. Rybelsus gibi tabletler yer olmadan kaydedilir. Dial semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid ve eksenatidi bölgesel adlarla listeler. İlacınız yoksa özel bir ilaç ekleyin."
   checklist:
     - "Bir şey değişince kaydı düzenleyin"
     - "Her dozun enjeksiyon yerini kaydedin"
@@ -161,7 +161,7 @@ privacy:
       detail: "Zentsu senin kayıtlarını saklayan veya okuyan bir sunucu işletmez."
     - term: "İsteğe bağlı senkronizasyon"
       detail: "iCloud açıkken temel kayıtlar senin Apple hesabındaki özel CloudKit veritabanını kullanır, bizim sunucularımızı değil."
-  body: "Temel kayıtlar cihazda kalır. Kilo girdileri ve ilerleme fotoğrafları ayrı yerel depolama kullanır."
+  body: "İlaç, doz, anımsatıcı ve stok kayıtları açıldığında kendi iCloud'unuz üzerinden senkronize olabilir. Kilo ayrı yerel depoda kalır; isteğe bağlı Apple Health bağlantısı vardır. İlerleme fotoğrafı dosyaları cihazda kalır."
   policy_link: "Dial gizlilik politikasını okuyun"
   policy_url: /tr/dial/privacy/
 

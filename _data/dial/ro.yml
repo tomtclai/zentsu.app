@@ -71,14 +71,14 @@ proof:
 level:
   kicker: "Dial Pro · Nivel estimat"
   heading: "Vezi un nivel estimat între doze, după timpul de înjumătățire."
-  body: "Dial construiește un nivel estimat al medicamentului din dozele înregistrate și din timpul de înjumătățire afișat în aplicație. Schimbați intervalul ca să vedeți o săptămână, o lună sau șase luni din propriul istoric."
+  body: "Dial construiește un nivel estimat din dozele înregistrate și din timpul de înjumătățire afișat în aplicație, pentru injectabilele și unitățile de doză acceptate. Comprimatele nu au grafic de nivel: absorbția orală variază prea mult între oameni. Revizuiește o săptămână, o lună sau șase luni de injecții."
   boundary_lead: "Este o estimare. O spunem deschis."
   boundary_body: "Graficul construiește o curbă standard de scădere din dozele pe care le-ați înregistrat. Arată propriile intervale dintre doze. Este o estimare, nu un nivel măsurat în sânge. Nu este o sugestie despre ce să luați în continuare. Dial nu calculează doze. Aplicația explică metoda în detaliu."
 
 logging:
   kicker: "Înregistrare rapidă"
   heading: "Notează medicamentul, doza și locul de injecție într-un singur formular."
-  body: "Notați medicamentul, cantitatea, data, ora, locul de injecție și notele. Valorile recente completează următoarea înregistrare. Confirmați fiecare câmp. Dial recunoaște semaglutidă (Ozempic, Wegovy, Rybelsus), tirzepatidă (Mounjaro), liraglutidă (Saxenda, Victoza), dulaglutidă (Trulicity) și exenatidă sub denumirile de marcă și de cutie folosite în România, și acceptă un medicament personalizat dacă rețeta dumneavoastră nu este în listă."
+  body: "Notează medicamentul, cantitatea, data, ora și notele. Injecțiile includ locul. Comprimatele precum Rybelsus se înregistrează fără loc. Dial listează semaglutidă, tirzepatidă, orforglipron, liraglutidă, dulaglutidă și exenatidă cu denumiri regionale. Adaugă un medicament personalizat dacă al tău lipsește."
   checklist:
     - "Editați o înregistrare când se schimbă ceva"
     - "Păstrați locul de injecție la fiecare doză"
@@ -161,7 +161,7 @@ privacy:
       detail: "Zentsu nu operează niciun server care stochează sau citește înregistrările dumneavoastră."
     - term: "Sincronizare opțională"
       detail: "Cu iCloud pornit, înregistrările de bază folosesc baza CloudKit privată a contului tău Apple, nu serverele noastre."
-  body: "Înregistrările de bază rămân pe dispozitiv. Înregistrările de greutate și fotografiile de progres folosesc un depozit local separat."
+  body: "Înregistrările de medicament, doză, memento și stoc se pot sincroniza prin propriul tău iCloud dacă îl activezi. Greutatea rămâne într-un depozit local separat, cu integrare opțională Apple Health. Fișierele fotografiilor de progres rămân pe dispozitiv."
   policy_link: "Citiți politica de confidențialitate Dial"
   policy_url: /ro/dial/privacy/
 

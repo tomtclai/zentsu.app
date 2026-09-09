@@ -39,6 +39,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- Dial FAQ medication and dose-calculation answers now cover orforglipron, tablet logging such as Rybelsus, injectable-only estimated levels, and the input-only unit converter across every non-English FAQ locale, including a dedicated Norwegian FAQ block.
+- Dial landing copy for remaining locales now matches the English/German/French/Japanese/Korean models on tablet logging, missing tablet level curves, and privacy storage boundaries (optional private iCloud for core records; local weight and photos).
+- Thicken thin Dial support and privacy meta titles and descriptions so pages name Dial and state the GLP-1 / storage facts instead of one-line stubs.
 - Separate Dial landing pages for Mexico (`/es/dial/`, MXN) and Spain (`/es-es/dial/`, EUR), with explicit regional selector labels, reciprocal `es-MX`/`es-ES` hreflang, Mexico as the `es` catchall, and English as `x-default`. Both regions have self-canonicals and share Spanish screenshots, badges, support and privacy pages.
 - Remove automatic browser-language and saved-language redirects. Explicit links preserve query strings and fragments; Escape closes the picker and restores focus.
 - Clarify free iPhone logging versus Pro Watch logging and PDF/CSV export in English, Japanese, German, Korean, French and both Spanish landing pages. Add tablet logging without injection sites, tablet inventory and the absence of tablet level estimates. Preserve optional core-record iCloud sync and local weight/photo storage.

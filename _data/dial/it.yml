@@ -90,10 +90,7 @@ proof:
 level:
   kicker: Dial Pro · Livello stimato
   heading: Vedi un livello stimato tra le dosi, in base all'emivita.
-  body:
-    Dial traccia un livello stimato del farmaco nel tempo dalle dosi registrate e dal
-    valore di emivita mostrato nell'app. Cambi l'intervallo per rivedere una settimana,
-    un mese o sei mesi della sua cronologia.
+  body: "Dial traccia un livello stimato dalle dosi registrate e dall'emivita mostrata nell'app, per gli iniettabili e le unità di dose supportati. Le compresse non hanno un grafico di livello: l'assorbimento orale varia troppo tra le persone. Rivedi una settimana, un mese o sei mesi di iniezioni."
   boundary_lead: È una stima. Lo diciamo chiaro.
   boundary_body:
     Il grafico modella una curva di decadimento standard dalle dosi che ha registrato.
@@ -104,13 +101,7 @@ level:
 logging:
   kicker: Registrazione rapida
   heading: Registra farmaco, dose e sito di iniezione in un solo modulo.
-  body:
-    Annoti farmaco, quantità, data, ora, sito di iniezione e note. I valori recenti
-    precompilano la voce successiva. Confermi ogni campo. Dial conosce semaglutide
-    (Ozempic, Wegovy, Rybelsus), tirzepatide (Mounjaro), liraglutide (Saxenda,
-    Victoza), dulaglutide (Trulicity) ed exenatide con i nomi di marca e di
-    confezione usati in Italia, e accetta un farmaco personalizzato se il suo non è
-    in elenco.
+  body: "Annota farmaco, quantità, data, ora e note. Le iniezioni includono il sito. Le compresse come Rybelsus si registrano senza sito. Dial elenca semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide ed exenatide con i nomi regionali. Aggiungi un farmaco personalizzato se manca il tuo."
   checklist:
     - Modifichi una voce quando qualcosa cambia
     - Tenga i siti di iniezione collegati a ogni dose
@@ -214,9 +205,7 @@ privacy:
       detail:
         Con iCloud attivo, i registri principali usano il database CloudKit privato del
         tuo Account Apple, non i nostri server.
-  body:
-    I registri principali restano sul dispositivo. Le voci di peso e le foto dei progressi
-    usano un archivio locale separato.
+  body: "Farmaci, dosi, promemoria e scorte possono sincronizzarsi tramite il tuo iCloud se lo attivi. Il peso resta in un archivio locale separato, con integrazione opzionale ad Apple Health. I file delle foto dei progressi restano sul dispositivo."
   policy_link: Legga l'informativa sulla privacy di Dial
   policy_url: /it/dial/privacy/
 

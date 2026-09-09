@@ -71,14 +71,14 @@ proof:
 level:
   kicker: "Dial Pro · Uppskattad nivå"
   heading: "Se en uppskattad nivå mellan doserna, utifrån halveringstiden."
-  body: "Dial ritar en uppskattad läkemedelsnivå över tid från dina registrerade doser och halveringstiden appen visar. Byt intervall för att se en vecka, en månad eller sex månader av din egen historik."
+  body: "Dial ritar en uppskattad nivå från dina registrerade doser och halveringstiden appen visar, för stödda injektionsläkemedel och dosenheter. Tabletterna har ingen nivågraf: upptaget via munnen varierar för mycket mellan människor. Se en vecka, en månad eller sex månader av injektionshistoriken."
   boundary_lead: "Vi kallar den en uppskattning."
   boundary_body: "Diagrammet modellerar en vanlig avklingningskurva från doserna du har registrerat. Det visar dina egna mönster mellan doser. Det är en uppskattning, inte en uppmätt blodnivå, och inte ett förslag på vad du ska ta härnäst. Dial beräknar inte doser. Appen förklarar hela metoden."
 
 logging:
   kicker: "Snabb registrering"
   heading: "Registrera läkemedel, dos och injektionsställe i ett formulär."
-  body: "Anteckna läkemedel, mängd, datum, tid, injektionsställe och anteckningar. Senaste värdena fyller i nästa post. Du bekräftar fortfarande varje fält. Dial känner semaglutid (Ozempic, Wegovy), tirzepatid (Mounjaro), liraglutid (Saxenda, Victoza), dulaglutid och exenatid under de varumärkes- och förpackningsnamn som används i Sverige, och tar ett eget läkemedel om det du har på recept inte finns i listan."
+  body: "Anteckna läkemedel, mängd, datum, tid och anteckningar. Injektioner inkluderar ett ställe. Tabletterna som Rybelsus förs utan ställe. Dial listar semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid och exenatid med regionala namn. Lägg till ett eget läkemedel om ditt saknas."
   checklist:
     - "Redigera en post när något ändras"
     - "Behåll injektionsställen kopplade till varje dos"
@@ -161,7 +161,7 @@ privacy:
       detail: "Zentsu driver ingen server som lagrar eller läser dina poster."
     - term: "Valfri synkronisering"
       detail: "Med iCloud använder kärnposterna den privata CloudKit-databasen på ditt Apple-konto, inte våra servrar."
-  body: "Kärnposterna stannar på din enhet. Viktposter och foton på framsteg använder en separat, enbart lokal lagring."
+  body: "Poster för läkemedel, dos, påminnelse och lager kan synkas via din egen iCloud om du slår på det. Vikten stannar i en separat lokal lagring, med valfri Apple Health-koppling. Foton på framsteg stannar på enheten."
   policy_link: "Läs Dial-integritetspolicyn"
   policy_url: /sv/dial/privacy/
 

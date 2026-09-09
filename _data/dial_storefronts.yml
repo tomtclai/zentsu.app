@@ -5,136 +5,170 @@
 
 en:
   territory: USA
+  country: us
   note: "Subscriptions renew until canceled. Prices are from the U.S. App Store. Your Apple Account region determines checkout prices."
 
 es:
   territory: MEX
+  country: mx
   note: "Las suscripciones se renuevan hasta que se cancelen. Los precios son del App Store de México. La región de tu cuenta de Apple determina el precio al comprar."
 
 de:
   territory: DEU
+  country: de
   note: "Abonnements verlängern sich, bis sie gekündigt werden. Preise stammen aus dem App Store für Deutschland. Die Region deines Apple-Accounts bestimmt den Kaufpreis."
 
 fr:
   territory: FRA
+  country: fr
   note: "Les abonnements se renouvellent jusqu'à résiliation. Les prix viennent de l'App Store France. La région de ton compte Apple détermine le prix à l'achat."
 
 ja:
   territory: JPN
+  country: jp
   note: "サブスクリプションは解約するまで更新されます。価格は日本のApp Storeの価格です。購入価格はApple Accountの国や地域で決まります。"
 
 it:
   territory: ITA
+  country: it
   note: "Gli abbonamenti si rinnovano fino alla disdetta. I prezzi sono quelli dell'App Store Italia."
 
 nl:
   territory: NLD
+  country: nl
   note: "Abonnementen verlengen tot ze worden opgezegd. Prijzen komen uit de Nederlandse App Store."
 
 pt:
   territory: BRA
+  country: br
   note: "As assinaturas renovam até serem canceladas. Os preços são da App Store do Brasil."
 
 pl:
   territory: POL
+  country: pl
   note: "Subskrypcje odnawiają się do anulowania. Ceny pochodzą z polskiego App Store."
 
 ru:
   territory: RUS
+  country: ru
   note: "Подписки продлеваются, пока их не отменят. Цены из App Store для России."
 
 zh:
   territory: CHN
+  country: cn
   note: "订阅会续订直至取消。价格来自中国大陆 App Store。"
 
 zh-hant:
   territory: TWN
+  country: tw
   note: "訂閱會續訂直至取消。價格來自台灣 App Store。"
 
 ko:
   territory: KOR
+  country: kr
   note: "구독은 해지할 때까지 갱신됩니다. 가격은 한국 App Store 기준입니다. 구매 가격은 Apple 계정의 국가 또는 지역에 따라 정해집니다."
 
 ar:
   territory: SAU
+  country: sa
   note: "تتجدد الاشتراكات حتى الإلغاء. الأسعار من App Store في السعودية."
 
 tr:
   territory: TUR
+  country: tr
   note: "Abonelikler iptal edilene dek yenilenir. Fiyatlar Türkiye App Store fiyatlarıdır."
 
 hi:
   territory: IND
+  country: in
   note: "सदस्यता रद्द होने तक नवीकृत होती है। कीमतें भारत के App Store की हैं।"
 
 id:
   territory: IDN
+  country: id
   note: "Langganan diperbarui sampai dibatalkan. Harga dari App Store Indonesia."
 
 th:
   territory: THA
+  country: th
   note: "การสมัครสมาชิกต่ออายุจนกว่าจะยกเลิก ราคาจาก App Store ประเทศไทย"
 
 vi:
   territory: VNM
+  country: vn
   note: "Thuê bao gia hạn đến khi hủy. Giá lấy từ App Store Việt Nam."
 
 ms:
   territory: MYS
+  country: my
   note: "Langganan diperbaharui sehingga dibatalkan. Harga dari App Store Malaysia."
 
 uk:
   territory: UKR
+  country: ua
   note: "Підписки поновлюються, доки їх не скасують. Ціни з App Store для України."
 
 he:
   territory: ISR
+  country: il
   note: "המנויים מתחדשים עד הביטול. המחירים הם ממחיר App Store בישראל."
 
 cs:
   territory: CZE
+  country: cz
   note: "Předplatné se obnovuje, dokud ho nezrušíte. Ceny jsou z App Store pro Česko."
 
 sk:
   territory: SVK
+  country: sk
   note: "Predplatné sa obnovuje, kým ho nezrušíte. Ceny sú z App Store pre Slovensko."
 
 hu:
   territory: HUN
+  country: hu
   note: "Az előfizetések a lemondásig megújulnak. Az árak a magyar App Store árai."
 
 ro:
   territory: ROU
+  country: ro
   note: "Abonamentele se reînnoiesc până la anulare. Prețurile sunt din App Store România."
 
 hr:
   territory: HRV
+  country: hr
   note: "Pretplate se obnavljaju dok ih ne otkažete. Cijene su iz hrvatskog App Storea."
 
 el:
   territory: GRC
+  country: gr
   note: "Οι συνδρομές ανανεώνονται μέχρι την ακύρωση. Οι τιμές είναι από το App Store Ελλάδας."
 
 da:
   territory: DNK
+  country: dk
   note: "Abonnementer fornyes, indtil de opsiges. Priserne er fra den danske App Store."
 
 sv:
   territory: SWE
+  country: se
   note: "Prenumerationer förnyas tills de sägs upp. Priserna är från svenska App Store."
 
 "no":
   territory: NOR
+  country: "no"
   note: "Abonnementer fornyes til de sies opp. Prisene er fra den norske App Store."
 
 fi:
   territory: FIN
+  country: fi
   note: "Tilaukset uusiutuvat, kunnes ne perutaan. Hinnat ovat Suomen App Storen hintoja."
 
 ca:
   territory: ESP
+  country: es
   note: "Les subscripcions es renoven fins que es cancel·len. Els preus són de l'App Store d'Espanya."
 
 es-es:
   territory: ESP
+  country: es
   note: "Las suscripciones se renuevan hasta que las canceles. Precios del App Store de España. El país o región de tu cuenta de Apple determina el precio al comprar."

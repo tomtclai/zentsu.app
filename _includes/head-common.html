@@ -41,7 +41,7 @@ hand-pasted into each page: charset/viewport, icons, fonts, the shared styleshee
   '%s' }}" /> {%- endif %} <script src="/flags.js?v={{ site.time | date: '%s' }}"></script> {%-
   unless seo_external %} <title>{{ page.title | escape }}
 </title>
-<meta name="description" content="{{ page.description }}" />
+<meta name="description" content="{{ page.description | escape }}" />
 <link rel="canonical" href="{{ canonical }}" />
 {%- assign alternates = site.data.alternates[page.alternate_group] -%}
 {%- if alternates %}
@@ -57,7 +57,7 @@ hand-pasted into each page: charset/viewport, icons, fonts, the shared styleshee
 <meta property="og:type" content="{{ og_type }}" />
 <meta property="og:site_name" content="{{ og_site }}" />
 <meta property="og:title" content="{{ page.title | escape }}" />
-<meta property="og:description" content="{{ og_desc }}" />
+<meta property="og:description" content="{{ og_desc | escape }}" />
 <meta property="og:url" content="{{ canonical }}" />
 {%- if page.lang %}
 <meta property="og:locale" content="{{ site.data.i18n[page.lang].og_locale }}" />
@@ -66,9 +66,9 @@ hand-pasted into each page: charset/viewport, icons, fonts, the shared styleshee
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:type" content="image/png" />
-<meta property="og:image:alt" content="{{ og_image_alt }}" />
+<meta property="og:image:alt" content="{{ og_image_alt | escape }}" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="{{ page.title | escape }}" />
-<meta name="twitter:description" content="{{ twitter_desc }}" />
+<meta name="twitter:description" content="{{ twitter_desc | escape }}" />
 <meta name="twitter:image" content="{{ og_image }}" />
 {%- endunless %}

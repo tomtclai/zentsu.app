@@ -71,14 +71,14 @@ proof:
 level:
   kicker: "Dial Pro · Odhadovaná hladina"
   heading: "Odhadovaná hladina medzi dávkami podľa polčasu."
-  body: "Dial vykreslí odhadovanú hladinu lieku v čase zo zaznamenaných dávok a hodnoty polčasu v aplikácii. Zmeňte rozsah a prezrite si týždeň, mesiac alebo šesť mesiacov vlastnej histórie."
+  body: "Dial vykreslí odhadovanú hladinu zo zaznamenaných dávok a polčasu v aplikácii, pre podporované injekčné lieky a jednotky dávky. Tablety nemajú graf hladiny: vstrebávanie ústami sa medzi ľuďmi príliš líši. Prezri týždeň, mesiac alebo šesť mesiacov histórie injekcií."
   boundary_lead: "Je to odhad. Tak ho aj označujeme."
   boundary_body: "Graf modeluje štandardnú krivku poklesu z dávok, ktoré ste zaznamenali. Ukazuje, ako u vás dávky v čase prebiehajú. Nie je to nameraná hladina v krvi ani návrh, čo užiť ďalej. Dial nepočíta dávky. Metódu vysvetľuje priamo v aplikácii."
 
 logging:
   kicker: "Rýchly záznam"
   heading: "Zapíš liek, dávku a miesto vpichu v jednom formulári."
-  body: "Zapíšte liek, množstvo, dátum, čas, miesto vpichu a poznámky. Nedávne hodnoty predvyplnia ďalší záznam. Každé pole potvrdzujete sami. Dial pozná semaglutid (Ozempic, Wegovy), tirzepatid (Mounjaro), liraglutid, dulaglutid a exenatid pod obchodnými názvami a názvami balení používanými na Slovensku a prijme vlastný liek, ak predpísaný na zozname nie je."
+  body: "Zapíš liek, množstvo, dátum, čas a poznámky. Pri injekciách patrí aj miesto vpichu. Tablety ako Rybelsus sa zapisujú bez miesta. Dial uvádza semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid a exenatid pod miestnymi názvami. Ak chýba tvoj liek, pridaj vlastný."
   checklist:
     - "Upraviť záznam, keď sa niečo zmení"
     - "Miesto vpichu pri každej dávke"
@@ -161,7 +161,7 @@ privacy:
       detail: "Zentsu neprevádzkuje žiadny server, ktorý by ukladal alebo čítal tvoje záznamy."
     - term: "Voliteľná synchronizácia"
       detail: "Keď zapneš iCloud, hlavné záznamy idú do súkromnej databázy CloudKit na tvojom Apple Account, nie na naše servery."
-  body: "Hlavné záznamy ostanú v zariadení. Záznamy hmotnosti a fotky pokroku používajú samostatné, len miestne úložisko."
+  body: "Záznamy liekov, dávok, pripomienok a zásob sa pri zapnutí môžu synchronizovať cez tvoje iCloud. Hmotnosť ostáva v oddelenom miestnom úložisku, s voliteľným prepojením na Apple Health. Súbory fotiek pokroku ostávajú v zariadení."
   policy_link: "Prečítať zásady ochrany osobných údajov Dial"
   policy_url: /sk/dial/privacy/
 

@@ -71,14 +71,14 @@ proof:
 level:
   kicker: "Dial Pro · Tingkat perkiraan"
   heading: "Lihat tingkat perkiraan antar dosis, berdasarkan waktu paruh."
-  body: "Dial menampilkan tingkat obat perkiraan seiring waktu dari dosis tercatat dan waktu paruh yang tertera di aplikasi. Ubah rentang untuk melihat riwayat Anda selama seminggu, sebulan, atau enam bulan."
+  body: "Dial menampilkan tingkat perkiraan dari dosis tercatat dan waktu paruh di aplikasi, untuk suntikan dan satuan dosis yang didukung. Tablet tidak punya grafik tingkat: penyerapan oral terlalu berbeda antarorang. Tinjau riwayat suntikan satu minggu, satu bulan, atau enam bulan."
   boundary_lead: "Ini perkiraan. Kami sampaikan itu."
   boundary_body: "Grafik memodelkan kurva peluruhan standar dari dosis yang Anda catat. Yang tampil adalah pola Anda sendiri antar dosis. Ini perkiraan, bukan kadar darah terukur, dan bukan saran dosis berikutnya. Dial tidak menghitung dosis. Aplikasi menjelaskan metodenya secara lengkap."
 
 logging:
   kicker: "Pencatatan cepat"
   heading: "Catat obat, dosis, dan lokasi suntikan dalam satu formulir."
-  body: "Tuliskan obat, jumlah, tanggal, waktu, lokasi suntikan, dan catatan. Nilai terbaru mengisi entri berikutnya. Setiap bidang tetap Anda konfirmasi. Dial mengenali Semaglutide (Ozempic, Wegovy), tirzepatide (Mounjaro, Zepbound), liraglutide, dulaglutide, dan exenatide dengan nama merek dan kemasan yang dipakai di negara Anda, dan menerima obat kustom jika resep Anda tidak ada dalam daftar."
+  body: "Catat obat, jumlah, tanggal, waktu, dan catatan. Suntikan menyertakan lokasi. Tablet seperti Rybelsus dicatat tanpa lokasi. Dial mencantumkan semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide, dan exenatide dengan nama regional. Tambahkan obat kustom jika milik Anda hilang."
   checklist:
     - "Sunting entri ketika sesuatu berubah"
     - "Simpan lokasi suntikan di setiap dosis"
@@ -161,7 +161,7 @@ privacy:
       detail: "Zentsu tidak mengoperasikan server yang menyimpan atau membaca catatan Anda."
     - term: "Sinkronisasi opsional"
       detail: "Dengan iCloud menyala, catatan inti memakai basis data CloudKit pribadi pada Akun Apple Anda, bukan server kami."
-  body: "Catatan inti tetap di perangkat. Entri berat dan foto perkembangan memakai penyimpanan lokal terpisah."
+  body: "Catatan obat, dosis, pengingat, dan stok dapat disinkronkan lewat iCloud Anda sendiri jika diaktifkan. Berat tetap di penyimpanan lokal terpisah, dengan integrasi Apple Health opsional. Berkas foto perkembangan tetap di perangkat."
   policy_link: "Baca kebijakan privasi Dial"
   policy_url: /id/dial/privacy/
 

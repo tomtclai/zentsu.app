@@ -71,14 +71,14 @@ proof:
 level:
   kicker: "Dial Pro · Mức ước tính"
   heading: "Xem mức ước tính giữa các liều, dựa trên thời gian bán hủy."
-  body: "Dial vẽ biểu đồ mức thuốc ước tính theo thời gian, từ các liều đã ghi và thời gian bán hủy hiện trong ứng dụng. Chọn khoảng thời gian để xem lịch sử một tuần, một tháng hoặc sáu tháng của bạn."
+  body: "Dial vẽ mức ước tính từ các liều đã ghi và thời gian bán hủy trong ứng dụng, cho thuốc tiêm và đơn vị liều được hỗ trợ. Viên nén không có biểu đồ mức: hấp thu đường uống khác nhau quá nhiều giữa mọi người. Xem một tuần, một tháng hoặc sáu tháng lịch sử tiêm."
   boundary_lead: "Đây là ước tính. Chúng tôi ghi rõ điều đó."
   boundary_body: "Biểu đồ vẽ đường cong suy giảm chuẩn từ các liều bạn đã ghi. Nó cho thấy xu hướng của bạn giữa các liều. Đó là ước tính, không phải mức máu đo được, cũng không phải gợi ý liều tiếp theo. Dial không tính liều. Ứng dụng giải thích đầy đủ cách ước tính."
 
 logging:
   kicker: "Ghi nhanh"
   heading: "Ghi thuốc, liều và vị trí tiêm trong một biểu mẫu."
-  body: "Ghi thuốc, lượng, ngày, giờ, vị trí tiêm và ghi chú. Mục tiếp theo nhớ giá trị vừa dùng. Bạn vẫn xác nhận từng trường. Dial biết Semaglutide (Ozempic, Wegovy), tirzepatide (Mounjaro, Zepbound), liraglutide, dulaglutide và exenatide theo tên thương hiệu và tên trên hộp thuốc bán ở nước bạn, và nhận tên thuốc riêng nếu đơn thuốc của bạn không có trong danh sách."
+  body: "Ghi thuốc, lượng, ngày, giờ và ghi chú. Mũi tiêm kèm vị trí. Viên nén như Rybelsus ghi không cần vị trí. Dial liệt kê semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide và exenatide theo tên khu vực. Thêm thuốc tùy chỉnh nếu thiếu thuốc của bạn."
   checklist:
     - "Sửa mục khi có thay đổi"
     - "Mỗi liều gắn với một vị trí tiêm"
@@ -161,7 +161,7 @@ privacy:
       detail: "Zentsu không vận hành máy chủ lưu hoặc đọc bản ghi của bạn."
     - term: "Đồng bộ tùy chọn"
       detail: "Khi bật iCloud, bản ghi chính dùng cơ sở dữ liệu CloudKit riêng trên Tài khoản Apple của bạn, không phải máy chủ của chúng tôi."
-  body: "Bản ghi chính ở lại trên máy. Mục cân nặng và ảnh tiến triển dùng kho lưu trữ cục bộ riêng."
+  body: "Bản ghi thuốc, liều, nhắc nhở và tồn kho có thể đồng bộ qua iCloud của bạn khi bật. Cân nặng ở kho cục bộ riêng, có thể nối Apple Health. Tệp ảnh tiến triển ở lại trên máy."
   policy_link: "Đọc chính sách quyền riêng tư Dial"
   policy_url: /vi/dial/privacy/
 

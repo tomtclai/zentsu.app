@@ -71,14 +71,14 @@ proof:
 level:
   kicker: "Dial Pro · Becsült szint"
   heading: "Nézd a becsült szintet az adagok között, a felezési idő alapján."
-  body: "A Dial a rögzített adagokból és az alkalmazásban látható felezési időből rajzol becsült gyógyszerszintet. Váltson időtartományt, ha egy hetet, egy hónapot vagy hat hónapot szeretne látni a saját előzményéből."
+  body: "A Dial a rögzített adagokból és az alkalmazásban látható felezési időből rajzol becsült szintet a támogatott injekciós készítményekhez és adagolt egységekhez. A tablettáknak nincs szintgrafikonjuk: a szájon át történő felszívódás emberek között túlzottan eltér. Nézze meg egy hét, egy hónap vagy hat hónap injekciós előzményét."
   boundary_lead: "Ez becslés, és ezt jelezzük is."
   boundary_body: "A grafikon standard lecsengési görbét modellez a rögzített adagokból. Az adagok között a saját mintázatait mutatja. Nem mért vérszint, és nem javaslat a következő adagra. A Dial nem számol adagot. Az alkalmazás részletesen elmagyarázza a módszert."
 
 logging:
   kicker: "Gyors rögzítés"
   heading: "Rögzítsd a gyógyszert, az adagot és az injekcióhelyet egy űrlapon."
-  body: "Írja be a gyógyszert, mennyiséget, dátumot, időt, injekcióhelyet és a jegyzeteket. A legutóbbi értékek kitöltik a következő bejegyzést. Minden mezőt maga erősít meg. A Dial ismeri a szemaglutidot (Ozempic, Wegovy), tirzepatidot (Mounjaro), liraglutidot, dulaglutidot és exenatidot a Magyarországon használt márka- és csomagolási néven, és egyéni gyógyszerként veszi fel, ha a felírt gyógyszer nincs a listán."
+  body: "Írja be a gyógyszert, mennyiséget, dátumot, időt és a jegyzeteket. Az injekcióknál a hely is szerepel. A Rybelsushoz hasonló tabletták hely nélkül rögzülnek. A Dial a szemaglutidot, tirzepatidot, orforglipront, liraglutidot, dulaglutidot és exenatidot regionális neveken listázza. Ha hiányzik a tiéd, adj hozzá egyénit."
   checklist:
     - "Szerkesszen bejegyzést, ha valami változik"
     - "Írja az injekcióhelyet minden adaghoz"
@@ -161,7 +161,7 @@ privacy:
       detail: "A Zentsu nem üzemeltet szervert, amely tárolná vagy olvasná a bejegyzéseidet."
     - term: "Választható szinkronizálás"
       detail: "Ha az iCloud be van kapcsolva, az alapbejegyzések az Apple-fiókod privát CloudKit-adatbázisát használják, nem a szervereinket."
-  body: "Az alapbejegyzések a készüléken maradnak. A testsúlybejegyzések és a haladási fotók külön helyi tárolót használnak."
+  body: "A gyógyszer-, adag-, emlékeztető- és készletbejegyzések az saját iCloudodon keresztül szinkronizálhatók, ha bekapcsolod. A testsúly külön helyi tárolóban marad, opcionális Apple Health kapcsolattal. A haladási fotófájlok a készüléken maradnak."
   policy_link: "Olvassa el a Dial adatvédelmi szabályzatát"
   policy_url: /hu/dial/privacy/
 

@@ -90,10 +90,7 @@ proof:
 level:
   kicker: Dial Pro · Geschatte spiegel
   heading: Bekijk een geschatte spiegel tussen doses, op basis van de halfwaardetijd.
-  body:
-    Dial toont een geschatte spiegel in de tijd op basis van de doses die u vastlegde
-    en de halfwaardetijd in de app. Wijzig het bereik om een week, maand of zes maanden
-    van uw eigen historie te bekijken.
+  body: "Dial toont een geschatte spiegel op basis van de doses die u vastlegde en de halfwaardetijd in de app, voor ondersteunde injectables en doseereenheden. Tabletten hebben geen spiegelgrafiek: orale opname verschilt te sterk tussen mensen. Bekijk een week, een maand of zes maanden injectiegeschiedenis."
   boundary_lead: Het blijft een schatting.
   boundary_body:
     De grafiek modelleert een standaard afnamecurve uit de doses die u vastlegde.
@@ -103,12 +100,7 @@ level:
 logging:
   kicker: Snel vastleggen
   heading: Leg medicijn, dosis en injectieplaats vast in één formulier.
-  body:
-    Noteer medicijn, hoeveelheid, datum, tijd, injectieplaats en notities. Recente
-    waarden vullen de volgende invoer. U bevestigt elk veld. Dial kent semaglutide
-    (Ozempic, Wegovy), tirzepatide (Mounjaro, Zepbound), liraglutide, dulaglutide en
-    exenatide onder de merk- en verpakkingsnamen die in uw land gangbaar zijn, en
-    neemt een eigen medicijn op als het uwe er niet bij staat.
+  body: "Noteer medicijn, hoeveelheid, datum, tijd en notities. Injecties bevatten een plaats. Tabletten zoals Rybelsus leg je vast zonder plaats. Dial toont semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide en exenatide met regionale namen. Voeg een eigen medicijn toe als het jouwe ontbreekt."
   checklist:
     - Een invoer bewerken als iets verandert
     - Injectieplaatsen koppelen aan elke dosis
@@ -212,9 +204,7 @@ privacy:
       detail:
         Met iCloud gebruiken de kerndata de privé-CloudKit-database op je Apple Account,
         niet onze servers.
-  body:
-    Kerndata blijven op je apparaat. Gewicht en voortgangsfoto's staan in een aparte,
-    alleen lokale opslag.
+  body: "Medicatie-, dosis-, herinnerings- en voorraadgegevens kunnen via je eigen iCloud synchroniseren als je dat aanzet. Gewicht blijft in een aparte lokale opslag, met optionele Apple Health-koppeling. Voortgangsfoto's blijven op je apparaat."
   policy_link: Het Dial-privacybeleid lezen
   policy_url: /nl/dial/privacy/
 

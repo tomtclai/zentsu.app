@@ -71,14 +71,14 @@ proof:
 level:
   kicker: "Dial Pro · Arvioitu taso"
   heading: "Näe arvioitu taso annosten välillä, puoliintumisajan perusteella."
-  body: "Dial piirtää arvioidun lääketason ajan mittaan kirjaamistasi annoksista ja sovelluksessa näytetystä puoliintumisajasta. Vaihda aikaväliä, niin näet viikon, kuukauden tai kuusi kuukautta omasta historiastasi."
+  body: "Dial piirtää arvioidun tason kirjaamistasi annoksista ja sovelluksessa näytetystä puoliintumisajasta tuetuille injektiolääkkeille ja annosyksiköille. Tableteilla ei ole tasokaaviota: suun kautta imeytyminen vaihtelee liikaa ihmisten välillä. Tarkastele viikon, kuukauden tai kuuden kuukauden pistoshistoriaa."
   boundary_lead: "Se on arvio, ja kerromme sen suoraan."
   boundary_body: "Kaavio mallintaa tavanomaisen hajoamiskäyrän kirjaamistasi annoksista. Se näyttää omat kuviosi annosten välillä. Se ei ole mitattu veripitoisuus eikä ehdotus seuraavasta annoksesta. Dial ei laske annoksia. Sovellus selittää menetelmän kokonaan."
 
 logging:
   kicker: "Nopea kirjaus"
   heading: "Kirjaa lääke, annos ja pistoskohta yhdessä lomakkeessa."
-  body: "Kirjaa lääke, määrä, päivä, aika, pistoskohta ja muistiinpanot. Edelliset arvot esitäytetään seuraavaan merkintään. Vahvistat jokaisen kentän itse. Dial tunnistaa semaglutidin (Ozempic, Wegovy), tirtsepatidin (Mounjaro), liraglutidin (Saxenda, Victoza), dulaglutidin ja eksenatidin Suomessa käytetyillä kauppa- ja pakkausnimillä, ja ottaa oman lääkkeen, jos reseptissäsi oleva lääke ei ole listalla."
+  body: "Kirjaa lääke, määrä, päivä, aika ja muistiinpanot. Pistoksissa mukana on pistoskohta. Tabletit kuten Rybelsus kirjataan ilman kohtaa. Dial listaa semaglutidin, tirtsepatidin, orforglipronin, liraglutidin, dulaglutidin ja eksenatidin alueellisilla nimillä. Lisää oma lääke, jos puuttuu."
   checklist:
     - "Muokkaa merkintää, kun jokin muuttuu"
     - "Pistoskohta tallentuu jokaiseen annokseen"
@@ -161,7 +161,7 @@ privacy:
       detail: "Zentsu ei ylläpidä palvelinta, joka tallentaa tai lukee merkintäsi."
     - term: "Valinnainen synkronointi"
       detail: "Kun iCloud on päällä, ydintiedot käyttävät yksityistä CloudKit-tietokantaa Apple-tililläsi, eivät meidän palvelimiamme."
-  body: "Ydintiedot jäävät laitteelle. Painomerkinnät ja edistymiskuvat käyttävät erillistä, vain paikallista tallennusta."
+  body: "Lääke-, annos-, muistutus- ja varastotiedot voivat synkronoitua oman iCloudisi kautta, jos otat sen käyttöön. Paino jää erilliseen paikalliseen tallennukseen, ja Apple Health -kytkentä on valinnainen. Edistymiskuvatiedostot jäävät laitteelle."
   policy_link: "Lue Dialin tietosuojakäytäntö"
   policy_url: /fi/dial/privacy/
 

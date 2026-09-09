@@ -209,10 +209,9 @@ check(
 );
 check(
   dialEnglish.includes('"@type": "Offer"') &&
-    dialEnglish.includes('"name": "Lifetime"') &&
-    dialEnglish.includes('"name": "Annual"') &&
-    dialEnglish.includes('"name": "Monthly"'),
-  'The English Dial page schema must list Lifetime, Annual, and Monthly offers',
+    dialEnglish.includes('"price": 0') &&
+    !dialEnglish.includes('"name": "Lifetime"'),
+  'The English Dial page schema must describe the app as a single free download, not list Pro plans as app offers',
 );
 check(!dialEnglish.includes('"@type": "AggregateOffer"'), 'Dial schema must not use AggregateOffer');
 check(
@@ -283,16 +282,12 @@ for (const [lang, route] of Object.entries(dialRoutes)) {
     `${route} schema is missing priceCurrency ${prices.currency}`,
   );
   check(
-    html.includes(`"price": "${prices.lifetime}"`) &&
-      html.includes(`"price": "${prices.annual}"`) &&
-      html.includes(`"price": "${prices.monthly}"`),
-    `${route} schema is missing one or more plan prices`,
+    html.includes('"price": 0') && !html.includes(`"price": "${prices.lifetime}"`),
+    `${route} schema must carry only the free download offer`,
   );
   check(
-    html.includes('"name": "Lifetime"') &&
-      html.includes('"name": "Annual"') &&
-      html.includes('"name": "Monthly"'),
-    `${route} schema is missing named Offer entries`,
+    html.includes(`"sameAs": ["https://apps.apple.com/${storefront.country}/app/id6789408903"]`),
+    `${route} schema sameAs must point at the ${storefront.country} App Store listing`,
   );
   if (lang !== 'en') {
     check(!html.includes('Prices shown are U.S. prices'), `${route} still claims U.S. prices`);

@@ -61,6 +61,6 @@ If you realize you forgot to log a dose you actually took, edit History and add 
 
 Medication and dose records stay on your device unless you turn on iCloud in Dial. With iCloud enabled, core records can sync through the private CloudKit database tied to your Apple Account, not to Zentsu servers. We run no usage analytics on how you use the app. Read the full breakdown in the [Dial privacy policy](/dial/privacy/).
 
-A clean log turns an anxious miss into a factual update: last dose, amount, days late, and any symptoms you already tracked. [Dial](/dial/) is built for that record. What to do about the missed injection is between you, your prescriber, and the label.
+A clean log turns an anxious miss into a factual update: last dose, amount, days late, and any symptoms you already tracked. The [Dial product page](/dial/) explains the log; [Dial on the App Store](https://apps.apple.com/us/app/id6789408903) is the download. What to do about the missed injection is between you, your prescriber, and the label.
 
 Ozempic, Wegovy, Mounjaro, and Zepbound are trademarks of their respective owners. Zentsu is not affiliated with any pharmaceutical company.

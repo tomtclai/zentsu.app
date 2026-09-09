@@ -79,6 +79,6 @@ Set a reminder the day before to skim History for missing rows. Generate the PDF
 
 If you track supply inventory in Dial, lot numbers and expiration dates can help when the visit covers pen shortages or travel planning. Those fields are optional, but they save pharmacy callbacks later.
 
-For a GLP-1 log that stays private until you share it, with a PDF built for clinic handoffs, see [Dial on the App Store](/dial/). We format the record. Your prescriber and the label govern treatment.
+For a GLP-1 log that stays private until you share it, with a PDF built for clinic handoffs, see the [Dial product page](/dial/) or [Dial on the App Store](https://apps.apple.com/us/app/id6789408903). We format the record. Your prescriber and the label govern treatment.
 
 Ozempic, Wegovy, Mounjaro, and Zepbound are trademarks of their respective owners. Zentsu is not affiliated with any pharmaceutical company.

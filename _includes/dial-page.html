@@ -2,7 +2,7 @@
 {%- assign copy = site.data.dial[page.lang] -%}
 {%- assign storefront = site.data.dial_storefronts[page.lang] | default: site.data.dial_storefronts.en -%}
 {%- assign prices = site.data.dial_prices[page.lang] | default: site.data.dial_prices.en -%}
-{%- assign app_store_url = 'https://apps.apple.com/app/id6789408903' -%}
+{%- assign app_store_url = 'https://apps.apple.com/' | append: storefront.country | append: '/app/id6789408903' -%}
 {%- assign campaign = site.data.dial_campaign -%}
 {%- assign provider_token = campaign.provider_token -%}
 {%- assign media_type = campaign.media_type | default: '8' -%}

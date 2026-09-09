@@ -61,6 +61,6 @@ The curve is only as good as the timestamps and amounts you enter. Log the dose 
 
 Your entries stay on your device by default. If you turn on iCloud in Dial, core records can sync through the private CloudKit database on your Apple Account. Details are in the [Dial privacy policy](/dial/privacy/).
 
-For a private GLP-1 log with an estimated level drawn from your own doses, see [Dial on the App Store](/dial/). We plot the curve so you can see your pattern between shots. We leave dosing to you and your prescriber.
+For a private GLP-1 log with an estimated level drawn from your own doses, see the [Dial product page](/dial/) or [Dial on the App Store](https://apps.apple.com/us/app/id6789408903). We plot the curve so you can see your pattern between shots. We leave dosing to you and your prescriber.
 
 Ozempic, Wegovy, Mounjaro, and Zepbound are trademarks of their respective owners. Zentsu is not affiliated with any pharmaceutical company.

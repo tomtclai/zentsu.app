@@ -71,14 +71,14 @@ proof:
 level:
   kicker: "Dial Pro · Procijenjena razina"
   heading: "Procijenjena razina između doza prema poluživotu."
-  body: "Dial crta procijenjenu razinu lijeka kroz vrijeme. Koristi unesene doze i poluživot prikazan u aplikaciji. Promijenite raspon i pregledajte tjedan, mjesec ili šest mjeseci vlastite povijesti."
+  body: "Dial crta procijenjenu razinu iz unesenih doza i poluživota prikazanog u aplikaciji, za podržane injekcijske pripravke i jedinice doze. Tablete nemaju grafikon razine: oralna apsorpcija previše varira među ljudima. Pregledaj tjedan, mjesec ili šest mjeseci povijesti injekcija."
   boundary_lead: "To je procjena. Tako i pišemo."
   boundary_body: "Grafikon modelira standardnu krivulju opadanja iz doza koje ste unijeli. Pokazuje vaše obrasce između doza. To je procjena, ne izmjerena razina u krvi. Ne predlaže sljedeću dozu. Dial ne izračunava doze. Aplikacija metodu objašnjava u cijelosti."
 
 logging:
   kicker: "Brzi unos"
   heading: "Zabilježi lijek, dozu i mjesto injekcije u jednom obrascu."
-  body: "Zapišite lijek, količinu, datum, vrijeme, mjesto injekcije i bilješke. Nedavne vrijednosti popunjavaju sljedeći unos. Svako polje i dalje potvrđujete sami. Dial prepoznaje semaglutid (Ozempic, Wegovy), tirzepatid (Mounjaro), liraglutid, dulaglutid i eksenatid pod zaštićenim nazivima i nazivima pakiranja koji se koriste u Hrvatskoj, i prima vlastiti lijek ako propisanog nema na popisu."
+  body: "Zapiši lijek, količinu, datum, vrijeme i bilješke. Injekcije uključuju mjesto. Tablete poput Rybelsusa bilježe se bez mjesta. Dial navodi semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid i eksenatid pod regionalnim nazivima. Dodaj vlastiti lijek ako nedostaje."
   checklist:
     - "Uredite unos kad se nešto promijeni"
     - "Mjesta injekcije ostaju uz svaku dozu"
@@ -161,7 +161,7 @@ privacy:
       detail: "Zentsu ne vodi poslužitelj koji pohranjuje ili čita tvoje zapise."
     - term: "Neobavezna sinkronizacija"
       detail: "Kad uključiš iCloud, glavni zapisi koriste privatnu CloudKit bazu na tvom Apple računu, ne naše poslužitelje."
-  body: "Glavni zapisi ostaju na uređaju. Unosi težine i fotografije napretka koriste odvojenu, samo lokalnu pohranu."
+  body: "Zapisi lijeka, doze, podsjetnika i zalihe mogu se sinkronizirati preko tvog iClouda ako ga uključiš. Težina ostaje u odvojenoj lokalnoj pohrani, uz neobaveznu integraciju s Apple Healthom. Datoteke fotografija napretka ostaju na uređaju."
   policy_link: "Pročitajte pravila privatnosti Diala"
   policy_url: /hr/dial/privacy/
 
