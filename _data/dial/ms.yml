@@ -78,7 +78,7 @@ level:
 logging:
   kicker: "Rekod pantas"
   heading: "Rekod ubat, dos dan tapak suntikan dalam satu borang."
-  body: "Rekod ubat, jumlah, tarikh, masa dan nota. Suntikan disertakan tapak. Tablet seperti Rybelsus direkod tanpa tapak. Dial menyenaraikan semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide dan exenatide dengan nama serantau. Tambah ubat tersuai jika milik anda tiada."
+  body: "Rekod ubat, jumlah, tarikh, masa dan nota. Suntikan disertakan tapak. Tablet seperti Rybelsus direkod tanpa tapak. Dial menyenaraikan semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide dan exenatide. Tambah ubat tersuai jika milik anda tiada."
   checklist:
     - "Edit entri apabila sesuatu berubah"
     - "Simpan tapak suntikan pada setiap dos"

@@ -78,7 +78,7 @@ level:
 logging:
   kicker: "تسجيل سريع"
   heading: "سجّل الدواء والجرعة وموضع الحقن في نموذج واحد."
-  body: "سجّلوا الدواء والكمية والتاريخ والوقت والملاحظات. الحقن تتضمن موضع الحقن. أقراص مثل Rybelsus تُسجَّل بلا موضع. يسرد Dial semaglutide وtirzepatide وorforglipron وliraglutide وdulaglutide وexenatide بالأسماء المحلية. أضيفوا دواءً مخصصاً إن نقص."
+  body: "سجّلوا الدواء والكمية والتاريخ والوقت والملاحظات. الحقن تتضمن موضع الحقن. أقراص مثل Rybelsus تُسجَّل بلا موضع. يسرد Dial semaglutide وtirzepatide وorforglipron وliraglutide وdulaglutide وexenatide. أضيفوا دواءً مخصصاً إن نقص."
   checklist:
     - "عدّلوا إدخالاً عندما يتغيّر شيء"
     - "احفظوا موضع الحقن مع كل جرعة"

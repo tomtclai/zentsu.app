@@ -78,7 +78,7 @@ level:
 logging:
   kicker: "Rask føring"
   heading: "Før legemiddel, dose og injeksjonssted i ett skjema."
-  body: "Før legemiddel, mengde, dato, tid og notater. Injeksjoner inkluderer et sted. Tablettene som Rybelsus føres uten sted. Dial viser semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid og eksenatid med regionale navn. Legg til et eget legemiddel hvis ditt mangler."
+  body: "Før legemiddel, mengde, dato, tid og notater. Injeksjoner inkluderer et sted. Tablettene som Rybelsus føres uten sted. Dial viser semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid og eksenatid. Legg til et eget legemiddel hvis ditt mangler."
   checklist:
     - "Rediger en post når noe endrer seg"
     - "Injeksjonsstedet følger hver dose"

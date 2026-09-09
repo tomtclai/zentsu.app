@@ -88,7 +88,7 @@ level:
 logging:
   kicker: רישום מהיר
   heading: רשמו תרופה, מנה ואתר הזרקה בטופס אחד.
-  body: "רשמו תרופה, כמות, תאריך, שעה והערות. להזרקות מצורף אתר הזרקה. טבליות כמו Rybelsus נרשמות בלי אתר. Dial מציג semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide ו-exenatide בשמות אזוריים. הוסיפו תרופה מותאמת אם שלכם חסרה."
+  body: "רשמו תרופה, כמות, תאריך, שעה והערות. להזרקות מצורף אתר הזרקה. טבליות כמו Rybelsus נרשמות בלי אתר. Dial מציג semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide ו-exenatide. הוסיפו תרופה מותאמת אם שלכם חסרה."
   checklist:
     - ערכו רשומה כשמשהו משתנה
     - שייכו אתר הזרקה לכל מנה

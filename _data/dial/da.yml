@@ -78,7 +78,7 @@ level:
 logging:
   kicker: "Hurtig registrering"
   heading: "Registrer lægemiddel, dosis og injektionssted i én formular."
-  body: "Notér lægemiddel, mængde, dato, tid og noter. Injektioner inkluderer et sted. Tabletterne som Rybelsus føres uden sted. Dial viser semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid og exenatid med regionale navne. Tilføj et eget lægemiddel, hvis dit mangler."
+  body: "Notér lægemiddel, mængde, dato, tid og noter. Injektioner inkluderer et sted. Tabletterne som Rybelsus føres uden sted. Dial viser semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid og exenatid. Tilføj et eget lægemiddel, hvis dit mangler."
   checklist:
     - "Rediger en post, når noget ændrer sig"
     - "Behold injektionssteder knyttet til hver dosis"

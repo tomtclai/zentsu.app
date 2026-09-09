@@ -78,7 +78,7 @@ level:
 logging:
   kicker: "บันทึกเร็ว"
   heading: "จดยา ขนาดยา และจุดฉีดในแบบฟอร์มเดียว"
-  body: "จดยา ปริมาณ วันที่ เวลา และบันทึกย่อ การฉีดมีจุดฉีด ยาเม็ดอย่าง Rybelsus บันทึกโดยไม่มีจุด Dial แสดง semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide และ exenatide ตามชื่อท้องถิ่น เพิ่มยาเองถ้าของคุณไม่มี"
+  body: "จดยา ปริมาณ วันที่ เวลา และบันทึกย่อ การฉีดมีจุดฉีด ยาเม็ดอย่าง Rybelsus บันทึกโดยไม่มีจุด Dial แสดง semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide และ exenatide เพิ่มยาเองถ้าของคุณไม่มี"
   checklist:
     - "แก้ไขรายการเมื่อมีอะไรเปลี่ยน"
     - "ผูกจุดฉีดกับแต่ละขนาดยา"

@@ -78,7 +78,7 @@ level:
 logging:
   kicker: "Hızlı kayıt"
   heading: "İlacı, dozu ve enjeksiyon yerini tek formda kaydet."
-  body: "İlaç, miktar, tarih, saat ve notları yazın. Enjeksiyonlara yer de eklenir. Rybelsus gibi tabletler yer olmadan kaydedilir. Dial semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid ve eksenatidi bölgesel adlarla listeler. İlacınız yoksa özel bir ilaç ekleyin."
+  body: "İlaç, miktar, tarih, saat ve notları yazın. Enjeksiyonlara yer de eklenir. Rybelsus gibi tabletler yer olmadan kaydedilir. Dial semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid ve eksenatidi listeler. İlacınız yoksa özel bir ilaç ekleyin."
   checklist:
     - "Bir şey değişince kaydı düzenleyin"
     - "Her dozun enjeksiyon yerini kaydedin"

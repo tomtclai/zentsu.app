@@ -78,7 +78,7 @@ level:
 logging:
   kicker: "Szybki zapis"
   heading: "Zapisz lek, dawkę i miejsce wstrzyknięcia w jednym formularzu."
-  body: "Zapisz lek, ilość, datę, godzinę i notatki. Wstrzyknięcia obejmują miejsce. Tabletki takie jak Rybelsus zapisujesz bez miejsca. Dial wymienia semaglutyd, tirzepatyd, orforglipron, liraglutyd, dulaglutyd i eksenatyd pod nazwami regionalnymi. Dodaj własny lek, jeśli Twojego brakuje."
+  body: "Zapisz lek, ilość, datę, godzinę i notatki. Wstrzyknięcia obejmują miejsce. Tabletki takie jak Rybelsus zapisujesz bez miejsca. Dial wymienia semaglutyd, tirzepatyd, orforglipron, liraglutyd, dulaglutyd i eksenatyd. Dodaj własny lek, jeśli Twojego brakuje."
   checklist:
     - "Edytują Państwo wpis, gdy coś się zmieni"
     - "Miejsca wstrzyknięć są przy każdej dawce"

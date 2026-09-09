@@ -78,7 +78,7 @@ level:
 logging:
   kicker: "Gyors rögzítés"
   heading: "Rögzítsd a gyógyszert, az adagot és az injekcióhelyet egy űrlapon."
-  body: "Írja be a gyógyszert, mennyiséget, dátumot, időt és a jegyzeteket. Az injekcióknál a hely is szerepel. A Rybelsushoz hasonló tabletták hely nélkül rögzülnek. A Dial a szemaglutidot, tirzepatidot, orforglipront, liraglutidot, dulaglutidot és exenatidot regionális neveken listázza. Ha hiányzik a tiéd, adj hozzá egyénit."
+  body: "Írja be a gyógyszert, mennyiséget, dátumot, időt és a jegyzeteket. Az injekcióknál a hely is szerepel. A Rybelsushoz hasonló tabletták hely nélkül rögzülnek. A Dial a szemaglutidot, tirzepatidot, orforglipront, liraglutidot, dulaglutidot és exenatidot listázza. Ha hiányzik a tiéd, adj hozzá egyénit."
   checklist:
     - "Szerkesszen bejegyzést, ha valami változik"
     - "Írja az injekcióhelyet minden adaghoz"

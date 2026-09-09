@@ -78,7 +78,7 @@ level:
 logging:
   kicker: "Ghi nhanh"
   heading: "Ghi thuốc, liều và vị trí tiêm trong một biểu mẫu."
-  body: "Ghi thuốc, lượng, ngày, giờ và ghi chú. Mũi tiêm kèm vị trí. Viên nén như Rybelsus ghi không cần vị trí. Dial liệt kê semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide và exenatide theo tên khu vực. Thêm thuốc tùy chỉnh nếu thiếu thuốc của bạn."
+  body: "Ghi thuốc, lượng, ngày, giờ và ghi chú. Mũi tiêm kèm vị trí. Viên nén như Rybelsus ghi không cần vị trí. Dial liệt kê semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide và exenatide. Thêm thuốc tùy chỉnh nếu thiếu thuốc của bạn."
   checklist:
     - "Sửa mục khi có thay đổi"
     - "Mỗi liều gắn với một vị trí tiêm"

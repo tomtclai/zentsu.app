@@ -101,7 +101,7 @@ level:
 logging:
   kicker: Registrazione rapida
   heading: Registra farmaco, dose e sito di iniezione in un solo modulo.
-  body: "Annota farmaco, quantità, data, ora e note. Le iniezioni includono il sito. Le compresse come Rybelsus si registrano senza sito. Dial elenca semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide ed exenatide con i nomi regionali. Aggiungi un farmaco personalizzato se manca il tuo."
+  body: "Annota farmaco, quantità, data, ora e note. Le iniezioni includono il sito. Le compresse come Rybelsus si registrano senza sito. Dial elenca semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide ed exenatide. Aggiungi un farmaco personalizzato se manca il tuo."
   checklist:
     - Modifichi una voce quando qualcosa cambia
     - Tenga i siti di iniezione collegati a ogni dose

@@ -78,7 +78,7 @@ level:
 logging:
   kicker: "Snabb registrering"
   heading: "Registrera läkemedel, dos och injektionsställe i ett formulär."
-  body: "Anteckna läkemedel, mängd, datum, tid och anteckningar. Injektioner inkluderar ett ställe. Tabletterna som Rybelsus förs utan ställe. Dial listar semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid och exenatid med regionala namn. Lägg till ett eget läkemedel om ditt saknas."
+  body: "Anteckna läkemedel, mängd, datum, tid och anteckningar. Injektioner inkluderar ett ställe. Tabletterna som Rybelsus förs utan ställe. Dial listar semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid och exenatid. Lägg till ett eget läkemedel om ditt saknas."
   checklist:
     - "Redigera en post när något ändras"
     - "Behåll injektionsställen kopplade till varje dos"

@@ -78,7 +78,7 @@ level:
 logging:
   kicker: "तेज़ दर्ज करना"
   heading: "एक फॉर्म में दवा, खुराक और इंजेक्शन की जगह दर्ज करें।"
-  body: "दवा, मात्रा, तारीख, समय और नोट लिखें। इंजेक्शन में जगह भी जुड़ती है। Rybelsus जैसी गोलियाँ बिना जगह दर्ज होती हैं। Dial semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide और exenatide को क्षेत्रीय नामों के साथ सूचीबद्ध करता है। आपकी दवा न हो तो कस्टम जोड़ें।"
+  body: "दवा, मात्रा, तारीख, समय और नोट लिखें। इंजेक्शन में जगह भी जुड़ती है। Rybelsus जैसी गोलियाँ बिना जगह दर्ज होती हैं। Dial semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide और exenatide को सूचीबद्ध करता है। आपकी दवा न हो तो कस्टम जोड़ें।"
   checklist:
     - "कुछ बदलने पर प्रविष्टि संपादित करें"
     - "हर खुराक के साथ इंजेक्शन की जगह दर्ज रखें"

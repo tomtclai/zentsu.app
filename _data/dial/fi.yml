@@ -78,7 +78,7 @@ level:
 logging:
   kicker: "Nopea kirjaus"
   heading: "Kirjaa lääke, annos ja pistoskohta yhdessä lomakkeessa."
-  body: "Kirjaa lääke, määrä, päivä, aika ja muistiinpanot. Pistoksissa mukana on pistoskohta. Tabletit kuten Rybelsus kirjataan ilman kohtaa. Dial listaa semaglutidin, tirtsepatidin, orforglipronin, liraglutidin, dulaglutidin ja eksenatidin alueellisilla nimillä. Lisää oma lääke, jos puuttuu."
+  body: "Kirjaa lääke, määrä, päivä, aika ja muistiinpanot. Pistoksissa mukana on pistoskohta. Tabletit kuten Rybelsus kirjataan ilman kohtaa. Dial listaa semaglutidin, tirtsepatidin, orforglipronin, liraglutidin, dulaglutidin ja eksenatidin. Lisää oma lääke, jos puuttuu."
   checklist:
     - "Muokkaa merkintää, kun jokin muuttuu"
     - "Pistoskohta tallentuu jokaiseen annokseen"

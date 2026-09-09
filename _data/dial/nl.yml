@@ -100,7 +100,7 @@ level:
 logging:
   kicker: Snel vastleggen
   heading: Leg medicijn, dosis en injectieplaats vast in één formulier.
-  body: "Noteer medicijn, hoeveelheid, datum, tijd en notities. Injecties bevatten een plaats. Tabletten zoals Rybelsus leg je vast zonder plaats. Dial toont semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide en exenatide met regionale namen. Voeg een eigen medicijn toe als het jouwe ontbreekt."
+  body: "Noteer medicijn, hoeveelheid, datum, tijd en notities. Injecties bevatten een plaats. Tabletten zoals Rybelsus leg je vast zonder plaats. Dial toont semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide en exenatide. Voeg een eigen medicijn toe als het jouwe ontbreekt."
   checklist:
     - Een invoer bewerken als iets verandert
     - Injectieplaatsen koppelen aan elke dosis

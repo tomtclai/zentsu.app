@@ -78,7 +78,7 @@ level:
 logging:
   kicker: "Rýchly záznam"
   heading: "Zapíš liek, dávku a miesto vpichu v jednom formulári."
-  body: "Zapíš liek, množstvo, dátum, čas a poznámky. Pri injekciách patrí aj miesto vpichu. Tablety ako Rybelsus sa zapisujú bez miesta. Dial uvádza semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid a exenatid pod miestnymi názvami. Ak chýba tvoj liek, pridaj vlastný."
+  body: "Zapíš liek, množstvo, dátum, čas a poznámky. Pri injekciách patrí aj miesto vpichu. Tablety ako Rybelsus sa zapisujú bez miesta. Dial uvádza semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid a exenatid. Ak chýba tvoj liek, pridaj vlastný."
   checklist:
     - "Upraviť záznam, keď sa niečo zmení"
     - "Miesto vpichu pri každej dávke"

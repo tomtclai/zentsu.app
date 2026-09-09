@@ -102,7 +102,7 @@ level:
 logging:
   kicker: Registro rápido
   heading: Registre o medicamento, a dose e o local de injeção em um só formulário.
-  body: "Anote medicamento, quantidade, data, hora e notas. Injeções incluem o local. Comprimidos como Rybelsus são registrados sem local. O Dial lista semaglutida, tirzepatida, orforglipron, liraglutida, dulaglutida e exenatida com nomes regionais. Adicione um medicamento personalizado se o seu faltar."
+  body: "Anote medicamento, quantidade, data, hora e notas. Injeções incluem o local. Comprimidos como Rybelsus são registrados sem local. O Dial lista semaglutida, tirzepatida, orforglipron, liraglutida, dulaglutida e exenatida. Adicione um medicamento personalizado se o seu faltar."
   checklist:
     - Edite uma entrada quando algo mudar
     - Mantenha o local de injeção junto de cada dose

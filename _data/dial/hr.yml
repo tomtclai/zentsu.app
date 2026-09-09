@@ -78,7 +78,7 @@ level:
 logging:
   kicker: "Brzi unos"
   heading: "Zabilježi lijek, dozu i mjesto injekcije u jednom obrascu."
-  body: "Zapiši lijek, količinu, datum, vrijeme i bilješke. Injekcije uključuju mjesto. Tablete poput Rybelsusa bilježe se bez mjesta. Dial navodi semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid i eksenatid pod regionalnim nazivima. Dodaj vlastiti lijek ako nedostaje."
+  body: "Zapiši lijek, količinu, datum, vrijeme i bilješke. Injekcije uključuju mjesto. Tablete poput Rybelsusa bilježe se bez mjesta. Dial navodi semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid i eksenatid. Dodaj vlastiti lijek ako nedostaje."
   checklist:
     - "Uredite unos kad se nešto promijeni"
     - "Mjesta injekcije ostaju uz svaku dozu"

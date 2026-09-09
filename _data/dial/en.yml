@@ -97,7 +97,7 @@ level:
 logging:
   kicker: Quick logging
   heading: Put the details in one dose entry.
-  body: "Record medication, amount, date, time, and notes. Injections include a site. Tablets such as Rybelsus log without one. Dial lists semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide, and exenatide, with regional names. Add a custom medication if yours is missing."
+  body: "Record medication, amount, date, time, and notes. Injections include a site. Tablets such as Rybelsus log without one. Dial lists semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide, and exenatide. Add a custom medication if yours is missing."
   checklist:
     - Edit an entry when something changes
     - Keep injection sites attached to each dose

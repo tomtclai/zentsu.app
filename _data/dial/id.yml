@@ -78,7 +78,7 @@ level:
 logging:
   kicker: "Pencatatan cepat"
   heading: "Catat obat, dosis, dan lokasi suntikan dalam satu formulir."
-  body: "Catat obat, jumlah, tanggal, waktu, dan catatan. Suntikan menyertakan lokasi. Tablet seperti Rybelsus dicatat tanpa lokasi. Dial mencantumkan semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide, dan exenatide dengan nama regional. Tambahkan obat kustom jika milik Anda hilang."
+  body: "Catat obat, jumlah, tanggal, waktu, dan catatan. Suntikan menyertakan lokasi. Tablet seperti Rybelsus dicatat tanpa lokasi. Dial mencantumkan semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide, dan exenatide. Tambahkan obat kustom jika milik Anda hilang."
   checklist:
     - "Sunting entri ketika sesuatu berubah"
     - "Simpan lokasi suntikan di setiap dosis"
