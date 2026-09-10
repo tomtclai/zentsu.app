@@ -61,6 +61,7 @@ hero:
   headline_lead: "Privérecord van elke dosis."
   headline_accent: ""
   category: Dial is een GLP-1-medicijntracker voor iPhone en Apple Watch.
+  quick_answer: "Dial legt GLP-1-injecties en tabletten vast, waaronder Ozempic, Wegovy, Rybelsus, Mounjaro, Zepbound en voorgeschreven samengestelde semaglutide of tirzepatide. Elke invoer bewaart de dosis, het tijdstip, de prikplek, je gewicht en de bijwerkingen. Het logboek op de telefoon is gratis, zonder account. Dial Pro voegt de grafiek van het geschatte niveau, vastleggen op de Apple Watch en export als PDF of CSV toe."
   detail:
     Leg elke dosis vast met tijd en injectieplaats, op je telefoon of aan je pols. Dial Pro
     tekent een geschatte spiegel tussen doses en maakt een PDF voor je voorschrijver. De
@@ -75,9 +76,8 @@ hero:
     - Siri, Bedieningspaneel en toegangsscherm
     - Optionele privé-iCloud-opslag
   legal:
-    Dial is een persoonlijk overzicht. Het berekent geen doses en vervangt geen
-    aanwijzingen van je voorschrijver. Dial Pro voegt de grafiek van de geschatte spiegel,
-    de volledige historie, export en snel vastleggen toe, zoals hieronder beschreven.
+    Dial is een persoonlijk logboek, geen medisch advies. Dial Pro voegt vastleggen op
+    de Watch, grafieken en export toe.
 
 proof:
   label: Waarom Dial
@@ -90,17 +90,22 @@ proof:
 level:
   kicker: Dial Pro · Geschatte spiegel
   heading: Bekijk een geschatte spiegel tussen doses, op basis van de halfwaardetijd.
-  body: "Dial toont een geschatte spiegel op basis van de doses die u vastlegde en de halfwaardetijd in de app, voor ondersteunde injectables en doseereenheden. Tabletten hebben geen spiegelgrafiek: orale opname verschilt te sterk tussen mensen. Bekijk een week, een maand of zes maanden injectiegeschiedenis."
+  body: "Dial tekent een geschatte spiegel op basis van de doses die u vastlegde en de halfwaardetijd in de app, voor injecteerbare medicijnen zoals Ozempic, Wegovy, Mounjaro en Zepbound. Tabletten zoals Rybelsus krijgen geen spiegelgrafiek: orale opname verschilt te sterk tussen mensen. Bekijk een week, een maand of zes maanden injectiegeschiedenis."
   boundary_lead: Het blijft een schatting.
   boundary_body:
-    De grafiek modelleert een standaard afnamecurve uit de doses die u vastlegde.
-    U ziet uw eigen patronen tussen doses. Het is een schatting, geen vervanging van een gemeten bloedspiegel en geen suggestie van wat u daarna moet nemen. Dial berekent geen doses.
-    De app legt de methode volledig uit.
+    De grafiek modelleert een standaard afnamecurve uit de semaglutide- of tirzepatide-doses
+    die u vastlegde. U ziet uw eigen patronen tussen doses. Het is een schatting, geen
+    vervanging van een gemeten bloedspiegel. De app legt de methode volledig uit.
+
+boundary:
+  kicker: Wat Dial niet doet
+  heading: Dial houdt het logboek bij. Uw voorschrijver stelt de dosis vast.
+  body: "Dial berekent geen doses, beveelt geen dosiswijziging aan en zegt niet wat u na een vergeten dosis moet doen. Het geschatte niveau is een schatting uit een populatiemodel op basis van uw vastgelegde doses, geen meting. De eenhedenomzetter voor flacons van een compounding-apotheek rekent alleen met de mg en mg/ml die u invoert en stelt niets voor. Bespreek beslissingen over uw medicatie met uw voorschrijver of apotheker."
 
 logging:
   kicker: Snel vastleggen
   heading: Leg medicijn, dosis en injectieplaats vast in één formulier.
-  body: "Noteer medicijn, hoeveelheid, datum, tijd en notities. Injecties bevatten een plaats. Tabletten zoals Rybelsus leg je vast zonder plaats. Dial toont semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide en exenatide. Voeg een eigen medicijn toe als het jouwe ontbreekt."
+  body: "Noteer medicijn, hoeveelheid, datum, tijdstip en notities. Injecties zoals Ozempic, Wegovy, Mounjaro en Zepbound leggen ook de prikplek vast. Tabletten zoals Rybelsus legt u vast zonder plek. Dial kent semaglutide, tirzepatide, liraglutide, dulaglutide en exenatide onder de merknamen die in uw land gangbaar zijn, plus voorgeschreven samengestelde semaglutide of tirzepatide uit een flacon. Voeg een eigen medicijn toe als het jouwe ontbreekt."
   checklist:
     - Een invoer bewerken als iets verandert
     - Injectieplaatsen koppelen aan elke dosis

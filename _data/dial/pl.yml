@@ -48,6 +48,7 @@ hero:
   headline_lead: "Prywatny zapis każdej dawki."
   headline_accent: ""
   category: "Dial to rejestr leków GLP-1 na iPhone’a i Apple Watch."
+  quick_answer: "Dial zapisuje dawki leków GLP-1 w formie wstrzyknięć i tabletek, w tym Ozempic, Wegovy, Rybelsus, Mounjaro oraz przepisany semaglutyd lub tirzepatyd recepturowy. Każdy wpis zachowuje dawkę, godzinę, miejsce wstrzyknięcia, wagę i działania niepożądane. Dziennik w telefonie jest darmowy i nie wymaga konta. Dial Pro dodaje wykres szacowanego poziomu, zapis z Apple Watch i eksport PDF lub CSV."
   detail: "Zapisz każdą dawkę z godziną i miejscem wstrzyknięcia, na telefonie albo na nadgarstku. Dial Pro rysuje szacowany poziom między dawkami i składa PDF dla lekarza prowadzącego. Zapisy zostają na urządzeniu albo w twojej prywatnej bazie iCloud, jeśli ją włączysz."
   free_line: Pobierasz za darmo, bez konta do założenia. Zapisy dawek możesz prowadzić bez limitu.
   secondary_cta: "Jak działa Dial"
@@ -58,7 +59,7 @@ hero:
     - Apple Watch
     - "Siri, Centrum sterowania i ekran blokady"
     - "Opcjonalna prywatna baza iCloud"
-  legal: "Dial to osobisty zapis. Nie oblicza dawek i nie zastępuje wskazówek lekarza prowadzącego. Dial Pro dodaje wykres szacowanego poziomu, pełną historię, eksport i szybki zapis, opisane poniżej."
+  legal: "Dial to osobisty zapis, nie porada medyczna. Dial Pro dodaje zapis z zegarka, wykresy i eksporty."
 
 proof:
   label: "Dlaczego Dial"
@@ -71,14 +72,19 @@ proof:
 level:
   kicker: "Dial Pro · Szacowany poziom"
   heading: "Szacowany poziom między dawkami, według okresu półtrwania."
-  body: "Dial rysuje szacowany poziom z zapisanych dawek i okresu półtrwania w aplikacji, dla obsługiwanych leków wstrzykiwanych i jednostek dawki. Tabletki nie mają wykresu poziomu: wchłanianie doustne zbyt mocno różni się między osobami. Przejrzyj tydzień, miesiąc lub sześć miesięcy historii wstrzyknięć."
+  body: "Dial rysuje szacowany poziom z zapisanych dawek i okresu półtrwania podanego w aplikacji, dla obsługiwanych leków wstrzykiwanych, takich jak Ozempic, Wegovy i Mounjaro. Tabletki takie jak Rybelsus nie mają wykresu poziomu: wchłanianie doustne zbyt mocno różni się między osobami. Przejrzyj tydzień, miesiąc lub sześć miesięcy historii wstrzyknięć."
   boundary_lead: "Oszacowanie. Tak to nazywamy."
-  boundary_body: "Wykres modeluje standardową krzywą zaniku z zapisanych dawek. Pokazuje Państwa własne wzorce między dawkami. To oszacowanie, nie zmierzony poziom we krwi i nie wskazówka, co przyjąć dalej. Dial nie oblicza dawek. Aplikacja opisuje metodę w całości."
+  boundary_body: "Wykres modeluje standardową krzywą zaniku z zapisanych dawek semaglutydu lub tirzepatydu. Pokazuje Państwa własne wzorce między dawkami. To oszacowanie, nie zmierzony poziom we krwi. Aplikacja opisuje metodę w całości."
+
+boundary:
+  kicker: "Czego Dial nie robi"
+  heading: "Dial prowadzi zapis. Dawkę ustala lekarz prowadzący."
+  body: "Dial nie oblicza dawek, nie zaleca zmiany dawki i nie mówi, co robić po pominiętej dawce. Szacowany poziom to oszacowanie z modelu populacyjnego na podstawie zapisanych dawek, a nie pomiar. Przelicznik jednostek dla fiolek leków recepturowych wykonuje działania arytmetyczne na wprowadzonych mg i mg/ml i niczego nie zaleca. O decyzjach dotyczących leków proszę pytać lekarza prowadzącego lub farmaceutę."
 
 logging:
   kicker: "Szybki zapis"
   heading: "Zapisz lek, dawkę i miejsce wstrzyknięcia w jednym formularzu."
-  body: "Zapisz lek, ilość, datę, godzinę i notatki. Wstrzyknięcia obejmują miejsce. Tabletki takie jak Rybelsus zapisujesz bez miejsca. Dial wymienia semaglutyd, tirzepatyd, orforglipron, liraglutyd, dulaglutyd i eksenatyd. Dodaj własny lek, jeśli Twojego brakuje."
+  body: "Zapisz lek, ilość, datę, godzinę i notatki. Wstrzyknięcia takie jak Ozempic, Wegovy i Mounjaro obejmują miejsce. Tabletki takie jak Rybelsus zapisujesz bez miejsca. Dial wymienia semaglutyd, tirzepatyd, orforglipron, liraglutyd, dulaglutyd i eksenatyd pod regionalnymi nazwami handlowymi, a także przepisany semaglutyd lub tirzepatyd recepturowy z fiolki. Dodaj własny lek, jeśli Twojego brakuje."
   checklist:
     - "Edytują Państwo wpis, gdy coś się zmieni"
     - "Miejsca wstrzyknięć są przy każdej dawce"

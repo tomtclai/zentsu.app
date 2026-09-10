@@ -48,6 +48,7 @@ hero:
   headline_lead: "Rekod peribadi setiap dos."
   headline_accent: ""
   category: "Dial ialah penjejak ubat GLP-1 untuk iPhone dan Apple Watch."
+  quick_answer: "Dial merekod suntikan dan tablet GLP-1, termasuk Ozempic, Wegovy, Rybelsus, Mounjaro, Zepbound serta semaglutide atau tirzepatide tercampur yang dipreskripsikan. Setiap entri menyimpan dos, masa, tapak suntikan, berat dan kesan sampingan. Log pada telefon percuma, tanpa akaun. Dial Pro menambah carta tahap anggaran, rekod pada Apple Watch dan eksport PDF atau CSV."
   detail: "Rekod setiap dos bersama masa dan tapak suntikan, pada telefon atau pergelangan. Dial Pro memaparkan tahap anggaran antara dos dan menyediakan PDF untuk pemberi preskripsi anda. Rekod kekal pada peranti, atau dalam pangkalan data iCloud peribadi anda jika anda hidupkan pilihan itu."
   free_line: Muat turun percuma, tanpa perlu membuat akaun. Log dos tiada had.
   secondary_cta: "Cara Dial berfungsi"
@@ -58,7 +59,7 @@ hero:
     - Apple Watch
     - "Siri, Pusat Kawalan dan Skrin Kunci"
     - "Storan iCloud peribadi pilihan"
-  legal: "Dial ialah rekod peribadi. Ia tidak mengira dos dan tidak menggantikan arahan pemberi preskripsi. Dial Pro menambah carta tahap anggaran, sejarah penuh, eksport dan rekod pantas yang diterangkan di bawah."
+  legal: "Rekod peribadi, bukan nasihat perubatan. Dial Pro menambah rekod pada Watch, carta dan eksport."
 
 proof:
   label: "Mengapa Dial"
@@ -71,14 +72,19 @@ proof:
 level:
   kicker: "Dial Pro · Tahap anggaran"
   heading: "Lihat tahap anggaran antara dos, berdasarkan separuh hayat."
-  body: "Dial memaparkan tahap anggaran daripada dos yang direkod dan separuh hayat dalam apl, untuk suntikan dan unit dos yang disokong. Tablet tiada carta tahap: penyerapan oral terlalu berbeza antara orang. Semak sejarah suntikan seminggu, sebulan atau enam bulan."
+  body: "Dial memaparkan tahap anggaran daripada dos yang direkod dan separuh hayat dalam apl, untuk ubat suntikan yang disokong seperti Ozempic, Wegovy, Mounjaro dan Zepbound. Tablet seperti Rybelsus tiada carta tahap: penyerapan oral terlalu berbeza antara orang. Semak sejarah suntikan seminggu, sebulan atau enam bulan."
   boundary_lead: "Ini anggaran. Kami nyatakan dengan jelas."
-  boundary_body: "Carta memodelkan lengkung penurunan piawai daripada dos yang anda rekod. Yang kelihatan ialah corak anda sendiri antara dos. Ini anggaran, bukan tahap darah yang diukur, dan bukan cadangan dos seterusnya. Dial tidak mengira dos. Aplikasi menjelaskan kaedahnya sepenuhnya."
+  boundary_body: "Carta memodelkan lengkung penurunan piawai daripada dos yang anda rekod. Yang kelihatan ialah corak anda sendiri antara dos. Ini anggaran, bukan tahap darah yang diukur. Aplikasi menjelaskan kaedahnya sepenuhnya."
+
+boundary:
+  kicker: "Apa yang Dial tidak lakukan"
+  heading: "Dial menyimpan rekod. Dos ditetapkan oleh pemberi preskripsi anda."
+  body: "Dial tidak mengira dos, tidak mencadangkan perubahan dos dan tidak memberitahu apa yang perlu dilakukan selepas dos terlepas. Tahap anggaran ialah anggaran daripada model populasi berdasarkan dos yang anda rekod, bukan ukuran. Penukar unit untuk vial tercampur hanyalah aritmetik atas nilai mg dan mg/mL yang anda masukkan, dan tidak mencadangkan sebarang jumlah. Perbanyakkan keputusan ubat dengan pemberi preskripsi atau farmasi anda."
 
 logging:
   kicker: "Rekod pantas"
   heading: "Rekod ubat, dos dan tapak suntikan dalam satu borang."
-  body: "Rekod ubat, jumlah, tarikh, masa dan nota. Suntikan disertakan tapak. Tablet seperti Rybelsus direkod tanpa tapak. Dial menyenaraikan semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide dan exenatide. Tambah ubat tersuai jika milik anda tiada."
+  body: "Rekod ubat, jumlah, tarikh, masa dan nota. Suntikan seperti Ozempic, Wegovy, Mounjaro dan Zepbound disertakan tapak. Tablet seperti Rybelsus direkod tanpa tapak. Dial menyenaraikan semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide dan exenatide mengikut nama jenama serantau, serta semaglutide atau tirzepatide tercampur yang dipreskripsikan daripada vial. Tambah ubat tersuai jika milik anda tiada."
   checklist:
     - "Edit entri apabila sesuatu berubah"
     - "Simpan tapak suntikan pada setiap dos"

@@ -237,8 +237,8 @@ for (const [label, html, boundaries] of [
     dialEnglish,
     [
       'Dial does not calculate doses',
-      'not a stand-in for a measured blood',
-      'replace guidance from your prescriber',
+      'not a measurement',
+      'Ask your prescriber or pharmacist',
     ],
   ],
   [
@@ -246,8 +246,8 @@ for (const [label, html, boundaries] of [
     dialSpanish,
     [
       'Dial no calcula dosis',
-      'no para sustituir un nivel medido en sangre',
-      'ni reemplaza la orientación de tu médico',
+      'no una medición',
+      'Consulta con tu médico o farmacéutico',
     ],
   ],
 ]) {

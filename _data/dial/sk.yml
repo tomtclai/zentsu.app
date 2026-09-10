@@ -48,6 +48,7 @@ hero:
   headline_lead: "Súkromný záznam každej dávky."
   headline_accent: ""
   category: "Dial je záznam liekov GLP-1 pre iPhone a Apple Watch."
+  quick_answer: "Dial zapisuje dávky GLP-1 v injekciách aj tabletách, vrátane Ozempic, Wegovy, Rybelsus, Mounjaro a predpísaného compounded semaglutidu alebo tirzepatidu z liekovky. Každý záznam si uchová dávku, čas, miesto vpichu, hmotnosť a nežiaduce účinky. Záznam v telefóne je zadarmo a bez účtu. Dial Pro pridáva graf odhadovanej hladiny, záznam na Apple Watch a export do PDF alebo CSV."
   detail: "Zapíš každú dávku s časom a miestom vpichu, na telefóne alebo na zápästí. Dial Pro vykreslí odhadovanú hladinu medzi dávkami a zloží PDF pre lekára. Záznamy ostanú v zariadení, alebo v tvojej súkromnej databáze iCloud, keď ju zapneš."
   free_line: Na stiahnutie zadarmo, účet zakladať nemusíš. Záznam dávok môžeš viesť bez limitu.
   secondary_cta: "Ako Dial funguje"
@@ -58,7 +59,7 @@ hero:
     - Apple Watch
     - "Siri, Ovládacie centrum a uzamknutá obrazovka"
     - "Voliteľné súkromné úložisko iCloud"
-  legal: "Dial je osobný záznam. Nepočíta dávky a nenahrádza pokyny lekára. Dial Pro pridáva graf odhadovanej hladiny, úplnú históriu, export a rýchly záznam, popísané nižšie."
+  legal: "Dial je osobný záznam, nie lekársky posudok. Dial Pro pridáva záznam na Watch, grafy a exporty."
 
 proof:
   label: "Prečo Dial"
@@ -71,14 +72,19 @@ proof:
 level:
   kicker: "Dial Pro · Odhadovaná hladina"
   heading: "Odhadovaná hladina medzi dávkami podľa polčasu."
-  body: "Dial vykreslí odhadovanú hladinu zo zaznamenaných dávok a polčasu v aplikácii, pre podporované injekčné lieky a jednotky dávky. Tablety nemajú graf hladiny: vstrebávanie ústami sa medzi ľuďmi príliš líši. Prezri týždeň, mesiac alebo šesť mesiacov histórie injekcií."
+  body: "Dial vykreslí odhadovanú hladinu zo zaznamenaných dávok a polčasu v aplikácii, pre podporované injekčné lieky ako Ozempic, Wegovy, Mounjaro a Zepbound. Tablety ako Rybelsus nemajú graf hladiny: vstrebávanie ústami sa medzi ľuďmi príliš líši. Prezri týždeň, mesiac alebo šesť mesiacov histórie injekcií."
   boundary_lead: "Je to odhad. Tak ho aj označujeme."
-  boundary_body: "Graf modeluje štandardnú krivku poklesu z dávok, ktoré ste zaznamenali. Ukazuje, ako u vás dávky v čase prebiehajú. Nie je to nameraná hladina v krvi ani návrh, čo užiť ďalej. Dial nepočíta dávky. Metódu vysvetľuje priamo v aplikácii."
+  boundary_body: "Graf modeluje štandardnú krivku poklesu z dávok semaglutidu alebo tirzepatidu, ktoré ste zaznamenali. Ukazuje, ako u vás dávky v čase prebiehajú. Nie je to nameraná hladina v krvi. Metódu vysvetľuje Dial priamo v aplikácii."
+
+boundary:
+  kicker: "Čo Dial nerobí"
+  heading: "Dial vedie záznam. O dávke rozhoduje váš lekár."
+  body: "Dial nepočíta dávky, neodporúča zmenu dávky ani vám neporadí, čo robiť po zmeškanej dávke. Odhadovaná hladina je odhad z populačného modelu na základe zapísaných dávok, nie meranie. Prevodník jednotiek pre compounded liekovky robí len aritmetiku so zadanými hodnotami mg a mg/ml a nič nenavrhuje. O rozhodnutiach v liečbe sa pýtajte svojho lekára alebo lekárnika."
 
 logging:
   kicker: "Rýchly záznam"
   heading: "Zapíš liek, dávku a miesto vpichu v jednom formulári."
-  body: "Zapíš liek, množstvo, dátum, čas a poznámky. Pri injekciách patrí aj miesto vpichu. Tablety ako Rybelsus sa zapisujú bez miesta. Dial uvádza semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid a exenatid. Ak chýba tvoj liek, pridaj vlastný."
+  body: "Zapíš liek, množstvo, dátum, čas a poznámky. Pri injekciách ako Ozempic, Wegovy, Mounjaro a Zepbound patrí aj miesto vpichu. Tablety ako Rybelsus sa zapisujú bez miesta. Dial uvádza semaglutid, tirzepatid, liraglutid, dulaglutid a exenatid s obchodnými názvami používanými na Slovensku, plus predpísaný compounded semaglutid alebo tirzepatid z liekovky. Ak chýba tvoj liek, pridaj vlastný."
   checklist:
     - "Upraviť záznam, keď sa niečo zmení"
     - "Miesto vpichu pri každej dávke"

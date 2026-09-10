@@ -48,6 +48,7 @@ hero:
   headline_lead: "Privat notat over hver dosis."
   headline_accent: ""
   category: "Dial er et GLP-1-medicinoverblik til iPhone og Apple Watch."
+  quick_answer: "Dial registrerer GLP-1-injektioner og tabletter, blandt andet Ozempic, Wegovy, Rybelsus og Mounjaro samt ordineringsemaglutid eller tirzepatid fra hætteglas. Hver post gemmer dosis, tidspunkt, injektionssted, vægt og bivirkninger. Loggen på telefonen er gratis og kræver ingen konto. Dial Pro tilføjer en graf over det estimerede niveau, registrering på Apple Watch og eksport som PDF eller CSV."
   detail: "Registrer hver dosis med tid og injektionssted, på telefonen eller håndleddet. Dial Pro tegner et estimeret niveau mellem doserne og laver en PDF til din læge. Posterne bliver på enheden, eller i din egen private iCloud-database, hvis du slår det til."
   free_line: Gratis at hente, uden konto. Dosislogget har intet loft.
   secondary_cta: "Sådan virker Dial"
@@ -58,7 +59,7 @@ hero:
     - Apple Watch
     - "Siri, Kontrolcenter og låseskærm"
     - "Valgfri privat iCloud-lagring"
-  legal: "Dial er et personligt notat. Den beregner ikke doser og erstatter ikke vejledning fra din læge. Dial Pro tilføjer grafen for estimeret niveau, den fulde historik, eksport og hurtig registrering, som beskrevet nedenfor."
+  legal: "Dial er et personligt notat, ikke medicinsk rådgivning. Dial Pro tilføjer registrering på Watch, grafer og eksport."
 
 proof:
   label: "Hvorfor Dial"
@@ -71,14 +72,19 @@ proof:
 level:
   kicker: "Dial Pro · Estimeret niveau"
   heading: "Se et estimeret niveau mellem doserne, ud fra halveringstiden."
-  body: "Dial tegner et estimeret niveau ud fra dine registrerede doser og den halveringstid, appen viser, for understøttede injektionspræparater og dosenheder. Tabletterne har ingen niveaugraf: oral optagelse varierer for meget mellem mennesker. Se en uge, en måned eller seks måneder af injektionshistorikken."
+  body: "Dial tegner et estimeret niveau ud fra dine registrerede doser og den halveringstid, appen viser, for understøttede injektionspræparater som Ozempic, Wegovy, Mounjaro og Zepbound. Tabletter som Rybelsus har ingen niveaugraf: oral optagelse varierer for meget mellem mennesker. Se en uge, en måned eller seks måneder af injektionshistorikken."
   boundary_lead: "Vi kalder det et skøn."
-  boundary_body: "Grafen modellerer en standard eliminationskurve fra de doser, du har registreret. Den viser dine egne mønstre mellem doser. Det er et skøn, ikke en målt blodkoncentration, og ikke et forslag til, hvad du skal tage næste gang. Dial beregner ikke doser. Appen forklarer metoden fuldt ud."
+  boundary_body: "Grafen modellerer en standard eliminationskurve fra de doser, du har registreret. Den viser dine egne mønstre mellem doser. Det er et skøn, ikke en målt blodkoncentration. Appen forklarer metoden fuldt ud."
+
+boundary:
+  kicker: "Hvad Dial ikke gør"
+  heading: "Dial fører journalen. Din læge beslutter dosis."
+  body: "Dial beregner ikke doser, anbefaler ikke en dosisændring og fortæller ikke, hvad du skal gøre efter en glemt dosis. Det estimerede niveau er et skøn fra en populationsmodel ud fra dine registrerede doser, ikke en måling. Enhedsomregneren for hætteglas udfører kun regnestykker med de mg og mg/ml, du indtaster, og foreslår ingen mængde. Spørg din ordinerende læge eller apoteket om beslutninger om din medicin."
 
 logging:
   kicker: "Hurtig registrering"
   heading: "Registrer lægemiddel, dosis og injektionssted i én formular."
-  body: "Notér lægemiddel, mængde, dato, tid og noter. Injektioner inkluderer et sted. Tabletterne som Rybelsus føres uden sted. Dial viser semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid og exenatid. Tilføj et eget lægemiddel, hvis dit mangler."
+  body: "Notér lægemiddel, mængde, dato, tid og noter. Injektioner som Ozempic, Wegovy, Mounjaro og Zepbound inkluderer et sted. Tabletter som Rybelsus føres uden sted. Dial viser semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid og exenatid under de mærkenavne, der bruges i Danmark, samt ordineringsemaglutid eller tirzepatid fra hætteglas. Tilføj et eget lægemiddel, hvis dit mangler."
   checklist:
     - "Rediger en post, når noget ændrer sig"
     - "Behold injektionssteder knyttet til hver dosis"

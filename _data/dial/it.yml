@@ -61,6 +61,12 @@ hero:
   headline_lead: "Un registro privato di ogni dose."
   headline_accent: ""
   category: Dial è un registro di farmaci GLP-1 per iPhone e Apple Watch.
+  quick_answer: >-
+    Dial registra iniezioni e compresse GLP-1, tra cui Ozempic, Wegovy, Rybelsus,
+    Mounjaro e semaglutide o tirzepatide galeniche prescritte in fiale. Ogni voce
+    conserva dose, ora, sito di iniezione, peso ed effetti collaterali. Il registro
+    sul telefono è gratis e senza account. Dial Pro aggiunge il grafico del livello
+    stimato, la registrazione su Apple Watch e l'esportazione in PDF o CSV.
   detail:
     Registra ogni dose con l'ora e il sito di iniezione, sul telefono o dal polso. Dial
     Pro traccia un livello stimato tra le dosi e prepara un PDF per il medico. I registri
@@ -75,9 +81,8 @@ hero:
     - Siri, Centro di Controllo e schermata di blocco
     - Archiviazione iCloud privata facoltativa
   legal:
-    Dial è un registro personale. Non calcola le dosi e non sostituisce le indicazioni
-    del medico. Dial Pro aggiunge il grafico del livello stimato, la cronologia completa,
-    le esportazioni e la registrazione rapida descritti più sotto.
+    Dial è un registro personale, non un consiglio medico. Dial Pro aggiunge la
+    registrazione su Watch, i grafici e le esportazioni.
 
 proof:
   label: Perché Dial
@@ -90,18 +95,23 @@ proof:
 level:
   kicker: Dial Pro · Livello stimato
   heading: Vedi un livello stimato tra le dosi, in base all'emivita.
-  body: "Dial traccia un livello stimato dalle dosi registrate e dall'emivita mostrata nell'app, per gli iniettabili e le unità di dose supportati. Le compresse non hanno un grafico di livello: l'assorbimento orale varia troppo tra le persone. Rivedi una settimana, un mese o sei mesi di iniezioni."
+  body: "Dial traccia un livello stimato dalle dosi registrate e dall'emivita mostrata nell'app, per gli iniettabili supportati come Ozempic, Wegovy e Mounjaro. Le compresse come Rybelsus non hanno un grafico di livello: l'assorbimento orale varia troppo tra le persone. Riveda una settimana, un mese o sei mesi di iniezioni."
   boundary_lead: È una stima. Lo diciamo chiaro.
   boundary_body:
-    Il grafico modella una curva di decadimento standard dalle dosi che ha registrato.
-    Serve a notare i suoi andamenti tra una dose e l'altra, non a sostituire un livello
-    ematico misurato né a suggerire cosa assumere dopo. Dial non calcola le dosi. L'app
-    spiega il metodo per intero.
+    Il grafico modella una curva di decadimento standard dalle dosi di semaglutide o
+    tirzepatide che ha registrato. Le serve per notare i suoi andamenti tra una dose e
+    l'altra. È una stima, non un sostituto di un livello ematico misurato. L'app spiega
+    il metodo per intero.
+
+boundary:
+  kicker: Cosa Dial non fa
+  heading: Dial tiene il registro. La dose la stabilisce chi prescrive.
+  body: "Dial non calcola le dosi, non consiglia un cambiamento di dose e non dice cosa fare dopo una dose dimenticata. Il livello stimato è una stima da un modello di popolazione ricavata dalle dosi registrate, non una misurazione. Il convertitore di unità per le fiale galeniche esegue operazioni aritmetiche con i mg e i mg/ml che inserisce e non suggerisce alcuna quantità. Per le decisioni sul farmaco si rivolga a chi prescrive o al farmacista."
 
 logging:
   kicker: Registrazione rapida
   heading: Registra farmaco, dose e sito di iniezione in un solo modulo.
-  body: "Annota farmaco, quantità, data, ora e note. Le iniezioni includono il sito. Le compresse come Rybelsus si registrano senza sito. Dial elenca semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide ed exenatide. Aggiungi un farmaco personalizzato se manca il tuo."
+  body: "Annota farmaco, quantità, data, ora e note. Le iniezioni come Ozempic, Wegovy e Mounjaro includono il sito. Le compresse come Rybelsus si registrano senza sito. Dial elenca semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide ed exenatide con i nomi di marca usati in Italia, più semaglutide o tirzepatide galeniche prescritte in fiale. Aggiunga un farmaco personalizzato se manca il suo."
   checklist:
     - Modifichi una voce quando qualcosa cambia
     - Tenga i siti di iniezione collegati a ogni dose

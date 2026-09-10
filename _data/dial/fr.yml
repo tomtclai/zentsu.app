@@ -57,6 +57,7 @@ hero:
   headline_lead: "Ton carnet d'injections GLP-1."
   headline_accent: ""
   category: "Dial garde l'historique de tes doses et sites d'injection sur iPhone."
+  quick_answer: "Dial note les injections et les comprimés GLP-1, notamment Ozempic, Wegovy, Rybelsus, Mounjaro, Saxenda et le sémaglutide ou le tirzépatide prescrit en préparation magistrale. Chaque entrée garde la dose, l'heure, le site d'injection, le poids et les effets indésirables. Le carnet sur iPhone est gratuit et sans compte. Dial Pro ajoute un graphique de niveau estimé, la saisie sur Apple Watch et un export PDF ou CSV."
   detail: "Note tes doses gratuitement sur iPhone. Dial Pro ajoute la saisie sur Apple Watch, les graphiques et un PDF pour la consultation. Les relevés de médicaments peuvent se synchroniser via ton propre iCloud. Le poids et les photos restent en local."
   free_line: Téléchargement gratuit, sans compte à créer. Le relevé de doses n'a pas de limite.
   secondary_cta: Voir comment Dial fonctionne
@@ -68,9 +69,8 @@ hero:
     - Siri, Centre de contrôle et écran de verrouillage
     - Stockage iCloud privé facultatif
   legal:
-    Dial est un relevé personnel. Il ne calcule pas les doses et ne remplace pas les
-    indications de ton médecin. Dial Pro ajoute le graphique de niveau estimé, l'historique
-    complet, les exports et l'enregistrement rapide décrits plus bas.
+    Dial est un relevé personnel, pas un avis médical. Dial Pro ajoute la saisie sur
+    Watch, les graphiques et les exports.
 
 proof:
   label: Pourquoi Dial
@@ -83,18 +83,23 @@ proof:
 level:
   kicker: Dial Pro · Niveau estimé
   heading: Vois un niveau estimé entre les doses, selon la demi-vie.
-  body: "Dial trace le niveau estimé pour les injectables et unités de dose compatibles, à partir de tes saisies et de la demi-vie indiquée. Les comprimés n'ont pas de courbe : leur absorption varie trop entre personnes. Consulte une semaine, un mois ou six mois d'injections."
+  body: "Dial trace le niveau estimé à partir de tes doses enregistrées et de la demi-vie indiquée dans l'app, pour les injectables pris en charge comme Ozempic, Wegovy, Mounjaro et Saxenda. Les comprimés comme Rybelsus n'ont pas de courbe : leur absorption varie trop entre personnes. Consulte une semaine, un mois ou six mois d'injections."
   boundary_lead: C'est une estimation, et nous le disons clairement.
   boundary_body:
-    Le graphique modélise une courbe de décroissance standard à partir des doses que vous
-    avez enregistrées. Il sert à repérer vos propres habitudes entre les doses, pas à
-    remplacer un taux sanguin mesuré ni à suggérer la prochaine prise. Dial ne calcule
-    pas les doses. L'app explique toute la méthode.
+    Le graphique modélise une courbe de décroissance standard à partir des doses de
+    sémaglutide ou de tirzépatide que vous avez enregistrées. Il sert à repérer vos
+    propres habitudes entre les doses, pas à remplacer un taux sanguin mesuré. C'est
+    une estimation, et l'app explique toute la méthode.
+
+boundary:
+  kicker: Ce que Dial ne fait pas
+  heading: Dial garde le relevé. Votre prescripteur fixe la dose.
+  body: "Dial ne calcule pas les doses, ne recommande pas de changement de dose et ne dit pas quoi faire après une dose oubliée. Le niveau estimé est une estimation issue d'un modèle de population, calculée à partir de vos doses enregistrées, pas une mesure. Le convertisseur d'unités pour les flacons de préparation magistrale fait de l'arithmétique sur les mg et les mg/mL que vous saisissez, et ne suggère aucune quantité. Demandez à votre prescripteur ou à votre pharmacien pour toute décision de traitement."
 
 logging:
   kicker: Enregistrement rapide
   heading: Note le médicament, la dose et le site d'injection dans un seul formulaire.
-  body: "Note le médicament, la dose, la date, l'heure et tes remarques. Ajoute le site pour une injection. Les comprimés comme Rybelsus se notent sans site. Dial répertorie le sémaglutide, le tirzépatide, l'orforglipron, le liraglutide, le dulaglutide et l'exénatide. Ajoute ton médicament s'il manque."
+  body: "Note le médicament, la dose, la date, l'heure et tes remarques. Les injections comme Ozempic, Wegovy, Mounjaro et Saxenda enregistrent aussi le site. Les comprimés comme Rybelsus se notent sans site. Dial répertorie le sémaglutide, le tirzépatide, l'orforglipron, le liraglutide, le dulaglutide et l'exénatide, sous les noms de boîte utilisés ici, plus le sémaglutide ou le tirzépatide prescrit en préparation magistrale depuis un flacon. Ajoute un médicament personnalisé si le vôtre manque."
   checklist:
     - Modifier une entrée quand quelque chose change
     - Garder le site d'injection associé à chaque dose

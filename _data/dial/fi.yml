@@ -48,6 +48,7 @@ hero:
   headline_lead: "Yksityinen merkintä joka annoksesta."
   headline_accent: ""
   category: "Dial on GLP-1-lääkeseuranta iPhonelle ja Apple Watchille."
+  quick_answer: "Dial kirjaa GLP-1-pistokset ja tabletit, mukaan lukien Ozempic, Wegovy, Rybelsus ja Mounjaro sekä apteekissa valmistettu semaglutidi tai tirtsepatidi. Jokainen merkintä tallentaa annoksen, ajan, pistoskohdan, painon ja haittavaikutukset. Puhelinlokki on ilmainen eikä tiliä tarvita. Dial Pro lisää arvioidun tason kaavion, kirjaamisen Apple Watchista ja PDF- tai CSV-viennin."
   detail: "Kirjaa jokainen annos ajan ja pistoskohdan kanssa, puhelimella tai ranteesta. Dial Pro piirtää arvioidun tason annosten välillä ja kokoaa PDF:n määrääjällesi. Merkinnät jäävät laitteelle, tai omaan yksityiseen iCloud-tietokantaasi, jos otat sen käyttöön."
   free_line: Ilmainen lataus, ilman tiliä. Annoslokissa ei ole kattoa.
   secondary_cta: "Näin Dial toimii"
@@ -58,7 +59,7 @@ hero:
     - Apple Watch
     - "Siri, Ohjauskeskus ja lukitusnäyttö"
     - "Valinnainen yksityinen iCloud-tallennus"
-  legal: "Dial on henkilökohtainen merkintä. Se ei laske annoksia eikä korvaa määrääjän ohjeita. Dial Pro lisää arvioidun tason kaavion, täyden historian, viennit ja nopean kirjauksen, jotka on kuvattu alla."
+  legal: "Dial on henkilökohtainen merkintä, ei lääketieteellinen neuvo. Dial Pro lisää kirjauksen Watchista, kaaviot ja viennit."
 
 proof:
   label: "Miksi Dial"
@@ -71,14 +72,19 @@ proof:
 level:
   kicker: "Dial Pro · Arvioitu taso"
   heading: "Näe arvioitu taso annosten välillä, puoliintumisajan perusteella."
-  body: "Dial piirtää arvioidun tason kirjaamistasi annoksista ja sovelluksessa näytetystä puoliintumisajasta tuetuille injektiolääkkeille ja annosyksiköille. Tableteilla ei ole tasokaaviota: suun kautta imeytyminen vaihtelee liikaa ihmisten välillä. Tarkastele viikon, kuukauden tai kuuden kuukauden pistoshistoriaa."
+  body: "Dial piirtää arvioidun tason kirjaamistasi annoksista ja sovelluksessa näytetystä puoliintumisajasta tuetuille injektiolääkkeille, kuten Ozempic, Wegovy, Mounjaro ja Saxenda. Tableteilla, kuten Rybelsuksella, ei ole tasokaaviota: suun kautta imeytyminen vaihtelee liikaa ihmisten välillä. Tarkastele viikon, kuukauden tai kuuden kuukauden pistoshistoriaa."
   boundary_lead: "Se on arvio, ja kerromme sen suoraan."
-  boundary_body: "Kaavio mallintaa tavanomaisen hajoamiskäyrän kirjaamistasi annoksista. Se näyttää omat kuviosi annosten välillä. Se ei ole mitattu veripitoisuus eikä ehdotus seuraavasta annoksesta. Dial ei laske annoksia. Sovellus selittää menetelmän kokonaan."
+  boundary_body: "Kaavio mallintaa tavanomaisen hajoamiskäyrän kirjaamistasi semaglutidi- tai tirtsepatidiannoksista. Se näyttää omat kuviosi annosten välillä. Se ei ole mitattu veripitoisuus. Sovellus selittää menetelmän kokonaan."
+
+boundary:
+  kicker: "Mitä Dial ei tee"
+  heading: "Dial pitää merkinnät. Annoksen päättää määrääjäsi."
+  body: "Dial ei laske annoksia, suosittele annoksen muutosta eikä kerro, mitä tee unohdetun annoksen jälkeen. Arvioitu taso on väestömalliin perustuva arvio kirjaamistasi annoksista, ei mittaus. Apteekissa valmistettujen pullojen yksikkömuunnin tekee laskutoimituksia syöttämilläsi mg- ja mg/ml-arvoilla eikä ehdota määrää. Lääkevalinnoissa kysy määrääjältäsi tai apteekista."
 
 logging:
   kicker: "Nopea kirjaus"
   heading: "Kirjaa lääke, annos ja pistoskohta yhdessä lomakkeessa."
-  body: "Kirjaa lääke, määrä, päivä, aika ja muistiinpanot. Pistoksissa mukana on pistoskohta. Tabletit kuten Rybelsus kirjataan ilman kohtaa. Dial listaa semaglutidin, tirtsepatidin, orforglipronin, liraglutidin, dulaglutidin ja eksenatidin. Lisää oma lääke, jos puuttuu."
+  body: "Kirjaa lääke, määrä, päivä, aika ja muistiinpanot. Pistoksissa, kuten Ozempicissa, Wegovyssä, Mounjarossa ja Saxendassa, mukana on pistoskohta. Tabletit, kuten Rybelsus, kirjataan ilman kohtaa. Dial listaa semaglutidin, tirtsepatidin, liraglutidin, dulaglutidin ja eksenatidin Suomessa käytetyillä kauppanimillä, sekä apteekissa valmistetun semaglutidin tai tirtsepatidin pulosta. Lisää oma lääke, jos puuttuu."
   checklist:
     - "Muokkaa merkintää, kun jokin muuttuu"
     - "Pistoskohta tallentuu jokaiseen annokseen"

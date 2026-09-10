@@ -48,6 +48,7 @@ hero:
   headline_lead: "Privat oversikt over hver dose."
   headline_accent: ""
   category: "Dial er en GLP-1-legemiddeloversikt for iPhone og Apple Watch."
+  quick_answer: "Dial logger GLP-1-injeksjoner og tabletter, blant annet Ozempic, Wegovy, Rybelsus og Mounjaro, samt forskrevet semaglutid eller tirzepatid fra hetteglass. Hver post tar vare på dosen, tidspunktet, injeksjonsstedet, vekten og bivirkningene. Doseloggen på telefonen er gratis og krever ingen konto. Dial Pro legger til en graf over estimert nivå, logging fra Apple Watch og eksport til PDF eller CSV."
   detail: "Før hver dose med tid og injeksjonssted, på telefonen eller håndleddet. Dial Pro tegner et estimert nivå mellom dosene og lager en PDF til legen din. Postene blir liggende på enheten, eller i din egen private iCloud-database hvis du slår det på."
   free_line: Gratis å laste ned, uten konto. Doseloggen har ingen grense.
   secondary_cta: "Slik fungerer Dial"
@@ -58,7 +59,7 @@ hero:
     - Apple Watch
     - "Siri, Kontrollsenter og låseskjerm"
     - "Valgfri privat iCloud-lagring"
-  legal: "Dial er et personlig notat. Den beregner ikke doser og erstatter ikke råd fra legen din. Dial Pro legger til grafen for estimert nivå, full historikk, eksport og rask føring, som beskrevet under."
+  legal: "Dial er en personlig journal, ikke medisinske råd. Dial Pro legger til logging fra Apple Watch, grafer og eksport."
 
 proof:
   label: "Hvorfor Dial"
@@ -71,14 +72,19 @@ proof:
 level:
   kicker: "Dial Pro · Estimert nivå"
   heading: "Se et estimert nivå mellom dosene, ut fra halveringstiden."
-  body: "Dial tegner et estimert nivå ut fra dosene du har ført og halveringstiden appen viser, for støttede injeksjonspreparater og dosenheter. Tablettene har ingen nivågraf: opptaket via munnen varierer for mye mellom mennesker. Se en uke, en måned eller seks måneder av injeksjonshistorikken."
+  body: "Dial tegner et estimert nivå ut fra dosene du har ført og halveringstiden appen viser, for støttede injiserbare preparater som Ozempic, Wegovy, Mounjaro og Zepbound. Tabletter som Rybelsus får ingen nivågraf: opptaket via munnen varierer for mye mellom mennesker. Se en uke, en måned eller seks måneder av injeksjonshistorikken."
   boundary_lead: "Vi kaller det et anslag."
-  boundary_body: "Grafen følger en vanlig nedbrytningskurve ut fra dosene du har ført. Den viser dine egne mønstre mellom doser. Det er et anslag, ikke et målt blodnivå, og ikke et forslag til hva du skal ta neste gang. Dial beregner ikke doser. Appen forklarer hele metoden."
+  boundary_body: "Grafen følger en vanlig nedbrytningskurve ut fra semaglutid- eller tirzepatiddosene du har ført. Den viser dine egne mønstre mellom doser. Det er et anslag, ikke et målt blodnivå. Appen forklarer hele metoden."
+
+boundary:
+  kicker: "Hva Dial ikke gjør"
+  heading: "Dial fører journalen. Legen din setter dosen."
+  body: "Dial beregner ikke doser, anbefaler ingen doseendring og sier ikke hva du bør gjøre etter en glemt dose. Estimert nivå er et anslag fra en populasjonsmodell basert på dosene du har logget, ikke en måling. Enhetsomregneren for hetteglass fra reseptfremstilling regner bare med mg og mg/ml du skriver inn, og foreslår ingen mengde. Spør legen din eller apoteket om medisinske valg."
 
 logging:
   kicker: "Rask føring"
   heading: "Før legemiddel, dose og injeksjonssted i ett skjema."
-  body: "Før legemiddel, mengde, dato, tid og notater. Injeksjoner inkluderer et sted. Tablettene som Rybelsus føres uten sted. Dial viser semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid og eksenatid. Legg til et eget legemiddel hvis ditt mangler."
+  body: "Før legemiddel, mengde, dato, tid og notater. Injeksjoner som Ozempic, Wegovy, Mounjaro og Zepbound inkluderer et sted. Tabletter som Rybelsus føres uten sted. Dial viser semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid og eksenatid under de merkenavnene som brukes i Norge, samt forskrevet semaglutid eller tirzepatid fra hetteglass. Legg til et eget legemiddel hvis ditt mangler."
   checklist:
     - "Rediger en post når noe endrer seg"
     - "Injeksjonsstedet følger hver dose"

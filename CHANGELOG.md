@@ -4,6 +4,19 @@ All notable changes to this website are documented in this file.
 
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [Unreleased]
+
+### Added
+
+- A quick-answer paragraph under the H1 on every Dial landing page, in all 33 locales. It states what Dial logs, that locale's brand names, the free tier, and what Dial Pro adds, in one paragraph written to be liftable into search and AI answers.
+- A "What Dial does not do" section on the Dial landing page in all 33 locales. It states that Dial does not calculate doses or recommend a change, that the estimated level is a population-model estimate rather than a measurement, and that the vial unit converter is arithmetic on entered values.
+
+### Changed
+
+- Dial locale meta descriptions now name local brand names, say the phone log is free, and note that no account is required. Every description is 155 characters or fewer.
+- The Dial hero legal line is now one sentence in every locale, matching the new boundary section.
+- Estimated-level and logging copy names the injectable brands and the tablet example in every locale.
+
 ## [2026-09-04]
 
 ### Added

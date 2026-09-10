@@ -48,6 +48,7 @@ hero:
   headline_lead: "Her dozun özel kaydı."
   headline_accent: ""
   category: "Dial, iPhone ve Apple Watch için bir GLP-1 ilaç kaydıdır."
+  quick_answer: "Dial, GLP-1 enjeksiyonlarını ve tabletlerini kaydeder: Ozempic, Wegovy, Rybelsus, Mounjaro, Zepbound ve reçeteyle aldığınız magistral semaglutid veya tirzepatid dahil. Her kayıt dozu, saati, enjeksiyon yerini, kiloyu ve yan etkileri saklar. Telefon kaydı ücretsizdir, hesap gerekmez. Dial Pro tahmini düzey grafiği, Apple Watch ile kayıt ve PDF veya CSV dışa aktarma ekler."
   detail: "Her dozu saat ve enjeksiyon yeriyle kaydet, telefonda veya bilekte. Dial Pro dozlar arasındaki tahmini düzeyi çizer ve hekimin için bir PDF hazırlar. Kayıtlar cihazda kalır. iCloud'u açarsan kendi özel iCloud veritabanında da durur."
   free_line: Ücretsiz indir, hesap açmana gerek yok. Doz kaydının sınırı yok.
   secondary_cta: "Dial nasıl çalışır"
@@ -58,7 +59,7 @@ hero:
     - Apple Watch
     - "Siri, Denetim Merkezi ve Kilit Ekranı"
     - "İsteğe bağlı özel iCloud depolama"
-  legal: "Dial kişisel bir kayıttır. Doz hesaplamaz ve hekiminin yönlendirmesinin yerini almaz. Dial Pro aşağıda anlatılan tahmini düzey grafiğini, tam geçmişi, dışa aktarmayı ve hızlı kaydı ekler."
+  legal: "Dial kişisel bir kayıttır, tıbbi tavsiye değildir. Dial Pro Watch kaydı, grafikler ve dışa aktarma ekler."
 
 proof:
   label: "Neden Dial"
@@ -71,14 +72,19 @@ proof:
 level:
   kicker: "Dial Pro · Tahmini düzey"
   heading: "Dozlar arasında tahmini düzeyi gör, yarı ömre göre."
-  body: "Dial, kaydettiğiniz dozlardan ve uygulamada gösterilen yarı ömürden, desteklenen enjekte edilebilirler ve doz birimleri için tahmini bir düzey çizer. Tabletlerin düzey grafiği yoktur: ağızdan emilim insanlar arasında fazla değişir. Bir hafta, bir ay veya altı aylık enjeksiyon geçmişine bakın."
+  body: "Dial, kaydettiğiniz dozlardan ve uygulamada gösterilen yarı ömürden, Ozempic, Wegovy, Mounjaro ve Zepbound gibi desteklenen enjekte edilebilir ilaçlar için tahmini bir düzey çizer. Rybelsus gibi tabletlerin düzey grafiği yoktur: ağızdan emilim insanlar arasında fazla değişir. Bir hafta, bir ay veya altı aylık enjeksiyon geçmişine bakın."
   boundary_lead: "Bu bir tahmin. Bunu açıkça söylüyoruz."
-  boundary_body: "Grafik, kaydettiğiniz dozlardan standart bir azalma eğrisi çizer. Dozlar arasındaki kendi örüntülerinizi gösterir. Ölçülmüş bir kan düzeyi değildir. Sonra ne alınacağına dair bir öneri de değildir. Dial doz hesaplamaz. Uygulama yöntemi baştan sona açıklar."
+  boundary_body: "Grafik, kaydettiğiniz semaglutid veya tirzepatid dozlarından standart bir azalma eğrisi çizer. Dozlar arasındaki kendi örüntülerinizi gösterir. Ölçülmüş bir kan düzeyi değildir, bir tahmindir. Uygulama yöntemi baştan sona açıklar."
+
+boundary:
+  kicker: "Dial'in yapmadıkları"
+  heading: "Kaydı Dial tutar, dozu hekimin belirler."
+  body: "Dial doz hesaplamaz, doz değişikliği önermez veya atlanmış bir dozdan sonra ne yapılacağını söylemez. Tahmini düzey, kaydettiğiniz dozlardan bir popülasyon modeliyle üretilen tahmindir, ölçüm değildir. Magistral flakonlar için birim dönüştürücü, girdiğiniz mg ve mg/ml değerleriyle aritmetik yapar, miktar önermez. İlaçla ilgili kararlar için hekiminize veya eczacınıza danışın."
 
 logging:
   kicker: "Hızlı kayıt"
   heading: "İlacı, dozu ve enjeksiyon yerini tek formda kaydet."
-  body: "İlaç, miktar, tarih, saat ve notları yazın. Enjeksiyonlara yer de eklenir. Rybelsus gibi tabletler yer olmadan kaydedilir. Dial semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid ve eksenatidi listeler. İlacınız yoksa özel bir ilaç ekleyin."
+  body: "İlaç, miktar, tarih, saat ve notları yazın. Ozempic, Wegovy, Mounjaro ve Zepbound gibi enjeksiyonlara enjeksiyon yeri eklenir. Rybelsus gibi tabletler yer olmadan kaydedilir. Dial semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid ve eksenatidi ülkenizdeki kutu adlarıyla listeler; reçeteyle aldığınız magistral semaglutid veya tirzepatid flakonu da kaydedilir. İlacınız yoksa özel bir ilaç ekleyin."
   checklist:
     - "Bir şey değişince kaydı düzenleyin"
     - "Her dozun enjeksiyon yerini kaydedin"

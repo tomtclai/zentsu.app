@@ -49,6 +49,35 @@
   line-height: 1.65;
 }
 
+.dial-boundary-section {
+  padding: calc(var(--dial-section-space) * 0.6) 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.dial-boundary-section .dial-wrap {
+  max-width: 62ch;
+}
+
+.dial-boundary-section .dial-kicker {
+  color: var(--dial-kicker, var(--accent));
+}
+
+.dial-boundary-section h2 {
+  margin: 0.7rem 0 1rem;
+  color: var(--ink);
+  font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+  font-weight: 720;
+  letter-spacing: -0.02em;
+  line-height: 1.18;
+  text-wrap: balance;
+}
+
+.dial-boundary-section p:not(.dial-kicker) {
+  color: var(--body-text);
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
 .dial-boundary {
   margin-top: 1.5rem;
   padding: 1rem 1.1rem;

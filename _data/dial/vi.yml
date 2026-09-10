@@ -48,6 +48,7 @@ hero:
   headline_lead: "Nhật ký riêng của từng liều."
   headline_accent: ""
   category: "Dial là ứng dụng theo dõi thuốc GLP-1 cho iPhone và Apple Watch."
+  quick_answer: "Dial ghi các thuốc GLP-1 dạng tiêm và dạng viên, gồm Ozempic, Wegovy, Rybelsus, Mounjaro, Zepbound và semaglutide hoặc tirzepatide pha chế có đơn thuốc. Mỗi mục ghi lại liều, giờ, vị trí tiêm, cân nặng và tác dụng phụ. Nhật ký trên điện thoại miễn phí và không cần tài khoản. Dial Pro thêm biểu đồ mức ước tính, ghi liều trên Apple Watch và xuất PDF hoặc CSV."
   detail: "Ghi từng liều kèm giờ và vị trí tiêm, trên điện thoại hoặc cổ tay. Dial Pro vẽ mức ước tính giữa các liều và tạo PDF cho bác sĩ. Bản ghi ở lại trên máy, hoặc trong cơ sở dữ liệu iCloud riêng của bạn nếu bạn bật."
   free_line: Tải miễn phí, không cần tạo tài khoản. Nhật ký liều không giới hạn.
   secondary_cta: "Cách Dial hoạt động"
@@ -58,7 +59,7 @@ hero:
     - Apple Watch
     - "Siri, Trung tâm điều khiển và màn hình khóa"
     - "Lưu trữ iCloud riêng, bật khi cần"
-  legal: "Dial là bản ghi cá nhân. Ứng dụng không tính liều và không thay thế hướng dẫn của bác sĩ. Dial Pro thêm biểu đồ mức ước tính, lịch sử đầy đủ, xuất file và ghi nhanh như mô tả bên dưới."
+  legal: "Dial là bản ghi cá nhân, không phải lời khuyên y khoa. Dial Pro thêm ghi liều trên Apple Watch, biểu đồ và xuất file."
 
 proof:
   label: "Vì sao Dial"
@@ -71,14 +72,19 @@ proof:
 level:
   kicker: "Dial Pro · Mức ước tính"
   heading: "Xem mức ước tính giữa các liều, dựa trên thời gian bán hủy."
-  body: "Dial vẽ mức ước tính từ các liều đã ghi và thời gian bán hủy trong ứng dụng, cho thuốc tiêm và đơn vị liều được hỗ trợ. Viên nén không có biểu đồ mức: hấp thu đường uống khác nhau quá nhiều giữa mọi người. Xem một tuần, một tháng hoặc sáu tháng lịch sử tiêm."
+  body: "Dial vẽ mức ước tính từ các liều đã ghi và thời gian bán hủy trong ứng dụng, cho thuốc tiêm được hỗ trợ như Ozempic, Wegovy, Mounjaro và Zepbound. Thuốc viên như Rybelsus không có biểu đồ mức: lượng thuốc uống vào được máu biến động quá lớn giữa những người. Xem một tuần, một tháng hoặc sáu tháng lịch sử tiêm."
   boundary_lead: "Đây là ước tính. Chúng tôi ghi rõ điều đó."
-  boundary_body: "Biểu đồ vẽ đường cong suy giảm chuẩn từ các liều bạn đã ghi. Nó cho thấy xu hướng của bạn giữa các liều. Đó là ước tính, không phải mức máu đo được, cũng không phải gợi ý liều tiếp theo. Dial không tính liều. Ứng dụng giải thích đầy đủ cách ước tính."
+  boundary_body: "Biểu đồ dựng đường cong suy giảm chuẩn từ các liều semaglutide hoặc tirzepatide bạn đã ghi. Nó cho thấy xu hướng của bạn giữa các liều. Đó là ước tính, không phải mức máu đo được. Ứng dụng giải thích đầy đủ cách ước tính."
+
+boundary:
+  kicker: "Những gì Dial không làm"
+  heading: "Dial giữ bản ghi. Bác sĩ của bạn quyết định liều."
+  body: "Dial không tính liều, không đề xuất thay đổi liều, và không nói bạn cần làm gì sau khi lừa một liều. Mức ước tính là con số từ mô hình quần thể dựa trên các liều bạn đã ghi, không phải phép đo. Bộ đổi đơn vị cho lọ thuốc pha chế chỉ thực hiện phép tính số học từ mg và mg/mL bạn nhập, và không đề xuất lượng dùng. Hãy hỏi bác sĩ hoặc dược sĩ về mọi quyết định liên quan đến thuốc."
 
 logging:
   kicker: "Ghi nhanh"
   heading: "Ghi thuốc, liều và vị trí tiêm trong một biểu mẫu."
-  body: "Ghi thuốc, lượng, ngày, giờ và ghi chú. Mũi tiêm kèm vị trí. Viên nén như Rybelsus ghi không cần vị trí. Dial liệt kê semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide và exenatide. Thêm thuốc tùy chỉnh nếu thiếu thuốc của bạn."
+  body: "Ghi thuốc, lượng, ngày, giờ và ghi chú. Mũi tiêm như Ozempic, Wegovy, Mounjaro và Zepbound kèm vị trí tiêm. Thuốc viên như Rybelsus ghi không cần vị trí. Dial liệt kê semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide và exenatide với tên thương hiệu theo khu vực, kèm semaglutide hoặc tirzepatide pha chế có đơn thuốc từ lọ. Thêm thuốc tùy chỉnh nếu thiếu thuốc của bạn."
   checklist:
     - "Sửa mục khi có thay đổi"
     - "Mỗi liều gắn với một vị trí tiêm"

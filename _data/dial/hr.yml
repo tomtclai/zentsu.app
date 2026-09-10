@@ -48,6 +48,7 @@ hero:
   headline_lead: "Privatni zapis svake doze."
   headline_accent: ""
   category: "Dial prati lijekove GLP-1 na iPhoneu i Apple Watchu."
+  quick_answer: "Dial bilježi GLP-1 injekcije i tablete, uključujući Ozempic, Wegovy, Rybelsus, Mounjaro i propisani compounded semaglutid ili tirzepatid. Svaki unos čuva dozu, vrijeme, mjesto injekcije, težinu i nuspojave. Dnevnik na telefonu je besplatan i ne treba račun. Dial Pro dodaje grafikon procijenjene razine, bilježenje s Apple Watcha te izvoz u PDF ili CSV."
   detail: "Zabilježi svaku dozu s vremenom i mjestom injekcije, na telefonu ili sa zapešća. Dial Pro crta procijenjenu razinu između doza i sastavlja PDF za liječnika. Zapisi ostaju na uređaju ili u tvojoj privatnoj iCloud bazi, ako to uključiš."
   free_line: Preuzimanje je besplatno, račun ne otvaraš. Zapise doza vodiš bez ograničenja.
   secondary_cta: "Kako Dial radi"
@@ -58,7 +59,7 @@ hero:
     - Apple Watch
     - "Siri, Kontrolni centar i zaključani zaslon"
     - "Neobavezna privatna iCloud pohrana"
-  legal: "Dial je osobni zapis. Ne izračunava doze i ne zamjenjuje upute liječnika. Dial Pro dodaje grafikon procijenjene razine, punu povijest, izvoz i brzi unos, opisane niže."
+  legal: "Dial je osobni zapis, a ne medicinski savjet. Dial Pro dodaje bilježenje s Watcha, grafikone i izvoz."
 
 proof:
   label: "Zašto Dial"
@@ -71,14 +72,19 @@ proof:
 level:
   kicker: "Dial Pro · Procijenjena razina"
   heading: "Procijenjena razina između doza prema poluživotu."
-  body: "Dial crta procijenjenu razinu iz unesenih doza i poluživota prikazanog u aplikaciji, za podržane injekcijske pripravke i jedinice doze. Tablete nemaju grafikon razine: oralna apsorpcija previše varira među ljudima. Pregledaj tjedan, mjesec ili šest mjeseci povijesti injekcija."
+  body: "Dial crta procijenjenu razinu iz unesenih doza i poluživota prikazanog u aplikaciji, za podržane injekcijske lijekove poput Ozempica, Wegovyja, Mounjara i Zepbounda. Tablete poput Rybelsusa nemaju grafikon razine: oralna apsorpcija previše varira među ljudima. Pregledaj tjedan, mjesec ili šest mjeseci povijesti injekcija."
   boundary_lead: "To je procjena. Tako i pišemo."
-  boundary_body: "Grafikon modelira standardnu krivulju opadanja iz doza koje ste unijeli. Pokazuje vaše obrasce između doza. To je procjena, ne izmjerena razina u krvi. Ne predlaže sljedeću dozu. Dial ne izračunava doze. Aplikacija metodu objašnjava u cijelosti."
+  boundary_body: "Grafikon modelira standardnu krivulju opadanja iz semaglutida ili tirzepatida koje ste unijeli. Pokazuje vaše obrasce između doza. To je procjena, ne izmjerena razina u krvi. Aplikacija metodu objašnjava u cijelosti."
+
+boundary:
+  kicker: "Što Dial ne radi"
+  heading: "Dial vodi zapis. Dozu određuje vaš liječnik."
+  body: "Dial ne izračunava doze, ne preporučuje promjenu doze i ne govori što učiniti nakon propuštene doze. Procijenjena razina je procjena iz populacijskog modela na temelju unesenih doza, a ne mjerenje. Pretvarač jedinica za compounded bočice samo računa s unesenim mg i mg/mL i ne predlaže količinu. Odluke o lijekovima pitajte svog liječnika ili ljekarnika."
 
 logging:
   kicker: "Brzi unos"
   heading: "Zabilježi lijek, dozu i mjesto injekcije u jednom obrascu."
-  body: "Zapiši lijek, količinu, datum, vrijeme i bilješke. Injekcije uključuju mjesto. Tablete poput Rybelsusa bilježe se bez mjesta. Dial navodi semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid i eksenatid. Dodaj vlastiti lijek ako nedostaje."
+  body: "Zapiši lijek, količinu, datum, vrijeme i bilješke. Injekcije poput Ozempica, Wegovyja, Mounjara i Zepbounda uključuju mjesto. Tablete poput Rybelsusa bilježe se bez mjesta. Dial navodi semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid i eksenatid pod regionalnim nazivima, uz propisani compounded semaglutid ili tirzepatid iz bočice. Dodaj vlastiti lijek ako nedostaje."
   checklist:
     - "Uredite unos kad se nešto promijeni"
     - "Mjesta injekcije ostaju uz svaku dozu"

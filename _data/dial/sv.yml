@@ -48,6 +48,7 @@ hero:
   headline_lead: "Privat anteckning per dos."
   headline_accent: ""
   category: "Dial är en GLP-1-läkemedelsöversikt för iPhone och Apple Watch."
+  quick_answer: "Dial loggar GLP-1-injektioner och tabletter, bland annat Ozempic, Wegovy, Rybelsus, Mounjaro samt semaglutid eller tirzepatid från injektionsflaska på recept. Varje post sparar dosen, tidpunkten, injektionsstället, vikten och biverkningarna. Loggen i telefonen är gratis och kräver inget konto. Dial Pro lägger till ett diagram för uppskattad nivå, registrering på Apple Watch och export som PDF eller CSV."
   detail: "Registrera varje dos med tid och injektionsställe, i telefonen eller på handleden. Dial Pro ritar en uppskattad nivå mellan doserna och tar fram en PDF till din förskrivare. Posterna stannar på enheten, eller i din egen privata iCloud-databas om du slår på det."
   free_line: Gratis att hämta, utan konto. Dosloggen har inget tak.
   secondary_cta: "Så fungerar Dial"
@@ -58,7 +59,7 @@ hero:
     - Apple Watch
     - "Siri, Kontrollcenter och låsskärm"
     - "Valfri privat iCloud-lagring"
-  legal: "Dial är en personlig anteckning. Den räknar inte ut doser och ersätter inte råd från din förskrivare. Dial Pro lägger till diagrammet för uppskattad nivå, hela historiken, export och snabb registrering, som beskrivs nedan."
+  legal: "Dial är en personlig anteckning, inte medicinska råd. Dial Pro lägger till registrering på Watch, diagram och export."
 
 proof:
   label: "Varför Dial"
@@ -71,14 +72,19 @@ proof:
 level:
   kicker: "Dial Pro · Uppskattad nivå"
   heading: "Se en uppskattad nivå mellan doserna, utifrån halveringstiden."
-  body: "Dial ritar en uppskattad nivå från dina registrerade doser och halveringstiden appen visar, för stödda injektionsläkemedel och dosenheter. Tabletterna har ingen nivågraf: upptaget via munnen varierar för mycket mellan människor. Se en vecka, en månad eller sex månader av injektionshistoriken."
+  body: "Dial ritar en uppskattad nivå från dina registrerade doser och halveringstiden appen visar, för stödda injektionsläkemedel som Ozempic, Wegovy, Mounjaro och Zepbound. Tabletter som Rybelsus har ingen nivågraf: upptaget via munnen varierar för mycket mellan människor. Se en vecka, en månad eller sex månader av injektionshistoriken."
   boundary_lead: "Vi kallar den en uppskattning."
-  boundary_body: "Diagrammet modellerar en vanlig avklingningskurva från doserna du har registrerat. Det visar dina egna mönster mellan doser. Det är en uppskattning, inte en uppmätt blodnivå, och inte ett förslag på vad du ska ta härnäst. Dial beräknar inte doser. Appen förklarar hela metoden."
+  boundary_body: "Diagrammet modellerar en vanlig avklingningskurva från dina registrerade doser av semaglutid eller tirzepatid. Det visar dina egna mönster mellan doser. Det är en uppskattning, inte en uppmätt blodnivå. Appen förklarar hela metoden."
+
+boundary:
+  kicker: "Vad Dial inte gör"
+  heading: "Dial för journalen. Din förskrivare sätter dosen."
+  body: "Dial räknar inte ut doser, rekommenderar ingen dosändring och säger inte vad du ska göra efter en missad dos. Den uppskattade nivån är en uppskattning från en populationsmodell utifrån dina registrerade doser, inte en mätning. Enhetsomvandlaren för injektionsflaskor utför bara räkneoperationer med det mg- och mg/mL-värde du anger och föreslår ingen mängd. Fråga din förskrivare eller apotekaren i frågor om din medicinering."
 
 logging:
   kicker: "Snabb registrering"
   heading: "Registrera läkemedel, dos och injektionsställe i ett formulär."
-  body: "Anteckna läkemedel, mängd, datum, tid och anteckningar. Injektioner inkluderar ett ställe. Tabletterna som Rybelsus förs utan ställe. Dial listar semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid och exenatid. Lägg till ett eget läkemedel om ditt saknas."
+  body: "Anteckna läkemedel, mängd, datum, tid och anteckningar. Injektioner som Ozempic, Wegovy, Mounjaro och Zepbound registrerar även ett ställe. Tabletter som Rybelsus loggas utan ställe. Dial listar semaglutid, tirzepatid, liraglutid, dulaglutid och exenatid, under de varumärkesnamn som används i Sverige, plus semaglutid eller tirzepatid från injektionsflaska på recept. Lägg till ett eget läkemedel om ditt saknas."
   checklist:
     - "Redigera en post när något ändras"
     - "Behåll injektionsställen kopplade till varje dos"

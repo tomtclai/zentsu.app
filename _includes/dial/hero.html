@@ -18,7 +18,8 @@
               <span>{{ copy.hero.headline_accent }}</span>
               {%- endif -%}
             </h1>
-            <p class="dial-category">{{ copy.hero.category }}</p>
+            <p class="dial-category">{{ copy.hero.category }}</p>{%- if copy.hero.quick_answer %}
+            <p class="dial-quick-answer">{{ copy.hero.quick_answer }}</p>{%- endif %}
             <div class="dial-actions dial-actions-primary">
               <a
                 class="app-store-badge-link"

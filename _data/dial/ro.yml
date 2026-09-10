@@ -48,6 +48,7 @@ hero:
   headline_lead: "O evidență privată a fiecărei doze."
   headline_accent: ""
   category: "Dial este o evidență de medicamente GLP-1 pentru iPhone și Apple Watch."
+  quick_answer: "Dial înregistrează injecții și comprimate GLP-1, inclusiv Ozempic, Wegovy, Rybelsus, Mounjaro, Saxenda și semaglutidă sau tirzepatidă preparată la rețetă. Fiecare înregistrare păstrează doza, ora, locul de injecție, greutatea și efectele secundare. Jurnalul de pe telefon este gratuit, fără cont. Dial Pro adaugă graficul nivelului estimat, înregistrarea pe Apple Watch și export PDF sau CSV."
   detail: "Notează fiecare doză cu ora și locul de injecție, pe telefon sau de la încheietură. Dial Pro construiește un nivel estimat între doze și pregătește un PDF pentru medicul tău. Înregistrările rămân pe dispozitiv, sau în baza ta de date iCloud privată dacă o activezi."
   free_line: Descărcare gratuită, fără un cont de creat. Evidența dozelor nu are limită.
   secondary_cta: "Vezi cum funcționează Dial"
@@ -58,7 +59,7 @@ hero:
     - Apple Watch
     - "Siri, Centrul de control și ecranul de blocare"
     - "Stocare iCloud privată opțională"
-  legal: "Dial este o evidență personală. Nu calculează doze și nu înlocuiește indicațiile medicului tău. Dial Pro adaugă graficul nivelului estimat, istoricul complet, exporturile și înregistrarea rapidă descrise mai jos."
+  legal: "Dial este o evidență personală, nu un sfat medical. Dial Pro adaugă înregistrarea pe Watch, graficele și exporturile."
 
 proof:
   label: "De ce Dial"
@@ -71,14 +72,19 @@ proof:
 level:
   kicker: "Dial Pro · Nivel estimat"
   heading: "Vezi un nivel estimat între doze, după timpul de înjumătățire."
-  body: "Dial construiește un nivel estimat din dozele înregistrate și din timpul de înjumătățire afișat în aplicație, pentru injectabilele și unitățile de doză acceptate. Comprimatele nu au grafic de nivel: absorbția orală variază prea mult între oameni. Revizuiește o săptămână, o lună sau șase luni de injecții."
+  body: "Dial construiește un nivel estimat din dozele înregistrate și din timpul de înjumătățire afișat în aplicație, pentru injectabile acceptate precum Ozempic, Wegovy, Mounjaro și Zepbound. Comprimatele precum Rybelsus nu au grafic de nivel: absorbția orală variază prea mult între oameni. Revizuiește o săptămână, o lună sau șase luni de injecții."
   boundary_lead: "Este o estimare. O spunem deschis."
-  boundary_body: "Graficul construiește o curbă standard de scădere din dozele pe care le-ați înregistrat. Arată propriile intervale dintre doze. Este o estimare, nu un nivel măsurat în sânge. Nu este o sugestie despre ce să luați în continuare. Dial nu calculează doze. Aplicația explică metoda în detaliu."
+  boundary_body: "Graficul construiește o curbă standard de scădere din dozele de semaglutidă sau tirzepatidă pe care le-ați înregistrat. Arată propriile tipare dintre doze. Este o estimare, nu un nivel măsurat în sânge. Aplicația explică metoda în detaliu."
+
+boundary:
+  kicker: "Ce nu face Dial"
+  heading: "Dial ține evidența. Doza o stabilește medicul care v-a prescris tratamentul."
+  body: "Dial nu calculează doze, nu recomandă o schimbare a dozei și nu vă spune ce să faceți după o doză ratată. Nivelul estimat este o estimare dintr-un model de populație, bazată pe dozele înregistrate, nu o măsurătoare. Convertorul de unități pentru flacoanele preparate la rețetă face doar calcule aritmetice cu mg și mg/ml pe care le introduceți și nu sugerează nicio cantitate. Întrebați medicul prescriptor sau farmacistul în privința deciziilor despre medicamente."
 
 logging:
   kicker: "Înregistrare rapidă"
   heading: "Notează medicamentul, doza și locul de injecție într-un singur formular."
-  body: "Notează medicamentul, cantitatea, data, ora și notele. Injecțiile includ locul. Comprimatele precum Rybelsus se înregistrează fără loc. Dial listează semaglutidă, tirzepatidă, orforglipron, liraglutidă, dulaglutidă și exenatidă. Adaugă un medicament personalizat dacă al tău lipsește."
+  body: "Notează medicamentul, cantitatea, data, ora și notele. Injecțiile precum Ozempic, Wegovy, Mounjaro și Zepbound includ locul de injectare. Comprimatele precum Rybelsus se înregistrează fără loc. Dial listează semaglutidă, tirzepatidă, liraglutidă, dulaglutidă și exenatidă, cu denumirile de marcă folosite în România, plus semaglutidă sau tirzepatidă preparată la rețetă, din flacon. Adaugă un medicament personalizat dacă al tău lipsește."
   checklist:
     - "Editați o înregistrare când se schimbă ceva"
     - "Păstrați locul de injecție la fiecare doză"

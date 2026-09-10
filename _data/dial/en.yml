@@ -61,6 +61,7 @@ hero:
   headline_lead: "Your GLP-1 dose log, in one place."
   headline_accent: ""
   category: Dial is a GLP‑1 dose tracker for iPhone and Apple Watch.
+  quick_answer: "Dial logs GLP-1 injections and pills, including Ozempic, Wegovy, Rybelsus, Mounjaro, Zepbound and prescribed compounded semaglutide or tirzepatide. Each entry keeps the dose, time, injection site, weight and side effects. The phone log is free with no account. Dial Pro adds an estimated level chart, Apple Watch logging and a PDF or CSV export."
   detail: "Start with the free iPhone dose log. Dial Pro adds Apple Watch logging, charts, and PDF or CSV export. Medication records can sync through your own iCloud. Weight and progress photos stay local."
   free_line: Free to download, with no account to create. The phone log has no cap on entries.
   secondary_cta: See how Dial works
@@ -72,8 +73,8 @@ hero:
     - Siri, Control Center, and Lock Screen
     - Optional private iCloud storage
   legal:
-    Dial is a personal record. It does not calculate doses or replace guidance from your
-    prescriber. Dial Pro adds Watch logging, charts, and exports.
+    Dial is a personal record, not medical advice. Dial Pro adds Watch logging, charts,
+    and exports.
 
 proof:
   label: Why Dial
@@ -86,18 +87,22 @@ proof:
 level:
   kicker: Dial Pro · Estimated level
   heading: Review an estimated level between doses.
-  body: "Dial plots an estimated level from logged doses and the half-life shown in the app, for supported injectables and dose units. Tablets have no level chart: oral absorption varies too much between people. Review a week, month, or six months of injection history."
+  body: "Dial plots an estimated level from logged doses and the half-life shown in the app, for supported injectables such as Ozempic, Wegovy, Mounjaro and Zepbound. Tablets such as Rybelsus have no level chart: oral absorption varies too much between people. Review a week, month, or six months of injection history."
   boundary_lead: An estimate, and we say so.
   boundary_body:
-    The chart models a standard decay curve from the doses you logged. It shows your
-    own patterns between doses. It is an estimate, not a stand-in for a measured blood
-    level, and not a suggestion of what to take next. Dial does not calculate doses.
-    The app explains the method in full.
+    The chart models a standard decay curve from the semaglutide or tirzepatide doses you
+    logged. It shows your own patterns between doses. It is an estimate, not a stand-in
+    for a measured blood level. The app explains the method in full.
+
+boundary:
+  kicker: What Dial does not do
+  heading: Dial keeps the record. Your prescriber sets the dose.
+  body: "Dial does not calculate doses, recommend a dose change, or tell you what to do after a missed dose. The estimated level is a population-model estimate from your logged doses, not a measurement. The unit converter for compounded vials is arithmetic on the mg and mg/mL you enter and does not suggest an amount. Ask your prescriber or pharmacist about medication decisions."
 
 logging:
   kicker: Quick logging
   heading: Put the details in one dose entry.
-  body: "Record medication, amount, date, time, and notes. Injections include a site. Tablets such as Rybelsus log without one. Dial lists semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide, and exenatide. Add a custom medication if yours is missing."
+  body: "Record medication, amount, date, time, and notes. Injections such as Ozempic, Wegovy, Mounjaro and Zepbound include a site. Tablets such as Rybelsus log without one. Dial lists semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide, and exenatide with regional brand names, plus prescribed compounded semaglutide or tirzepatide from a vial. Add a custom medication if yours is missing."
   checklist:
     - Edit an entry when something changes
     - Keep injection sites attached to each dose

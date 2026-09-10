@@ -61,6 +61,7 @@ hero:
   headline_lead: "Um registro privado de cada dose."
   headline_accent: ""
   category: O Dial é um registro de medicamentos GLP-1 para iPhone e Apple Watch.
+  quick_answer: "O Dial registra injeções e comprimidos de GLP-1, incluindo Ozempic, Wegovy, Rybelsus, Mounjaro, Zepbound e semaglutida ou tirzepatida manipuladas sob prescrição. Cada entrada guarda a dose, o horário, o local de injeção, o peso e os efeitos colaterais. O registro no telefone é grátis e não pede conta. O Dial Pro adiciona o gráfico de nível estimado, o registro pelo Apple Watch e a exportação em PDF ou CSV."
   detail:
     Registre cada dose com o horário e o local de injeção, no telefone ou no pulso. O
     Dial Pro traça um nível estimado entre as doses e monta um PDF para quem prescreve.
@@ -75,11 +76,8 @@ hero:
     - Apple Watch
     - Siri, Central de Controle e Tela Bloqueada
     - Armazenamento privado opcional no iCloud
-  legal:
-    O Dial é um registro pessoal. Não calcula doses nem substitui a orientação de quem
-    prescreve. O Dial Pro adiciona o gráfico de nível estimado, o histórico completo,
-    as exportações e o registro rápido descritos abaixo.
-
+  legal: Registro pessoal, não orientação médica. O Dial Pro adiciona o registro pelo
+    Watch, os gráficos e as exportações.
 proof:
   label: Por que o Dial
   points:
@@ -91,18 +89,23 @@ proof:
 level:
   kicker: Dial Pro · Nível estimado
   heading: Veja um nível estimado entre as doses, segundo a meia-vida.
-  body: "O Dial traça um nível estimado a partir das doses registradas e da meia-vida mostrada no app, para injetáveis e unidades de dose compatíveis. Comprimidos não têm gráfico de nível: a absorção oral varia demais entre pessoas. Revise uma semana, um mês ou seis meses de injeções."
+  body: "O Dial traça um nível estimado a partir das doses registradas e da meia-vida mostrada no app, para injetáveis compatíveis como Ozempic, Wegovy, Mounjaro e Zepbound. Comprimidos como Rybelsus não têm gráfico de nível: a absorção oral varia demais entre pessoas. Revise uma semana, um mês ou seis meses de injeções."
   boundary_lead: É uma estimativa, e o app deixa isso claro.
   boundary_body:
-    O gráfico modela uma curva de decaimento padrão a partir das doses que você registrou.
-    Serve para notar os seus próprios padrões entre as doses, não para substituir um
-    nível medido no sangue nem para sugerir o que tomar em seguida. O Dial não calcula
-    doses. O app explica o método por completo.
+    O gráfico modela uma curva de decaimento padrão a partir das doses de semaglutida ou
+    tirzepatida que você registrou. Serve para notar os seus próprios padrões entre as
+    doses. É uma estimativa, não um substituto para um nível medido no sangue. O app
+    explica o método por completo.
+
+boundary:
+  kicker: O que o Dial não faz
+  heading: O Dial guarda o registro. Quem prescreve define a dose.
+  body: "O Dial não calcula doses, não recomenda mudança de dose nem diz o que fazer depois de uma dose esquecida. O nível estimado é uma estimativa de um modelo de população a partir das doses registradas, não uma medição. O conversor de unidades para frascos manipulados faz uma conta aritmética com os mg e os mg/mL que você informa e não sugere uma quantidade. Converse com quem prescreve ou com o farmacêutico sobre decisões de medicação."
 
 logging:
   kicker: Registro rápido
   heading: Registre o medicamento, a dose e o local de injeção em um só formulário.
-  body: "Anote medicamento, quantidade, data, hora e notas. Injeções incluem o local. Comprimidos como Rybelsus são registrados sem local. O Dial lista semaglutida, tirzepatida, orforglipron, liraglutida, dulaglutida e exenatida. Adicione um medicamento personalizado se o seu faltar."
+  body: "Anote medicamento, quantidade, data, hora e notas. Injeções como Ozempic, Wegovy, Mounjaro e Zepbound incluem o local. Comprimidos como Rybelsus são registrados sem local. O Dial lista semaglutida, tirzepatida, orforglipron, liraglutida, dulaglutida e exenatida com nomes regionais de marcas, além de semaglutida ou tirzepatida manipuladas sob prescrição a partir de um frasco. Adicione um medicamento personalizado se o seu faltar."
   checklist:
     - Edite uma entrada quando algo mudar
     - Mantenha o local de injeção junto de cada dose

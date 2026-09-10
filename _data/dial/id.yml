@@ -48,6 +48,7 @@ hero:
   headline_lead: "Catatan pribadi setiap dosis."
   headline_accent: ""
   category: "Dial adalah pelacak obat GLP-1 untuk iPhone dan Apple Watch."
+  quick_answer: "Dial mencatat suntikan dan tablet GLP-1, termasuk Ozempic, Wegovy, Rybelsus, Mounjaro, dan Zepbound, serta semaglutide atau tirzepatide racikan dari resep. Setiap entri menyimpan dosis, waktu, lokasi suntikan, berat, dan efek samping. Pencatatan di ponsel gratis tanpa perlu akun. Dial Pro menambah grafik tingkat perkiraan, pencatatan dari Apple Watch, dan ekspor PDF atau CSV."
   detail: "Catat setiap dosis beserta waktu dan lokasi suntikan, di ponsel atau di pergelangan. Dial Pro menampilkan tingkat perkiraan antar dosis dan menyusun PDF untuk dokter Anda. Catatan tetap di perangkat, atau di basis data iCloud pribadi Anda jika opsi itu dinyalakan."
   free_line: Unduh gratis, tanpa perlu membuat akun. Catatan dosis tidak dibatasi.
   secondary_cta: "Cara kerja Dial"
@@ -58,7 +59,7 @@ hero:
     - Apple Watch
     - "Siri, Pusat Kontrol, dan Layar Terkunci"
     - "Penyimpanan iCloud pribadi opsional"
-  legal: "Dial adalah catatan pribadi. Dial tidak menghitung dosis dan tidak menggantikan nasihat dokter. Dial Pro menambah grafik tingkat perkiraan, riwayat lengkap, ekspor, dan pencatatan cepat yang dijelaskan di bawah."
+  legal: "Catatan pribadi, bukan nasihat medis. Dial Pro menambah pencatatan dari Watch, grafik, dan ekspor."
 
 proof:
   label: "Mengapa Dial"
@@ -71,14 +72,19 @@ proof:
 level:
   kicker: "Dial Pro · Tingkat perkiraan"
   heading: "Lihat tingkat perkiraan antar dosis, berdasarkan waktu paruh."
-  body: "Dial menampilkan tingkat perkiraan dari dosis tercatat dan waktu paruh di aplikasi, untuk suntikan dan satuan dosis yang didukung. Tablet tidak punya grafik tingkat: penyerapan oral terlalu berbeda antarorang. Tinjau riwayat suntikan satu minggu, satu bulan, atau enam bulan."
+  body: "Dial menampilkan tingkat perkiraan dari dosis tercatat dan waktu paruh di aplikasi, untuk obat suntik yang didukung seperti Ozempic, Wegovy, Mounjaro, dan Zepbound. Tablet seperti Rybelsus tidak punya grafik tingkat: penyerapan oral terlalu berbeda antarorang. Tinjau riwayat suntikan satu minggu, satu bulan, atau enam bulan."
   boundary_lead: "Ini perkiraan. Kami sampaikan itu."
-  boundary_body: "Grafik memodelkan kurva peluruhan standar dari dosis yang Anda catat. Yang tampil adalah pola Anda sendiri antar dosis. Ini perkiraan, bukan kadar darah terukur, dan bukan saran dosis berikutnya. Dial tidak menghitung dosis. Aplikasi menjelaskan metodenya secara lengkap."
+  boundary_body: "Grafik memodelkan kurva peluruhan standar dari dosis semaglutide atau tirzepatide yang Anda catat. Yang tampil adalah pola Anda sendiri antar dosis. Ini perkiraan, bukan kadar darah terukur. Aplikasi menjelaskan metodenya secara lengkap."
+
+boundary:
+  kicker: "Yang tidak dilakukan Dial"
+  heading: "Dial menyimpan catatannya. Dosis ditentukan dokter Anda."
+  body: "Dial tidak menghitung dosis, tidak menyarankan perubahan dosis, dan tidak mengatakan apa yang harus dilakukan setelah dosis terlewat. Tingkat perkiraan adalah estimasi dari model populasi berdasarkan dosis yang Anda catat, bukan pengukuran. Konverter satuan untuk vial racikan hanya melakukan perhitungan aritmetika atas mg dan mg/mL yang Anda masukkan dan tidak menyarankan jumlah apa pun. Tanyakan keputusan soal obat kepada dokter atau apoteker Anda."
 
 logging:
   kicker: "Pencatatan cepat"
   heading: "Catat obat, dosis, dan lokasi suntikan dalam satu formulir."
-  body: "Catat obat, jumlah, tanggal, waktu, dan catatan. Suntikan menyertakan lokasi. Tablet seperti Rybelsus dicatat tanpa lokasi. Dial mencantumkan semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide, dan exenatide. Tambahkan obat kustom jika milik Anda hilang."
+  body: "Catat obat, jumlah, tanggal, waktu, dan catatan. Suntikan seperti Ozempic, Wegovy, Mounjaro, dan Zepbound menyertakan lokasi. Tablet seperti Rybelsus dicatat tanpa lokasi. Dial mencantumkan semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide, dan exenatide dengan nama merek di wilayah Anda, plus semaglutide atau tirzepatide racikan dari resep dalam vial. Tambahkan obat kustom jika milik Anda hilang."
   checklist:
     - "Sunting entri ketika sesuatu berubah"
     - "Simpan lokasi suntikan di setiap dosis"
