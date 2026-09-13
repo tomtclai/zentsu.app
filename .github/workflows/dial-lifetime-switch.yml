@@ -1,0 +1,106 @@
+name: Dial Lifetime price switch
+
+on:
+  schedule:
+    - cron: '7 7 * * *'
+    - cron: '7 9 * * *'
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: dial-lifetime-switch
+  cancel-in-progress: false
+
+env:
+  SWITCH_BRANCH: dial-lifetime-2026-09-26
+  SWITCH_DATE: '2026-09-26'
+
+jobs:
+  switch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      due: ${{ steps.due.outputs.due }}
+      main_sha: ${{ steps.land.outputs.main_sha }}
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Check whether the switch is due
+        id: due
+        run: |
+          today="$(date -u +%F)"
+          if [[ "$today" < "$SWITCH_DATE" ]]; then
+            echo "Today is $today UTC. The Lifetime switch is due on $SWITCH_DATE. Nothing to do."
+            echo "due=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          set +e
+          git ls-remote --exit-code --heads origin "$SWITCH_BRANCH"
+          status=$?
+          set -e
+          if [ "$status" -eq 2 ]; then
+            echo "Branch $SWITCH_BRANCH is not on origin. The switch already landed or was never pushed. Nothing to do."
+            echo "due=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [ "$status" -ne 0 ]; then
+            echo "::error::git ls-remote failed with status $status."
+            exit "$status"
+          fi
+          echo "due=true" >> "$GITHUB_OUTPUT"
+
+      - name: Rebase the switch branch onto main and push main
+        id: land
+        if: steps.due.outputs.due == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898208+github-actions[bot]@users.noreply.github.com'
+          git fetch --no-tags origin "+refs/heads/$SWITCH_BRANCH:refs/remotes/origin/$SWITCH_BRANCH"
+          git switch --create lifetime-switch "origin/$SWITCH_BRANCH"
+          if ! git rebase origin/main; then
+            git rebase --abort
+            echo "::error::$SWITCH_BRANCH conflicts with main. Resolve it by hand. Nothing was pushed."
+            exit 1
+          fi
+          if ! git diff --quiet origin/main HEAD -- .github; then
+            echo "::error::$SWITCH_BRANCH changes .github, which GITHUB_TOKEN cannot push. Nothing was pushed."
+            exit 1
+          fi
+          git push origin HEAD:refs/heads/main
+          echo "main_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  deploy:
+    needs: switch
+    if: needs.switch.outputs.due == 'true'
+    permissions:
+      contents: read
+    uses: ./.github/workflows/deploy.yml
+    with:
+      ref: ${{ needs.switch.outputs.main_sha }}
+    secrets:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+  retire:
+    needs: [switch, deploy]
+    if: needs.switch.outputs.due == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - name: Delete the switch branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method DELETE "repos/$GITHUB_REPOSITORY/git/refs/heads/$SWITCH_BRANCH"
+
+      - name: Disable this workflow
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow disable dial-lifetime-switch.yml --repo "$GITHUB_REPOSITORY"
