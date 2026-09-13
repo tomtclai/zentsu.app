@@ -47,34 +47,22 @@
     return map;
   }
 
-  function lifetimeChangeNote(change, row, now) {
-    if (!change || !row || !change.note) return '';
-    if (!(now < Date.parse(change.effectiveAt))) return '';
-    const upcoming = change.territories && change.territories[row.territory];
-    if (!upcoming || upcoming.lifetime_display === row.lifetime_display) return '';
-    return String(change.note).replaceAll('{price}', upcoming.lifetime_display);
-  }
-
-  function resolvePrices(data, currency, now = Date.now()) {
-    const withLifetimeChange = (resolved) => ({
-      ...resolved,
-      lifetimeChange: lifetimeChangeNote(data.lifetimeChange, resolved.row, now),
-    });
-    const fallback = withLifetimeChange({
+  function resolvePrices(data, currency) {
+    const fallback = {
       currency: data.defaultCurrency,
       row: data.prices[data.lang],
       note: data.defaultNote,
-    });
+    };
     if (!currency || currency === data.defaultCurrency) return fallback;
     const row = catalogByCurrency(data.prices, data.currencyPrices)[currency];
     if (!row) return fallback;
-    return withLifetimeChange({
+    return {
       currency,
       row,
       note: String(data.overrideNote || '')
         .replaceAll('{currency}', currency)
         .replaceAll('{storefront}', row.territory),
-    });
+    };
   }
 
   function applyPrices(resolved) {
@@ -91,12 +79,6 @@
     }
     const note = document.querySelector('[data-dial-price-note]');
     if (note && resolved.note) note.textContent = resolved.note;
-
-    const lifetimeChange = document.querySelector('[data-dial-lifetime-change]');
-    if (lifetimeChange) {
-      lifetimeChange.textContent = resolved.lifetimeChange;
-      lifetimeChange.hidden = !resolved.lifetimeChange;
-    }
 
     const summary = document.querySelector('[data-dial-currency-summary]');
     if (summary) {
@@ -162,6 +144,6 @@
   }
 
   if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { catalogByCurrency, lifetimeChangeNote, resolvePrices };
+    module.exports = { catalogByCurrency, resolvePrices };
   }
 })();

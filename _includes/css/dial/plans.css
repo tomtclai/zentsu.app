@@ -298,19 +298,6 @@
   background: var(--bg-alt);
 }
 
-.dial-plan-lifetime-change {
-  margin: -0.5rem 0 0;
-  color: var(--muted);
-  font-size: 0.82rem;
-  line-height: 1.55;
-}
-
-@supports selector(:has(*)) {
-  .dial-plan-pricing:has(#dial-plan-lifetime:not(:checked)) .dial-plan-lifetime-change {
-    display: none;
-  }
-}
-
 .dial-plan-note {
   margin: 0;
   color: var(--muted);

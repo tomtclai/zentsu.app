@@ -6,12 +6,7 @@
         "defaultNote": {{ storefront.note | jsonify }},
         "overrideNote": {{ strings.price_shown_in | jsonify }},
         "prices": {{ site.data.dial_prices | jsonify }},
-        "currencyPrices": {{ site.data.dial_currency_prices | jsonify }},
-        "lifetimeChange": {% if site.data.dial_lifetime_change %}{
-          "effectiveAt": {{ site.data.dial_lifetime_change.effective_at | jsonify }},
-          "note": {{ site.data.dial_lifetime_change.notes[page.lang] | default: site.data.dial_lifetime_change.notes.en | jsonify }},
-          "territories": {{ site.data.dial_lifetime_change.territories | jsonify }}
-        }{% else %}null{% endif %}
+        "currencyPrices": {{ site.data.dial_currency_prices | jsonify }}
       }
     </script>
     <script src="/dial-currency.js?v={{ site.time | date: '%s' }}"></script>

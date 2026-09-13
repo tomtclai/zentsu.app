@@ -1,15 +1,4 @@
 {%- assign strings = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
-{%- assign lifetime_change = site.data.dial_lifetime_change -%}
-{%- assign lifetime_change_note = '' -%}
-{%- if lifetime_change -%}
-{%- assign build_epoch = site.time | date: '%s' | plus: 0 -%}
-{%- assign lifetime_change_epoch = lifetime_change.effective_at | date: '%s' | plus: 0 -%}
-{%- assign upcoming_lifetime = lifetime_change.territories[prices.territory] -%}
-{%- if upcoming_lifetime and build_epoch < lifetime_change_epoch -%}
-{%- assign lifetime_change_template = lifetime_change.notes[page.lang] | default: lifetime_change.notes.en -%}
-{%- assign lifetime_change_note = lifetime_change_template | replace: '{price}', upcoming_lifetime.lifetime_display -%}
-{%- endif -%}
-{%- endif -%}
 {%- capture app_store_url_plans_card -%}{% include dial-store-url.html placement=campaign.placements.plans_card %}{%- endcapture -%}
       <section class="dial-plans" aria-labelledby="plans-title">
         <div class="dial-wrap">
@@ -100,9 +89,6 @@
                   </div>
                   <div class="dial-plan-price-currency">{% include dial-currency.html %}</div>
                 </div>
-                {%- if lifetime_change %}
-                <p class="dial-plan-lifetime-change" data-dial-lifetime-change{% if lifetime_change_note == '' %} hidden{% endif %}>{{ lifetime_change_note }}</p>
-                {%- endif %}
                 <p class="dial-plan-note" data-dial-price-note>{{ storefront.note }}</p>
                 <div class="dial-plan-cta">
                   <a

@@ -263,8 +263,6 @@ const dialCurrencyPrices = loadYaml('_data/dial_currency_prices.yml') ?? {};
 const dialPickerCurrencies = [
   ...new Set([...Object.values(dialPrices).map((row) => row.currency), ...Object.keys(dialCurrencyPrices)]),
 ];
-const dialLifetimeChangePath = '_data/dial_lifetime_change.yml';
-const dialLifetimeChange = existsSync(dialLifetimeChangePath) ? loadYaml(dialLifetimeChangePath) : null;
 const dialRoutes = loadYaml('_data/alternates.yml').dial ?? {};
 for (const [lang, route] of Object.entries(dialRoutes)) {
   const key = lang === 'es-MX' ? 'es' : lang === 'es-ES' ? 'es-es' : lang;
@@ -283,23 +281,6 @@ for (const [lang, route] of Object.entries(dialRoutes)) {
     check(html.includes(display), `${route} is missing storefront price ${display}`);
   }
   check(html.includes(storefront.note), `${route} is missing the storefront price note`);
-  if (dialLifetimeChange) {
-    const upcomingLifetime = dialLifetimeChange.territories?.[prices.territory];
-    const template = dialLifetimeChange.notes?.[key] ?? '';
-    check(template.split('{price}').length === 2, `${key} Lifetime change note needs exactly one {price}`);
-    if (upcomingLifetime && Date.now() < Date.parse(dialLifetimeChange.effective_at)) {
-      const note = template.replace('{price}', upcomingLifetime.lifetime_display);
-      check(
-        html.includes(`data-dial-lifetime-change>${note}</p>`),
-        `${route} is missing the Lifetime change note "${note}"`,
-      );
-    } else {
-      check(
-        html.includes('data-dial-lifetime-change hidden></p>'),
-        `${route} should render the Lifetime change note hidden`,
-      );
-    }
-  }
   check(
     html.includes(`"priceCurrency": "${prices.currency}"`),
     `${route} schema is missing priceCurrency ${prices.currency}`,
@@ -333,14 +314,14 @@ for (const [lang, route] of Object.entries(dialRoutes)) {
 }
 
 const samplePrices = {
-  en: { currency: 'USD', lifetime_display: '$49.99', lang: 'en' },
-  uk: { currency: 'USD', lifetime_display: '$59.99', lang: 'uk' },
-  de: { currency: 'EUR', lifetime_display: '59,99 €', lang: 'de' },
-  ja: { currency: 'JPY', lifetime_display: '¥8,000', lang: 'ja' },
+  en: { currency: 'USD', lifetime_display: '$129.99', lang: 'en' },
+  uk: { currency: 'USD', lifetime_display: '$149.99', lang: 'uk' },
+  de: { currency: 'EUR', lifetime_display: '149,99 €', lang: 'de' },
+  ja: { currency: 'JPY', lifetime_display: '¥22,000', lang: 'ja' },
 };
 const catalog = catalogByCurrency(samplePrices);
-check(catalog.USD.lifetime_display === '$49.99', 'USD catalog should keep the first storefront');
-check(catalog.EUR.lifetime_display === '59,99 €', 'EUR catalog is missing');
+check(catalog.USD.lifetime_display === '$129.99', 'USD catalog should keep the first storefront');
+check(catalog.EUR.lifetime_display === '149,99 €', 'EUR catalog is missing');
 const ukDefault = resolvePrices(
   {
     lang: 'uk',
@@ -351,7 +332,7 @@ const ukDefault = resolvePrices(
   },
   'USD',
 );
-check(ukDefault.row.lifetime_display === '$59.99', 'Ukrainian USD preset should keep Ukraine prices');
+check(ukDefault.row.lifetime_display === '$149.99', 'Ukrainian USD preset should keep Ukraine prices');
 const ukYen = resolvePrices(
   {
     lang: 'uk',
@@ -362,15 +343,15 @@ const ukYen = resolvePrices(
   },
   'JPY',
 );
-check(ukYen.row.lifetime_display === '¥8,000', 'Currency override should load the JPY storefront');
+check(ukYen.row.lifetime_display === '¥22,000', 'Currency override should load the JPY storefront');
 check(ukYen.note === 'Shown in JPY.', 'Override note should name the chosen currency');
 const sampleCurrencyPrices = {
-  HKD: { territory: 'HKG', currency: 'HKD', lifetime_display: 'HK$388' },
-  EUR: { territory: 'AUT', currency: 'EUR', lifetime_display: '€59.99' },
+  HKD: { territory: 'HKG', currency: 'HKD', lifetime_display: 'HK$988' },
+  EUR: { territory: 'AUT', currency: 'EUR', lifetime_display: '€149.99' },
 };
 const fullCatalog = catalogByCurrency(samplePrices, sampleCurrencyPrices);
-check(fullCatalog.HKD?.lifetime_display === 'HK$388', 'Catalog should add currencies no language covers');
-check(fullCatalog.EUR.lifetime_display === '59,99 €', 'Language storefront rows should win over currency rows');
+check(fullCatalog.HKD?.lifetime_display === 'HK$988', 'Catalog should add currencies no language covers');
+check(fullCatalog.EUR.lifetime_display === '149,99 €', 'Language storefront rows should win over currency rows');
 const ukHongKong = resolvePrices(
   {
     lang: 'uk',
@@ -382,7 +363,7 @@ const ukHongKong = resolvePrices(
   },
   'HKD',
 );
-check(ukHongKong.row.lifetime_display === 'HK$388', 'Currency override should load the HKD storefront');
+check(ukHongKong.row.lifetime_display === 'HK$988', 'Currency override should load the HKD storefront');
 check(ukHongKong.note === 'Shown in HKD from HKG.', 'HKD override note should name its storefront');
 
 const compactHeadlineLocales = new Set(['ja', 'zh', 'zh-hant', 'ko']);
