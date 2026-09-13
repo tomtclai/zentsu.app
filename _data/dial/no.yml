@@ -49,7 +49,7 @@ hero:
   headline_accent: ""
   category: "Dial er en GLP-1-legemiddeloversikt for iPhone og Apple Watch."
   quick_answer: "Dial logger GLP-1-injeksjoner og tabletter, blant annet Ozempic, Wegovy, Rybelsus og Mounjaro, samt forskrevet semaglutid eller tirzepatid fra hetteglass. Hver post tar vare på dosen, tidspunktet, injeksjonsstedet, vekten og bivirkningene. Doseloggen på telefonen er gratis og krever ingen konto. Dial Pro legger til en graf over estimert nivå, logging fra Apple Watch og eksport til PDF eller CSV."
-  detail: "Før hver dose med tid og injeksjonssted, på telefonen eller håndleddet. Dial Pro tegner et estimert nivå mellom dosene og lager en PDF til legen din. Postene blir liggende på enheten, eller i din egen private iCloud-database hvis du slår det på."
+  detail: "Legemiddelposter kan synkroniseres via din egen iCloud. Vekt og fremgangsbilder blir på enheten."
   free_line: Gratis å laste ned, uten konto. Doseloggen har ingen grense.
   secondary_cta: "Slik fungerer Dial"
   qr_caption: "Skann for å åpne Dial i App Store på iPhone."
@@ -59,7 +59,7 @@ hero:
     - Apple Watch
     - "Siri, Kontrollsenter og låseskjerm"
     - "Valgfri privat iCloud-lagring"
-  legal: "Dial er en personlig journal, ikke medisinske råd. Dial Pro legger til logging fra Apple Watch, grafer og eksport."
+  legal: "Dial er en personlig journal, ikke medisinske råd."
 
 proof:
   label: "Hvorfor Dial"

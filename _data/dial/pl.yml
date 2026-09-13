@@ -49,7 +49,7 @@ hero:
   headline_accent: ""
   category: "Dial to rejestr leków GLP-1 na iPhone’a i Apple Watch."
   quick_answer: "Dial zapisuje dawki leków GLP-1 w formie wstrzyknięć i tabletek, w tym Ozempic, Wegovy, Rybelsus, Mounjaro oraz przepisany semaglutyd lub tirzepatyd recepturowy. Każdy wpis zachowuje dawkę, godzinę, miejsce wstrzyknięcia, wagę i działania niepożądane. Dziennik w telefonie jest darmowy i nie wymaga konta. Dial Pro dodaje wykres szacowanego poziomu, zapis z Apple Watch i eksport PDF lub CSV."
-  detail: "Zapisz każdą dawkę z godziną i miejscem wstrzyknięcia, na telefonie albo na nadgarstku. Dial Pro rysuje szacowany poziom między dawkami i składa PDF dla lekarza prowadzącego. Zapisy zostają na urządzeniu albo w twojej prywatnej bazie iCloud, jeśli ją włączysz."
+  detail: "Zapisy leków mogą synchronizować się przez Twoje iCloud. Waga i zdjęcia postępów zostają na urządzeniu."
   free_line: Pobierasz za darmo, bez konta do założenia. Zapisy dawek możesz prowadzić bez limitu.
   secondary_cta: "Jak działa Dial"
   qr_caption: "Zeskanuj, żeby otworzyć Dial w App Store na iPhonie."
@@ -59,7 +59,7 @@ hero:
     - Apple Watch
     - "Siri, Centrum sterowania i ekran blokady"
     - "Opcjonalna prywatna baza iCloud"
-  legal: "Dial to osobisty zapis, nie porada medyczna. Dial Pro dodaje zapis z zegarka, wykresy i eksporty."
+  legal: "Dial to osobisty zapis, nie porada medyczna."
 
 proof:
   label: "Dlaczego Dial"

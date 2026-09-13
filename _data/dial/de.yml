@@ -62,7 +62,7 @@ hero:
   headline_accent: ""
   category: "Dial hält Dosen und Injektionsstellen deiner GLP-1-Medikamente auf dem iPhone fest."
   quick_answer: "Dial erfasst GLP-1-Injektionen und -Tabletten, darunter Ozempic, Wegovy, Rybelsus, Mounjaro und ärztlich verordnetes Semaglutid oder Tirzepatid aus der Rezeptur. Jeder Eintrag hält Dosis, Uhrzeit, Injektionsstelle, Gewicht und Nebenwirkungen fest. Das Tagebuch auf dem iPhone ist kostenlos und braucht kein Konto. Dial Pro ergänzt das Diagramm zum geschätzten Spiegel, das Erfassen auf der Apple Watch und den Export als PDF oder CSV."
-  detail: "Erfasse Dosen kostenlos auf dem iPhone. Dial Pro ergänzt Einträge auf der Apple Watch, Diagramme und PDF-Exporte für die Praxis. Medikamenteneinträge können über deine eigene iCloud synchronisiert werden. Gewicht und Fortschrittsfotos bleiben lokal."
+  detail: "Medikamenteneinträge können über deine eigene iCloud synchronisiert werden. Gewicht und Fortschrittsfotos bleiben lokal."
   free_line: "Kostenlos laden, ohne Konto. Die Anzahl deiner Dosiseinträge ist unbegrenzt."
   secondary_cta: So funktioniert Dial
   qr_caption: Scanne, um Dial im App Store auf deinem iPhone zu öffnen.
@@ -72,9 +72,7 @@ hero:
     - Apple Watch
     - Siri, Kontrollzentrum und Sperrbildschirm
     - Optionaler privater iCloud-Speicher
-  legal:
-    Dial ist ein persönliches Protokoll, kein medizinischer Rat. Dial Pro ergänzt das
-    Erfassen auf der Watch, Diagramme und Exporte.
+  legal: "Dial ist ein persönliches Protokoll, kein medizinischer Rat."
 
 proof:
   label: Warum Dial

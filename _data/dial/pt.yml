@@ -62,11 +62,7 @@ hero:
   headline_accent: ""
   category: O Dial é um registro de medicamentos GLP-1 para iPhone e Apple Watch.
   quick_answer: "O Dial registra injeções e comprimidos de GLP-1, incluindo Ozempic, Wegovy, Rybelsus, Mounjaro, Zepbound e semaglutida ou tirzepatida manipuladas sob prescrição. Cada entrada guarda a dose, o horário, o local de injeção, o peso e os efeitos colaterais. O registro no telefone é grátis e não pede conta. O Dial Pro adiciona o gráfico de nível estimado, o registro pelo Apple Watch e a exportação em PDF ou CSV."
-  detail:
-    Registre cada dose com o horário e o local de injeção, no telefone ou no pulso. O
-    Dial Pro traça um nível estimado entre as doses e monta um PDF para quem prescreve.
-    Os registros ficam no aparelho, ou no seu banco de dados privado do iCloud se você
-    ligar essa opção.
+  detail: "Os registros de medicamento podem sincronizar pelo seu próprio iCloud. O peso e as fotos de progresso ficam no aparelho."
   free_line: Grátis para baixar, sem conta para criar. O registro de doses não tem limite.
   secondary_cta: Veja como o Dial funciona
   qr_caption: Escaneie para abrir o Dial na App Store no seu iPhone.
@@ -76,8 +72,7 @@ hero:
     - Apple Watch
     - Siri, Central de Controle e Tela Bloqueada
     - Armazenamento privado opcional no iCloud
-  legal: Registro pessoal, não orientação médica. O Dial Pro adiciona o registro pelo
-    Watch, os gráficos e as exportações.
+  legal: "Registro pessoal, não orientação médica."
 proof:
   label: Por que o Dial
   points:

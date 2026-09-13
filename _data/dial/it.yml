@@ -67,10 +67,7 @@ hero:
     conserva dose, ora, sito di iniezione, peso ed effetti collaterali. Il registro
     sul telefono è gratis e senza account. Dial Pro aggiunge il grafico del livello
     stimato, la registrazione su Apple Watch e l'esportazione in PDF o CSV.
-  detail:
-    Registra ogni dose con l'ora e il sito di iniezione, sul telefono o dal polso. Dial
-    Pro traccia un livello stimato tra le dosi e prepara un PDF per il medico. I registri
-    restano sul dispositivo, o nel tuo database iCloud privato se lo attivi.
+  detail: "I registri dei farmaci possono sincronizzarsi tramite il tuo iCloud. Il peso e le foto dei progressi restano sul dispositivo."
   free_line: Download gratuito, senza un account da creare. Il registro delle dosi non ha limite.
   secondary_cta: Scopri come funziona Dial
   qr_caption: Scansiona per aprire Dial sull'App Store dal tuo iPhone.
@@ -80,9 +77,7 @@ hero:
     - Apple Watch
     - Siri, Centro di Controllo e schermata di blocco
     - Archiviazione iCloud privata facoltativa
-  legal:
-    Dial è un registro personale, non un consiglio medico. Dial Pro aggiunge la
-    registrazione su Watch, i grafici e le esportazioni.
+  legal: "Dial è un registro personale, non un consiglio medico."
 
 proof:
   label: Perché Dial

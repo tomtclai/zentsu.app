@@ -49,7 +49,7 @@ hero:
   headline_accent: ""
   category: "Dial on GLP-1-lääkeseuranta iPhonelle ja Apple Watchille."
   quick_answer: "Dial kirjaa GLP-1-pistokset ja tabletit, mukaan lukien Ozempic, Wegovy, Rybelsus ja Mounjaro sekä apteekissa valmistettu semaglutidi tai tirtsepatidi. Jokainen merkintä tallentaa annoksen, ajan, pistoskohdan, painon ja haittavaikutukset. Puhelinlokki on ilmainen eikä tiliä tarvita. Dial Pro lisää arvioidun tason kaavion, kirjaamisen Apple Watchista ja PDF- tai CSV-viennin."
-  detail: "Kirjaa jokainen annos ajan ja pistoskohdan kanssa, puhelimella tai ranteesta. Dial Pro piirtää arvioidun tason annosten välillä ja kokoaa PDF:n määrääjällesi. Merkinnät jäävät laitteelle, tai omaan yksityiseen iCloud-tietokantaasi, jos otat sen käyttöön."
+  detail: "Lääketiedot voivat synkronoitua oman iCloudisi kautta. Paino ja edistymiskuvat jäävät laitteelle."
   free_line: Ilmainen lataus, ilman tiliä. Annoslokissa ei ole kattoa.
   secondary_cta: "Näin Dial toimii"
   qr_caption: "Skannaa, niin Dial avautuu App Storesta iPhonellasi."
@@ -59,7 +59,7 @@ hero:
     - Apple Watch
     - "Siri, Ohjauskeskus ja lukitusnäyttö"
     - "Valinnainen yksityinen iCloud-tallennus"
-  legal: "Dial on henkilökohtainen merkintä, ei lääketieteellinen neuvo. Dial Pro lisää kirjauksen Watchista, kaaviot ja viennit."
+  legal: "Dial on henkilökohtainen merkintä, ei lääketieteellinen neuvo."
 
 proof:
   label: "Miksi Dial"

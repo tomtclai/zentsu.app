@@ -62,10 +62,7 @@ hero:
   headline_accent: ""
   category: Dial is een GLP-1-medicijntracker voor iPhone en Apple Watch.
   quick_answer: "Dial legt GLP-1-injecties en tabletten vast, waaronder Ozempic, Wegovy, Rybelsus, Mounjaro, Zepbound en voorgeschreven samengestelde semaglutide of tirzepatide. Elke invoer bewaart de dosis, het tijdstip, de prikplek, je gewicht en de bijwerkingen. Het logboek op de telefoon is gratis, zonder account. Dial Pro voegt de grafiek van het geschatte niveau, vastleggen op de Apple Watch en export als PDF of CSV toe."
-  detail:
-    Leg elke dosis vast met tijd en injectieplaats, op je telefoon of aan je pols. Dial Pro
-    tekent een geschatte spiegel tussen doses en maakt een PDF voor je voorschrijver. De
-    gegevens blijven op het apparaat, of in je eigen privé-iCloud-database als je dat aanzet.
+  detail: "Medicatiegegevens kunnen via je eigen iCloud synchroniseren. Gewicht en voortgangsfoto's blijven op je apparaat."
   free_line: Gratis te downloaden, zonder account. Het dosislog heeft geen limiet.
   secondary_cta: Zo werkt Dial
   qr_caption: Scan om Dial in de App Store op je iPhone te openen.
@@ -75,9 +72,7 @@ hero:
     - Apple Watch
     - Siri, Bedieningspaneel en toegangsscherm
     - Optionele privé-iCloud-opslag
-  legal:
-    Dial is een persoonlijk logboek, geen medisch advies. Dial Pro voegt vastleggen op
-    de Watch, grafieken en export toe.
+  legal: "Dial is een persoonlijk logboek, geen medisch advies."
 
 proof:
   label: Waarom Dial

@@ -49,7 +49,7 @@ hero:
   headline_accent: ""
   category: "Dial là ứng dụng theo dõi thuốc GLP-1 cho iPhone và Apple Watch."
   quick_answer: "Dial ghi các thuốc GLP-1 dạng tiêm và dạng viên, gồm Ozempic, Wegovy, Rybelsus, Mounjaro, Zepbound và semaglutide hoặc tirzepatide pha chế có đơn thuốc. Mỗi mục ghi lại liều, giờ, vị trí tiêm, cân nặng và tác dụng phụ. Nhật ký trên điện thoại miễn phí và không cần tài khoản. Dial Pro thêm biểu đồ mức ước tính, ghi liều trên Apple Watch và xuất PDF hoặc CSV."
-  detail: "Ghi từng liều kèm giờ và vị trí tiêm, trên điện thoại hoặc cổ tay. Dial Pro vẽ mức ước tính giữa các liều và tạo PDF cho bác sĩ. Bản ghi ở lại trên máy, hoặc trong cơ sở dữ liệu iCloud riêng của bạn nếu bạn bật."
+  detail: "Bản ghi thuốc có thể đồng bộ qua iCloud của bạn. Cân nặng và ảnh tiến triển ở lại trên máy."
   free_line: Tải miễn phí, không cần tạo tài khoản. Nhật ký liều không giới hạn.
   secondary_cta: "Cách Dial hoạt động"
   qr_caption: "Quét để mở Dial trên App Store từ iPhone."
@@ -59,7 +59,7 @@ hero:
     - Apple Watch
     - "Siri, Trung tâm điều khiển và màn hình khóa"
     - "Lưu trữ iCloud riêng, bật khi cần"
-  legal: "Dial là bản ghi cá nhân, không phải lời khuyên y khoa. Dial Pro thêm ghi liều trên Apple Watch, biểu đồ và xuất file."
+  legal: "Dial là bản ghi cá nhân, không phải lời khuyên y khoa."
 
 proof:
   label: "Vì sao Dial"

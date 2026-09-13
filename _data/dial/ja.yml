@@ -56,7 +56,7 @@ hero:
   headline_accent: ""
   category: "Dialはゼップバウンド、マンジャロなどのGLP-1薬の投与を記録するiPhoneアプリです。"
   quick_answer: "DialはGLP-1の注射薬と飲み薬の投与を記録します。オゼンピック、ウゴービ、リベルサス、マンジャロ、ゼップバウンド、さらに処方に基づいて調製されたセマグルチドやチルゼパチドにも対応しています。各記録には用量、時刻、注射部位、体重、副作用が残ります。iPhoneでの投与記録は無料で、アカウントは不要です。Dial Proでは推定レベルのグラフ、Apple Watchからの記録、PDF・CSVの書き出しが追加されます。"
-  detail: "iPhoneでの投与記録は無料です。Dial ProでApple Watchからの記録、グラフ、診察用PDFの書き出しが使えます。薬と投与の記録は自分のiCloudと任意で同期できます。体重と経過写真は端末に保存されます。"
+  detail: "薬と投与の記録は自分のiCloudと任意で同期できます。体重と経過写真は端末に保存されます。"
   free_line: 無料でダウンロードできます。Dialアカウントは不要です。投与の記録に上限はありません。
   secondary_cta: Dialの仕組み
   qr_caption: スキャンすると、iPhoneのApp StoreでDialが開きます。
@@ -66,8 +66,7 @@ hero:
     - Apple Watch
     - Siri、コントロールセンター、ロック画面
     - iCloudへの任意保存
-  legal:
-    Dialは個人の記録です。医療上の助言ではありません。Dial Proは、Apple Watchからの記録、グラフ、書き出しを追加します。
+  legal: "Dialは個人の記録です。医療上の助言ではありません。"
 
 proof:
   label: Dialについて

@@ -8,14 +8,23 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
-- A quick-answer paragraph under the H1 on every Dial landing page, in all 33 locales. It states what Dial logs, that locale's brand names, the free tier, and what Dial Pro adds, in one paragraph written to be liftable into search and AI answers.
-- A "What Dial does not do" section on the Dial landing page in all 33 locales. It states that Dial does not calculate doses or recommend a change, that the estimated level is a population-model estimate rather than a measurement, and that the vial unit converter is arithmetic on entered values.
+- A quick-answer paragraph under the H1 on every Dial landing page, in all 34 marketing locales. It states what Dial logs, that locale's brand names, the free tier, and what Dial Pro adds, in one paragraph written to be liftable into search and AI answers.
+- A "What Dial does not do" section on the Dial landing page in all 34 marketing locales. It states that Dial does not calculate doses or recommend a change, that the estimated level is a population-model estimate rather than a measurement, and that the vial unit converter is arithmetic on entered values.
+- Hero reading-order checks in the functional suite, on English, German, Arabic, and Japanese at 375 points wide and on English at desktop width. They assert the top offset of every hero element, so a hero child that loses its `order` rule fails the build.
 
 ### Changed
 
 - Dial locale meta descriptions now name local brand names, say the phone log is free, and note that no account is required. Every description is 155 characters or fewer.
 - The Dial hero legal line is now one sentence in every locale, matching the new boundary section.
 - Estimated-level and logging copy names the injectable brands and the tablet example in every locale.
+- The Dial hero says each thing once. The quick answer carries the medication list, what an entry keeps, and the free and Dial Pro split; `hero.detail` now carries only the storage fact, worded from each locale's own privacy copy. Applied to all 34 marketing locales.
+- The English "Why Dial" row again lists the cycle ring, opening without an account, the Lifetime single purchase, and the estimated level, matching the other 33 locales and the icons beside each claim. The previous English wording restated the free and Dial Pro split three times and left a padlock next to an Apple Watch claim.
+- The plans section heading uses the shared section-heading type scale, so "Start with the free phone log." reads at the same weight as every other section heading instead of the browser default.
+
+### Fixed
+
+- The Dial hero quick answer rendered above the app icon and the headline on screens 760 points and narrower, in every locale. It had no `order` rule inside the hero's flex column, so it took the initial order of 0 and jumped ahead of the whole hero. On a phone it filled the first viewport with unattributed body text. Every hero child now carries an explicit order at both breakpoints, and on phones the quick answer follows the download action and the screenshot.
+- Recorded fresh Dial visual baselines. The committed baselines predated the last three Dial commits, so `npm run test:visual` failed 32 of 36 comparisons before this change.
 
 ## [2026-09-04]
 
