@@ -8,6 +8,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- A small-print line under the Dial Lifetime price that names the new Lifetime price and the September 26 change date, in all 34 marketing locales. It follows the currency picker, stays hidden for Brazil (BRL), whose Lifetime price does not change, and hides itself from 2026-09-26 07:00 UTC. Amounts and the date live in `_data/dial_lifetime_change.yml`.
 - An IndexNow key file at the site root and `npm run submit:indexnow`, which submits the live sitemap URLs to Bing and the other IndexNow search engines. Pass substrings to submit a subset, for example `npm run submit:indexnow -- /dial/`.
 - A quick-answer paragraph under the H1 on every Dial landing page, in all 34 marketing locales. It states what Dial logs, that locale's brand names, the free tier, and what Dial Pro adds, in one paragraph written to be liftable into search and AI answers.
 - A "What Dial does not do" section on the Dial landing page in all 34 marketing locales. It states that Dial does not calculate doses or recommend a change, that the estimated level is a population-model estimate rather than a measurement, and that the vial unit converter is arithmetic on entered values.

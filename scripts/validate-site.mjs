@@ -263,6 +263,8 @@ const dialCurrencyPrices = loadYaml('_data/dial_currency_prices.yml') ?? {};
 const dialPickerCurrencies = [
   ...new Set([...Object.values(dialPrices).map((row) => row.currency), ...Object.keys(dialCurrencyPrices)]),
 ];
+const dialLifetimeChangePath = '_data/dial_lifetime_change.yml';
+const dialLifetimeChange = existsSync(dialLifetimeChangePath) ? loadYaml(dialLifetimeChangePath) : null;
 const dialRoutes = loadYaml('_data/alternates.yml').dial ?? {};
 for (const [lang, route] of Object.entries(dialRoutes)) {
   const key = lang === 'es-MX' ? 'es' : lang === 'es-ES' ? 'es-es' : lang;
@@ -281,6 +283,23 @@ for (const [lang, route] of Object.entries(dialRoutes)) {
     check(html.includes(display), `${route} is missing storefront price ${display}`);
   }
   check(html.includes(storefront.note), `${route} is missing the storefront price note`);
+  if (dialLifetimeChange) {
+    const upcomingLifetime = dialLifetimeChange.territories?.[prices.territory];
+    const template = dialLifetimeChange.notes?.[key] ?? '';
+    check(template.split('{price}').length === 2, `${key} Lifetime change note needs exactly one {price}`);
+    if (upcomingLifetime && Date.now() < Date.parse(dialLifetimeChange.effective_at)) {
+      const note = template.replace('{price}', upcomingLifetime.lifetime_display);
+      check(
+        html.includes(`data-dial-lifetime-change>${note}</p>`),
+        `${route} is missing the Lifetime change note "${note}"`,
+      );
+    } else {
+      check(
+        html.includes('data-dial-lifetime-change hidden></p>'),
+        `${route} should render the Lifetime change note hidden`,
+      );
+    }
+  }
   check(
     html.includes(`"priceCurrency": "${prices.currency}"`),
     `${route} schema is missing priceCurrency ${prices.currency}`,

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { describe, test } from 'node:test';
 
 const require = createRequire(import.meta.url);
-const { catalogByCurrency, resolvePrices } = require('../../dial-currency.js');
+const { catalogByCurrency, lifetimeChangeNote, resolvePrices } = require('../../dial-currency.js');
 
 const samplePrices = {
   en: {
@@ -102,4 +102,40 @@ test('Spain uses its own EUR row even when Germany has different EUR prices', ()
   assert.equal(resolvePrices(data, 'EUR').row, spain);
   assert.equal(resolvePrices(data, 'EUR').note, 'Spain note');
   assert.equal(resolvePrices(data, 'MXN').note, 'MXN App Store (MEX)');
+});
+
+describe('lifetimeChangeNote', () => {
+  const change = {
+    effectiveAt: '2026-09-26T07:00:00Z',
+    note: 'Lifetime becomes {price} on September 26.',
+    territories: { USA: { currency: 'USD', lifetime: '129.99', lifetime_display: '$129.99' } },
+  };
+  const usa = { territory: 'USA', currency: 'USD', lifetime_display: '$49.99' };
+  const brazil = { territory: 'BRA', currency: 'BRL', lifetime_display: 'R$299,90' };
+  const beforeChange = Date.parse('2026-09-26T06:59:59Z');
+
+  test('names the new price for a storefront that changes', () => {
+    assert.equal(lifetimeChangeNote(change, usa, beforeChange), 'Lifetime becomes $129.99 on September 26.');
+  });
+
+  test('stays empty for a storefront whose price does not change', () => {
+    assert.equal(lifetimeChangeNote(change, brazil, beforeChange), '');
+  });
+
+  test('stays empty from the effective time on', () => {
+    assert.equal(lifetimeChangeNote(change, usa, Date.parse(change.effectiveAt)), '');
+  });
+
+  test('stays empty once the synced price already matches', () => {
+    assert.equal(lifetimeChangeNote(change, { ...usa, lifetime_display: '$129.99' }, beforeChange), '');
+  });
+
+  test('follows the selected currency', () => {
+    const data = {
+      lang: 'pt', defaultCurrency: 'BRL', defaultNote: 'Brazil note', overrideNote: '{currency}',
+      prices: { pt: brazil, en: usa }, lifetimeChange: change,
+    };
+    assert.equal(resolvePrices(data, 'BRL', beforeChange).lifetimeChange, '');
+    assert.equal(resolvePrices(data, 'USD', beforeChange).lifetimeChange, 'Lifetime becomes $129.99 on September 26.');
+  });
 });
