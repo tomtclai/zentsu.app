@@ -8,6 +8,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- An IndexNow key file at the site root and `npm run submit:indexnow`, which submits the live sitemap URLs to Bing and the other IndexNow search engines. Pass substrings to submit a subset, for example `npm run submit:indexnow -- /dial/`.
 - A quick-answer paragraph under the H1 on every Dial landing page, in all 34 marketing locales. It states what Dial logs, that locale's brand names, the free tier, and what Dial Pro adds, in one paragraph written to be liftable into search and AI answers.
 - A "What Dial does not do" section on the Dial landing page in all 34 marketing locales. It states that Dial does not calculate doses or recommend a change, that the estimated level is a population-model estimate rather than a measurement, and that the vial unit converter is arithmetic on entered values.
 - Hero reading-order checks in the functional suite, on English, German, Arabic, and Japanese at 375 points wide and on English at desktop width. They assert the top offset of every hero element, so a hero child that loses its `order` rule fails the build.

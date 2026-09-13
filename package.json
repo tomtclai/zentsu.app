@@ -12,6 +12,7 @@
     "validate:bench-accessibility": "node scripts/validate-bench-accessibility.mjs",
     "validate:site": "node scripts/validate-site.mjs",
     "sync:dial-prices": "python3 scripts/sync-dial-prices.py",
+    "submit:indexnow": "node scripts/submit-indexnow.mjs",
     "validate:dial-prices": "python3 scripts/sync-dial-prices.py --self-test",
     "test:unit": "node --test tests/unit/*.mjs",
     "validate:dial-locales": "node scripts/validate-dial-locales.mjs",
