@@ -75,11 +75,11 @@ nl:
 pt:
   territory: BRA
   currency: BRL
-  monthly: "24.90"
-  annual: "129.90"
+  monthly: "9.90"
+  annual: "59.90"
   lifetime: "299.90"
-  monthly_display: "R$24,90"
-  annual_display: "R$129,90"
+  monthly_display: "R$9,90"
+  annual_display: "R$59,90"
   lifetime_display: "R$299,90"
 
 pl:

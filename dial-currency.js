@@ -34,11 +34,15 @@
     }
   }
 
-  function catalogByCurrency(prices) {
+  function catalogByCurrency(prices, currencyPrices) {
     const map = {};
     for (const [lang, row] of Object.entries(prices || {})) {
       if (!row || !row.currency || map[row.currency]) continue;
       map[row.currency] = { ...row, lang };
+    }
+    for (const row of Object.values(currencyPrices || {})) {
+      if (!row || !row.currency || map[row.currency]) continue;
+      map[row.currency] = { ...row };
     }
     return map;
   }
@@ -50,7 +54,7 @@
       note: data.defaultNote,
     };
     if (!currency || currency === data.defaultCurrency) return fallback;
-    const row = catalogByCurrency(data.prices)[currency];
+    const row = catalogByCurrency(data.prices, data.currencyPrices)[currency];
     if (!row) return fallback;
     return {
       currency,
@@ -125,7 +129,7 @@
     const data = priceData();
     if (!data || !data.prices || !data.lang) return;
     const stored = readStored();
-    const known = catalogByCurrency(data.prices);
+    const known = catalogByCurrency(data.prices, data.currencyPrices);
     const currency = stored && known[stored] ? stored : data.defaultCurrency;
     applyPrices(resolvePrices(data, currency));
     bindPicker(data);

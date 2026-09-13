@@ -1,8 +1,10 @@
 {%- assign strings = site.data.i18n[page.lang] | default: site.data.i18n.en -%} {%- assign
 currency_codes = '' -%} {%- for entry in site.data.dial_prices -%} {%- assign row = entry[1] -%} {%-
 assign token = row.currency | append: ',' -%} {%- unless currency_codes contains token -%} {%-
-assign currency_codes = currency_codes | append: token -%} {%- endunless -%} {%- endfor -%} {%-
-assign currency_codes = currency_codes | split: ',' | sort -%}
+assign currency_codes = currency_codes | append: token -%} {%- endunless -%} {%- endfor -%} {%- for entry in
+site.data.dial_currency_prices -%} {%- assign token = entry[0] | append: ',' -%} {%- unless
+currency_codes contains token -%} {%- assign currency_codes = currency_codes | append: token -%}
+{%- endunless -%} {%- endfor -%} {%- assign currency_codes = currency_codes | split: ',' | sort -%}
 <div class="dial-currency">
   <details>
     <summary

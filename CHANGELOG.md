@@ -25,6 +25,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - The Dial hero quick answer rendered above the app icon and the headline on screens 760 points and narrower, in every locale. It had no `order` rule inside the hero's flex column, so it took the initial order of 0 and jumped ahead of the whole hero. On a phone it filled the first viewport with unattributed body text. Every hero child now carries an explicit order at both breakpoints, and on phones the quick answer follows the download action and the screenshot.
 - Recorded fresh Dial visual baselines. The committed baselines predated the last three Dial commits, so `npm run test:visual` failed 32 of 36 comparisons before this change.
+- The Dial currency picker lists every App Store currency. It only offered currencies that had a language page, so HKD, GBP, AUD, CAD, NZD, SGD, CHF, AED, QAR, ZAR, EGP, NGN, KZT, PKR, PHP, CLP, COP, PEN, and TZS were missing. `scripts/sync-dial-prices.py` now reads the App Store Connect territory list and writes `_data/dial_currency_prices.yml` with live prices for each currency no language storefront covers.
+- Brazil's Dial Pro monthly and annual prices match the reduced App Store prices that took effect September 10 (R$9,90 and R$59,90).
 
 ## [2026-09-04]
 

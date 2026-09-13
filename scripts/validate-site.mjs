@@ -259,6 +259,10 @@ for (const [label, html, boundaries] of [
 
 const dialPrices = loadYaml('_data/dial_prices.yml');
 const dialStorefronts = loadYaml('_data/dial_storefronts.yml');
+const dialCurrencyPrices = loadYaml('_data/dial_currency_prices.yml') ?? {};
+const dialPickerCurrencies = [
+  ...new Set([...Object.values(dialPrices).map((row) => row.currency), ...Object.keys(dialCurrencyPrices)]),
+];
 const dialRoutes = loadYaml('_data/alternates.yml').dial ?? {};
 for (const [lang, route] of Object.entries(dialRoutes)) {
   const key = lang === 'es-MX' ? 'es' : lang === 'es-ES' ? 'es-es' : lang;
@@ -294,6 +298,12 @@ for (const [lang, route] of Object.entries(dialRoutes)) {
   }
   check(html.includes('class="dial-currency"'), `${route} is missing the currency picker`);
   check(html.includes('id="dial-price-data"'), `${route} is missing the currency price catalog`);
+  for (const currency of dialPickerCurrencies) {
+    check(
+      html.includes(`data-dial-currency="${currency}"`),
+      `${route} currency picker is missing ${currency}`,
+    );
+  }
   check(
     html.includes('class="nav-lang"'),
     `${route} is missing the language picker`,
@@ -335,6 +345,26 @@ const ukYen = resolvePrices(
 );
 check(ukYen.row.lifetime_display === '¥8,000', 'Currency override should load the JPY storefront');
 check(ukYen.note === 'Shown in JPY.', 'Override note should name the chosen currency');
+const sampleCurrencyPrices = {
+  HKD: { territory: 'HKG', currency: 'HKD', lifetime_display: 'HK$388' },
+  EUR: { territory: 'AUT', currency: 'EUR', lifetime_display: '€59.99' },
+};
+const fullCatalog = catalogByCurrency(samplePrices, sampleCurrencyPrices);
+check(fullCatalog.HKD?.lifetime_display === 'HK$388', 'Catalog should add currencies no language covers');
+check(fullCatalog.EUR.lifetime_display === '59,99 €', 'Language storefront rows should win over currency rows');
+const ukHongKong = resolvePrices(
+  {
+    lang: 'uk',
+    defaultCurrency: 'USD',
+    defaultNote: 'Ukraine note',
+    overrideNote: 'Shown in {currency} from {storefront}.',
+    prices: samplePrices,
+    currencyPrices: sampleCurrencyPrices,
+  },
+  'HKD',
+);
+check(ukHongKong.row.lifetime_display === 'HK$388', 'Currency override should load the HKD storefront');
+check(ukHongKong.note === 'Shown in HKD from HKG.', 'HKD override note should name its storefront');
 
 const compactHeadlineLocales = new Set(['ja', 'zh', 'zh-hant', 'ko']);
 const headlineLimits = { default: 40, compact: 16 };
