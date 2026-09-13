@@ -58,7 +58,7 @@ hero:
   headline_accent: ""
   category: "Dial garde l'historique de tes doses et sites d'injection sur iPhone."
   quick_answer: "Dial note les injections et les comprimés GLP-1, notamment Ozempic, Wegovy, Rybelsus, Mounjaro, Saxenda et le sémaglutide ou le tirzépatide prescrit en préparation magistrale. Chaque entrée garde la dose, l'heure, le site d'injection, le poids et les effets indésirables. Le carnet sur iPhone est gratuit et sans compte. Dial Pro ajoute un graphique de niveau estimé, la saisie sur Apple Watch et un export PDF ou CSV."
-  detail: "Note tes doses gratuitement sur iPhone. Dial Pro ajoute la saisie sur Apple Watch, les graphiques et un PDF pour la consultation. Les relevés de médicaments peuvent se synchroniser via ton propre iCloud. Le poids et les photos restent en local."
+  detail: "Les relevés de médicaments peuvent se synchroniser via ton propre iCloud. Le poids et les photos restent en local."
   free_line: Téléchargement gratuit, sans compte à créer. Le relevé de doses n'a pas de limite.
   secondary_cta: Voir comment Dial fonctionne
   qr_caption: Scanne pour ouvrir Dial dans l'App Store sur ton iPhone.
@@ -68,9 +68,7 @@ hero:
     - Apple Watch
     - Siri, Centre de contrôle et écran de verrouillage
     - Stockage iCloud privé facultatif
-  legal:
-    Dial est un relevé personnel, pas un avis médical. Dial Pro ajoute la saisie sur
-    Watch, les graphiques et les exports.
+  legal: "Dial est un relevé personnel, pas un avis médical."
 
 proof:
   label: Pourquoi Dial

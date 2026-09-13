@@ -49,7 +49,7 @@ hero:
   headline_accent: ""
   category: "Dial prati lijekove GLP-1 na iPhoneu i Apple Watchu."
   quick_answer: "Dial bilježi GLP-1 injekcije i tablete, uključujući Ozempic, Wegovy, Rybelsus, Mounjaro i propisani compounded semaglutid ili tirzepatid. Svaki unos čuva dozu, vrijeme, mjesto injekcije, težinu i nuspojave. Dnevnik na telefonu je besplatan i ne treba račun. Dial Pro dodaje grafikon procijenjene razine, bilježenje s Apple Watcha te izvoz u PDF ili CSV."
-  detail: "Zabilježi svaku dozu s vremenom i mjestom injekcije, na telefonu ili sa zapešća. Dial Pro crta procijenjenu razinu između doza i sastavlja PDF za liječnika. Zapisi ostaju na uređaju ili u tvojoj privatnoj iCloud bazi, ako to uključiš."
+  detail: "Zapisi lijekova mogu se sinkronizirati preko tvog iClouda. Težina i fotografije napretka ostaju na uređaju."
   free_line: Preuzimanje je besplatno, račun ne otvaraš. Zapise doza vodiš bez ograničenja.
   secondary_cta: "Kako Dial radi"
   qr_caption: "Skeniraj da otvoriš Dial u App Storeu na iPhoneu."
@@ -59,7 +59,7 @@ hero:
     - Apple Watch
     - "Siri, Kontrolni centar i zaključani zaslon"
     - "Neobavezna privatna iCloud pohrana"
-  legal: "Dial je osobni zapis, a ne medicinski savjet. Dial Pro dodaje bilježenje s Watcha, grafikone i izvoz."
+  legal: "Dial je osobni zapis, a ne medicinski savjet."
 
 proof:
   label: "Zašto Dial"

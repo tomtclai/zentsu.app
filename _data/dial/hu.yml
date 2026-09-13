@@ -49,7 +49,7 @@ hero:
   headline_accent: ""
   category: "A Dial GLP-1-gyógyszerkövető iPhone-ra és Apple Watchra."
   quick_answer: "A Dial GLP-1-es injekciókat és tablettákat rögzít, így az Ozempic, Wegovy, Rybelsus, Mounjaro és a felírt szemaglutidot vagy tirzepatidot tartalmazó gyógyszertári készítményeket. Minden bejegyzés megőrzi az adagot, az időpontot, az injekcióhelyet, a testsúlyt és a mellékhatásokat. A telefonos napló ingyenes, és nem kell hozzá fiók. A Dial Pro becsült szint grafikonját, az Apple Watchról való rögzítést és a PDF- vagy CSV-exportot adja hozzá."
-  detail: "Rögzítsd minden adagot az idővel és az injekcióhellyel, a telefonodon vagy a csuklódon. A Dial Pro becsült szintet rajzol az adagok közé, és PDF-et készít az orvosodnak. A bejegyzések a készüléken maradnak, vagy a saját privát iCloud-adatbázisodban, ha bekapcsolod."
+  detail: "A gyógyszerbejegyzések a saját iCloudodon keresztül szinkronizálhatók. A testsúly és a haladási fotók a készüléken maradnak."
   free_line: Ingyenes letöltés, nem kell fiókot nyitnod. Az adagnaplónak nincs felső határa.
   secondary_cta: "Nézd meg, hogyan működik a Dial"
   qr_caption: "Olvasd be, hogy a Dial megnyíljon az App Store-ban az iPhone-odon."
@@ -59,7 +59,7 @@ hero:
     - Apple Watch
     - "Siri, Vezérlőközpont és zárolási képernyő"
     - "Választható privát iCloud-tárolás"
-  legal: "A Dial személyes nyilvántartás, nem orvosi tanács. A Dial Pro hozzáadja a Watch-ról való rögzítést, a grafikonokat és az exportot."
+  legal: "A Dial személyes nyilvántartás, nem orvosi tanács."
 
 proof:
   label: "Miért a Dial"

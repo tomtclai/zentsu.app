@@ -169,27 +169,45 @@
   line-height: 1.6;
 }
 
+/* .dial-hero-copy is a flex column, so every child needs an explicit order.
+   A child left at the initial order 0 jumps ahead of the whole hero. */
 @media (min-width: 761px) {
-  .dial-hero-copy .dial-hero-free {
+  .dial-hero-copy .dial-brandline {
+    order: 1;
+  }
+
+  .dial-hero-copy h1 {
+    order: 2;
+  }
+
+  .dial-hero-copy .dial-category {
+    order: 3;
+  }
+
+  .dial-hero-copy .dial-quick-answer {
     order: 4;
+  }
+
+  .dial-hero-copy .dial-hero-free {
+    order: 5;
     margin-top: 0;
   }
 
   .dial-hero-copy .dial-actions-primary {
-    order: 5;
+    order: 6;
     margin-top: 1.1rem;
   }
 
   .dial-hero-copy .dial-hero-detail {
-    order: 6;
-  }
-
-  .dial-hero-copy .dial-platforms {
     order: 7;
   }
 
-  .dial-hero-copy .dial-hero-legal {
+  .dial-hero-copy .dial-platforms {
     order: 8;
+  }
+
+  .dial-hero-copy .dial-hero-legal {
+    order: 9;
   }
 }
 
@@ -409,20 +427,28 @@
     margin-top: 1rem;
   }
 
-  .dial-page .dial-hero-grid .dial-hero-detail {
+  /* The quick answer runs long on a phone, so it follows the action and the
+     screenshot instead of separating the headline from the download. */
+  .dial-page .dial-hero-grid .dial-quick-answer {
     order: 7;
+    margin-top: 1rem;
+    font-size: 0.94rem;
   }
 
-  .dial-page .dial-hero-grid .dial-platforms {
+  .dial-page .dial-hero-grid .dial-hero-detail {
     order: 8;
   }
 
-  .dial-page .dial-hero-grid .dial-hero-legal {
+  .dial-page .dial-hero-grid .dial-platforms {
     order: 9;
   }
 
-  .dial-page .dial-hero-grid .dial-orbit {
+  .dial-page .dial-hero-grid .dial-hero-legal {
     order: 10;
+  }
+
+  .dial-page .dial-hero-grid .dial-orbit {
+    order: 11;
   }
 }
 

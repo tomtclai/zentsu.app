@@ -62,7 +62,7 @@ hero:
   headline_accent: ""
   category: Dial is a GLP‑1 dose tracker for iPhone and Apple Watch.
   quick_answer: "Dial logs GLP-1 injections and pills, including Ozempic, Wegovy, Rybelsus, Mounjaro, Zepbound and prescribed compounded semaglutide or tirzepatide. Each entry keeps the dose, time, injection site, weight and side effects. The phone log is free with no account. Dial Pro adds an estimated level chart, Apple Watch logging and a PDF or CSV export."
-  detail: "Start with the free iPhone dose log. Dial Pro adds Apple Watch logging, charts, and PDF or CSV export. Medication records can sync through your own iCloud. Weight and progress photos stay local."
+  detail: "Medication records can sync through your own iCloud. Weight and progress photos stay local."
   free_line: Free to download, with no account to create. The phone log has no cap on entries.
   secondary_cta: See how Dial works
   qr_caption: Scan to open Dial in the App Store on your iPhone.
@@ -72,17 +72,15 @@ hero:
     - Apple Watch
     - Siri, Control Center, and Lock Screen
     - Optional private iCloud storage
-  legal:
-    Dial is a personal record, not medical advice. Dial Pro adds Watch logging, charts,
-    and exports.
+  legal: "Dial is a personal record, not medical advice."
 
 proof:
   label: Why Dial
   points:
-    - Free phone log with no cap on entries
     - Cycle ring and next reminder on Apple Watch
-    - Dial Pro quick logging from your wrist
-    - Dial Pro charts and PDF or CSV export
+    - Opens without a Dial account
+    - Lifetime option, a single purchase
+    - Estimated level between doses (Dial Pro)
 
 level:
   kicker: Dial Pro · Estimated level

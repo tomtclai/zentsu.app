@@ -49,7 +49,7 @@ hero:
   headline_accent: ""
   category: "Dial adalah pelacak obat GLP-1 untuk iPhone dan Apple Watch."
   quick_answer: "Dial mencatat suntikan dan tablet GLP-1, termasuk Ozempic, Wegovy, Rybelsus, Mounjaro, dan Zepbound, serta semaglutide atau tirzepatide racikan dari resep. Setiap entri menyimpan dosis, waktu, lokasi suntikan, berat, dan efek samping. Pencatatan di ponsel gratis tanpa perlu akun. Dial Pro menambah grafik tingkat perkiraan, pencatatan dari Apple Watch, dan ekspor PDF atau CSV."
-  detail: "Catat setiap dosis beserta waktu dan lokasi suntikan, di ponsel atau di pergelangan. Dial Pro menampilkan tingkat perkiraan antar dosis dan menyusun PDF untuk dokter Anda. Catatan tetap di perangkat, atau di basis data iCloud pribadi Anda jika opsi itu dinyalakan."
+  detail: "Catatan obat dapat disinkronkan lewat iCloud Anda sendiri. Berat dan foto perkembangan tetap di perangkat."
   free_line: Unduh gratis, tanpa perlu membuat akun. Catatan dosis tidak dibatasi.
   secondary_cta: "Cara kerja Dial"
   qr_caption: "Pindai untuk membuka Dial di App Store di iPhone Anda."
@@ -59,7 +59,7 @@ hero:
     - Apple Watch
     - "Siri, Pusat Kontrol, dan Layar Terkunci"
     - "Penyimpanan iCloud pribadi opsional"
-  legal: "Catatan pribadi, bukan nasihat medis. Dial Pro menambah pencatatan dari Watch, grafik, dan ekspor."
+  legal: "Catatan pribadi, bukan nasihat medis."
 
 proof:
   label: "Mengapa Dial"

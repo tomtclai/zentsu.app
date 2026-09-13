@@ -49,7 +49,7 @@ hero:
   headline_accent: ""
   category: "Dial 是面向 iPhone 和 Apple Watch 的 GLP-1 用药记录。"
   quick_answer: "Dial 记录 GLP-1 注射和口服药片，包括诺和泰、诺和盈、诺和忻、穆峰达、Zepbound，以及医生处方的复配司美格鲁肽或替尔泊肽。每条记录保存剂量、时间、注射部位、体重和副作用。手机上的用药日志免费，不用账号。Dial Pro 增加估计水平图表、Apple Watch 记录，以及 PDF 或 CSV 导出。"
-  detail: "在手机或手腕上，给每次剂量附上时间和注射部位。Dial Pro 按记录画出两次剂量之间的估计水平，并生成给医生看的 PDF。记录留在设备上。打开 iCloud 后，也可放进你自己的私人 iCloud 数据库。"
+  detail: "药物记录可通过你自己的 iCloud 同步。体重和进展照片留在设备上。"
   free_line: 免费下载，不用注册 Dial 账号。用药记录没有上限。
   secondary_cta: "Dial 怎么用"
   qr_caption: "扫描后，在 iPhone 的 App Store 打开 Dial。"
@@ -59,7 +59,7 @@ hero:
     - Apple Watch
     - "Siri、控制中心和锁定屏幕"
     - "可选的私人 iCloud 存储"
-  legal: "Dial 是个人记录，不是医疗建议。Dial Pro 增加手表记录、图表和导出。"
+  legal: "Dial 是个人记录，不是医疗建议。"
 
 proof:
   label: "关于 Dial"
