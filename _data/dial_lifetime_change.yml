@@ -223,10 +223,6 @@ territories:
     currency: TRY
     lifetime: "6999.99"
     lifetime_display: "₺6.999,99"
-  TWN:
-    currency: TWD
-    lifetime: "3990"
-    lifetime_display: "NT$3,990"
   TZA:
     currency: TZS
     lifetime: "399900"
