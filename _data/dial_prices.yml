@@ -117,10 +117,10 @@ zh-hant:
   currency: TWD
   monthly: "120"
   annual: "690"
-  lifetime: "3990"
+  lifetime: "1490"
   monthly_display: "NT$120"
   annual_display: "NT$690"
-  lifetime_display: "NT$3,990"
+  lifetime_display: "NT$1,490"
 
 ko:
   territory: KOR
