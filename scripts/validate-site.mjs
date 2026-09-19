@@ -259,6 +259,7 @@ for (const [label, html, boundaries] of [
 
 const dialPrices = loadYaml('_data/dial_prices.yml');
 const dialStorefronts = loadYaml('_data/dial_storefronts.yml');
+const dialCampaign = loadYaml('_data/dial_campaign.yml');
 const dialCurrencyPrices = loadYaml('_data/dial_currency_prices.yml') ?? {};
 const dialPickerCurrencies = [
   ...new Set([...Object.values(dialPrices).map((row) => row.currency), ...Object.keys(dialCurrencyPrices)]),
@@ -311,6 +312,16 @@ for (const [lang, route] of Object.entries(dialRoutes)) {
   const nav = html.slice(html.indexOf('<nav'), html.indexOf('</nav>'));
   check(nav.includes('class="nav-lang"'), `${route} language picker is not in the nav`);
   check(!nav.includes('class="dial-currency"'), `${route} currency picker leaked into the nav`);
+  const storeUrl = (placement) =>
+    `https://apps.apple.com/${storefront.country}/app/id6789408903?pt=${dialCampaign.provider_token}&ct=${placement}&mt=${dialCampaign.media_type}`;
+  check(
+    nav.includes(`href="${storeUrl(dialCampaign.placements.nav)}"`),
+    `${route} nav CTA must point at the ${storefront.country} App Store listing`,
+  );
+  check(
+    html.includes(`href="${storeUrl(dialCampaign.placements.plans_card)}"`),
+    `${route} plans-card CTA must point at the ${storefront.country} App Store listing`,
+  );
 }
 
 const samplePrices = {
