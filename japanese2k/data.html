@@ -1,0 +1,91 @@
+---
+title: JP 2K word data and license · Zentsu LLC
+description: 'Sources and license for the JP 2K word data. The Japanese words, readings, and English meanings are offered under CC BY-SA 4.0, with credit to Tanos and the EDRDG JMdict/EDICT project.'
+canonical: https://zentsu.app/japanese2k/data
+permalink: /japanese2k/data
+lang: en
+favicon: /assets/japanese2k-icon.png
+---
+
+<!doctype html>
+<html lang="{{ page.lang }}" dir="{{ site.data.i18n[page.lang].dir | default: 'ltr' }}">
+  <head>
+    {% include head-common.html %}
+
+    <style>
+      /* ── Content (page-specific) ── */
+      main {
+        flex: 1;
+        padding: 3rem 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    {% include nav.html %}
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <span class="page-label">JP 2K</span>
+        <h1>Word data and license</h1>
+
+        <p>
+          JP 2K teaches 2,000 Japanese words. Each word has a Japanese form, a kana reading, and an
+          English meaning. We built that list from the sources below and publish its word fields in
+          <a href="/japanese2k/icons.json">zentsu.app/japanese2k/icons.json</a>.
+        </p>
+
+        <h2>Sources</h2>
+        <ul>
+          <li>
+            The JLPT vocabulary lists by Jonathan Waller at
+            <a href="http://www.tanos.co.uk/jlpt/">tanos.co.uk</a>, which are offered under the
+            <a href="http://www.tanos.co.uk/jlpt/sharing/">Creative Commons Attribution license</a>.
+          </li>
+          <li>
+            The
+            <a href="https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project"
+              >JMdict/EDICT dictionary files</a
+            >, the property of the Electronic Dictionary Research and Development Group (EDRDG). The
+            English meanings derive from these files, and we use them in accordance with the
+            <a href="https://www.edrdg.org/edrdg/licence.html">EDRDG license</a>.
+          </li>
+          <li>
+            <a href="https://github.com/jamsinclair/open-anki-jlpt-decks">open-anki-jlpt-decks</a>,
+            which compiled these lists and is released under the MIT License.
+          </li>
+        </ul>
+
+        <h2>License</h2>
+        <p>
+          The <code>japanese</code>, <code>reading</code>, and <code>english</code> fields in
+          icons.json, and the same word data inside the JP 2K app, are offered under the
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/"
+            >Creative Commons Attribution-ShareAlike 4.0 International license (CC BY-SA 4.0)</a
+          >. You may copy, adapt, and share them, including commercially. Credit Tanos and the EDRDG
+          as listed above, link to this license, and release any adapted version of the data under
+          the same license.
+        </p>
+        <p>
+          This license covers the word data only. The picture files under /japanese2k/svgs/ are
+          Zentsu LLC artwork and are not part of it. The app itself is governed by the Zentsu LLC
+          <a href="/terms">Terms of Use</a>.
+        </p>
+
+        <h2>Corrections</h2>
+        <p>
+          The data is provided as is and can contain mistakes. If you find a wrong reading or
+          meaning, email
+          <a href="mailto:support@zentsu.app?subject=JP%202K%20word%20data">support@zentsu.app</a>
+          with the word and the fix.
+        </p>
+
+        <hr />
+        <p style="font-size: 0.8125rem; color: var(--muted)">
+          &copy; 2026 Zentsu LLC. Word data under CC BY-SA 4.0 as described above.
+        </p>
+      </article>
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
