@@ -1,0 +1,549 @@
+---
+published: false
+footer_indie: true
+footer_apple_badge: false
+title: 'Press: Video & Image Converter for macOS'
+description: 'A native Mac converter for video and images. MOV to MP4 in H.264, HEIC to JPG, PNG to WebP, and size presets for Discord and email. Free download with an optional one-time Press Pro unlock.'
+og_description: 'Video and image conversion that runs on your Mac. MOV to MP4, HEIC to JPG, WebP out. Free download with a one-time Pro unlock.'
+canonical: https://zentsu.app/press/
+permalink: /press/
+og_site_name: Press
+og_image: https://zentsu.app/assets/press-og.png
+og_image_alt: 'Press: video and image converter for macOS'
+favicon: /assets/press-icon.png
+page_stylesheet: /press.css
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head-common.html %}
+    <meta name="theme-color" content="#f5f3ee" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#14110f" media="(prefers-color-scheme: dark)" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Press",
+        "description": "A native Mac converter for video and images. MOV to MP4 in H.264, HEIC to JPG, PNG to WebP, and size presets for Discord and email. Free download with an optional one-time Press Pro unlock.",
+        "url": "https://zentsu.app/press/",
+        "operatingSystem": "macOS 15",
+        "applicationCategory": "MultimediaApplication",
+        "image": "https://zentsu.app/assets/press-icon.png",
+        "softwareRequirements": "macOS 15 or later; Apple silicon or Intel",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Zentsu LLC",
+          "url": "https://zentsu.app/"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "description": "Free download. Press Pro is an optional ${{ site.price_press_lifetime }} non-consumable in-app purchase."
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does Press upload my files anywhere?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Conversion runs through AVFoundation, ImageIO, and libwebp on your Mac. The source has no networking code in it; the only network traffic is the App Store purchase and restore flow, which macOS handles with Apple."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does the MP4 from Finder still get rejected?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Finder's Encode Selected Video Files defaults to HEVC unless you tick Greater compatibility, and QuickTime Player's Export As writes only .mov. An HEVC file is what an older Windows machine or an upload form refuses. Press writes H.264 in an .mp4, which is the combination those systems expect."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is free, and what needs Press Pro?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Free: one file at a time to H.264 MP4 at Original, 1080p, or 720p, and to JPEG, PNG, or HEIC, with no cap on how many times. Pro: batch conversion, size presets, 2160p, HEVC output, WebP, AVIF, TIFF, and image downscaling, as a one-time ${{ site.price_press_lifetime }} purchase."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it change my original files?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Never. Press writes name (Press).mp4 or name (Press).jpg beside the source, adds a number if that name already exists, and asks once for access to the folder so the sandbox allows the write."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens to metadata?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Video: AVFoundation carries the source's metadata into the MP4 wherever the container has a matching field, except on size-limited exports, which are written fresh through AVAssetWriter and carry none. Images: EXIF, including location, is not copied; the orientation tag is applied to the pixels first, so the picture displays upright."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Macs does it run on?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "macOS 15 or later, on Apple silicon or Intel, as a universal binary from the Mac App Store."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I restore Press Pro on another Mac?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Open Press, go to Settings, and click Restore Purchases while signed into the same Apple Account you bought it with."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I get a refund?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Purchases and refunds are handled by Apple. You can request a refund from Apple directly via reportaproblem.apple.com. If a conversion is failing, email support@zentsu.app first; there is a good chance it is a fixable bug."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    {% include nav.html %}
+
+    <main id="main-content" tabindex="-1">
+      <!-- ── HERO ── -->
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="hero-kicker">Converts on your Mac. Files never leave it.</p>
+            <h1>MOV to MP4 and HEIC to JPG, <span class="accent">on your Mac</span>.</h1>
+            <p class="lede">
+              Drop a file or a folder, pick the output, click Convert. Press writes H.264 MP4, JPEG,
+              PNG, HEIC, WebP, AVIF, and TIFF through AVFoundation and ImageIO, and nothing is
+              uploaded anywhere.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#pricing"
+                >Free download, Pro is ${{ site.price_press_lifetime }}</a
+              >
+              <a class="btn btn-secondary" href="#how">How it works →</a>
+            </div>
+            <div class="hero-meta">
+              <span
+                ><svg
+                  class="tick"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                >
+                  <path d="M4 12l6 6L20 6" /></svg
+                >On-device</span
+              >
+              <span
+                ><svg
+                  class="tick"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                >
+                  <path d="M4 12l6 6L20 6" /></svg
+                >Batch conversion</span
+              >
+              <span
+                ><svg
+                  class="tick"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                >
+                  <path d="M4 12l6 6L20 6" /></svg
+                >Free to try</span
+              >
+            </div>
+            <p class="hero-specline">
+              macOS 15+ · Apple silicon &amp; Intel · native Swift 6 / SwiftUI
+            </p>
+          </div>
+          <div class="hero-visual" id="press-hero-visual" aria-hidden="true">
+            <!-- press-hero-visual:start -->
+            <div class="press-ba">
+              <div class="press-file press-file--before">
+                <div class="press-file-top">
+                  <span class="press-file-glyph">MOV</span>
+                  <span class="press-chip press-chip--warn">HEVC</span>
+                </div>
+                <p class="press-file-name">IMG_4821.MOV</p>
+                <p class="press-file-size">312 MB</p>
+                <p class="press-file-meta">3840 &times; 2160 · 60 fps</p>
+              </div>
+              <div class="press-ba-arrow">
+                <span class="press-ba-arrow-label">Press</span>
+                <svg
+                  viewBox="0 0 48 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 12h40" />
+                  <path d="M33 4l10 8-10 8" />
+                </svg>
+              </div>
+              <div class="press-file press-file--after">
+                <div class="press-file-top">
+                  <span class="press-file-glyph">MP4</span>
+                  <span class="press-chip press-chip--ok">H.264</span>
+                </div>
+                <p class="press-file-name">IMG_4821 (Press).mp4</p>
+                <p class="press-file-size">17.1 MB</p>
+                <p class="press-file-meta">1920 &times; 1080 · under the 20 MB Discord limit</p>
+              </div>
+            </div>
+            <!-- press-hero-visual:end -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ── HOW IT WORKS ── -->
+      <section class="slab" id="how">
+        <div class="wrap">
+          <div class="slab-head">
+            <div>
+              <div class="num">01 · METHOD</div>
+              <h2>One window: a drop zone, a queue, and the output picker.</h2>
+            </div>
+            <p class="kicker">
+              Output lands beside the source file with a (Press) suffix. The original is never
+              touched, and Press asks once for access to the folder so the sandbox allows the write.
+            </p>
+          </div>
+
+          <div class="split">
+            <div class="split-card">
+              <span class="badge">Video</span>
+              <h3>H.264 MP4 that plays where HEVC was refused.</h3>
+              <p>
+                Finder's Encode action defaults to HEVC and QuickTime Player exports only .mov,
+                which is why a clip that plays on your Mac gets bounced by a Windows PC or an upload
+                form. Press writes .mp4 with H.264 video and AAC audio at Original, 1080p, or 720p,
+                and copies the streams without re-encoding when the source is already H.264.
+              </p>
+              <p>
+                Press Pro adds 2160p, HEVC output for when you want the smaller file, and size
+                presets: Discord at 20 MB, Email at 25 MB, Slack at 1 GB, or a custom number. Press
+                works out the bitrate from the byte budget and the clip's length, keeps the full
+                duration, and re-encodes once at a lower rate if the first pass overshoots.
+              </p>
+            </div>
+            <div class="split-card">
+              <span class="badge">Image</span>
+              <h3>WebP out, which Finder and Preview cannot do.</h3>
+              <p>
+                Finder's Convert Image writes JPEG, PNG, or HEIF; Preview's Export adds TIFF and
+                PDF. Press reads HEIC, HEIF, WebP, AVIF, JPEG XL, JPEG, PNG, TIFF, GIF, and BMP
+                through ImageIO and writes JPEG, PNG, and HEIC with a quality slider.
+              </p>
+              <p>
+                Press Pro adds WebP (lossless at 100 percent, through libwebp), AVIF, TIFF, and a
+                Max size in pixels. Orientation is applied to the pixels before encoding, so a phone
+                photo comes out upright everywhere.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── FORMATS ── -->
+      <section class="slab" id="formats">
+        <div class="wrap">
+          <div class="slab-head">
+            <div>
+              <div class="num">02 · FORMATS</div>
+              <h2>What goes in, what comes out.</h2>
+            </div>
+            <p class="kicker">
+              Anything AVFoundation opens as video, anything ImageIO decodes as an image. MKV, AVI,
+              audio, and documents are outside this release.
+            </p>
+          </div>
+
+          <div class="trio">
+            <div class="tcard">
+              <h3>Video in</h3>
+              <p>
+                MOV, MP4, M4V, and the other QuickTime-family files, including HEVC and ProRes
+                sources from an iPhone or a camera.
+              </p>
+            </div>
+            <div class="tcard">
+              <h3>Video out</h3>
+              <p>
+                MP4 with H.264 or HEVC video and AAC audio at Original, 720p, 1080p, or 2160p.
+                Sources are never scaled up. Size presets for Discord, email, and Slack, or a custom
+                limit. HEVC, 2160p, and size presets are Press Pro.
+              </p>
+            </div>
+            <div class="tcard">
+              <h3>Images</h3>
+              <p>
+                In: HEIC, HEIF, WebP, AVIF, JPEG XL, JPEG, PNG, TIFF, GIF, BMP. Out: JPEG, PNG, and
+                HEIC free; WebP, AVIF, and TIFF with Press Pro. Quality from 10 to 100 percent where
+                the format is lossy, and an optional max pixel size.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SPECS ── -->
+      <section class="slab" style="padding-bottom: 5rem">
+        <div class="wrap">
+          <div class="slab-head">
+            <div>
+              <div class="num">03 · BUILD</div>
+              <h2>Native and sandboxed.</h2>
+            </div>
+            <p class="kicker">
+              Press converts video and image files entirely on this Mac. It has no account system,
+              and it does not collect usage data or send anything over the network. The only network
+              use is Apple's own App Store purchase and restore flow.
+            </p>
+          </div>
+
+          <div class="specs">
+            <div class="cell">
+              <div class="label">Platform</div>
+              <div class="value">macOS 15+</div>
+              <div class="sub">SwiftUI, native window</div>
+            </div>
+            <div class="cell">
+              <div class="label">Architecture</div>
+              <div class="value">Universal</div>
+              <div class="sub">Apple silicon &amp; Intel</div>
+            </div>
+            <div class="cell">
+              <div class="label">Network use</div>
+              <div class="value">None, per conversion</div>
+              <div class="sub">No URLSession in source</div>
+            </div>
+            <div class="cell">
+              <div class="label">Analytics</div>
+              <div class="value">Zero</div>
+              <div class="sub">Apple frameworks and libwebp</div>
+            </div>
+            <div class="cell">
+              <div class="label">Accounts</div>
+              <div class="value">Not required</div>
+              <div class="sub">Download, open, use.</div>
+            </div>
+            <div class="cell">
+              <div class="label">Purchase</div>
+              <div class="value">Free download</div>
+              <div class="sub">${{ site.price_press_lifetime }} Pro unlock</div>
+            </div>
+            <div class="cell feature-app-store">
+              <div class="label">Distribution</div>
+              <div class="value">Mac App Store</div>
+              <div class="sub">Sandboxed, notarized</div>
+            </div>
+            <div class="cell">
+              <div class="label">Output</div>
+              <div class="value">Beside the source</div>
+              <div class="sub">(Press) suffix, never overwrites</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── PRICING ── -->
+      <section class="slab" id="pricing">
+        <div class="wrap">
+          <div class="slab-head">
+            <div>
+              <div class="num">04 · PRICING</div>
+              <h2>Free download. Pro is a one-time unlock.</h2>
+            </div>
+            <p class="kicker">
+              Single-file conversion to H.264 MP4, JPEG, PNG, and HEIC is free, with no cap on how
+              many files you convert one at a time. Press Pro is one in-app purchase that stays
+              unlocked on this Mac.
+            </p>
+          </div>
+
+          <div class="pricing pricing--single">
+            <div class="price-card price-card--main">
+              <div class="price-eyebrow">Press Pro unlock</div>
+              <div class="price-amount">
+                <span class="price-currency">$</span
+                ><span class="price-num">{{ site.price_press_lifetime }}</span>
+              </div>
+              <div class="price-sub">USD · optional in-app purchase</div>
+              <ul class="price-list">
+                <li>Batch conversion: drop a folder and convert everything in it</li>
+                <li>Size presets for Discord, email, and Slack, plus a custom limit</li>
+                <li>2160p and HEVC video output</li>
+                <li>WebP, AVIF, and TIFF image output, and downscaling to a max pixel size</li>
+              </ul>
+              <a class="btn btn-primary" href="#download">Get Press</a>
+            </div>
+          </div>
+
+          <p class="price-region-note">
+            Prices in USD. The App Store shows the final Pro unlock price for your region.
+          </p>
+        </div>
+      </section>
+
+      {%- assign press_app = site.data.apps.apps | where: 'slug', 'press' | first -%}
+      <section class="buy" id="download">
+        <div class="buy-inner">
+          <div>
+            {%- if press_app.app_store_url %}
+            <h2>Press is on the Mac App Store.</h2>
+            {%- else %}
+            <h2>Press is coming to the Mac App Store.</h2>
+            {%- endif %}
+            <p>
+              Free to download. Press Pro is an optional
+              <strong>${{ site.price_press_lifetime }}</strong> one-time unlock for batch
+              conversion, size presets, and the advanced formats.
+            </p>
+            <p class="buy-cta-row">
+              {%- if press_app.app_store_url %}
+              <a
+                class="app-store-badge-link"
+                href="{{ press_app.app_store_url }}"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/assets/download-on-the-mac-app-store.svg"
+                  alt="Download Press on the Mac App Store"
+                  height="40"
+                />
+              </a>
+              {%- else %}
+              <span class="btn btn-secondary press-badge-dormant">Listing coming soon</span>
+              {%- endif %}
+            </p>
+          </div>
+          <div class="buy-facts">
+            <div><b>→</b> Free download with single-file conversion included</div>
+            <div><b>→</b> Press Pro unlocks batch, size presets, and WebP</div>
+            <div><b>→</b> ${{ site.price_press_lifetime }} one-time, no subscription</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── FAQ ── -->
+      <section class="slab" id="faq" style="padding-bottom: 5rem">
+        <div class="wrap">
+          <div class="slab-head">
+            <div>
+              <div class="num">05 · FAQ</div>
+              <h2>Questions before you download.</h2>
+            </div>
+            <p class="kicker">
+              If yours isn't here,
+              <a href="mailto:support@zentsu.app" style="color: var(--accent)"
+                >email support@zentsu.app</a
+              >. Every message is read by a human.
+            </p>
+          </div>
+
+          <div class="faq-list">
+            <details>
+              <summary>Does Press upload my files anywhere?</summary>
+              <p>
+                No. Conversion runs through AVFoundation, ImageIO, and libwebp on your Mac. The
+                source has no networking code in it; the only network traffic is the App Store
+                purchase and restore flow, which macOS handles with Apple.
+              </p>
+            </details>
+            <details>
+              <summary>Why does the MP4 from Finder still get rejected?</summary>
+              <p>
+                Finder's Encode Selected Video Files defaults to HEVC unless you tick Greater
+                compatibility, and QuickTime Player's Export As writes only .mov. An HEVC file is
+                what an older Windows machine or an upload form refuses. Press writes H.264 in an
+                .mp4, which is the combination those systems expect.
+              </p>
+            </details>
+            <details>
+              <summary>What is free, and what needs Press Pro?</summary>
+              <p>
+                Free: one file at a time to H.264 MP4 at Original, 1080p, or 720p, and to JPEG, PNG,
+                or HEIC, with no cap on how many times. Pro: batch conversion, size presets, 2160p,
+                HEVC output, WebP, AVIF, TIFF, and image downscaling, as a one-time
+                <strong>${{ site.price_press_lifetime }}</strong> purchase.
+              </p>
+            </details>
+            <details>
+              <summary>Does it change my original files?</summary>
+              <p>
+                Never. Press writes name (Press).mp4 or name (Press).jpg beside the source, adds a
+                number if that name already exists, and asks once for access to the folder so the
+                sandbox allows the write.
+              </p>
+            </details>
+            <details>
+              <summary>What happens to metadata?</summary>
+              <p>
+                Video: AVFoundation carries the source's metadata into the MP4 wherever the
+                container has a matching field, except on size-limited exports, which are written
+                fresh through AVAssetWriter and carry none. Images: EXIF, including location, is not
+                copied; the orientation tag is applied to the pixels first, so the picture displays
+                upright.
+              </p>
+            </details>
+            <details>
+              <summary>Which Macs does it run on?</summary>
+              <p>
+                macOS 15 or later, on Apple silicon or Intel, as a universal binary from the Mac App
+                Store.
+              </p>
+            </details>
+            <details>
+              <summary>How do I restore Press Pro on another Mac?</summary>
+              <p>
+                Open Press, go to Settings, and click Restore Purchases while signed into the same
+                Apple Account you bought it with.
+              </p>
+            </details>
+            <details>
+              <summary>Can I get a refund?</summary>
+              <p>
+                Purchases and refunds are handled by Apple. You can request a refund from Apple
+                directly via
+                <a href="https://reportaproblem.apple.com" style="color: var(--accent)"
+                  >reportaproblem.apple.com</a
+                >. If a conversion is failing, email
+                <a href="mailto:support@zentsu.app" style="color: var(--accent)"
+                  >support@zentsu.app</a
+                >
+                first. There is a good chance it is a fixable bug.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>

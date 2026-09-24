@@ -3,6 +3,7 @@ test-results/
 playwright-report/
 blob-report/
 _site/
+_site-preview/
 dist/
 .DS_Store
 *.log

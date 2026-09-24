@@ -101,3 +101,19 @@ apps:
     page_url: /dial/
     icon: /assets/dial-icon.png
     accent: '#ef705f'
+
+  - name: Press
+    slug: press
+    visible: false # Wave A scaffold only; stays false until the go-live flip (SITE-PLAN.md section 7).
+    tagline: >-
+      Convert MOV to MP4, HEIC to JPG, and PNG to WebP on your Mac, with size
+      presets for Discord and email. Files never leave the machine.
+    status: coming_soon
+    platforms: macOS
+    price_key: price_press_lifetime
+    price_suffix: Pro unlock
+    app_store_url: null # Not yet on the App Store; see FINISH-PLAN.md phase 3.
+    store_label: Mac App Store
+    page_url: /press/
+    icon: /assets/press-icon.png
+    accent: '#3a6ea5'

@@ -1,0 +1,180 @@
+---
+published: false
+title: 'Press Support · Zentsu LLC'
+description: 'Support for Press, the native Mac video and image converter by Zentsu LLC. Contact, FAQ, and help for macOS 15 and later.'
+canonical: https://zentsu.app/press/support
+permalink: /press/support
+og_site_name: Press
+og_image: https://zentsu.app/assets/press-og.png
+og_image_alt: 'Press: video and image converter for macOS'
+favicon: /assets/press-icon.png
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head-common.html page_stylesheet="/press.css" %}
+
+    <style>
+      main {
+        flex: 1;
+        padding: 3rem 1.5rem;
+      }
+      article h3 {
+        font-size: 0.9375rem;
+        font-weight: 600;
+        margin-top: 1.25rem;
+        margin-bottom: 0.35rem;
+        color: var(--text);
+      }
+      .contact {
+        background: var(--accent-light);
+        border-radius: 8px;
+        padding: 1.1rem 1.25rem;
+        margin: 1.25rem 0 0.5rem;
+      }
+      .contact p {
+        margin: 0;
+      }
+      .contact .email {
+        font-size: 1.0625rem;
+        font-weight: 600;
+      }
+      .contact .note {
+        font-size: 0.875rem;
+        color: var(--muted);
+        margin-top: 0.25rem;
+      }
+      .faq h3 {
+        margin-top: 1.5rem;
+      }
+      .faq p {
+        margin-bottom: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    {% include nav.html %}
+
+    <main id="main-content" tabindex="-1">
+      <article>
+        <span class="page-label">Support</span>
+        <h1>Press Support</h1>
+        <p class="effective">
+          Press · Video &amp; image converter for macOS 15 or later · Zentsu LLC
+        </p>
+
+        <p>
+          This page is the support resource for <strong>Press</strong>, a native Mac video and image
+          converter published by Zentsu LLC. If a conversion fails, a file comes out wrong, or you
+          have a question about what Press can do, the answers and the contact address are below.
+        </p>
+
+        <h2>Contact</h2>
+        <div class="contact">
+          <p class="email">
+            <a href="mailto:support@zentsu.app?subject=Press%20support">support@zentsu.app</a>
+          </p>
+          <p class="note">
+            We aim to respond within 2 business days, usually sooner. Include your macOS version,
+            the type and size of the file you were converting, the output you picked, and the text
+            of any error shown in the job row.
+          </p>
+        </div>
+
+        <h2>Frequently asked questions</h2>
+        <div class="faq">
+          <h3>What macOS versions does Press support?</h3>
+          <p>
+            Press runs on macOS 15 (Sequoia) or later. It ships as a universal binary for both Apple
+            silicon and Intel Macs.
+          </p>
+
+          <h3>Does Press collect any data?</h3>
+          <p>
+            No. Press has no account system and carries no analytics or third-party SDKs. Every
+            conversion runs through AVFoundation, ImageIO, and libwebp on your Mac, and the files
+            you convert never leave it. The only network use is Apple's App Store purchase and
+            restore flow.
+          </p>
+
+          <h3>Where do converted files go?</h3>
+          <p>
+            Next to the source, named <strong>name (Press).mp4</strong>, <strong>.jpg</strong>, and
+            so on. If that name already exists, Press adds a number instead of overwriting. The
+            original file is never modified.
+          </p>
+
+          <h3>Why did Press ask for access to a folder?</h3>
+          <p>
+            Press is sandboxed by the Mac App Store, so it can only write where you allow. The first
+            time you convert a file from a folder, Press asks you to confirm that folder; the grant
+            is remembered on your Mac. You can change it under
+            <strong>Settings → Output folder</strong>. If the dialog opens on the wrong folder,
+            choose the folder that contains the source file, or a parent of it.
+          </p>
+
+          <h3>A conversion failed. What should I try first?</h3>
+          <p>
+            Read the message in the job row: it names the file and says whether Press could not read
+            it or could not write the output. A file Press cannot read is usually in a format
+            outside this release (MKV, AVI, and audio-only files are not supported). A write failure
+            usually means the folder grant does not cover the source; re-grant it from Settings. If
+            the same file keeps failing, email
+            <a href="mailto:support@zentsu.app?subject=Press%20bug%20report">support@zentsu.app</a>
+            with:
+          </p>
+          <ul>
+            <li>Your macOS version (Apple menu → About This Mac).</li>
+            <li>Whether your Mac has Apple silicon or Intel.</li>
+            <li>The source file's type and size, and the output you picked.</li>
+            <li>The error text from the job row, or a screenshot of it.</li>
+          </ul>
+
+          <h3>The output is over the size limit I picked.</h3>
+          <p>
+            Press sets the video bitrate from the byte budget and the clip's duration, aims 10
+            percent under the preset, and re-encodes once at a lower rate if the first pass lands
+            over. If a file still comes out over the limit, email us the source's duration and
+            resolution and the size you got; that is a bug we want to see. For a smaller file on
+            purpose, choose Custom and type a lower number, or add 720p.
+          </p>
+
+          <h3>How do I restore my purchase on a new Mac?</h3>
+          <p>
+            Open Press, go to <strong>Settings → Press Pro</strong>, and click
+            <strong>Restore Purchases</strong>. Make sure you're signed into the same Apple Account
+            on the Mac App Store that you used to buy Press Pro. If the restore doesn't complete,
+            email us and include your Apple Account's receipt or order ID.
+          </p>
+
+          <h3>How do I report a bug or request a format?</h3>
+          <p>
+            Email
+            <a href="mailto:support@zentsu.app?subject=Press%20feedback">support@zentsu.app</a>.
+            Every message is read by a human. Requests for formats outside this release, such as MKV
+            input or GIF output, are how we decide what goes in next.
+          </p>
+        </div>
+
+        <h2>Privacy and terms</h2>
+        <p>
+          Full details about how Press handles data, and the terms under which it is provided, are
+          in the documents below:
+        </p>
+        <ul>
+          <li><a href="/press/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Use</a></li>
+        </ul>
+
+        <hr />
+        <p style="font-size: 0.8125rem; color: var(--muted)">
+          Published by Zentsu LLC. Developer contact:
+          <a href="mailto:support@zentsu.app">support@zentsu.app</a>.
+        </p>
+      </article>
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>

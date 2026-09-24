@@ -1,0 +1,958 @@
+/* ──────────────────────────────────────────────────────────────────────────
+   press.css — Press product page (/press/) and conversion-pair landing
+   pages (/press/convert/*), loaded by press/index.html and
+   _layouts/press-pair.html respectively.
+
+   Layered on top of /shared.css, which already supplies the reset, the
+   warm-paper base palette, body/html defaults, and shared nav/footer chrome.
+   This file only overrides the palette tokens for Press's own accent and
+   adds the component classes shared.css does not carry: the flagship-style
+   hero/slab/pricing/FAQ pattern from bench.css (mirrored here for the
+   product page) and the tool-hero/related/cta-band pattern from tools.css
+   (mirrored here for the pair pages). See SITE-PLAN.md section 4.
+   ────────────────────────────────────────────────────────────────────────── */
+
+:root {
+  --accent: #3a6ea5;
+  --accent-light: #e6edf5;
+  --accent-soft: #e6edf5;
+}
+
+/* ── Dark mode ── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #6f9bd1;
+    --accent-light: #1c2a38;
+    --accent-soft: #1c2a38;
+  }
+}
+
+main {
+  flex: 1;
+}
+.wrap {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ── Buttons (shared shape across both page kinds) ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.85rem 1.35rem;
+  border-radius: 10px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition:
+    transform 0.15s ease,
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+  cursor: pointer;
+  font-family: inherit;
+}
+.btn-primary {
+  background: var(--ink);
+  color: var(--bg);
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+  background: var(--spot);
+}
+.btn-secondary {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--border);
+}
+.btn-secondary:hover {
+  border-color: var(--ink);
+}
+
+.lede {
+  font-size: 1.1875rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  margin: 0.75rem 0 1.85rem;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Product page (/press/) — mirrors bench.html's hero/slab/pricing rhythm.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.hero {
+  padding: 6rem 1.5rem 5rem;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 1px 1px, rgba(20, 17, 15, 0.07) 1px, transparent 0);
+  background-size: 24px 24px;
+  mask-image: linear-gradient(180deg, transparent 0%, #000 20%, #000 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 20%, #000 70%, transparent 100%);
+  pointer-events: none;
+}
+.hero-inner {
+  position: relative;
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.hero h1 {
+  font-size: clamp(2.75rem, 6.5vw, 5.25rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+  color: var(--ink);
+  margin-bottom: 1.25rem;
+}
+.hero h1 .accent {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--accent);
+}
+.hero-kicker {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.1rem;
+}
+.hero-specline {
+  margin-top: 1rem;
+  font-size: 0.8125rem;
+  color: var(--muted);
+  font-family: 'JetBrains Mono', monospace;
+}
+.hero-cta {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+.hero-meta {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  font-size: 0.8125rem;
+  color: var(--muted);
+  flex-wrap: wrap;
+}
+.hero-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.hero-meta .tick {
+  width: 14px;
+  height: 14px;
+  color: var(--accent);
+}
+
+/* Hero visual — the before/after file card: a HEVC .mov on the left, the
+   H.264 .mp4 Press wrote on the right. Plain HTML so the text stays real
+   size at phone width; scripts/make-press-og.mjs renders the same markup
+   (between the press-hero-visual markers in press/index.html) into
+   assets/press-og.png. */
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 360px;
+}
+.press-ba {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: stretch;
+  width: 100%;
+  max-width: 560px;
+}
+.press-file {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.1rem 1.15rem 1.05rem;
+  border-radius: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: 0 24px 48px -28px rgba(20, 17, 15, 0.35);
+  min-width: 0;
+}
+.press-file--after {
+  border-color: var(--accent);
+  box-shadow:
+    0 0 0 1px var(--accent-soft),
+    0 24px 48px -28px rgba(20, 17, 15, 0.35);
+}
+.press-file-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+.press-file-glyph {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--bg);
+  background: var(--ink);
+  position: relative;
+}
+.press-file-glyph::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0.55rem 0.55rem 0;
+  border-color: transparent var(--surface) transparent transparent;
+}
+.press-chip {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.press-chip--warn {
+  color: var(--spot);
+  background: var(--spot-soft);
+}
+.press-chip--ok {
+  color: var(--accent);
+  background: var(--accent-light);
+}
+.press-file p {
+  margin: 0;
+}
+.press-file-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  overflow-wrap: anywhere;
+}
+.press-file-size {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.press-file--after .press-file-size {
+  color: var(--accent);
+}
+.press-file-meta {
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+.press-ba-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  color: var(--accent);
+  padding: 0 0.1rem;
+}
+.press-ba-arrow svg {
+  width: 2.4rem;
+  height: 1.2rem;
+}
+.press-ba-arrow-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 860px) {
+  .hero {
+    padding: 4rem 1.5rem 3.5rem;
+  }
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .hero-visual {
+    order: -1;
+    min-height: 0;
+  }
+}
+@media (max-width: 560px) {
+  .press-ba,
+  .press-ba--stack {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .press-ba .press-ba-arrow svg,
+  .press-ba--stack .press-ba-arrow svg {
+    transform: rotate(90deg);
+  }
+  .press-ba .press-ba-arrow,
+  .press-ba--stack .press-ba-arrow {
+    flex-direction: row;
+    gap: 0.6rem;
+    padding: 0.1rem 0;
+  }
+}
+.press-ba--stack {
+  grid-template-columns: minmax(0, 1fr);
+}
+.press-ba--stack .press-ba-arrow {
+  flex-direction: row;
+  gap: 0.6rem;
+}
+.press-ba--stack .press-ba-arrow svg {
+  transform: rotate(90deg);
+}
+
+/* Dormant store badge slot on the buy band, shown while apps.yml has no
+   app_store_url for Press. Not a link, so no hover lift. */
+.press-badge-dormant {
+  cursor: default;
+  color: var(--muted);
+}
+.press-badge-dormant:hover {
+  border-color: var(--border);
+}
+
+/* ── Section scaffolding ── */
+section.slab {
+  padding: 6rem 0;
+  border-bottom: 1px solid var(--border);
+}
+@media (max-width: 700px) {
+  section.slab {
+    padding: 4rem 0;
+  }
+}
+.slab-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+.slab-head .num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+}
+.slab-head h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.625rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  max-width: 22ch;
+}
+.slab-head p.kicker {
+  font-size: 1rem;
+  color: var(--muted);
+  max-width: 36ch;
+  text-align: right;
+}
+@media (max-width: 700px) {
+  .slab-head p.kicker {
+    text-align: left;
+  }
+}
+
+/* ── Feature split ── */
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+.split-card h3 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.75rem;
+}
+.split-card p {
+  color: var(--ink-soft);
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+.split-card .badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+@media (max-width: 800px) {
+  .split {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ── Feature trio ── */
+.trio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.trio .tcard {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.5rem;
+  background: var(--surface);
+}
+.trio .tcard h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.6rem;
+}
+.trio .tcard p {
+  color: var(--ink-soft);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+@media (max-width: 800px) {
+  .trio {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Specs ── */
+.specs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+}
+.specs .cell {
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 1.75rem 1.5rem;
+  background: var(--bg);
+}
+.specs .cell .label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+.specs .cell .value {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.specs .cell .sub {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  margin-top: 0.3rem;
+}
+@media (max-width: 900px) {
+  .specs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .specs {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Pricing ── */
+.pricing {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.pricing--single {
+  grid-template-columns: minmax(0, 34rem);
+  justify-content: center;
+}
+.price-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 2rem 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+}
+.price-card--main {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent-soft);
+}
+.price-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.85rem;
+}
+.price-amount {
+  display: flex;
+  align-items: baseline;
+  gap: 0.15rem;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+}
+.price-amount .price-currency {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: -0.02em;
+}
+.price-amount .price-num {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+.price-sub {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+}
+.price-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+.price-list li {
+  font-size: 0.9375rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  padding-left: 1.1rem;
+  position: relative;
+  min-height: 1.4em;
+}
+.price-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 600;
+}
+.price-card .btn {
+  align-self: flex-start;
+  margin-top: auto;
+}
+.price-region-note {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* ── Buy band ── */
+section.buy {
+  padding: 5rem 1.5rem;
+  background: var(--bg-alt);
+  border-bottom: 1px solid var(--border);
+}
+.buy-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+.buy-inner h2 {
+  font-size: clamp(1.5rem, 3vw, 2.125rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.85rem;
+}
+.buy-inner p {
+  color: var(--ink-soft);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  max-width: 46ch;
+}
+.buy-cta-row {
+  margin-bottom: 1.5rem;
+}
+.buy-facts {
+  display: grid;
+  gap: 0.65rem;
+  font-size: 0.9375rem;
+  color: var(--ink-soft);
+}
+@media (max-width: 800px) {
+  .buy-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ── FAQ ── */
+.faq-list {
+  border-top: 1px solid var(--border);
+}
+.faq-list details {
+  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.faq-list details::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: var(--accent);
+  opacity: 0;
+  transform: scaleY(0.2);
+  transform-origin: 50% 0;
+  transition:
+    opacity 0.24s ease,
+    transform 0.42s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.faq-list details:hover::before,
+.faq-list details:focus-within::before {
+  opacity: 0.85;
+  transform: scaleY(1);
+}
+.faq-list summary {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  letter-spacing: -0.01em;
+}
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+.faq-list summary::after {
+  content: '+';
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 400;
+  font-size: 1.35rem;
+  color: var(--muted);
+  line-height: 1;
+}
+.faq-list details[open] summary::after {
+  content: '−';
+}
+.faq-list details:hover summary::after,
+.faq-list details:focus-within summary::after {
+  color: var(--accent);
+}
+.faq-list details p {
+  margin-top: 0.8rem;
+  color: var(--ink-soft);
+  line-height: 1.65;
+  max-width: 68ch;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Conversion-pair pages (/press/convert/*) — mirrors tools.css's
+   tool-hero/related/cta-band pattern, using the same pegboard motif as the
+   product-page hero above.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.tool-hero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.25rem 1.5rem 3.5rem;
+  margin: -3rem -1.5rem 2.5rem;
+  border-bottom: 1px solid var(--border);
+}
+.tool-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 1px 1px, rgba(20, 17, 15, 0.07) 1px, transparent 0);
+  background-size: 24px 24px;
+  mask-image: linear-gradient(180deg, transparent 0%, #000 25%, #000 75%, transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 25%, #000 75%, transparent 100%);
+  pointer-events: none;
+}
+.tool-hero-tile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 108px;
+  height: 108px;
+  padding: 0 1.25rem;
+  color: var(--accent);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: 0 18px 40px -20px rgba(20, 17, 15, 0.35);
+}
+.press-pair-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+/* Free / Pro tier marker beside the page label, read from `pro` in
+   _data/press_pairs.yml. */
+.press-pair-labels {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+.press-pair-labels .page-label {
+  margin-bottom: 0;
+}
+.press-tier {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+}
+.press-tier--free {
+  color: var(--accent);
+  background: var(--accent-light);
+}
+.press-tier--pro {
+  color: var(--spot);
+  background: var(--spot-soft);
+}
+@media (max-width: 700px) {
+  .tool-hero {
+    padding: 2.25rem 1.5rem 2.5rem;
+    margin: -3rem -1.5rem 2rem;
+  }
+  .tool-hero-tile {
+    height: 88px;
+    border-radius: 18px;
+  }
+}
+
+/* Steps + result — the "what you get" block under the lede. */
+.press-steps {
+  counter-reset: press-step;
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+.press-steps li {
+  position: relative;
+  padding-left: 2.5rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  min-height: 1.75rem;
+}
+.press-steps li::before {
+  counter-increment: press-step;
+  content: counter(press-step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--accent-light);
+  color: var(--accent);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+.press-result {
+  background: var(--accent-light);
+  border: 1px solid var(--border-soft);
+  border-left: 3px solid var(--accent);
+  border-radius: 10px;
+  padding: 1.1rem 1.35rem;
+  margin: 1.25rem 0 1.5rem;
+}
+.press-result h2 {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.press-result dl {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem 1.5rem;
+}
+.press-result dt {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.2rem;
+}
+.press-result dd {
+  color: var(--body-text);
+  line-height: 1.5;
+  min-height: 1.4em;
+}
+@media (max-width: 560px) {
+  .press-result dl {
+    grid-template-columns: 1fr;
+  }
+}
+
+.press-pair-faq {
+  margin: 1.5rem 0;
+}
+
+/* Related conversions — cards that lift toward you on hover. */
+.related {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+  margin-top: 1rem;
+}
+.related a {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.95rem 1.05rem;
+  text-decoration: none;
+  transition:
+    border-color 0.15s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
+}
+.related a:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px -14px rgba(20, 17, 15, 0.28);
+}
+.related .name {
+  display: block;
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 0.9375rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.3rem;
+}
+.related .hook {
+  display: block;
+  font-size: 0.8125rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+@media (max-width: 700px) {
+  .related {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Call-to-action band — ink button that warms to the spot color on hover,
+   matching .btn-primary above. */
+.cta-band {
+  background: var(--accent-light);
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  padding: 1.5rem 1.65rem;
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+.cta-band p {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--body-text);
+  max-width: 44ch;
+}
+.cta-band strong {
+  color: var(--ink);
+}
+.cta-band a {
+  background: var(--ink);
+  color: var(--bg);
+  padding: 0.7rem 1.25rem;
+  border-radius: 10px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background 0.15s ease,
+    transform 0.15s ease;
+}
+.cta-band a:hover {
+  background: var(--spot);
+  color: var(--bg);
+  transform: translateY(-1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .related a,
+  .cta-band a,
+  .btn {
+    transition: none;
+  }
+  .related a:hover,
+  .cta-band a:hover,
+  .btn-primary:hover {
+    transform: none;
+  }
+}

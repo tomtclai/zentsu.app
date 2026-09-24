@@ -19,6 +19,12 @@ exclude:
   - .bundle/
   - Gemfile
   - Gemfile.lock
+  # Jekyll only auto-excludes its own `-d` destination for the build it is
+  # currently running. build:press-preview builds to _site-preview/, so
+  # without this line a prior production _site/ (or a prior preview build)
+  # left on disk would get ingested as source content.
+  - _site/
+  - _site-preview/
 
 url: 'https://zentsu.app'
 baseurl: ''
@@ -47,9 +53,18 @@ price_renewal: '9'
 # Coil: one-time lifetime purchase (currently TestFlight; not yet on the App Store).
 price_coil_lifetime: '14.99'
 
+# Press: one-time Pro unlock, sold as a non-consumable in-app purchase.
+price_press_lifetime: '14.99'
+
 # Dial amounts are not here. Each marketing page reads the customer price for
 # its primary storefront from _data/dial_prices.yml. Refresh with
 # `npm run sync:dial-prices` after an App Store Connect price change.
+
+# Press stays dark (unpublished; see the `press` and `press/convert` defaults
+# below) until the Mac App Store listing is live. This is the single flag the
+# Press validators and go-live flip read. Do not flip it here directly; follow
+# SITE-PLAN.md section 7.
+press_live: false
 
 plugins:
   - jekyll-seo-tag
@@ -82,3 +97,33 @@ defaults:
       type: pages
     values:
       permalink: /coil/:basename
+  # Press stays dark until the go-live flip (SITE-PLAN.md section 7), built
+  # only by `jekyll build --unpublished` / `jekyll serve --unpublished`,
+  # which only ever run locally.
+  #
+  # `published: false` is set here for permalink-scope symmetry and so
+  # Liquid can read `page.published`, but it is NOT what excludes these
+  # pages from a normal build: Jekyll 3.10's Jekyll::Publisher#publish?
+  # reads `thing.data.fetch("published", true)`, and Hash#fetch never
+  # consults the `default_proc` that backs a defaults-scope value (verified
+  # against the jekyll 3.10.0 gem source, publisher.rb + page.rb). Only a
+  # page's own front matter is a real Hash key `fetch` will see. So every
+  # file under press/ and press/convert/ (including generated stubs; see
+  # scripts/generate-press-pairs.mjs) MUST also set `published: false` in
+  # its own front matter — that is the line that actually keeps it out of
+  # `npm run build`. scripts/validate-press-visibility.mjs is what catches
+  # a page that forgets it. Two per-file overrides (`published: true`) go
+  # live at App Store submission for /press/privacy and /press/support
+  # only; see SITE-PLAN.md and FINISH-PLAN.md phase 3 step 8.
+  - scope:
+      path: press
+      type: pages
+    values:
+      permalink: /press/:basename
+      published: false
+  - scope:
+      path: press/convert
+      type: pages
+    values:
+      permalink: /press/convert/:basename
+      published: false

@@ -1,0 +1,817 @@
+# ─────────────────────────────────────────────────────────────────────────
+# Press conversion-pair landing pages: one record per pair, in launch
+# priority order (SITE-PLAN.md section 2). scripts/generate-press-pairs.mjs
+# reads this file and writes the thin press/convert/<slug>.html stub for
+# each record; _layouts/press-pair.html reads it at render time to fill in
+# the page. `node scripts/generate-press-pairs.mjs --check-prose` fails on
+# any empty prose field.
+#
+# ── FIELDS ───────────────────────────────────────────────────────────────
+#   slug         URL slug, also the stub filename (press/convert/<slug>.html).
+#   from, to     short format/target labels (e.g. "MOV", "MP4", "Discord
+#                limit"). Structural.
+#   pro          true when the conversion itself needs Press Pro for a single
+#                file (size presets, WebP/AVIF/TIFF output, 2160p, HEVC out,
+#                downscale). Batch is Pro on every pair; see ProGate.swift.
+#   h1           the page heading, "X to Y on Mac" form.
+#   description  meta description, under 155 characters, no price.
+#   native_gap   one paragraph on why the native macOS route falls short for
+#                this pair. Every macOS fact traces to
+#                research/2026-09-17-converter-market.md section 2.
+#   steps        exactly three strings, the numbered how-to in Press.
+#   result       { container, codec, quality, metadata }, one short sentence
+#                or two on what happens to that aspect.
+#   faq          two or three { question, answer } pairs.
+#   related      2-3 sibling slugs for cross-links. Structural.
+# ─────────────────────────────────────────────────────────────────────────
+
+- slug: mov-to-mp4
+  from: MOV
+  to: MP4
+  pro: false
+  h1: MOV to MP4 on Mac
+  description: >-
+    Convert a .mov to an H.264 .mp4 on your Mac with Press. It runs locally,
+    keeps the resolution you pick, and can take a whole folder at once.
+  native_gap: >-
+    Finder's Encode Selected Video Files action writes an .m4v or .mp4, but
+    its default codec is HEVC, and HEVC is the reason a clip gets refused by
+    an older Windows PC, a browser, or an upload form. The H.264 option sits
+    behind a checkbox labelled Greater compatibility, and even then the file
+    comes out as .m4v. QuickTime Player's Export As menu writes only .mov.
+    Press writes an .mp4 with H.264 video and AAC audio every time, with the
+    resolution as a visible choice rather than a checkbox.
+  steps:
+    - >-
+      Drop the .mov onto Press, or drop a folder to queue every video inside
+      it.
+    - >-
+      Under Video, leave the codec on H.264 and pick a resolution. Original
+      keeps the frame size; 1080p and 720p scale the longer edge down.
+    - >-
+      Click Convert. Press asks once for access to the folder, then writes
+      name (Press).mp4 next to the source and leaves the original untouched.
+  result:
+    container: >-
+      .mp4, saved next to the source as name (Press).mp4. The original file is
+      never modified or overwritten.
+    codec: >-
+      H.264 video with AAC audio. If the .mov already holds H.264 and AAC and
+      you choose Original with no size limit, Press copies the streams into
+      the new container without re-encoding.
+    quality: >-
+      Original uses AVFoundation's highest-quality H.264 preset. 1080p and
+      720p scale the longer edge to 1920 or 1280 pixels and never scale a
+      smaller clip up.
+    metadata: >-
+      AVFoundation carries the source's metadata, such as the creation date,
+      into the MP4 wherever the container has a matching field.
+  faq:
+    - question: Is renaming .mov to .mp4 enough?
+      answer: >-
+        Sometimes, and that is the trap. Both are MPEG-4 family containers, so
+        a renamed file may play on your Mac and then fail on the device that
+        objected in the first place, because the video inside is still HEVC.
+        Press changes the codec, which is the part being rejected.
+    - question: Does Press re-encode, and does that lose quality?
+      answer: >-
+        When the source is already H.264 with AAC audio and you pick Original,
+        Press copies the streams and nothing is re-encoded. Any other choice
+        re-encodes through AVFoundation at the preset's quality.
+    - question: Is MOV to MP4 free in Press?
+      answer: >-
+        Yes. One file at a time to H.264 at Original, 1080p, or 720p is in the
+        free download. Press Pro adds batch conversion, size presets, 2160p,
+        and HEVC output.
+  related: [hevc-to-h264, compress-video-for-discord, 4k-to-1080p]
+
+- slug: hevc-to-h264
+  from: HEVC
+  to: H.264
+  pro: false
+  h1: HEVC to H.264 on Mac
+  description: >-
+    Re-encode HEVC (H.265) video to an H.264 MP4 on your Mac so it plays on
+    Windows, in browsers, and through upload forms that refuse HEVC.
+  native_gap: >-
+    macOS can do this, if you know where the switch is. Finder's Encode
+    Selected Video Files defaults to HEVC; ticking Greater compatibility
+    switches it to H.264, and the result arrives as .m4v, which is an MP4
+    container under a different extension. QuickTime Player's Export As
+    offers no codec choice and writes only .mov. Press puts the codec in
+    front of you as two chips, H.264 and HEVC, and writes .mp4 with the
+    extension the other side expects.
+  steps:
+    - >-
+      Drop the HEVC file, or a folder of them, onto Press. iPhone clips,
+      screen recordings, and files from Finder's encoder all queue the same
+      way.
+    - >-
+      Under Video, choose H.264. Keep Original to leave the frame size alone,
+      or pick 1080p or 720p to shrink it in the same pass.
+    - >-
+      Click Convert. Each file comes out as name (Press).mp4 beside its
+      source.
+  result:
+    container: >-
+      .mp4, written next to the source with a (Press) suffix, so the HEVC
+      original stays where it was.
+    codec: >-
+      H.264 video and AAC audio, always re-encoded, since the point is to
+      leave HEVC behind.
+    quality: >-
+      Original uses the highest-quality H.264 preset at the source frame
+      size. H.264 needs more bytes than HEVC for the same picture, so expect
+      the output to grow unless you also drop the resolution.
+    metadata: >-
+      AVFoundation carries the source's metadata over wherever the MP4
+      container has a matching field.
+  faq:
+    - question: Will the H.264 file be bigger?
+      answer: >-
+        Usually, yes. HEVC packs the same picture into fewer bytes, so an
+        H.264 re-encode at the same frame size grows. Picking 1080p for a 4K
+        source brings it back down, and a Press Pro size preset caps it at a
+        number.
+    - question: Does Press keep the audio?
+      answer: >-
+        Yes. The audio track is re-encoded to AAC inside the MP4, which is
+        what Windows, browsers, and upload forms expect alongside H.264.
+    - question: Is this free?
+      answer: >-
+        Yes, one file at a time. Press Pro adds batch conversion for a folder
+        of clips.
+  related: [mov-to-mp4, compress-video-for-discord, compress-video-for-email]
+
+- slug: compress-video-for-discord
+  from: Video
+  to: Discord limit
+  pro: true
+  h1: Compress a video for Discord on Mac
+  description: >-
+    Get a video under Discord's 20 MB upload limit on your Mac. Press targets
+    the size directly and writes an H.264 MP4 that Discord accepts.
+  native_gap: >-
+    Neither native route takes a file size as the target. QuickTime Player's
+    Export As offers 4K, 1080p, 720p, and 480p, writes only .mov, and leaves
+    the codec to the source. Finder's Encode Selected Video Files gives you a
+    Greater compatibility checkbox and defaults to HEVC. You pick a tier,
+    wait, and check the size in Finder afterwards. Press has a Discord
+    preset: it works out the bitrate that fits Discord's 20 MB cap for the
+    clip's length and writes H.264 MP4, which Discord accepts.
+  steps:
+    - >-
+      Drop the clip onto Press.
+    - >-
+      Under Video, choose H.264, then pick Discord under Size limit. Add 720p
+      if the clip runs several minutes, so the encoder has bitrate to spare.
+    - >-
+      Click Convert. The finished row shows the output size, so you can see
+      it landed under 20 MB before you open Discord.
+  result:
+    container: >-
+      .mp4 next to the source, named name (Press).mp4.
+    codec: >-
+      H.264 with AAC audio.
+    quality: >-
+      Press sets the video bitrate from the byte budget and the clip's
+      duration, with 96 kbps reserved for audio and a 10 percent margin, then
+      re-encodes once at a lower rate if the first pass overshoots. The full
+      duration is always kept, so a long clip gets fewer bits per second and
+      looks softer than a short one. On a three-clip test batch at 720p the
+      outputs landed at 16.6 to 17.1 MB.
+    metadata: >-
+      Metadata is not carried over on size-limited exports, which are written
+      through AVAssetWriter rather than the export presets.
+  faq:
+    - question: Why 20 MB?
+      answer: >-
+        Discord raised its free-tier attachment cap from 10 MB to 20 MB on
+        2026-08-13. Press's preset tracks the free tier. If you have Nitro,
+        use the Custom limit and type the larger number.
+    - question: What if I want it smaller still?
+      answer: >-
+        Choose Custom and type a lower number, or add 720p so the bits go
+        further. Press never touches the original, so repeating the
+        conversion starts from the same source each time.
+    - question: Is the Discord preset free?
+      answer: >-
+        Size presets are part of Press Pro. The free download converts to
+        H.264 MP4 at Original, 1080p, or 720p without a size target, which is
+        often enough for a short clip.
+  related: [compress-video-for-email, mov-to-mp4, 4k-to-1080p]
+
+- slug: compress-video-for-email
+  from: Video
+  to: Email limit
+  pro: true
+  h1: Compress a video for email on Mac
+  description: >-
+    Get a video under the 25 MB email attachment limit on your Mac. Press
+    targets the size and writes an H.264 MP4 that opens on the other end.
+  native_gap: >-
+    Gmail's attachment cap is a number, and the native tools do not take one.
+    QuickTime Player's Export As lets you choose 4K, 1080p, 720p, or 480p and
+    writes .mov; Finder's Encode Selected Video Files defaults to HEVC unless
+    you tick Greater compatibility. Both leave you guessing which tier lands
+    under 25 MB. Press's Email preset works out the bitrate that fits 25 MB
+    for the clip's length and writes H.264 MP4, so the file goes through as
+    an ordinary attachment and plays on a Windows PC at the other end.
+  steps:
+    - >-
+      Drop the video onto Press. A folder works too, if you have several to
+      send.
+    - >-
+      Under Video, select H.264 and choose Email under Size limit. For a clip
+      longer than a couple of minutes, add 720p.
+    - >-
+      Click Convert, then attach name (Press).mp4 from the same folder as the
+      original.
+  result:
+    container: >-
+      .mp4, saved beside the source.
+    codec: >-
+      H.264 video and AAC audio, which the stock players on Windows and phones
+      handle without extra software.
+    quality: >-
+      Press sets the video bitrate from the byte budget and the clip's
+      duration, aims 10 percent under the cap, and re-encodes once at a lower
+      rate if the first pass overshoots. The full duration is kept; long
+      clips look softer because the same budget is spread over more seconds.
+    metadata: >-
+      Metadata is not carried over on size-limited exports, which are written
+      through AVAssetWriter rather than the export presets.
+  faq:
+    - question: Which 25 MB is this?
+      answer: >-
+        Gmail's attachment limit, which has held at 25 MB for years. Other
+        providers vary; choose Custom and type the cap yours enforces.
+    - question: Will the recipient need anything installed?
+      answer: >-
+        An H.264 MP4 with AAC audio plays in the stock players on macOS,
+        Windows, iOS, and Android, and in every current browser.
+    - question: Is this free?
+      answer: >-
+        Size presets are in Press Pro. The free download writes H.264 MP4 at
+        1080p or 720p, which for a short clip is often already under 25 MB.
+  related: [compress-video-for-discord, mov-to-mp4, hevc-to-h264]
+
+- slug: 4k-to-1080p
+  from: 4K
+  to: 1080p
+  pro: false
+  h1: 4K to 1080p on Mac
+  description: >-
+    Downscale 4K video to 1080p on your Mac. Press scales the longer edge to
+    1920 pixels and writes an H.264 MP4 at a fraction of the size.
+  native_gap: >-
+    QuickTime Player's Export As has a 1080p tier, and it writes .mov with
+    the codec following the source. A 4K HEVC clip from an iPhone comes out
+    as 1080p HEVC in a .mov, smaller but carrying the same two things that
+    get it refused elsewhere. Finder's Encode Selected Video Files defaults
+    to HEVC too. Press downscales and changes the codec in one pass: pick
+    H.264 and 1080p, and the result is an .mp4 that plays where the original
+    did not.
+  steps:
+    - >-
+      Drop the 4K file onto Press.
+    - >-
+      Under Video, keep H.264 and select 1080p. Portrait clips are handled:
+      the longer edge becomes 1920, whichever way the phone was held.
+    - >-
+      Click Convert. name (Press).mp4 lands next to the source.
+  result:
+    container: >-
+      .mp4 beside the original.
+    codec: >-
+      H.264 and AAC through AVFoundation's 1920x1080 preset.
+    quality: >-
+      The longer edge is scaled to 1920 pixels and the short edge follows the
+      aspect ratio, so a 3840x2160 clip becomes 1920x1080 and a 4:3 source
+      keeps its shape. Sources already at or below 1080p are not scaled up.
+    metadata: >-
+      AVFoundation carries the source's metadata into the MP4 wherever a
+      matching field exists.
+  faq:
+    - question: How much smaller will it be?
+      answer: >-
+        A 1080p frame has a quarter of the pixels of 4K, and the bitrate
+        drops with it. Exact numbers depend on the clip; the finished row in
+        Press shows the output size.
+    - question: Can I keep 4K and only change the codec?
+      answer: >-
+        Yes. Choose Original instead of 1080p; the frame size stays and only
+        the codec changes.
+    - question: Is 4K to 1080p free?
+      answer: >-
+        Yes. 1080p and 720p H.264 output are in the free download, one file
+        at a time.
+  related: [mov-to-mp4, hevc-to-h264, compress-video-for-discord]
+
+- slug: heic-to-jpg
+  from: HEIC
+  to: JPG
+  pro: false
+  h1: HEIC to JPG on Mac
+  description: >-
+    Convert HEIC photos to JPG on your Mac with a quality slider and an
+    optional max pixel size. Press runs locally and can take a folder at
+    once.
+  native_gap: >-
+    Finder's Convert Image quick action already writes JPEG from a HEIC, with
+    four fixed size options and a keep-metadata switch, and Preview's Export
+    dialog writes JPEG as well. For one photo, use them. Press is for the
+    folder: drop 300 HEIC files, set the JPEG quality as a percentage and a
+    max pixel size once, and every file comes out beside its source.
+  steps:
+    - >-
+      Drop a HEIC, or a folder of them, onto Press.
+    - >-
+      Under Image, choose JPEG. Set Quality (85 percent by default) and, if
+      you want smaller files, type a Max size in pixels.
+    - >-
+      Click Convert. Each photo is written as name (Press).jpg next to the
+      original.
+  result:
+    container: >-
+      A .jpg beside the HEIC; the HEIC stays.
+    codec: >-
+      JPEG, encoded by ImageIO at the quality you set.
+    quality: >-
+      85 percent by default, adjustable from 10 to 100. HEIC is itself lossy,
+      so the JPEG is a second lossy pass; keep the slider at 85 or above if
+      you plan to edit the JPEG later.
+    metadata: >-
+      EXIF data such as the capture date and location is not copied into the
+      JPEG. The orientation tag is applied to the pixels first, so the photo
+      displays upright everywhere.
+  faq:
+    - question: Will the photo come out sideways?
+      answer: >-
+        No. Phone photos store rotation as a tag, and some viewers ignore it.
+        Press applies that tag to the pixels before encoding, so the JPEG is
+        upright without depending on the viewer.
+    - question: Does it keep the location data?
+      answer: >-
+        No. Press writes pixels only; EXIF fields including GPS are left
+        behind. That helps when you are uploading the photo somewhere and
+        hurts when you are archiving. Keep the HEIC originals, which Press
+        never modifies.
+    - question: Is HEIC to JPG free?
+      answer: >-
+        One file at a time, yes. Press Pro adds batch conversion and the Max
+        size downscale.
+  related: [heic-to-png, heic-to-webp, png-to-jpg]
+
+- slug: heic-to-png
+  from: HEIC
+  to: PNG
+  pro: false
+  h1: HEIC to PNG on Mac
+  description: >-
+    Convert HEIC to PNG on your Mac. Press writes a lossless PNG from each
+    HEIC, keeps the orientation right, and can process a whole folder.
+  native_gap: >-
+    Finder's Convert Image quick action writes PNG from a HEIC, and Preview's
+    Export dialog does too, so for one file the native routes work. Press
+    adds the Max size field, which matters more for PNG than for any other
+    target: a lossless PNG of a 12-megapixel photo is many times the size of
+    the HEIC, and the same photo at 1600 pixels on the long edge is a
+    fraction of that. It also takes a folder in one drop.
+  steps:
+    - >-
+      Drop the HEIC files onto Press.
+    - >-
+      Under Image, choose PNG. There is no quality slider, since PNG is
+      lossless; set a Max size in pixels if you want smaller files.
+    - >-
+      Click Convert. Each file is written as name (Press).png beside its
+      source.
+  result:
+    container: >-
+      A .png beside the HEIC.
+    codec: >-
+      PNG through ImageIO, lossless. The quality slider is hidden for PNG
+      because the encoder ignores it.
+    quality: >-
+      Every pixel of the decoded HEIC is preserved. HEIC is a lossy format,
+      so the PNG is only as good as the HEIC was. It will not recover detail,
+      and it will be much larger.
+    metadata: >-
+      EXIF is not carried over. Orientation is baked into the pixels.
+  faq:
+    - question: Why is the PNG so much bigger than the HEIC?
+      answer: >-
+        HEIC compresses with the same codec family as HEVC video and throws
+        detail away; PNG keeps every pixel. Use the Max size field if the
+        file is headed for a screen rather than a print.
+    - question: Should I pick PNG or JPG?
+      answer: >-
+        PNG for screenshots, graphics, and anything you will edit again. JPG
+        for photos going to the web or email. Press offers both under Image,
+        and the HEIC stays put either way.
+    - question: Is HEIC to PNG free?
+      answer: >-
+        Yes, one file at a time. Batch and Max size are Press Pro.
+  related: [heic-to-jpg, heic-to-webp, png-to-jpg]
+
+- slug: webp-to-png
+  from: WebP
+  to: PNG
+  pro: false
+  h1: WebP to PNG on Mac
+  description: >-
+    Convert WebP images to PNG on your Mac. Press decodes each WebP and
+    writes a lossless PNG, for one file or a whole downloads folder.
+  native_gap: >-
+    Finder's Convert Image and Preview's Export both write PNG, and Preview
+    can export a selection of images together, so a WebP that Preview opens
+    can go out that way. Where the native tools stop is WebP as an output,
+    which is why a folder that needs both directions ends up in a
+    third-party app anyway. Press handles the round trip: WebP in through
+    ImageIO, PNG out, and with Press Pro, PNG back to WebP from the same
+    window.
+  steps:
+    - >-
+      Drop the WebP files, or the folder they came in, onto Press.
+    - >-
+      Under Image, choose PNG. Set a Max size in pixels if the images are
+      larger than you need.
+    - >-
+      Click Convert. Each file is written as name (Press).png beside the
+      source.
+  result:
+    container: >-
+      A .png next to the .webp.
+    codec: >-
+      PNG, lossless, through ImageIO.
+    quality: >-
+      Every decoded pixel is kept. A lossy WebP already lost detail; PNG will
+      not add it back, and the file grows. Transparency in the WebP is
+      preserved in the PNG.
+    metadata: >-
+      Any metadata in the WebP is not copied. Orientation is applied to the
+      pixels.
+  faq:
+    - question: Why did the site give me a WebP?
+      answer: >-
+        Browsers and CDNs serve WebP because it is smaller than PNG or JPEG
+        for the same picture. Saving the image keeps that format, and some
+        apps and forms still expect PNG or JPEG.
+    - question: Does transparency survive?
+      answer: >-
+        Yes. PNG supports an alpha channel, and Press keeps the one in the
+        WebP.
+    - question: Is WebP to PNG free?
+      answer: >-
+        Yes, one file at a time. PNG is a free output; WebP output and batch
+        are Press Pro.
+  related: [webp-to-jpg, png-to-webp, png-to-jpg]
+
+- slug: webp-to-jpg
+  from: WebP
+  to: JPG
+  pro: false
+  h1: WebP to JPG on Mac
+  description: >-
+    Convert WebP to JPG on your Mac with a quality slider. Press writes a
+    JPEG from each WebP and can clear a folder of downloads in one run.
+  native_gap: >-
+    Finder's Convert Image writes JPEG, and so does Preview's Export, so a
+    WebP that Preview opens can become a JPEG without another app. Press
+    earns its place on volume and on control: one drop for a folder, a
+    quality percentage instead of Finder's four size tiers, and a Max size
+    in pixels for images headed to a form with an upload limit.
+  steps:
+    - >-
+      Drop the WebP files onto Press.
+    - >-
+      Under Image, choose JPEG, set Quality (85 percent by default), and type
+      a Max size if you need one.
+    - >-
+      Click Convert. Each file is written as name (Press).jpg beside the
+      source.
+  result:
+    container: >-
+      A .jpg beside the .webp.
+    codec: >-
+      JPEG through ImageIO at the quality you set.
+    quality: >-
+      Two lossy formats in a row: WebP already discarded detail and JPEG
+      discards more. Keep the slider at 85 or higher unless size matters more
+      than the picture.
+    metadata: >-
+      Not copied. Orientation is baked into the pixels.
+  faq:
+    - question: What happens to transparency?
+      answer: >-
+        JPEG has no alpha channel, so transparent areas in the WebP are
+        flattened. If you need transparency, choose PNG instead.
+    - question: Can I convert a whole folder?
+      answer: >-
+        Yes, with Press Pro. Drop the folder and Press queues every image
+        inside it.
+    - question: Is this free?
+      answer: >-
+        One file at a time, yes.
+  related: [webp-to-png, jpg-to-webp, avif-to-jpg]
+
+- slug: png-to-webp
+  from: PNG
+  to: WebP
+  pro: true
+  h1: PNG to WebP on Mac
+  description: >-
+    Convert PNG to WebP on your Mac. Finder and Preview cannot write WebP;
+    Press does, lossless or at a quality you choose, with transparency kept.
+  native_gap: >-
+    This is the one direction macOS leaves out. Finder's Convert Image quick
+    action writes JPEG, PNG, or HEIF and nothing else. Preview's Export
+    dialog goes further, to JPEG, JPEG 2000, PDF, PNG, and TIFF, plus HEIC
+    and OpenEXR with the Option key held, and WebP is still not on the list.
+    Press writes WebP through libwebp: lossless when the quality slider is
+    at 100, lossy below that, with the PNG's transparency carried across.
+  steps:
+    - >-
+      Drop the PNG files onto Press.
+    - >-
+      Under Image, choose WebP. Leave Quality at 100 for a lossless file, or
+      lower it for a smaller lossy one; 80 to 85 suits photos.
+    - >-
+      Click Convert. Each file is written as name (Press).webp beside the
+      source.
+  result:
+    container: >-
+      A .webp next to the PNG.
+    codec: >-
+      WebP through libwebp. 100 percent uses the lossless encoder; anything
+      lower uses the lossy one at that quality.
+    quality: >-
+      At 100 the pixels are identical to the PNG. Below that, WebP's lossy
+      mode discards detail the way JPEG does, at a smaller size for the same
+      look.
+    metadata: >-
+      PNG carries little metadata and none of it is copied. Press writes WebP
+      without an embedded color profile.
+  faq:
+    - question: Is the WebP really lossless at 100?
+      answer: >-
+        Yes. At 100 percent Press calls libwebp's lossless encoder rather than
+        the lossy one at its top setting, so the decoded pixels match the PNG
+        exactly.
+    - question: Does transparency survive?
+      answer: >-
+        Yes. Press un-premultiplies the alpha channel before encoding, so soft
+        edges keep their color instead of darkening.
+    - question: Why is WebP output a Pro feature?
+      answer: >-
+        WebP, AVIF, and TIFF output, batch conversion, size presets, and
+        downscaling are the Press Pro set, a one-time unlock priced on the
+        Press page. JPEG, PNG, and HEIC output are free.
+  related: [jpg-to-webp, webp-to-png, heic-to-webp]
+
+- slug: jpg-to-webp
+  from: JPG
+  to: WebP
+  pro: true
+  h1: JPG to WebP on Mac
+  description: >-
+    Convert JPG to WebP on your Mac for smaller web images. Press writes WebP
+    at the quality you set, which Finder and Preview cannot do.
+  native_gap: >-
+    Finder's Convert Image quick action stops at JPEG, PNG, and HEIF.
+    Preview's Export dialog adds TIFF, PDF, and JPEG 2000, and HEIC and
+    OpenEXR behind the Option key. WebP is on neither list, so a JPEG headed
+    for a web page has to leave the Mac's built-in tools to get there. Press
+    writes WebP through libwebp with a quality slider, and can run a folder
+    of product photos in one pass.
+  steps:
+    - >-
+      Drop the JPEG files onto Press.
+    - >-
+      Under Image, choose WebP and set Quality. 80 to 85 percent is the usual
+      range for photos; 100 switches to lossless, which comes out larger than
+      the JPEG.
+    - >-
+      Click Convert. Each file is written as name (Press).webp beside the
+      source.
+  result:
+    container: >-
+      A .webp beside the .jpg.
+    codec: >-
+      WebP through libwebp, lossy below 100 percent and lossless at 100.
+    quality: >-
+      A JPEG is already lossy; re-encoding to lossy WebP is a second pass. At
+      80 to 85 percent the WebP usually lands well under the size of the
+      source JPEG. Set a Max size in pixels to shrink it further.
+    metadata: >-
+      EXIF from the JPEG is not copied and no color profile is embedded.
+      Orientation is baked into the pixels first.
+  faq:
+    - question: Which quality should I use?
+      answer: >-
+        Start at 80. Compare the WebP against the JPEG at the size it will be
+        shown; go up if you see banding in skies or gradients, down if the
+        file is still too large.
+    - question: Does it keep the photo's metadata?
+      answer: >-
+        No. The WebP contains pixels only, which is usually what you want for
+        a web upload.
+    - question: Is this free?
+      answer: >-
+        WebP output is in Press Pro, along with AVIF, TIFF, batch conversion,
+        and downscaling.
+  related: [png-to-webp, webp-to-jpg, heic-to-webp]
+
+- slug: avif-to-jpg
+  from: AVIF
+  to: JPG
+  pro: false
+  h1: AVIF to JPG on Mac
+  description: >-
+    Convert AVIF images to JPG on your Mac. Press decodes AVIF through ImageIO
+    and writes a JPEG at the quality you set, one file or a folder.
+  native_gap: >-
+    AVIF arrives from the web, not from a camera, and the built-in image
+    tools are shaped around the other direction. Finder's Convert Image
+    writes JPEG, PNG, or HEIF, and Preview's Export writes JPEG, JPEG 2000,
+    PDF, PNG, and TIFF; both write JPEG from the sources they can read. Press
+    reads AVIF through ImageIO on macOS 15 and later and writes a JPEG
+    beside it, for one file or a folder.
+  steps:
+    - >-
+      Drop the AVIF files onto Press.
+    - >-
+      Under Image, choose JPEG. Quality defaults to 85 percent; set a Max
+      size if the image is for a form with a pixel limit.
+    - >-
+      Click Convert. Each file is written as name (Press).jpg beside the
+      source.
+  result:
+    container: >-
+      A .jpg next to the .avif.
+    codec: >-
+      JPEG through ImageIO.
+    quality: >-
+      AVIF is a lossy format built on the AV1 video codec; JPEG is a second
+      lossy pass. Keep quality at 85 or above.
+    metadata: >-
+      Not carried over. Orientation is baked into the pixels.
+  faq:
+    - question: Why does the AVIF not open in the app I need?
+      answer: >-
+        AVIF is newer than many of the apps and forms that still expect JPEG.
+        Converting once fixes the upload; keep the AVIF if you want the
+        smaller file for the web.
+    - question: Can Press write AVIF as well?
+      answer: >-
+        Yes, with Press Pro. AVIF output honors the quality slider. Measured
+        on the same image, 30 percent produced a 6.5 KB file and 95 percent
+        produced 210 KB.
+    - question: Is AVIF to JPG free?
+      answer: >-
+        Yes, one file at a time.
+  related: [webp-to-jpg, png-to-jpg, tiff-to-jpg]
+
+- slug: png-to-jpg
+  from: PNG
+  to: JPG
+  pro: false
+  h1: PNG to JPG on Mac
+  description: >-
+    Convert PNG to JPG on your Mac with a quality slider. Press writes a JPEG
+    next to each PNG and can run a folder of screenshots in one go.
+  native_gap: >-
+    Finder's Convert Image quick action writes JPEG from a PNG with four size
+    tiers, and Preview's Export dialog does the same, so macOS covers the
+    single file. Press is the version with a number on it: JPEG quality as a
+    percentage, a Max size in pixels, and a queue that takes a folder of
+    screenshots in one drop.
+  steps:
+    - >-
+      Drop the PNG files onto Press.
+    - >-
+      Under Image, choose JPEG. Screenshots with text keep their edges best
+      at 90 percent or above; photos are fine at 85.
+    - >-
+      Click Convert. Each file is written as name (Press).jpg beside the
+      source.
+  result:
+    container: >-
+      A .jpg beside the PNG.
+    codec: >-
+      JPEG through ImageIO.
+    quality: >-
+      Lossless in, lossy out. Fine text and hard edges in screenshots show
+      JPEG artifacts first, so raise the slider for those.
+    metadata: >-
+      PNG metadata is not copied. Transparency has nowhere to go in a JPEG
+      and is flattened.
+  faq:
+    - question: Why is my transparent PNG's background wrong?
+      answer: >-
+        JPEG has no alpha channel, so transparent regions are flattened
+        during encoding. If the transparency matters, keep PNG or, with Press
+        Pro, choose WebP.
+    - question: Is PNG to JPG free?
+      answer: >-
+        Yes, one file at a time. Batch and Max size are Press Pro.
+  related: [tiff-to-jpg, avif-to-jpg, heic-to-jpg]
+
+- slug: tiff-to-jpg
+  from: TIFF
+  to: JPG
+  pro: false
+  h1: TIFF to JPG on Mac
+  description: >-
+    Convert TIFF to JPG on your Mac. Press turns large scans and editor
+    exports into JPEGs at the quality you set, one file or a folder.
+  native_gap: >-
+    Preview's Export dialog writes JPEG from a TIFF, and Finder's Convert
+    Image does as well, so one file needs no extra app. TIFFs tend to come
+    in bulk and large: scanner output, exports from image editors, whole
+    folders of them at tens of megabytes each. Press queues the folder,
+    applies one quality setting and one Max size to all of it, and writes
+    each JPEG beside its TIFF.
+  steps:
+    - >-
+      Drop the TIFF files, or their folder, onto Press.
+    - >-
+      Under Image, choose JPEG, set Quality, and set a Max size in pixels if
+      the scans are larger than they need to be.
+    - >-
+      Click Convert. Each file is written as name (Press).jpg beside the
+      source.
+  result:
+    container: >-
+      A .jpg beside the .tiff.
+    codec: >-
+      JPEG through ImageIO.
+    quality: >-
+      TIFF is usually uncompressed or lossless, so this is the first lossy
+      step. 85 percent is the default; scans of documents read best at 90 or
+      above.
+    metadata: >-
+      TIFF tags are not copied. Orientation is applied to the pixels.
+  faq:
+    - question: Does Press handle multi-page TIFFs?
+      answer: >-
+        Press converts the first page of a multi-page TIFF. Page selection is
+        not in this release.
+    - question: Can Press write TIFF too?
+      answer: >-
+        Yes, with Press Pro. TIFF output is lossless, so the quality slider
+        is hidden for it.
+    - question: Is TIFF to JPG free?
+      answer: >-
+        Yes, one file at a time.
+  related: [png-to-jpg, avif-to-jpg, heic-to-jpg]
+
+- slug: heic-to-webp
+  from: HEIC
+  to: WebP
+  pro: true
+  h1: HEIC to WebP on Mac
+  description: >-
+    Convert HEIC photos to WebP on your Mac in one step. Press reads the HEIC,
+    writes WebP through libwebp, and skips the JPEG in between.
+  native_gap: >-
+    Finder's Convert Image quick action writes JPEG, PNG, or HEIF, and
+    Preview's Export dialog adds TIFF, PDF, JPEG 2000, HEIC, and OpenEXR, so
+    a HEIC bound for the web usually takes two steps in two apps: to JPEG
+    natively, then to WebP somewhere else, with a lossy pass at each step.
+    Press decodes the HEIC once and encodes WebP directly, so the picture is
+    compressed twice in total rather than three times.
+  steps:
+    - >-
+      Drop the HEIC files onto Press.
+    - >-
+      Under Image, choose WebP and set Quality: 80 to 85 percent for photos,
+      100 for lossless.
+    - >-
+      Click Convert. Each file is written as name (Press).webp beside the
+      source.
+  result:
+    container: >-
+      A .webp beside the HEIC.
+    codec: >-
+      WebP through libwebp, lossy below 100 percent and lossless at 100.
+    quality: >-
+      One lossy generation on top of the HEIC instead of two.
+    metadata: >-
+      EXIF, including location, is not copied. Orientation is baked into the
+      pixels, and no color profile is embedded.
+  faq:
+    - question: Why not go through JPEG?
+      answer: >-
+        Each lossy encode discards detail. Going straight from HEIC to WebP
+        skips one.
+    - question: Can I set a maximum size at the same time?
+      answer: >-
+        Yes. The Max size field applies to every image target; type 2048 and
+        the long edge comes out at 2048 pixels.
+    - question: Is this free?
+      answer: >-
+        WebP output is a Press Pro feature. JPEG, PNG, and HEIC output are
+        free.
+  related: [heic-to-jpg, heic-to-png, jpg-to-webp]

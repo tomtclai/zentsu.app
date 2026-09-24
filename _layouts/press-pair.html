@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  {%- assign pair = site.data.press_pairs | where: 'slug', page.pair | first -%}
+  <head>
+    {%- comment -%} Press pair pages keep their own bespoke SEO/OG block (h1-based title, a price
+    suffix on the description, and Breadcrumb + SoftwareApplication JSON-LD), so head-common only
+    supplies the shared base scaffolding here, same pattern as _layouts/tool.html. {%- endcomment
+    -%} {% include head-common.html seo_managed_externally=true page_stylesheet="/press.css" %}
+    <title>{{ pair.h1 }} · Press by Zentsu LLC</title>
+    <meta
+      name="description"
+      content="{{ pair.description }} Part of Press, a free download with an optional ${{ site.price_press_lifetime }} Press Pro unlock."
+    />
+    <link rel="canonical" href="https://zentsu.app{{ page.url }}" />
+
+    <!-- Open Graph / social -->
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Press" />
+    <meta property="og:title" content="{{ pair.h1 }}" />
+    <meta property="og:description" content="{{ pair.description }}" />
+    <meta property="og:url" content="https://zentsu.app{{ page.url }}" />
+    <meta property="og:image" content="https://zentsu.app/assets/press-og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Press: video and image converter for macOS" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://zentsu.app/assets/press-og.png" />
+
+    <!-- JSON-LD: SoftwareApplication for the pair, scoped to Press -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Press: {{ pair.from }} to {{ pair.to }}",
+        "operatingSystem": "macOS 15+",
+        "applicationCategory": "MultimediaApplication",
+        "url": "https://zentsu.app{{ page.url }}",
+        "publisher": { "@type": "Organization", "name": "Zentsu LLC" },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "description": "Free download. Press Pro is an optional ${{ site.price_press_lifetime }} non-consumable in-app purchase."
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Press",
+            "item": "https://zentsu.app/press/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "{{ pair.from }} to {{ pair.to }}",
+            "item": "https://zentsu.app{{ page.url }}"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    {% include nav.html %}
+
+    <main id="main-content" tabindex="-1">
+      <section class="tool-hero" aria-hidden="true">
+        <div class="tool-hero-tile">
+          <span class="press-pair-badge">{{ pair.from }} &rarr; {{ pair.to }}</span>
+        </div>
+      </section>
+
+      <article>
+        <div class="press-pair-labels">
+          <span class="page-label">Press conversion</span>
+          {%- if pair.pro %}
+          <span class="press-tier press-tier--pro">Needs Press Pro</span>
+          {%- else %}
+          <span class="press-tier press-tier--free">Free, one file at a time</span>
+          {%- endif %}
+        </div>
+        <h1>{{ pair.h1 }}</h1>
+        <p class="lede">{{ pair.native_gap }}</p>
+
+        {%- if pair.steps %}
+        <ol class="press-steps">
+          {%- for step in pair.steps %}
+          <li>{{ step }}</li>
+          {%- endfor %}
+        </ol>
+        {%- endif %} {%- if pair.result %}
+        <div class="press-result">
+          <h2>What you get</h2>
+          <dl>
+            <div>
+              <dt>Container</dt>
+              <dd>{{ pair.result.container }}</dd>
+            </div>
+            <div>
+              <dt>Codec</dt>
+              <dd>{{ pair.result.codec }}</dd>
+            </div>
+            <div>
+              <dt>Quality</dt>
+              <dd>{{ pair.result.quality }}</dd>
+            </div>
+            <div>
+              <dt>Metadata</dt>
+              <dd>{{ pair.result.metadata }}</dd>
+            </div>
+          </dl>
+        </div>
+        {%- endif %} {%- if pair.faq %}
+        <div class="faq-list press-pair-faq">
+          {%- for entry in pair.faq %}
+          <details>
+            <summary>{{ entry.question }}</summary>
+            <p>{{ entry.answer }}</p>
+          </details>
+          {%- endfor %}
+        </div>
+        {%- endif %}
+
+        <div class="cta-band">
+          <p>
+            Press converts video and images on your Mac. Free download; Press Pro is a one-time
+            <strong>${{ site.price_press_lifetime }}</strong> unlock for batch conversion, size
+            presets, and WebP.
+          </p>
+          <a href="/press/">Get Press</a>
+        </div>
+
+        {%- assign related_pairs = site.data.press_pairs | where_exp: 'item', 'pair.related contains
+        item.slug' -%} {%- if related_pairs.size > 0 %}
+        <h2>Related conversions</h2>
+        <div class="related">
+          {%- for related in related_pairs %}
+          <a href="/press/convert/{{ related.slug }}">
+            <span class="name">{{ related.from }} to {{ related.to }}</span>
+            <span class="hook">{{ related.h1 }}</span>
+          </a>
+          {%- endfor %}
+        </div>
+        {%- endif %}
+      </article>
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
