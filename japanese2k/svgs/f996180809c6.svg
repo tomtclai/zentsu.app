@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <g><rect x="28" y="14" width="72" height="104" rx="3" fill="#D6A36A" stroke="#A16207" stroke-width="4"/><circle cx="84.16" cy="71.2" r="4" fill="#A16207"/></g>
+  <line x1="116" y1="64" x2="115.8" y2="64" stroke="#EF4444" stroke-width="6" stroke-linecap="round"/><polygon points="106,64 118.286,57.288 118.286,70.712" fill="#EF4444" stroke="#EF4444" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="20" y1="24" x2="20" y2="108" stroke="#EF4444" stroke-width="5" stroke-linecap="round"/>
+</svg>

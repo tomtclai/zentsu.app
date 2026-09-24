@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <g><g><rect x="30" y="36" width="67.84" height="63.6" rx="8" fill="#1E293B" stroke="#334155" stroke-width="4"/><path d="M32 52 V44 a6 6 0 0 1 6 -6 H89.84 a6 6 0 0 1 6 6 V52 Z" fill="#1E3A8A"/><rect x="45.9952" y="30" width="6" height="14" rx="3" fill="#334155"/><rect x="75.8448" y="30" width="6" height="14" rx="3" fill="#334155"/></g><g><circle cx="63.92" cy="76.28" r="10.6" fill="#FACC15"/><circle cx="69.22" cy="72.57" r="9.01" fill="#1E293B"/></g></g>
+  <path d="M24 34 A48 48 0 0 1 104 34" fill="none" stroke="#22C55E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="108,38 92.1645,35.7119 101.369,23.4386" fill="#22C55E" stroke="#22C55E" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M104 104 A48 48 0 0 1 24 104" fill="none" stroke="#22C55E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="20,100 35.8355,102.288 26.6306,114.561" fill="#22C55E" stroke="#22C55E" stroke-width="2" stroke-linejoin="round"/>
+</svg>

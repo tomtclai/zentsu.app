@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
-  <rect width="128" height="128" rx="28" fill="#F0FDFA"/>
-
-    <circle cx="64" cy="64" r="36" fill="#0D9488" opacity="0.25"/>
-    <rect x="40" y="40" width="48" height="48" rx="12" fill="#0D9488" transform="rotate(-6 64 64)"/>
-    <circle cx="74" cy="56" r="14" fill="#CA8A04"/>
-    <polygon points="40,84 64,60 84,88" fill="#CA8A04" opacity="0.85"/>
-    
-  <circle cx="102" cy="31" r="5" fill="#CA8A04" opacity="0.9"/>
+  <circle cx="20" cy="64" r="12" fill="#3B82F6"/>
+  <circle cx="108" cy="64" r="12" fill="#F97316"/>
+  <line x1="34" y1="64" x2="79.4" y2="64" stroke="#334155" stroke-width="8" stroke-linecap="round"/><polygon points="92,64 76.2035,72.6297 76.2035,55.3703" fill="#334155" stroke="#334155" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M26 96 Q50 118 64 96 Q78 74 102 96" fill="none" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6"/>
 </svg>

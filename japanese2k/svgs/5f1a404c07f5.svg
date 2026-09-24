@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <line x1="20" y1="20" x2="20" y2="76.2" stroke="#F97316" stroke-width="6" stroke-linecap="round"/><polygon points="20,86 13.288,73.7138 26.712,73.7138" fill="#F97316" stroke="#F97316" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="42" y1="20" x2="42" y2="76.2" stroke="#F97316" stroke-width="6" stroke-linecap="round"/><polygon points="42,86 35.288,73.7138 48.712,73.7138" fill="#F97316" stroke="#F97316" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="64" y1="20" x2="64" y2="76.2" stroke="#F97316" stroke-width="6" stroke-linecap="round"/><polygon points="64,86 57.288,73.7138 70.712,73.7138" fill="#F97316" stroke="#F97316" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="86" y1="20" x2="86" y2="76.2" stroke="#F97316" stroke-width="6" stroke-linecap="round"/><polygon points="86,86 79.288,73.7138 92.712,73.7138" fill="#F97316" stroke="#F97316" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="108" y1="20" x2="108" y2="76.2" stroke="#F97316" stroke-width="6" stroke-linecap="round"/><polygon points="108,86 101.288,73.7138 114.712,73.7138" fill="#F97316" stroke="#F97316" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="8" y1="104" x2="120" y2="104" stroke="#334155" stroke-width="5" stroke-linecap="round"/>
+</svg>

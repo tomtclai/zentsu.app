@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <line x1="8" y1="96" x2="120" y2="96" stroke="#334155" stroke-width="5" stroke-linecap="round"/>
+  <path d="M16 96 A48 48 0 0 1 112 96" fill="none" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 7"/>
+  <path d="M16 96 A48 48 0 0 1 64 48" fill="none" stroke="#F97316" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <g><circle cx="36" cy="62" r="11" fill="#F97316"/><line x1="52" y1="62" x2="58" y2="62" stroke="#F97316" stroke-width="4" stroke-linecap="round"/><line x1="47.3137" y1="73.3137" x2="51.5563" y2="77.5563" stroke="#F97316" stroke-width="4" stroke-linecap="round"/><line x1="36" y1="78" x2="36" y2="84" stroke="#F97316" stroke-width="4" stroke-linecap="round"/><line x1="24.6863" y1="73.3137" x2="20.4437" y2="77.5563" stroke="#F97316" stroke-width="4" stroke-linecap="round"/><line x1="20" y1="62" x2="14" y2="62" stroke="#F97316" stroke-width="4" stroke-linecap="round"/><line x1="24.6863" y1="50.6863" x2="20.4437" y2="46.4437" stroke="#F97316" stroke-width="4" stroke-linecap="round"/><line x1="36" y1="46" x2="36" y2="40" stroke="#F97316" stroke-width="4" stroke-linecap="round"/><line x1="47.3137" y1="50.6863" x2="51.5563" y2="46.4437" stroke="#F97316" stroke-width="4" stroke-linecap="round"/></g>
+  <line x1="64" y1="44" x2="64" y2="104" stroke="#334155" stroke-width="3" stroke-linecap="round" stroke-dasharray="3 5"/>
+</svg>

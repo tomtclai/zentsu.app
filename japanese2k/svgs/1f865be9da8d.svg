@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <rect x="96" y="8" width="20" height="112" rx="3" fill="#FACC15"/>
+  <line x1="96" y1="16" x2="106" y2="16" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+  <line x1="96" y1="26" x2="106" y2="26" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+  <line x1="96" y1="36" x2="106" y2="36" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+  <line x1="96" y1="46" x2="106" y2="46" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+  <line x1="96" y1="56" x2="106" y2="56" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+  <line x1="96" y1="66" x2="106" y2="66" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+  <line x1="96" y1="76" x2="106" y2="76" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+  <line x1="96" y1="86" x2="106" y2="86" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+  <line x1="96" y1="96" x2="106" y2="96" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+  <line x1="96" y1="106" x2="106" y2="106" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+  <line x1="96" y1="116" x2="106" y2="116" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+  <g><circle cx="52" cy="37.98" r="15.98" fill="#F97316"/><path d="M30.38 116 V77.178 a21.62 19.458 0 0 1 43.24 0 V116 Z" fill="#F97316"/></g>
+  <line x1="36" y1="22" x2="96" y2="22" stroke="#EF4444" stroke-width="4" stroke-linecap="round" stroke-dasharray="4 4"/>
+</svg>

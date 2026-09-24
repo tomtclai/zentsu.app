@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <g><polygon points="60,57.84 90,36 120,57.84" fill="#F97316"/><rect x="64" y="56.8" width="52" height="32.24" fill="#FED7AA"/><rect x="84.8" y="69.696" width="10.4" height="19.344" fill="#334155"/></g>
+  <g><circle cx="24" cy="61.52" r="9.52" fill="#F97316"/><path d="M11.12 108 V84.872 a12.88 11.592 0 0 1 25.76 0 V108 Z" fill="#F97316"/></g>
+  <line x1="40" y1="108" x2="61.6" y2="108" stroke="#F97316" stroke-width="5" stroke-linecap="round"/><polygon points="70,108 59.469,113.753 59.469,102.247" fill="#F97316" stroke="#F97316" stroke-width="2" stroke-linejoin="round"/>
+</svg>

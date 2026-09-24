@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <g><circle cx="18" cy="50.2" r="10.2" fill="#F97316"/><path d="M4.2 100 V75.22 a13.8 12.42 0 0 1 27.6 0 V100 Z" fill="#F97316"/></g>
+  <g><circle cx="41" cy="50.2" r="10.2" fill="#F97316"/><path d="M27.2 100 V75.22 a13.8 12.42 0 0 1 27.6 0 V100 Z" fill="#F97316"/></g>
+  <g><circle cx="64" cy="50.2" r="10.2" fill="#F97316"/><path d="M50.2 100 V75.22 a13.8 12.42 0 0 1 27.6 0 V100 Z" fill="#F97316"/></g>
+  <g><circle cx="87" cy="50.2" r="10.2" fill="#F97316"/><path d="M73.2 100 V75.22 a13.8 12.42 0 0 1 27.6 0 V100 Z" fill="#F97316"/></g>
+  <g><circle cx="110" cy="50.2" r="10.2" fill="#F97316"/><path d="M96.2 100 V75.22 a13.8 12.42 0 0 1 27.6 0 V100 Z" fill="#F97316"/></g>
+  <polyline points="46,24 54.8,32.8 70.2,15.2" fill="none" stroke="#22C55E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

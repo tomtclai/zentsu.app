@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
-  <rect width="128" height="128" rx="28" fill="#F0FFF4"/>
-
-    <circle cx="64" cy="64" r="36" fill="#2F9E6B" opacity="0.25"/>
-    <rect x="40" y="40" width="48" height="48" rx="12" fill="#2F9E6B" transform="rotate(-10 64 64)"/>
-    <circle cx="74" cy="56" r="14" fill="#E8A838"/>
-    <polygon points="40,84 64,60 84,88" fill="#E8A838" opacity="0.85"/>
-    
-  <circle cx="98" cy="28" r="5" fill="#E8A838" opacity="0.9"/>
+  <circle cx="28" cy="76" r="10" fill="#F97316"/>
+  <circle cx="56" cy="76" r="10" fill="#F97316"/>
+  <circle cx="28" cy="102" r="10" fill="#F97316"/>
+  <circle cx="56" cy="102" r="10" fill="#F97316"/>
+  <circle cx="84" cy="102" r="10" fill="#FED7AA"/>
+  <circle cx="84" cy="76" r="10" fill="#FED7AA"/>
+  <line x1="98" y1="64" x2="98" y2="28.6" stroke="#22C55E" stroke-width="8" stroke-linecap="round"/><polygon points="98,16 106.63,31.7965 89.3703,31.7965" fill="#22C55E" stroke="#22C55E" stroke-width="2" stroke-linejoin="round"/>
 </svg>

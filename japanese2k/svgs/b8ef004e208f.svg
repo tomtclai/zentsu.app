@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <rect x="10" y="18" width="24" height="26" rx="3" fill="#16A34A" stroke="#14532D" stroke-width="3"/>
+  <rect x="38" y="18" width="24" height="26" rx="3" fill="#16A34A" stroke="#14532D" stroke-width="3"/>
+  <rect x="66" y="18" width="24" height="26" rx="3" fill="#16A34A" stroke="#14532D" stroke-width="3"/>
+  <rect x="94" y="18" width="24" height="26" rx="3" fill="#16A34A" stroke="#14532D" stroke-width="3"/>
+  <rect x="10" y="50" width="24" height="26" rx="3" fill="#16A34A" stroke="#14532D" stroke-width="3"/>
+  <rect x="38" y="50" width="24" height="26" rx="3" fill="#16A34A" stroke="#14532D" stroke-width="3"/>
+  <rect x="66" y="50" width="24" height="26" rx="3" fill="#16A34A" stroke="#14532D" stroke-width="3"/>
+  <rect x="94" y="50" width="24" height="26" rx="3" fill="#16A34A" stroke="#14532D" stroke-width="3"/>
+  <rect x="10" y="82" width="24" height="26" rx="3" fill="#16A34A" stroke="#14532D" stroke-width="3"/>
+  <rect x="38" y="82" width="24" height="26" rx="3" fill="#16A34A" stroke="#14532D" stroke-width="3"/>
+  <rect x="66" y="82" width="24" height="26" rx="3" fill="#16A34A" stroke="#14532D" stroke-width="3"/>
+  <rect x="94" y="82" width="24" height="26" rx="3" fill="#16A34A" stroke="#14532D" stroke-width="3"/>
+</svg>

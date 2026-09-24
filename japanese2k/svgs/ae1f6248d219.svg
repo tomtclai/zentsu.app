@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
-  <rect width="128" height="128" rx="28" fill="#F0FDFA"/>
-
-    <text x="64" y="80" text-anchor="middle" font-size="56" font-family="system-ui" font-weight="800" fill="#0D9488">≠</text>
-    
-  
+  <line x1="12" y1="90" x2="56.0804" y2="45.9196" stroke="#3B82F6" stroke-width="8" stroke-linecap="round"/><polygon points="64,38 59.4954,53.3528 48.6472,42.5046" fill="#3B82F6" stroke="#3B82F6" stroke-width="2" stroke-linejoin="round"/>
+  <polyline points="64,38 116,90" fill="none" stroke="#F97316" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="116,90 98.7281,84.9323 110.932,72.7281" fill="#F97316" stroke="#F97316" stroke-width="2" stroke-linejoin="round"/>
 </svg>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
-  <rect width="128" height="128" rx="28" fill="#E8F1FF"/>
-
-    <circle cx="64" cy="40" r="16" fill="#2F6FED"/>
-    <path d="M36 100 c0 -24 16 -36 28 -36 h0 c12 0 28 12 28 36" fill="#2F6FED"/>
-    
-  
-</svg>

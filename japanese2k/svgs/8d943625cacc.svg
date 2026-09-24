@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <g><rect x="14" y="18" width="100" height="98" rx="8" fill="#FFFFFF" stroke="#334155" stroke-width="4"/><path d="M16 34 V26 a6 6 0 0 1 6 -6 H106 a6 6 0 0 1 6 6 V34 Z" fill="#EF4444"/><rect x="39" y="12" width="6" height="14" rx="3" fill="#334155"/><rect x="83" y="12" width="6" height="14" rx="3" fill="#334155"/></g>
+  <circle cx="28" cy="44" r="5" fill="#F97316"/>
+  <circle cx="45" cy="44" r="5" fill="#F97316"/>
+  <circle cx="62" cy="44" r="5" fill="#F97316"/>
+  <circle cx="79" cy="44" r="5" fill="#F97316"/>
+  <circle cx="96" cy="44" r="5" fill="#F97316"/>
+  <circle cx="28" cy="61" r="5" fill="#F97316"/>
+  <circle cx="45" cy="61" r="5" fill="#F97316"/>
+  <circle cx="62" cy="61" r="5" fill="#F97316"/>
+  <circle cx="79" cy="61" r="5" fill="#F97316"/>
+  <circle cx="96" cy="61" r="5" fill="#F97316"/>
+  <circle cx="28" cy="78" r="5" fill="#F97316"/>
+  <circle cx="45" cy="78" r="5" fill="#F97316"/>
+  <circle cx="62" cy="78" r="5" fill="#F97316"/>
+  <circle cx="79" cy="78" r="5" fill="#F97316"/>
+  <circle cx="96" cy="78" r="5" fill="#F97316"/>
+  <circle cx="28" cy="95" r="5" fill="#F97316"/>
+  <circle cx="45" cy="95" r="5" fill="#F97316"/>
+  <circle cx="62" cy="95" r="5" fill="#F97316"/>
+  <circle cx="79" cy="95" r="5" fill="#F97316"/>
+  <circle cx="96" cy="95" r="5" fill="#F97316"/>
+</svg>

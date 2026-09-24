@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
-  <rect width="128" height="128" rx="28" fill="#F0FDFA"/>
-
-    <rect x="28" y="36" width="52" height="56" rx="4" fill="#0D9488"/>
-    <path d="M80 64 h24" stroke="#CA8A04" stroke-width="8" stroke-linecap="round"/>
-    <polygon points="104,52 104,76 120,64" fill="#CA8A04"/>
-    
-  
+  <g><rect x="18" y="22" width="44" height="86" rx="3" fill="#E2E8F0" stroke="#A16207" stroke-width="4"/><polygon points="18,22 37.8,30 37.8,100 18,108" fill="#D6A36A" stroke="#A16207" stroke-width="4" stroke-linejoin="round"/></g>
+  <g><circle cx="86" cy="45.9" r="11.9" fill="#F97316"/><path d="M69.9 104 V75.09 a16.1 14.49 0 0 1 32.2 0 V104 Z" fill="#F97316"/></g>
+  <line x1="60" y1="116" x2="109.6" y2="116" stroke="#F97316" stroke-width="5" stroke-linecap="round"/><polygon points="118,116 107.469,121.753 107.469,110.247" fill="#F97316" stroke="#F97316" stroke-width="2" stroke-linejoin="round"/>
 </svg>

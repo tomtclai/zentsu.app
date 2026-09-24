@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
-  <rect width="128" height="128" rx="28" fill="#FFF0F3"/>
-
-    <rect x="28" y="36" width="72" height="56" rx="6" fill="#E23D6B"/>
-    <circle cx="52" cy="64" r="8" fill="#3D9B8F"/>
-    <circle cx="76" cy="64" r="8" fill="#3D9B8F"/>
-    
-  
+  <ellipse cx="64" cy="106" rx="40" ry="10" fill="#CBD5E1"/>
+  <rect x="44" y="88" width="40" height="18" rx="4" fill="#F97316"/>
+  <g><circle cx="64" cy="34.88" r="10.88" fill="#334155"/><path d="M49.28 88 V61.568 a14.72 13.248 0 0 1 29.44 0 V88 Z" fill="#334155"/></g>
 </svg>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <g><path d="M58.2 90 V58.8 q0 -6 -6.5 -6 q5 0 -6.5 6 V45.8 q0 -6 -6.5 -6 q5 0 -6.5 6 V51 q0 -6 -6.5 -6 q5 0 -6.5 6 V61.4 l-7.8 -6 q4 -3 -9.1 1 q2 4 -1 8 L19.2 90 Z" fill="#F5C08A" stroke="#334155" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g><path d="M69.8 90 V58.8 q0 -6 6.5 -6 q5 0 6.5 6 V45.8 q0 -6 6.5 -6 q5 0 6.5 6 V51 q0 -6 6.5 -6 q5 0 6.5 6 V61.4 l7.8 -6 q4 -3 9.1 1 q2 4 -1 8 L108.8 90 Z" fill="#E2E8F0" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <line x1="64" y1="112" x2="29.8" y2="112" stroke="#F97316" stroke-width="6" stroke-linecap="round"/><polygon points="20,112 32.2862,105.288 32.2862,118.712" fill="#F97316" stroke="#F97316" stroke-width="2" stroke-linejoin="round"/>
+</svg>

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
-  <rect width="128" height="128" rx="28" fill="#FFF0F3"/>
-
-    <circle cx="64" cy="64" r="36" fill="#E23D6B" opacity="0.25"/>
-    <rect x="40" y="40" width="48" height="48" rx="12" fill="#E23D6B" transform="rotate(-3 64 64)"/>
-    <circle cx="74" cy="56" r="14" fill="#3D9B8F"/>
-    <polygon points="40,84 64,60 84,88" fill="#3D9B8F" opacity="0.85"/>
-    
-  <circle cx="105" cy="24" r="5" fill="#3D9B8F" opacity="0.9"/>
+  <g><circle cx="20" cy="52.24" r="12.24" fill="#334155"/><path d="M3.44 112 V82.264 a16.56 14.904 0 0 1 33.12 0 V112 Z" fill="#334155"/></g>
+  <rect x="38" y="54" width="26" height="26" rx="5" fill="#F97316"/>
+  <rect x="46" y="86" width="26" height="26" rx="5" fill="#F97316"/>
+  <rect x="70" y="68" width="26" height="26" rx="5" fill="#F97316"/>
+  <circle cx="52" cy="116" r="5" fill="#F97316"/>
+  <circle cx="82" cy="116" r="5" fill="#CBD5E1"/>
+  <circle cx="111" cy="116" r="5" fill="#CBD5E1"/>
 </svg>

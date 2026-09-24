@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <circle cx="64" cy="64" r="14" fill="#F97316"/>
+  <circle cx="64" cy="64" r="32" fill="none" stroke="#F97316" stroke-width="5" opacity="0.7"/>
+  <circle cx="64" cy="64" r="50" fill="none" stroke="#F97316" stroke-width="5" opacity="0.4"/>
+  <line x1="78.1478" y1="78.1365" x2="101.067" y2="101.038" stroke="#334155" stroke-width="3" stroke-linecap="round"/><polygon points="105.029,104.996 97.3512,102.747 102.773,97.3204" fill="#334155" stroke="#334155" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="49.8606" y1="78.1449" x2="26.9548" y2="101.06" stroke="#334155" stroke-width="3" stroke-linecap="round"/><polygon points="22.9958,105.02 25.2466,97.3433 30.6717,102.766" fill="#334155" stroke="#334155" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="49.858" y1="49.8577" x2="26.9479" y2="26.9473" stroke="#334155" stroke-width="3" stroke-linecap="round"/><polygon points="22.9882,22.9874 30.6646,25.2398 25.2404,30.6638" fill="#334155" stroke="#334155" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="78.1451" y1="49.8609" x2="101.06" y2="26.9555" stroke="#334155" stroke-width="3" stroke-linecap="round"/><polygon points="105.021,22.9965 102.767,30.6725 97.344,25.2472" fill="#334155" stroke="#334155" stroke-width="2" stroke-linejoin="round"/>
+</svg>

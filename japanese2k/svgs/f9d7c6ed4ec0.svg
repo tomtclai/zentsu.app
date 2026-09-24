@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
-  <rect width="128" height="128" rx="28" fill="#F0FDFA"/>
-
-    <circle cx="64" cy="64" r="36" fill="#0D9488" opacity="0.25"/>
-    <rect x="40" y="40" width="48" height="48" rx="12" fill="#0D9488" transform="rotate(-12 64 64)"/>
-    <circle cx="74" cy="56" r="14" fill="#CA8A04"/>
-    <polygon points="40,84 64,60 84,88" fill="#CA8A04" opacity="0.85"/>
-    
-  <circle cx="96" cy="31" r="5" fill="#CA8A04" opacity="0.9"/>
+  <rect x="16" y="16" width="96" height="22" rx="6" fill="#3B82F6"/>
+  <g><circle cx="30" cy="60.54" r="10.54" fill="#3B82F6"/><path d="M15.74 112 V86.394 a14.26 12.834 0 0 1 28.52 0 V112 Z" fill="#3B82F6"/></g>
+  <g><circle cx="64" cy="57.22" r="11.22" fill="#3B82F6"/><path d="M48.82 112 V84.742 a15.18 13.662 0 0 1 30.36 0 V112 Z" fill="#3B82F6"/></g>
+  <g><circle cx="98" cy="60.54" r="10.54" fill="#3B82F6"/><path d="M83.74 112 V86.394 a14.26 12.834 0 0 1 28.52 0 V112 Z" fill="#3B82F6"/></g>
+  <circle cx="64" cy="27" r="6" fill="#FFFFFF"/>
 </svg>

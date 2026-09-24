@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
-  <rect width="128" height="128" rx="28" fill="#F3F4F6"/>
-
-    <circle cx="64" cy="64" r="36" fill="#374151" opacity="0.25"/>
-    <rect x="40" y="40" width="48" height="48" rx="12" fill="#374151" transform="rotate(-2 64 64)"/>
-    <circle cx="74" cy="56" r="14" fill="#F59E0B"/>
-    <polygon points="40,84 64,60 84,88" fill="#F59E0B" opacity="0.85"/>
-    
-  <circle cx="106" cy="32" r="5" fill="#F59E0B" opacity="0.9"/>
+  <rect x="8" y="12" width="112" height="12" fill="#991B1B"/>
+  <path d="M8 24 V112 H28 Q34 60 22 24 Z" fill="#EF4444"/>
+  <path d="M120 24 V112 H100 Q94 60 106 24 Z" fill="#EF4444"/>
+  <rect x="8" y="96" width="112" height="18" fill="#A16207"/>
+  <g><circle cx="64" cy="52.84" r="8.84" fill="#334155"/><path d="M52.04 96 V74.524 a11.96 10.764 0 0 1 23.92 0 V96 Z" fill="#334155"/></g>
+  <path d="M40 24 L64 60 L88 24" fill="#FACC15" opacity="0.4"/>
 </svg>

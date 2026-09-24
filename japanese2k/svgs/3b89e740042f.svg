@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
-  <rect width="128" height="128" rx="28" fill="#FFF7ED"/>
-
-    <rect x="32" y="28" width="64" height="72" rx="4" fill="#EA580C"/>
-    <text x="64" y="76" text-anchor="middle" font-size="36" font-family="system-ui" font-weight="800" fill="#0891B2">A</text>
-    
-  
+  <polygon points="10,118 10,94 38,94 38,70 66,70 66,46 94,46 94,22 122,22 122,118" fill="#F97316"/>
 </svg>

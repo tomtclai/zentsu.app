@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
-  <rect width="128" height="128" rx="28" fill="#FDF4FF"/>
-
-    <circle cx="64" cy="64" r="36" fill="#A21CAF" opacity="0.25"/>
-    <rect x="40" y="40" width="48" height="48" rx="12" fill="#A21CAF" transform="rotate(-6 64 64)"/>
-    <circle cx="74" cy="56" r="14" fill="#0EA5E9"/>
-    <polygon points="40,84 64,60 84,88" fill="#0EA5E9" opacity="0.85"/>
-    
-  <circle cx="102" cy="31" r="5" fill="#0EA5E9" opacity="0.9"/>
+  <rect x="48" y="12" width="32" height="24" rx="4" fill="#F97316"/>
+  <line x1="64" y1="36" x2="64" y2="52" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  <line x1="28" y1="52" x2="100" y2="52" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  <line x1="28" y1="52" x2="28" y2="66" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  <line x1="64" y1="52" x2="64" y2="66" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  <line x1="100" y1="52" x2="100" y2="66" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  <rect x="12" y="66" width="32" height="22" rx="4" fill="#3B82F6"/>
+  <rect x="48" y="66" width="32" height="22" rx="4" fill="#3B82F6"/>
+  <rect x="84" y="66" width="32" height="22" rx="4" fill="#3B82F6"/>
+  <line x1="28" y1="88" x2="28" y2="100" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+  <rect x="14" y="100" width="28" height="18" rx="3" fill="#BFDBFE"/>
 </svg>
