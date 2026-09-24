@@ -3,11 +3,10 @@
 //
 // Reads `press_live` from _config.yml, the single flag SITE-PLAN.md section 7
 // flips at go-live. Below that, an explicit allowlist of routes lets a subset
-// go live independently while press_live stays false: FINISH-PLAN.md phase 3
-// step 8 adds '/press/privacy' and '/press/support' here (each with its own
-// front-matter `published: true` override) so App Review has working privacy
-// and support URLs before the rest of Press, or the store listing, exists.
-// Empty for now (SITE-PLAN.md wave A / this script's first version).
+// go live independently while press_live stays false: '/press/privacy' and
+// '/press/support' are allowlisted here (each carries its own front-matter
+// `published: true` override) so App Review has working privacy and support
+// URLs before the rest of Press, or the store listing, exists.
 //
 // - press_live true: every Press route must be built, self-canonical, and in
 //   the sitemap; the homepage and /apps must list Press.
@@ -23,7 +22,7 @@ import { join } from 'node:path';
 const outputDirectory = '_site';
 const siteOrigin = 'https://zentsu.app';
 
-const LIVE_ROUTES_WHILE_DARK = [];
+const LIVE_ROUTES_WHILE_DARK = ['/press/privacy', '/press/support'];
 
 const errors = [];
 function check(condition, message) {
