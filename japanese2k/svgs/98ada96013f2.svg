@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
-  <circle cx="20" cy="64" r="12" fill="#3B82F6"/>
-  <line x1="36" y1="64" x2="50.2" y2="64" stroke="#334155" stroke-width="6" stroke-linecap="round"/><polygon points="60,64 47.7138,70.712 47.7138,57.288" fill="#334155" stroke="#334155" stroke-width="2" stroke-linejoin="round"/>
-  <circle cx="76" cy="64" r="12" fill="#F97316"/>
-  <line x1="92" y1="64" x2="106.2" y2="64" stroke="#334155" stroke-width="6" stroke-linecap="round"/><polygon points="116,64 103.714,70.712 103.714,57.288" fill="#334155" stroke="#334155" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="28" cy="64" r="20" fill="#3B82F6"/>
+  <polyline points="18,64 25.2,71.2 37.8,56.8" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="54" y1="64" x2="70.2" y2="64" stroke="#334155" stroke-width="6" stroke-linecap="round"/><polygon points="80,64 67.7138,70.712 67.7138,57.288" fill="#334155" stroke="#334155" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="100" cy="64" r="16" fill="#F97316"/>
 </svg>
