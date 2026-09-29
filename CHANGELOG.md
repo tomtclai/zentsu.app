@@ -18,6 +18,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- The JP 2K favicon (`/assets/japanese2k-icon.png`) matches the app's new icon: "2K" in large yellow type under the あ, without the pill.
 - Dial locale meta descriptions now name local brand names, say the phone log is free, and note that no account is required. Every description is 155 characters or fewer.
 - The Dial hero legal line is now one sentence in every locale, matching the new boundary section.
 - Estimated-level and logging copy names the injectable brands and the tablet example in every locale.
