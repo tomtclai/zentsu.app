@@ -102,3 +102,13 @@
   color: var(--body-text);
   line-height: 1.65;
 }
+
+.dial-guide-card .dial-guide-paper {
+  margin-top: 0.9rem;
+}
+
+.dial-guide-paper a {
+  color: var(--dial-coral-dark);
+  font-weight: 600;
+  text-underline-offset: 0.2em;
+}

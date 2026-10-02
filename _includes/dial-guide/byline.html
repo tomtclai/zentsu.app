@@ -1,0 +1,17 @@
+{%- assign guide_strings = site.data.dial_guides[page.lang].byline | default:
+site.data.dial_guides.en.byline -%}
+<p class="dial-guide-byline">
+  <span>{{ guide_strings.by }} <a href="/">Zentsu</a></span>
+  <span
+    >{{ guide_strings.published }}
+    <time datetime="{{ page.published_on | date: '%Y-%m-%d' }}"
+      >{{ page.published_on | date: guide_strings.date_format }}</time
+    ></span
+  >
+  <span
+    >{{ guide_strings.reviewed }}
+    <time datetime="{{ page.reviewed_on | date: '%Y-%m-%d' }}"
+      >{{ page.reviewed_on | date: guide_strings.date_format }}</time
+    ></span
+  >
+</p>

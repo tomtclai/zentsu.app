@@ -16,6 +16,10 @@
     <a href="/blog/2026/how-long-semaglutide-stays-in-your-system/">Semaglutide &amp; tirzepatide half-life</a>
     <a href="/blog/2026/missed-glp-1-dose-what-to-record/">Missed dose: what to record</a>
     <a href="/blog/2026/bring-your-glp-1-log-to-your-doctor/">GLP-1 log for your doctor</a>
+    {%- assign dial_guide_links = site.data.dial_guides[page.lang].links | default: site.data.dial_guides.en.links %}
+    {%- for guide in dial_guide_links %}
+    <a href="{{ guide.url }}">{{ guide.title }}</a>
+    {%- endfor %}
   </div>
   {%- endif %}
   {%- if page.footer_indie %}

@@ -1,0 +1,175 @@
+---
+title: Printable GLP-1 dose log | Dial
+headline: Printable GLP-1 dose log
+description: 'A free printable log for weekly GLP-1 injections: date, time, medication and strength, prescribed dose, injection site, and notes.'
+canonical: https://zentsu.app/dial/printable-dose-log/
+permalink: /dial/printable-dose-log/
+lang: en
+alternate_group: dial-dose-log
+favicon: /assets/dial-icon.png
+og_site_name: Dial
+og_image: https://zentsu.app/assets/dial-og.png
+og_image_alt: 'Dial, a GLP-1 medication log for iPhone and Apple Watch'
+og_type: article
+page_stylesheet: /dial-guides.css
+published_on: 2026-10-02
+reviewed_on: 2026-10-02
+citations:
+  - name: 'Ozempic (semaglutide) injection: prescribing information, Medication Guide, and Instructions for Use'
+    url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=adec4fd2-6858-4c99-91d4-531f5f2a2d79
+    publisher: U.S. FDA label on DailyMed
+    revised: revised 5/2026
+  - name: 'Wegovy (semaglutide) injection and tablets: prescribing information, Medication Guide, and Instructions for Use'
+    url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b
+    publisher: U.S. FDA label on DailyMed
+    revised: revised 6/2026
+  - name: 'Mounjaro (tirzepatide) injection: prescribing information, Medication Guide, and Instructions for Use'
+    url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d2d7da5d-ad07-4228-955f-cf7e355c8cc0
+    publisher: U.S. FDA label on DailyMed
+    revised: revised 8/2026
+  - name: 'Zepbound (tirzepatide) injection: prescribing information, Medication Guide, and Instructions for Use'
+    url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b
+    publisher: U.S. FDA label on DailyMed
+    revised: revised 8/2026
+---
+
+<!doctype html>
+<html lang="{{ page.lang }}" dir="{{ site.data.i18n[page.lang].dir | default: 'ltr' }}">
+  <head>
+    {% include head-common.html %} {% include dial-guide/head.html %}
+    <script src="/dial-guides.js?v={{ site.time | date: '%s' }}" defer></script>
+  </head>
+  <body>
+    {% include nav.html %}
+    <main id="main-content" tabindex="-1">
+      <article class="dial-guide-article dial-guide-article--sheet">
+        <span class="page-label">Dial guide</span>
+        <h1>{{ page.headline }}</h1>
+        {% include dial-guide/byline.html %}
+
+        <p class="dial-guide-boundary">
+          This guide explains how to keep a dose record. It is not medical advice. Dosing decisions
+          belong to you and your prescriber.
+        </p>
+
+        <p>
+          A paper log is simple to hand across a desk at an appointment. This one has six columns,
+          one row per injection, and prints on a single landscape page. The same fields are what
+          <a href="/dial/">Dial</a> asks for when you log a dose on iPhone, so you can switch
+          between paper and the app without changing what you write down.
+        </p>
+
+        <h2>What each column is for</h2>
+        <h3>Date and time</h3>
+        <p>
+          Write the moment you injected, not the moment you remembered to write it down. The U.S.
+          labels measure their missed-dose and day-change windows in days or hours from the last
+          injection (Ozempic and Mounjaro section 2.1, Zepbound section 2.3, Wegovy section 2.4). If
+          you need those rules, read them in the label for your product or ask your prescriber. The
+          log gives you the exact time to read them against.
+        </p>
+        <h3>Medication and strength</h3>
+        <p>
+          Copy the brand name and strength from the pen or carton, for example "Mounjaro 5 mg/0.5
+          mL". Pens of the same product come in several strengths, and a refill can change which one
+          you have.
+        </p>
+        <h3>Dose as prescribed</h3>
+        <p>
+          Copy the dose from your prescription or pharmacy label. If the amount you injected differs
+          from it, write the amount you injected and say why in Notes.
+        </p>
+        <h3>Injection site</h3>
+        <p>
+          Name the area and the side, such as "abdomen, lower left" or "right thigh". The
+          <a href="/dial/injection-site-rotation/">injection-site rotation chart</a> lists the areas
+          each label names and has a numbered body map you can use as shorthand.
+        </p>
+        <h3>Notes</h3>
+        <p>
+          Use this for anything you will want to recognize later: a dose you skipped or took late, a
+          new pen, a reaction at the site, or a question for your next appointment.
+        </p>
+
+        <section class="dial-guide-sheet">
+          <h2 id="dose-log-sheet">GLP-1 dose log</h2>
+          <p class="dial-guide-screen-only">
+            The table prints on its own, without this page's text, on a landscape page.
+            <button type="button" class="dial-guide-print" data-print-page hidden>
+              Print the blank log
+            </button>
+          </p>
+          <section class="dial-guide-table-scroll" aria-labelledby="dose-log-sheet" tabindex="0">
+            <table class="dial-guide-table dial-guide-table--blank">
+              <thead>
+                <tr>
+                  <th scope="col">Date</th>
+                  <th scope="col">Time</th>
+                  <th scope="col">Medication and strength</th>
+                  <th scope="col">Dose as prescribed</th>
+                  <th scope="col">Injection site</th>
+                  <th scope="col">Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                {%- for row in (1..12) %}
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                {%- endfor %}
+              </tbody>
+            </table>
+          </section>
+          <p class="dial-guide-sheet-footer">
+            Blank dose log from zentsu.app/dial/printable-dose-log/. It records what you did. It
+            does not replace your prescriber's instructions.
+          </p>
+        </section>
+
+        <h2>Keeping the same record in Dial</h2>
+        <p>
+          Dial's dose form has the same fields: medication, amount, date and time, injection site,
+          and a note. For an injection, Dial asks for the site before it saves, and shows where and
+          when you last injected. A dose you did not take can be logged as skipped, so the gap in
+          your history has an explanation.
+        </p>
+        <p>
+          The free download keeps the phone log with no cap on entries. Dial Pro adds logging from
+          Apple Watch, charts, and a PDF or CSV export of the same rows, which you can print or
+          share if you choose. Dial does not calculate a dose or tell you what to take. The
+          <a href="/dial/medication-log/">medication log guide</a> covers correcting entries and
+          preparing a record to share.
+        </p>
+
+        <h2>How we wrote this</h2>
+        <p>
+          Zentsu makes Dial. We wrote this page from the current U.S. prescribing information,
+          Medication Guide, and Instructions for Use for each product, as posted on DailyMed, and
+          the section numbers above point to them. Zentsu is a software company. A clinician did not
+          review this page. The reviewed date at the top is the last time we compared it with the
+          labels listed below.
+        </p>
+
+        <h2>Sources</h2>
+        {% include dial-guide/sources.html %}
+
+        <p class="dial-guide-more">
+          <a href="{% include dial-guide/store-url.html %}" rel="noopener noreferrer"
+            >Download Dial on the App Store</a
+          >, <a href="/dial/">read the Dial overview</a>, or see the
+          <a href="/dial/titration-record/">titration record from the labels</a>.
+        </p>
+        <p class="dial-guide-sheet-footer">
+          Ozempic, Wegovy, Mounjaro, and Zepbound are trademarks of their respective owners. Zentsu
+          is not affiliated with Novo Nordisk or Eli Lilly.
+        </p>
+      </article>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

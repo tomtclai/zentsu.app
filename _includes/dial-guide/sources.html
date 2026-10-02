@@ -1,0 +1,10 @@
+{%- assign source_marks = site.data.dial_guides[page.lang].sources | default:
+site.data.dial_guides.en.sources -%}
+<ul class="dial-guide-sources">
+  {%- for source in page.citations %}
+  <li>
+    <a href="{{ source.url }}" rel="noopener">{{ source.name }}</a>{{ source_marks.after_name }}{{
+    source.publisher }}{{ source_marks.between }}{{ source.revised }}{{ source_marks.end }}
+  </li>
+  {%- endfor %}
+</ul>

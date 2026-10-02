@@ -1,0 +1,28 @@
+{%- assign guide_url = page.canonical -%} {%- assign guide_language = page.lang -%}
+<meta
+  name="apple-itunes-app"
+  content="app-id=6789408903, affiliate-data=ct={{ site.data.dial_campaign.campaigns.banner }}&amp;pt={{ site.data.dial_campaign.provider_token }}"
+/>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ page.headline | jsonify }},
+    "description": {{ page.description | jsonify }},
+    "inLanguage": {{ guide_language | jsonify }},
+    "url": {{ guide_url | jsonify }},
+    "mainEntityOfPage": {{ guide_url | jsonify }},
+    "datePublished": "{{ page.published_on | date: '%Y-%m-%d' }}",
+    "dateModified": "{{ page.reviewed_on | date: '%Y-%m-%d' }}",
+    "image": {{ page.og_image | jsonify }},
+    "author": { "@type": "Organization", "name": "Zentsu", "url": "https://zentsu.app/" },
+    "publisher": { "@type": "Organization", "name": "Zentsu LLC", "url": "https://zentsu.app/" },
+    "isPartOf": { "@type": "WebSite", "name": "Zentsu", "url": "https://zentsu.app/" },
+    "about": { "@type": "MobileApplication", "name": "Dial", "operatingSystem": "iOS, watchOS", "url": "https://zentsu.app/dial/" },
+    "citation": [
+      {%- for source in page.citations %}
+      { "@type": "CreativeWork", "name": {{ source.name | jsonify }}, "url": {{ source.url | jsonify }}, "publisher": {{ source.publisher | jsonify }} }{% unless forloop.last %},{% endunless %}
+      {%- endfor %}
+    ]
+  }
+</script>

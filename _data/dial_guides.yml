@@ -1,0 +1,69 @@
+# Dial record-keeping guides. `byline` holds the visible author and date
+# labels for each guide language. `links` lists the guides the Dial footer
+# shows for that page language; languages without a list fall back to `en`.
+
+en:
+  byline:
+    by: By
+    published: Published
+    reviewed: Reviewed against the labels
+    date_format: '%B %-d, %Y'
+  sources:
+    after_name: '. '
+    between: ', '
+    end: '.'
+  links:
+    - url: /dial/printable-dose-log/
+      title: Printable dose log
+    - url: /dial/injection-site-rotation/
+      title: Injection-site rotation chart
+    - url: /dial/titration-record/
+      title: Titration record from the labels
+
+ja:
+  byline:
+    by: 執筆
+    published: 公開
+    reviewed: 添付文書と照合
+    date_format: '%Y年%-m月%-d日'
+  sources:
+    after_name: '。'
+    between: '、'
+    end: '。'
+  links:
+    - url: /ja/dial/printable-dose-log/
+      title: 印刷用の投与記録表
+    - url: /ja/dial/injection-site-rotation/
+      title: 注射部位のローテーション表
+
+ko:
+  byline:
+    by: 작성
+    published: 게시
+    reviewed: 허가사항 대조
+    date_format: '%Y년 %-m월 %-d일'
+  sources:
+    after_name: '. '
+    between: ', '
+    end: '.'
+  links:
+    - url: /ko/dial/printable-dose-log/
+      title: 인쇄용 투여 기록표
+    - url: /ko/dial/injection-site-rotation/
+      title: 주사 부위 순환 기록표
+
+zh-hant:
+  byline:
+    by: 撰文
+    published: 發布
+    reviewed: 依仿單核對
+    date_format: '%Y年%-m月%-d日'
+  sources:
+    after_name: '。'
+    between: '，'
+    end: '。'
+  links:
+    - url: /zh-hant/dial/printable-dose-log/
+      title: 可列印的用藥紀錄表
+    - url: /zh-hant/dial/injection-site-rotation/
+      title: 注射部位輪替表

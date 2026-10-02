@@ -1,0 +1,4 @@
+{%- assign guide_storefront = site.data.dial_storefronts[page.lang] | default:
+site.data.dial_storefronts.en -%} {%- assign guide_store_base = 'https://apps.apple.com/' | append:
+guide_storefront.country | append: '/app/id6789408903' -%} {%- include dial-store-url.html
+base=guide_store_base campaign=site.data.dial_campaign.campaigns.blog -%}

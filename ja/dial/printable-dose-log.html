@@ -1,0 +1,160 @@
+---
+title: 印刷用のGLP-1投与記録表 | Dial
+headline: 印刷用のGLP-1投与記録表
+description: 'GLP-1注射の投与を1回ずつ書き込める印刷用の記録表です。日付、時刻、薬剤名と規格、処方された用量、注射部位、メモの欄があります。'
+canonical: https://zentsu.app/ja/dial/printable-dose-log/
+permalink: /ja/dial/printable-dose-log/
+lang: ja
+alternate_group: dial-dose-log
+favicon: /assets/dial-icon.png
+og_site_name: Dial
+og_image: https://zentsu.app/assets/dial-og-ja.png
+og_image_alt: 'Dial、iPhoneとApple Watch向けのGLP-1薬の記録アプリ'
+og_type: article
+page_stylesheet: /dial-guides.css
+published_on: 2026-10-02
+reviewed_on: 2026-10-02
+citations:
+  - name: 'オゼンピック皮下注2mg 添付文書'
+    url: https://www.pmda.go.jp/PmdaSearch/iyakuDetail/620023_2499418G4027_1_07
+    publisher: PMDA 添付文書
+    revised: 2026年5月改訂（第6版）
+  - name: 'ウゴービ皮下注SD 添付文書'
+    url: https://www.pmda.go.jp/PmdaSearch/iyakuDetail/620023_2499418G5023_1_07
+    publisher: PMDA 添付文書
+    revised: 2026年6月改訂（第7版）
+  - name: 'ウゴービ皮下注ペンMD 添付文書'
+    url: https://www.pmda.go.jp/PmdaSearch/iyakuDetail/620023_2499418P1028_1_05
+    publisher: PMDA 添付文書
+    revised: 2026年6月改訂（第5版）
+  - name: 'マンジャロ皮下注アテオス 添付文書'
+    url: https://www.pmda.go.jp/PmdaSearch/iyakuDetail/530471_2499422G1024_1_11
+    publisher: PMDA 添付文書
+    revised: 2026年9月改訂（第11版）
+  - name: 'ゼップバウンド皮下注アテオス 添付文書'
+    url: https://www.pmda.go.jp/PmdaSearch/iyakuDetail/530471_2499422G7022_1_06
+    publisher: PMDA 添付文書
+    revised: 2026年9月改訂（第6版）
+---
+
+<!doctype html>
+<html lang="{{ page.lang }}" dir="{{ site.data.i18n[page.lang].dir | default: 'ltr' }}">
+  <head>
+    {% include head-common.html %} {% include dial-guide/head.html %}
+    <script src="/dial-guides.js?v={{ site.time | date: '%s' }}" defer></script>
+  </head>
+  <body>
+    {% include nav.html %}
+    <main id="main-content" tabindex="-1">
+      <article class="dial-guide-article dial-guide-article--sheet">
+        <span class="page-label">Dialガイド</span>
+        <h1>{{ page.headline }}</h1>
+        {% include dial-guide/byline.html %}
+
+        <p class="dial-guide-boundary">
+          このページは、投与の記録の付け方を説明するものです。医療上の助言ではありません。用量の判断は、処方医とご本人が行います。
+        </p>
+
+        <p>
+          紙の記録は、診察のときにそのまま医師に見せられます。この記録表は6つの欄からなり、1回の注射を1行に書きます。横向きの用紙1枚に印刷できます。欄は、iPhoneの<a
+            href="/ja/dial/"
+            >Dial</a
+          >で投与を記録するときの項目と同じなので、紙とアプリを行き来しても書く内容は変わりません。
+        </p>
+
+        <h2>各欄の書き方</h2>
+        <h3>日付と時刻</h3>
+        <p>
+          書き留めた時刻ではなく、注射した時刻を書きます。日本の添付文書は4製品とも、週1回、同じ曜日に投与する薬剤としています（各製品の7.1）。打ち忘れたときと、投与する曜日を変えるときの扱いは、日数と時間で定められています。オゼンピックは7.2、ウゴービは7.3、マンジャロは7.2、ゼップバウンドは7.2に記載があります。判断は処方医に確認してください。記録表には、その項目と照らし合わせるための正確な日時が残ります。
+        </p>
+        <h3>薬剤名と規格</h3>
+        <p>
+          ペンや箱に書かれた販売名を、たとえば「マンジャロ皮下注5mgアテオス」のようにそのまま写します。同じ製品にも複数の規格があり、処方が変わると手元のペンの規格も変わります。オゼンピック皮下注2mgのように、販売名の数字が1回の用量と一致しない製品もあります。
+        </p>
+        <h3>処方された用量</h3>
+        <p>
+          処方せんや薬袋に書かれた用量を写します。実際に注射した量がそれと違う場合は、注射した量を書き、理由をメモ欄に書きます。
+        </p>
+        <h3>注射部位</h3>
+        <p>
+          部位と左右を、「腹部、左下」「右太もも」のように書きます。<a
+            href="/ja/dial/injection-site-rotation/"
+            >注射部位のローテーション表</a
+          >には、各製品の添付文書が挙げる部位と、略記に使える番号付きの図があります。
+        </p>
+        <h3>メモ</h3>
+        <p>
+          あとで見返したときに分かるように書いておく欄です。投与しなかった回や遅れた回、新しいペンに替えたこと、注射した場所の皮膚の変化、次の診察で聞きたいことなどを書きます。
+        </p>
+
+        <section class="dial-guide-sheet">
+          <h2 id="dose-log-sheet">GLP-1投与記録表</h2>
+          <p class="dial-guide-screen-only">
+            印刷すると、このページの本文は省かれ、表だけが横向きの用紙1枚に印刷されます。
+            <button type="button" class="dial-guide-print" data-print-page hidden>
+              空欄の記録表を印刷
+            </button>
+          </p>
+          <section class="dial-guide-table-scroll" aria-labelledby="dose-log-sheet" tabindex="0">
+            <table class="dial-guide-table dial-guide-table--blank">
+              <thead>
+                <tr>
+                  <th scope="col">日付</th>
+                  <th scope="col">時刻</th>
+                  <th scope="col">薬剤名と規格</th>
+                  <th scope="col">処方された用量</th>
+                  <th scope="col">注射部位</th>
+                  <th scope="col">メモ</th>
+                </tr>
+              </thead>
+              <tbody>
+                {%- for row in (1..12) %}
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                {%- endfor %}
+              </tbody>
+            </table>
+          </section>
+          <p class="dial-guide-sheet-footer">
+            zentsu.app/ja/dial/printable-dose-log/
+            の空欄の投与記録表です。行ったことの記録であり、処方医の指示に代わるものではありません。
+          </p>
+        </section>
+
+        <h2>Dialでも同じ記録を残せます</h2>
+        <p>
+          Dialの記録フォームにも同じ項目があります。薬、用量、日付と時刻、注射部位、メモです。注射の記録では、保存する前に部位を選びます。一覧の下には、前回の注射の部位と日付が表示されます。投与しなかった回はスキップとして記録できるので、履歴の空白に理由が残ります。
+        </p>
+        <p>
+          無料版では、iPhoneでの記録を件数の上限なしで使えます。Dial Proは、Apple
+          Watchからの記録、グラフ、同じ記録のPDFとCSVの書き出しを追加します。書き出した記録は、必要なときに印刷したり共有したりできます。Dialは用量を計算せず、何を使うべきかも指示しません。
+        </p>
+
+        <h2>このページの書き方</h2>
+        <p>
+          Dialは私たちZentsuが作っています。このページは、PMDA（医薬品医療機器総合機構）が公開している各製品の医療用医薬品の添付文書を読んで書きました。本文の項目番号は、その添付文書を指します。Zentsuはソフトウェア会社であり、このページは臨床医の監修を受けていません。上に表示している「添付文書と照合」の日付が、下の資料と最後に照らし合わせた日です。
+        </p>
+
+        <h2>出典</h2>
+        {% include dial-guide/sources.html %}
+
+        <p class="dial-guide-more">
+          <a href="{% include dial-guide/store-url.html %}" rel="noopener noreferrer"
+            >App StoreでDialをダウンロード</a
+          >できます。<a href="/ja/dial/">Dialの概要</a>もご覧ください。
+        </p>
+        <p class="dial-guide-sheet-footer">
+          オゼンピック、ウゴービ、マンジャロ、ゼップバウンドは各社の商標です。ZentsuはNovo
+          NordiskおよびEli Lillyと提携していません。
+        </p>
+      </article>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

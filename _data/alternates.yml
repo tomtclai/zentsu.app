@@ -108,3 +108,15 @@ dial-privacy:
   "no": /no/dial/privacy/
   hr: /hr/dial/privacy/
   sk: /sk/dial/privacy/
+
+dial-dose-log:
+  en: /dial/printable-dose-log/
+  ja: /ja/dial/printable-dose-log/
+  ko: /ko/dial/printable-dose-log/
+  zh-hant: /zh-hant/dial/printable-dose-log/
+
+dial-site-rotation:
+  en: /dial/injection-site-rotation/
+  ja: /ja/dial/injection-site-rotation/
+  ko: /ko/dial/injection-site-rotation/
+  zh-hant: /zh-hant/dial/injection-site-rotation/

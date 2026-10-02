@@ -373,6 +373,30 @@ for (const route of [
   );
 }
 
+const dialGuideRoutes = Object.fromEntries(
+  ['dial-dose-log', 'dial-site-rotation']
+    .flatMap((group) => Object.entries(loadYaml('_data/alternates.yml')[group] ?? {}))
+    .map(([lang, route]) => [route, lang]),
+);
+dialGuideRoutes['/dial/titration-record/'] = 'en';
+for (const [route, lang] of Object.entries(dialGuideRoutes)) {
+  const html = read(outputPathFor(`${siteOrigin}${route}`));
+  const country = loadYaml('_data/dial_storefronts.yml')[lang]?.country;
+  const storeUrl = `https://apps.apple.com/${country}/app/id6789408903?pt=${dialCampaign.provider_token}&ct=${dialCampaign.campaigns.blog}&mt=${dialCampaign.media_type}`;
+  check(html.includes(`href="${storeUrl}"`), `${route} App Store link must carry ct=${dialCampaign.campaigns.blog} to the ${country} storefront`);
+  check(
+    html.includes(`affiliate-data=ct=${dialCampaign.campaigns.banner}&amp;pt=${dialCampaign.provider_token}`),
+    `${route} is missing the Smart App Banner`,
+  );
+  check(html.includes('"@type": "Article"'), `${route} is missing its Article JSON-LD`);
+  check((html.match(/<time datetime="\d{4}-\d{2}-\d{2}">/g) ?? []).length === 2, `${route} must show published and reviewed dates`);
+  check(html.includes('dailymed.nlm.nih.gov') || lang !== 'en', `${route} must cite the FDA label on DailyMed`);
+  const description = html.match(/<meta name="description" content="([^"]*)"/)?.[1] ?? '';
+  check(description.length > 0 && description.length < 155, `${route} meta description must be 1 to 154 characters, found ${description.length}`);
+  const body = html.slice(html.indexOf('<main'), html.indexOf('</main>'));
+  check(!/[—―]|\s[–-]\s/.test(body), `${route} contains an em-dash or a spaced dash`);
+}
+
 const samplePrices = {
   en: { currency: 'USD', lifetime_display: '$129.99', lang: 'en' },
   uk: { currency: 'USD', lifetime_display: '$149.99', lang: 'uk' },
