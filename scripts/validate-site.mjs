@@ -378,7 +378,10 @@ const dialGuideRoutes = Object.fromEntries(
     .flatMap((group) => Object.entries(loadYaml('_data/alternates.yml')[group] ?? {}))
     .map(([lang, route]) => [route, lang]),
 );
-dialGuideRoutes['/dial/titration-record/'] = 'en';
+check(
+  !existsSync(outputPathFor(`${siteOrigin}/dial/titration-record/`)),
+  '/dial/titration-record/ is unpublished (DEC-2026-07-10-dial-cut-titration) and must only redirect',
+);
 for (const [route, lang] of Object.entries(dialGuideRoutes)) {
   const html = read(outputPathFor(`${siteOrigin}${route}`));
   const country = loadYaml('_data/dial_storefronts.yml')[lang]?.country;
