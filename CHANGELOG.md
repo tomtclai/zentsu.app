@@ -8,7 +8,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
-- Three Dial record-keeping guides: a printable GLP-1 dose log at `/dial/printable-dose-log/`, an injection-site rotation chart with a numbered body map at `/dial/injection-site-rotation/`, and a titration record at `/dial/titration-record/` that copies the dose-escalation steps from the current U.S. labels for Ozempic, Wegovy, Mounjaro, and Zepbound with the section cited on every line. Each page has a Zentsu byline, published and reviewed dates, a method note, DailyMed sources with label revision dates, `Article` JSON-LD, the Smart App Banner, and a `site-dial-blog` App Store link. The dose log and rotation chart print as one landscape sheet each and have Japanese, Korean, and Traditional Chinese versions that cite PMDA, MFDS, and TFDA labels, with hreflang between the four languages. The landing-page guide card, `/dial/medication-log/`, and the Dial footer link to them, and `validate-site.mjs` checks their store link, banner, dates, JSON-LD, description length, and dashes.
+- Two Dial record-keeping guides: a printable GLP-1 dose log at `/dial/printable-dose-log/` and an injection-site rotation chart with a numbered body map at `/dial/injection-site-rotation/`, written from the current U.S. labels for Ozempic, Wegovy, Mounjaro, and Zepbound with the section cited on every label statement. Each page has a Zentsu byline, published and reviewed dates, a method note, DailyMed sources with label revision dates, `Article` JSON-LD, the Smart App Banner, and a `site-dial-blog` App Store link. The dose log and rotation chart print as one landscape sheet each and have Japanese, Korean, and Traditional Chinese versions that cite PMDA, MFDS, and TFDA labels, with hreflang between the four languages. The landing-page guide card, `/dial/medication-log/`, and the Dial footer link to them, and `validate-site.mjs` checks their store link, banner, dates, JSON-LD, description length, and dashes.
 - The Dial plans card and the "What does Dial Pro cost?" answer state that Annual starts free for 1 month, then the yearly price, in all 34 marketing locales. The wording comes from the app's reviewed paywall string, and the price follows the currency picker.
 - The Dial `SoftwareApplication` JSON-LD lists the Dial Pro plans as an `AggregateOffer` (monthly to Lifetime, storefront currency) beside the free download offer.
 - `/dial/medication-log/` links to Dial on the App Store and shows the Smart App Banner.
@@ -19,6 +19,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - A quick-answer paragraph under the H1 on every Dial landing page, in all 34 marketing locales. It states what Dial logs, that locale's brand names, the free tier, and what Dial Pro adds, in one paragraph written to be liftable into search and AI answers.
 - A "What Dial does not do" section on the Dial landing page in all 34 marketing locales. It states that Dial does not calculate doses or recommend a change, that the estimated level is a population-model estimate rather than a measurement, and that the vial unit converter is arithmetic on entered values.
 - Hero reading-order checks in the functional suite, on English, German, Arabic, and Japanese at 375 points wide and on English at desktop width. They assert the top offset of every hero element, so a hero child that loses its `order` rule fails the build.
+
+### Removed
+
+- `/dial/titration-record/`, which reproduced the label dose-escalation steps, is unpublished under DEC-2026-07-10-dial-cut-titration and 301-redirects to `/dial/printable-dose-log/`. The page source is kept on the `feat/dial-titration-record` branch. `validate-site.mjs` fails the build if the page is produced again.
 
 ### Changed
 
@@ -35,6 +39,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- The Traditional Chinese Dial page no longer lists 滿健樂 as Zepbound (滿健樂 is the Hong Kong name for Mounjaro, and Zepbound is not approved in Taiwan). The Korean page drops 제프바운드, which is not approved in Korea, and spells semaglutide 세마글루티드 as the MFDS label does.
+- The Wegovy links in the missed-dose and semaglutide half-life posts point at Novo Nordisk's DailyMed listing instead of a repackager's.
 - Every response carries `Cache-Control: public, max-age=0, must-revalidate, no-transform` from a new `_headers` file. `no-transform` stops Cloudflare from injecting its Web Analytics beacon at the edge, so the site matches its privacy policy, which says the website uses no analytics.
 - The Dial nav "Get Dial" link and the plans-section App Store button dropped the storefront country segment (`/app/id6789408903` instead of `/us/app/id6789408903`, `/tw/app/id6789408903`, and so on), on every Dial locale page. `nav.html` reassigned the shared `app_store_url` Liquid variable without the storefront country, and Liquid `assign` inside an `{% include %}` leaks into the including template's scope, so the plans section's App Store button (captured after the nav include) inherited the same country-less URL. Both links now build the URL from `storefront.country`, matching every other Dial App Store link on the page.
 - The Dial hero quick answer rendered above the app icon and the headline on screens 760 points and narrower, in every locale. It had no `order` rule inside the hero's flex column, so it took the initial order of 0 and jumped ahead of the whole hero. On a phone it filled the first viewport with unattributed body text. Every hero child now carries an explicit order at both breakpoints, and on phones the quick answer follows the download action and the screenshot.
