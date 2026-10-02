@@ -152,6 +152,7 @@ plans:
   lifetime_terms: "raz"
   annual_name: "Rocznie"
   annual_terms: "rocznie"
+  annual_trial: "1 miesiąc za darmo, potem {price} rocznie"
   monthly_name: "Miesięcznie"
   monthly_terms: "miesięcznie"
 

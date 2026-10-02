@@ -197,6 +197,14 @@
   line-height: 1.4;
 }
 
+.dial-plan-price-trial {
+  margin-top: 0.35rem;
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
 @supports selector(:has(*)) {
   .dial-plan-price-block {
     display: none;

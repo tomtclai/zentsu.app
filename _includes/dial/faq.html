@@ -1,7 +1,9 @@
 {%- assign resource_lang = page.resource_lang | default: page.lang -%}
 {%- assign faq = site.data.dial_faq[resource_lang] | default: site.data.dial_faq.en -%}
 {%- assign faq_items = faq.items | default: site.data.dial_faq.en.items -%}
-{%- capture pricing_answer -%}{{ prices.lifetime_display }} {{ copy.plans.lifetime_terms | default: site.data.dial.en.plans.lifetime_terms }} ({{ copy.plans.lifetime_name | default: site.data.dial.en.plans.lifetime_name }}), {{ prices.annual_display }} {{ copy.plans.annual_terms | default: site.data.dial.en.plans.annual_terms }} ({{ copy.plans.annual_name | default: site.data.dial.en.plans.annual_name }}), {{ prices.monthly_display }} {{ copy.plans.monthly_terms | default: site.data.dial.en.plans.monthly_terms }} ({{ copy.plans.monthly_name | default: site.data.dial.en.plans.monthly_name }}). {{ storefront.note }}{%- endcapture -%}
+{%- assign annual_trial_template = copy.plans.annual_trial | default: site.data.dial.en.plans.annual_trial -%}
+{%- assign annual_trial_text = annual_trial_template | replace: '{price}', prices.annual_display -%}
+{%- capture pricing_answer -%}{{ annual_trial_text }} ({{ copy.plans.annual_name | default: site.data.dial.en.plans.annual_name }}). {{ prices.lifetime_display }} {{ copy.plans.lifetime_terms | default: site.data.dial.en.plans.lifetime_terms }} ({{ copy.plans.lifetime_name | default: site.data.dial.en.plans.lifetime_name }}), {{ prices.monthly_display }} {{ copy.plans.monthly_terms | default: site.data.dial.en.plans.monthly_terms }} ({{ copy.plans.monthly_name | default: site.data.dial.en.plans.monthly_name }}). {{ storefront.note }}{%- endcapture -%}
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",

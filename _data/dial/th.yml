@@ -152,6 +152,7 @@ plans:
   lifetime_terms: "ครั้งเดียว"
   annual_name: "รายปี"
   annual_terms: "ต่อปี"
+  annual_trial: "ฟรี 1 เดือน แล้ว {price} ต่อปี"
   monthly_name: "รายเดือน"
   monthly_terms: "ต่อเดือน"
 

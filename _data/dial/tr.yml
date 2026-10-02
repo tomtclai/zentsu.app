@@ -152,6 +152,7 @@ plans:
   lifetime_terms: "bir kez"
   annual_name: "Yıllık"
   annual_terms: "yılda"
+  annual_trial: "1 ay ücretsiz, ardından yılda {price}"
   monthly_name: "Aylık"
   monthly_terms: "ayda"
 

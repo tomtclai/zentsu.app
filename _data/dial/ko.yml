@@ -152,6 +152,7 @@ plans:
   lifetime_terms: "한 번"
   annual_name: "연간"
   annual_terms: "연"
+  annual_trial: "1개월 무료, 이후 연 {price}"
   monthly_name: "월간"
   monthly_terms: "월"
 

@@ -152,6 +152,7 @@ plans:
   lifetime_terms: "raz"
   annual_name: "Ročný"
   annual_terms: "za rok"
+  annual_trial: "1 mesiac zadarmo, potom {price} ročne"
   monthly_name: "Mesačný"
   monthly_terms: "za mesiac"
 

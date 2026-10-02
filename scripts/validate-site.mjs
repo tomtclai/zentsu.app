@@ -211,9 +211,8 @@ check(
   dialEnglish.includes('"@type": "Offer"') &&
     dialEnglish.includes('"price": 0') &&
     !dialEnglish.includes('"name": "Lifetime"'),
-  'The English Dial page schema must describe the app as a single free download, not list Pro plans as app offers',
+  'The English Dial page schema must describe the app as a free download, with Pro plans named as Dial Pro offers',
 );
-check(!dialEnglish.includes('"@type": "AggregateOffer"'), 'Dial schema must not use AggregateOffer');
 check(
   stickyBarVisible(true, false) === false,
   'Sticky bar must stay hidden while the hero CTA is visible',
@@ -260,6 +259,9 @@ for (const [label, html, boundaries] of [
 const dialPrices = loadYaml('_data/dial_prices.yml');
 const dialStorefronts = loadYaml('_data/dial_storefronts.yml');
 const dialCampaign = loadYaml('_data/dial_campaign.yml');
+const dialCopy = Object.fromEntries(
+  readdirSync('_data/dial').map((file) => [file.replace(/\.yml$/, ''), loadYaml(`_data/dial/${file}`)]),
+);
 const dialCurrencyPrices = loadYaml('_data/dial_currency_prices.yml') ?? {};
 const dialPickerCurrencies = [
   ...new Set([...Object.values(dialPrices).map((row) => row.currency), ...Object.keys(dialCurrencyPrices)]),
@@ -286,9 +288,22 @@ for (const [lang, route] of Object.entries(dialRoutes)) {
     html.includes(`"priceCurrency": "${prices.currency}"`),
     `${route} schema is missing priceCurrency ${prices.currency}`,
   );
+  check(html.includes('"price": 0'), `${route} schema is missing the free download offer`);
   check(
-    html.includes('"price": 0') && !html.includes(`"price": "${prices.lifetime}"`),
-    `${route} schema must carry only the free download offer`,
+    html.includes('"@type": "AggregateOffer"') &&
+      html.includes(`"lowPrice": "${prices.monthly}"`) &&
+      html.includes(`"highPrice": "${prices.lifetime}"`),
+    `${route} schema is missing the Dial Pro AggregateOffer from storefront prices`,
+  );
+  const annualTrial = (dialCopy[key]?.plans?.annual_trial ?? '').replace('{price}', prices.annual_display);
+  check(
+    annualTrial.length > 0 && html.includes(annualTrial),
+    `${route} is missing the Annual free-trial line`,
+  );
+  check(
+    /<input[^>]*id="dial-plan-annual"[^>]*\schecked/.test(html) &&
+      !/<input[^>]*id="dial-plan-(lifetime|monthly)"[^>]*\schecked/.test(html),
+    `${route} plan picker must default to Annual`,
   );
   check(
     html.includes(

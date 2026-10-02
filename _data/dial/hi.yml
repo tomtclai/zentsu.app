@@ -152,6 +152,7 @@ plans:
   lifetime_terms: "एक बार"
   annual_name: "वार्षिक"
   annual_terms: "प्रति वर्ष"
+  annual_trial: "1 महीना मुफ़्त, फिर {price} प्रति वर्ष"
   monthly_name: "मासिक"
   monthly_terms: "प्रति माह"
 

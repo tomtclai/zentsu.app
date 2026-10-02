@@ -152,6 +152,7 @@ plans:
   lifetime_terms: "один раз"
   annual_name: "Річний"
   annual_terms: "на рік"
+  annual_trial: "1 місяць безплатно, потім {price} на рік"
   monthly_name: "Місячний"
   monthly_terms: "на місяць"
 

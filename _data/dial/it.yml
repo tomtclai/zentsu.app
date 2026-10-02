@@ -193,6 +193,7 @@ plans:
   lifetime_terms: una tantum
   annual_name: Annuale
   annual_terms: all'anno
+  annual_trial: "Gratis per 1 mese, poi {price} all'anno"
   monthly_name: Mensile
   monthly_terms: al mese
 

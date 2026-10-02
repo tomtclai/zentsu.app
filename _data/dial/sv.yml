@@ -152,6 +152,7 @@ plans:
   lifetime_terms: "en gång"
   annual_name: "Årsvis"
   annual_terms: "per år"
+  annual_trial: "Gratis i 1 månad, sedan {price} per år"
   monthly_name: "Månadsvis"
   monthly_terms: "per månad"
 

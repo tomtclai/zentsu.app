@@ -152,6 +152,7 @@ plans:
   lifetime_terms: "o dată"
   annual_name: "Anual"
   annual_terms: "pe an"
+  annual_trial: "Gratuit 1 lună, apoi {price} pe an"
   monthly_name: "Lunar"
   monthly_terms: "pe lună"
 

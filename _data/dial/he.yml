@@ -187,6 +187,7 @@ plans:
   lifetime_terms: חד-פעמי
   annual_name: שנתי
   annual_terms: לשנה
+  annual_trial: "חודש אחד בחינם, ואחר כך {price} לשנה"
   monthly_name: חודשי
   monthly_terms: לחודש
 

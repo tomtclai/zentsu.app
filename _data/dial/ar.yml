@@ -152,6 +152,7 @@ plans:
   lifetime_terms: "مرة واحدة"
   annual_name: "سنوي"
   annual_terms: "في السنة"
+  annual_trial: "مجانًا لمدة شهر واحد، ثم {price} سنويًا"
   monthly_name: "شهري"
   monthly_terms: "في الشهر"
 

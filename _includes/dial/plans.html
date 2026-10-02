@@ -1,4 +1,7 @@
 {%- assign strings = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+{%- capture annual_price_span -%}<span data-dial-price="annual">{{ prices.annual_display }}</span>{%- endcapture -%}
+{%- assign annual_trial_template = copy.plans.annual_trial | default: site.data.dial.en.plans.annual_trial -%}
+{%- assign annual_trial_html = annual_trial_template | replace: '{price}', annual_price_span -%}
       <section class="dial-plans" aria-labelledby="plans-title">
         <div class="dial-wrap">
           <div class="dial-section-heading">
@@ -33,19 +36,19 @@
                     {{ strings.plans_ui.plan_legend | default: site.data.i18n.en.plans_ui.plan_legend }}
                   </legend>
                   <div class="dial-plan-segments">
-                    <input
-                      type="radio"
-                      name="dial-plan"
-                      id="dial-plan-lifetime"
-                      value="lifetime"
-                      checked
-                    />
+                    <input type="radio" name="dial-plan" id="dial-plan-lifetime" value="lifetime" />
                     <label for="dial-plan-lifetime">
                       {{ copy.plans.lifetime_name | default: site.data.dial.en.plans.lifetime_name }},
                       <span data-dial-price="lifetime">{{ prices.lifetime_display }}</span>
                       {{ copy.plans.lifetime_terms | default: site.data.dial.en.plans.lifetime_terms }}
                     </label>
-                    <input type="radio" name="dial-plan" id="dial-plan-annual" value="annual" />
+                    <input
+                      type="radio"
+                      name="dial-plan"
+                      id="dial-plan-annual"
+                      value="annual"
+                      checked
+                    />
                     <label for="dial-plan-annual">
                       {{ copy.plans.annual_name | default: site.data.dial.en.plans.annual_name }},
                       <span data-dial-price="annual">{{ prices.annual_display }}</span>
@@ -76,6 +79,7 @@
                       <span class="dial-plan-price-terms">{{
                         copy.plans.annual_terms | default: site.data.dial.en.plans.annual_terms
                       }}</span>
+                      <span class="dial-plan-price-trial">{{ annual_trial_html }}</span>
                     </div>
                     <div class="dial-plan-price-block dial-plan-price-monthly">
                       <span class="dial-plan-price-amount" data-dial-price="monthly">{{

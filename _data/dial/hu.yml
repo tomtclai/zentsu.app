@@ -152,6 +152,7 @@ plans:
   lifetime_terms: "egyszer"
   annual_name: "Éves"
   annual_terms: "évente"
+  annual_trial: "1 hónap ingyen, utána {price} évente"
   monthly_name: "Havi"
   monthly_terms: "havonta"
 

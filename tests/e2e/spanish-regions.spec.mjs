@@ -29,8 +29,11 @@ for (const region of regions) {
     expect(blocks.every(block => block.inLanguage === region.lang)).toBe(true);
     const app = blocks.find(block => block['@type'] === 'SoftwareApplication');
     expect(app.offers.every(offer => offer.priceCurrency === region.currency)).toBe(true);
-    expect(app.offers).toHaveLength(1);
+    expect(app.offers).toHaveLength(2);
     expect(app.offers[0].price).toBe(0);
+    expect(app.offers[1]['@type']).toBe('AggregateOffer');
+    expect(app.offers[1].lowPrice).toBe(prices[region.key].monthly);
+    expect(app.offers[1].highPrice).toBe(prices[region.key].lifetime);
     await expect(page.locator('#hero-primary-cta img')).toHaveAttribute('src', '/assets/badges/download-on-the-app-store-es.svg');
     await expect(page.locator('.dial-privacy a')).toHaveAttribute('href', '/es/dial/privacy/');
     await expect(page.locator('footer a[href="/es/dial/support/"]')).toHaveCount(1);

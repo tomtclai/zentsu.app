@@ -1,3 +1,4 @@
+{%- assign annual_trial_offer_text = copy.plans.annual_trial | replace: '{price}', prices.annual_display -%}
     <meta name="apple-itunes-app" content="app-id=6789408903, affiliate-data=ct={{ site.data.dial_campaign.campaigns.banner }}&amp;pt={{ site.data.dial_campaign.provider_token }}" />
     <meta name="theme-color" content="#fffaf6" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#14110f" media="(prefers-color-scheme: dark)" />
@@ -41,6 +42,36 @@
             "price": 0,
             "priceCurrency": {{ prices.currency | jsonify | replace: "<", "\u003c" }},
             "url": {{ app_store_url | jsonify | replace: "<", "\u003c" }}
+          },
+          {
+            "@type": "AggregateOffer",
+            "name": {{ copy.plans.pro_name | jsonify | replace: "<", "\u003c" }},
+            "lowPrice": {{ prices.monthly | jsonify | replace: "<", "\u003c" }},
+            "highPrice": {{ prices.lifetime | jsonify | replace: "<", "\u003c" }},
+            "offerCount": 3,
+            "priceCurrency": {{ prices.currency | jsonify | replace: "<", "\u003c" }},
+            "url": {{ app_store_url | jsonify | replace: "<", "\u003c" }},
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": {{ copy.plans.pro_name | append: " " | append: copy.plans.annual_name | jsonify | replace: "<", "\u003c" }},
+                "description": {{ annual_trial_offer_text | jsonify | replace: "<", "\u003c" }},
+                "price": {{ prices.annual | jsonify | replace: "<", "\u003c" }},
+                "priceCurrency": {{ prices.currency | jsonify | replace: "<", "\u003c" }}
+              },
+              {
+                "@type": "Offer",
+                "name": {{ copy.plans.pro_name | append: " " | append: copy.plans.lifetime_name | jsonify | replace: "<", "\u003c" }},
+                "price": {{ prices.lifetime | jsonify | replace: "<", "\u003c" }},
+                "priceCurrency": {{ prices.currency | jsonify | replace: "<", "\u003c" }}
+              },
+              {
+                "@type": "Offer",
+                "name": {{ copy.plans.pro_name | append: " " | append: copy.plans.monthly_name | jsonify | replace: "<", "\u003c" }},
+                "price": {{ prices.monthly | jsonify | replace: "<", "\u003c" }},
+                "priceCurrency": {{ prices.currency | jsonify | replace: "<", "\u003c" }}
+              }
+            ]
           }
         ]{%- if site.data.dial_rating and site.data.dial_rating.enabled -%},
         "aggregateRating": {

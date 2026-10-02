@@ -152,6 +152,7 @@ plans:
   lifetime_terms: "un cop"
   annual_name: "Anual"
   annual_terms: "per any"
+  annual_trial: "1 mes de franc, després {price} a l'any"
   monthly_name: "Mensual"
   monthly_terms: "per mes"
 

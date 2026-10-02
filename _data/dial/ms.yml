@@ -152,6 +152,7 @@ plans:
   lifetime_terms: "sekali"
   annual_name: "Tahunan"
   annual_terms: "setahun"
+  annual_trial: "Percuma 1 bulan, kemudian {price} setahun"
   monthly_name: "Bulanan"
   monthly_terms: "sebulan"
 

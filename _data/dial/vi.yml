@@ -152,6 +152,7 @@ plans:
   lifetime_terms: "một lần"
   annual_name: "Hàng năm"
   annual_terms: "mỗi năm"
+  annual_trial: "Miễn phí 1 tháng, sau đó {price} mỗi năm"
   monthly_name: "Hàng tháng"
   monthly_terms: "mỗi tháng"
 

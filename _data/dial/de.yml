@@ -187,6 +187,7 @@ plans:
   lifetime_terms: einmal
   annual_name: Jährlich
   annual_terms: pro Jahr
+  annual_trial: "1 Monat kostenlos, danach {price} pro Jahr"
   monthly_name: Monatlich
   monthly_terms: pro Monat
 

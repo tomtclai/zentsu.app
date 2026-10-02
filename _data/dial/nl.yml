@@ -187,6 +187,7 @@ plans:
   lifetime_terms: eenmalig
   annual_name: Jaarlijks
   annual_terms: per jaar
+  annual_trial: "1 maand gratis, daarna {price} per jaar"
   monthly_name: Maandelijks
   monthly_terms: per maand
 

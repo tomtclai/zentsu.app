@@ -152,6 +152,7 @@ plans:
   lifetime_terms: "μία φορά"
   annual_name: "Ετήσιο"
   annual_terms: "ανά έτος"
+  annual_trial: "Δωρεάν για 1 μήνα, έπειτα {price} τον χρόνο"
   monthly_name: "Μηνιαίο"
   monthly_terms: "ανά μήνα"
 

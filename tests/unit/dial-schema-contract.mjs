@@ -34,15 +34,25 @@ const jsonLd = (html) => {
   return JSON.parse(match[1]);
 };
 
-test('application schema safely encodes copy and keeps a single free offer in every locale', () => {
+test('application schema safely encodes copy, keeps the download free, and lists Dial Pro plans in every locale', () => {
   assert.equal(Object.keys(fixture.locales).length, 33);
   for (const [lang, { rendered, prices }] of Object.entries(fixture.locales)) {
     const app = jsonLd(rendered.head);
     assert.equal(app.description, fixture.description, lang);
     assert.equal(app.downloadUrl, 'https://apps.apple.com/app/id6789408903?ct=quote"test');
-    assert.equal(app.offers.length, 1, `${lang}: the app itself is the only offer`);
+    assert.equal(app.offers.length, 2, `${lang}: free download plus the Dial Pro plans`);
     assert.equal(app.offers[0].price, 0, lang);
     assert.equal(app.offers[0].priceCurrency, prices.currency, lang);
+    const pro = app.offers[1];
+    assert.equal(pro['@type'], 'AggregateOffer', lang);
+    assert.equal(pro.lowPrice, prices.monthly, lang);
+    assert.equal(pro.highPrice, prices.lifetime, lang);
+    assert.equal(pro.offerCount, pro.offers.length, lang);
+    assert.deepEqual(
+      pro.offers.map((offer) => offer.price).sort(),
+      [prices.annual, prices.lifetime, prices.monthly].sort(),
+      lang,
+    );
     assert.equal(app.sameAs[0], 'https://apps.apple.com/app/id6789408903?ct=quote"test');
     assert.equal(app.aggregateRating, undefined, 'no invented rating when rating data is absent');
   }

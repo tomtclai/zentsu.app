@@ -152,6 +152,7 @@ plans:
   lifetime_terms: "kerran"
   annual_name: "Vuosittain"
   annual_terms: "vuodessa"
+  annual_trial: "1 kuukausi ilmaiseksi, sitten {price} vuodessa"
   monthly_name: "Kuukausittain"
   monthly_terms: "kuukaudessa"
 

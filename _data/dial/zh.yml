@@ -152,6 +152,7 @@ plans:
   lifetime_terms: "一次"
   annual_name: "按年"
   annual_terms: "每年"
+  annual_trial: "免费 1 个月，之后每年 {price}"
   monthly_name: "按月"
   monthly_terms: "每月"
 

@@ -183,6 +183,7 @@ plans:
   lifetime_terms: once
   annual_name: Annual
   annual_terms: per year
+  annual_trial: "Free for 1 month, then {price} per year"
   monthly_name: Monthly
   monthly_terms: per month
 

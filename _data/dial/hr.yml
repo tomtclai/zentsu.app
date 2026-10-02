@@ -152,6 +152,7 @@ plans:
   lifetime_terms: "jednom"
   annual_name: "Godišnje"
   annual_terms: "godišnje"
+  annual_trial: "Besplatno 1 mjesec, zatim {price} godišnje"
   monthly_name: "Mjesečno"
   monthly_terms: "mjesečno"
 
