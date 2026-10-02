@@ -51,7 +51,7 @@ When the prescriber returns your call, you can read the last taken dose verbatim
 
 ## What this article will not answer
 
-We will not publish a flowchart for "take it now" versus "wait until next week." Those paths vary by product, indication, and how many days have passed. The [Wegovy](https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=f5e548d0-cc79-4c34-a3f5-e20a5b8b6564){: rel="noopener"} and [Zepbound](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b){: rel="noopener"} labels each carry their own missed-dose language. Your prescriber applies that text to your situation.
+We will not publish a flowchart for "take it now" versus "wait until next week." Those paths vary by product, indication, and how many days have passed. The [Wegovy](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ee06186f-2aa3-4990-a760-757579d8f77b){: rel="noopener"} and [Zepbound](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b){: rel="noopener"} labels each carry their own missed-dose language. Your prescriber applies that text to your situation.
 
 Dial also will not calculate a replacement dose or change your amount field for you. The dose form records what you enter. It does not validate against a titration schedule.
 
