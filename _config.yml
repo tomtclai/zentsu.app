@@ -73,6 +73,7 @@ plugins:
 
 include:
   - _redirects
+  - _headers
 
 # Public pages use extensionless URLs. Folder defaults keep tool and app-support
 # routes consistent without repeating a permalink in every source file.
