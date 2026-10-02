@@ -389,7 +389,7 @@ for (const [route, lang] of Object.entries(dialGuideRoutes)) {
     `${route} is missing the Smart App Banner`,
   );
   check(html.includes('"@type": "Article"'), `${route} is missing its Article JSON-LD`);
-  check((html.match(/<time datetime="\d{4}-\d{2}-\d{2}">/g) ?? []).length === 2, `${route} must show published and reviewed dates`);
+  check((html.match(/<time datetime="\d{4}-\d{2}-\d{2}"\s*>/g) ?? []).length === 2, `${route} must show published and reviewed dates`);
   check(html.includes('dailymed.nlm.nih.gov') || lang !== 'en', `${route} must cite the FDA label on DailyMed`);
   const description = html.match(/<meta name="description" content="([^"]*)"/)?.[1] ?? '';
   check(description.length > 0 && description.length < 155, `${route} meta description must be 1 to 154 characters, found ${description.length}`);
