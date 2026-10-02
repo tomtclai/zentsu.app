@@ -29,15 +29,12 @@ test('english App Store links and JSON-LD stay untagged', async ({ page }) => {
     if (providerToken) {
       const url = new URL(href);
       expect(url.searchParams.get('pt')).toBe(providerToken);
-      const ct = url.searchParams.get('ct');
-      expect(ct).toMatch(/^site-dial-/);
-      const suffix = ct.replace(/^site-dial-/, '').replace(/^plans-card$/, 'plans');
-      ctValues.add(suffix);
+      ctValues.add(url.searchParams.get('ct'));
     }
   }
 
   if (providerToken) {
-    expect(ctValues).toEqual(new Set(['hero', 'sticky', 'watch', 'plans', 'faq', 'closer']));
+    expect(ctValues).toEqual(new Set([campaign.campaigns.landing]));
   }
 
   const app = await dial.jsonLd('SoftwareApplication');

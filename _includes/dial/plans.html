@@ -1,5 +1,4 @@
 {%- assign strings = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
-{%- capture app_store_url_plans_card -%}{% include dial-store-url.html placement=campaign.placements.plans_card %}{%- endcapture -%}
       <section class="dial-plans" aria-labelledby="plans-title">
         <div class="dial-wrap">
           <div class="dial-section-heading">
@@ -93,7 +92,7 @@
                 <div class="dial-plan-cta">
                   <a
                     class="app-store-badge-link"
-                    href="{{ app_store_url_plans_card | strip }}"
+                    href="{{ app_store_url_landing | strip }}"
                     rel="noopener noreferrer"
                     id="plans-cta"
                   >

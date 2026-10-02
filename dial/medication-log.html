@@ -15,6 +15,10 @@ og_type: article
 <html lang="{{ page.lang }}" dir="{{ site.data.i18n[page.lang].dir | default: 'ltr' }}">
   <head>
     {% include head-common.html %}
+    <meta
+      name="apple-itunes-app"
+      content="app-id=6789408903, affiliate-data=ct={{ site.data.dial_campaign.campaigns.banner }}&amp;pt={{ site.data.dial_campaign.provider_token }}"
+    />
   </head>
   <body>
     {% include nav.html %}
@@ -74,8 +78,13 @@ og_type: article
           storage. See the <a href="/dial/privacy/">Dial privacy policy</a> for the details.
         </p>
 
+        {%- capture dial_guide_store_url -%}{% include dial-store-url.html
+        base='https://apps.apple.com/us/app/id6789408903'
+        campaign=site.data.dial_campaign.campaigns.blog %}{%- endcapture %}
         <p>
-          <a href="/dial/">Return to the Dial overview</a> or visit
+          <a href="{{ dial_guide_store_url }}" rel="noopener noreferrer"
+            >Download Dial on the App Store</a
+          >, <a href="/dial/">return to the Dial overview</a>, or visit
           <a href="/dial/support/">Dial support</a>.
         </p>
       </article>

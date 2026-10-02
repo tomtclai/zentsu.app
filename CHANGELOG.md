@@ -8,6 +8,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- `/dial/medication-log/` links to Dial on the App Store and shows the Smart App Banner.
 - JP 2K support, privacy, and word data license pages at `/japanese2k/support`, `/japanese2k/privacy`, and `/japanese2k/data`. They are reachable by URL and the sitemap only; the homepage, nav, and app listings do not link them until the app is live. The data page offers the word fields of `/japanese2k/icons.json` under CC BY-SA 4.0 with credit to Tanos and the EDRDG JMdict/EDICT project. The company privacy policy lists JP 2K and describes its icon-map download from zentsu.app.
 - A small-print line under the Dial Lifetime price that names the new Lifetime price and the September 26 change date, in all 34 marketing locales. It follows the currency picker, stays hidden for Brazil (BRL), whose Lifetime price does not change, and hides itself from 2026-09-26 07:00 UTC. Amounts and the date live in `_data/dial_lifetime_change.yml`.
 - `.github/workflows/dial-lifetime-switch.yml`, which runs daily at 07:07 and 09:07 UTC and on demand. From 2026-09-26 it rebases the `dial-lifetime-2026-09-26` branch (the new Lifetime prices, with the price note removed) onto main, pushes main, runs the deploy workflow on that commit, then deletes the branch and disables itself. Before that date, or once the branch is gone, it exits without changes. `deploy.yml` accepts `workflow_call` with the commit to test and deploy, because a push made with `GITHUB_TOKEN` does not start the push-triggered deploy.
@@ -18,6 +19,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- Dial App Store links carry one campaign token per surface: `site-dial` on every landing-page link in all locales (nav, hero, watch, plans, FAQ, closer, sticky bar, and the desktop QR code), `site-dial-blog` on the three Dial blog posts and `/dial/medication-log/`, and `site-dial-banner` on the Smart App Banner through `affiliate-data`. Nine per-placement tokens split traffic below App Analytics' reporting threshold. `_data/dial_campaign.yml` is the single source, `scripts/make-dial-qr.mjs` reads it, and `validate-site.mjs` fails a landing page with any other `ct`.
 - The Dial landing page `<title>` in 26 locales follows the "X | Dial" pattern of the other locales. Each keeps its existing drug name and platform words, and the spaced hyphen is gone, for example `Ozempic e GLP-1 (iPhone & Apple Watch) | Dial`.
 - The JP 2K favicon (`/assets/japanese2k-icon.png`) matches the app's new icon: "2K" in large yellow type under the あ, without the pill.
 - Dial locale meta descriptions now name local brand names, say the phone log is free, and note that no account is required. Every description is 155 characters or fewer.

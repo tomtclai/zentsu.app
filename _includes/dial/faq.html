@@ -40,7 +40,7 @@
     {%- endfor -%}
     <a
       class="dial-text-link"
-      href="{{ app_store_url_faq | strip | default: app_store_url }}"
+      href="{{ app_store_url_landing | strip | default: app_store_url }}"
       rel="noopener"
       >{{ copy.app_store_badge_alt | default: site.data.dial.en.app_store_badge_alt }}</a
     >

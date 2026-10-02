@@ -291,6 +291,19 @@ for (const [lang, route] of Object.entries(dialRoutes)) {
     `${route} schema must carry only the free download offer`,
   );
   check(
+    html.includes(
+      `<meta name="apple-itunes-app" content="app-id=6789408903, affiliate-data=ct=${dialCampaign.campaigns.banner}&amp;pt=${dialCampaign.provider_token}" />`,
+    ),
+    `${route} Smart App Banner is missing its ${dialCampaign.campaigns.banner} affiliate-data`,
+  );
+  const landingCampaignTokens = new Set(
+    [...html.matchAll(/href="https:\/\/apps\.apple\.com\/[^"]*?[?&]ct=([^&"]+)/g)].map((match) => match[1]),
+  );
+  check(
+    landingCampaignTokens.size === 1 && landingCampaignTokens.has(dialCampaign.campaigns.landing),
+    `${route} App Store links must all carry ct=${dialCampaign.campaigns.landing}, found ${[...landingCampaignTokens].join(', ')}`,
+  );
+  check(
     html.includes(`"sameAs": ["https://apps.apple.com/${storefront.country}/app/id6789408903"]`),
     `${route} schema sameAs must point at the ${storefront.country} App Store listing`,
   );
@@ -312,15 +325,36 @@ for (const [lang, route] of Object.entries(dialRoutes)) {
   const nav = html.slice(html.indexOf('<nav'), html.indexOf('</nav>'));
   check(nav.includes('class="nav-lang"'), `${route} language picker is not in the nav`);
   check(!nav.includes('class="dial-currency"'), `${route} currency picker leaked into the nav`);
-  const storeUrl = (placement) =>
-    `https://apps.apple.com/${storefront.country}/app/id6789408903?pt=${dialCampaign.provider_token}&ct=${placement}&mt=${dialCampaign.media_type}`;
+  const storeUrl =
+    `https://apps.apple.com/${storefront.country}/app/id6789408903?pt=${dialCampaign.provider_token}&ct=${dialCampaign.campaigns.landing}&mt=${dialCampaign.media_type}`;
   check(
-    nav.includes(`href="${storeUrl(dialCampaign.placements.nav)}"`),
+    nav.includes(`href="${storeUrl}"`),
     `${route} nav CTA must point at the ${storefront.country} App Store listing`,
   );
   check(
-    html.includes(`href="${storeUrl(dialCampaign.placements.plans_card)}"`),
+    /id="plans-cta"/.test(html) && html.includes(`href="${storeUrl}"`),
     `${route} plans-card CTA must point at the ${storefront.country} App Store listing`,
+  );
+}
+
+const dialBlogStoreUrl = `https://apps.apple.com/us/app/id6789408903?pt=${dialCampaign.provider_token}&amp;ct=${dialCampaign.campaigns.blog}&amp;mt=${dialCampaign.media_type}`;
+for (const route of [
+  '/blog/2026/how-long-semaglutide-stays-in-your-system/',
+  '/blog/2026/missed-glp-1-dose-what-to-record/',
+  '/blog/2026/bring-your-glp-1-log-to-your-doctor/',
+]) {
+  const html = read(outputPathFor(`${siteOrigin}${route}`));
+  check(html.includes(`href="${dialBlogStoreUrl}"`), `${route} App Store link must carry ct=${dialCampaign.campaigns.blog}`);
+}
+{
+  const html = read(outputPathFor(`${siteOrigin}/dial/medication-log/`));
+  check(
+    html.includes(`href="${dialBlogStoreUrl.replaceAll('&amp;', '&')}"`),
+    `/dial/medication-log/ App Store link must carry ct=${dialCampaign.campaigns.blog}`,
+  );
+  check(
+    html.includes(`affiliate-data=ct=${dialCampaign.campaigns.banner}&amp;pt=${dialCampaign.provider_token}`),
+    '/dial/medication-log/ is missing the Smart App Banner',
   );
 }
 

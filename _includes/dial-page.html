@@ -3,15 +3,7 @@
 {%- assign storefront = site.data.dial_storefronts[page.lang] | default: site.data.dial_storefronts.en -%}
 {%- assign prices = site.data.dial_prices[page.lang] | default: site.data.dial_prices.en -%}
 {%- assign app_store_url = 'https://apps.apple.com/' | append: storefront.country | append: '/app/id6789408903' -%}
-{%- assign campaign = site.data.dial_campaign -%}
-{%- assign provider_token = campaign.provider_token -%}
-{%- assign media_type = campaign.media_type | default: '8' -%}
-{%- capture app_store_url_hero -%}{% include dial-store-url.html placement=campaign.placements.hero %}{%- endcapture -%}
-{%- capture app_store_url_sticky -%}{% include dial-store-url.html placement=campaign.placements.sticky %}{%- endcapture -%}
-{%- capture app_store_url_watch -%}{% include dial-store-url.html placement=campaign.placements.watch %}{%- endcapture -%}
-{%- capture app_store_url_plans -%}{% include dial-store-url.html placement=campaign.placements.plans %}{%- endcapture -%}
-{%- capture app_store_url_faq -%}{% include dial-store-url.html placement=campaign.placements.faq %}{%- endcapture -%}
-{%- capture app_store_url_closer -%}{% include dial-store-url.html placement=campaign.placements.closer %}{%- endcapture -%}
+{%- capture app_store_url_landing -%}{% include dial-store-url.html campaign=site.data.dial_campaign.campaigns.landing %}{%- endcapture -%}
 {%- assign app_store_badge = '/assets/badges/download-on-the-app-store-' | append: resource_lang | append: '.svg' -%}
 {%- assign badge_dims = site.data.dial_badges[resource_lang] | default: site.data.dial_badges.en -%}
 {%- assign hero_sizes = '(max-width: 760px) 72vw, 300px' -%}

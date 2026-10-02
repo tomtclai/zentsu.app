@@ -1,2 +1,3 @@
-{%- if provider_token.size > 0 -%} {{ app_store_url }}?pt={{ provider_token }}&ct={{
-include.placement }}&mt={{ media_type }} {%- else -%} {{ app_store_url }} {%- endif -%}
+{%- assign dial_store_campaign = site.data.dial_campaign -%}
+{%- assign dial_store_base = include.base | default: app_store_url -%}
+{{- dial_store_base -}}?pt={{- dial_store_campaign.provider_token -}}&ct={{- include.campaign -}}&mt={{- dial_store_campaign.media_type -}}
