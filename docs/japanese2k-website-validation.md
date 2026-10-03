@@ -1,0 +1,24 @@
+# Japanese website validation
+
+Date: 2026-10-02. Public target: version 1.1.0, build 15. Source mirror: `9810a407ef325ffdff2287b13d216f8488d80529`. Site base: deployed `origin/main` at `40fed762403509cc6ab03620f7f7d0c12b5300f3` (the full base is recorded by Git history).
+
+The product page uses the existing `/japanese2k` canonical route, with a 301 redirect from `/japanese2k/`. Support, privacy and data routes remain unchanged. The homepage and app listing expose a pending-availability card without a download link or price. Screenshots and the shipping kokeshi icon have source/resize hashes in `japanese2k-build15-assets.json`.
+
+## Final gates
+
+- `JEKYLL_ENV=production LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 SITE_PORT=8799 npm test` exited 0. Jekyll, HTML, links, generated route/card checks, sitemap, Bench/Press visibility checks, 26 Node tests and Dial locale validation passed. Playwright: 109 passed, 13 existing browser-specific conditional skips, zero failures. All 16 Japanese page checks passed without skips, including route/canonical/assets, pending availability, slash normalization, light/dark axe and normal/200% text overflow checks.
+- `SITE_PORT=8800 npm run test:visual` exited 0 after synchronizing the existing Dial capture fixture with its observable sticky-bar state. All 40 comparisons passed: 36 existing Dial images and four new Japanese desktop/mobile light/dark references. No existing reference image, screenshot threshold or timeout changed.
+- `JEKYLL_ENV=production LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 npx @lhci/cli@0.15.1 autorun` exited 0. The existing three Dial URLs and new Japanese URL each received three runs through Wrangler. All blocking assertions passed. Japanese accessibility, SEO and best practices were 100; performance was 94 and CLS was 0. Its three LCP values were 3020.589, 3087.2493 and 3090.87645 milliseconds, exceeding the unchanged 3000ms warning threshold. The prior pre-wrapping run also passed with a 3012.8682ms warning; it remains preserved rather than replaced by this run.
+- The configured pre-push checks ran successfully. `git diff --check` passed. Legacy `japanese2k/icons.json`, all SVG content, shared CSS/navigation/footer and dependency locks remain unchanged from the site base.
+
+## Diagnosed failures and retained evidence
+
+1. A second product navigation landmark exposed the unnamed shared landmark. The product information links use a scoped container instead; shared navigation stays unchanged.
+2. Linkinator's static server redirects an existing `/japanese2k` directory before checking sibling `japanese2k.html`, then returns 404 because that legacy-data directory has no index. Wrangler served the canonical page with 200 and normalized its slash variant correctly. The exact product-only static-link exception follows the existing Bench precedent; generated HTML/sitemap/card checks and real-runtime direct/slash/legal-link checks retain coverage. Support/privacy/data, JSON and image paths stay in the scanner. Lighthouse's built-in static server showed the same mismatch, so collection now uses its documented custom-server option with the existing Wrangler runtime. The four routes, three runs and all assertion thresholds are preserved.
+3. Inline support links required a visible underline. A concurrent formatter initially overwrote that append; the content owner restored and serially formatted it, then explicitly froze the files. A lazy image decode in the mobile test required eager loading in the test fixture, as the visual fixture already used.
+4. The initial 375px/200% text check found long titles, email addresses and URLs overflowing. Product-scoped wrapping fixes this; the normal references compare unchanged. Initial keyboard checks confirmed the skip link focuses the main content on all four routes.
+5. Concurrent browser gates exposed the existing Dial capture fixture's fixed 150ms wait: mobile screenshots alternated by exactly 86px, matching the sticky-bar-dependent body padding. The capture fixture now observes the bar state at the top viewport before comparing, without forcing product state. The final comparison ran serially and passed against unchanged references.
+
+Original failing logs, actual/reference/diff PNGs and all Lighthouse reports are retained in the app workspace under `Japanese2kVocabs/build/website-validation/`, including the static-server failure and pre-wrapping Lighthouse reports. The final canonical log is `jp2k-site-canonical-6.log`, visual log `jp2k-site-visual-full-3.log`, and Lighthouse log `jp2k-site-lighthouse-3.log`. These are local validation receipts; live deployment and ASC submission have separate receipts.
+
+The serving contracts were checked against [Cloudflare Pages routing](https://developers.cloudflare.com/pages/configuration/serving-pages/) and the [Lighthouse CI custom-server configuration](https://github.com/GoogleChrome/lighthouse-ci/blob/main/docs/configuration.md#startservercommand).

@@ -1,0 +1,177 @@
+.jp2k-page,
+.jp2k-document {
+  overflow-wrap: anywhere;
+}
+.jp2k-document {
+  padding: 3rem 1.25rem;
+}
+.jp2k-document a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.jp2k-page {
+  width: min(1120px, 100%);
+  margin-inline: auto;
+  padding: 4rem 2rem 5rem;
+}
+.jp2k-page h1,
+.jp2k-page h2,
+.jp2k-page h3 {
+  color: var(--ink);
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+}
+.jp2k-page h1 {
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+  font-weight: 650;
+  margin: 1rem 0 1.5rem;
+}
+.jp2k-page h2 {
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-weight: 600;
+  margin: 0.75rem 0 1.5rem;
+}
+.jp2k-page h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.jp2k-page p {
+  font-size: 1.125rem;
+  color: var(--body-text);
+  line-height: 1.65;
+}
+.jp2k-page p + p {
+  margin-top: 1rem;
+}
+.jp2k-page a {
+  color: var(--accent);
+  text-underline-offset: 0.2em;
+}
+.jp2k-page .jp2k-eyebrow {
+  color: var(--muted);
+  font-size: 0.8125rem;
+  letter-spacing: 0.045em;
+  font-family: 'JetBrains Mono', monospace;
+}
+.jp2k-hero,
+.jp2k-study {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
+  align-items: center;
+  gap: 5rem;
+}
+.jp2k-icon {
+  display: block;
+  border-radius: 18px;
+  margin-bottom: 2rem;
+}
+.jp2k-page .jp2k-lede {
+  font-size: 1.25rem;
+}
+.jp2k-availability {
+  margin-top: 2rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--accent);
+}
+.jp2k-page .jp2k-status {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.jp2k-availability p + p {
+  font-size: 0.9375rem;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+.jp2k-page .jp2k-offer-line {
+  font-size: 0.9375rem;
+  margin-top: 1.5rem;
+}
+.jp2k-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-top: 1rem;
+}
+.jp2k-links a {
+  display: inline-block;
+  padding-block: 0.75rem;
+}
+.jp2k-screen {
+  width: min(100%, 320px);
+  margin-inline: auto;
+}
+.jp2k-screen img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 40px -22px rgba(20, 17, 15, 0.4);
+}
+.jp2k-screen figcaption {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1rem;
+}
+.jp2k-explainer {
+  max-width: 720px;
+  margin: 6rem auto;
+}
+.jp2k-study {
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+  padding-block: 4rem;
+  border-block: 1px solid var(--border);
+}
+.jp2k-offer {
+  max-width: 760px;
+  margin: 5rem auto;
+  padding: 2.5rem;
+  background: var(--bg-alt);
+  border-radius: 16px;
+}
+.jp2k-practical {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: 4rem;
+  align-items: start;
+}
+.jp2k-notes {
+  padding-top: 1.75rem;
+}
+.jp2k-notes a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding-block: 0.5rem;
+}
+@media (max-width: 760px) {
+  .jp2k-page {
+    padding: 2.5rem 1.25rem 3rem;
+  }
+  .jp2k-hero,
+  .jp2k-study,
+  .jp2k-practical {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+  .jp2k-screen {
+    width: min(100%, 300px);
+  }
+  .jp2k-study > div {
+    grid-row: 1;
+  }
+  .jp2k-explainer {
+    margin-block: 3.5rem;
+  }
+  .jp2k-study {
+    padding-block: 3rem;
+  }
+  .jp2k-offer {
+    margin-block: 3rem;
+    padding: 1.5rem;
+  }
+  .jp2k-notes {
+    padding-top: 0;
+  }
+}

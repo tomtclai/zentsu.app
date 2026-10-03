@@ -1,0 +1,66 @@
+{
+  "sourceCommit": "9810a407ef325ffdff2287b13d216f8488d80529",
+  "publicBuild": 15,
+  "configuration": "Debug simulator of exact public source; screenshot launch fixtures only",
+  "device": "iPhone17Pro",
+  "runtime": "iOS26.5",
+  "readingPreference": "kanaFirst",
+  "assets": [
+    {
+      "file": "assets/japanese2k-study-card.png",
+      "sha256": "510b15589eea33248b4ca55069b218fa5b9b1e75226be56afafcb7a083b53557",
+      "dimensions": [804, 1748],
+      "sourceCapture": "01-hear-and-see.png",
+      "sourceSha256": "b8c168f2fabaf50d74ac9ea6dc5fe2b16a5b587bc9345517189768a3390ba78a",
+      "sourceDimensions": [1206, 2622],
+      "processing": "Lanczos resize; no content edits"
+    },
+    {
+      "file": "assets/japanese2k-daily-round.png",
+      "sha256": "94ef9d06075ae7ded03f160f9c22157fe5bb9f42faefb48354328cae79cca208",
+      "dimensions": [804, 1748],
+      "sourceCapture": "03-new-words-daily.png",
+      "sourceSha256": "e4361a459540c4a2d6fbcbe4984302bdc1780525ef104334076c268e99cb6c88",
+      "sourceDimensions": [1206, 2622],
+      "processing": "Lanczos resize; no content edits"
+    }
+  ],
+  "socialImage": {
+    "file": "assets/japanese2k-og.png",
+    "sha256": "d9ea002e2cfe3c465481c51b3e0168044a9edce2c7af66f16a39e784ddf99446",
+    "dimensions": [1200, 630],
+    "background": "#f5f3ee",
+    "components": [
+      {
+        "sourceFile": "Japanese2kVocabs/Japanese2kVocabs/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+        "sourceSha256": "d18f935fe645a112335156a114677af6f1264412a6b703c69960c8d7223bd1eb",
+        "dimensions": [272, 272],
+        "left": 94,
+        "top": 179
+      },
+      {
+        "file": "assets/japanese2k-study-card.png",
+        "height": 558,
+        "left": 523,
+        "top": 36
+      },
+      {
+        "file": "assets/japanese2k-daily-round.png",
+        "height": 558,
+        "left": 838,
+        "top": 36
+      }
+    ],
+    "processing": "Sharp PNG composition; no added text or altered screenshot content"
+  },
+  "icon": {
+    "file": "assets/japanese2k-icon.png",
+    "sha256": "93bedfd227986c36d4b5a5a9d2467b79d03ae08cc8c7e4484041f42d53529f5a",
+    "dimensions": [180, 180],
+    "sourceFile": "Japanese2kVocabs/Japanese2kVocabs/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+    "sourceSha256": "d18f935fe645a112335156a114677af6f1264412a6b703c69960c8d7223bd1eb",
+    "sourceCommit": "87f51b0af94af20402b69b435065c2d8baf79b91",
+    "mirrorCommit": "9810a407ef325ffdff2287b13d216f8488d80529",
+    "processing": "Lanczos resize only"
+  }
+}

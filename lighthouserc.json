@@ -1,8 +1,15 @@
 {
   "ci": {
     "collect": {
-      "staticDistDir": "_site",
-      "url": ["/dial/", "/de/dial/", "/ar/dial/"],
+      "startServerCommand": "npx wrangler pages dev _site --port 8790 --ip 127.0.0.1",
+      "startServerReadyPattern": "Ready on",
+      "startServerReadyTimeout": 90000,
+      "url": [
+        "http://127.0.0.1:8790/dial/",
+        "http://127.0.0.1:8790/de/dial/",
+        "http://127.0.0.1:8790/ar/dial/",
+        "http://127.0.0.1:8790/japanese2k"
+      ],
       "numberOfRuns": 3
     },
     "assert": {

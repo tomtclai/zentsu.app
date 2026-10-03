@@ -8,6 +8,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- Learn Japanese product page at `/japanese2k`, with verified build 15 images, accurate pending availability, the 500-word free offer, app-listing links and desktop/mobile accessibility and visual checks. Existing support and privacy pages now describe bundled vocabulary and artwork while retaining legacy content endpoints; word-source licences remain published.
+
 - Two Dial record-keeping guides: a printable GLP-1 dose log at `/dial/printable-dose-log/` and an injection-site rotation chart with a numbered body map at `/dial/injection-site-rotation/`, written from the current U.S. labels for Ozempic, Wegovy, Mounjaro, and Zepbound with the section cited on every label statement. Each page has a Zentsu byline, published and reviewed dates, a method note, DailyMed sources with label revision dates, `Article` JSON-LD, the Smart App Banner, and a `site-dial-blog` App Store link. The dose log and rotation chart print as one landscape sheet each and have Japanese, Korean, and Traditional Chinese versions that cite PMDA, MFDS, and TFDA labels, with hreflang between the four languages. The landing-page guide card, `/dial/medication-log/`, and the Dial footer link to them, and `validate-site.mjs` checks their store link, banner, dates, JSON-LD, description length, and dashes.
 - The Dial plans card and the "What does Dial Pro cost?" answer state that Annual starts free for 1 month, then the yearly price, in all 34 marketing locales. The wording comes from the app's reviewed paywall string, and the price follows the currency picker.
 - The Dial `SoftwareApplication` JSON-LD lists the Dial Pro plans as an `AggregateOffer` (monthly to Lifetime, storefront currency) beside the free download offer.
@@ -25,6 +27,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `/dial/titration-record/`, which reproduced the label dose-escalation steps, is unpublished under DEC-2026-07-10-dial-cut-titration and 301-redirects to `/dial/printable-dose-log/`. The page source is kept on the `feat/dial-titration-record` branch. `validate-site.mjs` fails the build if the page is produced again.
 
 ### Changed
+
+- Visual capture waits for the observed Dial sticky-bar state after scrolling back to the top, replacing a fixed delay without changing product behavior, image references or comparison thresholds.
 
 - The Dial plan picker selects Annual by default, matching the app's paywall.
 - Dial App Store links carry one campaign token per surface: `site-dial` on every landing-page link in all locales (nav, hero, watch, plans, FAQ, closer, sticky bar, and the desktop QR code), `site-dial-blog` on the three Dial blog posts and `/dial/medication-log/`, and `site-dial-banner` on the Smart App Banner through `affiliate-data`. Nine per-placement tokens split traffic below App Analytics' reporting threshold. `_data/dial_campaign.yml` is the single source, `scripts/make-dial-qr.mjs` reads it, and `validate-site.mjs` fails a landing page with any other `ct`.

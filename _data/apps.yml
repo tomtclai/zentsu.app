@@ -117,3 +117,16 @@ apps:
     page_url: /press/
     icon: /assets/press-icon.png
     accent: '#3a6ea5'
+
+  - name: 'Learn Japanese: 2,000 Words'
+    slug: japanese2k
+    visible: true
+    tagline: >-
+      Practice Japanese vocabulary with spoken words, pictures and spaced review.
+      Start with 500 words free.
+    status: coming_soon
+    platforms: iPhone
+    app_store_url: null
+    page_url: /japanese2k
+    icon: /assets/japanese2k-icon.png
+    accent: '#3e7064'

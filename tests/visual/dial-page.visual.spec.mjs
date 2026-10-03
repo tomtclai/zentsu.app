@@ -21,13 +21,27 @@ async function prepareDialPage(page, lang, colorScheme) {
       window.scrollTo(0, y);
       await new Promise((resolve) => requestAnimationFrame(resolve));
     }
-    await Promise.all([...document.images].map((image) => {
-      image.loading = 'eager';
-      return image.decode();
-    }));
+    await Promise.all(
+      [...document.images].map((image) => {
+        image.loading = 'eager';
+        return image.decode();
+      }),
+    );
     window.scrollTo(0, 0);
   });
-  await page.waitForTimeout(150);
+  await expect
+    .poll(() =>
+      page.evaluate(() => {
+        const intersectsViewport = (element) => {
+          const bounds = element.getBoundingClientRect();
+          return bounds.bottom > 0 && bounds.top < innerHeight;
+        };
+        const heroVisible = intersectsViewport(document.getElementById('hero-primary-cta'));
+        const closerVisible = intersectsViewport(document.getElementById('closer-primary-cta'));
+        return document.querySelector('.dial-sticky-cta').hidden === (heroVisible || closerVisible);
+      }),
+    )
+    .toBe(true);
 }
 
 for (const lang of locales) {

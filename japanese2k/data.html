@@ -1,36 +1,30 @@
 ---
-title: JP 2K word data and license · Zentsu LLC
-description: 'Sources and license for the JP 2K word data. The Japanese words, readings, and English meanings are offered under CC BY-SA 4.0, with credit to Tanos and the EDRDG JMdict/EDICT project.'
+title: Learn Japanese word data and license · Zentsu LLC
+description: 'Sources and license for the word data in Learn Japanese: 2,000 Words. The Japanese words, readings, and English meanings are offered under CC BY-SA 4.0, with credit to Tanos and the EDRDG JMdict/EDICT project.'
 canonical: https://zentsu.app/japanese2k/data
 permalink: /japanese2k/data
 lang: en
 favicon: /assets/japanese2k-icon.png
+page_stylesheet: /japanese2k.css
 ---
 
 <!doctype html>
 <html lang="{{ page.lang }}" dir="{{ site.data.i18n[page.lang].dir | default: 'ltr' }}">
   <head>
     {% include head-common.html %}
-
-    <style>
-      /* ── Content (page-specific) ── */
-      main {
-        flex: 1;
-        padding: 3rem 1.5rem;
-      }
-    </style>
   </head>
   <body>
     {% include nav.html %}
 
-    <main id="main-content" tabindex="-1">
+    <main id="main-content" class="jp2k-document" tabindex="-1">
       <article>
-        <span class="page-label">JP 2K</span>
+        <span class="page-label">Learn Japanese: 2,000 Words</span>
         <h1>Word data and license</h1>
 
         <p>
-          JP 2K teaches 2,000 Japanese words. Each word has a Japanese form, a kana reading, and an
-          English meaning. We built that list from the sources below and publish its word fields in
+          Learn Japanese: 2,000 Words (also called JP 2K) is a vocabulary practice app. Each word
+          has a Japanese form, a kana reading, and an English meaning. We built that list from the
+          sources below and retain a downloadable word-data release at
           <a href="/japanese2k/icons.json">zentsu.app/japanese2k/icons.json</a>.
         </p>
 
@@ -55,10 +49,9 @@ favicon: /assets/japanese2k-icon.png
           </li>
           <li>
             <a href="https://github.com/rspeer/wordfreq">wordfreq</a> by Robyn Speer, version 3.1.1,
-            which sets the order of the 2,000 words by how often each word appears. Its data is
-            offered under
-            <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, and its
-            Japanese list draws on Wikipedia, OpenSubtitles through OPUS, the OSCAR web corpus,
+            which contributes frequency information used to order the words. Its data is offered
+            under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, and
+            its Japanese list draws on Wikipedia, OpenSubtitles through OPUS, the OSCAR web corpus,
             Twitter, and Reddit. wordfreq also includes the SUBTLEX word lists by Marc Brysbaert and
             colleagues, which are freely available data.
           </li>
@@ -78,14 +71,16 @@ favicon: /assets/japanese2k-icon.png
           <a href="https://creativecommons.org/licenses/by-sa/4.0/"
             >Creative Commons Attribution-ShareAlike 4.0 International license (CC BY-SA 4.0)</a
           >. You may copy, adapt, and share them, including commercially. Credit Tanos, the EDRDG,
-          and wordfreq as listed above, link to this license, and release any adapted version of the
-          data under the same license.
+          wordfreq and Tatoeba as listed above, link to this license, and release any adapted
+          version of the data under the same license.
         </p>
         <p>
           This license covers the word data only. The picture files under /japanese2k/svgs/ are
           Zentsu LLC artwork and are not part of it. The app itself is governed by the Zentsu LLC
           <a href="/terms">Terms of Use</a>.
         </p>
+
+        <p><a href="/japanese2k">About Learn Japanese: 2,000 Words</a></p>
 
         <h2>Corrections</h2>
         <p>
