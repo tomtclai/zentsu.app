@@ -29,6 +29,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- `npm run validate:links` skips `tanos.co.uk`. The domain stopped resolving (NXDOMAIN on 2026-10-05), which failed every build on the JP 2K word-source credit links. The credit and its links stay on `/japanese2k/data` as the license requires.
 - Visual capture waits for the observed Dial sticky-bar state after scrolling back to the top, replacing a fixed delay without changing product behavior, image references or comparison thresholds.
 
 - The Dial plan picker selects Annual by default, matching the app's paywall.
