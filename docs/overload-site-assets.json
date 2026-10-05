@@ -1,0 +1,73 @@
+{
+  "sourceCommit": "49370f0705b269e02608fe3dc568dd70a682ffa4",
+  "publicBuild": "1.0 (3), TestFlight only; App Review on hold",
+  "configuration": "Debug simulator build of the source at sourceCommit; data entered through the simulator UI with AXe",
+  "device": "iPhone17Pro",
+  "runtime": "iOS26.5",
+  "captureDate": "2026-10-04",
+  "assets": [
+    {
+      "file": "assets/overload-screen-session.png",
+      "sha256": "ff390635eda463488b849be7a52dfa91a0c37b0435eb93f7ba3117c11e847a00",
+      "dimensions": [804, 1748],
+      "sourceSha256": "db01e1f83995c0d814224e6dbd7061e31feee5f374e96c6220d326faca7f7df0",
+      "sourceDimensions": [1206, 2622],
+      "content": "Bench Press logging page, two of three sets checked",
+      "processing": "Lanczos resize; no content edits. AVIF q60, WebP q85, @2x 804 px and @1x 402 px PNG derived from it"
+    },
+    {
+      "file": "assets/overload-screen-sets.png",
+      "sha256": "78c8cb920938d5c9cd54b305a561f9f0d8bf21e2d4f6a8f92691a3160be913ac",
+      "dimensions": [804, 1748],
+      "sourceSha256": "b135ec3a76c74fe6df785c2d76714421adfda7599adcd2a8bc8c1751db6d52e3",
+      "sourceDimensions": [1206, 2622],
+      "content": "Leg Press logging page with a 230 lb third set",
+      "processing": "Lanczos resize; no content edits. AVIF q60, WebP q85, @2x 804 px and @1x 402 px PNG derived from it"
+    },
+    {
+      "file": "assets/overload-screen-list.png",
+      "sha256": "2e7577617d08c50c655238242142bb5d860abc63f466118b9d1c11a1d62e3994",
+      "dimensions": [804, 1748],
+      "sourceSha256": "264d22d977d3c4cb404c1cbc84f2199c1f087d1ccbe7b7f892f799804dcddbde",
+      "sourceDimensions": [1206, 2622],
+      "content": "Exercise list with five exercises",
+      "processing": "Lanczos resize; no content edits. AVIF q60, WebP q85, @2x 804 px and @1x 402 px PNG derived from it"
+    }
+  ],
+  "socialImage": {
+    "file": "assets/overload-og.png",
+    "sha256": "e8d4b9ad4340484627875e0e2bbd2d45288ca164673cd58bf2d05b81fc1967b7",
+    "dimensions": [1200, 630],
+    "background": "#f5f3ee",
+    "components": [
+      {
+        "sourceFile": "Overload/Overload/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+        "sourceSha256": "7f7ff08a0d8ed596b6e0045b333eae8e278c5e0f58c55f2ea3cf7b3a8f57ba8e",
+        "dimensions": [272, 272],
+        "left": 94,
+        "top": 179
+      },
+      {
+        "file": "assets/overload-screen-session.png",
+        "height": 558,
+        "left": 523,
+        "top": 36
+      },
+      {
+        "file": "assets/overload-screen-list.png",
+        "height": 558,
+        "left": 838,
+        "top": 36
+      }
+    ],
+    "processing": "Sharp PNG composition with rounded corners; no added text or altered screenshot content"
+  },
+  "icon": {
+    "file": "assets/overload-icon.png",
+    "sha256": "481bc8ba81d3eeb9d8fbe23183fde579a876b5a1c7d659f20f1dc2840482bc93",
+    "dimensions": [180, 180],
+    "sourceFile": "Overload/Overload/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+    "sourceSha256": "7f7ff08a0d8ed596b6e0045b333eae8e278c5e0f58c55f2ea3cf7b3a8f57ba8e",
+    "processing": "Lanczos resize only"
+  }
+}

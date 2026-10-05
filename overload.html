@@ -1,0 +1,299 @@
+---
+title: 'Overload Lift Log · Zentsu LLC'
+description: 'Overload is a lifting log for iPhone built on double progression. Add reps at the same weight until every set reaches the top of its range, then add weight.'
+canonical: https://zentsu.app/overload
+permalink: /overload
+lang: en
+favicon: /assets/overload-icon.png
+og_site_name: Overload
+og_image: https://zentsu.app/assets/overload-og.png
+og_image_alt: 'Overload Lift Log. A double-progression lifting log for iPhone.'
+page_stylesheet: /overload.css
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head-common.html %}
+  </head>
+  <body>
+    {% include nav.html %}
+    <main id="main-content" class="ovl-page" tabindex="-1">
+      <section class="ovl-hero" aria-labelledby="ovl-title">
+        <div class="ovl-intro">
+          <img class="ovl-icon" src="/assets/overload-icon.png" alt="" width="72" height="72" />
+          <p class="ovl-eyebrow">Lifting log for iPhone</p>
+          <h1 id="ovl-title">Overload</h1>
+          <p class="ovl-hook">
+            <span>Same weight, one more rep.</span>
+            <span class="ovl-hook-step">Then more weight.</span>
+          </p>
+          <p class="ovl-lede">
+            Overload keeps your last session beside today's and fills in a target for every set. The
+            targets follow double progression: add reps inside a range, and add weight once every
+            set reaches the top.
+          </p>
+          <dl class="ovl-facts">
+            <div>
+              <dt>Runs on</dt>
+              <dd>iPhone, iOS 18 or later</dd>
+            </div>
+            <div>
+              <dt>Availability</dt>
+              <dd>Not available on the App Store</dd>
+            </div>
+          </dl>
+          <div class="ovl-links">
+            <a href="/privacy">Privacy policy</a>
+            <a href="mailto:hello@zentsu.app">hello@zentsu.app</a>
+          </div>
+        </div>
+        <figure class="ovl-screen ovl-screen--hero">
+          <picture>
+            <source type="image/avif" srcset="/assets/overload-screen-session.avif" />
+            <source type="image/webp" srcset="/assets/overload-screen-session.webp" />
+            <img
+              src="/assets/overload-screen-session@1x.png"
+              srcset="
+                /assets/overload-screen-session@1x.png 1x,
+                /assets/overload-screen-session@2x.png 2x
+              "
+              alt="Bench Press logging page. The last session, on October 2, reads 135 lb for 12, 12 and 11 reps. Today two sets of 12 at 135 lb are checked off and the third is still open."
+              width="402"
+              height="874"
+              fetchpriority="high"
+            />
+          </picture>
+          <figcaption>Last session above, today's sets below.</figcaption>
+        </figure>
+      </section>
+
+      <section class="ovl-rule" aria-labelledby="ovl-rule-title">
+        <div class="ovl-rule-copy">
+          <p class="ovl-eyebrow">Double progression</p>
+          <h2 id="ovl-rule-title">The targets are arithmetic you can check</h2>
+          <p>
+            Each exercise has a rep range, 8 to 12 by default, and a number of sets. Overload reads
+            the most recent session with a finished set and works out the next one from it.
+          </p>
+          <ol class="ovl-steps">
+            <li>A finished set gets a target of one more rep, up to the top of the range.</li>
+            <li>
+              When you finish at least your planned number of sets and every finished set reaches
+              the top, the weight goes up by your increment and the targets drop to the bottom of
+              the range.
+            </li>
+            <li>A set you did not finish keeps its reps as the target, never below the bottom.</li>
+          </ol>
+        </div>
+
+        <div class="ovl-ledger-column">
+          <section class="ovl-ledger-wrap" aria-labelledby="ovl-ledger-caption" tabindex="0">
+            <table class="ovl-ledger">
+              <caption id="ovl-ledger-caption">
+                Bench press, 3 sets of 8 to 12 reps, 5 lb increment
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Session</th>
+                  <th scope="col">Logged</th>
+                  <th scope="col">Next target</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>
+                    <span class="ovl-weight">135 lb</span>
+                    <span class="ovl-sets">
+                      <span class="ovl-set" data-reps="10">10</span>
+                      <span class="ovl-set" data-reps="9">9</span>
+                      <span class="ovl-set" data-reps="9">9</span>
+                    </span>
+                  </td>
+                  <td class="ovl-next"><span>135 ×</span> <span>11 · 10 · 10</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>
+                    <span class="ovl-weight">135 lb</span>
+                    <span class="ovl-sets">
+                      <span class="ovl-set" data-reps="11">11</span>
+                      <span class="ovl-set" data-reps="10">10</span>
+                      <span class="ovl-set" data-reps="10">10</span>
+                    </span>
+                  </td>
+                  <td class="ovl-next"><span>135 ×</span> <span>12 · 11 · 11</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>
+                    <span class="ovl-weight">135 lb</span>
+                    <span class="ovl-sets">
+                      <span class="ovl-set" data-reps="12">12</span>
+                      <span class="ovl-set" data-reps="12">12</span>
+                      <span class="ovl-set" data-reps="11">11</span>
+                    </span>
+                  </td>
+                  <td class="ovl-next"><span>135 ×</span> <span>12 · 12 · 12</span></td>
+                </tr>
+                <tr class="ovl-step-up">
+                  <th scope="row">4</th>
+                  <td>
+                    <span class="ovl-weight">135 lb</span>
+                    <span class="ovl-sets">
+                      <span class="ovl-set" data-reps="12">12</span>
+                      <span class="ovl-set" data-reps="12">12</span>
+                      <span class="ovl-set" data-reps="12">12</span>
+                    </span>
+                  </td>
+                  <td class="ovl-next">
+                    <span><strong>140</strong> ×</span> <span>8 · 8 · 8</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>
+                    <span class="ovl-weight">140 lb</span>
+                    <span class="ovl-sets">
+                      <span class="ovl-set" data-reps="9">9</span>
+                      <span class="ovl-set" data-reps="8">8</span>
+                      <span class="ovl-set ovl-set--open" data-reps="7"
+                        >7<span class="ovl-visually-hidden">, not finished</span></span
+                      >
+                    </span>
+                  </td>
+                  <td class="ovl-next"><span>140 ×</span> <span>10 · 9 · 8</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <p class="ovl-ledger-note">
+            Session 4 fills the range, so the weight goes up. In session 5 the third set stopped at
+            7, so its target stays at 8, the bottom of the range.
+          </p>
+        </div>
+      </section>
+
+      <section class="ovl-feature" aria-labelledby="ovl-log-title">
+        <figure class="ovl-screen">
+          <picture>
+            <source type="image/avif" srcset="/assets/overload-screen-sets.avif" />
+            <source type="image/webp" srcset="/assets/overload-screen-sets.webp" />
+            <img
+              src="/assets/overload-screen-sets@1x.png"
+              srcset="
+                /assets/overload-screen-sets@1x.png 1x,
+                /assets/overload-screen-sets@2x.png 2x
+              "
+              alt="Leg Press logging page with the session weight at 270 lb. The third set is logged at 230 lb for 12 reps, and all three sets are checked off."
+              width="402"
+              height="874"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <figcaption>A lighter last set, logged at its own weight.</figcaption>
+        </figure>
+        <div>
+          <p class="ovl-eyebrow">Logging</p>
+          <h2 id="ovl-log-title">Change one set, keep the rest</h2>
+          <p>
+            The logging page opens with today's targets filled in. Set one weight for the session
+            and every set follows it. When the last set is lighter, change that set alone.
+          </p>
+          <p>
+            Check off each set as you finish it. You can save once one set is done. A set you leave
+            unchecked stays in the record, but it does not count toward the next weight increase.
+          </p>
+          <p>
+            Past sessions stay editable. Change a session's date or sets, or delete it. Rename or
+            delete an exercise too. Deleting an exercise asks first, because its history goes with
+            it.
+          </p>
+        </div>
+      </section>
+
+      <section class="ovl-feature ovl-feature--flip" aria-labelledby="ovl-list-title">
+        <div>
+          <p class="ovl-eyebrow">Exercises</p>
+          <h2 id="ovl-list-title">Name the lift, or show it</h2>
+          <p>
+            Exercises are whatever you call them. As you type, Overload suggests names from a
+            built-in list of about 100 common gym lifts, such as Lat Pulldown and Romanian Deadlift.
+            A name that is not on the list is added as you typed it.
+          </p>
+          <p>
+            Give an exercise an emoji, or photograph the machine so you can find it on the gym
+            floor. The list puts the lifts you trained most recently first, with the last result and
+            the next change on each row.
+          </p>
+        </div>
+        <figure class="ovl-screen">
+          <picture>
+            <source type="image/avif" srcset="/assets/overload-screen-list.avif" />
+            <source type="image/webp" srcset="/assets/overload-screen-list.webp" />
+            <img
+              src="/assets/overload-screen-list@1x.png"
+              srcset="
+                /assets/overload-screen-list@1x.png 1x,
+                /assets/overload-screen-list@2x.png 2x
+              "
+              alt="Exercise list with Leg Press, Lat Pulldown, Bench Press, Romanian Deadlift and Overhead Press. Each row shows the last result and the next change, such as one more rep or 125 lb on Lat Pulldown."
+              width="402"
+              height="874"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <figcaption>Most recent first, with the next change on each row.</figcaption>
+        </figure>
+      </section>
+
+      <section class="ovl-settings" aria-labelledby="ovl-settings-title">
+        <div>
+          <p class="ovl-eyebrow">Per exercise</p>
+          <h2 id="ovl-settings-title">Your range, your increment</h2>
+        </div>
+        <div>
+          <p>
+            Each exercise has its own unit, increment, rep range and set count. A new exercise
+            starts at 3 sets of 8 to 12, with a 5 lb or 2.5 kg increment depending on the unit you
+            pick.
+          </p>
+          <p>
+            Use pounds for the barbell and kilograms for a machine if that is how your gym is
+            labeled. Switch an exercise between lb and kg later and its history converts with it.
+          </p>
+        </div>
+      </section>
+
+      <section class="ovl-tradeoffs" aria-labelledby="ovl-tradeoffs-title">
+        <p class="ovl-eyebrow">Tradeoffs</p>
+        <h2 id="ovl-tradeoffs-title">What Overload leaves to you</h2>
+        <div class="ovl-tradeoff-grid">
+          <div>
+            <h3>The log lives on your iPhone</h3>
+            <p>
+              Overload runs on iPhone with iOS 18 or later. There is no iPad or Apple Watch version,
+              so the phone comes to the gym with you.
+            </p>
+            <p>
+              Your exercises, sessions and machine photos are stored on that iPhone, and Overload
+              works without an account. The log does not sync to another device. It is part of your
+              normal iPhone backup, so restoring that backup brings it back.
+            </p>
+          </div>
+          <div>
+            <h3>You choose the lifts</h3>
+            <p>
+              Overload does not pick exercises or plan your weeks. It records what you lift and
+              works out the next targets from it. When to deload or take a rest day stays your call.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

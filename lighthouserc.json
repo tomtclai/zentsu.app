@@ -8,7 +8,8 @@
         "http://127.0.0.1:8790/dial/",
         "http://127.0.0.1:8790/de/dial/",
         "http://127.0.0.1:8790/ar/dial/",
-        "http://127.0.0.1:8790/japanese2k"
+        "http://127.0.0.1:8790/japanese2k",
+        "http://127.0.0.1:8790/overload"
       ],
       "numberOfRuns": 3
     },

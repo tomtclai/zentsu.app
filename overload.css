@@ -1,0 +1,412 @@
+.ovl-page {
+  --ovl-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --ovl-track: var(--border-soft);
+  --ovl-fill: var(--ink-soft);
+  width: min(1120px, 100%);
+  margin-inline: auto;
+  padding: 4rem 2rem 5rem;
+  overflow-wrap: anywhere;
+}
+.ovl-page h1,
+.ovl-page h2,
+.ovl-page h3 {
+  color: var(--ink);
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+}
+.ovl-page h1 {
+  font-size: clamp(1.5rem, 2.4vw, 1.875rem);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  margin: 0.5rem 0 1.25rem;
+}
+.ovl-page h2 {
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-weight: 600;
+  margin: 0.75rem 0 1.5rem;
+}
+.ovl-page h3 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.ovl-page p,
+.ovl-page li {
+  font-size: 1.125rem;
+  color: var(--body-text);
+  line-height: 1.65;
+}
+.ovl-page p + p {
+  margin-top: 1rem;
+}
+.ovl-page a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.ovl-page .ovl-eyebrow {
+  color: var(--spot);
+  font-family: var(--ovl-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.045em;
+}
+
+.ovl-hero,
+.ovl-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
+  align-items: center;
+  gap: 5rem;
+}
+.ovl-icon {
+  display: block;
+  border-radius: 16px;
+  margin-bottom: 1.75rem;
+}
+.ovl-page .ovl-hook {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(2.5rem, 5.5vw, 4.25rem);
+  font-weight: 650;
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+  color: var(--ink);
+}
+.ovl-hook-step {
+  align-self: flex-start;
+  margin-inline-start: clamp(1.5rem, 6vw, 4.5rem);
+  margin-top: 0.15em;
+  padding-top: 0.2em;
+  border-top: 4px solid var(--spot);
+  color: var(--spot);
+}
+.ovl-page .ovl-lede {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  max-width: 34rem;
+}
+.ovl-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2.5rem;
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+.ovl-facts dt {
+  font-family: var(--ovl-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.045em;
+  color: var(--muted);
+}
+.ovl-facts dd {
+  margin: 0.25rem 0 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.ovl-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+  margin-top: 1rem;
+}
+.ovl-links a {
+  display: inline-block;
+  padding-block: 0.75rem;
+}
+
+.ovl-screen {
+  width: min(100%, 320px);
+  margin-inline: auto;
+}
+.ovl-screen img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 40px -22px rgba(20, 17, 15, 0.4);
+}
+.ovl-screen figcaption {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.ovl-rule {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.5rem 5rem;
+  align-items: start;
+  margin-block: 6rem;
+  padding-block: 4rem;
+  border-block: 1px solid var(--border);
+}
+.ovl-steps {
+  counter-reset: ovl-step;
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+}
+.ovl-steps li {
+  counter-increment: ovl-step;
+  position: relative;
+  padding-inline-start: 2.75rem;
+}
+.ovl-steps li + li {
+  margin-top: 1rem;
+}
+.ovl-steps li::before {
+  content: counter(ovl-step);
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.15rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: var(--ovl-mono);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--spot);
+  background: var(--spot-soft);
+}
+
+.ovl-ledger-wrap {
+  overflow-x: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem 1.5rem 1rem;
+}
+.ovl-ledger {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--ovl-mono);
+  font-variant-numeric: tabular-nums;
+}
+.ovl-ledger caption {
+  text-align: start;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--ink);
+  padding-bottom: 1rem;
+}
+.ovl-ledger th,
+.ovl-ledger td {
+  overflow-wrap: normal;
+  padding: 0.75rem 0.5rem;
+  text-align: start;
+  vertical-align: bottom;
+  border-top: 1px solid var(--border-soft);
+}
+.ovl-ledger thead th {
+  white-space: nowrap;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.045em;
+  color: var(--muted);
+  border-top: 0;
+  padding-block: 0 0.5rem;
+}
+.ovl-ledger tbody th {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--muted);
+  width: 1%;
+}
+.ovl-ledger td {
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+}
+.ovl-weight {
+  display: inline-block;
+  min-width: 4.5rem;
+  vertical-align: bottom;
+}
+.ovl-sets {
+  display: inline-flex;
+  gap: 0.375rem;
+  vertical-align: bottom;
+}
+.ovl-set {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 1.75rem;
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+}
+.ovl-set::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  margin-bottom: 0.25rem;
+  border-radius: 4px;
+  background: linear-gradient(
+    to top,
+    var(--ovl-fill) var(--ovl-level),
+    var(--ovl-track) var(--ovl-level)
+  );
+}
+.ovl-set[data-reps='7'] {
+  --ovl-level: 16.7%;
+}
+.ovl-set[data-reps='8'] {
+  --ovl-level: 33.3%;
+}
+.ovl-set[data-reps='9'] {
+  --ovl-level: 50%;
+}
+.ovl-set[data-reps='10'] {
+  --ovl-level: 66.7%;
+}
+.ovl-set[data-reps='11'] {
+  --ovl-level: 83.3%;
+}
+.ovl-set[data-reps='12'] {
+  --ovl-level: 100%;
+  --ovl-fill: var(--spot);
+}
+.ovl-set--open {
+  color: var(--muted);
+}
+.ovl-set--open::before {
+  background: linear-gradient(
+    to top,
+    transparent var(--ovl-level),
+    var(--ovl-track) var(--ovl-level)
+  );
+  box-shadow: inset 0 0 0 1.5px var(--muted);
+}
+.ovl-ledger .ovl-next {
+  white-space: nowrap;
+  color: var(--ink);
+}
+.ovl-step-up th,
+.ovl-step-up td {
+  background: var(--spot-soft);
+}
+.ovl-step-up .ovl-next strong {
+  color: var(--spot);
+  font-weight: 700;
+}
+@media (prefers-color-scheme: dark) {
+  .ovl-step-up .ovl-next strong {
+    color: #f08a55;
+  }
+}
+.ovl-page .ovl-ledger-note {
+  margin-top: 1rem;
+  font-size: 0.9375rem;
+  color: var(--muted);
+}
+.ovl-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.ovl-feature {
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+  margin-block: 6rem;
+}
+.ovl-feature--flip {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
+}
+
+.ovl-settings {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+  gap: 1rem 5rem;
+  margin-block: 6rem;
+  padding-top: 4rem;
+  border-top: 1px solid var(--border);
+}
+
+.ovl-tradeoffs {
+  margin-top: 6rem;
+  padding: 3rem;
+  background: var(--bg-alt);
+  border-radius: 16px;
+}
+.ovl-tradeoffs h2 {
+  max-width: 36rem;
+}
+.ovl-tradeoff-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 2rem 4rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 860px) {
+  .ovl-rule {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 760px) {
+  .ovl-page {
+    padding: 2.5rem 1.25rem 3rem;
+  }
+  .ovl-hero,
+  .ovl-feature,
+  .ovl-feature--flip,
+  .ovl-settings,
+  .ovl-tradeoff-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+  .ovl-screen {
+    width: min(100%, 300px);
+  }
+  .ovl-feature > div {
+    grid-row: 1;
+  }
+  .ovl-rule,
+  .ovl-feature,
+  .ovl-settings {
+    margin-block: 3.5rem;
+  }
+  .ovl-rule {
+    padding-block: 3rem;
+  }
+  .ovl-ledger-wrap {
+    padding: 1rem 0.75rem 0.5rem;
+  }
+  .ovl-ledger th,
+  .ovl-ledger td {
+    padding-inline: 0.375rem;
+  }
+  .ovl-weight {
+    display: block;
+    min-width: 0;
+    margin-bottom: 0.375rem;
+  }
+  .ovl-set {
+    width: 1.5rem;
+  }
+  .ovl-ledger td {
+    font-size: 0.8125rem;
+  }
+  .ovl-ledger .ovl-next {
+    white-space: normal;
+  }
+  .ovl-next span {
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .ovl-tradeoffs {
+    margin-top: 3.5rem;
+    padding: 1.5rem;
+  }
+}

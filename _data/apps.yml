@@ -28,6 +28,9 @@
 #                 by default; set store_label: Mac App Store for Mac-only apps).
 #   coming_soon → card with a muted "Coming soon" treatment, NO download or
 #                 App Store link (nothing to link to yet).
+#   not_on_store → card with the muted treatment and a "Not on the App Store"
+#                 tag, for a built app that is not on the App Store and has no
+#                 announced release. NO download or App Store link.
 #   parked      → omitted because it has no active lifecycle state.
 #
 # ── FIELDS ───────────────────────────────────────────────────────────────
@@ -37,7 +40,7 @@
 #                  app collection; `true` or an omitted value keeps it visible.
 #   tagline        one plain-voice sentence. Company "we"; no superlatives,
 #                  no "AI"/"ML", no badge language.
-#   status         live | coming_soon | parked  (see toggling, above).
+#   status         live | coming_soon | not_on_store | parked  (see toggling, above).
 #   status_note    optional qualifier appended after the platform on the card's
 #                  status line, e.g. "Mac App Store". The card always leads with a
 #                  tag ("Available" / "Coming soon"), then the platforms, then this
@@ -130,3 +133,16 @@ apps:
     page_url: /japanese2k
     icon: /assets/japanese2k-icon.png
     accent: '#3e7064'
+
+  - name: Overload
+    slug: overload
+    visible: true
+    tagline: >-
+      Log your lifts and see the next target for every set. Add reps at the same
+      weight, then add weight once every set reaches the top of its range.
+    status: not_on_store
+    platforms: iPhone
+    app_store_url: null # App Review is on hold (DEC-2026-10-02-overload-app-store-release).
+    page_url: /overload
+    icon: /assets/overload-icon.png
+    accent: '#d9602a'
