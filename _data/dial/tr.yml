@@ -124,7 +124,7 @@ supporting:
     - title: "Stok"
       body: "Kalem veya flakonları konsantrasyon, eczane, son kullanma tarihi ve parti numarasıyla izleyin."
     - title: "Anımsatıcılarınız"
-      body: "Koyduğunuz programa göre günlük, haftalık veya her N günde bir bildirimler oluşturun. Doz günü bildiriminde kaydetme eylemi vardır ve Live Activity siz kaydedene dek Kilit Ekranı'nda kalabilir."
+      body: "Koyduğunuz programa göre günlük, haftalık veya her N günde bir bildirimler oluşturun. Doz günü bildiriminde kaydetme eylemi vardır ve Live Activity siz kaydedene dek, en fazla 12 saat Kilit Ekranı'nda kalır."
     - title: "Mevcut kayıtları içe aktarın"
       body: "Mevcut kayıtları aktarmak için Dial ile uyumlu bir ilaç günlüğü dışa aktarımını açın."
 

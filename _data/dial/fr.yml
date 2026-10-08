@@ -152,8 +152,8 @@ supporting:
       body:
         Créez des notifications quotidiennes, hebdomadaires ou tous les N jours selon
         le calendrier que vous définissez. Le jour de la dose, la notification propose
-        une action Enregistrer une dose, et une Live Activity peut rester sur
-        l'écran de verrouillage jusqu'à l'enregistrement.
+        une action Enregistrer une dose, et une Live Activity reste sur
+        l'écran de verrouillage jusqu'à l'enregistrement, 12 heures au plus.
     - title: Importer des saisies existantes
       body: Ouvrez dans Dial l'export d'un suivi de médicaments compatible pour importer les entrées existantes.
 

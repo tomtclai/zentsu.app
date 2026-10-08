@@ -155,7 +155,7 @@ supporting:
       body:
         Crie notificações diárias, semanais ou a cada N dias no horário que você definir.
         No dia da dose, a notificação inclui uma ação para registrar, e uma Atividade
-        ao Vivo pode ficar na Tela Bloqueada até você registrar.
+        ao Vivo fica na Tela Bloqueada até você registrar, por no máximo 12 horas.
     - title: Importar registros existentes
       body: Abra no Dial a exportação de um app de acompanhamento de medicamentos compatível para importar as entradas existentes.
 

@@ -124,7 +124,7 @@ supporting:
     - title: "Zalihe"
       body: "Pratite olovke ili bočice s koncentracijom, ljekarnom, datumom isteka i brojem serije."
     - title: "Vaši podsjetnici"
-      body: "Stvorite dnevne, tjedne ili svakih N dana obavijesti prema rasporedu koji postavite. Na dan doze obavijest nudi radnju unosa, a Live Activity može ostati na zaključanom zaslonu dok ne unesete."
+      body: "Stvorite dnevne, tjedne ili svakih N dana obavijesti prema rasporedu koji postavite. Na dan doze obavijest nudi radnju unosa, a Live Activity ostaje na zaključanom zaslonu dok ne unesete, najdulje 12 sati."
     - title: "Uvezite postojeće unose"
       body: "Otvorite kompatibilan izvoz dnevnika lijekova u Dialu da uvezete postojeće unose."
 

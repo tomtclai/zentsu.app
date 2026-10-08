@@ -124,7 +124,7 @@ supporting:
     - title: "Lagerbeholdning"
       body: "Hold styr på penner eller hetteglass med konsentrasjon, apotek, utløpsdato og batchnummer."
     - title: "Påminnelsene dine"
-      body: "Sett varsler hver dag, hver uke eller hver n-te dag, etter planen din. På dosedagen kan du føre rett fra varselet, og en Live Activity kan ligge på låseskjermen til du har ført."
+      body: "Sett varsler hver dag, hver uke eller hver n-te dag, etter planen din. På dosedagen kan du føre rett fra varselet, og en Live Activity ligger på låseskjermen til du har ført, i opptil 12 timer."
     - title: "Importer eksisterende føringer"
       body: "Åpne en kompatibel eksportfil i Dial for å hente inn eksisterende føringer."
 

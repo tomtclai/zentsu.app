@@ -156,7 +156,7 @@ supporting:
       body:
         Maak dagelijkse of wekelijkse meldingen, of meldingen die elke N dagen herhalen,
         rond het schema dat u instelt. Op dosisdag heeft de melding een actie Dosis vastleggen, en een
-        Live Activity kan op het toegangsscherm blijven tot u vastlegt.
+        Live Activity blijft op het toegangsscherm tot u vastlegt, maximaal 12 uur.
     - title: Bestaande invoer importeren
       body: Importeer bestaande invoer uit een compatibele export van een medicijndagboek.
 

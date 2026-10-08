@@ -124,7 +124,7 @@ supporting:
     - title: "Stok"
       body: "Lacak pena atau vial dengan konsentrasi, apotek, tanggal kedaluwarsa, dan nomor lot."
     - title: "Pengingat Anda"
-      body: "Buat notifikasi harian, mingguan, atau setiap N hari di sekitar jadwal yang Anda tetapkan. Pada hari dosis, tindakan catat ada di notifikasi, dan Live Activity dapat tetap di Layar Terkunci sampai Anda mencatat."
+      body: "Buat notifikasi harian, mingguan, atau setiap N hari di sekitar jadwal yang Anda tetapkan. Pada hari dosis, tindakan catat ada di notifikasi, dan Live Activity tetap di Layar Terkunci sampai Anda mencatat, paling lama 12 jam."
     - title: "Impor entri yang ada"
       body: "Impor berkas ekspor dari buku harian obat yang kompatibel dengan Dial untuk memasukkan entri yang sudah ada."
 

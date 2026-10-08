@@ -124,7 +124,7 @@ supporting:
     - title: "Készlet"
       body: "Tartsa nyilván a peneket vagy injekciós üvegeket koncentrációval, gyógyszertárral, lejárattal és tételszámmal."
     - title: "Az Ön emlékeztetői"
-      body: "Hozzon létre napi, heti vagy N naponkénti értesítéseket a beállított ütemezés szerint. Adag napján rögzítési művelet jelenik meg az értesítésen, és egy Live Activity a zárolási képernyőn maradhat, amíg nem rögzít."
+      body: "Hozzon létre napi, heti vagy N naponkénti értesítéseket a beállított ütemezés szerint. Adag napján rögzítési művelet jelenik meg az értesítésen, és egy Live Activity a zárolási képernyőn marad, amíg nem rögzít, legfeljebb 12 óráig."
     - title: "Meglévő bejegyzések importálása"
       body: "Nyisson meg egy kompatibilis gyógyszernapló-exportot a Diallal a meglévő bejegyzések importálásához."
 

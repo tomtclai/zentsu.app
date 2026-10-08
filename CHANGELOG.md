@@ -46,6 +46,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- The Dial reminders copy, in all 34 marketing locales, and the missed-dose post say the dose-day Live Activity stays on the Lock Screen until you log, for up to 12 hours. iOS removes a Live Activity from the Lock Screen after at most 12 hours, so it cannot wait indefinitely. Dial visual baselines re-recorded for the reflowed reminders card (and the Korean copy changes above); the diff is that text.
 - Korean Dial pages: 빅토자 (Victoza) is no longer listed as a liraglutide product, because its MFDS licence (item 201005882) lapsed on 2026-10-06. The dose-log and injection-site guides cite the Ozempic and Wegovy MFDS labels as changed on 2026-10-07 and were rechecked against them on 2026-10-08. The injection-site guide cites Ozempic's 적용상의 주의 as section 11 and Wegovy's as section 10. Compounded vials are called 조제 (pharmacy-compounded) where the copy said 복제.
 - The Traditional Chinese Dial page and FAQ stop listing exenatide among the medications Dial shows under Taiwan product names. Every Byetta (降爾糖) and Bydureon (穩爾糖) licence in Taiwan is cancelled, so the copy says exenatide can still be logged and that its Taiwan licences are cancelled.
 - The semaglutide half-life post describes Dial's level model as it ships: each dose starts at zero, rises as it is absorbed, peaks about a day and a half after a weekly semaglutide injection, then decays by the elimination half-life. It had said each dose enters the total at the full logged amount.

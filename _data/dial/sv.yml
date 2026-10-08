@@ -124,7 +124,7 @@ supporting:
     - title: "Lager"
       body: "Håll reda på pennor eller injektionsflaskor med koncentration, apotek, utgångsdatum och satsnummer."
     - title: "Dina påminnelser"
-      body: "Skapa notiser varje dag, varje vecka eller med valfritt antal dagar, efter schemat du sätter. På dosdagen kan du registrera från notisen, och en Live Activity kan stanna på låsskärmen tills du registrerar."
+      body: "Skapa notiser varje dag, varje vecka eller med valfritt antal dagar, efter schemat du sätter. På dosdagen kan du registrera från notisen, och en Live Activity stannar på låsskärmen tills du registrerar, i högst 12 timmar."
     - title: "Importera befintliga poster"
       body: "Öppna en kompatibel export från en läkemedelsjournal med Dial för att importera befintliga poster."
 

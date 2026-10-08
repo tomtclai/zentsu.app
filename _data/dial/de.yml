@@ -156,7 +156,7 @@ supporting:
       body:
         Legen Sie tägliche, wöchentliche oder alle N Tage Mitteilungen nach dem Plan an, den Sie festlegen.
         Am Dosistag hat die Mitteilung eine Aktion zum Erfassen, und eine Live Activity
-        kann auf dem Sperrbildschirm bleiben, bis Sie erfassen.
+        bleibt auf dem Sperrbildschirm, bis Sie erfassen, höchstens 12 Stunden lang.
     - title: Bestehende Einträge importieren
       body: Öffnen Sie einen kompatiblen Export eines Medikamententagebuchs mit Dial, um vorhandene Einträge zu importieren.
 

@@ -35,7 +35,7 @@ Before you call, note three fields from the app: date and time of the last taken
 
 ## Reduce misses before they happen
 
-Dial lets you set daily, weekly, or every-N-days reminders tied to a medication. Dose-day notifications include a Log dose action. On supported devices, a reminder-day Live Activity can stay on the Lock Screen until you log, with a button that opens the dose form.
+Dial lets you set daily, weekly, or every-N-days reminders tied to a medication. Dose-day notifications include a Log dose action. On supported devices, a reminder-day Live Activity stays on the Lock Screen until you log, for up to 12 hours, with a button that opens the dose form.
 
 When you log before a reminder fires, Dial drops the remaining notification for that cycle so you are not nudged again after you already injected. If you undo or delete a dose, reminders rebase onto your most recent taken entry so the schedule follows what you actually did, not a stale calendar assumption.
 

@@ -124,7 +124,7 @@ supporting:
     - title: "Stoc"
       body: "Urmăriți pixurile injectoare sau flacoanele, cu concentrație, farmacie, data expirării și numărul lotului."
     - title: "Reamintirile dumneavoastră"
-      body: "Creați notificări zilnice, săptămânale sau la fiecare N zile în jurul programului pe care îl setați. În ziua dozei, o acțiune de înregistrare apare pe notificare, iar o Live Activity poate rămâne pe ecranul de blocare până înregistrați."
+      body: "Creați notificări zilnice, săptămânale sau la fiecare N zile în jurul programului pe care îl setați. În ziua dozei, o acțiune de înregistrare apare pe notificare, iar o Live Activity rămâne pe ecranul de blocare până înregistrați, cel mult 12 ore."
     - title: "Importați istoricul"
       body: "Deschideți în Dial un export compatibil dintr-un jurnal de medicamente, ca să importați înregistrările existente."
 

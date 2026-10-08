@@ -124,7 +124,7 @@ supporting:
     - title: "Zásoby"
       body: "Sledujte pera nebo lahvičky s koncentrací, lékárnou, datem expirace a číslem šarže."
     - title: "Vaše připomínky"
-      body: "Vytvořte denní, týdenní nebo každých N dní oznámení podle plánu, který nastavíte. V den dávky z oznámení dávku rovnou zaznamenáte a Live Activity může zůstat na zámku obrazovky, dokud nezaznamenáte."
+      body: "Vytvořte denní, týdenní nebo každých N dní oznámení podle plánu, který nastavíte. V den dávky z oznámení dávku rovnou zaznamenáte a Live Activity zůstane na zamčené obrazovce, dokud nezaznamenáte, nejdéle 12 hodin."
     - title: "Importujte existující záznamy"
       body: "Otevřete v Dial kompatibilní export z jiného deníku léků a naimportujte existující záznamy."
 

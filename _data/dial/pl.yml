@@ -124,7 +124,7 @@ supporting:
     - title: "Zapas"
       body: "Śledzą Państwo peny lub fiolki ze stężeniem, apteką, datą ważności i numerem serii."
     - title: "Państwa przypomnienia"
-      body: "Tworzą Państwo powiadomienia codzienne, tygodniowe albo co N dni według harmonogramu, który ustawią. W dniu dawki na powiadomieniu jest działanie zapisu. Live Activity może zostać na ekranie blokady, aż zapiszą Państwo dawkę."
+      body: "Tworzą Państwo powiadomienia codzienne, tygodniowe albo co N dni według harmonogramu, który ustawią. W dniu dawki na powiadomieniu jest działanie zapisu. Live Activity zostaje na ekranie blokady, aż zapiszą Państwo dawkę, najdłużej 12 godzin."
     - title: "Import istniejących wpisów"
       body: "W Dial otwierają Państwo zgodny eksport z dziennika leków, żeby zaimportować istniejące wpisy."
 

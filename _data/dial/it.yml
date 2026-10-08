@@ -161,8 +161,8 @@ supporting:
       body:
         Crei notifiche giornaliere, settimanali o ogni N giorni secondo l'orario che
         imposta. Nel giorno della dose, la notifica include l'azione Registra dose, e
-        una Live Activity può restare sulla schermata di blocco fino alla
-        registrazione.
+        una Live Activity resta sulla schermata di blocco fino alla
+        registrazione, per un massimo di 12 ore.
     - title: Importi le voci esistenti
       body: Importi in Dial un registro di farmaci in formato compatibile per recuperare le voci già esistenti.
 

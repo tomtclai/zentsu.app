@@ -124,7 +124,7 @@ supporting:
     - title: "Lagerbeholdning"
       body: "Hold styr på penne eller hætteglas med koncentration, apotek, udløbsdato og batchnummer."
     - title: "Dine påmindelser"
-      body: "Opret påmindelser hver dag, hver uge eller hver N. dag efter den plan, du lægger. På dosisdagen kan du registrere fra notifikationen, og en Live Activity kan blive på låseskærmen, indtil du registrerer."
+      body: "Opret påmindelser hver dag, hver uge eller hver N. dag efter den plan, du lægger. På dosisdagen kan du registrere fra notifikationen, og en Live Activity bliver på låseskærmen, indtil du registrerer, i op til 12 timer."
     - title: "Importér eksisterende poster"
       body: "Åbn en kompatibel eksport fra en medicinjournal i Dial for at importere eksisterende poster."
 

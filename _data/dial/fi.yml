@@ -124,7 +124,7 @@ supporting:
     - title: "Varasto"
       body: "Seuraa kyniä tai injektiopulloja: pitoisuus, apteekki, viimeinen käyttöpäivä ja eränumero."
     - title: "Muistutuksesi"
-      body: "Luo päivittäisiä, viikoittaisia tai N päivän välein toistuvia ilmoituksia asettamasi aikataulun mukaan. Annospäivänä ilmoituksessa on Kirjaa annos -toiminto, ja Live Activity voi jäädä lukitusnäyttöön, kunnes kirjaat."
+      body: "Luo päivittäisiä, viikoittaisia tai N päivän välein toistuvia ilmoituksia asettamasi aikataulun mukaan. Annospäivänä ilmoituksessa on Kirjaa annos -toiminto, ja Live Activity pysyy lukitusnäytöllä, kunnes kirjaat, enintään 12 tuntia."
     - title: "Tuo olemassa olevat merkinnät"
       body: "Tuo olemassa olevat merkinnät avaamalla yhteensopiva vienti toisesta lääkepäiväkirjasta."
 

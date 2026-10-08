@@ -159,7 +159,7 @@ supporting:
       body:
         Crea notificaciones diarias, semanales o cada N días con el horario que definas.
         El día de la dosis, la notificación incluye una acción para registrar la dosis, y
-        una Live Activity puede permanecer en la pantalla de bloqueo hasta que registres.
+        una Live Activity permanece en la pantalla de bloqueo hasta que registres, 12 horas como máximo.
     - title: Importar entradas existentes
       body:
         Abre en Dial la exportación de otra app de seguimiento compatible para importar

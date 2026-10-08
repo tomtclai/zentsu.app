@@ -124,7 +124,7 @@ supporting:
     - title: "Stok"
       body: "Jejaki pen atau vial dengan kepekatan, farmasi, tarikh luput dan nombor lot."
     - title: "Peringatan anda"
-      body: "Cipta pemberitahuan harian, mingguan atau setiap N hari mengikut jadual yang anda tetapkan. Pada hari dos, tindakan rekod ada pada pemberitahuan, dan Live Activity boleh kekal pada Skrin Kunci sehingga anda merekod."
+      body: "Cipta pemberitahuan harian, mingguan atau setiap N hari mengikut jadual yang anda tetapkan. Pada hari dos, tindakan rekod ada pada pemberitahuan, dan Live Activity kekal pada Skrin Kunci sehingga anda merekod, paling lama 12 jam."
     - title: "Import entri sedia ada"
       body: "Buka fail eksport diari ubat yang serasi dengan Dial untuk import entri sedia ada."
 

@@ -124,7 +124,7 @@ supporting:
     - title: "Inventari"
       body: "Faci el seguiment de plomes o vials amb concentració, farmàcia, data de caducitat i número de lot."
     - title: "Els seus recordatoris"
-      body: "Creï notificacions diàries, setmanals o cada N dies amb l’horari que defineixi. El dia de la dosi, una acció de registre apareix a la notificació, i una Live Activity pot quedar a la pantalla de bloqueig fins que registri."
+      body: "Creï notificacions diàries, setmanals o cada N dies amb l’horari que defineixi. El dia de la dosi, una acció de registre apareix a la notificació, i una Live Activity queda a la pantalla de bloqueig fins que registri, durant 12 hores com a màxim."
     - title: "Importi les entrades existents"
       body: "Obri amb Dial una exportació compatible d’un altre diari de medicació per importar-ne les entrades."
 

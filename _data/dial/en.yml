@@ -153,7 +153,7 @@ supporting:
       body:
         Create daily, weekly, or every-N-days notifications around the schedule you
         set. On dose day, a Log dose action sits on the notification, and a Live Activity
-        can stay on the Lock Screen until you log.
+        stays on the Lock Screen until you log, for up to 12 hours.
     - title: Import existing entries
       body: Open a compatible medication-tracker export with Dial to import existing entries.
 

@@ -124,7 +124,7 @@ supporting:
     - title: "Tồn kho"
       body: "Theo dõi bút hoặc lọ với nồng độ, nhà thuốc, hạn dùng và số lô."
     - title: "Lời nhắc của bạn"
-      body: "Tạo thông báo hàng ngày, hàng tuần hoặc mỗi N ngày theo lịch bạn đặt. Ngày liều có thao tác ghi trên thông báo, và Live Activity có thể nằm trên màn hình khóa đến khi bạn ghi."
+      body: "Tạo thông báo hàng ngày, hàng tuần hoặc mỗi N ngày theo lịch bạn đặt. Ngày liều có thao tác ghi trên thông báo, và Live Activity nằm trên màn hình khóa đến khi bạn ghi, tối đa 12 giờ."
     - title: "Nhập các mục có sẵn"
       body: "Mở bản xuất nhật ký thuốc tương thích với Dial để nhập các mục hiện có."
 
