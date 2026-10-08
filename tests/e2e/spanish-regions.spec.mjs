@@ -17,9 +17,16 @@ for (const region of regions) {
       await expect(page.locator(`link[hreflang="${lang}"]`)).toHaveAttribute('href', `https://zentsu.app${path}`);
     }
     await expect(page.locator('.nav-lang a[hreflang="es"]')).toHaveCount(0);
-    await expect(page.locator('.nav-lang a[hreflang="es-MX"]')).toHaveText('Español (México)');
-    await expect(page.locator('.nav-lang a[hreflang="es-ES"]')).toHaveText('Español (España)');
-    await expect(page.locator('.nav-lang a[aria-current="page"]')).toHaveAttribute('hreflang', region.lang);
+    expect(
+      (await page.locator('.nav-lang a[data-country="mx"][hreflang="es-MX"]').textContent()).trim(),
+    ).toBe('Español (México)');
+    expect(
+      (await page.locator('.nav-lang a[data-country="es"][hreflang="es-ES"]').textContent()).trim(),
+    ).toBe('Español (España)');
+    await expect(page.locator('.nav-lang a[aria-current="page"]')).toHaveCount(1);
+    expect(await page.locator('.nav-lang a[aria-current="page"]').getAttribute('hreflang')).toBe(
+      region.lang,
+    );
     expect(prices[region.key].territory).toBe(region.territory);
     expect(prices[region.key].currency).toBe(region.currency);
     for (const plan of ['monthly', 'annual', 'lifetime']) {
@@ -43,12 +50,13 @@ for (const region of regions) {
 
 test('regional selection preserves query and fragment; Escape restores focus', async ({ page }) => {
   await page.goto('/es/dial/?source=regional#plans-title');
-  const picker = page.locator('.nav-lang details');
-  await picker.locator('summary').click();
+  const picker = page.locator('.nav-lang-picker');
+  await picker.locator(':scope > summary').click();
   await page.keyboard.press('Escape');
-  await expect(picker.locator('summary')).toBeFocused();
-  await picker.locator('summary').click();
-  await picker.locator('a[hreflang="es-ES"]').click();
+  await expect(picker.locator(':scope > summary')).toBeFocused();
+  await picker.locator(':scope > summary').click();
+  await page.locator('details.nav-lang-country[data-country="es"] > summary').click();
+  await picker.locator('a[data-country="es"][hreflang="es-ES"]').click();
   await expect(page).toHaveURL(/\/es-es\/dial\/\?source=regional#plans-title$/);
   await page.reload();
   await expect(page.locator('html')).toHaveAttribute('lang', 'es-ES');
@@ -58,8 +66,9 @@ test('regional links work without JavaScript', async ({ browser }) => {
   const context = await browser.newContext({ javaScriptEnabled: false });
   const page = await context.newPage();
   await page.goto(test.info().project.use.baseURL + '/es/dial/');
-  await page.locator('.nav-lang summary').click();
-  await page.locator('.nav-lang a[hreflang="es-ES"]').click();
+  await page.locator('.nav-lang-picker > summary').click();
+  await page.locator('details.nav-lang-country[data-country="es"] > summary').click();
+  await page.locator('a[data-country="es"][hreflang="es-ES"]').click();
   await expect(page).toHaveURL(/\/es-es\/dial\/$/);
   await expect(page.locator('[data-dial-price="lifetime"]').first()).toHaveText(prices['es-es'].lifetime_display);
   await context.close();

@@ -22,7 +22,17 @@ for (const lang of locales) {
       await expect(page.locator('html')).toHaveAttribute('dir', 'rtl');
     }
 
-    const hreflangLinks = page.locator('.nav-lang a[hreflang]');
-    await expect(hreflangLinks).toHaveCount(Object.keys(alternates).filter((lang) => lang !== 'es').length);
+    const countries = await page.locator('.nav-lang [data-country]').evaluateAll((nodes) => [
+      ...new Set(nodes.map((node) => node.getAttribute('data-country'))),
+    ]);
+    expect(countries).toHaveLength(175);
+    const hreflangs = await page.locator('.nav-lang a[hreflang]').evaluateAll((nodes) => [
+      ...new Set(nodes.map((node) => node.getAttribute('hreflang'))),
+    ]);
+    expect(hreflangs).toEqual(
+      expect.arrayContaining(
+        Object.keys(alternates).filter((code) => code !== 'es'),
+      ),
+    );
   });
 }

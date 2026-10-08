@@ -14,6 +14,7 @@ _includes/footer.html
 _includes/language-switcher.html
 _includes/dial-page.html
 _includes/dial-store-url.html
+_includes/dial-picker-href.html
 _includes/dial/
 _includes/dial-shot.html
 dial.css

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { describe, test } from 'node:test';
 
 const require = createRequire(import.meta.url);
-const { catalogByCurrency, resolvePrices } = require('../../dial-currency.js');
+const { catalogByCurrency, resolvePrices, rewriteStorePath } = require('../../dial-currency.js');
 
 const samplePrices = {
   en: {
@@ -90,6 +90,39 @@ describe('resolvePrices', () => {
     assert.equal(resolved.row.lifetime_display, '$149.99');
     assert.equal(resolved.note, 'Ukraine note');
   });
+});
+
+test('country storefront uses that territory even when currency matches another page', () => {
+  const canada = {
+    currency: 'CAD',
+    territory: 'CAN',
+    lifetime_display: 'CA$69.99',
+    annual_display: 'CA$24.99',
+    monthly_display: 'CA$4.99',
+  };
+  const data = {
+    lang: 'fr',
+    country: 'ca',
+    defaultCurrency: 'EUR',
+    defaultCountry: 'fr',
+    defaultNote: 'France note',
+    overrideNote: 'Prices in {currency} from the App Store ({storefront}).',
+    prices: samplePrices,
+    countries: [{ id: 'ca', territory: 'CAN', name: 'Canada', pages: ['en', 'fr'] }],
+    territoryPrices: { CAN: canada },
+  };
+  const resolved = resolvePrices(data, 'CAD');
+  assert.equal(resolved.row, canada);
+  assert.equal(resolved.note, 'Prices in CAD from the App Store (Canada).');
+  const euro = resolvePrices(data, 'EUR');
+  assert.equal(euro.row.lifetime_display, '149,99 €');
+  const onPageDefault = resolvePrices({ ...data, country: 'fr', defaultCountry: 'fr' }, 'EUR');
+  assert.equal(onPageDefault.note, 'France note');
+});
+
+test('rewrites App Store paths to the chosen country', () => {
+  assert.equal(rewriteStorePath('/app/id6789408903', 'gb'), '/gb/app/id6789408903');
+  assert.equal(rewriteStorePath('/us/app/id6789408903', 'ca'), '/ca/app/id6789408903');
 });
 
 test('Spain uses its own EUR row even when Germany has different EUR prices', () => {

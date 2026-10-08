@@ -1,11 +1,10 @@
 // Currency picker for Dial plan prices.
-// Language (nav) and currency (next to the prices) are independent.
-// A page's storefront is the default. An explicit choice is stored separately
-// and survives language changes. Amounts stay the live ASC figures from
-// _data/dial_prices.yml. Schema.org offers stay on the page storefront.
-// Wrapped in an IIFE for the same reason as locale.js: shared page, shared global scope.
+// Country (nav) sets the storefront default. Language and currency stay
+// independent: a later currency click overrides display amounts only.
+// Schema.org offers stay on the page storefront.
 (function () {
   const DIAL_CURRENCY_STORAGE_KEY = 'zentsu-dial-currency';
+  const DIAL_COUNTRY_STORAGE_KEY = 'zentsu-dial-country';
 
   function priceData() {
     const node = document.getElementById('dial-price-data');
@@ -34,6 +33,33 @@
     }
   }
 
+  function readCountry() {
+    try {
+      return localStorage.getItem(DIAL_COUNTRY_STORAGE_KEY);
+    } catch {
+      return null;
+    }
+  }
+
+  function countriesById(list) {
+    const map = {};
+    for (const row of list || []) {
+      if (row && row.id) map[row.id] = row;
+    }
+    return map;
+  }
+
+  function rewriteStorePath(pathname, country) {
+    if (!country) return pathname;
+    if (/^\/[a-z]{2}\/app\//.test(pathname)) {
+      return pathname.replace(/^\/[a-z]{2}\/app\//, `/${country}/app/`);
+    }
+    if (pathname.startsWith('/app/')) {
+      return `/${country}${pathname}`;
+    }
+    return pathname;
+  }
+
   function catalogByCurrency(prices, currencyPrices) {
     const map = {};
     for (const [lang, row] of Object.entries(prices || {})) {
@@ -47,13 +73,37 @@
     return map;
   }
 
+  function countryRecord(data) {
+    return countriesById(data.countries)[data.country];
+  }
+
+  function territoryRow(data) {
+    const country = countryRecord(data);
+    if (!country || !data.territoryPrices) return null;
+    return data.territoryPrices[country.territory] || null;
+  }
+
   function resolvePrices(data, currency) {
+    const selected = territoryRow(data);
+    const country = countryRecord(data);
+    const defaultCurrency = selected ? selected.currency : data.defaultCurrency;
+    const defaultRow = selected || data.prices[data.lang];
+    const namedNote =
+      selected && country
+        ? String(data.overrideNote || '')
+            .replaceAll('{currency}', selected.currency)
+            .replaceAll('{storefront}', country.name)
+        : data.defaultNote;
+    const defaultNote =
+      data.country && data.defaultCountry && data.country !== data.defaultCountry
+        ? namedNote
+        : data.defaultNote;
     const fallback = {
-      currency: data.defaultCurrency,
-      row: data.prices[data.lang],
-      note: data.defaultNote,
+      currency: defaultCurrency,
+      row: defaultRow,
+      note: defaultNote,
     };
-    if (!currency || currency === data.defaultCurrency) return fallback;
+    if (!currency || currency === defaultCurrency) return fallback;
     const row = catalogByCurrency(data.prices, data.currencyPrices)[currency];
     if (!row) return fallback;
     return {
@@ -63,6 +113,19 @@
         .replaceAll('{currency}', currency)
         .replaceAll('{storefront}', row.territory),
     };
+  }
+
+  function applyStoreLinks(country) {
+    if (!country) return;
+    document.querySelectorAll('[data-dial-store-link]').forEach((node) => {
+      try {
+        const url = new URL(node.getAttribute('href'), location.origin);
+        url.pathname = rewriteStorePath(url.pathname, country);
+        node.setAttribute('href', url.href);
+      } catch {
+        return;
+      }
+    });
   }
 
   function applyPrices(resolved) {
@@ -105,7 +168,9 @@
         const currency = button.getAttribute('data-dial-currency');
         if (!currency) return;
         writeStored(currency);
-        applyPrices(resolvePrices(data, currency));
+        applyPrices(
+          resolvePrices({ ...data, country: readCountry() || data.defaultCountry }, currency),
+        );
         picker.open = false;
       });
     });
@@ -125,14 +190,43 @@
     });
   }
 
+  function applyCountry(data, country, options = {}) {
+    const next = { ...data, country };
+    const selected = territoryRow(next);
+    if (options.resetCurrency && selected) writeStored(selected.currency);
+    const stored = readStored();
+    const defaultCurrency = selected?.currency || data.defaultCurrency;
+    const currency = options.resetCurrency
+      ? defaultCurrency
+      : stored && stored !== defaultCurrency
+        ? stored
+        : defaultCurrency;
+    applyPrices(resolvePrices(next, currency));
+    applyStoreLinks(country);
+  }
+
   function init() {
     const data = priceData();
     if (!data || !data.prices || !data.lang) return;
+    const knownCountries = countriesById(data.countries);
+    const storedCountry = readCountry();
+    const country =
+      storedCountry && knownCountries[storedCountry] ? storedCountry : data.defaultCountry;
+    const selected = territoryRow({ ...data, country });
     const stored = readStored();
     const known = catalogByCurrency(data.prices, data.currencyPrices);
-    const currency = stored && known[stored] ? stored : data.defaultCurrency;
-    applyPrices(resolvePrices(data, currency));
+    const currency =
+      stored && known[stored] && stored !== (selected?.currency || data.defaultCurrency)
+        ? stored
+        : selected?.currency || (stored && known[stored] ? stored : data.defaultCurrency);
+    applyPrices(resolvePrices({ ...data, country }, currency));
+    applyStoreLinks(country);
     bindPicker(data);
+    window.addEventListener('zentsu-dial-country', (event) => {
+      const nextCountry = event.detail && event.detail.country;
+      if (!nextCountry || !knownCountries[nextCountry]) return;
+      applyCountry(data, nextCountry, { resetCurrency: true });
+    });
   }
 
   if (typeof document !== 'undefined') {
@@ -144,6 +238,11 @@
   }
 
   if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { catalogByCurrency, resolvePrices };
+    module.exports = {
+      catalogByCurrency,
+      resolvePrices,
+      rewriteStorePath,
+      countriesById,
+    };
   }
 })();

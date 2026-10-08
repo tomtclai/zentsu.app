@@ -1,36 +1,100 @@
 {%- assign alternates = site.data.alternates[page.alternate_group] -%}
 {%- if alternates -%}
-{%- assign strings = site.data.i18n[page.lang] | default: site.data.i18n.en %}
+{%- assign strings = site.data.i18n[page.lang] | default: site.data.i18n.en -%}
+{%- assign picker = strings.country_picker | default: site.data.i18n.en.country_picker -%}
 {%- assign current_locale = page.locale | default: page.lang -%}
-{%- assign current_name = site.data.i18n[current_locale].language_name | default: strings.language_name %}
+{%- assign picker_storefront = storefront | default: site.data.dial_storefronts[page.lang] | default: site.data.dial_storefronts.en -%}
+{%- assign current_country = picker_storefront.country | default: 'us' -%}
+{%- assign current_country_name = current_country -%}
+{%- for country in site.data.app_store_countries -%}
+{%- if country.id == current_country -%}
+{%- assign current_country_name = country.name -%}
+{%- endif -%}
+{%- endfor -%}
+{%- assign region_ids = 'africa_me_india,asia_pacific,europe,latin_america,us_canada' | split: ',' -%}
 <li class="nav-lang">
-  <details>
-    <summary aria-label="{{ strings.language_switcher_label }}: {{ current_name }}"
-      title="{{ strings.language_switcher_label }}: {{ current_name }}"
+  <details class="nav-lang-picker" data-language-title="{{ picker.language_title | escape }}">
+    <summary aria-label="{{ picker.label }}: {{ current_country_name }}"
+      title="{{ picker.label }}: {{ current_country_name }}"
+      data-country-summary
     ><svg class="nav-lang-globe" viewBox="0 0 20 20" width="17" height="17" fill="none"
       stroke="currentColor" stroke-width="1.4" aria-hidden="true" focusable="false">
       <circle cx="10" cy="10" r="7.3" />
       <path d="M2.7 10h14.6" />
       <ellipse cx="10" cy="10" rx="3.4" ry="7.3" />
-    </svg></summary
-    >
-    <ul class="nav-lang-menu">
-      {%- for alternate in alternates %}
-      {%- assign language = alternate[0] -%}
-      {%- if page.alternate_group == 'dial' and language == 'es' -%}{%- continue -%}{%- endif -%}
-      {%- assign url = alternate[1] -%}
-      {%- if language == current_locale -%}
-      {%- assign current = ' aria-current="page"' -%}
-      {%- else -%}
-      {%- assign current = '' -%}
-      {%- endif %}
-      <li>
-        <a href="{{ url }}" lang="{{ language }}" hreflang="{{ language }}"{{ current }}
-          >{{ site.data.i18n[language].language_name | default: language }}</a
-        >
-      </li>
-      {%- endfor %}
-    </ul>
+    </svg></summary>
+    <div class="nav-lang-backdrop" data-nav-lang-close tabindex="-1"></div>
+    <div class="nav-lang-dialog" role="dialog" aria-modal="true" aria-labelledby="nav-lang-title">
+      <div class="nav-lang-dialog-head">
+        <button type="button" class="nav-lang-back" hidden>{{ picker.back }}</button>
+        <p id="nav-lang-title" class="nav-lang-title">{{ picker.title }}</p>
+        <button type="button" class="nav-lang-close" data-nav-lang-close aria-label="{{ picker.close }}">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="nav-lang-countries">
+        {%- for region_id in region_ids -%}
+        <div class="nav-lang-region">
+          <p class="nav-lang-region-title">{{ picker.regions[region_id] }}</p>
+          <ul class="nav-lang-menu">
+            {%- for country in site.data.app_store_countries -%}
+            {%- if country.region == region_id -%}
+            {%- assign country_page_keys = '' | split: '' -%}
+            {%- assign country_hrefs = '' | split: '' -%}
+            {%- for page_key in country.pages -%}
+            {% include dial-picker-href.html page_key=page_key %}
+            {%- unless country_hrefs contains dial_href -%}
+            {%- assign country_hrefs = country_hrefs | push: dial_href -%}
+            {%- assign country_page_keys = country_page_keys | push: page_key -%}
+            {%- endunless -%}
+            {%- endfor -%}
+            {%- assign page_count = country_page_keys.size -%}
+            {%- assign country_current = '' -%}
+            {%- if country.id == current_country -%}
+            {%- assign country_current = ' aria-current="true"' -%}
+            {%- endif -%}
+            {%- if page_count == 1 -%}
+            {%- assign page_key = country_page_keys | first -%}
+            {% include dial-picker-href.html page_key=page_key %}
+            <li>
+              <a href="{{ dial_href }}" lang="{{ dial_hreflang }}" hreflang="{{ dial_hreflang }}"
+                data-country="{{ country.id }}" data-page="{{ page_key }}"{{ country_current }}
+                >{{ country.name }}</a
+              >
+            </li>
+            {%- else -%}
+            <li>
+              <details class="nav-lang-country" data-country="{{ country.id }}" data-country-name="{{ country.name | escape }}">
+                <summary{{ country_current }}>{{ country.name }}</summary>
+                <ul class="nav-lang-langs">
+                  {%- for page_key in country_page_keys -%}
+                  {% include dial-picker-href.html page_key=page_key %}
+                  {%- assign lang_dir = '' -%}
+                  {%- if dial_hreflang == 'ar' or dial_hreflang == 'he' -%}
+                  {%- assign lang_dir = ' dir="rtl"' -%}
+                  {%- endif -%}
+                  {%- assign lang_current = '' -%}
+                  {%- if country.id == current_country and dial_hreflang == current_locale -%}
+                  {%- assign lang_current = ' aria-current="page"' -%}
+                  {%- endif -%}
+                  <li>
+                    <a href="{{ dial_href }}" lang="{{ dial_hreflang }}" hreflang="{{ dial_hreflang }}"{{ lang_dir }}
+                      data-country="{{ country.id }}" data-page="{{ page_key }}"{{ lang_current }}
+                      >{{ site.data.i18n[dial_hreflang].language_name | default: site.data.i18n[page_key].language_name | default: page_key }}</a
+                    >
+                  </li>
+                  {%- endfor -%}
+                </ul>
+              </details>
+            </li>
+            {%- endif -%}
+            {%- endif -%}
+            {%- endfor -%}
+          </ul>
+        </div>
+        {%- endfor -%}
+      </div>
+    </div>
   </details>
 </li>
 {%- endif -%}

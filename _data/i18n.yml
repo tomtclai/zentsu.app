@@ -1,6 +1,18 @@
 en:
   language_name: English
   language_switcher_label: Language
+  country_picker:
+    label: "Country or region"
+    title: "Select a country or region"
+    language_title: "Select a language"
+    back: "Back"
+    close: "Close"
+    regions:
+      africa_me_india: "Africa, Middle East, and India"
+      asia_pacific: "Asia Pacific"
+      europe: "Europe"
+      latin_america: "Latin America and the Caribbean"
+      us_canada: "United States and Canada"
   currency_switcher_label: "Currency"
   price_shown_in: "Prices in {currency} from the App Store ({storefront}). Your Apple Account region determines checkout prices. Subscriptions renew until canceled."
   og_locale: en_US
@@ -38,6 +50,18 @@ en:
 de:
   language_name: Deutsch
   language_switcher_label: Sprache
+  country_picker:
+    label: "Land oder Region"
+    title: "Land oder Region auswählen"
+    language_title: "Sprache auswählen"
+    back: "Zurück"
+    close: "Schließen"
+    regions:
+      africa_me_india: "Afrika, Naher Osten und Indien"
+      asia_pacific: "Asien-Pazifik"
+      europe: "Europa"
+      latin_america: "Lateinamerika und die Karibik"
+      us_canada: "Vereinigte Staaten und Kanada"
   currency_switcher_label: "Währung"
   price_shown_in: "Preise in {currency} aus dem App Store ({storefront}). Die Region deines Apple-Accounts bestimmt den Kaufpreis. Abonnements verlängern sich bis zur Kündigung."
   og_locale: de_DE
@@ -73,6 +97,18 @@ de:
 es:
   language_name: Español
   language_switcher_label: Idioma
+  country_picker:
+    label: "País o región"
+    title: "Selecciona un país o región"
+    language_title: "Selecciona un idioma"
+    back: "Atrás"
+    close: "Cerrar"
+    regions:
+      africa_me_india: "África, Oriente Medio e India"
+      asia_pacific: "Asia-Pacífico"
+      europe: "Europa"
+      latin_america: "Latinoamérica y el Caribe"
+      us_canada: "Estados Unidos y Canadá"
   currency_switcher_label: "Moneda"
   price_shown_in: "Precios en {currency} del App Store ({storefront}). La región de tu cuenta de Apple determina el precio al comprar. Las suscripciones se renuevan hasta que las canceles."
   og_locale: es_MX
@@ -109,6 +145,18 @@ es:
 fr:
   language_name: Français
   language_switcher_label: Langue
+  country_picker:
+    label: "Pays ou région"
+    title: "Choisir un pays ou une région"
+    language_title: "Choisir une langue"
+    back: "Retour"
+    close: "Fermer"
+    regions:
+      africa_me_india: "Afrique, Moyen-Orient et Inde"
+      asia_pacific: "Asie-Pacifique"
+      europe: "Europe"
+      latin_america: "Amérique latine et Caraïbes"
+      us_canada: "États-Unis et Canada"
   currency_switcher_label: "Devise"
   price_shown_in: "Prix en {currency} de l'App Store ({storefront}). La région de ton compte Apple détermine le prix à l'achat. Les abonnements se renouvellent jusqu'à résiliation."
   og_locale: fr_FR
@@ -145,6 +193,18 @@ fr:
 it:
   language_name: Italiano
   language_switcher_label: Lingua
+  country_picker:
+    label: "Paese o area geografica"
+    title: "Seleziona un paese o un’area geografica"
+    language_title: "Seleziona una lingua"
+    back: "Indietro"
+    close: "Chiudi"
+    regions:
+      africa_me_india: "Africa, Medio Oriente e India"
+      asia_pacific: "Asia Pacifico"
+      europe: "Europa"
+      latin_america: "America Latina e Caraibi"
+      us_canada: "Stati Uniti e Canada"
   currency_switcher_label: "Valuta"
   price_shown_in: "Visualizzato in {currency}."
   og_locale: it_IT
@@ -181,6 +241,18 @@ it:
 ja:
   language_name: 日本語
   language_switcher_label: 言語
+  country_picker:
+    label: "国または地域"
+    title: "国または地域を選択"
+    language_title: "言語を選択"
+    back: "戻る"
+    close: "閉じる"
+    regions:
+      africa_me_india: "アフリカ、中東、インド"
+      asia_pacific: "アジア太平洋"
+      europe: "ヨーロッパ"
+      latin_america: "ラテンアメリカおよびカリブ海"
+      us_canada: "アメリカ合衆国とカナダ"
   currency_switcher_label: "通貨"
   price_shown_in: "{storefront}のApp Store価格を{currency}で表示しています。購入価格はApple Accountの国や地域で決まります。サブスクリプションは解約するまで更新されます。"
   og_locale: ja_JP
@@ -215,6 +287,18 @@ ja:
 nl:
   language_name: Nederlands
   language_switcher_label: Taal
+  country_picker:
+    label: "Land of regio"
+    title: "Kies een land of regio"
+    language_title: "Kies een taal"
+    back: "Terug"
+    close: "Sluiten"
+    regions:
+      africa_me_india: "Afrika, het Midden-Oosten en India"
+      asia_pacific: "Azië-Pacific"
+      europe: "Europa"
+      latin_america: "Latijns-Amerika en het Caribisch gebied"
+      us_canada: "Verenigde Staten en Canada"
   currency_switcher_label: "Valuta"
   price_shown_in: "Weergegeven in {currency}."
   og_locale: nl_NL
@@ -250,6 +334,18 @@ nl:
 pt:
   language_name: Português
   language_switcher_label: Idioma
+  country_picker:
+    label: "País ou região"
+    title: "Selecione um país ou região"
+    language_title: "Selecione um idioma"
+    back: "Voltar"
+    close: "Fechar"
+    regions:
+      africa_me_india: "África, Oriente Médio e Índia"
+      asia_pacific: "Ásia-Pacífico"
+      europe: "Europa"
+      latin_america: "América Latina e Caribe"
+      us_canada: "Estados Unidos e Canadá"
   currency_switcher_label: "Moeda"
   price_shown_in: "Exibido em {currency}."
   og_locale: pt_BR
@@ -286,6 +382,18 @@ pt:
 hi:
   language_name: हिन्दी
   language_switcher_label: भाषा
+  country_picker:
+    label: "देश या क्षेत्र"
+    title: "कोई देश या क्षेत्र चुनें"
+    language_title: "कोई भाषा चुनें"
+    back: "वापस"
+    close: "बंद करें"
+    regions:
+      africa_me_india: "अफ़्रीका, मध्य पूर्व और भारत"
+      asia_pacific: "एशिया पैसिफ़िक"
+      europe: "यूरोप"
+      latin_america: "लैटिन अमेरिका और कैरिबियन"
+      us_canada: "संयुक्त राज्य और कनाडा"
   currency_switcher_label: "मुद्रा"
   price_shown_in: "{currency} में दिखाया गया।"
   og_locale: hi_IN
@@ -321,6 +429,18 @@ hi:
 tr:
   language_name: Türkçe
   language_switcher_label: Dil
+  country_picker:
+    label: "Ülke veya Bölge"
+    title: "Bir ülke veya bölge seçin"
+    language_title: "Bir dil seçin"
+    back: "Geri"
+    close: "Kapat"
+    regions:
+      africa_me_india: "Afrika, Orta Doğu ve Hindistan"
+      asia_pacific: "Asya Pasifik"
+      europe: "Avrupa"
+      latin_america: "Latin Amerika ve Karayipler"
+      us_canada: "Amerika Birleşik Devletleri ve Kanada"
   currency_switcher_label: "Para birimi"
   price_shown_in: "{currency} olarak gösterilir."
   og_locale: tr_TR
@@ -356,6 +476,18 @@ tr:
 ar:
   language_name: العربية
   language_switcher_label: اللغة
+  country_picker:
+    label: "البلد أو المنطقة"
+    title: "اختر بلدًا أو منطقة"
+    language_title: "اختر لغة"
+    back: "رجوع"
+    close: "إغلاق"
+    regions:
+      africa_me_india: "أفريقيا والشرق الأوسط والهند"
+      asia_pacific: "آسيا والمحيط الهادئ"
+      europe: "أوروبا"
+      latin_america: "أمريكا اللاتينية والكاريبي"
+      us_canada: "الولايات المتحدة وكندا"
   currency_switcher_label: "العملة"
   price_shown_in: "معروض ب{currency}."
   og_locale: ar_SA
@@ -392,6 +524,18 @@ ar:
 ca:
   language_name: Català
   language_switcher_label: Idioma
+  country_picker:
+    label: "País o regió"
+    title: "Seleccioneu un país o una regió"
+    language_title: "Seleccioneu un idioma"
+    back: "Enrere"
+    close: "Tanca"
+    regions:
+      africa_me_india: "Àfrica, Orient Mitjà i Índia"
+      asia_pacific: "Àsia-Pacífic"
+      europe: "Europa"
+      latin_america: "Amèrica Llatina i el Carib"
+      us_canada: "Estats Units i Canadà"
   currency_switcher_label: "Moneda"
   price_shown_in: "Es mostra en {currency}."
   og_locale: ca_ES
@@ -427,6 +571,18 @@ ca:
 ko:
   language_name: 한국어
   language_switcher_label: 언어
+  country_picker:
+    label: "국가 또는 지역"
+    title: "국가 또는 지역 선택"
+    language_title: "언어 선택"
+    back: "뒤로"
+    close: "닫기"
+    regions:
+      africa_me_india: "아프리카, 중동 및 인도"
+      asia_pacific: "아시아 태평양"
+      europe: "유럽"
+      latin_america: "라틴 아메리카 및 카리브해"
+      us_canada: "미국 및 캐나다"
   currency_switcher_label: "통화"
   price_shown_in: "{storefront} App Store 가격을 {currency}로 표시합니다. 구매 가격은 Apple 계정의 국가 또는 지역에 따라 정해집니다. 구독은 해지할 때까지 갱신됩니다."
   og_locale: ko_KR
@@ -462,6 +618,18 @@ ko:
 zh:
   language_name: 简体中文
   language_switcher_label: 语言
+  country_picker:
+    label: "国家或地区"
+    title: "选择国家或地区"
+    language_title: "选择语言"
+    back: "返回"
+    close: "关闭"
+    regions:
+      africa_me_india: "非洲、中东和印度"
+      asia_pacific: "亚太地区"
+      europe: "欧洲"
+      latin_america: "拉丁美洲和加勒比地区"
+      us_canada: "美国和加拿大"
   currency_switcher_label: "货币"
   price_shown_in: "以 {currency} 显示。"
   og_locale: zh_CN
@@ -497,6 +665,18 @@ zh:
 zh-hant:
   language_name: 繁體中文
   language_switcher_label: 語言
+  country_picker:
+    label: "國家或地區"
+    title: "選擇國家或地區"
+    language_title: "選擇語言"
+    back: "返回"
+    close: "關閉"
+    regions:
+      africa_me_india: "非洲、中東與印度"
+      asia_pacific: "亞太地區"
+      europe: "歐洲"
+      latin_america: "拉丁美洲與加勒比海"
+      us_canada: "美國與加拿大"
   currency_switcher_label: "貨幣"
   price_shown_in: "以 {currency} 顯示。"
   og_locale: zh_TW
@@ -532,6 +712,18 @@ zh-hant:
 id:
   language_name: Bahasa Indonesia
   language_switcher_label: Bahasa
+  country_picker:
+    label: "Negara atau Wilayah"
+    title: "Pilih negara atau wilayah"
+    language_title: "Pilih bahasa"
+    back: "Kembali"
+    close: "Tutup"
+    regions:
+      africa_me_india: "Afrika, Timur Tengah, dan India"
+      asia_pacific: "Asia Pasifik"
+      europe: "Eropa"
+      latin_america: "Amerika Latin dan Karibia"
+      us_canada: "Amerika Serikat dan Kanada"
   currency_switcher_label: "Mata uang"
   price_shown_in: "Ditampilkan dalam {currency}."
   og_locale: id_ID
@@ -567,6 +759,18 @@ id:
 pl:
   language_name: Polski
   language_switcher_label: Język
+  country_picker:
+    label: "Kraj lub region"
+    title: "Wybierz kraj lub region"
+    language_title: "Wybierz język"
+    back: "Wstecz"
+    close: "Zamknij"
+    regions:
+      africa_me_india: "Afryka, Bliski Wschód i Indie"
+      asia_pacific: "Azja i Pacyfik"
+      europe: "Europa"
+      latin_america: "Ameryka Łacińska i Karaiby"
+      us_canada: "Stany Zjednoczone i Kanada"
   currency_switcher_label: "Waluta"
   price_shown_in: "Wyświetlane w {currency}."
   og_locale: pl_PL
@@ -602,6 +806,18 @@ pl:
 ms:
   language_name: Bahasa Melayu
   language_switcher_label: Bahasa
+  country_picker:
+    label: "Negara atau Wilayah"
+    title: "Pilih negara atau wilayah"
+    language_title: "Pilih bahasa"
+    back: "Kembali"
+    close: "Tutup"
+    regions:
+      africa_me_india: "Afrika, Timur Tengah dan India"
+      asia_pacific: "Asia Pasifik"
+      europe: "Eropah"
+      latin_america: "Amerika Latin dan Caribbean"
+      us_canada: "Amerika Syarikat dan Kanada"
   currency_switcher_label: "Mata wang"
   price_shown_in: "Dipaparkan dalam {currency}."
   og_locale: ms_MY
@@ -637,6 +853,18 @@ ms:
 he:
   language_name: עברית
   language_switcher_label: שפה
+  country_picker:
+    label: "מדינה או אזור"
+    title: "בחרו מדינה או אזור"
+    language_title: "בחרו שפה"
+    back: "חזרה"
+    close: "סגירה"
+    regions:
+      africa_me_india: "אפריקה, המזרח התיכון והודו"
+      asia_pacific: "אסיה־פסיפיק"
+      europe: "אירופה"
+      latin_america: "אמריקה הלטינית והקריביים"
+      us_canada: "ארצות הברית וקנדה"
   currency_switcher_label: "מטבע"
   price_shown_in: "מוצג ב-{currency}."
   og_locale: he_IL
@@ -673,6 +901,18 @@ he:
 vi:
   language_name: Tiếng Việt
   language_switcher_label: Ngôn ngữ
+  country_picker:
+    label: "Quốc gia hoặc khu vực"
+    title: "Chọn quốc gia hoặc khu vực"
+    language_title: "Chọn ngôn ngữ"
+    back: "Quay lại"
+    close: "Đóng"
+    regions:
+      africa_me_india: "Châu Phi, Trung Đông và Ấn Độ"
+      asia_pacific: "Châu Á Thái Bình Dương"
+      europe: "Châu Âu"
+      latin_america: "Mỹ Latinh và Caribe"
+      us_canada: "Hoa Kỳ và Canada"
   currency_switcher_label: "Tiền tệ"
   price_shown_in: "Hiển thị bằng {currency}."
   og_locale: vi_VN
@@ -708,6 +948,18 @@ vi:
 fi:
   language_name: Suomi
   language_switcher_label: Kieli
+  country_picker:
+    label: "Maa tai alue"
+    title: "Valitse maa tai alue"
+    language_title: "Valitse kieli"
+    back: "Takaisin"
+    close: "Sulje"
+    regions:
+      africa_me_india: "Afrikka, Lähi-itä ja Intia"
+      asia_pacific: "Aasian ja Tyynenmeren alue"
+      europe: "Eurooppa"
+      latin_america: "Latinalainen Amerikka ja Karibia"
+      us_canada: "Yhdysvallat ja Kanada"
   currency_switcher_label: "Valuutta"
   price_shown_in: "Näytetään valuutassa {currency}."
   og_locale: fi_FI
@@ -743,6 +995,18 @@ fi:
 ro:
   language_name: Română
   language_switcher_label: Limbă
+  country_picker:
+    label: "Țară sau regiune"
+    title: "Selectează o țară sau o regiune"
+    language_title: "Selectează o limbă"
+    back: "Înapoi"
+    close: "Închide"
+    regions:
+      africa_me_india: "Africa, Orientul Mijlociu și India"
+      asia_pacific: "Asia-Pacific"
+      europe: "Europa"
+      latin_america: "America Latină și Caraibe"
+      us_canada: "Statele Unite și Canada"
   currency_switcher_label: "Monedă"
   price_shown_in: "Afișat în {currency}."
   og_locale: ro_RO
@@ -778,6 +1042,18 @@ ro:
 ru:
   language_name: Русский
   language_switcher_label: Язык
+  country_picker:
+    label: "Страна или регион"
+    title: "Выберите страну или регион"
+    language_title: "Выберите язык"
+    back: "Назад"
+    close: "Закрыть"
+    regions:
+      africa_me_india: "Африка, Ближний Восток и Индия"
+      asia_pacific: "Азиатско-Тихоокеанский регион"
+      europe: "Европа"
+      latin_america: "Латинская Америка и Карибский бассейн"
+      us_canada: "Соединённые Штаты и Канада"
   currency_switcher_label: "Валюта"
   price_shown_in: "Показано в {currency}."
   og_locale: ru_RU
@@ -813,6 +1089,18 @@ ru:
 th:
   language_name: ไทย
   language_switcher_label: ภาษา
+  country_picker:
+    label: "ประเทศหรือภูมิภาค"
+    title: "เลือกประเทศหรือภูมิภาค"
+    language_title: "เลือกภาษา"
+    back: "ย้อนกลับ"
+    close: "ปิด"
+    regions:
+      africa_me_india: "แอฟริกา ตะวันออกกลาง และอินเดีย"
+      asia_pacific: "เอเชียแปซิฟิก"
+      europe: "ยุโรป"
+      latin_america: "ละตินอเมริกาและแคริบเบียน"
+      us_canada: "สหรัฐอเมริกาและแคนาดา"
   currency_switcher_label: "สกุลเงิน"
   price_shown_in: "แสดงเป็น {currency}"
   og_locale: th_TH
@@ -848,6 +1136,18 @@ th:
 sv:
   language_name: Svenska
   language_switcher_label: Språk
+  country_picker:
+    label: "Land eller region"
+    title: "Välj land eller region"
+    language_title: "Välj språk"
+    back: "Tillbaka"
+    close: "Stäng"
+    regions:
+      africa_me_india: "Afrika, Mellanöstern och Indien"
+      asia_pacific: "Asien och Stillahavsområdet"
+      europe: "Europa"
+      latin_america: "Latinamerika och Karibien"
+      us_canada: "USA och Kanada"
   currency_switcher_label: "Valuta"
   price_shown_in: "Visas i {currency}."
   og_locale: sv_SE
@@ -883,6 +1183,18 @@ sv:
 da:
   language_name: Dansk
   language_switcher_label: Sprog
+  country_picker:
+    label: "Land eller område"
+    title: "Vælg et land eller et område"
+    language_title: "Vælg et sprog"
+    back: "Tilbage"
+    close: "Luk"
+    regions:
+      africa_me_india: "Afrika, Mellemøsten og Indien"
+      asia_pacific: "Asien-Stillehavsområdet"
+      europe: "Europa"
+      latin_america: "Latinamerika og Caribien"
+      us_canada: "USA og Canada"
   currency_switcher_label: "Valuta"
   price_shown_in: "Vist i {currency}."
   og_locale: da_DK
@@ -918,6 +1230,18 @@ da:
 el:
   language_name: Ελληνικά
   language_switcher_label: Γλώσσα
+  country_picker:
+    label: "Χώρα ή περιοχή"
+    title: "Επιλέξτε χώρα ή περιοχή"
+    language_title: "Επιλέξτε γλώσσα"
+    back: "Πίσω"
+    close: "Κλείσιμο"
+    regions:
+      africa_me_india: "Αφρική, Μέση Ανατολή και Ινδία"
+      asia_pacific: "Ασία-Ειρηνικός"
+      europe: "Ευρώπη"
+      latin_america: "Λατινική Αμερική και Καραϊβική"
+      us_canada: "Ηνωμένες Πολιτείες και Καναδάς"
   currency_switcher_label: "Νόμισμα"
   price_shown_in: "Εμφάνιση σε {currency}."
   og_locale: el_GR
@@ -953,6 +1277,18 @@ el:
 hu:
   language_name: Magyar
   language_switcher_label: Nyelv
+  country_picker:
+    label: "Ország vagy régió"
+    title: "Válasszon országot vagy régiót"
+    language_title: "Válasszon nyelvet"
+    back: "Vissza"
+    close: "Bezárás"
+    regions:
+      africa_me_india: "Afrika, Közel-Kelet és India"
+      asia_pacific: "Ázsia és a Csendes-óceán"
+      europe: "Európa"
+      latin_america: "Latin-Amerika és a Karib-térség"
+      us_canada: "Egyesült Államok és Kanada"
   currency_switcher_label: "Pénznem"
   price_shown_in: "Megjelenítés: {currency}."
   og_locale: hu_HU
@@ -988,6 +1324,18 @@ hu:
 hr:
   language_name: Hrvatski
   language_switcher_label: Jezik
+  country_picker:
+    label: "Zemlja ili regija"
+    title: "Odaberite zemlju ili regiju"
+    language_title: "Odaberite jezik"
+    back: "Natrag"
+    close: "Zatvori"
+    regions:
+      africa_me_india: "Afrika, Bliski istok i Indija"
+      asia_pacific: "Azija i Pacifik"
+      europe: "Europa"
+      latin_america: "Latinska Amerika i Karibi"
+      us_canada: "Sjedinjene Američke Države i Kanada"
   currency_switcher_label: "Valuta"
   price_shown_in: "Prikazano u {currency}."
   og_locale: hr_HR
@@ -1023,6 +1371,18 @@ hr:
 uk:
   language_name: Українська
   language_switcher_label: Мова
+  country_picker:
+    label: "Країна або регіон"
+    title: "Виберіть країну або регіон"
+    language_title: "Виберіть мову"
+    back: "Назад"
+    close: "Закрити"
+    regions:
+      africa_me_india: "Африка, Близький Схід і Індія"
+      asia_pacific: "Азійсько-Тихоокеанський регіон"
+      europe: "Європа"
+      latin_america: "Латинська Америка і Карибський басейн"
+      us_canada: "Сполучені Штати і Канада"
   currency_switcher_label: "Валюта"
   price_shown_in: "Показано в {currency}."
   og_locale: uk_UA
@@ -1058,6 +1418,18 @@ uk:
 sk:
   language_name: Slovenčina
   language_switcher_label: Jazyk
+  country_picker:
+    label: "Krajina alebo oblasť"
+    title: "Vyberte krajinu alebo oblasť"
+    language_title: "Vyberte jazyk"
+    back: "Späť"
+    close: "Zavrieť"
+    regions:
+      africa_me_india: "Afrika, Blízky východ a India"
+      asia_pacific: "Ázia a Pacifik"
+      europe: "Európa"
+      latin_america: "Latinská Amerika a Karibik"
+      us_canada: "Spojené štáty a Kanada"
   currency_switcher_label: "Mena"
   price_shown_in: "Zobrazené v {currency}."
   og_locale: sk_SK
@@ -1093,6 +1465,18 @@ sk:
 "no":
   language_name: Norsk
   language_switcher_label: Språk
+  country_picker:
+    label: "Land eller region"
+    title: "Velg et land eller en region"
+    language_title: "Velg et språk"
+    back: "Tilbake"
+    close: "Lukk"
+    regions:
+      africa_me_india: "Afrika, Midtøsten og India"
+      asia_pacific: "Asia-Stillehavet"
+      europe: "Europa"
+      latin_america: "Latin-Amerika og Karibia"
+      us_canada: "USA og Canada"
   currency_switcher_label: "Valuta"
   price_shown_in: "Vist i {currency}."
   og_locale: nb_NO
@@ -1127,6 +1511,18 @@ sk:
 cs:
   language_name: Čeština
   language_switcher_label: Jazyk
+  country_picker:
+    label: "Země nebo oblast"
+    title: "Vyberte zemi nebo oblast"
+    language_title: "Vyberte jazyk"
+    back: "Zpět"
+    close: "Zavřít"
+    regions:
+      africa_me_india: "Afrika, Blízký východ a Indie"
+      asia_pacific: "Asie a Tichomoří"
+      europe: "Evropa"
+      latin_america: "Latinská Amerika a Karibik"
+      us_canada: "Spojené státy a Kanada"
   currency_switcher_label: "Měna"
   price_shown_in: "Zobrazeno v {currency}."
   og_locale: cs_CZ
@@ -1167,6 +1563,18 @@ es-ES:
 es-es:
   language_name: Español (España)
   language_switcher_label: Idioma
+  country_picker:
+    label: "País o región"
+    title: "Selecciona un país o región"
+    language_title: "Selecciona un idioma"
+    back: "Atrás"
+    close: "Cerrar"
+    regions:
+      africa_me_india: "África, Oriente Medio e India"
+      asia_pacific: "Asia-Pacífico"
+      europe: "Europa"
+      latin_america: "Latinoamérica y el Caribe"
+      us_canada: "Estados Unidos y Canadá"
   currency_switcher_label: "Moneda"
   price_shown_in: "Precios en {currency} del App Store ({storefront}). La región de tu cuenta de Apple determina el precio al comprar. Las suscripciones se renuevan hasta que las canceles."
   og_locale: es_ES

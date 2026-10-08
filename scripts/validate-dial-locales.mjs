@@ -358,15 +358,14 @@ export function checkEmDash({ locale, html, allowlistCounts = dashAllowlist }) {
 
 export function checkLanguageSwitcher({ locale, html, expectedLanguages }) {
   const failures = [];
-  const picker =
-    html.match(/<ul class="nav-lang-menu">[\s\S]*?<\/ul>/)?.[0] ??
-    html.match(/<li class="nav-lang">[\s\S]*?<\/details>\s*<\/li>/)?.[0] ??
-    '';
-  if (!picker) {
+  const start = html.indexOf('<nav');
+  const end = html.indexOf('</nav>');
+  const nav = start >= 0 && end > start ? html.slice(start, end) : '';
+  if (!nav.includes('class="nav-lang"')) {
     return [failure(locale, 'language-switcher', 'Missing nav language switcher')];
   }
   for (const language of expectedLanguages) {
-    if (!picker.includes(`hreflang="${language}"`)) {
+    if (!nav.includes(`hreflang="${language}"`)) {
       failures.push(
         failure(locale, 'language-switcher', `Missing hreflang="${language}" in language switcher`),
       );

@@ -1,0 +1,11 @@
+{%- assign dial_hreflang = include.page_key -%}
+{%- if include.page_key == 'es' -%}
+{%- assign dial_hreflang = 'es-MX' -%}
+{%- elsif include.page_key == 'es-es' -%}
+{%- assign dial_hreflang = 'es-ES' -%}
+{%- endif -%}
+{%- assign dial_href = alternates[dial_hreflang] | default: alternates[include.page_key] | default: alternates.es -%}
+{%- unless dial_href -%}
+{%- assign dial_hreflang = 'en' -%}
+{%- assign dial_href = alternates.en -%}
+{%- endunless -%}

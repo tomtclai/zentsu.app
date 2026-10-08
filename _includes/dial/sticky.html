@@ -4,6 +4,7 @@
     class="dial-button dial-button-primary dial-sticky-get"
     href="{{ app_store_url_landing | strip }}"
     rel="noopener noreferrer"
+    data-dial-store-link
   >
     {{ strings.sticky.get_dial | default: site.data.i18n.en.sticky.get_dial }}
   </a>
@@ -11,6 +12,7 @@
     class="app-store-badge-link dial-sticky-badge"
     href="{{ app_store_url_landing | strip }}"
     rel="noopener noreferrer"
+    data-dial-store-link
   >
     <img
       src="{{ app_store_badge }}"

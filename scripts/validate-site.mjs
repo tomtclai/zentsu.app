@@ -183,16 +183,34 @@ check(
   dialEnglish.includes('src="/locale.js'),
   'The English Dial page must load locale.js',
 );
-const dialPicker = dialEnglish.match(/<details>[\s\S]*?<\/details>/)?.[0] ?? '';
+const dialNav = dialEnglish.slice(dialEnglish.indexOf('<nav'), dialEnglish.indexOf('</nav>'));
+const pickerCountries = new Set(
+  [...dialNav.matchAll(/\sdata-country="([^"]+)"/g)].map((match) => match[1]),
+);
+check(pickerCountries.size === 175, `The Dial country picker must list 175 storefronts, found ${pickerCountries.size}`);
+check(pickerCountries.has('us') && pickerCountries.has('gb') && pickerCountries.has('ca'), 'The Dial picker must include US, UK, and Canada');
+check(dialEnglish.includes('class="nav-lang-dialog"'), 'The Dial picker must be a modal, not a flat language list');
+check(!dialNav.includes('data-country="ca" data-page="ca"'), 'Canada must not use the Catalan /ca/ page');
 check(
-  dialPicker.includes('hreflang="en"') && dialPicker.includes('hreflang="es-MX"') && dialPicker.includes('hreflang="es-ES"'),
-  'The Dial language picker must list published locales in one details control',
+  dialNav.includes('hreflang="en"') && dialNav.includes('hreflang="es-MX"') && dialNav.includes('hreflang="es-ES"'),
+  'The Dial picker must expose English, Mexican Spanish, and Spain Spanish',
 );
 check(
-  dialPicker.includes('hreflang="zh"') && dialPicker.includes('hreflang="zh-hant"'),
-  'The Dial language picker must list Simplified Chinese and Traditional Chinese separately',
+  dialNav.includes('hreflang="zh"') && dialNav.includes('hreflang="zh-hant"'),
+  'The Dial picker must list Simplified Chinese and Traditional Chinese separately',
 );
-
+check(
+  dialNav.includes('data-country="ca"') && dialNav.includes('hreflang="ca"'),
+  'Canada is a country row; Catalan remains a language under Spain',
+);
+for (const guidePath of ['dial/printable-dose-log/index.html', 'ja/dial/injection-site-rotation/index.html']) {
+  const guideHtml = read(join(outputDirectory, guidePath));
+  const guideNav = guideHtml.slice(guideHtml.indexOf('<nav'), guideHtml.indexOf('</nav>'));
+  check(
+    guideNav.includes('data-country="de"') && !guideNav.includes('href=""'),
+    `${guidePath}: every country in the picker must link to a published page of this guide`,
+  );
+}
 check(
   !dialEnglish.includes('nav-lang-options'),
   'The Dial language picker must not use the two-button segmented toggle',
@@ -263,6 +281,11 @@ const dialCopy = Object.fromEntries(
   readdirSync('_data/dial').map((file) => [file.replace(/\.yml$/, ''), loadYaml(`_data/dial/${file}`)]),
 );
 const dialCurrencyPrices = loadYaml('_data/dial_currency_prices.yml') ?? {};
+const dialTerritoryPrices = loadYaml('_data/dial_territory_prices.yml') ?? {};
+check(
+  Object.keys(dialTerritoryPrices).length === 175,
+  `dial_territory_prices.yml must cover 175 storefronts, found ${Object.keys(dialTerritoryPrices).length}`,
+);
 const dialPickerCurrencies = [
   ...new Set([...Object.values(dialPrices).map((row) => row.currency), ...Object.keys(dialCurrencyPrices)]),
 ];
