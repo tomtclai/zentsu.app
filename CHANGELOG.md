@@ -46,6 +46,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- The Traditional Chinese Dial page and FAQ stop listing exenatide among the medications Dial shows under Taiwan product names. Every Byetta (降爾糖) and Bydureon (穩爾糖) licence in Taiwan is cancelled, so the copy says exenatide can still be logged and that its Taiwan licences are cancelled.
 - The semaglutide half-life post describes Dial's level model as it ships: each dose starts at zero, rises as it is absorbed, peaks about a day and a half after a weekly semaglutide injection, then decays by the elimination half-life. It had said each dose enters the total at the full logged amount.
 - The printable dose log cites Wegovy section 2.4 for its missed-dose rule only and points to the Medication Guide for the day-change rule. Section 2.4 of the current U.S. label (revised 6/2026) has no day-change rule.
 - The Bench page describes Mac App Store distribution as "Sandboxed, reviewed by Apple" instead of "Sandboxed, notarized" (notarization is for Developer ID software, and App Store builds go through App Review instead). The regex section drops its claim that most regex tools stop at highlighting, since regex101 and RegExr both explain matches. Bench support names the Settings menu (Settings → Upgrade) where it said Preferences.
