@@ -89,7 +89,13 @@
         <h1>{{ pair.h1 }}</h1>
         <p class="lede">{{ pair.native_gap }}</p>
 
-        {%- if pair.steps %}
+        {%- for section in pair.sections %}
+        <h2>{{ section.heading }}</h2>
+        {%- for paragraph in section.paragraphs %}
+        <p>{{ paragraph }}</p>
+        {%- endfor %} {%- endfor %} {%- if pair.sections and pair.steps %}
+        <h2>In Press</h2>
+        {%- endif %} {%- if pair.steps %}
         <ol class="press-steps">
           {%- for step in pair.steps %}
           <li>{{ step }}</li>
@@ -117,6 +123,34 @@
             </div>
           </dl>
         </div>
+        {%- endif %} {%- if pair.measured %}
+        <div class="press-measured">
+          <h2>What we measured</h2>
+          <p>{{ pair.measured.intro }}</p>
+          <div class="press-measured-table">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Source</th>
+                  <th scope="col">Setting</th>
+                  <th scope="col">Output</th>
+                  <th scope="col">Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                {%- for row in pair.measured.rows %}
+                <tr>
+                  <td>{{ row.source }}</td>
+                  <td>{{ row.setting }}</td>
+                  <td>{{ row.output }}</td>
+                  <td>{{ row.time }}</td>
+                </tr>
+                {%- endfor %}
+              </tbody>
+            </table>
+          </div>
+          <p class="press-measured-method">{{ site.data.press_measurements.method }}</p>
+        </div>
         {%- endif %} {%- if pair.faq %}
         <div class="faq-list press-pair-faq">
           {%- for entry in pair.faq %}
@@ -126,15 +160,24 @@
           </details>
           {%- endfor %}
         </div>
-        {%- endif %}
-
+        {%- endif %} {%- assign press_app = site.data.apps.apps | where: 'slug', 'press' | first -%}
         <div class="cta-band">
           <p>
             Press converts video and images on your Mac. Free download; Press Pro is a one-time
             <strong>${{ site.price_press_lifetime }}</strong> unlock for batch conversion, size
             presets, and WebP.
           </p>
+          {%- if press_app.app_store_url %} {%- capture pair_default_campaign -%}press-{{ pair.slug
+          }}{%- endcapture -%} {%- assign pair_campaign = pair.campaign | default:
+          pair_default_campaign -%} {%- capture pair_store_url -%}{% include press-store-url.html
+          campaign=pair_campaign %}{%- endcapture -%}
+          <div class="cta-band-actions">
+            <a href="{{ pair_store_url | strip }}" rel="noopener noreferrer">Get Press</a>
+            <a class="cta-band-secondary" href="/press/">About Press</a>
+          </div>
+          {%- else %}
           <a href="/press/">Get Press</a>
+          {%- endif %}
         </div>
 
         {%- assign related_pairs = site.data.press_pairs | where_exp: 'item', 'pair.related contains

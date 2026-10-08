@@ -51,6 +51,20 @@ function emptyProseFields(pair) {
     if (isBlank(entry.question)) issues.push(`${pair.slug}.faq[${index}].question`);
     if (isBlank(entry.answer)) issues.push(`${pair.slug}.faq[${index}].answer`);
   });
+  (pair.sections ?? []).forEach((section, index) => {
+    if (isBlank(section.heading)) issues.push(`${pair.slug}.sections[${index}].heading`);
+    (section.paragraphs ?? []).forEach((paragraph, paragraphIndex) => {
+      if (isBlank(paragraph)) issues.push(`${pair.slug}.sections[${index}].paragraphs[${paragraphIndex}]`);
+    });
+  });
+  if (pair.measured) {
+    if (isBlank(pair.measured.intro)) issues.push(`${pair.slug}.measured.intro`);
+    (pair.measured.rows ?? []).forEach((row, index) => {
+      for (const field of ['source', 'setting', 'output', 'time']) {
+        if (isBlank(row[field])) issues.push(`${pair.slug}.measured.rows[${index}].${field}`);
+      }
+    });
+  }
 
   return issues;
 }

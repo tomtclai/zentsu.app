@@ -476,10 +476,11 @@ page_stylesheet: /press.css
               conversion, size presets, and the advanced formats.
             </p>
             <p class="buy-cta-row">
-              {%- if press_app.app_store_url %}
+              {%- if press_app.app_store_url %} {%- capture press_landing_store_url -%}{% include
+              press-store-url.html campaign=site.data.press_campaign.landing %}{%- endcapture -%}
               <a
                 class="app-store-badge-link"
-                href="{{ press_app.app_store_url }}"
+                href="{{ press_landing_store_url | strip }}"
                 rel="noopener noreferrer"
               >
                 <img

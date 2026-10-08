@@ -877,6 +877,45 @@ section.buy {
   margin: 1.5rem 0;
 }
 
+.press-measured {
+  margin: 2rem 0 1.5rem;
+}
+.press-measured-table {
+  overflow-x: auto;
+  margin: 1rem 0 0.75rem;
+}
+.press-measured table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+.press-measured th,
+.press-measured td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.55rem 0.75rem 0.55rem 0;
+  border-bottom: 1px solid var(--border-soft);
+}
+.press-measured th {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.press-measured td {
+  color: var(--body-text);
+}
+.press-measured td:last-child {
+  white-space: nowrap;
+}
+.press-measured-method {
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
 /* Related conversions — cards that lift toward you on hover. */
 .related {
   display: grid;
@@ -961,6 +1000,21 @@ section.buy {
   background: var(--spot);
   color: var(--bg);
   transform: translateY(-1px);
+}
+.cta-band-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.cta-band a.cta-band-secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--border);
+}
+.cta-band a.cta-band-secondary:hover {
+  background: var(--surface);
+  color: var(--ink);
 }
 
 @media (prefers-reduced-motion: reduce) {

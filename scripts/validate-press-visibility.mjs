@@ -62,13 +62,43 @@ function outputPathFor(route) {
 const config = loadYaml('_config.yml');
 const pressLive = config.press_live === true;
 
-const pairSlugs = loadYaml('_data/press_pairs.yml').map((pair) => pair.slug);
+const pairs = loadYaml('_data/press_pairs.yml');
+const pairSlugs = pairs.map((pair) => pair.slug);
+const storeCampaign = loadYaml('_data/press_campaign.yml');
+const campaignTokenLimit = 30;
+const campaignByRoute = new Map([
+  ['/press/', storeCampaign.landing],
+  ...pairs.map((pair) => [`/press/convert/${pair.slug}`, pair.campaign ?? `press-${pair.slug}`]),
+]);
 const allRoutes = [
   '/press/',
   '/press/privacy',
   '/press/support',
   ...pairSlugs.map((slug) => `/press/convert/${slug}`),
 ];
+
+for (const [route, token] of campaignByRoute) {
+  check(
+    typeof token === 'string' && token.length > 0 && token.length <= campaignTokenLimit,
+    `${route} campaign token "${token}" must be 1 to ${campaignTokenLimit} characters (App Store Connect limit)`,
+  );
+}
+
+function checkStoreLinks(route, html, expectedCampaign) {
+  const storeHrefs = [...html.matchAll(/href="(https:\/\/apps\.apple\.com\/[^"]*)"/g)].map((match) =>
+    match[1].replaceAll('&amp;', '&'),
+  );
+  check(storeHrefs.length > 0, `${route} is live but has no App Store link`);
+  for (const href of storeHrefs) {
+    const parameters = new URL(href).searchParams;
+    check(
+      parameters.get('pt') === storeCampaign.provider_token &&
+        parameters.get('ct') === expectedCampaign &&
+        parameters.get('mt') === storeCampaign.media_type,
+      `${route} App Store link ${href} must carry pt=${storeCampaign.provider_token}, ct=${expectedCampaign}, mt=${storeCampaign.media_type}`,
+    );
+  }
+}
 
 const expectedLiveRoutes = allRoutes.filter(
   (route) => pressLive || LIVE_ROUTES_WHILE_DARK.includes(route),
@@ -90,6 +120,9 @@ for (const route of allRoutes) {
         html.includes(`<link rel="canonical" href="${url}"`),
         `${route} is live but has no self-canonical to ${url}`,
       );
+      if (pressLive && campaignByRoute.has(route)) {
+        checkStoreLinks(route, html, campaignByRoute.get(route));
+      }
     }
     check(sitemap.includes(`<loc>${url}</loc>`), `${route} is live but missing from the sitemap`);
   } else {

@@ -1,0 +1,4 @@
+{%- assign press_store_campaign = site.data.press_campaign -%} {%- assign press_store_app =
+site.data.apps.apps | where: 'slug', 'press' | first -%} {{- press_store_app.app_store_url
+-}}?pt={{- press_store_campaign.provider_token -}}&ct={{- include.campaign -}}&mt={{-
+press_store_campaign.media_type -}}

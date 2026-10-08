@@ -23,6 +23,12 @@
 #                or two on what happens to that aspect.
 #   faq          two or three { question, answer } pairs.
 #   related      2-3 sibling slugs for cross-links. Structural.
+#   campaign     optional App Store campaign token when press-<slug> would
+#                pass App Store Connect's 30-character limit.
+#   sections     optional { heading, paragraphs } blocks after the lede.
+#   measured     optional { intro, rows: { source, setting, output, time } }
+#                from real conversions; the method line is shared in
+#                _data/press_measurements.yml.
 # ─────────────────────────────────────────────────────────────────────────
 
 - slug: mov-to-mp4
@@ -34,22 +40,38 @@
     Convert a .mov to an H.264 .mp4 on your Mac with Press. It runs locally,
     keeps the resolution you pick, and can take a whole folder at once.
   native_gap: >-
-    Both native routes end in a .mov. Finder's Encode Selected Video Files
-    can re-encode to H.264 at 480p through 2160p, and QuickTime Player's
-    Export As switches to H.264 when you pick Greater Compatibility, but each
-    saves the result as .mov. An iPhone on its High Efficiency camera setting
-    records HEVC, so the original clip can fail twice: the codec is refused
-    by an older Windows PC or a browser without HEVC support, and the
-    extension is refused by a form that asks for .mp4. Press writes an .mp4
-    with H.264 video and AAC audio every time, with the resolution as a
-    visible choice.
+    If the .mov already holds H.264 video, renaming it to .mp4 works, and
+    Apple's own support article says so. The rename fails when the video
+    inside is HEVC, which is what an iPhone records on its High Efficiency
+    camera setting. Finder's Encode Selected Video Files and QuickTime
+    Player's Export As can both re-encode to H.264, but each saves the result
+    as .mov, so a form that asks for .mp4 still refuses it. Press writes an
+    .mp4 with H.264 video and AAC audio in one step, and copies an H.264
+    source into the new container without re-encoding it.
+  sections:
+    - heading: Check the codec first
+      paragraphs:
+        - >-
+          Select the file in Finder and press Command-I to open Get Info. The
+          Codecs line lists the video and audio codecs, such as H.264 and
+          MPEG-4 AAC, or HEVC and MPEG-4 AAC. With the movie open in QuickTime
+          Player, Window &gt; Show Movie Inspector (Command-I) shows the same
+          information.
+        - >-
+          If the video codec is H.264, rename the file and you are done.
+          Apple's article
+          <a href="https://support.apple.com/en-us/120755" rel="noopener">Convert
+          a MOV file to MP4 on Mac</a> describes exactly that and notes that
+          the size and resolution stay the same. For any other codec, Apple
+          suggests importing the clip into iMovie, adding it to a movie, and
+          exporting an MP4. Press converts the file directly, as below.
   steps:
     - >-
       Drop the .mov onto Press, or drop a folder to queue every video inside
       it.
     - >-
       Under Video, leave the codec on H.264 and pick a resolution. Original
-      keeps the frame size; 1080p and 720p scale the longer edge down.
+      keeps the frame size. 1080p and 720p scale the longer edge down.
     - >-
       Click Convert. Press asks once for access to the folder, then writes
       name (Press).mp4 next to the source and leaves the original untouched.
@@ -68,13 +90,37 @@
     metadata: >-
       AVFoundation carries the source's metadata, such as the creation date,
       into the MP4 wherever the container has a matching field.
+  measured:
+    intro: >-
+      Two sources and four settings. The H.264 .mov was copied into the MP4
+      container untouched, so the size held and the conversion took a tenth
+      of a second. The HEVC clip was re-encoded, so it took longer and its
+      size followed the setting.
+    rows:
+      - source: H.264 1080p .mov, 80.8 MB
+        setting: Original
+        output: 80.8 MB .mp4, streams copied
+        time: 0.1 s
+      - source: 4K HEVC .mov, 153.5 MB
+        setting: Original
+        output: 189.9 MB .mp4, H.264 at 4K
+        time: 25 s
+      - source: 4K HEVC .mov, 153.5 MB
+        setting: 1080p
+        output: 80.8 MB .mp4, H.264 at 1080p
+        time: 7 s
+      - source: 4K HEVC .mov, 153.5 MB
+        setting: 720p
+        output: 57.2 MB .mp4, H.264 at 720p
+        time: 4 s
   faq:
     - question: Is renaming .mov to .mp4 enough?
       answer: >-
-        Sometimes, and that is the trap. Both are MPEG-4 family containers, so
-        a renamed file may play on your Mac and then fail on the device that
-        objected in the first place, because the video inside is still HEVC.
-        Press changes the codec, which is the part being rejected.
+        When the video inside is H.264, yes. Apple's support article says
+        renaming is enough and that the size and resolution stay the same.
+        When it is HEVC, a renamed file may still play on your Mac and then
+        fail on the device that objected, because the codec has not changed.
+        Check the Codecs line in Get Info first.
     - question: Does Press re-encode, and does that lose quality?
       answer: >-
         When the source is already H.264 with AAC audio and you pick Original,
@@ -103,6 +149,15 @@
     players and upload forms check for the .mp4 extension as well as H.264.
     Press puts the codec in front of you as two chips, H.264 and HEVC, and
     writes .mp4 with the extension the other side expects.
+  sections:
+    - heading: How to tell a file is HEVC
+      paragraphs:
+        - >-
+          Select it in Finder and press Command-I. The Codecs line in Get Info
+          reads HEVC for an HEVC file and H.264 for one that is already
+          compatible. Clips from an iPhone on the High Efficiency camera
+          setting are HEVC, and so are QuickTime Player exports made with
+          Smaller File Size.
   steps:
     - >-
       Drop the HEVC file, or a folder of them, onto Press. iPhone clips,
@@ -128,13 +183,31 @@
     metadata: >-
       AVFoundation carries the source's metadata over wherever the MP4
       container has a matching field.
+  measured:
+    intro: >-
+      One 60-second 4K HEVC clip at three sizes. At its original 4K size the
+      H.264 file came out 24 percent larger than the HEVC source. At 1080p it
+      was about half the size of the source.
+    rows:
+      - source: 4K HEVC .mov, 153.5 MB
+        setting: H.264, Original
+        output: 189.9 MB .mp4
+        time: 25 s
+      - source: 4K HEVC .mov, 153.5 MB
+        setting: H.264, 1080p
+        output: 80.8 MB .mp4
+        time: 7 s
+      - source: 4K HEVC .mov, 153.5 MB
+        setting: H.264, 720p
+        output: 57.2 MB .mp4
+        time: 4 s
   faq:
     - question: Will the H.264 file be bigger?
       answer: >-
-        Usually, yes. HEVC packs the same picture into fewer bytes, so an
-        H.264 re-encode at the same frame size grows. Picking 1080p for a 4K
-        source brings it back down, and a Press Pro size preset caps it at a
-        number.
+        At the same frame size, usually yes. HEVC packs the same picture into
+        fewer bytes, and our 4K test clip grew from 153.5 MB to 189.9 MB as a
+        4K H.264 MP4. Picking 1080p brought it to 80.8 MB, and a Press Pro
+        size preset caps it at a number.
     - question: Does Press keep the audio?
       answer: >-
         Yes. The audio track is re-encoded to AAC inside the MP4, which is
@@ -149,6 +222,7 @@
   from: Video
   to: Discord limit
   pro: true
+  campaign: press-compress-for-discord
   h1: Compress a video for Discord on Mac
   description: >-
     Get a video under Discord's 20 MB upload limit on your Mac. Press targets
@@ -165,11 +239,12 @@
     - >-
       Drop the clip onto Press.
     - >-
-      Under Video, choose H.264, then pick Discord under Size limit. Add 720p
-      if the clip runs several minutes, so the encoder has bitrate to spare.
+      Under Video, choose H.264, then pick Discord under Size limit. For 4K
+      footage, also pick 1080p or 720p. Add 720p for a clip that runs several
+      minutes, so the encoder has bitrate to spare.
     - >-
-      Click Convert. The finished row shows the output size, so you can see
-      it landed under 20 MB before you open Discord.
+      Click Convert. The finished row shows the output size, so you can check
+      it is under 20 MB before you open Discord.
   result:
     container: >-
       .mp4 next to the source, named name (Press).mp4.
@@ -180,17 +255,39 @@
       duration, with 96 kbps reserved for audio and a 10 percent margin, then
       re-encodes once at a lower rate if the first pass overshoots. The full
       duration is always kept, so a long clip gets fewer bits per second and
-      looks softer than a short one. On a three-clip test batch at 720p the
-      outputs landed at 16.6 to 17.1 MB.
+      looks softer than a short one.
     metadata: >-
       Metadata is not carried over on size-limited exports, which are written
       through AVAssetWriter rather than the export presets.
+  measured:
+    intro: >-
+      One 60-second 4K clip with the Discord preset at three resolutions. At
+      1080p and 720p it landed at 18.1 MB, about 10 percent under the cap as
+      intended. At Original it came out at 22.9 MB, over the cap: on our test
+      Mac the H.264 encoder would not go below about 2.9 Mbps for 4K frames,
+      even on the second, lower-rate pass. Pick 1080p or 720p for 4K footage.
+    rows:
+      - source: 4K HEVC .mov, 153.5 MB
+        setting: Discord, 1080p
+        output: 18.1 MB .mp4
+        time: 7 s
+      - source: 4K HEVC .mov, 153.5 MB
+        setting: Discord, 720p
+        output: 18.1 MB .mp4
+        time: 5 s
+      - source: 4K HEVC .mov, 153.5 MB
+        setting: Discord, Original
+        output: 22.9 MB .mp4, over the cap
+        time: 53 s
   faq:
     - question: Why 20 MB?
       answer: >-
-        Discord raised its free-tier attachment cap from 10 MB to 20 MB on
-        2026-08-13. Press's preset tracks the free tier. If you have Nitro,
-        use the Custom limit and type the larger number.
+        Discord's File Attachments FAQ puts the upload limit without Nitro at
+        20 MB, up from 10 MB as of August 2026. Discord checks the size before
+        any compression, so the size Finder shows is the number that counts.
+        Press's preset tracks that limit. Nitro Basic raises it to 50 MB and
+        Nitro to as much as 1 GB. With either, choose Custom and type your
+        limit.
     - question: What if I want it smaller still?
       answer: >-
         Choose Custom and type a lower number, or add 720p so the bits go
@@ -217,8 +314,9 @@
     writes .mov. Finder's Encode Selected Video Files has a similar list of
     H.264 and HEVC settings, also as .mov. Both leave you guessing which tier
     lands under 25 MB. Press's Email preset works out the bitrate that fits 25 MB
-    for the clip's length and writes H.264 MP4, so the file goes through as
-    an ordinary attachment and plays on a Windows PC at the other end.
+    for the clip's length and writes H.264 MP4, so the file stays an
+    attachment instead of becoming a Google Drive link, and plays on a
+    Windows PC at the other end.
   steps:
     - >-
       Drop the video onto Press. A folder works too, if you have several to
@@ -238,16 +336,39 @@
     quality: >-
       Press sets the video bitrate from the byte budget and the clip's
       duration, aims 10 percent under the cap, and re-encodes once at a lower
-      rate if the first pass overshoots. The full duration is kept; long
+      rate if the first pass overshoots. The full duration is kept, so long
       clips look softer because the same budget is spread over more seconds.
     metadata: >-
       Metadata is not carried over on size-limited exports, which are written
       through AVAssetWriter rather than the export presets.
+  measured:
+    intro: >-
+      The same 60-second 4K clip with the Email preset. Every setting landed
+      under 25 MB, and the smaller frame sizes finished several times faster.
+    rows:
+      - source: 4K HEVC .mov, 153.5 MB
+        setting: Email, Original
+        output: 23.4 MB .mp4
+        time: 31 s
+      - source: 4K HEVC .mov, 153.5 MB
+        setting: Email, 1080p
+        output: 22.7 MB .mp4
+        time: 8 s
+      - source: 4K HEVC .mov, 153.5 MB
+        setting: Email, 720p
+        output: 22.6 MB .mp4
+        time: 5 s
   faq:
     - question: Which 25 MB is this?
       answer: >-
-        Gmail's attachment limit, which has held at 25 MB for years. Other
-        providers vary; choose Custom and type the cap yours enforces.
+        Gmail's limit for personal accounts, per Google's Gmail Help. Gmail
+        replaces a larger attachment with a Google Drive link, and on a work
+        or school account the administrator sets the limit. Outlook.com also
+        caps a message at 25 MB, and Microsoft counts the text and every
+        attached file toward it. iCloud Mail is lower: Apple lists 20 MB for
+        incoming and outgoing messages. For iCloud, choose Custom and type a
+        number under 20, or let Mail offer Mail Drop, which Apple says takes
+        attachments up to 5 GB.
     - question: Will the recipient need anything installed?
       answer: >-
         An H.264 MP4 with AAC audio plays in the stock players on macOS,
@@ -336,17 +457,35 @@
       original.
   result:
     container: >-
-      A .jpg beside the HEIC; the HEIC stays.
+      A .jpg beside the HEIC. The HEIC stays where it was.
     codec: >-
       JPEG, encoded by ImageIO at the quality you set.
     quality: >-
       85 percent by default, adjustable from 10 to 100. HEIC is itself lossy,
-      so the JPEG is a second lossy pass; keep the slider at 85 or above if
+      so the JPEG is a second lossy pass. Keep the slider at 85 or above if
       you plan to edit the JPEG later.
     metadata: >-
       EXIF data such as the capture date and location is not copied into the
       JPEG. The orientation tag is applied to the pixels first, so the photo
       displays upright everywhere.
+  measured:
+    intro: >-
+      One 12-megapixel iPhone photo at three settings. At full size the JPEG
+      is larger than the HEIC it came from, because HEIC stores the same
+      picture in fewer bytes. Max size is how you get a small file.
+    rows:
+      - source: 12 MP iPhone HEIC, 2.8 MB
+        setting: JPEG, 85 percent
+        output: 4.5 MB .jpg, 4032x3024
+        time: 0.2 s
+      - source: 12 MP iPhone HEIC, 2.8 MB
+        setting: JPEG, 100 percent
+        output: 12.4 MB .jpg, 4032x3024
+        time: 0.2 s
+      - source: 12 MP iPhone HEIC, 2.8 MB
+        setting: JPEG, 85 percent, Max size 2048 (Pro)
+        output: 1.5 MB .jpg, 2048x1536
+        time: 0.1 s
   faq:
     - question: Will the photo come out sideways?
       answer: >-
