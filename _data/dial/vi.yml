@@ -168,7 +168,7 @@ privacy:
       detail: "Zentsu không vận hành máy chủ lưu hoặc đọc bản ghi của bạn."
     - term: "Đồng bộ tùy chọn"
       detail: "Khi bật iCloud, bản ghi chính dùng cơ sở dữ liệu CloudKit riêng trên Tài khoản Apple của bạn, không phải máy chủ của chúng tôi."
-  body: "Bản ghi thuốc, liều, nhắc nhở và tồn kho có thể đồng bộ qua iCloud của bạn khi bật. Cân nặng ở kho cục bộ riêng, có thể nối Apple Health. Tệp ảnh tiến triển ở lại trên máy."
+  body: "Bản ghi thuốc, liều, nhắc nhở và tồn kho có thể đồng bộ qua iCloud của bạn khi bật. Cân nặng ở kho cục bộ riêng, có thể nối ứng dụng Sức khỏe. Tệp ảnh tiến triển ở lại trên máy."
   policy_link: "Đọc chính sách quyền riêng tư Dial"
   policy_url: /vi/dial/privacy/
 

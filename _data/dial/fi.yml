@@ -168,7 +168,7 @@ privacy:
       detail: "Zentsu ei ylläpidä palvelinta, joka tallentaa tai lukee merkintäsi."
     - term: "Valinnainen synkronointi"
       detail: "Kun iCloud on päällä, ydintiedot käyttävät yksityistä CloudKit-tietokantaa Apple-tililläsi, eivät meidän palvelimiamme."
-  body: "Lääke-, annos-, muistutus- ja varastotiedot voivat synkronoitua oman iCloudisi kautta, jos otat sen käyttöön. Paino jää erilliseen paikalliseen tallennukseen, ja Apple Health -kytkentä on valinnainen. Edistymiskuvatiedostot jäävät laitteelle."
+  body: "Lääke-, annos-, muistutus- ja varastotiedot voivat synkronoitua oman iCloudisi kautta, jos otat sen käyttöön. Paino jää erilliseen paikalliseen tallennukseen, ja kytkentä Terveys-appiin on valinnainen. Edistymiskuvatiedostot jäävät laitteelle."
   policy_link: "Lue Dialin tietosuojakäytäntö"
   policy_url: /fi/dial/privacy/
 

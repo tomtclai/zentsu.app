@@ -168,7 +168,7 @@ privacy:
       detail: "Zentsu tidak mengendalikan pelayan yang menyimpan atau membaca rekod anda."
     - term: "Penyegerakan pilihan"
       detail: "Dengan iCloud dihidupkan, rekod teras menggunakan pangkalan data CloudKit peribadi pada Akaun Apple anda, bukan pelayan kami."
-  body: "Rekod ubat, dos, peringatan dan bekalan boleh disegerakkan melalui iCloud anda sendiri jika dihidupkan. Berat kekal dalam storan setempat berasingan, dengan integrasi Apple Health pilihan. Fail foto perkembangan kekal pada peranti."
+  body: "Rekod ubat, dos, peringatan dan bekalan boleh disegerakkan melalui iCloud anda sendiri jika dihidupkan. Berat kekal dalam storan setempat berasingan, dengan integrasi app Kesihatan pilihan. Fail foto perkembangan kekal pada peranti."
   policy_link: "Baca dasar privasi Dial"
   policy_url: /ms/dial/privacy/
 

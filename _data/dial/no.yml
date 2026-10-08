@@ -168,7 +168,7 @@ privacy:
       detail: "Zentsu driver ingen server som lagrer eller leser postene dine."
     - term: "Valgfri synkronisering"
       detail: "Med iCloud bruker kjernepostene den private CloudKit-databasen på din Apple-konto, ikke serverne våre."
-  body: "Poster for legemiddel, dose, påminnelse og lager kan synkroniseres via din egen iCloud hvis du slår det på. Vekt blir i et separat lokalt lager, med valgfri Apple Health-integrasjon. Fremgangsbilder blir på enheten."
+  body: "Poster for legemiddel, dose, påminnelse og lager kan synkroniseres via din egen iCloud hvis du slår det på. Vekt blir i et separat lokalt lager, med valgfri integrasjon med Helse-appen. Fremgangsbilder blir på enheten."
   policy_link: "Les Dial-personvernerklæringen"
   policy_url: /no/dial/privacy/
 

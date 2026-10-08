@@ -168,7 +168,7 @@ privacy:
       detail: "Zentsu neprevádzkuje žiadny server, ktorý by ukladal alebo čítal tvoje záznamy."
     - term: "Voliteľná synchronizácia"
       detail: "Keď zapneš iCloud, hlavné záznamy idú do súkromnej databázy CloudKit na tvojom Apple Account, nie na naše servery."
-  body: "Záznamy liekov, dávok, pripomienok a zásob sa pri zapnutí môžu synchronizovať cez tvoje iCloud. Hmotnosť ostáva v oddelenom miestnom úložisku, s voliteľným prepojením na Apple Health. Súbory fotiek pokroku ostávajú v zariadení."
+  body: "Záznamy liekov, dávok, pripomienok a zásob sa pri zapnutí môžu synchronizovať cez tvoje iCloud. Hmotnosť ostáva v oddelenom miestnom úložisku, s voliteľným prepojením na aplikáciu Zdravie. Súbory fotiek pokroku ostávajú v zariadení."
   policy_link: "Prečítať zásady ochrany osobných údajov Dial"
   policy_url: /sk/dial/privacy/
 

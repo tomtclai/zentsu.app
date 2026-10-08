@@ -168,7 +168,7 @@ privacy:
       detail: "Zentsu nu operează niciun server care stochează sau citește înregistrările dumneavoastră."
     - term: "Sincronizare opțională"
       detail: "Cu iCloud pornit, înregistrările de bază folosesc baza CloudKit privată a contului tău Apple, nu serverele noastre."
-  body: "Înregistrările de medicament, doză, memento și stoc se pot sincroniza prin propriul tău iCloud dacă îl activezi. Greutatea rămâne într-un depozit local separat, cu integrare opțională Apple Health. Fișierele fotografiilor de progres rămân pe dispozitiv."
+  body: "Înregistrările de medicament, doză, memento și stoc se pot sincroniza prin propriul tău iCloud dacă îl activezi. Greutatea rămâne într-un depozit local separat, cu integrare opțională cu aplicația Sănătate. Fișierele fotografiilor de progres rămân pe dispozitiv."
   policy_link: "Citiți politica de confidențialitate Dial"
   policy_url: /ro/dial/privacy/
 

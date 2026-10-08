@@ -205,7 +205,7 @@ privacy:
       detail:
         Met iCloud gebruiken de kerndata de privé-CloudKit-database op je Apple Account,
         niet onze servers.
-  body: "Medicatie-, dosis-, herinnerings- en voorraadgegevens kunnen via je eigen iCloud synchroniseren als je dat aanzet. Gewicht blijft in een aparte lokale opslag, met optionele Apple Health-koppeling. Voortgangsfoto's blijven op je apparaat."
+  body: "Medicatie-, dosis-, herinnerings- en voorraadgegevens kunnen via je eigen iCloud synchroniseren als je dat aanzet. Gewicht blijft in een aparte lokale opslag, met optionele koppeling met de Gezondheid-app. Voortgangsfoto's blijven op je apparaat."
   policy_link: Het Dial-privacybeleid lezen
   policy_url: /nl/dial/privacy/
 

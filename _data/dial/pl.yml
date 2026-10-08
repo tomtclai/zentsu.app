@@ -168,7 +168,7 @@ privacy:
       detail: "Zentsu nie prowadzi serwera, który przechowuje lub czyta twoje zapisy."
     - term: "Opcjonalna synchronizacja"
       detail: "Gdy włączysz iCloud, główne zapisy trafiają do prywatnej bazy CloudKit na twoim koncie Apple, nie na nasze serwery."
-  body: "Zapisy leków, dawek, przypomnień i zapasów mogą synchronizować się przez Twoje iCloud po włączeniu. Waga zostaje w osobnym lokalnym magazynie, z opcjonalnym połączeniem z Apple Health. Pliki zdjęć postępów zostają na urządzeniu."
+  body: "Zapisy leków, dawek, przypomnień i zapasów mogą synchronizować się przez Twoje iCloud po włączeniu. Waga zostaje w osobnym lokalnym magazynie, z opcjonalnym połączeniem z aplikacją Zdrowie. Pliki zdjęć postępów zostają na urządzeniu."
   policy_link: "Polityka prywatności Dial"
   policy_url: /pl/dial/privacy/
 

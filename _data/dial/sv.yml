@@ -168,7 +168,7 @@ privacy:
       detail: "Zentsu driver ingen server som lagrar eller läser dina poster."
     - term: "Valfri synkronisering"
       detail: "Med iCloud använder kärnposterna den privata CloudKit-databasen på ditt Apple-konto, inte våra servrar."
-  body: "Poster för läkemedel, dos, påminnelse och lager kan synkas via din egen iCloud om du slår på det. Vikten stannar i en separat lokal lagring, med valfri Apple Health-koppling. Foton på framsteg stannar på enheten."
+  body: "Poster för läkemedel, dos, påminnelse och lager kan synkas via din egen iCloud om du slår på det. Vikten stannar i en separat lokal lagring, med valfri koppling till appen Hälsa. Foton på framsteg stannar på enheten."
   policy_link: "Läs Dial-integritetspolicyn"
   policy_url: /sv/dial/privacy/
 

@@ -584,9 +584,9 @@ hi:
     - heading: "प्रगति फ़ोटो कहाँ संग्रहीत होती हैं?"
       paragraphs:
         - "प्रगति फ़ोटो और उनकी तिथियाँ अनुप्रयोग के दस्तावेज़ फ़ोल्डर में डिवाइस पर संग्रहीत होती हैं। वे Dial CloudKit रिकॉर्ड का भाग नहीं हैं। भंडार लेबल स्कैनर इस्तेमाल करने पर Dial चुनी या ली गई लेबल छवि से फ़ील्ड भरता है और उस छवि को भंडार रिकॉर्ड के रूप में नहीं रखता।"
-    - heading: "अनुप्रयोग स्वास्थ्य का उपयोग कैसे करता है?"
+    - heading: "अनुप्रयोग सेहत का उपयोग कैसे करता है?"
       paragraphs:
-        - "अनुमति देने पर Dial वजन लॉग अद्यतन रखने के लिए स्वास्थ्य से शरीर का वजन पढ़ता है और Dial में दर्ज वजन स्वास्थ्य में लिख सकता है। Dial स्वास्थ्य की अन्य डेटा श्रेणियाँ नहीं पढ़ता या लिखता। स्वास्थ्य डेटा कभी डिवाइस से सेवा प्रदाता या किसी और को नहीं जाता। विज्ञापन या विपणन के लिए नहीं, बिकता नहीं, तीसरे पक्ष से साझा नहीं, और अनुप्रयोग के अपने वजन रिकॉर्ड के अलावा उपयोग नहीं होता। यह अनुमति आप डिवाइस की स्वास्थ्य सेटिंग में कभी भी नियंत्रित करते हैं।"
+        - "अनुमति देने पर Dial वजन लॉग अद्यतन रखने के लिए सेहत से शरीर का वजन पढ़ता है और Dial में दर्ज वजन सेहत में लिख सकता है। Dial सेहत की अन्य डेटा श्रेणियाँ नहीं पढ़ता या लिखता। सेहत का डेटा कभी डिवाइस से सेवा प्रदाता या किसी और को नहीं जाता। विज्ञापन या विपणन के लिए नहीं, बिकता नहीं, तीसरे पक्ष से साझा नहीं, और अनुप्रयोग के अपने वजन रिकॉर्ड के अलावा उपयोग नहीं होता। यह अनुमति आप डिवाइस की सेहत सेटिंग में कभी भी नियंत्रित करते हैं।"
     - heading: "क्या Dial चिकित्सा सलाह का विकल्प है?"
       paragraphs:
         - "Dial डायरी उपकरण है। यह चिकित्सा उपकरण नहीं है और चिकित्सा सलाह नहीं देता। यह खुराक गणना नहीं करता और कोई खुराक सिफारिश नहीं करता। Dial में हर खुराक और अनुसूची आपके दर्ज या आयातित जानकारी से आती है। उपचार, खुराक, अनुसूची और दुष्प्रभाव निर्धारित करने वाले से पुष्टि करें।"
@@ -601,7 +601,7 @@ hi:
         - "चूँकि अनुप्रयोग Dial रिकॉर्ड सेवा प्रदाता को नहीं भेजता, सेवा प्रदाता के पास तीसरे पक्ष से साझा करने के लिए ऐसे रिकॉर्ड नहीं हैं। वैकल्पिक Dial Pro खरीद और सदस्यता Apple StoreKit से संसाधित करती है। सेवा प्रदाता उन लेनदेन से भुगतान कार्ड विवरण नहीं प्राप्त करती।"
     - heading: "मेरे ऑप्ट-आउट अधिकार क्या हैं और डेटा कैसे हटाऊँ?"
       paragraphs:
-        - "अनुप्रयोग हटाकर सारी जानकारी संग्रहण रोक सकते हैं। डिवाइस या स्टोर की मानक अनइंस्टॉल प्रक्रिया इस्तेमाल करें। प्रविष्टि हटाने से वह Dial के सक्रिय संग्रहण से हटती है। ऐप में iCloud नियंत्रण चालू होने पर हटाना आपके Apple खाते की निजी CloudKit डेटाबेस में दिख सकता है। Dial सेटिंग में यह नियंत्रण बंद कर सकते हैं। Dial की स्वास्थ्य अनुमतियाँ स्वास्थ्य ऐप या सेटिंग में कभी भी बदल सकते हैं। Dial ने स्वास्थ्य में जो वज़न सहेजे हैं, उन्हें स्वास्थ्य ऐप में देख और हटा सकते हैं। Apple स्वास्थ्य के साथ वज़न सिंक चालू होने पर, Dial में दर्ज किया वज़न Dial में हटाने से Dial की स्वास्थ्य में सहेजी कॉपी भी हट जाती है। प्रगति फ़ोटो Dial में हटा सकते हैं।"
+        - "अनुप्रयोग हटाकर सारी जानकारी संग्रहण रोक सकते हैं। डिवाइस या स्टोर की मानक अनइंस्टॉल प्रक्रिया इस्तेमाल करें। प्रविष्टि हटाने से वह Dial के सक्रिय संग्रहण से हटती है। ऐप में iCloud नियंत्रण चालू होने पर हटाना आपके Apple खाते की निजी CloudKit डेटाबेस में दिख सकता है। Dial सेटिंग में यह नियंत्रण बंद कर सकते हैं। Dial की सेहत अनुमतियाँ सेहत ऐप या सेटिंग में कभी भी बदल सकते हैं। Dial ने सेहत में जो वज़न सहेजे हैं, उन्हें सेहत ऐप में देख और हटा सकते हैं। सेहत के साथ वज़न सिंक चालू होने पर, Dial में दर्ज किया वज़न Dial में हटाने से Dial की सेहत में सहेजी कॉपी भी हट जाती है। प्रगति फ़ोटो Dial में हटा सकते हैं।"
     - heading: "बच्चे"
       paragraphs:
         - "अनुप्रयोग जानबूझकर 13 वर्ष से कम बच्चों से डेटा नहीं माँगता और न उन पर विपणन करता है।"
@@ -609,7 +609,7 @@ hi:
       email_after: ", ताकि आवश्यक कदम उठाए जा सकें। अपने देश में व्यक्तिगत जानकारी प्रसंस्करण की सहमति के लिए आपकी आयु कम से कम 16 वर्ष होनी चाहिए (कुछ देशों में अभिभावक आपकी ओर से कर सकते हैं)।"
     - heading: "सुरक्षा"
       paragraphs:
-        - "Dial आपके रिकॉर्ड सेवा प्रदाता को नहीं भेजता, जिससे हमारे सिस्टम पर जोखिम सीमित रहता है। डिवाइस पर रिकॉर्ड उस डिवाइस के सुरक्षा नियंत्रण से सुरक्षित हैं। CloudKit से संग्रहीत डेटा आपके Apple खाते और Apple के iCloud सुरक्षा नियंत्रण से सुरक्षित है। स्वास्थ्य डेटा Apple के स्वास्थ्य डेटा सुरक्षा नियंत्रण से सुरक्षित है। कोई संग्रहण प्रणाली पूरी तरह सुरक्षित नहीं कही जा सकती।"
+        - "Dial आपके रिकॉर्ड सेवा प्रदाता को नहीं भेजता, जिससे हमारे सिस्टम पर जोखिम सीमित रहता है। डिवाइस पर रिकॉर्ड उस डिवाइस के सुरक्षा नियंत्रण से सुरक्षित हैं। CloudKit से संग्रहीत डेटा आपके Apple खाते और Apple के iCloud सुरक्षा नियंत्रण से सुरक्षित है। सेहत का डेटा Apple के सेहत डेटा सुरक्षा नियंत्रण से सुरक्षित है। कोई संग्रहण प्रणाली पूरी तरह सुरक्षित नहीं कही जा सकती।"
     - heading: "उपयोग की शर्तें"
       paragraphs:
         []
@@ -724,9 +724,9 @@ vi:
     - heading: "Ảnh tiến triển lưu ở đâu?"
       paragraphs:
         - "Ảnh tiến triển và ngày của chúng lưu trong thư mục tài liệu của Ứng dụng trên thiết bị. Chúng không thuộc bản ghi CloudKit của Dial. Nếu dùng máy quét nhãn tồn kho, Dial xử lý ảnh nhãn đã chọn hoặc chụp để điền trường và không lưu ảnh đó như bản ghi tồn kho."
-    - heading: "Ứng dụng dùng Sức khoẻ thế nào?"
+    - heading: "Ứng dụng dùng Sức khỏe thế nào?"
       paragraphs:
-        - "Nếu bạn cho phép, Dial đọc cân nặng cơ thể từ Sức khoẻ để nhật ký cân nặng cập nhật, và có thể ghi cân nặng bạn ghi trong Dial vào Sức khoẻ. Dial không đọc hay ghi danh mục dữ liệu Sức khoẻ khác. Dữ liệu Sức khoẻ không bao giờ rời thiết bị đến Nhà cung cấp dịch vụ hay bên khác. Dữ liệu Sức khoẻ không dùng cho quảng cáo. Dial không bán dữ liệu này và không chia sẻ với bên thứ ba. Việc dùng chỉ để theo dõi cân nặng trong Ứng dụng. Bạn kiểm soát quyền này bất cứ lúc nào trong cài đặt Sức khoẻ của thiết bị."
+        - "Nếu bạn cho phép, Dial đọc cân nặng cơ thể từ Sức khỏe để nhật ký cân nặng cập nhật, và có thể ghi cân nặng bạn ghi trong Dial vào Sức khỏe. Dial không đọc hay ghi danh mục dữ liệu Sức khỏe khác. Dữ liệu Sức khỏe không bao giờ rời thiết bị đến Nhà cung cấp dịch vụ hay bên khác. Dữ liệu Sức khỏe không dùng cho quảng cáo. Dial không bán dữ liệu này và không chia sẻ với bên thứ ba. Việc dùng chỉ để theo dõi cân nặng trong Ứng dụng. Bạn kiểm soát quyền này bất cứ lúc nào trong cài đặt Sức khỏe của thiết bị."
     - heading: "Dial có thay thế tư vấn y tế không?"
       paragraphs:
         - "Dial là công cụ nhật ký, không phải thiết bị y tế. Ứng dụng không đưa tư vấn y tế và không tính liều. Mọi liều và lịch trong Dial đến từ thông tin bạn nhập hoặc chọn nhập. Mọi điều về điều trị, gồm liều, lịch và tác dụng phụ, hãy xác nhận với bác sĩ kê đơn."
@@ -741,7 +741,7 @@ vi:
         - "Vì Ứng dụng không truyền bản ghi Dial cho Nhà cung cấp dịch vụ, Nhà cung cấp dịch vụ không có bản ghi đó để chia sẻ với bên thứ ba. Mua và thuê bao Dial Pro tùy chọn do Apple xử lý qua StoreKit. Nhà cung cấp dịch vụ không nhận chi tiết thẻ thanh toán từ các giao dịch đó."
     - heading: "Quyền từ chối của tôi là gì và xóa dữ liệu thế nào?"
       paragraphs:
-        - "Bạn dừng mọi lưu trữ thông tin của Ứng dụng bằng cách xóa nó. Dùng cách gỡ cài đặt chuẩn của thiết bị hoặc cửa hàng. Xóa một mục sẽ gỡ nó khỏi kho lưu trữ đang dùng của Dial. Khi điều khiển iCloud trong ứng dụng bật, việc xóa có thể phản ánh qua cơ sở dữ liệu CloudKit riêng gắn với Tài khoản Apple. Bạn có thể tắt điều khiển trong cài đặt Dial. Bạn có thể đổi quyền Sức khoẻ của Dial bất cứ lúc nào trong ứng dụng Sức khoẻ hoặc trong Cài đặt. Cân nặng mà Dial đã lưu vào Sức khoẻ có thể xem và xóa trong ứng dụng Sức khoẻ. Khi đồng bộ cân nặng với Sức khoẻ đang bật, xóa trong Dial một cân nặng bạn đã ghi trong Dial cũng xóa bản sao mà Dial đã lưu vào Sức khoẻ. Ảnh tiến triển có thể xóa trong Dial."
+        - "Bạn dừng mọi lưu trữ thông tin của Ứng dụng bằng cách xóa nó. Dùng cách gỡ cài đặt chuẩn của thiết bị hoặc cửa hàng. Xóa một mục sẽ gỡ nó khỏi kho lưu trữ đang dùng của Dial. Khi điều khiển iCloud trong ứng dụng bật, việc xóa có thể phản ánh qua cơ sở dữ liệu CloudKit riêng gắn với Tài khoản Apple. Bạn có thể tắt điều khiển trong cài đặt Dial. Bạn có thể đổi quyền Sức khỏe của Dial bất cứ lúc nào trong ứng dụng Sức khỏe hoặc trong Cài đặt. Cân nặng mà Dial đã lưu vào Sức khỏe có thể xem và xóa trong ứng dụng Sức khỏe. Khi đồng bộ cân nặng với Sức khỏe đang bật, xóa trong Dial một cân nặng bạn đã ghi trong Dial cũng xóa bản sao mà Dial đã lưu vào Sức khỏe. Ảnh tiến triển có thể xóa trong Dial."
     - heading: "Trẻ em"
       paragraphs:
         - "Ứng dụng không cố ý dùng để lấy dữ liệu từ trẻ dưới 13 tuổi hay tiếp thị tới chúng."
@@ -749,7 +749,7 @@ vi:
       email_after: " để có thể thực hiện bước cần thiết. Bạn cũng phải ít nhất 16 tuổi để đồng ý xử lý thông tin nhận dạng cá nhân tại quốc gia bạn (ở một số nước cha mẹ hoặc người giám hộ có thể làm thay)."
     - heading: "Bảo mật"
       paragraphs:
-        - "Dial không truyền bản ghi của bạn cho Nhà cung cấp dịch vụ, hạn chế việc lộ dữ liệu qua hệ thống chúng tôi vận hành. Bản ghi trên thiết bị được bảo vệ bởi kiểm soát bảo mật của thiết bị đó. Dữ liệu lưu qua CloudKit được bảo vệ bởi Tài khoản Apple và kiểm soát bảo mật iCloud của Apple. Dữ liệu trong Sức khoẻ được bảo vệ bởi kiểm soát bảo mật dữ liệu Sức khoẻ của Apple. Không hệ thống lưu trữ nào được bảo đảm hoàn toàn an toàn."
+        - "Dial không truyền bản ghi của bạn cho Nhà cung cấp dịch vụ, hạn chế việc lộ dữ liệu qua hệ thống chúng tôi vận hành. Bản ghi trên thiết bị được bảo vệ bởi kiểm soát bảo mật của thiết bị đó. Dữ liệu lưu qua CloudKit được bảo vệ bởi Tài khoản Apple và kiểm soát bảo mật iCloud của Apple. Dữ liệu trong Sức khỏe được bảo vệ bởi kiểm soát bảo mật dữ liệu Sức khỏe của Apple. Không hệ thống lưu trữ nào được bảo đảm hoàn toàn an toàn."
     - heading: "Điều khoản sử dụng"
       paragraphs:
         []

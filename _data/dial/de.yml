@@ -205,7 +205,7 @@ privacy:
       detail:
         Mit iCloud nutzen die zentralen Einträge die private CloudKit-Datenbank auf deinem
         Apple-Account, nicht unsere Server.
-  body: "Medikamente, Dosen, Erinnerungen und Vorräte können über deine eigene iCloud synchronisiert werden. Gewichtseinträge bleiben in einem separaten lokalen Speicher, mit optionaler Anbindung an Apple Health. Fortschrittsfotos bleiben auf deinem Gerät."
+  body: "Medikamente, Dosen, Erinnerungen und Vorräte können über deine eigene iCloud synchronisiert werden. Gewichtseinträge bleiben in einem separaten lokalen Speicher, mit optionaler Anbindung an die Health-App. Fortschrittsfotos bleiben auf deinem Gerät."
   policy_link: Die Dial-Datenschutzerklärung lesen
   policy_url: /de/dial/privacy/
 

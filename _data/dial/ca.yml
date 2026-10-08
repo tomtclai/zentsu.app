@@ -168,7 +168,7 @@ privacy:
       detail: "Zentsu no opera cap servidor que emmagatzemi o llegeixi els seus registres."
     - term: "Sincronització opcional"
       detail: "Amb iCloud activat, els registres principals fan servir la base CloudKit privada del teu compte d’Apple, no els nostres servidors."
-  body: "Els registres de medicament, dosi, recordatori i subministrament es poden sincronitzar amb el teu iCloud si l'actives. El pes queda en un magatzem local separat, amb integració opcional amb Apple Health. Els fitxers de fotos de progrés queden al dispositiu."
+  body: "Els registres de medicament, dosi, recordatori i subministrament es poden sincronitzar amb el teu iCloud si l'actives. El pes queda en un magatzem local separat, amb integració opcional amb l'app Salut. Els fitxers de fotos de progrés queden al dispositiu."
   policy_link: "Llegeixi la política de privadesa de Dial"
   policy_url: /ca/dial/privacy/
 

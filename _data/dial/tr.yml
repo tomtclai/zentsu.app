@@ -168,7 +168,7 @@ privacy:
       detail: "Zentsu senin kayıtlarını saklayan veya okuyan bir sunucu işletmez."
     - term: "İsteğe bağlı senkronizasyon"
       detail: "iCloud açıkken temel kayıtlar senin Apple hesabındaki özel CloudKit veritabanını kullanır, bizim sunucularımızı değil."
-  body: "İlaç, doz, anımsatıcı ve stok kayıtları açıldığında kendi iCloud'unuz üzerinden senkronize olabilir. Kilo ayrı yerel depoda kalır; isteğe bağlı Apple Health bağlantısı vardır. İlerleme fotoğrafı dosyaları cihazda kalır."
+  body: "İlaç, doz, anımsatıcı ve stok kayıtları açıldığında kendi iCloud'unuz üzerinden senkronize olabilir. Kilo ayrı yerel depoda kalır; isteğe bağlı Sağlık uygulaması bağlantısı vardır. İlerleme fotoğrafı dosyaları cihazda kalır."
   policy_link: "Dial gizlilik politikasını okuyun"
   policy_url: /tr/dial/privacy/
 

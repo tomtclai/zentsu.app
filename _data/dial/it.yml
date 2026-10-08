@@ -211,7 +211,7 @@ privacy:
       detail:
         Con iCloud attivo, i registri principali usano il database CloudKit privato del
         tuo Account Apple, non i nostri server.
-  body: "Farmaci, dosi, promemoria e scorte possono sincronizzarsi tramite il tuo iCloud se lo attivi. Il peso resta in un archivio locale separato, con integrazione opzionale ad Apple Health. I file delle foto dei progressi restano sul dispositivo."
+  body: "Farmaci, dosi, promemoria e scorte possono sincronizzarsi tramite il tuo iCloud se lo attivi. Il peso resta in un archivio locale separato, con integrazione opzionale con l'app Salute. I file delle foto dei progressi restano sul dispositivo."
   policy_link: Legga l'informativa sulla privacy di Dial
   policy_url: /it/dial/privacy/
 

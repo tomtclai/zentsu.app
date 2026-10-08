@@ -168,7 +168,7 @@ privacy:
       detail: "A Zentsu nem üzemeltet szervert, amely tárolná vagy olvasná a bejegyzéseidet."
     - term: "Választható szinkronizálás"
       detail: "Ha az iCloud be van kapcsolva, az alapbejegyzések az Apple-fiókod privát CloudKit-adatbázisát használják, nem a szervereinket."
-  body: "A gyógyszer-, adag-, emlékeztető- és készletbejegyzések az saját iCloudodon keresztül szinkronizálhatók, ha bekapcsolod. A testsúly külön helyi tárolóban marad, opcionális Apple Health kapcsolattal. A haladási fotófájlok a készüléken maradnak."
+  body: "A gyógyszer-, adag-, emlékeztető- és készletbejegyzések az saját iCloudodon keresztül szinkronizálhatók, ha bekapcsolod. A testsúly külön helyi tárolóban marad, opcionális kapcsolattal az Egészség apphoz. A haladási fotófájlok a készüléken maradnak."
   policy_link: "Olvassa el a Dial adatvédelmi szabályzatát"
   policy_url: /hu/dial/privacy/
 

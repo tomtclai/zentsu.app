@@ -168,7 +168,7 @@ privacy:
       detail: "Zentsu ne vodi poslužitelj koji pohranjuje ili čita tvoje zapise."
     - term: "Neobavezna sinkronizacija"
       detail: "Kad uključiš iCloud, glavni zapisi koriste privatnu CloudKit bazu na tvom Apple računu, ne naše poslužitelje."
-  body: "Zapisi lijeka, doze, podsjetnika i zalihe mogu se sinkronizirati preko tvog iClouda ako ga uključiš. Težina ostaje u odvojenoj lokalnoj pohrani, uz neobaveznu integraciju s Apple Healthom. Datoteke fotografija napretka ostaju na uređaju."
+  body: "Zapisi lijeka, doze, podsjetnika i zalihe mogu se sinkronizirati preko tvog iClouda ako ga uključiš. Težina ostaje u odvojenoj lokalnoj pohrani, uz neobaveznu integraciju s aplikacijom Zdravlje. Datoteke fotografija napretka ostaju na uređaju."
   policy_link: "Pročitajte pravila privatnosti Diala"
   policy_url: /hr/dial/privacy/
 

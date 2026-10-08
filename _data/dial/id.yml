@@ -168,7 +168,7 @@ privacy:
       detail: "Zentsu tidak mengoperasikan server yang menyimpan atau membaca catatan Anda."
     - term: "Sinkronisasi opsional"
       detail: "Dengan iCloud menyala, catatan inti memakai basis data CloudKit pribadi pada Akun Apple Anda, bukan server kami."
-  body: "Catatan obat, dosis, pengingat, dan stok dapat disinkronkan lewat iCloud Anda sendiri jika diaktifkan. Berat tetap di penyimpanan lokal terpisah, dengan integrasi Apple Health opsional. Berkas foto perkembangan tetap di perangkat."
+  body: "Catatan obat, dosis, pengingat, dan stok dapat disinkronkan lewat iCloud Anda sendiri jika diaktifkan. Berat tetap di penyimpanan lokal terpisah, dengan integrasi app Kesehatan opsional. Berkas foto perkembangan tetap di perangkat."
   policy_link: "Baca kebijakan privasi Dial"
   policy_url: /id/dial/privacy/
 

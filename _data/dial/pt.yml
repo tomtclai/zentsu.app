@@ -204,7 +204,7 @@ privacy:
       detail:
         Com o iCloud ligado, os registros principais usam o banco de dados privado do
         CloudKit da sua conta Apple, não os nossos servidores.
-  body: "Registros de medicamento, dose, lembrete e estoque podem sincronizar pelo seu próprio iCloud se você ativar. O peso fica em um armazenamento local separado, com integração opcional ao Apple Health. Os arquivos das fotos de progresso ficam no aparelho."
+  body: "Registros de medicamento, dose, lembrete e estoque podem sincronizar pelo seu próprio iCloud se você ativar. O peso fica em um armazenamento local separado, com integração opcional ao app Saúde. Os arquivos das fotos de progresso ficam no aparelho."
   policy_link: Ler a política de privacidade do Dial
   policy_url: /pt/dial/privacy/
 
