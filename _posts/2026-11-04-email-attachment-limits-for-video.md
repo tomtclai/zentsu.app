@@ -42,23 +42,22 @@ None of these fit. Even the 720p file is more than twice Gmail's limit, and that
 
 ## Sizing a clip for email
 
-Press's Email preset starts from the number. It aims 10 percent under 25 MB, sets aside 96 kbps for audio, divides the remaining bits by the clip's duration, and gives that bitrate to the H.264 encoder. If the result still comes out over the limit, it encodes once more at a lower rate.
+Press's Email preset starts from a number, and the number is 14.5 MB. That looks low next to 25 MB, and the reason is how mail travels. An attachment goes out as base64 text, which turns every 3 bytes into 4 characters and adds a line break every 76, so the file grows by about 37 percent. iCloud Mail's 20 MB applies to the message as sent, so the encoded attachment is what has to fit. A 14.5 MB file encodes to about 19.8 MB, which leaves room for the text, and it is well inside Gmail's and Outlook.com's 25 MB.
 
-From the same 60-second 4K clip:
+From there the preset aims 10 percent under 14.5 MB, sets aside 96 kbps for audio, divides the remaining bits by the clip's duration, and gives that bitrate to the encoder. It also picks the frame size, stepping down to 1080p or 720p when the bitrate is too thin for the one you chose. After each pass it measures the file, and if the file is over, it encodes again at a lower rate or a smaller size, up to four passes. If none of them fits, the job reports that it cannot fit under 14.5 MB and no file is written.
 
-| Setting                     | Output  | Time |
-| --------------------------- | ------- | ---- |
-| Email preset at original 4K | 23.4 MB | 31 s |
-| Email preset at 1080p       | 22.7 MB | 8 s  |
-| Email preset at 720p        | 22.6 MB | 5 s  |
+From the same 60-second 4K clip, with the resolution left at Original:
 
-All three are under the 25 MB that Gmail and Outlook.com document, and by Gmail's own description an attachment under the limit stays an attachment rather than becoming a Drive link. The smaller frame sizes also finished several times faster. For most clips we would pick 1080p: at the same budget, each pixel gets four times the bits it would get at 4K.
+| Setting             | Output            | Time |
+| ------------------- | ----------------- | ---- |
+| Email preset, H.264 | 13.2 MB, at 720p  | 5 s  |
+| Email preset, HEVC  | 14.0 MB, at 1080p | 7 s  |
 
-None of the three fits iCloud Mail's 20 MB. For iCloud, use the Discord preset, which aims under 20 MB and produced 18.1 MB from the same clip at both 1080p and 720p, or choose a custom limit a little below 20.
+Both fit all three services, iCloud Mail included. In H.264, a minute of video at this budget is too little for 1080p, so Press wrote 720p. HEVC needs fewer bits for the same picture and held 1080p, at the cost of the compatibility covered below. By Gmail's own description, an attachment under the limit stays an attachment rather than becoming a Drive link.
 
 ## Length still decides the quality
 
-The budget does not change with length, so a longer clip gets fewer bits per second. With the Email preset's target, a 30-second clip gets about 5.9 Mbps of video, a one-minute clip about 2.9 Mbps, and a three-minute clip about 0.9 Mbps. Past a couple of minutes, 720p is the better choice, and trimming the clip to the part that matters does more than any setting. In QuickTime Player, Edit > Trim does that before you convert.
+The budget does not change with length, so a longer clip gets fewer bits per second. With the Email preset's target, a 30-second clip gets about 3.4 Mbps of video, a one-minute clip about 1.6 Mbps, and a three-minute clip about 0.5 Mbps. In H.264, Press writes the 30-second clip at 1080p and the longer two at 720p. Trimming the clip to the part that matters does more than any setting. In QuickTime Player, Edit > Trim does that before you convert.
 
 ## When a link is the better choice
 
@@ -70,4 +69,4 @@ An attachment is better when the recipient should not need to open another servi
 
 A file that fits is no use if it will not play on the other end. Press writes H.264 video with AAC audio in an .mp4 for every email export, the combination that Windows and every current browser play without extra software. We explained the HEVC side of this in [why your Mac video is HEVC](/blog/2026/why-macos-gives-you-hevc/).
 
-The [compress a video for email](/press/convert/compress-video-for-email) page walks through the steps, and the [compress a video for Discord](/press/convert/compress-video-for-discord) page covers the 20 MB preset that suits iCloud Mail. Size presets are part of Press Pro, a one-time ${{ site.price_press_lifetime }} purchase that also adds batch conversion. Converting one file at a time to H.264 at Original, 1080p, or 720p is in the free download.
+The [compress a video for email](/press/convert/compress-video-for-email) page walks through the steps, and the [compress a video for Discord](/press/convert/compress-video-for-discord) page covers the 20 MB Discord preset. Size presets are part of Press Pro, a one-time ${{ site.price_press_lifetime }} purchase that also adds batch conversion. Converting one file at a time to H.264 at Original, 1080p, or 720p is in the free download.

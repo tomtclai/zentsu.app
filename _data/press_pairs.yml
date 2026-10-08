@@ -244,12 +244,13 @@
     - >-
       Drop the clip onto Press.
     - >-
-      Under Video, choose H.264, then pick Discord under Size limit. For 4K
-      footage, also pick 1080p or 720p. Add 720p for a clip that runs several
-      minutes, so the encoder has bitrate to spare.
+      Under Video, choose H.264, then pick Discord under Size limit. Leave
+      the resolution on Original: when 20 MB is too little for 4K frames,
+      Press drops the clip to 1080p, or to 720p for a long clip.
     - >-
-      Click Convert. The finished row shows the output size, so you can check
-      it is under 20 MB before you open Discord.
+      Click Convert. The finished row shows the output size, which is always
+      under 20 MB. If Press cannot get the clip under the limit, the row says
+      so and no file is written.
   result:
     container: >-
       .mp4 next to the source, named name (Press).mp4.
@@ -257,21 +258,30 @@
       H.264 with AAC audio.
     quality: >-
       Press sets the video bitrate from the byte budget and the clip's
-      duration, with 96 kbps reserved for audio and a 10 percent margin, then
-      re-encodes once at a lower rate if the first pass overshoots. The full
-      duration is always kept, so a long clip gets fewer bits per second and
-      looks softer than a short one.
+      duration, with 96 kbps reserved for audio and a 10 percent margin. It
+      starts at the largest frame size that bitrate can carry, from the one
+      you picked down through 2160p, 1080p, and 720p. After each pass it
+      checks the real file size, and if the file is over, it encodes again at
+      a lower rate or a smaller size, up to four passes. The full duration is
+      always kept, so a long clip gets fewer bits per second and looks softer
+      than a short one.
     metadata: >-
       Metadata is not carried over on size-limited exports, which are written
       through AVAssetWriter rather than the export presets.
   measured:
     intro: >-
-      One 60-second 4K clip with the Discord preset at three resolutions. At
-      1080p and 720p it landed at 18.1 MB, about 10 percent under the cap as
-      intended. At Original it came out at 22.9 MB, over the cap: on our test
-      Mac the H.264 encoder would not go below about 2.9 Mbps for 4K frames,
-      even on the second, lower-rate pass. Pick 1080p or 720p for 4K footage.
+      One 60-second 4K clip with the Discord preset. Every result landed
+      about 10 percent under the cap. Left at Original, Press judged 20 MB
+      too little for 4K frames and wrote 1080p, in H.264 and in HEVC alike.
     rows:
+      - source: 4K HEVC .mov, 153.5 MB
+        setting: Discord, Original
+        output: 18.2 MB .mp4, H.264 at 1080p
+        time: 12 s
+      - source: 4K HEVC .mov, 153.5 MB
+        setting: Discord, HEVC, Original
+        output: 18.1 MB .mp4, HEVC at 1080p
+        time: 7 s
       - source: 4K HEVC .mov, 153.5 MB
         setting: Discord, 1080p
         output: 18.1 MB .mp4
@@ -280,10 +290,6 @@
         setting: Discord, 720p
         output: 18.1 MB .mp4
         time: 5 s
-      - source: 4K HEVC .mov, 153.5 MB
-        setting: Discord, Original
-        output: 22.9 MB .mp4, over the cap
-        time: 53 s
   faq:
     - question: Why 20 MB?
       answer: >-
@@ -312,15 +318,16 @@
   media: video
   h1: Compress a video for email on Mac
   description: >-
-    Get a video under the 25 MB email attachment limit on your Mac. Press
-    targets the size and writes an H.264 MP4 that opens on the other end.
+    Get a video small enough to attach in Gmail, Outlook.com, or iCloud Mail
+    on your Mac. Press writes an H.264 MP4 that opens on the other end.
   native_gap: >-
     Gmail's attachment cap is a number, and the native tools do not take one.
     QuickTime Player's Export As lets you choose 4K, 1080p, 720p, or 480p and
     writes .mov. Finder's Encode Selected Video Files has a similar list of
     H.264 and HEVC settings, also as .mov. Both leave you guessing which tier
-    lands under 25 MB. Press's Email preset works out the bitrate that fits 25 MB
-    for the clip's length and writes H.264 MP4, so the file stays an
+    fits. Press's Email preset aims at 14.5 MB, which still fits iCloud Mail's
+    20 MB message limit once the attachment is encoded for sending, works out
+    the bitrate for the clip's length, and writes H.264 MP4. The file stays an
     attachment instead of becoming a Google Drive link, and plays on a
     Windows PC at the other end.
   steps:
@@ -328,8 +335,8 @@
       Drop the video onto Press. A folder works too, if you have several to
       send.
     - >-
-      Under Video, select H.264 and choose Email under Size limit. For a clip
-      longer than a couple of minutes, add 720p.
+      Under Video, select H.264 and choose Email under Size limit. Press picks
+      the frame size that fits the budget, down to 720p.
     - >-
       Click Convert, then attach name (Press).mp4 from the same folder as the
       original.
@@ -341,40 +348,42 @@
       handle without extra software.
     quality: >-
       Press sets the video bitrate from the byte budget and the clip's
-      duration, aims 10 percent under the cap, and re-encodes once at a lower
-      rate if the first pass overshoots. The full duration is kept, so long
-      clips look softer because the same budget is spread over more seconds.
+      duration and aims 10 percent under 14.5 MB. It starts at the largest
+      frame size that bitrate can carry, checks the real file size after each
+      pass, and encodes again at a lower rate or a smaller size when the file
+      is over, up to four passes. The full duration is kept, so long clips
+      look softer because the same budget is spread over more seconds.
     metadata: >-
       Metadata is not carried over on size-limited exports, which are written
       through AVAssetWriter rather than the export presets.
   measured:
     intro: >-
-      The same 60-second 4K clip with the Email preset. Every setting landed
-      under 25 MB, and the smaller frame sizes finished several times faster.
+      The same 60-second 4K clip with the Email preset, resolution left at
+      Original. In H.264 a minute at this budget is too little for 1080p, so
+      Press wrote 720p. HEVC needs fewer bits for the same picture and held
+      1080p. Both files fit iCloud Mail's 20 MB once encoded for sending.
     rows:
       - source: 4K HEVC .mov, 153.5 MB
         setting: Email, Original
-        output: 23.4 MB .mp4
-        time: 31 s
-      - source: 4K HEVC .mov, 153.5 MB
-        setting: Email, 1080p
-        output: 22.7 MB .mp4
-        time: 8 s
-      - source: 4K HEVC .mov, 153.5 MB
-        setting: Email, 720p
-        output: 22.6 MB .mp4
+        output: 13.2 MB .mp4, H.264 at 720p
         time: 5 s
+      - source: 4K HEVC .mov, 153.5 MB
+        setting: Email, HEVC, Original
+        output: 14.0 MB .mp4, HEVC at 1080p
+        time: 7 s
   faq:
-    - question: Which 25 MB is this?
+    - question: Why 14.5 MB?
       answer: >-
-        Gmail's limit for personal accounts, per Google's Gmail Help. Gmail
-        replaces a larger attachment with a Google Drive link, and on a work
-        or school account the administrator sets the limit. Outlook.com also
-        caps a message at 25 MB, and Microsoft counts the text and every
-        attached file toward it. iCloud Mail is lower: Apple lists 20 MB for
-        incoming and outgoing messages. For iCloud, choose Custom and type a
-        number under 20, or let Mail offer Mail Drop, which Apple says takes
-        attachments up to 5 GB.
+        Mail carries an attachment as base64 text, which makes it about 37
+        percent larger on the way out. Apple lists 20 MB for incoming and
+        outgoing iCloud Mail messages, so the encoded message is what has to
+        fit. A 14.5 MB file encodes to about 19.8 MB and leaves room for the
+        text. Gmail's limit for personal accounts and Outlook.com's are both
+        25 MB, so the same file goes through either. Gmail replaces a larger
+        attachment with a Google Drive link, and on a work or school account
+        the administrator sets the limit. For a bigger file, choose Custom, or
+        let Mail offer Mail Drop, which Apple says takes attachments up to
+        5 GB.
     - question: Will the recipient need anything installed?
       answer: >-
         An H.264 MP4 with AAC audio plays in the stock players on macOS,
@@ -382,7 +391,8 @@
     - question: Is this free?
       answer: >-
         Size presets are in Press Pro. The free download writes H.264 MP4 at
-        1080p or 720p, which for a short clip is often already under 25 MB.
+        1080p or 720p without a size target. At 720p our test clip came to
+        57.2 MB a minute, so roughly 15 seconds of it fits in 14.5 MB.
   related: [compress-video-for-discord, mov-to-mp4, hevc-to-h264]
 
 - slug: 4k-to-1080p

@@ -1,5 +1,6 @@
 method: >-
-  Measured on 2026-10-08 with Press 1.0 on a MacBook Air (M5, 24 GB) running macOS 27.0.1. The
+  Measured on 2026-10-08 with Press 1.0, and with Press 1.0.1 for the size-preset rows at
+  Original, on a MacBook Air (M5, 24 GB) running macOS 27.0.1. The
   video source is a 60-second 4K HEVC .mov at 30 fps with AAC audio: a slow pan across a
   photograph, with grain added. The H.264 source is the same clip encoded to 1080p. The photo is a
   12-megapixel iPhone HEIC. Sizes are decimal megabytes, as Finder shows them. Times are for one
