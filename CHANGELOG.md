@@ -46,6 +46,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- The semaglutide half-life post no longer says Dial uses "the same half-life convention common GLP-1 calculators use", a claim about unnamed apps that no source supports. It now states what Dial does: the one-week half-life from the Ozempic label unless the user sets their own, applied to logged and imported doses alike.
 - The Bench "How do updates work?" answer, on the page and in its FAQ JSON-LD, says updates install on their own only when App Store Automatic Updates is on, and otherwise come from the App Store's Updates list. It said macOS installs every update without the user doing anything.
 - The Dial reminders copy, in all 34 marketing locales, and the missed-dose post say the dose-day Live Activity stays on the Lock Screen until you log, for up to 12 hours. iOS removes a Live Activity from the Lock Screen after at most 12 hours, so it cannot wait indefinitely. Dial visual baselines re-recorded for the reflowed reminders card (and the Korean copy changes above); the diff is that text.
 - Korean Dial pages: 빅토자 (Victoza) is no longer listed as a liraglutide product, because its MFDS licence (item 201005882) lapsed on 2026-10-06. The dose-log and injection-site guides cite the Ozempic and Wegovy MFDS labels as changed on 2026-10-07 and were rechecked against them on 2026-10-08. The injection-site guide cites Ozempic's 적용상의 주의 as section 11 and Wegovy's as section 10. Compounded vials are called 조제 (pharmacy-compounded) where the copy said 복제.

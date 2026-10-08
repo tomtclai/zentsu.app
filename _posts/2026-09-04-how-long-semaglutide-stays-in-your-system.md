@@ -35,7 +35,7 @@ That stacked pattern is what people mean when they talk about medication "still 
 
 Dial Pro reads the doses you logged (medication, amount, date, and time) and models an estimated level over time. Each recorded dose starts at zero, rises as the model absorbs it, and for weekly semaglutide peaks about a day and a half after the injection. From there it decays by half every elimination half-life for that medication. Dial sums those curves across your history and draws the result on the Today screen and in the level chart.
 
-The model is deliberate and limited. It is not a pharmacokinetic simulation of your body. It is a visual summary of your own log, using the same half-life convention common GLP-1 calculators use, so imported histories and the chart read consistently.
+The model is deliberate and limited. It is not a pharmacokinetic simulation of your body. It is a visual summary of your own log. For semaglutide it uses the one-week half-life from the Ozempic label cited above unless you set your own, and it applies the same curve to every dose in your history, whether you logged it in Dial or imported it.
 
 Dial explains the method in the app. The landing page states the boundary plainly: the chart shows your own patterns between doses. It is an estimate, not a measured blood level, and not a suggestion of what to take next. Dial does not calculate doses.
 
