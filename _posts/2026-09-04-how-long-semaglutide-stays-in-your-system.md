@@ -33,7 +33,7 @@ That stacked pattern is what people mean when they talk about medication "still 
 
 ## What Dial's estimated level chart is
 
-Dial Pro reads the doses you logged (medication, amount, date, and time) and models an estimated level over time. Each recorded dose enters the total at the amount you entered, then decays by half every elimination half-life for that medication. Dial sums those curves across your history and draws the result on the Today screen and in the level chart.
+Dial Pro reads the doses you logged (medication, amount, date, and time) and models an estimated level over time. Each recorded dose starts at zero, rises as the model absorbs it, and for weekly semaglutide peaks about a day and a half after the injection. From there it decays by half every elimination half-life for that medication. Dial sums those curves across your history and draws the result on the Today screen and in the level chart.
 
 The model is deliberate and limited. It is not a pharmacokinetic simulation of your body. It is a visual summary of your own log, using the same half-life convention common GLP-1 calculators use, so imported histories and the chart read consistently.
 

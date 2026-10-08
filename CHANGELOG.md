@@ -46,6 +46,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- The semaglutide half-life post describes Dial's level model as it ships: each dose starts at zero, rises as it is absorbed, peaks about a day and a half after a weekly semaglutide injection, then decays by the elimination half-life. It had said each dose enters the total at the full logged amount.
 - The printable dose log cites Wegovy section 2.4 for its missed-dose rule only and points to the Medication Guide for the day-change rule. Section 2.4 of the current U.S. label (revised 6/2026) has no day-change rule.
 - The Bench page describes Mac App Store distribution as "Sandboxed, reviewed by Apple" instead of "Sandboxed, notarized" (notarization is for Developer ID software, and App Store builds go through App Review instead). The regex section drops its claim that most regex tools stop at highlighting, since regex101 and RegExr both explain matches. Bench support names the Settings menu (Settings → Upgrade) where it said Preferences.
 - The Traditional Chinese Dial page no longer lists 滿健樂 as Zepbound (滿健樂 is the Hong Kong name for Mounjaro, and Zepbound is not approved in Taiwan). The Korean page drops 제프바운드, which is not approved in Korea, and spells semaglutide 세마글루티드 as the MFDS label does.
