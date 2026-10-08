@@ -10,6 +10,8 @@
 #   slug         URL slug, also the stub filename (press/convert/<slug>.html).
 #   from, to     short format/target labels (e.g. "MOV", "MP4", "Discord
 #                limit"). Structural.
+#   media        video or image. Groups the pair in the /press/ conversion
+#                index. Structural.
 #   pro          true when the conversion itself needs Press Pro for a single
 #                file (size presets, WebP/AVIF/TIFF output, 2160p, HEVC out,
 #                downscale). Batch is Pro on every pair; see ProGate.swift.
@@ -35,6 +37,7 @@
   from: MOV
   to: MP4
   pro: false
+  media: video
   h1: MOV to MP4 on Mac
   description: >-
     Convert a .mov to an H.264 .mp4 on your Mac with Press. It runs locally,
@@ -137,6 +140,7 @@
   from: HEVC
   to: H.264
   pro: false
+  media: video
   h1: HEVC to H.264 on Mac
   description: >-
     Re-encode HEVC (H.265) video to an H.264 MP4 on your Mac so it plays on
@@ -222,6 +226,7 @@
   from: Video
   to: Discord limit
   pro: true
+  media: video
   campaign: press-compress-for-discord
   h1: Compress a video for Discord on Mac
   description: >-
@@ -304,6 +309,7 @@
   from: Video
   to: Email limit
   pro: true
+  media: video
   h1: Compress a video for email on Mac
   description: >-
     Get a video under the 25 MB email attachment limit on your Mac. Press
@@ -383,6 +389,7 @@
   from: 4K
   to: 1080p
   pro: false
+  media: video
   h1: 4K to 1080p on Mac
   description: >-
     Downscale 4K video to 1080p on your Mac. Press scales the longer edge to
@@ -419,12 +426,12 @@
     - question: How much smaller will it be?
       answer: >-
         A 1080p frame has a quarter of the pixels of 4K, and the bitrate
-        drops with it. Exact numbers depend on the clip; the finished row in
+        drops with it. Exact numbers depend on the clip. The finished row in
         Press shows the output size.
     - question: Can I keep 4K and only change the codec?
       answer: >-
-        Yes. Choose Original instead of 1080p; the frame size stays and only
-        the codec changes.
+        Yes. Choose Original instead of 1080p, which keeps the frame size and
+        changes only the codec.
     - question: Is 4K to 1080p free?
       answer: >-
         Yes. 1080p and 720p H.264 output are in the free download, one file
@@ -435,6 +442,7 @@
   from: HEIC
   to: JPG
   pro: false
+  media: image
   h1: HEIC to JPG on Mac
   description: >-
     Convert HEIC photos to JPG on your Mac with a quality slider and an
@@ -508,6 +516,7 @@
   from: HEIC
   to: PNG
   pro: false
+  media: image
   h1: HEIC to PNG on Mac
   description: >-
     Convert HEIC to PNG on your Mac. Press writes a lossless PNG from each
@@ -560,6 +569,7 @@
   from: WebP
   to: PNG
   pro: false
+  media: image
   h1: WebP to PNG on Mac
   description: >-
     Convert WebP images to PNG on your Mac. Press decodes each WebP and
@@ -613,6 +623,7 @@
   from: WebP
   to: JPG
   pro: false
+  media: image
   h1: WebP to JPG on Mac
   description: >-
     Convert WebP to JPG on your Mac with a quality slider. Press writes a
@@ -661,6 +672,7 @@
   from: PNG
   to: WebP
   pro: true
+  media: image
   h1: PNG to WebP on Mac
   description: >-
     Convert PNG to WebP on your Mac. Finder and Preview cannot write WebP;
@@ -715,6 +727,7 @@
   from: JPG
   to: WebP
   pro: true
+  media: image
   h1: JPG to WebP on Mac
   description: >-
     Convert JPG to WebP on your Mac for smaller web images. Press writes WebP
@@ -768,6 +781,7 @@
   from: AVIF
   to: JPG
   pro: false
+  media: image
   h1: AVIF to JPG on Mac
   description: >-
     Convert AVIF images to JPG on your Mac. Press decodes AVIF through ImageIO
@@ -818,6 +832,7 @@
   from: PNG
   to: JPG
   pro: false
+  media: image
   h1: PNG to JPG on Mac
   description: >-
     Convert PNG to JPG on your Mac with a quality slider. Press writes a JPEG
@@ -863,6 +878,7 @@
   from: TIFF
   to: JPG
   pro: false
+  media: image
   h1: TIFF to JPG on Mac
   description: >-
     Convert TIFF to JPG on your Mac. Press turns large scans and editor
@@ -912,6 +928,7 @@
   from: HEIC
   to: WebP
   pro: true
+  media: image
   h1: HEIC to WebP on Mac
   description: >-
     Convert HEIC photos to WebP on your Mac in one step. Press reads the HEIC,

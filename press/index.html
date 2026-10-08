@@ -362,12 +362,46 @@ page_stylesheet: /press.css
         </div>
       </section>
 
+      <!-- ── CONVERSIONS ── -->
+      <section class="slab" id="conversions">
+        <div class="wrap">
+          <div class="slab-head">
+            <div>
+              <div class="num">03 · CONVERSIONS</div>
+              <h2>Step-by-step pages for each conversion.</h2>
+            </div>
+          </div>
+
+          <div class="press-pairs">
+            {%- assign pair_media = site.data.press_pairs | map: 'media' | uniq -%} {%- for media in
+            pair_media -%} {%- assign media_pairs = site.data.press_pairs | where: 'media', media %}
+            <div class="press-pairs-group press-pairs-group--{{ media }}">
+              <h3 id="conversions-{{ media }}">{{ media | capitalize }}</h3>
+              <ul aria-labelledby="conversions-{{ media }}">
+                {%- for pair in media_pairs %}
+                <li>
+                  <a href="/press/convert/{{ pair.slug }}">
+                    <span
+                      >{{ pair.from }} <span class="press-pairs-to">to</span> {{ pair.to }}</span
+                    >
+                    {%- if pair.pro %} <span class="press-tier press-tier--pro">Pro</span>{% endif
+                    %}
+                  </a>
+                </li>
+                {%- endfor %}
+              </ul>
+            </div>
+            {%- endfor %}
+          </div>
+        </div>
+      </section>
+
       <!-- ── SPECS ── -->
       <section class="slab" style="padding-bottom: 5rem">
         <div class="wrap">
           <div class="slab-head">
             <div>
-              <div class="num">03 · BUILD</div>
+              <div class="num">04 · BUILD</div>
               <h2>Native and sandboxed.</h2>
             </div>
             <p class="kicker">
@@ -427,7 +461,7 @@ page_stylesheet: /press.css
         <div class="wrap">
           <div class="slab-head">
             <div>
-              <div class="num">04 · PRICING</div>
+              <div class="num">05 · PRICING</div>
               <h2>Free download. Pro is a one-time unlock.</h2>
             </div>
             <p class="kicker">
@@ -507,7 +541,7 @@ page_stylesheet: /press.css
         <div class="wrap">
           <div class="slab-head">
             <div>
-              <div class="num">05 · FAQ</div>
+              <div class="num">06 · FAQ</div>
               <h2>Questions before you download.</h2>
             </div>
             <p class="kicker">

@@ -110,6 +110,16 @@ function main() {
     return;
   }
 
+  const pressPairMedia = ['video', 'image'];
+  const unknownMedia = pairs.filter((pair) => !pressPairMedia.includes(pair.media));
+  if (unknownMedia.length > 0) {
+    console.error(
+      `Pairs in ${dataPath} need media set to ${pressPairMedia.join(' or ')}: ${unknownMedia.map((pair) => pair.slug).join(', ')}`,
+    );
+    process.exitCode = 1;
+    return;
+  }
+
   if (process.argv.includes('--check-prose')) {
     const issues = pairs.flatMap(emptyProseFields);
     if (issues.length > 0) {

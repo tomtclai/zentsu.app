@@ -163,9 +163,9 @@
         {%- endif %} {%- assign press_app = site.data.apps.apps | where: 'slug', 'press' | first -%}
         <div class="cta-band">
           <p>
-            Press converts video and images on your Mac. Free download; Press Pro is a one-time
-            <strong>${{ site.price_press_lifetime }}</strong> unlock for batch conversion, size
-            presets, and WebP.
+            Press converts video and images on your Mac. The download is free, and Press Pro is a
+            one-time <strong>${{ site.price_press_lifetime }}</strong> unlock for batch conversion,
+            size presets, and WebP.
           </p>
           {%- if press_app.app_store_url %} {%- capture pair_default_campaign -%}press-{{ pair.slug
           }}{%- endcapture -%} {%- assign pair_campaign = pair.campaign | default:
