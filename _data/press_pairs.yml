@@ -34,13 +34,15 @@
     Convert a .mov to an H.264 .mp4 on your Mac with Press. It runs locally,
     keeps the resolution you pick, and can take a whole folder at once.
   native_gap: >-
-    Finder's Encode Selected Video Files action writes an .m4v or .mp4, but
-    its default codec is HEVC, and HEVC is the reason a clip gets refused by
-    an older Windows PC, a browser, or an upload form. The H.264 option sits
-    behind a checkbox labelled Greater compatibility, and even then the file
-    comes out as .m4v. QuickTime Player's Export As menu writes only .mov.
-    Press writes an .mp4 with H.264 video and AAC audio every time, with the
-    resolution as a visible choice rather than a checkbox.
+    Both native routes end in a .mov. Finder's Encode Selected Video Files
+    can re-encode to H.264 at 480p through 2160p, and QuickTime Player's
+    Export As switches to H.264 when you pick Greater Compatibility, but each
+    saves the result as .mov. An iPhone on its High Efficiency camera setting
+    records HEVC, so the original clip can fail twice: the codec is refused
+    by an older Windows PC or a browser without HEVC support, and the
+    extension is refused by a form that asks for .mp4. Press writes an .mp4
+    with H.264 video and AAC audio every time, with the resolution as a
+    visible choice.
   steps:
     - >-
       Drop the .mov onto Press, or drop a folder to queue every video inside
@@ -94,13 +96,13 @@
     Re-encode HEVC (H.265) video to an H.264 MP4 on your Mac so it plays on
     Windows, in browsers, and through upload forms that refuse HEVC.
   native_gap: >-
-    macOS can do this, if you know where the switch is. Finder's Encode
-    Selected Video Files defaults to HEVC; ticking Greater compatibility
-    switches it to H.264, and the result arrives as .m4v, which is an MP4
-    container under a different extension. QuickTime Player's Export As
-    offers no codec choice and writes only .mov. Press puts the codec in
-    front of you as two chips, H.264 and HEVC, and writes .mp4 with the
-    extension the other side expects.
+    macOS can do this, as long as a .mov is acceptable. Finder's Encode
+    Selected Video Files lists H.264 and HEVC settings side by side, and
+    QuickTime Player's Export As switches to H.264 when you pick Greater
+    Compatibility at 4K or 1080p. Both save the result as .mov, and some
+    players and upload forms check for the .mp4 extension as well as H.264.
+    Press puts the codec in front of you as two chips, H.264 and HEVC, and
+    writes .mp4 with the extension the other side expects.
   steps:
     - >-
       Drop the HEVC file, or a folder of them, onto Press. iPhone clips,
@@ -153,10 +155,10 @@
     the size directly and writes an H.264 MP4 that Discord accepts.
   native_gap: >-
     Neither native route takes a file size as the target. QuickTime Player's
-    Export As offers 4K, 1080p, 720p, and 480p, writes only .mov, and leaves
-    the codec to the source. Finder's Encode Selected Video Files gives you a
-    Greater compatibility checkbox and defaults to HEVC. You pick a tier,
-    wait, and check the size in Finder afterwards. Press has a Discord
+    Export As offers 4K, 1080p, 720p, and 480p and writes .mov. Finder's
+    Encode Selected Video Files offers a similar list of H.264 and HEVC
+    resolutions, also as .mov. You pick a tier, wait, and check the size in
+    Finder afterwards. Press has a Discord
     preset: it works out the bitrate that fits Discord's 20 MB cap for the
     clip's length and writes H.264 MP4, which Discord accepts.
   steps:
@@ -212,9 +214,9 @@
   native_gap: >-
     Gmail's attachment cap is a number, and the native tools do not take one.
     QuickTime Player's Export As lets you choose 4K, 1080p, 720p, or 480p and
-    writes .mov; Finder's Encode Selected Video Files defaults to HEVC unless
-    you tick Greater compatibility. Both leave you guessing which tier lands
-    under 25 MB. Press's Email preset works out the bitrate that fits 25 MB
+    writes .mov. Finder's Encode Selected Video Files has a similar list of
+    H.264 and HEVC settings, also as .mov. Both leave you guessing which tier
+    lands under 25 MB. Press's Email preset works out the bitrate that fits 25 MB
     for the clip's length and writes H.264 MP4, so the file goes through as
     an ordinary attachment and plays on a Windows PC at the other end.
   steps:
@@ -265,13 +267,13 @@
     Downscale 4K video to 1080p on your Mac. Press scales the longer edge to
     1920 pixels and writes an H.264 MP4 at a fraction of the size.
   native_gap: >-
-    QuickTime Player's Export As has a 1080p tier, and it writes .mov with
-    the codec following the source. A 4K HEVC clip from an iPhone comes out
-    as 1080p HEVC in a .mov, smaller but carrying the same two things that
-    get it refused elsewhere. Finder's Encode Selected Video Files defaults
-    to HEVC too. Press downscales and changes the codec in one pass: pick
-    H.264 and 1080p, and the result is an .mp4 that plays where the original
-    did not.
+    QuickTime Player's Export As has a 1080p tier with a choice of HEVC
+    (Smaller File Size) or H.264 (Greater Compatibility), and Finder's Encode
+    Selected Video Files has an H.264 1080p setting. Both save a .mov, so a
+    4K iPhone clip comes out smaller but still in the container that an
+    .mp4-only form refuses. Press downscales and changes the codec in one
+    pass: pick H.264 and 1080p, and the result is an .mp4 that plays where
+    the original did not.
   steps:
     - >-
       Drop the 4K file onto Press.
