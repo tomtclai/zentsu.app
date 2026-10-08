@@ -356,6 +356,40 @@ export function checkEmDash({ locale, html, allowlistCounts = dashAllowlist }) {
   return [];
 }
 
+const yamlBooleanKeys = new Set(['y', 'yes', 'n', 'no', 'true', 'false', 'on', 'off']);
+
+export function checkTopLevelLocaleKeys({ path, text }) {
+  const failures = [];
+  const firstLineByKey = new Map();
+  text.split('\n').forEach((line, index) => {
+    const match = line.match(/^(['"]?)([^\s'"#:][^'":]*)\1:(\s|$)/);
+    if (!match) return;
+    const [, quote, key] = match;
+    const lineNumber = index + 1;
+    if (!quote && yamlBooleanKeys.has(key.toLowerCase())) {
+      failures.push(
+        failure(
+          key,
+          'data-locale-key-boolean',
+          `${path}:${lineNumber} key ${key} must be quoted; YAML 1.1 reads it as a boolean`,
+        ),
+      );
+    }
+    if (firstLineByKey.has(key)) {
+      failures.push(
+        failure(
+          key,
+          'data-locale-key-duplicate',
+          `${path}:${lineNumber} repeats key ${key} from line ${firstLineByKey.get(key)}; YAML keeps only the last one`,
+        ),
+      );
+    } else {
+      firstLineByKey.set(key, lineNumber);
+    }
+  });
+  return failures;
+}
+
 export function checkLanguageSwitcher({ locale, html, expectedLanguages }) {
   const failures = [];
   const start = html.indexOf('<nav');
@@ -414,6 +448,7 @@ export function validateAllDialLocales({
   routes = null,
   dashAllowlistCounts = dashAllowlist,
   validationData = null,
+  localeKeyedDataFiles = ['_data/dial_faq.yml'],
 } = {}) {
   const data = validationData ?? loadDialValidationData();
   const dialRoutes = routes ?? data.routes ?? {};
@@ -425,8 +460,10 @@ export function validateAllDialLocales({
   const enFaqCount = dialFaq.en?.items?.length ?? 6;
   const expectedLanguages = Object.keys(dialRoutes).filter((locale) => locale !== 'es' || !dialRoutes['es-MX']);
   const locales = expectedLanguages;
-  const failures = [];
-  let totalChecks = 0;
+  const failures = localeKeyedDataFiles.flatMap((path) =>
+    checkTopLevelLocaleKeys({ path, text: readFileSync(join(repoRoot, path), 'utf8') }),
+  );
+  let totalChecks = localeKeyedDataFiles.length;
 
   for (const locale of locales) {
     const route = dialRoutes[locale];

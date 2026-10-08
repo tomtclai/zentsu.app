@@ -305,8 +305,34 @@ da:
   - q: Kan jeg eksportere mine data?
     a: Dial Pro indeholder en PDF-rapport og CSV-eksport. Del dem via AirDrop, e-mail
       eller udskrivning, når du selv vil.
-'no':
+"no":
   items:
+  - q: Hva er Dial?
+    a: Dial er en GLP-1-medisinlogger for iPhone og Apple Watch. Den er gratis å laste ned. Dial
+      Pro legger til diagrammer, eksporter og rask føring.
+  - q: Hvilke legemidler støtter Dial?
+    a: "Dial støtter semaglutid, tirzepatid, orforglipron, liraglutid og dulaglutid under navnene som brukes i landet ditt, inkludert tabletter som Rybelsus. Eksenatid kan du også føre, selv om Byetta og Bydureon ikke lenger er godkjent i EU fra 1. januar 2026. Mangler ditt, legger du til en egen post."
+  - q: Beregner Dial doser?
+    a: Dial beregner ikke doser og foreslår heller ikke neste dose. Den lagrer det du fører, og
+      kan tegne et estimert nivå fra de postene for støttede injeksjonspreparater. Tablettene
+      har ingen nivåkurve. Den valgfrie enhetsomregneren gjør bare regnestykker med mg- og
+      mg/ml-verdiene du skriver inn.
+  - q: Hvor lagres postene mine?
+    a: Postene blir på enheten. iCloud er valgfritt og bruker din egen private CloudKit-database
+      når du slår det på. Zentsu driver ingen server som lagrer postene dine.
+  - q: Hva skjer hvis jeg bytter telefon?
+    a: Med iCloud på i Dial følger legemiddel, dose, påminnelse og lager Apple-kontoen din til
+      den nye telefonen. Vektføringer og fremgangsbilder blir på enheten de ble ført på.
+      Eksporter PDF eller CSV for å beholde en kopi av den historikken.
+  - q: Hva koster Dial Pro?
+    type: pricing
+    a: ''
+  - q: Fungerer Dial på Apple Watch?
+    a: Klokkeappen viser en syklusring og neste påminnelse gratis. Dial Pro legger til føring fra
+      håndleddet, pluss komplikasjoner for nivå og rask føring.
+  - q: Kan jeg eksportere dataene mine?
+    a: Dial Pro har en PDF-rapport og CSV-eksport. Del dem via AirDrop, e-post eller utskrift når
+      du selv velger.
 fi:
   items:
   - q: Mikä Dial on?
@@ -907,31 +933,3 @@ zh-hant:
     a: 手錶 App 免費顯示週期環和下次提醒。Dial Pro 增加從手腕記錄，以及水平和快速記錄複雜功能。
   - q: 能匯出資料嗎？
     a: Dial Pro 含 PDF 報告和 CSV 匯出。可用 AirDrop、郵件或列印，由你決定何時分享。
-"no":
-  items:
-  - q: Hva er Dial?
-    a: Dial er en GLP-1-medisinlogger for iPhone og Apple Watch. Den er gratis å laste ned. Dial
-      Pro legger til diagrammer, eksporter og rask føring.
-  - q: Hvilke legemidler støtter Dial?
-    a: "Dial støtter semaglutid, tirzepatid, orforglipron, liraglutid og dulaglutid under navnene som brukes i landet ditt, inkludert tabletter som Rybelsus. Eksenatid kan du også føre, selv om Byetta og Bydureon ikke lenger er godkjent i EU fra 1. januar 2026. Mangler ditt, legger du til en egen post."
-  - q: Beregner Dial doser?
-    a: Dial beregner ikke doser og foreslår heller ikke neste dose. Den lagrer det du fører, og
-      kan tegne et estimert nivå fra de postene for støttede injeksjonspreparater. Tablettene
-      har ingen nivåkurve. Den valgfrie enhetsomregneren gjør bare regnestykker med mg- og
-      mg/ml-verdiene du skriver inn.
-  - q: Hvor lagres postene mine?
-    a: Postene blir på enheten. iCloud er valgfritt og bruker din egen private CloudKit-database
-      når du slår det på. Zentsu driver ingen server som lagrer postene dine.
-  - q: Hva skjer hvis jeg bytter telefon?
-    a: Med iCloud på i Dial følger legemiddel, dose, påminnelse og lager Apple-kontoen din til
-      den nye telefonen. Vektføringer og fremgangsbilder blir på enheten de ble ført på.
-      Eksporter PDF eller CSV for å beholde en kopi av den historikken.
-  - q: Hva koster Dial Pro?
-    type: pricing
-    a: ''
-  - q: Fungerer Dial på Apple Watch?
-    a: Klokkeappen viser en syklusring og neste påminnelse gratis. Dial Pro legger til føring fra
-      håndleddet, pluss komplikasjoner for nivå og rask føring.
-  - q: Kan jeg eksportere dataene mine?
-    a: Dial Pro har en PDF-rapport og CSV-eksport. Del dem via AirDrop, e-post eller utskrift når
-      du selv velger.

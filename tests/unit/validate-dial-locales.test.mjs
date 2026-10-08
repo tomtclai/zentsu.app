@@ -13,6 +13,7 @@ import {
   checkKeyParity,
   checkLanguageSwitcher,
   checkPageExists,
+  checkTopLevelLocaleKeys,
   outputPathFor,
 } from '../../scripts/validate-dial-locales.mjs';
 
@@ -187,5 +188,29 @@ describe('validate-dial-locales checks against site-min fixtures', () => {
       })[0].check,
       'language-switcher',
     );
+  });
+
+  test('checkTopLevelLocaleKeys catches repeated and boolean locale keys', () => {
+    const text = [
+      'en:',
+      '  items: []',
+      "'no':",
+      '  items:',
+      'da:',
+      '"no":',
+      '  items: []',
+      'no:',
+      '',
+    ].join('\n');
+    const failures = checkTopLevelLocaleKeys({ path: 'faq.yml', text });
+    assert.deepEqual(
+      failures.map(({ check, detail }) => [check, detail.split(' ')[0]]),
+      [
+        ['data-locale-key-duplicate', 'faq.yml:6'],
+        ['data-locale-key-boolean', 'faq.yml:8'],
+        ['data-locale-key-duplicate', 'faq.yml:8'],
+      ],
+    );
+    assert.deepEqual(checkTopLevelLocaleKeys({ path: 'faq.yml', text: 'en:\n"no":\nfi:\n' }), []);
   });
 });
