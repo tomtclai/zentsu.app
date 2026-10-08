@@ -12,7 +12,7 @@ Zentsu workspace and deploys to Cloudflare Pages.
   baselines recorded on macOS and is run locally before a push that changes the Dial page or its CSS;
   `npm run test:visual:update` re-records after an intended visual change, and the diff of the PNGs
   is reviewed like code.
-- Do not push or deploy this repository without explicit founder confirmation.
+- A push to `main` deploys live. Review the diff before pushing; no founder confirmation is needed (DEC-2026-09-05-founder-gates-retired in the umbrella repo).
 - Do not edit generated files under `_site/`.
 
 ## Sources of truth
