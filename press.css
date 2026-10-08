@@ -423,6 +423,25 @@ section.slab {
   }
 }
 
+.press-shots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.press-shots img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+}
+@media (max-width: 800px) {
+  .press-shots {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ── Feature trio ── */
 .trio {
   display: grid;

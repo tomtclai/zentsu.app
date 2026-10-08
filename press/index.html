@@ -61,10 +61,10 @@ page_stylesheet: /press.css
           },
           {
             "@type": "Question",
-            "name": "Why does the MP4 from Finder still get rejected?",
+            "name": "Why does the video from Finder or QuickTime still get rejected?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Finder's Encode Selected Video Files defaults to HEVC unless you tick Greater compatibility, and QuickTime Player's Export As writes only .mov. An HEVC file is what an older Windows machine or an upload form refuses. Press writes H.264 in an .mp4, which is the combination those systems expect."
+              "text": "Both save a .mov. Finder's Encode Selected Video Files and QuickTime Player's Export As can re-encode to H.264, but neither writes .mp4, and an iPhone clip recorded on the High Efficiency setting is HEVC, which an older Windows machine or an upload form refuses. Press writes H.264 in an .mp4, which is the combination those systems expect."
             }
           },
           {
@@ -239,10 +239,11 @@ page_stylesheet: /press.css
               <span class="badge">Video</span>
               <h3>H.264 MP4 that plays where HEVC was refused.</h3>
               <p>
-                Finder's Encode action defaults to HEVC and QuickTime Player exports only .mov,
-                which is why a clip that plays on your Mac gets bounced by a Windows PC or an upload
-                form. Press writes .mp4 with H.264 video and AAC audio at Original, 1080p, or 720p,
-                and copies the streams without re-encoding when the source is already H.264.
+                An iPhone on its High Efficiency setting records HEVC, and Finder's Encode action
+                and QuickTime Player both save .mov, which is why a clip that plays on your Mac gets
+                bounced by a Windows PC or an upload form. Press writes .mp4 with H.264 video and
+                AAC audio at Original, 1080p, or 720p, and copies the streams without re-encoding
+                when the source is already H.264.
               </p>
               <p>
                 Press Pro adds 2160p, HEVC output for when you want the smaller file, and size
@@ -265,6 +266,56 @@ page_stylesheet: /press.css
                 photo comes out upright everywhere.
               </p>
             </div>
+          </div>
+          <div class="press-shots">
+            <picture>
+              <source type="image/avif" srcset="/assets/press-01-drop-zone.avif" />
+              <source type="image/webp" srcset="/assets/press-01-drop-zone.webp" />
+              <img
+                src="/assets/press-01-drop-zone@1x.png"
+                srcset="/assets/press-01-drop-zone@2x.png 2x"
+                width="720"
+                height="450"
+                alt="Press window with an iPhone video queued for H.264 1080p conversion, under the caption Drop in an iPhone video"
+                loading="lazy"
+              />
+            </picture>
+            <picture>
+              <source type="image/avif" srcset="/assets/press-02-discord.avif" />
+              <source type="image/webp" srcset="/assets/press-02-discord.webp" />
+              <img
+                src="/assets/press-02-discord@1x.png"
+                srcset="/assets/press-02-discord@2x.png 2x"
+                width="720"
+                height="450"
+                alt="Press window showing a video converted with the Discord size preset to 17.1 MB, under the caption Sized to fit Discord"
+                loading="lazy"
+              />
+            </picture>
+            <picture>
+              <source type="image/avif" srcset="/assets/press-03-batch.avif" />
+              <source type="image/webp" srcset="/assets/press-03-batch.webp" />
+              <img
+                src="/assets/press-03-batch@1x.png"
+                srcset="/assets/press-03-batch@2x.png 2x"
+                width="720"
+                height="450"
+                alt="Press converting three videos in one batch with per-file progress, under the caption Convert a whole folder at once"
+                loading="lazy"
+              />
+            </picture>
+            <picture>
+              <source type="image/avif" srcset="/assets/press-04-webp.avif" />
+              <source type="image/webp" srcset="/assets/press-04-webp.webp" />
+              <img
+                src="/assets/press-04-webp@1x.png"
+                srcset="/assets/press-04-webp@2x.png 2x"
+                width="720"
+                height="450"
+                alt="Press window with WebP selected as the image output format, under the caption Save photos as WebP"
+                loading="lazy"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -476,12 +527,13 @@ page_stylesheet: /press.css
               </p>
             </details>
             <details>
-              <summary>Why does the MP4 from Finder still get rejected?</summary>
+              <summary>Why does the video from Finder or QuickTime still get rejected?</summary>
               <p>
-                Finder's Encode Selected Video Files defaults to HEVC unless you tick Greater
-                compatibility, and QuickTime Player's Export As writes only .mov. An HEVC file is
-                what an older Windows machine or an upload form refuses. Press writes H.264 in an
-                .mp4, which is the combination those systems expect.
+                Both save a .mov. Finder's Encode Selected Video Files and QuickTime Player's Export
+                As can re-encode to H.264, but neither writes .mp4, and an iPhone clip recorded on
+                the High Efficiency setting is HEVC, which an older Windows machine or an upload
+                form refuses. Press writes H.264 in an .mp4, which is the combination those systems
+                expect.
               </p>
             </details>
             <details>
