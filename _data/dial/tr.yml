@@ -84,7 +84,7 @@ boundary:
 logging:
   kicker: "Hızlı kayıt"
   heading: "İlacı, dozu ve enjeksiyon yerini tek formda kaydet."
-  body: "İlaç, miktar, tarih, saat ve notları yazın. Ozempic, Wegovy, Mounjaro ve Zepbound gibi enjeksiyonlara enjeksiyon yeri eklenir. Rybelsus gibi tabletler yer olmadan kaydedilir. Dial semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid ve eksenatidi ülkenizdeki kutu adlarıyla listeler; reçeteyle aldığınız magistral semaglutid veya tirzepatid flakonu da kaydedilir. İlacınız yoksa özel bir ilaç ekleyin."
+  body: "İlaç, miktar, tarih, saat ve notları yazın. Ozempic, Wegovy, Mounjaro ve Zepbound gibi enjeksiyonlara enjeksiyon yeri eklenir. Rybelsus gibi tabletler yer olmadan kaydedilir. Dial semaglutid, tirzepatid, liraglutid, dulaglutid ve eksenatidi ülkenizdeki kutu adlarıyla listeler. Orforglipron ile reçeteyle aldığınız magistral semaglutid veya tirzepatid flakonu da kaydedilir. İlacınız yoksa özel bir ilaç ekleyin."
   checklist:
     - "Bir şey değişince kaydı düzenleyin"
     - "Her dozun enjeksiyon yerini kaydedin"

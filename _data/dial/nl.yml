@@ -100,7 +100,7 @@ boundary:
 logging:
   kicker: Snel vastleggen
   heading: Leg medicijn, dosis en injectieplaats vast in één formulier.
-  body: "Noteer medicijn, hoeveelheid, datum, tijdstip en notities. Injecties zoals Ozempic, Wegovy, Mounjaro en Zepbound leggen ook de prikplek vast. Tabletten zoals Rybelsus legt u vast zonder plek. Dial kent semaglutide, tirzepatide, liraglutide, dulaglutide en exenatide onder de merknamen die in uw land gangbaar zijn, plus voorgeschreven samengestelde semaglutide of tirzepatide uit een flacon. Voeg een eigen medicijn toe als het jouwe ontbreekt."
+  body: "Noteer medicijn, hoeveelheid, datum, tijdstip en notities. Injecties zoals Ozempic, Wegovy, Mounjaro en Zepbound leggen ook de prikplek vast. Tabletten zoals Rybelsus legt u vast zonder plek. Dial kent semaglutide, tirzepatide, liraglutide en dulaglutide onder de merknamen die in uw land gangbaar zijn. Exenatide en voorgeschreven, door de apotheek bereide semaglutide of tirzepatide uit een flacon legt u ook vast. Voeg een eigen medicijn toe als het jouwe ontbreekt."
   checklist:
     - Een invoer bewerken als iets verandert
     - Injectieplaatsen koppelen aan elke dosis

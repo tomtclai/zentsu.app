@@ -84,7 +84,7 @@ boundary:
 logging:
   kicker: "บันทึกเร็ว"
   heading: "จดยา ขนาดยา และจุดฉีดในแบบฟอร์มเดียว"
-  body: "จดยา ปริมาณ วันที่ เวลา และบันทึกย่อ การฉีดอย่าง Ozempic, Wegovy, Mounjaro และ Zepbound มีจุดฉีด ยาเม็ดอย่าง Rybelsus บันทึกโดยไม่มีจุด Dial แสดง semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide และ exenatide ตามชื่อยี่ห้อที่ใช้ในประเทศของคุณ พร้อม semaglutide หรือ tirzepatide แบบผสมจากไวอัลที่แพทย์สั่ง เพิ่มยาเองถ้าของคุณไม่มี"
+  body: "จดยา ปริมาณ วันที่ เวลา และบันทึกย่อ การฉีดอย่าง Ozempic, Wegovy, Mounjaro และ Zepbound มีจุดฉีด ยาเม็ดอย่าง Rybelsus บันทึกโดยไม่มีจุด Dial แสดง semaglutide, tirzepatide, liraglutide และ dulaglutide ตามชื่อยี่ห้อที่ใช้ในประเทศของคุณ บันทึก orforglipron, exenatide และ semaglutide หรือ tirzepatide แบบผสมจากไวอัลที่แพทย์สั่งได้ด้วย เพิ่มยาเองถ้าของคุณไม่มี"
   checklist:
     - "แก้ไขรายการเมื่อมีอะไรเปลี่ยน"
     - "ผูกจุดฉีดกับแต่ละขนาดยา"

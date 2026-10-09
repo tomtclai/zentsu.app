@@ -84,7 +84,7 @@ boundary:
 logging:
   kicker: "Brzi unos"
   heading: "Zabilježi lijek, dozu i mjesto injekcije u jednom obrascu."
-  body: "Zapiši lijek, količinu, datum, vrijeme i bilješke. Injekcije poput Ozempica, Wegovyja, Mounjara i Zepbounda uključuju mjesto. Tablete poput Rybelsusa bilježe se bez mjesta. Dial navodi semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid i eksenatid pod regionalnim nazivima, uz propisani compounded semaglutid ili tirzepatid iz bočice. Dodaj vlastiti lijek ako nedostaje."
+  body: "Zapiši lijek, količinu, datum, vrijeme i bilješke. Injekcije poput Ozempica, Wegovyja, Mounjara i Zepbounda uključuju mjesto. Tablete poput Rybelsusa bilježe se bez mjesta. Dial navodi semaglutid, tirzepatid, liraglutid i dulaglutid pod regionalnim nazivima. Možeš bilježiti i orforglipron, eksenatid te propisani magistralni semaglutid ili tirzepatid iz bočice. Dodaj vlastiti lijek ako nedostaje."
   checklist:
     - "Uredite unos kad se nešto promijeni"
     - "Mjesta injekcije ostaju uz svaku dozu"

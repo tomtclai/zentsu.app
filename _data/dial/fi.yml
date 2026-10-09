@@ -84,7 +84,7 @@ boundary:
 logging:
   kicker: "Nopea kirjaus"
   heading: "Kirjaa lääke, annos ja pistoskohta yhdessä lomakkeessa."
-  body: "Kirjaa lääke, määrä, päivä, aika ja muistiinpanot. Pistoksissa, kuten Ozempicissa, Wegovyssä, Mounjarossa ja Saxendassa, mukana on pistoskohta. Tabletit, kuten Rybelsus, kirjataan ilman kohtaa. Dial listaa semaglutidin, tirtsepatidin, liraglutidin, dulaglutidin ja eksenatidin Suomessa käytetyillä kauppanimillä, sekä apteekissa valmistetun semaglutidin tai tirtsepatidin pulosta. Lisää oma lääke, jos puuttuu."
+  body: "Kirjaa lääke, määrä, päivä, aika ja muistiinpanot. Pistoksissa, kuten Ozempicissa, Wegovyssä, Mounjarossa ja Saxendassa, mukana on pistoskohta. Tabletit, kuten Rybelsus, kirjataan ilman kohtaa. Dial listaa semaglutidin, tirtsepatidin, liraglutidin ja dulaglutidin Suomessa käytetyillä kauppanimillä. Voit kirjata myös eksenatidin sekä apteekissa valmistetun semaglutidin tai tirtsepatidin injektiopullosta. Lisää oma lääke, jos puuttuu."
   checklist:
     - "Muokkaa merkintää, kun jokin muuttuu"
     - "Pistoskohta tallentuu jokaiseen annokseen"

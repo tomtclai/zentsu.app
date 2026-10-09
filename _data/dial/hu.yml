@@ -84,7 +84,7 @@ boundary:
 logging:
   kicker: "Gyors rögzítés"
   heading: "Rögzítsd a gyógyszert, az adagot és az injekcióhelyet egy űrlapon."
-  body: "Írja be a gyógyszert, mennyiséget, dátumot, időt és a jegyzeteket. Az Ozempic, Wegovy, Mounjaro és Zepbound készítményekhez hasonló injekcióknál a hely is szerepel. A Rybelsushoz hasonló tabletták hely nélkül rögzülnek. A Dial a szemaglutidot, tirzepatidot, liraglutidot, dulaglutidot és exenatidot listázza a Magyarországon használt márkanéven, és a felírt, gyógyszertári szemaglutidot vagy tirzepatidot tartalmazó injekciós üvegből származó készítményt is rögzíti. Ha hiányzik a tiéd, adj hozzá egyénit."
+  body: "Írja be a gyógyszert, mennyiséget, dátumot, időt és a jegyzeteket. Az Ozempic, Wegovy, Mounjaro és Zepbound készítményekhez hasonló injekcióknál a hely is szerepel. A Rybelsushoz hasonló tabletták hely nélkül rögzülnek. A Dial a szemaglutidot, tirzepatidot, liraglutidot és dulaglutidot a Magyarországon használt márkanéven listázza. Az exenatidot és a felírt, gyógyszertári szemaglutidot vagy tirzepatidot tartalmazó injekciós üvegből származó készítményt is rögzíti. Ha hiányzik a tiéd, adj hozzá egyénit."
   checklist:
     - "Szerkesszen bejegyzést, ha valami változik"
     - "Írja az injekcióhelyet minden adaghoz"

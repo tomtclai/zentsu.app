@@ -104,7 +104,7 @@ boundary:
 logging:
   kicker: Registro rápido
   heading: "Anota cuándo te aplicaste la dosis."
-  body: "Registra medicamento, cantidad, fecha, hora y notas. En inyecciones como Ozempic, Wegovy, Mounjaro y Zepbound también anotas el sitio. Los comprimidos como Rybelsus se registran sin sitio. Dial incluye semaglutida, tirzepatida, orforglipron, liraglutida, dulaglutida y exenatida con las marcas de tu país, además de semaglutida o tirzepatida compuesta con receta desde un frasco. Agrega un medicamento personalizado si no aparece."
+  body: "Registra medicamento, cantidad, fecha, hora y notas. En inyecciones como Ozempic, Wegovy, Mounjaro y Zepbound también anotas el sitio. Los comprimidos como Rybelsus se registran sin sitio. Dial incluye semaglutida, tirzepatida, liraglutida y dulaglutida con las marcas de tu país. También puedes registrar orforglipron, exenatida y semaglutida o tirzepatida compuesta con receta desde un frasco. Agrega un medicamento personalizado si no aparece."
   checklist:
     - Edita una entrada cuando algo cambie
     - Anota el sitio de inyección en cada dosis

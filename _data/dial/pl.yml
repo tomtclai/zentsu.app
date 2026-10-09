@@ -84,7 +84,7 @@ boundary:
 logging:
   kicker: "Szybki zapis"
   heading: "Zapisz lek, dawkę i miejsce wstrzyknięcia w jednym formularzu."
-  body: "Zapisz lek, ilość, datę, godzinę i notatki. Wstrzyknięcia takie jak Ozempic, Wegovy i Mounjaro obejmują miejsce. Tabletki takie jak Rybelsus zapisujesz bez miejsca. Dial wymienia semaglutyd, tirzepatyd, orforglipron, liraglutyd, dulaglutyd i eksenatyd pod regionalnymi nazwami handlowymi, a także przepisany semaglutyd lub tirzepatyd recepturowy z fiolki. Dodaj własny lek, jeśli Twojego brakuje."
+  body: "Zapisz lek, ilość, datę, godzinę i notatki. Wstrzyknięcia takie jak Ozempic, Wegovy i Mounjaro obejmują miejsce. Tabletki takie jak Rybelsus zapisujesz bez miejsca. Dial wymienia semaglutyd, tirzepatyd, liraglutyd i dulaglutyd pod regionalnymi nazwami handlowymi. Zapiszesz też orforglipron, eksenatyd oraz przepisany semaglutyd lub tirzepatyd recepturowy z fiolki. Dodaj własny lek, jeśli Twojego brakuje."
   checklist:
     - "Edytują Państwo wpis, gdy coś się zmieni"
     - "Miejsca wstrzyknięć są przy każdej dawce"

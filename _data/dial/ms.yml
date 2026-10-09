@@ -84,7 +84,7 @@ boundary:
 logging:
   kicker: "Rekod pantas"
   heading: "Rekod ubat, dos dan tapak suntikan dalam satu borang."
-  body: "Rekod ubat, jumlah, tarikh, masa dan nota. Suntikan seperti Ozempic, Wegovy, Mounjaro dan Zepbound disertakan tapak. Tablet seperti Rybelsus direkod tanpa tapak. Dial menyenaraikan semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide dan exenatide mengikut nama jenama serantau, serta semaglutide atau tirzepatide tercampur yang dipreskripsikan daripada vial. Tambah ubat tersuai jika milik anda tiada."
+  body: "Rekod ubat, jumlah, tarikh, masa dan nota. Suntikan seperti Ozempic, Wegovy, Mounjaro dan Zepbound disertakan tapak. Tablet seperti Rybelsus direkod tanpa tapak. Dial menyenaraikan semaglutide, tirzepatide, liraglutide dan dulaglutide mengikut nama jenama serantau. Orforglipron, exenatide serta semaglutide atau tirzepatide tercampur yang dipreskripsikan daripada vial juga boleh direkod. Tambah ubat tersuai jika milik anda tiada."
   checklist:
     - "Edit entri apabila sesuatu berubah"
     - "Simpan tapak suntikan pada setiap dos"

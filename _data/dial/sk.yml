@@ -84,7 +84,7 @@ boundary:
 logging:
   kicker: "Rýchly záznam"
   heading: "Zapíš liek, dávku a miesto vpichu v jednom formulári."
-  body: "Zapíš liek, množstvo, dátum, čas a poznámky. Pri injekciách ako Ozempic, Wegovy, Mounjaro a Zepbound patrí aj miesto vpichu. Tablety ako Rybelsus sa zapisujú bez miesta. Dial uvádza semaglutid, tirzepatid, liraglutid, dulaglutid a exenatid s obchodnými názvami používanými na Slovensku, plus predpísaný compounded semaglutid alebo tirzepatid z liekovky. Ak chýba tvoj liek, pridaj vlastný."
+  body: "Zapíš liek, množstvo, dátum, čas a poznámky. Pri injekciách ako Ozempic, Wegovy, Mounjaro a Zepbound patrí aj miesto vpichu. Tablety ako Rybelsus sa zapisujú bez miesta. Dial uvádza semaglutid, tirzepatid, liraglutid a dulaglutid s obchodnými názvami používanými na Slovensku. Zapíšeš aj exenatid a predpísaný, v lekárni pripravený semaglutid alebo tirzepatid z liekovky. Ak chýba tvoj liek, pridaj vlastný."
   checklist:
     - "Upraviť záznam, keď sa niečo zmení"
     - "Miesto vpichu pri každej dávke"

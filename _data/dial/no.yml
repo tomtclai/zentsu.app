@@ -84,7 +84,7 @@ boundary:
 logging:
   kicker: "Rask føring"
   heading: "Før legemiddel, dose og injeksjonssted i ett skjema."
-  body: "Før legemiddel, mengde, dato, tid og notater. Injeksjoner som Ozempic, Wegovy, Mounjaro og Zepbound inkluderer et sted. Tabletter som Rybelsus føres uten sted. Dial viser semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid og eksenatid under de merkenavnene som brukes i Norge, samt forskrevet semaglutid eller tirzepatid fra hetteglass. Legg til et eget legemiddel hvis ditt mangler."
+  body: "Før legemiddel, mengde, dato, tid og notater. Injeksjoner som Ozempic, Wegovy, Mounjaro og Zepbound inkluderer et sted. Tabletter som Rybelsus føres uten sted. Dial viser semaglutid, tirzepatid, liraglutid og dulaglutid under de merkenavnene som brukes i Norge. Du kan også føre orforglipron, eksenatid og forskrevet semaglutid eller tirzepatid fra hetteglass. Legg til et eget legemiddel hvis ditt mangler."
   checklist:
     - "Rediger en post når noe endrer seg"
     - "Injeksjonsstedet følger hver dose"

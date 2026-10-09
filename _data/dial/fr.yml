@@ -97,7 +97,7 @@ boundary:
 logging:
   kicker: Enregistrement rapide
   heading: Note le médicament, la dose et le site d'injection dans un seul formulaire.
-  body: "Note le médicament, la dose, la date, l'heure et tes remarques. Les injections comme Ozempic, Wegovy, Mounjaro et Saxenda enregistrent aussi le site. Les comprimés comme Rybelsus se notent sans site. Dial répertorie le sémaglutide, le tirzépatide, l'orforglipron, le liraglutide, le dulaglutide et l'exénatide, sous les noms de boîte utilisés ici, plus le sémaglutide ou le tirzépatide prescrit en préparation magistrale depuis un flacon. Ajoute un médicament personnalisé si le vôtre manque."
+  body: "Note le médicament, la dose, la date, l'heure et tes remarques. Les injections comme Ozempic, Wegovy, Mounjaro et Saxenda enregistrent aussi le site. Les comprimés comme Rybelsus se notent sans site. Dial répertorie le sémaglutide, le tirzépatide, le liraglutide et le dulaglutide sous les noms de boîte utilisés ici. Tu peux aussi noter l'orforglipron, l'exénatide et le sémaglutide ou le tirzépatide prescrit en préparation magistrale depuis un flacon. Ajoute un médicament personnalisé si le vôtre manque."
   checklist:
     - Modifier une entrée quand quelque chose change
     - Garder le site d'injection associé à chaque dose

@@ -100,7 +100,7 @@ boundary:
 logging:
   kicker: Schnelles Erfassen
   heading: Medikament, Dosis und Injektionsstelle in einem Formular erfassen.
-  body: "Erfasse Medikament, Menge, Datum, Uhrzeit und Notizen. Bei Injektionen wie Ozempic, Wegovy und Mounjaro kommt die Stelle dazu. Tabletten wie Rybelsus erfasst du ohne Injektionsstelle. Dial kennt Semaglutid, Tirzepatid, Orforglipron, Liraglutid, Dulaglutid und Exenatid mit regionalen Markennamen, dazu ärztlich verordnetes Semaglutid oder Tirzepatid aus der Durchstechflasche. Fehlende Medikamente kannst du selbst anlegen."
+  body: "Erfasse Medikament, Menge, Datum, Uhrzeit und Notizen. Bei Injektionen wie Ozempic, Wegovy und Mounjaro kommt die Stelle dazu. Tabletten wie Rybelsus erfasst du ohne Injektionsstelle. Dial kennt Semaglutid, Tirzepatid, Liraglutid und Dulaglutid mit regionalen Markennamen. Orforglipron, Exenatid und verordnetes Semaglutid oder Tirzepatid aus der Durchstechflasche erfasst du auch. Fehlende Medikamente legst du selbst an."
   checklist:
     - Einen Eintrag bearbeiten, wenn sich etwas ändert
     - Injektionsstellen je Dosis speichern

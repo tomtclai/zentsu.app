@@ -105,7 +105,7 @@ boundary:
 logging:
   kicker: Registro rápido
   heading: "Cada inyección con su zona."
-  body: "Anota medicamento, cantidad, fecha, hora y una nota. Las inyecciones como Ozempic, Wegovy, Mounjaro y Zepbound guardan también la zona. Los comprimidos como Rybelsus se registran sin zona. El catálogo incluye semaglutida, tirzepatida, orforglipron, liraglutida, dulaglutida y exenatida con las marcas de cada país, además de semaglutida o tirzepatida de formulación magistral con receta en vial. Añade tu medicamento si falta."
+  body: "Anota medicamento, cantidad, fecha, hora y una nota. Las inyecciones como Ozempic, Wegovy, Mounjaro y Zepbound guardan también la zona. Los comprimidos como Rybelsus se registran sin zona. El catálogo incluye semaglutida, tirzepatida, liraglutida y dulaglutida con las marcas de cada país. También puedes anotar orforglipron, exenatida y semaglutida o tirzepatida de formulación magistral con receta en vial. Añade tu medicamento si falta."
   checklist:
     - Edita una entrada cuando algo cambie
     - Anota la zona de inyección en cada dosis

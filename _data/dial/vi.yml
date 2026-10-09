@@ -84,7 +84,7 @@ boundary:
 logging:
   kicker: "Ghi nhanh"
   heading: "Ghi thuốc, liều và vị trí tiêm trong một biểu mẫu."
-  body: "Ghi thuốc, lượng, ngày, giờ và ghi chú. Mũi tiêm như Ozempic, Wegovy, Mounjaro và Zepbound kèm vị trí tiêm. Thuốc viên như Rybelsus ghi không cần vị trí. Dial liệt kê semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide và exenatide với tên thương hiệu theo khu vực, kèm semaglutide hoặc tirzepatide pha chế có đơn thuốc từ lọ. Thêm thuốc tùy chỉnh nếu thiếu thuốc của bạn."
+  body: "Ghi thuốc, lượng, ngày, giờ và ghi chú. Mũi tiêm như Ozempic, Wegovy, Mounjaro và Zepbound kèm vị trí tiêm. Thuốc viên như Rybelsus ghi không cần vị trí. Dial liệt kê semaglutide, tirzepatide, liraglutide và dulaglutide với tên thương hiệu theo khu vực. Bạn cũng ghi được orforglipron, exenatide và semaglutide hoặc tirzepatide pha chế có đơn thuốc từ lọ. Thêm thuốc tùy chỉnh nếu thiếu thuốc của bạn."
   checklist:
     - "Sửa mục khi có thay đổi"
     - "Mỗi liều gắn với một vị trí tiêm"

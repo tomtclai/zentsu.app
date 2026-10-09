@@ -84,7 +84,7 @@ boundary:
 logging:
   kicker: "تسجيل سريع"
   heading: "سجّل الدواء والجرعة وموضع الحقن في نموذج واحد."
-  body: "سجّلوا الدواء والكمية والتاريخ والوقت والملاحظات. الحقن مثل Ozempic وWegovy وMounjaro وZepbound تُسجَّل مع موضع الحقن، أما الأقراص مثل Rybelsus فتُسجَّل بلا موضع. يسرد Dial semaglutide وtirzepatide وorforglipron وliraglutide وdulaglutide وexenatide بأسماء العلامات والعُبُوّات المستخدمة في بلدكم، إضافة إلى semaglutide أو tirzepatide مركّب بوصفة طبية من قارورة. أضيفوا دواءً مخصصاً إن نقص دواؤكم."
+  body: "سجّلوا الدواء والكمية والتاريخ والوقت والملاحظات. الحقن مثل Ozempic وWegovy وMounjaro وZepbound تُسجَّل مع موضع الحقن، أما الأقراص مثل Rybelsus فتُسجَّل بلا موضع. يسرد Dial semaglutide وtirzepatide وliraglutide وdulaglutide بأسماء العلامات والعُبُوّات المستخدمة في بلدكم. ويمكن أيضاً تسجيل orforglipron (المسجَّل في السعودية باسم Foundayo) وexenatide، وsemaglutide أو tirzepatide مركّب بوصفة طبية من قارورة. أضيفوا دواءً مخصصاً إن نقص دواؤكم."
   checklist:
     - "عدّلوا إدخالاً عندما يتغيّر شيء"
     - "احفظوا موضع الحقن مع كل جرعة"
