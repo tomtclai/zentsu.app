@@ -48,7 +48,7 @@ hero:
   headline_lead: "Rekod peribadi setiap dos."
   headline_accent: ""
   category: "Dial ialah penjejak ubat GLP-1 untuk iPhone dan Apple Watch."
-  quick_answer: "Dial merekod suntikan dan tablet GLP-1, termasuk Ozempic, Wegovy, Rybelsus, Mounjaro serta semaglutide atau tirzepatide tercampur yang dipreskripsikan. Setiap entri menyimpan dos, masa, tapak suntikan, berat dan kesan sampingan. Log pada telefon percuma, tanpa akaun. Dial Pro menambah carta tahap anggaran, rekod pada Apple Watch dan eksport PDF atau CSV."
+  quick_answer: "Dial merekod suntikan dan tablet GLP-1, termasuk Ozempic, Wegovy, Rybelsus, Mounjaro serta semaglutide atau tirzepatide yang disebatikan oleh farmasi mengikut preskripsi. Setiap entri menyimpan dos, masa, tapak suntikan, berat dan kesan sampingan. Log pada telefon percuma, tanpa akaun. Dial Pro menambah carta tahap anggaran, rekod pada Apple Watch dan eksport PDF atau CSV."
   detail: "Rekod ubat boleh disegerakkan melalui iCloud anda sendiri. Berat dan foto perkembangan kekal pada peranti."
   free_line: Muat turun percuma, tanpa perlu membuat akaun. Log dos tiada had.
   secondary_cta: "Cara Dial berfungsi"
@@ -79,12 +79,12 @@ level:
 boundary:
   kicker: "Apa yang Dial tidak lakukan"
   heading: "Dial menyimpan rekod. Dos ditetapkan oleh pemberi preskripsi anda."
-  body: "Dial tidak mengira dos, tidak mencadangkan perubahan dos dan tidak memberitahu apa yang perlu dilakukan selepas dos terlepas. Tahap anggaran ialah anggaran daripada model populasi berdasarkan dos yang anda rekod, bukan ukuran. Penukar unit untuk vial tercampur hanyalah aritmetik atas nilai mg dan mg/mL yang anda masukkan, dan tidak mencadangkan sebarang jumlah. Perbanyakkan keputusan ubat dengan pemberi preskripsi atau farmasi anda."
+  body: "Dial tidak mengira dos, tidak mencadangkan perubahan dos dan tidak memberitahu apa yang perlu dilakukan selepas dos terlepas. Tahap anggaran ialah anggaran daripada model populasi berdasarkan dos yang anda rekod, bukan ukuran. Penukar unit untuk vial yang disebatikan oleh farmasi hanyalah aritmetik atas nilai mg dan mg/mL yang anda masukkan, dan tidak mencadangkan sebarang jumlah. Perbanyakkan keputusan ubat dengan pemberi preskripsi atau farmasi anda."
 
 logging:
   kicker: "Rekod pantas"
   heading: "Rekod ubat, dos dan tapak suntikan dalam satu borang."
-  body: "Rekod ubat, jumlah, tarikh, masa dan nota. Suntikan seperti Ozempic, Wegovy dan Mounjaro disertakan tapak. Tablet seperti Rybelsus direkod tanpa tapak. Dial menyenaraikan semaglutide, tirzepatide, liraglutide dan dulaglutide mengikut nama jenama serantau. Orforglipron, exenatide serta semaglutide atau tirzepatide tercampur yang dipreskripsikan daripada vial juga boleh direkod. Tambah ubat tersuai jika ubat anda tiada dalam senarai."
+  body: "Rekod ubat, jumlah, tarikh, masa dan nota. Suntikan seperti Ozempic, Wegovy dan Mounjaro disertakan tapak. Tablet seperti Rybelsus direkod tanpa tapak. Dial menyenaraikan semaglutide, tirzepatide, liraglutide dan dulaglutide mengikut nama jenama serantau. Orforglipron, exenatide serta semaglutide atau tirzepatide dalam vial yang disebatikan oleh farmasi mengikut preskripsi juga boleh direkod. Tambah ubat tersuai jika ubat anda tiada dalam senarai."
   checklist:
     - "Edit entri apabila sesuatu berubah"
     - "Simpan tapak suntikan pada setiap dos"

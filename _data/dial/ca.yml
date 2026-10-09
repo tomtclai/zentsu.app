@@ -48,7 +48,7 @@ hero:
   headline_lead: "Un registre privat de cada dosi."
   headline_accent: ""
   category: "Dial és un registre de medicació GLP-1 per a iPhone i Apple Watch."
-  quick_answer: "Dial registra injeccions i comprimits GLP-1, com Ozempic, Wegovy, Rybelsus, Mounjaro i la semaglutida o tirzepatida composta que t’han prescrit. Cada entrada guarda la dosi, l’hora, el lloc d’injecció, el pes i els efectes secundaris. El registre al telèfon és gratuït i no cal cap compte. Dial Pro afegeix el gràfic de nivell estimat, el registre des de l’Apple Watch i l’exportació a PDF o CSV."
+  quick_answer: "Dial registra injeccions i comprimits GLP-1, com Ozempic, Wegovy, Rybelsus, Mounjaro i la semaglutida o tirzepatida de fórmula magistral que t’han prescrit. Cada entrada guarda la dosi, l’hora, el lloc d’injecció, el pes i els efectes secundaris. El registre al telèfon és gratuït i no cal cap compte. Dial Pro afegeix el gràfic de nivell estimat, el registre des de l’Apple Watch i l’exportació a PDF o CSV."
   detail: "Els registres de medicació es poden sincronitzar amb el teu iCloud. El pes i les fotos de progrés queden al dispositiu."
   free_line: Descàrrega gratuïta, sense cap compte a crear. El registre de dosis no té límit.
   secondary_cta: "Mira com funciona Dial"
@@ -79,12 +79,12 @@ level:
 boundary:
   kicker: "El que Dial no fa"
   heading: "Dial guarda el registre. La dosi la decideix qui te la prescriu."
-  body: "Dial no calcula dosis, no recomana cap canvi de dosa ni diu què fer després d’una dosi oblidada. El nivell estimat és una estimació d’un model de població a partir de les dosis registrades, no una mesura. El convertidor d’unitats per a vials compostos és aritmètica amb els mg i mg/mL que introdueixes, i no suggereix cap quantitat. Consulta qui te la prescriu o el teu farmacèutic per a qualsevol decisió sobre la medicació."
+  body: "Dial no calcula dosis, no recomana cap canvi de dosa ni diu què fer després d’una dosi oblidada. El nivell estimat és una estimació d’un model de població a partir de les dosis registrades, no una mesura. El convertidor d’unitats per a vials de fórmula magistral és aritmètica amb els mg i mg/mL que introdueixes, i no suggereix cap quantitat. Consulta qui te la prescriu o el teu farmacèutic per a qualsevol decisió sobre la medicació."
 
 logging:
   kicker: "Registre ràpid"
   heading: "Registra el medicament, la dosi i el lloc d’injecció en un sol formulari."
-  body: "Anota medicament, quantitat, data, hora i notes. Les injeccions com Ozempic, Wegovy i Mounjaro inclouen el lloc. Els comprimits com el Rybelsus es registren sense lloc. Dial inclou semaglutida, tirzepatida, orforglipron, liraglutida, dulaglutida i exenatida, la semaglutida o tirzepatida composta que t’han prescrit en vial, i un medicament personalitzat si la teva recepta no hi surt."
+  body: "Anota medicament, quantitat, data, hora i notes. Les injeccions com Ozempic, Wegovy i Mounjaro inclouen el lloc. Els comprimits com el Rybelsus es registren sense lloc. Dial inclou semaglutida, tirzepatida, orforglipron, liraglutida, dulaglutida i exenatida, la semaglutida o tirzepatida de fórmula magistral en vial que t’han prescrit, i un medicament personalitzat si la teva recepta no hi surt."
   checklist:
     - "Edita una entrada quan alguna cosa canvia"
     - "Anota el lloc d’injecció a cada dosi"
