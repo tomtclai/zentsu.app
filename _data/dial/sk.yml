@@ -74,12 +74,12 @@ level:
   heading: "Odhadovaná hladina medzi dávkami podľa polčasu."
   body: "Dial vykreslí odhadovanú hladinu zo zaznamenaných dávok a polčasu v aplikácii, pre podporované injekčné lieky ako Ozempic, Wegovy a Mounjaro. Tablety ako Rybelsus nemajú graf hladiny: vstrebávanie ústami sa medzi ľuďmi príliš líši. Prezri týždeň, mesiac alebo šesť mesiacov histórie injekcií."
   boundary_lead: "Je to odhad. Tak ho aj označujeme."
-  boundary_body: "Graf modeluje štandardnú krivku poklesu z tvojich zaznamenaných dávok semaglutidu alebo tirzepatidu. Ukazuje, ako u teba dávky v čase prebiehajú. Nie je to nameraná hladina v krvi. Metódu vysvetľuje Dial priamo v aplikácii."
+  boundary_body: "Graf modeluje vstrebávanie a elimináciu každej tvojej zaznamenanej dávky semaglutidu alebo tirzepatidu s polčasom z príbalového letáka. Ukazuje, ako u teba dávky v čase prebiehajú. Nie je to nameraná hladina v krvi. Metódu vysvetľuje Dial priamo v aplikácii."
 
 boundary:
   kicker: "Čo Dial nerobí"
   heading: "Dial vedie záznam. O dávke rozhoduje tvoj lekár."
-  body: "Dial nepočíta dávky, neodporúča zmenu dávky ani ti neporadí, čo robiť po zmeškanej dávke. Odhadovaná hladina je odhad z populačného modelu na základe zapísaných dávok, nie meranie. Prevodník jednotiek pre liekovky pripravené v lekárni robí len aritmetiku so zadanými hodnotami mg a mg/ml a nič nenavrhuje. O rozhodnutiach v liečbe sa pýtaj svojho lekára alebo lekárnika."
+  body: "Dial nepočíta dávky, neodporúča zmenu dávky ani ti neporadí, čo robiť po zmeškanej dávke. Odhadovaná hladina je odhad z jednokompartmentového modelu vstrebávania a eliminácie každej zapísanej dávky, nie meranie. Prevodník jednotiek pre liekovky pripravené v lekárni robí len aritmetiku so zadanými hodnotami mg a mg/ml a nič nenavrhuje. O rozhodnutiach v liečbe sa pýtaj svojho lekára alebo lekárnika."
 
 logging:
   kicker: "Rýchly záznam"

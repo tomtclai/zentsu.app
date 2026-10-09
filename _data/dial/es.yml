@@ -92,14 +92,13 @@ level:
   body: "Dial traza un nivel estimado con tus dosis registradas y la vida media indicada en la app, para inyectables compatibles como Ozempic, Wegovy y Mounjaro. Los comprimidos como Rybelsus no tienen gráfica de nivel: la absorción oral varía demasiado entre personas. Revisa una semana, un mes o seis meses de inyecciones."
   boundary_lead: Es una estimación, y lo decimos con claridad.
   boundary_body:
-    El gráfico modela una curva de disminución estándar a partir de las dosis de semaglutida
-    o tirzepatida que registraste. Muestra tus propios patrones entre dosis. Es una estimación,
+    El gráfico modela la absorción y la eliminación de cada dosis de semaglutida o tirzepatida que registraste, con la vida media del prospecto. Muestra tus propios patrones entre dosis. Es una estimación,
     no un sustituto de un nivel medido en sangre. La app explica el método completo.
 
 boundary:
   kicker: Lo que Dial no hace
   heading: Dial lleva el registro. Tu médico define la dosis.
-  body: "Dial no calcula dosis, no recomienda cambiar la dosis ni te dice qué hacer si se te pasó una. El nivel estimado es una estimación de un modelo de población a partir de las dosis que registraste, no una medición. El conversor de unidades para frascos de medicamento compuesto hace aritmética con los mg y mg/mL que ingresas y no sugiere ninguna cantidad. Consulta con tu médico o farmacéutico cualquier decisión sobre tu medicamento."
+  body: "Dial no calcula dosis, no recomienda cambiar la dosis ni te dice qué hacer si se te pasó una. El nivel estimado es una estimación de un modelo monocompartimental de absorción y eliminación de cada dosis que registraste, no una medición. El conversor de unidades para frascos de medicamento compuesto hace aritmética con los mg y mg/mL que ingresas y no sugiere ninguna cantidad. Consulta con tu médico o farmacéutico cualquier decisión sobre tu medicamento."
 
 logging:
   kicker: Registro rápido

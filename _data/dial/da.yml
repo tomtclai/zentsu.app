@@ -74,12 +74,12 @@ level:
   heading: "Se et estimeret niveau mellem doserne, ud fra halveringstiden."
   body: "Dial tegner et estimeret niveau ud fra dine registrerede doser og den halveringstid, appen viser, for understøttede injektionspræparater som Ozempic, Wegovy og Mounjaro. Tabletter som Rybelsus har ingen niveaugraf: oral optagelse varierer for meget mellem mennesker. Se en uge, en måned eller seks måneder af injektionshistorikken."
   boundary_lead: "Vi kalder det et skøn."
-  boundary_body: "Grafen modellerer en standard eliminationskurve fra de doser, du har registreret. Den viser dine egne mønstre mellem doser. Det er et skøn, ikke en målt blodkoncentration. Appen forklarer metoden fuldt ud."
+  boundary_body: "Grafen modellerer optagelse og udskillelse af hver dosis, du har registreret, med halveringstiden fra produktresuméet. Den viser dine egne mønstre mellem doser. Det er et skøn, ikke en målt blodkoncentration. Appen forklarer metoden fuldt ud."
 
 boundary:
   kicker: "Hvad Dial ikke gør"
   heading: "Dial fører journalen. Din læge beslutter dosis."
-  body: "Dial beregner ikke doser, anbefaler ikke en dosisændring og fortæller ikke, hvad du skal gøre efter en glemt dosis. Det estimerede niveau er et skøn fra en populationsmodel ud fra dine registrerede doser, ikke en måling. Enhedsomregneren for hætteglas udfører kun regnestykker med de mg og mg/ml, du indtaster, og foreslår ingen mængde. Spørg din ordinerende læge eller apoteket om beslutninger om din medicin."
+  body: "Dial beregner ikke doser, anbefaler ikke en dosisændring og fortæller ikke, hvad du skal gøre efter en glemt dosis. Det estimerede niveau er et skøn fra en enkompartmentmodel for optagelse og udskillelse af hver registreret dosis, ikke en måling. Enhedsomregneren for hætteglas udfører kun regnestykker med de mg og mg/ml, du indtaster, og foreslår ingen mængde. Spørg din ordinerende læge eller apoteket om beslutninger om din medicin."
 
 logging:
   kicker: "Hurtig registrering"

@@ -74,12 +74,12 @@ level:
   heading: "Näe arvioitu taso annosten välillä, puoliintumisajan perusteella."
   body: "Dial piirtää arvioidun tason kirjaamistasi annoksista ja sovelluksessa näytetystä puoliintumisajasta tuetuille injektiolääkkeille, kuten Ozempic, Wegovy, Mounjaro ja Saxenda. Tableteilla, kuten Rybelsuksella, ei ole tasokaaviota: suun kautta imeytyminen vaihtelee liikaa ihmisten välillä. Tarkastele viikon, kuukauden tai kuuden kuukauden pistoshistoriaa."
   boundary_lead: "Se on arvio, ja kerromme sen suoraan."
-  boundary_body: "Kaavio mallintaa tavanomaisen hajoamiskäyrän kirjaamistasi semaglutidi- tai tirtsepatidiannoksista. Se näyttää omat kuviosi annosten välillä. Se ei ole mitattu veripitoisuus. Sovellus selittää menetelmän kokonaan."
+  boundary_body: "Kaavio mallintaa jokaisen kirjaamasi semaglutidi- tai tirtsepatidiannoksen imeytymisen ja eliminaation valmisteyhteenvedon puoliintumisajalla. Se näyttää omat kuviosi annosten välillä. Se ei ole mitattu veripitoisuus. Sovellus selittää menetelmän kokonaan."
 
 boundary:
   kicker: "Mitä Dial ei tee"
   heading: "Dial pitää merkinnät. Annoksen päättää määrääjäsi."
-  body: "Dial ei laske annoksia, suosittele annoksen muutosta eikä kerro, mitä tee unohdetun annoksen jälkeen. Arvioitu taso on väestömalliin perustuva arvio kirjaamistasi annoksista, ei mittaus. Apteekissa valmistettujen pullojen yksikkömuunnin tekee laskutoimituksia syöttämilläsi mg- ja mg/ml-arvoilla eikä ehdota määrää. Lääkevalinnoissa kysy määrääjältäsi tai apteekista."
+  body: "Dial ei laske annoksia, suosittele annoksen muutosta eikä kerro, mitä tehdä unohdetun annoksen jälkeen. Arvioitu taso on yksitilamallilla laskettu arvio jokaisen kirjaamasi annoksen imeytymisestä ja eliminaatiosta, ei mittaus. Apteekissa valmistettujen pullojen yksikkömuunnin tekee laskutoimituksia syöttämilläsi mg- ja mg/ml-arvoilla eikä ehdota määrää. Lääkevalinnoissa kysy määrääjältäsi tai apteekista."
 
 logging:
   kicker: "Nopea kirjaus"

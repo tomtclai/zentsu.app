@@ -74,12 +74,12 @@ level:
   heading: "Lihat tingkat perkiraan antar dosis, berdasarkan waktu paruh."
   body: "Dial menampilkan tingkat perkiraan dari dosis tercatat dan waktu paruh di aplikasi, untuk obat suntik yang didukung seperti Ozempic, Wegovy, dan Mounjaro. Tablet seperti Rybelsus tidak punya grafik tingkat: penyerapan oral terlalu berbeda antarorang. Tinjau riwayat suntikan satu minggu, satu bulan, atau enam bulan."
   boundary_lead: "Ini perkiraan. Kami sampaikan itu."
-  boundary_body: "Grafik memodelkan kurva peluruhan standar dari dosis semaglutide atau tirzepatide yang Anda catat. Yang tampil adalah pola Anda sendiri antar dosis. Ini perkiraan, bukan kadar darah terukur. Aplikasi menjelaskan metodenya secara lengkap."
+  boundary_body: "Grafik memodelkan penyerapan dan eliminasi setiap dosis semaglutide atau tirzepatide yang Anda catat, dengan waktu paruh dari label obat. Yang tampil adalah pola Anda sendiri antar dosis. Ini perkiraan, bukan kadar darah terukur. Aplikasi menjelaskan metodenya secara lengkap."
 
 boundary:
   kicker: "Yang tidak dilakukan Dial"
   heading: "Dial menyimpan catatannya. Dosis ditentukan dokter Anda."
-  body: "Dial tidak menghitung dosis, tidak menyarankan perubahan dosis, dan tidak mengatakan apa yang harus dilakukan setelah dosis terlewat. Tingkat perkiraan adalah estimasi dari model populasi berdasarkan dosis yang Anda catat, bukan pengukuran. Konverter satuan untuk vial racikan hanya melakukan perhitungan aritmetika atas mg dan mg/mL yang Anda masukkan dan tidak menyarankan jumlah apa pun. Tanyakan keputusan soal obat kepada dokter atau apoteker Anda."
+  body: "Dial tidak menghitung dosis, tidak menyarankan perubahan dosis, dan tidak mengatakan apa yang harus dilakukan setelah dosis terlewat. Tingkat perkiraan adalah estimasi dari model satu kompartemen untuk penyerapan dan eliminasi setiap dosis yang Anda catat, bukan pengukuran. Konverter satuan untuk vial racikan hanya melakukan perhitungan aritmetika atas mg dan mg/mL yang Anda masukkan dan tidak menyarankan jumlah apa pun. Tanyakan keputusan soal obat kepada dokter atau apoteker Anda."
 
 logging:
   kicker: "Pencatatan cepat"

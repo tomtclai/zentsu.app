@@ -88,14 +88,13 @@ level:
   body: "Dial tekent een geschatte spiegel op basis van de doses die je vastlegde en de halfwaardetijd in de app, voor injecteerbare medicijnen zoals Ozempic, Wegovy en Mounjaro. Tabletten zoals Rybelsus krijgen geen spiegelgrafiek: orale opname verschilt te sterk tussen mensen. Bekijk een week, een maand of zes maanden injectiegeschiedenis."
   boundary_lead: Het blijft een schatting.
   boundary_body:
-    De grafiek modelleert een standaard afnamecurve uit de semaglutide- of tirzepatide-doses
-    die je vastlegde. Je ziet je eigen patronen tussen doses. Het is een schatting, geen
+    De grafiek modelleert opname en uitscheiding van elke semaglutide- of tirzepatide-dosis die je vastlegde, met de halfwaardetijd uit de bijsluiter. Je ziet je eigen patronen tussen doses. Het is een schatting, geen
     vervanging van een gemeten bloedspiegel. De app legt de methode volledig uit.
 
 boundary:
   kicker: Wat Dial niet doet
   heading: Dial houdt het logboek bij. Je voorschrijver stelt de dosis vast.
-  body: "Dial berekent geen doses, beveelt geen dosiswijziging aan en zegt niet wat je na een vergeten dosis moet doen. Het geschatte niveau is een schatting uit een populatiemodel op basis van je vastgelegde doses, geen meting. De eenhedenomzetter voor door de apotheek bereide flacons rekent alleen met de mg en mg/ml die je invoert en stelt niets voor. Bespreek beslissingen over je medicatie met je voorschrijver of apotheker."
+  body: "Dial berekent geen doses, beveelt geen dosiswijziging aan en zegt niet wat je na een vergeten dosis moet doen. Het geschatte niveau is een schatting uit een eencompartimentmodel voor opname en uitscheiding van elke vastgelegde dosis, geen meting. De eenhedenomzetter voor door de apotheek bereide flacons rekent alleen met de mg en mg/ml die je invoert en stelt niets voor. Bespreek beslissingen over je medicatie met je voorschrijver of apotheker."
 
 logging:
   kicker: Snel vastleggen

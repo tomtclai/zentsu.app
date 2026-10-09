@@ -74,12 +74,12 @@ level:
   heading: "Procijenjena razina između doza prema poluživotu."
   body: "Dial crta procijenjenu razinu iz unesenih doza i poluživota prikazanog u aplikaciji, za podržane injekcijske lijekove poput Ozempica, Wegovyja i Mounjara. Tablete poput Rybelsusa nemaju grafikon razine: oralna apsorpcija previše varira među ljudima. Pregledaj tjedan, mjesec ili šest mjeseci povijesti injekcija."
   boundary_lead: "To je procjena. Tako i pišemo."
-  boundary_body: "Grafikon modelira standardnu krivulju opadanja iz doza semaglutida ili tirzepatida koje uneseš. Pokazuje tvoje obrasce između doza. To je procjena, ne izmjerena razina u krvi. Aplikacija metodu objašnjava u cijelosti."
+  boundary_body: "Grafikon modelira apsorpciju i eliminaciju svake doze semaglutida ili tirzepatida koju uneseš, s poluvijekom iz upute o lijeku. Pokazuje tvoje obrasce između doza. To je procjena, ne izmjerena razina u krvi. Aplikacija metodu objašnjava u cijelosti."
 
 boundary:
   kicker: "Što Dial ne radi"
   heading: "Dial vodi zapis. Dozu određuje tvoj liječnik."
-  body: "Dial ne izračunava doze, ne preporučuje promjenu doze i ne govori što učiniti nakon propuštene doze. Procijenjena razina je procjena iz populacijskog modela na temelju unesenih doza, a ne mjerenje. Pretvarač jedinica za bočice magistralnih pripravaka samo računa s unesenim mg i mg/mL i ne predlaže količinu. Za odluke o lijekovima pitaj svog liječnika ili ljekarnika."
+  body: "Dial ne izračunava doze, ne preporučuje promjenu doze i ne govori što učiniti nakon propuštene doze. Procijenjena razina je procjena iz jednoodjeljčanog modela apsorpcije i eliminacije za svaku unesenu dozu, a ne mjerenje. Pretvarač jedinica za bočice magistralnih pripravaka samo računa s unesenim mg i mg/mL i ne predlaže količinu. Za odluke o lijekovima pitaj svog liječnika ili ljekarnika."
 
 logging:
   kicker: "Brzi unos"

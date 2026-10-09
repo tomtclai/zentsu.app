@@ -88,14 +88,13 @@ level:
   body: "Dial plots an estimated level from logged doses and the half-life shown in the app, for supported injectables such as Ozempic, Wegovy, Mounjaro and Zepbound. Tablets such as Rybelsus have no level chart: oral absorption varies too much between people. Review a week, month, or six months of injection history."
   boundary_lead: An estimate, and we say so.
   boundary_body:
-    The chart models a standard decay curve from the semaglutide or tirzepatide doses you
-    logged. It shows your own patterns between doses. It is an estimate, not a stand-in
+    The chart models how each semaglutide or tirzepatide dose you logged is absorbed and eliminated, using label half-lives. It shows your own patterns between doses. It is an estimate, not a stand-in
     for a measured blood level. The app explains the method in full.
 
 boundary:
   kicker: What Dial does not do
   heading: Dial keeps the record. Your prescriber sets the dose.
-  body: "Dial does not calculate doses, recommend a dose change, or tell you what to do after a missed dose. The estimated level is a population-model estimate from your logged doses, not a measurement. The unit converter for compounded vials is arithmetic on the mg and mg/mL you enter and does not suggest an amount. Ask your prescriber or pharmacist about medication decisions."
+  body: "Dial does not calculate doses, recommend a dose change, or tell you what to do after a missed dose. The estimated level is a one-compartment model estimate of absorption and elimination for each logged dose, not a measurement. The unit converter for compounded vials is arithmetic on the mg and mg/mL you enter and does not suggest an amount. Ask your prescriber or pharmacist about medication decisions."
 
 logging:
   kicker: Quick logging

@@ -74,12 +74,12 @@ level:
   heading: "Xem mức ước tính giữa các liều, dựa trên thời gian bán hủy."
   body: "Dial vẽ mức ước tính từ các liều đã ghi và thời gian bán hủy trong ứng dụng, cho thuốc tiêm được hỗ trợ như Ozempic, Victoza và Trulicity. Thuốc viên semaglutide không có biểu đồ mức: lượng thuốc uống vào được máu biến động quá lớn giữa những người. Xem một tuần, một tháng hoặc sáu tháng lịch sử tiêm."
   boundary_lead: "Đây là ước tính. Chúng tôi ghi rõ điều đó."
-  boundary_body: "Biểu đồ dựng đường cong suy giảm chuẩn từ các liều semaglutide hoặc tirzepatide bạn đã ghi. Nó cho thấy xu hướng của bạn giữa các liều. Đó là ước tính, không phải mức máu đo được. Ứng dụng giải thích đầy đủ cách ước tính."
+  boundary_body: "Biểu đồ mô phỏng sự hấp thu và thải trừ của từng liều semaglutide hoặc tirzepatide bạn đã ghi, theo thời gian bán thải trên nhãn thuốc. Nó cho thấy xu hướng của bạn giữa các liều. Đó là ước tính, không phải mức máu đo được. Ứng dụng giải thích đầy đủ cách ước tính."
 
 boundary:
   kicker: "Những gì Dial không làm"
   heading: "Dial giữ bản ghi. Bác sĩ của bạn quyết định liều."
-  body: "Dial không tính liều, không đề xuất thay đổi liều, và không nói bạn cần làm gì sau khi lừa một liều. Mức ước tính là con số từ mô hình quần thể dựa trên các liều bạn đã ghi, không phải phép đo. Bộ đổi đơn vị cho lọ thuốc pha chế chỉ thực hiện phép tính số học từ mg và mg/mL bạn nhập, và không đề xuất lượng dùng. Hãy hỏi bác sĩ hoặc dược sĩ về mọi quyết định liên quan đến thuốc."
+  body: "Dial không tính liều, không đề xuất thay đổi liều, và không nói bạn cần làm gì sau khi lỡ một liều. Mức ước tính được tính bằng mô hình một ngăn cho sự hấp thu và thải trừ của từng liều bạn đã ghi, không phải phép đo. Bộ đổi đơn vị cho lọ thuốc pha chế chỉ thực hiện phép tính số học từ mg và mg/mL bạn nhập, và không đề xuất lượng dùng. Hãy hỏi bác sĩ hoặc dược sĩ về mọi quyết định liên quan đến thuốc."
 
 logging:
   kicker: "Ghi nhanh"

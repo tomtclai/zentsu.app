@@ -74,12 +74,12 @@ level:
   heading: "Se et estimert nivå mellom dosene, ut fra halveringstiden."
   body: "Dial tegner et estimert nivå ut fra dosene du har ført og halveringstiden appen viser, for støttede injiserbare preparater som Ozempic, Wegovy og Mounjaro. Tabletter som Rybelsus får ingen nivågraf: opptaket via munnen varierer for mye mellom mennesker. Se en uke, en måned eller seks måneder av injeksjonshistorikken."
   boundary_lead: "Vi kaller det et anslag."
-  boundary_body: "Grafen følger en vanlig nedbrytningskurve ut fra semaglutid- eller tirzepatiddosene du har ført. Den viser dine egne mønstre mellom doser. Det er et anslag, ikke et målt blodnivå. Appen forklarer hele metoden."
+  boundary_body: "Grafen modellerer opptak og utskillelse av hver semaglutid- eller tirzepatiddose du har ført, med halveringstiden fra preparatomtalen. Den viser dine egne mønstre mellom doser. Det er et anslag, ikke et målt blodnivå. Appen forklarer hele metoden."
 
 boundary:
   kicker: "Hva Dial ikke gjør"
   heading: "Dial fører journalen. Legen din setter dosen."
-  body: "Dial beregner ikke doser, anbefaler ingen doseendring og sier ikke hva du bør gjøre etter en glemt dose. Estimert nivå er et anslag fra en populasjonsmodell basert på dosene du har logget, ikke en måling. Enhetsomregneren for hetteglass fra reseptfremstilling regner bare med mg og mg/ml du skriver inn, og foreslår ingen mengde. Spør legen din eller apoteket om medisinske valg."
+  body: "Dial beregner ikke doser, anbefaler ingen doseendring og sier ikke hva du bør gjøre etter en glemt dose. Estimert nivå er et anslag fra en enkompartmentmodell for opptak og utskillelse av hver dose du har logget, ikke en måling. Enhetsomregneren for hetteglass fra reseptfremstilling regner bare med mg og mg/ml du skriver inn, og foreslår ingen mengde. Spør legen din eller apoteket om medisinske valg."
 
 logging:
   kicker: "Rask føring"

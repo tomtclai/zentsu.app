@@ -74,12 +74,12 @@ level:
   heading: "Szacowany poziom między dawkami, według okresu półtrwania."
   body: "Dial rysuje szacowany poziom z zapisanych dawek i okresu półtrwania podanego w aplikacji, dla obsługiwanych leków wstrzykiwanych, takich jak Ozempic, Wegovy i Mounjaro. Tabletki takie jak Rybelsus nie mają wykresu poziomu: wchłanianie doustne zbyt mocno różni się między osobami. Przejrzyj tydzień, miesiąc lub sześć miesięcy historii wstrzyknięć."
   boundary_lead: "Oszacowanie. Tak to nazywamy."
-  boundary_body: "Wykres modeluje standardową krzywą zaniku z zapisanych dawek semaglutydu lub tirzepatydu. Pokazuje Państwa własne wzorce między dawkami. To oszacowanie, nie zmierzony poziom we krwi. Aplikacja opisuje metodę w całości."
+  boundary_body: "Wykres modeluje wchłanianie i eliminację każdej zapisanej dawki semaglutydu lub tirzepatydu z okresem półtrwania podanym w ulotce. Pokazuje Państwa własne wzorce między dawkami. To oszacowanie, nie zmierzony poziom we krwi. Aplikacja opisuje metodę w całości."
 
 boundary:
   kicker: "Czego Dial nie robi"
   heading: "Dial prowadzi zapis. Dawkę ustala lekarz prowadzący."
-  body: "Dial nie oblicza dawek, nie zaleca zmiany dawki i nie mówi, co robić po pominiętej dawce. Szacowany poziom to oszacowanie z modelu populacyjnego na podstawie zapisanych dawek, a nie pomiar. Przelicznik jednostek dla fiolek leków recepturowych wykonuje działania arytmetyczne na wprowadzonych mg i mg/ml i niczego nie zaleca. O decyzjach dotyczących leków proszę pytać lekarza prowadzącego lub farmaceutę."
+  body: "Dial nie oblicza dawek, nie zaleca zmiany dawki i nie mówi, co robić po pominiętej dawce. Szacowany poziom to oszacowanie z modelu jednokompartmentowego wchłaniania i eliminacji każdej zapisanej dawki, a nie pomiar. Przelicznik jednostek dla fiolek leków recepturowych wykonuje działania arytmetyczne na wprowadzonych mg i mg/ml i niczego nie zaleca. O decyzjach dotyczących leków proszę pytać lekarza prowadzącego lub farmaceutę."
 
 logging:
   kicker: "Szybki zapis"

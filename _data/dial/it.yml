@@ -93,15 +93,14 @@ level:
   body: "Dial traccia un livello stimato dalle dosi registrate e dall'emivita mostrata nell'app, per gli iniettabili supportati come Ozempic, Wegovy e Mounjaro. Le compresse come Rybelsus non hanno un grafico di livello: l'assorbimento orale varia troppo tra le persone. Rivedi una settimana, un mese o sei mesi di iniezioni."
   boundary_lead: È una stima. Lo diciamo chiaro.
   boundary_body:
-    Il grafico modella una curva di decadimento standard dalle dosi di semaglutide o
-    tirzepatide che hai registrato. Ti serve per notare i tuoi andamenti tra una dose e
+    Il grafico modella l'assorbimento e l'eliminazione di ogni dose di semaglutide o tirzepatide che hai registrato, con l'emivita della scheda tecnica. Ti serve per notare i tuoi andamenti tra una dose e
     l'altra. È una stima, non un sostituto di un livello ematico misurato. L'app spiega
     il metodo per intero.
 
 boundary:
   kicker: Cosa Dial non fa
   heading: Dial tiene il registro. La dose la stabilisce chi prescrive.
-  body: "Dial non calcola le dosi, non consiglia un cambiamento di dose e non dice cosa fare dopo una dose dimenticata. Il livello stimato è una stima da un modello di popolazione ricavata dalle dosi registrate, non una misurazione. Il convertitore di unità per le fiale galeniche esegue operazioni aritmetiche con i mg e i mg/ml che inserisci e non suggerisce alcuna quantità. Per le decisioni sul farmaco rivolgiti a chi prescrive o al farmacista."
+  body: "Dial non calcola le dosi, non consiglia un cambiamento di dose e non dice cosa fare dopo una dose dimenticata. Il livello stimato deriva da un modello monocompartimentale di assorbimento ed eliminazione di ogni dose registrata, non da una misurazione. Il convertitore di unità per le fiale galeniche esegue operazioni aritmetiche con i mg e i mg/ml che inserisci e non suggerisce alcuna quantità. Per le decisioni sul farmaco rivolgiti a chi prescrive o al farmacista."
 
 logging:
   kicker: Registrazione rapida

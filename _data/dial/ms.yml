@@ -74,12 +74,12 @@ level:
   heading: "Lihat tahap anggaran antara dos, berdasarkan separuh hayat."
   body: "Dial memaparkan tahap anggaran daripada dos yang direkod dan separuh hayat dalam apl, untuk ubat suntikan yang disokong seperti Ozempic, Wegovy dan Mounjaro. Tablet seperti Rybelsus tiada carta tahap: penyerapan oral terlalu berbeza antara orang. Semak sejarah suntikan seminggu, sebulan atau enam bulan."
   boundary_lead: "Ini anggaran. Kami nyatakan dengan jelas."
-  boundary_body: "Carta memodelkan lengkung penurunan piawai daripada dos yang anda rekod. Yang kelihatan ialah corak anda sendiri antara dos. Ini anggaran, bukan tahap darah yang diukur. Aplikasi menjelaskan kaedahnya sepenuhnya."
+  boundary_body: "Carta memodelkan penyerapan dan penyingkiran setiap dos yang anda rekod, menggunakan separuh hayat daripada label ubat. Yang kelihatan ialah corak anda sendiri antara dos. Ini anggaran, bukan tahap darah yang diukur. Aplikasi menjelaskan kaedahnya sepenuhnya."
 
 boundary:
   kicker: "Apa yang Dial tidak lakukan"
   heading: "Dial menyimpan rekod. Dos ditetapkan oleh pemberi preskripsi anda."
-  body: "Dial tidak mengira dos, tidak mencadangkan perubahan dos dan tidak memberitahu apa yang perlu dilakukan selepas dos terlepas. Tahap anggaran ialah anggaran daripada model populasi berdasarkan dos yang anda rekod, bukan ukuran. Penukar unit untuk vial yang disebatikan oleh farmasi hanyalah aritmetik atas nilai mg dan mg/mL yang anda masukkan, dan tidak mencadangkan sebarang jumlah. Perbanyakkan keputusan ubat dengan pemberi preskripsi atau farmasi anda."
+  body: "Dial tidak mengira dos, tidak mencadangkan perubahan dos dan tidak memberitahu apa yang perlu dilakukan selepas dos terlepas. Tahap anggaran ialah anggaran daripada model satu kompartmen untuk penyerapan dan penyingkiran setiap dos yang anda rekod, bukan ukuran. Penukar unit untuk vial yang disebatikan oleh farmasi hanyalah aritmetik atas nilai mg dan mg/mL yang anda masukkan, dan tidak mencadangkan sebarang jumlah. Bincangkan keputusan ubat dengan pemberi preskripsi atau farmasi anda."
 
 logging:
   kicker: "Rekod pantas"

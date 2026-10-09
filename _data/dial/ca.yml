@@ -74,12 +74,12 @@ level:
   heading: "Mira un nivell estimat entre dosis, segons la semivida."
   body: "Dial traça un nivell estimat a partir de les dosis registrades i de la semivida que mostra l’app, per a injectables compatibles com Ozempic, Wegovy i Mounjaro. Els comprimits com el Rybelsus no tenen gràfic de nivell: l’absorció oral varia massa entre persones. Revisa una setmana, un mes o sis mesos d’injeccions."
   boundary_lead: "És una estimació, i ho deixem clar."
-  boundary_body: "El gràfic modela una corba de disminució estàndard a partir de les dosis de semaglutida o tirzepatida que has registrat. Mostra els teus patrons entre dosis. És una estimació, no un nivell mesurat a la sang. L’app explica el mètode sencer."
+  boundary_body: "El gràfic modela l’absorció i l’eliminació de cada dosi de semaglutida o tirzepatida que has registrat, amb la semivida de la fitxa tècnica. Mostra els teus patrons entre dosis. És una estimació, no un nivell mesurat a la sang. L’app explica el mètode sencer."
 
 boundary:
   kicker: "El que Dial no fa"
   heading: "Dial guarda el registre. La dosi la decideix qui te la prescriu."
-  body: "Dial no calcula dosis, no recomana cap canvi de dosa ni diu què fer després d’una dosi oblidada. El nivell estimat és una estimació d’un model de població a partir de les dosis registrades, no una mesura. El convertidor d’unitats per a vials de fórmula magistral és aritmètica amb els mg i mg/mL que introdueixes, i no suggereix cap quantitat. Consulta qui te la prescriu o el teu farmacèutic per a qualsevol decisió sobre la medicació."
+  body: "Dial no calcula dosis, no recomana cap canvi de dosa ni diu què fer després d’una dosi oblidada. El nivell estimat surt d’un model monocompartimental d’absorció i eliminació per a cada dosi registrada, no d’una mesura. El convertidor d’unitats per a vials de fórmula magistral és aritmètica amb els mg i mg/mL que introdueixes, i no suggereix cap quantitat. Consulta qui te la prescriu o el teu farmacèutic per a qualsevol decisió sobre la medicació."
 
 logging:
   kicker: "Registre ràpid"

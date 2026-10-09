@@ -92,15 +92,14 @@ level:
   body: "Dial dibuja un nivel estimado a partir de tus dosis registradas y de la semivida indicada en la app, para inyectables compatibles como Ozempic, Wegovy y Mounjaro. Los comprimidos como Rybelsus no tienen gráfica: la proporción que llega a la sangre varía demasiado entre personas. Consulta una semana, un mes o seis meses de historial de inyecciones."
   boundary_lead: Es una estimación, y lo decimos con claridad.
   boundary_body:
-    La gráfica modela una curva de disminución estándar a partir de las dosis de semaglutida
-    o tirzepatida que registraste. Sirve para que notes tus propios patrones entre dosis.
+    La gráfica modela la absorción y la eliminación de cada dosis de semaglutida o tirzepatida que has registrado, con la semivida de la ficha técnica. Sirve para que notes tus propios patrones entre dosis.
     Es una estimación, no un sustituto de un nivel medido en sangre. La app explica el
     método completo.
 
 boundary:
   kicker: Lo que Dial no hace
   heading: Dial guarda el registro. La dosis la fija tu médico.
-  body: "Dial no calcula dosis, no recomienda cambios de medicación y no te dice qué hacer tras una dosis olvidada. El nivel estimado es una estimación de un modelo de población a partir de tus dosis registradas, no una medición. El conversor de unidades para viales de formulación magistral es aritmética con los mg y los mg/mL que introduces y no sugiere ninguna cantidad. Consulta cualquier decisión sobre tu medicación con tu médico o tu farmacéutico."
+  body: "Dial no calcula dosis, no recomienda cambios de medicación y no te dice qué hacer tras una dosis olvidada. El nivel estimado es una estimación de un modelo monocompartimental de absorción y eliminación de cada dosis registrada, no una medición. El conversor de unidades para viales de formulación magistral es aritmética con los mg y los mg/mL que introduces y no sugiere ninguna cantidad. Consulta cualquier decisión sobre tu medicación con tu médico o tu farmacéutico."
 
 logging:
   kicker: Registro rápido

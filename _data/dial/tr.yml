@@ -74,12 +74,12 @@ level:
   heading: "Dozlar arasında tahmini düzeyi gör, yarı ömre göre."
   body: "Dial, kaydettiğiniz dozlardan ve uygulamada gösterilen yarı ömürden, Ozempic, Wegovy ve Mounjaro gibi desteklenen enjekte edilebilir ilaçlar için tahmini bir düzey çizer. Rybelsus gibi tabletlerin düzey grafiği yoktur: ağızdan emilim insanlar arasında fazla değişir. Bir hafta, bir ay veya altı aylık enjeksiyon geçmişine bakın."
   boundary_lead: "Bu bir tahmin. Bunu açıkça söylüyoruz."
-  boundary_body: "Grafik, kaydettiğiniz semaglutid veya tirzepatid dozlarından standart bir azalma eğrisi çizer. Dozlar arasındaki kendi örüntülerinizi gösterir. Ölçülmüş bir kan düzeyi değildir, bir tahmindir. Uygulama yöntemi baştan sona açıklar."
+  boundary_body: "Grafik, kaydettiğiniz her semaglutid veya tirzepatid dozunun emilimini ve atılımını prospektüsteki yarılanma ömrüyle modeller. Dozlar arasındaki kendi örüntülerinizi gösterir. Ölçülmüş bir kan düzeyi değildir, bir tahmindir. Uygulama yöntemi baştan sona açıklar."
 
 boundary:
   kicker: "Dial'in yapmadıkları"
   heading: "Kaydı Dial tutar, dozu hekimin belirler."
-  body: "Dial doz hesaplamaz, doz değişikliği önermez veya atlanmış bir dozdan sonra ne yapılacağını söylemez. Tahmini düzey, kaydettiğiniz dozlardan bir popülasyon modeliyle üretilen tahmindir, ölçüm değildir. Magistral flakonlar için birim dönüştürücü, girdiğiniz mg ve mg/ml değerleriyle aritmetik yapar, miktar önermez. İlaçla ilgili kararlar için hekiminize veya eczacınıza danışın."
+  body: "Dial doz hesaplamaz, doz değişikliği önermez veya atlanmış bir dozdan sonra ne yapılacağını söylemez. Tahmini düzey, kaydettiğiniz her dozun emilimini ve atılımını tek kompartmanlı bir modelle hesaplayan bir tahmindir, ölçüm değildir. Magistral flakonlar için birim dönüştürücü, girdiğiniz mg ve mg/ml değerleriyle aritmetik yapar, miktar önermez. İlaçla ilgili kararlar için hekiminize veya eczacınıza danışın."
 
 logging:
   kicker: "Hızlı kayıt"

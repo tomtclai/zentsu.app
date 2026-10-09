@@ -88,14 +88,13 @@ level:
   body: "Dial zeichnet den geschätzten Spiegel aus deinen Einträgen und der in der App angegebenen Halbwertszeit, für unterstützte Injektionspräparate wie Ozempic, Wegovy und Mounjaro. Für Tabletten wie Rybelsus gibt es keine Kurve: Die Aufnahme ins Blut unterscheidet sich zu stark zwischen Menschen. Wähle eine Woche, einen Monat oder sechs Monate Injektionsverlauf."
   boundary_lead: Es ist eine Schätzung. Das sagen wir auch so.
   boundary_body:
-    Das Diagramm modelliert eine Standard-Abklingkurve aus den Semaglutid- oder Tirzepatid-Dosen,
-    die du erfasst hast. Es zeigt deine eigenen Muster zwischen den Dosen. Es ist eine Schätzung,
+    Das Diagramm modelliert Aufnahme und Ausscheidung jeder Semaglutid- oder Tirzepatid-Dosis, die du erfasst hast, mit der Halbwertszeit aus der Fachinformation. Es zeigt deine eigenen Muster zwischen den Dosen. Es ist eine Schätzung,
     kein Ersatz für einen gemessenen Blutspiegel. Die App erklärt die Methode vollständig.
 
 boundary:
   kicker: Was Dial nicht tut
   heading: Dial führt das Protokoll. Die Dosis legt deine verschreibende Person fest.
-  body: "Dial berechnet keine Dosen, empfiehlt keine Dosisänderung und sagt dir nicht, was du nach einer vergessenen Dosis tun sollst. Der geschätzte Spiegel ist eine Schätzung aus einem Populationsmodell auf Basis deiner erfassten Dosen, keine Messung. Der Einheitenumrechner für Durchstechflaschen aus der Rezeptur rechnet nur mit den mg und mg/ml, die du eingibst, und schlägt keine Menge vor. Entscheidungen zur Medikation besprichst du mit deiner Praxis oder Apotheke."
+  body: "Dial berechnet keine Dosen, empfiehlt keine Dosisänderung und sagt dir nicht, was du nach einer vergessenen Dosis tun sollst. Der geschätzte Spiegel ist eine Schätzung aus einem Einkompartimentmodell für Aufnahme und Ausscheidung jeder erfassten Dosis, keine Messung. Der Einheitenumrechner für Durchstechflaschen aus der Rezeptur rechnet nur mit den mg und mg/ml, die du eingibst, und schlägt keine Menge vor. Entscheidungen zur Medikation besprichst du mit deiner Praxis oder Apotheke."
 
 logging:
   kicker: Schnelles Erfassen

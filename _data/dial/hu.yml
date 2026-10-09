@@ -74,12 +74,12 @@ level:
   heading: "Nézd a becsült szintet az adagok között, a felezési idő alapján."
   body: "A Dial a rögzített adagokból és az alkalmazásban látható felezési időből rajzol becsült szintet a támogatott injekciós készítményekhez, így az Ozempic, a Wegovy és a Mounjaro készítményekhez. A Rybelsushoz hasonló tablettáknak nincs szintgrafikonjuk: a szájon át történő felszívódás emberek között túlzottan eltér. Nézd meg egy hét, egy hónap vagy hat hónap injekciós előzményét."
   boundary_lead: "Ez becslés, és ezt jelezzük is."
-  boundary_body: "A grafikon standard lecsengési görbét modellez a rögzített szemaglutid- vagy tirzepatid-adagokból. Az adagok között a saját mintázataidat mutatja. Nem mért vérszint. Az alkalmazás részletesen elmagyarázza a módszert."
+  boundary_body: "A grafikon minden rögzített szemaglutid- vagy tirzepatid-adag felszívódását és kiürülését modellezi a betegtájékoztató felezési idejével. Az adagok között a saját mintázataidat mutatja. Nem mért vérszint. Az alkalmazás részletesen elmagyarázza a módszert."
 
 boundary:
   kicker: "Amit a Dial nem tesz"
   heading: "A Dial őrzi a nyilvántartást. Az adagot a felíró orvosod állítja be."
-  body: "A Dial nem számol adagot, nem javasol adagmódosítást, és nem mondja meg, mit tegyél egy elmulasztott adag után. A becsült szint populációs modellen alapuló becslés a rögzített adagokból, nem mérés. A hazavitt injekciós üvegekhez tartozó egységátváltó a megadott mg és mg/ml értékekkel végez számtani műveleteket, és nem javasol mennyiséget. Gyógyszeres döntésekről kérdezd meg a felíró orvosodat vagy a gyógyszerészedet."
+  body: "A Dial nem számol adagot, nem javasol adagmódosítást, és nem mondja meg, mit tegyél egy elmulasztott adag után. A becsült szint egykompartmentes modell becslése az egyes rögzített adagok felszívódásáról és kiürüléséről, nem mérés. A hazavitt injekciós üvegekhez tartozó egységátváltó a megadott mg és mg/ml értékekkel végez számtani műveleteket, és nem javasol mennyiséget. Gyógyszeres döntésekről kérdezd meg a felíró orvosodat vagy a gyógyszerészedet."
 
 logging:
   kicker: "Gyors rögzítés"
@@ -168,7 +168,7 @@ privacy:
       detail: "A Zentsu nem üzemeltet szervert, amely tárolná vagy olvasná a bejegyzéseidet."
     - term: "Választható szinkronizálás"
       detail: "Ha az iCloud be van kapcsolva, az alapbejegyzések az Apple-fiókod privát CloudKit-adatbázisát használják, nem a szervereinket."
-  body: "A gyógyszer-, adag-, emlékeztető- és készletbejegyzések az saját iCloudodon keresztül szinkronizálhatók, ha bekapcsolod. A testsúly külön helyi tárolóban marad, opcionális kapcsolattal az Egészség apphoz. A haladási fotófájlok a készüléken maradnak."
+  body: "A gyógyszer-, adag-, emlékeztető- és készletbejegyzések a saját iCloudodon keresztül szinkronizálhatók, ha bekapcsolod. A testsúly külön helyi tárolóban marad, opcionális kapcsolattal az Egészség apphoz. A haladási fotófájlok a készüléken maradnak."
   policy_link: "Olvasd el a Dial adatvédelmi szabályzatát"
   policy_url: /hu/dial/privacy/
 

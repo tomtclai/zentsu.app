@@ -74,12 +74,12 @@ level:
   heading: "Se en uppskattad nivå mellan doserna, utifrån halveringstiden."
   body: "Dial ritar en uppskattad nivå från dina registrerade doser och halveringstiden appen visar, för stödda injektionsläkemedel som Ozempic, Wegovy och Mounjaro. Tabletter som Rybelsus har ingen nivågraf: upptaget via munnen varierar för mycket mellan människor. Se en vecka, en månad eller sex månader av injektionshistoriken."
   boundary_lead: "Vi kallar den en uppskattning."
-  boundary_body: "Diagrammet modellerar en vanlig avklingningskurva från dina registrerade doser av semaglutid eller tirzepatid. Det visar dina egna mönster mellan doser. Det är en uppskattning, inte en uppmätt blodnivå. Appen förklarar hela metoden."
+  boundary_body: "Diagrammet modellerar absorption och elimination av varje registrerad dos semaglutid eller tirzepatid, med halveringstiden från produktresumén. Det visar dina egna mönster mellan doser. Det är en uppskattning, inte en uppmätt blodnivå. Appen förklarar hela metoden."
 
 boundary:
   kicker: "Vad Dial inte gör"
   heading: "Dial för journalen. Din förskrivare sätter dosen."
-  body: "Dial räknar inte ut doser, rekommenderar ingen dosändring och säger inte vad du ska göra efter en missad dos. Den uppskattade nivån är en uppskattning från en populationsmodell utifrån dina registrerade doser, inte en mätning. Enhetsomvandlaren för injektionsflaskor utför bara räkneoperationer med det mg- och mg/mL-värde du anger och föreslår ingen mängd. Fråga din förskrivare eller apotekaren i frågor om din medicinering."
+  body: "Dial räknar inte ut doser, rekommenderar ingen dosändring och säger inte vad du ska göra efter en missad dos. Den uppskattade nivån är en uppskattning från en enkompartmentmodell för absorption och elimination av varje registrerad dos, inte en mätning. Enhetsomvandlaren för injektionsflaskor utför bara räkneoperationer med det mg- och mg/mL-värde du anger och föreslår ingen mängd. Fråga din förskrivare eller apotekaren i frågor om din medicinering."
 
 logging:
   kicker: "Snabb registrering"

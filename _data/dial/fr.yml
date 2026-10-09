@@ -84,15 +84,14 @@ level:
   body: "Dial trace le niveau estimé à partir de tes doses enregistrées et de la demi-vie indiquée dans l'app, pour les injectables pris en charge comme Ozempic, Wegovy, Mounjaro et Saxenda. Les comprimés comme Rybelsus n'ont pas de courbe : leur absorption varie trop entre personnes. Consulte une semaine, un mois ou six mois d'injections."
   boundary_lead: C'est une estimation, et nous le disons clairement.
   boundary_body:
-    Le graphique modélise une courbe de décroissance standard à partir des doses de
-    sémaglutide ou de tirzépatide que tu as enregistrées. Il sert à repérer tes
+    Le graphique modélise l'absorption puis l'élimination de chaque dose de sémaglutide ou de tirzépatide que tu as enregistrée, avec la demi-vie de la notice. Il sert à repérer tes
     propres habitudes entre les doses, pas à remplacer un taux sanguin mesuré. C'est
     une estimation, et l'app explique toute la méthode.
 
 boundary:
   kicker: Ce que Dial ne fait pas
   heading: Dial garde le relevé. Ton prescripteur fixe la dose.
-  body: "Dial ne calcule pas les doses, ne recommande pas de changement de dose et ne dit pas quoi faire après une dose oubliée. Le niveau estimé est une estimation issue d'un modèle de population, calculée à partir de tes doses enregistrées, pas une mesure. Le convertisseur d'unités pour les flacons de préparation magistrale fait de l'arithmétique sur les mg et les mg/mL que tu saisis, et ne suggère aucune quantité. Demande à ton prescripteur ou à ton pharmacien pour toute décision de traitement."
+  body: "Dial ne calcule pas les doses, ne recommande pas de changement de dose et ne dit pas quoi faire après une dose oubliée. Le niveau estimé est issu d'un modèle à un compartiment qui décrit l'absorption puis l'élimination de chaque dose enregistrée, pas d'une mesure. Le convertisseur d'unités pour les flacons de préparation magistrale fait de l'arithmétique sur les mg et les mg/mL que tu saisis, et ne suggère aucune quantité. Demande à ton prescripteur ou à ton pharmacien pour toute décision de traitement."
 
 logging:
   kicker: Enregistrement rapide

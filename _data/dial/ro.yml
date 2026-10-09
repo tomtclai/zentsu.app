@@ -74,12 +74,12 @@ level:
   heading: "Vezi un nivel estimat între doze, după timpul de înjumătățire."
   body: "Dial construiește un nivel estimat din dozele înregistrate și din timpul de înjumătățire afișat în aplicație, pentru injectabile acceptate precum Ozempic, Wegovy și Mounjaro. Comprimatele precum Rybelsus nu au grafic de nivel: absorbția orală variază prea mult între oameni. Revizuiește o săptămână, o lună sau șase luni de injecții."
   boundary_lead: "Este o estimare. O spunem deschis."
-  boundary_body: "Graficul construiește o curbă standard de scădere din dozele de semaglutidă sau tirzepatidă pe care le-ai înregistrat. Arată propriile tipare dintre doze. Este o estimare, nu un nivel măsurat în sânge. Aplicația explică metoda în detaliu."
+  boundary_body: "Graficul modelează absorbția și eliminarea fiecărei doze de semaglutidă sau tirzepatidă pe care ai înregistrat-o, cu timpul de înjumătățire din prospect. Arată propriile tipare dintre doze. Este o estimare, nu un nivel măsurat în sânge. Aplicația explică metoda în detaliu."
 
 boundary:
   kicker: "Ce nu face Dial"
   heading: "Dial ține evidența. Doza o stabilește medicul care ți-a prescris tratamentul."
-  body: "Dial nu calculează doze, nu recomandă o schimbare a dozei și nu îți spune ce să faci după o doză ratată. Nivelul estimat este o estimare dintr-un model de populație, bazată pe dozele înregistrate, nu o măsurătoare. Convertorul de unități pentru flacoanele preparate la rețetă face doar calcule aritmetice cu mg și mg/ml pe care le introduci și nu sugerează nicio cantitate. Întreabă medicul prescriptor sau farmacistul în privința deciziilor despre medicamente."
+  body: "Dial nu calculează doze, nu recomandă o schimbare a dozei și nu îți spune ce să faci după o doză ratată. Nivelul estimat este o estimare dintr-un model monocompartimental de absorbție și eliminare pentru fiecare doză înregistrată, nu o măsurătoare. Convertorul de unități pentru flacoanele preparate la rețetă face doar calcule aritmetice cu mg și mg/ml pe care le introduci și nu sugerează nicio cantitate. Întreabă medicul prescriptor sau farmacistul în privința deciziilor despre medicamente."
 
 logging:
   kicker: "Înregistrare rapidă"
