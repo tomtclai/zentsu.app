@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expectFullPageScreenshot } from '../support/visual.mjs';
 
 for (const colorScheme of ['light', 'dark']) {
   test(`@visual overload ${colorScheme}`, async ({ page }) => {
@@ -13,6 +13,6 @@ for (const colorScheme of ['light', 'dark']) {
         }),
       );
     });
-    await expect(page).toHaveScreenshot(`overload-${colorScheme}.png`, { fullPage: true });
+    await expectFullPageScreenshot(page, `overload-${colorScheme}.png`);
   });
 }

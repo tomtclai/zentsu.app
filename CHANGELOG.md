@@ -29,6 +29,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- The visual suite is deterministic under load. Each capture waits for web fonts and two animation frames, the visual specs freeze animations and transitions, and `npm run test:visual` runs one worker. Every Playwright run serves the site on its own free port (pin one with `SITE_PORT`), so parallel runs no longer collide on port 8788.
 - `npm run validate:links` skips `tanos.co.uk`. The domain stopped resolving (NXDOMAIN on 2026-10-05), which failed every build on the JP 2K word-source credit links. The credit and its links stay on `/japanese2k/data` as the license requires.
 - Visual capture waits for the observed Dial sticky-bar state after scrolling back to the top, replacing a fixed delay without changing product behavior, image references or comparison thresholds.
 

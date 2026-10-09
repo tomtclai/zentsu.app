@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, expectFullPageScreenshot, settle } from '../support/visual.mjs';
 
 const locales = ['en', 'de', 'ja', 'ar', 'ko', 'fr', 'es', 'es-es'];
 const schemes = [
@@ -42,13 +42,14 @@ async function prepareDialPage(page, lang, colorScheme) {
       }),
     )
     .toBe(true);
+  await settle(page);
 }
 
 for (const lang of locales) {
   for (const scheme of schemes) {
     test(`@visual dial ${lang} ${scheme.name}`, async ({ page }) => {
       await prepareDialPage(page, lang, scheme.colorScheme);
-      await expect(page).toHaveScreenshot(`${lang}-${scheme.name}.png`, { fullPage: true });
+      await expectFullPageScreenshot(page, `${lang}-${scheme.name}.png`);
     });
   }
 }
@@ -62,7 +63,7 @@ test('@visual dial en light support', async ({ page }) => {
   await page.evaluate(async () => {
     await document.fonts.ready;
   });
-  await expect(page).toHaveScreenshot('en-light-support.png', { fullPage: true });
+  await expectFullPageScreenshot(page, 'en-light-support.png');
 });
 
 test('@visual dial en light privacy', async ({ page }) => {
@@ -74,5 +75,5 @@ test('@visual dial en light privacy', async ({ page }) => {
   await page.evaluate(async () => {
     await document.fonts.ready;
   });
-  await expect(page).toHaveScreenshot('en-light-privacy.png', { fullPage: true });
+  await expectFullPageScreenshot(page, 'en-light-privacy.png');
 });

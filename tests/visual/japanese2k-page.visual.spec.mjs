@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expectFullPageScreenshot } from '../support/visual.mjs';
 
 for (const colorScheme of ['light', 'dark']) {
   test(`@visual japanese2k ${colorScheme}`, async ({ page }) => {
@@ -13,6 +13,6 @@ for (const colorScheme of ['light', 'dark']) {
         }),
       );
     });
-    await expect(page).toHaveScreenshot(`japanese2k-${colorScheme}.png`, { fullPage: true });
+    await expectFullPageScreenshot(page, `japanese2k-${colorScheme}.png`);
   });
 }
