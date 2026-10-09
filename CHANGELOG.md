@@ -46,6 +46,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- The Dial FAQ answer on supported medications no longer lists orforglipron among the drugs Dial knows by local brand names. No regulator has registered a local-script name for it, and Dial's catalog has only the generic name and Foundayo. Every locale says orforglipron can be logged; English (U.S.) adds that it is approved there as Foundayo and Arabic (Saudi Arabia) that it is registered there under that name.
 - Dial pages name Apple's Health app the way Apple's own localization does. German pages say "Health" (they said "Gesundheit"), Hindi pages say "सेहत" (they said "स्वास्थ्य"), and Vietnamese pages say "Sức khỏe" (they said "Sức khoẻ"). The landing-page privacy card in 26 non-English locales names the localized app instead of the English "Apple Health".
 - The Coil privacy policy no longer says Coil's data can be deleted from iCloud in the device's iCloud settings, which Apple does not document for a third-party app. It says deleting an entry removes it from iCloud while iCloud is on for Coil, that deleting the app leaves synced data in the user's iCloud account, and that iCloud can be turned off for Coil in the device's iCloud settings.
 - `_data/dial_faq.yml` has one Norwegian (`"no"`) entry. It had an empty `'no':` block and the full block, and YAML kept only the second. `validate-dial-locales.mjs` now fails on a repeated or unquoted boolean-like top-level locale key in that file.

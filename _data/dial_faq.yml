@@ -5,9 +5,10 @@ en:
     a: Dial is a GLP-1 medication tracker for iPhone and Apple Watch. It is free to
       download. Dial Pro adds charts, exports, and quick logging.
   - q: Which medications does Dial support?
-    a: Dial supports semaglutide, tirzepatide, orforglipron, liraglutide, dulaglutide,
-      and exenatide under the local names used in your country, including tablets
-      such as Rybelsus. Add a custom entry when yours is not listed.
+    a: Dial supports semaglutide, tirzepatide, liraglutide, dulaglutide, and exenatide
+      under the local names used in your country, including tablets such as Rybelsus.
+      It also supports orforglipron, approved in the U.S. as Foundayo. Add a custom
+      entry when yours is not listed.
   - q: Does Dial calculate doses?
     a: Dial does not calculate or suggest the next dose. It records what you log and
       can plot an estimated level from those entries for supported injectables. Tablets
@@ -36,7 +37,7 @@ de:
     a: Dial ist ein GLP-1-Medikamententracker für iPhone und Apple Watch. Du kannst
       ihn kostenlos laden. Dial Pro ergänzt Diagramme, Exporte und schnelles Erfassen.
   - q: Welche Medikamente unterstützt Dial?
-    a: "Dial unterstützt Semaglutid, Tirzepatid, Orforglipron, Liraglutid und Dulaglutid unter den Namen, die in deinem Land üblich sind, einschließlich Tabletten wie Rybelsus. Exenatid kannst du ebenfalls eintragen, auch wenn Byetta und Bydureon in der EU seit dem 1. Januar 2026 nicht mehr zugelassen sind. Fehlt deins, legst du einen eigenen Eintrag an."
+    a: "Dial unterstützt Semaglutid, Tirzepatid, Liraglutid und Dulaglutid unter den Namen, die in deinem Land üblich sind, einschließlich Tabletten wie Rybelsus. Orforglipron und Exenatid kannst du ebenfalls eintragen, auch wenn Byetta und Bydureon in der EU seit dem 1. Januar 2026 nicht mehr zugelassen sind. Fehlt deins, legst du einen eigenen Eintrag an."
   - q: Berechnet Dial Dosen?
     a: Dial berechnet keine Dosen und schlägt auch keine vor. Es speichert, was du erfasst, und
       kann daraus für unterstützte Injektionspräparate einen geschätzten Spiegel zeichnen.
@@ -68,7 +69,7 @@ fr:
       est gratuit. Dial Pro ajoute les graphiques, les exports et l'enregistrement
       rapide.
   - q: Quels médicaments Dial prend-il en charge ?
-    a: "Dial prend en charge le sémaglutide, le tirzépatide, l'orforglipron, le liraglutide et le dulaglutide sous les noms utilisés dans ton pays, y compris les comprimés comme Rybelsus. Tu peux aussi enregistrer l'exénatide, même si Byetta et Bydureon ne sont plus autorisés dans l'UE depuis le 1er janvier 2026. Ajoute une entrée personnalisée si le tien manque."
+    a: "Dial prend en charge le sémaglutide, le tirzépatide, le liraglutide et le dulaglutide sous les noms utilisés dans ton pays, y compris les comprimés comme Rybelsus. Tu peux aussi enregistrer l'orforglipron et l'exénatide, même si Byetta et Bydureon ne sont plus autorisés dans l'UE depuis le 1er janvier 2026. Ajoute une entrée personnalisée si le tien manque."
   - q: Est-ce que Dial calcule les doses ?
     a: Dial ne calcule pas les doses et n'en suggère aucune. Il enregistre ce que tu notes et
       peut tracer un niveau estimé à partir de ces saisies pour les injectables pris en charge.
@@ -99,7 +100,7 @@ es:
     a: Dial es un registro de medicamentos GLP-1 para iPhone y Apple Watch. Se descarga
       gratis. Dial Pro agrega gráficos, exportaciones y registro rápido.
   - q: "¿Qué medicamentos admite Dial?"
-    a: "Dial admite semaglutida, tirzepatida, orforglipron, liraglutida y dulaglutida con los nombres que se usan en tu país, incluidos comprimidos como Rybelsus. También puedes registrar exenatida. Agrega una entrada personalizada si el tuyo no está en la lista."
+    a: "Dial admite semaglutida, tirzepatida, liraglutida y dulaglutida con los nombres que se usan en tu país, incluidos comprimidos como Rybelsus. También puedes registrar orforglipron y exenatida. Agrega una entrada personalizada si el tuyo no está en la lista."
   - q: "¿Dial calcula las dosis?"
     a: Dial no calcula ni sugiere la siguiente dosis. Guarda lo que registras y puede trazar un
       nivel estimado a partir de esas entradas para los inyectables compatibles. Los comprimidos
@@ -130,7 +131,7 @@ ca:
     a: Dial és un registre de medicació GLP-1 per a iPhone i Apple Watch. Es pot baixar
       de franc. Dial Pro afegeix gràfics, exportacions i registre ràpid.
   - q: Quins medicaments admet Dial?
-    a: "Dial admet semaglutida, tirzepatida, orforglipron, liraglutida i dulaglutida amb els noms que es fan servir al teu país, inclosos comprimits com Rybelsus. També pots registrar exenatida, tot i que Byetta i Bydureon ja no estan autoritzats a la Unió Europea des de l'1 de gener de 2026. Afegeix una entrada personalitzada si el teu no hi surt."
+    a: "Dial admet semaglutida, tirzepatida, liraglutida i dulaglutida amb els noms que es fan servir al teu país, inclosos comprimits com Rybelsus. També pots registrar orforglipron i exenatida, tot i que Byetta i Bydureon ja no estan autoritzats a la Unió Europea des de l'1 de gener de 2026. Afegeix una entrada personalitzada si el teu no hi surt."
   - q: Dial calcula les dosis?
     a: Dial no calcula ni suggereix la dosi següent. Desa el que registres i pot traçar un nivell
       estimat a partir d'aquestes entrades per als injectables compatibles. Els comprimits no
@@ -161,7 +162,7 @@ it:
     a: Dial è un registro di farmaci GLP-1 per iPhone e Apple Watch. Il download è
       gratis. Dial Pro aggiunge grafici, esportazioni e registrazione rapida.
   - q: Quali farmaci supporta Dial?
-    a: "Dial supporta semaglutide, tirzepatide, orforglipron, liraglutide e dulaglutide con i nomi usati nel tuo paese, comprese le compresse come Rybelsus. Puoi registrare pure l'exenatide, sebbene Byetta e Bydureon non siano più autorizzati nell'UE dal 1° gennaio 2026. Aggiungi una voce personalizzata se il tuo non è in elenco."
+    a: "Dial supporta semaglutide, tirzepatide, liraglutide e dulaglutide con i nomi usati nel tuo paese, comprese le compresse come Rybelsus. Puoi registrare pure l'orforglipron e l'exenatide, sebbene Byetta e Bydureon non siano più autorizzati nell'UE dal 1° gennaio 2026. Aggiungi una voce personalizzata se il tuo non è in elenco."
   - q: Dial calcola le dosi?
     a: Dial non calcola né suggerisce la dose successiva. Registra quello che annoti e può
       tracciare un livello stimato da quelle voci per gli iniettabili supportati. Le compresse
@@ -192,7 +193,7 @@ pt:
     a: O Dial é um registro de medicamentos GLP-1 para iPhone e Apple Watch. O download
       é grátis. O Dial Pro adiciona gráficos, exportações e registro rápido.
   - q: Quais medicamentos o Dial aceita?
-    a: "O Dial aceita semaglutida, tirzepatida, orforglipron, liraglutida e dulaglutida com os nomes usados no seu país, incluindo comprimidos como Rybelsus. Você também pode registrar exenatida, embora Byetta e Bydureon não tenham mais registro ativo na Anvisa. Adicione uma entrada personalizada se o seu não estiver na lista."
+    a: "O Dial aceita semaglutida, tirzepatida, liraglutida e dulaglutida com os nomes usados no seu país, incluindo comprimidos como Rybelsus. Você também pode registrar orforglipron e exenatida, embora Byetta e Bydureon não tenham mais registro ativo na Anvisa. Adicione uma entrada personalizada se o seu não estiver na lista."
   - q: O Dial calcula doses?
     a: O Dial não calcula nem sugere a próxima dose. Registra o que você anota e pode traçar um
       nível estimado a partir dessas entradas para os injetáveis compatíveis. Comprimidos não
@@ -222,7 +223,7 @@ nl:
     a: Dial is een GLP-1-medicijntracker voor iPhone en Apple Watch. Downloaden is
       gratis. Dial Pro voegt grafieken, export en snel vastleggen toe.
   - q: Welke medicijnen ondersteunt Dial?
-    a: "Dial ondersteunt semaglutide, tirzepatide, orforglipron, liraglutide en dulaglutide onder de namen die in jouw land gangbaar zijn, inclusief tabletten zoals Rybelsus. Exenatide kun je ook vastleggen, al zijn Byetta en Bydureon sinds 1 januari 2026 niet meer toegelaten in de EU. Ontbreekt het jouwe, voeg dan een eigen invoer toe."
+    a: "Dial ondersteunt semaglutide, tirzepatide, liraglutide en dulaglutide onder de namen die in jouw land gangbaar zijn, inclusief tabletten zoals Rybelsus. Orforglipron en exenatide kun je ook vastleggen, al zijn Byetta en Bydureon sinds 1 januari 2026 niet meer toegelaten in de EU. Ontbreekt het jouwe, voeg dan een eigen invoer toe."
   - q: Berekent Dial doses?
     a: Dial berekent geen doses en stelt er ook geen voor. Het bewaart wat je vastlegt en kan
       daaruit voor ondersteunde injectables een geschatte spiegel tekenen. Tabletten hebben geen
@@ -251,7 +252,7 @@ sv:
     a: Dial är en GLP-1-läkemedelsöversikt för iPhone och Apple Watch. Den är gratis
       att hämta. Dial Pro lägger till diagram, export och snabb registrering.
   - q: Vilka läkemedel stödjer Dial?
-    a: "Dial stödjer semaglutid, tirzepatid, orforglipron, liraglutid och dulaglutid under de namn som används i ditt land, inklusive tabletter som Rybelsus. Exenatid kan du också logga, även om Byetta och Bydureon inte längre är godkända i EU sedan den 1 januari 2026. Saknas ditt, lägg till en egen post."
+    a: "Dial stödjer semaglutid, tirzepatid, liraglutid och dulaglutid under de namn som används i ditt land, inklusive tabletter som Rybelsus. Orforglipron och exenatid kan du också logga, även om Byetta och Bydureon inte längre är godkända i EU sedan den 1 januari 2026. Saknas ditt, lägg till en egen post."
   - q: Beräknar Dial doser?
     a: Dial beräknar inte doser och föreslår ingen nästa dos. Det sparar det du registrerar och
       kan rita en uppskattad nivå från de posterna för stödda injektionsläkemedel. Tabletter har
@@ -281,7 +282,7 @@ da:
     a: Dial er et GLP-1-medicinoverblik til iPhone og Apple Watch. Den er gratis at
       hente. Dial Pro tilføjer grafer, eksport og hurtig registrering.
   - q: Hvilke lægemidler understøtter Dial?
-    a: "Dial understøtter semaglutid, tirzepatid, orforglipron, liraglutid og dulaglutid under de navne, der bruges i dit land, herunder tabletter som Rybelsus. Exenatid kan du også registrere, selv om Byetta og Bydureon ikke længere er godkendt i EU siden 1. januar 2026. Mangler dit, tilføjer du en egen post."
+    a: "Dial understøtter semaglutid, tirzepatid, liraglutid og dulaglutid under de navne, der bruges i dit land, herunder tabletter som Rybelsus. Orforglipron og exenatid kan du også registrere, selv om Byetta og Bydureon ikke længere er godkendt i EU siden 1. januar 2026. Mangler dit, tilføjer du en egen post."
   - q: Beregner Dial doser?
     a: Dial beregner ikke doser og foreslår heller ikke den næste. Den gemmer det, du
       registrerer, og kan tegne et estimeret niveau ud fra de poster for understøttede
@@ -311,7 +312,7 @@ da:
     a: Dial er en GLP-1-medisinlogger for iPhone og Apple Watch. Den er gratis å laste ned. Dial
       Pro legger til diagrammer, eksporter og rask føring.
   - q: Hvilke legemidler støtter Dial?
-    a: "Dial støtter semaglutid, tirzepatid, orforglipron, liraglutid og dulaglutid under navnene som brukes i landet ditt, inkludert tabletter som Rybelsus. Eksenatid kan du også føre, selv om Byetta og Bydureon ikke lenger er godkjent i EU fra 1. januar 2026. Mangler ditt, legger du til en egen post."
+    a: "Dial støtter semaglutid, tirzepatid, liraglutid og dulaglutid under navnene som brukes i landet ditt, inkludert tabletter som Rybelsus. Orforglipron og eksenatid kan du også føre, selv om Byetta og Bydureon ikke lenger er godkjent i EU fra 1. januar 2026. Mangler ditt, legger du til en egen post."
   - q: Beregner Dial doser?
     a: Dial beregner ikke doser og foreslår heller ikke neste dose. Den lagrer det du fører, og
       kan tegne et estimert nivå fra de postene for støttede injeksjonspreparater. Tablettene
@@ -339,7 +340,7 @@ fi:
     a: Dial on GLP-1-lääkeseuranta iPhonelle ja Apple Watchille. Lataaminen on ilmaista.
       Dial Pro lisää kaaviot, viennit ja nopean kirjauksen.
   - q: Mitä lääkkeitä Dial tukee?
-    a: "Dial tukee semaglutidia, tirtsepatidia, orforglipronia, liraglutidia ja dulaglutidia maassasi käytetyillä nimillä, myös tabletteja kuten Rybelsus. Myös eksenatidia voi kirjata, vaikka Byettalla ja Bydureonilla ei ole ollut EU:n myyntilupaa 1.1.2026 alkaen. Jos lääkkeesi ei ole listalla, lisää oma merkintä."
+    a: "Dial tukee semaglutidia, tirtsepatidia, liraglutidia ja dulaglutidia maassasi käytetyillä nimillä, myös tabletteja kuten Rybelsus. Myös orforglipronia ja eksenatidia voi kirjata, vaikka Byettalla ja Bydureonilla ei ole ollut EU:n myyntilupaa 1.1.2026 alkaen. Jos lääkkeesi ei ole listalla, lisää oma merkintä."
   - q: Laskeeko Dial annoksia?
     a: Dial ei laske annoksia eikä ehdota seuraavaa. Se tallentaa sen, minkä kirjaat, ja voi
       piirtää niistä arvioidun tason tuetuille injektiolääkkeille. Tableteilla ei ole
@@ -368,7 +369,7 @@ pl:
     a: Dial to rejestr leków GLP-1 na iPhone’a i Apple Watch. Pobierasz go za darmo.
       Dial Pro dodaje wykresy, eksport i szybki zapis.
   - q: Jakie leki obsługuje Dial?
-    a: "Dial zna semaglutyd, tirzepatyd, orforglipron, liraglutyd i dulaglutyd pod nazwami używanymi w twoim kraju, w tym tabletki takie jak Rybelsus. Możesz też zapisywać eksenatyd, choć Byetta i Bydureon od 1 stycznia 2026 r. nie mają już pozwolenia na dopuszczenie do obrotu w UE. Jeśli twojego nie ma na liście, dodaj własny lek."
+    a: "Dial zna semaglutyd, tirzepatyd, liraglutyd i dulaglutyd pod nazwami używanymi w twoim kraju, w tym tabletki takie jak Rybelsus. Możesz też zapisywać orforglipron i eksenatyd, choć Byetta i Bydureon od 1 stycznia 2026 r. nie mają już pozwolenia na dopuszczenie do obrotu w UE. Jeśli twojego nie ma na liście, dodaj własny lek."
   - q: Czy Dial oblicza dawki?
     a: Dial nie oblicza dawek i nie sugeruje kolejnej. Zapisuje to, co wprowadzisz, i może
       narysować z tych wpisów szacowany poziom dla obsługiwanych leków wstrzykiwanych. Tabletki
@@ -397,7 +398,7 @@ cs:
     a: Dial je záznam léků GLP-1 pro iPhone a Apple Watch. Stáhneš ho zdarma. Dial
       Pro přidává grafy, exporty a rychlý záznam.
   - q: Které léky Dial umí?
-    a: "Dial zná semaglutid, tirzepatid, orforglipron, liraglutid a dulaglutid pod názvy používanými v tvé zemi, včetně tablet jako Rybelsus. Zapisovat můžeš i exenatid, i když Byetta a Bydureon už od 1. ledna 2026 nemají v EU registraci. Pokud ten tvůj v seznamu není, přidej vlastní lék."
+    a: "Dial zná semaglutid, tirzepatid, liraglutid a dulaglutid pod názvy používanými v tvé zemi, včetně tablet jako Rybelsus. Zapisovat můžeš i orforglipron a exenatid, i když Byetta a Bydureon už od 1. ledna 2026 nemají v EU registraci. Pokud ten tvůj v seznamu není, přidej vlastní lék."
   - q: Počítá Dial dávky?
     a: Dial nepočítá dávky a nenavrhuje další. Ukládá, co zapíšeš, a z těch záznamů může
       vykreslit odhadovanou hladinu pro podporovaná injekční léčiva. Tablety nemají křivku
@@ -425,7 +426,7 @@ sk:
     a: Dial je záznam liekov GLP-1 pre iPhone a Apple Watch. Stiahneš ho zadarmo.
       Dial Pro pridáva grafy, export a rýchly záznam.
   - q: Ktoré lieky Dial pozná?
-    a: "Dial pozná semaglutid, tirzepatid, orforglipron, liraglutid a dulaglutid pod názvami používanými v tvojej krajine, vrátane tabliet ako Rybelsus. Zapisovať môžeš aj exenatid, hoci Byetta a Bydureon už od 1. januára 2026 nemajú v EÚ registráciu. Ak ten tvoj v zozname nie je, pridaj vlastný liek."
+    a: "Dial pozná semaglutid, tirzepatid, liraglutid a dulaglutid pod názvami používanými v tvojej krajine, vrátane tabliet ako Rybelsus. Zapisovať môžeš aj orforglipron a exenatid, hoci Byetta a Bydureon už od 1. januára 2026 nemajú v EÚ registráciu. Ak ten tvoj v zozname nie je, pridaj vlastný liek."
   - q: Počíta Dial dávky?
     a: Dial nepočíta dávky a nenavrhuje ďalšiu. Ukladá, čo zapíšeš, a z tých záznamov môže
       vykresliť odhadovanú hladinu pre podporované injekčné lieky. Tablety nemajú krivku
@@ -453,7 +454,7 @@ hu:
     a: A Dial GLP-1-gyógyszerkövető iPhone-ra és Apple Watchra. A letöltés ingyenes.
       A Dial Pro grafikonokat, exportot és gyors rögzítést ad.
   - q: Melyik gyógyszereket támogatja a Dial?
-    a: "A Dial támogatja a szemaglutidot, tirzepatidot, orforglipront, liraglutidot és dulaglutidot az országodban használt neveken, ideértve a Rybelsushoz hasonló tablettákat. Exenatidot is rögzíthetsz, bár a Byetta és a Bydureon 2026. január 1. óta nem rendelkezik forgalomba hozatali engedéllyel az EU-ban. Ha a tiéd nincs a listán, adj hozzá egyéni bejegyzést."
+    a: "A Dial támogatja a szemaglutidot, tirzepatidot, liraglutidot és dulaglutidot az országodban használt neveken, ideértve a Rybelsushoz hasonló tablettákat. Orforglipront és exenatidot is rögzíthetsz, bár a Byetta és a Bydureon 2026. január 1. óta nem rendelkezik forgalomba hozatali engedéllyel az EU-ban. Ha a tiéd nincs a listán, adj hozzá egyéni bejegyzést."
   - q: A Dial kiszámolja az adagokat?
     a: A Dial nem számolja ki az adagokat, és nem javasol következőt. Azt rögzíti, amit beírsz,
       és ezekből a bejegyzésekből becsült szintet rajzolhat a támogatott injekciós
@@ -483,7 +484,7 @@ ro:
     a: Dial este o evidență de medicamente GLP-1 pentru iPhone și Apple Watch. Se
       descarcă gratuit. Dial Pro adaugă grafice, exporturi și înregistrare rapidă.
   - q: Ce medicamente recunoaște Dial?
-    a: "Dial recunoaște semaglutidă, tirzepatidă, orforglipron, liraglutidă și dulaglutidă sub denumirile folosite în țara ta, inclusiv comprimate precum Rybelsus. Poți înregistra și exenatidă, deși Byetta și Bydureon nu mai sunt autorizate în UE din 1 ianuarie 2026. Adaugă o înregistrare personalizată dacă al tău nu e în listă."
+    a: "Dial recunoaște semaglutidă, tirzepatidă, liraglutidă și dulaglutidă sub denumirile folosite în țara ta, inclusiv comprimate precum Rybelsus. Poți înregistra, de asemenea, orforglipron și exenatidă, deși Byetta și Bydureon nu mai sunt autorizate în UE din 1 ianuarie 2026. Adaugă o înregistrare personalizată dacă al tău nu e în listă."
   - q: Dial calculează dozele?
     a: Dial nu calculează dozele și nu sugerează următoarea. Înregistrează ce notezi și poate
       construi un nivel estimat din acele înregistrări pentru injectabilele acceptate.
@@ -514,7 +515,7 @@ hr:
     a: Dial prati lijekove GLP-1 na iPhoneu i Apple Watchu. Preuzimaš ga besplatno.
       Dial Pro dodaje grafikone, izvoz i brzi unos.
   - q: Koje lijekove Dial podržava?
-    a: "Dial poznaje semaglutid, tirzepatid, orforglipron, liraglutid i dulaglutid pod nazivima koji se koriste u tvojoj zemlji, uključujući tablete poput Rybelsusa. Možeš bilježiti i eksenatid, iako Byetta i Bydureon od 1. siječnja 2026. više nemaju odobrenje za stavljanje u promet u EU-u. Ako propisanog nema na popisu, dodaj vlastiti lijek."
+    a: "Dial poznaje semaglutid, tirzepatid, liraglutid i dulaglutid pod nazivima koji se koriste u tvojoj zemlji, uključujući tablete poput Rybelsusa. Možeš bilježiti i orforglipron i eksenatid, iako Byetta i Bydureon od 1. siječnja 2026. više nemaju odobrenje za stavljanje u promet u EU-u. Ako propisanog nema na popisu, dodaj vlastiti lijek."
   - q: Izračunava li Dial doze?
     a: Dial ne izračunava doze i ne predlaže sljedeću. Sprema ono što zabilježiš i iz tih unosa
       može nacrtati procijenjenu razinu za podržane injekcijske pripravke. Tablete nemaju
@@ -542,9 +543,9 @@ tr:
     a: Dial, iPhone ve Apple Watch için bir GLP-1 ilaç kaydıdır. İndirmesi ücretsiz.
       Dial Pro grafik, dışa aktarma ve hızlı kayıt ekler.
   - q: Dial hangi ilaçları destekler?
-    a: Dial, semaglutid, tirzepatid, orforglipron, liraglutid, dulaglutid ve eksenatidi ülkende
-      kullanılan adlarla destekler; Rybelsus gibi tabletler de dahildir. İlacın listede yoksa
-      özel bir kayıt ekleyebilirsin.
+    a: Dial, semaglutid, tirzepatid, liraglutid, dulaglutid ve eksenatidi ülkende kullanılan
+      adlarla destekler; Rybelsus gibi tabletler de dahildir. Orforglipronu da kaydedebilirsin.
+      İlacın listede yoksa özel bir kayıt ekleyebilirsin.
   - q: Dial doz hesaplar mı?
     a: Dial doz hesaplamaz ve sonraki dozu önermez. Kaydettiğini tutar ve bu kayıtlardan
       desteklenen enjekte edilebilirler için tahmini bir düzey çizebilir. Tabletlerin düzey
@@ -572,7 +573,7 @@ el:
     a: Το Dial είναι καταγραφή φαρμάκων GLP-1 για iPhone και Apple Watch. Η λήψη είναι
       δωρεάν. Το Dial Pro προσθέτει γραφήματα, εξαγωγές και γρήγορη καταγραφή.
   - q: Ποια φάρμακα υποστηρίζει το Dial;
-    a: "Το Dial υποστηρίζει σεμαγλουτίδη, τιρζεπατίδη, ορφορλιπρόνη, λιραγλουτίδη και ντουλαγλουτίδη με τις ονομασίες που ισχύουν στη χώρα σου, συμπεριλαμβανομένων δισκίων όπως το Rybelsus. Μπορείς να καταγράφεις και εξενατίδη, αν και τα Byetta και Bydureon δεν έχουν πλέον άδεια κυκλοφορίας στην ΕΕ από την 1η Ιανουαρίου 2026. Αν το δικό σου δεν είναι στη λίστα, πρόσθεσε προσαρμοσμένη εγγραφή."
+    a: "Το Dial υποστηρίζει σεμαγλουτίδη, τιρζεπατίδη, λιραγλουτίδη και ντουλαγλουτίδη με τις ονομασίες που ισχύουν στη χώρα σου, συμπεριλαμβανομένων δισκίων όπως το Rybelsus. Μπορείς επίσης να καταγράφεις ορφοργλιπρόνη και εξενατίδη, αν και τα Byetta και Bydureon δεν έχουν πλέον άδεια κυκλοφορίας στην ΕΕ από την 1η Ιανουαρίου 2026. Αν το δικό σου δεν είναι στη λίστα, πρόσθεσε προσαρμοσμένη εγγραφή."
   - q: Υπολογίζει το Dial τις δόσεις;
     a: Το Dial δεν υπολογίζει δόσεις και δεν προτείνει την επόμενη. Καταγράφει ό,τι σημειώνεις
       και μπορεί να σχεδιάσει εκτιμώμενο επίπεδο από αυτές τις εγγραφές για τα υποστηριζόμενα
@@ -603,7 +604,7 @@ ru:
     a: 'Dial: дневник препаратов GLP-1 для iPhone и Apple Watch. Скачивается бесплатно.
       Dial Pro добавляет графики, экспорт и быструю запись.'
   - q: Какие препараты поддерживает Dial?
-    a: "Dial знает семаглутид, тирзепатид, орфорглипрон, лираглутид и дулаглутид под теми названиями, которые приняты в вашей стране, включая таблетки вроде Rybelsus. Эксенатид тоже можно записывать, хотя действующей регистрации у него в России сейчас нет. Если вашего препарата нет в списке, добавьте свой."
+    a: "Dial знает семаглутид, тирзепатид, лираглутид и дулаглутид под теми названиями, которые приняты в вашей стране, включая таблетки вроде Rybelsus. Орфорглипрон и эксенатид тоже можно записывать, хотя действующей регистрации у эксенатида в России сейчас нет. Если вашего препарата нет в списке, добавьте свой."
   - q: Dial рассчитывает дозы?
     a: Dial не рассчитывает дозы и не предлагает следующую. Сохраняет то, что вы записали, и
       может построить оценочный уровень по этим записям для поддерживаемых инъекционных
@@ -633,7 +634,7 @@ uk:
     a: 'Dial: щоденник препаратів GLP-1 для iPhone і Apple Watch. Завантажується безплатно.
       Dial Pro додає графіки, експорт і швидкий запис.'
   - q: Які препарати підтримує Dial?
-    a: "Dial знає семаглутид, тирзепатид, орфоргліпрон, ліраглутид і дулаглутид під тими назвами, які прийняті у вашій країні, зокрема таблетки на кшталт Rybelsus. Ексенатид теж можна записувати, хоча в Україні він не зареєстрований. Якщо вашого немає в списку, додайте власний препарат."
+    a: "Dial знає семаглутид, тирзепатид, ліраглутид і дулаглутид під тими назвами, які прийняті у вашій країні, зокрема таблетки на кшталт Rybelsus. Орфоргліпрон і ексенатид теж можна записувати, хоча ексенатид в Україні не зареєстрований. Якщо вашого немає в списку, додайте власний препарат."
   - q: Чи розраховує Dial дози?
     a: Dial не розраховує дози і не пропонує наступну. Зберігає те, що ви записали, і може
       побудувати оцінений рівень із цих записів для підтримуваних ін'єкційних препаратів. У
@@ -663,7 +664,7 @@ ar:
     a: Dial تطبيق لتسجيل أدوية GLP-1 على iPhone وApple Watch. التنزيل مجاني. يضيف
       Dial Pro المخططات والتصدير والتسجيل السريع.
   - q: ما الأدوية التي يدعمها Dial؟
-    a: "يدعم Dial semaglutide وtirzepatide وorforglipron وliraglutide وdulaglutide بالأسماء المستخدمة في بلدك، بما في ذلك أقراص مثل Rybelsus. ويمكن تسجيل exenatide أيضاً. أضف إدخالاً مخصصاً إن لم يكن دواؤك في القائمة."
+    a: "يدعم Dial semaglutide وtirzepatide وliraglutide وdulaglutide بالأسماء المستخدمة في بلدك، بما في ذلك أقراص مثل Rybelsus. ويمكن أيضاً تسجيل orforglipron، المسجَّل في السعودية باسم Foundayo، وexenatide. أضف إدخالاً مخصصاً إن لم يكن دواؤك في القائمة."
   - q: هل يحسب Dial الجرعات؟
     a: لا يحسب Dial الجرعات ولا يقترح الجرعة التالية. يسجّل ما تدخله ويمكنه رسم مستوى مقدّر من
       تلك الإدخالات للمستحضرات الحقنية المدعومة. لا منحنى مستوى للأقراص. محوّل الوحدات الاختياري
@@ -690,7 +691,7 @@ he:
     a: Dial הוא מעקב אחר תרופות GLP-1 ל-iPhone ול-Apple Watch. ההורדה בחינם. Dial
       Pro מוסיף תרשימים, ייצוא ורישום מהיר.
   - q: אילו תרופות Dial תומך?
-    a: "Dial תומך ב-semaglutide, tirzepatide, orforglipron, liraglutide ו-dulaglutide בשמות הנהוגים במדינה שלכם, כולל טבליות כמו Rybelsus. אפשר לתעד גם exenatide, אף שרישומי התכשירים שלו בישראל בוטלו כולם. אם התרופה שלכם לא ברשימה, הוסיפו רישום מותאם."
+    a: "Dial תומך ב-semaglutide, tirzepatide, liraglutide ו-dulaglutide בשמות הנהוגים במדינה שלכם, כולל טבליות כמו Rybelsus. אפשר לתעד גם orforglipron ו-exenatide, אף שרישומי התכשירים של exenatide בישראל בוטלו כולם. אם התרופה שלכם לא ברשימה, הוסיפו רישום מותאם."
   - q: האם Dial מחשב מנות?
     a: Dial לא מחשב מנות ולא מציע את הבאה. הוא רושם מה שאתם מתעדים ויכול לשרטט רמה משוערת
       מהרשומות האלה לתכשירים בהזרקה נתמכים. לטבליות אין עקומת רמה. ממיר היחידות האופציונלי עושה
@@ -717,7 +718,7 @@ hi:
     a: Dial iPhone और Apple Watch के लिए GLP-1 दवा ट्रैकर है। डाउनलोड मुफ्त है। Dial
       Pro ग्राफ़, निर्यात और तेज़ दर्ज करना जोड़ता है।
   - q: Dial कौन-सी दवाएँ जानता है?
-    a: "Dial semaglutide, tirzepatide, orforglipron, liraglutide और dulaglutide को आपके देश में चलने वाले नामों के साथ जानता है, जिनमें Rybelsus जैसी गोलियाँ भी शामिल हैं। Exenatide भी दर्ज कर सकते हैं। सूची में न हो तो कस्टम प्रविष्टि जोड़ें।"
+    a: "Dial semaglutide, tirzepatide, liraglutide और dulaglutide को आपके देश में चलने वाले नामों के साथ जानता है, जिनमें Rybelsus जैसी गोलियाँ भी शामिल हैं। Orforglipron और exenatide भी दर्ज कर सकते हैं। सूची में न हो तो कस्टम प्रविष्टि जोड़ें।"
   - q: क्या Dial खुराक की गणना करता है?
     a: Dial खुराक की गणना नहीं करता और अगली खुराक सुझाता भी नहीं। वह वही रखता है जो आप दर्ज करते
       हैं, और समर्थित इंजेक्शन दवाओं के लिए उन प्रविष्टियों से अनुमानित स्तर बना सकता है।
@@ -745,7 +746,7 @@ th:
     a: Dial เป็นแอปติดตามยา GLP-1 สำหรับ iPhone และ Apple Watch ดาวน์โหลดฟรี Dial
       Pro เพิ่มกราฟ การส่งออก และการบันทึกเร็ว
   - q: Dial รองรับยาอะไรบ้าง?
-    a: "Dial รองรับ semaglutide, tirzepatide, orforglipron, liraglutide และ dulaglutide ตามชื่อที่ใช้ในประเทศของคุณ รวมยาเม็ดอย่าง Rybelsus บันทึก exenatide ได้ด้วย แม้ทะเบียนยา exenatide ในไทยจะถูกยกเลิกทั้งหมดแล้ว ถ้ายาคุณไม่อยู่ในรายการ มีช่องให้ใส่ชื่อเอง"
+    a: "Dial รองรับ semaglutide, tirzepatide, liraglutide และ dulaglutide ตามชื่อที่ใช้ในประเทศของคุณ รวมยาเม็ดอย่าง Rybelsus บันทึก orforglipron และ exenatide ได้ด้วย แม้ทะเบียนยา exenatide ในไทยจะถูกยกเลิกทั้งหมดแล้ว ถ้ายาคุณไม่อยู่ในรายการ มีช่องให้ใส่ชื่อเอง"
   - q: Dial คำนวณขนาดยาหรือไม่?
     a: Dial ไม่คำนวณขนาดยาและไม่แนะนำขนาดถัดไป มันเก็บสิ่งที่คุณบันทึก
       และสามารถวาดระดับโดยประมาณจากรายการเหล่านั้นสำหรับยาฉีดที่รองรับ ยาเม็ดไม่มีเส้นระดับ
@@ -770,7 +771,7 @@ vi:
     a: Dial là ứng dụng theo dõi thuốc GLP-1 cho iPhone và Apple Watch. Tải miễn phí.
       Dial Pro thêm biểu đồ, xuất file và ghi nhanh.
   - q: Dial hỗ trợ những thuốc nào?
-    a: "Dial hỗ trợ semaglutide, tirzepatide, orforglipron, liraglutide và dulaglutide theo tên dùng ở nước bạn, kể cả viên nén như Rybelsus. Exenatide cũng ghi được. Thêm mục tùy chỉnh nếu thuốc của bạn không có trong danh sách."
+    a: "Dial hỗ trợ semaglutide, tirzepatide, liraglutide và dulaglutide theo tên dùng ở nước bạn, kể cả viên nén như Rybelsus. Orforglipron và exenatide cũng ghi được. Thêm mục tùy chỉnh nếu thuốc của bạn không có trong danh sách."
   - q: Dial có tính liều không?
     a: Dial không tính liều và không gợi ý liều tiếp theo. Ứng dụng ghi những gì bạn nhập và có
       thể vẽ mức ước tính từ các mục đó cho thuốc tiêm được hỗ trợ. Viên nén không có đường cong
@@ -798,7 +799,7 @@ id:
     a: Dial adalah pelacak obat GLP-1 untuk iPhone dan Apple Watch. Unduh gratis.
       Dial Pro menambah grafik, ekspor, dan pencatatan cepat.
   - q: Obat apa saja yang didukung Dial?
-    a: "Dial mendukung semaglutide, tirzepatide, orforglipron, liraglutide, dan dulaglutide dengan nama yang dipakai di negara Anda, termasuk tablet seperti Rybelsus. Exenatide juga bisa dicatat, meski tidak ada produk exenatide yang terdaftar di BPOM. Tambahkan entri kustom jika obat Anda tidak ada dalam daftar."
+    a: "Dial mendukung semaglutide, tirzepatide, liraglutide, dan dulaglutide dengan nama yang dipakai di negara Anda, termasuk tablet seperti Rybelsus. Orforglipron dan exenatide juga bisa dicatat, meski tidak ada produk exenatide yang terdaftar di BPOM. Tambahkan entri kustom jika obat Anda tidak ada dalam daftar."
   - q: Apakah Dial menghitung dosis?
     a: Dial tidak menghitung dosis dan tidak menyarankan dosis berikutnya. Dial menyimpan yang
       Anda catat dan dapat menampilkan tingkat perkiraan dari entri itu untuk suntikan yang
@@ -828,7 +829,7 @@ ms:
     a: Dial ialah penjejak ubat GLP-1 untuk iPhone dan Apple Watch. Muat turun percuma.
       Dial Pro menambah carta, eksport dan rekod pantas.
   - q: Ubat apa yang disokong Dial?
-    a: "Dial menyokong semaglutide, tirzepatide, orforglipron, liraglutide dan dulaglutide mengikut nama yang digunakan di negara anda, termasuk tablet seperti Rybelsus. Exenatide juga boleh direkod. Tambah entri tersuai jika ubat anda tiada dalam senarai."
+    a: "Dial menyokong semaglutide, tirzepatide, liraglutide dan dulaglutide mengikut nama yang digunakan di negara anda, termasuk tablet seperti Rybelsus. Orforglipron dan exenatide juga boleh direkod. Tambah entri tersuai jika ubat anda tiada dalam senarai."
   - q: Adakah Dial mengira dos?
     a: Dial tidak mengira dos dan tidak mencadangkan dos seterusnya. Dial menyimpan apa yang anda
       rekod dan boleh memaparkan tahap anggaran daripada entri itu untuk suntikan yang disokong.
@@ -856,7 +857,7 @@ ja:
   - q: Dialとは何ですか？
     a: DialはiPhoneとApple Watch向けのGLP-1薬の記録です。ダウンロードは無料です。Dial Proはグラフ、書き出し、クイック記録を追加します。
   - q: Dialはどんな薬に対応していますか？
-    a: "セマグルチド、チルゼパチド、リラグルチド、デュラグルチド、orforglipron（オルフォルグリプロン）を、国内の販売名で記録できます。リベルサスなどの錠剤も含みます。エキセナチドも記録できますが、国内で現在販売されている製品はありません。一覧にない薬は自分で追加できます。"
+    a: "セマグルチド、チルゼパチド、リラグルチド、デュラグルチドを、国内の販売名で記録できます。リベルサスなどの錠剤も含みます。orforglipron（オルフォルグリプロン）とエキセナチドも記録できます。エキセナチドは、国内で現在販売されている製品がありません。一覧にない薬は自分で追加できます。"
   - q: Dialは用量を計算しますか？
     a: Dialは用量を計算せず、次の用量も提案しません。記録した内容を残し、対応する注射薬についてはそこから推定レベルを描けます。錠剤にレベル曲線はありません。任意の単位換算は、入力したmgとmg/mLの値だけの算術です。
   - q: 記録はどこに保存されますか？
@@ -876,7 +877,7 @@ ko:
     a: Dial은 iPhone과 Apple Watch용 GLP-1 약물 기록입니다. 다운로드는 무료입니다. Dial Pro는 그래프, 내보내기,
       빠른 기록을 더합니다.
   - q: Dial은 어떤 약을 지원하나요?
-    a: "세마글루티드, 터제파타이드, 리라글루타이드, 둘라글루타이드, orforglipron(오르포글리프론)을 국내에서 쓰는 제품명으로 기록합니다. 리벨서스 같은 알약도 포함됩니다. 엑세나타이드도 기록할 수 있지만, 국내에 허가된 엑세나타이드 주사제는 없습니다. 목록에 없으면 직접 넣을 수 있습니다."
+    a: "세마글루티드, 터제파타이드, 리라글루타이드, 둘라글루타이드를 국내에서 쓰는 제품명으로 기록합니다. 리벨서스 같은 알약도 포함됩니다. orforglipron(오르포글리프론)과 엑세나타이드도 기록할 수 있습니다. 국내에 허가된 엑세나타이드 주사제는 없습니다. 목록에 없으면 직접 넣을 수 있습니다."
   - q: Dial은 용량을 계산하나요?
     a: Dial은 용량을 계산하지 않으며 다음 용량도 제안하지 않습니다. 남긴 내용을 기록하고, 지원되는 주사제에 한해 그 항목으로 추정 수준을 그릴 수 있습니다.
       알약에는 수준 곡선이 없습니다. 선택적 단위 변환기는 입력한 mg과 mg/mL 값으로만 산술합니다.
@@ -898,7 +899,7 @@ zh:
   - q: Dial 是什么？
     a: Dial 是面向 iPhone 和 Apple Watch 的 GLP-1 用药记录。下载免费。Dial Pro 增加图表、导出和快速记录。
   - q: Dial 支持哪些药物？
-    a: "支持司美格鲁肽、替尔泊肽、利拉鲁肽、度拉糖肽和 orforglipron，按所在地区常用名称收录，也包括瑞倍适等片剂。艾塞那肽也能记录。列表里没有的药可以自己输入。"
+    a: "支持司美格鲁肽、替尔泊肽、利拉鲁肽和度拉糖肽，按所在地区常用名称收录，也包括瑞倍适等片剂。orforglipron 和艾塞那肽也能记录。列表里没有的药可以自己输入。"
   - q: Dial 会计算剂量吗？
     a: Dial 不会计算剂量，也不建议下一剂。它保存你记下的内容，并可为支持的注射剂据此画出估计水平。片剂没有水平曲线。可选单位换算器只对你输入的 mg 和 mg/mL 做算术。
   - q: 我的记录存在哪里？
@@ -918,7 +919,7 @@ zh-hant:
   - q: Dial 是什麼？
     a: Dial 是 iPhone 和 Apple Watch 上的 GLP-1 用藥紀錄。下載免費。Dial Pro 增加圖表、匯出和快速記錄。
   - q: Dial 支援哪些藥物？
-    a: 支援司美格魯肽、替爾泊肽、利拉魯肽、度拉糖肽和 orforglipron，依所在地區常用品名收錄，也包括瑞倍適等錠劑。艾塞那肽也能記錄，不過它在台灣的藥品許可證都已註銷。清單裡沒有的藥可以自己輸入。
+    a: 支援司美格魯肽、替爾泊肽、利拉魯肽和度拉糖肽，依所在地區常用品名收錄，也包括瑞倍適等錠劑。orforglipron 和艾塞那肽也能記錄，不過艾塞那肽在台灣的藥品許可證都已註銷。清單裡沒有的藥可以自己輸入。
   - q: Dial 會計算劑量嗎？
     a: Dial 不會計算劑量，也不建議下一劑。它保存你記下的內容，並可為支援的注射劑據此繪出估計水平。錠劑沒有水平曲線。可選單位換算器只對你輸入的 mg 和 mg/mL 做算術。
   - q: 我的紀錄存在哪裡？
