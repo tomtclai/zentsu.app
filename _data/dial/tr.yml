@@ -48,7 +48,7 @@ hero:
   headline_lead: "Her dozun özel kaydı."
   headline_accent: ""
   category: "Dial, iPhone ve Apple Watch için bir GLP-1 ilaç kaydıdır."
-  quick_answer: "Dial, GLP-1 enjeksiyonlarını ve tabletlerini kaydeder: Ozempic, Wegovy, Rybelsus, Mounjaro, Zepbound ve reçeteyle aldığınız magistral semaglutid veya tirzepatid dahil. Her kayıt dozu, saati, enjeksiyon yerini, kiloyu ve yan etkileri saklar. Telefon kaydı ücretsizdir, hesap gerekmez. Dial Pro tahmini düzey grafiği, Apple Watch ile kayıt ve PDF veya CSV dışa aktarma ekler."
+  quick_answer: "Dial, GLP-1 enjeksiyonlarını ve tabletlerini kaydeder: Ozempic, Wegovy, Rybelsus, Mounjaro ve reçeteyle aldığınız magistral semaglutid veya tirzepatid dahil. Her kayıt dozu, saati, enjeksiyon yerini, kiloyu ve yan etkileri saklar. Telefon kaydı ücretsizdir, hesap gerekmez. Dial Pro tahmini düzey grafiği, Apple Watch ile kayıt ve PDF veya CSV dışa aktarma ekler."
   detail: "İlaç kayıtları kendi iCloud'unuz üzerinden senkronize olabilir. Kilo ve ilerleme fotoğrafları cihazda kalır."
   free_line: Ücretsiz indir, hesap açmana gerek yok. Doz kaydının sınırı yok.
   secondary_cta: "Dial nasıl çalışır"
@@ -72,7 +72,7 @@ proof:
 level:
   kicker: "Dial Pro · Tahmini düzey"
   heading: "Dozlar arasında tahmini düzeyi gör, yarı ömre göre."
-  body: "Dial, kaydettiğiniz dozlardan ve uygulamada gösterilen yarı ömürden, Ozempic, Wegovy, Mounjaro ve Zepbound gibi desteklenen enjekte edilebilir ilaçlar için tahmini bir düzey çizer. Rybelsus gibi tabletlerin düzey grafiği yoktur: ağızdan emilim insanlar arasında fazla değişir. Bir hafta, bir ay veya altı aylık enjeksiyon geçmişine bakın."
+  body: "Dial, kaydettiğiniz dozlardan ve uygulamada gösterilen yarı ömürden, Ozempic, Wegovy ve Mounjaro gibi desteklenen enjekte edilebilir ilaçlar için tahmini bir düzey çizer. Rybelsus gibi tabletlerin düzey grafiği yoktur: ağızdan emilim insanlar arasında fazla değişir. Bir hafta, bir ay veya altı aylık enjeksiyon geçmişine bakın."
   boundary_lead: "Bu bir tahmin. Bunu açıkça söylüyoruz."
   boundary_body: "Grafik, kaydettiğiniz semaglutid veya tirzepatid dozlarından standart bir azalma eğrisi çizer. Dozlar arasındaki kendi örüntülerinizi gösterir. Ölçülmüş bir kan düzeyi değildir, bir tahmindir. Uygulama yöntemi baştan sona açıklar."
 
@@ -84,7 +84,7 @@ boundary:
 logging:
   kicker: "Hızlı kayıt"
   heading: "İlacı, dozu ve enjeksiyon yerini tek formda kaydet."
-  body: "İlaç, miktar, tarih, saat ve notları yazın. Ozempic, Wegovy, Mounjaro ve Zepbound gibi enjeksiyonlara enjeksiyon yeri eklenir. Rybelsus gibi tabletler yer olmadan kaydedilir. Dial semaglutid, tirzepatid, liraglutid, dulaglutid ve eksenatidi ülkenizdeki kutu adlarıyla listeler. Orforglipron ile reçeteyle aldığınız magistral semaglutid veya tirzepatid flakonu da kaydedilir. İlacınız yoksa özel bir ilaç ekleyin."
+  body: "İlaç, miktar, tarih, saat ve notları yazın. Ozempic, Wegovy ve Mounjaro gibi enjeksiyonlara enjeksiyon yeri eklenir. Rybelsus gibi tabletler yer olmadan kaydedilir. Dial semaglutid, tirzepatid, liraglutid, dulaglutid ve eksenatidi ülkenizdeki kutu adlarıyla listeler. Orforglipron ile reçeteyle aldığınız magistral semaglutid veya tirzepatid flakonu da kaydedilir. İlacınız yoksa özel bir ilaç ekleyin."
   checklist:
     - "Bir şey değişince kaydı düzenleyin"
     - "Her dozun enjeksiyon yerini kaydedin"

@@ -72,9 +72,9 @@ proof:
 level:
   kicker: "Dial Pro · Becsült szint"
   heading: "Nézd a becsült szintet az adagok között, a felezési idő alapján."
-  body: "A Dial a rögzített adagokból és az alkalmazásban látható felezési időből rajzol becsült szintet a támogatott injekciós készítményekhez, így az Ozempic, Wegovy, Mounjaro és Zepbound készítményekhez. A Rybelsushoz hasonló tablettáknak nincs szintgrafikonjuk: a szájon át történő felszívódás emberek között túlzottan eltér. Nézze meg egy hét, egy hónap vagy hat hónap injekciós előzményét."
+  body: "A Dial a rögzített adagokból és az alkalmazásban látható felezési időből rajzol becsült szintet a támogatott injekciós készítményekhez, így az Ozempic, a Wegovy és a Mounjaro készítményekhez. A Rybelsushoz hasonló tablettáknak nincs szintgrafikonjuk: a szájon át történő felszívódás emberek között túlzottan eltér. Nézd meg egy hét, egy hónap vagy hat hónap injekciós előzményét."
   boundary_lead: "Ez becslés, és ezt jelezzük is."
-  boundary_body: "A grafikon standard lecsengési görbét modellez a rögzített szemaglutid- vagy tirzepatid-adagokból. Az adagok között a saját mintázatait mutatja. Nem mért vérszint. Az alkalmazás részletesen elmagyarázza a módszert."
+  boundary_body: "A grafikon standard lecsengési görbét modellez a rögzített szemaglutid- vagy tirzepatid-adagokból. Az adagok között a saját mintázataidat mutatja. Nem mért vérszint. Az alkalmazás részletesen elmagyarázza a módszert."
 
 boundary:
   kicker: "Amit a Dial nem tesz"
@@ -84,11 +84,11 @@ boundary:
 logging:
   kicker: "Gyors rögzítés"
   heading: "Rögzítsd a gyógyszert, az adagot és az injekcióhelyet egy űrlapon."
-  body: "Írja be a gyógyszert, mennyiséget, dátumot, időt és a jegyzeteket. Az Ozempic, Wegovy, Mounjaro és Zepbound készítményekhez hasonló injekcióknál a hely is szerepel. A Rybelsushoz hasonló tabletták hely nélkül rögzülnek. A Dial a szemaglutidot, tirzepatidot, liraglutidot és dulaglutidot a Magyarországon használt márkanéven listázza. Az exenatidot és a felírt, gyógyszertári szemaglutidot vagy tirzepatidot tartalmazó injekciós üvegből származó készítményt is rögzíti. Ha hiányzik a tiéd, adj hozzá egyénit."
+  body: "Írd be a gyógyszert, a mennyiséget, a dátumot, az időt és a jegyzeteidet. Az Ozempichez, a Wegovyhoz és a Mounjaróhoz hasonló injekcióknál a beadás helye is szerepel. A Rybelsushoz hasonló tabletták hely nélkül rögzülnek. A Dial a szemaglutidot, tirzepatidot, liraglutidot és dulaglutidot a Magyarországon használt márkanéven listázza. Az exenatidot és a felírt, gyógyszertári szemaglutidot vagy tirzepatidot tartalmazó injekciós üvegből származó készítményt is rögzíti. Ha a gyógyszered nincs a listán, adj hozzá egyénit."
   checklist:
-    - "Szerkesszen bejegyzést, ha valami változik"
-    - "Írja az injekcióhelyet minden adaghoz"
-    - "Írja a testsúlyt az adagok idővonala mellé"
+    - "Szerkessz bejegyzést, ha valami változik"
+    - "Írd az injekcióhelyet minden adaghoz"
+    - "Írd a testsúlyt az adagok idővonala mellé"
 
 history:
   kicker: "Dial Pro · Előzmények és trendek"

@@ -48,7 +48,7 @@ hero:
   headline_lead: "Catatan pribadi setiap dosis."
   headline_accent: ""
   category: "Dial adalah pelacak obat GLP-1 untuk iPhone dan Apple Watch."
-  quick_answer: "Dial mencatat suntikan dan tablet GLP-1, termasuk Ozempic, Wegovy, Rybelsus, Mounjaro, dan Zepbound, serta semaglutide atau tirzepatide racikan dari resep. Setiap entri menyimpan dosis, waktu, lokasi suntikan, berat, dan efek samping. Pencatatan di ponsel gratis tanpa perlu akun. Dial Pro menambah grafik tingkat perkiraan, pencatatan dari Apple Watch, dan ekspor PDF atau CSV."
+  quick_answer: "Dial mencatat suntikan dan tablet GLP-1, termasuk Ozempic, Wegovy, Rybelsus, dan Mounjaro, serta semaglutide atau tirzepatide racikan dari resep. Setiap entri menyimpan dosis, waktu, lokasi suntikan, berat, dan efek samping. Pencatatan di ponsel gratis tanpa perlu akun. Dial Pro menambah grafik tingkat perkiraan, pencatatan dari Apple Watch, dan ekspor PDF atau CSV."
   detail: "Catatan obat dapat disinkronkan lewat iCloud Anda sendiri. Berat dan foto perkembangan tetap di perangkat."
   free_line: Unduh gratis, tanpa perlu membuat akun. Catatan dosis tidak dibatasi.
   secondary_cta: "Cara kerja Dial"
@@ -72,7 +72,7 @@ proof:
 level:
   kicker: "Dial Pro · Tingkat perkiraan"
   heading: "Lihat tingkat perkiraan antar dosis, berdasarkan waktu paruh."
-  body: "Dial menampilkan tingkat perkiraan dari dosis tercatat dan waktu paruh di aplikasi, untuk obat suntik yang didukung seperti Ozempic, Wegovy, Mounjaro, dan Zepbound. Tablet seperti Rybelsus tidak punya grafik tingkat: penyerapan oral terlalu berbeda antarorang. Tinjau riwayat suntikan satu minggu, satu bulan, atau enam bulan."
+  body: "Dial menampilkan tingkat perkiraan dari dosis tercatat dan waktu paruh di aplikasi, untuk obat suntik yang didukung seperti Ozempic, Wegovy, dan Mounjaro. Tablet seperti Rybelsus tidak punya grafik tingkat: penyerapan oral terlalu berbeda antarorang. Tinjau riwayat suntikan satu minggu, satu bulan, atau enam bulan."
   boundary_lead: "Ini perkiraan. Kami sampaikan itu."
   boundary_body: "Grafik memodelkan kurva peluruhan standar dari dosis semaglutide atau tirzepatide yang Anda catat. Yang tampil adalah pola Anda sendiri antar dosis. Ini perkiraan, bukan kadar darah terukur. Aplikasi menjelaskan metodenya secara lengkap."
 
@@ -84,7 +84,7 @@ boundary:
 logging:
   kicker: "Pencatatan cepat"
   heading: "Catat obat, dosis, dan lokasi suntikan dalam satu formulir."
-  body: "Catat obat, jumlah, tanggal, waktu, dan catatan. Suntikan seperti Ozempic, Wegovy, Mounjaro, dan Zepbound menyertakan lokasi. Tablet seperti Rybelsus dicatat tanpa lokasi. Dial mencantumkan semaglutide, tirzepatide, liraglutide, dan dulaglutide dengan nama merek di wilayah Anda. Orforglipron, exenatide, serta semaglutide atau tirzepatide racikan dari resep dalam vial juga bisa dicatat. Tambahkan obat kustom jika milik Anda hilang."
+  body: "Catat obat, jumlah, tanggal, waktu, dan catatan. Suntikan seperti Ozempic, Wegovy, dan Mounjaro menyertakan lokasi. Tablet seperti Rybelsus dicatat tanpa lokasi. Dial mencantumkan semaglutide, tirzepatide, liraglutide, dan dulaglutide dengan nama merek di wilayah Anda. Orforglipron, exenatide, serta semaglutide atau tirzepatide racikan dari resep dalam vial juga bisa dicatat. Tambahkan obat kustom jika obat Anda tidak ada dalam daftar."
   checklist:
     - "Sunting entri ketika sesuatu berubah"
     - "Simpan lokasi suntikan di setiap dosis"

@@ -48,7 +48,7 @@ hero:
   headline_lead: "Rekod peribadi setiap dos."
   headline_accent: ""
   category: "Dial ialah penjejak ubat GLP-1 untuk iPhone dan Apple Watch."
-  quick_answer: "Dial merekod suntikan dan tablet GLP-1, termasuk Ozempic, Wegovy, Rybelsus, Mounjaro, Zepbound serta semaglutide atau tirzepatide tercampur yang dipreskripsikan. Setiap entri menyimpan dos, masa, tapak suntikan, berat dan kesan sampingan. Log pada telefon percuma, tanpa akaun. Dial Pro menambah carta tahap anggaran, rekod pada Apple Watch dan eksport PDF atau CSV."
+  quick_answer: "Dial merekod suntikan dan tablet GLP-1, termasuk Ozempic, Wegovy, Rybelsus, Mounjaro serta semaglutide atau tirzepatide tercampur yang dipreskripsikan. Setiap entri menyimpan dos, masa, tapak suntikan, berat dan kesan sampingan. Log pada telefon percuma, tanpa akaun. Dial Pro menambah carta tahap anggaran, rekod pada Apple Watch dan eksport PDF atau CSV."
   detail: "Rekod ubat boleh disegerakkan melalui iCloud anda sendiri. Berat dan foto perkembangan kekal pada peranti."
   free_line: Muat turun percuma, tanpa perlu membuat akaun. Log dos tiada had.
   secondary_cta: "Cara Dial berfungsi"
@@ -72,7 +72,7 @@ proof:
 level:
   kicker: "Dial Pro · Tahap anggaran"
   heading: "Lihat tahap anggaran antara dos, berdasarkan separuh hayat."
-  body: "Dial memaparkan tahap anggaran daripada dos yang direkod dan separuh hayat dalam apl, untuk ubat suntikan yang disokong seperti Ozempic, Wegovy, Mounjaro dan Zepbound. Tablet seperti Rybelsus tiada carta tahap: penyerapan oral terlalu berbeza antara orang. Semak sejarah suntikan seminggu, sebulan atau enam bulan."
+  body: "Dial memaparkan tahap anggaran daripada dos yang direkod dan separuh hayat dalam apl, untuk ubat suntikan yang disokong seperti Ozempic, Wegovy dan Mounjaro. Tablet seperti Rybelsus tiada carta tahap: penyerapan oral terlalu berbeza antara orang. Semak sejarah suntikan seminggu, sebulan atau enam bulan."
   boundary_lead: "Ini anggaran. Kami nyatakan dengan jelas."
   boundary_body: "Carta memodelkan lengkung penurunan piawai daripada dos yang anda rekod. Yang kelihatan ialah corak anda sendiri antara dos. Ini anggaran, bukan tahap darah yang diukur. Aplikasi menjelaskan kaedahnya sepenuhnya."
 
@@ -84,7 +84,7 @@ boundary:
 logging:
   kicker: "Rekod pantas"
   heading: "Rekod ubat, dos dan tapak suntikan dalam satu borang."
-  body: "Rekod ubat, jumlah, tarikh, masa dan nota. Suntikan seperti Ozempic, Wegovy, Mounjaro dan Zepbound disertakan tapak. Tablet seperti Rybelsus direkod tanpa tapak. Dial menyenaraikan semaglutide, tirzepatide, liraglutide dan dulaglutide mengikut nama jenama serantau. Orforglipron, exenatide serta semaglutide atau tirzepatide tercampur yang dipreskripsikan daripada vial juga boleh direkod. Tambah ubat tersuai jika milik anda tiada."
+  body: "Rekod ubat, jumlah, tarikh, masa dan nota. Suntikan seperti Ozempic, Wegovy dan Mounjaro disertakan tapak. Tablet seperti Rybelsus direkod tanpa tapak. Dial menyenaraikan semaglutide, tirzepatide, liraglutide dan dulaglutide mengikut nama jenama serantau. Orforglipron, exenatide serta semaglutide atau tirzepatide tercampur yang dipreskripsikan daripada vial juga boleh direkod. Tambah ubat tersuai jika ubat anda tiada dalam senarai."
   checklist:
     - "Edit entri apabila sesuatu berubah"
     - "Simpan tapak suntikan pada setiap dos"

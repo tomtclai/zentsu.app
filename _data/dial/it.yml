@@ -106,11 +106,11 @@ boundary:
 logging:
   kicker: Registrazione rapida
   heading: Registra farmaco, dose e sito di iniezione in un solo modulo.
-  body: "Annota farmaco, quantità, data, ora e note. Le iniezioni come Ozempic, Wegovy e Mounjaro includono il sito. Le compresse come Rybelsus si registrano senza sito. Dial elenca semaglutide, tirzepatide, liraglutide e dulaglutide con i nomi di marca usati in Italia. Si possono registrare anche orforglipron, exenatide e semaglutide o tirzepatide galeniche prescritte in fiale. Aggiunga un farmaco personalizzato se manca il suo."
+  body: "Annota farmaco, quantità, data, ora e note. Le iniezioni come Ozempic, Wegovy e Mounjaro includono il sito. Le compresse come Rybelsus si registrano senza sito. Dial elenca semaglutide, tirzepatide, liraglutide e dulaglutide con i nomi di marca usati in Italia. Si possono registrare anche orforglipron, exenatide e semaglutide o tirzepatide galeniche prescritte in fiale. Aggiungi un farmaco personalizzato se il tuo non c'è."
   checklist:
-    - Modifichi una voce quando qualcosa cambia
-    - Tenga i siti di iniezione collegati a ogni dose
-    - Tenga le voci di peso accanto alla linea temporale delle dosi
+    - Modifica una voce quando qualcosa cambia
+    - Tieni i siti di iniezione collegati a ogni dose
+    - Tieni le voci di peso accanto alla linea temporale delle dosi
 
 history:
   kicker: Dial Pro · Cronologia e tendenze

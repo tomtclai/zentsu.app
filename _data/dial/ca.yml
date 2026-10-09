@@ -48,7 +48,7 @@ hero:
   headline_lead: "Un registre privat de cada dosi."
   headline_accent: ""
   category: "Dial és un registre de medicació GLP-1 per a iPhone i Apple Watch."
-  quick_answer: "Dial registra injeccions i comprimits GLP-1, com Ozempic, Wegovy, Rybelsus, Mounjaro, Zepbound i la semaglutida o tirzepatida composta que li han prescrit. Cada entrada guarda la dosi, l’hora, el lloc d’injecció, el pes i els efectes secundaris. El registre al telèfon és gratuït i no cal cap compte. Dial Pro afegeix el gràfic de nivell estimat, el registre des de l’Apple Watch i l’exportació a PDF o CSV."
+  quick_answer: "Dial registra injeccions i comprimits GLP-1, com Ozempic, Wegovy, Rybelsus, Mounjaro i la semaglutida o tirzepatida composta que li han prescrit. Cada entrada guarda la dosi, l’hora, el lloc d’injecció, el pes i els efectes secundaris. El registre al telèfon és gratuït i no cal cap compte. Dial Pro afegeix el gràfic de nivell estimat, el registre des de l’Apple Watch i l’exportació a PDF o CSV."
   detail: "Els registres de medicació es poden sincronitzar amb el teu iCloud. El pes i les fotos de progrés queden al dispositiu."
   free_line: Descàrrega gratuïta, sense cap compte a crear. El registre de dosis no té límit.
   secondary_cta: "Mira com funciona Dial"
@@ -72,7 +72,7 @@ proof:
 level:
   kicker: "Dial Pro · Nivell estimat"
   heading: "Mira un nivell estimat entre dosis, segons la semivida."
-  body: "Dial traça un nivell estimat a partir de les dosis registrades i de la semivida que mostra l’app, per a injectables compatibles com Ozempic, Wegovy, Mounjaro i Zepbound. Els comprimits com el Rybelsus no tenen gràfic de nivell: l’absorció oral varia massa entre persones. Revisi una setmana, un mes o sis mesos d’injeccions."
+  body: "Dial traça un nivell estimat a partir de les dosis registrades i de la semivida que mostra l’app, per a injectables compatibles com Ozempic, Wegovy i Mounjaro. Els comprimits com el Rybelsus no tenen gràfic de nivell: l’absorció oral varia massa entre persones. Revisi una setmana, un mes o sis mesos d’injeccions."
   boundary_lead: "És una estimació, i ho deixem clar."
   boundary_body: "El gràfic modela una corba de disminució estàndard a partir de les dosis de semaglutida o tirzepatida que ha registrat. Mostra els seus patrons entre dosis. És una estimació, no un nivell mesurat a la sang. L’app explica el mètode sencer."
 
@@ -84,7 +84,7 @@ boundary:
 logging:
   kicker: "Registre ràpid"
   heading: "Registra el medicament, la dosi i el lloc d’injecció en un sol formulari."
-  body: "Anota medicament, quantitat, data, hora i notes. Les injeccions com Ozempic, Wegovy, Mounjaro i Zepbound inclouen el lloc. Els comprimits com el Rybelsus es registren sense lloc. Dial inclou semaglutida, tirzepatida, orforglipron, liraglutida, dulaglutida i exenatida, la semaglutida o tirzepatida composta que li han prescrit en vial, i un medicament personalitzat si la seva recepta no hi surt."
+  body: "Anota medicament, quantitat, data, hora i notes. Les injeccions com Ozempic, Wegovy i Mounjaro inclouen el lloc. Els comprimits com el Rybelsus es registren sense lloc. Dial inclou semaglutida, tirzepatida, orforglipron, liraglutida, dulaglutida i exenatida, la semaglutida o tirzepatida composta que li han prescrit en vial, i un medicament personalitzat si la seva recepta no hi surt."
   checklist:
     - "Editi una entrada quan alguna cosa canvia"
     - "Anoti el lloc d’injecció a cada dosi"

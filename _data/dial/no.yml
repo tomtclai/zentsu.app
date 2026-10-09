@@ -72,7 +72,7 @@ proof:
 level:
   kicker: "Dial Pro · Estimert nivå"
   heading: "Se et estimert nivå mellom dosene, ut fra halveringstiden."
-  body: "Dial tegner et estimert nivå ut fra dosene du har ført og halveringstiden appen viser, for støttede injiserbare preparater som Ozempic, Wegovy, Mounjaro og Zepbound. Tabletter som Rybelsus får ingen nivågraf: opptaket via munnen varierer for mye mellom mennesker. Se en uke, en måned eller seks måneder av injeksjonshistorikken."
+  body: "Dial tegner et estimert nivå ut fra dosene du har ført og halveringstiden appen viser, for støttede injiserbare preparater som Ozempic, Wegovy og Mounjaro. Tabletter som Rybelsus får ingen nivågraf: opptaket via munnen varierer for mye mellom mennesker. Se en uke, en måned eller seks måneder av injeksjonshistorikken."
   boundary_lead: "Vi kaller det et anslag."
   boundary_body: "Grafen følger en vanlig nedbrytningskurve ut fra semaglutid- eller tirzepatiddosene du har ført. Den viser dine egne mønstre mellom doser. Det er et anslag, ikke et målt blodnivå. Appen forklarer hele metoden."
 
@@ -84,7 +84,7 @@ boundary:
 logging:
   kicker: "Rask føring"
   heading: "Før legemiddel, dose og injeksjonssted i ett skjema."
-  body: "Før legemiddel, mengde, dato, tid og notater. Injeksjoner som Ozempic, Wegovy, Mounjaro og Zepbound inkluderer et sted. Tabletter som Rybelsus føres uten sted. Dial viser semaglutid, tirzepatid, liraglutid og dulaglutid under de merkenavnene som brukes i Norge. Du kan også føre orforglipron, eksenatid og forskrevet semaglutid eller tirzepatid fra hetteglass. Legg til et eget legemiddel hvis ditt mangler."
+  body: "Før legemiddel, mengde, dato, tid og notater. Ved injeksjoner som Ozempic, Wegovy og Mounjaro fører du også injeksjonsstedet. Tabletter som Rybelsus føres uten sted. Dial viser semaglutid, tirzepatid, liraglutid og dulaglutid under de merkenavnene som brukes i Norge. Du kan også føre orforglipron, eksenatid og forskrevet semaglutid eller tirzepatid fra hetteglass. Legg til et eget legemiddel hvis ditt mangler."
   checklist:
     - "Rediger en post når noe endrer seg"
     - "Injeksjonsstedet følger hver dose"

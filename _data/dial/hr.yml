@@ -72,7 +72,7 @@ proof:
 level:
   kicker: "Dial Pro · Procijenjena razina"
   heading: "Procijenjena razina između doza prema poluživotu."
-  body: "Dial crta procijenjenu razinu iz unesenih doza i poluživota prikazanog u aplikaciji, za podržane injekcijske lijekove poput Ozempica, Wegovyja, Mounjara i Zepbounda. Tablete poput Rybelsusa nemaju grafikon razine: oralna apsorpcija previše varira među ljudima. Pregledaj tjedan, mjesec ili šest mjeseci povijesti injekcija."
+  body: "Dial crta procijenjenu razinu iz unesenih doza i poluživota prikazanog u aplikaciji, za podržane injekcijske lijekove poput Ozempica, Wegovyja i Mounjara. Tablete poput Rybelsusa nemaju grafikon razine: oralna apsorpcija previše varira među ljudima. Pregledaj tjedan, mjesec ili šest mjeseci povijesti injekcija."
   boundary_lead: "To je procjena. Tako i pišemo."
   boundary_body: "Grafikon modelira standardnu krivulju opadanja iz semaglutida ili tirzepatida koje ste unijeli. Pokazuje vaše obrasce između doza. To je procjena, ne izmjerena razina u krvi. Aplikacija metodu objašnjava u cijelosti."
 
@@ -84,7 +84,7 @@ boundary:
 logging:
   kicker: "Brzi unos"
   heading: "Zabilježi lijek, dozu i mjesto injekcije u jednom obrascu."
-  body: "Zapiši lijek, količinu, datum, vrijeme i bilješke. Injekcije poput Ozempica, Wegovyja, Mounjara i Zepbounda uključuju mjesto. Tablete poput Rybelsusa bilježe se bez mjesta. Dial navodi semaglutid, tirzepatid, liraglutid i dulaglutid pod regionalnim nazivima. Možeš bilježiti i orforglipron, eksenatid te propisani magistralni semaglutid ili tirzepatid iz bočice. Dodaj vlastiti lijek ako nedostaje."
+  body: "Zapiši lijek, količinu, datum, vrijeme i bilješke. Kod injekcija poput Ozempica, Wegovyja i Mounjara bilježi se i mjesto. Tablete poput Rybelsusa bilježe se bez mjesta. Dial navodi semaglutid, tirzepatid, liraglutid i dulaglutid pod regionalnim nazivima. Možeš bilježiti i orforglipron, eksenatid te propisani magistralni semaglutid ili tirzepatid iz bočice. Dodaj vlastiti lijek ako nedostaje."
   checklist:
     - "Uredite unos kad se nešto promijeni"
     - "Mjesta injekcije ostaju uz svaku dozu"

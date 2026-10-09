@@ -72,7 +72,7 @@ proof:
 level:
   kicker: "Dial Pro · Uppskattad nivå"
   heading: "Se en uppskattad nivå mellan doserna, utifrån halveringstiden."
-  body: "Dial ritar en uppskattad nivå från dina registrerade doser och halveringstiden appen visar, för stödda injektionsläkemedel som Ozempic, Wegovy, Mounjaro och Zepbound. Tabletter som Rybelsus har ingen nivågraf: upptaget via munnen varierar för mycket mellan människor. Se en vecka, en månad eller sex månader av injektionshistoriken."
+  body: "Dial ritar en uppskattad nivå från dina registrerade doser och halveringstiden appen visar, för stödda injektionsläkemedel som Ozempic, Wegovy och Mounjaro. Tabletter som Rybelsus har ingen nivågraf: upptaget via munnen varierar för mycket mellan människor. Se en vecka, en månad eller sex månader av injektionshistoriken."
   boundary_lead: "Vi kallar den en uppskattning."
   boundary_body: "Diagrammet modellerar en vanlig avklingningskurva från dina registrerade doser av semaglutid eller tirzepatid. Det visar dina egna mönster mellan doser. Det är en uppskattning, inte en uppmätt blodnivå. Appen förklarar hela metoden."
 
@@ -84,7 +84,7 @@ boundary:
 logging:
   kicker: "Snabb registrering"
   heading: "Registrera läkemedel, dos och injektionsställe i ett formulär."
-  body: "Anteckna läkemedel, mängd, datum, tid och anteckningar. Injektioner som Ozempic, Wegovy, Mounjaro och Zepbound registrerar även ett ställe. Tabletter som Rybelsus loggas utan ställe. Dial listar semaglutid, tirzepatid, liraglutid och dulaglutid under de varumärkesnamn som används i Sverige. Du kan också logga exenatid och semaglutid eller tirzepatid från injektionsflaska på recept. Lägg till ett eget läkemedel om ditt saknas."
+  body: "Anteckna läkemedel, mängd, datum, tid och anteckningar. För injektioner som Ozempic, Wegovy och Mounjaro registrerar du även injektionsstället. Tabletter som Rybelsus loggas utan ställe. Dial listar semaglutid, tirzepatid, liraglutid och dulaglutid under de varumärkesnamn som används i Sverige. Du kan också logga exenatid och semaglutid eller tirzepatid från injektionsflaska på recept. Lägg till ett eget läkemedel om ditt saknas."
   checklist:
     - "Redigera en post när något ändras"
     - "Behåll injektionsställen kopplade till varje dos"

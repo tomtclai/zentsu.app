@@ -72,7 +72,7 @@ proof:
 level:
   kicker: "Dial Pro · Odhadovaná hladina"
   heading: "Odhadovaná hladina medzi dávkami podľa polčasu."
-  body: "Dial vykreslí odhadovanú hladinu zo zaznamenaných dávok a polčasu v aplikácii, pre podporované injekčné lieky ako Ozempic, Wegovy, Mounjaro a Zepbound. Tablety ako Rybelsus nemajú graf hladiny: vstrebávanie ústami sa medzi ľuďmi príliš líši. Prezri týždeň, mesiac alebo šesť mesiacov histórie injekcií."
+  body: "Dial vykreslí odhadovanú hladinu zo zaznamenaných dávok a polčasu v aplikácii, pre podporované injekčné lieky ako Ozempic, Wegovy a Mounjaro. Tablety ako Rybelsus nemajú graf hladiny: vstrebávanie ústami sa medzi ľuďmi príliš líši. Prezri týždeň, mesiac alebo šesť mesiacov histórie injekcií."
   boundary_lead: "Je to odhad. Tak ho aj označujeme."
   boundary_body: "Graf modeluje štandardnú krivku poklesu z dávok semaglutidu alebo tirzepatidu, ktoré ste zaznamenali. Ukazuje, ako u vás dávky v čase prebiehajú. Nie je to nameraná hladina v krvi. Metódu vysvetľuje Dial priamo v aplikácii."
 
@@ -84,7 +84,7 @@ boundary:
 logging:
   kicker: "Rýchly záznam"
   heading: "Zapíš liek, dávku a miesto vpichu v jednom formulári."
-  body: "Zapíš liek, množstvo, dátum, čas a poznámky. Pri injekciách ako Ozempic, Wegovy, Mounjaro a Zepbound patrí aj miesto vpichu. Tablety ako Rybelsus sa zapisujú bez miesta. Dial uvádza semaglutid, tirzepatid, liraglutid a dulaglutid s obchodnými názvami používanými na Slovensku. Zapíšeš aj exenatid a predpísaný, v lekárni pripravený semaglutid alebo tirzepatid z liekovky. Ak chýba tvoj liek, pridaj vlastný."
+  body: "Zapíš liek, množstvo, dátum, čas a poznámky. Pri injekciách ako Ozempic, Wegovy a Mounjaro patrí aj miesto vpichu. Tablety ako Rybelsus sa zapisujú bez miesta. Dial uvádza semaglutid, tirzepatid, liraglutid a dulaglutid s obchodnými názvami používanými na Slovensku. Zapíšeš aj exenatid a predpísaný, v lekárni pripravený semaglutid alebo tirzepatid z liekovky. Ak chýba tvoj liek, pridaj vlastný."
   checklist:
     - "Upraviť záznam, keď sa niečo zmení"
     - "Miesto vpichu pri každej dávke"

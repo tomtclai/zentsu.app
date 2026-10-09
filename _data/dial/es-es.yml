@@ -65,7 +65,7 @@ hero:
   headline_lead: "Tu historial de GLP-1 para la consulta."
   headline_accent: ""
   category: "Dial es tu diario de Ozempic, Wegovy y otros GLP-1 en el iPhone."
-  quick_answer: "Dial registra inyecciones y comprimidos de GLP-1, como Ozempic, Wegovy, Rybelsus, Mounjaro, Zepbound y semaglutida o tirzepatida de formulación magistral con receta. Cada entrada guarda la dosis, la hora, la zona de inyección, el peso y los efectos secundarios. El registro en el iPhone es gratis y sin cuenta. Dial Pro añade la gráfica de nivel estimado, el registro en Apple Watch y la exportación a PDF o CSV."
+  quick_answer: "Dial registra inyecciones y comprimidos de GLP-1, como Ozempic, Wegovy, Rybelsus, Mounjaro y semaglutida o tirzepatida de formulación magistral con receta. Cada entrada guarda la dosis, la hora, la zona de inyección, el peso y los efectos secundarios. El registro en el iPhone es gratis y sin cuenta. Dial Pro añade la gráfica de nivel estimado, el registro en Apple Watch y la exportación a PDF o CSV."
   detail: "La medicación puede sincronizarse con tu iCloud. El peso y las fotos se quedan en el dispositivo."
   free_line: "Descarga gratis, sin cuenta. Un medicamento y un recordatorio, con dosis ilimitadas."
   secondary_cta: Consulta cómo funciona Dial
@@ -89,7 +89,7 @@ proof:
 level:
   kicker: Dial Pro · Nivel estimado
   heading: Mira un nivel estimado entre dosis, según la vida media.
-  body: "Dial dibuja un nivel estimado a partir de tus dosis registradas y de la semivida indicada en la app, para inyectables compatibles como Ozempic, Wegovy, Mounjaro y Zepbound. Los comprimidos como Rybelsus no tienen gráfica: la proporción que llega a la sangre varía demasiado entre personas. Consulta una semana, un mes o seis meses de historial de inyecciones."
+  body: "Dial dibuja un nivel estimado a partir de tus dosis registradas y de la semivida indicada en la app, para inyectables compatibles como Ozempic, Wegovy y Mounjaro. Los comprimidos como Rybelsus no tienen gráfica: la proporción que llega a la sangre varía demasiado entre personas. Consulta una semana, un mes o seis meses de historial de inyecciones."
   boundary_lead: Es una estimación, y lo decimos con claridad.
   boundary_body:
     La gráfica modela una curva de disminución estándar a partir de las dosis de semaglutida
@@ -105,7 +105,7 @@ boundary:
 logging:
   kicker: Registro rápido
   heading: "Cada inyección con su zona."
-  body: "Anota medicamento, cantidad, fecha, hora y una nota. Las inyecciones como Ozempic, Wegovy, Mounjaro y Zepbound guardan también la zona. Los comprimidos como Rybelsus se registran sin zona. El catálogo incluye semaglutida, tirzepatida, liraglutida y dulaglutida con las marcas de cada país. También puedes anotar orforglipron, exenatida y semaglutida o tirzepatida de formulación magistral con receta en vial. Añade tu medicamento si falta."
+  body: "Anota medicamento, cantidad, fecha, hora y una nota. Las inyecciones como Ozempic, Wegovy y Mounjaro guardan también la zona. Los comprimidos como Rybelsus se registran sin zona. El catálogo incluye semaglutida, tirzepatida, liraglutida y dulaglutida con las marcas de cada país. También puedes anotar orforglipron, exenatida y semaglutida o tirzepatida de formulación magistral con receta en vial. Añade tu medicamento si falta."
   checklist:
     - Edita una entrada cuando algo cambie
     - Anota la zona de inyección en cada dosis

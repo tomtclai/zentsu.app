@@ -16,7 +16,7 @@ images:
     base: dial-web-level-nl
     width: 1290
     height: 1620
-    alt: Dial-scherm voor de geschatte spiegel, met een tijdlijn van de doses die u vastlegde
+    alt: Dial-scherm voor de geschatte spiegel, met een tijdlijn van de doses die je vastlegde
   log_dose:
     base: dial-web-log-dose-nl
     width: 1290
@@ -61,7 +61,7 @@ hero:
   headline_lead: "Privérecord van elke dosis."
   headline_accent: ""
   category: Dial is een GLP-1-medicijntracker voor iPhone en Apple Watch.
-  quick_answer: "Dial legt GLP-1-injecties en tabletten vast, waaronder Ozempic, Wegovy, Rybelsus, Mounjaro, Zepbound en voorgeschreven samengestelde semaglutide of tirzepatide. Elke invoer bewaart de dosis, het tijdstip, de prikplek, je gewicht en de bijwerkingen. Het logboek op de telefoon is gratis, zonder account. Dial Pro voegt de grafiek van het geschatte niveau, vastleggen op de Apple Watch en export als PDF of CSV toe."
+  quick_answer: "Dial legt GLP-1-injecties en tabletten vast, waaronder Ozempic, Wegovy, Rybelsus, Mounjaro en voorgeschreven, door de apotheek bereide semaglutide of tirzepatide. Elke invoer bewaart de dosis, het tijdstip, de prikplek, je gewicht en de bijwerkingen. Het logboek op de telefoon is gratis, zonder account. Dial Pro voegt de grafiek van het geschatte niveau, vastleggen op de Apple Watch en export als PDF of CSV toe."
   detail: "Medicatiegegevens kunnen via je eigen iCloud synchroniseren. Gewicht en voortgangsfoto's blijven op je apparaat."
   free_line: Gratis te downloaden, zonder account. Het dosislog heeft geen limiet.
   secondary_cta: Zo werkt Dial
@@ -85,11 +85,11 @@ proof:
 level:
   kicker: Dial Pro · Geschatte spiegel
   heading: Bekijk een geschatte spiegel tussen doses, op basis van de halfwaardetijd.
-  body: "Dial tekent een geschatte spiegel op basis van de doses die u vastlegde en de halfwaardetijd in de app, voor injecteerbare medicijnen zoals Ozempic, Wegovy, Mounjaro en Zepbound. Tabletten zoals Rybelsus krijgen geen spiegelgrafiek: orale opname verschilt te sterk tussen mensen. Bekijk een week, een maand of zes maanden injectiegeschiedenis."
+  body: "Dial tekent een geschatte spiegel op basis van de doses die je vastlegde en de halfwaardetijd in de app, voor injecteerbare medicijnen zoals Ozempic, Wegovy en Mounjaro. Tabletten zoals Rybelsus krijgen geen spiegelgrafiek: orale opname verschilt te sterk tussen mensen. Bekijk een week, een maand of zes maanden injectiegeschiedenis."
   boundary_lead: Het blijft een schatting.
   boundary_body:
     De grafiek modelleert een standaard afnamecurve uit de semaglutide- of tirzepatide-doses
-    die u vastlegde. U ziet uw eigen patronen tussen doses. Het is een schatting, geen
+    die je vastlegde. Je ziet je eigen patronen tussen doses. Het is een schatting, geen
     vervanging van een gemeten bloedspiegel. De app legt de methode volledig uit.
 
 boundary:
@@ -100,7 +100,7 @@ boundary:
 logging:
   kicker: Snel vastleggen
   heading: Leg medicijn, dosis en injectieplaats vast in één formulier.
-  body: "Noteer medicijn, hoeveelheid, datum, tijdstip en notities. Injecties zoals Ozempic, Wegovy, Mounjaro en Zepbound leggen ook de prikplek vast. Tabletten zoals Rybelsus legt u vast zonder plek. Dial kent semaglutide, tirzepatide, liraglutide en dulaglutide onder de merknamen die in uw land gangbaar zijn. Exenatide en voorgeschreven, door de apotheek bereide semaglutide of tirzepatide uit een flacon legt u ook vast. Voeg een eigen medicijn toe als het jouwe ontbreekt."
+  body: "Noteer medicijn, hoeveelheid, datum, tijdstip en notities. Bij injecties zoals Ozempic, Wegovy en Mounjaro leg je ook de prikplek vast. Tabletten zoals Rybelsus leg je vast zonder plek. Dial kent semaglutide, tirzepatide, liraglutide en dulaglutide onder de merknamen die in jouw land gangbaar zijn. Exenatide en voorgeschreven, door de apotheek bereide semaglutide of tirzepatide uit een flacon leg je ook vast. Staat jouw medicijn er niet bij, voeg het dan zelf toe."
   checklist:
     - Een invoer bewerken als iets verandert
     - Injectieplaatsen koppelen aan elke dosis

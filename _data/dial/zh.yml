@@ -48,7 +48,7 @@ hero:
   headline_lead: "每次剂量的私人记录。"
   headline_accent: ""
   category: "Dial 是面向 iPhone 和 Apple Watch 的 GLP-1 用药记录。"
-  quick_answer: "Dial 记录 GLP-1 注射和口服药片，包括诺和泰、诺和盈、诺和忻、穆峰达、Zepbound，以及医生处方的复配司美格鲁肽或替尔泊肽。每条记录保存剂量、时间、注射部位、体重和副作用。手机上的用药日志免费，不用账号。Dial Pro 增加估计水平图表、Apple Watch 记录，以及 PDF 或 CSV 导出。"
+  quick_answer: "Dial 记录 GLP-1 注射和口服药片，包括诺和泰、诺和盈、诺和忻、穆峰达，以及医生处方的复配司美格鲁肽或替尔泊肽。每条记录保存剂量、时间、注射部位、体重和副作用。手机上的用药日志免费，不用账号。Dial Pro 增加估计水平图表、Apple Watch 记录，以及 PDF 或 CSV 导出。"
   detail: "药物记录可通过你自己的 iCloud 同步。体重和进展照片留在设备上。"
   free_line: 免费下载，不用注册 Dial 账号。用药记录没有上限。
   secondary_cta: "Dial 怎么用"
@@ -72,7 +72,7 @@ proof:
 level:
   kicker: "Dial Pro · 估计水平"
   heading: "按半衰期，查看两次剂量之间的估计水平。"
-  body: "Dial 根据你记下的剂量和应用里写明的半衰期，为诺和泰（Ozempic）、诺和盈（Wegovy）、穆峰达（Mounjaro）、Zepbound 等受支持的注射剂画出估计水平。诺和忻（Rybelsus）等片剂没有水平图：口服吸收的个体差异太大。可按一周、一个月或六个月查看注射记录。"
+  body: "Dial 根据你记下的剂量和应用里写明的半衰期，为诺和泰（Ozempic）、诺和盈（Wegovy）、穆峰达（Mounjaro）等受支持的注射剂画出估计水平。诺和忻（Rybelsus）等片剂没有水平图：口服吸收的个体差异太大。可按一周、一个月或六个月查看注射记录。"
   boundary_lead: "这是估计，不是实测。"
   boundary_body: "图是按你记录的司美格鲁肽或替尔泊肽剂量画出的标准衰减曲线，用来看各次剂量之间你自己的变化。它是估计值，不能代替测得的血药浓度。方法在应用里写明。"
 
@@ -84,7 +84,7 @@ boundary:
 logging:
   kicker: "快速记录"
   heading: "在一张表里记下药物、剂量和注射部位。"
-  body: "填写药物、剂量、日期、时间和备注。诺和泰（Ozempic）、诺和盈（Wegovy）、穆峰达（Mounjaro）、Zepbound 等注射会带上部位。诺和忻（Rybelsus）等片剂不记部位。Dial 按各地区的商品名收录司美格鲁肽、替尔泊肽、利拉鲁肽和度拉糖肽，也能记录艾塞那肽，以及医生处方、从西林瓶抽取的复配司美格鲁肽或替尔泊肽。列表没有的药可以自己加。"
+  body: "填写药物、剂量、日期、时间和备注。诺和泰（Ozempic）、诺和盈（Wegovy）、穆峰达（Mounjaro）等注射会带上部位。诺和忻（Rybelsus）等片剂不记部位。Dial 按各地区的商品名收录司美格鲁肽、替尔泊肽、利拉鲁肽和度拉糖肽，也能记录艾塞那肽，以及医生处方、从西林瓶抽取的复配司美格鲁肽或替尔泊肽。列表没有的药可以自己加。"
   checklist:
     - "有变化时改那一笔"
     - "每次剂量都记下注射部位"
