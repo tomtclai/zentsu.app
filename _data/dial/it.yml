@@ -2,7 +2,7 @@ schema_description:
   Un registro privato di farmaci GLP-1 per dosi, siti di iniezione, peso, promemoria
   e cronologia.
 
-app_store_badge_alt: Scarichi Dial sull'App Store
+app_store_badge_alt: Scarica Dial sull'App Store
 
 images:
   today:
@@ -90,18 +90,18 @@ proof:
 level:
   kicker: Dial Pro · Livello stimato
   heading: Vedi un livello stimato tra le dosi, in base all'emivita.
-  body: "Dial traccia un livello stimato dalle dosi registrate e dall'emivita mostrata nell'app, per gli iniettabili supportati come Ozempic, Wegovy e Mounjaro. Le compresse come Rybelsus non hanno un grafico di livello: l'assorbimento orale varia troppo tra le persone. Riveda una settimana, un mese o sei mesi di iniezioni."
+  body: "Dial traccia un livello stimato dalle dosi registrate e dall'emivita mostrata nell'app, per gli iniettabili supportati come Ozempic, Wegovy e Mounjaro. Le compresse come Rybelsus non hanno un grafico di livello: l'assorbimento orale varia troppo tra le persone. Rivedi una settimana, un mese o sei mesi di iniezioni."
   boundary_lead: È una stima. Lo diciamo chiaro.
   boundary_body:
     Il grafico modella una curva di decadimento standard dalle dosi di semaglutide o
-    tirzepatide che ha registrato. Le serve per notare i suoi andamenti tra una dose e
+    tirzepatide che hai registrato. Ti serve per notare i tuoi andamenti tra una dose e
     l'altra. È una stima, non un sostituto di un livello ematico misurato. L'app spiega
     il metodo per intero.
 
 boundary:
   kicker: Cosa Dial non fa
   heading: Dial tiene il registro. La dose la stabilisce chi prescrive.
-  body: "Dial non calcola le dosi, non consiglia un cambiamento di dose e non dice cosa fare dopo una dose dimenticata. Il livello stimato è una stima da un modello di popolazione ricavata dalle dosi registrate, non una misurazione. Il convertitore di unità per le fiale galeniche esegue operazioni aritmetiche con i mg e i mg/ml che inserisce e non suggerisce alcuna quantità. Per le decisioni sul farmaco si rivolga a chi prescrive o al farmacista."
+  body: "Dial non calcola le dosi, non consiglia un cambiamento di dose e non dice cosa fare dopo una dose dimenticata. Il livello stimato è una stima da un modello di popolazione ricavata dalle dosi registrate, non una misurazione. Il convertitore di unità per le fiale galeniche esegue operazioni aritmetiche con i mg e i mg/ml che inserisci e non suggerisce alcuna quantità. Per le decisioni sul farmaco rivolgiti a chi prescrive o al farmacista."
 
 logging:
   kicker: Registrazione rapida
@@ -117,13 +117,13 @@ history:
   heading: Grafici di dosi, peso ed effetti collaterali.
   body: Le liste di dosi, peso ed effetti collaterali restano gratuite. Dial Pro aggiunge i grafici.
   history_card_title: Cronologia di dosi e peso
-  history_card_note: Riveda i cambiamenti nell'intervallo che sceglie.
+  history_card_note: Rivedi i cambiamenti nell'intervallo che scegli.
   side_effects_card_title: Tendenze degli effetti collaterali
-  side_effects_card_note: Riveda frequenza e gravità dalla cronologia esistente o importata.
+  side_effects_card_note: Rivedi frequenza e gravità dalla cronologia esistente o importata.
 
 report:
   kicker: Dial Pro · Riepilogo PDF
-  heading: Un PDF delle sue voci per la visita.
+  heading: Un PDF delle tue voci per la visita.
   card_title: Riepilogo PDF per la visita
   body:
     Genera un PDF con cronologia delle dosi, variazioni della quantità registrata, siti
@@ -131,20 +131,20 @@ report:
     dispositivo. Condividilo solo se lo decidi, via AirDrop, e-mail o stampa. La stessa
     cronologia si esporta come CSV.
   closing:
-    Resta privato. Le serve quando il registro deve uscire dal telefono.
-  smallprint: Il riepilogo riassume le sue voci. Non è una cartella clinica né un piano di trattamento.
+    Resta privato. Ti serve quando il registro deve uscire dal telefono.
+  smallprint: Il riepilogo riassume le tue voci. Non è una cartella clinica né un piano di trattamento.
 
 watch:
   kicker: Apple Watch
-  heading: Registri la dose dal polso.
+  heading: Registra la dose dal polso.
   body: >-
     L'app Apple Watch mostra un anello di ciclo con i giorni alla prossima dose e
-    l'orario del prossimo promemoria. Dial Pro registra da quella schermata. Imposti la
-    quantità con la Digital Crown, scelga un sito di iniezione e confermi. La voce si
+    l'orario del prossimo promemoria. Dial Pro registra da quella schermata. Imposta la
+    quantità con la Digital Crown, scegli un sito di iniezione e conferma. La voce si
     sincronizza con l'iPhone.
   checklist:
     - Anello di ciclo, stato della dose e prossimo promemoria a colpo d'occhio (gratis)
-    - Registri una dose dal polso con la Digital Crown (Dial Pro)
+    - Registra una dose dal polso con la Digital Crown (Dial Pro)
     - Widget di livello stimato e di prossima dose sul quadrante, più registrazione
       rapida nello Smart Stack (Dial Pro)
     - Su iPhone, Pro abilita la registrazione con un tocco da Centro di Controllo,
@@ -156,15 +156,15 @@ supporting:
   heading: Cronologia, riepilogo, scorte, promemoria e importazioni, in un unico posto.
   features:
     - title: Inventario delle scorte
-      body: Tenga penne o flaconi con concentrazione, farmacia, data di scadenza e numero di lotto.
-    - title: I suoi promemoria
+      body: Tieni traccia di penne o flaconi con concentrazione, farmacia, data di scadenza e numero di lotto.
+    - title: I tuoi promemoria
       body:
-        Crei notifiche giornaliere, settimanali o ogni N giorni secondo l'orario che
-        imposta. Nel giorno della dose, la notifica include l'azione Registra dose, e
+        Crea notifiche giornaliere, settimanali o ogni N giorni secondo l'orario che
+        imposti. Nel giorno della dose, la notifica include l'azione Registra dose, e
         una Live Activity resta sulla schermata di blocco fino alla
         registrazione, per un massimo di 12 ore.
-    - title: Importi le voci esistenti
-      body: Importi in Dial un registro di farmaci in formato compatibile per recuperare le voci già esistenti.
+    - title: Importa le voci esistenti
+      body: Importa in Dial un registro di farmaci in formato compatibile per recuperare le voci già esistenti.
 
 plans:
   kicker: Gratis e Dial Pro
@@ -176,7 +176,7 @@ plans:
   free_name: Gratis
   free_summary: Gratis per un farmaco attivo, senza limite sul registro delle dosi.
   free_features:
-    - Registri dosi, siti di iniezione, peso, effetti collaterali e foto dei progressi
+    - Registra dosi, siti di iniezione, peso, effetti collaterali e foto dei progressi
     - Un farmaco attivo e un promemoria
     - Elenchi di dosi e peso, inventario, importazioni e il colpo d'occhio su Apple Watch
     - Widget conto alla rovescia e promemoria che aprono il modulo
@@ -206,23 +206,21 @@ privacy:
     - term: Analisi
       detail: Dial non raccoglie analisi d'uso né telemetria.
     - term: I nostri server
-      detail: Zentsu non gestisce alcun server che memorizza o legge i suoi dati.
+      detail: Zentsu non gestisce alcun server che memorizza o legge i tuoi dati.
     - term: Sincronizzazione facoltativa
       detail:
         Con iCloud attivo, i registri principali usano il database CloudKit privato del
         tuo Account Apple, non i nostri server.
   body: "Farmaci, dosi, promemoria e scorte possono sincronizzarsi tramite il tuo iCloud se lo attivi. Il peso resta in un archivio locale separato, con integrazione opzionale con l'app Salute. I file delle foto dei progressi restano sul dispositivo."
-  policy_link: Legga l'informativa sulla privacy di Dial
+  policy_link: Leggi l'informativa sulla privacy di Dial
   policy_url: /it/dial/privacy/
 
 availability:
-  kicker: Scarichi Dial
+  kicker: Scarica Dial
   heading: Disponibile ora sull'App Store.
   body:
     Dial si scarica gratis, senza un account da creare. Dial Pro aggiunge il grafico
     del livello stimato, i grafici della cronologia, l'esportazione PDF e CSV, e la
     registrazione rapida da Apple Watch e iPhone.
 
-trademarks:
-  Ozempic, Wegovy, Mounjaro, and Zepbound are trademarks of their respective owners.
-  Zentsu is not affiliated with any pharmaceutical company.
+trademarks: "Ozempic, Wegovy, Rybelsus, Mounjaro, Byetta e Bydureon sono marchi dei rispettivi titolari. Zentsu non ha legami con alcuna azienda farmaceutica."

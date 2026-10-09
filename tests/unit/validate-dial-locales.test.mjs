@@ -14,6 +14,7 @@ import {
   checkLanguageSwitcher,
   checkPageExists,
   checkTopLevelLocaleKeys,
+  checkTrademarkFooter,
   outputPathFor,
 } from '../../scripts/validate-dial-locales.mjs';
 
@@ -212,5 +213,31 @@ describe('validate-dial-locales checks against site-min fixtures', () => {
       ],
     );
     assert.deepEqual(checkTopLevelLocaleKeys({ path: 'faq.yml', text: 'en:\n"no":\nfi:\n' }), []);
+  });
+
+  test('checkTrademarkFooter matches the footer to the brands the page names', () => {
+    const page = (body, footer) =>
+      `<main><p>${body}</p><p class="dial-trademarks">${footer}</p></main>`;
+    assert.deepEqual(
+      checkTrademarkFooter({
+        locale: 'zh',
+        html: page('诺和泰（Ozempic）和 Rybelsus', '诺和泰、诺和忻是商标。'),
+      }),
+      [],
+    );
+    assert.deepEqual(
+      checkTrademarkFooter({
+        locale: 'ru',
+        html: page('Ozempic и Saxenda', 'Ozempic и Zepbound являются товарными знаками.'),
+      }).map(({ check, detail }) => [check, detail.match(/Saxenda|Zepbound/)[0]]),
+      [
+        ['trademark-footer-missing', 'Saxenda'],
+        ['trademark-footer-extra', 'Zepbound'],
+      ],
+    );
+    assert.equal(
+      checkTrademarkFooter({ locale: 'en', html: '<p>Ozempic</p>' })[0].check,
+      'trademark-footer',
+    );
   });
 });

@@ -116,12 +116,12 @@ he:
 cs:
   territory: CZE
   country: cz
-  note: "Předplatné se obnovuje, dokud ho nezrušíte. Ceny jsou z App Store pro Česko."
+  note: "Předplatné se obnovuje, dokud ho nezrušíš. Ceny jsou z App Store pro Česko."
 
 sk:
   territory: SVK
   country: sk
-  note: "Predplatné sa obnovuje, kým ho nezrušíte. Ceny sú z App Store pre Slovensko."
+  note: "Predplatné sa obnovuje, kým ho nezrušíš. Ceny sú z App Store pre Slovensko."
 
 hu:
   territory: HUN
@@ -136,7 +136,7 @@ ro:
 hr:
   territory: HRV
   country: hr
-  note: "Pretplate se obnavljaju dok ih ne otkažete. Cijene su iz hrvatskog App Storea."
+  note: "Pretplate se obnavljaju dok ih ne otkažeš. Cijene su iz hrvatskog App Storea."
 
 el:
   territory: GRC

@@ -48,7 +48,7 @@ hero:
   headline_lead: "Súkromný záznam každej dávky."
   headline_accent: ""
   category: "Dial je záznam liekov GLP-1 pre iPhone a Apple Watch."
-  quick_answer: "Dial zapisuje dávky GLP-1 v injekciách aj tabletách, vrátane Ozempic, Wegovy, Rybelsus, Mounjaro a predpísaného compounded semaglutidu alebo tirzepatidu z liekovky. Každý záznam si uchová dávku, čas, miesto vpichu, hmotnosť a nežiaduce účinky. Záznam v telefóne je zadarmo a bez účtu. Dial Pro pridáva graf odhadovanej hladiny, záznam na Apple Watch a export do PDF alebo CSV."
+  quick_answer: "Dial zapisuje dávky GLP-1 v injekciách aj tabletách, vrátane Ozempic, Wegovy, Rybelsus, Mounjaro a predpísaného semaglutidu alebo tirzepatidu z liekovky pripraveného v lekárni. Každý záznam si uchová dávku, čas, miesto vpichu, hmotnosť a nežiaduce účinky. Záznam v telefóne je zadarmo a bez účtu. Dial Pro pridáva graf odhadovanej hladiny, záznam na Apple Watch a export do PDF alebo CSV."
   detail: "Záznamy liekov sa môžu synchronizovať cez tvoje iCloud. Hmotnosť a fotky pokroku ostávajú v zariadení."
   free_line: Na stiahnutie zadarmo, účet zakladať nemusíš. Záznam dávok môžeš viesť bez limitu.
   secondary_cta: "Ako Dial funguje"
@@ -74,12 +74,12 @@ level:
   heading: "Odhadovaná hladina medzi dávkami podľa polčasu."
   body: "Dial vykreslí odhadovanú hladinu zo zaznamenaných dávok a polčasu v aplikácii, pre podporované injekčné lieky ako Ozempic, Wegovy a Mounjaro. Tablety ako Rybelsus nemajú graf hladiny: vstrebávanie ústami sa medzi ľuďmi príliš líši. Prezri týždeň, mesiac alebo šesť mesiacov histórie injekcií."
   boundary_lead: "Je to odhad. Tak ho aj označujeme."
-  boundary_body: "Graf modeluje štandardnú krivku poklesu z dávok semaglutidu alebo tirzepatidu, ktoré ste zaznamenali. Ukazuje, ako u vás dávky v čase prebiehajú. Nie je to nameraná hladina v krvi. Metódu vysvetľuje Dial priamo v aplikácii."
+  boundary_body: "Graf modeluje štandardnú krivku poklesu z tvojich zaznamenaných dávok semaglutidu alebo tirzepatidu. Ukazuje, ako u teba dávky v čase prebiehajú. Nie je to nameraná hladina v krvi. Metódu vysvetľuje Dial priamo v aplikácii."
 
 boundary:
   kicker: "Čo Dial nerobí"
-  heading: "Dial vedie záznam. O dávke rozhoduje váš lekár."
-  body: "Dial nepočíta dávky, neodporúča zmenu dávky ani vám neporadí, čo robiť po zmeškanej dávke. Odhadovaná hladina je odhad z populačného modelu na základe zapísaných dávok, nie meranie. Prevodník jednotiek pre compounded liekovky robí len aritmetiku so zadanými hodnotami mg a mg/ml a nič nenavrhuje. O rozhodnutiach v liečbe sa pýtajte svojho lekára alebo lekárnika."
+  heading: "Dial vedie záznam. O dávke rozhoduje tvoj lekár."
+  body: "Dial nepočíta dávky, neodporúča zmenu dávky ani ti neporadí, čo robiť po zmeškanej dávke. Odhadovaná hladina je odhad z populačného modelu na základe zapísaných dávok, nie meranie. Prevodník jednotiek pre liekovky pripravené v lekárni robí len aritmetiku so zadanými hodnotami mg a mg/ml a nič nenavrhuje. O rozhodnutiach v liečbe sa pýtaj svojho lekára alebo lekárnika."
 
 logging:
   kicker: "Rýchly záznam"
@@ -92,25 +92,25 @@ logging:
 
 history:
   kicker: "Dial Pro · História a trendy"
-  heading: "Grafy dávok, hmotnosti a nežiaducich účinkov z vašich záznamov."
+  heading: "Grafy dávok, hmotnosti a nežiaducich účinkov z tvojich záznamov."
   body: "Zoznamy dávok, hmotnosti a nežiaducich účinkov ostávajú zadarmo. Dial Pro pridáva grafy."
   history_card_title: "História dávok a hmotnosti"
-  history_card_note: "Prezrite si zmeny v rozsahu, ktorý zvolíte."
+  history_card_note: "Prezri si zmeny v rozsahu, ktorý zvolíš."
   side_effects_card_title: "Trendy nežiaducich účinkov"
-  side_effects_card_note: "Prezrite si početnosť a závažnosť z existujúcej alebo importovanej histórie."
+  side_effects_card_note: "Prezri si početnosť a závažnosť z existujúcej alebo importovanej histórie."
 
 report:
   kicker: "Dial Pro · PDF správa"
   heading: "PDF zo záznamov na návštevu u lekára."
   card_title: "PDF správa na návštevu u lekára"
   body: "Vytvor PDF s históriou dávok, zmenami zaznamenaného množstva, miestami vpichu, vývojom hmotnosti a priebehom nežiaducich účinkov. Dial ho zostaví na zariadení. Zdieľaš ho, až sa rozhodneš: AirDrop, e-mail alebo tlač. Tú istú históriu exportuješ ako CSV."
-  closing: "Inak ostane v telefóne. Hodí sa v chvíli, keď záznam musíte vziať so sebou."
-  smallprint: "Správa zhŕňa vaše záznamy. Nie je to zdravotnícka dokumentácia ani liečebný plán."
+  closing: "Inak ostane v telefóne. Hodí sa v chvíli, keď záznam musíš vziať so sebou."
+  smallprint: "Správa zhŕňa tvoje záznamy. Nie je to zdravotnícka dokumentácia ani liečebný plán."
 
 watch:
   kicker: Apple Watch
-  heading: "Zaznamenajte dávku zo zápästia."
-  body: "Aplikácia na hodinkách ukazuje krúžok cyklu, ktorý odpočítava dni do ďalšej dávky, a kedy príde ďalšia pripomienka. Z tej obrazovky v Dial Pro dávku zapíšete. Množstvo nastavíte pomocou Digital Crown, zvolíte miesto vpichu a potvrdíte. Záznam sa prenesie na iPhone."
+  heading: "Zaznamenaj dávku zo zápästia."
+  body: "Aplikácia na hodinkách ukazuje krúžok cyklu, ktorý odpočítava dni do ďalšej dávky, a kedy príde ďalšia pripomienka. Z tej obrazovky v Dial Pro dávku zapíšeš. Množstvo nastavíš pomocou Digital Crown, zvolíš miesto vpichu a potvrdíš. Záznam sa prenesie na iPhone."
   checklist:
     - "Krúžok cyklu, stav dávky a ďalšia pripomienka na prvý pohľad (zadarmo)"
     - "Záznam dávky zo zápästia s Digital Crown (Dial Pro)"
@@ -122,11 +122,11 @@ supporting:
   heading: "História, správa, zásoby, pripomienky a import na jednom mieste."
   features:
     - title: "Zásoby"
-      body: "Sledujte perá alebo liekovky s koncentráciou, lekárňou, dátumom exspirácie a číslom šarže."
-    - title: "Vaše pripomienky"
-      body: "Vytvorte denné, týždenné alebo každých N dní oznámenia podľa plánu, ktorý nastavíte. V deň dávky je na oznámení akcia na záznam a Live Activity ostane na zamknutej obrazovke, kým nezaznamenáte, najviac 12 hodín."
-    - title: "Importujte existujúce záznamy"
-      body: "Otvorte v Dial kompatibilný export z iného denníka liekov a naimportujte existujúce záznamy."
+      body: "Sleduj perá alebo liekovky s koncentráciou, lekárňou, dátumom exspirácie a číslom šarže."
+    - title: "Tvoje pripomienky"
+      body: "Vytvor denné, týždenné alebo každých N dní oznámenia podľa plánu, ktorý nastavíš. V deň dávky je na oznámení akcia na záznam a Live Activity ostane na zamknutej obrazovke, kým nezaznamenáš, najviac 12 hodín."
+    - title: "Importuj existujúce záznamy"
+      body: "Otvor v Dial kompatibilný export z iného denníka liekov a naimportuj existujúce záznamy."
 
 plans:
   kicker: "Zadarmo a Dial Pro"
@@ -177,7 +177,5 @@ availability:
   heading: "Teraz v App Store."
   body: "Dial je na stiahnutie zadarmo, účet zakladať nemusíš. Dial Pro pridáva graf odhadovanej hladiny, úplné grafy histórie, export PDF a CSV a rýchly záznam z Apple Watch a iPhonu."
 
-trademarks: |
-  Ozempic, Wegovy, Mounjaro, and Zepbound are trademarks of their respective owners.
-  Zentsu is not affiliated with any pharmaceutical company.
+trademarks: "Ozempic, Wegovy, Rybelsus, Mounjaro, Byetta a Bydureon sú ochranné známky príslušných vlastníkov. Zentsu nemá väzbu na žiadnu farmaceutickú spoločnosť."
 

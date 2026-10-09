@@ -1,5 +1,5 @@
 schema_description: "Jurnal privat de medicamente GLP-1 pentru doze, locuri de injecție, greutate, reamintiri și istoric."
-app_store_badge_alt: "Descărcați Dial din App Store"
+app_store_badge_alt: "Descarcă Dial din App Store"
 
 images:
   today:
@@ -74,46 +74,46 @@ level:
   heading: "Vezi un nivel estimat între doze, după timpul de înjumătățire."
   body: "Dial construiește un nivel estimat din dozele înregistrate și din timpul de înjumătățire afișat în aplicație, pentru injectabile acceptate precum Ozempic, Wegovy și Mounjaro. Comprimatele precum Rybelsus nu au grafic de nivel: absorbția orală variază prea mult între oameni. Revizuiește o săptămână, o lună sau șase luni de injecții."
   boundary_lead: "Este o estimare. O spunem deschis."
-  boundary_body: "Graficul construiește o curbă standard de scădere din dozele de semaglutidă sau tirzepatidă pe care le-ați înregistrat. Arată propriile tipare dintre doze. Este o estimare, nu un nivel măsurat în sânge. Aplicația explică metoda în detaliu."
+  boundary_body: "Graficul construiește o curbă standard de scădere din dozele de semaglutidă sau tirzepatidă pe care le-ai înregistrat. Arată propriile tipare dintre doze. Este o estimare, nu un nivel măsurat în sânge. Aplicația explică metoda în detaliu."
 
 boundary:
   kicker: "Ce nu face Dial"
-  heading: "Dial ține evidența. Doza o stabilește medicul care v-a prescris tratamentul."
-  body: "Dial nu calculează doze, nu recomandă o schimbare a dozei și nu vă spune ce să faceți după o doză ratată. Nivelul estimat este o estimare dintr-un model de populație, bazată pe dozele înregistrate, nu o măsurătoare. Convertorul de unități pentru flacoanele preparate la rețetă face doar calcule aritmetice cu mg și mg/ml pe care le introduceți și nu sugerează nicio cantitate. Întrebați medicul prescriptor sau farmacistul în privința deciziilor despre medicamente."
+  heading: "Dial ține evidența. Doza o stabilește medicul care ți-a prescris tratamentul."
+  body: "Dial nu calculează doze, nu recomandă o schimbare a dozei și nu îți spune ce să faci după o doză ratată. Nivelul estimat este o estimare dintr-un model de populație, bazată pe dozele înregistrate, nu o măsurătoare. Convertorul de unități pentru flacoanele preparate la rețetă face doar calcule aritmetice cu mg și mg/ml pe care le introduci și nu sugerează nicio cantitate. Întreabă medicul prescriptor sau farmacistul în privința deciziilor despre medicamente."
 
 logging:
   kicker: "Înregistrare rapidă"
   heading: "Notează medicamentul, doza și locul de injecție într-un singur formular."
   body: "Notează medicamentul, cantitatea, data, ora și notele. Injecțiile precum Ozempic, Wegovy și Mounjaro includ locul de injectare. Comprimatele precum Rybelsus se înregistrează fără loc. Dial listează semaglutidă, tirzepatidă, liraglutidă și dulaglutidă cu denumirile de marcă folosite în România. Poți înregistra și exenatidă, plus semaglutidă sau tirzepatidă preparată la rețetă, din flacon. Adaugă un medicament personalizat dacă al tău lipsește."
   checklist:
-    - "Editați o înregistrare când se schimbă ceva"
-    - "Păstrați locul de injecție la fiecare doză"
-    - "Păstrați înregistrările de greutate lângă istoricul dozelor"
+    - "Editează o înregistrare când se schimbă ceva"
+    - "Păstrează locul de injecție la fiecare doză"
+    - "Păstrează înregistrările de greutate lângă istoricul dozelor"
 
 history:
   kicker: "Dial Pro · Istoric și tendințe"
   heading: "Grafice de doză, greutate și efecte secundare din înregistrări."
   body: "Listele de doză, greutate și efecte secundare rămân gratuite. Dial Pro adaugă graficele."
   history_card_title: "Istoric de doză și greutate"
-  history_card_note: "Vedeți modificările din intervalul ales."
+  history_card_note: "Vezi modificările din intervalul ales."
   side_effects_card_title: "Tendințe ale efectelor secundare"
-  side_effects_card_note: "Vedeți frecvența și severitatea din istoricul existent sau importat."
+  side_effects_card_note: "Vezi frecvența și severitatea din istoricul existent sau importat."
 
 report:
   kicker: "Dial Pro · Raport PDF"
   heading: "Un PDF al înregistrărilor, pentru consultație."
   card_title: "Raport PDF pentru consultație"
   body: "Generează un PDF cu istoricul dozelor, modificările cantității înregistrate, locurile de injecție, tendința greutății și evoluția efectelor secundare. Dial îl construiește pe dispozitiv și îl trimiți doar când decizi tu, prin AirDrop, e-mail sau imprimare. Același istoric se exportă ca CSV."
-  closing: "Rămâne privat. Îl scoateți de pe telefon doar când aveți nevoie."
+  closing: "Rămâne privat. Îl scoți de pe telefon doar când ai nevoie."
   smallprint: "Raportul rezumă înregistrările. Nu este un dosar medical și nici un plan de tratament."
 
 watch:
   kicker: Apple Watch
-  heading: "Înregistrați doza de la încheietură."
-  body: "Aplicația de pe ceas arată un inel de ciclu care numără zilele până la următoarea doză și când sosește următoarea reamintire. Dial Pro înregistrează de pe acel ecran. Setați cantitatea cu Digital Crown, alegeți locul de injecție și confirmați. Înregistrarea se sincronizează pe iPhone."
+  heading: "Înregistrează doza de la încheietură."
+  body: "Aplicația de pe ceas arată un inel de ciclu care numără zilele până la următoarea doză și când sosește următoarea reamintire. Dial Pro înregistrează de pe acel ecran. Setează cantitatea cu Digital Crown, alege locul de injecție și confirmă. Înregistrarea se sincronizează pe iPhone."
   checklist:
     - "Inel de ciclu, starea dozei și următoarea reamintire dintr-o privire (gratuit)"
-    - "Înregistrați o doză de la încheietură cu Digital Crown (Dial Pro)"
+    - "Înregistrează o doză de la încheietură cu Digital Crown (Dial Pro)"
     - "Widgeturi de nivel estimat și doză următoare pe cadran, plus înregistrare rapidă în Smart Stack (Dial Pro)"
     - "Pe iPhone, Pro activează înregistrarea cu o atingere din Centrul de control, butonul de acțiune, Siri sau o Live Activity în ziua reamintirii. Acțiunile gratuite deschid formularul."
 
@@ -122,11 +122,11 @@ supporting:
   heading: "Istoric, raport, stoc, reamintiri și importuri, în același loc."
   features:
     - title: "Stoc"
-      body: "Urmăriți pixurile injectoare sau flacoanele, cu concentrație, farmacie, data expirării și numărul lotului."
-    - title: "Reamintirile dumneavoastră"
-      body: "Creați notificări zilnice, săptămânale sau la fiecare N zile în jurul programului pe care îl setați. În ziua dozei, o acțiune de înregistrare apare pe notificare, iar o Live Activity rămâne pe ecranul de blocare până înregistrați, cel mult 12 ore."
-    - title: "Importați istoricul"
-      body: "Deschideți în Dial un export compatibil dintr-un jurnal de medicamente, ca să importați înregistrările existente."
+      body: "Urmărește pixurile injectoare sau flacoanele, cu concentrație, farmacie, data expirării și numărul lotului."
+    - title: "Reamintirile tale"
+      body: "Creează notificări zilnice, săptămânale sau la fiecare N zile în jurul programului pe care îl setezi. În ziua dozei, o acțiune de înregistrare apare pe notificare, iar o Live Activity rămâne pe ecranul de blocare până înregistrezi, cel mult 12 ore."
+    - title: "Importă istoricul"
+      body: "Deschide în Dial un export compatibil dintr-un jurnal de medicamente, ca să imporți înregistrările existente."
 
 plans:
   kicker: "Gratuit și Dial Pro"
@@ -135,7 +135,7 @@ plans:
   free_name: "Gratuit"
   free_summary: "Gratuit pentru un medicament activ, fără limită la evidența dozelor."
   free_features:
-    - "Înregistrați doze, locuri de injecție, greutate, efecte secundare și fotografii de progres"
+    - "Înregistrează doze, locuri de injecție, greutate, efecte secundare și fotografii de progres"
     - "Un medicament activ și o reamintire"
     - "Liste de doză și greutate, stoc, importuri și rezumatul de pe Apple Watch"
     - "Widgeturi de numărătoare inversă și reamintiri care deschid formularul"
@@ -165,16 +165,16 @@ privacy:
     - term: "Analiză de utilizare"
       detail: "Dial nu colectează analiză de utilizare și nici telemetrie."
     - term: "Serverele noastre"
-      detail: "Zentsu nu operează niciun server care stochează sau citește înregistrările dumneavoastră."
+      detail: "Zentsu nu operează niciun server care stochează sau citește înregistrările tale."
     - term: "Sincronizare opțională"
       detail: "Cu iCloud pornit, înregistrările de bază folosesc baza CloudKit privată a contului tău Apple, nu serverele noastre."
   body: "Înregistrările de medicament, doză, memento și stoc se pot sincroniza prin propriul tău iCloud dacă îl activezi. Greutatea rămâne într-un depozit local separat, cu integrare opțională cu aplicația Sănătate. Fișierele fotografiilor de progres rămân pe dispozitiv."
-  policy_link: "Citiți politica de confidențialitate Dial"
+  policy_link: "Citește politica de confidențialitate Dial"
   policy_url: /ro/dial/privacy/
 
 availability:
-  kicker: "Descărcați Dial"
+  kicker: "Descarcă Dial"
   heading: "Acum în App Store."
   body: "Dial se descarcă gratuit, fără un cont de creat. Dial Pro adaugă graficul nivelului estimat, graficele de istoric, exportul PDF și CSV, și înregistrarea rapidă de pe Apple Watch și iPhone."
 
-trademarks: "Ozempic, Wegovy, Mounjaro, and Zepbound are trademarks of their respective owners. Zentsu is not affiliated with any pharmaceutical company."
+trademarks: "Ozempic, Wegovy, Rybelsus, Mounjaro, Saxenda, Byetta și Bydureon sunt mărci ale proprietarilor lor. Zentsu nu are legături cu nicio companie farmaceutică."

@@ -1,5 +1,5 @@
 schema_description: "Privatni GLP-1 dnevnik lijekova za doze, mjesta injekcije, težinu, podsjetnike i povijest."
-app_store_badge_alt: "Preuzmite Dial iz App Storea"
+app_store_badge_alt: "Preuzmi Dial iz App Storea"
 
 images:
   today:
@@ -48,7 +48,7 @@ hero:
   headline_lead: "Privatni zapis svake doze."
   headline_accent: ""
   category: "Dial prati lijekove GLP-1 na iPhoneu i Apple Watchu."
-  quick_answer: "Dial bilježi GLP-1 injekcije i tablete, uključujući Ozempic, Wegovy, Rybelsus, Mounjaro i propisani compounded semaglutid ili tirzepatid. Svaki unos čuva dozu, vrijeme, mjesto injekcije, težinu i nuspojave. Dnevnik na telefonu je besplatan i ne treba račun. Dial Pro dodaje grafikon procijenjene razine, bilježenje s Apple Watcha te izvoz u PDF ili CSV."
+  quick_answer: "Dial bilježi GLP-1 injekcije i tablete, uključujući Ozempic, Wegovy, Rybelsus, Mounjaro i propisani magistralni semaglutid ili tirzepatid. Svaki unos čuva dozu, vrijeme, mjesto injekcije, težinu i nuspojave. Dnevnik na telefonu je besplatan i ne treba račun. Dial Pro dodaje grafikon procijenjene razine, bilježenje s Apple Watcha te izvoz u PDF ili CSV."
   detail: "Zapisi lijekova mogu se sinkronizirati preko tvog iClouda. Težina i fotografije napretka ostaju na uređaju."
   free_line: Preuzimanje je besplatno, račun ne otvaraš. Zapise doza vodiš bez ograničenja.
   secondary_cta: "Kako Dial radi"
@@ -74,30 +74,30 @@ level:
   heading: "Procijenjena razina između doza prema poluživotu."
   body: "Dial crta procijenjenu razinu iz unesenih doza i poluživota prikazanog u aplikaciji, za podržane injekcijske lijekove poput Ozempica, Wegovyja i Mounjara. Tablete poput Rybelsusa nemaju grafikon razine: oralna apsorpcija previše varira među ljudima. Pregledaj tjedan, mjesec ili šest mjeseci povijesti injekcija."
   boundary_lead: "To je procjena. Tako i pišemo."
-  boundary_body: "Grafikon modelira standardnu krivulju opadanja iz semaglutida ili tirzepatida koje ste unijeli. Pokazuje vaše obrasce između doza. To je procjena, ne izmjerena razina u krvi. Aplikacija metodu objašnjava u cijelosti."
+  boundary_body: "Grafikon modelira standardnu krivulju opadanja iz doza semaglutida ili tirzepatida koje uneseš. Pokazuje tvoje obrasce između doza. To je procjena, ne izmjerena razina u krvi. Aplikacija metodu objašnjava u cijelosti."
 
 boundary:
   kicker: "Što Dial ne radi"
-  heading: "Dial vodi zapis. Dozu određuje vaš liječnik."
-  body: "Dial ne izračunava doze, ne preporučuje promjenu doze i ne govori što učiniti nakon propuštene doze. Procijenjena razina je procjena iz populacijskog modela na temelju unesenih doza, a ne mjerenje. Pretvarač jedinica za compounded bočice samo računa s unesenim mg i mg/mL i ne predlaže količinu. Odluke o lijekovima pitajte svog liječnika ili ljekarnika."
+  heading: "Dial vodi zapis. Dozu određuje tvoj liječnik."
+  body: "Dial ne izračunava doze, ne preporučuje promjenu doze i ne govori što učiniti nakon propuštene doze. Procijenjena razina je procjena iz populacijskog modela na temelju unesenih doza, a ne mjerenje. Pretvarač jedinica za bočice magistralnih pripravaka samo računa s unesenim mg i mg/mL i ne predlaže količinu. Za odluke o lijekovima pitaj svog liječnika ili ljekarnika."
 
 logging:
   kicker: "Brzi unos"
   heading: "Zabilježi lijek, dozu i mjesto injekcije u jednom obrascu."
   body: "Zapiši lijek, količinu, datum, vrijeme i bilješke. Kod injekcija poput Ozempica, Wegovyja i Mounjara bilježi se i mjesto. Tablete poput Rybelsusa bilježe se bez mjesta. Dial navodi semaglutid, tirzepatid, liraglutid i dulaglutid pod regionalnim nazivima. Možeš bilježiti i orforglipron, eksenatid te propisani magistralni semaglutid ili tirzepatid iz bočice. Dodaj vlastiti lijek ako nedostaje."
   checklist:
-    - "Uredite unos kad se nešto promijeni"
+    - "Uredi unos kad se nešto promijeni"
     - "Mjesta injekcije ostaju uz svaku dozu"
     - "Unosi težine stoje uz vremensku crtu doza"
 
 history:
   kicker: "Dial Pro · Povijest i trendovi"
-  heading: "Grafikoni doze, težine i nuspojava iz vaših unosa."
+  heading: "Grafikoni doze, težine i nuspojava iz tvojih unosa."
   body: "Popisi doza, težine i nuspojava ostaju besplatni. Dial Pro dodaje grafikone."
   history_card_title: "Povijest doze i težine"
-  history_card_note: "Pregledajte promjene u rasponu koji odaberete."
+  history_card_note: "Pregledaj promjene u rasponu koji odabereš."
   side_effects_card_title: "Trendovi nuspojava"
-  side_effects_card_note: "Pregledajte učestalost i ozbiljnost iz postojeće ili uvezene povijesti."
+  side_effects_card_note: "Pregledaj učestalost i ozbiljnost iz postojeće ili uvezene povijesti."
 
 report:
   kicker: "Dial Pro · PDF izvješće"
@@ -105,12 +105,12 @@ report:
   card_title: "PDF izvješće za posjet liječniku"
   body: "Napravi PDF s poviješću doza, izmjenama unesene količine, mjestima injekcije, trendom težine i obrascima nuspojava. Dial ga sastavlja na uređaju. Dijeliš ga tek kad odlučiš: AirDrop, e-pošta ili ispis. Ista se povijest izvozi kao CSV."
   closing: "Ostaje privatno dok zapis ne treba napustiti telefon."
-  smallprint: "Izvješće sažima vaše unose. Nije medicinski karton ni plan liječenja."
+  smallprint: "Izvješće sažima tvoje unose. Nije medicinski karton ni plan liječenja."
 
 watch:
   kicker: Apple Watch
-  heading: "Unesite dozu sa zapešća."
-  body: "Aplikacija na satu pokazuje prsten ciklusa koji odbrojava do sljedeće doze i kad pada sljedeći podsjetnik. Dial Pro bilježi dozu s tog zaslona. Količinu postavite Digital Crownom, odaberite mjesto injekcije i potvrdite. Unos se sinkronizira s iPhoneom."
+  heading: "Unesi dozu sa zapešća."
+  body: "Aplikacija na satu pokazuje prsten ciklusa koji odbrojava do sljedeće doze i kad pada sljedeći podsjetnik. Dial Pro bilježi dozu s tog zaslona. Količinu postavi Digital Crownom, odaberi mjesto injekcije i potvrdi. Unos se sinkronizira s iPhoneom."
   checklist:
     - "Prsten ciklusa, stanje doze i sljedeći podsjetnik na prvi pogled (besplatno)"
     - "Unos doze sa zapešća Digital Crownom (Dial Pro)"
@@ -122,11 +122,11 @@ supporting:
   heading: "Povijest, izvješće, zalihe, podsjetnici i uvoz na jednom mjestu."
   features:
     - title: "Zalihe"
-      body: "Pratite olovke ili bočice s koncentracijom, ljekarnom, datumom isteka i brojem serije."
-    - title: "Vaši podsjetnici"
-      body: "Stvorite dnevne, tjedne ili svakih N dana obavijesti prema rasporedu koji postavite. Na dan doze obavijest nudi radnju unosa, a Live Activity ostaje na zaključanom zaslonu dok ne unesete, najdulje 12 sati."
-    - title: "Uvezite postojeće unose"
-      body: "Otvorite kompatibilan izvoz dnevnika lijekova u Dialu da uvezete postojeće unose."
+      body: "Prati olovke ili bočice s koncentracijom, ljekarnom, datumom isteka i brojem serije."
+    - title: "Tvoji podsjetnici"
+      body: "Stvori dnevne, tjedne ili svakih N dana obavijesti prema rasporedu koji postaviš. Na dan doze obavijest nudi radnju unosa, a Live Activity ostaje na zaključanom zaslonu dok ne uneseš, najdulje 12 sati."
+    - title: "Uvezi postojeće unose"
+      body: "Otvori kompatibilan izvoz dnevnika lijekova u Dialu da uvezeš postojeće unose."
 
 plans:
   kicker: "Besplatno i Dial Pro"
@@ -169,14 +169,12 @@ privacy:
     - term: "Neobavezna sinkronizacija"
       detail: "Kad uključiš iCloud, glavni zapisi koriste privatnu CloudKit bazu na tvom Apple računu, ne naše poslužitelje."
   body: "Zapisi lijeka, doze, podsjetnika i zalihe mogu se sinkronizirati preko tvog iClouda ako ga uključiš. Težina ostaje u odvojenoj lokalnoj pohrani, uz neobaveznu integraciju s aplikacijom Zdravlje. Datoteke fotografija napretka ostaju na uređaju."
-  policy_link: "Pročitajte pravila privatnosti Diala"
+  policy_link: "Pročitaj pravila privatnosti Diala"
   policy_url: /hr/dial/privacy/
 
 availability:
-  kicker: "Preuzmite Dial"
+  kicker: "Preuzmi Dial"
   heading: "Sada u App Storeu."
   body: "Dial je besplatan za preuzimanje, račun ne otvaraš. Dial Pro dodaje grafikon procijenjene razine, pune grafikone povijesti, izvoz PDF i CSV te brzi unos s Apple Watcha i iPhonea."
 
-trademarks: |
-  Ozempic, Wegovy, Mounjaro, and Zepbound are trademarks of their respective owners.
-  Zentsu is not affiliated with any pharmaceutical company.
+trademarks: "Ozempic, Wegovy, Rybelsus, Mounjaro, Byetta i Bydureon žigovi su svojih vlasnika. Zentsu nema veze ni s jednom farmaceutskom tvrtkom."

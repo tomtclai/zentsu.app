@@ -40,7 +40,7 @@ images:
     height: 2376
     alt:
       Een pagina van het Dial Pro-PDF-verslag met dosishistorie, gewicht in de tijd
-      en bijwerkingen voor uw voorschrijver
+      en bijwerkingen voor je voorschrijver
   watch_glance:
     base: dial-web-watch-glance-nl
     width: 792
@@ -94,8 +94,8 @@ level:
 
 boundary:
   kicker: Wat Dial niet doet
-  heading: Dial houdt het logboek bij. Uw voorschrijver stelt de dosis vast.
-  body: "Dial berekent geen doses, beveelt geen dosiswijziging aan en zegt niet wat u na een vergeten dosis moet doen. Het geschatte niveau is een schatting uit een populatiemodel op basis van uw vastgelegde doses, geen meting. De eenhedenomzetter voor flacons van een compounding-apotheek rekent alleen met de mg en mg/ml die u invoert en stelt niets voor. Bespreek beslissingen over uw medicatie met uw voorschrijver of apotheker."
+  heading: Dial houdt het logboek bij. Je voorschrijver stelt de dosis vast.
+  body: "Dial berekent geen doses, beveelt geen dosiswijziging aan en zegt niet wat je na een vergeten dosis moet doen. Het geschatte niveau is een schatting uit een populatiemodel op basis van je vastgelegde doses, geen meting. De eenhedenomzetter voor door de apotheek bereide flacons rekent alleen met de mg en mg/ml die je invoert en stelt niets voor. Bespreek beslissingen over je medicatie met je voorschrijver of apotheker."
 
 logging:
   kicker: Snel vastleggen
@@ -111,7 +111,7 @@ history:
   heading: Grafieken van dosis, gewicht en bijwerkingen.
   body: Lijsten van dosis, gewicht en bijwerkingen blijven gratis. Dial Pro voegt de grafieken toe.
   history_card_title: Dosis- en gewichtshistorie
-  history_card_note: Wijzigingen bekijken in het bereik dat u kiest.
+  history_card_note: Wijzigingen bekijken in het bereik dat je kiest.
   side_effects_card_title: Bijwerkingstrends
   side_effects_card_note: Frequentie en ernst bekijken uit bestaande of geïmporteerde historie.
 
@@ -125,16 +125,16 @@ report:
     en je deelt het alleen als je dat wilt, via AirDrop, e-mail of afdrukken. Dezelfde
     historie exporteer je als CSV.
   closing:
-    De rest van de tijd blijft het privé. U deelt het alleen als het logboek de telefoon moet
+    De rest van de tijd blijft het privé. Je deelt het alleen als het logboek de telefoon moet
     verlaten.
-  smallprint: Het verslag vat uw invoer samen. Het is geen medisch dossier en geen behandelplan.
+  smallprint: Het verslag vat je invoer samen. Het is geen medisch dossier en geen behandelplan.
 
 watch:
   kicker: Apple Watch
   heading: De dosis vanaf de pols vastleggen.
   body: >-
     De Watch-app toont een cyclusring die aftelt tot de volgende dosis, en wanneer de
-    volgende herinnering valt. Met Dial Pro legt u op dat scherm vast. Stel de hoeveelheid in
+    volgende herinnering valt. Met Dial Pro leg je op dat scherm vast. Stel de hoeveelheid in
     met de Digital Crown, kies een injectieplaats en bevestig. De invoer synchroniseert
     met de iPhone.
   checklist:
@@ -152,11 +152,11 @@ supporting:
   features:
     - title: Voorraad
       body: Noteer pennen of flacons met concentratie, apotheek, houdbaarheidsdatum en lotnummer.
-    - title: Uw herinneringen
+    - title: Je herinneringen
       body:
         Maak dagelijkse of wekelijkse meldingen, of meldingen die elke N dagen herhalen,
-        rond het schema dat u instelt. Op dosisdag heeft de melding een actie Dosis vastleggen, en een
-        Live Activity blijft op het toegangsscherm tot u vastlegt, maximaal 12 uur.
+        rond het schema dat je instelt. Op dosisdag heeft de melding een actie Dosis vastleggen, en een
+        Live Activity blijft op het toegangsscherm tot je vastlegt, maximaal 12 uur.
     - title: Bestaande invoer importeren
       body: Importeer bestaande invoer uit een compatibele export van een medicijndagboek.
 
@@ -200,7 +200,7 @@ privacy:
     - term: Analyses
       detail: Dial verzamelt geen gebruiksanalyses of telemetrie.
     - term: Onze servers
-      detail: Zentsu draait geen server die uw gegevens opslaat of leest.
+      detail: Zentsu draait geen server die je gegevens opslaat of leest.
     - term: Optionele synchronisatie
       detail:
         Met iCloud gebruiken de kerndata de privé-CloudKit-database op je Apple Account,
@@ -217,6 +217,4 @@ availability:
     geschatte spiegel, de volledige historiegrafieken, PDF- en CSV-export en snel
     vastleggen vanaf Apple Watch en iPhone toe.
 
-trademarks:
-  Ozempic, Wegovy, Mounjaro, and Zepbound are trademarks of their respective owners.
-  Zentsu is not affiliated with any pharmaceutical company.
+trademarks: "Ozempic, Wegovy, Rybelsus, Mounjaro, Byetta en Bydureon zijn handelsmerken van hun respectieve eigenaren. Zentsu is niet verbonden aan een farmaceutisch bedrijf."

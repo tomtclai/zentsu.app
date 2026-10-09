@@ -18,6 +18,23 @@ const dashPattern = /[—]|\s–\s/g;
 
 const imageSuffixes = ['@1x.png', '@2x.png', '.avif', '.webp', '-640.avif', '-640.webp'];
 
+const medicationTrademarkSpellings = {
+  Ozempic: ['Ozempic', 'オゼンピック', '오젬픽', '诺和泰', '胰妥讚', 'Оземпик', 'Оземпік'],
+  Wegovy: ['Wegovy', 'ウゴービ', '위고비', '诺和盈', '週纖達', 'Вегови'],
+  Rybelsus: ['Rybelsus', 'リベルサス', '리벨서스', '诺和忻', '瑞倍适', '瑞倍適', 'Ребелсас'],
+  Mounjaro: ['Mounjaro', 'マンジャロ', '마운자로', '穆峰达', '猛健樂', 'Мунджаро'],
+  Zepbound: ['Zepbound', 'ゼップバウンド', '젭바운드'],
+  Saxenda: ['Saxenda', 'サクセンダ', '삭센다', 'Саксенда'],
+  Victoza: ['Victoza', 'ビクトーザ', '빅토자', '诺和力', 'Виктоза', 'Віктоза'],
+  Trulicity: ['Trulicity', 'トルリシティ', '트루리시티', '度易达', 'Трулисити', 'Трулісіті'],
+  Foundayo: ['Foundayo'],
+  Byetta: ['Byetta', 'バイエッタ', '바이에타'],
+  Bydureon: ['Bydureon', 'ビデュリオン'],
+};
+const trademarkFooterPattern = /<p class="dial-trademarks">([\s\S]*?)<\/p>/;
+const nonStructuredDataScriptPattern =
+  /<script(?![^>]*application\/ld\+json)[^>]*>[\s\S]*?<\/script>/g;
+
 function loadYaml(path) {
   const result = spawnSync(
     'ruby',
@@ -408,7 +425,43 @@ export function checkLanguageSwitcher({ locale, html, expectedLanguages }) {
   return failures;
 }
 
-const localeCheckCount = 10;
+function medicationTrademarksNamedIn(text) {
+  return Object.entries(medicationTrademarkSpellings)
+    .filter(([, spellings]) => spellings.some((spelling) => text.includes(spelling)))
+    .map(([mark]) => mark);
+}
+
+export function checkTrademarkFooter({ locale, html }) {
+  const footer = html.match(trademarkFooterPattern);
+  if (!footer) {
+    return [failure(locale, 'trademark-footer', 'Missing the dial-trademarks paragraph')];
+  }
+  const pageOutsideFooter = html.replace(footer[0], '').replace(nonStructuredDataScriptPattern, '');
+  const named = medicationTrademarksNamedIn(pageOutsideFooter);
+  const credited = medicationTrademarksNamedIn(footer[1]);
+  return [
+    ...named
+      .filter((mark) => !credited.includes(mark))
+      .map((mark) =>
+        failure(
+          locale,
+          'trademark-footer-missing',
+          `Page names ${mark} but the trademark footer does not`,
+        ),
+      ),
+    ...credited
+      .filter((mark) => !named.includes(mark))
+      .map((mark) =>
+        failure(
+          locale,
+          'trademark-footer-extra',
+          `Trademark footer names ${mark} but the page does not`,
+        ),
+      ),
+  ];
+}
+
+const localeCheckCount = 11;
 
 export function validateLocale({
   locale,
@@ -438,6 +491,7 @@ export function validateLocale({
     ...checkCopyPresence({ locale, html, copy }),
     ...checkEmDash({ locale, html, allowlistCounts: dashAllowlistCounts }),
     ...checkLanguageSwitcher({ locale, html, expectedLanguages }),
+    ...checkTrademarkFooter({ locale, html }),
   ];
   return { failures, checks: localeCheckCount };
 }
@@ -458,7 +512,9 @@ export function validateAllDialLocales({
   const dialCopies = data.copies ?? {};
   const enCopy = dialCopies.en ?? loadYaml(join(repoRoot, '_data/dial/en.yml'));
   const enFaqCount = dialFaq.en?.items?.length ?? 6;
-  const expectedLanguages = Object.keys(dialRoutes).filter((locale) => locale !== 'es' || !dialRoutes['es-MX']);
+  const expectedLanguages = Object.keys(dialRoutes).filter(
+    (locale) => locale !== 'es' || !dialRoutes['es-MX'],
+  );
   const locales = expectedLanguages;
   const failures = localeKeyedDataFiles.flatMap((path) =>
     checkTopLevelLocaleKeys({ path, text: readFileSync(join(repoRoot, path), 'utf8') }),

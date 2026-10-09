@@ -40,7 +40,7 @@ images:
     height: 2376
     alt:
       Une page du rapport PDF Dial Pro résumant l'historique des doses, le poids dans
-      le temps et les effets indésirables pour votre prescripteur
+      le temps et les effets indésirables pour ton prescripteur
   watch_glance:
     base: dial-web-watch-glance-fr
     width: 792
@@ -85,14 +85,14 @@ level:
   boundary_lead: C'est une estimation, et nous le disons clairement.
   boundary_body:
     Le graphique modélise une courbe de décroissance standard à partir des doses de
-    sémaglutide ou de tirzépatide que vous avez enregistrées. Il sert à repérer vos
+    sémaglutide ou de tirzépatide que tu as enregistrées. Il sert à repérer tes
     propres habitudes entre les doses, pas à remplacer un taux sanguin mesuré. C'est
     une estimation, et l'app explique toute la méthode.
 
 boundary:
   kicker: Ce que Dial ne fait pas
-  heading: Dial garde le relevé. Votre prescripteur fixe la dose.
-  body: "Dial ne calcule pas les doses, ne recommande pas de changement de dose et ne dit pas quoi faire après une dose oubliée. Le niveau estimé est une estimation issue d'un modèle de population, calculée à partir de vos doses enregistrées, pas une mesure. Le convertisseur d'unités pour les flacons de préparation magistrale fait de l'arithmétique sur les mg et les mg/mL que vous saisissez, et ne suggère aucune quantité. Demandez à votre prescripteur ou à votre pharmacien pour toute décision de traitement."
+  heading: Dial garde le relevé. Ton prescripteur fixe la dose.
+  body: "Dial ne calcule pas les doses, ne recommande pas de changement de dose et ne dit pas quoi faire après une dose oubliée. Le niveau estimé est une estimation issue d'un modèle de population, calculée à partir de tes doses enregistrées, pas une mesure. Le convertisseur d'unités pour les flacons de préparation magistrale fait de l'arithmétique sur les mg et les mg/mL que tu saisis, et ne suggère aucune quantité. Demande à ton prescripteur ou à ton pharmacien pour toute décision de traitement."
 
 logging:
   kicker: Enregistrement rapide
@@ -108,7 +108,7 @@ history:
   heading: Graphiques de doses, de poids et d'effets indésirables.
   body: Les listes de doses, de poids et d'effets indésirables restent gratuites. Dial Pro ajoute les graphiques.
   history_card_title: Historique des doses et du poids
-  history_card_note: Revoir les changements sur la plage que vous choisissez.
+  history_card_note: Revoir les changements sur la plage que tu choisis.
   side_effects_card_title: Tendances des effets indésirables
   side_effects_card_note: Revoir la fréquence et l'intensité à partir de l'historique existant ou importé.
 
@@ -122,16 +122,16 @@ report:
     le construit sur l'appareil, et tu le partages seulement si tu le décides, par
     AirDrop, e-mail ou impression. Le même historique s'exporte en CSV.
   closing:
-    Privé au quotidien. Utile le jour où votre dossier doit quitter le téléphone.
-  smallprint: Le rapport résume vos entrées. Ce n'est pas un dossier médical ni un plan de traitement.
+    Privé au quotidien. Utile le jour où ton dossier doit quitter le téléphone.
+  smallprint: Le rapport résume tes entrées. Ce n'est pas un dossier médical ni un plan de traitement.
 
 watch:
   kicker: Apple Watch
   heading: Enregistrer la dose depuis le poignet.
   body: >-
     L'app Apple Watch montre un anneau de cycle qui fait le compte à rebours jusqu'à la
-    prochaine dose, et l'heure du prochain rappel. Dial Pro enregistre depuis cet écran. Réglez la
-    quantité avec la Digital Crown, choisissez un site d'injection, confirmez. L'entrée
+    prochaine dose, et l'heure du prochain rappel. Dial Pro enregistre depuis cet écran. Règle la
+    quantité avec la Digital Crown, choisis un site d'injection, confirme. L'entrée
     se synchronise avec l'iPhone.
   checklist:
     - Anneau de cycle, état de la dose et prochain rappel d'un coup d'œil (gratuit)
@@ -148,14 +148,14 @@ supporting:
   features:
     - title: Inventaire des stocks
       body: "Suis tes stylos, flacons et boîtes de comprimés avec leur date de péremption. Scanne l'étiquette du conditionnement, puis vérifie les données avant de les enregistrer."
-    - title: Vos rappels
+    - title: Tes rappels
       body:
-        Créez des notifications quotidiennes, hebdomadaires ou tous les N jours selon
-        le calendrier que vous définissez. Le jour de la dose, la notification propose
+        Crée des notifications quotidiennes, hebdomadaires ou tous les N jours selon
+        le calendrier que tu définis. Le jour de la dose, la notification propose
         une action Enregistrer une dose, et une Live Activity reste sur
         l'écran de verrouillage jusqu'à l'enregistrement, 12 heures au plus.
     - title: Importer des saisies existantes
-      body: Ouvrez dans Dial l'export d'un suivi de médicaments compatible pour importer les entrées existantes.
+      body: Ouvre dans Dial l'export d'un suivi de médicaments compatible pour importer les entrées existantes.
 
 plans:
   kicker: Gratuit et Dial Pro
@@ -197,7 +197,7 @@ privacy:
     - term: Analyses
       detail: Dial n'enregistre aucune statistique d'usage ni télémétrie.
     - term: Nos serveurs
-      detail: Zentsu n'exploite aucun serveur qui stocke ou lit vos dossiers.
+      detail: Zentsu n'exploite aucun serveur qui stocke ou lit tes dossiers.
     - term: Synchronisation facultative
       detail:
         Avec iCloud activé, les relevés principaux utilisent la base CloudKit privée de
@@ -214,6 +214,4 @@ availability:
     de niveau estimé, les graphiques d'historique, l'export PDF et CSV, et l'enregistrement
     rapide depuis Apple Watch et iPhone.
 
-trademarks:
-  Ozempic, Wegovy, Mounjaro, and Zepbound are trademarks of their respective owners.
-  Zentsu is not affiliated with any pharmaceutical company.
+trademarks: "Ozempic, Wegovy, Rybelsus, Mounjaro, Saxenda, Byetta et Bydureon sont des marques de leurs propriétaires respectifs. Zentsu n'a aucun lien avec un laboratoire pharmaceutique."
