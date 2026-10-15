@@ -125,8 +125,8 @@ apps:
     slug: japanese2k
     visible: true
     tagline: >-
-      Practice Japanese vocabulary with spoken words, pictures and spaced review.
-      Start with 500 words free.
+      Practice core Japanese vocabulary by ear, with spaced review. Start with 500
+      words free.
     status: coming_soon
     platforms: iPhone
     app_store_url: null

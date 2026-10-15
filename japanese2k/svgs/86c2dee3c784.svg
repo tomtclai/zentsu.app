@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
-  <g><circle cx="22" cy="50.2" r="10.2" fill="#3B82F6"/><path d="M8.2 100 V75.22 a13.8 12.42 0 0 1 27.6 0 V100 Z" fill="#3B82F6"/></g>
-  <g><circle cx="106" cy="50.2" r="10.2" fill="#F97316"/><path d="M92.2 100 V75.22 a13.8 12.42 0 0 1 27.6 0 V100 Z" fill="#F97316"/></g>
-  <line x1="50" y1="88" x2="22.4" y2="88" stroke="#334155" stroke-width="5" stroke-linecap="round"/><polygon points="14,88 24.531,82.2469 24.531,93.7531" fill="#334155" stroke="#334155" stroke-width="2" stroke-linejoin="round"/>
-  <line x1="78" y1="88" x2="105.6" y2="88" stroke="#334155" stroke-width="5" stroke-linecap="round"/><polygon points="114,88 103.469,93.7531 103.469,82.2469" fill="#334155" stroke="#334155" stroke-width="2" stroke-linejoin="round"/>
-  <line x1="64" y1="30" x2="64" y2="104" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round" stroke-dasharray="4 6"/>
-</svg>

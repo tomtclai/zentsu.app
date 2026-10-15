@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
-  <circle cx="20" cy="64" r="12" fill="#3B82F6"/>
-  <circle cx="108" cy="64" r="12" fill="#F97316"/>
-  <line x1="34" y1="64" x2="79.4" y2="64" stroke="#334155" stroke-width="8" stroke-linecap="round"/><polygon points="92,64 76.2035,72.6297 76.2035,55.3703" fill="#334155" stroke="#334155" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M26 96 Q50 118 64 96 Q78 74 102 96" fill="none" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6"/>
-</svg>

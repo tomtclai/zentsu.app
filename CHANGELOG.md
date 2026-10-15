@@ -25,10 +25,13 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Removed
 
+- The 425 picture files under `/japanese2k/svgs/` and the picture fields of `icons.json`. No page displayed them, and the current app bundles its pictures and makes no requests to the site.
 - `/dial/titration-record/`, which reproduced the label dose-escalation steps, is unpublished under DEC-2026-07-10-dial-cut-titration and 301-redirects to `/dial/printable-dose-log/`. The page source is kept on the `feat/dial-titration-record` branch. `validate-site.mjs` fails the build if the page is produced again.
 
 ### Changed
 
+- The Learn Japanese pages describe the audio-first build: every word is practiced by ear in frequency order with spaced review, and a picture appears only where it shows the meaning (about a third of the list). The page names Today's free practice, the Library's listen-through, and the adjustable new-words-per-day setting in place of the old Test menu and Play all. The `apps.yml` tagline, support page, JP 2K privacy policy and company privacy policy match, and both privacy policies are dated October 15, 2026.
+- `/japanese2k/icons.json` is version 20 and holds word data only: the Japanese form, reading and English meaning of all 2,000 words in frequency order, generated from the app's compiled catalog. `validate-japanese2k.mjs` checks that it lists 2,000 words.
 - The visual suite is deterministic under load. Each capture waits for web fonts and two animation frames, the visual specs freeze animations and transitions, and `npm run test:visual` runs one worker. Every Playwright run serves the site on its own free port (pin one with `SITE_PORT`), so parallel runs no longer collide on port 8788.
 - `npm run validate:links` skips `tanos.co.uk`. The domain stopped resolving (NXDOMAIN on 2026-10-05), which failed every build on the JP 2K word-source credit links. The credit and its links stay on `/japanese2k/data` as the license requires.
 - Visual capture waits for the observed Dial sticky-bar state after scrolling back to the top, replacing a fixed delay without changing product behavior, image references or comparison thresholds.

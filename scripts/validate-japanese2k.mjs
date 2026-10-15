@@ -29,5 +29,6 @@ assert.ok(
   read('_site/_redirects').includes('/japanese2k/ /japanese2k 301'),
   'Product slash redirect',
 );
-assert.ok(read('_site/japanese2k/icons.json').length > 0, 'Legacy content remains published');
-console.log('Validated Japanese product routes, app listings and legacy data availability.');
+const wordData = JSON.parse(read('_site/japanese2k/icons.json'));
+assert.equal(Object.keys(wordData.words).length, 2000, 'Word data lists 2,000 words');
+console.log('Validated Japanese product routes, app listings and word data.');
