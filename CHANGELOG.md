@@ -30,6 +30,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- The two screenshots on `/japanese2k` come from the redesigned app (Today, Library and Settings tabs, kanji-first cards) captured on iPhone 17 Pro / iOS 26.5 for the build 21 listing. Their alt text names the kanji as the headline and the kana as the reading. The images are 804 by 1748 pixels and 65 to 85 KB. The mobile visual references are re-recorded.
 - The Learn Japanese pages describe the audio-first build: every word is practiced by ear in frequency order with spaced review, and a picture appears only where it shows the meaning (about a third of the list). The page names Today's free practice, the Library's listen-through, and the adjustable new-words-per-day setting in place of the old Test menu and Play all. The `apps.yml` tagline, support page, JP 2K privacy policy and company privacy policy match, and both privacy policies are dated October 15, 2026.
 - `/japanese2k/icons.json` is version 20 and holds word data only: the Japanese form, reading and English meaning of all 2,000 words in frequency order, generated from the app's compiled catalog. `validate-japanese2k.mjs` checks that it lists 2,000 words.
 - The visual suite is deterministic under load. Each capture waits for web fonts and two animation frames, the visual specs freeze animations and transitions, and `npm run test:visual` runs one worker. Every Playwright run serves the site on its own free port (pin one with `SITE_PORT`), so parallel runs no longer collide on port 8788.
