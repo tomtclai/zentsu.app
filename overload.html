@@ -83,7 +83,6 @@ page_stylesheet: /overload.css
               the top, the weight goes up by your increment and the targets drop to the bottom of
               the range.
             </li>
-            <li>A set you did not finish keeps its reps as the target, never below the bottom.</li>
           </ol>
         </div>
 
@@ -158,9 +157,7 @@ page_stylesheet: /overload.css
                     <span class="ovl-sets">
                       <span class="ovl-set" data-reps="9">9</span>
                       <span class="ovl-set" data-reps="8">8</span>
-                      <span class="ovl-set ovl-set--open" data-reps="7"
-                        >7<span class="ovl-visually-hidden">, not finished</span></span
-                      >
+                      <span class="ovl-set" data-reps="7">7</span>
                     </span>
                   </td>
                   <td class="ovl-next"><span>140 ×</span> <span>10 · 9 · 8</span></td>
@@ -170,7 +167,7 @@ page_stylesheet: /overload.css
           </section>
           <p class="ovl-ledger-note">
             Session 4 fills the range, so the weight goes up. In session 5 the third set stopped at
-            7, so its target stays at 8, the bottom of the range.
+            7, below the range, and its next target is 8.
           </p>
         </div>
       </section>
@@ -202,9 +199,11 @@ page_stylesheet: /overload.css
             The logging page opens with today's targets filled in. Set one weight for the session
             and every set follows it. When the last set is lighter, change that set alone.
           </p>
+          <p>Check off each set as you finish it. Save appears once every set is checked.</p>
           <p>
-            Check off each set as you finish it. You can save once one set is done. A set you leave
-            unchecked stays in the record, but it does not count toward the next weight increase.
+            Each check starts that exercise's rest countdown, 2:00 by default. Tap the countdown for
+            a full-screen timer, and if rest ends while Overload is in the background, a
+            notification tells you.
           </p>
           <p>
             Past sessions stay editable. Change a session's date or sets, or delete it. Rename or
@@ -225,8 +224,8 @@ page_stylesheet: /overload.css
           </p>
           <p>
             Give an exercise an emoji, or photograph the machine so you can find it on the gym
-            floor. The list puts the lifts you trained most recently first, with the last result and
-            the next change on each row.
+            floor. The list puts the lifts you trained most recently first, with the last result on
+            each row and the new weight when it is time to go up.
           </p>
         </div>
         <figure class="ovl-screen">
@@ -246,7 +245,7 @@ page_stylesheet: /overload.css
               decoding="async"
             />
           </picture>
-          <figcaption>Most recent first, with the next change on each row.</figcaption>
+          <figcaption>Most recent first, with the last result on each row.</figcaption>
         </figure>
       </section>
 
