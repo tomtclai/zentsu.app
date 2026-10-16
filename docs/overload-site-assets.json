@@ -1,34 +1,34 @@
 {
   "sourceCommit": "09dc616025e1374caf8c81e207fb70d6406fcf66",
   "publicBuild": "1.0 (13) source; App Review on hold",
-  "configuration": "Debug simulator build of the source at sourceCommit; exercises and past sessions written to the app's SwiftData store by a scratch program compiled from Overload/Model, then sets checked and edited through the simulator UI with AXe",
+  "configuration": "Debug simulator build of the source at sourceCommit; exercises and past sessions written to the app's SwiftData store by a scratch program compiled from Overload/Model, then sets checked and edited through the simulator UI and captured with AXe",
   "device": "iPhone17Pro",
   "runtime": "iOS26.5",
   "captureDate": "2026-10-16",
   "assets": [
     {
       "file": "assets/overload-screen-session.png",
-      "sha256": "69ec6a38938022ab966bac7a9983d16fb57a0fbc2bd6b81d7fbb40439cbb5c2a",
+      "sha256": "3c0c1720abeaa2ba3a784f9bd79e98dd5663343f31322625ad7c48f746a11a2f",
       "dimensions": [804, 1748],
-      "sourceSha256": "e42a07c3f6839c2c5e2724cdc322730f74da6286e2640940e49bed99db3093d5",
+      "sourceSha256": "4c6a24d011c24697ae938ff556d01d9111f9f671cc9df8acb1ffde2dfbd10527",
       "sourceDimensions": [1206, 2622],
       "content": "Bench Press logging page, two of three sets checked, rest countdown running",
       "processing": "Lanczos resize; no content edits. AVIF q60, WebP q85, @2x 804 px and @1x 402 px PNG derived from it"
     },
     {
       "file": "assets/overload-screen-sets.png",
-      "sha256": "ea1cfd8bcd24a8a4d328c03e3740f2180de9a0916c6f27156c49a067a23dc55d",
+      "sha256": "06107f205eabc973a1742a95e22db05ca4c1f1a2fb8037518d11ad940f939b25",
       "dimensions": [804, 1748],
-      "sourceSha256": "2e1010c549309e32abd9d55ef56d482815f3c1c9650d41e9ea1a3bc66a318961",
+      "sourceSha256": "d53479a2244131f0076f3ed93a8fe2a33f03da16c91a98eea167ba200e243188",
       "sourceDimensions": [1206, 2622],
       "content": "Leg Press logging page with a 230 lb third set, all sets checked, rest countdown running, Save shown",
       "processing": "Lanczos resize; no content edits. AVIF q60, WebP q85, @2x 804 px and @1x 402 px PNG derived from it"
     },
     {
       "file": "assets/overload-screen-list.png",
-      "sha256": "10891b5a115fa8f9a4e9a642f34f8c46ce3503fe58bc38bd2a8022753a0b551b",
+      "sha256": "3a5e985e22a923a4b18fd59eec2273977078ab616fd12f8a09e62a3eb3935910",
       "dimensions": [804, 1748],
-      "sourceSha256": "2ec19f494870f266e0d33bfcd416610919c00c707f43bf9a615e64ca2426dfb2",
+      "sourceSha256": "b79fe926af7a5e138f36095024f072ea457ad60bb540d5378113513039db0cd7",
       "sourceDimensions": [1206, 2622],
       "content": "Exercise list with five exercises; only Lat Pulldown shows a next-weight hint",
       "processing": "Lanczos resize; no content edits. AVIF q60, WebP q85, @2x 804 px and @1x 402 px PNG derived from it"
@@ -36,7 +36,7 @@
   ],
   "socialImage": {
     "file": "assets/overload-og.png",
-    "sha256": "e8d4b9ad4340484627875e0e2bbd2d45288ca164673cd58bf2d05b81fc1967b7",
+    "sha256": "587a753c326d20260c39aee8828f3589583f7379bcc698f809b6e8606190e4d8",
     "dimensions": [1200, 630],
     "background": "#f5f3ee",
     "components": [
@@ -51,16 +51,18 @@
         "file": "assets/overload-screen-session.png",
         "height": 558,
         "left": 523,
-        "top": 36
+        "top": 36,
+        "sha256": "3c0c1720abeaa2ba3a784f9bd79e98dd5663343f31322625ad7c48f746a11a2f"
       },
       {
         "file": "assets/overload-screen-list.png",
         "height": 558,
         "left": 838,
-        "top": 36
+        "top": 36,
+        "sha256": "3a5e985e22a923a4b18fd59eec2273977078ab616fd12f8a09e62a3eb3935910"
       }
     ],
-    "processing": "Sharp PNG composition with rounded corners; no added text or altered screenshot content"
+    "processing": "Sharp PNG composition: icon resized to 272 px with a 60 px corner mask, screenshots resized to 257 x 558 with a 30 px corner mask, on a flat #f5f3ee background; no added text or altered screenshot content"
   },
   "icon": {
     "file": "assets/overload-icon.png",
