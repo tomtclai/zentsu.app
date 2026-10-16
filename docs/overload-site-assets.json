@@ -1,36 +1,36 @@
 {
-  "sourceCommit": "49370f0705b269e02608fe3dc568dd70a682ffa4",
-  "publicBuild": "1.0 (3), TestFlight only; App Review on hold",
-  "configuration": "Debug simulator build of the source at sourceCommit; data entered through the simulator UI with AXe",
+  "sourceCommit": "09dc616025e1374caf8c81e207fb70d6406fcf66",
+  "publicBuild": "1.0 (13) source; App Review on hold",
+  "configuration": "Debug simulator build of the source at sourceCommit; exercises and past sessions written to the app's SwiftData store by a scratch program compiled from Overload/Model, then sets checked and edited through the simulator UI with AXe",
   "device": "iPhone17Pro",
   "runtime": "iOS26.5",
-  "captureDate": "2026-10-04",
+  "captureDate": "2026-10-16",
   "assets": [
     {
       "file": "assets/overload-screen-session.png",
-      "sha256": "ff390635eda463488b849be7a52dfa91a0c37b0435eb93f7ba3117c11e847a00",
+      "sha256": "69ec6a38938022ab966bac7a9983d16fb57a0fbc2bd6b81d7fbb40439cbb5c2a",
       "dimensions": [804, 1748],
-      "sourceSha256": "db01e1f83995c0d814224e6dbd7061e31feee5f374e96c6220d326faca7f7df0",
+      "sourceSha256": "e42a07c3f6839c2c5e2724cdc322730f74da6286e2640940e49bed99db3093d5",
       "sourceDimensions": [1206, 2622],
-      "content": "Bench Press logging page, two of three sets checked",
+      "content": "Bench Press logging page, two of three sets checked, rest countdown running",
       "processing": "Lanczos resize; no content edits. AVIF q60, WebP q85, @2x 804 px and @1x 402 px PNG derived from it"
     },
     {
       "file": "assets/overload-screen-sets.png",
-      "sha256": "78c8cb920938d5c9cd54b305a561f9f0d8bf21e2d4f6a8f92691a3160be913ac",
+      "sha256": "ea1cfd8bcd24a8a4d328c03e3740f2180de9a0916c6f27156c49a067a23dc55d",
       "dimensions": [804, 1748],
-      "sourceSha256": "b135ec3a76c74fe6df785c2d76714421adfda7599adcd2a8bc8c1751db6d52e3",
+      "sourceSha256": "2e1010c549309e32abd9d55ef56d482815f3c1c9650d41e9ea1a3bc66a318961",
       "sourceDimensions": [1206, 2622],
-      "content": "Leg Press logging page with a 230 lb third set",
+      "content": "Leg Press logging page with a 230 lb third set, all sets checked, rest countdown running, Save shown",
       "processing": "Lanczos resize; no content edits. AVIF q60, WebP q85, @2x 804 px and @1x 402 px PNG derived from it"
     },
     {
       "file": "assets/overload-screen-list.png",
-      "sha256": "2e7577617d08c50c655238242142bb5d860abc63f466118b9d1c11a1d62e3994",
+      "sha256": "10891b5a115fa8f9a4e9a642f34f8c46ce3503fe58bc38bd2a8022753a0b551b",
       "dimensions": [804, 1748],
-      "sourceSha256": "264d22d977d3c4cb404c1cbc84f2199c1f087d1ccbe7b7f892f799804dcddbde",
+      "sourceSha256": "2ec19f494870f266e0d33bfcd416610919c00c707f43bf9a615e64ca2426dfb2",
       "sourceDimensions": [1206, 2622],
-      "content": "Exercise list with five exercises",
+      "content": "Exercise list with five exercises; only Lat Pulldown shows a next-weight hint",
       "processing": "Lanczos resize; no content edits. AVIF q60, WebP q85, @2x 804 px and @1x 402 px PNG derived from it"
     }
   ],
