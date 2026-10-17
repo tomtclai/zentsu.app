@@ -9,7 +9,7 @@ site.data.dial_guides.en.byline -%}
     ></span
   >
   <span
-    >{{ guide_strings.reviewed }}
+    >{{ page.reviewed_label | default: guide_strings.reviewed }}
     <time datetime="{{ page.reviewed_on | date: '%Y-%m-%d' }}"
       >{{ page.reviewed_on | date: guide_strings.date_format }}</time
     ></span

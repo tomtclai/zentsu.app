@@ -1,5 +1,9 @@
 ---
 title: How to keep a GLP-1 medication log | Dial
+headline: How to keep a useful GLP-1 medication log
+published_on: 2026-09-05
+reviewed_on: 2026-10-16
+reviewed_label: Updated
 description: 'A practical guide to recording GLP-1 medication entries, correcting mistakes, and preparing a clear record to share from Dial.'
 canonical: https://zentsu.app/dial/medication-log/
 permalink: /dial/medication-log/
@@ -9,29 +13,35 @@ og_site_name: Dial
 og_image: https://zentsu.app/assets/dial-og.png
 og_image_alt: 'Dial medication log guide'
 og_type: article
+page_stylesheet: /dial-guides.css
 ---
 
 <!doctype html>
 <html lang="{{ page.lang }}" dir="{{ site.data.i18n[page.lang].dir | default: 'ltr' }}">
   <head>
-    {% include head-common.html %}
-    <meta
-      name="apple-itunes-app"
-      content="app-id=6789408903, affiliate-data=ct={{ site.data.dial_campaign.campaigns.banner }}&amp;pt={{ site.data.dial_campaign.provider_token }}"
-    />
+    {% include head-common.html %} {% include dial-guide/head.html %}
   </head>
-  <body>
+  <body class="dial-record-guide">
     {% include nav.html %}
     <main id="main-content" tabindex="-1">
       <article class="dial-guide-article">
         <span class="page-label">Dial guide</span>
         <h1>How to keep a useful GLP-1 medication log</h1>
-        <p class="effective">A practical record of what you entered, ready to review.</p>
+        {% include dial-guide/byline.html %}
 
         <p>
           A medication log works best when it answers the same questions every time: what was
           recorded, how much, when, and where. Dial keeps those fields together on your iPhone, with
           optional Apple Watch logging in Dial Pro.
+        </p>
+
+        <h2>Bring your existing dose history</h2>
+        <p>
+          If you already keep a CSV record, you can import it into Dial for free. Check the column
+          choices and first rows in the preview before saving. The
+          <a href="/dial/import-dose-history/">CSV import guide</a> explains how to check dates,
+          units, and rows that cannot be imported, and how to undo an import from its completion
+          summary. Keep the original file as a separate copy.
         </p>
 
         <h2>What to record</h2>

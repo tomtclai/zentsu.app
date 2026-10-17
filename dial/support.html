@@ -13,7 +13,7 @@ favicon: /assets/dial-icon.png
   <head>
     {% include head-common.html %}
   </head>
-  <body>
+  <body class="dial-record-guide">
     {% include nav.html %}
     <main id="main-content" tabindex="-1">
       <article>
@@ -24,6 +24,14 @@ favicon: /assets/dial-icon.png
           For help with Dial, email <a href="mailto:support@zentsu.app">support@zentsu.app</a>.
           Include your iPhone model, iOS version, Dial version, and the steps that led to the issue.
           Do not include medication or health details you do not want to share.
+        </p>
+
+        <h2>Importing a CSV dose log</h2>
+        <p>
+          Open Settings, Weight and connections, then Import from another app. Choose your CSV file
+          and check the preview before importing. See the
+          <a href="/dial/import-dose-history/">CSV import guide</a> for column mapping, date and
+          unit checks, and the Undo Import option in the completion summary.
         </p>
 
         <h2>Notifications</h2>

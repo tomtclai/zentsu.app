@@ -1,0 +1,153 @@
+---
+title: Import a GLP-1 dose log from CSV to iPhone | Dial
+headline: Import your GLP-1 dose history from a CSV file
+description: 'Move your GLP-1 dose history into Dial free. Preview a CSV, check columns, dates and units, then import. Undo is available in the completion summary.'
+canonical: https://zentsu.app/dial/import-dose-history/
+permalink: /dial/import-dose-history/
+lang: en
+favicon: /assets/dial-icon.png
+og_site_name: Dial
+og_image: https://zentsu.app/assets/dial-og.png
+og_image_alt: 'Dial, a GLP-1 medication log for iPhone and Apple Watch'
+og_type: article
+page_stylesheet: /dial-guides.css
+published_on: 2026-10-16
+reviewed_on: 2026-10-16
+reviewed_label: Updated
+---
+
+<!doctype html>
+<html lang="{{ page.lang }}" dir="ltr">
+  <head>
+    {% include head-common.html %} {% include dial-guide/head.html %}
+  </head>
+  <body class="dial-record-guide">
+    {% include nav.html %}
+    <main id="main-content" tabindex="-1">
+      <article class="dial-guide-article">
+        <span class="page-label">Dial guide</span>
+        <h1>{{ page.headline }}</h1>
+        {% include dial-guide/byline.html %}
+        <p>
+          You can bring an existing GLP-1 dose log into Dial without entering every dose again. CSV
+          import is free on iPhone in Dial 1.3.4 and later. A preview shows the records Dial can
+          read before you save them. You do not need a Dial account or Dial Pro to import.
+        </p>
+        <p>
+          Keep the original export. Importing transfers records that Dial recognizes; it does not
+          promise to reproduce every field or setting from the app that created the file.
+        </p>
+
+        <h2>Open the file and check the preview</h2>
+        <ol>
+          <li>Save your existing log as a CSV file on your iPhone.</li>
+          <li>
+            In Dial, open Settings, then Weight and connections, then Import from another app.
+            Choose the CSV file. You can also open a CSV in Dial from Files or the share sheet.
+          </li>
+          <li>
+            Review the Columns section. Each column shows its heading, a sample value, and the kind
+            of record Dial will read from it. Change any incorrect column choice.
+          </li>
+          <li>
+            Check the First rows section against your original file. Confirm the medication, amount,
+            date, time, and any weight or side-effect entries.
+          </li>
+          <li>
+            Read the counts and notices above the columns. Tap Import when they match what you
+            expect, or Cancel to leave without saving the preview.
+          </li>
+        </ol>
+        <p>
+          Dial needs a date column and at least one readable record before Import becomes available.
+          The preview shows the first five rows containing records, not the whole file. Review your
+          history after the import as well.
+        </p>
+
+        <h2>Which CSV fields can Dial read?</h2>
+        <p>
+          Dial recognizes headings such as Date, Time, Medication, Dose, Unit, Site, Taken, Weight,
+          Side effects, Severity, and Notes. Uppercase and lowercase headings work, and you can
+          correct the column mapping in the preview. Not every field is required for every record. A
+          dose needs a readable medication and amount; weight and side-effect entries use their own
+          fields.
+        </p>
+        <p>
+          Files must be UTF-8 text, with commas or semicolons separating columns. Quoted fields are
+          supported. If your spreadsheet saved a different file type, export a CSV rather than
+          changing the filename extension. Dial accepts files up to 25 MB.
+        </p>
+
+        <h2>Check dates and units before importing</h2>
+        <p>
+          An unambiguous date such as <code>2026-10-16</code> avoids confusion between month-first
+          and day-first formats. Dial also reads common numeric date formats and ISO 8601
+          timestamps. For ambiguous dates, it uses clues from the file, then your device's locale
+          when those clues are absent. Check the preview against the original log. A date without a
+          readable time is placed at noon; that is a placeholder, not evidence of when you took a
+          dose.
+        </p>
+        <p>
+          Doses recorded in mg or mcg import in those units. Entries in units or mL keep their
+          recorded number and unit; the importer does not convert them into mg. Check your weight
+          units too. When a file does not specify a weight unit, Dial uses the weight unit selected
+          in your settings. Correct the file or settings and reopen the preview if the values do not
+          match.
+        </p>
+
+        <h2>Understand the counts and omitted rows</h2>
+        <p>
+          The preview counts medications, doses, weights, and side effects. It separately identifies
+          doses marked as skipped, rows without a readable date, doses missing a medication or
+          amount, and doses kept in other units. A skipped dose is a record of a dose not taken. It
+          is different from a row the importer cannot read.
+        </p>
+        <p>
+          Rows without a readable date are left out. Check the completion summary for the result,
+          including duplicates or unsupported records. If an entry is missing, compare it with the
+          original file before adding or correcting anything. An import is a record transfer, not
+          advice about taking a missed dose.
+        </p>
+
+        <h2>Undo an import</h2>
+        <p>
+          The completion summary offers Undo Import. Use it before closing that summary if you want
+          to remove the records this import added. It removes the medications, doses, side effects,
+          reminders, and weights added by that import, while keeping records that were already
+          present. This is an immediate undo action, not a saved backup or a permanent
+          import-history screen.
+        </p>
+        <p>
+          Once you have checked your imported history, continue with the
+          <a href="/dial/medication-log/">medication log guide</a> for recording new entries,
+          correcting mistakes, and preparing a record to share.
+        </p>
+
+        <h2>What stays free, and what needs Pro?</h2>
+        <p>
+          CSV import and the phone dose log are free. The free tier includes one medication and one
+          reminder, with no cap on dose entries. Dial Pro adds charts, PDF reports, CSV export, and
+          Apple Watch logging. Importing a file and exporting a report are separate features.
+        </p>
+        <p>
+          Dial reads the file on your device. Optional medication-record sync uses your own private
+          iCloud database. Weight records use separate local storage. The
+          <a href="/dial/privacy/">privacy policy</a> explains those boundaries.
+        </p>
+        <p>
+          Dial records what you enter. It does not prescribe medication or recommend a dose. For a
+          problem with the file or preview, contact <a href="/dial/support/">Dial support</a>
+          without sending health details you do not want to share.
+        </p>
+        {%- capture guide_app_store_url -%}{% include dial-guide/store-url.html %}{%- endcapture %}
+        <p>
+          <a href="{{ guide_app_store_url }}" rel="noopener noreferrer"
+            >Download Dial on the App Store</a
+          >
+          or <a href="/dial/">see the Dial overview</a>.
+        </p>
+      </article>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

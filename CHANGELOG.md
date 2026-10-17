@@ -8,6 +8,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- A free CSV dose-history import guide with preview, column mapping, date and unit checks, and completion-summary undo instructions. The English Dial overview, medication-log guide, and support page link to it. The revised medication-log guide now carries its original publication date, update date, and Article data.
+
 - Overload product page at `/overload`: the double-progression rule as three numbered steps and a five-session worked example, logging and exercise-list sections with screenshots captured from the current build (1.0 build 3 source) on iPhone 17 Pro / iOS 26.5, per-exercise settings, and a tradeoffs section on iPhone-only use and on-device storage. The page states that Overload is not available on the App Store and carries no store link, price or release date. Overload is listed on the homepage and `/apps` under a new `not_on_store` card status ("Not on the App Store"). The company privacy policy now describes Overload's on-device storage. `scripts/validate-overload.mjs`, a functional and axe spec, desktop/mobile light/dark visual references and a Lighthouse URL cover the page.
 - Learn Japanese product page at `/japanese2k`, with verified build 15 images, accurate pending availability, the 500-word free offer, app-listing links and desktop/mobile accessibility and visual checks. Existing support and privacy pages now describe bundled vocabulary and artwork while retaining legacy content endpoints; word-source licences remain published.
 
@@ -29,6 +31,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `/dial/titration-record/`, which reproduced the label dose-escalation steps, is unpublished under DEC-2026-07-10-dial-cut-titration and 301-redirects to `/dial/printable-dose-log/`. The page source is kept on the `feat/dial-titration-record` branch. `validate-site.mjs` fails the build if the page is produced again.
 
 ### Changed
+
+- The Traditional Chinese Dial search and social title now leads with 猛健樂紀錄, matching the existing Taiwan acquisition evidence.
+- Inline links in the revised Dial recording, import, and support guides are underlined so they do not rely on color alone.
 
 - The two screenshots on `/japanese2k` come from the redesigned app (Today, Library and Settings tabs, kanji-first cards) captured on iPhone 17 Pro / iOS 26.5 for the build 21 listing. Their alt text names the kanji as the headline and the kana as the reading. The images are 804 by 1748 pixels and 65 to 85 KB. The mobile visual references are re-recorded.
 - The Learn Japanese pages describe the audio-first build: every word is practiced by ear in frequency order with spaced review, and a picture appears only where it shows the meaning (about a third of the list). The page names Today's free practice, the Library's listen-through, and the adjustable new-words-per-day setting in place of the old Test menu and Play all. The `apps.yml` tagline, support page, JP 2K privacy policy and company privacy policy match, and both privacy policies are dated October 15, 2026.

@@ -29,3 +29,16 @@ test('English plan copy keeps the free phone log separate from Pro tools', () =>
   assert.doesNotMatch(freeSummary, /Watch|chart|export/i);
   assert.match(proSummary, /wrist|chart|export/i);
 });
+
+test('the CSV import guide has its own canonical route and is reachable from recording and support', () => {
+  const imported = read('dial/import-dose-history.html');
+  for (const source of [landing, guide, read('dial/support.html')]) {
+    assert.match(source, /href="\/dial\/import-dose-history\/"/);
+  }
+  assert.match(imported, /permalink: \/dial\/import-dose-history\//);
+  assert.match(imported, /canonical: https:\/\/zentsu\.app\/dial\/import-dose-history\//);
+  assert.match(imported, /include dial-guide\/head.html/);
+  assert.match(imported, /include dial-guide\/store-url.html/);
+  assert.match(imported, /before closing that summary/);
+  assert.match(imported, /does not convert them into mg/);
+});

@@ -898,3 +898,8 @@ section.block:last-of-type {
     color: #fff;
   }
 }
+
+.dial-record-guide article a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
