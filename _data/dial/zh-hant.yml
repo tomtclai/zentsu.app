@@ -127,6 +127,8 @@ supporting:
       body: "按你設定的計畫建立每日、每週或每隔幾天的通知。劑量日的通知可直接記錄，Live Activity 會留在鎖定畫面直到你記錄，最長 12 小時。"
     - title: "匯入既有紀錄"
       body: "用 Dial 打開相容的用藥日記匯出檔，匯入既有紀錄。"
+      link_url: /zh-hant/dial/import-dose-history/
+      link_label: CSV 匯入指南
 
 plans:
   kicker: "免費與 Dial Pro"

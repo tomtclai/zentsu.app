@@ -157,6 +157,8 @@ supporting:
         ao Vivo fica na Tela Bloqueada até você registrar, por no máximo 12 horas.
     - title: Importar registros existentes
       body: Abra no Dial a exportação de um app de acompanhamento de medicamentos compatível para importar as entradas existentes.
+      link_url: /pt/dial/import-dose-history/
+      link_label: Guia de importação CSV
 
 plans:
   kicker: Grátis e Dial Pro

@@ -265,6 +265,9 @@ id:
   privacy_url: "/id/dial/privacy/"
 
 ko:
+  import_h: CSV 가져오기 안내
+  import_url: /ko/dial/import-dose-history/
+  import_link: CSV 가져오기 안내
   h1: "지원"
   overview_link: "Dial에 대해 더 보기"
   overview_rest: "또는 아래 안내를 사용하세요."
@@ -455,6 +458,9 @@ zh:
   privacy_url: "/zh/dial/privacy/"
 
 zh-hant:
+  import_h: CSV 匯入指南
+  import_url: /zh-hant/dial/import-dose-history/
+  import_link: CSV 匯入指南
   h1: "支援"
   overview_link: "更多關於 Dial"
   overview_rest: "或使用下面的說明。"

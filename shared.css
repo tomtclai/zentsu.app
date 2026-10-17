@@ -903,3 +903,8 @@ section.block:last-of-type {
   text-decoration: underline;
   text-underline-offset: 0.15em;
 }
+
+.dial-import-guide-link {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}

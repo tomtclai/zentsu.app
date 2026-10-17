@@ -1,0 +1,122 @@
+---
+title: 將 CSV 用藥紀錄匯入 iPhone | Dial
+headline: 從 CSV 檔案匯入 GLP-1 用藥紀錄
+description: '免費將既有 GLP-1 用藥紀錄匯入 Dial。先預覽 CSV，核對欄位、日期與單位，再儲存紀錄。匯入完成摘要仍顯示時可立即復原。'
+canonical: https://zentsu.app/zh-hant/dial/import-dose-history/
+permalink: /zh-hant/dial/import-dose-history/
+lang: zh-hant
+alternate_group: dial-import
+favicon: /assets/dial-icon.png
+og_site_name: Dial
+og_image: https://zentsu.app/assets/dial-og.png
+og_image_alt: Dial
+og_type: article
+page_stylesheet: /dial-guides.css
+published_on: 2026-10-16
+reviewed_on: 2026-10-16
+reviewed_label: 更新
+---
+
+<!doctype html>
+<html lang="{{ page.lang }}" dir="ltr">
+  <head>
+    {% include head-common.html %} {% include dial-guide/head.html %}
+  </head>
+  <body class="dial-record-guide">
+    {% include nav.html %}
+    <main id="main-content" tabindex="-1">
+      <article class="dial-guide-article">
+        <span class="page-label">Dial 使用指南</span>
+        <h1>{{ page.headline }}</h1>
+        {% include dial-guide/byline.html %}
+        <p>
+          你可以將既有的 GLP-1 用藥紀錄帶進 Dial，不必逐筆重新輸入。iPhone 上的 Dial 1.3.4
+          及後續版本提供免費 CSV 匯入。儲存前，預覽會顯示 Dial 能讀取的紀錄。匯入不需要 Dial 帳號或
+          Dial Pro。
+        </p>
+        <p>
+          請保留原始匯出檔。匯入只會轉入 Dial 能辨識的紀錄，無法保證完整重現原 App
+          的所有欄位或設定。
+        </p>
+        <h2>開啟檔案並核對預覽</h2>
+        <ol>
+          <li>將既有紀錄儲存為 iPhone 上的 CSV 檔案。</li>
+          <li>
+            在 Dial 開啟「設定」，進入「體重與連線」，點選「從其他 App 匯入」，再選擇 CSV
+            檔案。也可以從「檔案」App 或分享選單用 Dial 開啟 CSV。
+          </li>
+          <li>
+            檢查「欄位」區段。每個欄位會顯示標題、範例值，以及 Dial
+            將讀取的紀錄類型。若對應錯誤，請調整欄位選項。
+          </li>
+          <li>將「前幾列」與原始檔案比對，確認藥物、劑量、日期、時間，以及體重或副作用紀錄。</li>
+          <li>
+            閱讀欄位上方的數量與提示。確認符合預期後點選「匯入」；若不想儲存，點選「取消」離開預覽。
+          </li>
+        </ol>
+        <p>
+          必須有日期欄位及至少一筆可讀取的紀錄，才能點選「匯入」。預覽只顯示前五列有紀錄的資料，不是整份檔案。匯入後仍應檢查歷史紀錄。
+        </p>
+        <h2>Dial 能讀取哪些 CSV 欄位？</h2>
+        <p>
+          Dial 能辨識 Date、Time、Medication、Dose、Unit、Site、Taken、Weight、Side
+          effects、Severity 和 Notes
+          等標題，不區分大小寫。你可以在預覽中修正欄位對應。每種紀錄需要的欄位不同：用藥紀錄需要可讀取的藥物與劑量；體重及副作用紀錄則使用各自的欄位。
+        </p>
+        <p>
+          檔案必須是 UTF-8
+          文字，以逗號或分號分隔欄位，並支援以引號括住的欄位。若試算表存成其他格式，請重新匯出為
+          CSV，不要只更改副檔名。Dial 接受最大 25 MB 的檔案。
+        </p>
+        <h2>匯入前確認日期與單位</h2>
+        <p>
+          使用 <code>2026-10-16</code> 這類明確日期，可避免月份與日期順序混淆。Dial
+          也能讀取常見的數字日期格式與 ISO 8601
+          時間戳記。遇到順序不明的日期時，會先參考檔案中的線索；沒有線索時，則使用裝置的地區設定。請將預覽與原始紀錄比對。只有日期、沒有可讀取時間的紀錄會設為中午，這只是預設時間，不代表實際用藥時間。
+        </p>
+        <p>
+          以 mg 或 mcg 記錄的劑量會保留原單位。以 units 或 mL
+          記錄的資料也會保留原數值與單位，匯入時不會換算成 mg。也請確認體重單位：檔案未指定時，Dial
+          會使用你在設定中選擇的體重單位。若數值不符，請修正檔案或設定，再重新開啟預覽。
+        </p>
+        <h2>了解數量與未匯入的資料列</h2>
+        <p>
+          預覽會統計藥物、用藥、體重及副作用紀錄，並分別標示已略過的用藥、無法讀取日期的資料列、缺少藥物或劑量的紀錄，以及保留其他單位的劑量。「略過用藥」代表記錄了一次未用藥，與匯入工具無法讀取的資料列不同。
+        </p>
+        <p>
+          無法讀取日期的資料列不會匯入。請查看完成摘要，確認結果，包括重複或不支援的紀錄。若有缺漏，先比對原始檔案，再新增或修正。匯入只是轉移紀錄，不是漏用藥後的處理建議。
+        </p>
+        <h2>復原匯入</h2>
+        <p>
+          完成摘要提供「復原匯入」。若要移除這次新增的紀錄，請在關閉摘要前使用。它會移除本次匯入新增的藥物、用藥、副作用、提醒與體重紀錄，保留原本已有的紀錄。這是立即復原功能，不是備份，也沒有永久保留的匯入歷程畫面。
+        </p>
+        <p>
+          確認匯入內容後，可參考<a href="/dial/medication-log/" lang="en">用藥紀錄指南（英文）</a
+          >，了解如何新增紀錄、修正錯誤及整理要分享的資料。
+        </p>
+        <h2>哪些功能免費？哪些需要 Pro？</h2>
+        <p>
+          CSV 匯入與手機用藥紀錄免費。免費版包含一種藥物及一個提醒，用藥紀錄筆數不限。Dial Pro
+          提供圖表、PDF 報告、CSV 匯出及 Apple Watch 用藥記錄。匯入檔案與匯出報告是不同功能。
+        </p>
+        <p>
+          Dial 在你的裝置上讀取檔案。可選用的用藥紀錄同步使用你自己的私人 iCloud
+          資料庫；體重紀錄另外儲存在裝置本機。<a href="/zh-hant/dial/privacy/">隱私權政策</a
+          >說明這些資料的儲存範圍。
+        </p>
+        <p>
+          Dial 記錄你輸入的內容，不會開立藥物或建議劑量。若檔案或預覽有問題，請聯絡<a
+            href="/zh-hant/dial/support/"
+            >Dial 支援</a
+          >，並避免傳送不願分享的健康資料。
+        </p>
+        {%- capture guide_app_store_url -%}{% include dial-guide/store-url.html %}{%- endcapture %}
+        <p>
+          <a href="{{ guide_app_store_url }}" rel="noopener noreferrer">在 App Store 下載 Dial</a>
+          或 <a href="/zh-hant/dial/">查看 Dial 介紹</a>。
+        </p>
+      </article>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

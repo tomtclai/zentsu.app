@@ -8,6 +8,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- Traditional Chinese, Brazilian Portuguese, and Korean versions of the CSV import guide, with links from existing import cards, support pages, and guide navigation. The four guide languages share reciprocal alternates; existing landing titles and import behavior are unchanged.
+
 - A free CSV dose-history import guide with preview, column mapping, date and unit checks, and completion-summary undo instructions. The English Dial overview, medication-log guide, and support page link to it. The revised medication-log guide now carries its original publication date, update date, and Article data.
 
 - Overload product page at `/overload`: the double-progression rule as three numbered steps and a five-session worked example, logging and exercise-list sections with screenshots captured from the current build (1.0 build 3 source) on iPhone 17 Pro / iOS 26.5, per-exercise settings, and a tradeoffs section on iPhone-only use and on-device storage. The page states that Overload is not available on the App Store and carries no store link, price or release date. Overload is listed on the homepage and `/apps` under a new `not_on_store` card status ("Not on the App Store"). The company privacy policy now describes Overload's on-device storage. `scripts/validate-overload.mjs`, a functional and axe spec, desktop/mobile light/dark visual references and a Lighthouse URL cover the page.

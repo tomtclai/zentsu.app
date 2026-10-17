@@ -45,6 +45,8 @@ ko:
     between: ', '
     end: '.'
   links:
+    - url: /ko/dial/import-dose-history/
+      title: CSV 가져오기 안내
     - url: /ko/dial/printable-dose-log/
       title: 인쇄용 투여 기록표
     - url: /ko/dial/injection-site-rotation/
@@ -61,7 +63,23 @@ zh-hant:
     between: '，'
     end: '。'
   links:
+    - url: /zh-hant/dial/import-dose-history/
+      title: CSV 匯入指南
     - url: /zh-hant/dial/printable-dose-log/
       title: 可列印的用藥紀錄表
     - url: /zh-hant/dial/injection-site-rotation/
       title: 注射部位輪替表
+
+pt:
+  byline:
+    by: Por
+    published: Publicado
+    reviewed: Conferido com as bulas
+    date_format: '%d/%m/%Y'
+  links:
+    - url: /pt/dial/import-dose-history/
+      title: Guia de importação CSV
+    - url: /dial/printable-dose-log/
+      title: Registro de doses para imprimir (em inglês)
+    - url: /dial/injection-site-rotation/
+      title: Tabela de rodízio dos locais de aplicação (em inglês)

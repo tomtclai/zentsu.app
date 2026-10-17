@@ -5,7 +5,7 @@ default: 'Apple Health' -%}
   <head>
     {% include head-common.html %}
   </head>
-  <body>
+  <body class="{{ page.body_class }}">
     {% include nav.html %}
     <main id="main-content" tabindex="-1">
       <article>
@@ -16,6 +16,11 @@ default: 'Apple Health' -%}
           {{ s.email_lead }}
           <a href="mailto:support@zentsu.app">support@zentsu.app</a>. {{ s.email_body }}
         </p>
+
+        {%- if s.import_url %}
+        <h2>{{ s.import_h }}</h2>
+        <p><a href="{{ s.import_url }}">{{ s.import_link }}</a></p>
+        {%- endif %}
 
         <h2>{{ s.notifications_h }}</h2>
         <p>{{ s.notifications_p }}</p>

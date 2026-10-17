@@ -120,3 +120,9 @@ dial-site-rotation:
   ja: /ja/dial/injection-site-rotation/
   ko: /ko/dial/injection-site-rotation/
   zh-hant: /zh-hant/dial/injection-site-rotation/
+
+dial-import:
+  en: /dial/import-dose-history/
+  zh-hant: /zh-hant/dial/import-dose-history/
+  pt: /pt/dial/import-dose-history/
+  ko: /ko/dial/import-dose-history/

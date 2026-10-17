@@ -1,0 +1,144 @@
+---
+title: CSV 투여 기록을 iPhone으로 가져오기 | Dial
+headline: CSV 파일에서 GLP-1 투여 기록 가져오기
+description: '기존 GLP-1 투여 기록을 Dial로 무료로 가져오세요. CSV 미리보기에서 열, 날짜와 단위를 확인한 뒤 저장하세요. 완료 요약이 열려 있는 동안 바로 실행 취소할 수 있습니다.'
+canonical: https://zentsu.app/ko/dial/import-dose-history/
+permalink: /ko/dial/import-dose-history/
+lang: ko
+alternate_group: dial-import
+favicon: /assets/dial-icon.png
+og_site_name: Dial
+og_image: https://zentsu.app/assets/dial-og.png
+og_image_alt: Dial
+og_type: article
+page_stylesheet: /dial-guides.css
+published_on: 2026-10-16
+reviewed_on: 2026-10-16
+reviewed_label: 업데이트
+---
+
+<!doctype html>
+<html lang="{{ page.lang }}" dir="ltr">
+  <head>
+    {% include head-common.html %} {% include dial-guide/head.html %}
+  </head>
+  <body class="dial-record-guide">
+    {% include nav.html %}
+    <main id="main-content" tabindex="-1">
+      <article class="dial-guide-article">
+        <span class="page-label">Dial 사용 안내</span>
+        <h1>{{ page.headline }}</h1>
+        {% include dial-guide/byline.html %}
+        <p>
+          기존 GLP-1 투여 기록을 한 건씩 다시 입력하지 않고 Dial로 옮길 수 있습니다. iPhone용 Dial
+          1.3.4 이상에서는 CSV 가져오기가 무료입니다. 저장 전에 미리보기에서 Dial이 읽을 수 있는
+          기록을 확인할 수 있습니다. 가져오기에 Dial 계정이나 Dial Pro는 필요하지 않습니다.
+        </p>
+        <p>
+          원본 내보내기 파일을 보관하세요. 가져오기는 Dial이 인식하는 기록을 옮기는 기능이며, 파일을
+          만든 앱의 모든 필드나 설정을 그대로 재현한다고 보장하지 않습니다.
+        </p>
+        <h2>파일을 열고 미리보기 확인하기</h2>
+        <ol>
+          <li>기존 기록을 iPhone에 CSV 파일로 저장하세요.</li>
+          <li>
+            Dial에서 설정, 체중 및 연결, 다른 앱에서 가져오기를 차례로 열고 CSV 파일을 선택하세요.
+            파일 앱이나 공유 메뉴에서도 CSV를 Dial로 열 수 있습니다.
+          </li>
+          <li>
+            열 섹션을 확인하세요. 각 열에는 제목, 예시 값, Dial이 읽을 기록 유형이 표시됩니다. 잘못
+            연결된 열은 선택을 수정하세요.
+          </li>
+          <li>
+            처음 행 섹션을 원본 파일과 비교하세요. 약물, 투여량, 날짜, 시간과 체중 또는 부작용
+            기록을 확인하세요.
+          </li>
+          <li>
+            열 위에 표시된 개수와 안내를 읽으세요. 예상한 내용과 일치하면 가져오기를 누르세요.
+            저장하지 않고 나가려면 취소를 누르세요.
+          </li>
+        </ol>
+        <p>
+          날짜 열과 읽을 수 있는 기록이 한 건 이상 있어야 가져오기 버튼이 활성화됩니다. 미리보기에는
+          기록이 있는 처음 다섯 행만 표시되며, 파일 전체가 표시되지는 않습니다. 가져온 후에도 기록을
+          확인하세요.
+        </p>
+        <h2>Dial이 읽을 수 있는 CSV 필드</h2>
+        <p>
+          Dial은 Date, Time, Medication, Dose, Unit, Site, Taken, Weight, Side effects, Severity,
+          Notes 등의 열 제목을 인식하며 대소문자를 구분하지 않습니다. 미리보기에서 열 연결을 수정할
+          수 있습니다. 모든 기록에 모든 필드가 필요한 것은 아닙니다. 투여 기록에는 읽을 수 있는
+          약물과 투여량이 필요하며, 체중과 부작용 기록은 각각의 필드를 사용합니다.
+        </p>
+        <p>
+          파일은 UTF-8 텍스트여야 하며 열은 쉼표 또는 세미콜론으로 구분해야 합니다. 따옴표로 묶인
+          필드도 지원합니다. 스프레드시트를 다른 형식으로 저장했다면 파일 확장자만 바꾸지 말고 CSV로
+          내보내세요. Dial은 최대 25 MB 파일을 지원합니다.
+        </p>
+        <h2>가져오기 전에 날짜와 단위 확인하기</h2>
+        <p>
+          <code>2026-10-16</code>처럼 명확한 날짜를 쓰면 월이 먼저인지 일이 먼저인지 혼동하지 않을
+          수 있습니다. Dial은 일반적인 숫자 날짜 형식과 ISO 8601 타임스탬프도 읽습니다. 모호한
+          날짜는 파일 안의 단서를 먼저 확인하고, 단서가 없으면 기기의 지역 설정을 사용합니다.
+          미리보기를 원본 기록과 비교하세요. 읽을 수 있는 시간이 없는 날짜는 정오로 지정됩니다. 이는
+          임시 시간이며 실제 투여 시간을 뜻하지 않습니다.
+        </p>
+        <p>
+          mg 또는 mcg로 기록한 투여량은 해당 단위를 유지합니다. units 또는 mL로 기록한 항목도 원래
+          숫자와 단위를 유지하며, 가져오기 과정에서 mg로 환산하지 않습니다. 체중 단위도 확인하세요.
+          파일에 체중 단위가 없으면 Dial 설정에서 선택한 단위를 사용합니다. 값이 맞지 않으면
+          파일이나 설정을 수정한 다음 미리보기를 다시 여세요.
+        </p>
+        <h2>개수와 제외된 행 이해하기</h2>
+        <p>
+          미리보기에는 약물, 투여, 체중, 부작용 기록의 개수가 표시됩니다. 건너뛴 것으로 표시된 투여,
+          읽을 수 있는 날짜가 없는 행, 약물이나 투여량이 없는 기록, 다른 단위를 유지한 투여도 따로
+          안내합니다. 건너뛴 투여는 투여하지 않았다는 기록입니다. 가져오기 도구가 읽을 수 없는
+          행과는 다릅니다.
+        </p>
+        <p>
+          읽을 수 있는 날짜가 없는 행은 제외됩니다. 완료 요약에서 중복되거나 지원되지 않는 기록을
+          포함한 결과를 확인하세요. 누락된 항목이 있으면 새로 추가하거나 수정하기 전에 원본 파일과
+          비교하세요. 가져오기는 기록을 옮기는 기능이며, 투여를 놓쳤을 때의 대처 방법을 안내하지
+          않습니다.
+        </p>
+        <h2>가져오기 실행 취소하기</h2>
+        <p>
+          완료 요약에는 가져오기 실행 취소가 표시됩니다. 이번 가져오기로 추가한 기록을 지우려면
+          요약을 닫기 전에 사용하세요. 이번에 추가한 약물, 투여, 부작용, 알림, 체중 기록을 제거하고
+          기존 기록은 유지합니다. 즉시 실행 취소하는 기능이며, 저장된 백업이나 계속 보관되는
+          가져오기 기록 화면은 아닙니다.
+        </p>
+        <p>
+          가져온 기록을 확인한 뒤에는
+          <a href="/dial/medication-log/" lang="en">약물 기록 안내(영어)</a>에서 새 기록 추가, 오류
+          수정, 공유할 기록 준비 방법을 살펴보세요.
+        </p>
+        <h2>무료 기능과 Pro 기능</h2>
+        <p>
+          CSV 가져오기와 iPhone 투여 기록은 무료입니다. 무료 버전에는 약물 한 가지와 알림 하나가
+          포함되며 투여 기록 수에는 제한이 없습니다. Dial Pro는 차트, PDF 보고서, CSV 내보내기와
+          Apple Watch 투여 기록을 추가합니다. 파일 가져오기와 보고서 내보내기는 별개의 기능입니다.
+        </p>
+        <p>
+          Dial은 기기에서 파일을 읽습니다. 선택 사항인 약물 기록 동기화는 본인의 비공개 iCloud
+          데이터베이스를 사용합니다. 체중 기록은 별도의 기기 내 저장소를 사용합니다. 자세한 범위는
+          <a href="/ko/dial/privacy/">개인정보 처리방침</a>에서 확인할 수 있습니다.
+        </p>
+        <p>
+          Dial은 입력한 내용을 기록합니다. 약물을 처방하거나 투여량을 권장하지 않습니다. 파일이나
+          미리보기에 문제가 있으면 <a href="/ko/dial/support/">Dial 지원</a>에 문의하세요. 공유하고
+          싶지 않은 건강 정보는 보내지 마세요.
+        </p>
+        {%- capture guide_app_store_url -%}{% include dial-guide/store-url.html %}{%- endcapture %}
+        <p>
+          <a href="{{ guide_app_store_url }}" rel="noopener noreferrer"
+            >App Store에서 Dial 다운로드</a
+          >
+          또는 <a href="/ko/dial/">Dial 소개 보기</a>.
+        </p>
+      </article>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

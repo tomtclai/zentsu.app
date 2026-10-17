@@ -42,3 +42,26 @@ test('the CSV import guide has its own canonical route and is reachable from rec
   assert.match(imported, /before closing that summary/);
   assert.match(imported, /does not convert them into mg/);
 });
+
+test('localized CSV guides keep native entry points and reciprocal alternate membership', () => {
+  const alternates = read('_data/alternates.yml').split('dial-import:')[1];
+  for (const lang of ['en', 'zh-hant', 'pt', 'ko']) {
+    const prefix = lang === 'en' ? '' : `${lang}/`;
+    const path = `/${prefix}dial/import-dose-history/`;
+    const source = read(`${prefix}dial/import-dose-history.html`);
+    assert.ok(source.includes(`canonical: https://zentsu.app${path}`));
+    assert.ok(source.includes(`permalink: ${path}`));
+    assert.ok(source.includes('alternate_group: dial-import'));
+    assert.ok(alternates.includes(`${lang}: ${path}`));
+    assert.ok(source.includes('include dial-guide/head.html'));
+    assert.ok(source.includes('include dial-guide/store-url.html'));
+    assert.ok(source.includes('25 MB'));
+    assert.ok(source.includes('1.3.4'));
+    if (lang !== 'en') {
+      assert.ok(read(`_data/dial/${lang}.yml`).includes(`link_url: ${path}`));
+      const support = lang === 'pt' ? read('pt/dial/support.html') : read('_data/dial_support.yml');
+      assert.ok(support.includes(path));
+      assert.ok(read('_data/dial_guides.yml').includes(path));
+    }
+  }
+});

@@ -13,6 +13,7 @@
             <article class="dial-grid-card">
               <h3>{{ feature.title }}</h3>
               <p>{{ feature.body }}</p>
+              {%- if feature.link_url %}<p><a class="dial-import-guide-link" href="{{ feature.link_url }}">{{ feature.link_label }}</a></p>{%- endif %}
             </article>
             {%- endfor %}
           </div>

@@ -1,0 +1,152 @@
+---
+title: Importar um registro GLP-1 de CSV no iPhone | Dial
+headline: Importe seu histórico de doses de GLP-1 de um arquivo CSV
+description: 'Importe seu histórico de GLP-1 gratuitamente no Dial. Confira a prévia do CSV, as colunas, datas e unidades. Desfaça enquanto o resumo final estiver aberto.'
+canonical: https://zentsu.app/pt/dial/import-dose-history/
+permalink: /pt/dial/import-dose-history/
+lang: pt
+alternate_group: dial-import
+favicon: /assets/dial-icon.png
+og_site_name: Dial
+og_image: https://zentsu.app/assets/dial-og.png
+og_image_alt: Dial
+og_type: article
+page_stylesheet: /dial-guides.css
+published_on: 2026-10-16
+reviewed_on: 2026-10-16
+reviewed_label: Atualizado
+---
+
+<!doctype html>
+<html lang="{{ page.lang }}" dir="ltr">
+  <head>
+    {% include head-common.html %} {% include dial-guide/head.html %}
+  </head>
+  <body class="dial-record-guide">
+    {% include nav.html %}
+    <main id="main-content" tabindex="-1">
+      <article class="dial-guide-article">
+        <span class="page-label">Guia do Dial</span>
+        <h1>{{ page.headline }}</h1>
+        {% include dial-guide/byline.html %}
+        <p>
+          Você pode trazer seu registro de doses de GLP-1 para o Dial sem digitar cada dose
+          novamente. A importação CSV é gratuita no iPhone com o Dial 1.3.4 ou posterior. Antes de
+          salvar, uma prévia mostra os registros que o Dial consegue ler. Não é preciso ter uma
+          conta do Dial nem o Dial Pro para importar.
+        </p>
+        <p>
+          Guarde o arquivo original. A importação transfere os registros reconhecidos pelo Dial, mas
+          não garante a reprodução de todos os campos ou ajustes do app que gerou o arquivo.
+        </p>
+        <h2>Abra o arquivo e confira a prévia</h2>
+        <ol>
+          <li>Salve seu registro como um arquivo CSV no iPhone.</li>
+          <li>
+            No Dial, abra Ajustes, depois Peso e conexões e Importar de outro app. Escolha o CSV.
+            Você também pode abrir um CSV no Dial pelo app Arquivos ou pelo menu de
+            compartilhamento.
+          </li>
+          <li>
+            Confira a seção Colunas. Cada coluna mostra o cabeçalho, um valor de exemplo e o tipo de
+            registro que o Dial vai ler. Corrija qualquer associação incorreta.
+          </li>
+          <li>
+            Compare a seção Primeiras linhas com o arquivo original. Confira medicamento, dose,
+            data, hora e eventuais registros de peso ou efeitos colaterais.
+          </li>
+          <li>
+            Leia as contagens e os avisos acima das colunas. Toque em Importar se estiverem
+            corretos, ou em Cancelar para sair sem salvar a prévia.
+          </li>
+        </ol>
+        <p>
+          O botão Importar só fica disponível quando há uma coluna de data e pelo menos um registro
+          legível. A prévia mostra as cinco primeiras linhas com registros, não o arquivo inteiro.
+          Confira também o histórico após a importação.
+        </p>
+        <h2>Quais campos CSV o Dial consegue ler?</h2>
+        <p>
+          O Dial reconhece cabeçalhos como Date, Time, Medication, Dose, Unit, Site, Taken, Weight,
+          Side effects, Severity e Notes, com letras maiúsculas ou minúsculas. Você pode corrigir a
+          associação de colunas na prévia. Nem todo campo é obrigatório para todo registro. Uma dose
+          precisa de medicamento e quantidade legíveis; registros de peso e efeitos colaterais usam
+          seus próprios campos.
+        </p>
+        <p>
+          O arquivo deve ser texto UTF-8, com colunas separadas por vírgulas ou ponto e vírgula.
+          Campos entre aspas são aceitos. Se a planilha foi salva em outro formato, exporte um CSV
+          em vez de apenas mudar a extensão do arquivo. O Dial aceita arquivos de até 25 MB.
+        </p>
+        <h2>Confira datas e unidades antes de importar</h2>
+        <p>
+          Uma data sem ambiguidade, como <code>2026-10-16</code>, evita confundir formatos que
+          começam pelo mês com os que começam pelo dia. O Dial também lê formatos numéricos comuns
+          de data e registros de data e hora ISO 8601. Para datas ambíguas, usa pistas do arquivo e,
+          quando elas não existem, a configuração regional do aparelho. Compare a prévia com o
+          registro original. Uma data sem horário legível recebe o horário de meio-dia. Esse horário
+          é um preenchimento, não uma confirmação de quando você tomou a dose.
+        </p>
+        <p>
+          Doses em mg ou mcg mantêm essas unidades. Registros em units ou mL mantêm o número e a
+          unidade originais; a importação não os converte em mg. Confira também a unidade de peso.
+          Quando o arquivo não a informa, o Dial usa a unidade selecionada nos seus ajustes. Se os
+          valores não corresponderem, corrija o arquivo ou os ajustes e abra a prévia novamente.
+        </p>
+        <h2>Entenda as contagens e as linhas omitidas</h2>
+        <p>
+          A prévia conta medicamentos, doses, pesos e efeitos colaterais. Também identifica
+          separadamente doses marcadas como puladas, linhas sem data legível, doses sem medicamento
+          ou quantidade e doses mantidas em outras unidades. Uma dose pulada registra uma dose que
+          não foi tomada. Isso é diferente de uma linha que o importador não consegue ler.
+        </p>
+        <p>
+          Linhas sem data legível ficam de fora. Confira o resultado no resumo final, incluindo
+          registros duplicados ou não compatíveis. Se faltar uma entrada, compare com o arquivo
+          original antes de adicionar ou corrigir algo. A importação transfere registros; não
+          orienta o que fazer após esquecer uma dose.
+        </p>
+        <h2>Desfaça uma importação</h2>
+        <p>
+          O resumo final oferece Desfazer importação. Use essa opção antes de fechar o resumo se
+          quiser remover os registros adicionados nessa importação. Ela remove os medicamentos,
+          doses, efeitos colaterais, lembretes e pesos adicionados por essa operação e mantém os
+          registros que já existiam. É uma ação imediata de desfazer, não um backup salvo nem uma
+          tela permanente de histórico de importações.
+        </p>
+        <p>
+          Depois de conferir o histórico importado, consulte o
+          <a href="/dial/medication-log/" lang="en">guia de registro de medicamentos (em inglês)</a>
+          para adicionar entradas, corrigir erros e preparar um registro para compartilhar.
+        </p>
+        <h2>O que é gratuito e o que exige Pro?</h2>
+        <p>
+          A importação CSV e o registro de doses no iPhone são gratuitos. O plano gratuito inclui um
+          medicamento e um lembrete, sem limite de entradas de doses. O Dial Pro acrescenta
+          gráficos, relatórios PDF, exportação CSV e registro de doses no Apple Watch. Importar um
+          arquivo e exportar um relatório são funções diferentes.
+        </p>
+        <p>
+          O Dial lê o arquivo no seu aparelho. A sincronização opcional de registros de medicamentos
+          usa seu próprio banco de dados privado do iCloud. Os registros de peso ficam em
+          armazenamento local separado. A
+          <a href="/pt/dial/privacy/">política de privacidade</a> explica esses limites.
+        </p>
+        <p>
+          O Dial registra o que você informa. Não prescreve medicamentos nem recomenda doses. Para
+          problemas com o arquivo ou a prévia, entre em contato com o
+          <a href="/pt/dial/support/">suporte do Dial</a> sem enviar informações de saúde que não
+          queira compartilhar.
+        </p>
+        {%- capture guide_app_store_url -%}{% include dial-guide/store-url.html %}{%- endcapture %}
+        <p>
+          <a href="{{ guide_app_store_url }}" rel="noopener noreferrer"
+            >Baixe o Dial na App Store</a
+          >
+          ou <a href="/pt/dial/">conheça o Dial</a>.
+        </p>
+      </article>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>
