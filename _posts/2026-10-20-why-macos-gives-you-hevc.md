@@ -1,9 +1,8 @@
 ---
 layout: post
-published: false
 title: 'Why your Mac video is HEVC in a .mov, and what an H.264 MP4 fixes'
 slug: why-macos-gives-you-hevc
-date: 2026-10-14
+date: 2026-10-20
 description: 'Where HEVC comes from on an iPhone and Mac, what Finder and QuickTime Player actually export, and what H.264 in an .mp4 buys in compatibility.'
 image:
   path: /assets/press-og.png

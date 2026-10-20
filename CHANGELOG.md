@@ -8,6 +8,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- Press launch pages, all 15 conversion pages, and the HEVC explainer are prepared for release on 2026-10-20.
+
 - Traditional Chinese, Brazilian Portuguese, and Korean versions of the CSV import guide, with links from existing import cards, support pages, and guide navigation. The four guide languages share reciprocal alternates; existing landing titles and import behavior are unchanged.
 
 - A free CSV dose-history import guide with preview, column mapping, date and unit checks, and completion-summary undo instructions. The English Dial overview, medication-log guide, and support page link to it. The revised medication-log guide now carries its original publication date, update date, and Article data.

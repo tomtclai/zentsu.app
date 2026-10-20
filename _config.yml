@@ -64,7 +64,7 @@ price_press_lifetime: '14.99'
 # below) until the Mac App Store listing is live. This is the single flag the
 # Press validators and go-live flip read. Do not flip it here directly; follow
 # SITE-PLAN.md section 7.
-press_live: false
+press_live: true
 
 plugins:
   - jekyll-seo-tag
@@ -121,10 +121,8 @@ defaults:
       type: pages
     values:
       permalink: /press/:basename
-      published: false
   - scope:
       path: press/convert
       type: pages
     values:
       permalink: /press/convert/:basename
-      published: false

@@ -70,13 +70,7 @@ function emptyProseFields(pair) {
 }
 
 function stubContentsFor(slug) {
-  // `published: false` is set here, not only via the `press/convert`
-  // defaults scope in _config.yml, because Jekyll 3.10's publish filter
-  // reads front matter with Hash#fetch, which never consults the
-  // default_proc a defaults-scope value is wired through. Only a real key
-  // in the page's own front matter actually keeps it out of a normal
-  // build. See the comment above that scope in _config.yml.
-  return `---\npair: ${slug}\nlayout: press-pair\npublished: false\n---\n`;
+  return `---\npair: ${slug}\nlayout: press-pair\n---\n`;
 }
 
 function generate(pairs) {
