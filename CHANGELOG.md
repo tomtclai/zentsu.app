@@ -41,6 +41,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- The German, Dutch, Turkish, Thai, Hungarian, and Romanian Dial landing pages lead their title and meta description with the local consumer term for GLP-1 injections (Abnehmspritze, afvalprik, zayıflama iğnesi, ยาฉีดลดน้ำหนัก, fogyasztó injekció, injecții pentru slăbit) and the brand names in each locale's App Store name, replacing the shared template title. Page bodies and hreflang alternates are unchanged.
+
 - The Traditional Chinese Dial search and social title now leads with 猛健樂紀錄, matching the existing Taiwan acquisition evidence.
 - Inline links in the revised Dial recording, import, and support guides are underlined so they do not rely on color alone.
 
