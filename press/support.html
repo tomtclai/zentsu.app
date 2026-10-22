@@ -131,13 +131,17 @@ favicon: /assets/press-icon.png
             <li>The error text from the job row, or a screenshot of it.</li>
           </ul>
 
-          <h3>The output is over the size limit I picked.</h3>
+          <h3>A job says it can't fit under the size limit.</h3>
           <p>
             Press sets the video bitrate from the byte budget and the clip's duration, aims 10
-            percent under the preset, and re-encodes once at a lower rate if the first pass lands
-            over. If a file still comes out over the limit, email us the source's duration and
-            resolution and the size you got; that is a bug we want to see. For a smaller file on
-            purpose, choose Custom and type a lower number, or add 720p.
+            percent under the preset, and starts at the largest frame size that bitrate can carry,
+            down to 720p. It checks the real size after every pass and encodes again at a lower rate
+            or a smaller size when the file is over, up to four passes. If none of them fits, the
+            job row says "Can't fit under" and the limit, and no file is written, so a size-limited
+            export is never over the limit. The whole duration shares one budget, so a long clip is
+            the one most likely to hit this. Trim it in QuickTime Player (Edit &gt; Trim), or choose
+            Custom with a larger number if the place you are sending it allows one. If a short clip
+            fails, email us its duration and resolution. That is a bug we want to see.
           </p>
 
           <h3>How do I restore my purchase on a new Mac?</h3>

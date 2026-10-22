@@ -41,6 +41,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- Press size-preset copy describes Press 1.0.1: the Email preset is 14.5 MB, sized so the base64-encoded message fits iCloud Mail's 20 MB, and Press steps 4K down to 1080p or 720p by itself and never keeps a file over the limit. Updated on `/press/`, the Press support FAQ, the `compress-video-for-discord` and `compress-video-for-email` pair pages (Original rows now show the 1.0.1 measurements, including HEVC), and the unpublished 2026-10-21 Discord and 2026-11-04 email blog drafts.
 - The German, Dutch, Turkish, Thai, Hungarian, and Romanian Dial landing pages lead their title and meta description with the local consumer term for GLP-1 injections (Abnehmspritze, afvalprik, zayıflama iğnesi, ยาฉีดลดน้ำหนัก, fogyasztó injekció, injecții pentru slăbit) and the brand names in each locale's App Store name, replacing the shared template title. Page bodies and hreflang alternates are unchanged.
 
 - The Traditional Chinese Dial search and social title now leads with 猛健樂紀錄, matching the existing Taiwan acquisition evidence.

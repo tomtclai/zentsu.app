@@ -246,9 +246,11 @@ page_stylesheet: /press.css
               </p>
               <p>
                 Press Pro adds 2160p, HEVC output for when you want the smaller file, and size
-                presets: Discord at 20 MB, Email at 25 MB, Slack at 1 GB, or a custom number. Press
-                works out the bitrate from the byte budget and the clip's length, keeps the full
-                duration, and re-encodes once at a lower rate if the first pass overshoots.
+                presets: Discord at 20 MB, Email at 14.5 MB, Slack at 1 GB, or a custom number.
+                Press works out the bitrate from the byte budget and the clip's length, keeps the
+                full duration, and steps down to 1080p or 720p when the budget is too thin for the
+                frame size. The finished file is always under the limit. When a clip cannot fit,
+                Press says so and writes no file.
               </p>
             </div>
             <div class="split-card">

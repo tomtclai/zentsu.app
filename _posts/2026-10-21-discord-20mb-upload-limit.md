@@ -34,23 +34,22 @@ That last number is the one most people run into. A resolution change shrinks a 
 
 ## Fitting a clip by size
 
-Press's Discord preset does that arithmetic for you. It takes 90 percent of 20 MB as the target, reserves 96 kbps for audio, divides the rest by the clip's duration, and hands the result to the H.264 encoder as the average bitrate. If the first pass still lands over the limit, it lowers the rate and encodes once more.
+Press's Discord preset does that arithmetic for you. It takes 90 percent of 20 MB as the target, reserves 96 kbps for audio, divides the rest by the clip's duration, and hands the result to the H.264 encoder as the average bitrate. It also picks the frame size. When the bitrate is too thin for 4K, Press encodes at 1080p, or at 720p when it is too thin for 1080p as well. After each pass it measures the file, and if the file is over 20 MB, it encodes again at a lower rate or a smaller size, up to four passes. If none of them fits, the job reports that it cannot fit under 20 MB and no file is written.
 
 Here is what that produced from the 60-second 4K clip:
 
-| Setting                       | Output  | Time |
-| ----------------------------- | ------- | ---- |
-| Discord preset at 1080p       | 18.1 MB | 7 s  |
-| Discord preset at 720p        | 18.1 MB | 5 s  |
-| Discord preset at original 4K | 22.9 MB | 53 s |
+| Setting                             | Output            | Time |
+| ----------------------------------- | ----------------- | ---- |
+| Discord preset at original 4K       | 18.2 MB, at 1080p | 12 s |
+| Discord preset at original 4K, HEVC | 18.1 MB, at 1080p | 7 s  |
+| Discord preset at 1080p             | 18.1 MB           | 7 s  |
+| Discord preset at 720p              | 18.1 MB           | 5 s  |
 
-The 1080p and 720p results landed where the preset aims. The 4K result did not, and the reason is worth knowing. For this clip the budget allows about 2.3 Mbps of video, and at 3840 by 2160 pixels the H.264 encoder on our test Mac would not go below about 2.9 Mbps, even on the second pass. A 4K frame has four times the pixels of a 1080p frame, and there is a floor to how few bits an encoder will spend on that many pixels.
-
-The fix is simple: for 4K footage, pick 1080p or 720p alongside the Discord preset. At the same bitrate, each pixel of a 1080p frame gets four times the bits it would get at 4K, and the encoder can actually reach the rate the budget asks for.
+Every result landed about 10 percent under the cap, where the preset aims. Asked to keep the original 4K size, Press wrote 1080p, and the reason is worth knowing. For this clip the budget allows about 2.3 Mbps of video. When the first version of Press kept 4K, the H.264 encoder on our test Mac would not go below about 2.9 Mbps for 3840 by 2160 frames, even on a second pass, and the file came out at 22.9 MB. A 4K frame has four times the pixels of a 1080p frame, and there is a floor to how few bits an encoder will spend on that many pixels. At the same bitrate, each pixel of a 1080p frame gets four times the bits, and the encoder can actually reach the rate the budget asks for.
 
 ## Length is the real constraint
 
-Because the preset keeps the full duration, a longer clip gets fewer bits per second. With the 18 MB target and 96 kbps of audio, a 30-second clip gets about 4.7 Mbps of video, a one-minute clip about 2.3 Mbps, and a three-minute clip about 0.7 Mbps. At 0.7 Mbps, 1080p looks soft, and 720p is the better choice because the same bits cover fewer pixels.
+Because the preset keeps the full duration, a longer clip gets fewer bits per second. With the 18 MB target and 96 kbps of audio, a 30-second clip gets about 4.7 Mbps of video, a one-minute clip about 2.3 Mbps, and a three-minute clip about 0.7 Mbps. At 0.7 Mbps, 1080p looks soft, so for a clip that long Press writes 720p, where the same bits cover fewer pixels.
 
 If a clip is long and only part of it matters, trimming it first does more for quality than any encoder setting. In QuickTime Player, Edit > Trim does this, and the trimmed file then gets the whole budget.
 
@@ -62,6 +61,6 @@ HEVC would fit more picture into the same 20 MB. If everyone in your server watc
 
 ## Doing it on a Mac
 
-The steps, with the details, are on the [compress a video for Discord](/press/convert/compress-video-for-discord) page. In short: drop the clip on Press, choose H.264, pick Discord under Size limit, add 1080p or 720p for 4K footage, and convert. The finished row shows the output size, so you can check it against 20 MB before you switch to Discord. The original file is never modified.
+The steps, with the details, are on the [compress a video for Discord](/press/convert/compress-video-for-discord) page. In short: drop the clip on Press, choose H.264, pick Discord under Size limit, and convert. Press picks the frame size, and the finished row shows the output size, which is always under 20 MB. The original file is never modified.
 
 If the clip is 4K and short enough that size is not the problem, the [4K to 1080p](/press/convert/4k-to-1080p) conversion is in the free download and may be all you need. Size presets, including Discord, Email, and a custom limit, are part of Press Pro, a one-time ${{ site.price_press_lifetime }} purchase that also adds batch conversion of a whole folder.
