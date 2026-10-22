@@ -1,4 +1,4 @@
-// Run from project root: node scripts/optimize-images.js
+// Run from project root: node scripts/optimize-images.js [asset.png ...]
 import { readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -90,9 +90,16 @@ async function processImage(srcPath) {
 
 async function main() {
   const entries = await readdir(ASSETS_DIR);
-  const pngs = entries.filter(
+  const sourceNames = entries.filter(
     (name) => name.toLowerCase().endsWith('.png') && !/@(1x|2x)\.png$/i.test(name),
   );
+  const requestedNames = [...new Set(process.argv.slice(2))];
+  for (const name of requestedNames) {
+    if (!sourceNames.includes(name)) {
+      throw new Error(`Unknown source asset: ${name}`);
+    }
+  }
+  const pngs = requestedNames.length ? requestedNames : sourceNames;
 
   for (const name of pngs) {
     const srcPath = path.join(ASSETS_DIR, name);

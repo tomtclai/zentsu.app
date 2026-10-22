@@ -6,6 +6,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- Refreshed Today, Levels, and Apple Watch glance screenshots in all 33 Dial website languages, including every responsive image format, to show the shorter reminder labels.
+
 ### Added
 
 - Press launch pages, all 15 conversion pages, and the HEVC explainer are prepared for release on 2026-10-20.
