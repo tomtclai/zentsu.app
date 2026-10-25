@@ -632,6 +632,17 @@ section.buy {
 .buy-cta-row {
   margin-bottom: 1.5rem;
 }
+.app-store-badge-link {
+  display: inline-flex;
+  padding: 10px;
+  line-height: 0;
+  text-decoration: none;
+}
+.app-store-badge-link img {
+  display: block;
+  width: auto;
+  height: 40px;
+}
 .buy-facts {
   display: grid;
   gap: 0.65rem;

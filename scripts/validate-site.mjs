@@ -552,6 +552,32 @@ if (existsSync(macAppStoreBadgeAsset)) {
   const actualHash = createHash('sha256').update(readFileSync(macAppStoreBadgeAsset)).digest('hex');
   check(actualHash === macAppStoreBadgeHash, 'Official Mac App Store badge must remain unmodified');
 }
+const pressPage = read(join(outputDirectory, 'press', 'index.html'));
+const pressBadgeLinks =
+  pressPage.match(/<a[^>]*class="app-store-badge-link"[^>]*>[\s\S]*?<\/a>/g) ?? [];
+if (pressBadgeLinks.length > 0) {
+  check(
+    pressBadgeLinks.length === 1,
+    `Press must contain at most one official App Store badge, found ${pressBadgeLinks.length}`,
+  );
+  check(
+    pressBadgeLinks[0].includes(`src="/${macAppStoreBadgeAsset}"`),
+    'Official Mac App Store badge must use the root-relative self-hosted asset',
+  );
+  check(
+    pressPage.includes('Apple, the Apple logo, Mac, and macOS are trademarks of Apple Inc.'),
+    'Press footer must include the Apple trademark credit required with the badge',
+  );
+  const pressCss = read('press.css');
+  check(
+    /\.app-store-badge-link img\s*{[\s\S]*?height:\s*40px;/.test(pressCss),
+    'Official Mac App Store badge must render at least 40 CSS pixels high',
+  );
+  check(
+    /\.app-store-badge-link\s*{[\s\S]*?padding:\s*10px;/.test(pressCss),
+    'Official Mac App Store badge must preserve one-quarter-height clear space',
+  );
+}
 check(
   !generatedHtml.includes('Once the app ships'),
   'Generated HTML contains stale app launch copy',

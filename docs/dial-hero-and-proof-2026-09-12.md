@@ -121,10 +121,10 @@ section; reviewed in the re-recorded light and dark baselines.
 
 Run from `/Users/tom/Documents/code/zentsu-site-conversion-20260912`.
 
-| Command               | Result                                                                                                                                                                                                                                            |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `npm test`            | exit 0. Build, HTML validation, link and fragment check, app visibility, sitemap invariants, Bench accessibility, site validation, Dial price self-test, unit tests, 34-locale Dial validator, and 93 Playwright functional and axe tests passed. |
-| `npm run test:visual` | exit 0, 36 comparisons passed against the re-recorded baselines.                                                                                                                                                                                  |
+| Command               | Result                                                                                                                                                                                                                       |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `npm test`            | exit 0. Build, HTML validation, link and fragment check, app visibility, sitemap invariants, site validation, Dial price self-test, unit tests, 34-locale Dial validator, and 93 Playwright functional and axe tests passed. |
+| `npm run test:visual` | exit 0, 36 comparisons passed against the re-recorded baselines.                                                                                                                                                             |
 
 The committed visual baselines were already stale before this work: at `8f6397b9`, `npm run
 test:visual` failed 32 of 36 comparisons because the baselines predate `14d6c04`, `f301a82` and

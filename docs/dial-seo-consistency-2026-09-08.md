@@ -66,7 +66,7 @@ Implemented on the website repository `main` working tree (founder-authorized pu
 
 ### Checks run
 
-- `npm test` exited 0 (build, HTML validate, links, app visibility, sitemap, Bench accessibility, site validate, Dial prices self-test, unit tests, Dial locale validate, non-visual e2e; 88 Playwright e2e passed, 8 skipped).
+- `npm test` exited 0 (build, HTML validate, links, app visibility, sitemap, site validate, Dial prices self-test, unit tests, Dial locale validate, non-visual e2e; 88 Playwright e2e passed, 8 skipped).
 - Visual Playwright suite not re-baselined: copy/meta-only finishing pass; layout template edits already present from prior dirty work were kept, not re-snapshotted.
 
 ### Commit, push, live check
