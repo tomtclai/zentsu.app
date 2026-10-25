@@ -633,6 +633,34 @@ check(
   'Generated HTML contains stale app launch copy',
 );
 
+function ratingPropertiesIn(node) {
+  if (Array.isArray(node)) return node.flatMap(ratingPropertiesIn);
+  if (!node || typeof node !== 'object') return [];
+  return Object.entries(node).flatMap(([key, value]) => [
+    ...(['aggregateRating', 'review'].includes(key) ? [key] : []),
+    ...ratingPropertiesIn(value),
+  ]);
+}
+
+for (const path of htmlFiles) {
+  const blocks = read(path).matchAll(
+    /<script type="application\/ld\+json">([\s\S]*?)<\/script>/g,
+  );
+  for (const [, json] of blocks) {
+    let data;
+    try {
+      data = JSON.parse(json);
+    } catch (error) {
+      check(false, `${path}: JSON-LD does not parse: ${error.message}`);
+      continue;
+    }
+    check(
+      ratingPropertiesIn(data).length === 0,
+      `${path}: JSON-LD carries aggregateRating or review. Google's review snippet guidelines forbid marking up ratings from other websites such as the App Store.`,
+    );
+  }
+}
+
 const redirects = read(join(outputDirectory, '_redirects'));
 for (const line of redirects.split('\n')) {
   const [, destination] = line.trim().split(/\s+/);

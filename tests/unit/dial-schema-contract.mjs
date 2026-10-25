@@ -13,7 +13,7 @@ const result = spawnSync('bundle', ['exec', 'ruby', '-rjekyll', '-ryaml', '-rjso
   output = faq.map do |lang, data|
     data['items'] = data['items'].rotate(3)
     context = {
-      'site' => {'data' => {'dial_faq' => faq, 'dial' => {'en' => copy}}},
+      'site' => {'data' => {'dial_faq' => faq, 'dial' => {'en' => copy}, 'dial_rating' => {'enabled' => true, 'average' => '4.8', 'count' => '25'}}},
       'page' => {'lang' => lang, 'canonical' => 'https://zentsu.app/dial/'},
       'copy' => copy, 'prices' => prices.fetch(lang),
       'app_store_url' => 'https://apps.apple.com/app/id6789408903?ct=quote"test'
@@ -54,7 +54,7 @@ test('application schema safely encodes copy, keeps the download free, and lists
       lang,
     );
     assert.equal(app.sameAs[0], 'https://apps.apple.com/app/id6789408903?ct=quote"test');
-    assert.equal(app.aggregateRating, undefined, 'no invented rating when rating data is absent');
+    assert.equal(app.aggregateRating, undefined, 'App Store ratings stay out of structured data');
   }
 });
 

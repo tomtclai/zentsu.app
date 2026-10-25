@@ -73,12 +73,7 @@
               }
             ]
           }
-        ]{%- if site.data.dial_rating and site.data.dial_rating.enabled -%},
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": {{ site.data.dial_rating.average | jsonify | replace: "<", "\u003c" }},
-          "ratingCount": {{ site.data.dial_rating.count | jsonify | replace: "<", "\u003c" }}
-        }{%- endif -%},
+        ],
         "publisher": {
           "@type": "Organization",
           "name": "Zentsu LLC",
