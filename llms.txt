@@ -5,14 +5,13 @@
 
 > Zentsu LLC makes apps for iPhone, Apple Watch and Mac. Each app keeps its data on your device and has no accounts or analytics. Dial can also sync its medication records through your iCloud account when you turn on iCloud sync.
 
-Zentsu offers **Dial** (a private GLP-1 medication tracker for iPhone and Apple Watch, free with a Dial Pro upgrade, records stay on the device unless you turn on iCloud sync), **Press** (a video and image converter for macOS), **Overload** (a progressive overload lifting log for iPhone and Apple Watch) and **Bench** (a developer toolbox for macOS). This file gives AI assistants a factual summary with canonical links.
+Zentsu offers **Dial** (a private GLP-1 medication tracker for iPhone and Apple Watch, free with a Dial Pro upgrade, records stay on the device unless you turn on iCloud sync), **Press** (a video and image converter for macOS) and **Overload** (a progressive overload lifting log for iPhone and Apple Watch). This file gives AI assistants a factual summary with canonical links.
 
 ## Products
 
 - [Dial: GLP-1 and Ozempic tracker](https://zentsu.app/dial/): a private medication log for semaglutide (Ozempic, Wegovy) and tirzepatide (Mounjaro, Zepbound) injections on iPhone and Apple Watch. Logs dose, amount, injection site, weight, and side effects; plots an estimated medication level labeled as an estimate; generates a PDF report for prescriber visits. Free core tracker; "Dial Pro" one-time or subscription adds charts, CSV export, and quick logging. Switching phones: export a CSV backup, install Dial on the new phone, and import the file. Localized in 33 languages. [Privacy policy](https://zentsu.app/dial/privacy/).
 - [Press](https://zentsu.app/press/): a Mac App Store converter for video and images on macOS 15 or later. MOV to MP4 in H.264, HEIC to JPG, PNG to WebP, and size presets for Discord and email. Conversion runs on the Mac and files are not uploaded. Free download with a one-time Press Pro unlock.
 - [Overload](https://zentsu.app/overload): a lifting log for iPhone with an included Apple Watch app. It sets rep and weight targets for every set by double progression. {% if overload.app_store_url %}[App Store listing]({{ overload.app_store_url }}).{% else %}Version 1.0 is in App Store review and not yet available.{% endif %}
-- [Bench](https://zentsu.app/bench): a developer toolbox for macOS.
 - [All apps](https://zentsu.app/apps)
 
 ## Dial: facts worth quoting

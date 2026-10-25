@@ -1,4 +1,4 @@
-// Render the 1200x630 social-share banners into assets/.
+// Render the 1200x630 social-share banners and the 512px site icon into assets/.
 //   node scripts/make-og-banners.mjs
 //
 // Requires the brand fonts (Inter Tight, JetBrains Mono) to be discoverable by
@@ -12,13 +12,12 @@ import sharp from 'sharp';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ASSETS = path.resolve(__dirname, '..', 'assets');
-const BENCH_ICON = path.join(ASSETS, 'bench-icon.png');
 const DIAL_ICON = path.join(ASSETS, 'dial-icon.png');
 
 const W = 1200;
 const H = 630;
 
-// Shared warm-paper backdrop with a faded pegboard dot grid, matched to bench.css.
+// Shared warm-paper backdrop with a faded pegboard dot grid.
 const defs = `
   <defs>
     <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
@@ -50,25 +49,16 @@ async function roundedIcon(iconPath, size, radius) {
     .toBuffer();
 }
 
-async function benchBanner() {
-  const s = 300;
-  const x = 800;
-  const y = 165;
-  const r = 66;
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
-  ${defs}
-  ${backdrop}
-  <rect x="${x}" y="${y + 20}" width="${s}" height="${s}" rx="${r}" fill="#14110f" opacity="0.30" filter="url(#shadow)"/>
-  <text x="90" y="340" font-family="Inter Tight" font-weight="800" font-size="150" letter-spacing="-6" fill="#14110f">Bench</text>
-  <text x="96" y="406" font-family="Inter Tight" font-weight="500" font-size="46" fill="#2a2622">Dev Toolbox for macOS</text>
-  <text x="98" y="486" font-family="JetBrains Mono" font-weight="500" font-size="25" letter-spacing="2" fill="#4a7c6f">zentsu.app</text>
+async function zentsuIcon() {
+  const size = 512;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
+  <rect width="${size}" height="${size}" fill="#14110f"/>
+  <path d="M128 128 H384 V184 L216 328 H384 V384 H128 V328 L296 184 H128 Z" fill="#f5f3ee"/>
 </svg>`;
-  const icon = await roundedIcon(BENCH_ICON, s, r);
   await sharp(Buffer.from(svg))
-    .composite([{ input: icon, left: x, top: y }])
     .png({ compressionLevel: 9 })
-    .toFile(path.join(ASSETS, 'bench-og.png'));
-  console.log('[done] bench-og.png');
+    .toFile(path.join(ASSETS, 'zentsu-icon.png'));
+  console.log('[done] zentsu-icon.png');
 }
 
 async function zentsuBanner() {
@@ -146,6 +136,6 @@ async function dialBanner({ file, tagline, taglineSize, taglineFont = 'Inter Tig
   console.log(`[done] ${file}`);
 }
 
-await benchBanner();
 for (const banner of DIAL_BANNERS) await dialBanner(banner);
 await zentsuBanner();
+await zentsuIcon();

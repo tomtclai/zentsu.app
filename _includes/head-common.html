@@ -9,10 +9,10 @@ hand-pasted into each page: charset/viewport, icons, fonts, the shared styleshee
   og/twitter description (required) og_description: shorter social blurb, if the meta description is
   too long for a card (falls back to `description`) twitter_description: distinct Twitter-card blurb
   (falls back to og_description, then description) canonical: absolute canonical URL. Falls back to
-  the page's own URL. og_site_name: "Zentsu LLC" (default) or "Bench" on Bench-scoped pages og_type:
+  the page's own URL. og_site_name: defaults to "Zentsu LLC" og_type:
   "website" (default) or "article" og_image: absolute OG image URL (default: the studio
   zentsu-og.png) og_image_alt: alt text for the OG image page_stylesheet: extra per-page stylesheet
-  path (e.g. /bench.css). apple_touch_icon: optional 180px touch icon; defaults to favicon. The
+  path (e.g. /press.css). apple_touch_icon: optional 180px touch icon; defaults to favicon. The
   shared.css base is always loaded first. Anything a page needs beyond this (JSON-LD blocks, {%
   feed_meta %}, theme-color) it adds after this include and before its closing head tag. This file
   only owns the scaffolding that was genuinely duplicated. seo_managed_externally: set true on pages
@@ -29,7 +29,7 @@ hand-pasted into each page: charset/viewport, icons, fonts, the shared styleshee
   page.seo_managed_externally -%} {%- assign page_stylesheet = include.page_stylesheet | default:
   page.page_stylesheet -%} <meta charset="UTF-8" /> <meta name="viewport"
   content="width=device-width, initial-scale=1.0" /> {%- assign favicon = page.favicon | default:
-  '/assets/bench-icon.png' -%} {%- assign apple_touch_icon = page.apple_touch_icon | default:
+  '/assets/zentsu-icon.png' -%} {%- assign apple_touch_icon = page.apple_touch_icon | default:
   favicon %} <link rel="icon" type="image/png" sizes="32x32" href="{{ favicon }}" /> <link
   rel="icon" type="image/png" sizes="16x16" href="{{ favicon }}" /> <link rel="apple-touch-icon"
   sizes="180x180" href="{{ apple_touch_icon }}" /> <link rel="shortcut icon" href="{{ favicon }}" />

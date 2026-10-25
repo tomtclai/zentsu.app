@@ -21,13 +21,12 @@ Zentsu workspace and deploys to Cloudflare Pages.
 
 ## Sources of truth
 
-- Bench and Coil prices live in `_config.yml`. Never hardcode a price in page copy.
+- Coil, Press, and Overload prices live in `_config.yml`. Never hardcode a price in page copy.
 - Dial prices live in `_data/dial_prices.yml`, keyed by site language. The
   language-to-storefront map and price notes live in `_data/dial_storefronts.yml`.
   After an App Store Connect price change, run `npm run sync:dial-prices` (or
   `python3 scripts/sync-dial-prices.py`). Do not invent or hand-edit amounts.
 - App visibility and card data live in `_data/apps.yml`.
-- Bench tool inventory lives in `_data/tools.yml`.
 - Shared metadata and resource links live in `_includes/head-common.html`.
 - Customer-facing copy follows `../brandVoice.md`.
 
@@ -46,7 +45,7 @@ Zentsu workspace and deploys to Cloudflare Pages.
   badge from
   `https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-mac-app-store.svg`.
   Its SHA-256 is `15111cd04380b58d95307dcb07f0b6b06304dbc7504c57fd9cdbf0a2f78e3a92`.
-- Do not edit, optimize, recolor, crop, or recreate that file. Keep one badge on the Bench page,
+- Do not edit, optimize, recolor, crop, or recreate that file. Keep one badge on the Press page,
   render it at least 40 CSS pixels high, and preserve clear space equal to one-quarter of its
   height.
 

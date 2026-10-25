@@ -1,14 +1,9 @@
 /* ──────────────────────────────────────────────────────────────────────────
    shared.css — common chrome for the Zentsu marketing site
-   Used by: index.html, privacy.html, terms.html, the /tools/* pages, the /blog
-   pages, and the bench/* legal pages. bench.html layers /bench.css on top and
-   keeps its own richer component set.
+   Used by every page. Product pages layer their own stylesheet on top.
 
-   This base carries the warm "paper" design language of the Bench flagship
-   (bench.css): Inter Tight + JetBrains Mono, a warm neutral palette, and a
-   quiet, technical type scale. Tokens are named to match bench.css so the two
-   worlds stay visually cohesive; on bench.html the /bench.css values win
-   (loaded after this file), so changes here never alter the flagship.
+   This base carries the warm "paper" design language: Inter Tight +
+   JetBrains Mono, a warm neutral palette, and a quiet, technical type scale.
    ────────────────────────────────────────────────────────────────────────── */
 
 /* ── Reset (shared by every page) ── */
@@ -20,7 +15,7 @@
   padding: 0;
 }
 
-/* ── Tokens (light) — warm paper, matched to bench.css ── */
+/* ── Tokens (light) — warm paper ── */
 :root {
   --bg: #f5f3ee;
   --bg-alt: #ecebe4;
@@ -108,7 +103,7 @@ main[tabindex='-1']:focus {
   }
 }
 
-/* ── Nav (matches bench.html: sticky w/ backdrop blur) ── */
+/* ── Nav (sticky w/ backdrop blur) ── */
 nav {
   background: var(--bg);
   border-bottom: 1px solid var(--border);
@@ -123,8 +118,7 @@ nav ul {
   /* Full-width row: brand flush left, links flush right — identical on every
      page regardless of that page's content column width. Do not re-add a
      max-width/centered band here: it only lines up with pages whose content
-     grid happens to match (it used to match bench.html's 1160px grid and
-     looked mis-aligned on every 760px-column page). */
+     grid happens to match. */
   list-style: none;
   display: flex;
   align-items: center;
@@ -473,9 +467,8 @@ article hr {
   margin: 2rem 0;
 }
 
-/* Inline code + fenced blocks (blog posts, tool pages). The fenced block is a
-   warm terminal panel that reads the same in light and dark, echoing the code
-   panels on the Bench landing page. */
+/* Inline code + fenced blocks (blog posts). The fenced block is a warm
+   terminal panel that reads the same in light and dark. */
 article code {
   font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.85em;
@@ -597,9 +590,6 @@ footer a:hover {
    .status-tag). Both pages used to hand-copy these rules inline; now they only
    declare their genuine page-specific deltas (the hero dot tint via
    --hero-dot, the .hero .lede max-width, and their own two-column point grid).
-
-   bench.html loads /bench.css AFTER this file and redefines .wrap/.hero/main
-   with its own richer values, so these base rules never reach the flagship.
    ────────────────────────────────────────────────────────────────────────── */
 main {
   flex: 1;
@@ -611,7 +601,7 @@ main {
   padding: 0 1.5rem;
 }
 
-/* Hero — a quiet echo of the Bench pegboard grid. The dot tint defaults to a
+/* Hero — a quiet pegboard dot grid. The dot tint defaults to a
    near-ink neutral; per-app pages override --hero-dot with their spot color. */
 .hero {
   position: relative;
@@ -828,7 +818,7 @@ section.block:last-of-type {
   }
 }
 
-/* ── Dark mode — matched to bench.css dark tokens ── */
+/* ── Dark mode ── */
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #14110f;

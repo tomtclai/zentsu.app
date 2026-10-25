@@ -35,7 +35,7 @@ en:
     learn: "Learn"
     dial: Dial
     dial_url: /dial/
-    bench_support: Bench support
+    press_support: Press support
     dial_support: Dial support
     dial_support_url: /dial/support/
     blog: Blog
@@ -82,7 +82,7 @@ de:
     learn: "Lesen"
     dial: Dial
     dial_url: /de/dial/
-    bench_support: Bench-Support
+    press_support: Press-Support
     dial_support: Dial-Support
     dial_support_url: /de/dial/support/
     blog: Blog
@@ -130,7 +130,7 @@ es:
     learn: "Aprende"
     dial: Dial
     dial_url: /es/dial/
-    bench_support: Soporte de Bench
+    press_support: Soporte de Press
     dial_support: Soporte de Dial
     dial_support_url: /es/dial/support/
     blog: Blog
@@ -178,7 +178,7 @@ fr:
     learn: "Découvrir"
     dial: Dial
     dial_url: /fr/dial/
-    bench_support: Assistance Bench
+    press_support: Assistance Press
     dial_support: Assistance Dial
     dial_support_url: /fr/dial/support/
     blog: Blog
@@ -226,7 +226,7 @@ it:
     learn: "Scopri"
     dial: Dial
     dial_url: /it/dial/
-    bench_support: Supporto Bench
+    press_support: Supporto Press
     dial_support: Supporto Dial
     dial_support_url: /it/dial/support/
     blog: Blog
@@ -273,7 +273,7 @@ ja:
     learn: "学ぶ"
     dial: Dial
     dial_url: /ja/dial/
-    bench_support: Benchサポート
+    press_support: Pressサポート
     dial_support: Dialサポート
     dial_support_url: /ja/dial/support/
     blog: Blog
@@ -319,7 +319,7 @@ nl:
     learn: "Lezen"
     dial: Dial
     dial_url: /nl/dial/
-    bench_support: Bench-ondersteuning
+    press_support: Press-ondersteuning
     dial_support: Dial-ondersteuning
     dial_support_url: /nl/dial/support/
     blog: Blog
@@ -367,7 +367,7 @@ pt:
     learn: "Saiba mais"
     dial: Dial
     dial_url: /pt/dial/
-    bench_support: Suporte do Bench
+    press_support: Suporte do Press
     dial_support: Suporte do Dial
     dial_support_url: /pt/dial/support/
     blog: Blog
@@ -414,7 +414,7 @@ hi:
     learn: "जानें"
     dial: Dial
     dial_url: /hi/dial/
-    bench_support: Bench सहायता
+    press_support: Press सहायता
     dial_support: Dial सहायता
     dial_support_url: /hi/dial/support/
     blog: ब्लॉग
@@ -461,7 +461,7 @@ tr:
     learn: "Öğren"
     dial: Dial
     dial_url: /tr/dial/
-    bench_support: Bench desteği
+    press_support: Press desteği
     dial_support: Dial desteği
     dial_support_url: /tr/dial/support/
     blog: Blog
@@ -509,7 +509,7 @@ ar:
     learn: "تعرّف"
     dial: Dial
     dial_url: /ar/dial/
-    bench_support: دعم Bench
+    press_support: دعم Press
     dial_support: دعم Dial
     dial_support_url: /ar/dial/support/
     blog: مدونة
@@ -556,7 +556,7 @@ ca:
     learn: "Aprèn"
     dial: Dial
     dial_url: /ca/dial/
-    bench_support: Assistència de Bench
+    press_support: Assistència de Press
     dial_support: Assistència de Dial
     dial_support_url: /ca/dial/support/
     blog: Blog
@@ -603,7 +603,7 @@ ko:
     learn: "알아보기"
     dial: Dial
     dial_url: /ko/dial/
-    bench_support: Bench 지원
+    press_support: Press 지원
     dial_support: Dial 지원
     dial_support_url: /ko/dial/support/
     blog: 블로그
@@ -650,7 +650,7 @@ zh:
     learn: "了解"
     dial: Dial
     dial_url: /zh/dial/
-    bench_support: Bench 支持
+    press_support: Press 支持
     dial_support: Dial 支持
     dial_support_url: /zh/dial/support/
     blog: 博客
@@ -697,7 +697,7 @@ zh-hant:
     learn: "瞭解"
     dial: Dial
     dial_url: /zh-hant/dial/
-    bench_support: Bench 支援
+    press_support: Press 支援
     dial_support: Dial 支援
     dial_support_url: /zh-hant/dial/support/
     blog: 部落格
@@ -744,7 +744,7 @@ id:
     learn: "Pelajari"
     dial: Dial
     dial_url: /id/dial/
-    bench_support: Dukungan Bench
+    press_support: Dukungan Press
     dial_support: Dukungan Dial
     dial_support_url: /id/dial/support/
     blog: Blog
@@ -791,7 +791,7 @@ pl:
     learn: "Poznaj"
     dial: Dial
     dial_url: /pl/dial/
-    bench_support: Wsparcie Bench
+    press_support: Wsparcie Press
     dial_support: Wsparcie Dial
     dial_support_url: /pl/dial/support/
     blog: Blog
@@ -838,7 +838,7 @@ ms:
     learn: "Ketahui"
     dial: Dial
     dial_url: /ms/dial/
-    bench_support: Sokongan Bench
+    press_support: Sokongan Press
     dial_support: Sokongan Dial
     dial_support_url: /ms/dial/support/
     blog: Blog
@@ -886,7 +886,7 @@ he:
     learn: "מידע"
     dial: Dial
     dial_url: /he/dial/
-    bench_support: תמיכה ב-Bench
+    press_support: תמיכה ב-Press
     dial_support: תמיכה ב-Dial
     dial_support_url: /he/dial/support/
     blog: בלוג
@@ -933,7 +933,7 @@ vi:
     learn: "Tìm hiểu"
     dial: Dial
     dial_url: /vi/dial/
-    bench_support: Hỗ trợ Bench
+    press_support: Hỗ trợ Press
     dial_support: Hỗ trợ Dial
     dial_support_url: /vi/dial/support/
     blog: Blog
@@ -980,7 +980,7 @@ fi:
     learn: "Lue"
     dial: Dial
     dial_url: /fi/dial/
-    bench_support: Bench-tuki
+    press_support: Press-tuki
     dial_support: Dial-tuki
     dial_support_url: /fi/dial/support/
     blog: Blogi
@@ -1027,7 +1027,7 @@ ro:
     learn: "Descoperă"
     dial: Dial
     dial_url: /ro/dial/
-    bench_support: Asistență Bench
+    press_support: Asistență Press
     dial_support: Asistență Dial
     dial_support_url: /ro/dial/support/
     blog: Blog
@@ -1074,7 +1074,7 @@ ru:
     learn: "Читать"
     dial: Dial
     dial_url: /ru/dial/
-    bench_support: Поддержка Bench
+    press_support: Поддержка Press
     dial_support: Поддержка Dial
     dial_support_url: /ru/dial/support/
     blog: Блог
@@ -1121,7 +1121,7 @@ th:
     learn: "เรียนรู้"
     dial: Dial
     dial_url: /th/dial/
-    bench_support: ฝ่ายสนับสนุน Bench
+    press_support: ฝ่ายสนับสนุน Press
     dial_support: ฝ่ายสนับสนุน Dial
     dial_support_url: /th/dial/support/
     blog: บล็อก
@@ -1168,7 +1168,7 @@ sv:
     learn: "Läs"
     dial: Dial
     dial_url: /sv/dial/
-    bench_support: Bench-support
+    press_support: Press-support
     dial_support: Dial-support
     dial_support_url: /sv/dial/support/
     blog: Blogg
@@ -1215,7 +1215,7 @@ da:
     learn: "Læs"
     dial: Dial
     dial_url: /da/dial/
-    bench_support: Bench-support
+    press_support: Press-support
     dial_support: Dial-support
     dial_support_url: /da/dial/support/
     blog: Blog
@@ -1262,7 +1262,7 @@ el:
     learn: "Μάθε"
     dial: Dial
     dial_url: /el/dial/
-    bench_support: Υποστήριξη Bench
+    press_support: Υποστήριξη Press
     dial_support: Υποστήριξη Dial
     dial_support_url: /el/dial/support/
     blog: Ιστολόγιο
@@ -1309,7 +1309,7 @@ hu:
     learn: "Tudnivalók"
     dial: Dial
     dial_url: /hu/dial/
-    bench_support: Bench-támogatás
+    press_support: Press-támogatás
     dial_support: Dial-támogatás
     dial_support_url: /hu/dial/support/
     blog: Blog
@@ -1356,7 +1356,7 @@ hr:
     learn: "Saznaj"
     dial: Dial
     dial_url: /hr/dial/
-    bench_support: Podrška za Bench
+    press_support: Podrška za Press
     dial_support: Podrška za Dial
     dial_support_url: /hr/dial/support/
     blog: Blog
@@ -1403,7 +1403,7 @@ uk:
     learn: "Читати"
     dial: Dial
     dial_url: /uk/dial/
-    bench_support: Підтримка Bench
+    press_support: Підтримка Press
     dial_support: Підтримка Dial
     dial_support_url: /uk/dial/support/
     blog: Blog
@@ -1450,7 +1450,7 @@ sk:
     learn: "Zistiť"
     dial: Dial
     dial_url: /sk/dial/
-    bench_support: Podpora Bench
+    press_support: Podpora Press
     dial_support: Podpora Dial
     dial_support_url: /sk/dial/support/
     blog: Blog
@@ -1497,7 +1497,7 @@ sk:
     learn: "Les"
     dial: Dial
     dial_url: /no/dial/
-    bench_support: Bench-støtte
+    press_support: Press-støtte
     dial_support: Dial-støtte
     dial_support_url: /no/dial/support/
     blog: Blogg
@@ -1543,7 +1543,7 @@ cs:
     learn: "Zjistit"
     dial: Dial
     dial_url: /cs/dial/
-    bench_support: Podpora Bench
+    press_support: Podpora Press
     dial_support: Podpora Dial
     dial_support_url: /cs/dial/support/
     blog: Blog
@@ -1596,7 +1596,7 @@ es-es:
     learn: "Aprende"
     dial: Dial
     dial_url: /es-es/dial/
-    bench_support: Soporte de Bench
+    press_support: Soporte de Press
     dial_support: Soporte de Dial
     dial_support_url: /es/dial/support/
     blog: Blog

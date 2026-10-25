@@ -6,10 +6,9 @@
    Layered on top of /shared.css, which already supplies the reset, the
    warm-paper base palette, body/html defaults, and shared nav/footer chrome.
    This file only overrides the palette tokens for Press's own accent and
-   adds the component classes shared.css does not carry: the flagship-style
-   hero/slab/pricing/FAQ pattern from bench.css (mirrored here for the
-   product page) and the tool-hero/related/cta-band pattern from tools.css
-   (mirrored here for the pair pages). See SITE-PLAN.md section 4.
+   adds the component classes shared.css does not carry: the hero/slab/
+   pricing/FAQ pattern for the product page and the tool-hero/related/
+   cta-band pattern for the pair pages. See SITE-PLAN.md section 4.
    ────────────────────────────────────────────────────────────────────────── */
 
 :root {
@@ -81,7 +80,7 @@ main {
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
-   Product page (/press/) — mirrors bench.html's hero/slab/pricing rhythm.
+   Product page (/press/) — hero/slab/pricing rhythm.
    ═══════════════════════════════════════════════════════════════════════ */
 
 .hero {
@@ -714,8 +713,8 @@ section.buy {
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
-   Conversion-pair pages (/press/convert/*) — mirrors tools.css's
-   tool-hero/related/cta-band pattern, using the same pegboard motif as the
+   Conversion-pair pages (/press/convert/*) — tool-hero/related/cta-band
+   pattern, using the same pegboard motif as the
    product-page hero above.
    ═══════════════════════════════════════════════════════════════════════ */
 

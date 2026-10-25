@@ -3,3 +3,16 @@
 /dial/titration-record /dial/printable-dose-log/ 301
 /dial/titration-record/ /dial/printable-dose-log/ 301
 /japanese2k/ /japanese2k 301
+/bench/privacy /privacy 301
+/bench/privacy/ /privacy 301
+/bench/privacy.html /privacy 301
+/bench/support / 301
+/bench/support/ / 301
+/bench/support.html / 301
+/bench / 301
+/bench/ / 301
+/bench.html / 301
+/bench/* / 301
+/tools / 301
+/tools/ / 301
+/tools/* / 301

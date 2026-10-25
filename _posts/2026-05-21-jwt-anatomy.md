@@ -17,8 +17,7 @@ on. That habit is fine until the day a token is rejected for reasons
 the colored chunks don't explain, or the day someone on the security
 team asks why you pasted a production token into a website.
 
-We build dev tools at Zentsu, so we look at JWTs constantly. This is
-the explanation we wish we had handed our past selves: what is actually
+This is the explanation we wish we had handed our past selves: what is actually
 in those three segments, what the debugger glosses over, and where the
 abstractions fray.
 
@@ -160,6 +159,6 @@ became valid, and when it dies. Treat every token as a credential (because it is
 and decode them where the bytes cannot leak.
 
 If you spend any time in auth code, an offline JWT decoder belongs in
-your toolbox next to your hex editor and your regex tester. Bench's
-[JWT decoder](/tools/jwt-decoder) processes everything locally. Try
-it the next time a token confuses you.
+your toolbox next to your hex editor and your regex tester. Pick one
+that processes everything locally, and reach for it the next time a
+token confuses you.

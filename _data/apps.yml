@@ -54,29 +54,12 @@
 #   app_store_url  live store link, or null while not on the store.
 #   store_label    text for the store link, e.g. "Mac App Store" or "App Store".
 #                  Defaults to "App Store" when omitted.
-#   page_url       the app's own page on this site (e.g. /bench).
+#   page_url       the app's own page on this site (e.g. /press/).
 #                  Omit if the app has no dedicated page yet.
 #   icon           icon path under assets/. Missing file → monogram tile.
 #   accent         brand color for the card's monogram tile / hover accent.
 # ─────────────────────────────────────────────────────────────────────────
 apps:
-  - name: Bench
-    slug: bench
-    visible: true
-    tagline: >-
-      A native macOS developer toolbox in one offline window: JSON, JWT, regex,
-      hashes, UUIDs, video conversion, and more.
-    status: live
-    status_note: Mac App Store
-    platforms: macOS
-    price_key: price_lifetime
-    price_suffix: Pro unlock
-    app_store_url: https://apps.apple.com/app/bench-dev-toolbox/id6763368925?mt=12
-    store_label: Mac App Store
-    page_url: /bench
-    icon: /assets/bench-icon.png
-    accent: '#4a7c6f'
-
   - name: Coil
     slug: coil
     visible: false
