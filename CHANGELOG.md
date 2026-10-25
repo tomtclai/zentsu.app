@@ -8,6 +8,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- The Overload page at `/overload` now covers the included Apple Watch app and replaces the old "no Apple Watch version" line. It gains an Apple Watch section (Digital Crown logging, direct iPhone and watch sync, the Apple Health strength training workout), a watchOS 11 requirement, and the rest countdown on the Lock Screen and in the Dynamic Island. Its title is now "Overload: Progressive Overload Log for iPhone & Apple Watch", the description names Apple Watch, and the page carries `SoftwareApplication` JSON-LD. Availability reads "In App Store review". Setting Overload's `app_store_url` in `_data/apps.yml` turns on the download link, the $0.99 price from `_config.yml` (`price_overload`), the Smart App Banner and the JSON-LD `Offer`. Cards with the `not_on_store` status never show a price, and the Overload card lists iPhone and Apple Watch. `validate-overload.mjs` and the Overload functional spec check both the pre-release and live states from `_data/apps.yml`. Visual references were re-recorded.
+- The company privacy policy now describes Overload's Apple Watch copy of the log and its optional Apple Health workout saving. The effective date is October 24, 2026.
+- `llms.txt` is built through Liquid. It lists Press and Overload, adds Overload facts and takes Overload's availability from `_data/apps.yml`. The Bench and app-list links now use their canonical URLs.
 - Refreshed Today, Levels, and Apple Watch glance screenshots in all 33 Dial website languages, including every responsive image format, to show the shorter reminder labels.
 
 ### Added

@@ -1,6 +1,6 @@
 ---
-title: 'Overload Lift Log · Zentsu LLC'
-description: 'Overload is a lifting log for iPhone built on double progression. Add reps at the same weight until every set reaches the top of its range, then add weight.'
+title: 'Overload: Progressive Overload Log for iPhone & Apple Watch'
+description: 'A workout log for iPhone and Apple Watch built on double progression. Add a rep at the same weight until every set hits the top of the range, then add weight.'
 canonical: https://zentsu.app/overload
 permalink: /overload
 lang: en
@@ -14,7 +14,55 @@ page_stylesheet: /overload.css
 <!doctype html>
 <html lang="en">
   <head>
-    {% include head-common.html %}
+    {% include head-common.html %} {%- assign overload = site.data.apps.apps | where: 'slug',
+    'overload' | first -%} {%- assign overload_store_url = overload.app_store_url -%} {%- assign
+    overload_price = site[overload.price_key] -%} {%- if overload_store_url %} {%- assign
+    overload_app_id = overload_store_url | split: '/id' | last | split: '?' | first %}
+    <meta name="apple-itunes-app" content="app-id={{ overload_app_id }}" />
+    {%- endif %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Overload",
+        "alternateName": "Lift Log: Overload",
+        "description": {{ page.description | jsonify }},
+        "url": {{ page.canonical | jsonify }},
+        "inLanguage": "en",
+        "operatingSystem": "iOS 18; watchOS 11",
+        "softwareRequirements": "iPhone with iOS 18 or later. The included Apple Watch app needs watchOS 11 or later.",
+        "applicationCategory": "HealthApplication",
+        "featureList": [
+          "Rep and weight targets for every set from double progression",
+          "Per-exercise rep range, set count, weight increment and unit",
+          "Rest timer on the Lock Screen and in the Dynamic Island",
+          "Apple Watch logging with the Digital Crown",
+          "Strength training workouts saved to Apple Health from Apple Watch"
+        ],
+        "image": "https://zentsu.app/assets/overload-icon.png",
+        "screenshot": [
+          "https://zentsu.app/assets/overload-screen-session@2x.png",
+          "https://zentsu.app/assets/overload-screen-sets@2x.png",
+          "https://zentsu.app/assets/overload-screen-list@2x.png"
+        ],
+        "publisher": {
+          "@type": "Organization",
+          "name": "Zentsu LLC",
+          "url": "https://zentsu.app/"
+        }{%- if overload_store_url and overload_price -%},
+        "downloadUrl": {{ overload_store_url | jsonify }},
+        "installUrl": {{ overload_store_url | jsonify }},
+        "sameAs": [{{ overload_store_url | jsonify }}],
+        "offers": {
+          "@type": "Offer",
+          "price": {{ overload_price | jsonify }},
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": {{ overload_store_url | jsonify }}
+        }
+        {%- endif %}
+      }
+    </script>
   </head>
   <body>
     {% include nav.html %}
@@ -22,7 +70,7 @@ page_stylesheet: /overload.css
       <section class="ovl-hero" aria-labelledby="ovl-title">
         <div class="ovl-intro">
           <img class="ovl-icon" src="/assets/overload-icon.png" alt="" width="72" height="72" />
-          <p class="ovl-eyebrow">Lifting log for iPhone</p>
+          <p class="ovl-eyebrow">Lifting log for iPhone and Apple Watch</p>
           <h1 id="ovl-title">Overload</h1>
           <p class="ovl-hook">
             <span>Same weight, one more rep.</span>
@@ -30,18 +78,33 @@ page_stylesheet: /overload.css
           </p>
           <p class="ovl-lede">
             Overload keeps your last session beside today's and fills in a target for every set. The
-            targets follow double progression: add reps inside a range, and add weight once every
-            set reaches the top.
+            targets follow double progression, a form of progressive overload: add reps inside a
+            range, and add weight once every set reaches the top.
           </p>
           <dl class="ovl-facts">
             <div>
               <dt>Runs on</dt>
               <dd>iPhone, iOS 18 or later</dd>
+              <dd>Apple Watch, watchOS 11 or later</dd>
             </div>
             <div>
               <dt>Availability</dt>
-              <dd>Not available on the App Store</dd>
+              {%- if overload_store_url %}
+              <dd>
+                <a href="{{ overload_store_url }}" rel="noopener noreferrer"
+                  >Download on the App Store</a
+                >
+              </dd>
+              {%- else %}
+              <dd>In App Store review</dd>
+              {%- endif %}
             </div>
+            {%- if overload_store_url and overload_price %}
+            <div>
+              <dt>Price</dt>
+              <dd>${{ overload_price }}, Apple Watch app included</dd>
+            </div>
+            {%- endif %}
           </dl>
           <div class="ovl-links">
             <a href="/privacy">Privacy policy</a>
@@ -202,8 +265,8 @@ page_stylesheet: /overload.css
           <p>Check off each set as you finish it. Save appears once every set is checked.</p>
           <p>
             Each check starts that exercise's rest countdown, 2:00 by default. Tap the countdown for
-            a full-screen timer, and if rest ends while Overload is in the background, a
-            notification tells you.
+            a full-screen timer. Outside the app, the countdown stays on the Lock Screen and in the
+            Dynamic Island, and a notification tells you when rest is over.
           </p>
           <p>
             Past sessions stay editable. Change a session's date or sets, or delete it. Rename or
@@ -267,6 +330,29 @@ page_stylesheet: /overload.css
         </div>
       </section>
 
+      <section class="ovl-settings" aria-labelledby="ovl-watch-title">
+        <div>
+          <p class="ovl-eyebrow">Apple Watch</p>
+          <h2 id="ovl-watch-title">Log sets on your Apple Watch</h2>
+        </div>
+        <div>
+          <p>
+            The Apple Watch app comes with Overload. Each set opens with its weight and reps filled
+            in. Turn the Digital Crown to change either one, then tap Done to log the set and start
+            the rest timer. Before you save, the watch shows the target for next time.
+          </p>
+          <p>
+            Your iPhone and watch send set edits, saved sessions and rest timers to each other
+            directly. Once the watch has your exercises, it logs without the iPhone nearby and sends
+            the changes when the two reconnect.
+          </p>
+          <p>
+            If you allow it, the watch saves a strength training workout to Apple Health when you
+            tap End Workout.
+          </p>
+        </div>
+      </section>
+
       <section class="ovl-tradeoffs" aria-labelledby="ovl-tradeoffs-title">
         <p class="ovl-eyebrow">Tradeoffs</p>
         <h2 id="ovl-tradeoffs-title">What Overload leaves to you</h2>
@@ -274,13 +360,14 @@ page_stylesheet: /overload.css
           <div>
             <h3>The log lives on your iPhone</h3>
             <p>
-              Overload runs on iPhone with iOS 18 or later. There is no iPad or Apple Watch version,
-              so the phone comes to the gym with you.
+              Overload runs on iPhone with iOS 18 or later, and the Apple Watch app needs watchOS 11
+              or later. There is no iPad version.
             </p>
             <p>
-              Your exercises, sessions and machine photos are stored on that iPhone, and Overload
-              works without an account. The log does not sync to another device. It is part of your
-              normal iPhone backup, so restoring that backup brings it back.
+              Your exercises, sessions and machine photos are stored on that iPhone, and the paired
+              watch keeps a local copy of your exercises and recent sessions. Overload works without
+              an account, and the log does not sync through iCloud or to another iPhone. It is part
+              of your normal iPhone backup, so restoring that backup brings it back.
             </p>
           </div>
           <div>

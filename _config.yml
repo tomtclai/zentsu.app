@@ -56,6 +56,10 @@ price_coil_lifetime: '14.99'
 # Press: one-time Pro unlock, sold as a non-consumable in-app purchase.
 price_press_lifetime: '14.99'
 
+# Overload: paid download (iPhone app with its Apple Watch app). Shown only once
+# _data/apps.yml has its App Store URL.
+price_overload: '0.99'
+
 # Dial amounts are not here. Each marketing page reads the customer price for
 # its primary storefront from _data/dial_prices.yml. Refresh with
 # `npm run sync:dial-prices` after an App Store Connect price change.

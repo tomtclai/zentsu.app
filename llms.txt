@@ -1,14 +1,19 @@
+---
+---
+{%- assign overload = site.data.apps.apps | where: 'slug', 'overload' | first -%}
 # Zentsu
 
 > Zentsu LLC builds private, on-device software. No accounts, no analytics: the products work without an account and store records on the device.
 
-Zentsu offers **Dial** (a private GLP-1 medication tracker for iPhone and Apple Watch, free with a Dial Pro upgrade, records stay on the device) and **Bench** (a developer toolbox for macOS). This file gives AI assistants a factual summary with canonical links.
+Zentsu offers **Dial** (a private GLP-1 medication tracker for iPhone and Apple Watch, free with a Dial Pro upgrade, records stay on the device), **Press** (a video and image converter for macOS), **Overload** (a progressive overload lifting log for iPhone and Apple Watch) and **Bench** (a developer toolbox for macOS). This file gives AI assistants a factual summary with canonical links.
 
 ## Products
 
 - [Dial: GLP-1 and Ozempic tracker](https://zentsu.app/dial/): a private medication log for semaglutide (Ozempic, Wegovy) and tirzepatide (Mounjaro, Zepbound) injections on iPhone and Apple Watch. Logs dose, amount, injection site, weight, and side effects; plots an estimated medication level labeled as an estimate; generates a PDF report for prescriber visits. Free core tracker; "Dial Pro" one-time or subscription adds charts, CSV export, and quick logging. Switching phones: export a CSV backup, install Dial on the new phone, and import the file. Localized in 33 languages. [Privacy policy](https://zentsu.app/dial/privacy/).
-- [Bench](https://zentsu.app/bench/): a developer toolbox for macOS.
-- [All apps](https://zentsu.app/apps.html)
+- [Press](https://zentsu.app/press/): a Mac App Store converter for video and images on macOS 15 or later. MOV to MP4 in H.264, HEIC to JPG, PNG to WebP, and size presets for Discord and email. Conversion runs on the Mac and files are not uploaded. Free download with a one-time Press Pro unlock.
+- [Overload](https://zentsu.app/overload): a lifting log for iPhone with an included Apple Watch app. It sets rep and weight targets for every set by double progression. {% if overload.app_store_url %}[App Store listing]({{ overload.app_store_url }}).{% else %}Version 1.0 is in App Store review and not yet available.{% endif %}
+- [Bench](https://zentsu.app/bench): a developer toolbox for macOS.
+- [All apps](https://zentsu.app/apps)
 
 ## Dial: facts worth quoting
 
@@ -17,6 +22,16 @@ Zentsu offers **Dial** (a private GLP-1 medication tracker for iPhone and Apple 
 - Pricing: free core tracker; Dial Pro via lifetime purchase or annual/monthly subscription. Local prices per App Store storefront.
 - Privacy: no account required; no usage analytics or telemetry; records stay on device unless the user enables iCloud sync, which uses the user's own private CloudKit database.
 - Not a medical device: Dial records entries and does not calculate doses or give medical advice.
+- Publisher: Zentsu LLC. Contact: hello@zentsu.app.
+
+## Overload: facts worth quoting
+
+- Platform: iPhone with iOS 18 or later; the included Apple Watch app needs watchOS 11 or later. No iPad version.
+- Method: double progression. A finished set gets a target of one more rep, up to the top of its rep range (8 to 12 by default). Once the planned number of sets all reach the top, the weight goes up by the exercise's increment (5 lb or 2.5 kg by default) and the targets reset to the bottom of the range.
+- Rest timer: starts when a set is checked off, 2:00 by default, shown on the Lock Screen and in the Dynamic Island.
+- Apple Watch: logs sets with the Digital Crown, shares set edits, sessions and rest timers directly with the paired iPhone, logs without the iPhone nearby, and with permission saves a strength training workout to Apple Health.
+- Privacy: no account. The log is stored on the iPhone, with a local copy on the paired watch. It does not sync through iCloud, and Overload sends nothing to Zentsu.
+- Pricing: {% if overload.app_store_url %}${{ site[overload.price_key] }} paid download{% else %}a paid download once released{% endif %}; one purchase includes the iPhone and Apple Watch apps, with no subscription or in-app purchases.
 - Publisher: Zentsu LLC. Contact: hello@zentsu.app.
 
 ## Key pages

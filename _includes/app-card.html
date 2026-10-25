@@ -4,12 +4,12 @@ by the studio homepage (index.html) to iterate the apps list. Pass the app entry
 from index.html (icon + body). Behaviour by status: live → linked app name, status line, tagline,
 and price (from _config.yml via price_key). coming_soon → linked app name, muted "Coming soon"
 label, tagline, and price. NO App Store / download button. not_on_store → as coming_soon, with a
-"Not on the App Store" label instead. parked → not rendered (index.html filters these out before
-calling). Icon: if the app's icon file is missing the <img /> would break, so the card renders a
-monogram tile (first letter of the slug) tinted with the app's accent as a graceful fallback. Drop
-the real icon in later, no markup change. Do NOT hardcode a "$" price here. It comes from
-_config.yml via price_key. {%- endcomment -%} {%- assign app = include.app -%} {%- assign price =
-nil -%} {%- if app.price_key -%}{%- assign price = site[app.price_key] -%}{%- endif -%} {%- assign
+"Not on the App Store" label instead and no price. parked → not rendered (index.html filters these
+out before calling). Icon: if the app's icon file is missing the <img /> would break, so the card
+renders a monogram tile (first letter of the slug) tinted with the app's accent as a graceful
+fallback. Drop the real icon in later, no markup change. Do NOT hardcode a "$" price here. It comes
+from _config.yml via price_key. {%- endcomment -%} {%- assign app = include.app -%} {%- assign price
+= nil -%} {%- if app.price_key -%}{%- assign price = site[app.price_key] -%}{%- endif -%} {%- assign
 monogram = app.slug | slice: 0 | upcase -%}
 <article
   class="product{% if app.status != 'live' %} product--soon{% endif %}"
@@ -58,7 +58,7 @@ monogram = app.slug | slice: 0 | upcase -%}
     {%- endif %}
     <p>{{ app.tagline }}</p>
     <div class="product-foot">
-      {%- if price %}
+      {%- if price and app.status != 'not_on_store' %}
       <span class="product-price"
         >${{ price }}{% if app.price_suffix %} {{ app.price_suffix }}{% endif %}</span
       >

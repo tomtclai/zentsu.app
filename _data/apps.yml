@@ -30,7 +30,8 @@
 #                 App Store link (nothing to link to yet).
 #   not_on_store → card with the muted treatment and a "Not on the App Store"
 #                 tag, for a built app that is not on the App Store and has no
-#                 announced release. NO download or App Store link.
+#                 announced release. NO download or App Store link, and no
+#                 price even when price_key is set.
 #   parked      → omitted because it has no active lifecycle state.
 #
 # ── FIELDS ───────────────────────────────────────────────────────────────
@@ -142,8 +143,11 @@ apps:
       Log your lifts and see the next target for every set. Add reps at the same
       weight, then add weight once every set reaches the top of its range.
     status: not_on_store
-    platforms: iPhone
-    app_store_url: null # App Review is on hold (DEC-2026-10-02-overload-app-store-release).
+    platforms: iPhone · Apple Watch
+    price_key: price_overload
+    # In App Review. After approval, set status: live and the store URL; that
+    # turns on the /overload download link, price, Smart App Banner and Offer data.
+    app_store_url: null
     page_url: /overload
     icon: /assets/overload-icon.png
     accent: '#d9602a'
