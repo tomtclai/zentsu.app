@@ -12,6 +12,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Fixed
 
+- `deploy.yml` asks `setup-ruby` for the latest Ruby 3.2.x instead of 3.2.2, which the Ubuntu 26.04 runner image no longer ships; the 2026-10-27 deploy of main had failed in "Set up Ruby".
 - The Press page footer carries Apple's trademark credit beside the Mac App Store badge, and the badge renders 40 CSS pixels high with 10 pixels of clear space. `validate-site.mjs` checks the badge, the credit and those two CSS rules whenever the Press page shows the badge.
 
 ### Changed
