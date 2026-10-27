@@ -5,339 +5,339 @@
 en:
   territory: USA
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 es:
   territory: MEX
   currency: MXN
-  monthly: "89"
-  annual: "399"
-  lifetime: "2999"
-  monthly_display: "MX$89"
-  annual_display: "MX$399"
-  lifetime_display: "MX$2,999"
+  monthly: "99"
+  annual: "499"
+  lifetime: "1699"
+  monthly_display: "MX$99"
+  annual_display: "MX$499"
+  lifetime_display: "MX$1,699"
 
 de:
   territory: DEU
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 fr:
   territory: FRA
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 ja:
   territory: JPN
   currency: JPY
-  monthly: "600"
-  annual: "3000"
-  lifetime: "22000"
-  monthly_display: "¥600"
-  annual_display: "¥3,000"
-  lifetime_display: "¥22,000"
+  monthly: "800"
+  annual: "3500"
+  lifetime: "12000"
+  monthly_display: "¥800"
+  annual_display: "¥3,500"
+  lifetime_display: "¥12,000"
 
 it:
   territory: ITA
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 nl:
   territory: NLD
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 pt:
   territory: BRA
   currency: BRL
-  monthly: "9.90"
-  annual: "59.90"
+  monthly: "19.90"
+  annual: "99.90"
   lifetime: "299.90"
-  monthly_display: "R$9,90"
-  annual_display: "R$59,90"
+  monthly_display: "R$19,90"
+  annual_display: "R$99,90"
   lifetime_display: "R$299,90"
 
 pl:
   territory: POL
   currency: PLN
-  monthly: "19.99"
-  annual: "99.99"
-  lifetime: "599.99"
-  monthly_display: "19,99 zł"
-  annual_display: "99,99 zł"
-  lifetime_display: "599,99 zł"
+  monthly: "24.99"
+  annual: "129.99"
+  lifetime: "499.99"
+  monthly_display: "24,99 zł"
+  annual_display: "129,99 zł"
+  lifetime_display: "499,99 zł"
 
 ru:
   territory: RUS
   currency: RUB
-  monthly: "349"
-  annual: "1790"
-  lifetime: "9990"
-  monthly_display: "₽349"
-  annual_display: "₽1.790"
-  lifetime_display: "₽9.990"
+  monthly: "449"
+  annual: "2490"
+  lifetime: "8990"
+  monthly_display: "₽449"
+  annual_display: "₽2.490"
+  lifetime_display: "₽8.990"
 
 zh:
   territory: CHN
   currency: CNY
-  monthly: "28"
-  annual: "148"
-  lifetime: "998"
-  monthly_display: "¥28"
-  annual_display: "¥148"
-  lifetime_display: "¥998"
+  monthly: "38"
+  annual: "198"
+  lifetime: "698"
+  monthly_display: "¥38"
+  annual_display: "¥198"
+  lifetime_display: "¥698"
 
 zh-hant:
   territory: TWN
   currency: TWD
-  monthly: "120"
-  annual: "690"
-  lifetime: "1490"
-  monthly_display: "NT$120"
-  annual_display: "NT$690"
-  lifetime_display: "NT$1,490"
+  monthly: "150"
+  annual: "990"
+  lifetime: "2490"
+  monthly_display: "NT$150"
+  annual_display: "NT$990"
+  lifetime_display: "NT$2,490"
 
 ko:
   territory: KOR
   currency: KRW
-  monthly: "6600"
+  monthly: "7700"
   annual: "33000"
-  lifetime: "229000"
-  monthly_display: "₩6,600"
+  lifetime: "99000"
+  monthly_display: "₩7,700"
   annual_display: "₩33,000"
-  lifetime_display: "₩229,000"
+  lifetime_display: "₩99,000"
 
 ar:
   territory: SAU
   currency: SAR
-  monthly: "17.99"
-  annual: "89.99"
-  lifetime: "599.99"
-  monthly_display: "SAR 17.99"
-  annual_display: "SAR 89.99"
-  lifetime_display: "SAR 599.99"
+  monthly: "19.99"
+  annual: "99.99"
+  lifetime: "349.99"
+  monthly_display: "SAR 19.99"
+  annual_display: "SAR 99.99"
+  lifetime_display: "SAR 349.99"
 
 tr:
   territory: TUR
   currency: TRY
-  monthly: "199.99"
-  annual: "999.99"
-  lifetime: "6999.99"
-  monthly_display: "₺199,99"
-  annual_display: "₺999,99"
-  lifetime_display: "₺6.999,99"
+  monthly: "249.99"
+  annual: "1499.99"
+  lifetime: "4999.99"
+  monthly_display: "₺249,99"
+  annual_display: "₺1.499,99"
+  lifetime_display: "₺4.999,99"
 
 hi:
   territory: IND
   currency: INR
-  monthly: "399"
-  annual: "1999"
-  lifetime: "12900"
-  monthly_display: "₹399"
-  annual_display: "₹1,999"
-  lifetime_display: "₹12,900"
+  monthly: "499"
+  annual: "2999"
+  lifetime: "9900"
+  monthly_display: "₹499"
+  annual_display: "₹2,999"
+  lifetime_display: "₹9,900"
 
 id:
   territory: IDN
   currency: IDR
-  monthly: "69000"
-  annual: "349000"
-  lifetime: "2499000"
-  monthly_display: "Rp69.000"
-  annual_display: "Rp349.000"
-  lifetime_display: "Rp2.499.000"
+  monthly: "99000"
+  annual: "599000"
+  lifetime: "1999000"
+  monthly_display: "Rp99.000"
+  annual_display: "Rp599.000"
+  lifetime_display: "Rp1.999.000"
 
 th:
   territory: THA
   currency: THB
-  monthly: "149"
-  annual: "699"
-  lifetime: "4990"
-  monthly_display: "฿149"
-  annual_display: "฿699"
-  lifetime_display: "฿4,990"
+  monthly: "199"
+  annual: "999"
+  lifetime: "3990"
+  monthly_display: "฿199"
+  annual_display: "฿999"
+  lifetime_display: "฿3,990"
 
 vi:
   territory: VNM
   currency: VND
-  monthly: "119000"
-  annual: "599000"
-  lifetime: "3999000"
-  monthly_display: "₫119.000"
-  annual_display: "₫599.000"
-  lifetime_display: "₫3.999.000"
+  monthly: "149000"
+  annual: "999000"
+  lifetime: "2999000"
+  monthly_display: "₫149.000"
+  annual_display: "₫999.000"
+  lifetime_display: "₫2.999.000"
 
 ms:
   territory: MYS
   currency: MYR
-  monthly: "19.90"
-  annual: "99.90"
-  lifetime: "599.90"
-  monthly_display: "RM19,90"
-  annual_display: "RM99,90"
-  lifetime_display: "RM599,90"
+  monthly: "22.90"
+  annual: "129.90"
+  lifetime: "499.90"
+  monthly_display: "RM22,90"
+  annual_display: "RM129,90"
+  lifetime_display: "RM499,90"
 
 uk:
   territory: UKR
   currency: USD
-  monthly: "4.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "$4.99"
-  annual_display: "$22.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 he:
   territory: ISR
   currency: ILS
   monthly: "14.90"
-  annual: "69.90"
-  lifetime: "399.90"
+  annual: "99.90"
+  lifetime: "299.90"
   monthly_display: "₪14.90"
-  annual_display: "₪69.90"
-  lifetime_display: "₪399.90"
+  annual_display: "₪99.90"
+  lifetime_display: "₪299.90"
 
 cs:
   territory: CZE
   currency: CZK
-  monthly: "99"
-  annual: "499"
-  lifetime: "3490"
-  monthly_display: "99 Kč"
-  annual_display: "499 Kč"
-  lifetime_display: "3.490 Kč"
+  monthly: "129"
+  annual: "799"
+  lifetime: "2790"
+  monthly_display: "129 Kč"
+  annual_display: "799 Kč"
+  lifetime_display: "2.790 Kč"
 
 sk:
   territory: SVK
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 hu:
   territory: HUN
   currency: HUF
-  monthly: "1790"
-  annual: "8990"
-  lifetime: "59990"
-  monthly_display: "1.790 Ft"
-  annual_display: "8.990 Ft"
-  lifetime_display: "59.990 Ft"
+  monthly: "1990"
+  annual: "12990"
+  lifetime: "44990"
+  monthly_display: "1.990 Ft"
+  annual_display: "12.990 Ft"
+  lifetime_display: "44.990 Ft"
 
 ro:
   territory: ROU
   currency: RON
-  monthly: "19.99"
-  annual: "99.99"
-  lifetime: "699.99"
-  monthly_display: "19,99 lei"
-  annual_display: "99,99 lei"
-  lifetime_display: "699,99 lei"
+  monthly: "29.99"
+  annual: "149.99"
+  lifetime: "499.99"
+  monthly_display: "29,99 lei"
+  annual_display: "149,99 lei"
+  lifetime_display: "499,99 lei"
 
 hr:
   territory: HRV
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 el:
   territory: GRC
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 da:
   territory: DNK
   currency: DKK
   monthly: "39"
-  annual: "179"
-  lifetime: "999"
+  annual: "249"
+  lifetime: "899"
   monthly_display: "DKK 39"
-  annual_display: "DKK 179"
-  lifetime_display: "DKK 999"
+  annual_display: "DKK 249"
+  lifetime_display: "DKK 899"
 
 sv:
   territory: SWE
   currency: SEK
-  monthly: "49"
-  annual: "249"
-  lifetime: "1795"
-  monthly_display: "SEK 49"
-  annual_display: "SEK 249"
-  lifetime_display: "SEK 1,795"
+  monthly: "69"
+  annual: "399"
+  lifetime: "1295"
+  monthly_display: "SEK 69"
+  annual_display: "SEK 399"
+  lifetime_display: "SEK 1,295"
 
 "no":
   territory: NOR
   currency: NOK
-  monthly: "49"
-  annual: "249"
-  lifetime: "1790"
-  monthly_display: "NOK 49"
-  annual_display: "NOK 249"
-  lifetime_display: "NOK 1,790"
+  monthly: "59"
+  annual: "399"
+  lifetime: "1290"
+  monthly_display: "NOK 59"
+  annual_display: "NOK 399"
+  lifetime_display: "NOK 1,290"
 
 fi:
   territory: FIN
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 ca:
   territory: ESP
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 es-es:
   territory: ESP
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"

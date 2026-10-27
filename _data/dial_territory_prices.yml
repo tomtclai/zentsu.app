@@ -5,1749 +5,1749 @@
 DZA:
   territory: DZA
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 AGO:
   territory: AGO
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 BHR:
   territory: BHR
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "149.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$149.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 BEN:
   territory: BEN
   currency: USD
-  monthly: "4.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "$4.99"
-  annual_display: "$22.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 BWA:
   territory: BWA
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 BFA:
   territory: BFA
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 CMR:
   territory: CMR
   currency: USD
-  monthly: "4.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "$4.99"
-  annual_display: "$22.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 CPV:
   territory: CPV
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 TCD:
   territory: TCD
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 COD:
   territory: COD
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 COG:
   territory: COG
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "149.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 CIV:
   territory: CIV
   currency: USD
-  monthly: "4.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "$4.99"
-  annual_display: "$22.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 SWZ:
   territory: SWZ
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 GAB:
   territory: GAB
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 GMB:
   territory: GMB
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 GHA:
   territory: GHA
   currency: USD
-  monthly: "4.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "$4.99"
-  annual_display: "$22.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 GNB:
   territory: GNB
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 IND:
   territory: IND
   currency: INR
-  monthly: "399"
-  annual: "1999"
-  lifetime: "12900"
-  monthly_display: "₹399"
-  annual_display: "₹1,999"
-  lifetime_display: "₹12,900"
+  monthly: "499"
+  annual: "2999"
+  lifetime: "9900"
+  monthly_display: "₹499"
+  annual_display: "₹2,999"
+  lifetime_display: "₹9,900"
 
 IRQ:
   territory: IRQ
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 JOR:
   territory: JOR
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 KEN:
   territory: KEN
   currency: USD
-  monthly: "4.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "$4.99"
-  annual_display: "$22.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 KWT:
   territory: KWT
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 LBN:
   territory: LBN
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 LBR:
   territory: LBR
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 LBY:
   territory: LBY
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 MDG:
   territory: MDG
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 MWI:
   territory: MWI
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 MLI:
   territory: MLI
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 MRT:
   territory: MRT
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 MUS:
   territory: MUS
   currency: USD
-  monthly: "4.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "$4.99"
-  annual_display: "$22.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 MAR:
   territory: MAR
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "149.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 MOZ:
   territory: MOZ
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 NAM:
   territory: NAM
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 NER:
   territory: NER
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 NGA:
   territory: NGA
   currency: NGN
-  monthly: "6900"
-  annual: "29900"
-  lifetime: "199900"
-  monthly_display: "₦6,900"
-  annual_display: "₦29,900"
-  lifetime_display: "₦199,900"
+  monthly: "7900"
+  annual: "49900"
+  lifetime: "149900"
+  monthly_display: "₦7,900"
+  annual_display: "₦49,900"
+  lifetime_display: "₦149,900"
 
 OMN:
   territory: OMN
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 PAK:
   territory: PAK
   currency: PKR
-  monthly: "1100"
-  annual: "4900"
-  lifetime: "34900"
-  monthly_display: "PKR 1,100"
-  annual_display: "PKR 4,900"
-  lifetime_display: "PKR 34,900"
+  monthly: "1300"
+  annual: "7900"
+  lifetime: "24900"
+  monthly_display: "PKR 1,300"
+  annual_display: "PKR 7,900"
+  lifetime_display: "PKR 24,900"
 
 QAT:
   territory: QAT
   currency: QAR
-  monthly: "14.99"
-  annual: "69.99"
-  lifetime: "499.99"
-  monthly_display: "QAR 14.99"
-  annual_display: "QAR 69.99"
-  lifetime_display: "QAR 499.99"
+  monthly: "19.99"
+  annual: "99.99"
+  lifetime: "399.99"
+  monthly_display: "QAR 19.99"
+  annual_display: "QAR 99.99"
+  lifetime_display: "QAR 399.99"
 
 RWA:
   territory: RWA
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 STP:
   territory: STP
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 SEN:
   territory: SEN
   currency: USD
-  monthly: "4.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "$4.99"
-  annual_display: "$22.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 SYC:
   territory: SYC
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 SLE:
   territory: SLE
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 ZAF:
   territory: ZAF
   currency: ZAR
-  monthly: "79.99"
-  annual: "399.99"
-  lifetime: "2499.99"
-  monthly_display: "ZAR 79.99"
-  annual_display: "ZAR 399.99"
-  lifetime_display: "ZAR 2,499.99"
+  monthly: "99.99"
+  annual: "599.99"
+  lifetime: "1999.99"
+  monthly_display: "ZAR 99.99"
+  annual_display: "ZAR 599.99"
+  lifetime_display: "ZAR 1,999.99"
 
 TZA:
   territory: TZA
   currency: TZS
-  monthly: "11900"
-  annual: "59900"
-  lifetime: "399900"
-  monthly_display: "TZS 11,900"
-  annual_display: "TZS 59,900"
-  lifetime_display: "TZS 399,900"
+  monthly: "14900"
+  annual: "89900"
+  lifetime: "299900"
+  monthly_display: "TZS 14,900"
+  annual_display: "TZS 89,900"
+  lifetime_display: "TZS 299,900"
 
 TUN:
   territory: TUN
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 UGA:
   territory: UGA
   currency: USD
-  monthly: "4.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "$4.99"
-  annual_display: "$22.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 YEM:
   territory: YEM
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 ZMB:
   territory: ZMB
   currency: USD
-  monthly: "4.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "$4.99"
-  annual_display: "$22.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 ZWE:
   territory: ZWE
   currency: USD
-  monthly: "4.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "$4.99"
-  annual_display: "$22.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 ISR:
   territory: ISR
   currency: ILS
   monthly: "14.90"
-  annual: "69.90"
-  lifetime: "399.90"
+  annual: "99.90"
+  lifetime: "299.90"
   monthly_display: "₪14.90"
-  annual_display: "₪69.90"
-  lifetime_display: "₪399.90"
+  annual_display: "₪99.90"
+  lifetime_display: "₪299.90"
 
 ARE:
   territory: ARE
   currency: AED
-  monthly: "14.99"
-  annual: "79.99"
-  lifetime: "499.99"
-  monthly_display: "AED 14.99"
-  annual_display: "AED 79.99"
-  lifetime_display: "AED 499.99"
+  monthly: "19.99"
+  annual: "119.99"
+  lifetime: "399.99"
+  monthly_display: "AED 19.99"
+  annual_display: "AED 119.99"
+  lifetime_display: "AED 399.99"
 
 SAU:
   territory: SAU
   currency: SAR
-  monthly: "17.99"
-  annual: "89.99"
-  lifetime: "599.99"
-  monthly_display: "SAR 17.99"
-  annual_display: "SAR 89.99"
-  lifetime_display: "SAR 599.99"
+  monthly: "19.99"
+  annual: "99.99"
+  lifetime: "349.99"
+  monthly_display: "SAR 19.99"
+  annual_display: "SAR 99.99"
+  lifetime_display: "SAR 349.99"
 
 EGY:
   territory: EGY
   currency: EGP
-  monthly: "199.99"
-  annual: "999.99"
-  lifetime: "6999.99"
-  monthly_display: "EGP 199.99"
-  annual_display: "EGP 999.99"
-  lifetime_display: "EGP 6,999.99"
+  monthly: "249.99"
+  annual: "1499.99"
+  lifetime: "4999.99"
+  monthly_display: "EGP 249.99"
+  annual_display: "EGP 1,499.99"
+  lifetime_display: "EGP 4,999.99"
 
 AFG:
   territory: AFG
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 AUS:
   territory: AUS
   currency: AUD
-  monthly: "5.99"
+  monthly: "7.99"
   annual: "29.99"
-  lifetime: "199.99"
-  monthly_display: "A$5.99"
+  lifetime: "99.99"
+  monthly_display: "A$7.99"
   annual_display: "A$29.99"
-  lifetime_display: "A$199.99"
+  lifetime_display: "A$99.99"
 
 BTN:
   territory: BTN
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 BRN:
   territory: BRN
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 KHM:
   territory: KHM
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "149.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$149.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 FJI:
   territory: FJI
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 IDN:
   territory: IDN
   currency: IDR
-  monthly: "69000"
-  annual: "349000"
-  lifetime: "2499000"
-  monthly_display: "Rp69.000"
-  annual_display: "Rp349.000"
-  lifetime_display: "Rp2.499.000"
+  monthly: "99000"
+  annual: "599000"
+  lifetime: "1999000"
+  monthly_display: "Rp99.000"
+  annual_display: "Rp599.000"
+  lifetime_display: "Rp1.999.000"
 
 LAO:
   territory: LAO
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "149.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$149.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 MYS:
   territory: MYS
   currency: MYR
-  monthly: "19.90"
-  annual: "99.90"
-  lifetime: "599.90"
-  monthly_display: "RM19,90"
-  annual_display: "RM99,90"
-  lifetime_display: "RM599,90"
+  monthly: "22.90"
+  annual: "129.90"
+  lifetime: "499.90"
+  monthly_display: "RM22,90"
+  annual_display: "RM129,90"
+  lifetime_display: "RM499,90"
 
 MDV:
   territory: MDV
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 FSM:
   territory: FSM
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 MNG:
   territory: MNG
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 MMR:
   territory: MMR
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 NRU:
   territory: NRU
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 NPL:
   territory: NPL
   currency: USD
-  monthly: "4.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "$4.99"
-  annual_display: "$22.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 NZL:
   territory: NZL
   currency: NZD
-  monthly: "6.99"
-  annual: "39.99"
-  lifetime: "229.99"
-  monthly_display: "NZ$6.99"
-  annual_display: "NZ$39.99"
-  lifetime_display: "NZ$229.99"
+  monthly: "9.99"
+  annual: "49.99"
+  lifetime: "199.99"
+  monthly_display: "NZ$9.99"
+  annual_display: "NZ$49.99"
+  lifetime_display: "NZ$199.99"
 
 PLW:
   territory: PLW
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 PNG:
   territory: PNG
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 PHL:
   territory: PHL
   currency: PHP
-  monthly: "249"
-  annual: "1290"
-  lifetime: "7990"
-  monthly_display: "₱249"
-  annual_display: "₱1,290"
-  lifetime_display: "₱7,990"
+  monthly: "299"
+  annual: "1990"
+  lifetime: "5990"
+  monthly_display: "₱299"
+  annual_display: "₱1,990"
+  lifetime_display: "₱5,990"
 
 SGP:
   territory: SGP
   currency: SGD
-  monthly: "5.98"
-  annual: "29.98"
-  lifetime: "199.98"
-  monthly_display: "S$5.98"
-  annual_display: "S$29.98"
-  lifetime_display: "S$199.98"
+  monthly: "6.98"
+  annual: "39.98"
+  lifetime: "149.98"
+  monthly_display: "S$6.98"
+  annual_display: "S$39.98"
+  lifetime_display: "S$149.98"
 
 SLB:
   territory: SLB
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 LKA:
   territory: LKA
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 TON:
   territory: TON
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 VUT:
   territory: VUT
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 VNM:
   territory: VNM
   currency: VND
-  monthly: "119000"
-  annual: "599000"
-  lifetime: "3999000"
-  monthly_display: "₫119.000"
-  annual_display: "₫599.000"
-  lifetime_display: "₫3.999.000"
+  monthly: "149000"
+  annual: "999000"
+  lifetime: "2999000"
+  monthly_display: "₫149.000"
+  annual_display: "₫999.000"
+  lifetime_display: "₫2.999.000"
 
 THA:
   territory: THA
   currency: THB
-  monthly: "149"
-  annual: "699"
-  lifetime: "4990"
-  monthly_display: "฿149"
-  annual_display: "฿699"
-  lifetime_display: "฿4,990"
+  monthly: "199"
+  annual: "999"
+  lifetime: "3990"
+  monthly_display: "฿199"
+  annual_display: "฿999"
+  lifetime_display: "฿3,990"
 
 KOR:
   territory: KOR
   currency: KRW
-  monthly: "6600"
+  monthly: "7700"
   annual: "33000"
-  lifetime: "229000"
-  monthly_display: "₩6,600"
+  lifetime: "99000"
+  monthly_display: "₩7,700"
   annual_display: "₩33,000"
-  lifetime_display: "₩229,000"
+  lifetime_display: "₩99,000"
 
 CHN:
   territory: CHN
   currency: CNY
-  monthly: "28"
-  annual: "148"
-  lifetime: "998"
-  monthly_display: "¥28"
-  annual_display: "¥148"
-  lifetime_display: "¥998"
+  monthly: "38"
+  annual: "198"
+  lifetime: "698"
+  monthly_display: "¥38"
+  annual_display: "¥198"
+  lifetime_display: "¥698"
 
 TWN:
   territory: TWN
   currency: TWD
-  monthly: "120"
-  annual: "690"
-  lifetime: "1490"
-  monthly_display: "NT$120"
-  annual_display: "NT$690"
-  lifetime_display: "NT$1,490"
+  monthly: "150"
+  annual: "990"
+  lifetime: "2490"
+  monthly_display: "NT$150"
+  annual_display: "NT$990"
+  lifetime_display: "NT$2,490"
 
 JPN:
   territory: JPN
   currency: JPY
-  monthly: "600"
-  annual: "3000"
-  lifetime: "22000"
-  monthly_display: "¥600"
-  annual_display: "¥3,000"
-  lifetime_display: "¥22,000"
+  monthly: "800"
+  annual: "3500"
+  lifetime: "12000"
+  monthly_display: "¥800"
+  annual_display: "¥3,500"
+  lifetime_display: "¥12,000"
 
 MAC:
   territory: MAC
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 HKG:
   territory: HKG
   currency: HKD
-  monthly: "32"
-  annual: "148"
-  lifetime: "988"
-  monthly_display: "HK$32"
-  annual_display: "HK$148"
-  lifetime_display: "HK$988"
+  monthly: "38"
+  annual: "228"
+  lifetime: "788"
+  monthly_display: "HK$38"
+  annual_display: "HK$228"
+  lifetime_display: "HK$788"
 
 ALB:
   territory: ALB
   currency: USD
-  monthly: "4.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "$4.99"
-  annual_display: "$22.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 ARM:
   territory: ARM
   currency: USD
-  monthly: "4.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "$4.99"
-  annual_display: "$22.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 AZE:
   territory: AZE
   currency: USD
-  monthly: "4.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "$4.99"
-  annual_display: "$22.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 BLR:
   territory: BLR
   currency: USD
-  monthly: "4.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "$4.99"
-  annual_display: "$22.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 BEL:
   territory: BEL
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 BIH:
   territory: BIH
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 BGR:
   territory: BGR
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 CZE:
   territory: CZE
   currency: CZK
-  monthly: "99"
-  annual: "499"
-  lifetime: "3490"
-  monthly_display: "99 Kč"
-  annual_display: "499 Kč"
-  lifetime_display: "3.490 Kč"
+  monthly: "129"
+  annual: "799"
+  lifetime: "2790"
+  monthly_display: "129 Kč"
+  annual_display: "799 Kč"
+  lifetime_display: "2.790 Kč"
 
 CYP:
   territory: CYP
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 DNK:
   territory: DNK
   currency: DKK
   monthly: "39"
-  annual: "179"
-  lifetime: "999"
+  annual: "249"
+  lifetime: "899"
   monthly_display: "DKK 39"
-  annual_display: "DKK 179"
-  lifetime_display: "DKK 999"
+  annual_display: "DKK 249"
+  lifetime_display: "DKK 899"
 
 DEU:
   territory: DEU
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 ESP:
   territory: ESP
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 EST:
   territory: EST
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 FRA:
   territory: FRA
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 GEO:
   territory: GEO
   currency: USD
-  monthly: "4.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "$4.99"
-  annual_display: "$22.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 HRV:
   territory: HRV
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 ISL:
   territory: ISL
   currency: USD
-  monthly: "4.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "$4.99"
-  annual_display: "$22.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 IRL:
   territory: IRL
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 ITA:
   territory: ITA
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 KAZ:
   territory: KAZ
   currency: KZT
-  monthly: "2490"
-  annual: "11990"
-  lifetime: "79990"
-  monthly_display: "KZT 2,490"
-  annual_display: "KZT 11,990"
-  lifetime_display: "KZT 79,990"
+  monthly: "2990"
+  annual: "17990"
+  lifetime: "59990"
+  monthly_display: "KZT 2,990"
+  annual_display: "KZT 17,990"
+  lifetime_display: "KZT 59,990"
 
 XKS:
   territory: XKS
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 KGZ:
   territory: KGZ
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "149.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$149.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 LVA:
   territory: LVA
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 LTU:
   territory: LTU
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 LUX:
   territory: LUX
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 HUN:
   territory: HUN
   currency: HUF
-  monthly: "1790"
-  annual: "8990"
-  lifetime: "59990"
-  monthly_display: "1.790 Ft"
-  annual_display: "8.990 Ft"
-  lifetime_display: "59.990 Ft"
+  monthly: "1990"
+  annual: "12990"
+  lifetime: "44990"
+  monthly_display: "1.990 Ft"
+  annual_display: "12.990 Ft"
+  lifetime_display: "44.990 Ft"
 
 MLT:
   territory: MLT
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 MDA:
   territory: MDA
   currency: USD
-  monthly: "4.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "$4.99"
-  annual_display: "$22.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 MNE:
   territory: MNE
   currency: EUR
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "119.99"
-  monthly_display: "3,99 €"
-  annual_display: "19,99 €"
-  lifetime_display: "119,99 €"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "4,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 NLD:
   territory: NLD
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 NOR:
   territory: NOR
   currency: NOK
-  monthly: "49"
-  annual: "249"
-  lifetime: "1790"
-  monthly_display: "NOK 49"
-  annual_display: "NOK 249"
-  lifetime_display: "NOK 1,790"
+  monthly: "59"
+  annual: "399"
+  lifetime: "1290"
+  monthly_display: "NOK 59"
+  annual_display: "NOK 399"
+  lifetime_display: "NOK 1,290"
 
 MKD:
   territory: MKD
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 AUT:
   territory: AUT
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 POL:
   territory: POL
   currency: PLN
-  monthly: "19.99"
-  annual: "99.99"
-  lifetime: "599.99"
-  monthly_display: "19,99 zł"
-  annual_display: "99,99 zł"
-  lifetime_display: "599,99 zł"
+  monthly: "24.99"
+  annual: "129.99"
+  lifetime: "499.99"
+  monthly_display: "24,99 zł"
+  annual_display: "129,99 zł"
+  lifetime_display: "499,99 zł"
 
 PRT:
   territory: PRT
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 ROU:
   territory: ROU
   currency: RON
-  monthly: "19.99"
-  annual: "99.99"
-  lifetime: "699.99"
-  monthly_display: "19,99 lei"
-  annual_display: "99,99 lei"
-  lifetime_display: "699,99 lei"
+  monthly: "29.99"
+  annual: "149.99"
+  lifetime: "499.99"
+  monthly_display: "29,99 lei"
+  annual_display: "149,99 lei"
+  lifetime_display: "499,99 lei"
 
 CHE:
   territory: CHE
   currency: CHF
-  monthly: "3"
-  annual: "18"
-  lifetime: "110"
-  monthly_display: "CHF 3"
-  annual_display: "CHF 18"
-  lifetime_display: "CHF 110"
+  monthly: "4"
+  annual: "25"
+  lifetime: "90"
+  monthly_display: "CHF 4"
+  annual_display: "CHF 25"
+  lifetime_display: "CHF 90"
 
 SRB:
   territory: SRB
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 SVN:
   territory: SVN
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 SVK:
   territory: SVK
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 FIN:
   territory: FIN
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 SWE:
   territory: SWE
   currency: SEK
-  monthly: "49"
-  annual: "249"
-  lifetime: "1795"
-  monthly_display: "SEK 49"
-  annual_display: "SEK 249"
-  lifetime_display: "SEK 1,795"
+  monthly: "69"
+  annual: "399"
+  lifetime: "1295"
+  monthly_display: "SEK 69"
+  annual_display: "SEK 399"
+  lifetime_display: "SEK 1,295"
 
 TJK:
   territory: TJK
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "149.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$149.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 TUR:
   territory: TUR
   currency: TRY
-  monthly: "199.99"
-  annual: "999.99"
-  lifetime: "6999.99"
-  monthly_display: "₺199,99"
-  annual_display: "₺999,99"
-  lifetime_display: "₺6.999,99"
+  monthly: "249.99"
+  annual: "1499.99"
+  lifetime: "4999.99"
+  monthly_display: "₺249,99"
+  annual_display: "₺1.499,99"
+  lifetime_display: "₺4.999,99"
 
 TKM:
   territory: TKM
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 GBR:
   territory: GBR
   currency: GBP
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "£3.99"
-  annual_display: "£19.99"
-  lifetime_display: "£129.99"
+  monthly: "4.99"
+  annual: "24.99"
+  lifetime: "99.99"
+  monthly_display: "£4.99"
+  annual_display: "£24.99"
+  lifetime_display: "£99.99"
 
 UZB:
   territory: UZB
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "149.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$149.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 GRC:
   territory: GRC
   currency: EUR
-  monthly: "3.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "3,99 €"
-  annual_display: "22,99 €"
-  lifetime_display: "149,99 €"
+  monthly: "5.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "5,99 €"
+  annual_display: "29,99 €"
+  lifetime_display: "99,99 €"
 
 RUS:
   territory: RUS
   currency: RUB
-  monthly: "349"
-  annual: "1790"
-  lifetime: "9990"
-  monthly_display: "₽349"
-  annual_display: "₽1.790"
-  lifetime_display: "₽9.990"
+  monthly: "449"
+  annual: "2490"
+  lifetime: "8990"
+  monthly_display: "₽449"
+  annual_display: "₽2.490"
+  lifetime_display: "₽8.990"
 
 UKR:
   territory: UKR
   currency: USD
-  monthly: "4.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "$4.99"
-  annual_display: "$22.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 AIA:
   territory: AIA
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 ATG:
   territory: ATG
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 ARG:
   territory: ARG
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 BHS:
   territory: BHS
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "149.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$149.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 BRB:
   territory: BRB
   currency: USD
-  monthly: "4.99"
-  annual: "22.99"
-  lifetime: "149.99"
-  monthly_display: "$4.99"
-  annual_display: "$22.99"
-  lifetime_display: "$149.99"
+  monthly: "5.99"
+  annual: "34.99"
+  lifetime: "119.99"
+  monthly_display: "$5.99"
+  annual_display: "$34.99"
+  lifetime_display: "$119.99"
 
 BLZ:
   territory: BLZ
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 BMU:
   territory: BMU
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 BOL:
   territory: BOL
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 BRA:
   territory: BRA
   currency: BRL
-  monthly: "9.90"
-  annual: "59.90"
+  monthly: "19.90"
+  annual: "99.90"
   lifetime: "299.90"
-  monthly_display: "R$9,90"
-  annual_display: "R$59,90"
+  monthly_display: "R$19,90"
+  annual_display: "R$99,90"
   lifetime_display: "R$299,90"
 
 VGB:
   territory: VGB
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 CYM:
   territory: CYM
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 CHL:
   territory: CHL
   currency: CLP
-  monthly: "4990"
-  annual: "22990"
-  lifetime: "149990"
-  monthly_display: "CLP 4.990"
-  annual_display: "CLP 22.990"
-  lifetime_display: "CLP 149.990"
+  monthly: "5990"
+  annual: "34990"
+  lifetime: "99990"
+  monthly_display: "CLP 5.990"
+  annual_display: "CLP 34.990"
+  lifetime_display: "CLP 99.990"
 
 COL:
   territory: COL
   currency: COP
-  monthly: "19900"
-  annual: "99900"
-  lifetime: "599900"
-  monthly_display: "COP 19.900"
-  annual_display: "COP 99.900"
-  lifetime_display: "COP 599.900"
+  monthly: "24900"
+  annual: "129900"
+  lifetime: "499900"
+  monthly_display: "COP 24.900"
+  annual_display: "COP 129.900"
+  lifetime_display: "COP 499.900"
 
 CRI:
   territory: CRI
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 DMA:
   territory: DMA
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 DOM:
   territory: DOM
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 ECU:
   territory: ECU
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 SLV:
   territory: SLV
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 GRD:
   territory: GRD
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 GTM:
   territory: GTM
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 GUY:
   territory: GUY
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 HND:
   territory: HND
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 JAM:
   territory: JAM
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 MEX:
   territory: MEX
   currency: MXN
-  monthly: "89"
-  annual: "399"
-  lifetime: "2999"
-  monthly_display: "MX$89"
-  annual_display: "MX$399"
-  lifetime_display: "MX$2,999"
+  monthly: "99"
+  annual: "499"
+  lifetime: "1699"
+  monthly_display: "MX$99"
+  annual_display: "MX$499"
+  lifetime_display: "MX$1,699"
 
 MSR:
   territory: MSR
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 NIC:
   territory: NIC
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 PAN:
   territory: PAN
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 PRY:
   territory: PRY
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 PER:
   territory: PER
   currency: PEN
-  monthly: "17.90"
-  annual: "89.90"
-  lifetime: "599.90"
-  monthly_display: "S/ 17.90"
-  annual_display: "S/ 89.90"
-  lifetime_display: "S/ 599.90"
+  monthly: "22.90"
+  annual: "129.90"
+  lifetime: "449.90"
+  monthly_display: "S/ 22.90"
+  annual_display: "S/ 129.90"
+  lifetime_display: "S/ 449.90"
 
 KNA:
   territory: KNA
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 LCA:
   territory: LCA
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 VCT:
   territory: VCT
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 SUR:
   territory: SUR
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "149.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$149.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 TTO:
   territory: TTO
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 TCA:
   territory: TCA
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 URY:
   territory: URY
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 VEN:
   territory: VEN
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
 
 CAN:
   territory: CAN
   currency: CAD
-  monthly: "4.99"
-  annual: "24.99"
-  lifetime: "179.99"
-  monthly_display: "CA$4.99"
-  annual_display: "CA$24.99"
-  lifetime_display: "CA$179.99"
+  monthly: "6.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "CA$6.99"
+  annual_display: "CA$29.99"
+  lifetime_display: "CA$99.99"
 
 USA:
   territory: USA
   currency: USD
-  monthly: "3.99"
-  annual: "19.99"
-  lifetime: "129.99"
-  monthly_display: "$3.99"
-  annual_display: "$19.99"
-  lifetime_display: "$129.99"
+  monthly: "4.99"
+  annual: "29.99"
+  lifetime: "99.99"
+  monthly_display: "$4.99"
+  annual_display: "$29.99"
+  lifetime_display: "$99.99"
