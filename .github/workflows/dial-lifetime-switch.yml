@@ -1,4 +1,4 @@
-name: Dial Lifetime price switch
+name: Dial price switch
 
 on:
   schedule:
@@ -13,8 +13,8 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  SWITCH_BRANCH: dial-lifetime-2026-09-26
-  SWITCH_DATE: '2026-09-26'
+  SWITCH_BRANCH: dial-pricing-2026-10-28
+  SWITCH_DATE: '2026-10-28'
 
 jobs:
   switch:
@@ -36,7 +36,7 @@ jobs:
         run: |
           today="$(date -u +%F)"
           if [[ "$today" < "$SWITCH_DATE" ]]; then
-            echo "Today is $today UTC. The Lifetime switch is due on $SWITCH_DATE. Nothing to do."
+            echo "Today is $today UTC. The price switch is due on $SWITCH_DATE. Nothing to do."
             echo "due=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
