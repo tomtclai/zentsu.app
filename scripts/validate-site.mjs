@@ -318,11 +318,6 @@ for (const [lang, route] of Object.entries(dialRoutes)) {
       html.includes(`"highPrice": "${prices.lifetime}"`),
     `${route} schema is missing the Dial Pro AggregateOffer from storefront prices`,
   );
-  const annualTrial = (dialCopy[key]?.plans?.annual_trial ?? '').replace('{price}', prices.annual_display);
-  check(
-    annualTrial.length > 0 && html.includes(annualTrial),
-    `${route} is missing the Annual free-trial line`,
-  );
   check(
     /<input[^>]*id="dial-plan-annual"[^>]*\schecked/.test(html) &&
       !/<input[^>]*id="dial-plan-(lifetime|monthly)"[^>]*\schecked/.test(html),

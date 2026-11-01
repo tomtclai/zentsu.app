@@ -1,4 +1,3 @@
-{%- assign annual_trial_offer_text = copy.plans.annual_trial | replace: '{price}', prices.annual_display -%}
     <meta name="apple-itunes-app" content="app-id=6789408903, affiliate-data=ct={{ site.data.dial_campaign.campaigns.banner }}&amp;pt={{ site.data.dial_campaign.provider_token }}" />
     <meta name="theme-color" content="#fffaf6" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#14110f" media="(prefers-color-scheme: dark)" />
@@ -55,7 +54,6 @@
               {
                 "@type": "Offer",
                 "name": {{ copy.plans.pro_name | append: " " | append: copy.plans.annual_name | jsonify | replace: "<", "\u003c" }},
-                "description": {{ annual_trial_offer_text | jsonify | replace: "<", "\u003c" }},
                 "price": {{ prices.annual | jsonify | replace: "<", "\u003c" }},
                 "priceCurrency": {{ prices.currency | jsonify | replace: "<", "\u003c" }}
               },
