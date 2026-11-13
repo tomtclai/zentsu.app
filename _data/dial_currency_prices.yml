@@ -9,187 +9,187 @@ AED:
   currency: AED
   monthly: "19.99"
   annual: "119.99"
-  lifetime: "399.99"
+  lifetime: "199.99"
   monthly_display: "AED 19.99"
   annual_display: "AED 119.99"
-  lifetime_display: "AED 399.99"
+  lifetime_display: "AED 199.99"
 
 AUD:
   territory: AUS
   currency: AUD
   monthly: "7.99"
   annual: "29.99"
-  lifetime: "99.99"
+  lifetime: "79.99"
   monthly_display: "A$7.99"
   annual_display: "A$29.99"
-  lifetime_display: "A$99.99"
+  lifetime_display: "A$79.99"
 
 CAD:
   territory: CAN
   currency: CAD
   monthly: "6.99"
   annual: "29.99"
-  lifetime: "99.99"
+  lifetime: "69.99"
   monthly_display: "CA$6.99"
   annual_display: "CA$29.99"
-  lifetime_display: "CA$99.99"
+  lifetime_display: "CA$69.99"
 
 CHF:
   territory: CHE
   currency: CHF
   monthly: "4"
   annual: "25"
-  lifetime: "90"
+  lifetime: "40"
   monthly_display: "CHF 4"
   annual_display: "CHF 25"
-  lifetime_display: "CHF 90"
+  lifetime_display: "CHF 40"
 
 CLP:
   territory: CHL
   currency: CLP
   monthly: "5990"
   annual: "34990"
-  lifetime: "99990"
+  lifetime: "59990"
   monthly_display: "CLP 5.990"
   annual_display: "CLP 34.990"
-  lifetime_display: "CLP 99.990"
+  lifetime_display: "CLP 59.990"
 
 COP:
   territory: COL
   currency: COP
   monthly: "24900"
   annual: "129900"
-  lifetime: "499900"
+  lifetime: "229900"
   monthly_display: "COP 24.900"
   annual_display: "COP 129.900"
-  lifetime_display: "COP 499.900"
+  lifetime_display: "COP 229.900"
 
 EGP:
   territory: EGY
   currency: EGP
   monthly: "249.99"
   annual: "1499.99"
-  lifetime: "4999.99"
+  lifetime: "2499.99"
   monthly_display: "EGP 249.99"
   annual_display: "EGP 1,499.99"
-  lifetime_display: "EGP 4,999.99"
+  lifetime_display: "EGP 2,499.99"
 
 GBP:
   territory: GBR
   currency: GBP
   monthly: "4.99"
   annual: "24.99"
-  lifetime: "99.99"
+  lifetime: "49.99"
   monthly_display: "£4.99"
   annual_display: "£24.99"
-  lifetime_display: "£99.99"
+  lifetime_display: "£49.99"
 
 HKD:
   territory: HKG
   currency: HKD
   monthly: "38"
   annual: "228"
-  lifetime: "788"
+  lifetime: "388"
   monthly_display: "HK$38"
   annual_display: "HK$228"
-  lifetime_display: "HK$788"
+  lifetime_display: "HK$388"
 
 KZT:
   territory: KAZ
   currency: KZT
   monthly: "2990"
   annual: "17990"
-  lifetime: "59990"
+  lifetime: "29990"
   monthly_display: "KZT 2,990"
   annual_display: "KZT 17,990"
-  lifetime_display: "KZT 59,990"
+  lifetime_display: "KZT 29,990"
 
 NGN:
   territory: NGA
   currency: NGN
   monthly: "7900"
   annual: "49900"
-  lifetime: "149900"
+  lifetime: "79900"
   monthly_display: "₦7,900"
   annual_display: "₦49,900"
-  lifetime_display: "₦149,900"
+  lifetime_display: "₦79,900"
 
 NZD:
   territory: NZL
   currency: NZD
   monthly: "9.99"
   annual: "49.99"
-  lifetime: "199.99"
+  lifetime: "99.99"
   monthly_display: "NZ$9.99"
   annual_display: "NZ$49.99"
-  lifetime_display: "NZ$199.99"
+  lifetime_display: "NZ$99.99"
 
 PEN:
   territory: PER
   currency: PEN
   monthly: "22.90"
   annual: "129.90"
-  lifetime: "449.90"
+  lifetime: "229.90"
   monthly_display: "S/ 22.90"
   annual_display: "S/ 129.90"
-  lifetime_display: "S/ 449.90"
+  lifetime_display: "S/ 229.90"
 
 PHP:
   territory: PHL
   currency: PHP
   monthly: "299"
   annual: "1990"
-  lifetime: "5990"
+  lifetime: "2990"
   monthly_display: "₱299"
   annual_display: "₱1,990"
-  lifetime_display: "₱5,990"
+  lifetime_display: "₱2,990"
 
 PKR:
   territory: PAK
   currency: PKR
   monthly: "1300"
   annual: "7900"
-  lifetime: "24900"
+  lifetime: "12900"
   monthly_display: "PKR 1,300"
   annual_display: "PKR 7,900"
-  lifetime_display: "PKR 24,900"
+  lifetime_display: "PKR 12,900"
 
 QAR:
   territory: QAT
   currency: QAR
   monthly: "19.99"
   annual: "99.99"
-  lifetime: "399.99"
+  lifetime: "199.99"
   monthly_display: "QAR 19.99"
   annual_display: "QAR 99.99"
-  lifetime_display: "QAR 399.99"
+  lifetime_display: "QAR 199.99"
 
 SGD:
   territory: SGP
   currency: SGD
   monthly: "6.98"
   annual: "39.98"
-  lifetime: "149.98"
+  lifetime: "69.98"
   monthly_display: "S$6.98"
   annual_display: "S$39.98"
-  lifetime_display: "S$149.98"
+  lifetime_display: "S$69.98"
 
 TZS:
   territory: TZA
   currency: TZS
   monthly: "14900"
   annual: "89900"
-  lifetime: "299900"
+  lifetime: "149900"
   monthly_display: "TZS 14,900"
   annual_display: "TZS 89,900"
-  lifetime_display: "TZS 299,900"
+  lifetime_display: "TZS 149,900"
 
 ZAR:
   territory: ZAF
   currency: ZAR
   monthly: "99.99"
   annual: "599.99"
-  lifetime: "1999.99"
+  lifetime: "999.99"
   monthly_display: "ZAR 99.99"
   annual_display: "ZAR 599.99"
-  lifetime_display: "ZAR 1,999.99"
+  lifetime_display: "ZAR 999.99"

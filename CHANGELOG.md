@@ -19,6 +19,7 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- Dial Lifetime prices follow the App Store Connect schedule effective 2026-11-13: $49.99 in the United States, TWD 1,490 in Taiwan, BRL 299.90 in Brazil, and every other currency on Apple's equalization from $49.99. Annual and Monthly amounts are unchanged. Regenerated with `npm run sync:dial-prices`.
 - `.github/workflows/dial-lifetime-switch.yml` is re-armed as "Dial price switch" for 2026-10-28. From that date it rebases the `dial-pricing-2026-10-28` branch onto main, pushes main, deploys that commit, deletes the branch and disables itself. The branch carries the Dial price tables regenerated from the App Store Connect schedule effective 2026-10-28: Lifetime $99.99, Annual $29.99 and Monthly $4.99 in the United States, with the pinned storefronts (United Kingdom, eurozone, Taiwan, Brazil, Korea, Japan, Mexico, Australia, Canada, Saudi Arabia) at their own amounts and every other currency following Apple's equalization.
 - The company privacy policy lists Press and describes email updates in general terms. The effective date is October 25, 2026. The Press privacy policy no longer points at email forms elsewhere on the site.
 - The footer support link goes to Press support, in all 34 site languages.
