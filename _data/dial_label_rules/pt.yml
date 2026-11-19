@@ -1,0 +1,53 @@
+products:
+  - name: Ozempic (semaglutida)
+    source_url: https://www.novonordisk.com.br/content/dam/nncorp/br/pt/pdfs/bulas/patient/Ozempic_1-5mL_0-25mg_0-5mg_Bula_Paciente.pdf
+    source_revised: Aprovada pela Anvisa em 17/04/2026
+    rules:
+      missed_dose:
+        text: Se não passaram mais de 5 dias desde o dia em que a dose deveria ter sido usada, a bula diz para usar assim que lembrar e aplicar a próxima dose no dia planejado. Se passaram mais de 5 dias, a dose esquecida é pulada e a próxima é aplicada no dia planejado. A bula diz para não tomar dose extra nem aumentar a dose para compensar.
+        section: (item 7)
+      change_day:
+        text: Uma vez por semana, no mesmo dia da semana, se possível, a qualquer hora do dia, independentemente das refeições. Se necessário, o dia pode mudar, desde que tenham passado pelo menos 3 dias desde a última injeção. Depois, a aplicação continua uma vez por semana no novo dia.
+        section: (item 6)
+      rotation:
+        text: A bula aponta como melhores locais a parte anterior das coxas, a parte anterior da cintura (abdome) e a parte superior do braço. Não encontramos na bula nem nas instruções de uso uma frase sobre alternar o local.
+        section: (item 6)
+  - name: Wegovy (semaglutida)
+    source_url: https://www.novonordisk.com.br/content/dam/nncorp/br/pt/pdfs/bulas/patient/Wegovy_Bula_Paciente.pdf
+    source_revised: Aprovada pela Anvisa em 04/05/2026
+    rules:
+      missed_dose:
+        text: Se passaram 5 dias ou menos desde o dia em que a dose deveria ter sido usada, a bula diz para usar assim que lembrar e aplicar a próxima no dia programado. Se passaram mais de 5 dias, a dose esquecida é pulada e a próxima é aplicada no próximo dia programado, sem dose extra para compensar. Se mais doses forem esquecidas, a bula orienta procurar o médico para avaliar se o escalonamento (aumento gradual da dose) precisa recomeçar.
+        section: (item 7)
+      change_day:
+        text: Uma vez por semana, se possível no mesmo dia da semana, a qualquer hora do dia, independentemente das refeições. Se necessário, o dia pode mudar, desde que tenham passado pelo menos 3 dias desde a última injeção. Depois, a aplicação continua uma vez por semana no novo dia.
+        section: (item 6)
+      rotation:
+        text: Parte da frente das coxas, parte anterior da cintura (abdome) e parte superior do braço. As instruções de uso pedem 5 cm de distância do umbigo e dizem que dá para usar a mesma área do corpo, mas não o mesmo local da última vez. Na dose de 7,2 mg (três injeções de 2,4 mg), as aplicações podem ficar na mesma área, com pelo menos 5 cm entre elas.
+        section: (item 6 e instruções de uso)
+  - name: Poviztra (semaglutida)
+    source_url: https://www.novonordisk.com.br/content/dam/nncorp/br/pt/pdfs/bulas/patient/Poviztra_Bula_Paciente.pdf
+    source_revised: Aprovada pela Anvisa em 04/05/2026
+    rules:
+      missed_dose:
+        text: O mesmo texto da bula do Wegovy. Até 5 dias depois do dia previsto, usar assim que lembrar e aplicar a próxima no dia programado. Com mais de 5 dias, a dose esquecida é pulada, sem dose extra. Se mais doses forem esquecidas, procurar o médico para avaliar se o escalonamento precisa recomeçar.
+        section: (item 7)
+      change_day:
+        text: O mesmo texto da bula do Wegovy. Uma vez por semana, se possível no mesmo dia da semana, a qualquer hora do dia. O dia pode mudar se tiverem passado pelo menos 3 dias desde a última injeção. Depois, uma vez por semana no novo dia.
+        section: (item 6)
+      rotation:
+        text: O mesmo texto da bula do Wegovy. Coxas (parte da frente), abdome e parte superior do braço, a 5 cm do umbigo. A mesma área do corpo pode ser usada, mas não o mesmo local da última vez.
+        section: (item 6 e instruções de uso)
+  - name: Mounjaro (tirzepatida), caneta aplicadora de uso único
+    source_url: https://delivery-p137454-e1438138.adobeaemcloud.com/adobe/assets/urn:aaid:aem:fd2ab343-99bb-4f05-b989-91aa00795de5/renditions/original/as/MOUNJARO_IRMA_LIT_PAT_22APR26.pdf?assetname=MOUNJARO_IRMA_LIT_PAT_22APR26.pdf
+    source_revised: Aprovada pela Anvisa em 22/04/2026
+    rules:
+      missed_dose:
+        text: A bula diz que a dose esquecida deve ser aplicada assim que possível dentro de 4 dias (96 horas). Se passaram mais de 4 dias, a dose esquecida não deve ser aplicada, e a próxima é aplicada no dia de costume. Nos dois casos, o cronograma de uma vez por semana continua.
+        section: (item 7)
+      change_day:
+        text: Uma vez por semana, em qualquer horário do dia, independentemente das refeições. O dia da aplicação semanal pode mudar, se necessário, contanto que o intervalo entre as duas doses seja de pelo menos 3 dias (72 horas).
+        section: (item 6, “Alteração do cronograma de administração semanal”)
+      rotation:
+        text: Abdome ou coxa. Na parte de trás do braço, quem aplica deve ser outra pessoa. A bula pede para alternar o local de injeção a cada dose. As instruções de uso da caneta dizem que dá para usar a mesma região do corpo, escolhendo um local diferente nela.
+        section: (item 6 e instruções de uso)

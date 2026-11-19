@@ -103,7 +103,7 @@ boundary:
 logging:
   kicker: Registro rápido
   heading: "Anota cuándo te aplicaste la dosis."
-  body: "Registra medicamento, cantidad, fecha, hora y notas. En inyecciones como Ozempic, Wegovy y Mounjaro también anotas el sitio. Los comprimidos como Rybelsus se registran sin sitio. Dial incluye semaglutida, tirzepatida, liraglutida y dulaglutida con las marcas de tu país. También puedes registrar orforglipron, exenatida y semaglutida o tirzepatida compuesta con receta desde un frasco. Agrega un medicamento personalizado si no aparece."
+  body: "Registra cantidad, fecha, hora y notas. En inyecciones como Ozempic, Wegovy y Mounjaro también anotas el sitio. Los comprimidos como Rybelsus se registran sin sitio. Dial incluye semaglutida, tirzepatida, liraglutida y dulaglutida con las marcas de tu país. También puedes registrar orforglipron, exenatida y semaglutida o tirzepatida compuesta con receta desde un frasco. Agrega un medicamento personalizado si no aparece."
   checklist:
     - Edita una entrada cuando algo cambie
     - Anota el sitio de inyección en cada dosis
@@ -111,8 +111,8 @@ logging:
 
 history:
   kicker: Dial Pro · Historial y tendencias
-  heading: Gráficos de dosis, peso y efectos secundarios.
-  body: Las listas de dosis, peso y efectos secundarios siguen gratis. Dial Pro agrega los gráficos.
+  heading: Gráfico del historial de dosis y tendencias de efectos secundarios.
+  body: Las listas de dosis y efectos secundarios y el gráfico de peso siguen gratis. Dial Pro agrega el gráfico del historial de dosis y las tendencias de efectos secundarios.
   history_card_title: Historial de dosis y peso
   history_card_note: Revisa los cambios en el rango que elijas.
   side_effects_card_title: Tendencias de efectos secundarios
@@ -168,23 +168,23 @@ plans:
   kicker: Gratis y Dial Pro
   heading: Usa el registro básico gratis.
   body:
-    Dial Pro agrega el gráfico de nivel estimado, los gráficos del historial, las
-    exportaciones y el registro rápido en Apple Watch e iPhone. Todos los planes de
+    Dial Pro agrega el gráfico de nivel estimado, el gráfico del historial de dosis,
+    las exportaciones y el registro rápido en Apple Watch e iPhone. Todos los planes de
     Dial Pro incluyen las mismas funciones.
   free_name: Gratis
   free_summary: Gratis para un medicamento activo, sin tope en el registro de dosis.
   free_features:
     - Registra dosis, sitios de inyección, peso, efectos secundarios y fotos de progreso
     - Un medicamento activo y un recordatorio
-    - Listas de dosis y peso, inventario, importaciones y el vistazo en Apple Watch
+    - Listas de dosis, el gráfico de peso, inventario, importaciones y el vistazo en Apple Watch
     - Widgets de cuenta regresiva y recordatorios que abren el formulario de registro
   pro_name: Dial Pro
   pro_summary: Mira el nivel entre dosis, el historial en gráficos y registra desde la muñeca.
   cta_caption: Descárgala gratis y elige un plan dentro de la app.
   pro_features:
     - Gráfico de nivel estimado y widget de nivel en la pantalla de inicio
-    - Gráficos completos de dosis y peso, tendencias de efectos secundarios y comparación de fotos
-    - Informe en PDF, exportación a CSV, varios medicamentos y varios recordatorios
+    - Gráfico del historial de dosis, tendencias de efectos secundarios y comparación de fotos
+    - Informe en PDF, exportación a CSV y varios recordatorios
     - Registro rápido y complicaciones en Apple Watch, más registro en un toque en el iPhone
   options_label: Opciones del plan Dial Pro
   lifetime_name: "De por vida"
@@ -218,7 +218,7 @@ availability:
   heading: Ya disponible en el App Store.
   body:
     Dial es gratis para descargar, sin cuenta que crear. Dial Pro agrega el gráfico de
-    nivel estimado, los gráficos del historial, la exportación a PDF y CSV, y el registro
+    nivel estimado, el gráfico del historial de dosis, la exportación a PDF y CSV, y el registro
     rápido desde Apple Watch e iPhone.
 
 trademarks: "Ozempic, Wegovy, Rybelsus y Mounjaro son marcas de sus respectivos fabricantes. Zentsu no está afiliado a ninguna empresa farmacéutica."

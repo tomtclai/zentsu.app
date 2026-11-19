@@ -83,8 +83,8 @@ boundary:
 
 logging:
   kicker: "快速記錄"
-  heading: "在同一張表單記下藥物、劑量和注射部位。"
-  body: "填寫藥物、劑量、日期、時間和備註。胰妥讚（Ozempic）、週纖達（Wegovy）、猛健樂（Mounjaro）這類注射劑會記下注射部位；瑞倍適（Rybelsus）這類藥錠不用記部位。Dial 收錄司美格魯肽、替爾泊肽、利拉魯肽和度拉糖肽，都依你所在地區的品名呈現。艾塞那肽也能記錄，不過它在台灣的藥品許可證都已註銷。Dial 也支援醫師開立的小瓶調配型司美格魯肽或替爾泊肽。清單裡沒有的藥，可以自己加自訂藥物。"
+  heading: "在同一張表單記下劑量和注射部位。"
+  body: "填寫劑量、日期、時間和備註。胰妥讚（Ozempic）、週纖達（Wegovy）、猛健樂（Mounjaro）這類注射劑會記下注射部位；瑞倍適（Rybelsus）這類藥錠不用記部位。Dial 收錄司美格魯肽、替爾泊肽、利拉魯肽和度拉糖肽，都依你所在地區的品名呈現。艾塞那肽也能記錄，不過它在台灣的藥品許可證都已註銷。Dial 也支援醫師開立的小瓶調配型司美格魯肽或替爾泊肽。清單裡沒有的藥，可以自己加自訂藥物。"
   checklist:
     - "內容有變時，再改那一筆"
     - "每次劑量都記下注射部位"
@@ -92,8 +92,8 @@ logging:
 
 history:
   kicker: "Dial Pro · 歷史與趨勢"
-  heading: "劑量、體重和副作用圖表。"
-  body: "劑量、體重和副作用清單仍免費。Dial Pro 加上圖表。"
+  heading: "劑量歷史圖表和副作用趨勢。"
+  body: "劑量和副作用清單以及體重圖表仍免費。Dial Pro 加上劑量歷史圖表和副作用趨勢。"
   history_card_title: "劑量與體重歷史"
   history_card_note: "查看你所選範圍內的變化。"
   side_effects_card_title: "副作用趨勢"
@@ -133,21 +133,21 @@ supporting:
 plans:
   kicker: "免費與 Dial Pro"
   heading: "免費使用核心紀錄。"
-  body: "Dial Pro 增加估計水平圖表、完整歷史圖表、匯出，以及在 Apple Watch 和 iPhone 上快速記錄。各 Dial Pro 方案功能相同。"
+  body: "Dial Pro 增加估計水平圖表、劑量歷史圖表、匯出，以及在 Apple Watch 和 iPhone 上快速記錄。各 Dial Pro 方案功能相同。"
   free_name: "免費"
   free_summary: "一種使用中的藥物，用藥紀錄沒有上限。"
   free_features:
     - "記錄劑量、注射部位、體重、副作用和進展照片"
     - "一種使用中的藥物和一則提醒"
-    - "劑量和體重清單、庫存、匯入和 Apple Watch 一覽"
+    - "劑量清單、體重圖表、庫存、匯入和 Apple Watch 一覽"
     - "倒數小工具，以及可打開記錄表單的提醒"
   pro_name: Dial Pro
-  pro_summary: "查看兩次劑量之間的水平，把完整歷史畫成圖表，從手腕記錄。"
+  pro_summary: "查看兩次劑量之間的水平和劑量歷史圖表，從手腕記錄。"
   cta_caption: "先免費下載，再在 App 裡選方案。"
   pro_features:
     - "估計水平圖表和主畫面小工具"
-    - "完整劑量和體重圖表、副作用趨勢和照片比較"
-    - "PDF 報告、CSV 匯出、多種藥物和多則提醒"
+    - "劑量歷史圖表、副作用趨勢和照片比較"
+    - "PDF 報告、CSV 匯出和多則提醒"
     - "Apple Watch 快速記錄和複雜功能，以及 iPhone 一鍵記錄"
   options_label: "Dial Pro 方案選擇"
   lifetime_name: "永久"
@@ -177,6 +177,6 @@ privacy:
 availability:
   kicker: "下載 Dial"
   heading: "現已於 App Store 上架。"
-  body: "Dial 可免費下載，不必建立帳號。Dial Pro 增加估計水平圖表、完整歷史圖表、PDF 與 CSV 匯出，以及從 Apple Watch 和 iPhone 快速記錄。"
+  body: "Dial 可免費下載，不必建立帳號。Dial Pro 增加估計水平圖表、劑量歷史圖表、PDF 與 CSV 匯出，以及從 Apple Watch 和 iPhone 快速記錄。"
 
 trademarks: "胰妥讚（Ozempic）、週纖達（Wegovy）、瑞倍適（Rybelsus）和猛健樂（Mounjaro）是各自權利人的商標。Zentsu 與任何製藥公司均無關聯。"

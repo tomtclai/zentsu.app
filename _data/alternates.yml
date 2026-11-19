@@ -111,12 +111,15 @@ dial-privacy:
 
 dial-dose-log:
   en: /dial/printable-dose-log/
+  es-ES: /es-es/dial/printable-dose-log/
   ja: /ja/dial/printable-dose-log/
   ko: /ko/dial/printable-dose-log/
   zh-hant: /zh-hant/dial/printable-dose-log/
 
 dial-site-rotation:
   en: /dial/injection-site-rotation/
+  es-ES: /es-es/dial/injection-site-rotation/
+  pt: /pt/dial/injection-site-rotation/
   ja: /ja/dial/injection-site-rotation/
   ko: /ko/dial/injection-site-rotation/
   zh-hant: /zh-hant/dial/injection-site-rotation/
@@ -126,3 +129,25 @@ dial-import:
   zh-hant: /zh-hant/dial/import-dose-history/
   pt: /pt/dial/import-dose-history/
   ko: /ko/dial/import-dose-history/
+
+dial-medication-log:
+  en: /dial/medication-log/
+  ja: /ja/dial/medication-log/
+  ko: /ko/dial/medication-log/
+  zh-hant: /zh-hant/dial/medication-log/
+
+dial-missed-dose:
+  en: /blog/2026/missed-glp-1-dose-what-to-record/
+  es-ES: /es-es/dial/missed-dose/
+  pt: /pt/dial/missed-dose/
+  ja: /ja/dial/missed-dose/
+  ko: /ko/dial/missed-dose/
+  zh-hant: /zh-hant/dial/missed-dose/
+
+dial-change-injection-day:
+  pt: /pt/dial/change-injection-day/
+  ko: /ko/dial/change-injection-day/
+  zh-hant: /zh-hant/dial/change-injection-day/
+
+dial-side-effects-log:
+  ja: /ja/dial/side-effects-weight-log/

@@ -83,8 +83,8 @@ boundary:
 
 logging:
   kicker: "Înregistrare rapidă"
-  heading: "Notează medicamentul, doza și locul de injecție într-un singur formular."
-  body: "Notează medicamentul, cantitatea, data, ora și notele. Injecțiile precum Ozempic, Wegovy și Mounjaro includ locul de injectare. Comprimatele precum Rybelsus se înregistrează fără loc. Dial listează semaglutidă, tirzepatidă, liraglutidă și dulaglutidă cu denumirile de marcă folosite în România. Poți înregistra și exenatidă, plus semaglutidă sau tirzepatidă preparată la rețetă, din flacon. Adaugă un medicament personalizat dacă al tău lipsește."
+  heading: "Notează doza și locul de injecție într-un singur formular."
+  body: "Notează cantitatea, data, ora și notele. Injecțiile precum Ozempic, Wegovy și Mounjaro includ locul de injectare. Comprimatele precum Rybelsus se înregistrează fără loc. Dial listează semaglutidă, tirzepatidă, liraglutidă și dulaglutidă cu denumirile de marcă folosite în România. Poți înregistra și exenatidă, plus semaglutidă sau tirzepatidă preparată la rețetă, din flacon. Adaugă un medicament personalizat dacă al tău lipsește."
   checklist:
     - "Editează o înregistrare când se schimbă ceva"
     - "Păstrează locul de injecție la fiecare doză"
@@ -92,8 +92,8 @@ logging:
 
 history:
   kicker: "Dial Pro · Istoric și tendințe"
-  heading: "Grafice de doză, greutate și efecte secundare din înregistrări."
-  body: "Listele de doză, greutate și efecte secundare rămân gratuite. Dial Pro adaugă graficele."
+  heading: "Graficul istoricului dozelor și tendințele efectelor secundare, din înregistrări."
+  body: "Listele de doză și efecte secundare și graficul greutății rămân gratuite. Dial Pro adaugă graficul istoricului dozelor și tendințele efectelor secundare."
   history_card_title: "Istoric de doză și greutate"
   history_card_note: "Vezi modificările din intervalul ales."
   side_effects_card_title: "Tendințe ale efectelor secundare"
@@ -131,21 +131,21 @@ supporting:
 plans:
   kicker: "Gratuit și Dial Pro"
   heading: "Folosește evidența de bază gratuit."
-  body: "Dial Pro adaugă graficul nivelului estimat, graficele de istoric, exporturile și înregistrarea rapidă pe Apple Watch și iPhone. Fiecare plan Dial Pro include aceleași funcții."
+  body: "Dial Pro adaugă graficul nivelului estimat, graficul istoricului dozelor, exporturile și înregistrarea rapidă pe Apple Watch și iPhone. Fiecare plan Dial Pro include aceleași funcții."
   free_name: "Gratuit"
   free_summary: "Gratuit pentru un medicament activ, fără limită la evidența dozelor."
   free_features:
     - "Înregistrează doze, locuri de injecție, greutate, efecte secundare și fotografii de progres"
     - "Un medicament activ și o reamintire"
-    - "Liste de doză și greutate, stoc, importuri și rezumatul de pe Apple Watch"
+    - "Liste de doză, graficul greutății, stoc, importuri și rezumatul de pe Apple Watch"
     - "Widgeturi de numărătoare inversă și reamintiri care deschid formularul"
   pro_name: Dial Pro
-  pro_summary: "Vezi nivelul între doze, tot istoricul în grafice și notează de la încheietură."
+  pro_summary: "Vezi nivelul între doze, istoricul dozelor într-un grafic și notează de la încheietură."
   cta_caption: "Descarcă gratuit, apoi alege un plan din aplicație."
   pro_features:
     - "Graficul nivelului estimat și widget pe ecranul de pornire"
-    - "Grafice complete de doză și greutate, tendințe ale efectelor secundare și compararea fotografiilor"
-    - "Raport PDF, export CSV, mai multe medicamente și mai multe reamintiri"
+    - "Graficul istoricului dozelor, tendințe ale efectelor secundare și compararea fotografiilor"
+    - "Raport PDF, export CSV și mai multe reamintiri"
     - "Înregistrare rapidă și Complications pe Apple Watch, plus înregistrare cu o atingere pe iPhone"
   options_label: "Opțiuni ale planului Dial Pro"
   lifetime_name: "Lifetime"
@@ -175,6 +175,6 @@ privacy:
 availability:
   kicker: "Descarcă Dial"
   heading: "Acum în App Store."
-  body: "Dial se descarcă gratuit, fără un cont de creat. Dial Pro adaugă graficul nivelului estimat, graficele de istoric, exportul PDF și CSV, și înregistrarea rapidă de pe Apple Watch și iPhone."
+  body: "Dial se descarcă gratuit, fără un cont de creat. Dial Pro adaugă graficul nivelului estimat, graficul istoricului dozelor, exportul PDF și CSV, și înregistrarea rapidă de pe Apple Watch și iPhone."
 
 trademarks: "Ozempic, Wegovy, Rybelsus, Mounjaro, Saxenda, Byetta și Bydureon sunt mărci ale proprietarilor lor. Zentsu nu are legături cu nicio companie farmaceutică."

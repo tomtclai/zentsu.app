@@ -98,8 +98,8 @@ boundary:
 
 logging:
   kicker: Registro rápido
-  heading: Registre o medicamento, a dose e o local de injeção em um só formulário.
-  body: "Anote medicamento, quantidade, data, hora e notas. Injeções como Ozempic, Wegovy e Mounjaro incluem o local. Comprimidos como Rybelsus são registrados sem local. O Dial lista semaglutida, tirzepatida, liraglutida e dulaglutida com nomes regionais de marcas. Você também pode registrar orforglipron, exenatida e semaglutida ou tirzepatida manipuladas sob prescrição a partir de um frasco. Adicione um medicamento personalizado se o seu faltar."
+  heading: Registre a dose e o local de injeção em um só formulário.
+  body: "Anote quantidade, data, hora e notas. Injeções como Ozempic, Wegovy e Mounjaro incluem o local. Comprimidos como Rybelsus são registrados sem local. O Dial lista semaglutida, tirzepatida, liraglutida e dulaglutida com nomes regionais de marcas. Você também pode registrar orforglipron, exenatida e semaglutida ou tirzepatida manipuladas sob prescrição a partir de um frasco. Adicione um medicamento personalizado se o seu faltar."
   checklist:
     - Edite uma entrada quando algo mudar
     - Mantenha o local de injeção junto de cada dose
@@ -107,8 +107,8 @@ logging:
 
 history:
   kicker: Dial Pro · Histórico e tendências
-  heading: Gráficos de dose, peso e efeitos colaterais.
-  body: As listas de doses, peso e efeitos colaterais continuam grátis. O Dial Pro adiciona os gráficos.
+  heading: Gráfico do histórico de doses e tendências de efeitos colaterais.
+  body: As listas de doses e efeitos colaterais e o gráfico de peso continuam grátis. O Dial Pro adiciona o gráfico do histórico de doses e as tendências de efeitos colaterais.
   history_card_title: Histórico de doses e peso
   history_card_note: Revise as mudanças no intervalo que você escolher.
   side_effects_card_title: Tendências de efeitos colaterais
@@ -164,23 +164,23 @@ plans:
   kicker: Grátis e Dial Pro
   heading: Use o registro básico de graça.
   body:
-    O Dial Pro adiciona o gráfico de nível estimado, os gráficos do histórico, as
-    exportações e o registro rápido no Apple Watch e no iPhone. Todos os planos do
+    O Dial Pro adiciona o gráfico de nível estimado, o gráfico do histórico de doses,
+    as exportações e o registro rápido no Apple Watch e no iPhone. Todos os planos do
     Dial Pro incluem as mesmas funções.
   free_name: Grátis
   free_summary: Grátis para um medicamento ativo, sem limite no registro de doses.
   free_features:
     - Registre doses, locais de injeção, peso, efeitos colaterais e fotos de progresso
     - Um medicamento ativo e um lembrete
-    - Listas de doses e peso, estoque, importações e o resumo no Apple Watch
+    - Listas de doses, o gráfico de peso, estoque, importações e o resumo no Apple Watch
     - Widgets de contagem regressiva e lembretes que abrem o formulário
   pro_name: Dial Pro
   pro_summary: Veja o nível entre as doses, o histórico em gráficos e registre pelo pulso.
   cta_caption: Baixe de graça e escolha um plano no app.
   pro_features:
     - Gráfico de nível estimado e widget de nível na tela de início
-    - Gráficos completos de doses e peso, tendências de efeitos colaterais e comparação de fotos
-    - Relatório em PDF, exportação CSV, vários medicamentos e vários lembretes
+    - Gráfico do histórico de doses, tendências de efeitos colaterais e comparação de fotos
+    - Relatório em PDF, exportação CSV e vários lembretes
     - Registro rápido e complicações no Apple Watch, mais registro em um toque no iPhone
   options_label: Opções do plano Dial Pro
   lifetime_name: Lifetime
@@ -214,7 +214,7 @@ availability:
   heading: Já disponível na App Store.
   body:
     O Dial é grátis para baixar, sem conta para criar. O Dial Pro adiciona o gráfico de
-    nível estimado, os gráficos do histórico, a exportação em PDF e CSV, e o registro
+    nível estimado, o gráfico do histórico de doses, a exportação em PDF e CSV, e o registro
     rápido pelo Apple Watch e pelo iPhone.
 
 trademarks: "Ozempic, Wegovy, Rybelsus, Mounjaro, Byetta e Bydureon são marcas de seus respectivos titulares. A Zentsu não tem vínculo com nenhuma empresa farmacêutica."

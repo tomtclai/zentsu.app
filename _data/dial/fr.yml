@@ -95,8 +95,8 @@ boundary:
 
 logging:
   kicker: Enregistrement rapide
-  heading: Note le médicament, la dose et le site d'injection dans un seul formulaire.
-  body: "Note le médicament, la dose, la date, l'heure et tes remarques. Les injections comme Ozempic, Wegovy, Mounjaro et Saxenda enregistrent aussi le site. Les comprimés comme Rybelsus se notent sans site. Dial répertorie le sémaglutide, le tirzépatide, le liraglutide et le dulaglutide sous les noms de boîte utilisés ici. Tu peux aussi noter l'orforglipron, l'exénatide et le sémaglutide ou le tirzépatide prescrit en préparation magistrale depuis un flacon. Ajoute un médicament personnalisé si le tien manque."
+  heading: Note la dose et le site d'injection dans un seul formulaire.
+  body: "Note la dose, la date, l'heure et tes remarques. Les injections comme Ozempic, Wegovy, Mounjaro et Saxenda enregistrent aussi le site. Les comprimés comme Rybelsus se notent sans site. Dial répertorie le sémaglutide, le tirzépatide, le liraglutide et le dulaglutide sous les noms de boîte utilisés ici. Tu peux aussi noter l'orforglipron, l'exénatide et le sémaglutide ou le tirzépatide prescrit en préparation magistrale depuis un flacon. Ajoute un médicament personnalisé si le tien manque."
   checklist:
     - Modifier une entrée quand quelque chose change
     - Garder le site d'injection associé à chaque dose
@@ -104,8 +104,8 @@ logging:
 
 history:
   kicker: Dial Pro · Historique et tendances
-  heading: Graphiques de doses, de poids et d'effets indésirables.
-  body: Les listes de doses, de poids et d'effets indésirables restent gratuites. Dial Pro ajoute les graphiques.
+  heading: Graphique de l'historique des doses et tendances des effets indésirables.
+  body: Les listes de doses et d'effets indésirables et le graphique du poids restent gratuits. Dial Pro ajoute le graphique de l'historique des doses et les tendances des effets indésirables.
   history_card_title: Historique des doses et du poids
   history_card_note: Revoir les changements sur la plage que tu choisis.
   side_effects_card_title: Tendances des effets indésirables
@@ -160,23 +160,23 @@ plans:
   kicker: Gratuit et Dial Pro
   heading: Utilise le suivi de base gratuitement.
   body:
-    Dial Pro ajoute le graphique de niveau estimé, les graphiques d'historique, les
-    exports et l'enregistrement rapide sur Apple Watch et iPhone. Chaque formule Dial
+    Dial Pro ajoute le graphique de niveau estimé, le graphique de l'historique des
+    doses, les exports et l'enregistrement rapide sur Apple Watch et iPhone. Chaque formule Dial
     Pro inclut les mêmes fonctions.
   free_name: Gratuit
   free_summary: Gratuit pour un médicament actif, sans limite sur le relevé de doses.
   free_features:
     - Enregistrer les doses, les sites d'injection, le poids, les effets indésirables et les photos d'évolution
     - Un médicament actif et un rappel
-    - Listes de doses et de poids, inventaire, importations et aperçu Apple Watch
+    - Listes de doses, graphique du poids, inventaire, importations et aperçu Apple Watch
     - Widgets de compte à rebours et rappels qui ouvrent le formulaire
   pro_name: Dial Pro
-  pro_summary: Vois ton niveau entre les doses, tout l'historique en graphiques et note depuis le poignet.
+  pro_summary: Vois ton niveau entre les doses, l'historique des doses en graphique et note depuis le poignet.
   cta_caption: Télécharge gratuitement, puis choisis une formule dans l'app.
   pro_features:
     - Graphique de niveau estimé et widget de niveau sur l'écran d'accueil
-    - Graphiques complets de doses et de poids, tendances d'effets indésirables et comparaison de photos
-    - Rapport PDF, export CSV, plusieurs médicaments et plusieurs rappels
+    - Graphique de l'historique des doses, tendances d'effets indésirables et comparaison de photos
+    - Rapport PDF, export CSV et plusieurs rappels
     - Enregistrement rapide et complications Apple Watch, plus l'enregistrement en un geste sur iPhone
   options_label: Choix de formules Dial Pro
   lifetime_name: À vie
@@ -210,7 +210,7 @@ availability:
   heading: Disponible dès maintenant sur l'App Store.
   body:
     Dial se télécharge gratuitement, sans compte à créer. Dial Pro ajoute le graphique
-    de niveau estimé, les graphiques d'historique, l'export PDF et CSV, et l'enregistrement
+    de niveau estimé, le graphique de l'historique des doses, l'export PDF et CSV, et l'enregistrement
     rapide depuis Apple Watch et iPhone.
 
 trademarks: "Ozempic, Wegovy, Rybelsus, Mounjaro, Saxenda, Byetta et Bydureon sont des marques de leurs propriétaires respectifs. Zentsu n'a aucun lien avec un laboratoire pharmaceutique."

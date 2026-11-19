@@ -83,8 +83,8 @@ boundary:
 
 logging:
   kicker: "Rask føring"
-  heading: "Før legemiddel, dose og injeksjonssted i ett skjema."
-  body: "Før legemiddel, mengde, dato, tid og notater. Ved injeksjoner som Ozempic, Wegovy og Mounjaro fører du også injeksjonsstedet. Tabletter som Rybelsus føres uten sted. Dial viser semaglutid, tirzepatid, liraglutid og dulaglutid under de merkenavnene som brukes i Norge. Du kan også føre orforglipron, eksenatid og forskrevet semaglutid eller tirzepatid fra hetteglass. Legg til et eget legemiddel hvis ditt mangler."
+  heading: "Før dose og injeksjonssted i ett skjema."
+  body: "Før mengde, dato, tid og notater. Ved injeksjoner som Ozempic, Wegovy og Mounjaro fører du også injeksjonsstedet. Tabletter som Rybelsus føres uten sted. Dial viser semaglutid, tirzepatid, liraglutid og dulaglutid under de merkenavnene som brukes i Norge. Du kan også føre orforglipron, eksenatid og forskrevet semaglutid eller tirzepatid fra hetteglass. Legg til et eget legemiddel hvis ditt mangler."
   checklist:
     - "Rediger en post når noe endrer seg"
     - "Injeksjonsstedet følger hver dose"
@@ -92,8 +92,8 @@ logging:
 
 history:
   kicker: "Dial Pro · Historikk og trender"
-  heading: "Grafer for dose, vekt og bivirkninger fra føringene dine."
-  body: "Lister over dose, vekt og bivirkninger er fortsatt gratis. Dial Pro legger til grafene."
+  heading: "Diagram over dosehistorikken og bivirkningstrender fra føringene dine."
+  body: "Lister over dose og bivirkninger og vektdiagrammet er fortsatt gratis. Dial Pro legger til diagrammet over dosehistorikken og bivirkningstrender."
   history_card_title: "Dose- og vekthistorikk"
   history_card_note: "Se endringer i perioden du velger."
   side_effects_card_title: "Bivirkningstrender"
@@ -131,21 +131,21 @@ supporting:
 plans:
   kicker: "Gratis og Dial Pro"
   heading: "Bruk kjerneoverblikket gratis."
-  body: "Dial Pro legger til grafen for estimert nivå, de fulle historikkgrafene, eksport og rask føring på Apple Watch og iPhone. Alle Dial Pro-planene har de samme funksjonene."
+  body: "Dial Pro legger til grafen for estimert nivå, diagrammet over dosehistorikken, eksport og rask føring på Apple Watch og iPhone. Alle Dial Pro-planene har de samme funksjonene."
   free_name: "Gratis"
   free_summary: "Gratis for ett aktivt legemiddel, uten tak på doseloggen."
   free_features:
     - "Før doser, injeksjonssteder, vekt, bivirkninger og fremgangsbilder"
     - "Ett aktivt legemiddel og én påminnelse"
-    - "Dose- og vektlister, lager, import og Apple Watch-oversikten"
+    - "Doselister, vektdiagrammet, lager, import og Apple Watch-oversikten"
     - "Nedtellingswidgeter og påminnelser som åpner føringsskjemaet"
   pro_name: Dial Pro
   pro_summary: "Se nivået mellom dosene, graf over hele historikken, og før fra håndleddet."
   cta_caption: "Last ned gratis, og velg en plan i appen."
   pro_features:
     - "Graf for estimert nivå og widget på Hjem-skjermen"
-    - "Fulle dose- og vektgrafer, bivirkningstrender og bildesammenligning"
-    - "PDF-rapport, CSV-eksport, flere legemidler og flere påminnelser"
+    - "Diagram over dosehistorikken, bivirkningstrender og bildesammenligning"
+    - "PDF-rapport, CSV-eksport og flere påminnelser"
     - "Rask føring og Complications på Apple Watch, pluss føring med ett trykk på iPhone"
   options_label: "Dial Pro-varianter"
   lifetime_name: Lifetime
@@ -175,7 +175,7 @@ privacy:
 availability:
   kicker: "Last ned Dial"
   heading: "Nå i App Store."
-  body: "Dial er gratis å laste ned, uten konto. Dial Pro legger til grafen for estimert nivå, de fulle historikkgrafene, PDF- og CSV-eksport og rask føring fra Apple Watch og iPhone."
+  body: "Dial er gratis å laste ned, uten konto. Dial Pro legger til grafen for estimert nivå, diagrammet over dosehistorikken, PDF- og CSV-eksport og rask føring fra Apple Watch og iPhone."
 
 trademarks: "Ozempic, Wegovy, Rybelsus, Mounjaro, Byetta og Bydureon er varemerker som tilhører sine respektive eiere. Zentsu er ikke tilknyttet noe legemiddelselskap."
 

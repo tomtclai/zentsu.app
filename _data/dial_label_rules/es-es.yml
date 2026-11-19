@@ -1,0 +1,64 @@
+products:
+  - name: Ozempic (semaglutida), pluma precargada
+    source_url: https://cima.aemps.es/cima/dochtml/p/1171251003/P_1171251003.html
+    source_revised: Prospecto en CIMA, consultado el 19 de noviembre de 2026
+    rules:
+      missed_dose:
+        text: Si han pasado 5 días o menos desde el día en que tocaba, usarla en cuanto se acuerde. Si han pasado más de 5 días, saltarse la dosis olvidada. En los dos casos, la siguiente dosis va el día programado. No poner una dosis doble para compensar.
+        section: (prospecto, apartado 3; ficha técnica, apartado 4.2)
+      change_day:
+        text: Se puede cambiar el día de la inyección semanal si han pasado al menos 3 días desde la última inyección (más de 72 horas, según la ficha técnica). Después se sigue con una dosis a la semana desde el nuevo día.
+        section: (prospecto, apartado 3; ficha técnica, apartado 4.2)
+      rotation:
+        text: Parte frontal de los muslos, parte frontal de la cintura (abdomen) o parte superior del brazo. La ficha técnica dice que el lugar de inyección se puede cambiar sin ajustar la dosis. En el texto del prospecto y de la ficha técnica no hemos encontrado una instrucción de rotar las zonas.
+        section: (prospecto, apartado 3; ficha técnica, apartado 4.2)
+  - name: Wegovy (semaglutida), plumas FlexTouch y pluma de 7,2 mg
+    source_url: https://cima.aemps.es/cima/dochtml/p/1211608006/P_1211608006.html
+    source_revised: Prospectos en CIMA, consultados el 19 de noviembre de 2026
+    rules:
+      missed_dose:
+        text: Si han pasado 5 días o menos desde el día en que tocaba, usarla en cuanto se acuerde. Si han pasado más de 5 días, saltarse la dosis olvidada. En los dos casos, la siguiente dosis va el día programado. No poner una dosis doble para compensar.
+        section: (prospecto, apartado 3; ficha técnica, apartado 4.2)
+      change_day:
+        text: Se puede cambiar el día de la inyección semanal si han pasado al menos 3 días desde la última inyección (más de 72 horas, según la ficha técnica). Después se sigue con una dosis a la semana desde el nuevo día.
+        section: (prospecto, apartado 3; ficha técnica, apartado 4.2)
+  - name: Wegovy FlexTouch (semaglutida), de 0,25 a 2,4 mg
+    source_url: https://cima.aemps.es/cima/dochtml/p/1211608006/P_1211608006.html
+    source_revised: Prospecto en CIMA, consultado el 19 de noviembre de 2026
+    rules:
+      rotation:
+        text: Zona frontal de la parte superior del brazo, parte superior de las piernas o estómago. Las instrucciones de uso piden mantener una distancia de 5 cm desde el ombligo, y permiten repetir la misma zona del cuerpo, pero no el mismo punto que la última vez. Para la dosis de 7,2 mg con estas plumas, el prospecto indica tres inyecciones de 2,4 mg seguidas, separadas al menos 5 cm. La ficha técnica dice que el lugar de inyección se puede cambiar.
+        section: (prospecto, apartado 3 e instrucciones de uso; ficha técnica, apartado 4.2)
+  - name: Wegovy 7,2 mg (semaglutida), pluma de una sola dosis
+    source_url: https://cima.aemps.es/cima/dochtml/p/1211608025/P_1211608025.html
+    source_revised: Prospecto en CIMA, consultado el 19 de noviembre de 2026
+    rules:
+      rotation:
+        text: Zona frontal de la parte superior del brazo, parte superior de las piernas o estómago. Cada pluma lleva una sola dosis. La ficha técnica dice que el lugar de inyección se puede cambiar.
+        section: (prospecto, apartados 3 y 6; ficha técnica, apartado 4.2)
+  - name: Mounjaro KwikPen (tirzepatida)
+    source_url: https://cima.aemps.es/cima/dochtml/p/1221685049/P_1221685049.html
+    source_revised: Prospecto en CIMA, consultado el 19 de noviembre de 2026
+    rules:
+      missed_dose:
+        text: Si han pasado 4 días o menos desde el día en que tocaba, usarla en cuanto se acuerde. Si han pasado más de 4 días, omitir la dosis olvidada. En los dos casos, la siguiente dosis va el día programado. No poner una dosis doble para compensar. Entre dos dosis tiene que haber al menos 3 días.
+        section: (prospecto, apartado 3; ficha técnica, apartado 4.2)
+      change_day:
+        text: Se puede cambiar el día de la inyección semanal si han pasado al menos 3 días desde la última inyección. Después se sigue con una inyección a la semana en el nuevo día.
+        section: (prospecto, apartado 3; ficha técnica, apartado 4.2)
+      rotation:
+        text: Abdomen, a 5 cm del ombligo como mínimo, parte superior de la pierna (muslo) o parte posterior de la parte superior del brazo, en este caso con ayuda de otra persona. La ficha técnica dice que las zonas de inyección se deben rotar con cada dosis. El prospecto permite la misma zona cada semana si se eligen sitios distintos dentro de ella, y pide otro sitio si también te inyectas insulina.
+        section: (prospecto, apartado 3 e instrucciones de uso; ficha técnica, apartado 4.2)
+  - name: Trulicity (dulaglutida), pluma precargada
+    source_url: https://cima.aemps.es/cima/dochtml/p/114956002/P_114956002.html
+    source_revised: Prospecto en CIMA, consultado el 19 de noviembre de 2026
+    rules:
+      missed_dose:
+        text: Si faltan 3 días o más para la siguiente dosis programada, inyectarla lo antes posible. Si faltan menos de 3 días, saltarse la dosis olvidada. En los dos casos, la siguiente dosis va el día programado. No poner una dosis doble para compensar.
+        section: (prospecto, apartado 3; ficha técnica, apartado 4.2)
+      change_day:
+        text: Se puede cambiar el día de la semana si han pasado 3 días o más desde la última dosis (72 horas, según la ficha técnica).
+        section: (prospecto, apartado 3; ficha técnica, apartado 4.2)
+      rotation:
+        text: Abdomen o muslo. Si te pone la inyección otra persona, también la parte superior del brazo. Las instrucciones de uso piden cambiar (rotar) el lugar de inyección cada semana, y permiten repetir zona si el punto exacto es diferente.
+        section: (prospecto, apartado 3 e instrucciones de uso)

@@ -104,8 +104,8 @@ boundary:
 
 logging:
   kicker: Registrazione rapida
-  heading: Registra farmaco, dose e sito di iniezione in un solo modulo.
-  body: "Annota farmaco, quantità, data, ora e note. Le iniezioni come Ozempic, Wegovy e Mounjaro includono il sito. Le compresse come Rybelsus si registrano senza sito. Dial elenca semaglutide, tirzepatide, liraglutide e dulaglutide con i nomi di marca usati in Italia. Si possono registrare anche orforglipron, exenatide e semaglutide o tirzepatide galeniche prescritte in fiale. Aggiungi un farmaco personalizzato se il tuo non c'è."
+  heading: Registra dose e sito di iniezione in un solo modulo.
+  body: "Annota quantità, data, ora e note. Le iniezioni come Ozempic, Wegovy e Mounjaro includono il sito. Le compresse come Rybelsus si registrano senza sito. Dial elenca semaglutide, tirzepatide, liraglutide e dulaglutide con i nomi di marca usati in Italia. Si possono registrare anche orforglipron, exenatide e semaglutide o tirzepatide galeniche prescritte in fiale. Aggiungi un farmaco personalizzato se il tuo non c'è."
   checklist:
     - Modifica una voce quando qualcosa cambia
     - Tieni i siti di iniezione collegati a ogni dose
@@ -113,8 +113,8 @@ logging:
 
 history:
   kicker: Dial Pro · Cronologia e tendenze
-  heading: Grafici di dosi, peso ed effetti collaterali.
-  body: Le liste di dosi, peso ed effetti collaterali restano gratuite. Dial Pro aggiunge i grafici.
+  heading: Grafico della cronologia delle dosi e tendenze degli effetti collaterali.
+  body: Le liste di dosi ed effetti collaterali e il grafico del peso restano gratuiti. Dial Pro aggiunge il grafico della cronologia delle dosi e le tendenze degli effetti collaterali.
   history_card_title: Cronologia di dosi e peso
   history_card_note: Rivedi i cambiamenti nell'intervallo che scegli.
   side_effects_card_title: Tendenze degli effetti collaterali
@@ -169,23 +169,23 @@ plans:
   kicker: Gratis e Dial Pro
   heading: Usa il registro di base gratis.
   body:
-    Dial Pro aggiunge il grafico del livello stimato, i grafici della cronologia, le
-    esportazioni e la registrazione rapida su Apple Watch e iPhone. Ogni piano Dial
+    Dial Pro aggiunge il grafico del livello stimato, il grafico della cronologia delle
+    dosi, le esportazioni e la registrazione rapida su Apple Watch e iPhone. Ogni piano Dial
     Pro include le stesse funzioni.
   free_name: Gratis
   free_summary: Gratis per un farmaco attivo, senza limite sul registro delle dosi.
   free_features:
     - Registra dosi, siti di iniezione, peso, effetti collaterali e foto dei progressi
     - Un farmaco attivo e un promemoria
-    - Elenchi di dosi e peso, inventario, importazioni e il colpo d'occhio su Apple Watch
+    - Elenchi di dosi, grafico del peso, inventario, importazioni e il colpo d'occhio su Apple Watch
     - Widget conto alla rovescia e promemoria che aprono il modulo
   pro_name: Dial Pro
-  pro_summary: Vedi il livello tra le dosi, tutta la cronologia in grafici e registra dal polso.
+  pro_summary: Vedi il livello tra le dosi, la cronologia delle dosi in un grafico e registra dal polso.
   cta_caption: Scarica gratis, poi scegli un piano nell'app.
   pro_features:
     - Grafico del livello stimato e widget di livello sulla schermata Home
-    - Grafici completi di dosi e peso, tendenze degli effetti collaterali e confronto foto
-    - Riepilogo PDF, esportazione CSV, più farmaci e più promemoria
+    - Grafico della cronologia delle dosi, tendenze degli effetti collaterali e confronto foto
+    - Riepilogo PDF, esportazione CSV e più promemoria
     - Registrazione rapida e complicazioni Apple Watch, più registrazione con un tocco su iPhone
   options_label: Scelte del piano Dial Pro
   lifetime_name: A vita
@@ -219,7 +219,7 @@ availability:
   heading: Disponibile ora sull'App Store.
   body:
     Dial si scarica gratis, senza un account da creare. Dial Pro aggiunge il grafico
-    del livello stimato, i grafici della cronologia, l'esportazione PDF e CSV, e la
+    del livello stimato, il grafico della cronologia delle dosi, l'esportazione PDF e CSV, e la
     registrazione rapida da Apple Watch e iPhone.
 
 trademarks: "Ozempic, Wegovy, Rybelsus, Mounjaro, Byetta e Bydureon sono marchi dei rispettivi titolari. Zentsu non ha legami con alcuna azienda farmaceutica."

@@ -1,0 +1,225 @@
+---
+title: 'Se me olvidó pincharme: dosis olvidada y cambio de día | Dial'
+headline: 'Se me olvidó la inyección semanal: qué dice el prospecto y qué anotar'
+description: 'Qué dicen los prospectos de Ozempic, Wegovy, Mounjaro y Trulicity sobre una dosis olvidada y el cambio de día, y qué apuntar en tu registro.'
+canonical: https://zentsu.app/es-es/dial/missed-dose/
+permalink: /es-es/dial/missed-dose/
+lang: es-es
+locale: es-ES
+resource_lang: es
+alternate_group: dial-missed-dose
+favicon: /assets/dial-icon.png
+og_site_name: Dial
+og_image: https://zentsu.app/assets/dial-og-es.png
+og_image_alt: 'Dial, registro de medicación GLP-1 para iPhone y Apple Watch'
+og_type: article
+page_stylesheet: /dial-guides.css
+published_on: 2026-11-19
+reviewed_on: 2026-11-19
+last_modified_at: 2026-11-19
+store_campaign: g-es-missed-dose
+citations:
+  - name: 'Ozempic 0,5 mg (semaglutida), pluma precargada: prospecto'
+    url: https://cima.aemps.es/cima/dochtml/p/1171251003/P_1171251003.html
+    publisher: 'AEMPS, CIMA'
+    revised: 'consultado el 19 de noviembre de 2026'
+  - name: 'Ozempic (semaglutida): ficha técnica'
+    url: https://cima.aemps.es/cima/dochtml/ft/1171251003/FT_1171251003.html
+    publisher: 'AEMPS, CIMA'
+    revised: 'consultado el 19 de noviembre de 2026'
+  - name: 'Wegovy FlexTouch (semaglutida): prospecto'
+    url: https://cima.aemps.es/cima/dochtml/p/1211608006/P_1211608006.html
+    publisher: 'AEMPS, CIMA'
+    revised: 'consultado el 19 de noviembre de 2026'
+  - name: 'Wegovy 7,2 mg (semaglutida), pluma de una sola dosis: prospecto'
+    url: https://cima.aemps.es/cima/dochtml/p/1211608025/P_1211608025.html
+    publisher: 'AEMPS, CIMA'
+    revised: 'consultado el 19 de noviembre de 2026'
+  - name: 'Wegovy (semaglutida): ficha técnica'
+    url: https://cima.aemps.es/cima/dochtml/ft/1211608006/FT_1211608006.html
+    publisher: 'AEMPS, CIMA'
+    revised: 'consultado el 19 de noviembre de 2026'
+  - name: 'Mounjaro KwikPen (tirzepatida): prospecto'
+    url: https://cima.aemps.es/cima/dochtml/p/1221685049/P_1221685049.html
+    publisher: 'AEMPS, CIMA'
+    revised: 'consultado el 19 de noviembre de 2026'
+  - name: 'Mounjaro KwikPen (tirzepatida): ficha técnica'
+    url: https://cima.aemps.es/cima/dochtml/ft/1221685049/FT_1221685049.html
+    publisher: 'AEMPS, CIMA'
+    revised: 'consultado el 19 de noviembre de 2026'
+  - name: 'Trulicity (dulaglutida): prospecto'
+    url: https://cima.aemps.es/cima/dochtml/p/114956002/P_114956002.html
+    publisher: 'AEMPS, CIMA'
+    revised: 'consultado el 19 de noviembre de 2026'
+  - name: 'Trulicity (dulaglutida): ficha técnica'
+    url: https://cima.aemps.es/cima/dochtml/ft/114956002/FT_114956002.html
+    publisher: 'AEMPS, CIMA'
+    revised: 'consultado el 19 de noviembre de 2026'
+  - name: 'Saxenda (liraglutida): prospecto'
+    url: https://cima.aemps.es/cima/dochtml/p/115992002/P_115992002.html
+    publisher: 'AEMPS, CIMA'
+    revised: 'consultado el 19 de noviembre de 2026'
+  - name: 'Rybelsus (semaglutida), comprimidos: prospecto'
+    url: https://cima.aemps.es/cima/dochtml/p/1201430017/P_1201430017.html
+    publisher: 'AEMPS, CIMA'
+    revised: 'consultado el 19 de noviembre de 2026'
+  - name: 'Wegovy (semaglutida), comprimidos: prospecto'
+    url: https://cima.aemps.es/cima/dochtml/p/1211608014/P_1211608014.html
+    publisher: 'AEMPS, CIMA'
+    revised: 'consultado el 19 de noviembre de 2026'
+---
+
+<!doctype html>
+<html
+  lang="{{ page.locale | default: page.lang }}"
+  dir="{{ site.data.i18n[page.lang].dir | default: 'ltr' }}"
+>
+  <head>
+    {% include head-common.html %} {% include dial-guide/head.html %}
+  </head>
+  <body>
+    {% include nav.html %}
+    <main id="main-content" tabindex="-1">
+      <article class="dial-guide-article">
+        <span class="page-label">Guía de Dial</span>
+        <h1>{{ page.headline }}</h1>
+        {% include dial-guide/byline.html %}
+
+        <p class="dial-guide-boundary">
+          Esta guía resume lo que dicen los prospectos y explica qué apuntar en tu registro. No es
+          consejo médico y no decide por ti si te pones la dosis o la saltas. Sigue las indicaciones
+          de quien te lo ha recetado y, si tienes dudas, pregunta a tu médico o a tu farmacéutico.
+          Dial no calcula dosis.
+        </p>
+
+        <p>
+          Cada prospecto de las inyecciones semanales que se venden en España dice qué hacer si se
+          olvida una dosis, y los plazos no son iguales para todos. Abajo están, producto por
+          producto, con el apartado donde aparecen. Después explicamos qué conviene apuntar esa
+          semana para que el historial cuente lo que pasó.
+        </p>
+
+        <h2>Qué dice el prospecto de tu medicamento</h2>
+        {%- include dial-guide/label-table.html topic='missed_dose' caption='Dosis olvidada, según
+        cada prospecto' product_heading='Medicamento' rule_heading='Qué dice el prospecto'
+        source_heading='Fuente' %}
+        <p>
+          Ozempic y Wegovy cuentan 5 días desde el día en que tocaba la dosis, y Mounjaro cuenta 4.
+          Trulicity lo cuenta al revés: mira cuántos días faltan para la siguiente dosis programada.
+          Los cuatro prospectos dicen que no se ponga una dosis doble para compensar. El de Mounjaro
+          añade que entre dos dosis tiene que haber al menos 3 días.
+        </p>
+        <p>
+          Saxenda, Rybelsus y Wegovy en comprimidos se usan a diario, así que esta tabla no les
+          sirve: su prospecto tiene otras reglas.
+        </p>
+
+        <h2>Cambiar el día de la inyección</h2>
+        {%- include dial-guide/label-table.html topic='change_day' caption='Cambio del día de la
+        inyección semanal, según cada prospecto' product_heading='Medicamento' rule_heading='Qué
+        dice el prospecto' source_heading='Fuente' %}
+        <p>
+          Los cuatro prospectos permiten cambiar el día de la semana si han pasado al menos 3 días
+          desde la última dosis. Los de Ozempic, Wegovy y Mounjaro añaden que después se sigue con
+          una dosis a la semana desde el nuevo día. Para comprobarlo necesitas la fecha y la hora
+          reales de la última inyección, que es justo lo que guarda un registro. Si el cambio
+          coincide con un viaje o con un cambio de dosis, consúltalo antes con quien te lo ha
+          recetado.
+        </p>
+
+        <h2>Si no sabes si ya te pinchaste</h2>
+        <p>
+          Los prospectos no tratan este caso. Apunta lo que sí sepas, por ejemplo la última fecha
+          que recuerdas con seguridad, y pregunta a tu farmacéutico o a quien te lo ha recetado
+          antes de hacer nada. Una casilla vacía en el registro no prueba que no te la pusieras. Las
+          instrucciones de uso de Ozempic proponen apuntar cada inyección en la tabla de la tapa de
+          la caja, y esa tabla te puede servir para comprobarlo.
+        </p>
+
+        <h2>Qué anotar tras una dosis olvidada</h2>
+        <ul>
+          <li>La fecha en que tocaba la dosis.</li>
+          <li>El día en que te diste cuenta.</li>
+          <li>
+            Qué hiciste: te la pusiste más tarde, con la fecha y la hora reales, o la saltaste.
+          </li>
+          <li>Qué te dijeron tu médico o tu farmacéutico, si les preguntaste.</li>
+        </ul>
+        <p>
+          En <a href="/es-es/dial/">Dial</a>, una dosis que no te pusiste se registra con el
+          interruptor «Omitido» del formulario de la dosis, y el campo «Nota» sirve para el resto.
+          Cuando Dial te ofrece las opciones de la dosis, «Omitir esta dosis» la deja registrada
+          como omitida. En el historial, «Marcar como omitida» cambia una dosis que ya tenías
+          apuntada. Así el hueco en el historial tiene una explicación, y en la consulta se ve qué
+          semana fue.
+        </p>
+        <p>
+          Si te la pusiste tarde, regístrala con la fecha y la hora en que te la pusiste, no con la
+          del día en que tocaba, y apunta en la nota el día previsto.
+        </p>
+
+        <h2>Un recordatorio semanal</h2>
+        <p>
+          Los prospectos ya proponen formas de no olvidarse. El de Ozempic sugiere escribir en la
+          caja el día de la semana elegido y la fecha de cada inyección. El de Mounjaro propone
+          apuntarlo en un calendario y trae uno al final. El de Trulicity sugiere anotar el día en
+          la caja de la pluma o en un calendario.
+        </p>
+        <p>
+          En Dial, el primer recordatorio es gratis. Si cambias de día, en la pantalla «Editar
+          recordatorio» elige el nuevo «Día» y comprueba que «Repetir» sigue en «Semanal». Más de un
+          recordatorio es una función de Dial Pro.
+        </p>
+
+        <h2>Habla con tu médico</h2>
+        <p>
+          La ficha técnica de Wegovy incluye una indicación para cuando se han olvidado varias
+          dosis, y es una decisión que toma quien te lo ha recetado. Si te ha pasado más de una vez,
+          llévale tu registro. Estas preguntas te pueden servir:
+        </p>
+        <ul>
+          <li>Qué hago la próxima vez que se me olvide una dosis.</li>
+          <li>Si puedo cambiar el día de la inyección por un viaje o por mi horario.</li>
+          <li>Qué hago si he olvidado más de una dosis seguida.</li>
+        </ul>
+
+        <h2>Dial gratis y Dial Pro</h2>
+        <p>
+          La versión gratuita registra las inyecciones, e incluye el primer recordatorio, el gráfico
+          de peso, el registro de efectos secundarios y la importación de CSV. Dial Pro añade el
+          nivel estimado en mg, el gráfico del historial de dosis, las tendencias de efectos
+          secundarios, más de un recordatorio, el informe en PDF, la exportación de CSV y el
+          registro rápido desde el Apple Watch. Los registros se quedan en el dispositivo. Si
+          activas la sincronización con iCloud, se sincronizan a través de tu propia cuenta de
+          iCloud.
+        </p>
+
+        <h2>Cómo hemos escrito esta página</h2>
+        <p>
+          Dial es de Zentsu. Hemos escrito esta página a partir de los prospectos y las fichas
+          técnicas que la AEMPS publica en CIMA para cada producto, y citamos el apartado de cada
+          afirmación. CIMA deja en blanco la fecha de revisión de estos prospectos, así que damos la
+          fecha en que los consultamos. Zentsu es una empresa de software. Ningún profesional
+          sanitario ha revisado esta página. La fecha de cotejo de arriba es la última vez que la
+          comparamos con las fuentes de abajo.
+        </p>
+
+        <h2>Fuentes</h2>
+        {% include dial-guide/sources.html %}
+
+        <p class="dial-guide-more">
+          <a href="{% include dial-guide/store-url.html %}" rel="noopener noreferrer"
+            >Descarga Dial en el App Store</a
+          >, <a href="/es-es/dial/">lee la presentación de Dial</a>, imprime el
+          <a href="/es-es/dial/printable-dose-log/">registro de inyecciones</a> o consulta
+          <a href="/es-es/dial/injection-site-rotation/">dónde pincharse según cada prospecto</a>.
+        </p>
+        <p class="dial-guide-sheet-footer">
+          Ozempic, Wegovy, Saxenda, Rybelsus, Mounjaro y Trulicity son marcas registradas de sus
+          respectivos titulares. Zentsu no tiene relación con Novo Nordisk ni con Eli Lilly.
+        </p>
+      </article>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

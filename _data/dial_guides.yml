@@ -33,6 +33,12 @@ ja:
       title: 印刷用の投与記録表
     - url: /ja/dial/injection-site-rotation/
       title: 注射部位のローテーション表
+    - url: /ja/dial/missed-dose/
+      title: 打ち忘れたとき、曜日を変えるとき
+    - url: /ja/dial/medication-log/
+      title: GLP-1注射の記録に残す項目
+    - url: /ja/dial/side-effects-weight-log/
+      title: 副作用と体重の記録
 
 ko:
   byline:
@@ -51,6 +57,12 @@ ko:
       title: 인쇄용 투여 기록표
     - url: /ko/dial/injection-site-rotation/
       title: 주사 부위 순환 기록표
+    - url: /ko/dial/missed-dose/
+      title: 주사를 놓쳤을 때
+    - url: /ko/dial/change-injection-day/
+      title: 주사 요일을 바꿀 때
+    - url: /ko/dial/medication-log/
+      title: 투여 기록에 적을 것
 
 zh-hant:
   byline:
@@ -66,9 +78,15 @@ zh-hant:
     - url: /zh-hant/dial/import-dose-history/
       title: CSV 匯入指南
     - url: /zh-hant/dial/printable-dose-log/
-      title: 可列印的用藥紀錄表
+      title: 每週注射紀錄表（可列印）
     - url: /zh-hant/dial/injection-site-rotation/
-      title: 注射部位輪替表
+      title: 注射部位和輪替表
+    - url: /zh-hant/dial/medication-log/
+      title: 注射紀錄怎麼記
+    - url: /zh-hant/dial/missed-dose/
+      title: 忘記打針時的仿單寫法
+    - url: /zh-hant/dial/change-injection-day/
+      title: 更改每週打針日
 
 pt:
   byline:
@@ -79,7 +97,27 @@ pt:
   links:
     - url: /pt/dial/import-dose-history/
       title: Guia de importação CSV
-    - url: /dial/printable-dose-log/
-      title: Registro de doses para imprimir (em inglês)
-    - url: /dial/injection-site-rotation/
-      title: Tabela de rodízio dos locais de aplicação (em inglês)
+    - url: /pt/dial/injection-site-rotation/
+      title: Onde aplicar a caneta e rodízio dos locais
+    - url: /pt/dial/missed-dose/
+      title: Esqueci de aplicar a caneta
+    - url: /pt/dial/change-injection-day/
+      title: Mudar o dia da aplicação semanal
+
+es-es:
+  byline:
+    by: Por
+    published: Publicado
+    reviewed: Cotejado con los prospectos
+    date_format: '%d/%m/%Y'
+  sources:
+    after_name: '. '
+    between: ', '
+    end: '.'
+  links:
+    - url: /es-es/dial/injection-site-rotation/
+      title: Dónde pincharse según cada prospecto
+    - url: /es-es/dial/missed-dose/
+      title: Dosis olvidada y cambio de día
+    - url: /es-es/dial/printable-dose-log/
+      title: Registro de inyecciones para imprimir

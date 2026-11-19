@@ -83,8 +83,8 @@ boundary:
 
 logging:
   kicker: "Hızlı kayıt"
-  heading: "İlacı, dozu ve enjeksiyon yerini tek formda kaydet."
-  body: "İlaç, miktar, tarih, saat ve notları yazın. Ozempic, Wegovy ve Mounjaro gibi enjeksiyonlara enjeksiyon yeri eklenir. Rybelsus gibi tabletler yer olmadan kaydedilir. Dial semaglutid, tirzepatid, liraglutid, dulaglutid ve eksenatidi ülkenizdeki kutu adlarıyla listeler. Orforglipron ile reçeteyle aldığınız magistral semaglutid veya tirzepatid flakonu da kaydedilir. İlacınız yoksa özel bir ilaç ekleyin."
+  heading: "Dozu ve enjeksiyon yerini tek formda kaydet."
+  body: "Miktar, tarih, saat ve notları yazın. Ozempic, Wegovy ve Mounjaro gibi enjeksiyonlara enjeksiyon yeri eklenir. Rybelsus gibi tabletler yer olmadan kaydedilir. Dial semaglutid, tirzepatid, liraglutid, dulaglutid ve eksenatidi ülkenizdeki kutu adlarıyla listeler. Orforglipron ile reçeteyle aldığınız magistral semaglutid veya tirzepatid flakonu da kaydedilir. İlacınız yoksa özel bir ilaç ekleyin."
   checklist:
     - "Bir şey değişince kaydı düzenleyin"
     - "Her dozun enjeksiyon yerini kaydedin"
@@ -92,8 +92,8 @@ logging:
 
 history:
   kicker: "Dial Pro · Geçmiş ve eğilimler"
-  heading: "Doz, kilo ve yan etki grafikleri kayıtlardan gelir."
-  body: "Doz, kilo ve yan etki listeleri ücretsiz kalır. Dial Pro grafikleri ekler."
+  heading: "Doz geçmişi grafiği ve yan etki eğilimleri kayıtlardan gelir."
+  body: "Doz ve yan etki listeleri ile kilo grafiği ücretsiz kalır. Dial Pro doz geçmişi grafiğini ve yan etki eğilimlerini ekler."
   history_card_title: "Doz ve kilo geçmişi"
   history_card_note: "Seçtiğiniz aralıktaki değişiklikleri inceleyin."
   side_effects_card_title: "Yan etki eğilimleri"
@@ -131,21 +131,21 @@ supporting:
 plans:
   kicker: "Ücretsiz ve Dial Pro"
   heading: "Temel kaydı ücretsiz kullan."
-  body: "Dial Pro tahmini düzey grafiğini, tam geçmiş grafiklerini, dışa aktarmayı ve Apple Watch ile iPhone'da hızlı kaydı ekler. Her Dial Pro planı aynı özellikleri içerir."
+  body: "Dial Pro tahmini düzey grafiğini, doz geçmişi grafiğini, dışa aktarmayı ve Apple Watch ile iPhone'da hızlı kaydı ekler. Her Dial Pro planı aynı özellikleri içerir."
   free_name: "Ücretsiz"
   free_summary: "Tek aktif ilaç için ücretsiz, doz kaydında sınır yok."
   free_features:
     - "Doz, enjeksiyon yeri, kilo, yan etki ve ilerleme fotoğraflarını kaydedin"
     - "Bir aktif ilaç ve bir anımsatıcı"
-    - "Doz ve kilo listeleri, stok, içe aktarma ve Apple Watch bakışı"
+    - "Doz listeleri, kilo grafiği, stok, içe aktarma ve Apple Watch bakışı"
     - "Geri sayım widget'ları ve formu açan anımsatıcılar"
   pro_name: Dial Pro
   pro_summary: "Dozlar arasındaki düzeyini gör, tüm geçmişini grafikleştir, bilekten kaydet."
   cta_caption: "Ücretsiz indir, sonra uygulamadan plan seç."
   pro_features:
     - "Tahmini düzey grafiği ve Ana Ekran widget'ı"
-    - "Tam doz ve kilo grafikleri, yan etki eğilimleri ve fotoğraf karşılaştırması"
-    - "PDF raporu, CSV dışa aktarma, birden fazla ilaç ve anımsatıcı"
+    - "Doz geçmişi grafiği, yan etki eğilimleri ve fotoğraf karşılaştırması"
+    - "PDF raporu, CSV dışa aktarma ve birden fazla anımsatıcı"
     - "Apple Watch'ta hızlı kayıt ve Complications, iPhone'da tek dokunuşla kayıt"
   options_label: "Dial Pro plan seçenekleri"
   lifetime_name: "Lifetime"
@@ -175,6 +175,6 @@ privacy:
 availability:
   kicker: "Dial'i indirin"
   heading: "Şimdi App Store'da."
-  body: "Dial indirmesi ücretsizdir, hesap açmana gerek yok. Dial Pro tahmini düzey grafiği, tam geçmiş grafikleri, PDF ve CSV dışa aktarma ve Apple Watch ile iPhone'dan hızlı kayıt ekler."
+  body: "Dial indirmesi ücretsizdir, hesap açmana gerek yok. Dial Pro tahmini düzey grafiği, doz geçmişi grafiği, PDF ve CSV dışa aktarma ve Apple Watch ile iPhone'dan hızlı kayıt ekler."
 
 trademarks: "Ozempic, Wegovy, Rybelsus ve Mounjaro, ilgili sahiplerinin ticari markalarıdır. Zentsu hiçbir ilaç şirketiyle bağlantılı değildir."

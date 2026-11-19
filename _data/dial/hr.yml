@@ -83,8 +83,8 @@ boundary:
 
 logging:
   kicker: "Brzi unos"
-  heading: "Zabilježi lijek, dozu i mjesto injekcije u jednom obrascu."
-  body: "Zapiši lijek, količinu, datum, vrijeme i bilješke. Kod injekcija poput Ozempica, Wegovyja i Mounjara bilježi se i mjesto. Tablete poput Rybelsusa bilježe se bez mjesta. Dial navodi semaglutid, tirzepatid, liraglutid i dulaglutid pod regionalnim nazivima. Možeš bilježiti i orforglipron, eksenatid te propisani magistralni semaglutid ili tirzepatid iz bočice. Dodaj vlastiti lijek ako nedostaje."
+  heading: "Zabilježi dozu i mjesto injekcije u jednom obrascu."
+  body: "Zapiši količinu, datum, vrijeme i bilješke. Kod injekcija poput Ozempica, Wegovyja i Mounjara bilježi se i mjesto. Tablete poput Rybelsusa bilježe se bez mjesta. Dial navodi semaglutid, tirzepatid, liraglutid i dulaglutid pod regionalnim nazivima. Možeš bilježiti i orforglipron, eksenatid te propisani magistralni semaglutid ili tirzepatid iz bočice. Dodaj vlastiti lijek ako nedostaje."
   checklist:
     - "Uredi unos kad se nešto promijeni"
     - "Mjesta injekcije ostaju uz svaku dozu"
@@ -92,8 +92,8 @@ logging:
 
 history:
   kicker: "Dial Pro · Povijest i trendovi"
-  heading: "Grafikoni doze, težine i nuspojava iz tvojih unosa."
-  body: "Popisi doza, težine i nuspojava ostaju besplatni. Dial Pro dodaje grafikone."
+  heading: "Grafikon povijesti doza i trendovi nuspojava iz tvojih unosa."
+  body: "Popisi doza i nuspojava te grafikon težine ostaju besplatni. Dial Pro dodaje grafikon povijesti doza i trendove nuspojava."
   history_card_title: "Povijest doze i težine"
   history_card_note: "Pregledaj promjene u rasponu koji odabereš."
   side_effects_card_title: "Trendovi nuspojava"
@@ -131,21 +131,21 @@ supporting:
 plans:
   kicker: "Besplatno i Dial Pro"
   heading: "Osnovni zapis koristi besplatno."
-  body: "Dial Pro dodaje grafikon procijenjene razine, pune grafikone povijesti, izvoz i brzi unos na Apple Watchu i iPhoneu. Svaki Dial Pro plan uključuje iste značajke."
+  body: "Dial Pro dodaje grafikon procijenjene razine, grafikon povijesti doza, izvoz i brzi unos na Apple Watchu i iPhoneu. Svaki Dial Pro plan uključuje iste značajke."
   free_name: "Besplatno"
   free_summary: "Besplatno za jedan aktivni lijek, bez ograničenja zapisa doza."
   free_features:
     - "Unos doza, mjesta injekcije, težine, nuspojava i fotografija napretka"
     - "Jedan aktivni lijek i jedan podsjetnik"
-    - "Popisi doze i težine, zaliha, uvoz i pregled na Apple Watchu"
+    - "Popisi doza, grafikon težine, zaliha, uvoz i pregled na Apple Watchu"
     - "Widgeti odbrojavanja i podsjetnici koji otvaraju obrazac"
   pro_name: Dial Pro
-  pro_summary: "Razina između doza, grafikoni cijele povijesti i unos sa zapešća."
+  pro_summary: "Razina između doza, grafikon povijesti doza i unos sa zapešća."
   cta_caption: "Preuzmi besplatno pa odaberi plan u aplikaciji."
   pro_features:
     - "Grafikon procijenjene razine i widget na početnom zaslonu"
-    - "Puni grafikoni doze i težine, trendovi nuspojava i usporedba fotografija"
-    - "PDF izvješće, CSV izvoz, više lijekova i više podsjetnika"
+    - "Grafikon povijesti doza, trendovi nuspojava i usporedba fotografija"
+    - "PDF izvješće, CSV izvoz i više podsjetnika"
     - "Brzi unos i komplikacije na Apple Watchu te unos jednim dodirom na iPhoneu"
   options_label: "Opcije plana Dial Pro"
   lifetime_name: "Doživotno"
@@ -175,6 +175,6 @@ privacy:
 availability:
   kicker: "Preuzmi Dial"
   heading: "Sada u App Storeu."
-  body: "Dial je besplatan za preuzimanje, račun ne otvaraš. Dial Pro dodaje grafikon procijenjene razine, pune grafikone povijesti, izvoz PDF i CSV te brzi unos s Apple Watcha i iPhonea."
+  body: "Dial je besplatan za preuzimanje, račun ne otvaraš. Dial Pro dodaje grafikon procijenjene razine, grafikon povijesti doza, izvoz PDF i CSV te brzi unos s Apple Watcha i iPhonea."
 
 trademarks: "Ozempic, Wegovy, Rybelsus, Mounjaro, Byetta i Bydureon žigovi su svojih vlasnika. Zentsu nema veze ni s jednom farmaceutskom tvrtkom."

@@ -83,8 +83,8 @@ boundary:
 
 logging:
   kicker: "Szybki zapis"
-  heading: "Zapisz lek, dawkę i miejsce wstrzyknięcia w jednym formularzu."
-  body: "Zapisz lek, ilość, datę, godzinę i notatki. Wstrzyknięcia takie jak Ozempic, Wegovy i Mounjaro obejmują miejsce. Tabletki takie jak Rybelsus zapisujesz bez miejsca. Dial wymienia semaglutyd, tirzepatyd, liraglutyd i dulaglutyd pod regionalnymi nazwami handlowymi. Zapiszesz też orforglipron, eksenatyd oraz przepisany semaglutyd lub tirzepatyd recepturowy z fiolki. Dodaj własny lek, jeśli Twojego brakuje."
+  heading: "Zapisz dawkę i miejsce wstrzyknięcia w jednym formularzu."
+  body: "Zapisz ilość, datę, godzinę i notatki. Wstrzyknięcia takie jak Ozempic, Wegovy i Mounjaro obejmują miejsce. Tabletki takie jak Rybelsus zapisujesz bez miejsca. Dial wymienia semaglutyd, tirzepatyd, liraglutyd i dulaglutyd pod regionalnymi nazwami handlowymi. Zapiszesz też orforglipron, eksenatyd oraz przepisany semaglutyd lub tirzepatyd recepturowy z fiolki. Dodaj własny lek, jeśli Twojego brakuje."
   checklist:
     - "Edytują Państwo wpis, gdy coś się zmieni"
     - "Miejsca wstrzyknięć są przy każdej dawce"
@@ -92,8 +92,8 @@ logging:
 
 history:
   kicker: "Dial Pro · Historia i trendy"
-  heading: "Wykresy dawek, wagi i działań niepożądanych z Państwa wpisów."
-  body: "Listy dawek, wagi i działań niepożądanych zostają za darmo. Dial Pro dodaje wykresy."
+  heading: "Wykres historii dawek i trendy działań niepożądanych z Państwa wpisów."
+  body: "Listy dawek i działań niepożądanych oraz wykres wagi zostają za darmo. Dial Pro dodaje wykres historii dawek i trendy działań niepożądanych."
   history_card_title: "Historia dawek i wagi"
   history_card_note: "Przeglądają Państwo zmiany w wybranym zakresie."
   side_effects_card_title: "Trendy działań niepożądanych"
@@ -131,21 +131,21 @@ supporting:
 plans:
   kicker: "Za darmo i Dial Pro"
   heading: "Z podstawowego rejestru korzystasz za darmo."
-  body: "Dial Pro dodaje wykres szacowanego poziomu, pełne wykresy historii, eksport i szybki zapis na Apple Watch i iPhonie. Każdy plan Dial Pro ma te same funkcje."
+  body: "Dial Pro dodaje wykres szacowanego poziomu, wykres historii dawek, eksport i szybki zapis na Apple Watch i iPhonie. Każdy plan Dial Pro ma te same funkcje."
   free_name: "Za darmo"
   free_summary: "Za darmo dla jednego aktywnego leku, bez limitu zapisów dawek."
   free_features:
     - "Zapis dawek, miejsc wstrzyknięć, wagi, działań niepożądanych i zdjęć postępów"
     - "Jeden aktywny lek i jedno przypomnienie"
-    - "Listy dawek i wagi, zapas, import i przegląd Apple Watch"
+    - "Listy dawek, wykres wagi, zapas, import i przegląd Apple Watch"
     - "Widżety odliczania i przypomnienia otwierające formularz zapisu"
   pro_name: Dial Pro
-  pro_summary: "Poziom między dawkami, wykresy całej historii i zapis z nadgarstka."
+  pro_summary: "Poziom między dawkami, wykres historii dawek i zapis z nadgarstka."
   cta_caption: "Pobierz za darmo i wybierz plan w aplikacji."
   pro_features:
     - "Wykres szacowanego poziomu i widżet na ekranie początkowym"
-    - "Pełne wykresy dawek i wagi, trendy działań niepożądanych i porównanie zdjęć"
-    - "Raport PDF, eksport CSV, kilka leków i kilka przypomnień"
+    - "Wykres historii dawek, trendy działań niepożądanych i porównanie zdjęć"
+    - "Raport PDF, eksport CSV i kilka przypomnień"
     - "Szybki zapis i komplikacje na Apple Watch oraz zapis jednym stuknięciem na iPhonie"
   options_label: "Wybór planu Dial Pro"
   lifetime_name: "Lifetime"
@@ -175,6 +175,6 @@ privacy:
 availability:
   kicker: "Dial"
   heading: "Już w App Store."
-  body: "Dial pobierasz za darmo, bez konta do założenia. Dial Pro dodaje wykres szacowanego poziomu, pełne wykresy historii, eksport PDF i CSV oraz szybki zapis z Apple Watch i iPhone’a."
+  body: "Dial pobierasz za darmo, bez konta do założenia. Dial Pro dodaje wykres szacowanego poziomu, wykres historii dawek, eksport PDF i CSV oraz szybki zapis z Apple Watch i iPhone’a."
 
 trademarks: "Ozempic, Wegovy, Rybelsus, Mounjaro, Byetta i Bydureon są znakami towarowymi ich właścicieli. Zentsu nie ma powiązań z żadną firmą farmaceutyczną."

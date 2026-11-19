@@ -83,8 +83,8 @@ boundary:
 
 logging:
   kicker: "Hurtig registrering"
-  heading: "Registrer lægemiddel, dosis og injektionssted i én formular."
-  body: "Notér lægemiddel, mængde, dato, tid og noter. Ved injektioner som Ozempic, Wegovy og Mounjaro noterer du også injektionsstedet. Tabletter som Rybelsus føres uden sted. Dial viser semaglutid, tirzepatid, liraglutid og dulaglutid under de mærkenavne, der bruges i Danmark. Du kan også føre orforglipron, exenatid og magistrelt fremstillet semaglutid eller tirzepatid fra hætteglas. Tilføj et eget lægemiddel, hvis dit mangler."
+  heading: "Registrer dosis og injektionssted i én formular."
+  body: "Notér mængde, dato, tid og noter. Ved injektioner som Ozempic, Wegovy og Mounjaro noterer du også injektionsstedet. Tabletter som Rybelsus føres uden sted. Dial viser semaglutid, tirzepatid, liraglutid og dulaglutid under de mærkenavne, der bruges i Danmark. Du kan også føre orforglipron, exenatid og magistrelt fremstillet semaglutid eller tirzepatid fra hætteglas. Tilføj et eget lægemiddel, hvis dit mangler."
   checklist:
     - "Rediger en post, når noget ændrer sig"
     - "Behold injektionssteder knyttet til hver dosis"
@@ -92,8 +92,8 @@ logging:
 
 history:
   kicker: "Dial Pro · Historik og tendenser"
-  heading: "Grafer for dosis, vægt og bivirkninger fra dine poster."
-  body: "Lister over dosis, vægt og bivirkninger forbliver gratis. Dial Pro tilføjer graferne."
+  heading: "Diagram over dosishistorik og bivirkningstendenser fra dine poster."
+  body: "Lister over dosis og bivirkninger og vægtdiagrammet forbliver gratis. Dial Pro tilføjer diagrammet over dosishistorik og bivirkningstendenser."
   history_card_title: "Dosis- og vægthistorik"
   history_card_note: "Gennemgå ændringer i det interval, du vælger."
   side_effects_card_title: "Bivirkningstendenser"
@@ -131,21 +131,21 @@ supporting:
 plans:
   kicker: "Gratis og Dial Pro"
   heading: "Brug kerneoverblikket gratis."
-  body: "Dial Pro tilføjer grafen for estimeret niveau, de fulde historikgrafer, eksport og hurtig registrering på Apple Watch og iPhone. Hver Dial Pro-plan har de samme funktioner."
+  body: "Dial Pro tilføjer grafen for estimeret niveau, diagrammet over dosishistorik, eksport og hurtig registrering på Apple Watch og iPhone. Hver Dial Pro-plan har de samme funktioner."
   free_name: "Gratis"
   free_summary: "Gratis til ét aktivt lægemiddel, uden loft over dosislogget."
   free_features:
     - "Registrer doser, injektionssteder, vægt, bivirkninger og fremgangsfotos"
     - "Ét aktivt lægemiddel og én påmindelse"
-    - "Dosis- og vægtlister, lager, import og Apple Watch-overblikket"
+    - "Dosislister, vægtdiagrammet, lager, import og Apple Watch-overblikket"
     - "Nedtællingswidgets og påmindelser, der åbner registreringsformularen"
   pro_name: Dial Pro
   pro_summary: "Se niveauet mellem doserne, sæt hele historikken i grafer, og registrer fra håndleddet."
   cta_caption: "Hent gratis, og vælg en plan inde i appen."
   pro_features:
     - "Diagram for estimeret niveau og widget på hjemmeskærmen"
-    - "Fulde dosis- og vægtdiagrammer, bivirkningstendenser og fotosammenligning"
-    - "PDF-rapport, CSV-eksport, flere lægemidler og flere påmindelser"
+    - "Diagram over dosishistorik, bivirkningstendenser og fotosammenligning"
+    - "PDF-rapport, CSV-eksport og flere påmindelser"
     - "Hurtig registrering og komplikationer på Apple Watch, plus registrering med ét tryk på iPhone"
   options_label: "Dial Pro-planvalg"
   lifetime_name: "Lifetime"
@@ -175,6 +175,6 @@ privacy:
 availability:
   kicker: "Hent Dial"
   heading: "Nu i App Store."
-  body: "Dial er gratis at hente, uden konto. Dial Pro tilføjer grafen for estimeret niveau, de fulde historikgrafer, PDF- og CSV-eksport og hurtig registrering fra Apple Watch og iPhone."
+  body: "Dial er gratis at hente, uden konto. Dial Pro tilføjer grafen for estimeret niveau, diagrammet over dosishistorik, PDF- og CSV-eksport og hurtig registrering fra Apple Watch og iPhone."
 
 trademarks: "Ozempic, Wegovy, Rybelsus, Mounjaro, Byetta og Bydureon er varemærker tilhørende deres respektive ejere. Zentsu er ikke tilknyttet nogen medicinalvirksomhed."

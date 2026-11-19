@@ -83,8 +83,8 @@ boundary:
 
 logging:
   kicker: "Nopea kirjaus"
-  heading: "Kirjaa lääke, annos ja pistoskohta yhdessä lomakkeessa."
-  body: "Kirjaa lääke, määrä, päivä, aika ja muistiinpanot. Pistoksissa, kuten Ozempicissa, Wegovyssä, Mounjarossa ja Saxendassa, mukana on pistoskohta. Tabletit, kuten Rybelsus, kirjataan ilman kohtaa. Dial listaa semaglutidin, tirtsepatidin, liraglutidin ja dulaglutidin Suomessa käytetyillä kauppanimillä. Voit kirjata myös eksenatidin sekä apteekissa valmistetun semaglutidin tai tirtsepatidin injektiopullosta. Lisää oma lääke, jos puuttuu."
+  heading: "Kirjaa annos ja pistoskohta yhdessä lomakkeessa."
+  body: "Kirjaa määrä, päivä, aika ja muistiinpanot. Pistoksissa, kuten Ozempicissa, Wegovyssä, Mounjarossa ja Saxendassa, mukana on pistoskohta. Tabletit, kuten Rybelsus, kirjataan ilman kohtaa. Dial listaa semaglutidin, tirtsepatidin, liraglutidin ja dulaglutidin Suomessa käytetyillä kauppanimillä. Voit kirjata myös eksenatidin sekä apteekissa valmistetun semaglutidin tai tirtsepatidin injektiopullosta. Lisää oma lääke, jos puuttuu."
   checklist:
     - "Muokkaa merkintää, kun jokin muuttuu"
     - "Pistoskohta tallentuu jokaiseen annokseen"
@@ -92,8 +92,8 @@ logging:
 
 history:
   kicker: "Dial Pro · Historia ja trendit"
-  heading: "Annos-, paino- ja haittavaikutuskaaviot merkinnöistäsi."
-  body: "Annos-, paino- ja haittavaikutusluettelot pysyvät ilmaisina. Dial Pro lisää kaaviot."
+  heading: "Annoshistorian kaavio ja haittavaikutustrendit merkinnöistäsi."
+  body: "Annos- ja haittavaikutusluettelot sekä painokaavio pysyvät ilmaisina. Dial Pro lisää annoshistorian kaavion ja haittavaikutustrendit."
   history_card_title: "Annos- ja painohistoria"
   history_card_note: "Tarkastele muutoksia valitsemallasi aikavälillä."
   side_effects_card_title: "Haittavaikutustrendit"
@@ -131,21 +131,21 @@ supporting:
 plans:
   kicker: "Ilmainen ja Dial Pro"
   heading: "Käytä perusseurantaa ilmaiseksi."
-  body: "Dial Pro lisää arvioidun tason kaavion, täydet historiakaaviot, viennit ja nopean kirjauksen Apple Watchissa ja iPhonessa. Jokainen Dial Pro -paketti sisältää samat ominaisuudet."
+  body: "Dial Pro lisää arvioidun tason kaavion, annoshistorian kaavion, viennit ja nopean kirjauksen Apple Watchissa ja iPhonessa. Jokainen Dial Pro -paketti sisältää samat ominaisuudet."
   free_name: "Ilmainen"
   free_summary: "Ilmainen yhdelle aktiiviselle lääkkeelle, ilman kattoa annoslokissa."
   free_features:
     - "Kirjaa annokset, pistoskohdat, paino, haittavaikutukset ja edistymiskuvat"
     - "Yksi aktiivinen lääke ja yksi muistutus"
-    - "Annos- ja painoluettelot, varasto, tuonti ja yleisnäkymä Apple Watchissa"
+    - "Annosluettelot, painokaavio, varasto, tuonti ja yleisnäkymä Apple Watchissa"
     - "Lähtölaskentawidgetit ja muistutukset, jotka avaavat kirjauslomakkeen"
   pro_name: Dial Pro
   pro_summary: "Näe taso annosten välillä, kaavioi koko historia ja kirjaa ranteesta."
   cta_caption: "Lataa ilmaiseksi, valitse sitten paketti sovelluksessa."
   pro_features:
     - "Arvioidun tason kaavio ja widget Koti-näytössä"
-    - "Täydet annos- ja painokaaviot, haittavaikutustrendit ja kuvien vertailu"
-    - "PDF-raportti, CSV-vienti, useita lääkkeitä ja useita muistutuksia"
+    - "Annoshistorian kaavio, haittavaikutustrendit ja kuvien vertailu"
+    - "PDF-raportti, CSV-vienti ja useita muistutuksia"
     - "Nopea kirjaus ja komplikaatiot Apple Watchissa sekä kirjaus yhdellä napautuksella iPhonessa"
   options_label: "Dial Pro -vaihtoehdot"
   lifetime_name: "Lifetime"
@@ -175,7 +175,7 @@ privacy:
 availability:
   kicker: "Lataa Dial"
   heading: "Nyt App Storessa."
-  body: "Dialin lataaminen on ilmaista, ilman tiliä. Dial Pro lisää arvioidun tason kaavion, täydet historiakaaviot, PDF- ja CSV-viennin ja nopean kirjauksen Apple Watchista ja iPhonesta."
+  body: "Dialin lataaminen on ilmaista, ilman tiliä. Dial Pro lisää arvioidun tason kaavion, annoshistorian kaavion, PDF- ja CSV-viennin ja nopean kirjauksen Apple Watchista ja iPhonesta."
 
 trademarks: "Ozempic, Wegovy, Rybelsus, Mounjaro, Saxenda, Byetta ja Bydureon ovat omistajiensa tavaramerkkejä. Zentsu ei ole sidoksissa yhteenkään lääkeyhtiöön."
 

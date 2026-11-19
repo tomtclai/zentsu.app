@@ -1,0 +1,66 @@
+products:
+  - name: オゼンピック皮下注2mg（セマグルチド）
+    source_url: https://www.pmda.go.jp/PmdaSearch/iyakuDetail/620023_2499418G4027_1_07
+    source_revised: 2026年5月改訂（第6版）
+    rules:
+      missed_dose:
+        text: 次回投与までの期間が2日間（48時間）以上であれば、気づいた時点で直ちに投与し、その後はあらかじめ定めた曜日に投与する。2日間（48時間）未満であれば投与せず、次のあらかじめ定めた曜日に投与する。
+        section: （7.2）
+      change_day:
+        text: 定めた曜日を変更する必要がある場合は、前回投与から少なくとも2日間（48時間）以上の間隔を空ける。
+        section: （7.2）
+      rotation:
+        text: 皮下注射は腹部、大腿、上腕に行う。注射箇所は毎回変更し、少なくとも前回の注射箇所より2～3cm離す。
+        section: （14.1.2）
+  - name: ウゴービ皮下注SD（セマグルチド）
+    source_url: https://www.pmda.go.jp/PmdaSearch/iyakuDetail/620023_2499418G5023_1_07
+    source_revised: 2026年6月改訂（第7版）
+    rules:
+      missed_dose:
+        text: 次回投与までの期間が2日間（48時間）以上であれば、気づいた時点で直ちに投与し、その後はあらかじめ定めた曜日に投与する。2日間（48時間）未満であれば投与せず、次のあらかじめ定めた曜日に投与する。
+        section: （7.3）
+      change_day:
+        text: 定めた曜日を変更する必要がある場合は、前回投与から少なくとも3日間（72時間）以上の間隔を空ける。
+        section: （7.3）
+      rotation:
+        text: 皮下注射は腹部、大腿、上腕に行う。注射箇所は毎回変更し、少なくとも前回の注射箇所より2～3cm離す。
+        section: （14.2.1）
+  - name: ウゴービ皮下注ペンMD（セマグルチド）
+    source_url: https://www.pmda.go.jp/PmdaSearch/iyakuDetail/620023_2499418P1028_1_05
+    source_revised: 2026年6月改訂（第5版）
+    rules:
+      missed_dose:
+        text: 次回投与までの期間が2日間（48時間）以上であれば、気づいた時点で直ちに投与し、その後はあらかじめ定めた曜日に投与する。2日間（48時間）未満であれば投与せず、次のあらかじめ定めた曜日に投与する。
+        section: （7.3）
+      change_day:
+        text: 定めた曜日を変更する必要がある場合は、前回投与から少なくとも3日間（72時間）以上の間隔を空ける。
+        section: （7.3）
+      rotation:
+        text: 皮下注射は腹部、大腿、上腕に行う。注射箇所は毎回変更し、少なくとも前回の注射箇所より2～3cm離す。
+        section: （14.2.2）
+  - name: マンジャロ皮下注アテオス（チルゼパチド）
+    source_url: https://www.pmda.go.jp/PmdaSearch/iyakuDetail/530471_2499422G1024_1_11
+    source_revised: 2026年9月改訂（第11版）
+    rules:
+      missed_dose:
+        text: 次回投与までの期間が3日間（72時間）以上であれば、気づいた時点で直ちに投与し、その後はあらかじめ定めた曜日に投与する。3日間（72時間）未満であれば投与せず、次のあらかじめ定めた曜日に投与する。
+        section: （7.2）
+      change_day:
+        text: 曜日を変更する必要がある場合は、前回投与から少なくとも3日間（72時間）以上の間隔を空ける。
+        section: （7.2）
+      rotation:
+        text: 皮下注射は腹部、大腿部又は上腕部に行う。同じ部位の中で注射する場合、毎回注射する場所を変更する。
+        section: （14.2）
+  - name: ゼップバウンド皮下注アテオス（チルゼパチド）
+    source_url: https://www.pmda.go.jp/PmdaSearch/iyakuDetail/530471_2499422G7022_1_06
+    source_revised: 2026年9月改訂（第6版）
+    rules:
+      missed_dose:
+        text: 次回投与までの期間が3日間（72時間）以上であれば、気づいた時点で直ちに投与し、その後はあらかじめ定めた曜日に投与する。3日間（72時間）未満であれば投与せず、次のあらかじめ定めた曜日に投与する。
+        section: （7.2）
+      change_day:
+        text: 曜日を変更する必要がある場合は、前回投与から少なくとも3日間（72時間）以上の間隔を空ける。
+        section: （7.2）
+      rotation:
+        text: 皮下注射は腹部、大腿部又は上腕部に行う。同じ部位の中で注射する場合、毎回注射する場所を変更する。
+        section: （14.2）

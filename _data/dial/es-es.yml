@@ -104,7 +104,7 @@ boundary:
 logging:
   kicker: Registro rápido
   heading: "Cada inyección con su zona."
-  body: "Anota medicamento, cantidad, fecha, hora y una nota. Las inyecciones como Ozempic, Wegovy y Mounjaro guardan también la zona. Los comprimidos como Rybelsus se registran sin zona. El catálogo incluye semaglutida, tirzepatida, liraglutida y dulaglutida con las marcas de cada país. También puedes anotar orforglipron, exenatida y semaglutida o tirzepatida de formulación magistral con receta en vial. Añade tu medicamento si falta."
+  body: "Anota cantidad, fecha, hora y una nota. Las inyecciones como Ozempic, Wegovy y Mounjaro guardan también la zona. Los comprimidos como Rybelsus se registran sin zona. El catálogo incluye semaglutida, tirzepatida, liraglutida y dulaglutida con las marcas de cada país. También puedes anotar orforglipron, exenatida y semaglutida o tirzepatida de formulación magistral con receta en vial. Añade tu medicamento si falta."
   checklist:
     - Edita una entrada cuando algo cambie
     - Anota la zona de inyección en cada dosis
@@ -112,8 +112,8 @@ logging:
 
 history:
   kicker: Dial Pro · Historial y tendencias
-  heading: Gráficos de dosis, peso y efectos secundarios.
-  body: "Las listas de dosis, peso y efectos secundarios siguen siendo gratuitas. Dial Pro añade gráficas para revisar el historial entre consultas."
+  heading: Gráfica del historial de dosis y tendencias de efectos secundarios.
+  body: "Las listas de dosis y efectos secundarios y la gráfica de peso siguen siendo gratuitas. Dial Pro añade la gráfica del historial de dosis y las tendencias de efectos secundarios."
   history_card_title: Historial de dosis y peso
   history_card_note: Revisa los cambios en el rango que elijas.
   side_effects_card_title: Tendencias de efectos secundarios
@@ -160,21 +160,21 @@ supporting:
 plans:
   kicker: Gratis y Dial Pro
   heading: Usa el registro básico gratis.
-  body: "El registro en el iPhone es gratuito. Dial Pro añade registro desde el reloj, gráficas, PDF y CSV. Todas las opciones de compra de Dial Pro incluyen las mismas funciones."
+  body: "El registro en el iPhone es gratuito e incluye la gráfica de peso. Dial Pro añade registro desde el reloj, la gráfica del historial de dosis, PDF y CSV. Todas las opciones de compra de Dial Pro incluyen las mismas funciones."
   free_name: Gratis
   free_summary: Gratis para un medicamento activo, sin tope en el registro de dosis.
   free_features:
     - Registra dosis, zonas de inyección, peso, efectos secundarios y fotos de progreso
     - Un medicamento activo y un recordatorio
-    - Listas de dosis y peso, inventario, importaciones y el vistazo en Apple Watch
+    - Listas de dosis, la gráfica de peso, inventario, importaciones y el vistazo en Apple Watch
     - Widgets de cuenta regresiva y recordatorios que abren el formulario de registro
   pro_name: Dial Pro
   pro_summary: Mira el nivel entre dosis, el historial en gráficas y registra desde la muñeca.
   cta_caption: "Descarga gratis y elige un plan dentro de la app."
   pro_features:
     - Gráfico de nivel estimado y widget de nivel en la pantalla de inicio
-    - Gráficos completos de dosis y peso, tendencias de efectos secundarios y comparación de fotos
-    - Informe en PDF, exportación a CSV, varios medicamentos y varios recordatorios
+    - Gráfica del historial de dosis, tendencias de efectos secundarios y comparación de fotos
+    - Informe en PDF, exportación a CSV y varios recordatorios
     - Registro rápido y complicaciones en Apple Watch, más registro en un toque en el iPhone
   options_label: Opciones del plan Dial Pro
   lifetime_name: "De por vida"
@@ -206,6 +206,6 @@ privacy:
 availability:
   kicker: Obtén Dial
   heading: Ya disponible en el App Store.
-  body: "Descarga Dial gratis. Empieza a guardar tus dosis en el iPhone y elige Dial Pro si necesitas gráficas, exportación a PDF o CSV y registro rápido desde Apple Watch e iPhone."
+  body: "Descarga Dial gratis. Empieza a guardar tus dosis en el iPhone y elige Dial Pro si necesitas la gráfica del historial de dosis, exportación a PDF o CSV y registro rápido desde Apple Watch e iPhone."
 
 trademarks: "Ozempic, Wegovy, Rybelsus y Mounjaro son marcas de sus respectivos fabricantes. Zentsu no está afiliado a ninguna empresa farmacéutica."

@@ -83,8 +83,8 @@ boundary:
 
 logging:
   kicker: "Rekod pantas"
-  heading: "Rekod ubat, dos dan tapak suntikan dalam satu borang."
-  body: "Rekod ubat, jumlah, tarikh, masa dan nota. Suntikan seperti Ozempic, Wegovy dan Mounjaro disertakan tapak. Tablet seperti Rybelsus direkod tanpa tapak. Dial menyenaraikan semaglutide, tirzepatide, liraglutide dan dulaglutide mengikut nama jenama serantau. Orforglipron, exenatide serta semaglutide atau tirzepatide dalam vial yang disebatikan oleh farmasi mengikut preskripsi juga boleh direkod. Tambah ubat tersuai jika ubat anda tiada dalam senarai."
+  heading: "Rekod dos dan tapak suntikan dalam satu borang."
+  body: "Rekod jumlah, tarikh, masa dan nota. Suntikan seperti Ozempic, Wegovy dan Mounjaro disertakan tapak. Tablet seperti Rybelsus direkod tanpa tapak. Dial menyenaraikan semaglutide, tirzepatide, liraglutide dan dulaglutide mengikut nama jenama serantau. Orforglipron, exenatide serta semaglutide atau tirzepatide dalam vial yang disebatikan oleh farmasi mengikut preskripsi juga boleh direkod. Tambah ubat tersuai jika ubat anda tiada dalam senarai."
   checklist:
     - "Edit entri apabila sesuatu berubah"
     - "Simpan tapak suntikan pada setiap dos"
@@ -92,8 +92,8 @@ logging:
 
 history:
   kicker: "Dial Pro · Sejarah dan tren"
-  heading: "Carta dos, berat dan kesan sampingan daripada entri anda."
-  body: "Senarai dos, berat dan kesan sampingan kekal percuma. Dial Pro menambah carta."
+  heading: "Carta sejarah dos dan tren kesan sampingan daripada entri anda."
+  body: "Senarai dos dan kesan sampingan serta carta berat kekal percuma. Dial Pro menambah carta sejarah dos dan tren kesan sampingan."
   history_card_title: "Sejarah dos dan berat"
   history_card_note: "Tinjau perubahan dalam julat yang anda pilih."
   side_effects_card_title: "Tren kesan sampingan"
@@ -131,21 +131,21 @@ supporting:
 plans:
   kicker: "Percuma dan Dial Pro"
   heading: "Guna penjejak teras secara percuma."
-  body: "Dial Pro menambah carta tahap anggaran, carta sejarah penuh, eksport dan rekod pantas pada Apple Watch dan iPhone. Setiap pelan Dial Pro merangkumi ciri yang sama."
+  body: "Dial Pro menambah carta tahap anggaran, carta sejarah dos, eksport dan rekod pantas pada Apple Watch dan iPhone. Setiap pelan Dial Pro merangkumi ciri yang sama."
   free_name: "Percuma"
   free_summary: "Percuma untuk satu ubat aktif, log dos tiada had."
   free_features:
     - "Rekod dos, tapak suntikan, berat, kesan sampingan dan foto perkembangan"
     - "Satu ubat aktif dan satu peringatan"
-    - "Senarai dos dan berat, inventori, import dan tinjauan Apple Watch"
+    - "Senarai dos, carta berat, inventori, import dan tinjauan Apple Watch"
     - "Widget kira undur dan peringatan yang membuka borang"
   pro_name: Dial Pro
   pro_summary: "Lihat tahap antara dos, carta sejarah penuh, dan rekod dari pergelangan."
   cta_caption: "Muat turun percuma, kemudian pilih pelan dalam aplikasi."
   pro_features:
     - "Carta tahap anggaran dan widget Skrin Utama"
-    - "Carta dos dan berat penuh, tren kesan sampingan dan perbandingan foto"
-    - "Laporan PDF, eksport CSV, pelbagai ubat dan pelbagai peringatan"
+    - "Carta sejarah dos, tren kesan sampingan dan perbandingan foto"
+    - "Laporan PDF, eksport CSV dan pelbagai peringatan"
     - "Rekod pantas dan komplikasi pada Apple Watch, serta rekod satu ketikan pada iPhone"
   options_label: "Pilihan pelan Dial Pro"
   lifetime_name: "Lifetime"
@@ -175,6 +175,6 @@ privacy:
 availability:
   kicker: "Muat turun Dial"
   heading: "Kini di App Store."
-  body: "Dial percuma untuk dimuat turun, tanpa perlu membuat akaun. Dial Pro menambah carta tahap anggaran, carta sejarah penuh, eksport PDF dan CSV, dan rekod pantas dari Apple Watch dan iPhone."
+  body: "Dial percuma untuk dimuat turun, tanpa perlu membuat akaun. Dial Pro menambah carta tahap anggaran, carta sejarah dos, eksport PDF dan CSV, dan rekod pantas dari Apple Watch dan iPhone."
 
 trademarks: "Ozempic, Wegovy, Rybelsus dan Mounjaro ialah tanda dagangan pemilik masing-masing. Zentsu tidak mempunyai kaitan dengan mana-mana syarikat farmaseutikal."

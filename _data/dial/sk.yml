@@ -83,8 +83,8 @@ boundary:
 
 logging:
   kicker: "Rýchly záznam"
-  heading: "Zapíš liek, dávku a miesto vpichu v jednom formulári."
-  body: "Zapíš liek, množstvo, dátum, čas a poznámky. Pri injekciách ako Ozempic, Wegovy a Mounjaro patrí aj miesto vpichu. Tablety ako Rybelsus sa zapisujú bez miesta. Dial uvádza semaglutid, tirzepatid, liraglutid a dulaglutid s obchodnými názvami používanými na Slovensku. Zapíšeš aj exenatid a predpísaný, v lekárni pripravený semaglutid alebo tirzepatid z liekovky. Ak chýba tvoj liek, pridaj vlastný."
+  heading: "Zapíš dávku a miesto vpichu v jednom formulári."
+  body: "Zapíš množstvo, dátum, čas a poznámky. Pri injekciách ako Ozempic, Wegovy a Mounjaro patrí aj miesto vpichu. Tablety ako Rybelsus sa zapisujú bez miesta. Dial uvádza semaglutid, tirzepatid, liraglutid a dulaglutid s obchodnými názvami používanými na Slovensku. Zapíšeš aj exenatid a predpísaný, v lekárni pripravený semaglutid alebo tirzepatid z liekovky. Ak chýba tvoj liek, pridaj vlastný."
   checklist:
     - "Upraviť záznam, keď sa niečo zmení"
     - "Miesto vpichu pri každej dávke"
@@ -92,8 +92,8 @@ logging:
 
 history:
   kicker: "Dial Pro · História a trendy"
-  heading: "Grafy dávok, hmotnosti a nežiaducich účinkov z tvojich záznamov."
-  body: "Zoznamy dávok, hmotnosti a nežiaducich účinkov ostávajú zadarmo. Dial Pro pridáva grafy."
+  heading: "Graf histórie dávok a trendy nežiaducich účinkov z tvojich záznamov."
+  body: "Zoznamy dávok a nežiaducich účinkov aj graf hmotnosti ostávajú zadarmo. Dial Pro pridáva graf histórie dávok a trendy nežiaducich účinkov."
   history_card_title: "História dávok a hmotnosti"
   history_card_note: "Prezri si zmeny v rozsahu, ktorý zvolíš."
   side_effects_card_title: "Trendy nežiaducich účinkov"
@@ -131,21 +131,21 @@ supporting:
 plans:
   kicker: "Zadarmo a Dial Pro"
   heading: "Základný záznam používaj zadarmo."
-  body: "Dial Pro pridáva graf odhadovanej hladiny, úplné grafy histórie, export a rýchly záznam na Apple Watch a iPhone. Každá tarifa Dial Pro obsahuje rovnaké funkcie."
+  body: "Dial Pro pridáva graf odhadovanej hladiny, graf histórie dávok, export a rýchly záznam na Apple Watch a iPhone. Každá tarifa Dial Pro obsahuje rovnaké funkcie."
   free_name: "Zadarmo"
   free_summary: "Zadarmo pre jeden aktívny liek, bez limitu v zázname dávok."
   free_features:
     - "Záznam dávok, miest vpichu, hmotnosti, nežiaducich účinkov a fotiek pokroku"
     - "Jeden aktívny liek a jedna pripomienka"
-    - "Zoznamy dávok a hmotnosti, zásoby, importy a prehľad na Apple Watch"
+    - "Zoznamy dávok, graf hmotnosti, zásoby, importy a prehľad na Apple Watch"
     - "Widgety odpočtu a pripomienky, ktoré otvoria formulár záznamu"
   pro_name: Dial Pro
-  pro_summary: "Hladina medzi dávkami, grafy celej histórie a záznam zo zápästia."
+  pro_summary: "Hladina medzi dávkami, graf histórie dávok a záznam zo zápästia."
   cta_caption: "Stiahni zadarmo a tarifu vyber v aplikácii."
   pro_features:
     - "Graf odhadovanej hladiny a widget na ploche"
-    - "Úplné grafy dávok a hmotnosti, trendy nežiaducich účinkov a porovnanie fotiek"
-    - "PDF správa, export CSV, viac liekov a viac pripomienok"
+    - "Graf histórie dávok, trendy nežiaducich účinkov a porovnanie fotiek"
+    - "PDF správa, export CSV a viac pripomienok"
     - "Rýchly záznam a Complications na Apple Watch plus záznam jedným klepnutím na iPhone"
   options_label: "Voľby tarify Dial Pro"
   lifetime_name: "Lifetime"
@@ -175,7 +175,7 @@ privacy:
 availability:
   kicker: "Stiahnuť Dial"
   heading: "Teraz v App Store."
-  body: "Dial je na stiahnutie zadarmo, účet zakladať nemusíš. Dial Pro pridáva graf odhadovanej hladiny, úplné grafy histórie, export PDF a CSV a rýchly záznam z Apple Watch a iPhonu."
+  body: "Dial je na stiahnutie zadarmo, účet zakladať nemusíš. Dial Pro pridáva graf odhadovanej hladiny, graf histórie dávok, export PDF a CSV a rýchly záznam z Apple Watch a iPhonu."
 
 trademarks: "Ozempic, Wegovy, Rybelsus, Mounjaro, Byetta a Bydureon sú ochranné známky príslušných vlastníkov. Zentsu nemá väzbu na žiadnu farmaceutickú spoločnosť."
 

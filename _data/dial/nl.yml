@@ -98,8 +98,8 @@ boundary:
 
 logging:
   kicker: Snel vastleggen
-  heading: Leg medicijn, dosis en injectieplaats vast in één formulier.
-  body: "Noteer medicijn, hoeveelheid, datum, tijdstip en notities. Bij injecties zoals Ozempic, Wegovy en Mounjaro leg je ook de prikplek vast. Tabletten zoals Rybelsus leg je vast zonder plek. Dial kent semaglutide, tirzepatide, liraglutide en dulaglutide onder de merknamen die in jouw land gangbaar zijn. Exenatide en voorgeschreven, door de apotheek bereide semaglutide of tirzepatide uit een flacon leg je ook vast. Staat jouw medicijn er niet bij, voeg het dan zelf toe."
+  heading: Leg dosis en injectieplaats vast in één formulier.
+  body: "Noteer hoeveelheid, datum, tijdstip en notities. Bij injecties zoals Ozempic, Wegovy en Mounjaro leg je ook de prikplek vast. Tabletten zoals Rybelsus leg je vast zonder plek. Dial kent semaglutide, tirzepatide, liraglutide en dulaglutide onder de merknamen die in jouw land gangbaar zijn. Exenatide en voorgeschreven, door de apotheek bereide semaglutide of tirzepatide uit een flacon leg je ook vast. Staat jouw medicijn er niet bij, voeg het dan zelf toe."
   checklist:
     - Een invoer bewerken als iets verandert
     - Injectieplaatsen koppelen aan elke dosis
@@ -107,8 +107,8 @@ logging:
 
 history:
   kicker: Dial Pro · Historie en trends
-  heading: Grafieken van dosis, gewicht en bijwerkingen.
-  body: Lijsten van dosis, gewicht en bijwerkingen blijven gratis. Dial Pro voegt de grafieken toe.
+  heading: De grafiek van de dosisgeschiedenis en bijwerkingstrends.
+  body: Lijsten van dosis en bijwerkingen en de gewichtsgrafiek blijven gratis. Dial Pro voegt de grafiek van de dosisgeschiedenis en bijwerkingstrends toe.
   history_card_title: Dosis- en gewichtshistorie
   history_card_note: Wijzigingen bekijken in het bereik dat je kiest.
   side_effects_card_title: Bijwerkingstrends
@@ -163,7 +163,7 @@ plans:
   kicker: Gratis en Dial Pro
   heading: Gebruik de basis gratis.
   body:
-    Dial Pro voegt de grafiek van de geschatte spiegel, de volledige historiegrafieken,
+    Dial Pro voegt de grafiek van de geschatte spiegel, de grafiek van de dosisgeschiedenis,
     export en snel vastleggen op Apple Watch en iPhone toe. Elk Dial Pro-plan heeft
     dezelfde functies.
   free_name: Gratis
@@ -171,15 +171,15 @@ plans:
   free_features:
     - Doses, injectieplaatsen, gewicht, bijwerkingen en voortgangsfoto's vastleggen
     - Eén actief medicijn en één herinnering
-    - Dosis- en gewichtslijsten, voorraad, import en het overzicht op Apple Watch
+    - Dosislijsten, de gewichtsgrafiek, voorraad, import en het overzicht op Apple Watch
     - Aftelwidgets en herinneringen die het formulier openen
   pro_name: Dial Pro
   pro_summary: Zie je spiegel tussen doses, zet je hele historie in grafieken en leg vast vanaf je pols.
   cta_caption: Download gratis, kies daarna een plan in de app.
   pro_features:
     - Grafiek van de geschatte spiegel en beginschermwidget
-    - Volledige dosis- en gewichtsgrafieken, bijwerkingstrends en fotovergelijking
-    - PDF-verslag, CSV-export, meerdere medicijnen en meerdere herinneringen
+    - Grafiek van de dosisgeschiedenis, bijwerkingstrends en fotovergelijking
+    - PDF-verslag, CSV-export en meerdere herinneringen
     - Snel vastleggen en complicaties op Apple Watch, plus vastleggen met één tik op iPhone
   options_label: Dial Pro-keuzes
   lifetime_name: Lifetime
@@ -213,7 +213,7 @@ availability:
   heading: Nu beschikbaar in de App Store.
   body:
     Dial is gratis te downloaden, zonder account. Dial Pro voegt de grafiek van de
-    geschatte spiegel, de volledige historiegrafieken, PDF- en CSV-export en snel
+    geschatte spiegel, de grafiek van de dosisgeschiedenis, PDF- en CSV-export en snel
     vastleggen vanaf Apple Watch en iPhone toe.
 
 trademarks: "Ozempic, Wegovy, Rybelsus, Mounjaro, Byetta en Bydureon zijn handelsmerken van hun respectieve eigenaren. Zentsu is niet verbonden aan een farmaceutisch bedrijf."

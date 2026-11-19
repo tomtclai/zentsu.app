@@ -2,6 +2,7 @@
 layout: post
 title: 'Missed a GLP-1 dose? What to write down before you call your prescriber'
 slug: missed-glp-1-dose-what-to-record
+alternate_group: dial-missed-dose
 date: 2026-09-04
 description: 'Why the time of your last dose matters, how to find it in Dial, and what to log before you ask your prescriber what to do. Not medical advice.'
 image:

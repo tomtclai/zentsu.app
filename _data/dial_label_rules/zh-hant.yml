@@ -1,0 +1,61 @@
+products:
+  - name: 猛健樂筆 Mounjaro KwikPen（衛部藥輸字第028800號）
+    source_url: https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E9%83%A8%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC028800%E8%99%9F
+    source_revised: 第5版，2026年9月23日更新，2026年11月19日查閱
+    rules:
+      missed_dose:
+        text: 錯過一劑時，在漏打後 4 天（96 小時）內盡快注射。已超過 4 天，就跳過這一劑，下一劑在原本預定的日期注射。兩種情況都回到原本每週一次的時程。
+        section: （第 3.1 節「用法用量」，第 14 節「病人使用須知」再寫一次）
+      change_day:
+        text: 有必要時可以更改每週注射的日期，條件是兩劑之間至少間隔 3 天（72 小時）。
+        section: （第 3.1 節「用法用量」）
+  - name: 猛健樂注射劑 Mounjaro 單次劑量注射筆（衛部藥輸字第028463號）
+    source_url: https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E9%83%A8%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC028463%E8%99%9F
+    source_revised: 第3版，2024年10月16日更新，2026年11月19日查閱
+    rules:
+      missed_dose:
+        text: 錯過一劑時，在漏打後 4 天（96 小時）內盡快注射。已超過 4 天，就跳過這一劑，下一劑在原本預定的日期注射。兩種情況都回到原本每週一次的時程。
+        section: （第 3.1 節「用法用量」，第 14 節「病人使用須知」再寫一次）
+      change_day:
+        text: 有必要時可以更改每週注射的日期，條件是兩劑之間至少間隔 3 天（72 小時）。
+        section: （第 3.1 節「用法用量」）
+  - name: 猛健樂注射劑小瓶 Mounjaro 小瓶（衛部藥輸字第028774號）
+    source_url: https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E9%83%A8%E8%97%A5%E8%BC%B8%E5%AD%97%E7%AC%AC028774%E8%99%9F
+    source_revised: 第6版，2025年2月25日更新，2026年11月19日查閱
+    rules:
+      missed_dose:
+        text: 錯過一劑時，在漏打後 4 天（96 小時）內盡快注射。已超過 4 天，就跳過這一劑，下一劑在原本預定的日期注射。兩種情況都回到原本每週一次的時程。
+        section: （第 3.1 節「用法用量」，第 14 節「病人使用須知」再寫一次）
+      change_day:
+        text: 有必要時可以更改每週注射的日期，條件是兩劑之間至少間隔 3 天（72 小時）。
+        section: （第 3.1 節「用法用量」）
+  - name: 週纖達單劑量預充填注射筆 Wegovy（衛部菌疫輸字第001219號）
+    source_url: https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E9%83%A8%E8%8F%8C%E7%96%AB%E8%BC%B8%E5%AD%97%E7%AC%AC001219%E8%99%9F
+    source_revised: 第14版，2026年5月5日更新，2026年11月19日查閱
+    rules:
+      missed_dose:
+        text: 錯過一劑時，在 5 天內盡快注射。超過 5 天就跳過，依原訂時程注射下一劑，之後回到每週一次的時程。同一段另有一句，談的是錯過更多劑量後重新開始時的起始劑量。
+        section: （第 3.1 節「用法用量」中的「錯過劑量」）
+      change_day:
+        text: 必要時可以變更每週注射的日期，但兩次注射至少間隔 3 天（超過 72 小時）。選定新的注射日之後，繼續每週注射一次。
+        section: （第 3.1 節「用法用量」中的「給藥方式」）
+  - name: 週纖達諾特筆 Wegovy FlexTouch（衛部菌疫輸字第001225號）
+    source_url: https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E9%83%A8%E8%8F%8C%E7%96%AB%E8%BC%B8%E5%AD%97%E7%AC%AC001225%E8%99%9F
+    source_revised: 第16版，2026年9月22日更新，2026年11月19日查閱
+    rules:
+      missed_dose:
+        text: 錯過一劑時，在 5 天內盡快注射。超過 5 天就跳過，依原訂時程注射下一劑，之後回到每週一次的時程。同一段另有一句，談的是錯過更多劑量後重新開始時的起始劑量。
+        section: （第 3.1 節「用法用量」中的「錯過劑量」）
+      change_day:
+        text: 必要時可以變更每週注射的日期，但兩次注射至少間隔 3 天（超過 72 小時）。選定新的注射日之後，繼續每週注射一次。
+        section: （第 3.1 節「用法用量」中的「給藥方式」）
+  - name: 胰妥讚注射劑 Ozempic（衛部菌疫輸字第001107號）
+    source_url: https://mcp.fda.gov.tw/im_detail_1/%E8%A1%9B%E9%83%A8%E8%8F%8C%E7%96%AB%E8%BC%B8%E5%AD%97%E7%AC%AC001107%E8%99%9F
+    source_revised: 第12版，2026年1月28日更新，2026年11月19日查閱
+    rules:
+      missed_dose:
+        text: 錯過一劑時，在 5 天內盡快注射。超過 5 天就跳過，依原訂時程注射下一劑，之後回到每週一次的時程。
+        section: （第 3.1 節「用法用量」）
+      change_day:
+        text: 必要時可以改變每週注射的日期，但兩次注射之間至少相隔 3 天（超過 72 小時）。選定新的注射日之後，繼續每週注射一次。
+        section: （第 3.1 節「用法用量」中的「改變注射日」）

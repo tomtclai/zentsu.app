@@ -1,6 +1,11 @@
 /* Dial record-keeping guides: /dial/printable-dose-log/, /dial/injection-site-rotation/,
    and their localized copies. Loaded after shared.css. */
 
+.dial-guide-article p a,
+.dial-guide-article li a {
+  text-decoration: underline;
+}
+
 .dial-guide-byline {
   display: flex;
   flex-wrap: wrap;
@@ -124,6 +129,10 @@ article .dial-guide-boundary {
 .dial-guide-cite {
   white-space: nowrap;
   color: var(--muted);
+}
+
+.dial-guide-table--stack .dial-guide-cite {
+  white-space: normal;
 }
 
 .dial-guide-figure {

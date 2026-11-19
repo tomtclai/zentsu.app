@@ -98,8 +98,8 @@ boundary:
 
 logging:
   kicker: Schnelles Erfassen
-  heading: Medikament, Dosis und Injektionsstelle in einem Formular erfassen.
-  body: "Erfasse Medikament, Menge, Datum, Uhrzeit und Notizen. Bei Injektionen wie Ozempic, Wegovy und Mounjaro kommt die Stelle dazu. Tabletten wie Rybelsus erfasst du ohne Injektionsstelle. Dial kennt Semaglutid, Tirzepatid, Liraglutid und Dulaglutid mit regionalen Markennamen. Orforglipron, Exenatid und verordnetes Semaglutid oder Tirzepatid aus der Durchstechflasche erfasst du auch. Fehlende Medikamente legst du selbst an."
+  heading: Dosis und Injektionsstelle in einem Formular erfassen.
+  body: "Erfasse Menge, Datum, Uhrzeit und Notizen. Bei Injektionen wie Ozempic, Wegovy und Mounjaro kommt die Stelle dazu. Tabletten wie Rybelsus erfasst du ohne Injektionsstelle. Dial kennt Semaglutid, Tirzepatid, Liraglutid und Dulaglutid mit regionalen Markennamen. Orforglipron, Exenatid und verordnetes Semaglutid oder Tirzepatid aus der Durchstechflasche erfasst du auch. Fehlende Medikamente legst du selbst an."
   checklist:
     - Einen Eintrag bearbeiten, wenn sich etwas ändert
     - Injektionsstellen je Dosis speichern
@@ -107,8 +107,8 @@ logging:
 
 history:
   kicker: Dial Pro · Verlauf und Trends
-  heading: Dosis-, Gewichts- und Nebenwirkungsdiagramme aus Ihren Einträgen.
-  body: Dosis-, Gewichts- und Nebenwirkungslisten bleiben kostenlos. Dial Pro ergänzt die Diagramme.
+  heading: Dosisverlaufsdiagramm und Nebenwirkungstrends aus Ihren Einträgen.
+  body: Dosis- und Nebenwirkungslisten und das Gewichtsdiagramm bleiben kostenlos. Dial Pro ergänzt das Dosisverlaufsdiagramm und die Nebenwirkungstrends.
   history_card_title: Dosis- und Gewichtsverlauf
   history_card_note: Änderungen in dem Zeitraum ansehen, den Sie wählen.
   side_effects_card_title: Nebenwirkungstrends
@@ -163,23 +163,23 @@ plans:
   kicker: Kostenlos und Dial Pro
   heading: Die Basis kostenlos nutzen.
   body:
-    Dial Pro ergänzt das Diagramm zum geschätzten Spiegel, die vollständigen
-    Verlaufsdiagramme, Exporte und das schnelle Erfassen auf Apple Watch und iPhone.
+    Dial Pro ergänzt das Diagramm zum geschätzten Spiegel, das
+    Dosisverlaufsdiagramm, Exporte und das schnelle Erfassen auf Apple Watch und iPhone.
     Jeder Dial-Pro-Plan enthält dieselben Funktionen.
   free_name: Kostenlos
   free_summary: Kostenlos für ein aktives Medikament, ohne Limit beim Dosiprotokoll.
   free_features:
     - Dosen, Injektionsstellen, Gewicht, Nebenwirkungen und Fortschrittsfotos erfassen
     - Ein aktives Medikament und eine Erinnerung
-    - Dosis- und Gewichtslisten, Bestand, Importe und der Blick auf der Apple Watch
+    - Dosislisten, das Gewichtsdiagramm, Bestand, Importe und der Blick auf der Apple Watch
     - Countdown-Widgets und Erinnerungen, die das Erfassungsformular öffnen
   pro_name: Dial Pro
   pro_summary: Den Spiegel zwischen den Dosen sehen, den ganzen Verlauf als Diagramm und vom Handgelenk erfassen.
   cta_caption: Kostenlos laden, den Plan dann in der App wählen.
   pro_features:
     - Diagramm zum geschätzten Spiegel und Home-Bildschirm-Widget
-    - Vollständige Dosis- und Gewichtsdiagramme, Nebenwirkungstrends und Fotovergleich
-    - PDF-Bericht, CSV-Export, mehrere Medikamente und mehrere Erinnerungen
+    - Dosisverlaufsdiagramm, Nebenwirkungstrends und Fotovergleich
+    - PDF-Bericht, CSV-Export und mehrere Erinnerungen
     - Schnelles Erfassen und Komplikationen auf der Apple Watch, plus Erfassen mit einem Tipp auf dem iPhone
   options_label: Dial-Pro-Planoptionen
   lifetime_name: Lebenszeit
@@ -213,7 +213,7 @@ availability:
   heading: Jetzt im App Store.
   body:
     Dial kannst du kostenlos laden, ohne Konto. Dial Pro ergänzt das Diagramm zum
-    geschätzten Spiegel, die vollständigen Verlaufsdiagramme, PDF- und CSV-Export und
+    geschätzten Spiegel, das Dosisverlaufsdiagramm, PDF- und CSV-Export und
     das schnelle Erfassen von Apple Watch und iPhone.
 
 trademarks: "Ozempic, Wegovy, Rybelsus, Mounjaro, Byetta und Bydureon sind Marken ihrer jeweiligen Inhaber. Zentsu ist mit keinem Pharmaunternehmen verbunden."

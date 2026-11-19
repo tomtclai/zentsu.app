@@ -83,8 +83,8 @@ boundary:
 
 logging:
   kicker: "Gyors rögzítés"
-  heading: "Rögzítsd a gyógyszert, az adagot és az injekcióhelyet egy űrlapon."
-  body: "Írd be a gyógyszert, a mennyiséget, a dátumot, az időt és a jegyzeteidet. Az Ozempichez, a Wegovyhoz és a Mounjaróhoz hasonló injekcióknál a beadás helye is szerepel. A Rybelsushoz hasonló tabletták hely nélkül rögzülnek. A Dial a szemaglutidot, tirzepatidot, liraglutidot és dulaglutidot a Magyarországon használt márkanéven listázza. Az exenatidot és a felírt, gyógyszertári szemaglutidot vagy tirzepatidot tartalmazó injekciós üvegből származó készítményt is rögzíti. Ha a gyógyszered nincs a listán, adj hozzá egyénit."
+  heading: "Rögzítsd az adagot és az injekcióhelyet egy űrlapon."
+  body: "Írd be a mennyiséget, a dátumot, az időt és a jegyzeteidet. Az Ozempichez, a Wegovyhoz és a Mounjaróhoz hasonló injekcióknál a beadás helye is szerepel. A Rybelsushoz hasonló tabletták hely nélkül rögzülnek. A Dial a szemaglutidot, tirzepatidot, liraglutidot és dulaglutidot a Magyarországon használt márkanéven listázza. Az exenatidot és a felírt, gyógyszertári szemaglutidot vagy tirzepatidot tartalmazó injekciós üvegből származó készítményt is rögzíti. Ha a gyógyszered nincs a listán, adj hozzá egyénit."
   checklist:
     - "Szerkessz bejegyzést, ha valami változik"
     - "Írd az injekcióhelyet minden adaghoz"
@@ -92,8 +92,8 @@ logging:
 
 history:
   kicker: "Dial Pro · Előzmények és trendek"
-  heading: "Adag-, testsúly- és mellékhatás-grafikonok a bejegyzéseidből."
-  body: "Az adag-, testsúly- és mellékhatáslisták ingyenesek maradnak. A Dial Pro a grafikonokat adja hozzá."
+  heading: "Adagelőzmény-grafikon és mellékhatás-trendek a bejegyzéseidből."
+  body: "Az adag- és mellékhatáslisták, valamint a testsúlygrafikon ingyenesek maradnak. A Dial Pro az adagelőzmény-grafikont és a mellékhatás-trendeket adja hozzá."
   history_card_title: "Adag- és testsúlyelőzmény"
   history_card_note: "Nézd át a változásokat a választott tartományban."
   side_effects_card_title: "Mellékhatás-trendek"
@@ -131,21 +131,21 @@ supporting:
 plans:
   kicker: "Ingyenes és Dial Pro"
   heading: "Használd az alapnyilvántartást ingyen."
-  body: "A Dial Pro hozzáadja a becsült szint grafikonját, a teljes előzménygrafikonokat, az exportot és a gyors rögzítést Apple Watchon és iPhone-on. Minden Dial Pro csomag ugyanazokat a funkciókat tartalmazza."
+  body: "A Dial Pro hozzáadja a becsült szint grafikonját, az adagelőzmény-grafikont, az exportot és a gyors rögzítést Apple Watchon és iPhone-on. Minden Dial Pro csomag ugyanazokat a funkciókat tartalmazza."
   free_name: "Ingyenes"
   free_summary: "Ingyenes egy aktív gyógyszerhez, az adagnaplónak nincs felső határa."
   free_features:
     - "Adagok, injekcióhelyek, testsúly, mellékhatások és haladási fotók rögzítése"
     - "Egy aktív gyógyszer és egy emlékeztető"
-    - "Adag- és testsúlylisták, készlet, import és az Apple Watch áttekintés"
+    - "Adaglisták, testsúlygrafikon, készlet, import és az Apple Watch áttekintés"
     - "Visszaszámláló widgetek és emlékeztetők, amelyek megnyitják az űrlapot"
   pro_name: Dial Pro
-  pro_summary: "Nézd a szintedet az adagok között, ábrázold a teljes előzményt, és rögzíts a csuklódról."
+  pro_summary: "Nézd a szintedet az adagok között, ábrázold az adagelőzményt, és rögzíts a csuklódról."
   cta_caption: "Töltsd le ingyen, aztán válassz csomagot az appban."
   pro_features:
     - "Becsült szint grafikonja és widget a Főképernyőn"
-    - "Teljes adag- és testsúlygrafikonok, mellékhatás-trendek és fotóösszehasonlítás"
-    - "PDF-jelentés, CSV-export, több gyógyszer és több emlékeztető"
+    - "Adagelőzmény-grafikon, mellékhatás-trendek és fotóösszehasonlítás"
+    - "PDF-jelentés, CSV-export és több emlékeztető"
     - "Gyors rögzítés és komplikációk Apple Watchon, valamint egy koppintásos rögzítés iPhone-on"
   options_label: "Dial Pro csomagválaszték"
   lifetime_name: "Lifetime"
@@ -175,6 +175,6 @@ privacy:
 availability:
   kicker: "A Dial letöltése"
   heading: "Most az App Store-ban."
-  body: "A Dial ingyenesen letölthető, nem kell fiókot nyitnod. A Dial Pro hozzáadja a becsült szint grafikonját, a teljes előzménygrafikonokat, a PDF- és CSV-exportot, és a gyors rögzítést Apple Watchról és iPhone-ról."
+  body: "A Dial ingyenesen letölthető, nem kell fiókot nyitnod. A Dial Pro hozzáadja a becsült szint grafikonját, az adagelőzmény-grafikont, a PDF- és CSV-exportot, és a gyors rögzítést Apple Watchról és iPhone-ról."
 
 trademarks: "Az Ozempic, a Wegovy, a Rybelsus, a Mounjaro, a Byetta és a Bydureon a jogosultjaik védjegyei. A Zentsu nem áll kapcsolatban egyetlen gyógyszercéggel sem."

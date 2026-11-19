@@ -83,8 +83,8 @@ boundary:
 
 logging:
   kicker: "Rychlý záznam"
-  heading: "Zapiš lék, dávku a místo vpichu v jednom formuláři."
-  body: "Zapiš lék, množství, datum, čas a poznámky. U injekcí jako Ozempic, Wegovy a Mounjaro patří i místo vpichu. Tablety jako Rybelsus se zapisují bez místa. Dial uvádí semaglutid, tirzepatid, liraglutid a dulaglutid pod názvy používanými v Česku. Zapíšeš i exenatid a předepsaný, v lékárně připravený semaglutid nebo tirzepatid z lahvičky. Chybí-li tvůj lék, přidej vlastní."
+  heading: "Zapiš dávku a místo vpichu v jednom formuláři."
+  body: "Zapiš množství, datum, čas a poznámky. U injekcí jako Ozempic, Wegovy a Mounjaro patří i místo vpichu. Tablety jako Rybelsus se zapisují bez místa. Dial uvádí semaglutid, tirzepatid, liraglutid a dulaglutid pod názvy používanými v Česku. Zapíšeš i exenatid a předepsaný, v lékárně připravený semaglutid nebo tirzepatid z lahvičky. Chybí-li tvůj lék, přidej vlastní."
   checklist:
     - "Upravit záznam, když se něco změní"
     - "Místo vpichu u každé dávky"
@@ -92,8 +92,8 @@ logging:
 
 history:
   kicker: "Dial Pro · Historie a trendy"
-  heading: "Grafy dávek, hmotnosti a nežádoucích účinků z tvých záznamů."
-  body: "Seznamy dávek, hmotnosti a nežádoucích účinků zůstávají zdarma. Dial Pro přidává grafy."
+  heading: "Graf historie dávek a trendy nežádoucích účinků z tvých záznamů."
+  body: "Seznamy dávek a nežádoucích účinků i graf hmotnosti zůstávají zdarma. Dial Pro přidává graf historie dávek a trendy nežádoucích účinků."
   history_card_title: "Historie dávek a hmotnosti"
   history_card_note: "Prohlédni si změny v rozsahu, který zvolíš."
   side_effects_card_title: "Trendy nežádoucích účinků"
@@ -131,21 +131,21 @@ supporting:
 plans:
   kicker: "Zdarma a Dial Pro"
   heading: "Základní záznam používej zdarma."
-  body: "Dial Pro přidává graf odhadované hladiny, úplné grafy historie, exporty a rychlý záznam na Apple Watch a iPhonu. Každý tarif Dial Pro má stejné funkce."
+  body: "Dial Pro přidává graf odhadované hladiny, graf historie dávek, exporty a rychlý záznam na Apple Watch a iPhonu. Každý tarif Dial Pro má stejné funkce."
   free_name: "Zdarma"
   free_summary: "Zdarma pro jeden aktivní lék, bez limitu v záznamu dávek."
   free_features:
     - "Záznam dávek, míst vpichu, hmotnosti, nežádoucích účinků a fotek pokroku"
     - "Jeden aktivní lék a jedna připomínka"
-    - "Seznamy dávek a hmotnosti, zásoby, importy a přehled na Apple Watch"
+    - "Seznamy dávek, graf hmotnosti, zásoby, importy a přehled na Apple Watch"
     - "Widgety odpočtu a připomínky, které otevřou formulář záznamu"
   pro_name: Dial Pro
-  pro_summary: "Hladina mezi dávkami, grafy celé historie a záznam ze zápěstí."
+  pro_summary: "Hladina mezi dávkami, graf historie dávek a záznam ze zápěstí."
   cta_caption: "Stáhni zdarma a tarif vyber v aplikaci."
   pro_features:
     - "Graf odhadované hladiny a widget na ploše"
-    - "Úplné grafy dávek a hmotnosti, trendy nežádoucích účinků a porovnání fotek"
-    - "PDF zpráva, export CSV, více léků a více připomínek"
+    - "Graf historie dávek, trendy nežádoucích účinků a porovnání fotek"
+    - "PDF zpráva, export CSV a více připomínek"
     - "Rychlý záznam a komplikace na Apple Watch plus záznam jedním klepnutím na iPhonu"
   options_label: "Volby tarifu Dial Pro"
   lifetime_name: "Lifetime"
@@ -175,6 +175,6 @@ privacy:
 availability:
   kicker: "Stáhnout Dial"
   heading: "Teď v App Store."
-  body: "Dial je ke stažení zdarma, účet zakládat nemusíš. Dial Pro přidává graf odhadované hladiny, úplné grafy historie, export PDF a CSV a rychlý záznam z Apple Watch a iPhonu."
+  body: "Dial je ke stažení zdarma, účet zakládat nemusíš. Dial Pro přidává graf odhadované hladiny, graf historie dávek, export PDF a CSV a rychlý záznam z Apple Watch a iPhonu."
 
 trademarks: "Ozempic, Wegovy, Rybelsus, Mounjaro, Byetta a Bydureon jsou ochranné známky příslušných vlastníků. Zentsu nemá vazbu na žádnou farmaceutickou společnost."

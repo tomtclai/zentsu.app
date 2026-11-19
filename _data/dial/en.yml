@@ -1,6 +1,6 @@
 schema_description:
   A GLP-1 dose tracker for iPhone and Apple Watch with a free phone log and Pro
-  tools for Watch logging, charts, and PDF export.
+  tools for Watch logging, the dose history chart, and PDF export.
 
 app_store_badge_alt: Download Dial on the App Store
 
@@ -99,7 +99,7 @@ boundary:
 logging:
   kicker: Quick logging
   heading: Put the details in one dose entry.
-  body: "Record medication, amount, date, time, and notes. Injections such as Ozempic, Wegovy, Mounjaro and Zepbound include a site. Tablets such as Rybelsus log without one. Dial lists semaglutide, tirzepatide, liraglutide, and dulaglutide with regional brand names. It also logs orforglipron (Foundayo in the U.S.), exenatide, and prescribed compounded semaglutide or tirzepatide from a vial. Add a custom medication if yours is missing."
+  body: "Record the amount, date, time, and notes. Injections such as Ozempic, Wegovy, Mounjaro and Zepbound include a site. Tablets such as Rybelsus log without one. Dial lists semaglutide, tirzepatide, liraglutide, and dulaglutide with regional brand names. It also logs orforglipron (Foundayo in the U.S.), exenatide, and prescribed compounded semaglutide or tirzepatide from a vial. Add a custom medication if yours is missing."
   checklist:
     - Edit an entry when something changes
     - Keep injection sites attached to each dose
@@ -108,7 +108,7 @@ logging:
 history:
   kicker: Dial Pro · History and trends
   heading: See the patterns in your entries.
-  body: Dose, weight, and side-effect lists stay free. Dial Pro adds the charts.
+  body: Dose and side-effect lists and the weight chart stay free. Dial Pro adds the dose history chart and side-effect trends.
   history_card_title: Dose and weight history
   history_card_note: Review changes across the range you choose.
   side_effects_card_title: Side-effect trends
@@ -160,22 +160,23 @@ plans:
   kicker: Free and Dial Pro
   heading: Start with the free phone log.
   body:
-    The free app records doses on your phone. Dial Pro adds Watch logging, charts, and PDF or
-    CSV export. Every Dial Pro plan includes the same features.
+    The free app records doses on your phone and includes the weight chart. Dial Pro adds Watch
+    logging, the dose history chart, and PDF or CSV export. Every Dial Pro plan includes the
+    same features.
   free_name: Free
   free_summary: Free for one active medication, with no cap on phone log entries.
   free_features:
     - Log doses, injection sites, weight, side effects, and progress photos
     - One active medication and one reminder
-    - Dose and weight lists, inventory, imports, and the Apple Watch glance
+    - Dose lists, the weight chart, inventory, imports, and the Apple Watch glance
     - Countdown widgets and reminders that open the log form
   pro_name: Dial Pro
   pro_summary: Log from your wrist, chart your history, and export a record when you need it.
   cta_caption: Download free, then choose a plan inside the app.
   pro_features:
     - Estimated-level chart and Home Screen level widget
-    - Full dose and weight charts, side-effect trends, and photo comparison
-    - PDF report, CSV export, multiple medications, and multiple reminders
+    - Dose history chart, side-effect trends, and photo comparison
+    - PDF report, CSV export, and multiple reminders
     - Apple Watch quick-log and complications, plus one-tap iPhone logging
   options_label: Dial Pro plan choices
   lifetime_name: Lifetime
@@ -208,7 +209,7 @@ availability:
   kicker: Get Dial
   heading: Start your free phone log.
   body:
-    Dial is free to download, with no account to create. Dial Pro adds Watch logging, charts,
-    and PDF or CSV export.
+    Dial is free to download, with no account to create. Dial Pro adds Watch logging, the dose
+    history chart, and PDF or CSV export.
 
 trademarks: "Ozempic, Wegovy, Rybelsus, Mounjaro, Zepbound, and Foundayo are trademarks of their respective owners. Zentsu is not affiliated with any pharmaceutical company."

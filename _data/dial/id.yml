@@ -83,8 +83,8 @@ boundary:
 
 logging:
   kicker: "Pencatatan cepat"
-  heading: "Catat obat, dosis, dan lokasi suntikan dalam satu formulir."
-  body: "Catat obat, jumlah, tanggal, waktu, dan catatan. Suntikan seperti Ozempic, Wegovy, dan Mounjaro menyertakan lokasi. Tablet seperti Rybelsus dicatat tanpa lokasi. Dial mencantumkan semaglutide, tirzepatide, liraglutide, dan dulaglutide dengan nama merek di wilayah Anda. Orforglipron, exenatide, serta semaglutide atau tirzepatide racikan dari resep dalam vial juga bisa dicatat. Tambahkan obat kustom jika obat Anda tidak ada dalam daftar."
+  heading: "Catat dosis dan lokasi suntikan dalam satu formulir."
+  body: "Catat jumlah, tanggal, waktu, dan catatan. Suntikan seperti Ozempic, Wegovy, dan Mounjaro menyertakan lokasi. Tablet seperti Rybelsus dicatat tanpa lokasi. Dial mencantumkan semaglutide, tirzepatide, liraglutide, dan dulaglutide dengan nama merek di wilayah Anda. Orforglipron, exenatide, serta semaglutide atau tirzepatide racikan dari resep dalam vial juga bisa dicatat. Tambahkan obat kustom jika obat Anda tidak ada dalam daftar."
   checklist:
     - "Sunting entri ketika sesuatu berubah"
     - "Simpan lokasi suntikan di setiap dosis"
@@ -92,8 +92,8 @@ logging:
 
 history:
   kicker: "Dial Pro · Riwayat dan tren"
-  heading: "Grafik dosis, berat, dan efek samping dari entri Anda."
-  body: "Daftar dosis, berat, dan efek samping tetap gratis. Dial Pro menambah grafiknya."
+  heading: "Grafik riwayat dosis dan tren efek samping dari entri Anda."
+  body: "Daftar dosis dan efek samping serta grafik berat tetap gratis. Dial Pro menambah grafik riwayat dosis dan tren efek samping."
   history_card_title: "Riwayat dosis dan berat"
   history_card_note: "Tinjau perubahan pada rentang yang Anda pilih."
   side_effects_card_title: "Tren efek samping"
@@ -131,21 +131,21 @@ supporting:
 plans:
   kicker: "Gratis dan Dial Pro"
   heading: "Pakai pelacak inti secara gratis."
-  body: "Dial Pro menambah grafik tingkat perkiraan, grafik riwayat lengkap, ekspor, dan pencatatan cepat di Apple Watch dan iPhone. Setiap paket Dial Pro mencakup fitur yang sama."
+  body: "Dial Pro menambah grafik tingkat perkiraan, grafik riwayat dosis, ekspor, dan pencatatan cepat di Apple Watch dan iPhone. Setiap paket Dial Pro mencakup fitur yang sama."
   free_name: "Gratis"
   free_summary: "Gratis untuk satu obat aktif, catatan dosis tidak dibatasi."
   free_features:
     - "Catat dosis, lokasi suntikan, berat, efek samping, dan foto perkembangan"
     - "Satu obat aktif dan satu pengingat"
-    - "Daftar dosis dan berat, persediaan, impor, dan tinjauan Apple Watch"
+    - "Daftar dosis, grafik berat, persediaan, impor, dan tinjauan Apple Watch"
     - "Widget hitung mundur dan pengingat yang membuka formulir"
   pro_name: Dial Pro
   pro_summary: "Lihat tingkat antar dosis, lihat riwayat lengkap dalam grafik, dan catat dari pergelangan."
   cta_caption: "Unduh gratis, lalu pilih paket di dalam aplikasi."
   pro_features:
     - "Grafik tingkat perkiraan dan widget Layar Utama"
-    - "Grafik dosis dan berat lengkap, tren efek samping, dan perbandingan foto"
-    - "Laporan PDF, ekspor CSV, beberapa obat, dan beberapa pengingat"
+    - "Grafik riwayat dosis, tren efek samping, dan perbandingan foto"
+    - "Laporan PDF, ekspor CSV, dan beberapa pengingat"
     - "Pencatatan cepat dan komplikasi di Apple Watch, serta pencatatan satu ketuk di iPhone"
   options_label: "Pilihan paket Dial Pro"
   lifetime_name: "Lifetime"
@@ -175,6 +175,6 @@ privacy:
 availability:
   kicker: "Unduh Dial"
   heading: "Sekarang di App Store."
-  body: "Dial gratis diunduh, tanpa perlu membuat akun. Dial Pro menambah grafik tingkat perkiraan, grafik riwayat lengkap, ekspor PDF dan CSV, dan pencatatan cepat dari Apple Watch dan iPhone."
+  body: "Dial gratis diunduh, tanpa perlu membuat akun. Dial Pro menambah grafik tingkat perkiraan, grafik riwayat dosis, ekspor PDF dan CSV, dan pencatatan cepat dari Apple Watch dan iPhone."
 
 trademarks: "Ozempic, Wegovy, Rybelsus, dan Mounjaro adalah merek dagang milik pemiliknya masing-masing. Zentsu tidak berafiliasi dengan perusahaan farmasi mana pun."
