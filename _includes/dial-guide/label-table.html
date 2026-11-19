@@ -1,0 +1,43 @@
+{%- assign label_language = include.lang | default: page.lang -%} {%- assign label_products =
+site.data.dial_label_rules[label_language].products -%} {%- assign label_topic = include.topic -%}
+{%- assign label_table_id = 'label-' | append: label_topic -%} {%- if include.id -%}{%- assign
+label_table_id = include.id -%}{%- endif -%} {%- capture label_rows -%} {%- for label_product in
+label_products -%} {%- assign label_rule = label_product.rules[label_topic] -%} {%- if
+label_rule.text %}
+<tr>
+  <th scope="row">{{ label_product.name }}</th>
+  <td data-label="{{ include.rule_heading | escape }}">
+    {{ label_rule.text }}{% if label_rule.section %}
+    <span class="dial-guide-cite">{{ label_rule.section }}</span>{% endif %}
+  </td>
+  {%- if include.source_heading %}
+  <td data-label="{{ include.source_heading | escape }}">
+    <a href="{{ label_product.source_url }}" rel="noopener">{{ label_product.source_revised }}</a>
+  </td>
+  {%- endif %}
+</tr>
+{%- endif -%} {%- endfor -%} {%- endcapture -%} {%- if label_rows != '' -%}
+<section
+  class="dial-guide-table-scroll"
+  aria-labelledby="{{ label_table_id }}-caption"
+  tabindex="0"
+>
+  <table class="dial-guide-table dial-guide-table--stack">
+    <caption id="{{ label_table_id }}-caption">
+      {{ include.caption }}
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">{{ include.product_heading }}</th>
+        <th scope="col">{{ include.rule_heading }}</th>
+        {%- if include.source_heading %}
+        <th scope="col">{{ include.source_heading }}</th>
+        {%- endif %}
+      </tr>
+    </thead>
+    <tbody>
+      {{- label_rows }}
+    </tbody>
+  </table>
+</section>
+{%- endif -%}

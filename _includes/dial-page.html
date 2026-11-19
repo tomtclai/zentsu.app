@@ -28,7 +28,7 @@
       {% include dial/level.html %}
       {%- include dial/boundary.html %}
       {% include dial/supporting.html %}
-      {%- if page.lang == 'en' %}{% include dial/guide.html %}{% endif -%}
+      {%- if page.lang == 'en' %}{% include dial/guide.html %}{% else %}{% include dial/guide-list.html %}{% endif -%}
       {% include dial/plans.html %}
       {% include dial/privacy.html %}
       {% include dial/faq.html %}

@@ -6,6 +6,14 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+
+- Shared plumbing for local-language Dial guides. A guide sets `store_campaign` (its own App Store campaign token, 30 characters or fewer) and optionally `store_ppid` (a custom product page), and `dial-guide/store-url.html` builds one URL with a single `?`. A group with no English page emits no `x-default`, and its language picker sends each country without that guide to the country's Dial page. Blog posts in a guide group now emit hreflang tags too. Localized Dial landing pages list their language's guides under the footer's "Learn" heading. `dial-guide/label-table.html` renders label rules from `_data/dial_label_rules/<lang>.yml` (schema in `_includes/dial-guide/README.md`) and renders nothing until that file exists. `validate-site.mjs` checks guides in `dial-medication-log`, `dial-missed-dose`, `dial-change-injection-day` and `dial-side-effects-log` as well as the dose log and rotation chart, maps `es-ES` to the Spain storefront, checks each guide's token, product page id and `last_modified_at` sitemap date, and fails on any App Store link with two `?`.
+
+### Fixed
+
+- The English medication-log, printable dose log and CSV import guides and `llms.txt` describe Dial 1.4.0: the weight chart and the first reminder are free, and Dial Pro adds the dose history chart.
+
 ### Removed
 
 - Removed a retired app's pages, tool landing pages, assets and validation checks. Its old URLs redirect with a 301: the privacy page to `/privacy` and the rest to `/`. The app-visibility check now requires the Press card, and `validate-site.mjs` keeps the hash check on the Mac App Store badge that the Press page uses.

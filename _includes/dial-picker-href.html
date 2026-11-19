@@ -6,6 +6,15 @@
 {%- endif -%}
 {%- assign dial_href = alternates[dial_hreflang] | default: alternates[include.page_key] | default: alternates.es -%}
 {%- unless dial_href -%}
+{%- if alternates.en -%}
 {%- assign dial_hreflang = 'en' -%}
 {%- assign dial_href = alternates.en -%}
+{%- else -%}
+{%- assign dial_landings = site.data.alternates.dial -%}
+{%- assign dial_href = dial_landings[dial_hreflang] | default: dial_landings[include.page_key] -%}
+{%- unless dial_href -%}
+{%- assign dial_hreflang = 'en' -%}
+{%- assign dial_href = dial_landings.en -%}
+{%- endunless -%}
+{%- endif -%}
 {%- endunless -%}

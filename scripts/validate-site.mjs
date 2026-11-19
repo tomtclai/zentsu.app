@@ -84,6 +84,11 @@ for (const path of htmlFiles) {
   );
   check(legacyLinks.length === 0, `${path} links to legacy HTML URLs: ${legacyLinks.join(', ')}`);
 
+  const malformedStoreLinks = [...html.matchAll(/href="(https:\/\/apps\.apple\.com\/[^"]*)"/g)]
+    .map((match) => match[1])
+    .filter((url) => (url.match(/\?/g) ?? []).length > 1);
+  check(malformedStoreLinks.length === 0, `${path} has App Store links with more than one "?": ${malformedStoreLinks.join(', ')}`);
+
   const relativeResourceUrls = [
     ...[...html.matchAll(/\b(?:href|src|poster)="([^"]+)"/g)].map((match) => match[1]),
     ...[...html.matchAll(/\bsrcset="([^"]+)"/g)].flatMap((match) =>
@@ -152,7 +157,14 @@ for (const [canonical, page] of localizedPages) {
     selfUrl === canonical,
     `${canonical} must list itself under hreflang="${page.documentLanguage}", found ${selfUrl ?? '(missing)'}`,
   );
-  check(page.alternates.has('x-default'), `${canonical} is missing an x-default alternate`);
+  if (page.alternates.has('en')) {
+    check(
+      page.alternates.get('x-default') === page.alternates.get('en'),
+      `${canonical} must point x-default at its English alternate`,
+    );
+  } else {
+    check(!page.alternates.has('x-default'), `${canonical} has no English alternate, so it must not declare x-default`);
+  }
 
   for (const [language, url] of page.alternates) {
     if (language === 'x-default') continue;
@@ -203,12 +215,24 @@ check(
   dialNav.includes('data-country="ca"') && dialNav.includes('hreflang="ca"'),
   'Canada is a country row; Catalan remains a language under Spain',
 );
-for (const guidePath of ['dial/printable-dose-log/index.html', 'ja/dial/injection-site-rotation/index.html']) {
-  const guideHtml = read(join(outputDirectory, guidePath));
+const alternateGroups = loadYaml('_data/alternates.yml');
+const dialGuideGroups = [
+  'dial-dose-log',
+  'dial-site-rotation',
+  'dial-medication-log',
+  'dial-missed-dose',
+  'dial-change-injection-day',
+  'dial-side-effects-log',
+];
+const dialGuideGroupRoutes = dialGuideGroups.flatMap((group) =>
+  Object.entries(alternateGroups[group] ?? {}).map(([lang, route]) => ({ group, lang, route })),
+);
+for (const { group, route } of dialGuideGroupRoutes) {
+  const guideHtml = read(outputPathFor(`${siteOrigin}${route}`));
   const guideNav = guideHtml.slice(guideHtml.indexOf('<nav'), guideHtml.indexOf('</nav>'));
   check(
     guideNav.includes('data-country="de"') && !guideNav.includes('href=""'),
-    `${guidePath}: every country in the picker must link to a published page of this guide`,
+    `${route} (${group}): every country in the picker must link to this guide or that country's Dial page`,
   );
 }
 check(
@@ -391,27 +415,68 @@ for (const route of [
   );
 }
 
-const dialGuideRoutes = Object.fromEntries(
-  ['dial-dose-log', 'dial-site-rotation']
-    .flatMap((group) => Object.entries(loadYaml('_data/alternates.yml')[group] ?? {}))
-    .map(([lang, route]) => [route, lang]),
-);
 check(
   !existsSync(outputPathFor(`${siteOrigin}/dial/titration-record/`)),
   '/dial/titration-record/ is unpublished (DEC-2026-07-10-dial-cut-titration) and must only redirect',
 );
-for (const [route, lang] of Object.entries(dialGuideRoutes)) {
+
+function storefrontKey(hreflang) {
+  if (hreflang === 'es-MX') return 'es';
+  if (hreflang === 'es-ES') return 'es-es';
+  return hreflang;
+}
+
+function frontMatterScalar(source, field) {
+  const frontMatter = source.match(/^---\n([\s\S]*?)\n---/)?.[1] ?? '';
+  return frontMatter.match(new RegExp(`^${field}:[ \\t]*['"]?([^'"\\n#]*?)['"]?[ \\t]*$`, 'm'))?.[1] || undefined;
+}
+
+const dialGuideSources = new Map(
+  ['dial', ...readdirSync('.').filter((name) => !/^[._]|^node_modules$/.test(name)).map((name) => join(name, 'dial'))]
+    .filter((directory) => existsSync(directory) && statSync(directory).isDirectory())
+    .flatMap((directory) => readdirSync(directory).filter((name) => /\.(html|md)$/.test(name)).map((name) => join(directory, name)))
+    .map((path) => readFileSync(path, 'utf8'))
+    .map((source) => [frontMatterScalar(source, 'permalink'), source])
+    .filter(([permalink]) => permalink),
+);
+const campaignTokenLimit = 30;
+const productPageIdPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/;
+const labelCitedGroups = new Set(['dial-dose-log', 'dial-site-rotation']);
+
+for (const { group, lang, route } of dialGuideGroupRoutes.filter(({ route }) => route.includes('/dial/'))) {
   const html = read(outputPathFor(`${siteOrigin}${route}`));
-  const country = loadYaml('_data/dial_storefronts.yml')[lang]?.country;
-  const storeUrl = `https://apps.apple.com/${country}/app/id6789408903?pt=${dialCampaign.provider_token}&ct=${dialCampaign.campaigns.blog}&mt=${dialCampaign.media_type}`;
-  check(html.includes(`href="${storeUrl}"`), `${route} App Store link must carry ct=${dialCampaign.campaigns.blog} to the ${country} storefront`);
+  const source = dialGuideSources.get(route) ?? '';
+  check(source !== '', `${route} has no source page with that permalink`);
+  const country = dialStorefronts[storefrontKey(lang)]?.country;
+  check(Boolean(country), `${route} has no Dial storefront for hreflang ${lang}`);
+  const campaign = frontMatterScalar(source, 'store_campaign') ?? dialCampaign.campaigns.blog;
+  const productPageId = frontMatterScalar(source, 'store_ppid');
+  check(
+    campaign.length <= campaignTokenLimit && /^[A-Za-z0-9._-]+$/.test(campaign),
+    `${route} store_campaign "${campaign}" must be 1 to ${campaignTokenLimit} letters, digits, dots, underscores or hyphens`,
+  );
+  check(
+    productPageId === undefined || productPageIdPattern.test(productPageId),
+    `${route} store_ppid "${productPageId}" is not a custom product page id`,
+  );
+  const productPageQuery = productPageId ? `ppid=${productPageId}&` : '';
+  const storeUrl = `https://apps.apple.com/${country}/app/id6789408903?${productPageQuery}pt=${dialCampaign.provider_token}&ct=${campaign}&mt=${dialCampaign.media_type}`;
+  check(html.includes(`href="${storeUrl}"`), `${route} App Store link must be ${storeUrl}`);
   check(
     html.includes(`affiliate-data=ct=${dialCampaign.campaigns.banner}&amp;pt=${dialCampaign.provider_token}`),
     `${route} is missing the Smart App Banner`,
   );
   check(html.includes('"@type": "Article"'), `${route} is missing its Article JSON-LD`);
   check((html.match(/<time datetime="\d{4}-\d{2}-\d{2}"\s*>/g) ?? []).length === 2, `${route} must show published and reviewed dates`);
-  check(html.includes('dailymed.nlm.nih.gov') || lang !== 'en', `${route} must cite the FDA label on DailyMed`);
+  check(
+    html.includes('dailymed.nlm.nih.gov') || lang !== 'en' || !labelCitedGroups.has(group),
+    `${route} must cite the FDA label on DailyMed`,
+  );
+  const lastModified = frontMatterScalar(source, 'last_modified_at');
+  if (lastModified) {
+    const sitemapEntry = sitemap.match(new RegExp(`<loc>${siteOrigin}${route}</loc>\\s*<lastmod>([^<]+)</lastmod>`))?.[1] ?? '';
+    check(sitemapEntry.startsWith(lastModified), `${route} sets last_modified_at ${lastModified} but the sitemap lastmod is "${sitemapEntry}"`);
+  }
   const description = html.match(/<meta name="description" content="([^"]*)"/)?.[1] ?? '';
   check(description.length > 0 && description.length < 155, `${route} meta description must be 1 to 154 characters, found ${description.length}`);
   const body = html.slice(html.indexOf('<main'), html.indexOf('</main>'));

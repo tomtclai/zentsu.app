@@ -43,15 +43,19 @@ hand-pasted into each page: charset/viewport, icons, fonts, the shared styleshee
 </title>
 <meta name="description" content="{{ page.description | escape }}" />
 <link rel="canonical" href="{{ canonical }}" />
+{%- endunless %}
 {%- assign alternates = site.data.alternates[page.alternate_group] -%}
 {%- if alternates %}
 {%- for alternate in alternates %}
 <link rel="alternate" hreflang="{{ alternate[0] }}" href="{{ alternate[1] | prepend: site.url }}" />
 {%- endfor %}
+{%- if alternates.en %}
 <link rel="alternate" hreflang="x-default" href="{{ alternates.en | prepend: site.url }}" />
+{%- endif %}
 <script type="application/json" id="zentsu-locales">{{ alternates | jsonify }}</script>
 <script src="/locale.js?v={{ site.time | date: '%s' }}"></script>
 {%- endif %}
+{%- unless seo_external %}
 
 <!-- Open Graph / social -->
 <meta property="og:type" content="{{ og_type }}" />

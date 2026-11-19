@@ -1,3 +1,5 @@
 {%- assign dial_store_campaign = site.data.dial_campaign -%}
 {%- assign dial_store_base = include.base | default: app_store_url -%}
-{{- dial_store_base -}}?pt={{- dial_store_campaign.provider_token -}}&ct={{- include.campaign -}}&mt={{- dial_store_campaign.media_type -}}
+{%- assign dial_store_page = '' -%}
+{%- if include.ppid -%}{%- assign dial_store_page = 'ppid=' | append: include.ppid | append: '&' -%}{%- endif -%}
+{{- dial_store_base -}}?{{- dial_store_page -}}pt={{- dial_store_campaign.provider_token -}}&ct={{- include.campaign -}}&mt={{- dial_store_campaign.media_type -}}
