@@ -9,9 +9,7 @@ images:
     base: dial-web-today-de
     width: 1290
     height: 2160
-    alt:
-      Heute-Bildschirm von Dial mit der nächsten Erinnerung, dem geschätzten Medikamentenspiegel
-      und einer Schaltfläche zum Erfassen einer Dosis
+    alt: 'Heute-Bildschirm von Dial mit der nächsten und der letzten Dosis, dem geschätzten Medikamentenspiegel und einer Schaltfläche zum Erfassen einer Dosis'
   level:
     base: dial-web-level-de
     width: 1290
@@ -21,7 +19,7 @@ images:
     base: dial-web-log-dose-de
     width: 1290
     height: 1800
-    alt: Dial-Dosisformular mit Feldern für Medikament, Menge, Uhrzeit und Injektionsstelle
+    alt: 'Dial-Dosisformular mit Menge, Datum und Uhrzeit und einer Körperkarte für die Injektionsstelle'
   history:
     base: dial-web-history-de
     width: 1290
@@ -45,9 +43,7 @@ images:
     base: dial-web-watch-glance-de
     width: 792
     height: 968
-    alt:
-      Dial auf der Apple Watch mit einem Zyklusring, der die Tage bis zur nächsten Dosis
-      zählt, der nächsten Erinnerung und einer Schaltfläche zum Erfassen
+    alt: 'Dial auf der Apple Watch mit einem Ring, der die Tage bis zur nächsten Dosis zählt, und einer Schaltfläche zum Erfassen'
   watch_logged:
     base: dial-web-watch-logged-de
     width: 792

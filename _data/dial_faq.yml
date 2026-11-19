@@ -124,6 +124,37 @@ es:
   - q: "¿Puedo exportar mis datos?"
     a: Dial Pro incluye un informe en PDF y una exportación a CSV. Compártelos por
       AirDrop, correo o impresión cuando tú lo decidas.
+es-es:
+  items:
+  - q: "¿Qué es Dial?"
+    a: Dial es un registro de medicamentos GLP-1 para iPhone y Apple Watch. Se descarga
+      gratis. Dial Pro añade la gráfica del historial de dosis, la exportación y el registro rápido.
+  - q: "¿Qué medicamentos admite Dial?"
+    a: "Dial admite semaglutida, tirzepatida, liraglutida y dulaglutida con las marcas de cada país, incluidos comprimidos como Rybelsus. También puedes anotar orforglipron y exenatida. Si el tuyo no está en la lista, añádelo como medicamento personalizado."
+  - q: "¿Dial calcula las dosis?"
+    a: Dial no calcula ni sugiere la siguiente dosis. Guarda lo que registras y, para los
+      inyectables compatibles, puede trazar un nivel estimado a partir de esas entradas. Los
+      comprimidos no tienen curva de nivel. El conversor de unidades opcional solo hace
+      cuentas con los valores de mg y mg/ml que introduces.
+  - q: "¿Dónde se guardan mis registros?"
+    a: Los registros se quedan en tu dispositivo. iCloud es opcional y, si lo activas, usa
+      tu propia base de datos privada de CloudKit. Zentsu no gestiona ningún servidor que
+      almacene tus registros.
+  - q: "¿Qué pasa si cambio de móvil?"
+    a: Con iCloud activado en Dial, los medicamentos, las dosis, los recordatorios y el
+      inventario pasan al móvil nuevo con tu cuenta de Apple. El peso y las fotos de
+      progreso se quedan en el dispositivo donde los registraste. Exporta el PDF o el CSV
+      para conservar una copia de ese historial.
+  - q: "¿Cuánto cuesta Dial Pro?"
+    type: pricing
+    a: ''
+  - q: "¿Dial funciona en Apple Watch?"
+    a: La app del reloj muestra gratis un anillo de ciclo y el próximo recordatorio.
+      Dial Pro añade el registro desde la muñeca y las complicaciones de nivel y de
+      registro rápido.
+  - q: "¿Puedo exportar mis datos?"
+    a: Dial Pro incluye un informe en PDF y una exportación a CSV. Compártelos por
+      AirDrop, correo o impresión cuando tú lo decidas.
 ca:
   items:
   - q: Què és Dial?

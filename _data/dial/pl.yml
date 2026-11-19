@@ -6,7 +6,7 @@ images:
     base: dial-web-today-pl
     width: 1290
     height: 2160
-    alt: "Ekran Dziś w Dial z następnym przypomnieniem, szacowanym poziomem leku i przyciskiem zapisu dawki"
+    alt: 'Ekran Dziś w Dial z następną i ostatnią dawką, szacowanym poziomem leku i przyciskiem zapisu dawki'
   level:
     base: dial-web-level-pl
     width: 1290
@@ -16,7 +16,7 @@ images:
     base: dial-web-log-dose-pl
     width: 1290
     height: 1800
-    alt: "Formularz dawki w Dial z polami leku, ilości, czasu i miejsca wstrzyknięcia"
+    alt: 'Formularz dawki w Dial z ilością, datą i godziną oraz mapą ciała do wyboru miejsca wstrzyknięcia'
   history:
     base: dial-web-history-pl
     width: 1290
@@ -36,7 +36,7 @@ images:
     base: dial-web-watch-glance-pl
     width: 792
     height: 968
-    alt: "Dial na Apple Watch z pierścieniem cyklu odliczającym dni do następnej dawki, następnym przypomnieniem i przyciskiem zapisu"
+    alt: 'Dial na Apple Watch z pierścieniem odliczającym dni do następnej dawki i przyciskiem zapisu'
   watch_logged:
     base: dial-web-watch-logged-pl
     width: 792

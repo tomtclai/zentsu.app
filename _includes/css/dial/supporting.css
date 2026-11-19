@@ -77,7 +77,7 @@
 }
 
 .dial-guide {
-  padding-block: 0 var(--dial-section-space);
+  padding-block: var(--dial-section-space);
   background: var(--dial-surface-tint);
 }
 

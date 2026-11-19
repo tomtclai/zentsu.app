@@ -6,7 +6,7 @@ images:
     base: dial-web-today-ar
     width: 1290
     height: 2160
-    alt: "شاشة اليوم في Dial مع التذكير التالي والمستوى المقدّر للدواء وزر لتسجيل جرعة"
+    alt: 'شاشة اليوم في Dial مع الجرعة التالية والجرعة الأخيرة والمستوى المقدّر للدواء وزر لتسجيل جرعة'
   level:
     base: dial-web-level-ar
     width: 1290
@@ -16,7 +16,7 @@ images:
     base: dial-web-log-dose-ar
     width: 1290
     height: 1800
-    alt: "نموذج جرعة Dial بحقول للدواء والكمية والوقت وموضع الحقن"
+    alt: 'نموذج جرعة Dial بحقول للكمية والتاريخ والوقت وخريطة جسم لاختيار موضع الحقن'
   history:
     base: dial-web-history-ar
     width: 1290
@@ -36,7 +36,7 @@ images:
     base: dial-web-watch-glance-ar
     width: 792
     height: 968
-    alt: "Dial على Apple Watch مع حلقة الدورة التي تعدّ الأيام حتى الجرعة التالية والتذكير التالي وزر تسجيل"
+    alt: 'Dial على Apple Watch مع حلقة تعدّ الأيام حتى الجرعة التالية وزر تسجيل'
   watch_logged:
     base: dial-web-watch-logged-ar
     width: 792

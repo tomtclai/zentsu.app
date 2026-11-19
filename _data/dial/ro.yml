@@ -6,7 +6,7 @@ images:
     base: dial-web-today-ro
     width: 1290
     height: 2160
-    alt: "Ecranul Astăzi din Dial cu următoarea reamintire, nivelul estimat al medicamentului și un buton de înregistrare a dozei"
+    alt: 'Ecranul Astăzi din Dial cu următoarea și ultima doză, nivelul estimat al medicamentului și un buton de înregistrare a dozei'
   level:
     base: dial-web-level-ro
     width: 1290
@@ -16,7 +16,7 @@ images:
     base: dial-web-log-dose-ro
     width: 1290
     height: 1800
-    alt: "Formularul de doză Dial cu câmpuri pentru medicament, cantitate, oră și loc de injecție"
+    alt: 'Formularul de doză Dial cu cantitatea, data și ora și o hartă a corpului pentru locul de injecție'
   history:
     base: dial-web-history-ro
     width: 1290
@@ -36,7 +36,7 @@ images:
     base: dial-web-watch-glance-ro
     width: 792
     height: 968
-    alt: "Dial pe Apple Watch cu un inel de ciclu care numără zilele până la următoarea doză, următoarea reamintire și un buton de înregistrare"
+    alt: 'Dial pe Apple Watch cu un inel care numără zilele până la următoarea doză și un buton de înregistrare'
   watch_logged:
     base: dial-web-watch-logged-ro
     width: 792

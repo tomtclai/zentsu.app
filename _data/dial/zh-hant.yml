@@ -6,7 +6,7 @@ images:
     base: dial-web-today-zh-hant
     width: 1290
     height: 2160
-    alt: "Dial 的今天畫面，顯示下次提醒、估計水平和記錄劑量按鈕"
+    alt: 'Dial 的今天畫面，顯示下次劑量、上次劑量、估計水平和記錄劑量按鈕'
   level:
     base: dial-web-level-zh-hant
     width: 1290
@@ -16,7 +16,7 @@ images:
     base: dial-web-log-dose-zh-hant
     width: 1290
     height: 1800
-    alt: "Dial 劑量表單，含藥物、劑量、時間和注射部位欄位"
+    alt: 'Dial 劑量表單，含劑量、日期與時間和選擇注射部位的身體圖'
   history:
     base: dial-web-history-zh-hant
     width: 1290
@@ -36,7 +36,7 @@ images:
     base: dial-web-watch-glance-zh-hant
     width: 792
     height: 968
-    alt: "Apple Watch 上的 Dial，週期環顯示距下次劑量還有幾天，並顯示下次提醒和記錄按鈕"
+    alt: 'Apple Watch 上的 Dial，圓環顯示距下次劑量還有幾天，並有記錄按鈕'
   watch_logged:
     base: dial-web-watch-logged-zh-hant
     width: 792

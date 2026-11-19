@@ -6,7 +6,7 @@ images:
     base: dial-web-today-cs
     width: 1290
     height: 2160
-    alt: "Obrazovka Dnes v Dial s příští připomínkou, odhadovanou hladinou léku a tlačítkem k zaznamenání dávky"
+    alt: 'Obrazovka Dnes v Dial s příští a poslední dávkou, odhadovanou hladinou léku a tlačítkem k zaznamenání dávky'
   level:
     base: dial-web-level-cs
     width: 1290
@@ -16,7 +16,7 @@ images:
     base: dial-web-log-dose-cs
     width: 1290
     height: 1800
-    alt: "Formulář dávky v Dial s poli pro lék, množství, čas a místo vpichu"
+    alt: 'Formulář dávky v Dial s množstvím, datem a časem a mapou těla pro místo vpichu'
   history:
     base: dial-web-history-cs
     width: 1290
@@ -36,7 +36,7 @@ images:
     base: dial-web-watch-glance-cs
     width: 792
     height: 968
-    alt: "Dial na Apple Watch s kroužkem cyklu, který odpočítává dny do další dávky, příští připomínkou a tlačítkem k záznamu"
+    alt: 'Dial na Apple Watch s kroužkem, který odpočítává dny do další dávky, a tlačítkem k záznamu'
   watch_logged:
     base: dial-web-watch-logged-cs
     width: 792

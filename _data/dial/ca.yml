@@ -6,7 +6,7 @@ images:
     base: dial-web-today-ca
     width: 1290
     height: 2160
-    alt: "Pantalla Avui de Dial amb el proper recordatori, el nivell estimat del medicament i un botó per registrar una dosi"
+    alt: 'Pantalla Avui de Dial amb la propera dosi i l’última, el nivell estimat del medicament i un botó per registrar una dosi'
   level:
     base: dial-web-level-ca
     width: 1290
@@ -16,7 +16,7 @@ images:
     base: dial-web-log-dose-ca
     width: 1290
     height: 1800
-    alt: "Formulari de dosi de Dial amb camps de medicament, quantitat, hora i lloc d’injecció"
+    alt: 'Formulari de dosi de Dial amb quantitat, data i hora, i un mapa del cos per triar el lloc d’injecció'
   history:
     base: dial-web-history-ca
     width: 1290
@@ -36,7 +36,7 @@ images:
     base: dial-web-watch-glance-ca
     width: 792
     height: 968
-    alt: "Dial a l’Apple Watch amb un anell de cicle que compta els dies fins a la propera dosi, el proper recordatori i un botó per registrar"
+    alt: 'Dial a l’Apple Watch amb un anell que compta els dies fins a la propera dosi i un botó per registrar'
   watch_logged:
     base: dial-web-watch-logged-ca
     width: 792

@@ -6,7 +6,7 @@ images:
     base: dial-web-today-hi
     width: 1290
     height: 2160
-    alt: "Dial की आज स्क्रीन: अगला अनुस्मारक, अनुमानित दवा स्तर और खुराक दर्ज करने का बटन"
+    alt: 'Dial की आज स्क्रीन: अगली और पिछली खुराक, अनुमानित दवा स्तर और खुराक दर्ज करने का बटन'
   level:
     base: dial-web-level-hi
     width: 1290
@@ -16,7 +16,7 @@ images:
     base: dial-web-log-dose-hi
     width: 1290
     height: 1800
-    alt: "Dial का खुराक फॉर्म: दवा, मात्रा, समय और इंजेक्शन की जगह"
+    alt: 'Dial का खुराक फॉर्म: मात्रा, तारीख और समय, और इंजेक्शन की जगह चुनने के लिए शरीर का नक्शा'
   history:
     base: dial-web-history-hi
     width: 1290
@@ -36,7 +36,7 @@ images:
     base: dial-web-watch-glance-hi
     width: 792
     height: 968
-    alt: "Apple Watch पर Dial: अगली खुराक तक बचे दिनों की रिंग, अगला अनुस्मारक और दर्ज करने का बटन"
+    alt: 'Apple Watch पर Dial: अगली खुराक तक बचे दिनों की रिंग और दर्ज करने का बटन'
   watch_logged:
     base: dial-web-watch-logged-hi
     width: 792

@@ -538,7 +538,7 @@ export function validateAllDialLocales({
       enCopy,
       expectedLanguages,
       dashAllowlistCounts,
-      expectedFaqCount: dialFaq[key === 'es-es' ? 'es' : key]?.items?.length ?? enFaqCount,
+      expectedFaqCount: (dialFaq[key] ?? dialFaq[key === 'es-es' ? 'es' : key])?.items?.length ?? enFaqCount,
     });
     totalChecks += result.checks;
     failures.push(...result.failures);

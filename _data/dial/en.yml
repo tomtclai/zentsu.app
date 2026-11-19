@@ -9,9 +9,7 @@ images:
     base: dial-web-today
     width: 1290
     height: 2160
-    alt:
-      Dial Today screen showing the next reminder, estimated medication level, and
-      a log dose button
+    alt: 'Dial Today screen showing the next and last dose, the estimated medication level, and a Log dose button'
   level:
     base: dial-web-level
     width: 1290
@@ -21,7 +19,7 @@ images:
     base: dial-web-log-dose
     width: 1290
     height: 1800
-    alt: Dial dose form with medication, amount, time, and injection site fields
+    alt: 'Dial dose form with amount, date and time, and an injection-site body map'
   history:
     base: dial-web-history
     width: 1290
@@ -45,9 +43,7 @@ images:
     base: dial-web-watch-glance
     width: 792
     height: 968
-    alt:
-      Dial on Apple Watch showing a cycle ring counting down the days to the next dose,
-      the next reminder, and a Log Dose button
+    alt: 'Dial on Apple Watch showing a ring counting down the days to the next dose and a Log button'
   watch_logged:
     base: dial-web-watch-logged
     width: 792

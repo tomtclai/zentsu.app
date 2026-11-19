@@ -6,7 +6,7 @@ images:
     base: dial-web-today-ms
     width: 1290
     height: 2160
-    alt: "Skrin Hari Ini Dial dengan peringatan seterusnya, tahap ubat anggaran dan butang untuk merekod dos"
+    alt: 'Skrin Hari Ini Dial dengan dos seterusnya dan dos terakhir, tahap ubat anggaran dan butang untuk merekod dos'
   level:
     base: dial-web-level-ms
     width: 1290
@@ -16,7 +16,7 @@ images:
     base: dial-web-log-dose-ms
     width: 1290
     height: 1800
-    alt: "Borang dos Dial dengan medan ubat, jumlah, masa dan tapak suntikan"
+    alt: 'Borang dos Dial dengan jumlah, tarikh dan masa, serta peta badan untuk memilih tapak suntikan'
   history:
     base: dial-web-history-ms
     width: 1290
@@ -36,7 +36,7 @@ images:
     base: dial-web-watch-glance-ms
     width: 792
     height: 968
-    alt: "Dial pada Apple Watch dengan cincin kitaran yang mengira hari hingga dos seterusnya, peringatan seterusnya dan butang rekod"
+    alt: 'Dial pada Apple Watch dengan cincin yang mengira hari hingga dos seterusnya dan butang rekod'
   watch_logged:
     base: dial-web-watch-logged-ms
     width: 792

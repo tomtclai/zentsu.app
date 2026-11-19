@@ -9,9 +9,7 @@ images:
     base: dial-web-today-es
     width: 1290
     height: 2160
-    alt:
-      Pantalla Hoy de Dial con el próximo recordatorio, el nivel estimado del medicamento
-      y un botón para registrar la dosis
+    alt: 'Pantalla Hoy de Dial con la próxima dosis y la última, el nivel estimado del medicamento y un botón para registrar la dosis'
   level:
     base: dial-web-level-es
     width: 1290
@@ -23,9 +21,7 @@ images:
     base: dial-web-log-dose-es
     width: 1290
     height: 1800
-    alt:
-      Formulario de dosis de Dial con los campos de medicamento, cantidad, hora y zona
-      de inyección
+    alt: 'Formulario de dosis de Dial con cantidad, fecha y hora, y un mapa del cuerpo para elegir la zona de inyección'
   history:
     base: dial-web-history-es
     width: 1290
@@ -49,9 +45,7 @@ images:
     base: dial-web-watch-glance-es
     width: 792
     height: 968
-    alt:
-      Dial en Apple Watch con un anillo de ciclo que cuenta los días hasta la próxima
-      dosis, el próximo recordatorio y un botón para registrar la dosis
+    alt: 'Dial en Apple Watch con un anillo que cuenta los días hasta la próxima dosis y un botón para registrar la dosis'
   watch_logged:
     base: dial-web-watch-logged-es
     width: 792

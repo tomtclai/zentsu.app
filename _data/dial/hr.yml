@@ -6,7 +6,7 @@ images:
     base: dial-web-today-hr
     width: 1290
     height: 2160
-    alt: "Zaslon Danas u Dialu sa sljedećim podsjetnikom, procijenjenom razinom lijeka i gumbom za unos doze"
+    alt: 'Zaslon Danas u Dialu sa sljedećom i zadnjom dozom, procijenjenom razinom lijeka i gumbom za unos doze'
   level:
     base: dial-web-level-hr
     width: 1290
@@ -16,7 +16,7 @@ images:
     base: dial-web-log-dose-hr
     width: 1290
     height: 1800
-    alt: "Obrazac doze u Dialu s poljima za lijek, količinu, vrijeme i mjesto injekcije"
+    alt: 'Obrazac doze u Dialu s količinom, datumom i vremenom te kartom tijela za mjesto injekcije'
   history:
     base: dial-web-history-hr
     width: 1290
@@ -36,7 +36,7 @@ images:
     base: dial-web-watch-glance-hr
     width: 792
     height: 968
-    alt: "Dial na Apple Watchu s prstenom ciklusa koji broji dane do sljedeće doze, sljedećim podsjetnikom i gumbom za unos"
+    alt: 'Dial na Apple Watchu s prstenom koji broji dane do sljedeće doze i gumbom za unos'
   watch_logged:
     base: dial-web-watch-logged-hr
     width: 792

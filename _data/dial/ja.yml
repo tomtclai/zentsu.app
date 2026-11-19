@@ -8,8 +8,7 @@ images:
     base: dial-web-today-ja
     width: 1290
     height: 2160
-    alt:
-      Dialの今日の画面。次のリマインダー、記録した投与からの推定レベル、投与を記録するボタン
+    alt: 'Dialの今日の画面。次の投与と前回の投与、記録した投与からの推定レベル、投与を記録するボタン'
   level:
     base: dial-web-level-ja
     width: 1290
@@ -19,7 +18,7 @@ images:
     base: dial-web-log-dose-ja
     width: 1290
     height: 1800
-    alt: 薬、用量、時刻、注射部位の欄があるDialの投与記録フォーム
+    alt: '用量、日付と時刻、注射部位を選ぶ体の図があるDialの投与記録フォーム'
   history:
     base: dial-web-history-ja
     width: 1290
@@ -41,8 +40,7 @@ images:
     base: dial-web-watch-glance-ja
     width: 792
     height: 968
-    alt:
-      Apple WatchのDial。次の投与までのサイクルリング、次のリマインダー、投与を記録するボタン
+    alt: 'Apple WatchのDial。次の投与までの日数を示すリングと、記録するボタン'
   watch_logged:
     base: dial-web-watch-logged-ja
     width: 792

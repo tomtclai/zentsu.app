@@ -6,7 +6,7 @@ images:
     base: dial-web-today-ko
     width: 1290
     height: 2160
-    alt: "다음 알림, 추정 약물 수준, 용량 기록 버튼이 있는 Dial 오늘 화면"
+    alt: '다음 용량과 마지막 용량, 추정 약물 수준, 용량 기록 버튼이 있는 Dial 오늘 화면'
   level:
     base: dial-web-level-ko
     width: 1290
@@ -16,7 +16,7 @@ images:
     base: dial-web-log-dose-ko
     width: 1290
     height: 1800
-    alt: "약물, 양, 시각, 주사 부위 필드가 있는 Dial 용량 양식"
+    alt: '양, 날짜와 시각, 주사 부위를 고르는 신체 그림이 있는 Dial 용량 양식'
   history:
     base: dial-web-history-ko
     width: 1290
@@ -36,7 +36,7 @@ images:
     base: dial-web-watch-glance-ko
     width: 792
     height: 968
-    alt: "다음 용량까지 남은 날을 세는 주기 링, 다음 알림, 기록 버튼이 있는 Apple Watch의 Dial"
+    alt: '다음 용량까지 남은 날을 세는 링과 기록 버튼이 있는 Apple Watch의 Dial'
   watch_logged:
     base: dial-web-watch-logged-ko
     width: 792

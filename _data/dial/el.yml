@@ -6,7 +6,7 @@ images:
     base: dial-web-today-el
     width: 1290
     height: 2160
-    alt: "Οθόνη Σήμερα του Dial με την επόμενη υπενθύμιση, το εκτιμώμενο επίπεδο φαρμάκου και κουμπί καταγραφής δόσης"
+    alt: 'Οθόνη Σήμερα του Dial με την επόμενη και την τελευταία δόση, το εκτιμώμενο επίπεδο φαρμάκου και κουμπί καταγραφής δόσης'
   level:
     base: dial-web-level-el
     width: 1290
@@ -16,7 +16,7 @@ images:
     base: dial-web-log-dose-el
     width: 1290
     height: 1800
-    alt: "Φόρμα δόσης Dial με πεδία φαρμάκου, ποσότητας, ώρας και σημείου ένεσης"
+    alt: 'Φόρμα δόσης Dial με ποσότητα, ημερομηνία και ώρα και χάρτη σώματος για το σημείο ένεσης'
   history:
     base: dial-web-history-el
     width: 1290
@@ -36,7 +36,7 @@ images:
     base: dial-web-watch-glance-el
     width: 792
     height: 968
-    alt: "Το Dial στο Apple Watch με δακτύλιο που μετρά τις ημέρες έως την επόμενη δόση, την επόμενη υπενθύμιση και κουμπί καταγραφής"
+    alt: 'Το Dial στο Apple Watch με δακτύλιο που μετρά τις ημέρες έως την επόμενη δόση και κουμπί καταγραφής'
   watch_logged:
     base: dial-web-watch-logged-el
     width: 792

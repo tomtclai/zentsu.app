@@ -6,7 +6,7 @@ images:
     base: dial-web-today-th
     width: 1290
     height: 2160
-    alt: "หน้าจอวันนี้ของ Dial พร้อมการเตือนถัดไป ระดับโดยประมาณ และปุ่มบันทึกขนาดยา"
+    alt: 'หน้าจอวันนี้ของ Dial พร้อมขนาดยาถัดไปและครั้งล่าสุด ระดับโดยประมาณ และปุ่มบันทึกขนาดยา'
   level:
     base: dial-web-level-th
     width: 1290
@@ -16,7 +16,7 @@ images:
     base: dial-web-log-dose-th
     width: 1290
     height: 1800
-    alt: "แบบฟอร์มขนาดยา Dial พร้อมช่องยา ปริมาณ เวลา และจุดฉีด"
+    alt: 'แบบฟอร์มขนาดยา Dial พร้อมปริมาณ วันที่และเวลา และแผนภาพร่างกายสำหรับเลือกจุดฉีด'
   history:
     base: dial-web-history-th
     width: 1290
@@ -36,7 +36,7 @@ images:
     base: dial-web-watch-glance-th
     width: 792
     height: 968
-    alt: "Dial บน Apple Watch พร้อมวงจรนับวันที่เหลือถึงขนาดยาถัดไป การเตือนถัดไป และปุ่มบันทึก"
+    alt: 'Dial บน Apple Watch พร้อมวงนับวันที่เหลือถึงขนาดยาถัดไป และปุ่มบันทึก'
   watch_logged:
     base: dial-web-watch-logged-th
     width: 792

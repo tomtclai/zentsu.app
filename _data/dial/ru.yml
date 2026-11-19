@@ -6,7 +6,7 @@ images:
     base: dial-web-today-ru
     width: 1290
     height: 2160
-    alt: "Экран «Сегодня» в Dial со следующим напоминанием, оценочным уровнем препарата и кнопкой записи дозы"
+    alt: 'Экран «Сегодня» в Dial со следующей и последней дозой, оценочным уровнем препарата и кнопкой записи дозы'
   level:
     base: dial-web-level-ru
     width: 1290
@@ -16,7 +16,7 @@ images:
     base: dial-web-log-dose-ru
     width: 1290
     height: 1800
-    alt: "Форма записи дозы в Dial с полями препарата, количества, времени и места инъекции"
+    alt: 'Форма записи дозы в Dial с количеством, датой и временем и схемой тела для выбора места инъекции'
   history:
     base: dial-web-history-ru
     width: 1290
@@ -36,7 +36,7 @@ images:
     base: dial-web-watch-glance-ru
     width: 792
     height: 968
-    alt: "Dial на Apple Watch с кольцом обратного отсчёта до следующей дозы, следующим напоминанием и кнопкой записи"
+    alt: 'Dial на Apple Watch с кольцом обратного отсчёта дней до следующей дозы и кнопкой записи'
   watch_logged:
     base: dial-web-watch-logged-ru
     width: 792

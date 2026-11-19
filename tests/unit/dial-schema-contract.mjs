@@ -35,7 +35,7 @@ const jsonLd = (html) => {
 };
 
 test('application schema safely encodes copy, keeps the download free, and lists Dial Pro plans in every locale', () => {
-  assert.equal(Object.keys(fixture.locales).length, 33);
+  assert.equal(Object.keys(fixture.locales).length, 34);
   for (const [lang, { rendered, prices }] of Object.entries(fixture.locales)) {
     const app = jsonLd(rendered.head);
     assert.equal(app.description, fixture.description, lang);

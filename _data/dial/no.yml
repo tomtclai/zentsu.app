@@ -6,7 +6,7 @@ images:
     base: dial-web-today-no
     width: 1290
     height: 2160
-    alt: "Dial-skjermen I dag med neste påminnelse, det estimerte legemiddelnivået og en knapp for å registrere en dose"
+    alt: 'Dial-skjermen I dag med neste og siste dose, det estimerte legemiddelnivået og en knapp for å registrere en dose'
   level:
     base: dial-web-level-no
     width: 1290
@@ -16,7 +16,7 @@ images:
     base: dial-web-log-dose-no
     width: 1290
     height: 1800
-    alt: "Dial-doseskjema med felt for legemiddel, mengde, tid og injeksjonssted"
+    alt: 'Dial-doseskjema med mengde, dato og tid og et kroppskart for injeksjonssted'
   history:
     base: dial-web-history-no
     width: 1290
@@ -36,7 +36,7 @@ images:
     base: dial-web-watch-glance-no
     width: 792
     height: 968
-    alt: "Dial på Apple Watch med en ring som teller dager til neste dose, neste påminnelse og en knapp for å føre"
+    alt: 'Dial på Apple Watch med en ring som teller dager til neste dose, og en knapp for å føre'
   watch_logged:
     base: dial-web-watch-logged-no
     width: 792

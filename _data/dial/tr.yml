@@ -6,7 +6,7 @@ images:
     base: dial-web-today-tr
     width: 1290
     height: 2160
-    alt: "Sonraki anımsatıcı, tahmini ilaç düzeyi ve doz kaydetme düğmesiyle Dial Bugün ekranı"
+    alt: 'Sonraki ve son doz, tahmini ilaç düzeyi ve doz kaydetme düğmesiyle Dial Bugün ekranı'
   level:
     base: dial-web-level-tr
     width: 1290
@@ -16,7 +16,7 @@ images:
     base: dial-web-log-dose-tr
     width: 1290
     height: 1800
-    alt: "İlaç, miktar, saat ve enjeksiyon yeri alanlarıyla Dial doz formu"
+    alt: 'Miktar, tarih ve saat ile enjeksiyon yerini seçmek için vücut haritası bulunan Dial doz formu'
   history:
     base: dial-web-history-tr
     width: 1290
@@ -36,7 +36,7 @@ images:
     base: dial-web-watch-glance-tr
     width: 792
     height: 968
-    alt: "Sonraki doza gün sayan döngü halkası, sonraki anımsatıcı ve kaydetme düğmesiyle Apple Watch'ta Dial"
+    alt: 'Sonraki doza kalan günleri sayan halka ve kaydetme düğmesiyle Apple Watch''ta Dial'
   watch_logged:
     base: dial-web-watch-logged-tr
     width: 792

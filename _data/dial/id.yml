@@ -6,7 +6,7 @@ images:
     base: dial-web-today-id
     width: 1290
     height: 2160
-    alt: "Layar Hari Ini Dial dengan pengingat berikutnya, tingkat obat perkiraan, dan tombol untuk mencatat dosis"
+    alt: 'Layar Hari Ini Dial dengan dosis berikutnya dan dosis terakhir, tingkat obat perkiraan, dan tombol untuk mencatat dosis'
   level:
     base: dial-web-level-id
     width: 1290
@@ -16,7 +16,7 @@ images:
     base: dial-web-log-dose-id
     width: 1290
     height: 1800
-    alt: "Formulir dosis Dial dengan bidang obat, jumlah, waktu, dan lokasi suntikan"
+    alt: 'Formulir dosis Dial dengan jumlah, tanggal dan waktu, serta peta tubuh untuk memilih lokasi suntikan'
   history:
     base: dial-web-history-id
     width: 1290
@@ -36,7 +36,7 @@ images:
     base: dial-web-watch-glance-id
     width: 792
     height: 968
-    alt: "Dial di Apple Watch dengan cincin siklus yang menghitung hari hingga dosis berikutnya, pengingat berikutnya, dan tombol catat"
+    alt: 'Dial di Apple Watch dengan cincin yang menghitung hari hingga dosis berikutnya dan tombol catat'
   watch_logged:
     base: dial-web-watch-logged-id
     width: 792

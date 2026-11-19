@@ -6,7 +6,7 @@ images:
     base: dial-web-today-sv
     width: 1290
     height: 2160
-    alt: "Dial-skärmen I dag med nästa påminnelse, den uppskattade läkemedelsnivån och en knapp för att registrera en dos"
+    alt: 'Dial-skärmen I dag med nästa och senaste dos, den uppskattade läkemedelsnivån och en knapp för att registrera en dos'
   level:
     base: dial-web-level-sv
     width: 1290
@@ -16,7 +16,7 @@ images:
     base: dial-web-log-dose-sv
     width: 1290
     height: 1800
-    alt: "Dial-dosformulär med fält för läkemedel, mängd, tid och injektionsställe"
+    alt: 'Dial-dosformulär med mängd, datum och tid och en kroppskarta för injektionsställe'
   history:
     base: dial-web-history-sv
     width: 1290
@@ -36,7 +36,7 @@ images:
     base: dial-web-watch-glance-sv
     width: 792
     height: 968
-    alt: "Dial på Apple Watch med en cykelring som räknar dagar till nästa dos, nästa påminnelse och en knapp för att registrera"
+    alt: 'Dial på Apple Watch med en ring som räknar dagar till nästa dos och en knapp för att registrera'
   watch_logged:
     base: dial-web-watch-logged-sv
     width: 792

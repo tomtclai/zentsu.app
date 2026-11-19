@@ -6,7 +6,7 @@ images:
     base: dial-web-today-vi
     width: 1290
     height: 2160
-    alt: "Màn hình Hôm nay của Dial với lời nhắc tiếp theo, mức thuốc ước tính và nút ghi liều"
+    alt: 'Màn hình Hôm nay của Dial với liều tiếp theo và liều gần nhất, mức thuốc ước tính và nút ghi liều'
   level:
     base: dial-web-level-vi
     width: 1290
@@ -16,7 +16,7 @@ images:
     base: dial-web-log-dose-vi
     width: 1290
     height: 1800
-    alt: "Biểu mẫu liều Dial với các trường thuốc, lượng, giờ và vị trí tiêm"
+    alt: 'Biểu mẫu liều Dial với lượng, ngày giờ và sơ đồ cơ thể để chọn vị trí tiêm'
   history:
     base: dial-web-history-vi
     width: 1290
@@ -36,7 +36,7 @@ images:
     base: dial-web-watch-glance-vi
     width: 792
     height: 968
-    alt: "Dial trên Apple Watch với vòng chu kỳ đếm ngày đến liều tiếp theo, lời nhắc tiếp theo và nút ghi"
+    alt: 'Dial trên Apple Watch với vòng đếm ngày đến liều tiếp theo và nút ghi'
   watch_logged:
     base: dial-web-watch-logged-vi
     width: 792

@@ -6,7 +6,7 @@ images:
     base: dial-web-today-sk
     width: 1290
     height: 2160
-    alt: "Obrazovka Dnes v Dial s ďalšou pripomienkou, odhadovanou hladinou lieku a tlačidlom na zaznamenanie dávky"
+    alt: 'Obrazovka Dnes v Dial s ďalšou a poslednou dávkou, odhadovanou hladinou lieku a tlačidlom na zaznamenanie dávky'
   level:
     base: dial-web-level-sk
     width: 1290
@@ -16,7 +16,7 @@ images:
     base: dial-web-log-dose-sk
     width: 1290
     height: 1800
-    alt: "Formulár dávky Dial s poľami pre liek, množstvo, čas a miesto vpichu"
+    alt: 'Formulár dávky Dial s množstvom, dátumom a časom a mapou tela na výber miesta vpichu'
   history:
     base: dial-web-history-sk
     width: 1290
@@ -36,7 +36,7 @@ images:
     base: dial-web-watch-glance-sk
     width: 792
     height: 968
-    alt: "Dial na Apple Watch s krúžkom cyklu, ktorý odpočítava dni do ďalšej dávky, ďalšou pripomienkou a tlačidlom na záznam"
+    alt: 'Dial na Apple Watch s krúžkom, ktorý odpočítava dni do ďalšej dávky, a tlačidlom na záznam'
   watch_logged:
     base: dial-web-watch-logged-sk
     width: 792

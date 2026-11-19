@@ -6,7 +6,7 @@ images:
     base: dial-web-today-hu
     width: 1290
     height: 2160
-    alt: "A Dial Ma nézete a következő emlékeztetővel, a becsült gyógyszerszinttel és egy adagrögzítő gombbal"
+    alt: 'A Dial Ma nézete a következő és az utolsó adaggal, a becsült gyógyszerszinttel és egy adagrögzítő gombbal'
   level:
     base: dial-web-level-hu
     width: 1290
@@ -16,7 +16,7 @@ images:
     base: dial-web-log-dose-hu
     width: 1290
     height: 1800
-    alt: "A Dial adagrögzítő űrlapja gyógyszer, mennyiség, idő és injekcióhely mezőkkel"
+    alt: 'A Dial adagrögzítő űrlapja mennyiséggel, dátummal és idővel, valamint az injekció helyét mutató testtérképpel'
   history:
     base: dial-web-history-hu
     width: 1290
@@ -36,7 +36,7 @@ images:
     base: dial-web-watch-glance-hu
     width: 792
     height: 968
-    alt: "A Dial az Apple Watchon ciklusgyűrűvel, amely a következő adagig számolja a napokat, a következő emlékeztetővel és rögzítőgombbal"
+    alt: 'A Dial az Apple Watchon a következő adagig hátralévő napokat számoló gyűrűvel és rögzítőgombbal'
   watch_logged:
     base: dial-web-watch-logged-hu
     width: 792

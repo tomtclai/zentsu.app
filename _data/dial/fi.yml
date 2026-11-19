@@ -6,7 +6,7 @@ images:
     base: dial-web-today-fi
     width: 1290
     height: 2160
-    alt: "Dialin Tänään-näyttö, jossa näkyy seuraava muistutus, arvioitu lääketaso ja Kirjaa annos -toiminto"
+    alt: 'Dialin Tänään-näyttö, jossa näkyy seuraava ja edellinen annos, arvioitu lääketaso ja Kirjaa annos -toiminto'
   level:
     base: dial-web-level-fi
     width: 1290
@@ -16,7 +16,7 @@ images:
     base: dial-web-log-dose-fi
     width: 1290
     height: 1800
-    alt: "Dialin annoslomake, jossa on kentät lääkkeelle, määrälle, ajalle ja pistoskohdalle"
+    alt: 'Dialin annoslomake, jossa on määrä, päivä ja aika sekä kehokartta pistoskohdan valintaan'
   history:
     base: dial-web-history-fi
     width: 1290
@@ -36,7 +36,7 @@ images:
     base: dial-web-watch-glance-fi
     width: 792
     height: 968
-    alt: "Dial Apple Watchissa: syklirengas, joka laskee päiviä seuraavaan annokseen, seuraava muistutus ja kirjaamispainike"
+    alt: 'Dial Apple Watchissa: rengas, joka laskee päiviä seuraavaan annokseen, ja kirjaamispainike'
   watch_logged:
     base: dial-web-watch-logged-fi
     width: 792

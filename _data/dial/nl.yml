@@ -9,9 +9,7 @@ images:
     base: dial-web-today-nl
     width: 1290
     height: 2160
-    alt:
-      Dial-scherm Vandaag met de volgende herinnering, de geschatte medicijnspiegel
-      en een knop om een dosis vast te leggen
+    alt: 'Dial-scherm Vandaag met de volgende en de laatste dosis, de geschatte medicijnspiegel en een knop om een dosis vast te leggen'
   level:
     base: dial-web-level-nl
     width: 1290
@@ -21,7 +19,7 @@ images:
     base: dial-web-log-dose-nl
     width: 1290
     height: 1800
-    alt: Dial-dosisformulier met velden voor medicijn, hoeveelheid, tijd en injectieplaats
+    alt: 'Dial-dosisformulier met hoeveelheid, datum en tijd en een lichaamskaart voor de injectieplaats'
   history:
     base: dial-web-history-nl
     width: 1290
@@ -45,9 +43,7 @@ images:
     base: dial-web-watch-glance-nl
     width: 792
     height: 968
-    alt:
-      Dial op Apple Watch met een cyclusring die de dagen tot de volgende dosis telt,
-      de volgende herinnering en een knop om vast te leggen
+    alt: 'Dial op Apple Watch met een ring die de dagen tot de volgende dosis telt en een knop om vast te leggen'
   watch_logged:
     base: dial-web-watch-logged-nl
     width: 792

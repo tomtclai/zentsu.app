@@ -8,8 +8,7 @@ images:
     base: dial-web-today-he
     width: 1290
     height: 2160
-    alt:
-      מסך היום ב-Dial עם התזכורת הבאה, רמה משוערת של התרופה וכפתור לרישום מנה
+    alt: 'מסך היום ב-Dial עם המנה הבאה והמנה האחרונה, רמה משוערת של התרופה וכפתור לרישום מנה'
   level:
     base: dial-web-level-he
     width: 1290
@@ -19,7 +18,7 @@ images:
     base: dial-web-log-dose-he
     width: 1290
     height: 1800
-    alt: טופס מנה ב-Dial עם שדות לתרופה, כמות, שעה ואתר הזרקה
+    alt: 'טופס מנה ב-Dial עם כמות, תאריך ושעה ומפת גוף לבחירת אתר ההזרקה'
   history:
     base: dial-web-history-he
     width: 1290
@@ -41,8 +40,7 @@ images:
     base: dial-web-watch-glance-he
     width: 792
     height: 968
-    alt:
-      Dial ב-Apple Watch עם טבעת שסופרת ימים עד המנה הבאה, התזכורת הבאה וכפתור רישום מנה
+    alt: 'Dial ב-Apple Watch עם טבעת שסופרת ימים עד המנה הבאה וכפתור רישום מנה'
   watch_logged:
     base: dial-web-watch-logged-he
     width: 792
