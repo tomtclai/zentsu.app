@@ -21,7 +21,7 @@ images:
     base: dial-web-history-ca
     width: 1290
     height: 2640
-    alt: "Historial de Dial amb gràfics de dosi i pes al llarg del temps"
+    alt: 'Pantalla Progrés de Dial amb un gràfic de pes, el pes actual i el canvi, i les últimes dosis'
   side_effects:
     base: dial-web-side-effects-ca
     width: 1290

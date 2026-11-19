@@ -21,7 +21,7 @@ images:
     base: dial-web-history-id
     width: 1290
     height: 2640
-    alt: "Riwayat Dial dengan grafik dosis dan berat seiring waktu"
+    alt: 'Layar Progres Dial dengan grafik berat, berat saat ini dan perubahannya, serta dosis terbaru'
   side_effects:
     base: dial-web-side-effects-id
     width: 1290

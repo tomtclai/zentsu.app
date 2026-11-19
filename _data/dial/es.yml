@@ -26,7 +26,7 @@ images:
     base: dial-web-history-es
     width: 1290
     height: 2640
-    alt: Pantalla de historial de Dial con gráficos de dosis y peso a lo largo del tiempo
+    alt: 'Pantalla Progreso de Dial con una gráfica de peso, el peso actual y el cambio, y las últimas dosis'
   side_effects:
     base: dial-web-side-effects-es
     width: 1290

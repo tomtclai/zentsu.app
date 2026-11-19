@@ -21,7 +21,7 @@ images:
     base: dial-web-history-th
     width: 1290
     height: 2640
-    alt: "ประวัติ Dial พร้อมกราฟขนาดยาและน้ำหนักตามเวลา"
+    alt: 'หน้าจอความคืบหน้าของ Dial พร้อมกราฟน้ำหนัก น้ำหนักปัจจุบันและการเปลี่ยนแปลง และขนาดยาล่าสุด'
   side_effects:
     base: dial-web-side-effects-th
     width: 1290

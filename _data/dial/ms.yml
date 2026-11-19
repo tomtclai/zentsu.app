@@ -21,7 +21,7 @@ images:
     base: dial-web-history-ms
     width: 1290
     height: 2640
-    alt: "Sejarah Dial dengan carta dos dan berat sepanjang masa"
+    alt: 'Skrin Kemajuan Dial dengan carta berat, berat semasa dan perubahan, serta dos terkini'
   side_effects:
     base: dial-web-side-effects-ms
     width: 1290

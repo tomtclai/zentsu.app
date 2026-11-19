@@ -21,7 +21,7 @@ images:
     base: dial-web-history-zh-hant
     width: 1290
     height: 2640
-    alt: "Dial 的歷史畫面，含劑量和體重隨時間變化的圖表"
+    alt: 'Dial 的進度畫面，顯示體重圖表、目前體重與變化，以及最近的劑量'
   side_effects:
     base: dial-web-side-effects-zh-hant
     width: 1290

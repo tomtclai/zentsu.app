@@ -21,7 +21,7 @@ images:
     base: dial-web-history-ko
     width: 1290
     height: 2640
-    alt: "시간에 따른 용량·체중 그래프가 있는 Dial 이력"
+    alt: '체중 그래프, 현재 체중과 변화, 최근 용량이 있는 Dial 진행 화면'
   side_effects:
     base: dial-web-side-effects-ko
     width: 1290

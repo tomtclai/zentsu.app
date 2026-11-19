@@ -24,7 +24,7 @@ images:
     base: dial-web-history-it
     width: 1290
     height: 2640
-    alt: Schermata cronologia di Dial con grafici di dosi e peso nel tempo
+    alt: 'Schermata Progresso di Dial con un grafico del peso, il peso attuale e la variazione, e le ultime dosi'
   side_effects:
     base: dial-web-side-effects-it
     width: 1290

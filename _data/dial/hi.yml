@@ -21,7 +21,7 @@ images:
     base: dial-web-history-hi
     width: 1290
     height: 2640
-    alt: "Dial का इतिहास: समय के साथ खुराक और वजन ग्राफ़"
+    alt: 'Dial की प्रगति स्क्रीन: वजन ग्राफ़, वर्तमान वजन और बदलाव, और हाल की खुराकें'
   side_effects:
     base: dial-web-side-effects-hi
     width: 1290

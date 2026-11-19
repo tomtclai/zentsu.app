@@ -21,7 +21,7 @@ images:
     base: dial-web-history-ru
     width: 1290
     height: 2640
-    alt: "История Dial с графиками доз и веса"
+    alt: 'Экран «Прогресс» в Dial с графиком веса, текущим весом и изменением и последними дозами'
   side_effects:
     base: dial-web-side-effects-ru
     width: 1290

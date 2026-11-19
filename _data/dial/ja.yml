@@ -23,7 +23,7 @@ images:
     base: dial-web-history-ja
     width: 1290
     height: 2640
-    alt: 投与のリストと、その横に記録した体重
+    alt: 'Dialの経過画面。体重のグラフ、現在の体重と変化、最近の投与'
   side_effects:
     base: dial-web-side-effects-ja
     width: 1290

@@ -23,7 +23,7 @@ images:
     base: dial-web-history-he
     width: 1290
     height: 2640
-    alt: מסך היסטוריה ב-Dial עם תרשימי מנה ומשקל לאורך זמן
+    alt: 'מסך התקדמות ב-Dial עם תרשים משקל, המשקל הנוכחי והשינוי, והמנות האחרונות'
   side_effects:
     base: dial-web-side-effects-he
     width: 1290

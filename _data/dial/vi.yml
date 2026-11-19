@@ -21,7 +21,7 @@ images:
     base: dial-web-history-vi
     width: 1290
     height: 2640
-    alt: "Lịch sử Dial với biểu đồ liều và cân nặng theo thời gian"
+    alt: 'Màn hình Tiến triển của Dial với biểu đồ cân nặng, cân nặng hiện tại và mức thay đổi, cùng các liều gần nhất'
   side_effects:
     base: dial-web-side-effects-vi
     width: 1290

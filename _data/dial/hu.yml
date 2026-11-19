@@ -21,7 +21,7 @@ images:
     base: dial-web-history-hu
     width: 1290
     height: 2640
-    alt: "A Dial előzményképernyője időbeli adag- és testsúlydiagramokkal"
+    alt: 'A Dial Haladás nézete testsúlydiagrammal, a jelenlegi testsúllyal és a változással, valamint a legutóbbi adagokkal'
   side_effects:
     base: dial-web-side-effects-hu
     width: 1290

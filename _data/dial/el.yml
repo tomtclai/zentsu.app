@@ -21,7 +21,7 @@ images:
     base: dial-web-history-el
     width: 1290
     height: 2640
-    alt: "Ιστορικό Dial με γραφήματα δόσης και βάρους στο πέρασμα του χρόνου"
+    alt: 'Οθόνη Πρόοδος του Dial με γράφημα βάρους, το τρέχον βάρος και τη μεταβολή, και τις τελευταίες δόσεις'
   side_effects:
     base: dial-web-side-effects-el
     width: 1290

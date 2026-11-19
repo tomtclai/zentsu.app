@@ -21,7 +21,7 @@ images:
     base: dial-web-history-tr
     width: 1290
     height: 2640
-    alt: "Zaman içinde doz ve kilo grafiklerini gösteren Dial geçmişi"
+    alt: 'Kilo grafiği, geçerli kilo ve değişim ile son dozları gösteren Dial İlerleme ekranı'
   side_effects:
     base: dial-web-side-effects-tr
     width: 1290

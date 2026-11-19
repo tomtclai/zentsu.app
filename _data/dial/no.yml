@@ -21,7 +21,7 @@ images:
     base: dial-web-history-no
     width: 1290
     height: 2640
-    alt: "Dial-historikk med dose- og vektdiagrammer over tid"
+    alt: 'Dial-skjermen Fremgang med et vektdiagram, gjeldende vekt og endring og de siste dosene'
   side_effects:
     base: dial-web-side-effects-no
     width: 1290

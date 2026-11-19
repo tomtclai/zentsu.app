@@ -24,7 +24,7 @@ images:
     base: dial-web-history-pt
     width: 1290
     height: 2640
-    alt: Tela de histórico do Dial com gráficos de doses e peso ao longo do tempo
+    alt: 'Tela Progresso do Dial com um gráfico de peso, o peso atual e a variação, e as últimas doses'
   side_effects:
     base: dial-web-side-effects-pt
     width: 1290

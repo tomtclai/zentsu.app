@@ -24,7 +24,7 @@ images:
     base: dial-web-history-de
     width: 1290
     height: 2640
-    alt: Dial-Verlauf mit Dosis- und Gewichtsdiagrammen über die Zeit
+    alt: 'Fortschritt-Bildschirm von Dial mit einem Gewichtsdiagramm, dem aktuellen Gewicht und der Änderung und den letzten Dosen'
   side_effects:
     base: dial-web-side-effects-de
     width: 1290
@@ -195,7 +195,7 @@ privacy:
     - term: Analysen
       detail: Dial erhebt keine Nutzungsanalysen und keine Telemetrie.
     - term: Unsere Server
-      detail: Zentsu betreibt keinen Server, der Ihre Einträge speichert oder liest.
+      detail: Zentsu betreibt keinen Server, der deine Einträge speichert oder liest.
     - term: Optionale Synchronisierung
       detail:
         Mit iCloud nutzen die zentralen Einträge die private CloudKit-Datenbank auf deinem

@@ -21,7 +21,7 @@ images:
     base: dial-web-history-ar
     width: 1290
     height: 2640
-    alt: "سجل Dial مع مخططات الجرعة والوزن عبر الزمن"
+    alt: 'شاشة التقدم في Dial مع مخطط للوزن والوزن الحالي والتغيير وآخر الجرعات'
   side_effects:
     base: dial-web-side-effects-ar
     width: 1290

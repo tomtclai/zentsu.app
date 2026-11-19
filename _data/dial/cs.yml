@@ -21,7 +21,7 @@ images:
     base: dial-web-history-cs
     width: 1290
     height: 2640
-    alt: "Historie Dial s grafy dávek a hmotnosti v čase"
+    alt: 'Obrazovka Pokrok v Dial s grafem hmotnosti, aktuální hmotností a změnou a posledními dávkami'
   side_effects:
     base: dial-web-side-effects-cs
     width: 1290

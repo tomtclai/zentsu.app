@@ -21,7 +21,7 @@ images:
     base: dial-web-history-hr
     width: 1290
     height: 2640
-    alt: "Povijest Diala s grafikonima doze i težine kroz vrijeme"
+    alt: 'Zaslon Napredak u Dialu s grafikonom težine, trenutnom težinom i promjenom te zadnjim dozama'
   side_effects:
     base: dial-web-side-effects-hr
     width: 1290

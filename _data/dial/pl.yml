@@ -21,7 +21,7 @@ images:
     base: dial-web-history-pl
     width: 1290
     height: 2640
-    alt: "Historia Dial z wykresami dawek i wagi w czasie"
+    alt: 'Ekran Postęp w Dial z wykresem masy ciała, bieżącą masą i zmianą oraz ostatnimi dawkami'
   side_effects:
     base: dial-web-side-effects-pl
     width: 1290
