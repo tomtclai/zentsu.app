@@ -80,6 +80,10 @@ defaults:
     values:
       permalink: /blog/:year/:slug/
   - scope:
+      path: naver2aaf0adb6587fd98a250a1e37e8679b9.html
+    values:
+      sitemap: false
+  - scope:
       path: coil
       type: pages
     values:
