@@ -22,7 +22,7 @@ lang: <zh-hant | ko | ja | pt | es-es>
 # es-es only:
 # locale: es-ES
 # resource_lang: es
-alternate_group: <dial-medication-log | dial-missed-dose | dial-change-injection-day | dial-side-effects-log | dial-dose-log | dial-site-rotation | dial-storage | dial-travel | dial-pen-needles | dial-sharps-disposal | dial-site-reactions>
+alternate_group: <dial-medication-log | dial-missed-dose | dial-change-injection-day | dial-side-effects-log | dial-dose-log | dial-site-rotation | dial-storage | dial-travel | dial-pen-needles | dial-sharps-disposal | dial-site-reactions | dial-eppe>
 favicon: /assets/dial-icon.png
 og_site_name: Dial
 og_image: https://zentsu.app/assets/dial-og.png

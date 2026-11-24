@@ -63,6 +63,18 @@ ko:
       title: 주사 요일을 바꿀 때
     - url: /ko/dial/medication-log/
       title: 투여 기록에 적을 것
+    - url: /ko/dial/storage/
+      title: 보관방법과 보관기간
+    - url: /ko/dial/travel/
+      title: 비행기와 해외여행
+    - url: /ko/dial/injection-site-reactions/
+      title: 주사 부위 가려움과 발진
+    - url: /ko/dial/pen-and-needles/
+      title: 펜과 바늘
+    - url: /ko/dial/sharps-disposal/
+      title: 다 쓴 펜과 바늘 버리기
+    - url: /ko/dial/eppe/
+      title: 에페 주사 주기와 기록
 
 zh-hant:
   byline:
