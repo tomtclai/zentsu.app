@@ -39,6 +39,16 @@ ja:
       title: GLP-1注射の記録に残す項目
     - url: /ja/dial/side-effects-weight-log/
       title: 副作用と体重の記録
+    - url: /ja/dial/storage/
+      title: 保管方法と冷蔵庫の外に置ける日数
+    - url: /ja/dial/travel/
+      title: 飛行機に持ち込むとき
+    - url: /ja/dial/injection-site-reactions/
+      title: 注射部位のかゆみ、赤み、腫れ
+    - url: /ja/dial/pen-and-needles/
+      title: ペンと注射針
+    - url: /ja/dial/sharps-disposal/
+      title: 使用済みのペンと注射針の捨て方
 
 ko:
   byline:

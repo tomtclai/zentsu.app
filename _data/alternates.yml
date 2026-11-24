@@ -160,28 +160,33 @@ dial-side-effects-log:
 
 dial-storage:
   es-ES: /es-es/dial/storage/
+  ja: /ja/dial/storage/
   zh-hant: /zh-hant/dial/storage/
   pt: /pt/dial/storage/
   ko: /ko/dial/storage/
 
 dial-travel:
   es-ES: /es-es/dial/travel/
+  ja: /ja/dial/travel/
   zh-hant: /zh-hant/dial/travel/
   pt: /pt/dial/travel/
   ko: /ko/dial/travel/
 
 dial-pen-needles:
   es-ES: /es-es/dial/pen-and-needles/
+  ja: /ja/dial/pen-and-needles/
   zh-hant: /zh-hant/dial/pen-and-needles/
   pt: /pt/dial/pen-and-needles/
   ko: /ko/dial/pen-and-needles/
 
 dial-sharps-disposal:
+  ja: /ja/dial/sharps-disposal/
   zh-hant: /zh-hant/dial/sharps-disposal/
   pt: /pt/dial/sharps-disposal/
   ko: /ko/dial/sharps-disposal/
 
 dial-site-reactions:
+  ja: /ja/dial/injection-site-reactions/
   zh-hant: /zh-hant/dial/injection-site-reactions/
   ko: /ko/dial/injection-site-reactions/
 
