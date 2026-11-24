@@ -133,6 +133,7 @@ dial-import:
 
 dial-medication-log:
   en: /dial/medication-log/
+  es-ES: /es-es/dial/medication-log/
   ja: /ja/dial/medication-log/
   ko: /ko/dial/medication-log/
   zh-hant: /zh-hant/dial/medication-log/
@@ -152,21 +153,25 @@ dial-change-injection-day:
   zh-hant: /zh-hant/dial/change-injection-day/
 
 dial-side-effects-log:
+  es-ES: /es-es/dial/side-effects-log/
   ja: /ja/dial/side-effects-weight-log/
   zh-hant: /zh-hant/dial/side-effects-log/
   pt: /pt/dial/side-effects-log/
 
 dial-storage:
+  es-ES: /es-es/dial/storage/
   zh-hant: /zh-hant/dial/storage/
   pt: /pt/dial/storage/
   ko: /ko/dial/storage/
 
 dial-travel:
+  es-ES: /es-es/dial/travel/
   zh-hant: /zh-hant/dial/travel/
   pt: /pt/dial/travel/
   ko: /ko/dial/travel/
 
 dial-pen-needles:
+  es-ES: /es-es/dial/pen-and-needles/
   zh-hant: /zh-hant/dial/pen-and-needles/
   pt: /pt/dial/pen-and-needles/
   ko: /ko/dial/pen-and-needles/

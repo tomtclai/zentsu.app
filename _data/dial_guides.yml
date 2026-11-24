@@ -159,3 +159,13 @@ es-es:
       title: Dosis olvidada y cambio de día
     - url: /es-es/dial/printable-dose-log/
       title: Registro de inyecciones para imprimir
+    - url: /es-es/dial/storage/
+      title: Conservación de la pluma y tiempo fuera de la nevera
+    - url: /es-es/dial/travel/
+      title: Viajar en avión con la pluma
+    - url: /es-es/dial/pen-and-needles/
+      title: Dosis por pluma y agujas compatibles
+    - url: /es-es/dial/medication-log/
+      title: Qué anotar en cada inyección semanal
+    - url: /es-es/dial/side-effects-log/
+      title: Efectos adversos según el prospecto y cómo anotarlos
