@@ -115,6 +115,20 @@ pt:
       title: Esqueci de aplicar a caneta
     - url: /pt/dial/change-injection-day/
       title: Mudar o dia da aplicação semanal
+    - url: /pt/dial/storage/
+      title: Como guardar a caneta
+    - url: /pt/dial/travel/
+      title: Viajar de avião com a caneta
+    - url: /pt/dial/sharps-disposal/
+      title: Descarte da caneta e das agulhas
+    - url: /pt/dial/pen-and-needles/
+      title: Doses por caneta e agulhas
+    - url: /pt/dial/medication-log/
+      title: O que anotar em cada aplicação
+    - url: /pt/dial/printable-dose-log/
+      title: Planilha de aplicações para imprimir
+    - url: /pt/dial/side-effects-log/
+      title: Efeitos colaterais na bula e como anotar
 
 es-es:
   byline:

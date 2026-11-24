@@ -12,6 +12,12 @@ products:
       rotation:
         text: A bula aponta como melhores locais a parte anterior das coxas, a parte anterior da cintura (abdome) e a parte superior do braço. Não encontramos na bula nem nas instruções de uso uma frase sobre alternar o local.
         section: (item 6)
+      storage:
+        text: Antes do primeiro uso, na geladeira, de 2 °C a 8 °C, longe do compartimento do congelador. Depois de aberta, a caneta pode ficar 6 semanas abaixo de 30 °C ou na geladeira e, passado esse prazo, deve ser descartada mesmo que ainda tenha produto. Não congelar e não usar se tiver congelado. Fora de uso, a caneta fica tampada para proteger da luz. As instruções de uso pedem para não deixar a caneta no carro ou em lugar muito quente ou muito frio e para não injetar Ozempic exposto à luz solar direta.
+        section: (item 5 e instruções de uso)
+      transport:
+        text: Transportar em embalagem com proteção térmica, que evite mudança brusca de temperatura, luz direta e vibração excessiva. Em viagens de avião, não despachar o produto na mala, porque o compartimento de bagagem do avião chega a temperaturas muito baixas e pode congelar o medicamento.
+        section: (item 5, Transporte)
   - name: Wegovy (semaglutida)
     source_url: https://www.novonordisk.com.br/content/dam/nncorp/br/pt/pdfs/bulas/patient/Wegovy_Bula_Paciente.pdf
     source_revised: Aprovada pela Anvisa em 04/05/2026
@@ -25,6 +31,12 @@ products:
       rotation:
         text: Parte da frente das coxas, parte anterior da cintura (abdome) e parte superior do braço. As instruções de uso pedem 5 cm de distância do umbigo e dizem que dá para usar a mesma área do corpo, mas não o mesmo local da última vez. Na dose de 7,2 mg (três injeções de 2,4 mg), as aplicações podem ficar na mesma área, com pelo menos 5 cm entre elas.
         section: (item 6 e instruções de uso)
+      storage:
+        text: Antes do primeiro uso, na geladeira, de 2 °C a 8 °C, longe do compartimento do congelador, protegido do calor e da luz excessivos. Depois de aberta, a caneta pode ficar 6 semanas abaixo de 30 °C ou na geladeira. Não congelar e não usar se tiver congelado. Fora de uso, a caneta fica tampada para proteger da luz. As instruções de uso mandam não injetar Wegovy exposto à luz solar direta e descartar a caneta que congelou.
+        section: (item 5 e instruções de uso)
+      transport:
+        text: Transportar em embalagem com proteção térmica, que evite mudança brusca de temperatura, luz direta e vibração excessiva. Em viagens de avião, não despachar o produto na mala, porque o compartimento de bagagem do avião chega a temperaturas muito baixas e pode congelar o medicamento.
+        section: (item 5, Transporte)
   - name: Poviztra (semaglutida)
     source_url: https://www.novonordisk.com.br/content/dam/nncorp/br/pt/pdfs/bulas/patient/Poviztra_Bula_Paciente.pdf
     source_revised: Aprovada pela Anvisa em 04/05/2026
@@ -38,6 +50,12 @@ products:
       rotation:
         text: O mesmo texto da bula do Wegovy. Coxas (parte da frente), abdome e parte superior do braço, a 5 cm do umbigo. A mesma área do corpo pode ser usada, mas não o mesmo local da última vez.
         section: (item 6 e instruções de uso)
+      storage:
+        text: O mesmo texto da bula do Wegovy. Antes do primeiro uso, na geladeira, de 2 °C a 8 °C, longe do congelador. Depois de aberta, 6 semanas abaixo de 30 °C ou na geladeira. Não congelar, não usar se tiver congelado e manter tampada contra a luz. Não injetar se exposto à luz solar direta.
+        section: (item 5 e instruções de uso)
+      transport:
+        text: O mesmo texto da bula do Wegovy. Embalagem com proteção térmica, sem mudança brusca de temperatura, luz direta ou vibração excessiva. Em viagens de avião, não despachar na mala, porque o compartimento de bagagem pode congelar o medicamento.
+        section: (item 5, Transporte)
   - name: Mounjaro (tirzepatida), caneta aplicadora de uso único
     source_url: https://delivery-p137454-e1438138.adobeaemcloud.com/adobe/assets/urn:aaid:aem:fd2ab343-99bb-4f05-b989-91aa00795de5/renditions/original/as/MOUNJARO_IRMA_LIT_PAT_22APR26.pdf?assetname=MOUNJARO_IRMA_LIT_PAT_22APR26.pdf
     source_revised: Aprovada pela Anvisa em 22/04/2026
@@ -51,3 +69,9 @@ products:
       rotation:
         text: Abdome ou coxa. Na parte de trás do braço, quem aplica deve ser outra pessoa. A bula pede para alternar o local de injeção a cada dose. As instruções de uso da caneta dizem que dá para usar a mesma região do corpo, escolhendo um local diferente nela.
         section: (item 6 e instruções de uso)
+      storage:
+        text: Na geladeira, de 2 °C a 8 °C, na embalagem original para proteger da luz. Não congelar. A caneta pode ficar fora da geladeira, abaixo de 30 °C, por até 21 dias. As instruções de uso dizem até 21 dias no total e mandam descartar a caneta que congelou e usar uma nova.
+        section: (item 5 e instruções de uso, Armazenamento e manuseio)
+      transport:
+        text: A bula e as instruções de uso da caneta não falam de transporte, viagem ou avião. No item 5, a bula diz que a caneta fica na geladeira, de 2 °C a 8 °C, e pode ficar fora dela, abaixo de 30 °C, por até 21 dias.
+        section: (item 5 e instruções de uso)

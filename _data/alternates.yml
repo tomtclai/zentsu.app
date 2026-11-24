@@ -115,6 +115,7 @@ dial-dose-log:
   ja: /ja/dial/printable-dose-log/
   ko: /ko/dial/printable-dose-log/
   zh-hant: /zh-hant/dial/printable-dose-log/
+  pt: /pt/dial/printable-dose-log/
 
 dial-site-rotation:
   en: /dial/injection-site-rotation/
@@ -135,6 +136,7 @@ dial-medication-log:
   ja: /ja/dial/medication-log/
   ko: /ko/dial/medication-log/
   zh-hant: /zh-hant/dial/medication-log/
+  pt: /pt/dial/medication-log/
 
 dial-missed-dose:
   en: /blog/2026/missed-glp-1-dose-what-to-record/
@@ -152,18 +154,23 @@ dial-change-injection-day:
 dial-side-effects-log:
   ja: /ja/dial/side-effects-weight-log/
   zh-hant: /zh-hant/dial/side-effects-log/
+  pt: /pt/dial/side-effects-log/
 
 dial-storage:
   zh-hant: /zh-hant/dial/storage/
+  pt: /pt/dial/storage/
 
 dial-travel:
   zh-hant: /zh-hant/dial/travel/
+  pt: /pt/dial/travel/
 
 dial-pen-needles:
   zh-hant: /zh-hant/dial/pen-and-needles/
+  pt: /pt/dial/pen-and-needles/
 
 dial-sharps-disposal:
   zh-hant: /zh-hant/dial/sharps-disposal/
+  pt: /pt/dial/sharps-disposal/
 
 dial-site-reactions:
   zh-hant: /zh-hant/dial/injection-site-reactions/
