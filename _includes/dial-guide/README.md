@@ -22,7 +22,7 @@ lang: <zh-hant | ko | ja | pt | es-es>
 # es-es only:
 # locale: es-ES
 # resource_lang: es
-alternate_group: <dial-medication-log | dial-missed-dose | dial-change-injection-day | dial-side-effects-log | dial-dose-log | dial-site-rotation>
+alternate_group: <dial-medication-log | dial-missed-dose | dial-change-injection-day | dial-side-effects-log | dial-dose-log | dial-site-rotation | dial-storage | dial-travel | dial-pen-needles | dial-sharps-disposal | dial-site-reactions>
 favicon: /assets/dial-icon.png
 og_site_name: Dial
 og_image: https://zentsu.app/assets/dial-og.png
@@ -70,7 +70,7 @@ products:
 ```
 
 - `name`: the product as the local label names it. It is the row header.
-- `rules.<topic>.text`: the rule, in the page language. `topic` is `missed_dose`, `change_day` or `rotation`. A product without that topic is left out of that table.
+- `rules.<topic>.text`: the rule, in the page language. `topic` is `missed_dose`, `change_day`, `rotation`, `storage`, `site_reaction` or `transport`. A product without that topic is left out of that table.
 - `rules.<topic>.section`: the label section, written with its own brackets and wording. Optional.
 - `source_url`, `source_revised`: the link in the source column and its text. List the same label in the page's `citations` too.
 

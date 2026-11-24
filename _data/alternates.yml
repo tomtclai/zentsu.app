@@ -151,3 +151,19 @@ dial-change-injection-day:
 
 dial-side-effects-log:
   ja: /ja/dial/side-effects-weight-log/
+  zh-hant: /zh-hant/dial/side-effects-log/
+
+dial-storage:
+  zh-hant: /zh-hant/dial/storage/
+
+dial-travel:
+  zh-hant: /zh-hant/dial/travel/
+
+dial-pen-needles:
+  zh-hant: /zh-hant/dial/pen-and-needles/
+
+dial-sharps-disposal:
+  zh-hant: /zh-hant/dial/sharps-disposal/
+
+dial-site-reactions:
+  zh-hant: /zh-hant/dial/injection-site-reactions/

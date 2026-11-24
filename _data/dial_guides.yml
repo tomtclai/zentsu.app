@@ -87,6 +87,18 @@ zh-hant:
       title: 忘記打針時的仿單寫法
     - url: /zh-hant/dial/change-injection-day/
       title: 更改每週打針日
+    - url: /zh-hant/dial/storage/
+      title: 保存溫度和室溫天數
+    - url: /zh-hant/dial/travel/
+      title: 帶藥出國搭飛機
+    - url: /zh-hant/dial/injection-site-reactions/
+      title: 注射部位紅腫、發癢
+    - url: /zh-hant/dial/pen-and-needles/
+      title: 注射筆卡住與針頭規格
+    - url: /zh-hant/dial/sharps-disposal/
+      title: 用過的針頭和注射筆怎麼丟
+    - url: /zh-hant/dial/side-effects-log/
+      title: 副作用怎麼記
 
 pt:
   byline:

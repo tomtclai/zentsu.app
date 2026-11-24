@@ -223,6 +223,11 @@ const dialGuideGroups = [
   'dial-missed-dose',
   'dial-change-injection-day',
   'dial-side-effects-log',
+  'dial-storage',
+  'dial-travel',
+  'dial-pen-needles',
+  'dial-sharps-disposal',
+  'dial-site-reactions',
 ];
 const dialGuideGroupRoutes = dialGuideGroups.flatMap((group) =>
   Object.entries(alternateGroups[group] ?? {}).map(([lang, route]) => ({ group, lang, route })),
