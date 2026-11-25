@@ -61,6 +61,6 @@ HEVC would fit more picture into the same 20 MB. If everyone in your server watc
 
 ## Doing it on a Mac
 
-The steps, with the details, are on the [compress a video for Discord](/press/convert/compress-video-for-discord) page. In short: drop the clip on Press, choose H.264, pick Discord under Size limit, and convert. Press picks the frame size, and the finished row shows the output size, which is always under 20 MB. The original file is never modified.
+The steps, with the details, are on the [compress a video for Discord](/press/convert/compress-video-for-discord) page. In short: choose H.264, pick Discord under Size limit, and drop the clip on Press. Press picks the frame size, and the finished row shows the output size, which is always under 20 MB. The original moves to the Trash once the new file is saved, unless you turn that off in Settings.
 
 If the clip is 4K and short enough that size is not the problem, the [4K to 1080p](/press/convert/4k-to-1080p) conversion is in the free download and may be all you need. Size presets, including Discord, Email, and a custom limit, are part of Press Pro, a one-time ${{ site.price_press_lifetime }} purchase that also adds batch conversion of a whole folder.

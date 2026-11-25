@@ -100,18 +100,33 @@ favicon: /assets/press-icon.png
 
           <h3>Where do converted files go?</h3>
           <p>
-            Next to the source, named <strong>name (Press).mp4</strong>, <strong>.jpg</strong>, and
-            so on. If that name already exists, Press adds a number instead of overwriting. The
-            original file is never modified.
+            Into the same folder as the source, under the same name with the new extension:
+            <strong>IMG_4821.MOV</strong> becomes <strong>IMG_4821.mp4</strong>. If a file with that
+            name is already there, Press adds a number, as in <strong>IMG_4821 (2).mp4</strong>, and
+            leaves the existing file alone.
+          </p>
+
+          <h3>What happens to the original file?</h3>
+          <p>
+            Once the converted file is saved, Press moves the original to the Trash. A failed or
+            cancelled conversion leaves the original where it was. To get one back, open the Trash
+            and drag it out. Finder's Put Back command is not offered for files Press moved there.
+            To keep every original, open <strong>Settings → Output folder</strong> and turn off
+            <strong>Move originals to Trash after conversion</strong>. When the output has the same
+            format as the source, such as a .jpg converted to JPEG, the converted file takes the
+            original's name and the original goes to the Trash. With the setting off, the converted
+            file gets a number instead.
           </p>
 
           <h3>Why did Press ask for access to a folder?</h3>
           <p>
             Press is sandboxed by the Mac App Store, so it can only write where you allow. The first
-            time you convert a file from a folder, Press asks you to confirm that folder; the grant
-            is remembered on your Mac. You can change it under
-            <strong>Settings → Output folder</strong>. If the dialog opens on the wrong folder,
-            choose the folder that contains the source file, or a parent of it.
+            time you open it, Press asks which folders it may save converted files in. Choose the
+            folders you convert in, or your home folder to cover the folders inside it. The grant is
+            remembered on your Mac, and you can change or remove it under
+            <strong>Settings → Output folder</strong>. A file dropped from a folder outside the
+            grant waits in the list, and Press shows a <strong>Choose folders</strong> button. Grant
+            the folder that contains the file, or a parent of it, and the conversion starts.
           </p>
 
           <h3>A conversion failed. What should I try first?</h3>
@@ -119,8 +134,8 @@ favicon: /assets/press-icon.png
             Read the message in the job row: it names the file and says whether Press could not read
             it or could not write the output. A file Press cannot read is usually in a format
             outside this release (MKV, AVI, and audio-only files are not supported). A write failure
-            usually means the folder grant does not cover the source; re-grant it from Settings. If
-            the same file keeps failing, email
+            usually means Press has lost access to the folder. Grant it again under
+            <strong>Settings → Output folder</strong>. If the same file keeps failing, email
             <a href="mailto:support@zentsu.app?subject=Press%20bug%20report">support@zentsu.app</a>
             with:
           </p>

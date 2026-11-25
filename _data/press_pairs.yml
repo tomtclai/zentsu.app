@@ -70,18 +70,22 @@
           exporting an MP4. Press converts the file directly, as below.
   steps:
     - >-
-      Drop the .mov onto Press, or drop a folder to queue every video inside
-      it.
+      Open Press. The first time, it asks which folders it may save converted
+      files in. Under Video, leave the codec on H.264 and pick a resolution.
+      Original keeps the frame size. 1080p and 720p scale the longer edge
+      down.
     - >-
-      Under Video, leave the codec on H.264 and pick a resolution. Original
-      keeps the frame size. 1080p and 720p scale the longer edge down.
+      Drop the .mov onto Press, or drop a folder to convert every video inside
+      it. Conversion starts on the drop.
     - >-
-      Click Convert. Press asks once for access to the folder, then writes
-      name (Press).mp4 next to the source and leaves the original untouched.
+      Press saves name.mp4 in the same folder, then moves the .mov to the
+      Trash. To keep the .mov, turn off "Move originals to Trash after
+      conversion" in Settings before you drop it.
   result:
     container: >-
-      .mp4, saved next to the source as name (Press).mp4. The original file is
-      never modified or overwritten.
+      .mp4, saved in the source's folder as name.mp4. If that name is taken,
+      Press adds a number. The .mov goes to the Trash by default, and dragging
+      it out of the Trash brings it back.
     codec: >-
       H.264 video with AAC audio. If the .mov already holds H.264 and AAC and
       you choose Original with no size limit, Press copies the streams into
@@ -151,8 +155,8 @@
     QuickTime Player's Export As switches to H.264 when you pick Greater
     Compatibility at 4K or 1080p. Both save the result as .mov, and some
     players and upload forms check for the .mp4 extension as well as H.264.
-    Press puts the codec in front of you as two chips, H.264 and HEVC, and
-    writes .mp4 with the extension the other side expects.
+    Press puts both codecs, H.264 and HEVC, in one Codec menu, and writes .mp4
+    with the extension the other side expects.
   sections:
     - heading: How to tell a file is HEVC
       paragraphs:
@@ -164,19 +168,21 @@
           Smaller File Size.
   steps:
     - >-
-      Drop the HEVC file, or a folder of them, onto Press. iPhone clips,
-      screen recordings, and files from Finder's encoder all queue the same
-      way.
-    - >-
       Under Video, choose H.264. Keep Original to leave the frame size alone,
       or pick 1080p or 720p to shrink it in the same pass.
     - >-
-      Click Convert. Each file comes out as name (Press).mp4 beside its
-      source.
+      Drop the HEVC file, or a folder of them, onto Press. iPhone clips,
+      screen recordings, and files from Finder's encoder all convert the same
+      way, and conversion starts on the drop.
+    - >-
+      Each file comes out as name.mp4 in its source's folder, and the HEVC
+      original moves to the Trash. To keep both, turn off "Move originals to
+      Trash after conversion" in Settings first.
   result:
     container: >-
-      .mp4, written next to the source with a (Press) suffix, so the HEVC
-      original stays where it was.
+      .mp4, saved in the source's folder under the same name. The HEVC
+      original goes to the Trash by default, and dragging it out of the Trash
+      brings it back.
     codec: >-
       H.264 video and AAC audio, always re-encoded, since the point is to
       leave HEVC behind.
@@ -242,18 +248,21 @@
     clip's length and writes H.264 MP4, which Discord accepts.
   steps:
     - >-
-      Drop the clip onto Press.
+      Under Video, choose H.264, then pick Discord under Size limit. Leave the
+      resolution on Original: when 20 MB is too little for 4K frames, Press
+      drops the clip to 1080p, or to 720p for a long clip.
     - >-
-      Under Video, choose H.264, then pick Discord under Size limit. Leave
-      the resolution on Original: when 20 MB is too little for 4K frames,
-      Press drops the clip to 1080p, or to 720p for a long clip.
+      Drop the clip onto Press. Conversion starts on the drop.
     - >-
-      Click Convert. The finished row shows the output size, which is always
-      under 20 MB. If Press cannot get the clip under the limit, the row says
-      so and no file is written.
+      The finished row shows the output size, which is always under 20 MB, and
+      the original moves to the Trash. If Press cannot get the clip under the
+      limit, the row says so, no file is written, and the original stays where
+      it was.
   result:
     container: >-
-      .mp4 next to the source, named name (Press).mp4.
+      .mp4 in the source's folder, under the source's name. The original goes
+      to the Trash unless you turn off "Move originals to Trash after
+      conversion" in Settings.
     codec: >-
       H.264 with AAC audio.
     quality: >-
@@ -302,8 +311,11 @@
     - question: What if I want it smaller still?
       answer: >-
         Choose Custom and type a lower number, or add 720p so the bits go
-        further. Press never touches the original, so repeating the
-        conversion starts from the same source each time.
+        further. Convert from the original each time, because a second pass
+        over the compressed file loses more detail. Press moves the original
+        to the Trash after a conversion, so drag it back out first, or turn
+        off "Move originals to Trash after conversion" in Settings before you
+        start.
     - question: Is the Discord preset free?
       answer: >-
         Size presets are part of Press Pro. The free download converts to
@@ -332,17 +344,18 @@
     Windows PC at the other end.
   steps:
     - >-
-      Drop the video onto Press. A folder works too, if you have several to
-      send.
-    - >-
       Under Video, select H.264 and choose Email under Size limit. Press picks
       the frame size that fits the budget, down to 720p.
     - >-
-      Click Convert, then attach name (Press).mp4 from the same folder as the
-      original.
+      Drop the video onto Press. A folder works too, if you have several to
+      send. Conversion starts on the drop.
+    - >-
+      Attach name.mp4 from the folder the video was in. The original is in the
+      Trash by then, unless you turned off "Move originals to Trash after
+      conversion" in Settings.
   result:
     container: >-
-      .mp4, saved beside the source.
+      .mp4, saved in the source's folder under the same name.
     codec: >-
       H.264 video and AAC audio, which the stock players on Windows and phones
       handle without extra software.
@@ -414,15 +427,19 @@
     the original did not.
   steps:
     - >-
-      Drop the 4K file onto Press.
-    - >-
       Under Video, keep H.264 and select 1080p. Portrait clips are handled:
       the longer edge becomes 1920, whichever way the phone was held.
     - >-
-      Click Convert. name (Press).mp4 lands next to the source.
+      Drop the 4K file onto Press. Conversion starts on the drop.
+    - >-
+      name.mp4 is saved in the same folder, and the 4K original moves to the
+      Trash. To keep the 4K file, turn off "Move originals to Trash after
+      conversion" in Settings before you drop it.
   result:
     container: >-
-      .mp4 beside the original.
+      .mp4 in the source's folder, under the same name. By default, a 4K file
+      that is already an .mp4 goes to the Trash and the 1080p file takes its
+      name.
     codec: >-
       H.264 and AAC through AVFoundation's 1920x1080 preset.
     quality: >-
@@ -462,20 +479,23 @@
     Finder's Convert Image quick action already writes JPEG from a HEIC, with
     four fixed size options and a keep-metadata switch, and Preview's Export
     dialog writes JPEG as well. For one photo, use them. Press is for the
-    folder: drop 300 HEIC files, set the JPEG quality as a percentage and a
-    max pixel size once, and every file comes out beside its source.
+    folder: set the JPEG quality as a percentage and a max pixel size once,
+    drop 300 HEIC files, and every one comes out as a JPEG in the same folder.
   steps:
-    - >-
-      Drop a HEIC, or a folder of them, onto Press.
     - >-
       Under Image, choose JPEG. Set Quality (85 percent by default) and, if
       you want smaller files, type a Max size in pixels.
     - >-
-      Click Convert. Each photo is written as name (Press).jpg next to the
-      original.
+      Drop a HEIC, or a folder of them, onto Press. Conversion starts on the
+      drop.
+    - >-
+      Each photo is saved as name.jpg in the same folder, and the HEIC moves
+      to the Trash. To keep the HEIC files, turn off "Move originals to Trash
+      after conversion" in Settings before you drop them.
   result:
     container: >-
-      A .jpg beside the HEIC. The HEIC stays where it was.
+      A .jpg in the HEIC's folder, under the same name. The HEIC goes to the
+      Trash by default, and dragging it out of the Trash brings it back.
     codec: >-
       JPEG, encoded by ImageIO at the quality you set.
     quality: >-
@@ -514,8 +534,9 @@
       answer: >-
         No. Press writes pixels only; EXIF fields including GPS are left
         behind. That helps when you are uploading the photo somewhere and
-        hurts when you are archiving. Keep the HEIC originals, which Press
-        never modifies.
+        hurts when you are archiving. To keep the HEIC originals, turn off
+        "Move originals to Trash after conversion" in Settings. Press
+        otherwise moves each one to the Trash.
     - question: Is HEIC to JPG free?
       answer: >-
         One file at a time, yes. Press Pro adds batch conversion and the Max
@@ -540,16 +561,17 @@
     fraction of that. It also takes a folder in one drop.
   steps:
     - >-
-      Drop the HEIC files onto Press.
-    - >-
       Under Image, choose PNG. There is no quality slider, since PNG is
       lossless; set a Max size in pixels if you want smaller files.
     - >-
-      Click Convert. Each file is written as name (Press).png beside its
-      source.
+      Drop the HEIC files onto Press. Conversion starts on the drop.
+    - >-
+      Each file is saved as name.png in the same folder, and the HEIC moves to
+      the Trash. To keep the HEIC files, turn off "Move originals to Trash
+      after conversion" in Settings first.
   result:
     container: >-
-      A .png beside the HEIC.
+      A .png in the HEIC's folder, under the same name.
     codec: >-
       PNG through ImageIO, lossless. The quality slider is hidden for PNG
       because the encoder ignores it.
@@ -568,8 +590,7 @@
     - question: Should I pick PNG or JPG?
       answer: >-
         PNG for screenshots, graphics, and anything you will edit again. JPG
-        for photos going to the web or email. Press offers both under Image,
-        and the HEIC stays put either way.
+        for photos going to the web or email. Press offers both under Image.
     - question: Is HEIC to PNG free?
       answer: >-
         Yes, one file at a time. Batch and Max size are Press Pro.
@@ -594,16 +615,18 @@
     window.
   steps:
     - >-
-      Drop the WebP files, or the folder they came in, onto Press.
-    - >-
       Under Image, choose PNG. Set a Max size in pixels if the images are
       larger than you need.
     - >-
-      Click Convert. Each file is written as name (Press).png beside the
-      source.
+      Drop the WebP files, or the folder they came in, onto Press. Conversion
+      starts on the drop.
+    - >-
+      Each file is saved as name.png in the same folder, and the .webp moves
+      to the Trash. To keep the .webp files, turn off "Move originals to Trash
+      after conversion" in Settings first.
   result:
     container: >-
-      A .png next to the .webp.
+      A .png in the .webp's folder, under the same name.
     codec: >-
       PNG, lossless, through ImageIO.
     quality: >-
@@ -646,16 +669,17 @@
     in pixels for images headed to a form with an upload limit.
   steps:
     - >-
-      Drop the WebP files onto Press.
-    - >-
       Under Image, choose JPEG, set Quality (85 percent by default), and type
       a Max size if you need one.
     - >-
-      Click Convert. Each file is written as name (Press).jpg beside the
-      source.
+      Drop the WebP files onto Press. Conversion starts on the drop.
+    - >-
+      Each file is saved as name.jpg in the same folder, and the .webp moves
+      to the Trash. To keep the .webp files, turn off "Move originals to Trash
+      after conversion" in Settings first.
   result:
     container: >-
-      A .jpg beside the .webp.
+      A .jpg in the .webp's folder, under the same name.
     codec: >-
       JPEG through ImageIO at the quality you set.
     quality: >-
@@ -696,16 +720,17 @@
     at 100, lossy below that, with the PNG's transparency carried across.
   steps:
     - >-
-      Drop the PNG files onto Press.
-    - >-
       Under Image, choose WebP. Leave Quality at 100 for a lossless file, or
       lower it for a smaller lossy one; 80 to 85 suits photos.
     - >-
-      Click Convert. Each file is written as name (Press).webp beside the
-      source.
+      Drop the PNG files onto Press. Conversion starts on the drop.
+    - >-
+      Each file is saved as name.webp in the same folder, and the PNG moves to
+      the Trash. To keep the PNG files, turn off "Move originals to Trash
+      after conversion" in Settings first.
   result:
     container: >-
-      A .webp next to the PNG.
+      A .webp in the PNG's folder, under the same name.
     codec: >-
       WebP through libwebp. 100 percent uses the lossless encoder; anything
       lower uses the lossy one at that quality.
@@ -751,17 +776,18 @@
     of product photos in one pass.
   steps:
     - >-
-      Drop the JPEG files onto Press.
-    - >-
       Under Image, choose WebP and set Quality. 80 to 85 percent is the usual
       range for photos; 100 switches to lossless, which comes out larger than
       the JPEG.
     - >-
-      Click Convert. Each file is written as name (Press).webp beside the
-      source.
+      Drop the JPEG files onto Press. Conversion starts on the drop.
+    - >-
+      Each file is saved as name.webp in the same folder, and the .jpg moves
+      to the Trash. To keep the .jpg files, turn off "Move originals to Trash
+      after conversion" in Settings first.
   result:
     container: >-
-      A .webp beside the .jpg.
+      A .webp in the .jpg's folder, under the same name.
     codec: >-
       WebP through libwebp, lossy below 100 percent and lossless at 100.
     quality: >-
@@ -801,20 +827,21 @@
     tools are shaped around the other direction. Finder's Convert Image
     writes JPEG, PNG, or HEIF, and Preview's Export writes JPEG, JPEG 2000,
     PDF, PNG, and TIFF; both write JPEG from the sources they can read. Press
-    reads AVIF through ImageIO on macOS 15 and later and writes a JPEG
-    beside it, for one file or a folder.
+    reads AVIF through ImageIO on macOS 15 and later and writes a JPEG into
+    the same folder, for one file or a folder.
   steps:
     - >-
-      Drop the AVIF files onto Press.
+      Under Image, choose JPEG. Quality defaults to 85 percent; set a Max size
+      if the image is for a form with a pixel limit.
     - >-
-      Under Image, choose JPEG. Quality defaults to 85 percent; set a Max
-      size if the image is for a form with a pixel limit.
+      Drop the AVIF files onto Press. Conversion starts on the drop.
     - >-
-      Click Convert. Each file is written as name (Press).jpg beside the
-      source.
+      Each file is saved as name.jpg in the same folder, and the .avif moves
+      to the Trash. To keep the .avif files, turn off "Move originals to Trash
+      after conversion" in Settings first.
   result:
     container: >-
-      A .jpg next to the .avif.
+      A .jpg in the .avif's folder, under the same name.
     codec: >-
       JPEG through ImageIO.
     quality: >-
@@ -846,7 +873,7 @@
   h1: PNG to JPG on Mac
   description: >-
     Convert PNG to JPG on your Mac with a quality slider. Press writes a JPEG
-    next to each PNG and can run a folder of screenshots in one go.
+    for each PNG and can run a folder of screenshots in one go.
   native_gap: >-
     Finder's Convert Image quick action writes JPEG from a PNG with four size
     tiers, and Preview's Export dialog does the same, so macOS covers the
@@ -855,16 +882,17 @@
     screenshots in one drop.
   steps:
     - >-
-      Drop the PNG files onto Press.
+      Under Image, choose JPEG. Screenshots with text keep their edges best at
+      90 percent or above; photos are fine at 85.
     - >-
-      Under Image, choose JPEG. Screenshots with text keep their edges best
-      at 90 percent or above; photos are fine at 85.
+      Drop the PNG files onto Press. Conversion starts on the drop.
     - >-
-      Click Convert. Each file is written as name (Press).jpg beside the
-      source.
+      Each file is saved as name.jpg in the same folder, and the PNG moves to
+      the Trash. To keep the PNG files, turn off "Move originals to Trash
+      after conversion" in Settings first.
   result:
     container: >-
-      A .jpg beside the PNG.
+      A .jpg in the PNG's folder, under the same name.
     codec: >-
       JPEG through ImageIO.
     quality: >-
@@ -898,20 +926,22 @@
     Image does as well, so one file needs no extra app. TIFFs tend to come
     in bulk and large: scanner output, exports from image editors, whole
     folders of them at tens of megabytes each. Press queues the folder,
-    applies one quality setting and one Max size to all of it, and writes
-    each JPEG beside its TIFF.
+    applies one quality setting and one Max size to all of it, and writes each
+    JPEG into its TIFF's folder.
   steps:
-    - >-
-      Drop the TIFF files, or their folder, onto Press.
     - >-
       Under Image, choose JPEG, set Quality, and set a Max size in pixels if
       the scans are larger than they need to be.
     - >-
-      Click Convert. Each file is written as name (Press).jpg beside the
-      source.
+      Drop the TIFF files, or their folder, onto Press. Conversion starts on
+      the drop.
+    - >-
+      Each file is saved as name.jpg in the same folder, and the .tiff moves
+      to the Trash. To keep the .tiff files, turn off "Move originals to Trash
+      after conversion" in Settings first.
   result:
     container: >-
-      A .jpg beside the .tiff.
+      A .jpg in the .tiff's folder, under the same name.
     codec: >-
       JPEG through ImageIO.
     quality: >-
@@ -952,16 +982,17 @@
     compressed twice in total rather than three times.
   steps:
     - >-
-      Drop the HEIC files onto Press.
-    - >-
       Under Image, choose WebP and set Quality: 80 to 85 percent for photos,
       100 for lossless.
     - >-
-      Click Convert. Each file is written as name (Press).webp beside the
-      source.
+      Drop the HEIC files onto Press. Conversion starts on the drop.
+    - >-
+      Each file is saved as name.webp in the same folder, and the HEIC moves
+      to the Trash. To keep the HEIC files, turn off "Move originals to Trash
+      after conversion" in Settings first.
   result:
     container: >-
-      A .webp beside the HEIC.
+      A .webp in the HEIC's folder, under the same name.
     codec: >-
       WebP through libwebp, lossy below 100 percent and lossless at 100.
     quality: >-

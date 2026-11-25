@@ -79,7 +79,7 @@ page_stylesheet: /press.css
             "name": "Does it change my original files?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Never. Press writes name (Press).mp4 or name (Press).jpg beside the source, adds a number if that name already exists, and asks once for access to the folder so the sandbox allows the write."
+              "text": "Press does not edit them, and by default it moves each one to the Trash once its converted file is saved. The converted file goes in the same folder under the same name with the new extension, with a number added if that name is taken. A failed or cancelled conversion leaves the original in place. To get an original back, drag it out of the Trash. Finder's Put Back command is not offered for these files. To keep every original, turn off \"Move originals to Trash after conversion\" in Settings."
             }
           },
           {
@@ -129,9 +129,9 @@ page_stylesheet: /press.css
             <p class="hero-kicker">Converts on your Mac. Files never leave it.</p>
             <h1>MOV to MP4 and HEIC to JPG, <span class="accent">on your Mac</span>.</h1>
             <p class="lede">
-              Drop a file or a folder, pick the output, click Convert. Press writes H.264 MP4, JPEG,
-              PNG, HEIC, WebP, AVIF, and TIFF through AVFoundation and ImageIO, and nothing is
-              uploaded anywhere.
+              Pick the output, then drop a file or a folder. Conversion starts on the drop. Press
+              writes H.264 MP4, JPEG, PNG, HEIC, WebP, AVIF, and TIFF through AVFoundation and
+              ImageIO, and nothing is uploaded anywhere.
             </p>
             <div class="hero-cta">
               <a class="btn btn-primary" href="#pricing"
@@ -209,7 +209,7 @@ page_stylesheet: /press.css
                   <span class="press-file-glyph">MP4</span>
                   <span class="press-chip press-chip--ok">H.264</span>
                 </div>
-                <p class="press-file-name">IMG_4821 (Press).mp4</p>
+                <p class="press-file-name">IMG_4821.mp4</p>
                 <p class="press-file-size">17.1 MB</p>
                 <p class="press-file-meta">1920 &times; 1080 · under the 20 MB Discord limit</p>
               </div>
@@ -228,8 +228,9 @@ page_stylesheet: /press.css
               <h2>One window: a drop zone, a queue, and the output picker.</h2>
             </div>
             <p class="kicker">
-              Output lands beside the source file with a (Press) suffix. The original is never
-              touched, and Press asks once for access to the folder so the sandbox allows the write.
+              The converted file is saved in the source's folder under the same name with the new
+              extension. The original then moves to the Trash, which you can turn off in Settings.
+              Press asks once which folders it may save in, so the sandbox allows the write.
             </p>
           </div>
 
@@ -277,7 +278,7 @@ page_stylesheet: /press.css
                 srcset="/assets/press-01-drop-zone@2x.png 2x"
                 width="720"
                 height="450"
-                alt="Press window with an iPhone video queued for H.264 1080p conversion, under the caption Drop in an iPhone video"
+                alt="Press window converting an iPhone video to H.264 at 1080p, 34 percent done, under the caption Drop in an iPhone video"
                 loading="lazy"
               />
             </picture>
@@ -450,8 +451,8 @@ page_stylesheet: /press.css
             </div>
             <div class="cell">
               <div class="label">Output</div>
-              <div class="value">Beside the source</div>
-              <div class="sub">(Press) suffix, never overwrites</div>
+              <div class="value">Same folder, same name</div>
+              <div class="sub">Originals go to Trash by default</div>
             </div>
           </div>
         </div>
@@ -584,9 +585,12 @@ page_stylesheet: /press.css
             <details>
               <summary>Does it change my original files?</summary>
               <p>
-                Never. Press writes name (Press).mp4 or name (Press).jpg beside the source, adds a
-                number if that name already exists, and asks once for access to the folder so the
-                sandbox allows the write.
+                Press does not edit them, and by default it moves each one to the Trash once its
+                converted file is saved. The converted file goes in the same folder under the same
+                name with the new extension, with a number added if that name is taken. A failed or
+                cancelled conversion leaves the original in place. To get an original back, drag it
+                out of the Trash. Finder's Put Back command is not offered for these files. To keep
+                every original, turn off "Move originals to Trash after conversion" in Settings.
               </p>
             </details>
             <details>

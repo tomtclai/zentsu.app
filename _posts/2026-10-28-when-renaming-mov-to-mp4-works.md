@@ -81,7 +81,7 @@ Apple's article suggests iMovie for anything that is not H.264: import the clip,
 
 Finder and QuickTime Player can also re-encode to H.264 without a project. Both write a .mov, though, so the destination still sees .mov unless you rename the result, which is safe once the codec is H.264.
 
-Press does the re-encode and the container in one step. Drop the file, leave the codec on H.264, pick Original, 1080p, or 720p, and convert. The new file is saved next to the source with "(Press)" in the name. The [MOV to MP4](/press/convert/mov-to-mp4) page walks through it, and the [HEVC to H.264](/press/convert/hevc-to-h264) page covers the codec change on its own.
+Press does the re-encode and the container in one step. Leave the codec on H.264, pick Original, 1080p, or 720p, and drop the file. Conversion starts on the drop. The new file is saved in the source's folder under the same name, and the original moves to the Trash unless you turn that off in Settings. The [MOV to MP4](/press/convert/mov-to-mp4) page walks through it, and the [HEVC to H.264](/press/convert/hevc-to-h264) page covers the codec change on its own.
 
 One file at a time to H.264 at Original, 1080p, or 720p is free in Press, with no count limit. Press Pro, a one-time ${{ site.price_press_lifetime }} purchase, adds batch conversion of a whole folder, size presets for Discord and email, and HEVC and 2160p output.
 

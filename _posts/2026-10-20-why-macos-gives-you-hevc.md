@@ -67,7 +67,7 @@ The extension matters when a form or a player checks it. Some upload systems che
 
 ## Doing both in one step with Press
 
-Press writes .mp4 files with H.264 video and AAC audio through the same AVFoundation export presets the system uses, and saves each copy next to its source with "(Press)" in the name so the original is never overwritten. When the source is already H.264 with AAC audio and you keep the original resolution, Press copies the streams into the new container without re-encoding, so the picture is untouched.
+Press writes .mp4 files with H.264 video and AAC audio through the same AVFoundation export presets the system uses, and saves each one in its source's folder under the same name. Once the .mp4 is saved, Press moves the original to the Trash, and a checkbox in Settings turns that off. When the source is already H.264 with AAC audio and you keep the original resolution, Press copies the streams into the new container without re-encoding, so the picture is untouched.
 
 Converting one file at a time to H.264 at its original size, 1080p, or 720p is free, with no count limit. The step-by-step guides cover the two most common cases:
 
