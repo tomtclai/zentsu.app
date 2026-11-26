@@ -43,8 +43,19 @@ citations:
 
 - `store_campaign` is the App Store Connect campaign token, 30 characters or fewer, letters, digits, `.`, `_` and `-` only. Leave it out to use `site-dial-blog`.
 - `store_ppid` is a custom product page id. Leave it out for the default product page.
-- `last_modified_at` writes `<lastmod>` for the page in `sitemap.xml`. Set it to `reviewed_on`.
+- `last_modified_at` writes `<lastmod>` for the page in `sitemap.xml`. Set it to `reviewed_on` on a new page, and to the day of the change when a live page gets a correction.
 - `scripts/validate-site.mjs` checks every guide in the groups above: the store link built from these fields, the banner, `Article`, two dates, description length and dashes.
+
+## Page opening
+
+After the H1 and the byline come the boundary paragraph (`<p class="dial-guide-boundary">`: what the page
+covers and that it is not medical advice) and then the answer paragraph
+(`<p class="dial-guide-answer">`): two or three sentences that answer the title's question, each
+fact attributed in the sentence to the named source. It restates facts the page body carries and
+adds none. The class has no style rule.
+
+A guide that is live is not reworded. A live page changes only for a correction of fact, a broken
+link, or the lists the data files render.
 
 ## Label rules data
 
