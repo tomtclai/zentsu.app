@@ -229,6 +229,7 @@ const dialGuideGroups = [
   'dial-sharps-disposal',
   'dial-site-reactions',
   'dial-eppe',
+  'dial-contraception',
 ];
 const dialGuideGroupRoutes = dialGuideGroups.flatMap((group) =>
   Object.entries(alternateGroups[group] ?? {}).map(([lang, route]) => ({ group, lang, route })),
