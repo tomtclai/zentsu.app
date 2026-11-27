@@ -195,3 +195,6 @@ dial-eppe:
 
 dial-contraception:
   ko: /ko/dial/contraception/
+
+dial-surgery:
+  zh-hant: /zh-hant/dial/surgery/
